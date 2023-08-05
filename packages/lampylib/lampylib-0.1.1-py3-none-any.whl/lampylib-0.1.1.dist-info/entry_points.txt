@@ -1,0 +1,3 @@
+[console_scripts]
+lampy=lampylib.__main__:main
+

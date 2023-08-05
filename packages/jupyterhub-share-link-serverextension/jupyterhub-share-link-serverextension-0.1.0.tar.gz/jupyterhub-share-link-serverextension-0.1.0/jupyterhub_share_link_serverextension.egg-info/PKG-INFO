@@ -1,0 +1,50 @@
+Metadata-Version: 1.2
+Name: jupyterhub-share-link-serverextension
+Version: 0.1.0
+Summary: Python package for doing science.
+Home-page: https://github.com/danielballan/jupyterhub-share-link-serverextension
+Author: JupyterHub Share Link Contributors
+Author-email: dallan@bnl.gov
+License: BSD (3-clause)
+Description: # jupyterhub-share-link-labextension
+        
+        Adds UI for sharing notebooks across Hub and a very simple server extension to
+        support it.
+        
+        This works in cooperation with a Hub Service,
+        [jupyterhub-share-link](https://github.com/danielballan/jupyterhub-share-link).
+        
+        
+        ## Prerequisites
+        
+        * JupyterLab
+        
+        ## Installation
+        
+        ```bash
+        jupyter labextension install jupyterhub-share-link-labextension
+        ```
+        
+        ## Development
+        
+        For a development install (requires npm version 4 or later), do the following in the repository directory:
+        
+        ```bash
+        npm install
+        npm run build
+        jupyter labextension link .
+        ```
+        
+        To rebuild the package and the JupyterLab app:
+        
+        ```bash
+        npm run build
+        jupyter lab build
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6

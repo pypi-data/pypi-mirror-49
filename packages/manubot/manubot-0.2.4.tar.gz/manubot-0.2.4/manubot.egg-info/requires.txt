@@ -1,0 +1,12 @@
+errorhandler
+isbnlib
+jinja2
+jsonref
+jsonschema
+packaging
+pandas
+pybase62
+pyyaml
+ratelimiter
+requests-cache
+requests

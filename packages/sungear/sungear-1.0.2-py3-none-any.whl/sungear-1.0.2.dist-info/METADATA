@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: sungear
+Version: 1.0.2
+Summary: Web based Sungear visualization.
+Home-page: https://github.com/zachary822/sungear
+Author: Zachary Juang
+Author-email: zacharyjuang+sungear@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/zachary822/sungear/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Provides-Extra: web
+Requires-Dist: flask ; extra == 'web'
+
+# Sungear
+
+## Introduction
+
+Sungear visulization.
+
+## Install
+
+```bash
+$ pip install sungear
+```
+
+## Example
+
+```bash
+$ python -m sungear
+```
+
+Then open browser to http://localhost:5000 to use.
+
+## License
+
+[MIT](./LICENSE)
+
+## Reference
+
+1. Christopher S. Poultney, Rodrigo A. Gutiérrez, Manpreet S. Katari, Miriam L. Gifford, W. Bradford Paley, Gloria M. Coruzzi, Dennis E. Shasha, Sungear: interactive visualization and functional analysis of genomic datasets, Bioinformatics, Volume 23, Issue 2, 15 January 2007, Pages 259–261, https://doi.org/10.1093/bioinformatics/btl496
+
+

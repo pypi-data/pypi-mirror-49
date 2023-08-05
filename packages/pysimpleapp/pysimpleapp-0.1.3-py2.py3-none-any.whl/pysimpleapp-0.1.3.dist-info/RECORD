@@ -1,0 +1,12 @@
+pysimpleapp/__init__.py,sha256=wDo78y8sLw78eyJpuWZwA2Etpv--CyF0lktJz5kaoLY,180
+pysimpleapp/message.py,sha256=4lZ2exb2bYy7opZzeSxHFl4DlYk0TtV06dsVYe-NiVI,1267
+pysimpleapp/threads/__init__.py,sha256=HxVm_AXvm5dRJEp1f9gHg-1B-mtgLIhjZmMVAga6dJo,53
+pysimpleapp/threads/examples.py,sha256=U057kz6F3gmptxerfyqCCPCIjRtvgAa_N7nMCFuQ_8g,5455
+pysimpleapp/threads/simple_threads.py,sha256=1HgGrbbHF1758bskUMdLnNqSQ3PRTq-y3IAcEpc1CWA,19613
+tests/__init__.py,sha256=OSFRjPT2j7pPfKYbCLl8zIzCChvF86wNa63s7nC5xMc,69
+tests/test_pysimpleapp.py,sha256=IWuhgave3pqn04CSW94HPT9QhJJkcwKAfniy9tZ9u1Q,453
+pysimpleapp-0.1.3.dist-info/AUTHORS.rst,sha256=7Ix8rNdZZfFiRazwcm6Imad7FQW-wGI2tx4lkHPnkFA,172
+pysimpleapp-0.1.3.dist-info/METADATA,sha256=5S5RwbI9JqdU4IYko8fOISuKvS6wPC7YSWdx-X10Apo,5570
+pysimpleapp-0.1.3.dist-info/WHEEL,sha256=53VSps8MltPLN_x9Ib61FU2ZSaJKzgrWQqu9rS-Dkgk,116
+pysimpleapp-0.1.3.dist-info/top_level.txt,sha256=Rcq3SHce8eUlal2j9hgMBv43e_CrMgrPmDoSQIuXjwE,18
+pysimpleapp-0.1.3.dist-info/RECORD,,

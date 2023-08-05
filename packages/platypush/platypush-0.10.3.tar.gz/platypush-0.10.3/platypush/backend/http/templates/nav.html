@@ -1,0 +1,38 @@
+{%
+    with pluginIcons = {
+        'light.hue': 'fa fa-lightbulb',
+        'media.mplayer': 'fa fa-film',
+        'media.mpv': 'fa fa-film',
+        'media.omxplayer': 'fa fa-film',
+        'media.vlc': 'fa fa-film',
+        'music.mpd': 'fa fa-music',
+        'music.snapcast': 'fa fa-volume-up',
+        'sensors': 'fas fa-thermometer-half',
+        'switches': 'fa fa-toggle-on',
+        'tts': 'fa fa-comment',
+        'tts.google': 'fa fa-comment',
+    }
+%}
+
+<nav>
+    <ul>
+        {% for plugin in plugins|sort %}
+            <li :class="{selected: '{{ plugin }}' == selectedPlugin}" title="{{ plugin }}">
+                <a href="#{{ plugin }}" @click="selectedPlugin = '{{ plugin }}'">
+                    {% if plugin in pluginIcons %}
+                        <i class="{{ pluginIcons[plugin] }}"></i>
+                    {% else %}
+                        {{ plugin }}
+                    {% endif %}
+                </a>
+            </li>
+        {% endfor %}
+
+        <div class="date-time pull-right">
+            <div class="time" v-text="now.toTimeString().substring(0,8)"></div>
+        </div>
+    </ul>
+</nav>
+
+{% endwith %}
+

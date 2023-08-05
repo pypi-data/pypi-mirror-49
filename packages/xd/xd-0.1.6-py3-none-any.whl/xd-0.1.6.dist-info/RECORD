@@ -1,0 +1,15 @@
+xd/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+xd/__main__.py,sha256=uQPLadOWhEnJLI3eY9TzIKXLfBx59IuRhKGCXBKNeCk,611
+xd/__version__.py,sha256=QFK4rtZHD89hJ6MawkvWRTaPRbXKNtKYhOF_KMucbrg,232
+xd/cmd_batch.py,sha256=clJCtGWI2LXE_N7IvgHJUhsv8nvXakBasBflfLbzhBY,3690
+xd/cmd_config.py,sha256=K7qMtpvEvHc3YOV4BwQfKiccpXV9D24cTXtsALe6L4k,3817
+xd/cmd_gitinit.py,sha256=mEp82Utjm6eFyD6HOrYhFYxKHc31LPT8E4MFxsXs53A,5857
+xd/cmd_watch.py,sha256=ROCf09oGe9WS-Dv8RvRG7Q-hFNFHds1oxC2zdqD-TYM,189
+xd/helpers.py,sha256=snAX4G3GdHkzVTkkee5di71IjLlzDWh67l6p3BYlSKc,622
+xd/proc.py,sha256=WD7gHb1cVdoOGAMmzjUFUQGXf8O3ncvlS-H8ASfQCKQ,1837
+xd-0.1.6.dist-info/LICENSE,sha256=GyIjWxMQGldHVIrresCvqVsKtzXo9qfE2BMjTi7O_6A,1534
+xd-0.1.6.dist-info/METADATA,sha256=KiMK0v4Y9j4mqkrZ2bu9iRZR1sJfUuE3nsOo_0sB554,1163
+xd-0.1.6.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+xd-0.1.6.dist-info/entry_points.txt,sha256=8nN1E0QBcCJrVXtWYOEhyagpRLujOCqtWO4DsqE23Ck,39
+xd-0.1.6.dist-info/top_level.txt,sha256=uYJypt2-ti-k2yelxJh5pcqoEvvoxI6kUin7FcUVuM4,3
+xd-0.1.6.dist-info/RECORD,,

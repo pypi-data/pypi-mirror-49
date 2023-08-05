@@ -1,0 +1,711 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Command Line Interface (CLI) &mdash; denzel 0.3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/denzel_theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="API Endpoints" href="endpoints.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo_sidebar.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pipeline.html">Pipeline Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endpoints.html">API Endpoints</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Command Line Interface (CLI)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#startproject"><code class="docutils literal notranslate"><span class="pre">startproject</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#launch"><code class="docutils literal notranslate"><span class="pre">launch</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#shutdown"><code class="docutils literal notranslate"><span class="pre">shutdown</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#start"><code class="docutils literal notranslate"><span class="pre">start</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#stop"><code class="docutils literal notranslate"><span class="pre">stop</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#restart"><code class="docutils literal notranslate"><span class="pre">restart</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#status"><code class="docutils literal notranslate"><span class="pre">status</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#logs"><code class="docutils literal notranslate"><span class="pre">logs</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#logworker"><code class="docutils literal notranslate"><span class="pre">logworker</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id19">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#shell"><code class="docutils literal notranslate"><span class="pre">shell</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#updateosreqs"><code class="docutils literal notranslate"><span class="pre">updateosreqs</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id24">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#updatepipreqs"><code class="docutils literal notranslate"><span class="pre">updatepipreqs</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id26">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#updatereqs"><code class="docutils literal notranslate"><span class="pre">updatereqs</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id28">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#response"><code class="docutils literal notranslate"><span class="pre">response</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id30">Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">denzel</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Command Line Interface (CLI)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/cli.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="command-line-interface-cli">
+<h1>Command Line Interface (CLI)<a class="headerlink" href="#command-line-interface-cli" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">Denzel comes with a CLI for the developers use.</div>
+<div class="line">At any moment you can use the <code class="docutils literal notranslate"><span class="pre">--help</span></code> flag to see the help menu</div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel --help
+
+Usage: denzel <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  launch         Builds and starts all services
+  logs           Show service logs
+  logworker      Show worker log
+  response       Set response manner <span class="o">(</span>sync/async<span class="o">)</span> and sync timeout
+  restart        Restart services
+  shell          Connect to service bash shell
+  shutdown       Stops and deletes all services
+  start          Start services
+  startproject   Builds the denzel project skeleton
+  status         Examine status of services and worker
+  stop           Stop services
+  updateosreqs   Run shell commands from requirements.sh on all services
+  updatepipreqs  Update services according to requirements.txt
+  updatereqs     Update services using requirements.txt and requirements.sh
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">For command specific help you can follow a command with the <code class="docutils literal notranslate"><span class="pre">--help</span></code> flag (ex. <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">launch</span> <span class="pre">--help</span></code>)</div>
+</div>
+<div class="contents local topic" id="commands">
+<p class="topic-title first">Commands</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#startproject" id="id31"><code class="docutils literal notranslate"><span class="pre">startproject</span></code></a></p></li>
+<li><p><a class="reference internal" href="#launch" id="id32"><code class="docutils literal notranslate"><span class="pre">launch</span></code></a></p></li>
+<li><p><a class="reference internal" href="#shutdown" id="id33"><code class="docutils literal notranslate"><span class="pre">shutdown</span></code></a></p></li>
+<li><p><a class="reference internal" href="#start" id="id34"><code class="docutils literal notranslate"><span class="pre">start</span></code></a></p></li>
+<li><p><a class="reference internal" href="#stop" id="id35"><code class="docutils literal notranslate"><span class="pre">stop</span></code></a></p></li>
+<li><p><a class="reference internal" href="#restart" id="id36"><code class="docutils literal notranslate"><span class="pre">restart</span></code></a></p></li>
+<li><p><a class="reference internal" href="#status" id="id37"><code class="docutils literal notranslate"><span class="pre">status</span></code></a></p></li>
+<li><p><a class="reference internal" href="#logs" id="id38"><code class="docutils literal notranslate"><span class="pre">logs</span></code></a></p></li>
+<li><p><a class="reference internal" href="#logworker" id="id39"><code class="docutils literal notranslate"><span class="pre">logworker</span></code></a></p></li>
+<li><p><a class="reference internal" href="#shell" id="id40"><code class="docutils literal notranslate"><span class="pre">shell</span></code></a></p></li>
+<li><p><a class="reference internal" href="#updateosreqs" id="id41"><code class="docutils literal notranslate"><span class="pre">updateosreqs</span></code></a></p></li>
+<li><p><a class="reference internal" href="#updatepipreqs" id="id42"><code class="docutils literal notranslate"><span class="pre">updatepipreqs</span></code></a></p></li>
+<li><p><a class="reference internal" href="#updatereqs" id="id43"><code class="docutils literal notranslate"><span class="pre">updatereqs</span></code></a></p></li>
+<li><p><a class="reference internal" href="#response" id="id44"><code class="docutils literal notranslate"><span class="pre">response</span></code></a></p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Except from the <a class="reference internal" href="#startproject"><span class="std std-ref">startproject</span></a> command, all other commands must be executed from within project directory</p>
+</div>
+<div class="section" id="startproject">
+<span id="id1"></span><h2><a class="toc-backref" href="#id31"><code class="docutils literal notranslate"><span class="pre">startproject</span></code></a><a class="headerlink" href="#startproject" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">startproject</span> <span class="pre">NAME</span></code></p>
+<p>Builds the denzel project skeleton.</p>
+<dl class="attribute">
+<dt id="NAME">
+<code class="sig-name descname">NAME</code><a class="headerlink" href="#NAME" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the project</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-gpu-no-gpu">
+<code class="sig-name descname">--gpu|--no-gpu</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-gpu-no-gpu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Support for NVIDIA GPU</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">--no-gpu</span></code></p>
+</dd></dl>
+
+<div class="section" id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul>
+<li><p>Start a project named “iris_classifier” with the default CPU image</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel startproject iris_classifier
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Start a project named “iris_classifier” with a GPU image</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel startproject --gpu iris_classifier
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="launch">
+<span id="id2"></span><h2><a class="toc-backref" href="#id32"><code class="docutils literal notranslate"><span class="pre">launch</span></code></a><a class="headerlink" href="#launch" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">launch</span> <span class="pre">[OPTIONS]</span></code></p>
+<p>Builds and starts all services.</p>
+<dl class="option">
+<dt id="cmdoption-api-port">
+<code class="sig-name descname">--api-port</code><code class="sig-prename descclassname"> &lt;INTEGER&gt;</code><a class="headerlink" href="#cmdoption-api-port" title="Permalink to this definition">¶</a></dt>
+<dd><p>API endpoints port</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">8000</span></code></p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-monitor-port">
+<code class="sig-name descname">--monitor-port</code><code class="sig-prename descclassname"> &lt;INTEGER&gt;</code><a class="headerlink" href="#cmdoption-monitor-port" title="Permalink to this definition">¶</a></dt>
+<dd><p>Monitor UI port</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">5555</span></code></p>
+</dd></dl>
+
+<div class="section" id="id3">
+<h3>Examples<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul>
+<li><p>Launch project with the default ports (8000 for API and 5555 for monitoring)</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel launch
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Launch a project with 8080 as the API port</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel launch --api-port <span class="m">8080</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="shutdown">
+<span id="id4"></span><h2><a class="toc-backref" href="#id33"><code class="docutils literal notranslate"><span class="pre">shutdown</span></code></a><a class="headerlink" href="#shutdown" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">shutdown</span> <span class="pre">[OPTIONS]</span></code></p>
+<p>Stops and deletes all services, if you wish only to stop use the <a class="reference internal" href="#stop"><span class="std std-ref">stop</span></a> command.</p>
+<dl class="option">
+<dt id="cmdoption-purge-no-purge">
+<code class="sig-name descname">--purge|--no-purge</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-purge-no-purge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Discard the docker images</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">--no-purge</span></code></p>
+</dd></dl>
+
+<div class="section" id="id5">
+<h3>Examples<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul>
+<li><p>Shutdown a denzel project, removing all containers</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel shutdown
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Shutdown a denzel project, removing all containers and remove related docker images (denzel and redis)</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel shutdown --purge
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="start">
+<span id="id6"></span><h2><a class="toc-backref" href="#id34"><code class="docutils literal notranslate"><span class="pre">start</span></code></a><a class="headerlink" href="#start" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">start</span></code></p>
+<p>Start services</p>
+<div class="section" id="id7">
+<h3>Examples<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Start the application services</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel start
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="stop">
+<span id="id8"></span><h2><a class="toc-backref" href="#id35"><code class="docutils literal notranslate"><span class="pre">stop</span></code></a><a class="headerlink" href="#stop" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">stop</span></code></p>
+<p>Stop services</p>
+<div class="section" id="id9">
+<h3>Examples<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Start the application services</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel stop
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="restart">
+<span id="id10"></span><h2><a class="toc-backref" href="#id36"><code class="docutils literal notranslate"><span class="pre">restart</span></code></a><a class="headerlink" href="#restart" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">restart</span></code></p>
+<p>Restart services (equal to calling <a class="reference internal" href="#stop"><span class="std std-ref">stop</span></a> and then <a class="reference internal" href="#start"><span class="std std-ref">start</span></a>).</p>
+<div class="section" id="id11">
+<h3>Examples<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Restart the denzel services</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel restart
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="status">
+<span id="id12"></span><h2><a class="toc-backref" href="#id37"><code class="docutils literal notranslate"><span class="pre">status</span></code></a><a class="headerlink" href="#status" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">status</span> <span class="pre">[OPTIONS]</span></code></p>
+<p>Examine status of services and worker. Use this to monitor the status of your project.</p>
+<dl class="option">
+<dt id="cmdoption-live-no-live">
+<code class="sig-name descname">--live|--no-live</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-live-no-live" title="Permalink to this definition">¶</a></dt>
+<dd><p>Live status view</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">--no-live</span></code></p>
+</dd></dl>
+
+<div class="section" id="id13">
+<h3>Examples<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul>
+<li><p>Examine application status, statically</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel status
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>View application status in a live manner, automatically updating</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel status --live
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="logs">
+<span id="id14"></span><h2><a class="toc-backref" href="#id38"><code class="docutils literal notranslate"><span class="pre">logs</span></code></a><a class="headerlink" href="#logs" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">logs</span> <span class="pre">[OPTIONS]</span></code></p>
+<p>Show service logs</p>
+<dl class="option">
+<dt id="cmdoption-service">
+<code class="sig-name descname">--service</code><code class="sig-prename descclassname"> [api|denzel|monitor|redis|all]</code><a class="headerlink" href="#cmdoption-service" title="Permalink to this definition">¶</a></dt>
+<dd><p>Target service</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">all</span></code></p>
+</dd></dl>
+
+<dl class="option">
+<dt id="id15">
+<code class="sig-name descname">--live|--no-live</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#id15" title="Permalink to this definition">¶</a></dt>
+<dd><p>Follow logs output</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">--no-live</span></code></p>
+</dd></dl>
+
+<div class="section" id="id16">
+<h3>Examples<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul>
+<li><p>Examine all of the services logs, statically</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel logs
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Examine only the <code class="docutils literal notranslate"><span class="pre">denzel</span></code> service logs, statically</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel logs --service denzel
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>View all of the service logs in a live manner, automatically updating</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel logs --live
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="logworker">
+<span id="id17"></span><h2><a class="toc-backref" href="#id39"><code class="docutils literal notranslate"><span class="pre">logworker</span></code></a><a class="headerlink" href="#logworker" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">logworker</span> <span class="pre">[OPTIONS]</span></code></p>
+<p>Show worker log</p>
+<dl class="option">
+<dt id="id18">
+<code class="sig-name descname">--live|--no-live</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#id18" title="Permalink to this definition">¶</a></dt>
+<dd><p>Follow logs output</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">--no-live</span></code></p>
+</dd></dl>
+
+<div class="section" id="id19">
+<h3>Examples<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul>
+<li><p>Examine the worker logs, statically</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel logworker
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>View the worker logs in a live manner, automatically updating</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel logs --service denzel
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="shell">
+<span id="id20"></span><h2><a class="toc-backref" href="#id40"><code class="docutils literal notranslate"><span class="pre">shell</span></code></a><a class="headerlink" href="#shell" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">shell</span> <span class="pre">[OPTIONS]</span></code></p>
+<p>Connect to service bash shell. This is only for advanced usage, shouldn’t be used in standard scenarios.</p>
+<dl class="option">
+<dt id="id21">
+<code class="sig-name descname">--service</code><code class="sig-prename descclassname"> [api|denzel|monitor|redis]</code><a class="headerlink" href="#id21" title="Permalink to this definition">¶</a></dt>
+<dd><p>Target service</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">denzel</span></code></p>
+</dd></dl>
+
+<div class="section" id="id22">
+<h3>Examples<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul>
+<li><p>Start an interactive shell session in the <code class="docutils literal notranslate"><span class="pre">denzel</span></code> service (default)</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel shell
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Start an interactive shell session in the <code class="docutils literal notranslate"><span class="pre">api</span></code> service</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel shell --service api
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="updateosreqs">
+<span id="id23"></span><h2><a class="toc-backref" href="#id41"><code class="docutils literal notranslate"><span class="pre">updateosreqs</span></code></a><a class="headerlink" href="#updateosreqs" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">updateosreqs</span></code></p>
+<p>Run shell commands from <code class="docutils literal notranslate"><span class="pre">requirements.sh</span></code>. This command uses <code class="docutils literal notranslate"><span class="pre">/bin/bash</span></code> for execution and treats the file as a bash script.
+Notice, that due to docker and <code class="docutils literal notranslate"><span class="pre">apt</span></code> caching issues, if you have a <code class="docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">install</span></code> command, make sure you precede it with <code class="docutils literal notranslate"><span class="pre">update</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">update</span> <span class="pre">&amp;&amp;</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">&lt;package-name&gt;</span></code>.
+There is no need to use <code class="docutils literal notranslate"><span class="pre">sudo</span></code>, these commands will run as root.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Every time you call <code class="docutils literal notranslate"><span class="pre">updateosreqs</span></code>, all of the contents of <code class="docutils literal notranslate"><span class="pre">requirements.sh</span></code> will be executed.</p>
+</div>
+<div class="section" id="id24">
+<h3>Examples<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<p>Install <code class="docutils literal notranslate"><span class="pre">htop</span></code> command on all services</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> <span class="s2">&quot;apt-get update &amp;&amp; apt-get install htop&quot;</span> &gt;&gt; requirements.sh
+$ denzel updateosreqs
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="updatepipreqs">
+<span id="id25"></span><h2><a class="toc-backref" href="#id42"><code class="docutils literal notranslate"><span class="pre">updatepipreqs</span></code></a><a class="headerlink" href="#updatepipreqs" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">updatepipreqs</span></code></p>
+<p>Update services according to <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code>. This command always uses the pip <code class="docutils literal notranslate"><span class="pre">--upgrade</span></code> flag, so requirements will always be updated to the latest version.
+If you wish to install a specific version, specify it in the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file. This command will initiate a restart so updates will apply.</p>
+<div class="section" id="id26">
+<h3>Examples<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<p>Update the Python packages using the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel updatepipreqs
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="updatereqs">
+<span id="id27"></span><h2><a class="toc-backref" href="#id43"><code class="docutils literal notranslate"><span class="pre">updatereqs</span></code></a><a class="headerlink" href="#updatereqs" title="Permalink to this headline">¶</a></h2>
+<p>Usage: <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">updatereqs</span></code></p>
+<p>Updates services according to <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> and <code class="docutils literal notranslate"><span class="pre">requirements.sh</span></code>, equivalent to calling <code class="docutils literal notranslate"><span class="pre">updatepipreqs</span></code> and <code class="docutils literal notranslate"><span class="pre">updateosreqs</span></code> consecutively, but faster.</p>
+<div class="section" id="id28">
+<h3>Examples<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+<p>Update the Python packages using <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> and execute shell script <code class="docutils literal notranslate"><span class="pre">requirements.sh</span></code></p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel updatereqs
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="response">
+<span id="id29"></span><h2><a class="toc-backref" href="#id44"><code class="docutils literal notranslate"><span class="pre">response</span></code></a><a class="headerlink" href="#response" title="Permalink to this headline">¶</a></h2>
+<p>Usage <code class="docutils literal notranslate"><span class="pre">denzel</span> <span class="pre">response</span> <span class="pre">[OPTIONS]</span></code></p>
+<p>Set response manner (sync/async) and sync timeout</p>
+<dl class="option">
+<dt id="cmdoption-sync-async">
+<code class="sig-name descname">--sync|--async</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-sync-async" title="Permalink to this definition">¶</a></dt>
+<dd><p>Responses synchronicity  [required]</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-timeout">
+<code class="sig-name descname">--timeout</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-timeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sync response timeout in seconds</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">5.0</span></code></p>
+</dd></dl>
+
+<div class="section" id="id30">
+<h3>Examples<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul>
+<li><p>Set synchronous response mode (default)</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel --sync
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Set asynchronous response mode with the default response timeout of 5 seconds</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel --async
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Set asynchronous response mode with response timeout of 10 seconds</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ denzel --async --timeout <span class="m">10</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="endpoints.html" class="btn btn-neutral float-left" title="API Endpoints" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Elior Cohen
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

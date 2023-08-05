@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ogc
+Version: 0.1.4
+Summary: 
+Author: Adam Stokes
+Author-email: battlemidget@users.noreply.github.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: awscli (>=1.16,<2.0)
+Requires-Dist: boto3 (>=1.9,<2.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: jinja2 (>=2.10,<3.0)
+Requires-Dist: juju (>=0.11.7,<0.12.0)
+Requires-Dist: juju-wait (==2.7.0)
+Requires-Dist: kv (>=0.3.0,<0.4.0)
+Requires-Dist: launchpadlib (==1.10.6)
+Requires-Dist: melddict (>=1.0,<2.0)
+Requires-Dist: python-box (>=3.4,<4.0)
+Requires-Dist: pyyaml (==3.13)
+Requires-Dist: pyyaml-include (>=1.1,<2.0)
+Requires-Dist: requests (>=2.22,<3.0)
+Requires-Dist: semver (>=2.8,<3.0)
+Requires-Dist: sh (>=1.12,<2.0)
+Requires-Dist: staticjinja (>=0.3.5,<0.4.0)
+Requires-Dist: toml (>=0.10.0,<0.11.0)

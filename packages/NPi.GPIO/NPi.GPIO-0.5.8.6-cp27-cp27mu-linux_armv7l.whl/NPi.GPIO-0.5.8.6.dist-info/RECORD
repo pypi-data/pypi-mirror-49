@@ -1,0 +1,11 @@
+NPi/CHANGELOG.txt,sha256=DEBdquASzxAExVgvgQQXPIX4lfk5XncMvHMpOKc-aYk,43
+NPi/LICENSE,sha256=OduPms8DZZWiVm6j_lYLx71l2HSfCI4PSk7y-KbLSzQ,18026
+NPi/README.md,sha256=XwkEZ8aZSJ7dJejLCs-5svK_GlG0L1Ygy-4agipg0Rg,680
+NPi/_GPIO.so,sha256=BTa5Ygzp6GP-NeUXyWaAefoZnWPSWd-gqmTsp3bJCM8,172276
+NPi/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+NPi/GPIO/__init__.py,sha256=RtFbJX_AQ39UVdXLN1BZcuFcWjLq106_rMzjGs-H2PY,212
+NPi.GPIO-0.5.8.6.dist-info/LICENSE,sha256=OduPms8DZZWiVm6j_lYLx71l2HSfCI4PSk7y-KbLSzQ,18026
+NPi.GPIO-0.5.8.6.dist-info/METADATA,sha256=mSmzPs6DFAj2zvxmhMGiyE-mZHNE66PGBT9JQgp1AlU,1404
+NPi.GPIO-0.5.8.6.dist-info/WHEEL,sha256=HfsRv-brqG0QsLCAtbgPews5ZtajPNhEajuyr5CBN34,105
+NPi.GPIO-0.5.8.6.dist-info/top_level.txt,sha256=LvunERZ46EoXhhMu-zv4lkEZ8Zu11dCf2c6C4NCf0go,4
+NPi.GPIO-0.5.8.6.dist-info/RECORD,,

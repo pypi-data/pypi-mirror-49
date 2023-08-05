@@ -1,0 +1,95 @@
+{
+  "plugin": {
+    "title": "GIS Diagram",
+    "packageName": "peek_plugin_gis_diagram",
+    "version":"1.3.8",
+    "buildNumber": "#PLUGIN_BUILD#",
+    "buildDate": "#BUILD_DATE#",
+    "creator": "Synerty Pty Ltd",
+    "website": "www.synerty.com"
+  },
+  "requiresServices": [
+    "server",
+    "storage",
+    "client",
+    "mobile",
+    "desktop"
+  ],
+  "server": {
+  },
+  "storage": {
+    "alembicDir": "_private/alembic"
+  },
+  "admin": {
+    "showHomeLink": true,
+    "appDir": "_private/admin-app",
+    "appModule": "gisDiagram.module#GisDiagramModule",
+    "moduleDir": "plugin-module"
+  },
+  "client": {
+  },
+  "mobile": {
+    "showHomeLink": true,
+    "appDir": "_private/both-app",
+    "appModule": "gisDiagram.module#GisDiagramModule",
+    "assetDir": "_private/both-assets",
+    "icon": "/assets/peek_plugin_gis_diagram/icon.png",
+    "moduleDir": "plugin-module",
+    "rootServices": [
+      {
+        "file": "GisDiagramPositionService",
+        "class": "GisDiagramPositionService",
+        "useClassFile": "_private/services/PrivateGisDiagramPositionService",
+        "useClassClass": "PrivateGisDiagramPositionService",
+        "persistent": true
+      },
+      {
+        "file": "GisDiagramToolbarService",
+        "class": "GisDiagramToolbarService",
+        "persistent": true
+      },
+      {
+        "file": "GisDiagramItemPopupService",
+        "class": "GisDiagramItemPopupService",
+        "persistent": true
+      },
+      {
+        "file": "_private/services/private-gis-diagram-nav.service",
+        "class": "PrivateGisDiagramNavService"
+      }
+    ]
+  },
+  "agent": {
+  },
+  "desktop": {
+    "showHomeLink": true,
+    "appDir": "_private/both-app",
+    "appModule": "gisDiagram.module#GisDiagramModule",
+    "assetDir": "_private/both-assets",
+    "icon": "/assets/peek_plugin_gis_diagram/icon.png",
+    "moduleDir": "plugin-module",
+    "rootServices": [
+      {
+        "file": "GisDiagramPositionService",
+        "class": "GisDiagramPositionService",
+        "useClassFile": "_private/services/PrivateGisDiagramPositionService",
+        "useClassClass": "PrivateGisDiagramPositionService",
+        "persistent": true
+      },
+      {
+        "file": "GisDiagramToolbarService",
+        "class": "GisDiagramToolbarService",
+        "persistent": true
+      },
+      {
+        "file": "GisDiagramItemPopupService",
+        "class": "GisDiagramItemPopupService",
+        "persistent": true
+      },
+      {
+        "file": "_private/services/private-gis-diagram-nav.service",
+        "class": "PrivateGisDiagramNavService"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+<StackLayout class="p-10">
+
+    <GridLayout class="peek-nav-section"
+                rows="auto" columns="auto, *, auto">
+        <GridLayout class="btn-group"
+                    rows="auto" columns="auto, auto, auto, auto"
+                    row="0" col="0">
+            <Button class="nav-section-btn"
+                    row="0" col="0"
+                    text="Open GIS Diagram"
+                    (tap)="navToDiagram()"></Button>
+        </GridLayout>
+    </GridLayout>
+    <StackLayout class="hr"></StackLayout>
+
+    <StackLayout class="peek-information-section">
+        <Image class="information-section-icon"
+               src="~/assets/peek_plugin_gis_diagram/icon.png"></Image>
+
+        <label class="information-section-title" text="Welcome to GIS Viewer"></label>
+        <label class="p"></label>
+
+        <label class="p" textWrap="true" text=
+                "The Peek GIS Viewer displays provides a web and mobile friendly
+                view of the GIS."></label>
+
+            <!-- TODO
+        <label class="p"></label>
+        <label class="p" text="* View incidents"></label>
+        <label class="p" text="* Receive incidents from the control room."></label>
+        <label class="p"
+               text="* Respond to incidents with arrival and restoration estimates."></label>
+        <label class="p" text="* Log field findings about incidents."></label>
+        <label class="p" text="* View calls related to incidents."></label>
+            -->
+    </StackLayout>
+</StackLayout>

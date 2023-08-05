@@ -1,0 +1,7 @@
+future
+configparser
+mock
+pytest
+
+[:python_version < "3.4"]
+enum34

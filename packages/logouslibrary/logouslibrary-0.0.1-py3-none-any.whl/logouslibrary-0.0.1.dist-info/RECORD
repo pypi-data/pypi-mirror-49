@@ -1,0 +1,16 @@
+logous/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logous/basemodel.py,sha256=4z5JYNQJjfRsHe09CsnPmw7stGZ_JIyGRSW6TthNKNE,1625
+logous/churn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logous/churn/logouschurnutils.py,sha256=NBAn13mlEJy51T49Kx36vV_htq56sfkTj7a6OVAfQfc,1382
+logous/feature_generation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logous/feature_generation/logousrfmutils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logous/segmentation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logous/segmentation/logoussegmentationutils.py,sha256=wC_Q_urZoczzarclQKYNfsKwK0lISt8ohGEc-VkeFxA,754
+logous/time_series/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logous/time_series/logousarimautils.py,sha256=P4NQFWuYwFo3H6F5lF3DSkpod8kmG6y7sjDx8jXQPyM,1555
+logous/time_series/logouslstmutils.py,sha256=HC0JZF8-wA5wmHLmFTAas0Hd6BLvgM2CIv3KGdBke9A,2611
+logouslibrary-0.0.1.dist-info/LICENSE.txt,sha256=AnUk5nAehVTxSs-gy8y21R06O4uidfaoOvJa5RfEPlM,1081
+logouslibrary-0.0.1.dist-info/METADATA,sha256=7oQeeCyEVZ-tt1o1685MOwm6Jf2VJuJXqtXw_YycExw,800
+logouslibrary-0.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+logouslibrary-0.0.1.dist-info/top_level.txt,sha256=TdpQ8EtwF57dGEr1HrZibhAaip7Twj46QbtkML5SMBc,7
+logouslibrary-0.0.1.dist-info/RECORD,,

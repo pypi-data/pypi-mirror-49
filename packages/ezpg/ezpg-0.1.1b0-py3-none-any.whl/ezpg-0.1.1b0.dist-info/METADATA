@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ezpg
+Version: 0.1.1b0
+Summary: 
+Author: Matt Chapman
+Author-email: Matt@NinjitsuWeb.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: psycopg2-binary (>=2.8,<3.0)

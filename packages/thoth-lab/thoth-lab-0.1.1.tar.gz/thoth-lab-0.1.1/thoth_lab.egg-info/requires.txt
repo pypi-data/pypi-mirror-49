@@ -1,0 +1,7 @@
+ipython
+ipykernel
+requests
+networkx
+pandas
+jupyter-require
+jupyter_contrib_nbextensions

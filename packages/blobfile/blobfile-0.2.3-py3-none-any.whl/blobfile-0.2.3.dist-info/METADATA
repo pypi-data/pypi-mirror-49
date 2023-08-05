@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: blobfile
+Version: 0.2.3
+Summary: Read GCS and local paths with the same interface, clone of tensorflow.io.gfile
+Home-page: https://github.com/cshesse/blobfile
+Author: Christopher Hesse
+License: Public Domain
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: google-cloud-storage (~=1.16)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: tensorflow ; extra == 'dev'
+Requires-Dist: imageio ; extra == 'dev'
+Requires-Dist: imageio-ffmpeg ; extra == 'dev'
+
+# blobfile
+
+This is a standalone clone of TensorFlow's [`gfile`](https://www.tensorflow.org/api_docs/python/tf/io/gfile/GFile), supporting both local paths, `gs://` paths, and `http://` paths.
+
+Writing to a remote path will not actually perform the write incrementally, so don't write to a log file this way.  By default reads and writes are streamed, set `streaming=False` to `BlobFile` to do a single copy operation per file instead.
+
+The main function is `BlobFile`, a replacement for `GFile`.  There are also a few additional functions, `basename`, `dirname`, and `join`, which mostly do the same thing as their `os.path` namesakes, only they also support `gs://` paths.  There are also a few extra functions:
+
+* `cache_key` - returns a cache key that can be used for the path (this is not guaranteed to change when the content changes, but should hopefully do that)
+* `get_url` - returns a url for a path
+* `md5` - get the md5 hash for a path, for GCS this is fast, but for other backends this may be slow
+* `set_log_callback` - set a log callback function `log(msg: string)` to use instead of printing to stdout
+
+A number of existing `gfile` functions are currently not implemented.
+

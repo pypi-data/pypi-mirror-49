@@ -1,0 +1,13 @@
+pyidi/__init__.py,sha256=O1HPuoMZtL0nYrS90H3Hom3Ldf-vplemffhCZiBq8g8,41
+pyidi/pyidi.py,sha256=Fmt2-Ijnp3lQ_-juy03KRLT47phafwbvXmmiHJIUTwU,5408
+pyidi/tools.py,sha256=lCwZj1nKTVMCVmg4rNif_hJjmfdfNpE_4hlDt5mAj60,14229
+pyidi/methods/__init__.py,sha256=iDI7qK3J2i-roYuWfyyTn15NU3y6eClw84eFOf-VUNQ,202
+pyidi/methods/_gradient_based_optical_flow.py,sha256=iAA0NGkwrwlqM8u_Zq-llx1HSuNbiXRrp453kO7Njo4,7249
+pyidi/methods/_lucas_kanade.py,sha256=LKRsNayHlvLLAQed87ZHRLB1wPuacLbRfTK5gQuJ884,7758
+pyidi/methods/_simplified_optical_flow.py,sha256=c17VpEfZjfzTzhjSH_peMIGR_XelGruVp7NdfTF2QGU,14714
+pyidi/methods/idi_method.py,sha256=X3J9a6HzxBz-_-59pz6kORiBTBeyzHSnbAMlTELvoyo,783
+pyidi-0.18.dist-info/LICENSE,sha256=wGGczO2_nbXdFVcp5g_tyXAQfnGkfdrkdTDv0oyAeZQ,1091
+pyidi-0.18.dist-info/METADATA,sha256=sxMrtZdiGj9qnR0te2uvT0MDkAoNDZeccqJoo1KdmeU,773
+pyidi-0.18.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pyidi-0.18.dist-info/top_level.txt,sha256=YmN2l2UuzCQI7ji2wpEX4xYJnAC469w8ohhsbu1ukmo,6
+pyidi-0.18.dist-info/RECORD,,

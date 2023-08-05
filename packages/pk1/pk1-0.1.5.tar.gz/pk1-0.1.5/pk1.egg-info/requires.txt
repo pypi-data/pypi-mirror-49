@@ -1,0 +1,16 @@
+django>=2.2
+uwsgi
+ambari
+django-admin-auto
+djangorestframework
+djangorestframework-simplejwt
+django-filter
+django-jet-opt
+psycopg2-binary
+coreapi
+paramiko
+scp
+django-cors-headers==2.4.0
+python-novaclient
+python-cinderclient
+django-autocomplete-light

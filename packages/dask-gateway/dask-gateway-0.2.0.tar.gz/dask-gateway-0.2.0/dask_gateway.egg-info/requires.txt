@@ -1,0 +1,6 @@
+tornado
+dask>=2.0.0
+distributed>=2.0.0
+
+[kerberos]
+pykerberos

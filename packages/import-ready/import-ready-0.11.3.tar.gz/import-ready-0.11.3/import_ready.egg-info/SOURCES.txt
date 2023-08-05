@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+huntsville_havoc/__init__.py
+huntsville_havoc/origins.py
+import_ready.egg-info/PKG-INFO
+import_ready.egg-info/SOURCES.txt
+import_ready.egg-info/dependency_links.txt
+import_ready.egg-info/not-zip-safe
+import_ready.egg-info/requires.txt
+import_ready.egg-info/top_level.txt

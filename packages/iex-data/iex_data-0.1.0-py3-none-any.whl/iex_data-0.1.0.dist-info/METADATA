@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: iex-data
+Version: 0.1.0
+Summary: API Client library for IEX market data
+Home-page: https://github.com/aolsux/iex-data
+Author: Martin Rückl
+Author-email: rueckl@xelonic.com
+License: Apache 2.0
+Download-URL: https://pypi.org/project/iex-data
+Keywords: finance data api client stream rest http
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7.*
+Requires-Dist: requests (>=2.21.0)
+Requires-Dist: socketIO-client-nexus (>=0.7.6)
+Requires-Dist: ujson (>=1.35)
+Requires-Dist: retry (>=0.9.2)
+Provides-Extra: dev
+Requires-Dist: requests (>=2.21.0) ; extra == 'dev'
+Requires-Dist: socketIO-client-nexus (>=0.7.6) ; extra == 'dev'
+Requires-Dist: ujson (>=1.35) ; extra == 'dev'
+Requires-Dist: retry (>=0.9.2) ; extra == 'dev'
+Requires-Dist: unittest ; extra == 'dev'
+
+UNKNOWN
+
+

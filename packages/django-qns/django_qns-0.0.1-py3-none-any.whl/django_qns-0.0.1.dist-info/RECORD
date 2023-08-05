@@ -1,0 +1,9 @@
+storage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+storage/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+storage/backends/qiniu_storage.py,sha256=Ef7CqzuT0JHG1N4GBJd5-nSW2VoW1dF9Wvo8lkuBl10,7267
+storage/backends/utils.py,sha256=HmI4zY-baA9waPumHpHsxOfujBvjgxGCmVpr-oG2RhQ,1475
+django_qns-0.0.1.dist-info/LICENSE,sha256=5cJo2uf8wFRD3apThuNFZvxyV_ZM7b5TQqrdkmrE3gc,1083
+django_qns-0.0.1.dist-info/METADATA,sha256=7kWRn_eTRTC6yZwIcytgU1eQ0B-skGicSx6rmg6euO4,1068
+django_qns-0.0.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+django_qns-0.0.1.dist-info/top_level.txt,sha256=yphqphSuwRzNyEfTnt0xnNv02quslUAR1yj7mKZ_KxI,8
+django_qns-0.0.1.dist-info/RECORD,,

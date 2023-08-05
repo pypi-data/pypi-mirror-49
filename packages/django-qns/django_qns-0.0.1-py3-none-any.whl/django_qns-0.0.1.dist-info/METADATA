@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: django-qns
+Version: 0.0.1
+Summary: add qiniuyun storage support for Django
+Home-page: https://github.com/YuanBLQ/django-qns
+Author: Yuan
+Author-email: 
+License: MIT License
+Keywords: django,qiniu,qiniuyun,qiniucloud,storage
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: request (>=2.5.0)
+Requires-Dist: qiniu (>=7.2.6)
+
+# Django QiNiu Cloud Storage
+add qiniu cloud support for Django
+
+## install
+```
+pip install django-qns
+```
+
+## usage
+change the default storage to django-qns:
+```
+STATICFILES_STORAGE = 'storage.backends.qiniu_storage.QiNiuStorage'
+```
+or
+```
+DEFAULT_FILE_STORAGE = 'storage.backends.qiniu_storage.QiNiuStorage'
+```
+
+add configure to the django-qns in `settings.py`:
+```
+QINIU_STORAGE = {
+    'access_key': 'ak',
+    'secret_key': 'sk',
+    'bucket_name': 'your bucket name',
+    'domain': 'http://example.com',
+    'prefix': 'some-prefix'
+}
+```
+
+

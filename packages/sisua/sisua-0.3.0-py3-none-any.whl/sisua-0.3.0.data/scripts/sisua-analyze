@@ -1,0 +1,5 @@
+#!/data1/libs/miniconda3/envs/ai/bin/python
+from sisua.analyze import main
+
+if __name__ == "__main__":
+  main()

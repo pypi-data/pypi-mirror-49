@@ -1,0 +1,12 @@
+numdoclint/__init__.py,sha256=Rx3-7qjrznt7qYDGRL_6SO7l7T559x-BeC4S9tG6Zkc,975
+numdoclint/helper.py,sha256=ihOx92c4Zo_F47CUZ-Or0eQfteR9BYZyRfhIbnN0HdI,39977
+numdoclint/py_module.py,sha256=HK2X4bWA0uyGZrP8j1ilxU2WsxMdAA1wDP4jCex7xkg,36537
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_helper.py,sha256=6wuq5T8VGPiBexgTiKrzPGp74_AbPv0m2ST82Jz_ygE,41650
+tests/test_numdoclint.py,sha256=rLs4ekc0kzSj9EdrGbv0zEudCDhCCZsmAnJwquRC3co,1067
+tests/test_py_module.py,sha256=enWTPBWQd4k-HBa8QYzm2Vbyi6ZGXkGggdvlHw0rY9E,38344
+numdoclint-0.0.8.dist-info/LICENSE,sha256=1PMvQ4CbGd1a8I0AdLBQqqUzsrOS7nJCOxHqIKbe8lQ,1085
+numdoclint-0.0.8.dist-info/METADATA,sha256=jW2cnrCD781MEOmtehyQYVW_LNQ2RZigXow42YrBEz0,679
+numdoclint-0.0.8.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+numdoclint-0.0.8.dist-info/top_level.txt,sha256=8WK5Gno7gYidRL4qvX6aWeze0Ncteohp_QcqXGZ_F1Q,17
+numdoclint-0.0.8.dist-info/RECORD,,

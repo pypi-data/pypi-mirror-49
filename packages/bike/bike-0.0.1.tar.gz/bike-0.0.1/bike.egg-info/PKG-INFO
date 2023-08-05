@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bike
+Version: 0.0.1
+Summary: A nice model
+Home-page: https://gitlab.com/manasseslima/bike
+Author: Manasses Lima
+Author-email: manasseslima@gmail.com
+License: MIT
+Description: # Bike
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

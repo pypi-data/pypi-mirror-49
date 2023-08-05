@@ -1,0 +1,17 @@
+[2019-05-09 17:25:14,791] INFO::(21180 13480)::KafkaHandler(<module>:317): logger info message
+[2019-05-09 17:25:14,978] WARNING::(21180 13480)::KafkaHandler(<module>:318): logger warning message
+[2019-05-09 17:25:15,009] ERROR::(21180 13480)::KafkaHandler(<module>:319): logger error message
+[2019-05-09 17:26:03,738] INFO::(13752 1412)::KafkaHandler(<module>:198): logger info message
+[2019-05-09 17:26:33,336] INFO::(21032 14248)::KafkaHandler(<module>:193): logger info message
+[2019-05-09 17:28:14,065] INFO::(5832 20392)::KafkaHandler(<module>:246): logger info message
+[2019-05-09 17:28:25,968] INFO::(5404 2356)::KafkaHandler(<module>:247): logger info message
+[2019-05-09 17:28:53,302] INFO::(19416 23964)::KafkaHandler(<module>:248): logger info message
+[2019-05-09 17:32:42,676] INFO::(20168 9024)::KafkaHandler(<module>:253): logger info message
+[2019-05-09 17:33:05,473] INFO::(5404 16684)::KafkaHandler(<module>:253): logger info message
+[2019-05-09 17:33:19,768] INFO::(17288 14772)::KafkaHandler(<module>:253): logger info message
+[2019-05-09 17:33:29,748] INFO::(16420 21576)::KafkaHandler(<module>:253): logger info message
+[2019-05-09 17:33:49,900] INFO::(14996 17640)::KafkaHandler(<module>:253): logger info message
+[2019-05-09 17:34:13,586] INFO::(16072 14016)::KafkaHandler(<module>:253): logger info message
+[2019-05-09 17:36:24,477] INFO::(3228 15776)::KafkaHandler(<module>:193): logger info message
+[2019-05-09 17:36:24,575] WARNING::(3228 15776)::KafkaHandler(<module>:194): logger warning message
+[2019-05-09 17:36:24,606] ERROR::(3228 15776)::KafkaHandler(<module>:195): logger error message

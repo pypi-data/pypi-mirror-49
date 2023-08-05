@@ -1,0 +1,16 @@
+numpy
+scipy
+tensorflow
+matplotlib
+pandas
+seaborn
+imageio
+joblib
+tqdm
+attrs
+snakemake
+searchstims>=2.2.0
+
+[dev]
+jupytext
+cite2c

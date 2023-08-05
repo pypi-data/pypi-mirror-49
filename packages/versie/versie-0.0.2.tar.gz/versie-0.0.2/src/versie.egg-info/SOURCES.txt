@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+src/versie/__init__.py
+src/versie/cli.py
+src/versie.egg-info/PKG-INFO
+src/versie.egg-info/SOURCES.txt
+src/versie.egg-info/dependency_links.txt
+src/versie.egg-info/entry_points.txt
+src/versie.egg-info/not-zip-safe
+src/versie.egg-info/requires.txt
+src/versie.egg-info/top_level.txt

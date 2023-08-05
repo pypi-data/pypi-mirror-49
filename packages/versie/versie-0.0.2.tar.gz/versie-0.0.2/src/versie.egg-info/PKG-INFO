@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: versie
+Version: 0.0.2
+Summary: Client for the versie project
+Home-page: https://github.com/labd/versicator-client
+Author: Lab Digital
+Author-email: opensource@labdigital.nl
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.7
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: test
+Provides-Extra: docs

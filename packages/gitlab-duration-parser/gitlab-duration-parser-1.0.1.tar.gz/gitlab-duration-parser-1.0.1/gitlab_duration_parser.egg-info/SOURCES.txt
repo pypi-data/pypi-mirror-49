@@ -1,0 +1,15 @@
+.gitignore
+.travis.yml
+CHANGELOG.md
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tox.ini
+gitlab_duration_parser/__init__.py
+gitlab_duration_parser/_parser.py
+gitlab_duration_parser.egg-info/PKG-INFO
+gitlab_duration_parser.egg-info/SOURCES.txt
+gitlab_duration_parser.egg-info/dependency_links.txt
+gitlab_duration_parser.egg-info/top_level.txt
+tests/test_duration_parser.py

@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: sopel-modules.quiz
+Version: 0.1.0
+Summary: A quiz using questions from jservice.io
+Home-page: https://github.com/shanedabes/sopel-quiz
+Author: Shane Donohoe
+Author-email: shane@donohoe.cc
+License: Eiffel Forum License, version 2
+Description: # sopel-quiz
+        Quiz module for the sopel irc bot, using questions from jservice.io
+        
+        
+        
+Platform: UNKNOWN

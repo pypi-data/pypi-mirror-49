@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: spyprot
+Version: 0.0.1.1
+Summary: Rapid protein overview from multiple databases
+Home-page: https://github.com/Zedelghem/spyProt
+Author: Borys Jastrzębski, Paweł Rubach
+Author-email: b.jastrzebski@cent.uw.edu.pl, p.rubach@cent.uw.edu.pl
+License: UNKNOWN
+Description: # spyProt
+        Rapid protein overview from multiple databases
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

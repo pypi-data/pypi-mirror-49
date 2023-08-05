@@ -1,0 +1,4 @@
+torch>=1.1.0
+tqdm
+test-tube>=0.653
+tensorflow>=1.14.0

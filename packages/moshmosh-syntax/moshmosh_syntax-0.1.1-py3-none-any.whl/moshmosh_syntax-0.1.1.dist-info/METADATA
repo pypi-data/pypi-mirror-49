@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: moshmosh-syntax
+Version: 0.1.1
+Summary: A hygienic syntax extension system for Python
+Home-page: https://github.com/thautwarm/moshmosh
+Author: thautwarm
+Author-email: twshere@outlook.com
+License: mit
+Keywords: syntax extension,macro,pattern matching
+Platform: any
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: uncompyle6
+
+# Moshmosh
+
+![example.png](https://raw.githubusercontent.com/thautwarm/moshmosh/master/example.png)
+
+The TRUE implementation of pattern matching for Python.
+
+For more than pattern matching, check `syntax_rule.py`.
+
+```python
+@syntax_rule(pattern_matching)
+def f(x, r=1):
+    with match(x):
+        if case[0]: return 1
+        if case[x]: return f(x-1, r * x)
+
+return f(10)
+```
+
+# Features
+
+- [x] Tree pattern matching: `if C1(C2(1), ""): ...`
+
+- [x] Unlike projects using `inspect.getsource`, syntax extensions are achieved without evil IO operations or requiring source files.
+
+- [x] Literal patterns:
+    - [x] string, number and other constant patterns
+    - [x] tuple, list patterns
+
+- [x] Provided with the capabilities to customize semantics of python syntaxes.
+
+# Benchmarks
+
+Check benchmark.py.
+
+Although Pampy is much weaker than moshmosh, it's also much slower than moshmosh :) .
+Note tha moshmosh is currently a simple prototype implemented in few hours.
+
+Thus we can safely conclude, **A true one is always better than the fakers**.
+
+## Acknowledgements
+
+See [older implementations](http://www.grantjenks.com/docs/patternmatching/#alternative-packages) and search "pattern matching" in [Python-ideas](https://mail.python.org/archives/list/python-ideas@python.org/).
+
+Salute all the people used to work for Python pattern matching.
+

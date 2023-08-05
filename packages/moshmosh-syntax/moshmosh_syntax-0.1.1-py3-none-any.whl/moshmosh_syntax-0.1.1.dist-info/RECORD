@@ -1,0 +1,10 @@
+moshmosh/__init__.py,sha256=RGXN2-DR7UwLtYWlfOxObIELqFui4ozDuShPEvacSWU,83
+moshmosh/ast_compat.py,sha256=wdUQF38dTIVu8051r053YLXQ9eX7IiApcWAnoPPhIVw,1578
+moshmosh/pattern_matching.py,sha256=_LWkcFVHgsL0sGyzY0rUoxxyrqUx36CMuLATk3gPzbI,8478
+moshmosh/syntax_rule.py,sha256=z6R-090K1EhD6HbosHlP_RCT0oYa_ZbZdH1ceo8rz0Y,3879
+moshmosh_syntax-0.1.1.dist-info/LICENSE,sha256=V3Z_zXjyXn1JXbDHxkjKGGxWVtiTTxR-3dXAjlfNB7c,1094
+moshmosh_syntax-0.1.1.dist-info/METADATA,sha256=k50vhv2_b-OVAtX0I9NS9E_aEOPcbIA1nbMc9956U20,1997
+moshmosh_syntax-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+moshmosh_syntax-0.1.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+moshmosh_syntax-0.1.1.dist-info/top_level.txt,sha256=xiyqlKIxkvhLGCHGIuBE9freaSF8VksAuiwrmZmHcT4,9
+moshmosh_syntax-0.1.1.dist-info/RECORD,,

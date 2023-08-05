@@ -1,0 +1,32 @@
+import {Component} from "@angular/core";
+import {
+    ComponentLifecycleEventEmitter,
+    TupleDataObserverService,
+    TupleSelector
+} from "@synerty/vortexjs";
+import {diagramFilt} from "@peek/peek_plugin_diagram/_private";
+import {DiagramImporterStatusTuple} from "@peek/peek_plugin_diagram/_private/admin";
+import {Ng2BalloonMsgService} from "@synerty/ng2-balloon-msg";
+
+
+@Component({
+    selector: 'pl-diagram-status',
+    templateUrl: './status.component.html'
+})
+export class StatusComponent extends ComponentLifecycleEventEmitter {
+
+    item: DiagramImporterStatusTuple = new DiagramImporterStatusTuple();
+
+    constructor(private balloonMsg: Ng2BalloonMsgService,
+                private tupleObserver: TupleDataObserverService) {
+        super();
+
+        let ts = new TupleSelector(DiagramImporterStatusTuple.tupleName, {});
+        this.tupleObserver.subscribeToTupleSelector(ts)
+            .takeUntil(this.onDestroyEvent)
+            .subscribe((tuples: DiagramImporterStatusTuple[]) => this.item = tuples[0]);
+
+    }
+
+
+}

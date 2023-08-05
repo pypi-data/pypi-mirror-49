@@ -1,0 +1,9 @@
+pylint
+Flask-SQLAlchemy>=2
+
+[dev]
+black
+bump2version
+gitchangelog
+pystache
+mypy

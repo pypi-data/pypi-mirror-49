@@ -1,0 +1,10 @@
+phySyncFirmata/__init__.py,sha256=EKOSwSvaRAXAGALzS5_tzSdkv_SsBUb4dSS0AL_1zkg,1560
+phySyncFirmata/boards.py,sha256=5BE6xrrIlcwF4-ijb15xkPg-emdLxpzeJYiQjIQmshQ,990
+phySyncFirmata/mockup.py,sha256=VCXxiei1pnWHMQ9o5j-C21tmFfIPtCrBJYyBLHseCmM,4214
+phySyncFirmata/phySyncFirmata.py,sha256=YZY1ityqGZVUDOSHlppCo3KZeGOZoGLZMuzY1SL8yWw,25963
+phySyncFirmata/util.py,sha256=T4e5hLXBWUhyURkSd6_18t8EJ07pftHOQDqPoIm7adQ,7591
+phySyncFirmata-3.0.3.dist-info/LICENSE,sha256=RVCdBPJFGgrDTuDA8YjBuGzyJkl137tXGHa_36f7oQE,1134
+phySyncFirmata-3.0.3.dist-info/METADATA,sha256=UNTEGlVtf_Q5UQOuZdEjCgSpYMDxSUObHa-lO5pTFDo,598
+phySyncFirmata-3.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+phySyncFirmata-3.0.3.dist-info/top_level.txt,sha256=QTuBRLgI6lndtLaVX8JFu_TrI0vLPoj1yEkfBkR1cqk,15
+phySyncFirmata-3.0.3.dist-info/RECORD,,

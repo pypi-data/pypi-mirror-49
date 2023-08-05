@@ -1,0 +1,10 @@
+README.md
+i3_resurrect.py
+setup.py
+util.py
+i3_resurrect.egg-info/PKG-INFO
+i3_resurrect.egg-info/SOURCES.txt
+i3_resurrect.egg-info/dependency_links.txt
+i3_resurrect.egg-info/entry_points.txt
+i3_resurrect.egg-info/requires.txt
+i3_resurrect.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+noop_timer.py
+pyproject.toml
+setup.cfg
+tox.ini
+noop_timer.egg-info/PKG-INFO
+noop_timer.egg-info/SOURCES.txt
+noop_timer.egg-info/dependency_links.txt
+noop_timer.egg-info/requires.txt
+noop_timer.egg-info/top_level.txt

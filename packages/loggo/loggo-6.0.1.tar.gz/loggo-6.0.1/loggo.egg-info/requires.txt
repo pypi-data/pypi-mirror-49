@@ -1,0 +1,2 @@
+graypy<1.2.0,>=1.1.2
+typing-extensions<4.0.0,>=3.7.4

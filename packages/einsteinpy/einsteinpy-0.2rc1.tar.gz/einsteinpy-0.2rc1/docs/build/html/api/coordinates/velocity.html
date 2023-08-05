@@ -1,0 +1,479 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>velocity module &#8212; EinsteinPy</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Constant module" href="../constant.html" />
+    <link rel="prev" title="core module" href="core.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="core.html" title="Previous document">core module</a>
+        </li>
+        <li>
+          <a href="../constant.html" title="Next document">Constant module</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="velocity-module">
+<h1>velocity module<a class="headerlink" href="#velocity-module" title="Permalink to this headline">¶</a></h1>
+<p>This module contains the basic classes for time differentials of coordinate systems and the transformations:</p>
+<span class="target" id="module-einsteinpy.coordinates.velocity"></span><dl class="class">
+<dt id="einsteinpy.coordinates.velocity.CartesianDifferential">
+<em class="property">class </em><code class="descclassname">einsteinpy.coordinates.velocity.</code><code class="descname">CartesianDifferential</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z</em>, <em>v_x</em>, <em>v_y</em>, <em>v_z</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.CartesianDifferential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for calculating and transforming the velocity in Cartesian coordinates.</p>
+<p>Constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>z</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>v_x</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>v_y</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>v_z</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="einsteinpy.coordinates.velocity.CartesianDifferential.si_values">
+<code class="descname">si_values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.CartesianDifferential.si_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for returning values in SI units.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Array containing values in SI units (m, m, m, m/s, m/s, m/s)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.16)">ndarray</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.velocity.CartesianDifferential.velocities">
+<code class="descname">velocities</code><span class="sig-paren">(</span><em>return_np=False</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.CartesianDifferential.velocities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for returning velocity.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>return_np</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True for numpy array with SI values, False for list with astropy units.
+Defaults to False</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Array or list containing velocity.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.16)">ndarray</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)">list</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.velocity.CartesianDifferential.spherical_differential">
+<code class="descname">spherical_differential</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.CartesianDifferential.spherical_differential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to convert velocity to spherical coordinates velocity</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Spherical representation of the velocity in Cartesian Coordinates.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#einsteinpy.coordinates.velocity.SphericalDifferential" title="einsteinpy.coordinates.velocity.SphericalDifferential">SphericalDifferential</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.velocity.CartesianDifferential.bl_differential">
+<code class="descname">bl_differential</code><span class="sig-paren">(</span><em>a</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.CartesianDifferential.bl_differential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to convert velocity to Boyer-Lindquist coordinates</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>a</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – a = J/Mc , the angular momentum per unit mass of the black hole per speed of light.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Boyer-Lindquist representation of the velocity in Cartesian Coordinates.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#einsteinpy.coordinates.velocity.BoyerLindquistDifferential" title="einsteinpy.coordinates.velocity.BoyerLindquistDifferential">BoyerLindquistDifferential</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="einsteinpy.coordinates.velocity.SphericalDifferential">
+<em class="property">class </em><code class="descclassname">einsteinpy.coordinates.velocity.</code><code class="descname">SphericalDifferential</code><span class="sig-paren">(</span><em>r</em>, <em>theta</em>, <em>phi</em>, <em>v_r</em>, <em>v_t</em>, <em>v_p</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.SphericalDifferential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for calculating and transforming the velocity in Spherical coordinates.</p>
+<p>Constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>r</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>theta</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>phi</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>v_r</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>v_t</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>v_p</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="einsteinpy.coordinates.velocity.SphericalDifferential.si_values">
+<code class="descname">si_values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.SphericalDifferential.si_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for returning values in SI units.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Array containing values in SI units (m, rad, rad, m/s, rad/s, rad/s)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.16)">ndarray</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.velocity.SphericalDifferential.velocities">
+<code class="descname">velocities</code><span class="sig-paren">(</span><em>return_np=False</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.SphericalDifferential.velocities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for returning velocity.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>return_np</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True for numpy array with SI values, False for list with astropy units.
+Defaults to False</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Array or list containing velocity.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.16)">ndarray</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)">list</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.velocity.SphericalDifferential.cartesian_differential">
+<code class="descname">cartesian_differential</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.SphericalDifferential.cartesian_differential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to convert velocity to cartesian coordinates</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Cartesian representation of the velocity in Spherical Coordinates.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#einsteinpy.coordinates.velocity.CartesianDifferential" title="einsteinpy.coordinates.velocity.CartesianDifferential">CartesianDifferential</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.velocity.SphericalDifferential.bl_differential">
+<code class="descname">bl_differential</code><span class="sig-paren">(</span><em>a</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.SphericalDifferential.bl_differential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to convert velocity to Boyer-Lindquist coordinates</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>a</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – a = J/Mc , the angular momentum per unit mass of the black hole per speed of light.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Boyer-Lindquist representation of the velocity in Spherical Coordinates.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#einsteinpy.coordinates.velocity.BoyerLindquistDifferential" title="einsteinpy.coordinates.velocity.BoyerLindquistDifferential">BoyerLindquistDifferential</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="einsteinpy.coordinates.velocity.BoyerLindquistDifferential">
+<em class="property">class </em><code class="descclassname">einsteinpy.coordinates.velocity.</code><code class="descname">BoyerLindquistDifferential</code><span class="sig-paren">(</span><em>r</em>, <em>theta</em>, <em>phi</em>, <em>v_r</em>, <em>v_t</em>, <em>v_p</em>, <em>a</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.BoyerLindquistDifferential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for calculating and transforming the velocity in Boyer-Lindquist coordinates</p>
+<p>Constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>r</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>theta</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>phi</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>v_r</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>v_t</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>v_p</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>a</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="einsteinpy.coordinates.velocity.BoyerLindquistDifferential.si_values">
+<code class="descname">si_values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.BoyerLindquistDifferential.si_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for returning values in SI units.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Array containing values in SI units (m, rad, rad, m/s, rad/s, rad/s)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.16)">ndarray</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.velocity.BoyerLindquistDifferential.velocities">
+<code class="descname">velocities</code><span class="sig-paren">(</span><em>return_np=False</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.BoyerLindquistDifferential.velocities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for returning velocity.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>return_np</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True for numpy array with SI values, False for list with astropy units.
+Defaults to False</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Array or list containing velocity.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.16)">ndarray</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)">list</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.velocity.BoyerLindquistDifferential.cartesian_differential">
+<code class="descname">cartesian_differential</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.BoyerLindquistDifferential.cartesian_differential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to convert velocity to cartesian coordinates</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Cartesian representation of the velocity in Boyer-Lindquist Coordinates.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#einsteinpy.coordinates.velocity.CartesianDifferential" title="einsteinpy.coordinates.velocity.CartesianDifferential">CartesianDifferential</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.velocity.BoyerLindquistDifferential.spherical_differential">
+<code class="descname">spherical_differential</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.velocity.BoyerLindquistDifferential.spherical_differential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to convert velocity to spherical coordinates</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Spherical representation of the velocity in Boyer-Lindquist Coordinates.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#einsteinpy.coordinates.velocity.SphericalDifferential" title="einsteinpy.coordinates.velocity.SphericalDifferential">SphericalDifferential</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="core.html" title="Previous document">core module</a>
+        </li>
+        <li>
+          <a href="../constant.html" title="Next document">Constant module</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../../index.html">
+    <img class="logo" src="../../_static/logo_small.png" alt="Logo"/>
+    
+    <h1 class="logo logo-name">EinsteinPy</h1>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">General Relativity in Python</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=einsteinpy&repo=einsteinpy&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a href="https://travis-ci.org/einsteinpy/einsteinpy">
+    <img
+        alt="https://secure.travis-ci.org/einsteinpy/einsteinpy.svg?branch=master"
+        src="https://secure.travis-ci.org/einsteinpy/einsteinpy.svg?branch=master"
+    />
+</a>
+</p>
+
+
+
+
+    
+
+<p>
+<a href="https://codecov.io/github/einsteinpy/einsteinpy">
+    <img
+    alt="https://codecov.io/github/einsteinpy/einsteinpy/coverage.svg?branch=master"
+    src="https://codecov.io/github/einsteinpy/einsteinpy/coverage.svg?branch=master"
+    />
+</a>
+</p>
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide.html">User guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../metric.html">Vacuum Solutions to Einstein’s Field Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jupyter.html">Jupyter notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev_guide.html">Developer Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">EinsteinPy API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../integrators/integrators_index.html">Integrators module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../metric/metric_index.html">Metric module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../symbolic/symbolic_index.html">Symbolic Relativity Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hypersurface/hypersurface_index.html">Hypersurface module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/utils_index.html">Utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plotting/plotting_index.html">Plotting module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="coordinates_index.html">Coordinates module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constant.html">Constant module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../units.html">Units module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bodies.html">Bodies module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geodesic.html">Geodesic module</a></li>
+</ul>
+</li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://docs.einsteinpy.org/">Blog</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">EinsteinPy API</a><ul>
+  <li><a href="coordinates_index.html">Coordinates module</a><ul>
+      <li>Previous: <a href="core.html" title="previous chapter">core module</a></li>
+      <li>Next: <a href="../constant.html" title="next chapter">Constant module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019 EinsteinPy Development Team.
+      
+      |
+      <a href="../../_sources/api/coordinates/velocity.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/einsteinpy/einsteinpy" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,290 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ricci Tensor Module &#8212; EinsteinPy</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Hypersurface module" href="../hypersurface/hypersurface_index.html" />
+    <link rel="prev" title="Riemann Tensor Module" href="riemann.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="riemann.html" title="Previous document">Riemann Tensor Module</a>
+        </li>
+        <li>
+          <a href="../hypersurface/hypersurface_index.html" title="Next document">Hypersurface module</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="ricci-tensor-module">
+<h1>Ricci Tensor Module<a class="headerlink" href="#ricci-tensor-module" title="Permalink to this headline">¶</a></h1>
+<p>This module contains the class for obtaining Ricci Tensor
+related to a Metric belonging to any arbitrary space-time symbolically:</p>
+<span class="target" id="module-einsteinpy.symbolic.ricci"></span><dl class="class">
+<dt id="einsteinpy.symbolic.ricci.RicciTensor">
+<em class="property">class </em><code class="descclassname">einsteinpy.symbolic.ricci.</code><code class="descname">RicciTensor</code><span class="sig-paren">(</span><em>arr</em>, <em>syms</em>, <em>config='ll'</em>, <em>parent_metric=None</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.symbolic.ricci.RicciTensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for defining Ricci Tensor</p>
+<p>Constructor and Initializer</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>arr</strong> (<em>ImmutableDenseNDimArray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – Sympy Array or multi-dimensional list containing Sympy Expressions</li>
+<li><strong>syms</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)"><em>tuple</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – Tuple of crucial symbols dentoting time-axis, 1st, 2nd, and 3rd axis (t,x1,x2,x3)</li>
+<li><strong>config</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Configuration of contravariant and covariant indices in tensor. ‘u’ for upper and ‘l’ for lower indices. Defaults to ‘ll’.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a> – Raised when arr is not a list or sympy Array</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a> – syms is not a list or tuple</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> – config has more or less than 2 indices</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="einsteinpy.symbolic.ricci.RicciTensor.from_riemann">
+<em class="property">classmethod </em><code class="descname">from_riemann</code><span class="sig-paren">(</span><em>riemann</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.symbolic.ricci.RicciTensor.from_riemann" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Ricci Tensor calculated from Riemann Tensor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>riemann</strong> (<a class="reference internal" href="riemann.html#einsteinpy.symbolic.riemann.RiemannCurvatureTensor" title="einsteinpy.symbolic.riemann.RiemannCurvatureTensor"><em>RiemannCurvatureTensor</em></a>) – Riemann Tensor</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="einsteinpy.symbolic.ricci.RicciTensor.from_christoffels">
+<em class="property">classmethod </em><code class="descname">from_christoffels</code><span class="sig-paren">(</span><em>chris</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.symbolic.ricci.RicciTensor.from_christoffels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Ricci Tensor calculated from Christoffel Tensor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>chris</strong> (<a class="reference internal" href="christoffel.html#einsteinpy.symbolic.christoffel.ChristoffelSymbols" title="einsteinpy.symbolic.christoffel.ChristoffelSymbols"><em>ChristoffelSymbols</em></a>) – Christoffel Tensor</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="einsteinpy.symbolic.ricci.RicciTensor.from_metric">
+<em class="property">classmethod </em><code class="descname">from_metric</code><span class="sig-paren">(</span><em>metric</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.symbolic.ricci.RicciTensor.from_metric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Ricci Tensor calculated from Metric Tensor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>metric</strong> (<a class="reference internal" href="metric.html#einsteinpy.symbolic.metric.MetricTensor" title="einsteinpy.symbolic.metric.MetricTensor"><em>MetricTensor</em></a>) – Metric Tensor</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.symbolic.ricci.RicciTensor.symbols">
+<code class="descname">symbols</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.symbolic.ricci.RicciTensor.symbols" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the symbols used for defining the time &amp; spacial axis</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">tuple containing (x1,x2)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)">tuple</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="riemann.html" title="Previous document">Riemann Tensor Module</a>
+        </li>
+        <li>
+          <a href="../hypersurface/hypersurface_index.html" title="Next document">Hypersurface module</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../../index.html">
+    <img class="logo" src="../../_static/logo_small.png" alt="Logo"/>
+    
+    <h1 class="logo logo-name">EinsteinPy</h1>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">General Relativity in Python</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=einsteinpy&repo=einsteinpy&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a href="https://travis-ci.org/einsteinpy/einsteinpy">
+    <img
+        alt="https://secure.travis-ci.org/einsteinpy/einsteinpy.svg?branch=master"
+        src="https://secure.travis-ci.org/einsteinpy/einsteinpy.svg?branch=master"
+    />
+</a>
+</p>
+
+
+
+
+    
+
+<p>
+<a href="https://codecov.io/github/einsteinpy/einsteinpy">
+    <img
+    alt="https://codecov.io/github/einsteinpy/einsteinpy/coverage.svg?branch=master"
+    src="https://codecov.io/github/einsteinpy/einsteinpy/coverage.svg?branch=master"
+    />
+</a>
+</p>
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide.html">User guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../metric.html">Vacuum Solutions to Einstein’s Field Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jupyter.html">Jupyter notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev_guide.html">Developer Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">EinsteinPy API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../integrators/integrators_index.html">Integrators module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../metric/metric_index.html">Metric module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="symbolic_index.html">Symbolic Relativity Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hypersurface/hypersurface_index.html">Hypersurface module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/utils_index.html">Utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plotting/plotting_index.html">Plotting module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coordinates/coordinates_index.html">Coordinates module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constant.html">Constant module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../units.html">Units module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bodies.html">Bodies module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geodesic.html">Geodesic module</a></li>
+</ul>
+</li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://docs.einsteinpy.org/">Blog</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">EinsteinPy API</a><ul>
+  <li><a href="symbolic_index.html">Symbolic Relativity Module</a><ul>
+      <li>Previous: <a href="riemann.html" title="previous chapter">Riemann Tensor Module</a></li>
+      <li>Next: <a href="../hypersurface/hypersurface_index.html" title="next chapter">Hypersurface module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019 EinsteinPy Development Team.
+      
+      |
+      <a href="../../_sources/api/symbolic/ricci.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/einsteinpy/einsteinpy" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

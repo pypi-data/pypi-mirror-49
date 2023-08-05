@@ -1,0 +1,447 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>core module &#8212; EinsteinPy</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="velocity module" href="velocity.html" />
+    <link rel="prev" title="Coordinates module" href="coordinates_index.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="coordinates_index.html" title="Previous document">Coordinates module</a>
+        </li>
+        <li>
+          <a href="velocity.html" title="Next document">velocity module</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="core-module">
+<h1>core module<a class="headerlink" href="#core-module" title="Permalink to this headline">¶</a></h1>
+<p>This module contains the basic classes for coordinate systems and their position transformation:</p>
+<span class="target" id="module-einsteinpy.coordinates.core"></span><dl class="class">
+<dt id="einsteinpy.coordinates.core.Cartesian">
+<em class="property">class </em><code class="descclassname">einsteinpy.coordinates.core.</code><code class="descname">Cartesian</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.Cartesian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for Cartesian Coordinates and related transformations.</p>
+<p>Constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>y</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>z</strong> (<em>Qauntity</em>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="einsteinpy.coordinates.core.Cartesian.si_values">
+<code class="descname">si_values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.Cartesian.si_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for returning values in SI units.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Array containing values in SI units (m, m, m)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.16)">ndarray</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.core.Cartesian.norm">
+<code class="descname">norm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.Cartesian.norm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for finding euclidean norm of a vector.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Euclidean norm with units.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)">Quantity</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.core.Cartesian.dot">
+<code class="descname">dot</code><span class="sig-paren">(</span><em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.Cartesian.dot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dot product of two vectors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>target</strong> (<em>Cartesian</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dot product with units</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)">Quantity</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.core.Cartesian.to_spherical">
+<code class="descname">to_spherical</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.Cartesian.to_spherical" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method for conversion to spherical coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Spherical representation of the Cartesian Coordinates.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#einsteinpy.coordinates.core.Spherical" title="einsteinpy.coordinates.core.Spherical">Spherical</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.core.Cartesian.to_bl">
+<code class="descname">to_bl</code><span class="sig-paren">(</span><em>a</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.Cartesian.to_bl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method for conversion to boyer-lindquist coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>a</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – a = J/Mc , the angular momentum per unit mass of the black hole per speed of light.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">BL representation of the Cartesian Coordinates.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#einsteinpy.coordinates.core.BoyerLindquist" title="einsteinpy.coordinates.core.BoyerLindquist">BoyerLindquist</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="einsteinpy.coordinates.core.Spherical">
+<em class="property">class </em><code class="descclassname">einsteinpy.coordinates.core.</code><code class="descname">Spherical</code><span class="sig-paren">(</span><em>r</em>, <em>theta</em>, <em>phi</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.Spherical" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for Spherical Coordinates and related transformations.</p>
+<p>Constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>r</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>theta</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>phi</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="einsteinpy.coordinates.core.Spherical.si_values">
+<code class="descname">si_values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.Spherical.si_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for returning values in SI units.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Array containing values in SI units (m, rad, rad)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.16)">ndarray</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.core.Spherical.to_cartesian">
+<code class="descname">to_cartesian</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.Spherical.to_cartesian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method for conversion to cartesian coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Cartesian representation of the Spherical Coordinates.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#einsteinpy.coordinates.core.Cartesian" title="einsteinpy.coordinates.core.Cartesian">Cartesian</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.core.Spherical.to_bl">
+<code class="descname">to_bl</code><span class="sig-paren">(</span><em>a</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.Spherical.to_bl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method for conversion to boyer-lindquist coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>a</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – a = J/Mc , the angular momentum per unit mass of the black hole per speed of light.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">BL representation of the Spherical Coordinates.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#einsteinpy.coordinates.core.BoyerLindquist" title="einsteinpy.coordinates.core.BoyerLindquist">BoyerLindquist</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="einsteinpy.coordinates.core.BoyerLindquist">
+<em class="property">class </em><code class="descclassname">einsteinpy.coordinates.core.</code><code class="descname">BoyerLindquist</code><span class="sig-paren">(</span><em>r</em>, <em>theta</em>, <em>phi</em>, <em>a</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.BoyerLindquist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for Spherical Coordinates and related transformations.</p>
+<p>Constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>r</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>theta</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>phi</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+<li><strong>a</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="einsteinpy.coordinates.core.BoyerLindquist.si_values">
+<code class="descname">si_values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.BoyerLindquist.si_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for returning values in SI units.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Array containing values in SI units (m, rad, rad)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.16)">ndarray</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.core.BoyerLindquist.to_cartesian">
+<code class="descname">to_cartesian</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.BoyerLindquist.to_cartesian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method for conversion to cartesian coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Cartesian representation of the BL Coordinates.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#einsteinpy.coordinates.core.Cartesian" title="einsteinpy.coordinates.core.Cartesian">Cartesian</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.coordinates.core.BoyerLindquist.to_spherical">
+<code class="descname">to_spherical</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.coordinates.core.BoyerLindquist.to_spherical" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method for conversion to spherical coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Spherical representation of the BL Coordinates.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#einsteinpy.coordinates.core.Spherical" title="einsteinpy.coordinates.core.Spherical">Spherical</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="coordinates_index.html" title="Previous document">Coordinates module</a>
+        </li>
+        <li>
+          <a href="velocity.html" title="Next document">velocity module</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../../index.html">
+    <img class="logo" src="../../_static/logo_small.png" alt="Logo"/>
+    
+    <h1 class="logo logo-name">EinsteinPy</h1>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">General Relativity in Python</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=einsteinpy&repo=einsteinpy&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a href="https://travis-ci.org/einsteinpy/einsteinpy">
+    <img
+        alt="https://secure.travis-ci.org/einsteinpy/einsteinpy.svg?branch=master"
+        src="https://secure.travis-ci.org/einsteinpy/einsteinpy.svg?branch=master"
+    />
+</a>
+</p>
+
+
+
+
+    
+
+<p>
+<a href="https://codecov.io/github/einsteinpy/einsteinpy">
+    <img
+    alt="https://codecov.io/github/einsteinpy/einsteinpy/coverage.svg?branch=master"
+    src="https://codecov.io/github/einsteinpy/einsteinpy/coverage.svg?branch=master"
+    />
+</a>
+</p>
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide.html">User guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../metric.html">Vacuum Solutions to Einstein’s Field Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jupyter.html">Jupyter notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev_guide.html">Developer Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">EinsteinPy API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../integrators/integrators_index.html">Integrators module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../metric/metric_index.html">Metric module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../symbolic/symbolic_index.html">Symbolic Relativity Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hypersurface/hypersurface_index.html">Hypersurface module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/utils_index.html">Utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plotting/plotting_index.html">Plotting module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="coordinates_index.html">Coordinates module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constant.html">Constant module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../units.html">Units module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bodies.html">Bodies module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geodesic.html">Geodesic module</a></li>
+</ul>
+</li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://docs.einsteinpy.org/">Blog</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">EinsteinPy API</a><ul>
+  <li><a href="coordinates_index.html">Coordinates module</a><ul>
+      <li>Previous: <a href="coordinates_index.html" title="previous chapter">Coordinates module</a></li>
+      <li>Next: <a href="velocity.html" title="next chapter">velocity module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019 EinsteinPy Development Team.
+      
+      |
+      <a href="../../_sources/api/coordinates/core.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/einsteinpy/einsteinpy" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

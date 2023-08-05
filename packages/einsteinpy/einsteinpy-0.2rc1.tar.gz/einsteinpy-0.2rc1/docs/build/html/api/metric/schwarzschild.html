@@ -1,0 +1,286 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>schwarzschild module &#8212; EinsteinPy</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="kerr module" href="kerr.html" />
+    <link rel="prev" title="Metric module" href="metric_index.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="metric_index.html" title="Previous document">Metric module</a>
+        </li>
+        <li>
+          <a href="kerr.html" title="Next document">kerr module</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="schwarzschild-module">
+<h1>schwarzschild module<a class="headerlink" href="#schwarzschild-module" title="Permalink to this headline">¶</a></h1>
+<p>This module contains the basic class for calculating time-like geodesics in Schwarzschild Space-Time:</p>
+<span class="target" id="module-einsteinpy.metric.schwarzschild"></span><dl class="class">
+<dt id="einsteinpy.metric.schwarzschild.Schwarzschild">
+<em class="property">class </em><code class="descclassname">einsteinpy.metric.schwarzschild.</code><code class="descname">Schwarzschild</code><span class="sig-paren">(</span><em>sph_coords</em>, <em>M</em>, <em>time</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.metric.schwarzschild.Schwarzschild" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for defining a Schwarzschild Geometry methods</p>
+<dl class="classmethod">
+<dt id="einsteinpy.metric.schwarzschild.Schwarzschild.from_coords">
+<em class="property">classmethod </em><code class="descname">from_coords</code><span class="sig-paren">(</span><em>coords</em>, <em>M</em>, <em>q=None</em>, <em>Q=None</em>, <em>time=&lt;Quantity 0. s&gt;</em>, <em>a=&lt;Quantity 0. m&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.metric.schwarzschild.Schwarzschild.from_coords" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>coords</strong> (<a class="reference internal" href="../coordinates/velocity.html#einsteinpy.coordinates.velocity.CartesianDifferential" title="einsteinpy.coordinates.velocity.CartesianDifferential"><em>CartesianDifferential</em></a>) – Object having both initial positions and velocities of particle in Cartesian Coordinates</li>
+<li><strong>M</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – Mass of the body</li>
+<li><strong>time</strong> (<a class="reference external" href="http://docs.astropy.org/en/stable/api/astropy.units.quantity.Quantity.html#astropy.units.quantity.Quantity" title="(in Astropy v3.2.1)"><em>Quantity</em></a>) – Time of start, defaults to 0 seconds.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.metric.schwarzschild.Schwarzschild.calculate_trajectory">
+<code class="descname">calculate_trajectory</code><span class="sig-paren">(</span><em>start_lambda=0.0</em>, <em>end_lambda=10.0</em>, <em>stop_on_singularity=True</em>, <em>OdeMethodKwargs={'stepsize': 0.001}</em>, <em>return_cartesian=False</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.metric.schwarzschild.Schwarzschild.calculate_trajectory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate trajectory in manifold according to geodesic equation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>start_lambda</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Starting lambda(proper time), defaults to 0, (lambda ~= t)</li>
+<li><strong>end_lamdba</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Lambda(proper time) where iteartions will stop, defaults to 100000</li>
+<li><strong>stop_on_singularity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – Whether to stop further computation on reaching singularity, defaults to True</li>
+<li><strong>OdeMethodKwargs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Kwargs to be supplied to the ODESolver, defaults to {‘stepsize’: 1e-3}
+Dictionary with key ‘stepsize’ along with an float value is expected.</li>
+<li><strong>return_cartesian</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True if coordinates and velocities are required in cartesian coordinates(SI units), defaults to False</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><em>~numpy.ndarray</em> – N-element array containing proper time.</li>
+<li><em>~numpy.ndarray</em> – (n,8) shape array of [t, x1, x2, x3, velocity_of_time, v1, v2, v3] for each proper time(lambda).</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="einsteinpy.metric.schwarzschild.Schwarzschild.calculate_trajectory_iterator">
+<code class="descname">calculate_trajectory_iterator</code><span class="sig-paren">(</span><em>start_lambda=0.0</em>, <em>stop_on_singularity=True</em>, <em>OdeMethodKwargs={'stepsize': 0.001}</em>, <em>return_cartesian=False</em><span class="sig-paren">)</span><a class="headerlink" href="#einsteinpy.metric.schwarzschild.Schwarzschild.calculate_trajectory_iterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate trajectory in manifold according to geodesic equation
+Yields an iterator</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>start_lambda</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Starting lambda, defaults to 0.0, (lambda ~= t)</li>
+<li><strong>stop_on_singularity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – Whether to stop further computation on reaching singularity, defaults to True</li>
+<li><strong>OdeMethodKwargs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Kwargs to be supplied to the ODESolver, defaults to {‘stepsize’: 1e-3}
+Dictionary with key ‘stepsize’ along with an float value is expected.</li>
+<li><strong>return_cartesian</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True if coordinates and velocities are required in cartesian coordinates(SI units), defaults to Falsed</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Yields:</th><td class="field-body"><ul class="first last simple">
+<li><em>float</em> – proper time</li>
+<li><em>~numpy.ndarray</em> – array of [t, x1, x2, x3, velocity_of_time, v1, v2, v3] for each proper time(lambda).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="metric_index.html" title="Previous document">Metric module</a>
+        </li>
+        <li>
+          <a href="kerr.html" title="Next document">kerr module</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../../index.html">
+    <img class="logo" src="../../_static/logo_small.png" alt="Logo"/>
+    
+    <h1 class="logo logo-name">EinsteinPy</h1>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">General Relativity in Python</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=einsteinpy&repo=einsteinpy&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a href="https://travis-ci.org/einsteinpy/einsteinpy">
+    <img
+        alt="https://secure.travis-ci.org/einsteinpy/einsteinpy.svg?branch=master"
+        src="https://secure.travis-ci.org/einsteinpy/einsteinpy.svg?branch=master"
+    />
+</a>
+</p>
+
+
+
+
+    
+
+<p>
+<a href="https://codecov.io/github/einsteinpy/einsteinpy">
+    <img
+    alt="https://codecov.io/github/einsteinpy/einsteinpy/coverage.svg?branch=master"
+    src="https://codecov.io/github/einsteinpy/einsteinpy/coverage.svg?branch=master"
+    />
+</a>
+</p>
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide.html">User guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../metric.html">Vacuum Solutions to Einstein’s Field Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../jupyter.html">Jupyter notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev_guide.html">Developer Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">EinsteinPy API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../integrators/integrators_index.html">Integrators module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="metric_index.html">Metric module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../symbolic/symbolic_index.html">Symbolic Relativity Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hypersurface/hypersurface_index.html">Hypersurface module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/utils_index.html">Utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plotting/plotting_index.html">Plotting module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coordinates/coordinates_index.html">Coordinates module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constant.html">Constant module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../units.html">Units module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bodies.html">Bodies module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geodesic.html">Geodesic module</a></li>
+</ul>
+</li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://docs.einsteinpy.org/">Blog</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">EinsteinPy API</a><ul>
+  <li><a href="metric_index.html">Metric module</a><ul>
+      <li>Previous: <a href="metric_index.html" title="previous chapter">Metric module</a></li>
+      <li>Next: <a href="kerr.html" title="next chapter">kerr module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019 EinsteinPy Development Team.
+      
+      |
+      <a href="../../_sources/api/metric/schwarzschild.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/einsteinpy/einsteinpy" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

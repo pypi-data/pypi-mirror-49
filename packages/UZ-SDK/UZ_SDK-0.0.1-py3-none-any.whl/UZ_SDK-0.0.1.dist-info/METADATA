@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: UZ-SDK
+Version: 0.0.1
+Summary: UZ API wrapper
+Home-page: https://github.com/oryba/uz-sdk
+Author: Oleh Rybalchenko
+Author-email: rv.oleg.ua@gmail.com
+License: MIT
+Download-URL: https://github.com/oryba/uz-sdk/archive/master.zip
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests
+
+UNKNOWN
+
+

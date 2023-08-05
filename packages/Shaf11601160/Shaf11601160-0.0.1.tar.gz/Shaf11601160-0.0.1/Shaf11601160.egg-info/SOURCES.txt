@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+file7.txt
+setup.cfg
+setup.py
+AliShafieiShel/__init__.py
+AliShafieiShel/file6.txt
+AliShafieiShel/fileee.py
+Shaf11601160.egg-info/PKG-INFO
+Shaf11601160.egg-info/SOURCES.txt
+Shaf11601160.egg-info/dependency_links.txt
+Shaf11601160.egg-info/top_level.txt

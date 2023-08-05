@@ -1,0 +1,10 @@
+click
+questionary
+rshell
+jsonschema
+jinja2
+requests
+tqdm
+
+[:platform_system == "Windows"]
+colorama

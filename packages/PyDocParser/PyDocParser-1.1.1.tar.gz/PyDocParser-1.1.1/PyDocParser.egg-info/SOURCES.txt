@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyDocParser.egg-info/PKG-INFO
+PyDocParser.egg-info/SOURCES.txt
+PyDocParser.egg-info/dependency_links.txt
+PyDocParser.egg-info/requires.txt
+PyDocParser.egg-info/top_level.txt
+pydocparser/__init__.py

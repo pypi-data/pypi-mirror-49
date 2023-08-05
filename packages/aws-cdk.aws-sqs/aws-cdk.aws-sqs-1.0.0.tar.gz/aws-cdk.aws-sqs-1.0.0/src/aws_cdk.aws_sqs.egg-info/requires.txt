@@ -1,0 +1,6 @@
+jsii~=0.14.0
+publication>=0.0.3
+aws-cdk.aws-cloudwatch>=1.0.0,~=1.0
+aws-cdk.aws-iam>=1.0.0,~=1.0
+aws-cdk.aws-kms>=1.0.0,~=1.0
+aws-cdk.core>=1.0.0,~=1.0

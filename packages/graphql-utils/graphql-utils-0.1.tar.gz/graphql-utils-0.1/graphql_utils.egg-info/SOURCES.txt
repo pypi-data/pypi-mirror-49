@@ -1,0 +1,15 @@
+.gitignore
+.mergify.yml
+README.rst
+setup.cfg
+setup.py
+tox.ini
+.circleci/config.yml
+graphql_utils/__init__.py
+graphql_utils/multi.py
+graphql_utils.egg-info/PKG-INFO
+graphql_utils.egg-info/SOURCES.txt
+graphql_utils.egg-info/dependency_links.txt
+graphql_utils.egg-info/requires.txt
+graphql_utils.egg-info/top_level.txt
+graphql_utils/tests/test_multi.py

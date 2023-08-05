@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: odoo12-addons-oca-purchase-workflow
+Version: 12.0.20190710.0
+Summary: Meta package for oca-purchase-workflow Odoo addons
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo12-addon-procurement-purchase-no-grouping
+Requires-Dist: odoo12-addon-purchase-delivery-split-date
+Requires-Dist: odoo12-addon-purchase-exception
+Requires-Dist: odoo12-addon-purchase-line-procurement-group
+Requires-Dist: odoo12-addon-purchase-open-qty
+Requires-Dist: odoo12-addon-purchase-order-approved
+Requires-Dist: odoo12-addon-purchase-order-archive
+Requires-Dist: odoo12-addon-purchase-product-usage
+Requires-Dist: odoo12-addon-purchase-tier-validation
+
+UNKNOWN
+
+

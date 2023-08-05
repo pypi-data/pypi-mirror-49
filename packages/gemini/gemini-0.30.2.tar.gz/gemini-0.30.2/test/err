@@ -1,0 +1,10 @@
+
+CADD scores are not being loaded because the annotation file could not be found.
+`Run gemini update --dataonly --extra cadd_score` to install the annotation file.
+
+
+GERP per bp is not being loaded because the annotation file could not be found.
+    Run `gemini update --dataonly --extra gerp_bp` to install the annotation file.
+
+[W::vcf_parse] Contig 'chr2' is not defined in the header. (Quick workaround: index the file with tabix.)
+pid 21767: 2 variants processed.

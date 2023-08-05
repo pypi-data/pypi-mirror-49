@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: errorbuster
+Version: 0.0.2.dev0
+Summary: Format traceback object to JSON for human read and easy process in Report System
+Home-page: https://github.com/ipconfiger/errorbuster
+Author: Alexander.Li
+Author-email: superpowerlee@gmail.com
+License: MIT
+Description: Format traceback object to JSON for human read and easy process in Report System
+Keywords: Error,Traceback
+Platform: UNKNOWN

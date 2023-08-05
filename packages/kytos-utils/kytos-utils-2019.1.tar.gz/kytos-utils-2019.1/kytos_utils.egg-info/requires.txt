@@ -1,0 +1,10 @@
+docopt
+jinja2>=2.9.5
+requests
+ruamel.yaml
+
+[dev]
+coverage
+pip-tools
+tox
+yala

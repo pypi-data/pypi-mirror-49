@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pyretrace
+Version: 0.3
+Summary: A python reimplementation on Proguard's Retrace, with a deobfuscation API for python.
+Home-page: http://github.com/EverythingMe/pyretrace
+Author: Rotem Mizrachi-Meidan
+Author-email: rotem@everything.me
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

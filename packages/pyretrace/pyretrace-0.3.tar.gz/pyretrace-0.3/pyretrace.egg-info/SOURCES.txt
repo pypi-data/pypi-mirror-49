@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyretrace/__init__.py
+pyretrace/reader.py
+pyretrace.egg-info/PKG-INFO
+pyretrace.egg-info/SOURCES.txt
+pyretrace.egg-info/dependency_links.txt
+pyretrace.egg-info/entry_points.txt
+pyretrace.egg-info/top_level.txt

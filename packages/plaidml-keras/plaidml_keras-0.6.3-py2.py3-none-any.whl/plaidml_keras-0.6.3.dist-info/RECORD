@@ -1,0 +1,6 @@
+plaidml/keras/__init__.py,sha256=lBTpeEHNCsOWGZBQUvATQXYBZPnTlOVJe57Vq2INgXE,4186
+plaidml/keras/backend.py,sha256=Nu9vcQH9KKVuyCWm7t2Tk0XnfGz09SznVxZd-8L5-0M,61963
+plaidml_keras-0.6.3.dist-info/METADATA,sha256=f_PFutnH9iWHbec39SiCrlVqygrrxzP27_P9-Qd90YY,1007
+plaidml_keras-0.6.3.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+plaidml_keras-0.6.3.dist-info/top_level.txt,sha256=4kfwNv4d77iK_GpUik7WUIBHg_JYsou6oufcv6Q2leM,14
+plaidml_keras-0.6.3.dist-info/RECORD,,

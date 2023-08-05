@@ -1,0 +1,14 @@
+dill
+multiprocess
+numpy
+
+[all]
+dill
+multiprocess
+numpy
+pytest
+flake8
+
+[dev]
+pytest
+flake8

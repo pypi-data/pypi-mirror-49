@@ -1,0 +1,8 @@
+gap_statistic/__init__.py,sha256=AdUFZHdB_124Zg7PXqwuebD5sQ-2e2RPUmmZ0ctfrR4,70
+gap_statistic/optimalK.py,sha256=7241zl83UNzNhsmy72Ih9zHF196_DjRFaZ1P5DUE9_w,15030
+gap_statistic/rust/gapstat.cp36-win_amd64.pyd,sha256=X7j9IVPodtRt8JX171TvNyIsWxBxgO00SSKYZTYY28I,304640
+gap_stat-1.7.0.dist-info/LICENSE-MIT,sha256=uxp59XeBmM24-awZzj3HkHIDKeivUATeuFLC3Jl3fZY,1103
+gap_stat-1.7.0.dist-info/METADATA,sha256=JuAkHt_A9UebrP9Cq6tFz9ycjId79uVs3Tm8WddGrxM,1246
+gap_stat-1.7.0.dist-info/WHEEL,sha256=S_mX8sP6H8AMjLVRL5jkNlK73uf4g6NGqiKQ98w1PV0,106
+gap_stat-1.7.0.dist-info/top_level.txt,sha256=vyzCrgnXjw3vE2IEDCQyUd6_0lvz8V5kEfPnvncNv24,14
+gap_stat-1.7.0.dist-info/RECORD,,

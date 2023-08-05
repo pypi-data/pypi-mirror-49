@@ -1,0 +1,7 @@
+arduino_board_collection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arduino_board_collection/board_collection.py,sha256=qyS3UqvHivfsxWQwnNoaxZdtG2xGKB_wdN4IRjtMlHs,151
+arduino_board_collection/create_board.py,sha256=eQvSyhlB19lQ3nMXKmPSkbllTgO8F_F-kZe2PHNpHqE,2210
+ArduinoBoardCollection-0.1.1562834795.dist-info/METADATA,sha256=C4hNSirzGxPpUauz_4OVRtNfwtYkGIJnAnevtKhklyw,509
+ArduinoBoardCollection-0.1.1562834795.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+ArduinoBoardCollection-0.1.1562834795.dist-info/top_level.txt,sha256=2TkiN4KJkxVkaK1v1OQOZZ0wHuOLmeQHqdqiCau0d0Y,25
+ArduinoBoardCollection-0.1.1562834795.dist-info/RECORD,,

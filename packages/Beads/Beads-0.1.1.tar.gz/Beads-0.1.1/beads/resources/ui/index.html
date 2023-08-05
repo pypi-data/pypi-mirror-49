@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="Cache-Control" content="no-cache">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="shortcut icon" href="media/fav-icon.png" type="image/png">
+      <link rel="stylesheet" href="css/prism.css">
+      <link rel="stylesheet" href="css/gui.css">
+
+      <script src="eel.js" defer></script>
+      <script src="js/d3.min.js" defer></script>
+      <script src="js/prism.js" defer></script>
+      <script src="js/gui.js" defer></script>
+
+      <title>Beads - GUI</title>
+   </head>
+
+   <body>
+
+      <div id="graph-area">
+         <!-- Initial key-mapping summary that is only displayed as long as there is no component drawn -->
+         <div id="summary">
+            <p><span>Hover</span> the logo to display the menu.</p>
+            <p><span class="key">Ctrl</span> | <span class="key">cmd</span> + <span>Doubleclick</span> to create a new state.</p>
+            <p><span class="key">Ctrl</span> | <span class="key">cmd</span> + <span>Drag</span> states to rearrange them.</p>
+            <p><span>Click</span> on labels to rename states and transitions.</p>
+            <p><span>Drag</span> arrows between states to draw transitions.</p>
+            <p><span>Drag</span> transitions to bend them.</p>
+            <p><span class="key">Alt</span> | <span class="key">option</span> + <span>Click</span> a state to draw a self-transition.</p>
+            <p><span class="key">Shift</span> + <span>Click</span> any component to remove it.</p>
+         </div>
+
+         <!-- Container let d3 hang in the svg graph representing a state maschine -->
+         <div id="graph-container"></div>
+      </div>
+
+      <input type="text" id="graph-name-field">
+
+      <!-- Container where code is written into if the code preview is toggled -->
+      <div id="text-area">
+         <div id="code-container">
+         </div>
+      </div>
+
+      <div id="code-functions">
+         <!-- Button to toggle the visibility of the code - container -->
+         <button id="toggle-code-button" title="Toggle code preview.">
+            <img src="media/toggle-icon.png">
+            <img class="notification" src="media/bell-icon.png" alt="!">
+         </button>
+
+         <!-- Button to call backend FSM parsing -->
+         <button id="code-gen-button" title="Generate code from the state maschine.">
+            <!-- img src="media/code-icon.png" -->
+            <img src="media/code-icon.png" alt="{...}">
+         </button>
+      </div>
+
+      <!-- Controls to persist the current graph locally -->
+      <div id="persistence-controls">
+         <div>
+            <button id="delete-btn" title="Delete the whole graph!">
+               <img src="media/delete-icon.png">
+            </button>
+         </div>
+         <div>
+            <img src="media/save-icon.png" alt="Save">
+   
+            <button id="save-as-svg-btn" title="Save graph as svg.">SVG</button>
+            <button id="save-as-png-btn" title="Save graph as png.">PNG</button>
+            <button id="save-as-json-btn" title="Save graph as json.">JSON</button>
+            <button id="save-code-btn" title="Save graph as code.">CODE</button>
+         </div>
+      </div>
+
+      <!-- Main menu including drawing tutorial, tool info, language preview and code generation options -->
+      <div id="menu">
+         <img id="permanent-logo" src="media/logo-transparent-no-edge.png" alt="Beads Logo">
+         <div>
+         <nav>
+            <div>
+               <!-- Vertical line -->
+            </div>
+            <button id="help-btn" title="Display drawing tutorial.">
+               <img src="media/help-icon.png">
+               <span>Help</span>
+            </button>
+            <button id="info-btn" title="Display Tool information.">
+               <img src="media/info-icon.png">
+               <span>Info</span>
+            </button>
+            <button id="languages-btn" title="Display language screen.">
+               <img src="media/languages-icon.png">
+               <span>Languages</span>
+            </button>
+            <button id="options-btn" title="Display generation settings.">
+               <img src="media/options-icon.png">
+               <span>Settings</span>
+            </button>
+         </nav>
+
+         <!-- Drawing tutorial -->
+         <section id="help">
+            <div class="help-item">
+               <img src="media/help_states_create.svg">
+               <div>
+                  <h2>Creating a new state:</h2>
+                  <p>To create a new state hold <span class="key">cmd</span> or <span class="key">Ctrl</span> and <span>Doubleclick</span> on any empty space within the white area.</p>
+               </div>
+            </div>
+            <div class="help-item">
+               <img src="media/help_states_rename.svg">
+               <div>
+                  <h2>Rename a state:</h2>
+                  <p>You can edit the label of a state.</p>
+                  <p>Simply hover over the label and <span>Click</span> on it.</p>
+                  <p>Then type in the new name and hit <span class="key">Enter</span> to submit.</p>
+                  <p><span>Click</span> outside to cancel the rename.</p>
+                  <p class="m-top"><span>INFO:</span> Labels need to start with a letter and can not contain any whitespace or special characters. They will be removed upon submit.</p>
+               </div>
+            </div>
+            <div class="help-item">
+               <img src="media/help_transitions_drag.svg">
+               <div>
+                  <h2>Draw transitions:</h2>
+                  <p>You can draw a transition from one state to another:</p>
+                  <p><span>Click</span> on any state and <span>Drag</span> the transition to the desired second state.</p>
+               </div>
+            </div>
+            <div class="help-item">
+               <img src="media/help_transistions_rename.svg">
+               <div>
+                  <h2>Rename transitions:</h2>
+                  <p>You can also edit the label of transitions.</p>
+                  <p>The same rules apply as for the renaming of states:</p>
+                  <p class="m-top"><span>Click</span> on the label to edit it.</p>
+                  <p>Press <span class="key">Enter</span> to submit.</p>
+                  <p><span>Click</span> outside to cancel the rename.</p>
+                  <p class="m-top"><span>INFO:</span> Labels need to start with a letter and can not contain any whitespace or special characters. They will be removed upon submit.</p>
+               </div>
+            </div>
+            <div class="help-item">
+               <img src="media/help_states_drag.svg">
+               <div>
+                  <h2>Move states:</h2>
+                  <p>To rearrange the position of states you can hold down <span class="key">cmd</span> or <span class="key">Ctrl</span> and <span>Drag</span> them to a desired position.</p>
+                  <p>All attached transitions will automatically adapt and move as well.</p>
+               </div>
+            </div>
+            <div class="help-item">
+               <img src="media/help_transitions_self.svg">
+               <div>
+                  <h2>Create a self-transition:</h2>
+                  <p>You can also draw transitions from a state back to itself.</p>
+                  <p>To do that hold down <span class="key">option</span> or <span class="key">Alt</span> and then <span>Click</span> on a state.</p>
+               </div>
+            </div>
+            <!-- <div class="help-item">
+               <img src="media/help_states_final.svg" alt="Make a state final with alt / option">
+               <div>
+                  <h2>Final states</h2>
+                  <p>It is possible to declare states as final.</p>
+                  <p>To do that just hold down <span class="key">Alt</span> or <span class="key">option</span> and <span>Click</span> on a state to make it final.</p>
+                  <p>Doing the same again will revert the state back to normal.</p>
+                  <p class="m-top"><span>INFO:</span> This is a strictly visual feature that is not on any level represented by the generated code!</p>
+               </div>
+            </div>
+            <div class="help-item">
+               <img src="media/help_states_start.svg" alt="Make a state the starting point with alt / option + doubleclick.">
+               <div>
+                  <h2>Set the initial state:</h2>
+                  <p>You can declare a state as the starting state of the graph.</p>
+                  <p>Just hold down <span class="key">Alt</span> or <span class="key">option</span> and <span>Doubleclick</span> on a state.</p>
+                  <p>Doing the same again will revert the state back to normal.</p>
+                  <p class="m-top"><span>INFO:</span> Though it is optional to define an initial state, there can only be one. Upon changing a state to initial any other initial state will be reverted back to normal!</p>
+               </div>
+            </div> -->
+            <div class="help-item">
+               <img src="media/help_delete.svg" alt="Delete components by holding ctrl / cmd">
+               <div>
+                  <h2>Delete components:</h2>
+                  <p>To delete any drawn component, simply hold <span class="key">Shift</span> and <span>Click</span> on the state or transition to remove.</p>
+                  <p class="m-top">If you remove a state, any attached transition will be deleted with it!</p>
+               </div>
+            </div>
+            <div class="help-item">
+               <img src="media/help_transitions_bend.svg" alt="Bend transitions by draggin them">
+               <div>
+                  <h2>Bend transitions:</h2>
+                  <p>In the case that a bidirectional transition is needed between states, you need to draw a second transition. To not let them overlap it is possible to bend transitions.</p>
+                  <p>To do so just <span>Click</span> and <span>Drag</span> them until you get the desired shape.</p>
+               </div>
+            </div>
+         </section>
+
+         <!-- Tool info -->
+         <section id="info"></section>
+
+         <!-- Languages Preview -->
+         <section id="languages"></section>
+
+         <!-- Code generation options -->
+         <section id="options">
+            <div class="align-right">
+               <button id="save-options-btn">SAVE</button>
+               <button id="clear-options-btn">CLEAR</button>
+            </div>
+         </section>
+         </div>
+      </div>
+
+      <div id="version-info">
+         <span>Beads - Graphical User Interface</span>
+         <span id="version-span"></span>
+      </div>
+   </body>
+</html>

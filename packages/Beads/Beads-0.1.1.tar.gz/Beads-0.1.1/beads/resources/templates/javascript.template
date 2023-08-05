@@ -1,0 +1,30 @@
+#! version:0 language:javascript file_type:.js #
+#
+# DEFAULT Template file for Javascript programming language
+#
+{
+   "config": {
+        "gap": "",
+        "indent": "",
+        "useHeader" : false
+    },
+
+    "header": { "content" : "" },
+    "footer": { "content" : "" },
+
+    "states": {
+        "name": "",
+        "body": "",
+        "item": ""
+    },
+
+    "state": {
+        "name": "",
+        "body": ""
+    },
+
+    "transitions": {
+        "body": "",
+        "item": ""
+    }
+}

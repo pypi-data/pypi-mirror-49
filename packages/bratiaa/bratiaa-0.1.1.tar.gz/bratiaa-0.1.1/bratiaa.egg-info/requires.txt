@@ -1,0 +1,6 @@
+filelock
+numpy
+matplotlib
+pytest
+scipy
+tabulate

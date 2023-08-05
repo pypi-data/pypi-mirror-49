@@ -1,0 +1,9 @@
+ironic_importer/__init__.py,sha256=3sp-KaIcz7j_HT-jPQ1_xEhyogZvq1dI8DahcNnNiOw,618
+ironic_importer/inventory.py,sha256=a0ADDLipbTDeGpBMlfVgsh2vPwnWAmP8i6Q3Eruggek,8992
+ironic_importer-1.0.0.data/data/examples/ironic_nodes.xlsx,sha256=igYOFIPPQl7GGvAU-2Mkc0NS6d20rmJ7QWPi9T64ILs,9497
+ironic_importer-1.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+ironic_importer-1.0.0.dist-info/METADATA,sha256=eDaAXVBOiNMEgvmedb-7HIptiE2NbzskWBY20cXi6qU,789
+ironic_importer-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ironic_importer-1.0.0.dist-info/entry_points.txt,sha256=pnv4-Rj4aeADS6Re-GbRN3pTt82nLx1psszcHQYYrWM,68
+ironic_importer-1.0.0.dist-info/top_level.txt,sha256=DqT734hNJD1Tt7ueaq--COVAHwk0iULP_daZcc-O03k,16
+ironic_importer-1.0.0.dist-info/RECORD,,

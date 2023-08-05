@@ -1,0 +1,8 @@
+from ${project}.trains import ModelScorePair
+
+def train(model, train_data, eval_data=None, config={}):
+
+    # write your training script as this function.
+
+    evalution_score = 0.0
+    return ModelScorePair(model, evaluation_score)

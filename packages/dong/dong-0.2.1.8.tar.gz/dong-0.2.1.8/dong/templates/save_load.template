@@ -1,0 +1,11 @@
+def save(model, save_dir):
+    # write your model serialization code here given the model instance and output directory save_dir
+    # dong will call this function after training to save your model
+    pass
+
+def load(save_dir):
+    # given the model saved directory save_dir
+    # please write your code here to deserialize your model
+    
+    model = None
+    return model

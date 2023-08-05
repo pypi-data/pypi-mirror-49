@@ -1,0 +1,8 @@
+import json
+
+def respond_to_request(model, request_body_json): # should support more formats
+    # with request body as a json
+    # please write your program to return a response to a request given your model instance
+    
+    response = None
+    return response

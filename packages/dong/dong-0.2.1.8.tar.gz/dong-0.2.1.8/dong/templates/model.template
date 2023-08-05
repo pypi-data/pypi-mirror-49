@@ -1,0 +1,6 @@
+
+import dong.framework
+
+class ${class_name}(dong.framework.Model):
+    pass
+

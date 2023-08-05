@@ -1,0 +1,16 @@
+import dong.framework
+
+class ${class_name}(dong.framework.Data):
+
+    
+    def __init__(self, config=None):
+        pass
+    
+    def get_train_data(self):
+        return None
+
+    def get_eval_data(self):
+        return None
+
+    def get_data_params(self):
+        return None

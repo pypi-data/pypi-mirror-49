@@ -1,0 +1,4 @@
+
+def train(self, data, config=None):
+    
+    return 0.

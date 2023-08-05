@@ -1,0 +1,9 @@
+from dong.framework import HyperParameterConfig, HyperParameterTuner
+import copy
+
+class ${class_name}(HyperParameterTuner):
+
+    def get_hyper_parameter_config_list(self):
+
+        return []
+        

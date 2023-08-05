@@ -1,0 +1,3 @@
+[console_scripts]
+griddy = griddy.__main__:main
+

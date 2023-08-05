@@ -1,0 +1,6 @@
+[girder.cli_plugins]
+extract-geospatial = geobrowser_plugin.extraction:extract
+
+[girder.plugin]
+geobrowser = geobrowser_plugin:GeoBrowserPlugin
+

@@ -1,0 +1,11 @@
+ZConfig>=2.4a5
+setuptools
+six
+zc.buildout>=1.2.0
+zc.recipe.egg>=1.2.0
+zope.testing
+
+[tests]
+PasteScript
+zc.recipe.filestorage
+zdaemon>=3.0.0

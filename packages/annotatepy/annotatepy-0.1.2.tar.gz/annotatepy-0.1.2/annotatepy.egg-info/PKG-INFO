@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: annotatepy
+Version: 0.1.2
+Summary: Build git.sr.ht annotations for Python projects
+Home-page: https://git.sr.ht/~ihabunek/annotatepy
+Author: Ivan Habunek
+Author-email: ivan@habunek.com
+License: GPLv3
+Project-URL: Issue tracker, https://todo.sr.ht/ihabunek/annotatepy/
+Description: UNKNOWN
+Keywords: sourcehut annotations python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6

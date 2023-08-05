@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: krolib
+Version: 1.2.0
+Summary: DSL to handle complex schedules
+Home-page: https://github.com/nextiva/krolib
+Author: Nextiva
+Author-email: roman.zayev@nextiva.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: python-dateutil (==2.8.0)
+Requires-Dist: pytz (==2019.1)
+Requires-Dist: toolz (>=0.8.2)
+Requires-Dist: tzlocal (>=1.3)
+Requires-Dist: voluptuous (==0.11.5)
+
+
+Krolib: Schedules for Humans
+============================
+
+[![image](https://img.shields.io/pypi/v/krolib.svg)](https://pypi.org/project/krolib/)
+[![image](https://img.shields.io/pypi/l/krolib.svg)](https://pypi.org/project/krolib/)
+[![image](https://img.shields.io/pypi/pyversions/krolib.svg)](https://pypi.org/project/krolib/)
+
+DSL to handle complex schedules
+
+Installation
+------------
+
+``` {.sourceCode .bash}
+$ pip install krolib
+```
+
+

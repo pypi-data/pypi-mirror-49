@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: ebaipy
+Version: 0.2.1
+Summary: Ebai SDK for Python
+Home-page: https://github.com/brucehe3/ebaipy
+Author: Bruce He
+Author-email: bruce@shbewell.com
+License: UNKNOWN
+Description: # ebaipy
+        
+        饿百外卖 第三方 Python SDK
+        
+        
+        Author: Bruce He <bruce@shbewell.com>
+        
+        version: `0.2`
+        
+        # 功能特性
+        
+        
+        # 安装
+        
+        
+        # 使用示例
+        
+        
+        # 问题反馈
+        
+        
+Keywords: Ebai,Eleme,SDK
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown

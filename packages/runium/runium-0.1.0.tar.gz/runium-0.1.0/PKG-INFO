@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: runium
+Version: 0.1.0
+Summary: Clean and simple task concurrency
+Home-page: https://github.com/AGTGreg/runium
+Author: Grigoris Chatzinikolaou
+Author-email: greghatzis@gmail.com
+License: MIT
+Description: Clean and simple task concurrency, scheduling and repetition for Python
+Keywords: concurrecy,asynchonous tasks scheduling cron
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

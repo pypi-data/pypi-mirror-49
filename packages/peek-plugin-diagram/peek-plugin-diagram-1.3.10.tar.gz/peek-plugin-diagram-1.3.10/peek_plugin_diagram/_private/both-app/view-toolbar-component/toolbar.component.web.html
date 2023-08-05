@@ -1,0 +1,47 @@
+<div class="view-toolbar ">
+    <div class="btn-group">
+        <button class="btn"
+                *ngIf="showExitDiagramButton()"
+                (click)="exitDiagramClicked()">
+            <fa name="sign-out"></fa>
+        </button>
+        <button class="btn"
+                (click)="printDiagramClicked()">
+            <fa name="print"></fa>
+        </button>
+        <button class="btn"
+                *ngIf="showEditDiagramButton()"
+                (click)="editDiagramClicked()">
+            <fa name="pencil-alt"></fa>
+        </button>
+        <button class="btn"
+                *ngIf="showSelectBranchesButton()"
+                (click)="selectBranchesClicked()">
+            <fa name="code-branch"></fa>
+        </button>
+        <button class="btn"
+                (click)="selectLayersClicked()">
+            <fa name="layer-group"></fa>
+        </button>
+    </div>
+
+    <div class="view-toolbar-spacer"></div>
+
+    <div class="btn-group">
+        <button *ngIf="showGoUpParentButton()"
+                class="btn tool-button"
+                (click)="goUpParentButtonClicked(btn)">
+            <fa name="back"></fa>
+            Back
+        </button>
+        <button *ngFor="let btn of shownPluginButtons"
+                class="btn tool-button"
+                [class.btn-primary]="isButtonActive(btn)"
+                (click)="buttonClicked(btn)">
+            <fa *ngIf="btn.icon" [name]="btn.icon"></fa>
+            {{btn.name}}
+        </button>
+    </div>
+</div>
+
+

@@ -1,0 +1,11 @@
+skift/__init__.py,sha256=JrmxUsZ8xCcI2lKD900eXlt1DAKsek9iD9ZA7HUz2Qs,467
+skift/_version.py,sha256=lavQXa9S04ZrdYovY9cQasVTkk5GVucB13fWMCVudC4,498
+skift/core.py,sha256=Uzyz5ivW7gLsT9O7ooqnb3EKNU-ACGB32JpIVtHebQ8,9175
+skift/util.py,sha256=BvVy-i_-LqgbinI1mYiDv7Klq_G0IpBUrmyV6GqElwM,2873
+skift-0.0.16.dist-info/METADATA,sha256=CXA7J2AYK915GDNB61DAMSw2QbLrpZlEwFe3oWHHMGM,8762
+skift-0.0.16.dist-info/RECORD,,
+skift-0.0.16.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+skift-0.0.16.dist-info/top_level.txt,sha256=oE1P0juG_1K03u9Vc-W402DU2CSZMhWPIzHvbrm2uLU,12
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_common.py,sha256=RQVnIcrEUuyHhIHjf2jWgiYOgZaF8Zdex9OOwUnryT4,5078
+tests/test_pickle.py,sha256=5lIcgz955y_d30f-KYGE8oyLi-c-JYUDTl2fM9q96tc,2492

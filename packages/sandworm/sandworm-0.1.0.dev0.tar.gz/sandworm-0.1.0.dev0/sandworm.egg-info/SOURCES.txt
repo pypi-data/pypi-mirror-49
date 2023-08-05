@@ -1,0 +1,13 @@
+setup.py
+sandworm/__about__.py
+sandworm/__init__.py
+sandworm/cli.py
+sandworm/sandworm.py
+sandworm/sandworm_main.py
+sandworm/version.py
+sandworm.egg-info/PKG-INFO
+sandworm.egg-info/SOURCES.txt
+sandworm.egg-info/dependency_links.txt
+sandworm.egg-info/entry_points.txt
+sandworm.egg-info/top_level.txt
+sandworm/config/default.yaml

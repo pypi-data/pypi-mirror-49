@@ -1,0 +1,17 @@
+requests
+maya
+records
+pyquery
+beautifulsoup4
+gevent
+pyreadline
+Jinja2
+lxml
+pymongo
+PyMySQL
+threadpool
+flask
+Pipenv
+PyTorch
+selenium
+twine

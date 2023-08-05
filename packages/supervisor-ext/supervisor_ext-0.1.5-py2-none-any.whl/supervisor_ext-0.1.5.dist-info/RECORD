@@ -1,0 +1,11 @@
+supervisor_ext-0.1.5-py2.7-nspkg.pth,sha256=5ODKMzFQRIVdroBtfxOWGO0g2HSLCBK1DIForhRklb0,329
+supervisor_ext/command_line.py,sha256=WV5_92oVHYxA0Ne4o_n4_E4IfZHJILkv5PgWepLOvl0,22
+supervisor_ext/controllerplugin.py,sha256=DGBmfw65lT9vVYOYid7Ktq1ooMXYHw_ctrWVWN8zk4I,14482
+supervisor_ext/memorycheck.py,sha256=_0MLoisGn2Lq7nJMq4s_gmk--ZhOadiCZBKtfDKH-Ew,3897
+supervisor_ext/rpcinterface.py,sha256=hV3lc-m5h81MKkNcOGjOWxJKsPZscnLrOX7IPa8L-ps,6142
+supervisor_ext-0.1.5.dist-info/METADATA,sha256=KYsozCW_UNZtNh0KCQi_qXlDoRbO3UrTQ8h831ItIg8,1513
+supervisor_ext-0.1.5.dist-info/RECORD,,
+supervisor_ext-0.1.5.dist-info/WHEEL,sha256=9xUnOISuCvrSyfu9GlFZT4i2TZ_2OLkwLNqcDvIo3zM,92
+supervisor_ext-0.1.5.dist-info/entry_points.txt,sha256=Dai8i-RpsRRIgrR8BvDUmdAoBXOi61x3H1pRcN8Mo1w,131
+supervisor_ext-0.1.5.dist-info/namespace_packages.txt,sha256=VtS0P6MbrhUMdd1B_j8wVUFq3sGJCMfnLfYeT0z036o,15
+supervisor_ext-0.1.5.dist-info/top_level.txt,sha256=VtS0P6MbrhUMdd1B_j8wVUFq3sGJCMfnLfYeT0z036o,15

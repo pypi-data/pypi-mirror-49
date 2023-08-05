@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+adventure_anywhere.egg-info/PKG-INFO
+adventure_anywhere.egg-info/SOURCES.txt
+adventure_anywhere.egg-info/dependency_links.txt
+adventure_anywhere.egg-info/requires.txt
+adventure_anywhere.egg-info/top_level.txt

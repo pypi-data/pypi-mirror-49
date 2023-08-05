@@ -1,0 +1,3 @@
+[console_scripts]
+calc = simple_calc.__main__:main
+

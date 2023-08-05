@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: geoviz
+Version: 0.7.1
+Summary: Wrapper to easily make geo-based visualizations
+Home-page: https://github.com/LocusAnalytics/geoviz
+Author: W. Aaron Lee
+Author-email: alee@locus.co
+License: MIT
+Description: See [tutorial](https://locusanalytics.github.io/files/geoviz_tutorial.html)
+Platform: UNKNOWN

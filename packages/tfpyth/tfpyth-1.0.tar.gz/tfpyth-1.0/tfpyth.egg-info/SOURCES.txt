@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+tfpyth/__init__.py
+tfpyth.egg-info/PKG-INFO
+tfpyth.egg-info/SOURCES.txt
+tfpyth.egg-info/dependency_links.txt
+tfpyth.egg-info/requires.txt
+tfpyth.egg-info/top_level.txt

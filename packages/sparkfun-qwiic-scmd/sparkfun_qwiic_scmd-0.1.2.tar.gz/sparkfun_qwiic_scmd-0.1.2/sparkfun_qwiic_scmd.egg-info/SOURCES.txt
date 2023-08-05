@@ -1,0 +1,9 @@
+README.md
+qwiic_scmd.py
+setup.cfg
+setup.py
+sparkfun_qwiic_scmd.egg-info/PKG-INFO
+sparkfun_qwiic_scmd.egg-info/SOURCES.txt
+sparkfun_qwiic_scmd.egg-info/dependency_links.txt
+sparkfun_qwiic_scmd.egg-info/requires.txt
+sparkfun_qwiic_scmd.egg-info/top_level.txt

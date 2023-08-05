@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+legos/__init__.py
+legos/events.py
+legos/learner.py
+legos/metrics.py
+legos/torch_utils.py
+legos/utils.py
+legos.ai.egg-info/PKG-INFO
+legos.ai.egg-info/SOURCES.txt
+legos.ai.egg-info/dependency_links.txt
+legos.ai.egg-info/top_level.txt

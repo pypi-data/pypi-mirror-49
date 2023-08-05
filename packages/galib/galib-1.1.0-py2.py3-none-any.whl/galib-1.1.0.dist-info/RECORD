@@ -1,0 +1,12 @@
+galib/__init__.py,sha256=HjDUiObldk7iAJSgzJEELyzF0QnMNGVIAAQYqvDIaA0,8353
+galib/extra.py,sha256=57wgd8wn_hq4NKzd5SP6RbT7BZIqi3EUKrQm0ygm73M,21279
+galib/metrics.py,sha256=MWmKJq0ba94r_i-zyXVOhYEBIYj8ZkF2Knf4LNKAvXs,68148
+galib/metrics_numba.py,sha256=8AIF9pa40kOnoNeo28bv8_9rTf_n8xgDTGWOrA5_8Ao,7355
+galib/models.py,sha256=I_lu50lqWMilS4gDmXPwSUhEZA8pkbD2I_XAsKkWNPY,57852
+galib/models_numba.py,sha256=fgXwDxmuNhQceaWqnO6zSTY0LonCmzhPBSvimu7mYqk,4594
+galib/tools.py,sha256=LiL-ocMBFSUxjLKtB8i9Z31ZS1UMp-JSg6YlZyKzw5U,34038
+galib-1.1.0.dist-info/LICENSE.txt,sha256=0Dod85iByoXlBdg-K_dHUm_Xljt2Eqp8u2f5vGXPXwg,12643
+galib-1.1.0.dist-info/METADATA,sha256=ZhzQyQnNlqwPEHYADMa7eFgs5lS7Gs9CVF17P1snuPo,1215
+galib-1.1.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+galib-1.1.0.dist-info/top_level.txt,sha256=pXMKPDO3jlfxqly4R1bal_EORv1yjbK7jRDUdN_2vyM,6
+galib-1.1.0.dist-info/RECORD,,

@@ -1,0 +1,10 @@
+grpcio
+protobuf
+ecdsa
+python-bitcoinlib
+
+[dev]
+grpcio-tools
+mypy
+typing-extensions
+mypy-protobuf

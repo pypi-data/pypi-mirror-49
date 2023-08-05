@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+pyApp_AIOBotocore.egg-info/PKG-INFO
+pyApp_AIOBotocore.egg-info/SOURCES.txt
+pyApp_AIOBotocore.egg-info/dependency_links.txt
+pyApp_AIOBotocore.egg-info/entry_points.txt
+pyApp_AIOBotocore.egg-info/requires.txt
+pyApp_AIOBotocore.egg-info/top_level.txt
+pyapp_ext/aiobotocore/__init__.py
+pyapp_ext/aiobotocore/checks.py
+pyapp_ext/aiobotocore/default_settings.py
+pyapp_ext/aiobotocore/factory.py
+pyapp_ext/aiobotocore/queues.py

@@ -1,0 +1,10 @@
+pyapp>=4.0
+pyapp-messaging
+aiobotocore
+
+[dev]
+docutils
+black
+
+[yaml]
+pyyaml

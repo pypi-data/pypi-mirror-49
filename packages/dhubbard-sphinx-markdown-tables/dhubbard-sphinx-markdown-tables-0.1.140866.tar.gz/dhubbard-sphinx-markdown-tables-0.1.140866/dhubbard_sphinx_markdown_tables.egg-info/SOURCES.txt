@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dhubbard_sphinx_markdown_tables.egg-info/PKG-INFO
+dhubbard_sphinx_markdown_tables.egg-info/SOURCES.txt
+dhubbard_sphinx_markdown_tables.egg-info/dependency_links.txt
+dhubbard_sphinx_markdown_tables.egg-info/requires.txt
+dhubbard_sphinx_markdown_tables.egg-info/top_level.txt
+dhubbard_sphinx_markdown_tables.egg-info/zip-safe
+sphinx_markdown_tables/__init__.py

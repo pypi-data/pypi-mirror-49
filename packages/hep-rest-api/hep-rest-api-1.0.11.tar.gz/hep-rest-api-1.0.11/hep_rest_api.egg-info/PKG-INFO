@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: hep-rest-api
+Version: 1.0.11
+Summary: HEP REST API
+Home-page: http://github.com/newtonproject/hep-sdk
+Author: UNKNOWN
+Author-email: xiawu@zeuux.org
+License: UNKNOWN
+Description:     The REST API for HEP protocol  # noqa: E501
+            
+Keywords: newtonproject.org,Hyper Exchange Protocol,HEP REST API
+Platform: UNKNOWN

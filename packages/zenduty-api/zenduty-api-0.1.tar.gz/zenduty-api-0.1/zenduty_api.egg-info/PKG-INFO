@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: zenduty-api
+Version: 0.1
+Summary: Python SDK wrapper for the Zenduty API
+Home-page: UNKNOWN
+Author: Vishwa Krishnakumar
+Author-email: vishwa@yellowant.com
+License: UNKNOWN
+Description: Python SDK wrapper for the Zenduty API
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst

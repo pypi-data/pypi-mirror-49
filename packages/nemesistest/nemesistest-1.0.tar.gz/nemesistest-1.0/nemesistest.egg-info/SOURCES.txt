@@ -1,0 +1,8 @@
+README.md
+setup.py
+nemesistest/__init__.py
+nemesistest/test.py
+nemesistest.egg-info/PKG-INFO
+nemesistest.egg-info/SOURCES.txt
+nemesistest.egg-info/dependency_links.txt
+nemesistest.egg-info/top_level.txt

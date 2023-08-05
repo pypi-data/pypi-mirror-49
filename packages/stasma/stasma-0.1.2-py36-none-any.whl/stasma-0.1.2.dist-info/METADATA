@@ -1,0 +1,635 @@
+Metadata-Version: 2.1
+Name: stasma
+Version: 0.1.2
+Summary: Stellar surface maker
+Home-page: https://github.com/mikecokina/stasma.git
+Author: Michal Cokina, Miroslav Fedurco
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: eclipsing binaries astronomy analysis physic
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: astropy (==2.0.2)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: matplotlib (==2.1.0)
+Requires-Dist: numpy (==1.13.3)
+Requires-Dist: pandas (==0.23.0)
+Requires-Dist: py (==1.4.34)
+Requires-Dist: pyparsing (==2.2.0)
+Requires-Dist: pytest (==3.2.3)
+Requires-Dist: python-dateutil (==2.6.1)
+Requires-Dist: pytz (==2017.2)
+Requires-Dist: scipy (==1.0.0)
+Requires-Dist: six (==1.11.0)
+Provides-Extra: dev
+
+STellAr Surface MAker
+=====================
+
+stasma
+------
+
+
+**Stasma** is python package created to make binary and single star systems modeling easier.
+Inside the package, Roche potential is implemented as a generalized implicit description of binary star surface and
+simple potential for single rotating star.
+
+Stasma is a precursor for **elisa** package that is currently in development, and it is intended
+to be application with full implementation of eclipsing binary star and single star physics including light curve
+modeling including pulsations.
+
+Requirements
+------------
+
+**Stasma** is a python package which requires ``python v3.6+`` and has following dependencies::
+
+    cycler==0.10.0
+    matplotlib==2.1.0
+    numpy==1.13.3
+    pandas==0.23.0
+    pyparsing==2.2.0
+    pytest==3.2.3
+    python-dateutil==2.6.1
+    pytz==2017.2
+    py==1.4.34
+    astropy==2.0.2
+    scipy==1.0.0
+    six==1.11.0
+
+Nevertheless, versions are specified precisely, it doesn't mean that stasma won't work with higher versions,
+it just was not tested with other versions of mentioned python packages.
+
+``stasma`` is multiplatform library fully supported on Linux and Windows operating systems.
+
+How to
+------
+
+The following guide describes all capabilities and features of this package.
+
+Install
+-------
+
+As an any python package, ``stasma`` the easiest and safer way to install is to create python virtual
+environment and install all requirements into it. Here is a simple guide, how to od it. Details of installation differ
+in dependence on the selected operating system.
+
+Ubuntu [or similar]
+~~~~~~~~~~~~~~~~~~~
+
+First, you have to install Python 3.6 or higher. In newest stable version ``Ubuntu 18.04`` there is already preinstalled
+python `3.6.x`. In older versions, you will have to add repository and install it manually.
+
+Install ``pip3`` python package manager if is not already installed on your system, usually by execution of command::
+
+    apt install -y python3-pip
+
+Install virtual environment by command::
+
+    pip3 install virtualenv
+
+To create virtual environment, create directory where python virtual environment will be stored, e.g. ``/<any>/<path>/env36``
+and run following command::
+
+    virtualenv /<any>/<path>/env36 --python=python3.6
+
+After few moments you virtual environment is created and ready for use. In terminal window, activate virtual environment::
+
+    . /<any>/<path>/env36/bin/activate
+
+When virtual environment is activated, install ``stasma`` by::
+
+    pip3 install stasma
+
+
+Windows
+~~~~~~~
+
+To install python in windows, download ``python 3.6.x`` installation package from official python web site.
+Installation package will create all necessary dependencies with exception of virtual environment.
+Install virtual environment by execution of following command in command line::
+
+    pip3 install virtualenv
+
+Make sure a proper version of  python and pip is used. When done, create directory where virtual environment will be
+stored and run::
+
+    virtualenv /<any>/<path>/env36 --python=python3.6
+
+Now, when virtual environment is prepared, run::
+
+    . /<any>/<path>/env36/Scripts/activate
+
+And finally install ``stasma``::
+
+    pip3 install stasma
+
+Configuration
+-------------
+
+Currently, you have a possibility to configure logging level and logging structure.
+By default, logging level is specified by ``json`` logging  definition deployed in site-packages
+(installation directory of all python packages). If you want to enable logging,
+just import configuration module and run setup logging function
+
+.. code:: python
+
+    from stasma.conf import config
+
+    def main():
+        config.set_up_logging()
+        ...
+
+    if __name__ == "__main__":
+        main()
+
+If you wish to change a logging, define your own ``json`` configuration and setup path in stasma configuration ini file
+
+.. code:: ini
+
+    [general]
+    log_config=/<path>/<to>/<logging>/<json>
+
+Configuration ini file has to be supplied either as environment variable ``STASMA_CONFIG`` or  stored in your
+virtual environment directory as ``conf/stasma_conf.ini``.
+
+Important api docs
+------------------
+
+``stasma.base.star.Star:``
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    class define Star instance
+
+    :param name: char; name of instance
+    :param suppress_logger: bool; enable/disable logger
+    :param kwargs:
+        :**kwargs options**:
+            * **mass** * --  float or astropy.units.Quantity;
+                    mass of Start object
+
+            * **surface_potential** * --  float;
+                    unit-less Roche surface potential of Star
+
+            * **synchronicity** * --  float;
+                    synchronicity of Star defined in generalized Roche potential as ratio of rotational angular
+                    velocity to orbital angular velocity
+
+            * **discretization_factor** * --  float;
+                    average angular distance of two nearest points on Star surface
+
+            * **spots** * --  list of dicts;
+                    list of spots definition (see ``from stasma.base.Spot``)
+
+            * **mass** * --  float or astropy.units.Quantity;
+                    mass of Start object
+
+            * **polar_log_g** * --  float;
+                    polar gravity acceleration in log10 of cgs units
+
+            * **color** * -- list; [<0-255>, <0-255>, <0-255>]
+                    color definition for plotting
+
+
+*important accessible properties computed on fly:*
+
+    - critical_surface_potential
+    - backward_radius
+    - forward_radius
+    - polar_radius
+    - side_radius
+
+``stasma.base.star.Spot:``
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    :note: instances of this class are used as a container for individual spot defined for each Star; it is not intended to be used stand alone
+
+    :param kwargs:
+        :**kwargs options**:
+            * **longitude** * --  float;
+                    longitude of spot center
+
+            * **latitude** * --  float;
+                    latitude of spot center
+
+            * **angular_diameter** * --  float;
+                    angular diameter of spot
+
+            * **discretization_factor** * --  float;
+                    discretization factor of spor, if not specified, discretization of parent Star will be used
+
+            * **color** * -- list; [<0-255>, <0-255>, <0-255>]
+                color definition for plotting for given spot
+
+``stasma.single_system.system.SingleSystem:``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    :param name: char; name of instance
+    :param suppress_logger: bool; enable/disable loggerd
+    :param kwargs:
+        :**kwargs options**:
+            * **period** * --  stasma.base.star.Star;;
+                    instance of Star
+            * **inclination** * --  float or astropy.units.Quantity;
+                    inclination of binary system; default unit is `degree`
+            * **rotation_period** * --  float or astropy.units.Quantity;
+                    rotation period of star; default unit is `day`
+
+
+``stasma.single_system.system.SingleSystem.build_mesh(self, return_mesh=False):``
+.................................................................................
+
+user face method for building mesh; as mesh we define a set of points on surface of star objects.
+
+    :param return_mesh: bool; if True, return surface points of object (spots included); return value of method will be numpy.arrays like numpy.array(<points>)
+    :return: numpy.array or None
+
+``stasma.single_system.system.SingleSystem.build_surface(self, return_surface=False):``
+.......................................................................................
+
+    user face method to build surface; there is assumption that build_mesh() was called before this method, otherwise calling this method will lead to crash
+
+    :param return_surface: bool; if True, return value of method will be tuple like (points, faces)
+    :return: Tuple or None
+
+``stasma.single_system.system.SingleSystem.plot.equipotential(self, **kwargs):``
+................................................................................
+
+    :param kwargs:
+        :**kwargs options**:
+            * **axis_unit** * --  any astropy.unit lenght unit, eg. astropy.units.solRad, astropy.units.AU, astropy.units.m, etc. if empty astropy.units.solRad is assumed;
+
+``stasma.single_system.system.SingleSystem.plot.mesh(self, **kwargs):``
+.......................................................................
+
+    :param kwargs:
+        :**kwargs options**:
+            * **axis_unit** * --  any astropy.unit lenght unit, eg. astropy.units.solRad, astropy.units.AU, astropy.units.m, etc. if empty astropy.units.solRad is assumed;
+            * **plot_axis** * --  enable/disable axis in resulting plot, deafault is True;
+            * **inclination** * --  angle between rotational axis and line of sight;
+            * **azimuth** * --  angle between 0 latitude meridian and line of sight;
+
+``stasma.single_system.system.SingleSystem.plot.wireframe(self, **kwargs):``
+............................................................................
+
+    :param kwargs:
+        :**kwargs options**:
+            * **axis_unit** * --  any astropy.unit lenght unit, eg. astropy.units.solRad, astropy.units.AU, astropy.units.m, etc. if empty astropy.units.solRad is assumed;
+            * **plot_axis** * --  enable/disable axis in resulting plot, deafault is True;
+            * **inclination** * --  angle between rotational axis and line of sight;
+            * **azimuth** * --  angle between 0 latitude meridian and line of sight;
+
+``stasma.single_system.system.SingleSystem.plot.surface(self, **kwargs)``:
+..........................................................................
+
+    :param kwargs:
+        :**kwargs options**:
+            * **axis_unit** * --  any astropy.unit lenght unit, eg. astropy.units.solRad, astropy.units.AU, astropy.units.m, etc. if empty astropy.units.solRad is assumed;
+            * **edges** * --  enable/disable edge highlight of faces, default is True;
+            * **normals** * --  enable/disable normal vector of faces, default is False;
+            * **inclination** * --  angle between rotational axis and line of sight;
+            * **azimuth** * --  angle between 0 latitude meridian and line of sight;
+            * **units** * --  any astropy.unit lenght unit, eg. astropy.units.solRad, astropy.units.AU, astropy.units.m, etc. if empty astropy.units.solRad is assumed;
+
+``stasma.binary_system.system.BinarySystem:``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    :param name: char; name of instance
+    :param primary: stasma.base.star.Star; instance of primary Star
+    :param secondary: stasma.base.star.Star; instance of secondary Star
+    :param suppress_logger: bool; enable/disable logger
+    :param kwargs:
+        :**kwargs options**:
+            * **period** * --  float or astropy.units.Quantity; period of binary system, default unit is `day`
+
+            * **eccentricity** * --  float; eccentricity of binary system
+
+            * **inclination** * --  float or astropy.units.Quantity; inclination of binary system; default unit is `radian`
+
+            * **argument_of_periastron** * --  float or astropy.units.Quantity; argument_of_periastron of binary system; default unit is `radian`
+
+*user face methods:*
+
+``stasma.binary_system.system.BinarySystem.build_mesh(self, component=None, components_distance=None, return_mesh=False):``
+...........................................................................................................................
+
+    user face method for building mesh; as mesh we define a points surface of star objects.
+
+    :param component: str or list; define component to build surface for; if None, surface for both components will be evaluated
+    :param components_distance: float;
+    :param return_surface: bool; if True, return points of objects (spots included); return value of method will be dictionary of numpy.arrays like {"primary": numpy.array(<points>), "secondary": numpy.array(<points>)}
+    :return: Dict or None
+
+
+``stasma.binary_system.system.BinarySystem.build_surface(self, component=None, components_distance=None, return_surface=False):``
+.................................................................................................................................
+
+    user face method to build surface.;There is assumption that build_mesh() was called before this method, otherwise calling this method will lead to crash
+
+    :param component: str or list; define component to build surface for; if None, surface for both components will be evaluated
+    :param components_distance: float;
+    :param return_surface: bool; if True, return value of method will be tuple like (points, faces)
+    :return: Tuple or None
+
+``stasma.binary_system.system.BinarySystem.plot.orbit(self, **kwargs):``
+........................................................................
+
+    :param kwargs:
+        :**kwargs options**:
+            * **start_phase** * --  float;
+            * **stop_phase** * --  float;
+            * **number_of_points** * --  int;
+            * **axis_unit** * --  any astropy.unit lenght unit or `dimensionless`, eg. astropy.units.solRad, astropy.units.AU, astropy.units.m, etc., if empty `dimensionless` is assumed where semi major axis is set to 1;
+            * **frame_of_reference** * --  str; `primary` or `barycenter`
+
+``stasma.binary_system.system.BinarySystem.plot.equipotential(self, **kwargs):``
+................................................................................
+
+    :param kwargs:
+        :**kwargs options**:
+            * **plane** * --  str; `xy`, `yz`, `zy`
+            * **phase** * --  float;
+
+``stasma.binary_system.system.BinarySystem.plot.mesh(self, **kwargs):``
+.......................................................................
+
+    :param kwargs:
+        :**kwargs options**:
+            * **phase** * --  float;
+            * **components_to_plot** * --  str; `primary`, `secondary` or `both`
+            * **plot_axis** * --  bool;
+            * **inclination** * --  angle between orbital axis and line of sight;
+            * **azimuth** * --  photometric phase of the system;
+
+``stasma.binary_system.system.BinarySystem.plot.wireframe(self, **kwargs):``
+............................................................................
+
+    :param kwargs:
+        :**kwargs options**:
+            * **phase** * --  float;
+            * **components_to_plot** * --  str; `primary`, `secondary` or `both`
+            * **plot_axis** * --  bool;
+            * **inclination** * --  angle between orbital axis and line of sight;
+            * **azimuth** * --  photometric phase of the system;
+
+``stasma.binary_system.system.BinarySystem.plot.surface(self, **kwargs):``
+..........................................................................
+
+    :param kwargs:
+        :**kwargs options**:
+            * **phase** * --  float;
+            * **components_to_plot** * --  str; `primary`, `secondary` or `both`
+            * **normals** * --  bool;
+            * **edges** * --  bool;
+            * **plot_axis** * --  bool;
+            * **inclination** * -- float or wtf;
+            * **azimuth** * -- float;
+            * **units** * -- any astropy.unit lenght unit or `dimensionless`, eg. astropy.units.solRad, astropy.units.AU, astropy.units.m, etc., if empty `dimensionless` is assumed where semi major axis is set to 1;
+
+*important accessible properties computed on fly:*
+
+    - semi_major_axis
+    - morphology
+    - mass_ratio
+    - orbit
+
+``stasma.binary_system.orbit.Orbit:``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    :param suppress_logger: bool; enable/disable logger
+    :param kwargs:
+        :**kwargs options**:
+            * **period** * --  float or astropy.units.Quantity; period of binary system, default unit is `day`
+
+            * **eccentricity** * --  float; eccentricity of binary system
+
+            * **inclination** * --  float or astropy.units.Quantity; inclination of binary system; default unit is `degree`
+
+            * **argument_of_periastron** * --  float or astropy.units.Quantity; argument_of_periastron of binary system; default unit is `radian`
+
+*user face methods:*
+
+``stasma.binary_system.orbit.Orbit.orbital_motion(self, phase=None):``
+......................................................................
+
+    function takes photometric phase of the binary system as input and calculates positions of the secondary
+    component in the frame of reference of primary component
+
+    :param phase: numpy.array or numpy.float
+    :return: numpy.array: matrix consisting of column stacked vectors distance, azimut angle, true anomaly and phase
+
+    ::
+
+                       numpy.array((r1, az1, ni1, phs1),
+                                   (r2, az2, ni2, phs2),
+                                   ...
+                                   (rN, azN, niN, phsN))
+
+*important accessible properties computed on fly:*
+
+    - periastron_distance
+    - periastron_phase
+
+Basic examples and usage
+------------------------
+
+Create binary sytem
+~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+    from astropy import units
+    from stasma.base.star import Star
+    from stasma.binary_system.system import BinarySystem
+
+
+    def main():
+
+         primary = Star(
+            mass=2.0 * units.solMass,
+            surface_potential=2.6,
+            synchronicity=1.0,
+            discretization_factor=5,
+            color=[0, 255, 0]
+        )
+        secondary = Star(
+            mass=1.0 * units.solMass,
+            surface_potential=2.6,
+            synchronicity=1.0,
+            discretization_factor=5,
+            color=[255, 0, 0]
+        )
+
+        bs = BinarySystem(
+            primary=primary,
+            secondary=secondary,
+            argument_of_periastron=90 * units.deg,
+            period=1 * units.d,
+            eccentricity=0.0,
+            inclination=90 * units.deg
+        )
+
+    if __name__ == "__main__":
+        main()
+
+Create single system
+~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+    from astropy import units
+    from stasma.base.star import Star
+    from stasma.single_system.system import SingleSystem
+
+
+    def main():
+
+        star = Star(
+            mass=1.0 * units.solMass,
+            discretization_factor=3,
+            polar_log_g=4.1 * units.dex(units.cm / units.s ** 2),
+            color=[255, 0, 0]
+        )
+
+        single = SingleSystem(
+            star=star,
+            inclination=90 * units.deg,
+            rotation_period=0.5 * units.d
+        )
+
+    if __name__ == "__main__":
+        main()
+
+Create binary sytem with three spots on primary and one spot on secondary component
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+    from astropy import units
+    from stasma.base.star import Star
+    from stasma.binary_system.system import BinarySystem
+
+    def main():
+
+        spots_metadata = {
+        "primary":
+            [
+                {"longitude": 90,
+                 "latitude": 58,
+                 "angular_diameter": 15},
+                {"longitude": 85,
+                 "latitude": 80,
+                 "angular_diameter": 30},
+                {"longitude": 45,
+                 "latitude": 90,
+                 "angular_diameter": 30},
+            ],
+
+        "secondary":
+            [
+                {"longitude": 90,
+                 "latitude": 0,
+                 "angular_diameter": 40},
+            ]
+        }
+
+        primary = Star(
+            mass=2.0 * units.solMass,
+            surface_potential=2.6,
+            synchronicity=1.0,
+            discretization_factor=4,
+            spots=spots_metadata['primary'],
+            color=[0, 255, 0]
+        )
+        secondary = Star(
+            mass=1.0 * units.solMass,
+            surface_potential=2.6,
+            synchronicity=1.0,
+            discretization_factor=4,
+            spots=spots_metadata['secondary'],
+            color=[255, 0, 0]
+        )
+
+        bs = BinarySystem(
+            primary=primary,
+            secondary=secondary,
+            argument_of_periastron=90 * units.deg,
+            period=1 * units.d,
+            eccentricity=0.0,
+            inclination=90 * units.deg,
+        )
+
+    if __name__ == "__main__":
+        main()
+
+Build mesh and surface of objects in binary system
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:note: parameter `componetn_distance` is driven parameter to involve capability to compute and create system in different part of eccentric orbit
+
+**After computation, properties like ``points`` or ``faces`` are available from Star class instaces.**
+
+.. code-block:: python
+
+    def main():
+        ...
+        # definitions
+
+        bs.build_mesh(components_distance=1.0)
+        bs.build_surface(components_distance=1.0)
+
+        print(primary.points)
+        print(primary.faces)
+        print(primary.spots)
+
+        print(primary.spots[#index].points)
+        print(primary.spots[#index].faces)
+
+    if __name__ == "__main__":
+        main()
+
+Build mesh and surface of objects in single system
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**After computation, properties like ``points`` or ``faces`` are available from Star class instace.**
+
+.. code-block:: python
+
+    def main():
+        ...
+        # definitions
+
+        single.build_mesh()
+        single.build_surface()
+
+        print(star.points)
+        print(star.faces)
+        print(star.spots)
+
+        print(star.spots[#index].points)
+        print(star.spots[#index].faces)
+
+    if __name__ == "__main__":
+        main()
+
+
+Plot binary star system wireframe
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+    def main():
+        ...
+        # definitions
+
+        bs.build_mesh(components_distance=1.0)
+        bs.build_surface(components_distance=1.0)
+
+        bs.plot.wireframe()
+
+    if __name__ == "__main__":
+        main()
+
+

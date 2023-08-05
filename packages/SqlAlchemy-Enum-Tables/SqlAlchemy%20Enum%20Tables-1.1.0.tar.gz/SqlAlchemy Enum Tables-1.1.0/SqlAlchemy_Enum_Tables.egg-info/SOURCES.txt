@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+extras_req.txt
+requirements.txt
+setup.py
+SqlAlchemy_Enum_Tables.egg-info/PKG-INFO
+SqlAlchemy_Enum_Tables.egg-info/SOURCES.txt
+SqlAlchemy_Enum_Tables.egg-info/dependency_links.txt
+SqlAlchemy_Enum_Tables.egg-info/not-zip-safe
+SqlAlchemy_Enum_Tables.egg-info/requires.txt
+SqlAlchemy_Enum_Tables.egg-info/top_level.txt
+enumtables/__init__.py
+enumtables/alembic_autogen.py
+enumtables/alembic_ops.py
+enumtables/enum_column.py
+enumtables/enum_table.py

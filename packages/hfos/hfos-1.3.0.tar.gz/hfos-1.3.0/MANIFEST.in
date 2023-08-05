@@ -1,0 +1,3 @@
+recursive-include frontend *
+recursive-include docs *
+recursive-include locale *

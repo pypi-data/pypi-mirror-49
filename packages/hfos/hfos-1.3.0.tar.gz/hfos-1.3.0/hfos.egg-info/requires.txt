@@ -1,0 +1,15 @@
+isomer
+hfos-alert
+hfos-anchor
+hfos-busrepeater
+hfos-comms
+hfos-crew
+hfos-dashboard
+hfos-dev
+hfos-equipment
+hfos-logbook
+hfos-map
+hfos-navdata
+hfos-nmea
+hfos-nodestate
+hfos-webguides

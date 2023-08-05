@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: elynia
+Version: 0.1.dev0
+Summary: A re-write of Monica, a cli-based food recommendation service
+Home-page: UNKNOWN
+License: Creative Commons Attribution-Noncommercial-Share Alike license
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5

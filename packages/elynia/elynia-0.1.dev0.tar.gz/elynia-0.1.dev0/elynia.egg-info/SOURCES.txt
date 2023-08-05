@@ -1,0 +1,5 @@
+setup.py
+elynia.egg-info/PKG-INFO
+elynia.egg-info/SOURCES.txt
+elynia.egg-info/dependency_links.txt
+elynia.egg-info/top_level.txt

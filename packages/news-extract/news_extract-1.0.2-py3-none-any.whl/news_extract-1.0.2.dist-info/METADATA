@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: news-extract
+Version: 1.0.2
+Summary: news_extract
+Home-page: https://github.com/dfreelon/news_extract/
+Author: Deen Freelon
+Author-email: dfreelon@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/dfreelon/news_extract/
+Keywords: information retrieval,nexisuni,factiva,deduplication
+Platform: UNKNOWN
+Requires-Dist: pandas
+
+UNKNOWN
+
+

@@ -1,0 +1,12 @@
+pyaml
+pyscaffold<4.0a0,>=3.2a0
+
+[testing]
+sphinx
+flake8
+pytest
+pytest-cov
+pytest-shutil
+pytest-virtualenv
+pytest-fixture-config
+pytest-xdist

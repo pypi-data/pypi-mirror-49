@@ -1,0 +1,11 @@
+pyapp_ext/aiobotocore/__init__.py,sha256=m4NNT7e3Oyj-Rx08pia4OCcBCjN_tl0HMaRF1clhXTY,196
+pyapp_ext/aiobotocore/checks.py,sha256=A-RKUA2wu5mT9-dmfWSTASlLLGKVi2QltzIn6yG-AbM,108
+pyapp_ext/aiobotocore/default_settings.py,sha256=FqAqxuQKnAjVnW-hnZGJ2DJbDiA3BOOVK8NIEMrlKSU,275
+pyapp_ext/aiobotocore/factory.py,sha256=09hy1qqeZxJBZHb_VnlPCql3jssf_4OeKtle_ClR5f8,1511
+pyapp_ext/aiobotocore/queues.py,sha256=_EpKD77uVpT_Et8Ab0VamCWbdk-Yyh7TnYdgqha5vKc,5773
+pyApp_AIOBotocore-1.1.0.dist-info/LICENSE,sha256=s4x3UeWcrC54EIg5n3z_Uj9A527Q_BGzMYZq99N7vpc,1501
+pyApp_AIOBotocore-1.1.0.dist-info/METADATA,sha256=RAwQCP2jtXvioCERDFmeJe16b_2tm3RJD_shlGGsrfE,3041
+pyApp_AIOBotocore-1.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyApp_AIOBotocore-1.1.0.dist-info/entry_points.txt,sha256=4I8HVVIHeio3qMRhglY3lU8sa_tC4oypxszPzheS9BM,72
+pyApp_AIOBotocore-1.1.0.dist-info/top_level.txt,sha256=frApB1nqfiES7hqKoZvZXYkZj_kX2GHG4ai2ZetSXdQ,10
+pyApp_AIOBotocore-1.1.0.dist-info/RECORD,,

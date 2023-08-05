@@ -1,0 +1,36 @@
+#!python
+import os
+import argparse
+
+commands = {
+    'ruok' : 'Zookeeper status',
+    'mntr' : 'Zookeeper monitor',
+    'isro' : 'Zookeeper is readonly',
+    'stat' : 'Zookeeper statistics',
+    'dump' : 'Zookeeper dump',
+    'reqs' : 'Zookeeper requests'
+    'envi' : 'Environment variables list'
+}
+
+def get_info():
+    cout = os.popen("hostname -i")
+    host = cout.read()
+    for key,value in commands.items():
+
+        cmd = 'echo {} | nc {} 2181'.format(key, host)
+        output = os.popen(cmd)
+       
+        print(value)
+        print(header)
+        print(output.read())
+
+
+if __name__=='__main__':
+    #parser = argparse.ArgumentParser(description='Retrieve Docker Run Command from existing container')
+    #parser.add_argument('name', action="store", help='docker container name')
+    #parser.add_argument('username', action="store", help='elasticsearch username')
+    #parser.add_argument('password', action="store", help='elasticsearch password')
+    #results = parser.parse_args()
+    
+    get_info()
+

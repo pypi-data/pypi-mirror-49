@@ -1,0 +1,2 @@
+py-ecceth.cpython-36m-darwin.so
+pyecceth.cpython-36m-darwin.so

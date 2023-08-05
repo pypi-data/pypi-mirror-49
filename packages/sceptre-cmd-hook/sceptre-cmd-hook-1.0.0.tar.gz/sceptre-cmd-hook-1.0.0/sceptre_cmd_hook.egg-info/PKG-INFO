@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: sceptre-cmd-hook
+Version: 1.0.0
+Summary: Sceptre Command Line Hook to run arbitary commands
+Home-page: https://github.com/sceptre/sceptre-cmd-hook
+Author: Sceptre
+Author-email: sceptre@cloudreach.com
+License: Apache2
+Description: # CMD Hook
+        
+        Executes the argument string in the shell as a Python subprocess.
+        
+        For more information about how this works, see the
+        [subprocess documentation](https://docs.python.org/3/library/subprocess.html)
+        
+        Syntax:
+        
+        ```yaml
+        <hook_point>:
+          - !cmd <shell_command>
+        ```
+        
+        Example:
+        
+        ```yaml
+        before_create:
+          - !cmd 'echo hello'
+        ```
+        
+Keywords: sceptre,sceptre-hook
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test

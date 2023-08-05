@@ -1,0 +1,5 @@
+packaging==16.8
+
+[test]
+pytest>=3.2
+mock==2.0.0

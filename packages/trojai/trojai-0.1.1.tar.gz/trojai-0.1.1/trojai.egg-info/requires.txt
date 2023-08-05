@@ -1,0 +1,12 @@
+numpy
+pandas
+scikit-image
+joblib
+scipy
+pillow
+scikit-learn==0.20.3
+tqdm
+opencv-python
+
+[test]
+nose

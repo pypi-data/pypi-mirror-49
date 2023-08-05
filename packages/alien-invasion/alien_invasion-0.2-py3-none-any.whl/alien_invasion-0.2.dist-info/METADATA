@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: alien-invasion
+Version: 0.2
+Summary: A Alien Invasion Game
+Home-page: https://github.com/yorkhuang-data/alien_invasion
+Author: York Huang
+Author-email: yorkhuang.data@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+### Test
+
+test package
+
+

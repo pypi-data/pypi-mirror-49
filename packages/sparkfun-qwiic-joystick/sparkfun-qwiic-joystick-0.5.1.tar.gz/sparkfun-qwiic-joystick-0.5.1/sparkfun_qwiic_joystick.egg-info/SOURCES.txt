@@ -1,0 +1,9 @@
+README.md
+qwiic_joystick.py
+setup.cfg
+setup.py
+sparkfun_qwiic_joystick.egg-info/PKG-INFO
+sparkfun_qwiic_joystick.egg-info/SOURCES.txt
+sparkfun_qwiic_joystick.egg-info/dependency_links.txt
+sparkfun_qwiic_joystick.egg-info/requires.txt
+sparkfun_qwiic_joystick.egg-info/top_level.txt

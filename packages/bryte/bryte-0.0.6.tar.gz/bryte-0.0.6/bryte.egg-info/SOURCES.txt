@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+bryte/__init__.py
+bryte/__main__.py
+bryte/config.txt
+bryte/universal.py
+bryte.egg-info/PKG-INFO
+bryte.egg-info/SOURCES.txt
+bryte.egg-info/dependency_links.txt
+bryte.egg-info/entry_points.txt
+bryte.egg-info/top_level.txt

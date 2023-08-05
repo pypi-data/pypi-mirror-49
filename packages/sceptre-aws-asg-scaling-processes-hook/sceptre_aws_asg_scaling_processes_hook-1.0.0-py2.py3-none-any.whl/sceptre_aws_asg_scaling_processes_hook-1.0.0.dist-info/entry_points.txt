@@ -1,0 +1,3 @@
+[sceptre.hooks]
+asg_scaling_processes = hook.asg_scaling_processes:ASGScalingProcesses
+

@@ -1,0 +1,201 @@
+{
+    "basePath": "/api",
+    "consumes": [
+        "application/json"
+    ],
+    "definitions": {
+        "Example": {
+            "properties": {
+                "b64bytes": {
+                    "description": "Some bytes",
+                    "example": "c3dhZ2dlcg==",
+                    "format": "byte",
+                    "type": "string"
+                },
+                "b64bytesenum": {
+                    "description": "Some bytes",
+                    "enum": [
+                        "QQ==",
+                        "Qg==",
+                        "Qw==",
+                        "RA=="
+                    ],
+                    "example": "QQ==",
+                    "format": "byte",
+                    "type": "string"
+                },
+                "data": {
+                    "description": "String data",
+                    "example": "Some string",
+                    "type": "string"
+                },
+                "enumeration": {
+                    "description": "Specific string from enum",
+                    "enum": [
+                        "A",
+                        "B",
+                        "C",
+                        "D"
+                    ],
+                    "example": "C",
+                    "type": "string"
+                },
+                "isod": {
+                    "description": "ISO date",
+                    "example": "1990-12-31",
+                    "format": "date",
+                    "type": "string"
+                },
+                "isodt": {
+                    "description": "ISO datetime",
+                    "example": "1985-04-12T23:20:50.52Z",
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "list": {
+                    "description": "List data",
+                    "example": [
+                        "some",
+                        "strings",
+                        "here"
+                    ],
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "raw": {
+                    "description": "Raw data",
+                    "example": {
+                        "any_data": "you_like_goes_here"
+                    },
+                    "type": "object"
+                },
+                "real": {
+                    "description": "real data",
+                    "example": 123.456,
+                    "type": "number"
+                },
+                "truthy": {
+                    "description": "Bool data",
+                    "example": true,
+                    "type": "boolean"
+                },
+                "whole": {
+                    "description": "number data",
+                    "example": 1234,
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "b64bytes",
+                "b64bytesenum",
+                "data",
+                "enumeration",
+                "isod",
+                "isodt",
+                "list",
+                "raw",
+                "real",
+                "truthy",
+                "whole"
+            ],
+            "type": "object"
+        }
+    },
+    "host": "127.0.0.1:5000",
+    "info": {
+        "description": "A test REST API",
+        "title": "Example API",
+        "version": "1.0"
+    },
+    "paths": {
+        "/example": {
+            "delete": {
+                "operationId": "delete_example_collection",
+                "responses": {
+                    "204": {
+                        "description": "Successful delete."
+                    }
+                },
+                "summary": "Just return",
+                "tags": [
+                    "example"
+                ]
+            },
+            "get": {
+                "operationId": "get_example_collection",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Return a string",
+                "tags": [
+                    "example"
+                ]
+            }
+        },
+        "/example/{exint}": {
+            "parameters": [
+                {
+                    "in": "path",
+                    "name": "exint",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "operationId": "put_example_resource",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "payload",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Example"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "App successfully updated."
+                    }
+                },
+                "summary": "Takes in data",
+                "tags": [
+                    "example"
+                ]
+            }
+        }
+    },
+    "produces": [
+        "application/json"
+    ],
+    "responses": {
+        "MaskError": {
+            "description": "When any error occurs on mask"
+        },
+        "ParseError": {
+            "description": "When a mask can't be parsed"
+        }
+    },
+    "schemes": [
+        "http"
+    ],
+    "swagger": "2.0",
+    "tags": [
+        {
+            "description": "Default namespace",
+            "name": "default"
+        },
+        {
+            "description": "This API's schema operations",
+            "name": "schema"
+        },
+        {
+            "description": "Example operations",
+            "name": "example"
+        }
+    ]
+}

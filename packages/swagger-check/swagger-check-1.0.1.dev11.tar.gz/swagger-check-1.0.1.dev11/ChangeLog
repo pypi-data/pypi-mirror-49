@@ -1,0 +1,69 @@
+CHANGES
+=======
+
+* default schema type to object strategy
+* headers containing unicode must be able to be encoded in latin-1 encoding
+* adding newlines at end of files
+* add badges
+* upgrade pbr version
+* allow support for python -m swaggercheck
+* put the requirements where they make sense
+* update setuptools for correct markdown rendering
+* fix typo
+* add environment variables support for CLI
+* additional information about SSL cert error on mac osx
+
+1.0.0
+-----
+
+* update travis CI
+* more luck without quotes?
+* render readme as markdown
+* update requirements-dev
+* update travis
+* added demo cast
+* remove unused tests, examples and docs
+* black with 79 characters limit
+* update docs to explain design changes
+* remove test cases that have been broken by CLI refactoring
+* update requirements
+* better exception handling for unknown security
+* allow security name override from CLI
+* added CLI colors 🌈
+* add basic auth from CLI
+* rename package, use pbr for packaging, add proper CLI, remove deprecation warnings
+
+0.2.5
+-----
+
+* Bump version once more
+* Fix out of date setup.py dependencies
+* Narrower exception catching
+* Latest version of pyswagger removes need for workaruond code - delete it
+* Try to fix install problems by simplifying setup.py
+* Require an up-to-date version of sphinx [skip ci]
+* Fix readthedocs badge link [skip ci]
+* Migrate to readthedocs for documentation hosting
+
+0.2.3
+-----
+
+* New point release with two bug fixes: - Support Content-Type header parameters - Handle args correctly when called with 'python -m'
+* Support content-type parameters with parameters
+* Fix extremely dumb and embarassing bug from issue #2
+* Add pylint checking to maintain a consistent and standard code style
+* Uploading to pypi no longer requires registering beforehand
+
+0.2.2
+-----
+
+* Bump the version for new release
+* Pin the responses package to a working version - latest one is bugged
+* Fix linter error
+* The response headers are now case insensitive
+* Major rename of most objects for final API version
+* Use more appropriate names for some objects
+* Report more details of failed tests in basic conformance test
+* Don't expose pyswagger objects over any external interfaces
+* Better special case handling for the X-Fields header
+* Standardise the way underlying pyswagger objects are accessed

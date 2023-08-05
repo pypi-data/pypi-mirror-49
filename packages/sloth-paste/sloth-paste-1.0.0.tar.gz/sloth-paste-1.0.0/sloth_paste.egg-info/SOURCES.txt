@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+sloth_paste.egg-info/PKG-INFO
+sloth_paste.egg-info/SOURCES.txt
+sloth_paste.egg-info/dependency_links.txt
+sloth_paste.egg-info/entry_points.txt
+sloth_paste.egg-info/requires.txt
+sloth_paste.egg-info/top_level.txt
+slothpaste/__init__.py
+slothpaste/__main__.py
+slothpaste/langs.txt

@@ -1,0 +1,11 @@
+README.md
+setup.py
+mpl_colors/__init__.py
+mpl_colors/colormaps.py
+mpl_colors/generated.py
+mpl_colors/mixin.py
+mpl_colors.egg-info/PKG-INFO
+mpl_colors.egg-info/SOURCES.txt
+mpl_colors.egg-info/dependency_links.txt
+mpl_colors.egg-info/requires.txt
+mpl_colors.egg-info/top_level.txt

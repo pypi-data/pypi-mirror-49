@@ -1,0 +1,9 @@
+README.md
+setup.py
+atari_py/__init__.py
+atari_py/ale_python_interface.py
+atari_py.egg-info/PKG-INFO
+atari_py.egg-info/SOURCES.txt
+atari_py.egg-info/dependency_links.txt
+atari_py.egg-info/requires.txt
+atari_py.egg-info/top_level.txt

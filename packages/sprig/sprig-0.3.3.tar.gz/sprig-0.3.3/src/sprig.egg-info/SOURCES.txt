@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+src/sprig/__init__.py
+src/sprig/comb.py
+src/sprig/dictutils.py
+src/sprig/iterutils.py
+src/sprig.egg-info/PKG-INFO
+src/sprig.egg-info/SOURCES.txt
+src/sprig.egg-info/dependency_links.txt
+src/sprig.egg-info/top_level.txt

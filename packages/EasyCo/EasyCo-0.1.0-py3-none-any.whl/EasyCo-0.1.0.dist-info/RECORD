@@ -1,0 +1,12 @@
+EasyCo/__init__.py,sha256=_PI0BFVJQezAEMgmpVZbw-fxRLGCQOtY7VrlNUj_kyo,220
+EasyCo/__version__.py,sha256=uvd9ed032B5bpegGTE-XySmvJba8XK7qeqX6XrQyXTU,23
+EasyCo/config_file.py,sha256=O8XqnYH29FJacxAmrawg_905MALpbvQypspeRUbae-w,2757
+EasyCo/configuration.py,sha256=BT5DnQXSSIJI64hvKZlMF0QLpAefRWu-Zb4x2U9oLno,486
+EasyCo/container.py,sha256=cDQPkqJlHgWvpXf8ypx8KkqZpplDvAHycnSjWAvdSrQ,5658
+EasyCo/entry.py,sha256=Dh7RB0Ho9LPJIFwIMWO_-TmlHW0U5uQEjWLT95rl2Ek,5008
+EasyCo/path_container.py,sha256=fGNKLHyFI-x_W0qwOhhujuK5bMEZkaI8xwkdjoXuo-c,1042
+EasyCo-0.1.0.dist-info/LICENSE,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+EasyCo-0.1.0.dist-info/METADATA,sha256=pZoWFP6mMJCCGLik-pJ2h4e-pVdjACWi4tR_FNqKNgs,1840
+EasyCo-0.1.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+EasyCo-0.1.0.dist-info/top_level.txt,sha256=ZCwgA4rDjtNh-9uwxJrEYyT2Q-GlpAzmc-JE__DtzqI,7
+EasyCo-0.1.0.dist-info/RECORD,,

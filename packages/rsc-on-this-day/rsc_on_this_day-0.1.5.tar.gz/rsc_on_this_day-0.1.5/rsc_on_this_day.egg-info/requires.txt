@@ -1,0 +1,4 @@
+beautifulsoup4>=4.7.1
+requests>=2.22.0
+requests-cache>=0.5.0
+cashier>=1.3

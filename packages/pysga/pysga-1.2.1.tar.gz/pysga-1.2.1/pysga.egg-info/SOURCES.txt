@@ -1,0 +1,14 @@
+README.md
+setup.py
+pysga/__init__.py
+pysga/configure.py
+pysga/family.py
+pysga/fobj_function.py
+pysga/sga.py
+pysga/sgaApp.py
+pysga/tournament.py
+pysga.egg-info/PKG-INFO
+pysga.egg-info/SOURCES.txt
+pysga.egg-info/dependency_links.txt
+pysga.egg-info/requires.txt
+pysga.egg-info/top_level.txt

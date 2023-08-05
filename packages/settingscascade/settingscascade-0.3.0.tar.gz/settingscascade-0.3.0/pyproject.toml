@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "settingscascade"
+# Version is 0.0.0 in this file, it is updated during the publish process
+# based on the git tag
+version = "0.3.0"
+description = "Cascade settings from multiple levels of specificity"
+authors = ["Paul Becotte <pjbecotte@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+homepage = "https://gitlab.com/pjbecotte/settingscascade"
+repository = "https://gitlab.com/pjbecotte/settingscascade"
+keywords = ["config", "settings", "ini", "css", "specificity"]
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Intended Audience :: Developers",
+	"Topic :: Software Development :: Libraries",
+]
+
+packages = [
+    {include = "settingscascade", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.5"
+jinja2 = "~2.10"
+sortedcontainers = "~2.1"
+
+
+[tool.poetry.dev-dependencies]
+black = {version = "^19.3b0", allows-prereleases = true, python = "^3.6"}
+isort = "^4.3"
+mypy = "^0.710"
+pylint = "^2.3"
+pytest = "^4.6"
+pytest-cov = "^2.7"
+toml = "~0.10"
+sphinx = "^2.1"
+sphinx-rtd-theme = "^0.4.3"
+pyyaml = "^5.1"
+
+[build-system]
+requires = ["poetry"]
+build-backend = "poetry.masonry.api"

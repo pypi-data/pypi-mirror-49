@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: orbis-plugin-storage-single-view
+Version: 2.1.1
+Summary: The single_view storage plugin for Orbis
+Home-page: https://github.com/orbis-eval/orbis_plugin_storage_single_view
+Author: fabod
+License: GPL2
+Platform: UNKNOWN
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+Requires-Dist: palettable (==3.1.1)
+
+# Single View Storage Plugin for Orbis
+
+

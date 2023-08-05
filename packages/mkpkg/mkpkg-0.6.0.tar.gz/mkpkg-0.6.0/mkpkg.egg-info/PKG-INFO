@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: mkpkg
+Version: 0.6.0
+Summary: UNKNOWN
+Home-page: https://github.com/Julian/mkpkg
+Author: Julian Berman
+Author-email: Julian+mkpkg@GrayVines.com
+License: UNKNOWN
+Description: A package I (`Julian <https://github.com/Julian>`_) use to create Python packages.
+        
+        It’s here for myself, but feel free to use it if you’d like.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy

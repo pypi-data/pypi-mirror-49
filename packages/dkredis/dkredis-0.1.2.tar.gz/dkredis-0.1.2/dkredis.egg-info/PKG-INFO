@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: dkredis
+Version: 0.1.2
+Summary: dkredis - Python interface to Redis
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: 
+        .. image:: https://coveralls.io/repos/github/datakortet/dkredis/badge.svg?branch=master
+            :target: https://coveralls.io/github/datakortet/dkredis?branch=master
+        
+        
+        dkredis - Python interface to Redis
+        ==================================================
+        
+        
+        Installing from PyPI
+        --------------------
+        
+        This is what you want if you just want to use dkredis:
+        
+           pip install dkredis
+        
+        
+        As a source package
+        -------------------
+        This is what you want if you are developing dkredis or want 
+        to make local changes to the source code.
+        
+           pip install -e <path>
+        
+        
+        
+        
+        See docs/ folder for documentation.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Requires: redis

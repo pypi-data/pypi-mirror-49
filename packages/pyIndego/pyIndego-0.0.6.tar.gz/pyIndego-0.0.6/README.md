@@ -1,0 +1,1 @@
+This is a simple API for the Bosch Indego lawnmowers.

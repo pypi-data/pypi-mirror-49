@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: grimoire
+Version: 0.0.1
+Summary: Biological sequence analysis tools
+Home-page: https://github.com/KorfLab/grimoire
+Author: Ian Korf
+Author-email: ifkorf@gmail.com
+License: UNKNOWN
+Description: grimoire
+        ========
+        
+        Biological sequence analysis tools from the Korf Lab at UC Davis.
+        
+        The current developent is highly volatile and not ready for public consumption.
+        
+        The code is designed with the folllowing analyses in mind:
+        
+        + Gene structure prediction using hidden Markov models and variants
+        + Genome annotation quality control
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

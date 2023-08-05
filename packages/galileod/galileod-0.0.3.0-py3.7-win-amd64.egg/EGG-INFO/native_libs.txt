@@ -1,0 +1,14 @@
+galileo/__init__.cp37-win_amd64.pyd
+galileo/api.cp37-win_amd64.pyd
+galileo/cli.cp37-win_amd64.pyd
+galileo/compile.cp37-win_amd64.pyd
+galileo/cryptoutils.cp37-win_amd64.pyd
+galileo/daemon.cp37-win_amd64.pyd
+galileo/device.cp37-win_amd64.pyd
+galileo/dockerutils.cp37-win_amd64.pyd
+galileo/entry.cp37-win_amd64.pyd
+galileo/history.cp37-win_amd64.pyd
+galileo/job.cp37-win_amd64.pyd
+galileo/model.cp37-win_amd64.pyd
+galileo/networking.cp37-win_amd64.pyd
+galileo/utils.cp37-win_amd64.pyd

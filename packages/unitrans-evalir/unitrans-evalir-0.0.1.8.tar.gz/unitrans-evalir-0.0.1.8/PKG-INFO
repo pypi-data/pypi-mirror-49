@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: unitrans-evalir
+Version: 0.0.1.8
+Summary: Parses a file with a certain structure and converts to the desired metric unit.
+Home-page: https://github.com/Evalir/UniversalTranslator
+Author: Enrique Ortiz
+Author-email: hi.evalir@gmail.com
+License: UNKNOWN
+Description: # UniversalTranslator
+        Final individual project for the "Tendencias en desarrollo de aplicaciones" class.
+        
+        ## App objective
+        This CLI (Command Line App) can be used to convert from one longitude unit from the International Unit System to another one.
+        
+        ## App installation
+        First, you need to have pip installed; it's the python package manager that you'll use to then install the application. You can get it [here](https://www.liquidweb.com/kb/install-pip-windows/), however, it should be preinstalled on your system; still, I recommend upgrading to the latest version to avoid conflicts.
+        
+        After installing pip, you can just run this command: `pip install unitrans-evalir`
+        
+        When you install it with pip (beware, this will also install all of the CLI dependencies), you can then use it by running `UniversalTranslator --help`: this will display the help file with all the command options.
+        
+        Example:
+        ```
+        pip install unitrans-evalir
+        UniversalTranslator --pathname input.txt --writepath output.txt
+        ```
+        
+        This example will take the input.txt file that you have created on the folder you're in, process the contents, and write to the `output.txt` file the converted units.
+        
+        ### Input Format example:
+        `1 m cm`: 1 meter to centimeters.
+        `2 dm km`: 2 decimeters to kilometers.
+        For further info about usage, please refer to [this table on wikipedia.](https://en.wikipedia.org/wiki/Metre)
+        
+        ## Contributing:
+        Please take a look at the CONTRIBUTING.MD file.
+        
+        
+        ## Miscellaneous 
+        - [CRC Cards](https://www.dropbox.com/s/ziuwpm2cyhquio0/CRC%20responsiblity.png?dl=0)
+        - [UML Diagram](https://www.dropbox.com/s/634thy9jduy5mgd/UML%20Diagram.png?dl=0)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

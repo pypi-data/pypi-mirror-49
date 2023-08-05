@@ -1,0 +1,8 @@
+README.md
+setup.py
+ip_c_generator/__init__.py
+ip_c_generator/seg_ten.py
+ip_c_generator.egg-info/PKG-INFO
+ip_c_generator.egg-info/SOURCES.txt
+ip_c_generator.egg-info/dependency_links.txt
+ip_c_generator.egg-info/top_level.txt

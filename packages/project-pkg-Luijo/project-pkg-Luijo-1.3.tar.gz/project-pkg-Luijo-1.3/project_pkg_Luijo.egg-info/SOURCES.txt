@@ -1,0 +1,8 @@
+README.md
+setup.py
+project_pkg/Placas.py
+project_pkg/__init__.py
+project_pkg_Luijo.egg-info/PKG-INFO
+project_pkg_Luijo.egg-info/SOURCES.txt
+project_pkg_Luijo.egg-info/dependency_links.txt
+project_pkg_Luijo.egg-info/top_level.txt

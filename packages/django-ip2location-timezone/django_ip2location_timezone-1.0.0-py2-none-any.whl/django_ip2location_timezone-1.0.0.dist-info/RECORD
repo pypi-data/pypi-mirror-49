@@ -1,0 +1,10 @@
+ip2location_timezone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ip2location_timezone/middleware.py,sha256=slVNWQDAKVxpXKASfLIDNbkb0TZnuLi8jgSvQ7LiWzc,2071
+ip2location_timezone/urls.py,sha256=M8F7EKEAgDRaw_iEqBQfxqawcirubMkdH0irf-32Ftw,132
+ip2location_timezone/views.py,sha256=pQYMD7QivzNt_qf735438EcrdwRtMRP9HQLBHhR-EhQ,210
+django_ip2location_timezone-1.0.0.dist-info/AUTHORS,sha256=q3MrrKUwB1uVaSNg6SI91ZcS3AOvXWUhl0kzyt-jI2s,42
+django_ip2location_timezone-1.0.0.dist-info/LICENSE.TXT,sha256=3qAUwebJMPuSfTWM_DZ-vEDCnWV3WnendAqH8QwCBUU,1093
+django_ip2location_timezone-1.0.0.dist-info/METADATA,sha256=0aW8YMzccmnZwbqAGHSZTi-2yCbbda6SfPoHxBBPDyg,2720
+django_ip2location_timezone-1.0.0.dist-info/WHEEL,sha256=2n5gfr2CmDNU5qrqPgO0uSe7oSWu-GEpPLFa0_ueMrk,97
+django_ip2location_timezone-1.0.0.dist-info/top_level.txt,sha256=qqk7auPkHSK5C9grgyrFofnfXPZkPUloZ_MqES3V6kk,21
+django_ip2location_timezone-1.0.0.dist-info/RECORD,,

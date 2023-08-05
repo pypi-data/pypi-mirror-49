@@ -1,0 +1,13 @@
+PennyLane_SF-0.4.1.dist-info/DESCRIPTION.rst,sha256=Jsggz_KeOK4HuSbDw12203yIZLapewnkwD51o0hY4Ys,4588
+PennyLane_SF-0.4.1.dist-info/METADATA,sha256=cKCfR8zfVUnRVVozydZ6yBPE9BXnz0umv7KaA8wSvy4,5668
+PennyLane_SF-0.4.1.dist-info/RECORD,,
+PennyLane_SF-0.4.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+PennyLane_SF-0.4.1.dist-info/entry_points.txt,sha256=3ddSt-PelhTWgs9FCPnygQESMBG82zzKGv7NSLgmFpE,145
+PennyLane_SF-0.4.1.dist-info/metadata.json,sha256=2572Zlq2d7iZNCHYbvXwleZZ-f4t5tWLjair-Q_pQkQ,1348
+PennyLane_SF-0.4.1.dist-info/top_level.txt,sha256=MRATNQwLPLlPulnwioA8BYZhTFKYFqiH5zJ3Etb1E8k,13
+pennylane_sf/__init__.py,sha256=DZZPdyu1ROvj5ZJjinfMn2411guseM_l-cE5rC9UbLs,753
+pennylane_sf/_version.py,sha256=ZDo35Wf4U6HFXoes3IR4OBq_34vrI-2oWN5skxnCspA,691
+pennylane_sf/expectations.py,sha256=Lt6L7nT3InhBIsXzlgSayU8fVp-_Hit93WaC01LO-tE,6822
+pennylane_sf/fock.py,sha256=EZtFb47QondN6gJm-VCPrROHdGZNzn7itEcbM8pVtbc,3532
+pennylane_sf/gaussian.py,sha256=yTKoViuaKfJ7FKkvljYMLqPlZDz-HG_CwrDwYYSWrAs,2669
+pennylane_sf/simulator.py,sha256=1_HBVtgGvhh6jRDsgYsN42kaFoCfqQ9ZvZY2NlA9y_8,5553

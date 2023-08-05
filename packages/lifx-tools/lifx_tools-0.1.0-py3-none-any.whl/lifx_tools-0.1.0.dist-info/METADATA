@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: lifx-tools
+Version: 0.1.0
+Summary: Graphical interface for controlling lifx bulbs
+Home-page: https://github.com/DrTexxOfficial/lifx-tools
+Author: Denver P
+Author-email: UNKNOWN
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/DrTexxOfficial/lifx-tools/issues
+Project-URL: Source, https://github.com/DrTexxOfficial/lifx-tools/
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Home Automation
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: bitstring (==3.1.6)
+Requires-Dist: lifxlan (==1.2.5)
+Requires-Dist: netifaces (==0.10.9)
+Requires-Dist: pkg-resources (==0.0.0)
+
+# lifx-tools
+
+`lifx-tools/__main__.py` is where the action is at
+
+_[NOTE]: This readme is a work-in-progress. If you require any specific information, please submit a github issue. I will try my best to address any questions you have in this readme once I get the chance. Thanks! :)_
+
+

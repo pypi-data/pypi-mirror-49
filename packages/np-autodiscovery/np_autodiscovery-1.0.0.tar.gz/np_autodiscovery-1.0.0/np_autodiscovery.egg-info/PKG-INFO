@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: np-autodiscovery
+Version: 1.0.0
+Summary: NetBox plugin which allows for auto discovery of existing devices in a network.
+Home-page: https://github.com/lampwins/np_autodiscovery/
+Author: John Anderson
+Author-email: lampwins@gmail.com
+License: Apache 2.0
+Description: # Auto Discovery NetBox Plugin
+        
+        NetBox plugin which allows for auto discovery of existing devices in a network.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Networking

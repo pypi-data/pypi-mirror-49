@@ -1,0 +1,33 @@
+dist: xenial   # required for Python >= 3.7
+language: python
+python:
+  - "3.7.2"
+sudo: false
+
+
+cache:
+  directories:
+    - $HOME/.cache/pip
+
+install:
+  - pip install pip --upgrade
+  - pip install setuptools
+  - python setup.py sdist
+  - pip install dist/candig_common*.tar.gz
+# every installable in setup.py's entry_points should be tested here
+  - candig_run_tests --version
+
+before_script:
+  - pip install -r dev-requirements.txt
+
+
+# run_tests.py runs everything under the script: tag so only put commands
+# under it that we want to run (and want to be able to run) as local tests
+script: 
+  - flake8 run_tests_dev.py setup.py candig tests
+  - nosetests tests
+        --with-coverage --cover-package candig.common
+        --cover-inclusive --cover-min-percentage=70
+        --cover-branches --cover-erase
+
+

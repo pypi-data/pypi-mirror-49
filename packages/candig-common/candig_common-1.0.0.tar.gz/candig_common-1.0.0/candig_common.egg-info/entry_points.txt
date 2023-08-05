@@ -1,0 +1,3 @@
+[console_scripts]
+candig_run_tests = candig.common.run_tests:run_tests_main
+

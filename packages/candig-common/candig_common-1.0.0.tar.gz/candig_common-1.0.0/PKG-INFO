@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: candig_common
+Version: 1.0.0
+Summary: Common utilities for CanDIG packages
+Home-page: https://github.com/candig/candig-common
+Author: CanDIG Team
+Author-email: info@distributedgenomics.ca
+License: Apache License 2.0
+Description: =============
+        candig-common
+        =============
+        
+        This package provides common functionality that is used across other
+        CanDIG packages.
+Keywords: genomics,reference
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics

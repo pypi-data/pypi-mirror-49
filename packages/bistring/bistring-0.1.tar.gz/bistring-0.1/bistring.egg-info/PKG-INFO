@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bistring
+Version: 0.1
+Summary: Bidirectionally transformed strings
+Home-page: https://github.com/microsoft/bistring
+Author: Microsoft Research Montreal
+Author-email: msrmtle@microsoft.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test

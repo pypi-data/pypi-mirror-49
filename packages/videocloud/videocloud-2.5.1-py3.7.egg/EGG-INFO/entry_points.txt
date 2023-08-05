@@ -1,0 +1,3 @@
+[console_scripts]
+videocloud = videocloud.main:main
+

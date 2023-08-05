@@ -1,0 +1,8 @@
+aiohttp
+aiohttp-swagger
+aiohttp-jinja2
+aiohttp_utils
+pymongo==3.6.0
+docker
+mongolog
+requests

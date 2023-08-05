@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: stocknflow
+Version: 0.0.8
+Summary: Stocks and flows maps
+Home-page: https://gitlab.com/mrteste/stocknflow
+Author: Julien Jamme
+Author-email: julien.jamme@protonmail.com
+Maintainer: Julien Jamme
+License: GPL3
+Description: # stocknflow package
+        
+        >`stocknflow` package displays two function for making maps with Python.  
+        > - One function allows you to **map stock values** as proportional circles.  
+        > - The another one allows you to **map flows** between two geographical entities as proportionnal arrows.
+        
+        See Vignettes to know how to use them.
+        
+        
+Keywords: map stocks proportionnal circles flows
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

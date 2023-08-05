@@ -1,0 +1,11 @@
+.DS_Store,sha256=BVp7saXfIu0XiRQELrlz_-sD-VWhKtuQRMcC8mMbsp8,8196
+fathom_web/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fathom_web/list.py,sha256=HjiQOoYKz44dxkP9mHdtI5E6aSWB86SYh3zBM1PRX-o,1020
+fathom_web/pick.py,sha256=bSkxIMaDlSZT03-25BQHDc3hYNmtfPvWitJF5dBImvw,810
+fathom_web/train.py,sha256=yOOT3MQixKZ5ro8E1S7_ro68wNkHoqWO_9h2KGKb5uU,14039
+fathom_web/unzip.py,sha256=-fRoifQliDTDfyKJOmGHS5Wl7D0EI_UdalDR9sE52b0,1598
+fathom_web-3.1.dist-info/METADATA,sha256=4Oe4TniyCYfUVOHgvVZARVJB-ltW2qBxMfYIcuxigkE,1963
+fathom_web-3.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+fathom_web-3.1.dist-info/entry_points.txt,sha256=VOxEirnYNZfS_RHTUr2vm56LiS1JSQC9OblKOC1REsw,163
+fathom_web-3.1.dist-info/top_level.txt,sha256=q_Q85nsjbUTHD7yov2u70nOKfGGaecDrvp7vXE25tSE,11
+fathom_web-3.1.dist-info/RECORD,,

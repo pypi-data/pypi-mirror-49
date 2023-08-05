@@ -1,0 +1,7 @@
+Products.CMFPlone
+setuptools
+
+[test]
+plone.app.testing
+plone.app.multilingual[test]
+plone.app.querystring

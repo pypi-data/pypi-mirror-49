@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: oh-my-logging
+Version: 0.1.0
+Summary: Enhancement for logging.
+Home-page: https://github.com/fsjohnhuang/oh-my-logging
+Author: fsjohnhuang
+Author-email: fsjohnhuang@hotmail.com
+Maintainer: fsjohnhuang
+Maintainer-email: fsjohnhuang@hotmail.com
+License: MIT
+Description: 
+        # oh-my-logging
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown

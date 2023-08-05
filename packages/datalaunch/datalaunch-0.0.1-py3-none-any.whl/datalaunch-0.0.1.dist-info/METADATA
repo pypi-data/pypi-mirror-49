@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: datalaunch
+Version: 0.0.1
+Summary: launch your data project into the cloud
+Home-page: https://github.com/datalaunch/datalaunch
+Author: Martijn Arts, Andreas Bollig
+Author-email: m.arts@gmx.net, andreas.bollig@gmail.com
+License: MIT
+Keywords: cloud deploy data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# datalaunch
+
+

@@ -1,0 +1,6 @@
+[console_scripts]
+pytunes = pytunes.bin.pytunes:main
+pytunes-playlists = pytunes.bin.pytunes_playlists:main
+pytunes-update = pytunes.bin.pytunes_update:main
+pytunesd = pytunes.bin.pytunesd:main
+

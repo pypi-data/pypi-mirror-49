@@ -1,0 +1,56 @@
+{% extends 'djangoadmin/base/body/index.html' %}
+
+
+{% block body %}
+
+{% include "djangoadmin/widgets/alert.html" %}
+
+<div class="callout" style="padding:5px;">
+  <div class="expanded button-group">
+     <a class="button" href="{% url 'djangoarticle:article_create_view' %}">Create New Article</a>
+     <a class="button" href="{% url 'djangoarticle:category_create_view' %}">Create New Category</a>
+     <a class="button" href="{% url 'djangoarticle:category_list_dashboard' %}">Manage Categories</a>
+  </div>
+</div>
+
+<!-- Start table here. -->
+<table class="striped hover table-expand">
+
+<thead>
+  <tr class="table-expand-row">
+    <th width="500"><a href="">Title</a></th>
+    <th><a href="">Category</a></th>
+    <th><a href="">Author</a></th>
+    <th><a href="">Verification</a></th>
+    <th width="100"><a href="">Status</a></th>
+  </tr>
+</thead>
+
+<tbody>
+{% for article_filter in article_filter %}
+   <tr class="table-expand-row" data-open-details>
+     <td width="500">{{ article_filter.title | truncatechars_html:45 }}</td>
+     <td><a>{{ article_filter.category }}</a></td>
+     <td><a>{{ article_filter.author }}</a></td>
+     <td><a>{{ article_filter.verification }}</a></td>
+     <td width="100"><a>{{ article_filter.status }}</a><span class="expand-icon"></span></td>
+   </tr>
+
+   <tr class="table-expand-row-content">
+      <td colspan="8" class="table-expand-row-nested">
+         <ul class="menu">
+           <li><a href="{{ article_filter.get_absolute_url_for_article_update_view }}">Edit</a></li>
+           <li><a href="{{ article_filter.get_absolute_url_for_article_delete_view }}">Delete</a></li>
+           <li><a href="{{ article_filter.get_absolute_url_for_article_detail_view }}" target="_blank">View</a></li>
+         </ul>
+      </td>
+    </tr>
+{% endfor %}
+</tbody>
+
+</table>
+
+<!-- end table here. -->
+
+
+{% endblock body %}

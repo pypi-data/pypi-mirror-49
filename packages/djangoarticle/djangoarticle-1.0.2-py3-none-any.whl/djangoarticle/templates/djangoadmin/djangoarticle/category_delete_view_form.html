@@ -1,0 +1,42 @@
+{% extends 'djangoadmin/base/body/index.html' %}
+
+
+{% block body %}
+
+{% include "djangoadmin/widgets/alert.html" %}
+
+<div class="callout alert">
+    <h6 style="text-align: center;">Delete this category.</h6>
+</div>
+
+<!-- Start table here. -->
+<table class="striped hover table-expand">
+
+    <thead>
+      <tr class="table-expand-row">
+        <th width="500"><a href="">Title</a></th>
+        <th><a href="">Author</a></th>
+        <th width="100"><a href="">Status</a></th>
+      </tr>
+    </thead>
+    
+    <tbody>
+       <tr class="table-expand-row" data-open-details>
+         <td width="500">{{ category_detail.title }}</td>
+         <td><a>{{ category_detail.author }}</a></td>
+         <td width="100"><a>{{ category_detail.status }}</a><span class="expand-icon"></span></td>
+       </tr>
+    </tbody>
+    
+</table>
+<!-- end table here. -->
+
+
+<form method='POST' action="">
+    {% csrf_token %}
+    <input class="button alert expanded" type="submit" value='delete'>
+</form>
+
+
+
+{% endblock body %}

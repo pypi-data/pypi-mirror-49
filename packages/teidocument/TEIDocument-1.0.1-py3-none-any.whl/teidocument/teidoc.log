@@ -1,0 +1,9 @@
+2019-07-05 18:15:19,336 - teidoc - DEBUG - source: '/Users/niels/projects/TEIDocument/teidocument/let001.xml'
+2019-07-05 18:15:19,337 - teidoc - DEBUG - Replaced default namespace: {'vg': 'http://www.vangoghletters.org/ns/', 'tei': 'http://www.tei-c.org/ns/1.0'}
+2019-07-05 18:15:19,338 - teidoc - DEBUG - loaded: <class 'lxml.etree._Element'>
+2019-07-05 18:15:19,338 - teidoc - DEBUG - using namespaces: {'vg': 'http://www.vangoghletters.org/ns/', 'tei': 'http://www.tei-c.org/ns/1.0'}
+2019-07-05 18:15:19,338 - teidoc - DEBUG - nested div found in /TEI/text/body/div[@type="original"]
+2019-07-05 18:15:19,339 - teidoc - DEBUG - layers: dict_keys(['original'])
+2019-07-05 18:15:19,339 - teidoc - DEBUG - layers: dict_keys(['original', 'textualNotes'])
+2019-07-05 18:15:19,339 - teidoc - DEBUG - layers: dict_keys(['original', 'textualNotes', 'translation'])
+2019-07-05 18:15:19,339 - teidoc - DEBUG - layers: dict_keys(['original', 'textualNotes', 'translation', 'notes'])

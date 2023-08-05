@@ -1,0 +1,12 @@
+numpy
+pandas
+pycuda
+six
+networkx
+
+[ASE]
+ase
+
+[docs]
+sphinx
+sphinx-materialdesign-theme-nopyc

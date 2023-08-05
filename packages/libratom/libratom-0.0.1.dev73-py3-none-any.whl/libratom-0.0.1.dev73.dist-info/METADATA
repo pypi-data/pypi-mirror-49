@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: libratom
+Version: 0.0.1.dev73
+Summary: Set of Python tools for the RATOM project
+Home-page: https://github.com/libratom/libratom
+Author: RATOM
+Author-email: ratom@protonmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Dist: humanfriendly (==4.18)
+Requires-Dist: libpff-python-ratom (==20190316)
+Requires-Dist: pbr (==5.4.0)
+Requires-Dist: treelib (==1.5.5)
+
+Set of Python tools for the RATOM project
+
+

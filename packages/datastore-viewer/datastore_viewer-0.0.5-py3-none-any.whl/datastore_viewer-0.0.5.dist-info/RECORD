@@ -1,0 +1,14 @@
+datastore_viewer/__init__.py,sha256=HGmkvRuZWnpLJOMqZj_v3nVsr7HfZR2JRLiKYdybg8M,1544
+datastore_viewer/__pycache__/__init__.cpython-37.pyc,sha256=AMOtEE_2TrnUOzL2pEvvW_VZGlBY8J_Jtzd9SV4pXHw,1946
+datastore_viewer/presentation/__init__.py,sha256=tz0LBpuzv5EZTYjVfetB8Wp1j-mZ5XjFkMyfAGxuxZ0,176
+datastore_viewer/presentation/__pycache__/__init__.cpython-37.pyc,sha256=RKAl5RAAhq0WG-aOCp8_KsvXjTmcYVHcsJWrdhB-Khw,389
+datastore_viewer/presentation/template/dashboard.html,sha256=1YdPIERt5x6meyO1W7SbrdezLMye-UwxNLLblSRGarU,301
+datastore_viewer/presentation/template/project_dashboard.html,sha256=1q7MKRAr9GVwWfZvn6Pxkmz5LdmYNV9MloHlL9zF5FM,1442
+datastore_viewer/presentation/ui/__init__.py,sha256=QGyl9tc4COSIf--5483u-irxdSeENt1oKPPGm3Xp4CY,6359
+datastore_viewer/presentation/ui/__pycache__/__init__.cpython-37.pyc,sha256=cDOBNO3YYwQ4C3nMoZ-z8Wr72Ht-cQxZ9KZTmkX3odQ,7248
+datastore_viewer-0.0.5.data/scripts/datastore-viewer,sha256=TrrCtnIrDWcaZ8mxtqKl7ogH6HuWPBdb9oLKP9r4ur0,256
+datastore_viewer-0.0.5.dist-info/LICENSE,sha256=_rh6LgwwXeNGTMRAd9pTk8UtjKY2LTdCcVfQTsb0UQ0,1057
+datastore_viewer-0.0.5.dist-info/METADATA,sha256=_gloziHv039ajmF_zNFbB1EM1Lnb0gcbXsMOmdVg95s,1757
+datastore_viewer-0.0.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+datastore_viewer-0.0.5.dist-info/top_level.txt,sha256=HIXLAooNKF591RrgGHtlKpFx9mdmRzJZ-u9EYnQpfeI,17
+datastore_viewer-0.0.5.dist-info/RECORD,,

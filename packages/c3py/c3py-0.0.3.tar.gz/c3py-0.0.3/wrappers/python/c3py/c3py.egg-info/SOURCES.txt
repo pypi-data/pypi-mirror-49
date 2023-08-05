@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+NOTES
+README.md
+contributors.txt
+setup.py
+wrappers/python/c3py/c3py.py
+wrappers/python/c3py/c3py.egg-info/PKG-INFO
+wrappers/python/c3py/c3py.egg-info/SOURCES.txt
+wrappers/python/c3py/c3py.egg-info/dependency_links.txt
+wrappers/python/c3py/c3py.egg-info/requires.txt
+wrappers/python/c3py/c3py.egg-info/top_level.txt
+wrappers/python/c3swig/c3.i
+wrappers/python/callback/python_caller.c

@@ -1,0 +1,6 @@
+numpy
+cython
+matplotlib
+nose
+future
+pygments

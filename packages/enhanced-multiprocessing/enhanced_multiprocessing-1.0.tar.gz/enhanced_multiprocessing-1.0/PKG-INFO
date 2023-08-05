@@ -1,0 +1,59 @@
+Metadata-Version: 1.1
+Name: enhanced_multiprocessing
+Version: 1.0
+Summary: A wrapper around Python's multiprocessing, providing support for tqdm progress bars and shared arguments
+Home-page: https://github.com/krassowski/enhanced-multiprocessing
+Author: Michal Krassowski
+Author-email: krassowski.michal+pypi@gmail.com
+License: MIT
+Description: Enhanced multiprocessing
+        ========================
+        
+        A wrapper around Python's multiprocessing, providing support for tqdm
+        progress bars and shared arguments.
+        
+        Provides simple, familiar interface with addiitonal superpowers.
+        
+        Installation
+        ~~~~~~~~~~~~
+        
+        .. code:: bash
+        
+            pip install enhanced_multiprocessing
+        
+        Example usage
+        ~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+            from enhanced_multiprocessing import Pool
+        
+            def add_n(x, n):
+                return x + n
+        
+            # the number of processes will be set to number of cores - 1 by default
+            p = Pool()
+        
+            # will apply add_n to the element list of length three with n=5, showing a nice progress bar along
+            result = p.imap(add_n, [1, 2, 3], shared_args=(5, ))
+        
+            assert list(result) == [6, 7, 8]
+        
+        History
+        ~~~~~~~
+        
+        Originally published at
+        `kn-bibs/pathways-analysis <https://github.com/kn-bibs/pathways-analysis/>`__,
+        then further developed for
+        `krassowski/drug-disease-profile-matching <https://github.com/krassowski/drug-disease-profile-matching>`__.
+        
+Keywords: multiprocessing,multiprocess,progress,progressbar,bar,enhanced
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7

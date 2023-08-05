@@ -1,0 +1,13 @@
+flask_taxonomies/__init__.py,sha256=EDQqNzQQT59XuWtwATInDOKseaV9xzkR0JaqoYk7dn4,48
+flask_taxonomies/db.py,sha256=EDhNv2-O7ou6aUFATg16J5qpQjH-rjqjJnCk5RbKbbs,195
+flask_taxonomies/ext.py,sha256=fuDk_R-7vibY7gz0eZOWANai3k7I5xqeJ-4QsGXpB1I,442
+flask_taxonomies/managers.py,sha256=--PilCtotZUXVoHvy99oF8EVEEJHpD1UnwZaFWHKhjo,4223
+flask_taxonomies/models.py,sha256=DK3nt9qwVMQiMB1Htx2mOqrtXV8I4Y_92USWlF8Fels,3049
+flask_taxonomies/views.py,sha256=eCsFoWA-1uPO6F41GB0DuKoycsKSxIG4cbQj874Oz-I,7788
+flask_taxonomies/alembic/0aea984dbf38_.py,sha256=FPqRXseIxNdTvq2qQ4iQfwUPeF1vUJf75r6QOc6ZiAs,1567
+flask_taxonomies-2.0.0.dist-info/LICENSE,sha256=oxlvOW3GiojF5mcapEzPff39MfADzIw5Qt8iOonks8c,1062
+flask_taxonomies-2.0.0.dist-info/METADATA,sha256=wBTJZ-dJYas68hlX-afknlCERMw-xyOmwSpeZmURUpc,1124
+flask_taxonomies-2.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+flask_taxonomies-2.0.0.dist-info/entry_points.txt,sha256=fLlLpJf6E4ZSHf66VePAWjiyGNvQ2Auw70GxH8t7_9Y,130
+flask_taxonomies-2.0.0.dist-info/top_level.txt,sha256=Qm3Wo3ebTt2Qa2yVTXagAFRbn2CUZ8b2Bo-5vSYYB-w,17
+flask_taxonomies-2.0.0.dist-info/RECORD,,

@@ -1,0 +1,58 @@
+Metadata-Version: 1.1
+Name: ExportCsvToInflux
+Version: 0.1.2
+Summary: Export
+Home-page: https://github.com/Bugazelle/export-csv-to-inlfux
+Author: Bugazelle
+Author-email: 463407426@qq.com
+License: bsd-3-clause-clear
+Download-URL: https://github.com/Bugazelle/export-csv-to-inlfux/archive/v0.1.2.tar.gz
+Description: Export CSV To Influx
+        ====================
+        
+        **Export CSV To Influx**: Process CSV data, and export the data to influx db
+        
+        ## Install
+        
+        Use the pip to install the library. Then the binary **export_csv_to_influx** is ready.
+        
+        ```
+        pip install ExportCsvToInflux
+        ```
+        
+        ## Features
+        
+        1. Allow to use binary **export_csv_to_influx** to run exporter
+        
+        2. Allow to check dozens of csv files in a folder
+        
+        3. Auto convert csv data to int/float/string in Influx
+        
+        4. Allow to limit string length in Influx
+        
+        5. Allow to judge the csv has new data or not
+        
+        6. Allow to use the latest file modify time as time column
+        
+        7. Auto Create database if not exist
+        
+        8. Allow to drop database before inserting data
+        
+        9. Allow to drop measurements before inserting data
+        
+        10. Allow to match or filter the data by using string or regex.
+        
+        11. Allow to count, and generate count measurement
+        
+        
+Keywords: python,csv,influx
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

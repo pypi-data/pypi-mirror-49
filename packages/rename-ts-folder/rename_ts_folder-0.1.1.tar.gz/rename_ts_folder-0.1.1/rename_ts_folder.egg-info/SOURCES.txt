@@ -1,0 +1,9 @@
+README.md
+setup.py
+rename_ts_folder/__init__.py
+rename_ts_folder/rename_folder.py
+rename_ts_folder.egg-info/PKG-INFO
+rename_ts_folder.egg-info/SOURCES.txt
+rename_ts_folder.egg-info/dependency_links.txt
+rename_ts_folder.egg-info/entry_points.txt
+rename_ts_folder.egg-info/top_level.txt

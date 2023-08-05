@@ -1,0 +1,3 @@
+[console_scripts]
+rtsf = rename_ts_folder.rename_folder:main
+

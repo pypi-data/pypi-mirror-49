@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ninegagposts/__init__.py
+ninegagposts/main.py
+ninegagposts.egg-info/PKG-INFO
+ninegagposts.egg-info/SOURCES.txt
+ninegagposts.egg-info/dependency_links.txt
+ninegagposts.egg-info/not-zip-safe
+ninegagposts.egg-info/requires.txt
+ninegagposts.egg-info/top_level.txt

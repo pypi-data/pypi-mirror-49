@@ -1,0 +1,14 @@
+pystencils_walberla/__init__.py,sha256=5R7HmY0n-QeKX2K7vnkmqo352yFYGI0RDZ9h-RmSGNg,322
+pystencils_walberla/cmake_integration.py,sha256=-PrQaZgzJWcrk0lH_tk0H2fWBp7ZNCuxIXVYJZ8BLug,4194
+pystencils_walberla/codegen.py,sha256=REEgMFGbFzZ3ayJ8ZBmZCwfEcboOeIl9G6mmwc_S1Gc,14480
+pystencils_walberla/jinja_filters.py,sha256=TI9hOV-XQkJHeYMJKyhtkkZ9xxhK47LestnZviCxrXQ,17812
+pystencils_walberla/templates/GpuPackInfo.tmpl.cpp,sha256=p_crEfH4gQGAQVX6VxIj89mYm7pcxJZcboE7bNALlgw,2938
+pystencils_walberla/templates/GpuPackInfo.tmpl.h,sha256=HB5vP70bJP9sOeh3fUmvvAnCU17eh-VPRXRglEtCNuM,1298
+pystencils_walberla/templates/Sweep.tmpl.cpp,sha256=zk24EJmkzCali9a75gU3Rg58bdrmRThIiqsTljH9QLk,3207
+pystencils_walberla/templates/Sweep.tmpl.h,sha256=8VGJ2skO8K4w32BqdPQ9pO-wzTG-MdriWWST7geVuFA,3442
+pystencils_walberla/templates/SweepInnerOuter.tmpl.cpp,sha256=wTJvpaNqIcObTBEtbeGqf_fxId0aiXwC4YomhU9_WQo,4953
+pystencils_walberla/templates/SweepInnerOuter.tmpl.h,sha256=b4B4KBVbyCFF1BfUK_snIODaCfsHrA0bhc14WSmpaD8,4116
+pystencils_walberla-0.2.3.dist-info/METADATA,sha256=ChIyXqNTqdfyG0fZQdTzzJ4cD2N7BPi8gVjUZjUMWrA,511
+pystencils_walberla-0.2.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pystencils_walberla-0.2.3.dist-info/top_level.txt,sha256=0wtIkFFNorKX6yytJhSPYvrkdthCSndAV1z7IQy86nY,20
+pystencils_walberla-0.2.3.dist-info/RECORD,,

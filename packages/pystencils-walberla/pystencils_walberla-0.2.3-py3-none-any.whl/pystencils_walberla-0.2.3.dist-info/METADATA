@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pystencils-walberla
+Version: 0.2.3
+Summary: pystencils code generation for waLBerla apps
+Home-page: https://i10git.cs.fau.de/pycodegen/pystencils_walberla
+Author: Martin Bauer
+Author-email: martin.bauer@fau.de
+License: AGPLv3
+Project-URL: Bug Tracker, https://i10git.cs.fau.de/pycodegen/pystencils_walberla/issues
+Project-URL: Source Code, https://i10git.cs.fau.de/pycodegen/pystencils_walberla
+Platform: UNKNOWN
+Requires-Dist: pystencils[alltrafos]
+Requires-Dist: jinja2
+
+UNKNOWN
+
+

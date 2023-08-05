@@ -1,0 +1,16 @@
+redis>=3.2
+StrEnum>=0.4
+
+[full]
+redislite>=5.0
+
+[full:python_version >= "3.6" and python_version < "3.8"]
+pickle5
+
+[pickle]
+
+[pickle:python_version >= "3.6" and python_version < "3.8"]
+pickle5
+
+[redislite]
+redislite>=5.0

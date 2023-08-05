@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+file7.txt
+setup.cfg
+setup.py
+kill601160.egg-info/PKG-INFO
+kill601160.egg-info/SOURCES.txt
+kill601160.egg-info/dependency_links.txt
+kill601160.egg-info/top_level.txt
+killShot1160/__init__.py
+killShot1160/file6.txt
+killShot1160/killll.py

@@ -1,0 +1,6 @@
+README.md
+setup.py
+HandyLib.egg-info/PKG-INFO
+HandyLib.egg-info/SOURCES.txt
+HandyLib.egg-info/dependency_links.txt
+HandyLib.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+gimmebio.entropy_scores-0.1.0-py3.6-nspkg.pth,sha256=pxTb1jWsCspdqoPmV2TGBVot_a6QmHbVwKXbDN4rHTs,549
+gimmebio/entropy_scores/__init__.py,sha256=PPI30r0CfNcODPXGkn8oisUK8IQmQ35LgBh27tWvtR8,43
+gimmebio/entropy_scores/cli.py,sha256=U4rQkZXJ2_lCyhuVXGEJX2e_hzwXWmkkMz4uwyntNsQ,583
+gimmebio/entropy_scores/entropy_scores.py,sha256=h1HBwQcPUONkBT2vV77rCl6IeX3IVnCKw_IrucdXzXM,552
+gimmebio.entropy_scores-0.1.0.dist-info/METADATA,sha256=jDSdimxH2jyZzbdJwckS7GJ6viwXCOph84vj00n8uSA,389
+gimmebio.entropy_scores-0.1.0.dist-info/RECORD,,
+gimmebio.entropy_scores-0.1.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+gimmebio.entropy_scores-0.1.0.dist-info/namespace_packages.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
+gimmebio.entropy_scores-0.1.0.dist-info/top_level.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9

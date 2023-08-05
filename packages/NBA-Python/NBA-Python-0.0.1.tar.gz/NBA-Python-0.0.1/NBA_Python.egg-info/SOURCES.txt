@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+NBA_Python.egg-info/PKG-INFO
+NBA_Python.egg-info/SOURCES.txt
+NBA_Python.egg-info/dependency_links.txt
+NBA_Python.egg-info/top_level.txt
+nba_python/__init__.py
+tests/__init__.py

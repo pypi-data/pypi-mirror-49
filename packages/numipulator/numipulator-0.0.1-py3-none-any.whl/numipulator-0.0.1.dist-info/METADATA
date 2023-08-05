@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: numipulator
+Version: 0.0.1
+Summary: Numpy-based image manipulation library.
+Home-page: https://github.com/chantw/numipulator
+Author: Chan Teck Wei
+Author-email: chan.tw97@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
+

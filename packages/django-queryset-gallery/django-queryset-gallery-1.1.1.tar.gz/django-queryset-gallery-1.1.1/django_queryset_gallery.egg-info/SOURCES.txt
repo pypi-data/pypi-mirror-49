@@ -1,0 +1,11 @@
+README.md
+setup.py
+django_queryset_gallery.egg-info/PKG-INFO
+django_queryset_gallery.egg-info/SOURCES.txt
+django_queryset_gallery.egg-info/dependency_links.txt
+django_queryset_gallery.egg-info/top_level.txt
+queryset_gallery/__init__.py
+queryset_gallery/filters.py
+queryset_gallery/gallery.py
+queryset_gallery/paginator.py
+queryset_gallery/tests.py

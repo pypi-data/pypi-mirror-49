@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: logouslibrary
+Version: 0.0.1
+Summary: LogoUS machine learning utility package
+Home-page: http://en.logo.com.tr/en
+Author: Logo
+Author-email: Abdussamet.Dumankaya@logo.com.tr
+License: LICENSE.txt
+Description: # LogousLibrary
+        
+        Machine learning utilities used in the time-series, customer churn and customer segmentation problems.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

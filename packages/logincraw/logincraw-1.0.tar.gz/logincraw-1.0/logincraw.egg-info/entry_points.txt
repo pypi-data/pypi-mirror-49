@@ -1,0 +1,3 @@
+[console_scripts]
+logincrawmain = logincraw.main:main
+

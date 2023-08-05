@@ -1,0 +1,13 @@
+setup.py
+logincraw/__init__.py
+logincraw/app.py
+logincraw/main.py
+logincraw/session_convert.py
+logincraw/session_db.py
+logincraw/tessact.py
+logincraw.egg-info/PKG-INFO
+logincraw.egg-info/SOURCES.txt
+logincraw.egg-info/dependency_links.txt
+logincraw.egg-info/entry_points.txt
+logincraw.egg-info/requires.txt
+logincraw.egg-info/top_level.txt

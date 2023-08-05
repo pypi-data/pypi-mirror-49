@@ -1,0 +1,9 @@
+coininfo_collector/__init__.py,sha256=H5L-hKXOx59CqrsVhuK1Gqm3EMULyn-0AhAZ1KuC1Bo,112
+coininfo_collector/coinClient.py,sha256=wQvKHvY5isus19ie2jWOk7ddfMZplGiqi0xycoSSL0I,9815
+coininfo_collector/coinCommons.py,sha256=FYhP09O5LUj5yShEbsTGg-zQJ6ygOqZKv2o4cHjRomE,96
+coininfo_collector/coinScheduler.py,sha256=NztcZofDjiq9QIz-ST2QeAr97aoFMERZwqj_q2YPPEE,8736
+coinfo_collector-0.0.4.dist-info/LICENSE,sha256=AhCUJ_9DtzBrW-PRcbI3on-T7TWlr0wyhM3Bbt0slt8,1068
+coinfo_collector-0.0.4.dist-info/METADATA,sha256=hKUzpA58KjYEe3vmlfjdKI1WQWUhWRJC6A25HFsItcU,639
+coinfo_collector-0.0.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+coinfo_collector-0.0.4.dist-info/top_level.txt,sha256=lPQ1yGwltZEwiP9GjBXaopTUl-N6Tp4awFe99-gQkgY,19
+coinfo_collector-0.0.4.dist-info/RECORD,,

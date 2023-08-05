@@ -1,0 +1,8 @@
+README.md
+setup.py
+mapytex/__init__.py
+mapytex.egg-info/PKG-INFO
+mapytex.egg-info/SOURCES.txt
+mapytex.egg-info/dependency_links.txt
+mapytex.egg-info/requires.txt
+mapytex.egg-info/top_level.txt

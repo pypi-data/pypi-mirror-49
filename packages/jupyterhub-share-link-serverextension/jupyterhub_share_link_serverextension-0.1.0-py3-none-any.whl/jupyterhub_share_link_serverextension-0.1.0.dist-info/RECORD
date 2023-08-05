@@ -1,0 +1,10 @@
+jupyterhub_share_link_serverextension/__init__.py,sha256=7pMciXL1tSTZSBhOlPp6ACvuD7A8JzDEYX-kopN1KVk,940
+jupyterhub_share_link_serverextension/_version.py,sha256=s9OAQ5toEEXGgk0toj4V16O7hjodhw-thFIm-c0-V2M,497
+jupyterhub_share_link_serverextension/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyterhub_share_link_serverextension/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyterhub_share_link_serverextension/tests/test_imports.py,sha256=V9uY2B0q3x21EXiXxqWvzr2Y_HlbRtZXylpHW74D7sc,69
+jupyterhub_share_link_serverextension-0.1.0.dist-info/METADATA,sha256=CoaiFvQmV5-_04NXFSOsvC-QPpqLTRDOggZsjRSbnqI,1185
+jupyterhub_share_link_serverextension-0.1.0.dist-info/RECORD,,
+jupyterhub_share_link_serverextension-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+jupyterhub_share_link_serverextension-0.1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+jupyterhub_share_link_serverextension-0.1.0.dist-info/top_level.txt,sha256=dmJh4246ppjPN8fOejCbgOrAQ3ORkm2jOey8d3cgWF8,38

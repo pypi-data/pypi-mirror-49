@@ -1,0 +1,3 @@
+[console_scripts]
+iaso = pyiaso.main:run
+

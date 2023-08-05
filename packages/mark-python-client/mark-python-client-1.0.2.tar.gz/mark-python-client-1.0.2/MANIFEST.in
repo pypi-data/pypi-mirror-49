@@ -1,0 +1,7 @@
+exclude mark_client/conftest.py
+exclude .gitignore
+exclude .gitlab-ci.yml
+exclude requirements.txt
+exclude .git/
+exclude .idea/
+

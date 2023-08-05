@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+galileod.egg-info/PKG-INFO
+galileod.egg-info/SOURCES.txt
+galileod.egg-info/dependency_links.txt
+galileod.egg-info/entry_points.txt
+galileod.egg-info/requires.txt
+galileod.egg-info/top_level.txt

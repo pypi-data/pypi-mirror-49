@@ -1,0 +1,4 @@
+[console_scripts]
+galileo-cli = galileo.entry:cli_main
+galileod = galileo.entry:daemon_main
+

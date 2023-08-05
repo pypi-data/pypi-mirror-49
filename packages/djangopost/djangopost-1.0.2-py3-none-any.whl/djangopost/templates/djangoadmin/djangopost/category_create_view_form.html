@@ -1,0 +1,61 @@
+{% extends 'djangoadmin/base/body/index.html' %}
+
+
+{% block body %}
+{% include "djangoadmin/widgets/alert.html" %}
+
+<form method="POST" action="#">
+{% csrf_token %}
+
+<div>
+{{ category_form.title }}
+</div>
+
+<div>
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+<li class="accordion-item is-active" data-accordion-item>
+    <!-- Accordion tab title -->
+    <a href="#" class="accordion-title" for="{{ category_form.description.id_for_label }}">{{ category_form.description.label }}</a>
+  
+    <!-- Accordion tab content -->
+    <div class="accordion-content" data-tab-content>
+       {{ category_form.description }}
+    </div>
+</li>
+</ul>
+</div>
+
+{% endblock body %}
+
+
+
+
+{% block sidebar-right %}
+
+<div class="callout" style="margin-bottom: 5px; padding: 0; border-color: #f2f2f2;">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+<li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title" for="{{ category_form.status.id_for_label }}">{{ category_form.status.label }}</a>
+    <div class="accordion-content" data-tab-content style="padding: 15px;">
+      {{ category_form.status }}
+      <br /><br />
+      <button type="submit" class="button expanded">Submit</button>
+    </div>
+</li>
+</ul>
+</div>
+
+<div class="callout" style="margin: 5px 0; padding: 0; border-color: #f2f2f2;">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+<li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title" for="{{ category_form.serial.id_for_label }}">{{ category_form.serial.label }}</a>
+    <div class="accordion-content" data-tab-content style="padding: 15px;">
+      {{ category_form.serial }}
+    </div>
+</li>
+</ul>
+</div>
+
+</form>
+
+{% endblock sidebar-right %}

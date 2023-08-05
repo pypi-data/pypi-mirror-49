@@ -1,0 +1,12 @@
+README.md
+deploynow
+setup.py
+deploynow.egg-info/PKG-INFO
+deploynow.egg-info/SOURCES.txt
+deploynow.egg-info/dependency_links.txt
+deploynow.egg-info/requires.txt
+deploynow.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/color.py
+src/deploynow.py

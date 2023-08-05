@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: deploynow
+Version: 1.10.0
+Summary: UNKNOWN
+Home-page: https://github.com/AnushkaYohan/code-deploy-now
+Author: Anushka Yohan
+Author-email: anushka.yohan@pearson.com
+License: UNKNOWN
+Description: long_description
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown

@@ -1,0 +1,14 @@
+aiohttp
+appdirs
+geopandas
+pandas~=0.24.1
+Shapely
+tenacity
+titlecase
+
+[socrata]
+socrata-py
+
+[test]
+aioresponses
+pytest

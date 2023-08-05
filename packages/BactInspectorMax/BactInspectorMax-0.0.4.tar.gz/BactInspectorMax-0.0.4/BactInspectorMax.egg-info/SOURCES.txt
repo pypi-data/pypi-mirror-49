@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.py
+BactInspectorMax.egg-info/PKG-INFO
+BactInspectorMax.egg-info/SOURCES.txt
+BactInspectorMax.egg-info/dependency_links.txt
+BactInspectorMax.egg-info/entry_points.txt
+BactInspectorMax.egg-info/requires.txt
+BactInspectorMax.egg-info/top_level.txt
+bactinspector/__init__.py
+bactinspector/commands.py
+bactinspector/mash_functions.py
+bactinspector/run_bactinspector.py
+bactinspector/utility_functions.py
+bactinspector/data/all_complete_bacteria_refseq.k21s1000.msh
+bactinspector/data/all_complete_bacteria_refseq.k21s1000.species.tsv

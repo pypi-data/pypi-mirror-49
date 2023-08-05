@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+orbis_addon_satyanweshi/__init__.py
+orbis_addon_satyanweshi/description.txt
+orbis_addon_satyanweshi/main.py
+orbis_addon_satyanweshi/templates.py
+orbis_addon_satyanweshi.egg-info/PKG-INFO
+orbis_addon_satyanweshi.egg-info/SOURCES.txt
+orbis_addon_satyanweshi.egg-info/dependency_links.txt
+orbis_addon_satyanweshi.egg-info/requires.txt
+orbis_addon_satyanweshi.egg-info/top_level.txt

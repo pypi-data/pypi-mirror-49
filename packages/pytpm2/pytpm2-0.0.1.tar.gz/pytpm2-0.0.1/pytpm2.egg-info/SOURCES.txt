@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pytpm2/get_random.c
+pytpm2.egg-info/PKG-INFO
+pytpm2.egg-info/SOURCES.txt
+pytpm2.egg-info/dependency_links.txt
+pytpm2.egg-info/top_level.txt

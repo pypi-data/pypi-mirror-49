@@ -1,0 +1,6 @@
+setup.py
+autoai.egg-info/PKG-INFO
+autoai.egg-info/SOURCES.txt
+autoai.egg-info/dependency_links.txt
+autoai.egg-info/not-zip-safe
+autoai.egg-info/top_level.txt

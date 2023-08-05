@@ -1,0 +1,13 @@
+betterboto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+betterboto/client.py,sha256=fUbr7RGUMXRl5L438qyT4foAbECVJWGLk8K8xI_S3mA,6263
+betterboto/cloudformation.py,sha256=V71evNnVxtgE-XmN9t9ZXzfds1JiRA8ejmorPEkWYP4,4014
+betterboto/codebuild.py,sha256=5Avq6wZkB-R1bciVvsP5fYPym2nefDj_5zfsOyATcsw,967
+betterboto/guardduty.py,sha256=99ujHWZUGRCcIjA1hg2jtd-Nqg022Rn-SD7UccUpsGA,739
+betterboto/organizations.py,sha256=pl1FGNw_dBwSQVdJG48U2ptnuStS1N1u6sdE-P6r5J4,7807
+betterboto/servicecatalog.py,sha256=DS0Pwt4WQV27x2uyozBk9sUVCYqy6WaBg2MjYmx7KZk,3825
+betterboto/utils.py,sha256=3upGZlt7KZiG13AUM5GziT9xnWtssBQpRUf1soC5xMc,768
+better_boto-0.11.0.dist-info/LICENSE,sha256=cR6NRBtP1pXyg5i5tSZmGgKDximq6lq9N9Ep-UfWWSk,1073
+better_boto-0.11.0.dist-info/METADATA,sha256=jltxlizlLx1FOApJXYPy5V8fo91DNx4S9vypSR7cSs8,1642
+better_boto-0.11.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+better_boto-0.11.0.dist-info/top_level.txt,sha256=fgjwheMfemvEhkkZIRokXruOVQFH2RJUZhNzLNSGIl0,11
+better_boto-0.11.0.dist-info/RECORD,,

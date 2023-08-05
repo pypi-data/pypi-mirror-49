@@ -1,0 +1,8 @@
+README.rst
+setup.py
+dummy_wx.egg-info/PKG-INFO
+dummy_wx.egg-info/SOURCES.txt
+dummy_wx.egg-info/dependency_links.txt
+dummy_wx.egg-info/top_level.txt
+wx/__init__.py
+wx/stc.py

@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+dash_gif_component/GifPlayer.py
+dash_gif_component/__init__.py
+dash_gif_component/_imports_.py
+dash_gif_component/dash_gif_component.dev.js
+dash_gif_component/dash_gif_component.min.js
+dash_gif_component/metadata.json
+dash_gif_component/package.json
+dash_gif_component.egg-info/PKG-INFO
+dash_gif_component.egg-info/SOURCES.txt
+dash_gif_component.egg-info/dependency_links.txt
+dash_gif_component.egg-info/requires.txt
+dash_gif_component.egg-info/top_level.txt

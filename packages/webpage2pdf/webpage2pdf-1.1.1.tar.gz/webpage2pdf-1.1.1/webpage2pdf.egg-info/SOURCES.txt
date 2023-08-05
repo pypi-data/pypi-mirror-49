@@ -1,0 +1,8 @@
+README.md
+setup.py
+webpage2pdf/__init__.py
+webpage2pdf/webpage2pdf.py
+webpage2pdf.egg-info/PKG-INFO
+webpage2pdf.egg-info/SOURCES.txt
+webpage2pdf.egg-info/dependency_links.txt
+webpage2pdf.egg-info/top_level.txt

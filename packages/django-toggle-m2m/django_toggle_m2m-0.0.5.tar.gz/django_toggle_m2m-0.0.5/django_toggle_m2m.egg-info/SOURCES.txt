@@ -1,0 +1,10 @@
+README.md
+setup.py
+django_toggle_m2m/__init__.py
+django_toggle_m2m/__version__.py
+django_toggle_m2m/toggle.py
+django_toggle_m2m.egg-info/PKG-INFO
+django_toggle_m2m.egg-info/SOURCES.txt
+django_toggle_m2m.egg-info/dependency_links.txt
+django_toggle_m2m.egg-info/requires.txt
+django_toggle_m2m.egg-info/top_level.txt

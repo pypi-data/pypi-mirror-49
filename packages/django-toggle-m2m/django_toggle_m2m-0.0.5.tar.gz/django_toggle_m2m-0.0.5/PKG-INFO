@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: django_toggle_m2m
+Version: 0.0.5
+Summary: Django package for generating methods for toggling ManyToMany relationship entries in models
+Home-page: https://github.com/wencakisa/django-toggle-m2m
+Author: Ventsislav Tashev
+Author-email: wencakisa@gmail.com
+License: MIT
+Description: 
+        # [django-toggle-m2m](https://pypi.org/project/django-toggle-m2m/)
+        
+        ## Installation
+        
+        ```bash
+        pip install django_toggle_m2m
+        ```
+        
+        ## Usage in models
+        
+        ```python
+        from django.db import models
+        
+        from django_toggle_m2m.toggle import ToggleManyToMany
+        
+        
+        class Publication(models.Model):
+            title = models.CharField(max_length=32)
+        
+        
+        class Article(models.Model, ToggleManyToMany):
+            # ______________________^
+            # Extend ToggleManyToMany class
+            headline = models.CharField(max_length=256)
+            publications = models.ManyToManyField(Publication)
+        
+            # Define M2M fields that are toggleable
+            TOGGLEABLE_FIELDS = ('publications',)
+        ```
+        
+        ## Relation toggling
+        ```python
+        article = Article.objects.create(...)
+        publication = Publication.objects.create(...)
+        
+        article.toggle_publications(instance=publication) # Will be added
+        article.toggle_publications(instance=publication) # Will be removed
+        ```
+        
+        ## Development
+        
+        ```bash
+        git clone https://github.com/wencakisa/django-toggle-m2m.git
+        pip install django_toggle_m2m
+        ```
+        
+        ---
+        
+        *Interesting fact* - https://code.djangoproject.com/ticket/20686
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown

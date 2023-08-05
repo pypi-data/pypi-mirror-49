@@ -1,0 +1,17 @@
+setup.py
+maskrcnn_modanet/__init__.py
+maskrcnn_modanet/arrange_annotations.py
+maskrcnn_modanet/arrange_images.py
+maskrcnn_modanet/evaluatemodel.py
+maskrcnn_modanet/fix_annotations.py
+maskrcnn_modanet/instagram_impl.py
+maskrcnn_modanet/processimages.py
+maskrcnn_modanet/viewannotations.py
+maskrcnn_modanet/viewimages.py
+maskrcnn_modanet/viewimagescoco.py
+maskrcnn_modanet.egg-info/PKG-INFO
+maskrcnn_modanet.egg-info/SOURCES.txt
+maskrcnn_modanet.egg-info/dependency_links.txt
+maskrcnn_modanet.egg-info/entry_points.txt
+maskrcnn_modanet.egg-info/requires.txt
+maskrcnn_modanet.egg-info/top_level.txt

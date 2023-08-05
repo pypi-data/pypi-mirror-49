@@ -1,0 +1,17 @@
+minFQ/__init__.py,sha256=8zLGg-DfQhnDl2Ky0n-zXpN-8e-g7iR0AcaI4l4Vvpk,32
+minFQ/channelmaps.py,sha256=CLyUzs2Z-G5FrIssIBxDPrifm6jIZxfVfebQzRITzgk,8636
+minFQ/fastqutils.py,sha256=QCSPqiplU2Djag7i_d8JXa8B10EHpb9OvI3Q_R2tgXk,16771
+minFQ/flowcellmaker.py,sha256=gAApJfhtXKyXEFQkBZlus4wD3WnZmnwEHFD4t-puGhQ,6903
+minFQ/minFQ.py,sha256=LKPOyLbrQqJAimAnKR-zihfSQ5Lw2tpiNlGSwIcdoo4,16669
+minFQ/minknowconnection.py,sha256=2pZXwEO45CteMi8b2x1vx4eOyhI-6vV-NFGR-cmaI3o,34949
+minFQ/minknowcontrolutils.py,sha256=562n8kuyeD3tJgA1qcXRsc6-eZQg84dKatbYDMkUoGg,81591
+minFQ/minotourapi.py,sha256=MdXFRLxDzGgO8lgMiOxA9BYVzFcsGbkbTTjsdA4U5yQ,20497
+minFQ/minotourapiclient.py,sha256=r3FGdrtzuES6CI4IiebvG50OfoBMpT4wFU9wNwUQpbU,9840
+minFQ/minotourutils.py,sha256=WKeoH03ryvMbffiq_fueprKYTuVt9icJDWZlcqVK_28,3360
+minFQ/version.py,sha256=tmJFcbWnlgNwXFCrgJHkNSJZmxR67rAjso_lz91m_vc,23
+minFQ-1.0.14.dist-info/LICENSE.txt,sha256=7FqaNyZ7SERY9TJ8w_e6h73ZtukA09OASJj90aNjkhk,1052
+minFQ-1.0.14.dist-info/METADATA,sha256=v14kbAtZa78sANZOepUSGdlJwrE4DiuqWwSe4PhxbXE,1287
+minFQ-1.0.14.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+minFQ-1.0.14.dist-info/entry_points.txt,sha256=C1WD-joPLezLA6e-HPnAYko6Cahy4AAmU4HkG1H8C_A,121
+minFQ-1.0.14.dist-info/top_level.txt,sha256=j5_wT6a5LvmlR8ETQryAhrjzdF_YUbJKH6l-mYfvzDU,6
+minFQ-1.0.14.dist-info/RECORD,,

@@ -1,0 +1,37 @@
+{% extends 'djangoadmin/base/body/index.html' %}
+
+
+{% block body %}
+{% include "djangoadmin/widgets/alert.html" %}
+
+<div class="callout primary" style="padding: 5px">
+    <div class="grid-x">
+        <div class="cell small-4">
+            {% if user.usermodel.image %}
+            <img src="{{ user.usermodel.image.url }}" />
+            {% else %}
+            {% endif %}
+        </div>
+        <div class="cell small-8" style="padding-left: 30px;">
+            <h3><strong>Djangoengine profile card.</strong></h3>
+            <p><b>Username: {{ user.username }}</b></p>
+            <p><b>First Name: {{ user.first_name }}</b></p>
+            <p><b>Last Name: {{ user.last_name }}</b></p>
+            <p><b>Email address: {{ user.email }}</b></p>
+        </div>
+    </div>
+</div>
+
+<div class="callout secondary">
+    <p>Address: {{ user.usermodel.address }}</p>
+    <p>Phone Number: +{{ user.usermodel.phone }}</p>
+    <p>Website: <a href="{{ user.usermodel.website }}">{{ user.usermodel.website }}</a></p>
+</div>
+
+<ul class="menu callout secondary">
+    <li><a href="{% url 'djangoadmin:edit_profile_view' %}">Edit Profile</a></li>
+    <li><a href="{% url 'djangoadmin:password_change_view' %}">Password Change</a></li>
+    <li><a href="{% url 'djangoadmin:password_reset' %}">Forgot password</a></li>
+</ul>
+
+{% endblock body %}

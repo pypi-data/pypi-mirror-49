@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+publab/__init__.py
+publab/__version__.py
+publab.egg-info/PKG-INFO
+publab.egg-info/SOURCES.txt
+publab.egg-info/dependency_links.txt
+publab.egg-info/not-zip-safe
+publab.egg-info/top_level.txt

@@ -1,0 +1,58 @@
+Metadata-Version: 1.2
+Name: publab
+Version: 0.0.1
+Summary: Tools for publication management in GitLab.
+Home-page: https://github.com/riga/publab
+Author: The publab Authors
+Author-email: publab@googlegroups.com
+License: BSD-3-Clause
+Description: .. figure:: https://raw.githubusercontent.com/riga/publab/master/logo250.png
+           :target: https://github.com/riga/publab
+           :align: center
+           :alt: publab logo
+        
+        .. image:: https://img.shields.io/travis/riga/publab/master.svg?style=flat
+           :target: https://travis-ci.org/riga/publab
+           :alt: Build status
+        
+        .. image:: https://readthedocs.org/projects/publab/badge/?version=latest
+           :target: http://publab.readthedocs.io/en/latest
+           :alt: Documentation status
+        
+        .. image:: https://img.shields.io/pypi/v/publab.svg?style=flat
+           :target: https://pypi.python.org/pypi/publab
+           :alt: Package version
+        
+        .. image:: https://img.shields.io/github/license/riga/publab.svg
+           :target: https://github.com/riga/publab/blob/master/LICENSE
+           :alt: License
+        
+        
+        Tools for publication management in GitLab.
+        
+        Todo.
+        
+        .. marker-after-header
+        
+        
+        Development
+        ===========
+        
+        - Source hosted at `GitHub <https://github.com/riga/publab>`__
+        - Report issues, questions, feature requests on `GitHub Issues <https://github.com/riga/publab/issues>`__
+        
+        
+        .. marker-after-body
+        
+Keywords: publication gitlab
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, <4'

@@ -1,0 +1,2 @@
+include publab.py setup.py requirements.txt README.md LICENSE
+global-exclude *.py[cod] __pycache__

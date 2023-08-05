@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+data_rimac/__init__.py
+data_rimac/compresor.py
+data_rimac/definiciones.py
+data_rimac.egg-info/PKG-INFO
+data_rimac.egg-info/SOURCES.txt
+data_rimac.egg-info/dependency_links.txt
+data_rimac.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+README.md
+setup.py
+jupyter_source_magic.egg-info/PKG-INFO
+jupyter_source_magic.egg-info/SOURCES.txt
+jupyter_source_magic.egg-info/dependency_links.txt
+jupyter_source_magic.egg-info/requires.txt
+jupyter_source_magic.egg-info/top_level.txt
+jupytersourcemagic/__init__.py
+jupytersourcemagic/editorwidget.py
+jupytersourcemagic/filemanager.py
+jupytersourcemagic/haltexecution.py
+jupytersourcemagic/sourcemagics.py

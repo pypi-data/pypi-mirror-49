@@ -1,0 +1,16 @@
+setup.py
+crawler/__init__.py
+crawler/crawler.py
+crawler/config/__init__.py
+crawler/config/settings.py
+fuck/__init__.py
+fuck/cli.py
+fuck/manage.py
+fuck_spoiler.egg-info/PKG-INFO
+fuck_spoiler.egg-info/SOURCES.txt
+fuck_spoiler.egg-info/dependency_links.txt
+fuck_spoiler.egg-info/entry_points.txt
+fuck_spoiler.egg-info/requires.txt
+fuck_spoiler.egg-info/top_level.txt
+utils/__init__.py
+utils/rules.py

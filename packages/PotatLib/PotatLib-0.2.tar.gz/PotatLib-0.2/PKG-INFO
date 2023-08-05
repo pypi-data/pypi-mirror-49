@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: PotatLib
+Version: 0.2
+Summary: A Library to add Support for Plugin Developers at Defuse Solutions
+Home-page: https://github.com/NightPotato/PotatLib
+Author: Devon Rickman
+Author-email: drickman180@gmail.com
+License: MIT
+Download-URL: https://github.com/NightPotato/PotatLib/archive/0.2.tar.gz
+Description: UNKNOWN
+Keywords: Plugin Development,Defuse Discord Bot,PotatLib
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

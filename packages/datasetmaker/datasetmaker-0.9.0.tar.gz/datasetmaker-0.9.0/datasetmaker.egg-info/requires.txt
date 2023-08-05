@@ -1,0 +1,7 @@
+ddf_utils
+pandas
+lxml
+requests
+frame2package
+html5lib
+bs4

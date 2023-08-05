@@ -1,0 +1,9 @@
+README.md
+setup.py
+novncbot/__init__.py
+novncbot/novncbot.py
+novncbot.egg-info/PKG-INFO
+novncbot.egg-info/SOURCES.txt
+novncbot.egg-info/dependency_links.txt
+novncbot.egg-info/requires.txt
+novncbot.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+README.md
+setup.py
+automail/__init__.py
+automail/__main__.py
+automail/cli.py
+automail/core/__init__.py
+automail/core/helpers.py
+automail/core/parsers.py
+automail/core/generators/__init__.py
+automail/core/generators/_readme.py
+automail/core/generators/_setup.py
+nina.egg-info/PKG-INFO
+nina.egg-info/SOURCES.txt
+nina.egg-info/dependency_links.txt
+nina.egg-info/entry_points.txt
+nina.egg-info/requires.txt
+nina.egg-info/top_level.txt

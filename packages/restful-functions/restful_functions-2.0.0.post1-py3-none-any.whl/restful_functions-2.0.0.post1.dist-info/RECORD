@@ -1,0 +1,15 @@
+restful_functions/__init__.py,sha256=PG_Z4gIpRtKcX4TblE-era7z_nCkKh33IS2eQ82-Jkg,284
+restful_functions/_meta.py,sha256=JFbgrTMzjMW2qH3ta9tKMx1_J7bStbx4uNp7IxJwHYo,49
+restful_functions/manager.py,sha256=6bbS0QFdi4_Wz02pbM_UfoQXncyOHzNNj-hQkhJ9oPo,4983
+restful_functions/server.py,sha256=0AVTqAXcCqgLG8BYfOuxg0RFuVfKHkLWHJBDGrvgXYg,15265
+restful_functions/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+restful_functions/modules/function.py,sha256=k5QeYmMXx0d3jWs2gFbhHkTbs83S0-Hu8dgofavsafw,3503
+restful_functions/modules/process.py,sha256=o6DMyLoDSZIu6sfWCP6orSaFOVo3_1-MxW1m6IZY8IM,2572
+restful_functions/modules/task.py,sha256=KM2aQkjG_bbysKsv4pTLWq8wuzuT1XDUl62oBqG4o-M,8292
+restful_functions/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+restful_functions/utils/logger.py,sha256=T1-fQRUGg1kNVZEfwmeb0-6zItl9U_Oj-5d43hmDX3Q,986
+restful_functions-2.0.0.post1.dist-info/LICENSE.txt,sha256=ZETXzV8qXTcPiOWmw4zDIJ5hdORB5OeAEBj8Zg0iYDY,1064
+restful_functions-2.0.0.post1.dist-info/METADATA,sha256=YohppB0wKxQELKSOEphVjuzY2PgNGypGJd-16gYTFVo,5360
+restful_functions-2.0.0.post1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+restful_functions-2.0.0.post1.dist-info/top_level.txt,sha256=KjuW9YDhVk_ET8fE2u0gN9VCQnGafaxuFYduf5f6MGk,18
+restful_functions-2.0.0.post1.dist-info/RECORD,,

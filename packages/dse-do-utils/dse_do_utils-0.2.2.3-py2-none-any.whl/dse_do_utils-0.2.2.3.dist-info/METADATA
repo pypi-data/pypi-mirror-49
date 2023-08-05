@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: dse-do-utils
+Version: 0.2.2.3
+Summary: Decision Optimization utilities for IBM Watson Studio projects
+Home-page: https://github.com/IBM/dse-decision-optimization-utilities
+Author: Victor Terpstra
+Author-email: vterpstra@us.ibm.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/IBM/dse-decision-optimization-utilities
+Project-URL: IBM Decision Optimization, https://www.ibm.com/analytics/decision-optimization
+Project-URL: Documentation, https://ibm.github.io/dse-decision-optimization-utilities/
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation :: Sphinx
+Description-Content-Type: text/markdown
+
+# DSE_DO_Utils
+Decision Optimization utilities for IBM Watson Studio Local and ICPd projects.
+
+[Source (GitHub)](https://github.com/IBM/dse-decision-optimization-utilities)<br>
+[Documentation (GitHubPages)](https://ibm.github.io/dse-decision-optimization-utilities/)
+
+This repository contains the package `dse_do_utils`. This can be installed using pip.
+
+## Main classes:
+1. ScenarioManager. Reads and writes table data from and to all combinations of csv-files, Excel spreadhseet and DO scenario.
+2. DataManager. A DataManager is mostly a container for data and functions for pre- and post-processing. 
+Can be subclassed and stored in a script to be able to share code between multiple notebooks. 
+Also contains some utilities for data manipulation, like the crossjoin.
+3. OptimizationEngine. Also mostly a container for functions around creating an optimization model and using the docplex APIs. 
+Can be subclassed and stored in a script to be able to share code between multiple notebooks.
+Also contains some functions to create dvars and export .lp files.
+4. ScenarioPicker. Interactively pick an existing scenario from a drop-down menu in a notebook. Typically used in visualization notebooks. 
+5. MapManager. For creating map visualizations using Folium.
+6. DeployedDOModel. Interfacing from Python to a deployed DO model.
+
+## Installation
+Recommend to install in the `../packages/python` folder by running the following in a notebook cell: <br>
+Regular install:
+```
+!pip install dse-do-utils --target='../packages/python'
+```
+Force a released version to ensure compatibility (advised):
+```
+!pip install dse-do-utils==0.2.2.1 --target='../packages/python'
+```
+Force a clean re-install of a released version:
+```
+!pip install --force-reinstall dse-do-utils==0.2.2.1 --target='../packages/python' --upgrade
+```
+
+Install from TestPyPI (deprecated, version on TestPyPI is not updated):
+```
+!pip install -i https://test.pypi.org/simple/dse-do-utils --target='../packages/python'
+```
+See also [Installing packages and modules for Decision Optimization projects in Watson Studio Local](https://medium.com/@vjterpstracom/installing-packages-and-modules-for-decision-optimization-projects-in-watson-studio-local-69abc934ef32)
+
+## Import
+Import the `dse_do_utils` from the `../packages/python` folder.<br>
+First add the folder to the Python path:
+```
+import sys, os
+for folder in ['packages/python', 'scripts']:
+    path = os.path.join(os.environ['DSX_PROJECT_DIR'], folder)
+    if path not in sys.path:
+        sys.path.insert(0, path)
+```
+Then import the required classes from the package:
+```
+from dse_do_utils import ScenarioManager, DataManager
+```
+
+## Target environments
+To be used within:
+1. Watson Studio Local v1.2.3 (which requires Python 2.7).
+2. ICPd 1.2 or 2.1 (which requires Python 3.6)
+Currently the dse_do_utils is maintained WSLv1.2.3 in Python 2.7. and tested against ICPd with Python 3.6.
+
+## Requirements
+This package requires:
+1. [dd-scenario](https://pages.github.ibm.com/IBMDecisionOptimization/dd-scenario-api/dd-scenario-client-python/doc/build/html/). This package provides an interface to the DO scenarios. 
+This package is only available within WSL and ICPd. It cannot be pip installed in other environments.
+2. [docplex](http://ibmdecisionoptimization.github.io/docplex-doc/mp/index.html). This package interfaces with the CPLEX and CP Optimizer optimization engines.
+3. [folium](https://github.com/python-visualization/folium). Map visualization. Only for the MapManager.
+

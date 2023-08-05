@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cvkit
+Version: 0.1.0
+Summary: Multiple view geometry and other Computer Vision algorithms implemented in Python.
+Home-page: https://github.com/jan-mue/cvkit
+Author: Jan Müller
+Author-email: 
+License: MIT
+Description: 
+        # cvkit
+        
+        WORK IN PROGRESS!
+        
+        Multiple view geometry and other Computer Vision algorithms implemented in Python.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown

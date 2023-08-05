@@ -1,0 +1,15 @@
+README.md
+setup.py
+cvkit/__init__.py
+cvkit/__version__.py
+cvkit/plots.py
+cvkit/projection.py
+cvkit/slam.py
+cvkit.egg-info/PKG-INFO
+cvkit.egg-info/SOURCES.txt
+cvkit.egg-info/dependency_links.txt
+cvkit.egg-info/requires.txt
+cvkit.egg-info/top_level.txt
+cvkit/utils/__init__.py
+cvkit/utils/io.py
+cvkit/utils/math.py

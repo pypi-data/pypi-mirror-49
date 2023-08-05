@@ -1,0 +1,10 @@
+django_subject_imagefield-0.1.0.dist-info/METADATA,sha256=IzH8Of0XPBrdW4uC5qw03kureJkOxGFVCCe4Xhyrbn4,3198
+django_subject_imagefield-0.1.0.dist-info/RECORD,,
+django_subject_imagefield-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_subject_imagefield-0.1.0.dist-info/top_level.txt,sha256=T-VMgt41Y_hddfmorYpN87lCDDfHDESOcLRLtfHIuDI,19
+subject_imagefield/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+subject_imagefield/config.py,sha256=5Un9QZNvvE6ZfTJiE4CDsh4cGcQAiUB0IgxA13UQBCY,368
+subject_imagefield/fields.py,sha256=i0DL5t159XQbEBM8c1gyryHe4JKJZfuXs5KkmfFQefc,2440
+subject_imagefield/forms.py,sha256=3p3EM7G5Ix4EMLThGCPGav_qqu2WbS1PpQHFOU0xJ6U,602
+subject_imagefield/widgets.py,sha256=kQaLSgX7r559OSTRayEi_wZa4wdRM5pjRXKxmsl_Wt0,167
+subject_imagefield/templates/subject_imagefield/widgets/subject_image.html,sha256=2Pg61gPmN4IvzKp-xMbPawTz_W4uccP1eWPJSoUNkHs,5591

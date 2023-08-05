@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: planeWHU
+Version: 0.1.2
+Summary: 2019 实训AI飞机大战
+Home-page: https://github.com/Nemo11111/plane_final.git
+Author: CTRL
+Author-email: 1085335714@gmail.com
+License: MIT
+Description: 2019 实训AI飞机大战
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown

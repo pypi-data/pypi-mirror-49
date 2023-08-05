@@ -1,0 +1,13 @@
+setup.py
+vedavaapi/__init__.py
+vedavaapi/client/__init__.py
+vedavaapi/client/accounts.py
+vedavaapi/client/async_requests_helper.py
+vedavaapi/client/authorization_helper.py
+vedavaapi/client/iiif_import_helper.py
+vedavaapi/client/objstore.py
+vedavaapi_client.egg-info/PKG-INFO
+vedavaapi_client.egg-info/SOURCES.txt
+vedavaapi_client.egg-info/dependency_links.txt
+vedavaapi_client.egg-info/requires.txt
+vedavaapi_client.egg-info/top_level.txt

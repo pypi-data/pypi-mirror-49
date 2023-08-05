@@ -1,0 +1,14 @@
+nanome_rmsd/RMSD.py,sha256=_bBo_y6AAEvtdVH1VCZaYv6ldBbVE3wEbY1_3jqSAJ8,10760
+nanome_rmsd/__init__.py,sha256=13dWNivFPuViDrZ1pfaBY9FOhFR1p8t1X_5B3jCJ7Zs,40
+nanome_rmsd/rmsd_NEW_MENU.py,sha256=oOBs5-sDlXoEZfPvDsTcWfE__IqRURtbP7_JnMzH3oY,10625
+nanome_rmsd/rmsd_calculation.py,sha256=gd8Bii8Vm90tK1hMSEgy_bjE10KMY7shWZMatDHi7K8,19416
+nanome_rmsd/rmsd_helpers.py,sha256=my_0nbnHtblS0klbEnc6wJx32yKihFijQWBC7LjgcIs,1069
+nanome_rmsd/rmsd_menu.json,sha256=avvfCLsf9_k6V3lDi1TSiJ8QCbnMr_Qihz4aqlFur64,13699
+nanome_rmsd/rmsd_menu.py,sha256=KtVc2yjm22u7mU-CA3OFx-lyH2GwlyzgUGruuxF3u7g,11322
+nanome_rmsd/rmsd_pluginator.json,sha256=0VVfDOEvCC7ENNi2-AsUXjIrYj3qwi-I-fLRmav9gPc,41762
+nanome_rmsd-0.0.3.dist-info/LICENSE,sha256=2btmqaT549Ns7OP9eJKAmsGHqVvmhXICWyNrmxDkc9g,1084
+nanome_rmsd-0.0.3.dist-info/METADATA,sha256=norl6fnSP_jq5OG8gdxXJoEFN-sDj8QAQiA3q-GFjz8,956
+nanome_rmsd-0.0.3.dist-info/WHEEL,sha256=53VSps8MltPLN_x9Ib61FU2ZSaJKzgrWQqu9rS-Dkgk,116
+nanome_rmsd-0.0.3.dist-info/entry_points.txt,sha256=wjb8DFeuxAQwTJpcbdWVQs_cCD8vArB9xRcu2VYoWq4,55
+nanome_rmsd-0.0.3.dist-info/top_level.txt,sha256=72q1ZR3VyFqUwtzFU1ziPerORqQT1_QALvB1WUUMQys,12
+nanome_rmsd-0.0.3.dist-info/RECORD,,

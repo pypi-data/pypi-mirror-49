@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: python-smartgadget
+Version: 0.1.1
+Summary: Library for reading temperature, humidity, and battery level from a SHT31 Smart Gadget Development Kit by Sensirion
+Home-page: https://github.com/merll/python-smartgadget
+Author: Matthias Erll
+Author-email: matthias@erll.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.4

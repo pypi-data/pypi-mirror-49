@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: django-postgres-dropdb
+Version: 2019.7.10
+Summary: drop postgres database from django settings
+Home-page: https://github.com/looking-for-a-job/django-postgres-dropdb.py
+License: UNKNOWN
+Description: <!--
+        https://pypi.org/project/readme-generator/
+        https://pypi.org/project/python-readme-generator/
+        https://pypi.org/project/django-readme-generator/
+        -->
+        
+        [![](https://img.shields.io/pypi/pyversions/django-postgres-dropdb.svg?longCache=True)](https://pypi.org/project/django-postgres-dropdb/)
+        
+        #### Installation
+        ```bash
+        $ [sudo] pip install django-postgres-dropdb
+        ```
+        
+        #### `settings.py`
+        ```python
+        INSTALLED_APPS = [
+            "django_postgres_dropdb",
+        ]
+        ```
+        
+        #### Commands
+        command|`help`
+        -|-
+        `python manage.py dropdb` |drop postgres database
+        
+        #### Examples
+        `settings.py`
+        
+        ```python
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.postgresql',
+                'NAME': os.getenv('DB_NAME'),
+                'USER': os.getenv('DB_USER'),
+                'PASSWORD': os.getenv('DB_PASS'),
+                'HOST': os.getenv('DB_HOST'),
+                'PORT': os.getenv('DB_PORT'),
+            }
+        }
+        ```
+        
+        ```bash
+        $ python manage.py dropdb
+        $ python manage.py dropdb "default"
+        ```
+        
+        #### Related projects
+        +   [django-postgres-createdb](https://pypi.org/project/django-postgres-createdb/)
+        +   [django-postgres-dropdb](https://pypi.org/project/django-postgres-dropdb/)
+        
+        <p align="center">
+            <a href="https://pypi.org/project/django-readme-generator/">django-readme-generator</a>
+        </p>
+Keywords: django postgres dropdb
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

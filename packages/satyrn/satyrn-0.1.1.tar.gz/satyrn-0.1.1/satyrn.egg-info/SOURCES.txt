@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+satyrn/satyrn.cpp
+satyrn.egg-info/PKG-INFO
+satyrn.egg-info/SOURCES.txt
+satyrn.egg-info/dependency_links.txt
+satyrn.egg-info/not-zip-safe
+satyrn.egg-info/requires.txt
+satyrn.egg-info/top_level.txt
+satyrn/picosat/picosat.c

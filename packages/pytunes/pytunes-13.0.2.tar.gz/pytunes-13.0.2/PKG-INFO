@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: pytunes
+Version: 13.0.2
+Summary: iTunes / Music CLI control and python API
+Home-page: https://github.com/hile/pytunes/
+Author: Ilkka Tuohela
+Author-email: hile@iki.fi
+License: PSF
+Description: UNKNOWN
+Keywords: iTunes Music control management playlist export
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >3.6.0

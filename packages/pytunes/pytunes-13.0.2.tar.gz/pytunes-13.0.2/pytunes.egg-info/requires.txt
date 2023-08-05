@@ -1,0 +1,7 @@
+oodi
+systematic>=4.8.0
+appscript
+configobj
+darwinist
+redis
+zeroconf

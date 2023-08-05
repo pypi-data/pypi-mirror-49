@@ -1,0 +1,6 @@
+[nose.plugins.0.10]
+streamsx-add-config = streamsx.testing.nose:AddConfigurationPlugin
+streamsx-disable-ssl-verify = streamsx.testing.nose:DisableSSLVerifyPlugin
+streamsx-jco = streamsx.testing.nose:JobConfigPlugin
+streamsx-skip-standalone = streamsx.testing.nose:SkipStandalonePlugin
+

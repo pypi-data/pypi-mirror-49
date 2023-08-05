@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+touhou_ura/__init__.py
+touhou_ura/exceptions.py
+touhou_ura/main.html
+touhou_ura/style4.css
+touhou_ura/ura.py
+touhou_ura.egg-info/PKG-INFO
+touhou_ura.egg-info/SOURCES.txt
+touhou_ura.egg-info/dependency_links.txt
+touhou_ura.egg-info/requires.txt
+touhou_ura.egg-info/top_level.txt

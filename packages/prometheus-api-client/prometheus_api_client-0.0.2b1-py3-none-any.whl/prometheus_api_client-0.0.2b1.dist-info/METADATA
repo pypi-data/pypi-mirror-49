@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: prometheus-api-client
+Version: 0.0.2b1
+Summary: A small python api to collect data from prometheus
+Home-page: https://github.com/AICoE/prometheus-api-client-python
+Author: Anand Sanmukhani
+Author-email: asanmukh@redhat.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: retrying
+Requires-Dist: requests
+Requires-Dist: dateparser
+Requires-Dist: pandas
+
+# prometheus-api-client
+
+A python wrapper for the prometheus http api
+
+Docs: https://prometheus-api-client-python.readthedocs.io/en/latest/source/prometheus_api_client.html#module-prometheus_api_client.prometheus_connect
+
+

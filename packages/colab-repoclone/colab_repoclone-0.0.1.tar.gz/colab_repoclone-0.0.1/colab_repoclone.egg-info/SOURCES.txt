@@ -1,0 +1,9 @@
+README.md
+setup.py
+colab_repoclone/__init__.py
+colab_repoclone/git_access.py
+colab_repoclone.egg-info/PKG-INFO
+colab_repoclone.egg-info/SOURCES.txt
+colab_repoclone.egg-info/dependency_links.txt
+colab_repoclone.egg-info/requires.txt
+colab_repoclone.egg-info/top_level.txt

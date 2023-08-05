@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: groupark
+Version: 0.2.0
+Summary: Quick Python Aggregations
+Author: eecheverry
+Author-email: eecheverry@nubark.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

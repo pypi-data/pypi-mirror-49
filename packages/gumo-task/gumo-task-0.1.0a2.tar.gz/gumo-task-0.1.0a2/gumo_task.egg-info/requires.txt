@@ -1,0 +1,3 @@
+gumo-core>=0.1.0a6
+gumo-datastore>=0.1.0a1
+google-cloud-tasks>=1.1.0

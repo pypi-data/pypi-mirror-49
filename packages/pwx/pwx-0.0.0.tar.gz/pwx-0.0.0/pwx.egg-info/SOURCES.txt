@@ -1,0 +1,7 @@
+README.rst
+setup.py
+pwx/__init__.py
+pwx.egg-info/PKG-INFO
+pwx.egg-info/SOURCES.txt
+pwx.egg-info/dependency_links.txt
+pwx.egg-info/top_level.txt

@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pwx
+Version: 0.0.0
+Summary: Extension of the pworkflow library
+Home-page: https://github.com/3dem/pwx
+Author: J.M. De la Rosa Trevin
+Author-email: delarosatrevin@scilifelab.se
+License: UNKNOWN
+Project-URL: Source, https://github.com/3dem/pwx/
+Project-URL: Bug Reports, https://github.com/3dem/pwx/issues
+Description: ==========
+        pwx
+        ==========
+        
+        Extension for the pyworkflow library
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7

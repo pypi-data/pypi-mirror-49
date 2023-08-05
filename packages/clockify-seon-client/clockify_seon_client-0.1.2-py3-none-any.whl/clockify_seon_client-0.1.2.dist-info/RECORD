@@ -1,0 +1,10 @@
+clockify_seon_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clockify_seon_client/service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clockify_seon_client/service/abstract_service.py,sha256=-wCHP2miY9va8lETDKdKfQ2K7DBrhsV-qZDlE-cVMh8,2727
+clockify_seon_client/service/project_service.py,sha256=OHTz317gWpwRousTJts-SKiYJIApVXk0t1Vo-9jAWao,262
+clockify_seon_client/service/teammember_service.py,sha256=G-mytO_aqAP8_rLBAwk9W1phWRjTBvQ5KKd8SxgPauQ,268
+clockify_seon_client/service/workspace_service.py,sha256=_7GdFOT59g65q5NznBXhwvaca2gEK3wVJJ8i-pl3SXY,266
+clockify_seon_client-0.1.2.dist-info/METADATA,sha256=EoR5o4v0-OoeoFZl8iGKVGQsX8WDf8ZLutcbzovdIXc,484
+clockify_seon_client-0.1.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+clockify_seon_client-0.1.2.dist-info/top_level.txt,sha256=Z6Y03UG3nqVHRMttjUGwZZx-1Gky-a2XMdjFXuRCd8E,21
+clockify_seon_client-0.1.2.dist-info/RECORD,,

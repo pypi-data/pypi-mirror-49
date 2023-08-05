@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: sceptre-environment-variable-resolver
+Version: 1.0.0
+Summary: Resolve environment variables in Sceptre.
+Home-page: https://github.com/sceptre/sceptre-environment-variable-resolver
+Author: Sceptre
+Author-email: sceptre@cloudreach.com
+License: Apache2
+Keywords: sceptre,sceptre-resolver
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: packaging (==16.8)
+Provides-Extra: test
+Requires-Dist: pytest (>=3.2) ; extra == 'test'
+
+# Environment Variable Resolver
+
+Fetches the value from an environment variable.
+
+Syntax:
+
+```yaml
+parameter|sceptre_user_data:
+  <name>: !environment_variable ENVIRONMENT_VARIABLE_NAME
+```
+
+Example:
+
+```yaml
+parameters:
+  database_password: !environment_variable DATABASE_PASSWORD
+```
+
+

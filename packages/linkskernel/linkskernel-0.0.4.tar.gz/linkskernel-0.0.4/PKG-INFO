@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: linkskernel
+Version: 0.0.4
+Summary: Links kernel for Jupyter
+Home-page: https://github.com/SimonJF/links-server
+Author: Tom Davey & Simon Fowler
+Author-email: tomjackdavey@hotmail.com
+License: UNKNOWN
+Description: To Complete
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

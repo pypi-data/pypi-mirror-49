@@ -1,0 +1,12 @@
+.gitignore
+.gitlab-ci.yml
+README.md
+setup.cfg
+setup.py
+probator_scheduler_sqs/__init__.py
+probator_scheduler_sqs.egg-info/PKG-INFO
+probator_scheduler_sqs.egg-info/SOURCES.txt
+probator_scheduler_sqs.egg-info/dependency_links.txt
+probator_scheduler_sqs.egg-info/entry_points.txt
+probator_scheduler_sqs.egg-info/requires.txt
+probator_scheduler_sqs.egg-info/top_level.txt

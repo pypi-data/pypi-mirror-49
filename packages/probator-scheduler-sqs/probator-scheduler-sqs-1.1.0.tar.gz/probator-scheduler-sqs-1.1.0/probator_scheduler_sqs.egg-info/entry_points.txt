@@ -1,0 +1,3 @@
+[probator.plugins.schedulers]
+sqsscheduler = probator_scheduler_sqs:SQSScheduler
+

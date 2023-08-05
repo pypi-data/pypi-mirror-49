@@ -1,0 +1,7 @@
+probator~=1.0
+APScheduler~=3.5
+boto3
+
+[dev]
+
+[test]

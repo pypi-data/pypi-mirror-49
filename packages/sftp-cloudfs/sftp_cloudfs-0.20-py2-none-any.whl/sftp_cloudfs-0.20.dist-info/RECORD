@@ -1,0 +1,11 @@
+sftp_cloudfs-0.20.data/scripts/sftpcloudfs,sha256=DW8pAAJsZPVeOHXgvSSj0vkiD4YzQZM22ZbruHdyY8M,127
+sftpcloudfs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sftpcloudfs/constants.py,sha256=XCddR2arOmsPhgRBkLQQkJwc7q8M1REFEtrjcGWrNgY,249
+sftpcloudfs/main.py,sha256=cEih7vYzy7ykYbsommyrNZoyquiuus0GLYNNIjIjodo,19426
+sftpcloudfs/scp.py,sha256=Lr30NHPWYxQVa1A_UdBXUil2GQyu7OV-U-zSaRjy0dM,9932
+sftpcloudfs/server.py,sha256=z7DTrVpCRvQeubamhsRURUfc7QWo9CHwx-YD46TuqII,14486
+sftp_cloudfs-0.20.dist-info/COPYING,sha256=H4eY6D32IxJmboVtmRV-k-xG9UwZcxusPcsu2aIkmog,1087
+sftp_cloudfs-0.20.dist-info/METADATA,sha256=0Sv0LhBBdNJTg5YmGzCmhS8WDICtp3PK7Kt_O4F4nwI,5944
+sftp_cloudfs-0.20.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+sftp_cloudfs-0.20.dist-info/top_level.txt,sha256=cJBi3Af-ecNJMNdLdABR9BI-gE5LwI8mLuPLgKAf_Ww,12
+sftp_cloudfs-0.20.dist-info/RECORD,,

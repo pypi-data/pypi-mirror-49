@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tgapp-categories
+Version: 0.4.3
+Summary: categories management system for web applications in turbogears2
+Home-page: https://github.com/axant/tgapp-categories
+Author: Axant, Vincenzo Castilgia
+Author-email: vincenzo.castiglia@axant.it
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: turbogears2.application
+Platform: UNKNOWN
+Provides-Extra: testing

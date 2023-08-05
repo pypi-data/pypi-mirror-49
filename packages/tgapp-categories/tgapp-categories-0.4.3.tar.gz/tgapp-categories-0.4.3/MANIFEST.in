@@ -1,0 +1,5 @@
+recursive-include tgappcategories/public *
+recursive-include tgappcategories/templates *.xhtml
+recursive-include tgappcategories/migration *
+global-exclude *.pyc
+

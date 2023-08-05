@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: fuck-spoiler
+Version: 1.0.8
+Summary: An anti spoiler wechat robot.
+Home-page: https://github.com/hj24/fuck-spoiler
+Author: hj24
+Author-email: mambahj24@gmail.com
+License: MIT
+Description: 
+        # 🤖 微信防剧透机器人 v1.0
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3

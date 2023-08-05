@@ -1,0 +1,14 @@
+ftp_cloudfs-0.36.data/scripts/ftpcloudfs,sha256=q5RCsJcbnlxzrsPN0PhfKlrLrdiJlLjIpbJiajhBlao,308
+ftpcloudfs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ftpcloudfs/chunkobject.py,sha256=ndGnMoMkJcjw6AnzkHt0UwWKFAKlaNVO9qu_Z9IvUpI,3456
+ftpcloudfs/constants.py,sha256=DzwU71LUp2dP9qsdanbE6joJvNxDpa2K5_APwqx98RA,325
+ftpcloudfs/errors.py,sha256=ORrMFjsVp4ON837h1nI8gtQvsdSJh-ztPfi15sepJbY,638
+ftpcloudfs/fs.py,sha256=oO-D7a9IidqeMcLYitN8WtlvaFcjMOHyZFr6QFFVIe4,44066
+ftpcloudfs/main.py,sha256=KRQNt8DvBtr1102tvY4g_wKTYerAAMBgQmc1V_ak4MA,17879
+ftpcloudfs/monkeypatching.py,sha256=Xfeos7kqG2Tdw5IYW4ieQUpgXoIKQ8uIE6v58CZq-v4,4217
+ftpcloudfs/server.py,sha256=SrHUr1Rzyj65c1CxMj2ZjWNwUQoSGbQuob5txR9sSPg,2733
+ftpcloudfs/utils.py,sha256=DkZdq2fL0f8dH_P3EhUYHGY-EcTFgGqobi7ysTr4s4U,1680
+ftp_cloudfs-0.36.dist-info/METADATA,sha256=kDu7cR5QmpJlrzPD5tmRi00Lx2VdG1c2EMUH2amYL3g,10422
+ftp_cloudfs-0.36.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+ftp_cloudfs-0.36.dist-info/top_level.txt,sha256=dPFuatiVQz1kBRV6YC9cqIuU0oIwepwqJ53yISyl4b0,11
+ftp_cloudfs-0.36.dist-info/RECORD,,

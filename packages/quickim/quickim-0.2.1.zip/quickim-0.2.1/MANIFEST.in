@@ -1,0 +1,3 @@
+include src/*.sqlite3
+include src/*.ui
+include src/*.db

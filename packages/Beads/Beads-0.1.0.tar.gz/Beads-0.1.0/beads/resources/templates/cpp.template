@@ -1,0 +1,30 @@
+#! version:1 language:cpp file_type:.cpp #
+#
+# DEFAULT Template file for C++
+#
+{
+    "config": {
+        "gap": "\n",
+        "indent": "   ",
+        "useHeader" : true
+    },
+
+    "header": { "content" : "class $name {\npublic:\n" },
+    "footer": { "content" : "};" },
+
+    "states": {
+        "name": "StateMachine",
+        "body": "enum class States {\n$items};\n",
+        "item": "$indent $name,\n"
+    },
+
+    "state": {
+        "name": "currentState",
+        "body": "$states $state = $states::$value;\n"
+    },
+
+    "transitions": {
+        "body": "void $name(States newState) {\n$indent switch(newState) {\n$items$indent $indent default: break;\n$indent }\n}\n",
+        "item": "$indent $indent case States::$name:\n$indent $indent $indent $state = States::$value; break;\n"
+    }
+}

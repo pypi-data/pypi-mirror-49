@@ -1,0 +1,98 @@
+#! version:1 language:python file_type:.py #
+#
+# ##### TEMPLATE for programming languages #####
+#
+# This template format supports comments:
+#       Single line comments starting with '#'
+#       Trailing comments also starting with '#'
+#
+# Use this FILE to write your own language template. You can also copy an existing default template
+# and change the content if you do want to minimize work. The following placeholders can be used
+# throughout the template:
+#
+#           Name            |  Reference
+#           ----------------|-----------------------------------------------------------------
+#           '$states'       | variable holding all possible states
+#           ----------------|-----------------------------------------------------------------
+#           '$state'        | variable holding the current state
+#           ----------------|-----------------------------------------------------------------
+#           '$indent'       | indent code
+#           ----------------|-----------------------------------------------------------------
+#           '$items'        | point to insert new items like assignments
+#           ----------------|-----------------------------------------------------------------
+#           '$name'         | insert variable name
+#           ----------------|-----------------------------------------------------------------
+#           '$value'        | insert value for expression
+#
+# Examples of usage can be found throughout this template.
+# This FILE will demonstrate and comment on template definitions by example of Python code.
+# NOTE: This file can be parsed as is and is a valid template for code generation! (version:1)
+
+{
+
+    # The first necessary item in a language template is the 'config'.
+    # The config contains meta information about the language like the representation of a gap or an indent.
+    #
+    # It might be noteworthy that the indent here is only three whitespaces but will add up with the trailing
+    # whitespace after each $indent reference to a python conform four whitespace indent:
+
+    "config": {
+        "gap": "\n\n",              # Representation of a gap between e.g. methods. Here: two line breaks
+        "indent": "   "             # Representation of code indention. Here: three whitespaces
+    },
+
+
+    # The 'states' item holds the template strings for the global variable holding all available states.
+    # In this case a python dictionary is used. Resulting code would look something like this:
+    #
+    #   states: dict = {
+    #       "A": 1,
+    #       "B": 2,
+    #   }
+    #
+    # The type of the variable needs to be hard coded into the template as version:1 does not support it.
+
+    "states": {
+        "name": "states"                            # Name for the global variable to use throughout the code
+        "body": "$states: dict = {\n$items}\n"      # Body template that will be substituted
+        "item": "$indent '$name': '$value',\n"       # Template for a state / node that will be inserted for each node
+    },
+
+
+    # The 'state' item is the global variable that will be used to set the initial state and will be updated with the
+    # current state as a transition is made.
+    # The here defined python example would look something like this:
+    #
+    #   state: int = states["A"]
+    #
+    # The type of the variable has to be hardcoded into the template as version:1 does not support types dynamically.
+
+    "state": {
+        "name": "state",                        # Name of the global variable that holds the current state
+        "body": "$state: int = $value\n"        # Template for the declaration and assignment of the initial state
+    },
+
+
+    # The 'transitions' item is the most elaborated item. It represents the definition of method/function code
+    # that is written to transition between states.
+    # Resulting code from this template might look something like this:
+    #
+    #   def transition() -> None:
+    #       global state
+    #       if state == states["A"]:
+    #           state = states["B"]
+    #       elif state == states["B"]:
+    #           state = states["C"]
+    #
+    # The body is the method / function wrapper that will be filled with items for each transition with the same label.
+    # In addition templates version:1 supports an item_first that can be different that the rest of the assignments as
+    # in if...elif (see code above). This however is an optional key. Erasing this key will result in all items being
+    # written with the default 'item' template.
+
+    "transitions": {
+        "body": "def $name() -> None:\n$indent global $state\n$items\n",
+        "item": "$indent elif $state == $states[$name]:\n$indent $indent $state = $value\n",
+        "item_first": "$indent if $state == $states[$name]:\n$indent $indent $state = $value\n"
+    }
+
+}

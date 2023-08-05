@@ -1,0 +1,30 @@
+#! version:1 language:java file_type:.java #
+#
+# DEFAULT Template file for Java programming language
+#
+{
+    "config": {
+        "gap": "\n",
+        "indent": "   ",
+        "useHeader" : true
+    },
+
+    "header": { "content" : "public class $name {\n" },
+    "footer": { "content" : "}" },
+
+    "states": {
+        "name": "StateMachine",
+        "body": "$indent public enum $states {\n$items $indent }\n",
+        "item": "$indent $indent $name,\n"
+    },
+
+    "state": {
+        "name": "currentState",
+        "body": "$indent public $states $state = $states.$value;\n"
+    },
+
+    "transitions": {
+        "body": "$indent public void $name(States newState) {\n$indent $indent switch(newState) {\n$items$indent $indent $indent default: break;\n$indent $indent }\n$indent }\n",
+        "item": "$indent $indent $indent case States.$name:\n$indent $indent $indent $indent $state = States.$value; break;\n"
+    }
+}

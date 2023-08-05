@@ -1,0 +1,31 @@
+#! version:1 language:python file_type:.py #
+#
+# DEFAULT Template file for Python programming language
+#
+{
+    "config": {
+        "gap": "\n\n",
+        "indent": "   ",
+        "useHeader" : false
+    },
+
+    "header": { "content" : "" },
+    "footer": { "content" : "" },
+
+    "states": {
+        "name": "states",
+        "body": "$states: dict = {\n$items}\n",
+        "item": "$indent'$name': $value,\n"
+    },
+
+    "state": {
+        "name": "state",
+        "body": "$state: int = $states['$value']\n"
+    },
+
+    "transitions": {
+        "body": "def $name() -> None:\n$indent global $state\n$items",
+        "item": "$indent elif $state == $states['$name']:\n$indent $indent $state = $states['$value']\n",
+        "item_first": "$indent if $state == $states['$name']:\n$indent $indent $state = $states['$value']\n"
+    }
+}

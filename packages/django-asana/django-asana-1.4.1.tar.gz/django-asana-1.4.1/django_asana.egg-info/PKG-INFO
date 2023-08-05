@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: django-asana
+Version: 1.4.1
+Summary: Django Asana integration project
+Home-page: https://github.com/sbywater/django-asana
+Author: Steve Bywater
+Author-email: steve@regionalhelpwanted.com
+License: MIT
+Description: django-asana leverages `python-asana <https://github.com/Asana/python-asana>`_, the official python client library for Asana.
+        To this, django-asana adds django models and commands for importing data from Asana into these models, and for keeping a django project in sync with related Asana data.
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Communications
+Classifier: Topic :: Office/Business :: Scheduling
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: Jython

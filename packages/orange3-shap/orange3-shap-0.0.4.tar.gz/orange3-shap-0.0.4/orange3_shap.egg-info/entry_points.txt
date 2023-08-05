@@ -1,0 +1,12 @@
+[orange.canvas.help]
+html-index = orangecontrib.oshap.widgets:WIDGET_HELP_PATH
+
+[orange.widgets]
+Shap = orangecontrib.oshap.widgets
+
+[orange.widgets.tutorials]
+
+
+[orange3.addon]
+oshap = orangecontrib.oshap
+

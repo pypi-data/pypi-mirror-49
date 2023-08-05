@@ -1,0 +1,5 @@
+Orange3
+pandas
+numpy
+scipy>=0.17
+shap>=0.28.5

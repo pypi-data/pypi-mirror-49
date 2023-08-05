@@ -1,0 +1,10 @@
+deploynow-1.9.0.data/scripts/deploynow,sha256=mB-NAQ01D0q7uIUGIf-fouzfjAWZHFhThlzL5jaFp3Q,97
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/__main__.py,sha256=HY-WR3dpff-N7gnMnzrb-5N2N7j9ECDRjOh40KQ4-X0,37
+src/color.py,sha256=LNCqs4VL8P3rXyKTRYJWe_5W0o191ED0tF4j3JQbetc,1508
+src/deploynow.py,sha256=-vPWoMVjyTGwb7Jo0MsyyjQgFA_DSTpwvhU2Rx19Wrc,14874
+deploynow-1.9.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deploynow-1.9.0.dist-info/METADATA,sha256=QEq2Q2a5Rggie3Yre_BZh-yCsGmQVJAVCXOuslPmQzI,558
+deploynow-1.9.0.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+deploynow-1.9.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+deploynow-1.9.0.dist-info/RECORD,,

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ursadb
+Version: 1.0
+Summary: ursadb
+Home-page: https://github.com/CERT-Polska/ursadb-cli
+Author: msm
+Author-email: msm@tailcall.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: pyzmq
+Requires-Dist: tabulate
+
+UNKNOWN
+
+

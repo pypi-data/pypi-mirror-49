@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: quicksets
+Version: 0.0.1
+Summary: 
+Quicksets
+~~~~~~~~~
+
+Quicksets is a lightweight settings library based on Python classes.
+
+No dependency!
+
+It provides inheriting settings classes.
+Rewrite just attributes that you really need to change:
+
+      >>> # File: `myapp.settings.develop.py`
+      >>> class DevelopConfig:
+      ...     POSTGRESQL_HOST = 'localhost'
+      ...     POSTGRESQL_PORT = 5432
+      ...     POSTGRESQL_USERNAME = 'postgres'
+      ...     POSTGRESQL_PASSWORD = None
+      ...     POSTGRESQL_DATABASE = 'db'
+      ...     POSTGRESQL_POOL_MIN_SIZE = 4
+      ...     POSTGRESQL_POOL_MAX_SIZE = 32
+      ...     POSTGRESQL_POOL_RECYCLE = True
+      ...
+      ...     @property
+      ...     def POSTGRESQL_CONNECTION_OPTIONS(self):
+      ...         return {
+      ...             'user': self.POSTGRESQL_USERNAME,
+      ...             'password': self.POSTGRESQL_PASSWORD,
+      ...             'host': self.POSTGRESQL_HOST,
+      ...             'port': self.POSTGRESQL_PORT,
+      ...             'database': self.POSTGRESQL_DATABASE,
+      ...             'minsize': self.POSTGRESQL_POOL_MIN_SIZE,
+      ...             'maxsize': self.POSTGRESQL_POOL_MAX_SIZE,
+      ...             'pool_recycle': self.POSTGRESQL_POOL_RECYCLE
+      ...         }
+      ...
+
+      >>> # File: `myapp.settings.testing.py`
+      >>> from myapp.settings.develop import DevelopConfig
+      >>>
+      >>> class TestingConfig(DevelopConfig):
+      ...     POSTGRESQL_DATABASE = 'db_test'
+      ...
+
+      >>> # File: `myapp.settings.product.py`
+      >>> from myapp.settings.develop import DevelopConfig
+      >>>
+      >>> class ProductConfig(DevelopConfig):
+      ...     POSTGRESQL_HOST = '10.0.0.1'
+      ...     POSTGRESQL_DATABASE = 'db_prod'
+      ...     POSTGRESQL_USERNAME = 'prod_user'
+      ...     POSTGRESQL_PASSWORD = '?????????'
+      ...
+
+      >>> # File: `myapp.application.py`
+      >>> # run bash command `export SETTINGS="myapp.settings.product"`
+      >>> from quicksets import settings
+      >>>
+      >>> settings.POSTGRESQL_CONNECTION_OPTIONS
+      {'minsize': 4, 'maxsize': 32, 'host': '10.0.0.1', 'user': 'prod_user', 'database': 'db_prod', 'pool_recycle': True, 'password': '?????????', 'port': 5432}
+
+:copyright: Copyright 2019-2020 by the Ihor Nahuliak, see AUTHORS.
+:license: GNU General Public License v3 (GPLv3), see LICENSE for details.
+
+Home-page: https://github.com/ihor-nahuliak/quicksets
+Author: Ihor Nahuliak
+Author-email: ihor.nahuliak@gmail.com
+License: GPL v.3.0
+Description: UNKNOWN
+Platform: any
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Provides-Extra: dev

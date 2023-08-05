@@ -1,0 +1,8 @@
+README.md
+setup.py
+LongitudinalDifferenceInDifferencesPy/dailyTimeSeriesDataManager.py
+LongitudinalDifferenceInDifferencesPy/didDesigner.py
+LongitudinalDifferenceInDifferencesPy.egg-info/PKG-INFO
+LongitudinalDifferenceInDifferencesPy.egg-info/SOURCES.txt
+LongitudinalDifferenceInDifferencesPy.egg-info/dependency_links.txt
+LongitudinalDifferenceInDifferencesPy.egg-info/top_level.txt

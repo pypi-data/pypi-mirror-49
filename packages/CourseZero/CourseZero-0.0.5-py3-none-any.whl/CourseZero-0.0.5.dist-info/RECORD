@@ -1,0 +1,15 @@
+CourseZero/DataStorageTools.py,sha256=k-8MHBksptDcI5GwFTpdWCuvVHR9UPDzX8l4oEw1rrI,446
+CourseZero/FileSystemTools.py,sha256=YeIBIGZ8XmdfqB5mcG3lpyN57UhfcgEYKXFbo4vveWQ,1800
+CourseZero/RequestTools.py,sha256=n6o7P5q_mFrLfFOXaNL8FrWUIKCiaIVthDqQI9AKqN8,1794
+CourseZero/Store.py,sha256=qWQYePo_ZTrsgbwpImAVfT0b8ge6uGUQjk9bQ9PujS4,1941
+CourseZero/UrlMakers.py,sha256=wxBl44fS-nRm-XJ3f9oNsIezWqxxF3JIREP_Ml-h4kM,467
+CourseZero/__init__.py,sha256=KvZpnr_39sOJJikZHJxN_ao7bNq4JBGDVVyTXh4u_6Y,115
+CourseZero/environment.py,sha256=9YnEwIMC1gd9GLyWkxw_wG1zjOq96TC7tjqaLMumkvY,469
+CourseZero/Widgets/CampusAndProfIdentifiers.py,sha256=U0grA9c3ZQZaPg1flxNDKR0XuCg2oXOdH59wFUs64bM,1307
+CourseZero/Widgets/TakedownInputs.py,sha256=MVp3hrouR4t3Hxw9PbVJXRYHNawLqi9bZj5NnQvgtI8,101
+CourseZero/Widgets/__init__.py,sha256=MVp3hrouR4t3Hxw9PbVJXRYHNawLqi9bZj5NnQvgtI8,101
+Notebooks/__init__.py,sha256=A_pIY-KHCRo0_3jL5xvne3_R35gSBN8TaUFCEycI1l8,114
+CourseZero-0.0.5.dist-info/METADATA,sha256=VgsjGuuuBj9VwcBGRtDUzHqG4LExt2uTv94x7S1oIkY,1701
+CourseZero-0.0.5.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+CourseZero-0.0.5.dist-info/top_level.txt,sha256=KD9gY02tEJ76gIIK0uaFkC1xUz9JAxqAOnR-z4J3jtY,21
+CourseZero-0.0.5.dist-info/RECORD,,

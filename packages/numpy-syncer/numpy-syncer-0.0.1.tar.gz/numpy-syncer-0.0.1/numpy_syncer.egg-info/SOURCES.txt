@@ -1,0 +1,10 @@
+README.md
+setup.py
+numpy_syncer/__init__.py
+numpy_syncer/local_sync.py
+numpy_syncer/numpy_sync.py
+numpy_syncer.egg-info/PKG-INFO
+numpy_syncer.egg-info/SOURCES.txt
+numpy_syncer.egg-info/dependency_links.txt
+numpy_syncer.egg-info/requires.txt
+numpy_syncer.egg-info/top_level.txt

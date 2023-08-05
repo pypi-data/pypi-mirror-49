@@ -1,0 +1,13 @@
+chaos_basispy/_AS_adaptation.py,sha256=5G3IHV4yVvsKUegRljKv_aTWl9nOrirUwoSbq_ABFHE,5655
+chaos_basispy/__init__.py,sha256=s8LPtZ4-dJSSvMjkfwXWFosvlw0q23TiOw0RX6f2-t4,285
+chaos_basispy/_basis_adaptation.py,sha256=1gglUrXykFlQ2NvZKKvhhZdwJ5mZshtGQUNKobf4Mw8,3006
+chaos_basispy/_poly_basis.py,sha256=BBKuCun7ZzEl09v_wqyNRH8xHcqn8sKEmFUj-XO0ETs,9180
+chaos_basispy/_poly_chaos.py,sha256=xC091oasNSXsN_wxH50vmkVvD2DmnzptCRpbmhIeXQk,13959
+chaos_basispy/_quadrature.py,sha256=KyAgPWCJIYWT1r5o6Yqef1pSUmuJ3lOqV33cum74vnA,7764
+chaos_basispy/_sparse_grid.py,sha256=qQ5eC4Gyvf0U_EDZnChrHVmZoIVwT341YVcQ8RhWRC8,3520
+chaos_basispy/_tools.py,sha256=dup3DIyl00K7OhX13fSGsbG-5RncAL4a9T6bRduNdNw,2530
+chaos_basispy-0.2.1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+chaos_basispy-0.2.1.dist-info/METADATA,sha256=RXWC0yvAwlBzj43fzMbtEgtI2XmYMHG_QS-sBLOtIxs,1419
+chaos_basispy-0.2.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+chaos_basispy-0.2.1.dist-info/top_level.txt,sha256=bNb904qiFmg7yqz2ghos_JhY38Lbqf-XYcOXvezlDTc,14
+chaos_basispy-0.2.1.dist-info/RECORD,,

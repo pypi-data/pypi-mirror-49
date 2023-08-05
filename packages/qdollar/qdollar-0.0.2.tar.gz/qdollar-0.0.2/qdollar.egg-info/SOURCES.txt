@@ -1,0 +1,10 @@
+README.md
+setup.py
+qdollar/Point.py
+qdollar/__init__.py
+qdollar/gesture.py
+qdollar/recognizer.py
+qdollar.egg-info/PKG-INFO
+qdollar.egg-info/SOURCES.txt
+qdollar.egg-info/dependency_links.txt
+qdollar.egg-info/top_level.txt

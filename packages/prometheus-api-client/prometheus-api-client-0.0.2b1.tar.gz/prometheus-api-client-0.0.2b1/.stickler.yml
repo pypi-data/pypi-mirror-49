@@ -1,0 +1,6 @@
+---
+linters:
+    pep8:
+        python: 3
+        max-line-length: 120
+        fixer: true

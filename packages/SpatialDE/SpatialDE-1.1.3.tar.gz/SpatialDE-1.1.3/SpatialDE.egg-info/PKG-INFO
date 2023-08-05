@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: SpatialDE
+Version: 1.1.3
+Summary: Spatial and Temporal DE test
+Home-page: https://github.com/Teichlab/SpatialDE
+Author: Valentine Svensson
+Author-email: valentine@nxn.se
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: SpatialDE
+        =========
+        
+        Perform non-linear differential expression tests in
+        spatially or temporally  resolved gene expression data.
+        
+        
+Platform: UNKNOWN

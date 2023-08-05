@@ -1,0 +1,3 @@
+[sceptre.resolvers]
+stack_output = resolver.stack_output:StackOutput
+

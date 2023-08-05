@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pylint-boxwisemaatwerk
+Version: 0.0.3
+Summary: A Pylint plugin to help Pylint understand the boxwise maatwerk framework
+Home-page: https://bitbucket.org/tranconbv/pylint-boxwisemaatwerk
+Author: Kevin Pawiroredjo, Ana Caires
+Author-email: frankvandenhoek@trancon.nl
+License: CLOSED
+Description: pylint-boxwisemaatwerk
+        Changelog
+        =========
+        
+        Version 0.0.1 (17 June 2019)
+        -----------------------------
+        
+Keywords: pylint,boxwise,plugin
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Programming Language :: Python :: 2.7
+Provides-Extra: for_tests

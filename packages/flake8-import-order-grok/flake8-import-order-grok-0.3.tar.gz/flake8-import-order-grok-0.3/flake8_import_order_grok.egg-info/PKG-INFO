@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: flake8-import-order-grok
+Version: 0.3
+Summary: Grok Learning's flake8-import-order plugin.
+Home-page: https://github.com/groklearning/flake8-import-order-grok
+Author: Grok Learning
+Author-email: opensource@groklearning.com
+License: MIT
+Description: file: README.md
+Keywords: flake8-import-order grok
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Flake8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*

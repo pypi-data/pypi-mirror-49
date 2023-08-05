@@ -1,0 +1,17 @@
+c3reference/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+c3reference/authserver.py,sha256=iMIk-rY2W0pz51DHIwrORrHOwnYVdcG-i1ksEo-4DWY,1587
+c3reference/beacon.py,sha256=G90B4U3IXVDj4qo4-888TrfEzDnfBdcsX7Yz_5b6AMQ,2732
+c3reference/frame.py,sha256=Tp6iGOOoP9Jbbwmxq-LJLVf7CVqR5eaeEEsL_77icC4,3978
+c3reference/kafka.py,sha256=frSWu_LegiPPGQfvY7mPHP9U3-lVVOYcCk95HXsiWXo,2155
+c3reference/listener.py,sha256=Fcr0RExMFuSdj7M5vMj1dVol-P_fLgUqV0Gx2QUf1cw,13088
+c3reference/protocol.py,sha256=WagIK7woHgyTy05CBak0F024MAgpUxc4Qau_8H0poFk,7278
+c3reference/proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+c3reference/proto/common_pb2.py,sha256=g9mKg39W64q6ijhkm7eZH3V7cyONj8LXu4MwMe5z8UI,4609
+c3reference/proto/location_pb2.py,sha256=Ay80IJPr1fqHyxBDWejAzBajq-cYmJVxc0d69OSPlYQ,8481
+c3reference/proto/management_pb2.py,sha256=W-Cjed8r2VRzg1Z7WCqK7zo0MCaef5dYpbS0iBmFM4M,27228
+c3_reference-2.0.1.dist-info/LICENSE,sha256=a2ilmXk4h8Oh3bICOtbmHxgYIw1kUnuj-0uCFZbcpx4,1051
+c3_reference-2.0.1.dist-info/METADATA,sha256=fJfJQTdnW-NP6R72EEWPvJTyufe5m0TgRpmDvpDLfI0,793
+c3_reference-2.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+c3_reference-2.0.1.dist-info/entry_points.txt,sha256=tCqUcsfyY6wyP4ym6x9EIZ1Vwvs1yuvc_1jylM0kRdA,128
+c3_reference-2.0.1.dist-info/top_level.txt,sha256=Zd2-mdAat_GPnvY1ufAbIuaV0I9BZrN6Cwlr4GRqzHs,12
+c3_reference-2.0.1.dist-info/RECORD,,

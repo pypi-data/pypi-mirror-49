@@ -1,0 +1,15 @@
+matplotlib
+colorcet
+scikit-image
+tqdm
+scipy
+numpy
+click
+threadpoolctl==1.0.0
+
+[pre-commit]
+pre-commit
+yapf
+
+[testing]
+pytest

@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+rsutils/__init__.py
+rsutils/env.py
+rsutils.egg-info/PKG-INFO
+rsutils.egg-info/SOURCES.txt
+rsutils.egg-info/dependency_links.txt
+rsutils.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: rsutils
+Version: 0.0.2
+Summary: A bunch of utilities for Python. Built with :heart: by Reckonsys 
+Home-page: https://github.com/reckonsys/rsutils_python
+Author: dhilipsiva
+Author-email: dhilipsiva@pm.me
+License: MIT
+Description: Core utilitties
+Keywords: rsutils reckonsys python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6

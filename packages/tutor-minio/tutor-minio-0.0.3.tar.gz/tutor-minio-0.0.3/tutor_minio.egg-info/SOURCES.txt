@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+tutor_minio.egg-info/PKG-INFO
+tutor_minio.egg-info/SOURCES.txt
+tutor_minio.egg-info/dependency_links.txt
+tutor_minio.egg-info/entry_points.txt
+tutor_minio.egg-info/top_level.txt
+tutorminio/__init__.py
+tutorminio/plugin.py

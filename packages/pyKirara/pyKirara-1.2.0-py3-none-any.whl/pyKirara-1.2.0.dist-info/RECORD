@@ -1,0 +1,13 @@
+pyKirara/__init__.py,sha256=Y515tO67VUaCCQKJBDcKuQg12JKtzA9u_I7aYJsJhbk,26
+pyKirara/card.py,sha256=95yEHrcSVgSNyN1q9SW0YhO6lC5Sq0pgbBKKWXyltqM,5910
+pyKirara/client.py,sha256=0rLLxHRG-Co_4g9PqtBRwVahadnxUHyE8t_Pi2_ayEY,12305
+pyKirara/enums.py,sha256=VWTeFzewRKnh1YAMfgaCogsLBdabs2k2SF_Ou1-D9T0,2113
+pyKirara/errors.py,sha256=tuxUHRjqq5U4O3auZqGD-J0GgDuwlwOYo3XWaurmO5I,283
+pyKirara/idol.py,sha256=hrLBvioEjuP5lnPHLfkzfsIgoTL4Gu3yWCqpZHlogxI,2619
+pyKirara/infos.py,sha256=PSacta_zj_Ha39_HVmkjMfygBT7YZbjYpzF9Kt7sw98,2024
+pyKirara/skills.py,sha256=9oIkMxtnQW-v6Qxs8iQZ_aoh1J6xpTIVXiU6Hc5f_Oc,3980
+pyKirara-1.2.0.dist-info/LICENSE,sha256=ayqR5luRkPcqTmxWr7wmh2hjYBVXSc19Z39pPtoPI9M,1066
+pyKirara-1.2.0.dist-info/METADATA,sha256=KVFO2jnnJEwM-2MtJ5xeS0XLc9YDIlGfa7wlbeTjRh4,1776
+pyKirara-1.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyKirara-1.2.0.dist-info/top_level.txt,sha256=cH69U9qEfhkpeqMnL7S2pz29DFny-uluEyuQAmrNk6Y,9
+pyKirara-1.2.0.dist-info/RECORD,,

@@ -1,0 +1,12 @@
+typic/__about__.py,sha256=KsVcYifFDyHYiHbsS4zRlYwP0cWy_FnQA0c3SMuvUQk,303
+typic/__init__.py,sha256=QJRv-TOkOWwIa-aVyEFyeaoG4WuPYoJ7rhlXV7QFseE,271
+typic/bind.py,sha256=dxVY1JMuT0HG0UQvGt_d3EdVFAHuCH24R21KEVxpTMI,4798
+typic/checks.py,sha256=tMuu66VCrwQVQNPGPMwoNGSDFrsbdZMrdIZSTM56LzM,3284
+typic/eval.py,sha256=naJW71hNreH1IkzV3R4XMKad0iXpJryJaZn2n8I1ZAA,1548
+typic/klass.py,sha256=_R2R53MWTK-o5cqagyfPbIXp_zJZBu-s6REaHrXESi4,1796
+typic/typed.py,sha256=a8TwrEfwJ25huwS_6YTKtgxNidzoYPN6oQtJUIpEaP8,33615
+typical-1.9.2.dist-info/LICENSE,sha256=Ana3ouX3VLeBP0yUchezbPKdgG38Zy3Ig-FHFaoyevc,1080
+typical-1.9.2.dist-info/METADATA,sha256=Lkrr_JAhK3JhgW59tKgphljnoYHFluqGcvaH0b-95oI,10478
+typical-1.9.2.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+typical-1.9.2.dist-info/top_level.txt,sha256=m2vY4NSWqGSrTBPzztuKneyzdIsYPKu6Sn1PArCT7og,6
+typical-1.9.2.dist-info/RECORD,,

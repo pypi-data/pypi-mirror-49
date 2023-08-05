@@ -1,0 +1,9 @@
+veripupil/__init__.py,sha256=xCe6ohyP-9UlA1_ziPA3SWD3-jt3AZ4nhlk0N6UiNqg,134
+veripupil/hyperparameters.py,sha256=_y5y1aBonzp4UeXwMYj8mhTNSj62N8Hk8MulMWR0ri8,6322
+veripupil/hyperparameters_test.py,sha256=AF-wTpD80JVobOWH_PmgeR7OcoGk9QE7JT5xFi8lG7g,1907
+veripupil/trainer.py,sha256=BZTbaQEGK4ha1-qgmqxPbpwYLCtFn3aV1KIC8OZ4QbM,13918
+veripupil-0.0.5.dist-info/LICENSE.txt,sha256=5A0FhSiPpmXa-Q9ZyZQbExqjmzvntk4MCD_m_JeEeRQ,1068
+veripupil-0.0.5.dist-info/METADATA,sha256=yrWqRWrV_FhxRfvDrZjHnVVyt9QXRRaOH9Xsy91ivkY,497
+veripupil-0.0.5.dist-info/RECORD,,
+veripupil-0.0.5.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+veripupil-0.0.5.dist-info/top_level.txt,sha256=DB6-1gkFPcHNuceX9c0OPAzCni2KNKhpse-zAKWrnSw,10

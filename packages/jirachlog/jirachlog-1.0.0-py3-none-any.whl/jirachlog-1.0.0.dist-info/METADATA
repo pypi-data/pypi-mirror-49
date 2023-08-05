@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: jirachlog
+Version: 1.0.0
+Summary: Creates a basic changelog using git and Jira
+Home-page: https://github.com/digitalroute/jirachlog
+Author: Marcus Johansson
+Author-email: polarn@gmail.com
+License: APACHE
+Platform: UNKNOWN
+Requires-Dist: jira (>=2.0.0)
+
+# jirachlog
+
+## Introduction
+
+Creates a basic changelog using git and Jira
+
+## Prerequisites
+
+Make sure you have Python3.
+
+## Installation
+
+Run command:
+
+    pip3 install jirachlog
+
+## Deploy new version to PyPi
+
+
+

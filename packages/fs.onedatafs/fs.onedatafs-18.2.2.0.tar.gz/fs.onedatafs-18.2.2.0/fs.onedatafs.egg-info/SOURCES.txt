@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+fs.onedatafs.egg-info/PKG-INFO
+fs.onedatafs.egg-info/SOURCES.txt
+fs.onedatafs.egg-info/dependency_links.txt
+fs.onedatafs.egg-info/entry_points.txt
+fs.onedatafs.egg-info/requires.txt
+fs.onedatafs.egg-info/top_level.txt
+fs/onedatafs/__init__.py
+fs/onedatafs/_onedatafs.py
+fs/onedatafs/_util.py
+fs/onedatafs/_version.py
+fs/onedatafs/opener.py

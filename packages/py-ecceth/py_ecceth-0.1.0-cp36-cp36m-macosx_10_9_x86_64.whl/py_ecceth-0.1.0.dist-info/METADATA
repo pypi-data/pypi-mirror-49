@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: py-ecceth
+Version: 0.1.0
+Summary: Python wrappers for eccpow, the ethereum proof of workhashing function with LDPC
+Home-page: https://github.com/cd4761/ecceth
+Author: Jason Hwang
+Author-email: jason.h@onther.io
+License: GPL
+Download-URL: https://github.com/cd4761/ecceth/tarball/v23
+Platform: UNKNOWN
+
+UNKNOWN
+
+

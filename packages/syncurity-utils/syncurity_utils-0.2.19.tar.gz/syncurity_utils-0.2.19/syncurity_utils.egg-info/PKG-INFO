@@ -1,0 +1,48 @@
+Metadata-Version: 1.2
+Name: syncurity-utils
+Version: 0.2.19
+Summary: Syncurity Common Util Classes and Functions
+Home-page: https://github.com/syncurity/syncurity-utils
+Author: Syncurity
+Author-email: support@syncurity.net
+Maintainer: Syncurity
+Maintainer-email: support@syncurity.net
+License: Apache 2.0
+Description: =================
+         Syncurity Utils
+        =================
+        
+        The ``syncurity-utils`` package enables Automation and Orchestration efforts with the IR-Flow platform, in conjunction
+        with our other python packages.
+        
+        Usage
+        ~~~~~
+        
+        Available on PyPI
+        
+        .. code-block:: bash
+        
+            $ pip install syncurity-utils
+        
+        Use in your Stackstorm pack like so:
+        
+        .. code-block:: python
+        
+            from syncurity_utils import typecheck, find_domain
+            from syncurity_utils.exceptions import TypecheckException
+        
+        
+Keywords: Security SOAR Utilities IR-Flow Automation Orchestration
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=2.7, >=3.6.*

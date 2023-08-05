@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+mock = "*"
+nose = "*"
+coverage = "*"
+tox = "*"
+sphinx = "*"
+sphinx_rtd_theme = "*"
+isort = "*"
+bump2version = "*"
+
+[packages]
+requests = "*"
+dataclasses-json = "*"
+
+[requires]
+python_version = "3.7"

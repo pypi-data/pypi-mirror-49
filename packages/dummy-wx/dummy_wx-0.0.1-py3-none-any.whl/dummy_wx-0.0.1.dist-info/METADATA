@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dummy-wx
+Version: 0.0.1
+Summary: This module does nothing
+Home-page: UNKNOWN
+Author: Dominic Davis-Foster
+Author-email: dominic@davis-foster.co.uk
+License: GPLv3
+Platform: UNKNOWN
+
+This module does nothing, but us useful when trying to build documentation for modules that require wxpython.
+
+

@@ -1,0 +1,14 @@
+deltachat/_build.py,sha256=i0CoGLpK_8bqnccgIaxeQRlUkZ0wfPX9-CiBxHBw5H8,2503
+deltachat/cutil.py,sha256=5DTUCkdbNKzZd3JNKKcsWIHRIJDisTLN8cZFz57aKX4,457
+deltachat/__init__.py,sha256=xSmTdM2oiaRYM-MC5s06FsrQYSluzIUb7G7Qq7yzGQA,2037
+deltachat/account.py,sha256=JfOPYlo7J2TCUQu8sXk4ZDLwsN5m2EIIe2cuZZzUiNM,16940
+deltachat/capi.abi3.so,sha256=6Ay6aLFYMsPxc0tspJNt1fvk-YsWnnT697jx32Rt87I,25509099
+deltachat/const.py,sha256=hl069gft0MQ_AJtrG28tAlX-39CxUORjPCtlzo6VmU8,3166
+deltachat/props.py,sha256=R_h2V0Z5NQAbEGh9sfaykoGgb7RZ9_GCeF29i5vXmvU,805
+deltachat/message.py,sha256=eK7nAl5G52C132Nqy5CP-bpu2_wxzt_60gyPM1PCeCE,8974
+deltachat/chatting.py,sha256=-JU0Fl58usP8q-hj5fdsxBrcfEc8yZqLy3PnIgpiy8A,9181
+deltachat-0.600.0.dist-info/RECORD,,
+deltachat-0.600.0.dist-info/LICENSE,sha256=-rPda9qyJvHAhjCx3ZF-Efy07F4eAg4sFvg6ChOGPoU,16726
+deltachat-0.600.0.dist-info/METADATA,sha256=ReXoJfi4eeIUERrM9AryoLXsZbf_RJH51ZAm_Y58II0,6362
+deltachat-0.600.0.dist-info/WHEEL,sha256=oHnmHmB7kXq9sEF4t49Zll1U5Cpys3qKSjV2r8hHrng,109
+deltachat-0.600.0.dist-info/top_level.txt,sha256=2kZHQcrmwFjeJKqPlxX24BbwzslE8reQOmfPnybPGcU,10

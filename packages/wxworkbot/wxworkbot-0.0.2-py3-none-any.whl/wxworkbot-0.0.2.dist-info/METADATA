@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: wxworkbot
+Version: 0.0.2
+Summary: ['WxWork bot API client']
+Home-page: UNKNOWN
+Author: ahui,haozi
+Author-email: ahui@qunhemail.com,haozi@qunhemail.com
+License: MIT License
+Keywords: WxWork,bot,API
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# WxWork group bot API client
+## usage
+```
+from wxworkbot import Bot
+# https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key={key}
+bot = Bot(bot_name='test', key='YOUR_KEY_HERE') 
+bot.send_text_mentioned('BIG NEWS!', mentioned_list=['all'])
+```
+> see more on [official document](https://work.weixin.qq.com/api/doc?notreplace=true#90000/90135/91760)
+
+

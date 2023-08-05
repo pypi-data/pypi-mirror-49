@@ -1,0 +1,17 @@
+activatable_model/__init__.py,sha256=MEmt1dTfqpGe9OCRIEUWUOuPidYdNkA96zME-ij5Xro,197
+activatable_model/apps.py,sha256=rD6jkvlV3_8FirYvJfCvTCexAX2gn6C9GHpnYm38TQU,301
+activatable_model/models.py,sha256=NW5VTnFYz_ICc10AK73nEUQCvnl2dZMTMVfAqN4krNc,5377
+activatable_model/signals.py,sha256=4sftNN4hp8kKxmk-OqrHX3Rm2eiF3j_RwqRVorTw4vQ,206
+activatable_model/urls.py,sha256=t7caQVKiozvyJH6bgd01c997KbESefA92hQRuuHw6OA,38
+activatable_model/validation.py,sha256=kSsRGVPlBouiZycwbvSOqU61MLT_BL9dc6_EAZmcCcI,2265
+activatable_model/version.py,sha256=kmfHpHo2YhSrigutlRQs8qXIR8nEm-D-c8lScQQN64M,22
+activatable_model/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+activatable_model/tests/models.py,sha256=S2BecRog7ppOfEO-AFz11gqw9Pzu6W8k--ysdOUunBY,970
+activatable_model/tests/tests.py,sha256=aMQ0jPrkFazWni4sGiKZ79bWLs_gloP7EWD53psIXdE,22801
+activatable_model/tests/migrations/0001_initial.py,sha256=HBWrFtEffsbsV1bYCukiV0O8efhTSW3i2QI3HFefao8,2115
+activatable_model/tests/migrations/0002_activatablemodelwrelandcascade.py,sha256=qfcUgmOPhIovJgaAD4_zKWW-Or6ILeS6Xra6JgrltvQ,837
+activatable_model/tests/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_activatable_model-1.2.1.dist-info/METADATA,sha256=hdbbUlrDyjbszm3Vtuk9KAnl1vKxPVrAb1t0EuChvlQ,8110
+django_activatable_model-1.2.1.dist-info/RECORD,,
+django_activatable_model-1.2.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_activatable_model-1.2.1.dist-info/top_level.txt,sha256=oA_wEIiYJKnVaZ1fv_JNh7g4FdDIM8Z1tVQ6KW5Ut_c,18

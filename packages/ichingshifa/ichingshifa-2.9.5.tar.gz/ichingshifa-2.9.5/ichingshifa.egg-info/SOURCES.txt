@@ -1,0 +1,8 @@
+README.md
+setup.py
+ichingshifa/__init__.py
+ichingshifa/ichingshifa.py
+ichingshifa.egg-info/PKG-INFO
+ichingshifa.egg-info/SOURCES.txt
+ichingshifa.egg-info/dependency_links.txt
+ichingshifa.egg-info/top_level.txt

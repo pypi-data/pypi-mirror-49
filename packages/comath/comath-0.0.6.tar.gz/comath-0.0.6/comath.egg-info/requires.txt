@@ -1,0 +1,6 @@
+
+[test]
+pytest
+coverage
+pytest-covcollective.checkdocs
+pygments

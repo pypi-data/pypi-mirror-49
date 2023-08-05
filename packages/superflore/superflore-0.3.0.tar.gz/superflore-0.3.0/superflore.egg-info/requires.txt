@@ -1,0 +1,14 @@
+bs4
+catkin_pkg>=0.4.0
+docker
+gitpython
+pygithub
+pyyaml
+requests
+rosdep>=0.15.2
+rosdistro>=0.7.4
+rosinstall_generator
+rospkg>=1.1.8
+setuptools
+termcolor
+xmltodict

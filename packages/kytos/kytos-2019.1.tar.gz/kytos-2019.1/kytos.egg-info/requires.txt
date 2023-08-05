@@ -1,0 +1,13 @@
+ipython
+lockfile
+python-openflow>=2019.1
+flask-socketio
+flask_cors
+flask
+python-daemon
+janus
+jinja2
+watchdog
+
+[dev]
+pip-tools >= 2.0

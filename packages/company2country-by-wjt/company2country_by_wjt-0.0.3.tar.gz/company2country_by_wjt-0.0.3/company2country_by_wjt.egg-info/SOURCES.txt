@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.cfg
+setup.py
+company2country_by_wjt/__init__.py
+company2country_by_wjt/get_country_by_company.py
+company2country_by_wjt.egg-info/PKG-INFO
+company2country_by_wjt.egg-info/SOURCES.txt
+company2country_by_wjt.egg-info/dependency_links.txt
+company2country_by_wjt.egg-info/top_level.txt

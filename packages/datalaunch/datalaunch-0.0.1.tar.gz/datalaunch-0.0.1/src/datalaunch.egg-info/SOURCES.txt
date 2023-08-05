@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+src/datalaunch/__init__.py
+src/datalaunch/_version.py
+src/datalaunch.egg-info/PKG-INFO
+src/datalaunch.egg-info/SOURCES.txt
+src/datalaunch.egg-info/dependency_links.txt
+src/datalaunch.egg-info/top_level.txt

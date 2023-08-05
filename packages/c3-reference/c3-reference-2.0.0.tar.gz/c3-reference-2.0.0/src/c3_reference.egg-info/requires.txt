@@ -1,0 +1,7 @@
+attr
+automat
+click
+python-lzo
+
+[test]
+tox

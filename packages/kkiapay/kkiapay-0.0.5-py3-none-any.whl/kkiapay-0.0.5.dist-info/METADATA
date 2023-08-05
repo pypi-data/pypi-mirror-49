@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: kkiapay
+Version: 0.0.5
+Summary: Community-driven Admin KkiaPay Sdk for Python
+Home-page: https://github.com/PythonBenin/kkiapay-python
+Author: Junior Gantin
+Author-email: nioperas06@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: appdirs (==1.4.3)
+Requires-Dist: atomicwrites (==1.3.0)
+Requires-Dist: attrs (==19.1.0)
+Requires-Dist: black (==19.3b0)
+Requires-Dist: bleach (==3.1.0)
+Requires-Dist: certifi (==2019.6.16)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: Click (==7.0)
+Requires-Dist: docutils (==0.14)
+Requires-Dist: idna (==2.8)
+Requires-Dist: importlib-metadata (==0.18)
+Requires-Dist: mock (==3.0.5)
+Requires-Dist: more-itertools (==7.1.0)
+Requires-Dist: packaging (==19.0)
+Requires-Dist: pkginfo (==1.5.0.1)
+Requires-Dist: pluggy (==0.12.0)
+Requires-Dist: py (==1.8.0)
+Requires-Dist: Pygments (==2.4.2)
+Requires-Dist: pyparsing (==2.4.0)
+Requires-Dist: pytest (==5.0.1)
+Requires-Dist: readme-renderer (==24.0)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: requests-mock (==1.6.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: toml (==0.10.0)
+Requires-Dist: tqdm (==4.32.2)
+Requires-Dist: twine (==1.13.0)
+Requires-Dist: urllib3 (==1.25.3)
+Requires-Dist: wcwidth (==0.1.7)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==0.5.2)
+
+# kkiapay-python
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Road map](#road-map)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+Community-driven admin KkiaPay Sdk for Python.
+
+## Installation
+
+To get the latest version of Laravel `kkiapay-python`, simply run:
+
+```bash
+pip install kkiapay
+```
+
+## Usage
+
+Behold, the power of `kkiapay-python`:
+
+```python
+from kkiapay import Kkiapay
+
+k = Kkiapay('public_key', 'private_key', 'secret', sandbox=True)
+
+transaction = k.verify_transaction('LVFNrK1nx')
+
+print(transaction)
+# => KkiapayTransaction(
+#       performed_at='2019-07-11T11:24:42.687Z',
+#       type='DEBIT',
+#       status='FAILED',
+#       source='MOBILE_MONEY',
+#       amount=1,
+#       fees=0,
+#       country='BJ',
+#       reason='invalid_number',
+#       transactionId='LVFNrK1nx',
+#       performedAt='07/11/2019'
+#   )
+
+print(transaction.status)
+# => FAILED
+print(transaction.amount)
+# => 1
+```
+
+## Road map
+
+`kkiapay-python` is still under heavy development, we decided to ship it in this early stage so you can help us make it better.
+
+Here's the plan for what's coming:
+
+- [x] Sandbox and Live environments
+- [x] Verify Transaction
+- [ ] Refund Transaction
+- [ ] Schedule Payout
+- [ ] Add tests.
+
+## Contributing
+
+Check our [contribution guide](CONTRIBUTING.md).
+
+## License
+
+`kkiapay-python` is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+

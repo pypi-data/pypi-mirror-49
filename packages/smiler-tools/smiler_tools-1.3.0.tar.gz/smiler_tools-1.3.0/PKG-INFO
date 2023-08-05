@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: smiler_tools
+Version: 1.3.0
+Summary: Helper package for SMILER.
+Home-page: https://github.com/tsotsoslab/SMILER
+Author: Toni Kunic
+Author-email: tk@eecs.yorku.ca
+License: UNKNOWN
+Description: # SMILER Tools
+        
+        This is a simple package containing some tools and information for working with SMILER models.
+        
+        See https://github.com/TsotsosLab/SMILER for details.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown

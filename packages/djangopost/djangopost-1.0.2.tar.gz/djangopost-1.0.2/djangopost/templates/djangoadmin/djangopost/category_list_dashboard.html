@@ -1,0 +1,52 @@
+{% extends 'djangoadmin/base/body/index.html' %}
+
+
+
+{% block body %}
+
+{% include "djangoadmin/widgets/alert.html" %}
+
+<div class="callout" style="padding:5px;">
+  <div class="expanded button-group">
+     <a class="button" href="{% url 'djangopost:category_create_view' %}">Create New Category</a>
+  </div>
+</div>
+
+<!-- Start table here. -->
+<table class="striped hover table-expand">
+
+<thead>
+  <tr class="table-expand-row">
+    <th width="500"><a href="">Title</a></th>
+    <th><a href="">Author</a></th>
+    <th><a href="">Verification</a></th>
+    <th width="100"><a href="">Status</a></th>
+  </tr>
+</thead>
+
+<tbody>
+{% for category_list in category_list %}
+   <tr class="table-expand-row" data-open-details>
+     <td width="500">{{ category_list.title }}</td>
+     <td><a>{{ category_list.author }}</a></td>
+     <td><a>{{ category_list.verification }}</a></td>
+     <td width="100"><a>{{ category_list.status }}</a><span class="expand-icon"></span></td>
+   </tr>
+
+   <tr class="table-expand-row-content">
+      <td colspan="8" class="table-expand-row-nested">
+         <ul class="menu">
+          <li><a href="{{ category_list.get_absolute_url_for_category_update_view }}">Edit</a></li>
+          <li><a href="{{ category_list.get_absolute_url_for_category_delete_view }}">Delete</a></li>
+          <li><a href="{{ category_list.get_absolute_url_for_category_detail_view }}" target="_blank">View</a></li>
+         </ul>
+      </td>
+    </tr>
+{% endfor %}
+</tbody>
+
+</table>
+<!-- end table here. -->
+
+
+{% endblock body %}

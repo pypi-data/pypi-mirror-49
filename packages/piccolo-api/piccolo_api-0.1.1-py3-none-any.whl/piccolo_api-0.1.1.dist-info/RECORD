@@ -1,0 +1,11 @@
+piccolo_api/__init__.py,sha256=NRAHmuVCgLw1vR9zV-xWXldFn4Af80Iw4NR94PJSLDk,22
+piccolo_api/endpoints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+piccolo_api/endpoints/auth.py,sha256=_EJIMUj61p7gJVIYSdWNiu5MwUEi7NE37mbxBOXuu1E,820
+piccolo_api/endpoints/crud.py,sha256=FRr6HkwcI7Lqctw5WBAHslsO6RwG_YixZQzbTCROkZY,5726
+piccolo_api/middleware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+piccolo_api/middleware/auth.py,sha256=l5H9cy9Lu75LQpSiZkekfc48CF4ems4EmpXq8yDsdBo,1777
+piccolo_api/middleware/junction.py,sha256=DBobDlNs7Z2s6TBmawPyX0zeTYjNNqzmKMr4Mxbvpok,805
+piccolo_api-0.1.1.dist-info/METADATA,sha256=jP-adI-QKNXkaFo3I7dQe7e2gKhxVsO5CMMGmADPP0k,800
+piccolo_api-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+piccolo_api-0.1.1.dist-info/top_level.txt,sha256=AO8lCLf0nAC3dxbtu5dh5wFahKonV3d6G7yQuWXzhpQ,12
+piccolo_api-0.1.1.dist-info/RECORD,,

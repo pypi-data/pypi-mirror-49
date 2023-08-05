@@ -1,0 +1,13 @@
+autopub/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autopub/autopub.py,sha256=V3fvYpIWATGTNKuigbaFgvXosbWDDVLATW-gu1tg1fE,1323
+autopub/base.py,sha256=8dVvwjKkYXvyQzapXspJed6uTFX7MSgnaQ9sp2ys-Hk,3752
+autopub/check_release.py,sha256=zZyoh3TmMseTGrEYPJh809Hz0LHknFdo02bYHkJk9ys,446
+autopub/commit_release.py,sha256=Tz-TToqEO9AaWz5HUCNrQV3mlusdyI3HaxmwvHsPIT4,680
+autopub/create_github_release.py,sha256=b6L0FWFKQR-ntjLur00ZOsTl-YaY3ccjGIZkHxIOhuE,957
+autopub/deploy_release.py,sha256=dKDFp2OOSAHnGyVBsqseHuTkToxOdV_K0dNXTDZSuYI,488
+autopub/prepare_release.py,sha256=2lPLfdU1oZcckM-JrKhFyNeiNLy2NGNjkdn43f_fayA,2119
+autopub-0.1.0a9.dist-info/entry_points.txt,sha256=dneC-sBNh-ntAab9sb46B2D6zW7GGvXHHBtIGyknjnA,48
+autopub-0.1.0a9.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+autopub-0.1.0a9.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+autopub-0.1.0a9.dist-info/METADATA,sha256=pG3IZ4nx_DcSLdcnnnD7XtL1i8IhslTAFbxkiBs8QU0,2016
+autopub-0.1.0a9.dist-info/RECORD,,

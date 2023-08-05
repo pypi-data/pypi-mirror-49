@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+aifashion/__init__.py
+aifashion/af_functions.py
+aifashion/af_oauth2.py
+aifashion/apis.json
+aifashion/cli/__init__.py
+aifashion/cli/convert.py
+aifashion/cli/info.py
+aifashion/cli/main.py
+aifashion_sdk.egg-info/PKG-INFO
+aifashion_sdk.egg-info/SOURCES.txt
+aifashion_sdk.egg-info/dependency_links.txt
+aifashion_sdk.egg-info/requires.txt
+aifashion_sdk.egg-info/top_level.txt
+aifashion_sdk.egg-info/zip-safe

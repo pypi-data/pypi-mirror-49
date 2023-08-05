@@ -1,0 +1,16 @@
+README.md
+setup.py
+src/QuickFig.egg-info/PKG-INFO
+src/QuickFig.egg-info/SOURCES.txt
+src/QuickFig.egg-info/dependency_links.txt
+src/QuickFig.egg-info/requires.txt
+src/QuickFig.egg-info/top_level.txt
+src/quickfig/__init__.py
+src/quickfig/data_types.py
+src/quickfig/data_types_test.py
+src/quickfig/definitions.py
+src/quickfig/definitions_test.py
+src/quickfig/quickfig.py
+src/quickfig/quickfig_test.py
+src/quickfig/type_converters.py
+src/quickfig/type_converters_test.py

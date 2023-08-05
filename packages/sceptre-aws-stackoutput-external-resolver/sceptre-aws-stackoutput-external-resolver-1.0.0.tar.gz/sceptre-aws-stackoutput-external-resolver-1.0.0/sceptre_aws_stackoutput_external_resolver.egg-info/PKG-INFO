@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: sceptre-aws-stackoutput-external-resolver
+Version: 1.0.0
+Summary: AWS StackOutput External Resolver
+Home-page: https://github.com/sceptre/sceptre-aws-stackoutput-external-resolver
+Author: Sceptre
+Author-email: sceptre@cloudreach.com
+License: Apache2
+Description: # Stack Output External
+        
+        Fetches the value of an output from a different Stack in the same account and
+        region. You can specify a optional AWS profile to connect to a different
+        account/region.
+        
+        If the Stack whose output is being fetched is in the same StackGroup, the
+        basename of that Stack can be used.
+        
+        Syntax:
+        
+        ```yaml
+        parameters/sceptre_user_data:
+          <name>:
+            !stack_output_external <full_stack_name>::<output_name>
+            <optional-aws-profile-name>
+        ```
+        
+        Example:
+        
+        ```yaml
+        parameters:
+          VpcIdParameter: !stack_output_external prj-network-vpc::VpcIdOutput prod
+        ```
+        
+Keywords: sceptre,sceptre-resolver
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test

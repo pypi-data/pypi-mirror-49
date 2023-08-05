@@ -1,0 +1,6 @@
+posti.py
+setup.py
+posti.egg-info/PKG-INFO
+posti.egg-info/SOURCES.txt
+posti.egg-info/dependency_links.txt
+posti.egg-info/top_level.txt

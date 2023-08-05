@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: posti
+Version: 1.0
+Summary: Runs heavy writers in seperate thread and returns readable interface
+Home-page: https://github.com/uploadcare/posti
+Author: Uploadcare
+Author-email: ak@uploadcare.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: async io blocking
+Platform: UNKNOWN

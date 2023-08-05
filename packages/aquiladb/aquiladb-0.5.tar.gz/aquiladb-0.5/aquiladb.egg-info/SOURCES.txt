@@ -1,0 +1,9 @@
+README.md
+aquiladb
+setup.py
+aquiladb/__init__.py
+aquiladb.egg-info/PKG-INFO
+aquiladb.egg-info/SOURCES.txt
+aquiladb.egg-info/dependency_links.txt
+aquiladb.egg-info/requires.txt
+aquiladb.egg-info/top_level.txt

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: aquiladb
+Version: 0.5
+Summary: Python client library for AquilaDB
+Home-page: https://github.com/a-mma/AquilaDB-Python
+Author: Harold Gomez
+Author-email: haroldgmz11@gmail.com
+License: UNKNOWN
+Description: # AquilaDB-Python
+        
+        Python client library for AquilaDB  
+        
+        `pip install aquiladb`
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

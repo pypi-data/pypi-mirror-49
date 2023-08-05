@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+explorer_from_wsl.py
+setup.py
+ExplorerFromWSL.egg-info/PKG-INFO
+ExplorerFromWSL.egg-info/SOURCES.txt
+ExplorerFromWSL.egg-info/dependency_links.txt
+ExplorerFromWSL.egg-info/entry_points.txt
+ExplorerFromWSL.egg-info/top_level.txt

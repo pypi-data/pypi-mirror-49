@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ExplorerFromWSL
+Version: 1.0.0
+Summary: call explorer.exe from wsl shell by unix-style path
+Home-page: https://github.com/ijknabla/explorer-from-wsl
+Author: ijknabla
+Author-email: ijknabla@gmail.com
+License: MIT License
+Description: see (github)[https://github.com/ijknabla/explorer-from-wsl]
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Topic :: Desktop Environment :: File Managers

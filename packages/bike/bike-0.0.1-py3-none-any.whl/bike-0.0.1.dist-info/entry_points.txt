@@ -1,0 +1,3 @@
+[console_scripts]
+realpython = bike.__main__:main
+

@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: PySnappydata
+Version: 0.0.0.1
+Summary: Python interface to snappydata
+Home-page: https://github.com/deatheye/PySnappydata/
+Author: Yu Yan
+Author-email: coderyy@163.com
+License: Apache License Version 2.0
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database :: Front-Ends

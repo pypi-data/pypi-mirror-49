@@ -1,0 +1,3 @@
+[sqlalchemy.dialects]
+snappydata = pysnappydata.sqlalchemy_snappydata:SnappyDataDialect
+

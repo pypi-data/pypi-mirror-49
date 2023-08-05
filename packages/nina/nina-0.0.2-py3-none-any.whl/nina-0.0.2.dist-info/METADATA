@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nina
+Version: 0.0.2
+Summary: Generate README.md and setup.py quickly
+Home-page: https://github.com/Ronald-TR/nina
+Author: Ronald Rodrigues
+Author-email: ronald-farias@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: colorama (>=0.4.1)
+Requires-Dist: inquirer (>=2.6.3)
+Requires-Dist: pyfiglet (>=0.8.post1)
+Requires-Dist: requests
+
+UNKNOWN
+
+

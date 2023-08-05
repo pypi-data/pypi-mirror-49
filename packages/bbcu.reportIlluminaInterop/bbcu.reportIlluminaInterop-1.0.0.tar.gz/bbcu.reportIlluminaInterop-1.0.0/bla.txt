@@ -1,0 +1,33 @@
+Flowcell: 130719_M00141_0225_000000000-A52TT
+
+Reads number: 2
+
+Cycles in read 1: 301
+
+Cycles in read 2: 301
+
+
+                     Yield Total (G)    Projected Yield (G)    % Aligned    % > Q30    Error rate    First cycle intensity
+-----------------  -----------------  ---------------------  -----------  ---------  ------------  -----------------------
+Non-Indexed Total           18.7655                18.7655       98.0473    88.9239       1.72595                  227.382
+Total                       18.7655                18.7655       98.0473    88.9239       1.72595                  227.382
+Read  1                      9.38274                9.38274      99.2001    93.4207       1.53175                  228.342
+Read  2                      9.38274                9.38274      96.8944    84.427        1.92015                  226.421
+
+Read 1:
+
+  Lane    Density (K/mm2)    Cluster PF (%)    Reads (M)    Reads PF (M)    % > Q30    Yield Total (G)    % Aligned    Error rate
+------  -----------------  ----------------  -----------  --------------  ---------  -----------------  -----------  ------------
+     1             1361.9           93.5633      33.4277         31.2758    93.4207            9.38274      99.2001       1.53175
+
+Read 2:
+
+  Lane    Density (K/mm2)    Cluster PF (%)    Reads (M)    Reads PF (M)    % > Q30    Yield Total (G)    % Aligned    Error rate
+------  -----------------  ----------------  -----------  --------------  ---------  -----------------  -----------  ------------
+     1             1361.9           93.5633      33.4277         31.2758     84.427            9.38274      96.8944       1.92015
+
+
+
+
+Created by the Python package "reportIlluminaInterop", based on the Python package "interop".
+

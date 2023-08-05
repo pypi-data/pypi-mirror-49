@@ -1,0 +1,11 @@
+README.md
+setup.py
+elkdist/__init__.py
+elkdist/binomial_distribution.py
+elkdist/gaussian_distribution.py
+elkdist/general_distribution.py
+elkdist.egg-info/PKG-INFO
+elkdist.egg-info/SOURCES.txt
+elkdist.egg-info/dependency_links.txt
+elkdist.egg-info/not-zip-safe
+elkdist.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+README.rst
+setup.py
+cherrypicker/__about__.py
+cherrypicker/__init__.py
+cherrypicker.egg-info/PKG-INFO
+cherrypicker.egg-info/SOURCES.txt
+cherrypicker.egg-info/dependency_links.txt
+cherrypicker.egg-info/requires.txt
+cherrypicker.egg-info/top_level.txt

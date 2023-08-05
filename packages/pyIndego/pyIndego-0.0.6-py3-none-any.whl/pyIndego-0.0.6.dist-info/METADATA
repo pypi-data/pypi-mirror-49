@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyIndego
+Version: 0.0.6
+Summary: API for Bosch Indego mower
+Home-page: UNKNOWN
+Author: Jens Mazzanti-Myretyr
+Author-email: jens@myretyr.se
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+
+API for Bosch Indego mower
+
+

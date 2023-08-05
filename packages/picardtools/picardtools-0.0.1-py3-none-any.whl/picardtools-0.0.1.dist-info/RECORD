@@ -1,0 +1,10 @@
+picardtools/__init__.py,sha256=N0kfFv4YsolsT0FBY5ppg-odyg0d_jDDCc8iZ0fzVAE,259
+picardtools/download.py,sha256=19LfjBn2ptuXoGY-wO2aUO1iI2_AWWTxoHhbi13NEr4,1225
+picardtools/env.py,sha256=VGBG4yvSpWir2R2sdXDt9-9bU9qaPzJlNQdef04bhKo,299
+picardtools/picardtools.py,sha256=khq6iSxodHlhPAhNRSB04NbXf3b0C_QQbPgxT5RijHo,3572
+picardtools-0.0.1.dist-info/LICENSE,sha256=lN83XrrwSAo3Twrbii-3tTUQufpUNWIOYhyHmxvwCEA,1059
+picardtools-0.0.1.dist-info/METADATA,sha256=UGOx2sA1WtRgImfX6IarSbjBmy23atV9zI4Fo-i7_4E,681
+picardtools-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+picardtools-0.0.1.dist-info/entry_points.txt,sha256=0oqWRw5pjEbyI_KxziYXBb-_rT0E-1wJ_rNlhI5v85c,68
+picardtools-0.0.1.dist-info/top_level.txt,sha256=HA31SltdnaTF3PPsHcpHLpY09M1EetDTI8cKD7CTZFo,12
+picardtools-0.0.1.dist-info/RECORD,,

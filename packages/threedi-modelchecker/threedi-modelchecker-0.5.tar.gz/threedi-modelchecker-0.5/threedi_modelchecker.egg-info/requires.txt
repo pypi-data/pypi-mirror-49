@@ -1,0 +1,10 @@
+Click
+GeoAlchemy2>=0.6
+SQLAlchemy>=0.8
+threedigrid
+
+[test]
+factory_boy
+pytest
+mock
+pytest-cov

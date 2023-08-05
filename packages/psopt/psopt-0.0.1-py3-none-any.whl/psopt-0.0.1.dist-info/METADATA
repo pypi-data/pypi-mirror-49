@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: psopt
+Version: 0.0.1
+Summary: A particle swarm optimizer for general use
+Home-page: https://github.com/artur-deluca/psopt
+Author: Artur de Luca
+Author-email: arturbackdeluca@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+Requires-Dist: dill
+Requires-Dist: multiprocess
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: dill ; extra == 'all'
+Requires-Dist: multiprocess ; extra == 'all'
+Requires-Dist: numpy ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: flake8 ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+
+# PSOpt
+
+A particle swarm optimizer for combinatorial optimization
+

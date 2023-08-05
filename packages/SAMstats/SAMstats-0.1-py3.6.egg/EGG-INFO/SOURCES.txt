@@ -1,0 +1,15 @@
+README.md
+SAMstats.sort.stat.filter.sh
+flagstat.sh
+setup.py
+SAMstats/__init__.py
+SAMstats.egg-info/PKG-INFO
+SAMstats.egg-info/SOURCES.txt
+SAMstats.egg-info/dependency_links.txt
+SAMstats.egg-info/entry_points.txt
+SAMstats.egg-info/requires.txt
+SAMstats.egg-info/top_level.txt
+SAMstatsParallel/__init__.py
+examples/README.md
+original/SAMstats-V2-coordinate-sorted.py
+original/SAMstats-V2.py

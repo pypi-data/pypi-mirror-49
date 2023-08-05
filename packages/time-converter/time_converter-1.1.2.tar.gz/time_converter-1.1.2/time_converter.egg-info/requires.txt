@@ -1,0 +1,7 @@
+numpy
+
+[dev]
+pytest
+pytest-cov
+numpydoc
+Sphinx

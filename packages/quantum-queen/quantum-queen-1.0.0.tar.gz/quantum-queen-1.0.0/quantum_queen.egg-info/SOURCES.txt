@@ -1,0 +1,6 @@
+setup.py
+quantum_queen.egg-info/PKG-INFO
+quantum_queen.egg-info/SOURCES.txt
+quantum_queen.egg-info/dependency_links.txt
+quantum_queen.egg-info/requires.txt
+quantum_queen.egg-info/top_level.txt

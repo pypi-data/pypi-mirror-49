@@ -1,0 +1,12 @@
+polymodels/__init__.py,sha256=G--uql3z_mhewXi6pYz0LM0_03HTYr0x2_tRzbK6UDE,155
+polymodels/apps.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polymodels/fields.py,sha256=NcrAagyNGfAHA8MChAb9q4thmWRCJ-2iD-Ikbv2t-gY,6745
+polymodels/forms.py,sha256=kIe7kmsbA7NsN0SS8SrBaVIQQ0NAYDqqAGFkn5mO0jA,1161
+polymodels/managers.py,sha256=ItdsVo-6GqB5xoDqlXnvAajeBl0U9ar9GzhzQ-vUUoM,4272
+polymodels/models.py,sha256=My5hyHVGsilZxTIKiOCoiT5_g7nNbzvRI5vFWh3WEx0,6684
+polymodels/utils.py,sha256=v0nekFeAV1UsZqcbh06oxT5PzpSEpLSMWxfsocUxOoo,705
+django_polymodels-1.5.1.dist-info/LICENSE,sha256=FmcqGy9xA7dhUxId6VHDUtNsSX0uojE3zfqHWuD98m0,1059
+django_polymodels-1.5.1.dist-info/METADATA,sha256=uTW-qcW3Gu_pB0jmQ1hfLekCIS-8Abhxokz0gcuKbjo,6173
+django_polymodels-1.5.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+django_polymodels-1.5.1.dist-info/top_level.txt,sha256=WSaRdSqQvek0NwYU07l1n_KwHgXuWCVzdYK4f53JbC8,11
+django_polymodels-1.5.1.dist-info/RECORD,,

@@ -1,0 +1,5 @@
+keios_zmq/__init__.py,sha256=W_kgAUvnU0_jP7gSdM-NN2p3BzTt4phY7LcoLcmOmrE,1914
+keios_zmq/zmq_async.py,sha256=J35G5zUAflVWCU52a-a7BG5RWeb9rz-Uxf6mAqhH6t8,4601
+keios_zmq-0.1.2.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+keios_zmq-0.1.2.dist-info/METADATA,sha256=c4QK2wX60PjhUdd8L44mvsCUQ0vJ9EUdb39hVY-cbkE,283
+keios_zmq-0.1.2.dist-info/RECORD,,

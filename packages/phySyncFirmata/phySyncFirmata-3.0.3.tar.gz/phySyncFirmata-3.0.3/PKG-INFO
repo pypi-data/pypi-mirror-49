@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: phySyncFirmata
+Version: 3.0.3
+Summary: Use your Arduino as a data acquisition card under Python
+Home-page: https://github.com/cedt/PhySyncBridge
+Author: Mrityunjai Kumar
+Author-email: mrityunjai.kmr@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities

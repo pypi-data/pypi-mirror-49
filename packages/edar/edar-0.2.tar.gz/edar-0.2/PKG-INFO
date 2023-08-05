@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: edar
+Version: 0.2
+Summary: Exploratory data analysis reporter for jupyter notebook
+Home-page: https://github.com/joppevos/Edar
+Author: Joppe Vos
+Author-email: joppe.vos@gmail.com
+License: MIT
+Download-URL: https://github.com/joppevos/Edar/archive/v0.02.tar.gz
+Description: UNKNOWN
+Keywords: data,analytics,explorer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

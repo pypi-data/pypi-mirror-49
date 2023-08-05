@@ -1,0 +1,12 @@
+README.md
+setup.py
+chainer_slack_report/__init__.py
+chainer_slack_report/slack_report.py
+chainer_slack_report/version.py
+chainer_slack_report.egg-info/PKG-INFO
+chainer_slack_report.egg-info/SOURCES.txt
+chainer_slack_report.egg-info/dependency_links.txt
+chainer_slack_report.egg-info/requires.txt
+chainer_slack_report.egg-info/top_level.txt
+test/test_formatter.py
+test/test_slack_report.py

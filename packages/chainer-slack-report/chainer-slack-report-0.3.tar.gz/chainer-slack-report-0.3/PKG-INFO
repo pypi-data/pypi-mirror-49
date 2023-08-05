@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: chainer-slack-report
+Version: 0.3
+Summary: Send PrintReport content to Slack
+Home-page: https://github.com/belltailjp/chainer_slack_report
+Author: Daichi SUZUO
+Author-email: belltailjp@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,17 @@
+plug_in_django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plug_in_django/manage.py,sha256=Fb2MzJjYybzMp1me4V4ADFAYclQni829W-JIqHcvjSQ,1571
+plug_in_django/plug_in_django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plug_in_django/plug_in_django/settings.py,sha256=KeERSObSzruzspWZsZKNxTxjEi4dA9eQ-JFq_11PdYE,6165
+plug_in_django/plug_in_django/urls.py,sha256=2sJVBkBSYrlYV2w0WjUMLk79FNKyqRfPhHLXeFWRPm0,1843
+plug_in_django/plug_in_django/wsgi.py,sha256=ImSIRReJT9CORfuGxDjTyMdeaEMjDebclv49R4SLo3Y,571
+plug_in_django/static/basic.css,sha256=iJIOQFKiEMcWbffP9pGVm0BFY9is2qqnnrRDhjEx9Jc,143
+plug_in_django/templates/plug_in_django_basic.html,sha256=4abUc2c2uMKWjDqaffFEU5BfnRJq4XzRxzjFvaSojrI,4203
+plug_in_django/templates/plug_in_django_index.html,sha256=qhjEWrYbWGuWko8p_qanVLc3VdB37ELvwXp_7qd3cxw,167
+plug_in_django/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plug_in_django/templatetags/installed_apps.py,sha256=wFl7b3KWe7Vw-W64HSikxlM5-45y6K8FRkvrpEh5zUk,1441
+plug_in_django/templatetags/public_dict.py,sha256=o2Y4bMAQ8eLT02RHJTMUJ-7um4c5Ji4shkceR-zcc7U,419
+plugInDjango-0.1.1562832840.dist-info/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+plugInDjango-0.1.1562832840.dist-info/METADATA,sha256=DgyKfxtavNXhDZA1i5e5baz6dY0jNgecvIn_dfHPejk,543
+plugInDjango-0.1.1562832840.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+plugInDjango-0.1.1562832840.dist-info/top_level.txt,sha256=luzuxGiw57DDFOaaov_omuKuuwL-V_s4mXZZoatWYSE,15
+plugInDjango-0.1.1562832840.dist-info/RECORD,,

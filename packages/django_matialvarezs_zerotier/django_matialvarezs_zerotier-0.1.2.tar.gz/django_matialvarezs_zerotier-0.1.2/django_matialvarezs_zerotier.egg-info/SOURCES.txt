@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+django_matialvarezs_zerotier.egg-info/PKG-INFO
+django_matialvarezs_zerotier.egg-info/SOURCES.txt
+django_matialvarezs_zerotier.egg-info/dependency_links.txt
+django_matialvarezs_zerotier.egg-info/requires.txt
+django_matialvarezs_zerotier.egg-info/top_level.txt

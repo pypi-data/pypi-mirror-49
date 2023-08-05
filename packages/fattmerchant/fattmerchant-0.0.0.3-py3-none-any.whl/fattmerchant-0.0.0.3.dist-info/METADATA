@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fattmerchant
+Version: 0.0.0.3
+Summary: python client for fattmerchant payment processing
+Home-page: https://github.com/fattmerchantorg/fattmerchant_python_client
+Author: Tanmay Dutta
+Author-email: tanmay.datta86@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: ddt
+Requires-Dist: requests
+
+# Fattmerchant python client
+
+This package aims to provide assitance while interacting with the
+[Fattmerchant](https://fattmerchant.com/api-documentation/) rest API. 
+
+This is the official python client which is supported by fattmerchant and bugs/issues/feature-requests can be posted on the official [github](https://github.com/fattmerchantorg/fattmerchant_python_client) page.
+

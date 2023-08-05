@@ -1,0 +1,13 @@
+fattmerchant/Customer.py,sha256=pDNzzaCeQ8OBZ5H5qwrlxf3bWvllq45RT_MDQ7rI104,7952
+fattmerchant/FMRequestHelper.py,sha256=3Md1D8dq04zqWGsC4sP4z6tUAWFp05raXYMq51YN1yE,3864
+fattmerchant/Merchant.py,sha256=n_GF_zFByPUjwaoKC-OtNSbn8fVj6c3Iae4imaOduX8,6217
+fattmerchant/__init__.py,sha256=bsFJnuXodW6KlrrV3geG17Wb3iA6T3FY0-fB7PRDz-Y,260
+fattmerchant/inventory.py,sha256=tqTm01DYe7M1UdmQqpVcl8GjQ59zUGNNrispmN2a0cs,232
+fattmerchant/logging.config,sha256=yHiAAU9Vvl9Kpx8y271C-CReWhWxIDsZyQdTVrdIyqk,322
+fattmerchant/test_api_key.txt,sha256=g3eThYU6Yy-tuI_YhHtW6BRrWLuw-UssErjY0Yvofq4,419
+fattmerchant/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fattmerchant-0.0.0.3.dist-info/LICENCE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+fattmerchant-0.0.0.3.dist-info/METADATA,sha256=h6Kf7B6cOPl2J5TjKBnP8qsU8vm1GKEgXgI1WUnF5gw,895
+fattmerchant-0.0.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+fattmerchant-0.0.0.3.dist-info/top_level.txt,sha256=F2W2YyL5vSF5ofRPzLZZBCY_fKaBx5Hp8ZhgeaVnozc,13
+fattmerchant-0.0.0.3.dist-info/RECORD,,

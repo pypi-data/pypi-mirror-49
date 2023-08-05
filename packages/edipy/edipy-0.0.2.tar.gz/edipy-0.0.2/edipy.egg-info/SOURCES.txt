@@ -1,0 +1,15 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+edipy/__init__.py
+edipy/exceptions.py
+edipy/fields.py
+edipy/parser.py
+edipy/validators.py
+edipy.egg-info/PKG-INFO
+edipy.egg-info/SOURCES.txt
+edipy.egg-info/dependency_links.txt
+edipy.egg-info/top_level.txt

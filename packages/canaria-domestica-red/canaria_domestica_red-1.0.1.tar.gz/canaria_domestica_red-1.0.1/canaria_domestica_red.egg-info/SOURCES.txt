@@ -1,0 +1,8 @@
+README.md
+canaria_domestica_red.py
+setup.py
+canaria_domestica_red.egg-info/PKG-INFO
+canaria_domestica_red.egg-info/SOURCES.txt
+canaria_domestica_red.egg-info/dependency_links.txt
+canaria_domestica_red.egg-info/entry_points.txt
+canaria_domestica_red.egg-info/top_level.txt

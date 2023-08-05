@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: canaria_domestica_red
+Version: 1.0.1
+Summary: A simple package that works in some versions and is broken in others
+Home-page: https://github.com/apljungquist/tox-constraints
+Author: AP Ljungquist
+Author-email: ap@ljungquist.eu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License

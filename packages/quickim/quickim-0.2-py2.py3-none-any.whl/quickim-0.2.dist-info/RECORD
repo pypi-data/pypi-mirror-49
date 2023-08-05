@@ -1,0 +1,17 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/client.py,sha256=QiIaScVERcIiGagQ2C_8y5vKprTBnie8Mwf9MOR8ZpE,54274
+src/client_database.py,sha256=AG4kOfCZJnAgNJ-XlnFuIfS1FY4BOYlv8unTOkd36I4,6838
+src/client_gui_settings.py,sha256=v3cQTGkBxLYL1pKdmu4FR2RWBq3hLgAFeVKHQvg8-3A,6723
+src/config.py,sha256=DEhVzlBnpflld_pJDs1wdFOVowgvW4IAQ8a-ISwVRfY,1875
+src/decorators.py,sha256=-OwA64bxzDUXeQhOfP6uhLm-ypn4GLPKDPbpTR6bP-c,2618
+src/descriptors.py,sha256=cCv_2RpkPb86I-QW9J4ao74yi-TZsBTSAq_RUUtPkxg,1002
+src/main_window.py,sha256=c6n9TJM5rmVICgqMeSKbZck4IVGEeVrMWTyYFNfxEw0,9092
+src/meta.py,sha256=ZtZmyXWe6YTbRagRTm-xsxoesDwirEFqv8AoDrFMjQM,3095
+src/test_client.py,sha256=3uyAs1iKULFddnI_lbkp1NVsgD9cu4cjrhLtPJeduZs,1327
+src/logs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/logs/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/logs/config/client_config_log.py,sha256=YDPLkxHlQ_gyMkW820vBaNZXS7GQLQLFpWklfhUSDSU,1049
+quickim-0.2.dist-info/METADATA,sha256=opd4VnvkIiyFmhEf8rbFXfcWfvBFmfJzi9qor5ZYEzk,254
+quickim-0.2.dist-info/WHEEL,sha256=53VSps8MltPLN_x9Ib61FU2ZSaJKzgrWQqu9rS-Dkgk,116
+quickim-0.2.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+quickim-0.2.dist-info/RECORD,,

@@ -1,0 +1,14 @@
+koalanlp/API.py,sha256=HO4HeYs2C8mDP220QEv3R_uWusWA6E8tv8OPYSqu7E8,1784
+koalanlp/ExtUtil.py,sha256=htlJg6v9mMi1_bzlphTf7C9FEfl6-kDCFoJ4_jYKGEM,14038
+koalanlp/Util.py,sha256=jAGQ9pmgTaou6oOsNHVkpwPhgY_RWA-lh_qMe3R2SqY,9035
+koalanlp/__init__.py,sha256=N6Ph8eKH1Yv1wH_DbmizqtzhuJJARRDVzbiLHPNc_XU,99
+koalanlp/data.py,sha256=N0scrtYBVdiFai1LHTG68PKGMICC2Jbe61mTzQHMqOc,75709
+koalanlp/jnius.py,sha256=ZZAFvFn-CzFwDaWHutBB75oz0Sy9tC2RXOZOgz_rMhk,2715
+koalanlp/jvm.py,sha256=LVJNagGYxSVxyNlS7xqm5h8dZSznq6PxJZNG8MvA2fc,4339
+koalanlp/proc.py,sha256=TIvuNOLmWp3EElGkRYUd4AyDsOcL7o4UhYBFuurrYyk,12809
+koalanlp/types.py,sha256=-oiIqQyj-AwfSCMZxgK6klH1vdw524FzQNlKR9IKGEs,8430
+koalanlp-2.0.8.dist-info/LICENSE,sha256=UHyFTme7BUz7RP0ent7Hm1djmt9yRqnRC8Ahn6OpFbM,1067
+koalanlp-2.0.8.dist-info/METADATA,sha256=nFrfFjpS6Wv6x43SLbuNeRZY9pnyDw67JEBivUZnypg,15675
+koalanlp-2.0.8.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+koalanlp-2.0.8.dist-info/top_level.txt,sha256=KOVOx0iG3EljwuAKus5QVOg0Ti-Tl6LzaYGouseagZI,9
+koalanlp-2.0.8.dist-info/RECORD,,

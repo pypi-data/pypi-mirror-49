@@ -1,0 +1,15 @@
+[invenio_base.api_apps]
+flask_taxonomies = flask_taxonomies.ext:FlaskTaxonomies
+
+[invenio_base.api_blueprints]
+flask_taxonomies = flask_taxonomies.views:blueprint
+
+[invenio_base.apps]
+flask_taxonomies = flask_taxonomies.ext:FlaskTaxonomies
+
+[invenio_db.alembic]
+flask_taxonomies = flask_taxonomies:alembic
+
+[invenio_db.models]
+flask_taxonomies = flask_taxonomies.models
+

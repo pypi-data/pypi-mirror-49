@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pypi_timemachine/__init__.py
+pypi_timemachine/core.py
+pypi_timemachine.egg-info/PKG-INFO
+pypi_timemachine.egg-info/SOURCES.txt
+pypi_timemachine.egg-info/dependency_links.txt
+pypi_timemachine.egg-info/entry_points.txt
+pypi_timemachine.egg-info/requires.txt
+pypi_timemachine.egg-info/top_level.txt
+pypi_timemachine.egg-info/zip-safe

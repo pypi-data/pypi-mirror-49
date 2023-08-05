@@ -1,0 +1,3 @@
+[console_scripts]
+pypi-timemachine = pypi_timemachine.core:main
+

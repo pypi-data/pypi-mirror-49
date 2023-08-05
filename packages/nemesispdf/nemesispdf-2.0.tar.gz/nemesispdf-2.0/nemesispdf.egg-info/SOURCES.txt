@@ -1,0 +1,9 @@
+README.md
+setup.py
+nemesispdf/__init__.py
+nemesispdf/pdf2image.py
+nemesispdf/pdf2text.py
+nemesispdf.egg-info/PKG-INFO
+nemesispdf.egg-info/SOURCES.txt
+nemesispdf.egg-info/dependency_links.txt
+nemesispdf.egg-info/top_level.txt

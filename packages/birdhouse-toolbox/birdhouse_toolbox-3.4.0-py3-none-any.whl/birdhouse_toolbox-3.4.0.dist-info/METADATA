@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: birdhouse-toolbox
+Version: 3.4.0
+Summary: Command line tools to automate various processes
+Home-page: https://www.alexseitsinger.com/packages/python/birdhouse-toolbox
+Author: Alex Seitsinger
+Author-email: software@alexseitsinger.com
+License: BSD 2-Clause License
+Project-URL: Documentation, https://www.alexseitsinger.com/packages/python/birdhouse-toolbox
+Project-URL: Source, https://github.com/alexseitsinger/birdhouse-toolbox
+Project-URL: Tracker, https://github.com/alexseitsinger/birdhouse-toolbox/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: click
+Requires-Dist: python-slugify
+Requires-Dist: maya
+Requires-Dist: google-api-python-client
+Requires-Dist: bs4
+Requires-Dist: validators
+
+# Birdhouse Toolbox
+
+## Description
+
+Command line tools to automate various processes.
+
+## Installation
+
+```
+pipx install birdhouse-toolbox
+```
+
+or
+
+```
+pipenv install birdhouse-toolbox
+```
+
+or
+
+```
+pip install birdhouse-toolbox
+```
+
+## Usage
+
+#### Wordpress
+
+* **create-post** 
+
+  Adds a new post using the title and body provided, by duplicating the last published post.
+
+  ```
+  bht --url <site_url> wp create --title <title> --content <content> --slug <slug> --slug <slug> --category <category> --category <category>
+  ```
+
+* **authenticate** 
+
+  Authenticates the username and password with the website, saves the credentials, and a JSON web token for future use. Will re-use saved credentials if none are provided.
+
+  ```
+  bht --url <site_url> wp auth --username <username> --password <password>
+  ```
+
+
+
+

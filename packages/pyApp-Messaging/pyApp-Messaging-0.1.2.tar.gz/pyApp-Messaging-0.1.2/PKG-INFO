@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: pyApp-Messaging
+Version: 0.1.2
+Summary: Common messaging extension. Provides base messaging services that other service build on
+Home-page: https://github.com/pyapp-org/pyapp-messaging
+Author: Tim Savage
+Author-email: tim@savage.company
+License: BSD-3-Clause
+Description: #################
+        pyApp - Messaging
+        #################
+        
+        *Let use handle the boring stuff!*
+        
+        The messaging extension provides an abstract interface to various messaging
+        implementations. This lets your application seamlessly migrate from AMQP to SQS
+        without any changes to your main application code.
+        
+        .. note:: The primary focus of work is on asyncio based queues.
+        
+        Installation
+        ============
+        
+        Install using *pip* or *pipenv*::
+        
+            # Using pip
+            pip install pyapp-Messaging
+        
+            # Using pipenv
+            pipenv install pyapp-Messaging
+        
+        
+        
+        Usage
+        =====
+        
+        This library is easiest used with the injection framework eg::
+        
+            from pyapp.injection import inject, Args
+            from pyapp_ext.messaging import MessageQueue
+        
+            @inject
+            def my_function(queue: MessageQueue = Args(name="job_queue")):
+                queue.send_message("Do job A")
+        
+        or using `asyncio`::
+        
+            from pyapp.injection import inject, Args
+            from pyapp_ext.messaging.asyncio import MessageSender
+        
+            @inject
+            async def my_function(sender: MessageSender = Args(name="job_queue")):
+                await sender.send("Do job A")
+        
+        
+        API
+        ===
+        
+Keywords: application,framework
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Provides-Extra: dev

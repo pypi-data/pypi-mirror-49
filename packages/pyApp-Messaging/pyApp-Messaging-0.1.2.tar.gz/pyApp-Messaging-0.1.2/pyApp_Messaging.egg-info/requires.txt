@@ -1,0 +1,5 @@
+pyapp>=4.0.4
+
+[dev]
+docutils
+black

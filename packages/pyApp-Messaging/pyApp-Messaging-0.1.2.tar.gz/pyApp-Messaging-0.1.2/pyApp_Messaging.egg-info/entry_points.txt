@@ -1,0 +1,5 @@
+[pyapp.extensions]
+pyapp-messaging = pyapp_ext.messaging:Extension
+pyapp-messaging-async = pyapp_ext.messaging.asyncio:Extension
+pyapp-messaging-cli = pyapp_ext.messaging.cli:Extension
+

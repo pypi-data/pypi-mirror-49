@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyklip
+Version: 1.1
+Summary: pyKLIP: PSF Subtraction for Exoplanets and Disks
+Home-page: https://bitbucket.org/pyKLIP/pyklip
+Author: pyKLIP Developers
+Author-email: jwang@astro.berkeley.edu
+License: BSD
+Keywords: KLIP PSF Subtraction Exoplanets Astronomy
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: astropy
+
+UNKNOWN
+
+

@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: linkskernel
+Version: 0.0.7
+Summary: Links kernel for Jupyter
+Home-page: https://github.com/SimonJF/links-server
+Author: Tom Davey & Simon Fowler
+Author-email: tomjackdavey@hotmail.com
+License: UNKNOWN
+Description: Links kernel for Jupyter - How to install
+        
+        1. Make sure Jupyter is installed:
+        	
+        	`pip install jupyter`
+        
+        2. Install the Links kernel package:
+        
+        	`pip install links-kernel`
+        
+        3. Get Jupyter to recognise the package as a kernel:
+        
+        	`python -m links_kernel.install`
+        
+        4. Run Jupyter notebook select new notebook and pick Links
+        
+        	`jupyter notebook`
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

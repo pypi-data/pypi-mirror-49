@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pgsearch
+Version: 0.0.2.dev1
+Summary: Parallel grid search.
+Home-page: https://github.com/Tigeraus/pgs
+Author: Huzi Cheng
+Author-email: hzcheng15@icloud.com
+License: MIT
+Description: UNKNOWN
+Keywords: grid search optimization model selection
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.7

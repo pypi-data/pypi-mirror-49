@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rapidrand
+Version: 0.1
+Summary: fast random string generations for python
+Home-page: https://github.com/bugparty/rapidrand
+Author: bowman
+Author-email: fancycode@gmail.com
+License: UNKNOWN
+Description: # rapidrand
+        
+        ## a fast random string generator
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Description-Content-Type: text/markdown

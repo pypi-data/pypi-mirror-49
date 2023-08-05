@@ -1,0 +1,11 @@
+ppotp/__init__.py,sha256=m08DfCVUzShbsFnpuLjPGDyX2HahYomLrn-tJ1WwBSw,63
+ppotp/__main__.py,sha256=qoQW_vxV5ZtAZdP13iNe3TE4q7D601bzg13nNIoTEJo,86
+ppotp/__version__.py,sha256=zPJIgPGcoSNiD0qme18OnYJYE3A9VVytlhO-V5DaAW0,22
+ppotp/otp.py,sha256=npsn8-KrB0onzHReuERWoHRTO6mvjYxzfgWJxtj84xA,2669
+ppotp-2.1.1.dist-info/DESCRIPTION.rst,sha256=MgcuWv1aUHJi-9bDXAIP1KT3xJSbaXPIP0rIezXvqbQ,1837
+ppotp-2.1.1.dist-info/METADATA,sha256=4fzd0lm18uu_0UYF7CpRmB0huUqWoxyiaMiL5Dk4BTg,2693
+ppotp-2.1.1.dist-info/RECORD,,
+ppotp-2.1.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+ppotp-2.1.1.dist-info/entry_points.txt,sha256=hb8nELxliEIP4sMidZj1qBT-vfDCfIuRBFyDn8hW2ek,40
+ppotp-2.1.1.dist-info/metadata.json,sha256=iakf7xDNTtMK8hWTijRqA6hLBK9Uwjz9YlwPURHOfp8,1142
+ppotp-2.1.1.dist-info/top_level.txt,sha256=SrBW3HY2aglzaCzcqUX-Eje6kywbUu3TlhXl4AsRxXk,6

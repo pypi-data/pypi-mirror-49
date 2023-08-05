@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: loopie
+Version: 0.1
+Summary: A simple looper framework
+Home-page: https://github.com/yaztown/loopie
+Author: Yaztown
+Author-email: yaztown@gmail.com
+License: GPLv3
+Download-URL: https://github.com/yaztown/loopie/archive/v0.1.tar.gz
+Description: A simple looper framework for python3 with multiple features
+Keywords: loopie,looping,mainloop,thread,threading,Pi,Raspberry Pi,RPi
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

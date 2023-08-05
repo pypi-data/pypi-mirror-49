@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+loopie/__init__.py
+loopie.egg-info/PKG-INFO
+loopie.egg-info/SOURCES.txt
+loopie.egg-info/dependency_links.txt
+loopie.egg-info/requires.txt
+loopie.egg-info/top_level.txt

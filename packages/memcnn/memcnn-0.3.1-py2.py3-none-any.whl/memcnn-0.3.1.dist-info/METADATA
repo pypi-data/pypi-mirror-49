@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: memcnn
+Version: 0.3.1
+Summary: A PyTorch framework for developing memory efficient deep invertible networks.
+Home-page: http://pypi.python.org/pypi/memcnn/
+Author: S.C. van de Leemput
+Author-email: silvandeleemput@gmail.com
+License: LICENSE.txt
+Keywords: memcnn invertible PyTorch
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: SimpleITK
+Requires-Dist: tensorboardX (==1.4)
+Requires-Dist: tensorflow (>=1.11.0)
+Requires-Dist: torch (>=0.4.0)
+Requires-Dist: torchvision
+Requires-Dist: tqdm
+
+======
+MemCNN
+======
+
+.. image:: https://img.shields.io/circleci/build/github/silvandeleemput/memcnn/master.svg        
+        :alt: CircleCI
+        :target: https://circleci.com/gh/silvandeleemput/memcnn/tree/master
+
+.. image:: https://readthedocs.org/projects/memcnn/badge/?version=latest        
+        :alt: Documentation Status
+        :target: https://memcnn.readthedocs.io/en/latest/?badge=latest
+
+.. image:: https://img.shields.io/codecov/c/gh/silvandeleemput/memcnn/master.svg   
+        :alt: Codecov branch
+        :target: https://codecov.io/gh/silvandeleemput/memcnn
+
+.. image:: https://img.shields.io/pypi/v/memcnn.svg
+        :target: https://pypi.python.org/pypi/memcnn
+
+.. image:: https://img.shields.io/pypi/implementation/memcnn.svg        
+        :alt: PyPI - Implementation
+        :target: https://pypi.python.org/pypi/memcnn
+
+.. image:: https://img.shields.io/pypi/pyversions/memcnn.svg        
+        :alt: PyPI - Python Version
+        :target: https://pypi.python.org/pypi/memcnn
+
+.. image:: https://img.shields.io/github/license/silvandeleemput/memcnn.svg        
+        :alt: GitHub
+        :target: https://memcnn.readthedocs.io/en/latest/?badge=latest
+
+A `PyTorch <http://pytorch.org/>`__ framework for developing memory
+efficient deep invertible networks
+
+* Free software: `MIT license <https://github.com/silvandeleemput/memcnn/blob/master/LICENSE.txt>`__ (please cite our work if you use it)
+* Documentation: https://memcnn.readthedocs.io.
+* Installation: https://memcnn.readthedocs.io/en/latest/installation.html
+
+Features
+--------
+
+* Simple `ReversibleBlock` wrapper class to wrap and convert arbitrary PyTorch Modules into invertible versions.
+* Simple switching between `additive` and `affine` invertible coupling schemes and different implementations.
+* Simple toggling of memory saving by setting the `keep_input` property of the `ReversibleBlock`.
+* Training and evaluation code for reproducing RevNet experiments using MemCNN.
+* CI tests for Python v2.7 and v3.6 and torch v0.4, v1.0, and v1.1 and good test coverage.
+
+Example usage: ReversibleBlock
+------------------------------
+
+.. code:: python
+
+    # some required imports
+    import torch
+    import torch.nn as nn
+    import numpy as np
+    import memcnn.models.revop
+
+
+    # define a new class of operation(s) PyTorch style
+    class ExampleOperation(nn.Module):
+        def __init__(self, channels):
+            super(ExampleOperation, self).__init__()
+            self.seq = nn.Sequential(
+                                        nn.Conv2d(in_channels=channels, out_channels=channels,
+                                                  kernel_size=(3, 3), padding=1),
+                                        nn.BatchNorm2d(num_features=channels),
+                                        nn.ReLU(inplace=True)
+                                    )
+
+        def forward(self, x):
+            return self.seq(x)
+
+
+    # generate some random input data (b, c, y, x)
+    data = np.random.random((2, 10, 8, 8)).astype(np.float32)
+    X = torch.from_numpy(data)
+
+    # application of the operation(s) the normal way
+    Y = ExampleOperation(channels=10)(X)
+
+    # application of the operation(s) using the reversible block
+    F, G = ExampleOperation(channels=10 // 2), ExampleOperation(channels=10 // 2)
+    Y = memcnn.models.revop.ReversibleBlock(F, G, coupling='additive')(X)
+
+Run PyTorch Experiments
+-----------------------
+
+.. code:: bash
+
+    ./train.py [MODEL] [DATASET] --fresh
+
+Available values for ``DATASET`` are ``cifar10`` and ``cifar100``.
+
+Available values for ``MODEL`` are ``resnet32``, ``resnet110``,
+``resnet164``, ``revnet38``, ``revnet110``, ``revnet164``
+
+If not available datasets are automatically downloaded.
+
+
+

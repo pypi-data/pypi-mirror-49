@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: astro-trigger-filter
+Version: 0.1.20
+Summary: A package for filtering triggers from radio astronomical matched template pulse searches.
+Home-page: https://github.com/sitmo/astro-trigger-filter
+Author: Thijs van den Berg
+Author-email: thijs@sitmo.com
+License: MIT
+Keywords: astronomy,filter
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# astro-trigger-filter
+A Python package for filtering radio astronomical pulse matched template searches.
+
+
+## Installation
+
+```
+pip install astro-trigger-filter
+```
+
+
+## Command line Amber tool
+
+```
+shell> ambertf -i CM??.trigger -o output.txt -v
+```
+
+## Documentation
+
+<https://astro-trigger-filter.readthedocs.io/>
+
+
+

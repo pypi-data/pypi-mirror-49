@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vedavaapi-client
+Version: 1.23
+Summary: vedavaapi client
+Home-page: https://github.com/vedavaapi/vv-client-python
+Author: vedavaapi
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+UNKNOWN
+
+

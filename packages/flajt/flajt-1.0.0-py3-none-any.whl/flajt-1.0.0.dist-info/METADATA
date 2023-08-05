@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: flajt
+Version: 1.0.0
+Summary: Play the Flajt video with a simple import
+Home-page: https://www.github.com/naslundx/flajt
+Author: Marcus Näslund
+Author-email: naslundx@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# Flajt
+
+Opens the Flajt video in a browser, using Python!
+
+Just `import flajt` and you are already dancing to those sweet tunes.
+
+The only requirement is Python 3 or above, but you're a sane person, aren't you?
+
+

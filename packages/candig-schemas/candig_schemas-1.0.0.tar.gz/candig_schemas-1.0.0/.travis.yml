@@ -1,0 +1,24 @@
+# n.b. whenprotobuf version changes, it must be update in three places in this
+# file (no macros or variables in YAML).
+
+language: python
+python:
+  - "3.6"
+
+install:
+    - python setup.py install
+cache:
+    directories:
+    - /tmp/proto3.3.2
+before_install:
+    - pip install -U pip
+    - sudo apt-get update -qq
+    - sudo apt-get install graphviz
+    - bash tools/travis-install-protoc.sh 3.3.2
+    - export PATH=/tmp/proto3.3.2/bin:$PATH
+    - sudo ln -s /tmp/proto3.3.2/bin/protoc /usr/local/bin/protoc
+    - pip install -r python/dev-requirements.txt -c python/constraints.txt
+script:
+    - flake8 setup.py python scripts tests
+    - python -mnose tests
+

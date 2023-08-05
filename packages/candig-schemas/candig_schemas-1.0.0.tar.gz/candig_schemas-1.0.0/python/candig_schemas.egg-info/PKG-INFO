@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: candig-schemas
+Version: 1.0.0
+Summary: CanDIG API Schemas
+Home-page: https://github.com/candig/candig-schemas
+Author: CanDIG Team
+Author-email: info@distributedgenomics.ca
+License: Apache License 2.0
+Description: 
+        ==============
+        CanDIG Schemas
+        ==============
+        
+        This is the CanDIG schemas compiled as `Protocol Buffers <https://developers.google.com/protocol-buffers/>`_ descriptors. It can be used to describe and serialize genomics data using a standard interchange format. It has been built on the original ga4gh-schemas with extended support on metadata and complex search queries.
+        
+        To learn more about the CanDIG project or to contact us, please visit https://www.distributedgenomics.ca.
+Keywords: genomics,candig
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics

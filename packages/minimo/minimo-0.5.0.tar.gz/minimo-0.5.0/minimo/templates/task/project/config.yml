@@ -1,0 +1,18 @@
+# report format type, supported "text", "html" and "xml",
+# default is "html"
+#   text: plain text
+#   html: html web page
+#   xml: xml file
+output: text
+
+# case running type, should be "serial" or "concorrence",
+# default is "serial"
+#   serial: run cases one by one
+#   concorrence: run cases concorrently by threads.
+running_type: serial
+
+# project modules path, which will be inserted into sys.path at application
+# started. by default, "lib", "cases", "vendor" will be added mandatory.
+# modules_path:
+#     - sample_dir1
+#     - sample_dir2

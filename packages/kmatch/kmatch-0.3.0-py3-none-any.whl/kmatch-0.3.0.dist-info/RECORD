@@ -1,0 +1,11 @@
+kmatch/__init__.py,sha256=1dT-Tn8Ln6874KfbiZjnzXPl40IDrFXkaPMqEpsxBH0,110
+kmatch/kmatch.py,sha256=0pDXussN9kNFTFAOMZxGqJGiXvM4BEuH4oQJvG3H2D8,7435
+kmatch/mixins.py,sha256=GS2EgdbAFrWkp_Tl3q7x6hZkvSdcSbzeQ9IdtbBlO_w,1888
+kmatch/version.py,sha256=3wVEs2QD_7OcTlD97cZdCeizd2hUbJJ0GeIO8wQIjrk,22
+kmatch/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kmatch/tests/kmatch_tests.py,sha256=4vSdyWvop8rQ3TqhfMLFMdrIIzUPSDr8E2P4eRU5mp8,13310
+kmatch/tests/mixin_tests.py,sha256=Hx-EkkVFTTkTNmU4V3yJ0WJo5Zkl6QysLUgJXLQvCVc,1247
+kmatch-0.3.0.dist-info/METADATA,sha256=IiUOPo5ip41qZlddJGgHD6M1AcuggqJjyEc7_ClHP78,1660
+kmatch-0.3.0.dist-info/RECORD,,
+kmatch-0.3.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+kmatch-0.3.0.dist-info/top_level.txt,sha256=oX-avMpxuDA-BeT_TcxW-oSx0cYSngmcnVFznDvN4PE,7

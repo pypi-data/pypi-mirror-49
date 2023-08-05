@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+btbpy/__init__.py
+btbpy/algo_smooth.cpp
+btbpy/algo_smooth.pyx
+btbpy/createGrid.py
+btbpy/kernelSmoothing.py
+btbpy.egg-info/PKG-INFO
+btbpy.egg-info/SOURCES.txt
+btbpy.egg-info/dependency_links.txt
+btbpy.egg-info/not-zip-safe
+btbpy.egg-info/requires.txt
+btbpy.egg-info/top_level.txt
+btbpy/data/dfPrix_SP95_2016.csv
+btbpy/data/fr_metro_grid1km.csv

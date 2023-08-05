@@ -1,0 +1,16 @@
+odoo/addons/l10n_us_gaap/README.rst,sha256=TcZVT73BbUSQZ1lFArxDEUCoibz3ImYhFu-OCZqUOXE,1864
+odoo/addons/l10n_us_gaap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/l10n_us_gaap/__manifest__.py,sha256=W6OHyxY1nTQ55ef7R2N0lpqKTIapd37IRTvlGAqj1RA,557
+odoo/addons/l10n_us_gaap/data/account_chart_template_data.xml,sha256=4LZFoj0PL4Yp1MSH9BrdGdTH-jdNq3TciXDieTnFdKE,852
+odoo/addons/l10n_us_gaap/data/account_chart_template_data.yml,sha256=sIZFHsDnO0F3U_v_o2cwZYsX-P2nOf9au5Zwb7LSlmw,126
+odoo/addons/l10n_us_gaap/data/account_group.xml,sha256=mS6Gu6wC6GMctkO9KWScVTzHBkmg4TRcsYzemqa3EVc,37925
+odoo/addons/l10n_us_gaap/data/account_us_gaap_data.xml,sha256=uTT-BpEtwTvBE4cGGbnBFVnGoxjE5QKrosuBlJZOIAM,50609
+odoo/addons/l10n_us_gaap/data/res_company_data.xml,sha256=GbjNKwi7Ju8Jhl74WUhlogRl-WknS-6ITLVVF8QvOCQ,189
+odoo/addons/l10n_us_gaap/docs/l10n_us_gaap_trial_balance.ods,sha256=Fvj2KHexASpjihZjyBNikFgWERA5NhPHLimN0RmrGsc,15542
+odoo/addons/l10n_us_gaap/i18n/l10n_us_gaap.pot,sha256=N54JHX-XC2BQOfdHJah2y4SvlTwG7A9vY8R52uQgoMU,344
+odoo/addons/l10n_us_gaap/static/description/icon.png,sha256=FxrpGIevCOSn6a1Ybt3Y0u14KUmGBUNEXhe0VF2yUI8,1619
+odoo/addons/l10n_us_gaap/views/res_partner_bank_views.xml,sha256=Ik2S-AigHqFeCUm9V9n9tr8uOUqrZmtGfzWDRoKPUfU,518
+odoo11_addon_l10n_us_gaap-11.0.1.0.0.99.dev2.dist-info/METADATA,sha256=3bzI7gVwQDm6AQR2HGVoTzyZr5paykq2L3rR9tuBu8k,2426
+odoo11_addon_l10n_us_gaap-11.0.1.0.0.99.dev2.dist-info/RECORD,,
+odoo11_addon_l10n_us_gaap-11.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+odoo11_addon_l10n_us_gaap-11.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5

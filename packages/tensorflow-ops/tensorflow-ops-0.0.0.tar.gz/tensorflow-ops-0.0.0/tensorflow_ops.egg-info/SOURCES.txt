@@ -1,0 +1,5 @@
+setup.py
+tensorflow_ops.egg-info/PKG-INFO
+tensorflow_ops.egg-info/SOURCES.txt
+tensorflow_ops.egg-info/dependency_links.txt
+tensorflow_ops.egg-info/top_level.txt

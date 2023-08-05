@@ -1,0 +1,10 @@
+graphdiff/__init__.py,sha256=1922cXf40Bjc7rV1vQ1Lc7dACPxDKIUb3YTEg1aH7lg,88
+graphdiff/__main__.py,sha256=lp-9Jkk3tWDUrW75RI1kAASCuPB4D9RXw8GZuzWdeUk,887
+graphdiff/graphdiff.py,sha256=p1iUvo4oy3TXFPZi2hgBRO_JdXrRko7ow-h1SHC-IHg,4403
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_sanity.py,sha256=RAlxsgAqOOj22yslaFGe3lGpRo5aSbup9btFBQzI-64,55
+graphdiff-0.0.1.dist-info/LICENSE,sha256=lIUh42St_6EpfudUKymJvfHcQlJ3xCES9hta7PlJrYk,1062
+graphdiff-0.0.1.dist-info/METADATA,sha256=aWUH7A9aa3bAJgs6JBfqlvkQicxjcMW71ZLChOPAtTE,1426
+graphdiff-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+graphdiff-0.0.1.dist-info/top_level.txt,sha256=Sbt7zJ-rxbQJDWD5xeguFeP4jc8VjeAHWwYlYAHxMsw,16
+graphdiff-0.0.1.dist-info/RECORD,,

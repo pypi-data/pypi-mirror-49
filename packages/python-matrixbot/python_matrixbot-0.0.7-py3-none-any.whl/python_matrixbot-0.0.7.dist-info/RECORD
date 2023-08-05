@@ -1,0 +1,11 @@
+matrixbot/__init__.py,sha256=s4f7_RlaprQqG0eKCkPuAgCWl9cX_Xnpknk_hyaXsjo,44
+matrixbot/cache.py,sha256=amfSXz0Ht2hDGk6HbBoSK5_qOlmB_gk0tA-E9Xm1xt8,4491
+matrixbot/matrixbot.py,sha256=HMnqT5QUT3uTqOWHbA6r63cKVZyMPDLo9JObYD0JdvA,8154
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cache.py,sha256=JBZY5nojtmOVGdCBdxAS9_FK2IlYEphFD6XxSTNplU0,3289
+tests/test_matrixbot.py,sha256=z45JwVgb3j2OOTg8FJmzr-FQrLtdrRe76baOemOz_r4,8111
+python_matrixbot-0.0.7.dist-info/LICENSE,sha256=eElwssXuS5zDkOqiUxwRodfBSOrEdr6j6n52cTGV7fQ,1073
+python_matrixbot-0.0.7.dist-info/METADATA,sha256=ul5xJmPBYN7I9Y2dDTMEYlM1esBwHodkbd7yGHlr71w,3421
+python_matrixbot-0.0.7.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+python_matrixbot-0.0.7.dist-info/top_level.txt,sha256=LHjaP49z8ANHD-xaIKNVgLOYrskS7LBrs7NY5C1XIZA,16
+python_matrixbot-0.0.7.dist-info/RECORD,,

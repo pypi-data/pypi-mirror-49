@@ -1,0 +1,14 @@
+LICENSE.md,sha256=0e6BJmuWMFzeyIPmD62ASqHQS0aY3MtZQspRgWsQ31c,10494
+README.md,sha256=Hpc6c1BQMieshbo767eR8fcz01GVi0I-3BTSH0C0IdU,22243
+requirements.txt,sha256=DamL5aozr1Q1HBvLXAlkrRug5UD4WJCEVkg4Q041-7M,219
+labours/__init__.py,sha256=t21D0rwuG1r8Jd8teA8UJxvqSnvNzcDJPn8P6xfe_7I,40
+labours/__main__.py,sha256=JP0ZL10qhvog0GXfEiKOQuRYbqDZtU22371urIqSfTg,95
+labours/labours.py,sha256=2jeG8O0beKGhC_pPpvlET42W4lWRt_WDmhrtb40aC4U,75820
+labours/pb_pb2.py,sha256=hURdUyVLKdXJEQmWlJ2yoz7irBlpQCGUVWRHN0TJEyg,74123
+labours/swivel.py,sha256=--gm0oBv_Cfq_3m6abw-4O_NTpFLrD4F2dpJ9TLaQVI,20393
+labours-10.3.0.dist-info/LICENSE.md,sha256=0e6BJmuWMFzeyIPmD62ASqHQS0aY3MtZQspRgWsQ31c,10494
+labours-10.3.0.dist-info/METADATA,sha256=XZSK8lhNP0oEv-cnwwwnJlNxHwbmIIalELDhSBukr4w,23568
+labours-10.3.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+labours-10.3.0.dist-info/entry_points.txt,sha256=v5cqkAxzoCaFgWCakfhKRpPa8mM64jbTQ8nGviqBuYQ,51
+labours-10.3.0.dist-info/top_level.txt,sha256=SHWEOQLo2xM_eSg69K5TFyodg64ZtK8AEts3sUWzIHE,8
+labours-10.3.0.dist-info/RECORD,,

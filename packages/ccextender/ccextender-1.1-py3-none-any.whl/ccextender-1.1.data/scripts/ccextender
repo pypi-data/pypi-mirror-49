@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+python3 -m pkg.ccextender.ccextender
+
+
+

@@ -1,0 +1,5 @@
+testwizard.core==1.0.5
+testwizard.testobjects-core==1.0.5
+testwizard.commands-audio==1.0.5
+testwizard.commands-mobile==1.0.5
+testwizard.commands-video==1.0.5

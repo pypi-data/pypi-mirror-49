@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: wasdi
+Version: 0.1.12
+Summary: The Wasdi Python library
+Home-page: http://www.wasdi.net
+Author: FadeOut Software
+Author-email: info@fadeout.biz
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Software Development :: Libraries

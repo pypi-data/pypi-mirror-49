@@ -1,0 +1,16 @@
+fooster_web-0.3rc7-py3.7-nspkg.pth,sha256=gpa4I9aL2w6tdhnqAfeteKOHEe0BCOS7MOXI589MyPk,544
+fooster/web/__init__.py,sha256=jG6zn2qcjUcMYUfAni0mRGn4RVSLvcK3o1xozcPyVO4,789
+fooster/web/auth.py,sha256=1ojEI4PMGkpsNE6ZkldePNEK5_l1T6gLhuK2R_9uBjM,2182
+fooster/web/fancyindex.py,sha256=cTOsRYKQZxUGwBf5L2OiLdXQQBmkhJGx3OLdZT41Xzc,6667
+fooster/web/file.py,sha256=-oxQ0wOaUeNrJTXFKvpTzOakVXjPcUfIXVggGsaMZwM,8193
+fooster/web/form.py,sha256=XhAnI_6rgSuEvf_1B7RD35eeDptPU3ddEAwWMyxFwp8,9162
+fooster/web/json.py,sha256=kT7QYD-k9GDgvZgOLbMPq_fjK5_KxwNGENvYfz5Rf5g,1368
+fooster/web/page.py,sha256=6KlCp2TArRKXyDVDz9F0QtkZIxMoe417Y7f9IKSeYLE,1353
+fooster/web/query.py,sha256=XtmpKUCPomF-1pZqJKLol_p5gAhJS_CshI-YfAsptuc,595
+fooster/web/web.py,sha256=JRQk3EJMwogj9soXHx3jzlN8J0iPbWRF7EvGlIBIZ3E,40353
+fooster_web-0.3rc7.dist-info/LICENSE,sha256=0Q3E4-bDFRn8XOijI5KtUBK92wrCigQ3pRaLp3S1ctM,1102
+fooster_web-0.3rc7.dist-info/METADATA,sha256=dr0beM9B81Db6Uk3juqR6hYvjtXWMxFsPKm_5I6XEBc,276
+fooster_web-0.3rc7.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+fooster_web-0.3rc7.dist-info/namespace_packages.txt,sha256=68GExmgiNHR8rhUk9f15fK2rcEKtYTtxkRPxRYgRaLc,8
+fooster_web-0.3rc7.dist-info/top_level.txt,sha256=68GExmgiNHR8rhUk9f15fK2rcEKtYTtxkRPxRYgRaLc,8
+fooster_web-0.3rc7.dist-info/RECORD,,

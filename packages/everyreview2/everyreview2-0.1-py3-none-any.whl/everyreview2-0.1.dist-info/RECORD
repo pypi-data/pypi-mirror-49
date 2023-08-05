@@ -1,0 +1,17 @@
+everyreview/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+everyreview/settings.py,sha256=bVNUcsIATGwO351vdpTa02EyAxLivuc8XzfBR1BqWjQ,3454
+everyreview/urls.py,sha256=YhOX7-qYugFyCJKISutLJp7TufAfD_uZo0Sn6QDp1SM,800
+everyreview/wsgi.py,sha256=5R0BYhXnVI-V7iO02wWT35oOStb4mz0IIHWEmqeLHZw,399
+review/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+review/admin.py,sha256=JAufTLI09BdLlgBWDtsTxZ0AxTdAgAYepPKr00bhIJc,114
+review/apps.py,sha256=o92jprbTmXx3vorqcvhLa5sh4pWmCTT33zRhbAdZ05c,87
+review/models.py,sha256=rgQw0SGzbqiAu3XhCyoqIrqFQu3dWnUiqpE4MV7CJI8,528
+review/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+review/urls.py,sha256=dacqMJO4fZ3DHiU-p_JOjCFQdkVINZx8pHwscNQ9fUw,109
+review/views.py,sha256=oGMCkB8x8Jb6c05OlwyfjmLU4gLWqlnh0vZJjViwfoQ,160
+review/migrations/0001_initial.py,sha256=Keka3OHytG7qA4b3v4_aqAHeZK3HTh_hh_CXP78QxZg,986
+review/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+everyreview2-0.1.dist-info/METADATA,sha256=J49Hi7PqiV2OoxyvcqDTQ7wjIdDc1sHpfZC9EZ23W3s,677
+everyreview2-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+everyreview2-0.1.dist-info/top_level.txt,sha256=Ccpo_ju6lHhoXscs2w-mgshrxrTF0R5CcfY4Zk04w2k,19
+everyreview2-0.1.dist-info/RECORD,,

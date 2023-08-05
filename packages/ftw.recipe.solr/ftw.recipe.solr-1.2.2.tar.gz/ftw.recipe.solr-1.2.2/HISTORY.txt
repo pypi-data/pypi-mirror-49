@@ -1,0 +1,45 @@
+Changelog
+=========
+
+1.2.2 (2019-07-10)
+------------------
+
+- Backport: Respect SOLR environment variables set outside of the startup script [jone].
+
+
+1.2.1 (2018-09-20)
+------------------
+
+- Add ICUNormalizer2CharFilterFactory char filter in provided schema.
+  This fixes handling of decomposed unicode (aka NFD, NFKD).
+  [buchi]
+
+- Replace shell process by Solr process when starting in foreground.
+  [buchi]
+
+
+1.2.0 (2018-05-25)
+------------------
+
+- Only chmod startup script to executable if it's not already executable.
+  [buchi]
+
+- Update default download url to version 7.3.1.
+  [buchi]
+
+- Add missing Plone default fields to provided schema.
+  [buchi]
+
+
+1.1.0 (2018-02-05)
+------------------
+
+- Add option to provide the Solr conf relative to an egg.
+  [buchi]
+
+
+1.0.0 (2018-02-02)
+------------------
+
+- Initial release.
+  [buchi]

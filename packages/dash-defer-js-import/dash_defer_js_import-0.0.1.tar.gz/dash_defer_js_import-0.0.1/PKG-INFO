@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dash_defer_js_import
+Version: 0.0.1
+Summary: Deferring loading of JS files until after React loads
+Home-page: UNKNOWN
+Author: zouhair zouhair.mahboubi@gmail.com
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

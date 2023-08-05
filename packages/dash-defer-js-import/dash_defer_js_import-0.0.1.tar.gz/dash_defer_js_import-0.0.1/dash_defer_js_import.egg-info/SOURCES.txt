@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+dash_defer_js_import/DashDeferJSImport.py
+dash_defer_js_import/Import.py
+dash_defer_js_import/__init__.py
+dash_defer_js_import/_imports_.py
+dash_defer_js_import/dash_defer_js_import.dev.js
+dash_defer_js_import/dash_defer_js_import.min.js
+dash_defer_js_import/metadata.json
+dash_defer_js_import/package.json
+dash_defer_js_import.egg-info/PKG-INFO
+dash_defer_js_import.egg-info/SOURCES.txt
+dash_defer_js_import.egg-info/dependency_links.txt
+dash_defer_js_import.egg-info/top_level.txt

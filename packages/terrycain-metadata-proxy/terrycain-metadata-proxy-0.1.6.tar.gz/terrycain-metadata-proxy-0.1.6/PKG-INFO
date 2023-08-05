@@ -1,0 +1,152 @@
+Metadata-Version: 2.1
+Name: terrycain-metadata-proxy
+Version: 0.1.6
+Summary: AWS Metadata Proxy
+Home-page: https://github.com/terrycain/metadata-proxy/
+Author: Terry Cain
+Author-email: terry@terrys-home.co.uk
+License: UNKNOWN
+Description: [![PyPi](https://img.shields.io/pypi/v/terrycain-metadata-proxy.svg)](https://pypi.python.org/pypi/terrycain-metadata-proxy) [![Travis](https://img.shields.io/travis/terrycain/metadata-proxy.svg)](https://travis-ci.com/terrycain/metadata-proxy) [![PyUp](https://pyup.io/repos/github/terrycain/metadata-proxy/shield.svg)](https://pyup.io/repos/github/terrycain/metadata-proxy/)
+        
+        # Metadata proxy
+        
+        __currently undergoing some refactoring__
+        
+        Very simple project to present an AWS compatible metadata service
+        to servers on-premise funneling all of the credential requests through
+        a central server which either has AWS credentials or is running in AWS 
+        and has a host iam role.
+        
+        
+        ## Installation
+        ### Metadata Server
+        
+        TODO - make docker container
+        
+        Run the following docker container `terrycain/SOMECONTAINER`
+        It listens on HTTP 8000 so put it behind a HTTPS loadbalancer / reverse proxy, 
+        
+        TODO - Create the following Dynamo Tables
+        metadata-proxy-hosts
+        metadata-proxy-containers
+        metadata-proxy-users
+        
+        #### Configuration
+        
+        Here are some environment variables used to configure the metadata server, defaults are in parenthesis at the beginning.
+        
+        * `REG_KEY` - Random string used for initial client registration.
+        * `HOSTNAME_PREFIX` - (ip) Hostnames will be generated like so: `192.168.0.1` -> `HOSTNAME_PREFIX-192-168-0-1` .
+        * `IAM_HOST_ROLE_CACHE_TTL` - (120) Time in seconds to cache the list of IAM roles used for a dropdown list in the UI. 
+        This can take a while at times..
+        
+        Currently Redis is a dependency but that can be a standalone redis ran alongside this container, will look to make it o
+        ptional in the future.
+        * `REDIS_HOST` - (localhost) Redis hostname.
+        * `REDIS_PORT` - (6379) Redis port.
+        * `REDIS_DB` - (0) Redis DB.
+        
+        STS credentials are cached (currently in redis) and they are encrypted with an AES key. This allows for multiple servers 
+        to be ran in a HA manner and also reduces `STS.assume_role` requests.
+        * `STS_SEED` - This should be a random secret that is long.
+        
+        User authentication is either based on users in a DynamoDB table or via OpenID Connect.
+        * `USER_AUTH_METHOD` - (oidc) Either `oidc` or `dynamo`
+        * `OIDC_CLIENT_ID` - OpenID Connect client ID.
+        * `OIDC_CLIENT_SECRET` - Client secret.
+        * `OIDC_BASE_URL` - Base url of the OpenID server, at startup the server will hit the wellknown metadata url to get 
+        OpenID config.
+        
+        DynamoDB configuration
+        * `DYNAMODB_REGION` - (eu-west-1) Region the DynamoDB tables are located
+        * `DYNAMODB_HOSTS_TABLE` - (metadata-proxy-hosts) Table that stores registered hosts and what role they have been assigned
+        * `DYNAMODB_CONTAINER_TABLE` - (metadata-proxy-containers) Table that contains 
+        * `DYNAMODB_USERS_TABLE` - (metadata-proxy-users)
+        
+        
+        ### Metadata proxy
+        
+        __Todo - make pip package__
+        #### Linux
+        Install the Python package (requires Python 3.5.3+)
+        ```bash
+        sudo pip3 install terrycain-metadata-proxy[uvloop]
+        ```
+        
+        Create the following systemd unit file and associated users
+        ```bash
+        sudo groupadd --system metadata-proxy
+        sudo useradd --system --gid metadata-proxy --home-dir /var/lib/metadata-proxy --shell /sbin/nologin metadata-proxy
+        sudo mkdir /var/lib/metadata-proxy
+        sudo chown metadata-proxy:metadata-proxy /var/lib/metadata-proxy
+        sudo chown 0700 /var/lib/metadata-proxy
+        cat << EOF | sudo tee /etc/systemd/system/metadata-proxy.service
+        [Unit]
+        Description=Metadata proxy
+        Requires=network.target
+        After=network.target
+        
+        [Service]
+        TimeoutStartSec=0
+        Restart=always
+        User=metadata-proxy
+        Group=metadata-proxy
+        WorkingDirectory=/var/lib/metadata-proxy
+        PermissionsStartOnly=true
+        ExecStartPre=/sbin/iptables -t nat -I PREROUTING -p tcp -d 169.254.169.254 --dport 80 -j DNAT --to-destination 127.0.0.1:8000
+        ExecStart=/usr/bin/metadata-proxy
+        ExecStopPost=/sbin/iptables -t nat -D PREROUTING -p tcp -d 169.254.169.254 --dport 80 -j DNAT --to-destination 127.0.0.1:8000
+        
+        [Install]
+        WantedBy=default.target
+        EOF
+        
+        sudo systemctl daemon-reload
+        sudo systemctl enable --now metadata-proxy
+        ```
+        
+        Register the metadata service against the master server with
+        the curl command from the UI
+        
+        ```bash
+        curl --noproxy '*' -XPOST http://169.254.169.254/register -H "Content-Type: application/json" --data '{"server_url": "https://metadata-eu.ficoccs-prod.net/api/v1/register", "key": "0753e6f9-5884-462d-bb46-d376f27047a1"}' 
+        ```
+        
+        
+        #### Windows
+        
+        Installing on Windows (Requires python 3.5.3+)
+        ```bash
+        pip3 install terrycain-metadata-proxy
+        ```
+        
+        Create a service on Windows
+        TODO
+        
+        Register the metadata service against the master server with
+        the curl command from the UI
+        
+        
+        
+        
+        
+        
+        
+        ## TODO List
+        
+        * Better logging
+        * Add support for `cert.pem`, `key.pem`, `chain.pem` ENV vars so that it can do HTTPS
+        * Finish documentation
+Keywords: aws metadata proxy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: uvloop

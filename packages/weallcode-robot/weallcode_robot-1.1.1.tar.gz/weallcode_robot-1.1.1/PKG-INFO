@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: weallcode_robot
+Version: 1.1.1
+Summary: We All Code Robot Client
+Home-page: https://github.com/weallcode/robot
+Author: We All Code
+Author-email: hello@weallcode.org
+License: MIT
+Description: # We All Code Robot Client
+        
+        [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+        
+        > The Python client code for the We All Code robots.
+        
+        ## Table of Contents
+        
+        - [Requirements](#requirements)
+        - [Install](#install)
+        - [Usage](#usage)
+        - [API](#api)
+        - [Maintainers](#maintainers)
+        - [Contributing](#contributing)
+        - [License](#license)
+        
+        ## Requirements
+        
+        - Python >= 3
+        
+        ## Install
+        
+        On Ubuntu-like systems:
+        
+        ```bash
+        sudo apt-get install python3-pip -y
+        pip3 install weallcode_robot
+        ```
+        
+        The avahi daemon should already be running, but if a robot is not reachable at `http://<robotname>.local` then you may need to restart it:
+        
+        ```bash
+        sudo avahi-daemon -D
+        ```
+        
+        ## Usage
+        
+        ```python
+        from weallcode_robot import Robot
+        from time import sleep
+        
+        alpha = Robot('alpha')
+        
+        # (left, right) wheels 100% forward
+        alpha.wheels(100, 100)
+        sleep(1)
+        
+        # (left, right) wheels 100% backward
+        alpha.wheels(-100, -100)
+        sleep(1)
+        
+        # spin around
+        alpha.wheels(100, -100)
+        sleep(1)
+        
+        alpha.stop()
+        ```
+        
+        ## API
+        
+        | Method       | Params                 | Values          | Example                   |
+        |--------------|------------------------|-----------------|---------------------------|
+        | `wheels`     | `left`, `right`        | `-100` to `100` | `bot.wheels(-90, 80)`     |
+        | `stop`       |                        |                 | `bot.stop()`              |
+        | `led`        | `red`, `green`, `blue` | `0` to `255`    | `bot.led(0, 12, 255)`     |
+        | `buzzer`     | `hertz`, `period`      | `1` to `1000`   | `bot.buzzer(1000, 1000)`  |
+        | `buzzer_off` |                        |                 | `bot.buzzer_off()`        |
+        
+        ## Maintainers
+        
+        [@danielmconrad](https://github.com/danielmconrad)
+        
+        ## Contributing
+        
+        PRs accepted.
+        
+        Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+        
+        ## License
+        
+        MIT © 2019 We All Code
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

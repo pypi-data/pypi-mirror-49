@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dynodoc
+Version: 0.1
+Summary: DynamoDB CLI tool that uses the document interface
+Home-page: http://github.com/knavsaria/dynodoc
+Author: Keeran Navsaria
+Author-email: keeran.navsaria@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

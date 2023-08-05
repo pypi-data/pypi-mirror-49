@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+dynodoc-complete.sh
+setup.py
+dynodoc/__init__.py
+dynodoc/dynodoc.py
+dynodoc.egg-info/PKG-INFO
+dynodoc.egg-info/SOURCES.txt
+dynodoc.egg-info/dependency_links.txt
+dynodoc.egg-info/entry_points.txt
+dynodoc.egg-info/requires.txt
+dynodoc.egg-info/top_level.txt

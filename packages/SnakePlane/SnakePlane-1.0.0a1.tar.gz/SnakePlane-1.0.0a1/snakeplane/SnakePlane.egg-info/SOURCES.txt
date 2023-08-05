@@ -1,0 +1,7 @@
+README.md
+setup.py
+snakeplane/SnakePlane.egg-info/PKG-INFO
+snakeplane/SnakePlane.egg-info/SOURCES.txt
+snakeplane/SnakePlane.egg-info/dependency_links.txt
+snakeplane/SnakePlane.egg-info/requires.txt
+snakeplane/SnakePlane.egg-info/top_level.txt

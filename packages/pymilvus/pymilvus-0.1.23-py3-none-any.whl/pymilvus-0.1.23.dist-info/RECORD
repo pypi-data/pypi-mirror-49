@@ -1,0 +1,17 @@
+milvus/__init__.py,sha256=yeaacOIZJTPGGgDqwkVGH_SM-8QCFiXA036eU39T070,158
+milvus/settings.py,sha256=592cMB0jNsvsho0eGNZeULcKPO7sySi-6r0K-BwENLI,1772
+milvus/client/Abstract.py,sha256=_2_83wIC2JAAmv2MuQfxtVljnkp7Vcl5zVOTvSTuZis,10047
+milvus/client/Client.py,sha256=egq4MHr_2UZXok8UPkujB1G2OGTgvCqe6c6q10zTPss,23993
+milvus/client/Exceptions.py,sha256=6-Jx74o5DTm0ooY5-YlSlP6eQ1zCQjjj4l7KWZzhnSg,250
+milvus/client/Status.py,sha256=HOkLCBfyvKXx6VYGC1PJ_J3CoDsl8P6DxnsakcHoME0,1354
+milvus/client/__init__.py,sha256=DodFKQXJMHDFHESjt-crxED9U7-4c0N9hmkubmIvrz0,20
+milvus/client/utils.py,sha256=nakpLLTKHsRkaYVfJEs0Ue79qHYpKf9V7jJKERkuwPY,1308
+milvus/thrift/MilvusService.py,sha256=5gvswowAizrnfLUsEkbfkfjO_pPR5I5o28e8Fy7cQk0,88551
+milvus/thrift/__init__.py,sha256=qVK_IMvbfJz5JPB6-S99m2a_lcmAHG79AjcBRn-xlQk,51
+milvus/thrift/constants.py,sha256=v5bEUT2NdKr33TlR9Zij6k9cinByWYC2W41YzF8Be_w,366
+milvus/thrift/ttypes.py,sha256=mVNV9Cl11ReN363P7hLWRVcPO4AwpseNaPNpF2YY7XA,18349
+pymilvus-0.1.23.dist-info/LICENSE,sha256=0b0i-3U7oom0t9lCnoSBkRTgVnwZPJP6hp9ySiL_FDo,11336
+pymilvus-0.1.23.dist-info/METADATA,sha256=k-NSehpJRBLQTSZh0AZHmSvSfzeEnOsFkFcK9pO37A4,3506
+pymilvus-0.1.23.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pymilvus-0.1.23.dist-info/top_level.txt,sha256=AA_ff9UwDdLoHlsv4RjdZorgQgIaugPvBK35QhdMGrc,7
+pymilvus-0.1.23.dist-info/RECORD,,

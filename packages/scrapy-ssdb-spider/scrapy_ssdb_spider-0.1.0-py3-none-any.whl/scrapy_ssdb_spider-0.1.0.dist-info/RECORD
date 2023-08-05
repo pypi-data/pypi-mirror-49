@@ -1,0 +1,12 @@
+scrapy_ssdb_spider/__init__.py,sha256=J_hu054dR9awYuSRbIMzXGhtZwrPj9APNAWiTnL8FAM,99
+scrapy_ssdb_spider/dupefilter.py,sha256=3yBnUhRxxPKih42yhyhiCaFD898-37rVXqBqDM7hBbw,1653
+scrapy_ssdb_spider/queues.py,sha256=63Gmp85nwt2A9-raP4DCdg7cJ03yBBQIJQyx1T8WvAA,1712
+scrapy_ssdb_spider/scheduler.py,sha256=Uy05FRt618GBUpBL2LodmF6lX_qiX49bS7LlfEKghR8,3447
+scrapy_ssdb_spider/spiders.py,sha256=JUrXYbbvA1ThgfuZLeBAo5RFUrPvCFZx9CtW6xQYESc,3408
+scrapy_ssdb_spider/ssdb.py,sha256=bald92XbT0M8PhT3ZGg6JGGSPMPRGQsSalOdO5NupmE,454
+scrapy_ssdb_spider/ssdb_default_settings.py,sha256=Ug0stmhv-0KtKdS7y_2igHRR89GK8I7hHdzO5QS4s2E,459
+scrapy_ssdb_spider-0.1.0.dist-info/LICENSE,sha256=BW8Ki-zP79autWCUlFBjanRN-gPkiYG3_S4-qewIGVY,1313
+scrapy_ssdb_spider-0.1.0.dist-info/METADATA,sha256=Gevr6qIuG5bnFDtVTBjjIz96wuuFOreH5Jx3FnWgOHw,2455
+scrapy_ssdb_spider-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+scrapy_ssdb_spider-0.1.0.dist-info/top_level.txt,sha256=N4l01g6neJbiioMk9rZ3VAZP7mCaK1R3JORpNc22H1Y,19
+scrapy_ssdb_spider-0.1.0.dist-info/RECORD,,

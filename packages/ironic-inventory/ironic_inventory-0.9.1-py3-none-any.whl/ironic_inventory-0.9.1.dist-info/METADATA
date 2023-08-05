@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ironic-inventory
+Version: 0.9.1
+Summary: Register ironic nodes via excel spreadsheet
+Home-page: https://github.com/rcbops/ironic_inventory
+Author: paul sims
+Author-email: paul.sims@rackspace.com
+License: UNKNOWN
+Keywords: ironic node registration
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: xlrd
+Requires-Dist: gevent (==1.4.0)
+Requires-Dist: python-ironicclient (==2.7.2)
+Requires-Dist: python-ironic-inspector-client (==3.5.0)
+Requires-Dist: python-keystoneclient (==3.19.0)
+Requires-Dist: python-novaclient (==13.0.1)
+Requires-Dist: python-glanceclient (==2.16.0)
+
+TODO: make description
+
+
+

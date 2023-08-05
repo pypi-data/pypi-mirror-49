@@ -1,0 +1,3 @@
+[console_scripts]
+pyapksigner = pyapksigner.scripts.launcher:cli
+

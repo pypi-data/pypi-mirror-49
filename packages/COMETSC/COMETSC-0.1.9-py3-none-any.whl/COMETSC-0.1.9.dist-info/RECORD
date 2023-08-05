@@ -1,0 +1,11 @@
+COMETSC-0.1.9.dist-info/METADATA,sha256=wvW63V2Puhfb8wIfX1joA1074XMHsx3rqkmeu2dtsD8,1829
+COMETSC-0.1.9.dist-info/RECORD,,
+COMETSC-0.1.9.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+COMETSC-0.1.9.dist-info/entry_points.txt,sha256=E_cOkj2Zd6Y5rZ24LSe-8QbwuwTMy3DxsGvi1LEqzGA,47
+COMETSC-0.1.9.dist-info/top_level.txt,sha256=HrpJIskDMHTAJLlg0x43i1s47ewQlLS4h9mFc9Zitdk,6
+Comet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Comet/__main__.py,sha256=NSqAbi9lIRLam3Lsn0HldNnjwt1a9kv1nfvv8-MEx8M,31258
+Comet/hgmd.py,sha256=NzyM3b18D0ey6KGJ2kLr56vox1-OsACo9YlhUyDr9z8,49996
+Comet/quads.py,sha256=lN3Dt1FbEkghOuWihnNpa_bDtYv6OU4rqdrFFMn8Uy0,5273
+Comet/qvalue.py,sha256=eCLWCq8zsIgeQ4cs5LjfRjccnZjKdMJOlBNkv0qMpEc,2788
+Comet/visualize.py,sha256=XoNdO8EIaDQ1_zne1BwrW576_nsQTbs9b4pD6IOMXo4,26258

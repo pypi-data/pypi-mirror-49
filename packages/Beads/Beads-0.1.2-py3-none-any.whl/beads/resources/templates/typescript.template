@@ -1,0 +1,36 @@
+#! version:1 language:typescript file_type:.ts #
+
+{
+
+    "config": {
+        "gap": "\n",
+        "indent": "   ",
+        "useHeader": true
+    },
+
+    "header": {
+        "content": "class $name {\n"
+    },
+
+    "footer": {
+        "content": "}"
+    },
+
+    "states": {
+        "name": "states",
+        "body": "$indent private $states = new Map([\n$items $indent]);\n",
+        "item": "$indent $indent ['$name', $value],\n"
+    },
+
+    "state": {
+        "name": "currentState",
+        "body": "$indent public $state: number;\n\n$indent constructor() {\n$indent $indent this.$state = this.states.get('$value');\n$indent }\n"
+    },
+
+    "transitions": {
+        "body": "$indent public $name(): void {\n$items$indent}\n",
+        "item": "$indent $indent else if(this.$state === this.$states.get('$name')) {\n$indent $indent $indent this.$state = this.states.get('$value');\n$indent $indent }\n",
+        "item_first": "$indent $indent if(this.$state === this.$states.get('$name')) {\n$indent $indent $indent this.$state = this.states.get('$value');\n$indent $indent }\n"
+    }
+
+}

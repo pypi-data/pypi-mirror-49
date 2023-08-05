@@ -1,0 +1,826 @@
+/*
+ *
+ */
+/*
+ * Whitespace numbers used throughout the project.
+ */
+/*
+ *  Project z layer function
+ */
+/*
+* Reusable classes
+*/
+html body #menu section div.help-item div:not(.navigate) p span, html body #graph-area #summary p span {
+  color: #f6b26bff;
+}
+html body #menu section div.help-item div:not(.navigate) p span.key, html body #graph-area #summary p span.key {
+  border: 1px solid #f6b26bff;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+html body #menu section#options > div:not(.align-right), html body #menu section#info article, html body #text-area #code-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html body #menu section#languages > div > div, html body #menu nav button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html body #code-functions, html body #persistence-controls > div:last-of-type, html body #persistence-controls, html body #menu section div.help-item div.navigate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+html body #menu section#options > div:not(.align-right), html body #menu nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+ *
+ */
+/*
+ * Mixin for convenience prefixes.
+ */
+/*
+ *
+ */
+/*
+*
+*/
+/*
+ * Styling for the container displaying generated code.
+ */
+/*
+* Styling of the drawing container and the drawn graph elements (= SVG tags and content)
+*/
+/*
+ * Styling of the menu and its sub-sections:
+ *        drawing help
+ *        tool info
+ *        languages preview
+ *        generation options
+ */
+/*
+* Styling of the persistence controls:
+*       Delete
+*       Save as:
+*           JSON
+*           SVG
+*           PNG
+*/
+/*
+ * Styling of the input field for the graph name
+ */
+/*
+* Styling of a .help-item div displaying a step of the drawing help/tutorial.
+*/
+/*
+* Styling of the info section displaying the parsed project README.
+*/
+/*
+* Styling of the language preview displaying all available languages and a preview of generated code.
+*/
+/*
+* Styling of the menu - navigation.
+*/
+/*
+* Styling of the menu options providing means to set code generation options and save defaults.
+*/
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 200;
+  src: local(""), url("../fonts/oswald-200.woff2") format("woff2"), url("../fonts/oswald-200.woff") format("woff");
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/oswald-regular.woff2") format("woff2"), url("../fonts/oswald-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/oswald-300.woff2") format("woff2"), url("../fonts/oswald-300.woff") format("woff");
+}
+/*
+ * Basic setup for the project including reset, box-sizing and font styling
+ */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", Courier, monospace;
+  font-weight: 200;
+  color: #595959ff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+*:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+code, span[class*="token "], input {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+button, input {
+  cursor: pointer;
+}
+
+button {
+  border: 1px solid #595959ff;
+  background-color: white;
+}
+button img {
+  height: 100%;
+}
+button:hover, button.selected {
+  border-color: #f6b26bff;
+  color: #f6b26bff;
+}
+button:hover img, button.selected img {
+  filter: brightness(0) saturate(100%) invert(64%) sepia(94%) saturate(234%) hue-rotate(347deg) brightness(97%) contrast(98%);
+}
+
+.hidden {
+  display: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3, h4, li {
+  font-size: 1.2rem;
+}
+
+p, textarea {
+  font-size: 1rem;
+}
+
+button, button span {
+  font-size: 0.9rem;
+}
+
+.error {
+  color: #f46542;
+}
+
+/*
+
+
+*/
+html body {
+  width: 100vw;
+  min-width: 500px;
+  height: 100vh;
+  min-height: 600px;
+  background-color: #c8c8c8;
+  position: relative;
+}
+html body #graph-area {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+  background-color: white;
+  border-radius: 10px;
+}
+html body #graph-area #summary {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 19;
+  width: 50%;
+  min-width: 400px;
+}
+html body #graph-area #summary p {
+  margin-top: 15px;
+  opacity: 0.5;
+}
+html body #graph-area #summary p:first-of-type {
+  margin-bottom: 40px;
+}
+html body #graph-area #summary p span:last-of-type {
+  margin-right: 5px;
+}
+html body #graph-area #graph-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}
+html body #graph-area #graph-container svg {
+  width: 100%;
+  height: 100%;
+}
+html body #graph-area #graph-container svg path {
+  stroke: #595959ff;
+  fill: #595959ff;
+}
+html body #graph-area #graph-container svg text {
+  cursor: text;
+  z-index: 100;
+  fill: #595959ff;
+}
+html body #graph-area #graph-container svg text:hover {
+  fill: #f6b26bff;
+}
+html body #graph-area #graph-container .state {
+  cursor: pointer;
+}
+html body #graph-area #graph-container .state circle {
+  fill: white;
+  stroke: #595959ff;
+  stroke-width: 3px;
+}
+html body #graph-area #graph-container .state:hover > circle {
+  fill: #f0f0f0;
+}
+html body #graph-area #graph-container .transition {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+html body #graph-area #graph-container .transition path {
+  stroke: #595959ff;
+  fill: none;
+}
+html body #graph-area #graph-container .transition:hover path {
+  stroke: #f6b26bff;
+}
+html body #graph-area #graph-container .label-input {
+  cursor: text;
+  text-align: center;
+  background-color: #c8c8c8;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 20px;
+}
+html body #graph-name-field {
+  position: absolute;
+  top: 35px;
+  right: calc(35px + 200px);
+  height: 35px;
+  width: 150px;
+  padding-right: 10px;
+  border-right: 2px solid #595959dd;
+  background-color: white;
+  color: #595959dd;
+  z-index: 99;
+  font-size: 1.2rem;
+  text-align: right;
+}
+html body #graph-name-field:hover, html body #graph-name-field:focus {
+  background-color: #c8c8c8;
+  color: white;
+}
+html body #text-area {
+  display: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #f6b26bff;
+  z-index: 9;
+  overflow: hidden;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  bottom: 15px;
+  width: 22vw;
+  max-height: calc(100vh - 30px);
+  max-width: calc(100vw - 30px);
+  min-width: 200px;
+  min-height: 200px;
+  padding-bottom: 50px;
+}
+html body #text-area.selected {
+  display: block;
+}
+html body #text-area::after {
+  cursor: ew-resize;
+  content: " ";
+  background-color: #f6b26bff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 8px;
+}
+html body #text-area #code-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  overflow-y: scroll;
+  box-sizing: content-box;
+  padding-right: 8px;
+  overflow-x: hidden;
+}
+html body #menu {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  z-index: 99;
+  width: 100px;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+html body #menu > img {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #595959ff;
+  border-radius: 10px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: white;
+}
+html body #menu > div {
+  position: relative;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+html body #menu:hover > img, html body #menu.selected > img {
+  border-bottom-left-radius: unset;
+  border-bottom-right-radius: unset;
+}
+html body #menu:hover nav, html body #menu.selected nav {
+  height: 70vh;
+  padding: 20px 0;
+  border-left: 1px solid #595959ff;
+  border-bottom: 1px solid #595959ff;
+  border-right: 1px solid #595959ff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+html body #menu.selected nav {
+  border-bottom-left-radius: unset;
+}
+html body #menu nav {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+}
+html body #menu nav > div {
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 49%;
+  right: 49%;
+  background-color: #595959ff;
+  z-index: 2;
+}
+html body #menu nav button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #595959ff;
+  z-index: 19;
+  overflow: hidden;
+}
+html body #menu nav button > img {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+}
+html body #menu nav button span {
+  display: none;
+  width: 100%;
+  height: 40%;
+  background-color: #c8c8c8;
+}
+html body #menu nav button.selected {
+  border-color: #f6b26bff;
+}
+html body #menu nav button:hover img {
+  display: none;
+}
+html body #menu nav button:hover span {
+  display: block;
+}
+html body #menu section {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 70vh;
+  width: 80vw;
+  padding: 8px;
+  z-index: 99;
+  background-color: #595959ff;
+  border: 1px solid #595959ff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow-y: scroll;
+  display: none;
+}
+html body #menu section.selected {
+  display: block;
+}
+html body #menu section#info article {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  overflow-y: scroll;
+}
+html body #menu section#info article h1, html body #menu section#info article h2, html body #menu section#info article h3 {
+  font-weight: 300;
+}
+html body #menu section#info article p {
+  margin-top: 5px;
+}
+html body #menu section#info article strong {
+  font-weight: 400;
+}
+html body #menu section#info article ul, html body #menu section#info article ol {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+html body #menu section#info article ul li {
+  list-style-type: none;
+  font-size: 14px;
+}
+html body #menu section#info article pre {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 40px;
+}
+html body #menu section#info article a {
+  pointer-events: none;
+}
+html body #menu section#info article em {
+  font-style: normal;
+}
+html body #menu section#info article img:first-of-type {
+  width: 100%;
+}
+html body #menu section#languages {
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 100%;
+  grid-gap: 15px;
+}
+html body #menu section#languages.selected {
+  display: grid;
+}
+html body #menu section#languages ul {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #c8c8c8;
+  border-radius: 10px;
+  list-style-type: none;
+  overflow-y: scroll;
+}
+html body #menu section#languages ul li {
+  width: 100%;
+  padding: 1vh 0;
+  text-align: center;
+  border: 1px solid #c8c8c8;
+  color: white;
+}
+html body #menu section#languages ul li.selected {
+  background-color: #f6b26bff;
+  border-color: #f6b26bff;
+}
+html body #menu section#languages ul li:hover {
+  cursor: pointer;
+}
+html body #menu section#languages > div {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-template-rows: 40% 1fr;
+  grid-gap: 8px;
+  display: none;
+}
+html body #menu section#languages > div.selected {
+  display: grid;
+}
+html body #menu section#languages > div > div {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+html body #menu section#languages > div > div img {
+  height: 100%;
+}
+html body #menu section#languages > div pre {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  overflow-y: scroll;
+  background-color: white;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  overflow: scroll;
+}
+html body #menu section#options > div {
+  border-radius: 10px;
+}
+html body #menu section#options > div.align-right {
+  width: 15%;
+  height: 100%;
+  float: right;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10% 0;
+}
+html body #menu section#options > div.align-right button {
+  width: 60%;
+  height: 10%;
+  border-radius: 10px;
+}
+html body #menu section#options > div:not(.align-right) {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-gap: 10px;
+  background-color: white;
+  overflow-y: scroll;
+  padding: 20px;
+}
+html body #menu section#options > div:not(.align-right) div {
+  width: 100%;
+  height: 25px;
+  padding-left: 15px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+html body #menu section#options > div:not(.align-right) div.toggle {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+html body #menu section#options > div:not(.align-right) div input {
+  line-height: 100%;
+  font-size: 20px;
+  text-align: right;
+  padding: 0 5px;
+}
+html body #menu section#options > div:not(.align-right) div input:hover, html body #menu section#options > div:not(.align-right) div input:focus {
+  background-color: #c8c8c8;
+  color: white;
+}
+html body #menu section#options > div:not(.align-right) div button {
+  width: 60px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  border: 0;
+}
+html body #menu section#options > div:not(.align-right) div button div.line {
+  position: absolute;
+  top: 49%;
+  left: 5%;
+  height: 2px;
+  width: 90%;
+  background-color: #595959ff;
+  z-index: 1;
+}
+html body #menu section#options > div:not(.align-right) div button div.button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 2px solid #595959ff;
+  background-color: white;
+  z-index: 19;
+}
+html body #menu section#options > div:not(.align-right) div button:hover div.button {
+  border-color: #f6b26bff;
+}
+html body #menu section#options > div:not(.align-right) div button.selected div.button {
+  left: unset;
+  right: 0;
+  border-color: #f6b26bff;
+}
+html body #menu section#options > div:not(.align-right) div span {
+  margin-left: 15px;
+  font-weight: 400;
+}
+html body #menu section#options > div:not(.align-right) div p {
+  display: none;
+  color: #c8c8c8;
+}
+html body #menu section#options > div:not(.align-right) div:hover > p {
+  display: block;
+}
+html body #menu section#options > div:not(.align-right) div:hover span {
+  color: #f6b26bff;
+}
+html body #menu section#options > div:not(.align-right) div:hover input {
+  background-color: #c8c8c8;
+  color: white;
+}
+html body #menu section div.help-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+  grid-template-columns: 1fr 50%;
+  grid-template-rows: 1fr 30px;
+  grid-gap: 15px;
+}
+html body #menu section div.help-item.selected {
+  display: grid;
+}
+html body #menu section div.help-item > img {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+html body #menu section div.help-item div:not(.navigate) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  overflow-y: scroll;
+}
+html body #menu section div.help-item div:not(.navigate) h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
+html body #menu section div.help-item div:not(.navigate) p {
+  font-size: 25px;
+  margin-top: 10px;
+  color: white;
+}
+html body #menu section div.help-item div:not(.navigate) p.m-top {
+  margin-top: 50px;
+}
+html body #menu section div.help-item div.navigate {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 200px;
+}
+html body #menu section div.help-item div.navigate button {
+  flex: 1;
+}
+html body #menu section div.help-item div.navigate button.next {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+html body #menu section div.help-item div.navigate button.previous {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+html body #menu section div.help-item div.navigate button.disabled {
+  color: #c8c8c8;
+  border-color: #c8c8c8;
+  cursor: default;
+}
+html body #persistence-controls {
+  position: absolute;
+  left: 35px;
+  bottom: 35px;
+  height: 35px;
+  background-color: white;
+  z-index: 99;
+}
+html body #persistence-controls > div {
+  height: 100%;
+  padding: 0 5px;
+  border: 1px solid #595959ff;
+}
+html body #persistence-controls > div:first-of-type {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+html body #persistence-controls > div:last-of-type {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+html body #persistence-controls > div:last-of-type > button {
+  display: none;
+  background-color: transparent;
+  padding: 0 5px;
+}
+html body #persistence-controls > div:last-of-type > button:not(:last-of-type) {
+  margin-right: 5px;
+}
+html body #persistence-controls > div:last-of-type:hover img {
+  display: none;
+}
+html body #persistence-controls > div:last-of-type:hover button {
+  display: block;
+}
+html body #persistence-controls > div button {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+html body #persistence-controls > div img {
+  margin-top: 10%;
+  height: 80%;
+}
+html body #code-functions {
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  height: 35px;
+  z-index: 99;
+  background-color: white;
+  border-radius: 10px;
+}
+html body #code-functions button {
+  height: 100%;
+  background-color: transparent;
+  display: inline-block;
+}
+html body #code-functions button#toggle-code-button {
+  width: 60px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  position: relative;
+}
+html body #code-functions button#toggle-code-button .notification {
+  width: 20px;
+  height: 20px;
+  display: none;
+  background-color: transparent;
+  filter: brightness(0) saturate(100%) invert(64%) sepia(94%) saturate(234%) hue-rotate(347deg) brightness(97%) contrast(98%);
+  position: absolute;
+  top: -5px;
+  left: -20px;
+}
+html body #code-functions button#toggle-code-button.error .notification {
+  display: block;
+}
+html body #code-functions button#code-gen-button {
+  width: 140px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #f6b26bff;
+  border-color: #f6b26bff;
+}
+html body #code-functions button#code-gen-button img {
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+html body #code-functions button#code-gen-button:hover {
+  background-color: #fac48a;
+  border-color: #fac48a;
+}
+html body #version-info {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+html body #version-info span {
+  font-size: 9px;
+  margin-left: 15px;
+  color: #595959dd;
+}

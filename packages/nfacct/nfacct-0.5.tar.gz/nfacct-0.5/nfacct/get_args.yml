@@ -1,0 +1,87 @@
+metadata:
+
+  __version: 0.5
+
+  argparse:
+    priority: 3
+    options:
+      description: 'nfacct and iptables'
+      allow_abbrev: true
+
+  environment:
+    enable: true
+    priority: 2
+    options:
+      override_cmd_env: true
+      env_file:
+        - .env
+        - /etc/nfacct/.env
+      argparse:
+        e env_file:
+          nargs: +
+          default: .env
+          help: load environment variables from env_file, default %(default)s
+
+  configuration:
+    enable: true
+    priority: 1
+    options:
+      conf_file:
+        - /etc/nfacct/nfacct.json
+        - /etc/nfacct/nfacct.yaml
+      argparse:
+        c conf_file:
+          nargs: +
+          default: config.yaml
+          help: load configuation from file, default %(default)s
+
+args:
+
+  __options:
+    action:
+      choices: [list, add, del, check, clear, init]
+      default: list
+      help: list/add/del nfacct, or check requirements, add default
+
+    name:
+      nargs: '?'
+      help: nfacct name to add/del/list
+
+  in: true
+  out: true
+  noreverse: true
+
+  p proto:
+    nargs: '?'
+    choices: [udp, tcp, icmp]
+    help: port protocol
+
+  s src_addr:
+    nargs: '*'
+    help: source addr
+
+  d dst_addr:
+    nargs: '*'
+    help: dest addr
+
+  sport:
+    nargs: '*'
+    help: source port
+
+  dport:
+    nargs: '*'
+    help: dest port, support p1,p2,p3 or p1:p2
+
+  o owner:
+    help: program traffic owned by owner
+
+  dry_run:
+    action: store_true
+    help: just print commands, not execute
+
+  l level:
+    choices: [DEBUG, INFO, WARNING, ERROR, CRITCAL]
+    help: log level
+
+  ip_args:
+    help: iptables extra args

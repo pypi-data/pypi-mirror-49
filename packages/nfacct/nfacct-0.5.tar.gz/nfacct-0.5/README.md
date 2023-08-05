@@ -1,0 +1,49 @@
+# nfacct
+
+```bash
+pip3 install nfacct
+```
+
+```bash
+$ nf --help
+usage: nf [-h] [--in] [--out] [--noreverse] [-p [PROTO]]
+          [-s [ADDR [ADDR ...]]] [-d [ADDR [ADDR ...]]]
+          [--sport [SPORT [SPORT ...]]] [--dport [DPORT [DPORT ...]]]
+          [-u USER] [--dry-run] [-l LEVEL] [--ip-args ARGS]
+          [-e FILE [FILE ...]] [-c FILE [FILE ...]] [-v]
+          {list,add,del,check,clear,init} [name]
+
+nfacct and iptables
+
+positional arguments:
+  {list,add,del,check,clear,init}
+                        list/add/del nfacct, or check requirements, add
+                        default
+  name                  nfacct name to add/del/list
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --in
+  --out
+  --noreverse
+  -p [PROTO], --proto [PROTO]
+                        port protocol
+  -s [ADDR [ADDR ...]], --src-addr [ADDR [ADDR ...]]
+                        source addr
+  -d [ADDR [ADDR ...]], --dst-addr [ADDR [ADDR ...]]
+                        dest addr
+  --sport [SPORT [SPORT ...]]
+                        source port
+  --dport [DPORT [DPORT ...]]
+                        dest port, support p1,p2,p3 or p1:p2
+  -u USER, --user USER  program traffic owned by user[s]
+  --dry-run             just print commands, not execute
+  -l LEVEL, --level LEVEL
+                        log level
+  --ip-args ARGS        iptables extra args
+  -e FILE [FILE ...], --env-file FILE [FILE ...]
+                        load environment variables from env_file, default .env
+  -c FILE [FILE ...], --conf-file FILE [FILE ...]
+                        load configuation from file, default config.yaml
+  -v, --version         show program's version number and exit
+```

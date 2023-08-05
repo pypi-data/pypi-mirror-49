@@ -1,0 +1,10 @@
+README.rst
+setup.py
+fpython/__init__.py
+fpython.egg-info/PKG-INFO
+fpython.egg-info/SOURCES.txt
+fpython.egg-info/dependency_links.txt
+fpython.egg-info/requires.txt
+fpython.egg-info/top_level.txt
+fpython/mq/__init__.py
+fpython/mq/rabbit_mq_server.py

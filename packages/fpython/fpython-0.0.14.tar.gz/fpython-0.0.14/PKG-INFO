@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: fpython
+Version: 0.0.14
+Summary: packages
+Home-page: https://github.com/Wall-js/fpython
+Author: Wall-js
+Author-email: 307606056@qq.com
+License: BSD License
+Description: UNKNOWN
+Keywords: utils,packages
+Platform: all
+Classifier: Programming Language :: Python :: 3

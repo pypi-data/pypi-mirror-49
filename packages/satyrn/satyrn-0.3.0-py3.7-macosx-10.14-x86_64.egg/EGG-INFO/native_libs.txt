@@ -1,0 +1,2 @@
+fake.cpython-37m-darwin.so
+picosat.cpython-37m-darwin.so

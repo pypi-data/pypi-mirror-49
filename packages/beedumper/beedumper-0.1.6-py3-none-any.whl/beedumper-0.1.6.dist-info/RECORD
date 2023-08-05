@@ -1,0 +1,9 @@
+beedumper/__init__.py,sha256=T8sCxRrp4aZG4G_UVc-CIIz6Ue6V4Hxo_8hjdL_dFrQ,18
+beedumper/cli.py,sha256=yfdP9L07pBxxLeTHniRRkNRG9mzJTKLpmBSTFBq8pyg,21504
+beedumper/export.py,sha256=E_1sPG6m8pe6z7YE0ZMqxp_ihNLJJytbCS3CscTkfgU,2458
+config.template.yaml,sha256=vL-_nEnQs8w-dSlNJZObrikOGLxNLhmSFukZNKiZ0Zw,181
+beedumper-0.1.6.dist-info/entry_points.txt,sha256=68prmt0MhPsywBGnR8cFIzm2kR77EKs_3RBocqyvcHI,47
+beedumper-0.1.6.dist-info/LICENSE,sha256=P_6VgRg1ibcxtYClbGkikXG9bTiVvHle30S_fSIIXzo,1062
+beedumper-0.1.6.dist-info/WHEEL,sha256=vZ9uOqWz9Nn_iQiloIvXrEesMclaDmme0lZSy9xq2xk,85
+beedumper-0.1.6.dist-info/METADATA,sha256=ZsHZ97tMTLNGVyGcRipYLuN0NStV1gymrvkGMix2yd4,4757
+beedumper-0.1.6.dist-info/RECORD,,

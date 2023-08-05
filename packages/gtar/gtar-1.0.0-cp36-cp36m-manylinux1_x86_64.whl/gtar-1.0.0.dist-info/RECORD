@@ -1,0 +1,11 @@
+gtar-1.0.0.dist-info/RECORD,,
+gtar-1.0.0.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
+gtar-1.0.0.dist-info/METADATA,sha256=WTEo6IhMxFylhQZgX_0FSXnbCGT4ujbQh7cV_rmLbBY,1017
+gtar-1.0.0.dist-info/top_level.txt,sha256=rGfEVcdKLdoooPbFkC7c3uVNoJgCOFTEzecaXW4fRgo,5
+gtar/copy.py,sha256=KtBmKJVakY6E7x3h4SZZoqbYveOAHac0gbl6OtPQN9M,933
+gtar/fix.py,sha256=_y4EkSMICVzmBMuN0HCgmfGgvKxKT9QcS-KW4eTjpYE,3704
+gtar/version.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+gtar/__init__.py,sha256=_zBQEAG5uFi8O7S3Ex2BSS4rHzKC1WJxzivmqTnOvIs,195
+gtar/cat.py,sha256=fOMQiuXNZR5jj9rj14DDXUTiyBTd85CvpaJM34nJuTg,2387
+gtar/_gtar.cpython-36m-x86_64-linux-gnu.so,sha256=OJVRzAFzulxGfqEFmPp6fYRoH28yWCKUX08lgI2k44Y,10143220
+gtar/read.py,sha256=e0CzgLzFZDqRPFX8kLSXyJC6-e84bixVTMZqvck95PU,1490

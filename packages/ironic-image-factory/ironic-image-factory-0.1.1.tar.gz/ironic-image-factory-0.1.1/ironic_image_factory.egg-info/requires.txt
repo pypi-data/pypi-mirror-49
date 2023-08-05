@@ -1,0 +1,7 @@
+python-glanceclient
+python-ironic_inspector_client
+python-ironicclient
+python-keystoneclient
+python-novaclient
+urllib3
+wget

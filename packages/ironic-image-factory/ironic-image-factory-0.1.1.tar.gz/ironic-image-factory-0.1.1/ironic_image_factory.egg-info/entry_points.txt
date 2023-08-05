@@ -1,0 +1,3 @@
+[console_scripts]
+ironic-image-factory = ironic_image_factory.images:main
+

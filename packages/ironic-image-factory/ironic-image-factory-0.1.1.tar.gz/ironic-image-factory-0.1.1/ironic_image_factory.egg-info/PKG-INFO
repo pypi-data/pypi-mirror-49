@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ironic-image-factory
+Version: 0.1.1
+Summary: Updates/Adds Glance Images
+Home-page: https://github.com/cjloader/ironic-image-factory
+Author: cam loader
+Author-email: cam.loader@rackspace.com
+License: UNKNOWN
+Description: TODO
+        
+Keywords: ironic image factory
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

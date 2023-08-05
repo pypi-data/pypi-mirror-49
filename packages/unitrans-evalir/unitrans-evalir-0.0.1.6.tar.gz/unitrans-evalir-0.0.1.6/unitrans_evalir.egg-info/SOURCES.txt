@@ -1,0 +1,13 @@
+README.md
+UniversalTranslator
+setup.py
+unitrans_evalir.egg-info/PKG-INFO
+unitrans_evalir.egg-info/SOURCES.txt
+unitrans_evalir.egg-info/dependency_links.txt
+unitrans_evalir.egg-info/requires.txt
+unitrans_evalir.egg-info/top_level.txt
+universal_translator/__init__.py
+universal_translator/inputHandler.py
+universal_translator/metricConverter.py
+universal_translator/test_inputHandler.py
+universal_translator/test_metricConverter.py

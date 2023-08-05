@@ -1,0 +1,173 @@
+Metadata-Version: 2.1
+Name: klak
+Version: 0.4.3
+Summary: Klak provides the ergonoics of a project Makefile with the ease of Python and power of Click.
+Home-page: https://github.com/aubricus/klak
+License: MIT
+Keywords: klak,automation
+Author: Aubrey Taylor
+Author-email: aubricus+klak@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Project-URL: Documentation, https://github.com/aubricus/klak
+Project-URL: Repository, https://github.com/aubricus/klak
+Description-Content-Type: text/markdown
+
+[click]: https://click.palletsprojects.com/en/master/
+[poetry]: https://github.com/sdispater/poetry
+[click setuptools integration]: https://click.palletsprojects.com/en/master/setuptools/
+[click bash completions]: https://click.palletsprojects.com/en/master/bashcomplete/#activation
+
+# Klak
+
+[![pypi](https://img.shields.io/pypi/v/klak.svg)](https://pypi.python.org/pypi/klak)
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![travis-ci](https://img.shields.io/travis/aubricus/klak.svg)](https://travis-ci.org/aubricus/klak)
+[![docs](https://readthedocs.org/projects/klak/badge/?version=latest)](https://klak.readthedocs.io/en/latest/?badge=latest)
+[![docs](https://readthedocs.org/projects/klak/badge/?version=latest)](https://klak.readthedocs.io/en/latest/?badge=latest)
+
+<!-- NOTE: If you update this line, update pyproject.toml -->
+
+> Klak provides the ergonoics of a project Makefile with the ease of Python and power of [Click].
+
+## Table of Contents
+
+-   [Background](#background)
+-   [Install](#install)
+-   [Usage](#usage)
+-   [Maintainers](#maintainers)
+-   [Contributing](#contributing)
+-   [License](#license)
+
+## Background
+
+Makefiles provide a simple interface, `make <command>`, that is great for automating repetitive project tasks. Makefile syntax, however, is archaic, error-prone, and ill-suited for constructing modern, useful command-line interfaces.
+
+Python, on the other hand, has wonderful syntax and is _great_ for scripting. When Python is paired with [Click] constructing modern, useful command-line interfaces is easy!
+
+Is there a way we can combine the power of Python and Click into a "Makefile like" experience?
+
+_Enter Klak_.
+
+Klak exposes a single entry-point—`klak`—which auto-loads a _100%_, vanilla Python file called a **Clickfile**. All CLI is built using standard Python and Click, and all commands are available via: `klak <command>` (see [Usage](#usage)).
+
+### What is it good for?
+
+Klak's purpose is to provide a convenient, single-file experince for automating repetitive project tasks. It does not, nor will it ever, intend to replace Make or Makefiles.
+
+## Install
+
+### Stable Release
+
+```bash
+# NOTE: This is the recommended method of installation.
+pip install klak
+```
+
+### From Source
+
+> Klak uses [Poetry] to manage depdencies and distribution (in lieu of setuptools).
+
+```bash
+# NOTE: Clone the public repository
+git clone git://github.com/aubricus/klak
+
+# NOTE: or download the tarball
+curl  -OL https://github.com/aubricus/klak/tarball/master
+
+# NOTE: Once the source is downloaded
+poetry install
+```
+
+## Usage
+
+To get started with Klak create a **Clickfile**. Here's a simple **Clickfile** to get started:
+
+```python
+"""
+Example Clickfile.
+
+NOTE: Set your editor's language mode to Python to
+      enable syntax highlighting! :^)
+"""
+
+import logging
+import click
+from klak.cli import cli
+
+
+log = logging.getLogger("Clickfile")
+
+
+# -------------------------------------
+# Examples
+# -------------------------------------
+
+# Example: Add a command.
+@cli.command()
+@click.argument("name")
+def greet(name):
+    """Greet someone."""
+    click.secho(f"Hello, {name}")
+
+
+# Example: Add a group and sub-command.
+@cli.group()
+def humans():
+    """Humans command group."""
+    pass
+
+
+@humans.command(name="count")
+def humans_count():
+    """Count all the humans."""
+    click.secho("Over 9000!!!")
+
+```
+
+**NOTE**: You can also organize commands into a python package in the same directory. See [Klak/Pull/229](https://github.com/aubricus/klak/pull/229).
+
+Once your **Clickfile** is ready, access commands through `klak`.
+
+```bash
+$ klak --help
+```
+
+## Support
+
+This project is a hobby/passion project which I maintain in my own time.
+
+### Python
+
+-   Python 3.5+
+
+### OS
+
+-   Linux ✓
+-   MacOS ✓
+-   Windows ✘ (any volunteers?)
+
+## Maintainers
+
+[@aubricus](https://github.com/aubricus)
+
+## Contributing
+
+See [the contributing file](CONTRIBUTING.md)!
+
+PRs accepted!
+
+Please note, if editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+
+## License
+
+[MIT © 2018, 2019 aubricus@gmail.com](./LICENSE)
+

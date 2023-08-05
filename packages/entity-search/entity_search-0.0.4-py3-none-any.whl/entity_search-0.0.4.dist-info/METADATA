@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: entity-search
+Version: 0.0.4
+Summary: Entity Search
+Home-page: https://github.com/ptorrest/entity-search
+Author: Pablo Torres
+Author-email: pablo.torres@insight-centre.org
+License: GNU
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: colorlog
+Requires-Dist: gensim
+Requires-Dist: krovetz
+Requires-Dist: matplotlib
+Requires-Dist: nltk
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: sparse
+
+# Entity Search
+
+This is an entity search framework based on stationary distributions on random walks with diffusion kernel.
+
+## Development
+You will need to include the configuration for this repo to your git local configuration.
+
+``
+git config --local include.path ../.gitconfig
+``
+This step removes the result section in the json document for each execution in the notebooks.
+
+
+## Testing
+In oder to execute the tests, you will need the development dataset. This dataset can be created from the following [repo](https://gitlab.insight-centre.org/ptorres/entity-search-development-data). Once the dataset is created, you need to registered in the configuration file. To simplify this step, just use the incorporated subcommnad `config` where you can defined the development data folder.
+
+For instance, if the dataset is installed in this directory `/data/dev-es`, then you need to execute config as follows:
+
+``
+python setup.py config --config-datafolder=/data/dev-es
+``
+
+This command will create a configuration file in `etc/` with the proper setup.
+
+Once the configuration file is created, you can execute the tests, as shown below:
+
+``
+python setup.py test
+``
+
+

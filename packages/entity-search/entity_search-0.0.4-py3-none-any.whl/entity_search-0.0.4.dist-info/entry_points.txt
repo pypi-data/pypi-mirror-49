@@ -1,0 +1,3 @@
+[console_scripts]
+dbpedia_indexer = indexer.run:runIndexer
+

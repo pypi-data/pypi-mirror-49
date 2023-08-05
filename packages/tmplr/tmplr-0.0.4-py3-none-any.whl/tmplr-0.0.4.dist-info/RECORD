@@ -1,0 +1,12 @@
+tmplr/__init__.py,sha256=7FgdzWC28dhfrNRoN-yFhAM6JFHDbhz1V4l6cTWo9_4,2910
+tmplr/temple.py,sha256=QLEomEqkACd8thYA_pXiN7hcMrGxaOQPMEt8gm03k3o,5246
+tmplr_cli/__init__.py,sha256=TsfTxkUCRGUGW0kdnmiban7fhCtZQi-srhdrquK_GUU,47
+tmplr_cli/editor.py,sha256=xy5Cd_XU2m0U-lPEeJqYePfFoMxBO-SOCIfYxCEfHNA,841
+tmplr_cli/temples_app.py,sha256=bhhE0Rg6BZAgiDMmqzcQF9RgIHH4rcQhet6vfhuJl9o,1742
+tmplr_cli/tmplr_app.py,sha256=NCG7BNqhACoZHLdyZwt15DKuTZLy2fxns2XetSFrRI4,2645
+tmplr-0.0.4.dist-info/LICENSE,sha256=VYI2san3nysS3ZvfQYXvg0t5PDY0rn4JKj6NRu17zbc,1070
+tmplr-0.0.4.dist-info/METADATA,sha256=dnZV5I_GOy97eY5DbgHMuCfX9gHltdDytQRLCCBtjMc,4204
+tmplr-0.0.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+tmplr-0.0.4.dist-info/entry_points.txt,sha256=r_zv_ATXvZZgWFeT4AC_9ytr75lGEnJ0DPRcXwjeDGY,89
+tmplr-0.0.4.dist-info/top_level.txt,sha256=4hVpU7ZdOrtEgPjtqSqj6MS9BuNaqc-y5ehmekKN-WU,16
+tmplr-0.0.4.dist-info/RECORD,,

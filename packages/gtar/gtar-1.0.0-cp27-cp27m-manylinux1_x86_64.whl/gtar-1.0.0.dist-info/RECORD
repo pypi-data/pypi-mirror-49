@@ -1,0 +1,11 @@
+gtar/fix.py,sha256=_y4EkSMICVzmBMuN0HCgmfGgvKxKT9QcS-KW4eTjpYE,3704
+gtar/version.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+gtar/_gtar.so,sha256=O1xg2AbRjQzR2bRPjBFtCTKicFEPOe8hmP7FR5APhiY,9958698
+gtar/read.py,sha256=e0CzgLzFZDqRPFX8kLSXyJC6-e84bixVTMZqvck95PU,1490
+gtar/copy.py,sha256=KtBmKJVakY6E7x3h4SZZoqbYveOAHac0gbl6OtPQN9M,933
+gtar/__init__.py,sha256=_zBQEAG5uFi8O7S3Ex2BSS4rHzKC1WJxzivmqTnOvIs,195
+gtar/cat.py,sha256=fOMQiuXNZR5jj9rj14DDXUTiyBTd85CvpaJM34nJuTg,2387
+gtar-1.0.0.dist-info/WHEEL,sha256=CKrsQRZNKddeqWkqlP4DoIBo-Lb-ExiV2oTN8bWPh84,109
+gtar-1.0.0.dist-info/top_level.txt,sha256=rGfEVcdKLdoooPbFkC7c3uVNoJgCOFTEzecaXW4fRgo,5
+gtar-1.0.0.dist-info/RECORD,,
+gtar-1.0.0.dist-info/METADATA,sha256=H4Z9b4Xsbn8eoUdgwXxCDk-f5_51xaLg72QPLmlCx30,1016

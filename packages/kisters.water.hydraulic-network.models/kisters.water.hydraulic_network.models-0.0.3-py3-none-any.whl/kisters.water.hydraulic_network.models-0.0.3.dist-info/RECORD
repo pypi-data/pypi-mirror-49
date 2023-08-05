@@ -1,0 +1,10 @@
+kisters/water/hydraulic_network/models/__init__.py,sha256=8Rey6BCNtkunr8uRc9zVxn-SPwalx-i4bY1LEBFs5S0,32
+kisters/water/hydraulic_network/models/element.py,sha256=R_y_G1uaCEeGhSvtDqCw-ndnbc838JTHv4WongSJM7w,3448
+kisters/water/hydraulic_network/models/link.py,sha256=JXMxxX96gzUSSXFTq5yfjiw08L6PgI3KSaY5eI9LGEk,8770
+kisters/water/hydraulic_network/models/metadata.py,sha256=WssbywgbCI4PJaF1eIGs9Jr4cPPvddmHJnV72USXweI,2243
+kisters/water/hydraulic_network/models/node.py,sha256=NyD3NFmsf_n46YZRrTqQt3YitkywozhPmv6TqnSxJNo,2120
+kisters.water.hydraulic_network.models-0.0.3.dist-info/LICENSE,sha256=4MkSMuUmaIPLG0gUMj17noVLIfEZ4cyFa9TgVTOQAAc,26979
+kisters.water.hydraulic_network.models-0.0.3.dist-info/METADATA,sha256=tplJudVoW0W6nyqT3p4irX1Kwd8IkRig7fX94R6631o,611
+kisters.water.hydraulic_network.models-0.0.3.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+kisters.water.hydraulic_network.models-0.0.3.dist-info/top_level.txt,sha256=GBdmGz2WHTLUJ5yO7B4FTyMCbzITLr2QtsI4X1xTSEs,8
+kisters.water.hydraulic_network.models-0.0.3.dist-info/RECORD,,

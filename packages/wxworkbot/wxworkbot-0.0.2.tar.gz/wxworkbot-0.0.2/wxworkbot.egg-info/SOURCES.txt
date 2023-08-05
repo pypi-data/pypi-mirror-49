@@ -1,0 +1,10 @@
+README.md
+setup.py
+wxworkbot/__init__.py
+wxworkbot/core.py
+wxworkbot/exceptions.py
+wxworkbot.egg-info/PKG-INFO
+wxworkbot.egg-info/SOURCES.txt
+wxworkbot.egg-info/dependency_links.txt
+wxworkbot.egg-info/requires.txt
+wxworkbot.egg-info/top_level.txt

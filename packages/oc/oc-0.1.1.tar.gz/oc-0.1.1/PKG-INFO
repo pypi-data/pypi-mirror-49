@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: oc
+Version: 0.1.1
+Summary: OpenShift CLI (oc) thin wrapper
+Home-page: UNKNOWN
+Author: Rudá Moura
+Author-email: rmoura@redhat.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries

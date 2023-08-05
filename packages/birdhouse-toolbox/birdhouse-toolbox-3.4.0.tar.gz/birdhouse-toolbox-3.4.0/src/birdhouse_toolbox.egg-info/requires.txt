@@ -1,0 +1,7 @@
+requests
+click
+python-slugify
+maya
+google-api-python-client
+bs4
+validators

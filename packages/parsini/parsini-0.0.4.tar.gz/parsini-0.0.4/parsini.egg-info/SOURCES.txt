@@ -1,0 +1,9 @@
+README.md
+setup.py
+parsini/__init__.py
+parsini/example.py
+parsini/parsini.py
+parsini.egg-info/PKG-INFO
+parsini.egg-info/SOURCES.txt
+parsini.egg-info/dependency_links.txt
+parsini.egg-info/top_level.txt

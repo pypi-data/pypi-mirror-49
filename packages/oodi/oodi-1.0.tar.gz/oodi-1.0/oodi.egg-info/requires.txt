@@ -1,0 +1,7 @@
+filemagic
+lxml
+mutagen
+requests
+ruamel.yaml
+pillow
+systematic

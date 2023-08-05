@@ -1,0 +1,13 @@
+MANIFEST.in
+README.txt
+setup.py
+otlpylogga/Logger.py
+otlpylogga/__init__.py
+otlpylogga/log_config.yaml
+otlpylogga/splunk.py
+otlpylogga.egg-info/PKG-INFO
+otlpylogga.egg-info/SOURCES.txt
+otlpylogga.egg-info/dependency_links.txt
+otlpylogga.egg-info/entry_points.txt
+otlpylogga.egg-info/requires.txt
+otlpylogga.egg-info/top_level.txt

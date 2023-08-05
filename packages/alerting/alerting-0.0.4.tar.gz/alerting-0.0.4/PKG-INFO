@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: alerting
+Version: 0.0.4
+Summary: Easy to use alerting library for Python 3+
+Home-page: https://github.com/sinarezaei/alerting
+Author: Sina Rezaei
+Author-email: sinarezaei1991@gmail.com
+License: MIT
+Description: ![alt text][pypi_version] ![alt text][licence_version]
+        
+        # Alerting
+        
+        Easy to use alerting library for Python 3+
+        
+        Tested with:
+        * Python 3.6+
+        
+        Use the following command to install using pip:
+        ```
+        pip install alerting
+        ```
+        
+        [pypi_version]: https://img.shields.io/pypi/v/alerting.svg "PYPI version"
+        [licence_version]: https://img.shields.io/badge/license-MIT%20v2-brightgreen.svg "MIT Licence"
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

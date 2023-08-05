@@ -1,0 +1,6 @@
+coloredlogs
+idtrackerai
+pyforms-terminal
+
+[gui]
+pyforms-gui

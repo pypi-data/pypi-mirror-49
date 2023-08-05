@@ -1,0 +1,9 @@
+jupyter_source_magic-0.1.0.dist-info/METADATA,sha256=1YX4IWQTUwqGwkrvILQ4LkhV_6U0Id7sX2IU6lhAoVY,1937
+jupyter_source_magic-0.1.0.dist-info/RECORD,,
+jupyter_source_magic-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+jupyter_source_magic-0.1.0.dist-info/top_level.txt,sha256=3HRIufTG7mXCfOy8g7uHd8nSmFYzjukGSFlCqX2RPTg,19
+jupytersourcemagic/__init__.py,sha256=Wo9-IOwJe2lwmo-5jCcK46fRnLQpYkUgegPJryy-zbo,128
+jupytersourcemagic/editorwidget.py,sha256=PmMOEqZtzjMCIa3ZEIF5IujAP2Mb3lwUMOmx3Y0T3WI,7311
+jupytersourcemagic/filemanager.py,sha256=aujKQMIkZRfpaouM3YwxhoIzX5ZoDIJ8FzEbgtqPwuY,4399
+jupytersourcemagic/haltexecution.py,sha256=mk-UPYrPiiE6GT8HT8C42EROhBVkYFj3kTIZamJ4njg,79
+jupytersourcemagic/sourcemagics.py,sha256=Wb2oN_7vL1_MZ8pAN3OO0CRIy13mpv8cyiCc4XhcLfo,3589

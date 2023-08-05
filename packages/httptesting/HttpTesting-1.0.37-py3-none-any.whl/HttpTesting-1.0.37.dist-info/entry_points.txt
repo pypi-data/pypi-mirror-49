@@ -1,0 +1,6 @@
+[console_scripts]
+AMT = HttpTesting.main:run_min
+START = HttpTesting.web.service:start_service
+amt = HttpTesting.main:run_min
+start = HttpTesting.web.service:start_service
+

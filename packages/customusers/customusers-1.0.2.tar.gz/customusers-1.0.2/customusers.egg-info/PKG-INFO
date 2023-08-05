@@ -1,0 +1,44 @@
+Metadata-Version: 1.1
+Name: customusers
+Version: 1.0.2
+Summary: A simple Django app to create custom users and their RESTful APIs.
+Home-page: UNKNOWN
+Author: Kenneth Mathenge
+Author-email: mathenge@example.com
+License: UNKNOWN
+Description: =====
+        Users
+        =====
+        
+        Users is a simple Django app that create own custom users and a RESTful API for the users that is allauth enabled.
+        
+        Quick start
+        -----------
+        
+        1. Add "users" to your INSTALLED_APPS setting like this::
+        
+        	INSTALLED_APPS = [
+        		...
+        		'customusers',
+        
+        	]
+        
+        2. Include the usres URLconf in your project urls.py like this::
+        
+            path('users/', include('customusers.urls')),
+        
+        3. Run `python manage.py migrate` to create the users models.
+        
+        4. Start the development server and visit http://127.0.0.1:8000/users/
+           to view the users API
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content

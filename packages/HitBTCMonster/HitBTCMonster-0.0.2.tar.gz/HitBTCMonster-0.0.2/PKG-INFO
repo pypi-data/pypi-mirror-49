@@ -1,0 +1,69 @@
+Metadata-Version: 1.1
+Name: HitBTCMonster
+Version: 0.0.2
+Summary: A library for better communication with HitBTC Exchange API
+Home-page: https://github.com/prscodx/HitBTCMonster
+Author: {'name': 'prscodx', 'email': 'prscodx@gmail.com'}
+Author-email: UNKNOWN
+License: MIT
+Project-URL: Source, https://github.com/prscodx/HitBTCMonster.git
+Description: HitBTC Library
+        -------------------
+        
+        A library for better communication with HitBTC Exchange API
+        (`HitBTC API Documentation <https://api.hitbtc.com>`_)
+        
+        Installation:
+        ~~~~~~~~~~~~~~~
+        .. code:: bash
+        
+            pip install HitBTCMonster
+        
+        
+        Example:
+        ~~~~~~~~~
+        
+        API
+        **********
+        
+        .. code:: python
+        
+            from HitBTCMonster.api.core import HitBTC
+            from HitBTCMonster.api.market import Market
+            from HitBTCMonster.api.trading import Trading
+        
+            CORE = HitBTC(
+                public='YOUR_PUBLIC_KEY_HERE',
+                secret='YOUR_SECRET_KEY_HERE',
+            )
+            MARKET = Market(CORE)
+            TRADING = Trading(CORE)
+        
+            # do stuff
+        
+        
+        WebSocket
+        ****************
+        
+        .. code:: python
+        
+            from HitBTCMonster.wss.core import HitBTC
+            from HitBTCMonster.wss.market import Market
+            from HitBTCMonster.wss.trading import Trading
+        
+            CORE = HitBTC(
+                public='YOUR_PUBLIC_KEY_HERE',
+                secret='YOUR_SECRET_KEY_HERE',
+            )
+            MARKET = Market(CORE)
+            TRADING = Trading(CORE)
+        
+            # do stuff
+Keywords: HitBTC,WSS,API
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

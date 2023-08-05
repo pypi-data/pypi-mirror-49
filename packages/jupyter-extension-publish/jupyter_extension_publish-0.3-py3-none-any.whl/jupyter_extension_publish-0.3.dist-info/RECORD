@@ -1,0 +1,9 @@
+jupyter_extension_publish/__init__.py,sha256=ICpL3yJU2V0sE9fwiR9llscUpt0CRzOwFl_fXT_P33g,1750
+jupyter_extension_publish/config.py,sha256=fDg_BbwXlysJSy5rrxkkjUpv25jb_28lSJaRtNPbrz4,1017
+jupyter_extension_publish/handlers.py,sha256=yLhHdEBo-9_wLgOpLlFCXkqtcqZ_LzNFk49-0Hmn6hg,2529
+jupyter_extension_publish/static/index.js,sha256=NzjYaVsli6MdShP53ugDW1t0gOVAon-t71sG1qp42xw,1465
+jupyter_extension_publish-0.3.dist-info/LICENSE,sha256=JMRmIbK9lTC076BgXKteG4Jqwh8qKj_yxJDoXHrkmKk,1077
+jupyter_extension_publish-0.3.dist-info/METADATA,sha256=QCqC9X6-7X40Zk5-Km9l9d51oYMF6mhAOGh_g2UhSxM,345
+jupyter_extension_publish-0.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+jupyter_extension_publish-0.3.dist-info/top_level.txt,sha256=HPrhossNe0-jSFGGQWlQt1eg2-inlh6p56iH6gIlJT8,26
+jupyter_extension_publish-0.3.dist-info/RECORD,,

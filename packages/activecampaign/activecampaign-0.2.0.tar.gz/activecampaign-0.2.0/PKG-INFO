@@ -1,0 +1,72 @@
+Metadata-Version: 1.1
+Name: activecampaign
+Version: 0.2.0
+Summary: ActiveCampaign API client
+Home-page: https://github.com/bennylope/activecampaign
+Author: Ben Lopatin
+Author-email: ben@benlopatin.com
+License: BSD
+Description: =================
+        ActiveCampaign.py
+        =================
+        
+        
+        Simple and Pythonic ActiveCampaign API client
+        
+        * Free software: BSD license
+        
+        Features
+        --------
+        
+        * View & sync a contact
+        * Add a contact tag
+        * Remove a contact tag
+        
+        Basic usage
+        -----------
+        
+        Initialize the client with your custom ActiveCampaign host name and API key::
+        
+            from activecampaign.client import ActiveCampaignClient
+            client = ActiveCampaignClient(ACTIVECAMPAIGN_HOST, ACTIVECAMPAIGN_KEY)
+            
+        Sync contact information::
+            
+            client.contacts.sync(
+                email=customer_data['email'],
+                first_name=customer_data['first_name'],
+                last_name=customer_data['last_name'],
+                orgname=custmoer_data['orgname'],
+                phone=customer_data['phone'],
+            )
+            
+        Add and remove tags::
+        
+            client.contacts.tag_add("new-tag", email=customer_data['email'])
+            client.contacts.tag_remove("old-tag", email=customer_data['email'])
+        
+        
+        
+        
+        History
+        -------
+        
+        0.2.0 (2019-07-09)
+        ------------------
+        
+        * Dropped support for Python 2.7
+        
+        0.1.0 (2016-02-22)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: activecampaign
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: py2d-fixed
+Version: 0.1
+Summary: Py2D library of 2D-game-related algorithms
+Home-page: http://www.github.com/sseemayer/py2d
+Author: Stefan Seemayer
+Author-email: mail@semicolonsoftware.de
+License: UNKNOWN
+Description: py2d-fixed is a simple upload of the latest py2d from github,
+        which fixes some import errors that have been fixed there,
+        but never uploaded to PyPI.
+Platform: UNKNOWN

@@ -1,0 +1,17 @@
+README.md
+setup.py
+py2d/Bezier.py
+py2d/FOV.py
+py2d/FOVConverter.py
+py2d/Navigation.py
+py2d/SVG.py
+py2d/__init__.py
+py2d/Math/Operations.py
+py2d/Math/Polygon.py
+py2d/Math/Transform.py
+py2d/Math/Vector.py
+py2d/Math/__init__.py
+py2d_fixed.egg-info/PKG-INFO
+py2d_fixed.egg-info/SOURCES.txt
+py2d_fixed.egg-info/dependency_links.txt
+py2d_fixed.egg-info/top_level.txt

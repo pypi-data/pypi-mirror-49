@@ -1,0 +1,12 @@
+README.md
+setup.py
+cpnnaming.egg-info/PKG-INFO
+cpnnaming.egg-info/SOURCES.txt
+cpnnaming.egg-info/dependency_links.txt
+cpnnaming.egg-info/top_level.txt
+qa_check/__init__.py
+qa_check/qa_checking.py
+retrieve_data/__init__.py
+retrieve_data/cntdb.py
+upload_result/__init__.py
+upload_result/upld_file.py

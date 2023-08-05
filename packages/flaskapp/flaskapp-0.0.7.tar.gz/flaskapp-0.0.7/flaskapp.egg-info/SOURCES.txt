@@ -1,0 +1,15 @@
+README.rst
+setup.py
+bin/flaskapp
+flaskapp/__init__.py
+flaskapp/config.py
+flaskapp/create_project.py
+flaskapp.egg-info/PKG-INFO
+flaskapp.egg-info/SOURCES.txt
+flaskapp.egg-info/dependency_links.txt
+flaskapp.egg-info/requires.txt
+flaskapp.egg-info/top_level.txt
+flaskapp/base/__init__.py
+flaskapp/base/app.py
+flaskapp/base/templates/__init__.py
+flaskapp/base/templates/index.html

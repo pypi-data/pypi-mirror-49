@@ -1,0 +1,9 @@
+README.md
+setup.py
+fixar/__init__.py
+fixar/fixar.py
+fixar/test_fixar.py
+fixar.egg-info/PKG-INFO
+fixar.egg-info/SOURCES.txt
+fixar.egg-info/dependency_links.txt
+fixar.egg-info/top_level.txt

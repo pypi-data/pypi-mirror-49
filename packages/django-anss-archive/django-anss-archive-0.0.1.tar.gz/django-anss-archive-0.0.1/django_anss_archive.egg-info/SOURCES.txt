@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+anss/__init__.py
+anss/admin.py
+anss/apps.py
+anss/models.py
+anss/tests.py
+anss/urls.py
+anss/views.py
+django_anss_archive.egg-info/PKG-INFO
+django_anss_archive.egg-info/SOURCES.txt
+django_anss_archive.egg-info/dependency_links.txt
+django_anss_archive.egg-info/requires.txt
+django_anss_archive.egg-info/top_level.txt

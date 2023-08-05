@@ -1,0 +1,7 @@
+[console_scripts]
+cgi = cancergenomeinterpreter.main:cmdline
+cgi-cna = cancergenomeinterpreter.cna.main:cmdline
+cgi-fus = cancergenomeinterpreter.fus.main:cmdline
+cgi-mut = cancergenomeinterpreter.mut.main:cmdline
+cgi-prescription = cancergenomeinterpreter.prescription.main:cmdline
+

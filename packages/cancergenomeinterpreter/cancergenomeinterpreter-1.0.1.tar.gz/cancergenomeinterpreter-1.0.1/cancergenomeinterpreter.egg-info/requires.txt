@@ -1,0 +1,8 @@
+numpy>=1.14.5
+pandas>=0.22.0
+itab>=0.9.0
+heapdict>=1.0.0
+TransVar>=2.4.0.20180701
+humanize>=0.5.1
+intervaltree
+pytabix==0.0.2

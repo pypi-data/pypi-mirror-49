@@ -1,0 +1,12 @@
+bcl2fq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bcl2fq/bcl2fq.py,sha256=duC_POjvEmQpyCNuGWD3s919uOXtHOG_UZq2e6z8goQ,7725
+bcl2fq/qc.py,sha256=f_WJd7TP1nnRBinqvyembZZB32ZhYkA15NpmXzYBDOg,4157
+bcl2fq/bin/bcl2fastq,sha256=OY6P1eAVSRK_HcvammCStrTDYKhvRvFEppI-B_5cesA,6263687
+bcl2fq/bin/fastqc_adapter_pe,sha256=AM8F7eUwrkCJ7RHb2vTGJmYiyVKI2VnK4sP-YwWFPbQ,349396
+bcl2fq/bin/fastqc_adapter_se,sha256=31wYn3ckRAEGwN8MBY_btExIY0rfMyupOt9FucNxZao,322424
+bcl2fq_local-0.2.0.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+bcl2fq_local-0.2.0.dist-info/METADATA,sha256=VnZimj5leICPUQxgTx9fT9UacSkYmQJB42ztTjC3Q_A,2481
+bcl2fq_local-0.2.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+bcl2fq_local-0.2.0.dist-info/entry_points.txt,sha256=Sk-SCe_gIdS6tHsJlpaeQinVVXB0eG52hqxzYV_bPo8,79
+bcl2fq_local-0.2.0.dist-info/top_level.txt,sha256=XnSXTWA5DjBIligvwUAEHsolMhnoxmXztKHquMGc7iY,7
+bcl2fq_local-0.2.0.dist-info/RECORD,,

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: satyrn
+Version: 0.1
+Summary: SAT Solver Interface
+Home-page: UNKNOWN
+Author: Jeffrey M. Hokanson
+Author-email: jeffrey@hokanson.us
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pybind11 (>=2.3)
+
+# ♄ SATyrn: A SAT Solver Toolbox
+[![Build Status](https://travis-ci.org/jeffrey-hokanson/SATyrn.svg?branch=master)](https://travis-ci.org/jeffrey-hokanson/SATyrn)
+
+An interface to SAT solvers.
+
+
+
+## See Also
+
+* [pycosat](https://github.com/ContinuumIO/pycosat)
+* [pylgl](https://github.com/abfeldman/pylgl)
+
+
+

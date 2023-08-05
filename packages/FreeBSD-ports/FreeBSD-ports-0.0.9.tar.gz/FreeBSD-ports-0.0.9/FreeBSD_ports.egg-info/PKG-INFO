@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: FreeBSD-ports
+Version: 0.0.9
+Summary: Parse FreeBSD Ports INDEX, provide search API
+Home-page: https://github.com/swills/py-FreeBSD-ports/
+Author: "Steve Wills"
+Author-email: "steve@mouf.net"
+License: BSD
+Description: py-FreeBSD-Ports
+        ========
+        
+        Parse FreeBSD Ports INDEX, provide search API
+        
+        Installation
+        ------------
+        
+        Status
+        ------
+        [![Build Status](https://api.cirrus-ci.com/github/swills/py-FreeBSD-ports.svg)](https://cirrus-ci.com/github/swills/py-FreeBSD-ports)
+        
+        License
+        -------
+        
+        BSD 2-clause. See LICENSE.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Utilities
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

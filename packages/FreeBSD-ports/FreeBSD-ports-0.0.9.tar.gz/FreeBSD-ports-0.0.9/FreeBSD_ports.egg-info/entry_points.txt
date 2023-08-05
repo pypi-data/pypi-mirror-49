@@ -1,0 +1,3 @@
+[console_scripts]
+ports-index-info = FreeBSD_ports.__main__:main
+

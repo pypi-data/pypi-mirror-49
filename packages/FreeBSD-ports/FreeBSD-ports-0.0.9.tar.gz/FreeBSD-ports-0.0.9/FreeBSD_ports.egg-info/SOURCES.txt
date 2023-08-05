@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+FreeBSD_ports/__init__.py
+FreeBSD_ports/__main__.py
+FreeBSD_ports.egg-info/PKG-INFO
+FreeBSD_ports.egg-info/SOURCES.txt
+FreeBSD_ports.egg-info/dependency_links.txt
+FreeBSD_ports.egg-info/entry_points.txt
+FreeBSD_ports.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+pokerware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pokerware/cli.py,sha256=w0CMQWrRKNCH931UUIapPkj4CzHAH11QuGayjGUe_00,1164
+pokerware/generate.py,sha256=ZVYUwOa2ZwvfoXzsOxBBMqyJB4_OqnDN9_YZGDjJtpI,939
+pokerware/pokerware-formal.txt,sha256=P5WppNmAi9yQ5r-7BSVHHPzOX6dx_8YnjUdwrjoSl8M,63647
+pokerware/pokerware-slang.txt,sha256=J4mv76YNIMCyfrfkvXZdlhZcZUKK4FH2iBYuJfG8F5w,60885
+pokerware-0.1.1.dist-info/LICENSE,sha256=1HGcmPS70OiQxH9-uGRKmO6MgXEdczeBn4iXinC2TPo,1070
+pokerware-0.1.1.dist-info/METADATA,sha256=eDP0u2iH3RoccCGcj8N8uXDMJ9wnEOBPdri_kLw4mg8,1199
+pokerware-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pokerware-0.1.1.dist-info/entry_points.txt,sha256=CKCr85j05OvvBvJZ8iwKWKT9sHjKRq7UbVyK46SxXJM,50
+pokerware-0.1.1.dist-info/top_level.txt,sha256=URWxqmwjbxoBJFi7-Mq4Z7QZpN8eEUDa79mjP4dqJiA,10
+pokerware-0.1.1.dist-info/RECORD,,

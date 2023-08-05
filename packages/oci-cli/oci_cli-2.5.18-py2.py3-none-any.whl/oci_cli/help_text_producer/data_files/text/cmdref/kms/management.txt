@@ -1,0 +1,52 @@
+management
+**********
+
+
+Description
+===========
+
+Operations for managing keys and vaults.
+
+
+Available Commands
+==================
+
+* key
+
+  * cancel-deletion
+
+  * create
+
+  * disable
+
+  * enable
+
+  * get
+
+  * list
+
+  * schedule-deletion
+
+  * update
+
+* key-version
+
+  * create
+
+  * get
+
+  * list
+
+* vault
+
+  * cancel-deletion
+
+  * create
+
+  * get
+
+  * list
+
+  * schedule-deletion
+
+  * update

@@ -1,0 +1,10 @@
+numdoclint/__init__.py,sha256=Adx1wFrUsBlphF4h9urJORD834n--b519Xpi5NDL7eY,189
+numdoclint/check_py_module.py,sha256=hPoYN6zkOLW1VU-fU0kgjmt-RnCAquus6ptaPCRdxEY,34438
+numdoclint/helper.py,sha256=f-UXkkR78MfOagnAPIKaV4hyOkVLUNc3NNf10OTtAUM,39890
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_check_py_module.py,sha256=k8kK1o_tG7bcpOY0eFo4YJONsuZWbEfds53kAf37qMc,36912
+tests/test_helper.py,sha256=BcRNprzoMPC6qL8If9kogaZggBs6Kg6ZIUpXTcKuPAo,41467
+numdoclint-0.0.2.dist-info/METADATA,sha256=R2bIBSUENhwpjivz_cKZcSDyDA61dm_27QO-9TRYZtk,562
+numdoclint-0.0.2.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+numdoclint-0.0.2.dist-info/top_level.txt,sha256=8WK5Gno7gYidRL4qvX6aWeze0Ncteohp_QcqXGZ_F1Q,17
+numdoclint-0.0.2.dist-info/RECORD,,

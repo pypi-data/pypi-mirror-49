@@ -1,0 +1,1 @@
+scrapy_ssdb_spider

@@ -1,0 +1,19 @@
+{
+  "name": "PytSite",
+  "version": "9.0",
+  "url": "https://pytsite.xyz",
+  "description": {
+    "en": "The Rapid Web Application Development Framework",
+    "ru": "Фреймворк для быстрой разработки веб-приложений на Python",
+    "uk": "Фреймворк для швидкої розробки веб-додатків на Python"
+  },
+  "author": {
+    "name": "Oleksandr Shepetko",
+    "email": "a@shepetko.com",
+    "url": "https://shepetko.com"
+  },
+  "license": {
+    "name": "MIT",
+    "url": "https://opensource.org/licenses/MIT"
+  }
+}

@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: data_rimac
+Version: 1.2
+Summary: Librerias creadas para interactuar con los servicios de AWS.
+Home-page: UNKNOWN
+Author: Eloy Barahona
+Author-email: eloy.barahona@rimac.com.pe
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent

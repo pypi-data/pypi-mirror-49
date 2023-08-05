@@ -1,0 +1,4 @@
+include version.py
+include README.md
+include logging.json
+include stasma_config.ini

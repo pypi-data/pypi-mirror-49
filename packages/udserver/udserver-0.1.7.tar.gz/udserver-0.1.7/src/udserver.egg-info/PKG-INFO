@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: udserver
+Version: 0.1.7
+Summary: (udserver) a simple upload and download server, just for temporary file transfer. No security ensurance.
+Home-page: https://github.com/kedpter/udserver
+Author: UNKNOWN
+Author-email: 790476448@qq.com
+License: MIT license
+Description: udserver
+        --------
+        
+        This is just a simple http server based on flask, which was built to
+        transfer files between machines.
+        
+        Notice: There's no secrity ensurance between transferring, so please be
+        carefully with your information.
+        
+        -  INSTALL
+        
+        ``pip install udserver``
+        
+        -  Run
+        
+        open a terminal
+        
+        ``bash   # or udserver.exe on windows   udserver``
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2018-07-06)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: udserver
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> ud service</title>
+    {{ dropzone.load_css() }}
+	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<!-- <link rel="stylesheet" href="css/dropzone.css"> -->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/dropzone.js"></script> -->
+	<script src="js/upload.js"></script>
+    <style media="screen">
+    .dropzone{border: 2px dashed #0087F7; margin: 10%; min-height: 400px;}
+    </style>
+	<!-- <link rel="stylesheet" href="css/upload.css"> -->
+
+</head>
+<body>
+<div class="container">
+    <!-- {{ dropzone.create(action='upload') }} -->
+	<div class="panel panel-default">
+		<div class="panel-heading"><strong>Download Files</strong>
+			<small>utk</small>
+		</div>
+
+		<div class="panel-body">
+			<div class="row">
+				<ul>
+					{% for file in fnames %}
+					<li><a href="/storage/{{ file }}" download>{{ file }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="row">
+				<button type="button" class="btn btn-success btn-block" id="clean-btn">Clean</button>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading"><strong>Upload Files</strong>
+			<small>utk</small>
+		</div>
+		<div class="panel-body">
+			<!-- Drop Zone -->
+			<h4>Drag and drop files below</h4>
+
+            {{ dropzone.create(action=url_for('upload')) }}
+
+			<!-- <form action="{{ url_for('upload') }}" class="dropzone" method="POST" enctype="multipart/form-data" id="filedrop">
+			</form> -->
+
+		</div>
+	</div>
+      {{ dropzone.load_js() }}
+      {{ dropzone.config() }}
+
+</div>
+</body>
+</html>

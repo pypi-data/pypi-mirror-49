@@ -1,0 +1,3 @@
+[console_scripts]
+nf = nfacct.nfacct:main
+

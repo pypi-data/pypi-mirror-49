@@ -1,0 +1,6 @@
+README.md
+setup.py
+qcrit.egg-info/PKG-INFO
+qcrit.egg-info/SOURCES.txt
+qcrit.egg-info/dependency_links.txt
+qcrit.egg-info/top_level.txt

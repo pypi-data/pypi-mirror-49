@@ -1,0 +1,3 @@
+[sceptre.hooks]
+cmd = hook.cmd:Cmd
+

@@ -1,0 +1,11 @@
+dbrequests/__init__.py,sha256=ZCKwTPOG4J978tuLzMOyqhjFa-a2bg6LA9rWrkfXrt8,66
+dbrequests/connection.py,sha256=KkZDA-pHrcmfNbmW9MXl7KkoEcx8ojFq4iXUqScw_Us,5234
+dbrequests/database.py,sha256=0B1diwqdaJajnoOtoU3mUk3sEJPzJjgAaPSxZm-l_CA,6189
+dbrequests/tests/conftest.py,sha256=ZbSIKRKAeufIVBlt2O9RozTPZVLtdqky1kEsoY2dpV8,4195
+dbrequests/tests/test_connection.py,sha256=HSYjQrVpH3vGn54bvGWxzsPx9I6L2Puzk-gsyzHG-BE,4340
+dbrequests/tests/test_database.py,sha256=AR1fbwchEvO5hLiEdp12Lp9oOFslnW67EsTjQ79oiB0,4896
+dbrequests-1.0.9.dist-info/LICENSE,sha256=ULV9qZp-HUDmCzXh2HaRd3sHW0UqmWH_Eth-EF3zGhg,1072
+dbrequests-1.0.9.dist-info/METADATA,sha256=E00CnAbcx9gqUH7fcWzAhVdRncJOMpFlg2D9haQJ8Mg,3975
+dbrequests-1.0.9.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+dbrequests-1.0.9.dist-info/top_level.txt,sha256=IhupUEDKGjr3hAlvtkbVhqFpq8uByIfc1_WBGQasm2U,11
+dbrequests-1.0.9.dist-info/RECORD,,

@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: scrapy-ssdb-spider
+Version: 0.1.1
+Summary: Ssdb-based components for Scrapy.
+Home-page: https://github.com/PickledFish/scrapy-ssdb-spider
+Author: SuanCaiYu
+Author-email: suancaiyu0413@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: scrapy
+Requires-Dist: pyssdb
+
+
+# scrapy-ssdb-spider
+
+- 对着 scrapy-redis 照葫芦画瓢的作品
+- 基于 ssdb 队列的 scrapy 分布式解决方案
+
+## 依赖说明
+
+- Python 3.6（测试环境）
+- SSDB 1.9.7
+- scrapy
+- pyssdb
+
+## 使用说明
+
+shell:
+```
+git clone https://github.com/PickledFish/scrapy-ssdb-spider
+python3 setup.py install
+```
+
+或者
+
+```
+pip install scrapy-ssdb-spider
+```
+
+在scrapy项目中:
+
+```python
+# settings
+# ssdb服务
+SSDB_HOST = '127.0.0.1'
+SSDB_PORT = 8888
+# ssdb密码，可选配置
+#SSDB_PWD = 'your password'
+# 配置调度器
+SCHEDULER = 'scrapy_ssdb_spider.scheduler.Scheduler'
+# 配置去重类
+DUPEFILTER_CLASS = 'scrapy_ssdb_spider.dupefilter.SSDBDupeFilter'
+# 配置调度队列键(可选)
+#SCHEDULER_QUEUE_KEY = ''
+# 配置调度队列类(可选)
+#SCHEDULER_QUEUE_CLASS = ''
+# 配置去重队列键
+#SCHEDULER_DUPEFILTER_KEY = ''
+
+# 下面两个配置，如果我先启动了A爬虫，过了半小时启动B爬虫？
+# 队列被清空了？？？？？我没搞懂，反正scrapy-redis有这个功能，我也搞一个，默认不清空队列
+# 配置在爬虫开始前清空去重及调度队列（布尔类型）
+#SCHEDULER_OPEN_CLEAR_QUEUE = 
+# 配置在爬虫结束后清空去重及调度队列（布尔类型）
+#SCHEDULER_CLOSE_CLEAR_QUEUE = 
+
+```
+
+```python
+
+# 编写爬虫
+from scrapy_ssdb_spider.spiders import SsdbSpider
+
+class TestSpider(SsdbSpider):
+    # 配置种子队列键
+    ssdb_key = 'start_key'
+
+    def parse(self, response):
+        pass
+
+```
+
+- 一切都和scrapy_redis那么像，即使是代码，都很像
+- 相信聪明如你，一定没问题的，欢迎提意见
+
+
+## 差异
+
+虽然代码都是参照scrapy-redis写的，但是有些功能并未实现:
+
+- 基于 ssdb 的 Pipeline 没有实现
+- ~~没有爬虫结束或爬虫开始清除队列的配置~~
+- 忘了
+
+

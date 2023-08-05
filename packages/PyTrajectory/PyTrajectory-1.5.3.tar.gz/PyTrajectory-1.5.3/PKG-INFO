@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: PyTrajectory
+Version: 1.5.3
+Summary: Python library for trajectory planning.
+Home-page: https://github.com/TUD-RST/pytrajectory
+Author: Andreas Kunze, Carsten Knoll, Oliver Schnabel
+Author-email: Carsten.Knoll@tu-dresden.de
+License: UNKNOWN
+Description: 
+                PyTrajectory is a Python library for the determination of the feed forward
+                control to achieve a transition between desired states of a nonlinear control system.
+                
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7

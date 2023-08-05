@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: django-queryset-gallery
+Version: 0.1.0
+Summary: The parser which can get json and convert values to Python types.
+Home-page: https://github.com/eumozge/parser-json-python
+Author: Eugene Mozge
+Author-email: eumozge@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# parser-string-python
+The parser which can get strings and convert them to Python types.
+
+

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bananadm
+Version: 1.7.0
+Summary: A command line tool to manage Banana instances
+Home-page: UNKNOWN
+Author: Arthur Chaloin from Enix <enix.io>
+Author-email: arthur.chaloin@enix.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: urllib3
+Requires-Dist: requests (>=2.21.0)
+Requires-Dist: hvac
+Requires-Dist: cryptography
+
+UNKNOWN
+
+

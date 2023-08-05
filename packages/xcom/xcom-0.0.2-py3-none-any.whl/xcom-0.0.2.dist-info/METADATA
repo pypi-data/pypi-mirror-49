@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: xcom
+Version: 0.0.2
+Summary: 
+    Schneider Electric Sepam simulator.
+    Supports: disturbance recordings, time stamped buffer.
+
+Home-page: UNKNOWN
+Author: Vinogradov Dmitry
+Author-email: dgrapes@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,8 @@
+gap_statistic/__init__.py,sha256=vODOctkDRJ_6-IBv7AHJhT5PjI8U3mv111Xg4rRaWyA,74
+gap_statistic/optimalK.py,sha256=cZhzydeEAI2P0H2GJWBjzsJoi_wAJL1hlLPQvxdTLP4,14647
+gap_statistic/rust/gapstat.cpython-36m-x86_64-linux-gnu.so,sha256=yjBaj4ZgFmYJdPZmB31T4rzUcUjBZ_xggdlKWwTv5yU,2729452
+gap_statistic/rust/gapstat.cpython-35m-x86_64-linux-gnu.so,sha256=rRsqNDg35KQJW9mPagJbOtPuSh1Te1vcxWZHO4R4pm8,2729351
+gap_stat-1.7.0rc1.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
+gap_stat-1.7.0rc1.dist-info/top_level.txt,sha256=vyzCrgnXjw3vE2IEDCQyUd6_0lvz8V5kEfPnvncNv24,14
+gap_stat-1.7.0rc1.dist-info/RECORD,,
+gap_stat-1.7.0rc1.dist-info/METADATA,sha256=O1rnjDx4VAD5DrI-9SNYpZy8-4q4PwuJGjRmsPoKMJ4,1249

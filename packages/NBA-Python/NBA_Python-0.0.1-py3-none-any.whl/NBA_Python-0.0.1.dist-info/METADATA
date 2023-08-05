@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: NBA-Python
+Version: 0.0.1
+Summary: A Python Client of NBA Stats API
+Home-page: https://github.com/xuhang57/NBA-Python
+Author: Lucas H. Xu
+Author-email: lucasxu.pub@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# NBA-Python
+
+A python client of NBA REST API.
+
+## Goal
+
+Provide an easy to use python client of the [NBA Stats REST API](https://stats.nba.com/).
+
+## Installation
+
+## How to Use
+
+## Contribution
+
+

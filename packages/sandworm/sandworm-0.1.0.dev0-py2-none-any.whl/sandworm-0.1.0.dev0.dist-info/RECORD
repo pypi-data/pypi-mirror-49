@@ -1,0 +1,14 @@
+sandworm/version.py,sha256=dauQNaajennWttTSIAX9Sb2B2lqfqHT2WmGU_WMnr6E,187
+sandworm/sandworm.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sandworm/sandworm_main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sandworm/__init__.py,sha256=J1MYUI-ydyjk-BCcB1ECUHDzJEva32Awbhk7B-QFcWc,152
+sandworm/cli.py,sha256=-nid7k_FL5na3_b36NO_NVzK9psXdk6vWz9QYM3Dekg,364
+sandworm/__about__.py,sha256=ws526gTU0ICB1mGkzdYLAIjCwfXog8meboQZTOsuc7A,392
+sandworm/config/default.yaml,sha256=IkACKhERghog9epwEy1ltP6iaQTSv8pZGmgor3VWKwQ,11
+sandworm-0.1.0.dev0.dist-info/RECORD,,
+sandworm-0.1.0.dev0.dist-info/metadata.json,sha256=2U5zLx5f996k98jTBxn8Bh3233USv9Uw2QglJ2vFxc0,469
+sandworm-0.1.0.dev0.dist-info/WHEEL,sha256=54bVun1KfEBTJ68SHUmbxNPj80VxlQ0sHi4gZdGZXEY,92
+sandworm-0.1.0.dev0.dist-info/entry_points.txt,sha256=p4NvdXoC2ii5H9pg-JTauQ-4hWYZUsOPKcDBvcJDRL4,48
+sandworm-0.1.0.dev0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+sandworm-0.1.0.dev0.dist-info/top_level.txt,sha256=QwHPeC02o-6k3Jxanh3ECo-WLGO1t1OA-TNVAPqBQ98,9
+sandworm-0.1.0.dev0.dist-info/METADATA,sha256=vjdOyzKTufZlRcImKpuSWBE_3g0oFsXBPHl0MHjacDs,199

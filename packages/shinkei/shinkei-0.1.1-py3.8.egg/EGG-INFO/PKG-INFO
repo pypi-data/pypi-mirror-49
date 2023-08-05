@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: shinkei
+Version: 0.1.1
+Summary: An asynchronous client for singyeong
+Home-page: https://github.com/PendragonLore/shinkei
+Author: Lorenzo
+License: MIT
+Project-URL: Code, https://github.com/PendragonLore/shinkei
+Project-URL: Issue tracker, https://github.com/PendragonLore/shinkei/issues
+Project-URL: Documentation, https://shinkei.rtfd.io
+Description: # shinkei
+        
+        A client library for [singyeong](https://github.com/queer/singyeong), a fully-dynamic, metadata-oriented service mesh.
+        
+        For more info on how to configure and run a singyeong server visit the official repository previously linked.
+        
+        The binaries are available on [docker](https://hub.docker.com/r/queer/singyeong).
+        
+        ### Credits
+        
+        Special thanks to [amy (queer)](https://github.com/queer/) for creating and helping me understand singyeong.
+        
+        ## Installation
+        
+        The library is available on PyPi so it can be installed through pip:
+        
+        ```bash
+        pip install shinkei -U
+        ```
+        
+        This library is compatible only with Python 3.6+ and has two main dependencies, [websockets](https://github.com/aaugustin/websockets)
+        and [aiohttp](https://github.com/aio-libs/aiohttp).
+        
+        It's also recommended to install [ujson](https://github.com/esnme/ultrajson) for faster JSON encoding/decoding.
+        
+        The library can be installed with this extra dependency through this command:
+        
+        ```bash
+        pip install shinkei[ujson] -U
+        ```
+        
+        ## Documentation
+        
+        The documentation is available at [read the docs](https://shinkei.rtfd.io).
+        
+Keywords: ipc,asyncio,singyeong,discord
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: ujson

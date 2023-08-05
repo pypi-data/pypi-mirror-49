@@ -1,0 +1,2 @@
+recursive-include orbis_addon_tunnelblick *.txt
+recursive-include orbis_addon_tunnelblick *.json

@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+orbis_addon_tunnelblick/__init__.py
+orbis_addon_tunnelblick/description.txt
+orbis_addon_tunnelblick/html_pages.py
+orbis_addon_tunnelblick/html_templates.py
+orbis_addon_tunnelblick/main.py
+orbis_addon_tunnelblick.egg-info/PKG-INFO
+orbis_addon_tunnelblick.egg-info/SOURCES.txt
+orbis_addon_tunnelblick.egg-info/dependency_links.txt
+orbis_addon_tunnelblick.egg-info/requires.txt
+orbis_addon_tunnelblick.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: orbis_addon_tunnelblick
+Version: 2.1.1
+Summary: The Tunnelblick Addon for Orbis view gold standards.
+Home-page: https://github.com/orbis-eval/orbis_addon_tunnelblick
+Author: fabod
+License: GPL2
+Description: # Tunnelblick Addon for Orbis
+        
+        Display corpus items only as HTML output.
+        
+Platform: UNKNOWN
+Requires-Python: >3.6
+Description-Content-Type: text/markdown

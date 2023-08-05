@@ -1,0 +1,3 @@
+pandas
+interop==1.1.4
+tabulate

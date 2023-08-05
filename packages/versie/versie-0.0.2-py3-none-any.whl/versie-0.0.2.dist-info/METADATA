@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: versie
+Version: 0.0.2
+Summary: Client for the versie project
+Home-page: https://github.com/labd/versicator-client
+Author: Lab Digital
+Author-email: opensource@labdigital.nl
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.7
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: requests (>=2.18.4)
+Provides-Extra: docs
+Requires-Dist: sphinx (>=1.4.0) ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: coverage (==4.5.1) ; extra == 'test'
+Requires-Dist: pytest (==3.0.5) ; extra == 'test'
+Requires-Dist: requests-mock (==1.4.0) ; extra == 'test'
+Requires-Dist: isort (==4.2.5) ; extra == 'test'
+Requires-Dist: flake8 (==3.0.3) ; extra == 'test'
+Requires-Dist: flake8-blind-except (==0.1.1) ; extra == 'test'
+Requires-Dist: flake8-debugger (==1.4.0) ; extra == 'test'
+
+UNKNOWN
+
+

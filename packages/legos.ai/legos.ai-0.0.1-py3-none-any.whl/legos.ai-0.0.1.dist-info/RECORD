@@ -1,0 +1,11 @@
+legos/__init__.py,sha256=Y6Qt-194am5LgI-kY8rqTrggar_wEUnkMrNshWRWrCw,91
+legos/events.py,sha256=QeSUwQz2udV9ymdH8gDhpmNHGac_NBPdpXrkg61E814,848
+legos/learner.py,sha256=ac4nUH9p21hJwwfIPrPFiNHdQ-po27ANccv_MoO5Rr8,4870
+legos/metrics.py,sha256=czBFo_RT4mNXYTqoADkvTA9Egf2JN-GnkBlgnLqKGZE,296
+legos/torch_utils.py,sha256=YziEV_czsXWNPkrclD-2DPmCxTHzTwpCfgl3mdvccCg,771
+legos/utils.py,sha256=kT10dy1oKiwtv4xVba0QQTNkxOPaT1MO0sEHw0Ptfz4,308
+legos.ai-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+legos.ai-0.0.1.dist-info/METADATA,sha256=QRwwuwMwYxa07j-NdE1wpfB-O4Eql1SuV4yB89Ed28s,584
+legos.ai-0.0.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+legos.ai-0.0.1.dist-info/top_level.txt,sha256=oHPy4z7HYKwQPfXtwXIEV66QTvoka4wZdXtDRqgNjSI,6
+legos.ai-0.0.1.dist-info/RECORD,,

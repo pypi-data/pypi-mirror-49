@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fixar
+Version: 1.0.0
+Summary: Fixed-size integers for python
+Home-page: https://github.com/alxshine/fixar
+Author: Alexander Schlögl
+Author-email: alexander.schloegl@uibk.ac.at
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Python fixed-width arithmetic
+This package provides fixed size integers for python.
+All arithmetic, bitwise, assignment, and compare operators are overloaded, and tested
+
+

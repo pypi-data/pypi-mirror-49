@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+tok/__init__.py
+tok.egg-info/PKG-INFO
+tok.egg-info/SOURCES.txt
+tok.egg-info/dependency_links.txt
+tok.egg-info/not-zip-safe
+tok.egg-info/requires.txt
+tok.egg-info/top_level.txt

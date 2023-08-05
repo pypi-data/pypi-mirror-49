@@ -1,0 +1,9 @@
+README.md
+setup.py
+pgsearch/__init__.py
+pgsearch/searcher.py
+pgsearch.egg-info/PKG-INFO
+pgsearch.egg-info/SOURCES.txt
+pgsearch.egg-info/dependency_links.txt
+pgsearch.egg-info/requires.txt
+pgsearch.egg-info/top_level.txt

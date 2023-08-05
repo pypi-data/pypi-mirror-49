@@ -1,0 +1,63 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="visaplan.plone.ajaxnavigation">
+
+  -*- extra stuff goes here -*-
+
+  <browser:page
+     name="ajax-nav"
+     for="Products.CMFCore.interfaces.IContentish"
+     class=".ajax_nav.AjaxNav"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="ajax-nav"
+     for="Products.CMFCore.interfaces.IFolderish"
+     class=".ajax_nav.AjaxNav4Folder"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="embed"
+     for="Products.CMFCore.interfaces.IContentish"
+     class=".embed.Embed"
+     template="embed.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="embed"
+     for="Products.CMFCore.interfaces.IFolderish"
+     class=".embed.EmbedFolderish"
+     template="embed_folderish.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="ajaxnav-options-default"
+     for="Products.CMFCore.interfaces.ISiteRoot"
+     class=".ajaxnav_options.AjaxnavOptions"
+     permission="zope2.View"
+     />
+
+  <!-- [ control panels ... [ -->
+  <!-- provides the data for ajaxnav-options-default (above): -->
+  <browser:page
+      name="ajaxnav-client-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      permission="cmf.ManagePortal"
+      class=".controlpanel.AjaxNavigationClientControlPanelView"
+      />
+
+  <browser:page
+      name="ajaxnav-internal-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      permission="cmf.ManagePortal"
+      class=".controlpanel.AjaxNavigationInternalControlPanelView"
+      />
+  <!-- ] ... control panels ] -->
+
+</configure>

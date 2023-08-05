@@ -1,0 +1,2 @@
+https://github.com/edx/TinCanPython.git@0.0.5.py.35#egg=tincan-0.0.5.py.35
+https://github.com/edx/django-rest-framework-oauth.git@0a43e8525f1e3048efe4bc70c03de308a277197c#egg=djangorestframework-oauth-1.1.1

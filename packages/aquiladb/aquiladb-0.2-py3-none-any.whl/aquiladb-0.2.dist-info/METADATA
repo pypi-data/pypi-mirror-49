@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aquiladb
+Version: 0.2
+Summary: Vecstore package for AquilaDB
+Home-page: https://github.com/a-mma/AquilaDB-Python
+Author: Jubin Jose
+Author-email: hello@josejub.in
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio
+Requires-Dist: protobuf
+
+# AquilaDB-Python
+Python client library for AquilaDB
+python setup.py bdist_wheel
+
+

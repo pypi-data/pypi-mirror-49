@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: medad-odoo
+Version: 1.2.0
+Summary: medad-odoo
+Home-page: UNKNOWN
+Author: Yasser
+Author-email: ysinjab@gmail.com
+License: BSD
+Description: UNKNOWN
+Keywords: medad
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

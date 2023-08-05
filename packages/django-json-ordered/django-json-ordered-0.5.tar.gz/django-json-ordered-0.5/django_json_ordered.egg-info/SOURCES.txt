@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_json_ordered/__init__.py
+django_json_ordered/fields.py
+django_json_ordered/meta.py
+django_json_ordered.egg-info/PKG-INFO
+django_json_ordered.egg-info/SOURCES.txt
+django_json_ordered.egg-info/dependency_links.txt
+django_json_ordered.egg-info/requires.txt
+django_json_ordered.egg-info/top_level.txt

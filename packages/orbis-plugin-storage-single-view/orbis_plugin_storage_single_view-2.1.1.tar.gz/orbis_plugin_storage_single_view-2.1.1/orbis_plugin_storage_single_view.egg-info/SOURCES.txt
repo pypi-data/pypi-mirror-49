@@ -1,0 +1,10 @@
+README.md
+setup.py
+orbis_plugin_storage_single_view/__init__.py
+orbis_plugin_storage_single_view/html_templates.py
+orbis_plugin_storage_single_view/main.py
+orbis_plugin_storage_single_view.egg-info/PKG-INFO
+orbis_plugin_storage_single_view.egg-info/SOURCES.txt
+orbis_plugin_storage_single_view.egg-info/dependency_links.txt
+orbis_plugin_storage_single_view.egg-info/requires.txt
+orbis_plugin_storage_single_view.egg-info/top_level.txt

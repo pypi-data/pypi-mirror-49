@@ -1,0 +1,13 @@
+README.md
+setup.py
+evogen/__init__.py
+evogen/genetic_drift_fsim.py
+evogen/plot.py
+evogen/random_sampling.py
+evogen/statistics.py
+evogen/test_instllation.py
+evogen.egg-info/PKG-INFO
+evogen.egg-info/SOURCES.txt
+evogen.egg-info/dependency_links.txt
+evogen.egg-info/not-zip-safe
+evogen.egg-info/top_level.txt

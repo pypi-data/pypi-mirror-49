@@ -1,0 +1,13 @@
+aifashion/__init__.py,sha256=Nd1SHFrfVVaR9MnLMTz9qMFkrElexM2VqRIBr17k-H4,211
+aifashion/af_functions.py,sha256=ns_WSI9ixllsgdMjTSBnGKDbyvDqbfX33vYF-DUpG90,6993
+aifashion/af_oauth2.py,sha256=01YwpNcV-7uNRs2G4SXrPZ6tUJkjfLpgAAlDFfOW-io,4093
+aifashion/apis.json,sha256=4X8aJIA5q8DExn9Vw2tOEgDfcnH7DTWnvirv81ud_hc,19273
+aifashion/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aifashion/cli/convert.py,sha256=2anYJ1XmGW_vK9ol4a07O4AGUTtybML4nxsCBUVKa7Q,4509
+aifashion/cli/info.py,sha256=WbdJMDr9Gr--p49tPeKah4BieTIZ-8OaN-iiQCKOb0Q,1753
+aifashion/cli/main.py,sha256=BNcZIbsRlfnBcRuonBo_i0JFmtK0zDwkPgei0n0RSRE,5035
+aifashion_sdk-1.1.0.dist-info/METADATA,sha256=C1NHkvUWbO0nBy8KTG-orJ2IS9c_ajdrGKgvPo6DwPc,10161
+aifashion_sdk-1.1.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+aifashion_sdk-1.1.0.dist-info/top_level.txt,sha256=-NjcwL30s-tlfWuJLnRDZbDecmYhi9z-svNXDV7QDys,10
+aifashion_sdk-1.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aifashion_sdk-1.1.0.dist-info/RECORD,,

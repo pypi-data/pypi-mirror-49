@@ -1,0 +1,10 @@
+abito/__init__.py,sha256=CbgCeE2flTLtO5Dp3yHvgg78_BKD7i_tmvdkb_EqTMg,237
+abito/bootstrap.py,sha256=hG1whV4u7q6JRI-j549pCkWYs2rc825digSq6RVnu6Q,1995
+abito/result_tuples.py,sha256=gPgj8YYwB0Zvg2kq3ijOIDMiEKYYrPN9CHxqLNtvPzI,1361
+abito/stats.py,sha256=NMvgpWEds66f5-WhY4bFUN6dSu3kTV47iE--HhcGQu4,12837
+abito/utils.py,sha256=ZHE1hSE38bErmKMosudInK3xmYsXmgRywtFJYEUzw4s,2498
+abito-0.0.8.dist-info/LICENSE,sha256=Iy-BH9wbsENrdfWrtt6_Ff3NwMAH0eIzBmHwysyFjWU,1067
+abito-0.0.8.dist-info/METADATA,sha256=AnhEgWMEuc_3ssXkLC8wyBEQMY9MjA2-s_jCgdESL14,1971
+abito-0.0.8.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+abito-0.0.8.dist-info/top_level.txt,sha256=Gr3nRGORtISTzQgy9TBNCE21HEQvZOv3PXXZLBarN6g,6
+abito-0.0.8.dist-info/RECORD,,

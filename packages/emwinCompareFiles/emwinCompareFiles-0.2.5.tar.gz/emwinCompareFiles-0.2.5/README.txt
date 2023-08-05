@@ -1,0 +1,43 @@
+# CompareFiles 
+v0.2.5
+
+Compare Files provides a way to compare latency and count products,
+between two systems with incoming data. In this case, we are comparing
+the ingested products on the ESB between legacy and enterprise.
+A file from the legacy system is is downloaded via GoogleDrive and 
+the enterprise file is created from querying the edpdb database. 
+Both files are CSV.
+
+Typical usage often looks like this::
+
+    python database_query.py
+    python compare_files.py
+
+Input
+==============
+* Dates for querying the database in the format MM-DD-YYYY
+* Name of datafile from legacy system
+
+
+Prerequisites
+==============
+* Connection to the current host: {username}@nco-lw-{username}.ncep.noaa.gov
+
+* Python 2.7 
+
+* Download legacy file from GoogleDrive: 
+  https://drive.google.com/open?id=1dXkpZ4LxmS_6Sah7GheAnwAZmj7727Fp
+
+* Download AWDS file from GoogleDrive: 
+  https://drive.google.com/open?id=1NP6d3GnNdw4UoWF7-aJlSy8saKwE9sBW
+
+* Install module psycopg2 
+  http://initd.org/psycopg/
+
+* Other modules needed: csv, datetime, re, and time
+
+Output
+-------------
+1. Latency.csv
+2. LegacyProductsNotInEnterprise.csv
+

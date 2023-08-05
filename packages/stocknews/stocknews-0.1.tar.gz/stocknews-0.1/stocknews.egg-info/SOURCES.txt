@@ -1,0 +1,9 @@
+README.md
+setup.py
+stocknews/__init__.py
+stocknews/fetch.py
+stocknews.egg-info/PKG-INFO
+stocknews.egg-info/SOURCES.txt
+stocknews.egg-info/dependency_links.txt
+stocknews.egg-info/not-zip-safe
+stocknews.egg-info/top_level.txt

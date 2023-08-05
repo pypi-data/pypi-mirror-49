@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ezpg"
+version = "0.1.1-beta"
+description = ""
+authors = ["Matt Chapman <Matt@NinjitsuWeb.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+psycopg2-binary = "^2.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

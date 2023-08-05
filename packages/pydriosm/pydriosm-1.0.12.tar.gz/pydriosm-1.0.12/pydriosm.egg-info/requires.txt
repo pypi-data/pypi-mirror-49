@@ -1,0 +1,17 @@
+Fiona
+fuzzywuzzy
+gdal
+geopandas
+humanfriendly
+more-itertools
+numpy
+pandas
+psycopg2
+pyhelpers
+pyshp
+python-Levenshtein
+python-rapidjson
+requests
+shapely
+sqlalchemy
+sqlalchemy-utils

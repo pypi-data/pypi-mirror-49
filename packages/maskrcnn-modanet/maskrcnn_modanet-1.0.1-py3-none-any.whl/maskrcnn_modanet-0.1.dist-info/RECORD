@@ -1,0 +1,16 @@
+maskrcnn_modanet/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+maskrcnn_modanet/arrange_annotations.py,sha256=hLFa01BTb9K8_FHx8lEG2Lx52iiKA9UQe8aCKL3fSO4,6122
+maskrcnn_modanet/arrange_images.py,sha256=8hJDH0T8m3xAaaAle7MbeniBzF9RuNjknhGAV-wz6_I,3486
+maskrcnn_modanet/evaluatemodel.py,sha256=dwcPWNbkm0NlSEzHa_44Yvp454zUGHVhBQ-LX63VSZs,954
+maskrcnn_modanet/fix_annotations.py,sha256=FdsLj4KJ1WGJCp47Sts51_7yeoyw7hnd8mGvJDxe_kw,28992
+maskrcnn_modanet/instagram_impl.py,sha256=6hrgx3EBLm-0P5Poi-PpfFH2Wku_nctTFLfHYKFbepM,24568
+maskrcnn_modanet/processimages.py,sha256=I5ytOyumucCfUwP-Ul_l0EScrqCDiPa25kJhTr7gDnk,14473
+maskrcnn_modanet/viewannotations.py,sha256=zRogQ5vyhOb2fSTTGoUx9TVL56PN58W4pdow8VmmeDQ,1373
+maskrcnn_modanet/viewimages.py,sha256=Kll36v77LbHrmnaeGN_-AV7moSND4pRlZQ-jrwvUTFk,5328
+maskrcnn_modanet/viewimagescoco.py,sha256=qmFoN6PpmSXJ5eVHH_J2E2S30DomTC30cBFh9YaADio,9490
+maskrcnn_modanet-0.1.dist-info/LICENSE,sha256=UIp30ue1HZit7tMmSK0SS3swJBqOcLLnLJn5LY5YdNE,1036
+maskrcnn_modanet-0.1.dist-info/METADATA,sha256=i09KRPEhvk2HdW_55fqpdbFMJqbXHqZMl1Hc45t0jGg,6424
+maskrcnn_modanet-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+maskrcnn_modanet-0.1.dist-info/entry_points.txt,sha256=GRUm6FOHM1lpMcyFyympz_bvDnscWOgQFV2hvW2A_hg,69
+maskrcnn_modanet-0.1.dist-info/top_level.txt,sha256=Ceb8XzOH2syOp9IW2jGM_0LpmVMi6zwrDBSVFQUDbmQ,17
+maskrcnn_modanet-0.1.dist-info/RECORD,,

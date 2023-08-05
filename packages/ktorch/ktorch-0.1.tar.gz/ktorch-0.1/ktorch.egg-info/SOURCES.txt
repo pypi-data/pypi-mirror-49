@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+ktorch.egg-info/PKG-INFO
+ktorch.egg-info/SOURCES.txt
+ktorch.egg-info/dependency_links.txt
+ktorch.egg-info/requires.txt
+ktorch.egg-info/top_level.txt

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ktorch
+Version: 0.1
+Summary: A repository providing a Keras-like interface for training and predicting with PyTorch networks.
+Home-page: https://github.com/sallamander/ktorch
+Author: Sean Sall
+Author-email: ssall@alumni.nd.edu
+License: MIT
+Download-URL: https://github.com/sallamander/ktorch/archive/v0.1-alpha.tar.gz
+Description: KTorch aims to provide a high level set of APIs for model training and evaluation using PyTorch networks. Its goal is to provide as similar of an API as possible to Keras Model class, including the ease of specifying metrics, callbacks, etc. to track during training.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: tests

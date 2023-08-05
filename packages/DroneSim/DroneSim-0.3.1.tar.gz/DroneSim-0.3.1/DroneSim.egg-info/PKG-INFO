@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: DroneSim
+Version: 0.3.1
+Summary: Yet Another Python API for SJTU Drone Contest.
+Home-page: UNKNOWN
+Author: DUT Hi-AI Lab
+Maintainer: ['YiChen Yuan', 'Feilong Wang', 'Bohan Tong', 'Tianyu Wen', 'Yingping Li']
+License: MIT License
+Description: UNKNOWN
+Platform: all
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

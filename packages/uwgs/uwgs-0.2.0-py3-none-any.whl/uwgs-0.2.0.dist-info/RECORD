@@ -1,0 +1,11 @@
+uwgs/__init__.py,sha256=pHTby1x3GsngOklT2cXSESiYR-0eNGAOPajKOFLkEMo,48
+uwgs/client.py,sha256=qEsNe4423y-x0WTvD8EGLkyDoxY-9NX2xjdwjZNtbwc,4426
+uwgs/group.py,sha256=TyYw_tjU5_WIevwzDyLHUsUV2gUk2cobRjewvxwyKes,782
+uwgs/membership.py,sha256=1Q8V6aaIBDSFD473FF8RJfLoldzTPYhk5-fIENzruJo,4269
+uwgs/search.py,sha256=NkPhkbECXh0akYAfoVPFqke51Zk-ccl30XIGgQjGouY,328
+uwgs/types.py,sha256=f7CEFTVd9TwHC34wDUhpBBZQH73-ykoK93XvZgJivv4,967
+uwgs-0.2.0.dist-info/LICENSE,sha256=eJiSHVInRt3tWE43tXM1qMfz5mt3KePNKPbpoNCmEHI,1531
+uwgs-0.2.0.dist-info/METADATA,sha256=5wj4_HZpkRbWolLOhgeIZjqU3Gi-w-v0vWfA9EwGAP8,1682
+uwgs-0.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+uwgs-0.2.0.dist-info/top_level.txt,sha256=ZKnwxBZwQBF3YG4ADfNVDlatxyJVJ9XIG8GHbq9oYto,5
+uwgs-0.2.0.dist-info/RECORD,,

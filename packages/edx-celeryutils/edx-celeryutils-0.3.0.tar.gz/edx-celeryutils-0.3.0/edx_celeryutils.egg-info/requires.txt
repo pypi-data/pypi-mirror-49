@@ -1,0 +1,6 @@
+Django<2.0,>=1.8
+celery<4.0,>=3.1.25
+future
+django-celery
+django-model-utils==3.0.0
+jsonfield

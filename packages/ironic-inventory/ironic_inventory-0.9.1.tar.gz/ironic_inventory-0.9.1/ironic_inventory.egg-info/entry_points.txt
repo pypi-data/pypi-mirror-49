@@ -1,0 +1,3 @@
+[console_scripts]
+ironic_inventory = ironic_importer.inventory:main
+

@@ -1,0 +1,10 @@
+deletion_side_effects/__init__.py,sha256=jsVF_ccHw3c0gkAkmzmGTnZzybslhX6UVgOQmD1FSJI,251
+deletion_side_effects/apps.py,sha256=tjzZztCoxJSbzrblnjauPXTTuCtlFB1Za5_ahqpR1Mc,171
+deletion_side_effects/deletion_side_effects.py,sha256=M0CImlP2-SegOIWymFV-a2RVgsVjPoITwY7FsXKCnZ0,4940
+deletion_side_effects/version.py,sha256=EC4J1WCRNbur19qU-_rvaR6FXNDwZwpfyqCichJKmVQ,23
+deletion_side_effects/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deletion_side_effects/tests/test_deletion_side_effects.py,sha256=m6w-BtpaQXpX5NdsTkDdDvQypeEyUn9LNhbI-fDe-Nw,6518
+django_deletion_side_effects-1.2.0.dist-info/METADATA,sha256=ZnL41CZdYyXhMw1gU3XUZZ3rCRA9ovBYuKDzEBIt6Rc,2047
+django_deletion_side_effects-1.2.0.dist-info/RECORD,,
+django_deletion_side_effects-1.2.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_deletion_side_effects-1.2.0.dist-info/top_level.txt,sha256=40cgMfzgqW53a6I6F6JobELm4MQRP1jtaBmXWrrdQ1o,22

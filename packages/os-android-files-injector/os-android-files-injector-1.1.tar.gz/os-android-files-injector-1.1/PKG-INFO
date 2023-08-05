@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: os-android-files-injector
+Version: 1.1
+Summary: Will inject strings.xml, google-services.json, logo.png, assets and more files into an android app programmatically (dynamically)
+Home-page: https://github.com/osfunapps/os-android-files-injector-py
+Author: Oz Shabat
+Author-email: osfunapps@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: python,osfunapps,injector,android,files,strings,logo,assets
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

@@ -1,0 +1,8 @@
+README.md
+setup.py
+natlibpy/__init__.py
+natlibpy/factory.py
+natlibpy.egg-info/PKG-INFO
+natlibpy.egg-info/SOURCES.txt
+natlibpy.egg-info/dependency_links.txt
+natlibpy.egg-info/top_level.txt

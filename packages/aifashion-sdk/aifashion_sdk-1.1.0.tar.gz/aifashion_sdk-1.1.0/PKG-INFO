@@ -1,0 +1,209 @@
+Metadata-Version: 2.1
+Name: aifashion_sdk
+Version: 1.1.0
+Summary: AIFashion® Python SDK
+Home-page: UNKNOWN
+Author: Sky Zhang
+Author-email: sky.atomse@gmail.com
+Maintainer: Sky Zhang
+Maintainer-email: sky.atomse@gmail.com
+License: MIT License
+Description: # AIFashion python sdk
+        
+        [AF Open API](https://developer.aifashion.com)
+        
+        
+        本项目是AIFashion® HTTP API的一个封装，旨在为开发者提供简洁高效的SDK。
+        该SDK可以自动完成身份认证、访问令牌获取、令牌自动更新，并提供各个功能的接口。
+        
+        
+        
+        ## ID 与 Secret
+        
+        
+        您需要首先访问AIFashion®的[控制面板](https://console.aifashion.com)，注册并登陆，
+        创建一个合适的应用并获取应用的ID和Secret
+        
+        
+        
+        ## 安装
+        
+        
+        您可以通过pip指令完成安装
+        
+        
+        `pip install aifashion_sdk`
+        
+        
+        ## 使用
+        
+        通过python调用aifashion包，给定 ID 和 Scret 即可使用
+        
+        ```python
+        import aifashion
+        
+        client_id = 'XXXXX'
+        client_secret = 'YYYYY'
+        af = aifashion.AIFashionFunctions(client_id=client_id, client_secret=client_secret)
+        
+        ```
+        
+        或者您可以保存在yaml文件中，并通过`client_filename`参数传递文件名
+        
+        ```yaml
+        client_id: XXXXX
+        client_secret: YYYYY
+        ```
+        
+        
+        ```python
+        import aifashion
+        
+        client_filename = 'ZZZZ.yml'
+        af = aifashion.AIFashionFunctions(client_filename=client_filename)
+        
+        ```
+        
+        
+        接下来您可以调用相应的函数获取识别的结果
+        
+        
+        
+        ```python
+        # if image_url is given
+        image_url = 'some url here'
+        af.a_function(image_url=image_url)
+        
+        # if image_filename is given
+        image_filename = 'some filename here'
+        af.a_function(image_fname=image_filename)
+        
+        # if image_base64 string is given
+        image_base64 = 'some base64 here'
+        af.a_function(image_base64=image_base64)
+        ```
+        
+        例如：
+        
+        ```python
+        >>> af.fahsion_tagging(image_url='https://images.aifashion.com/01/0f/c7/010fc7622b1b75f7d580137636f25d88.jpg')
+        {'image': {'height': 640, 'id': '010fc7622b1b75f7d580137636f25d88', 'url': 'https://images.aifashion.com/01/0f/c7/010fc7622b1b75f7d580137636f25d88.jpg', 'width': 640}, 'object': {'category': '箱包', 'category_id': 501, 'confidence': 0.9646803140640259, 'region': {'x1': 0.07128814697265624, 'x2': 0.9111869812011719, 'y1': 0.041831283569335936, 'y2': 0.9469302368164062}}, 'request_id': '855be4d7-7896-4428-bcf1-507a89a835c5#359895', 'tags': [{'key': '风格', 'values': [{'confidence': 0.26829038772796976, 'value': '韩版'}]}, {'key': '款式', 'values': [{'confidence': 0.7964576377930703, 'value': '单肩包'}]}, {'key': '大小', 'values': [{'confidence': 0.5306223626645841, 'value': '小'}]}, {'key': '图案', 'values': [{'confidence': 0.44190941484801455, 'value': '纯色'}]}, {'key': '适用场景', 'values': [{'confidence': 0.959326524265762, 'value': '休闲'}]}, {'key': '闭合方式', 'values': [{'confidence': 0.6383202888420646, 'value': '拉链'}]}, {'key': '形状', 'values': [{'confidence': 0.44122126961424496, 'value': '横款方形'}]}, {'key': '性别', 'values': [{'confidence': 1.0, 'value': '通用'}]}, {'key': '二级类别', 'values': [{'confidence': 0.81, 'value': '挎包'}]}]}
+        
+        >>> af.color_analysis(image_fname="dress.jpeg")
+        {'colors': [{'name_en': 'AntiqueWhite', 'name_zh': '浅橙色', 'percentage': 0.1646513949747629, 'rgb': '#F6EBDD'}, {'name_en': 'DimGray', 'name_zh': '黑灰色', 'percentage': 0.388586906280622, 'rgb': '#5B575A'}, {'name_en': 'Salmon', 'name_zh': '西瓜红', 'percentage': 0.16732301662136928, 'rgb': '#E8696D'}, {'name_en': 'DarkSalmon', 'name_zh': '西瓜红', 'percentage': 0.23548634607206909, 'rgb': '#EF9E97'}, {'name_en': 'SaddleBrown', 'name_zh': '深棕色', 'percentage': 0.04395233605117681, 'rgb': '#5B231C'}], 'image': {'height': 640, 'id': '010fc7622b1b75f7d580137636f25d88', 'url': 'https://images.aifashion.com/01/0f/c7/010fc7622b1b75f7d580137636f25d88.jpg', 'width': 640}, 'object': {'category': '短裙', 'category_id': 301, 'confidence': 0.8859304785728455, 'region': {'x1': 0.06238516420125961, 'x2': 0.9350795149803162, 'y1': 0.019997864961624146, 'y2': 0.9653385281562805}}, 'request_id': '855be4d7-7896-4428-bcf1-507a89a835c5#359896'}
+        
+        >>> af.clothes_detect(image_fname="red_dress.jpeg")
+        {'image': {'height': 541, 'id': '2755c68dfc1b44301219bc9f399b3148', 'url': 'https://images.aifashion.com/27/55/c6/2755c68dfc1b44301219bc9f399b3148.jpg', 'width': 500}, 'objects': [{'category': '连衣裙', 'category_id': 302, 'confidence': 0.9999842643737793, 'region': {'x1': 0.15614866256713866, 'x2': 0.8775624847412109, 'y1': 0.22497901348686994, 'y2': 0.9921972458030277}}], 'request_id': '5ec403e2-d5f1-4dc3-aa51-0109c6e43b56#363567'}
+        ```
+        
+        
+        
+        # AIFashion python sdk
+        
+        [AF Open API](https://developer.aifashion.com)
+        
+        This project is a wrap of url API provided by AIFashion company.
+        It can automatically process authorization, and renew token when it is expiring. 
+        All functions are provided as a function within a object, which is very convenient.
+        
+        
+        
+        ## ID & Secret
+        
+        
+        You need to visit [console](https://console.aifashion.com) to regist an account at first,
+        login and create application to get the ID & Secret. 
+        
+        
+        
+        ## Installation
+        
+        
+        You can use pip to install this sdk
+        
+        `pip install aifashion_sdk`
+        
+        
+        ## Usage
+        
+        Use AIFashion python sdk with
+        
+        ```python
+        import aifashion
+        
+        client_id = 'XXXXX'
+        client_secret = 'YYYYY'
+        af = aifashion.AIFashionFunctions(client_id=client_id, client_secret=client_secret)
+        
+        ```
+        
+        or you can store the ID & Secret in a yaml file
+        
+        
+        ```python
+        import aifashion
+        
+        client_filename = 'ZZZZ.yml'
+        af = aifashion.AIFashionFunctions(client_filename=client_filename)
+        
+        ```
+        
+        
+        Then you can call the functions inside af object, a typical calling is like this
+        
+        
+        ```python
+        # if image_url is given
+        image_url = 'some url here'
+        af.a_function(image_url=image_url)
+        
+        # if image_filename is given
+        image_filename = 'some filename here'
+        af.a_function(image_fname=image_filename)
+        
+        # if image_base64 string is given
+        image_base64 = 'some base64 here'
+        af.a_function(image_base64=image_base64)
+        ```
+        
+        e.g.
+        
+        ```python
+        >>> af.fahsion_tagging(image_url='https://images.aifashion.com/01/0f/c7/010fc7622b1b75f7d580137636f25d88.jpg')
+        {'image': {'height': 640, 'id': '010fc7622b1b75f7d580137636f25d88', 'url': 'https://images.aifashion.com/01/0f/c7/010fc7622b1b75f7d580137636f25d88.jpg', 'width': 640}, 'object': {'category': '箱包', 'category_id': 501, 'confidence': 0.9646803140640259, 'region': {'x1': 0.07128814697265624, 'x2': 0.9111869812011719, 'y1': 0.041831283569335936, 'y2': 0.9469302368164062}}, 'request_id': '855be4d7-7896-4428-bcf1-507a89a835c5#359895', 'tags': [{'key': '风格', 'values': [{'confidence': 0.26829038772796976, 'value': '韩版'}]}, {'key': '款式', 'values': [{'confidence': 0.7964576377930703, 'value': '单肩包'}]}, {'key': '大小', 'values': [{'confidence': 0.5306223626645841, 'value': '小'}]}, {'key': '图案', 'values': [{'confidence': 0.44190941484801455, 'value': '纯色'}]}, {'key': '适用场景', 'values': [{'confidence': 0.959326524265762, 'value': '休闲'}]}, {'key': '闭合方式', 'values': [{'confidence': 0.6383202888420646, 'value': '拉链'}]}, {'key': '形状', 'values': [{'confidence': 0.44122126961424496, 'value': '横款方形'}]}, {'key': '性别', 'values': [{'confidence': 1.0, 'value': '通用'}]}, {'key': '二级类别', 'values': [{'confidence': 0.81, 'value': '挎包'}]}]}
+        
+        >>> af.color_analysis(image_fname="dress.jpeg")
+        {'colors': [{'name_en': 'AntiqueWhite', 'name_zh': '浅橙色', 'percentage': 0.1646513949747629, 'rgb': '#F6EBDD'}, {'name_en': 'DimGray', 'name_zh': '黑灰色', 'percentage': 0.388586906280622, 'rgb': '#5B575A'}, {'name_en': 'Salmon', 'name_zh': '西瓜红', 'percentage': 0.16732301662136928, 'rgb': '#E8696D'}, {'name_en': 'DarkSalmon', 'name_zh': '西瓜红', 'percentage': 0.23548634607206909, 'rgb': '#EF9E97'}, {'name_en': 'SaddleBrown', 'name_zh': '深棕色', 'percentage': 0.04395233605117681, 'rgb': '#5B231C'}], 'image': {'height': 640, 'id': '010fc7622b1b75f7d580137636f25d88', 'url': 'https://images.aifashion.com/01/0f/c7/010fc7622b1b75f7d580137636f25d88.jpg', 'width': 640}, 'object': {'category': '短裙', 'category_id': 301, 'confidence': 0.8859304785728455, 'region': {'x1': 0.06238516420125961, 'x2': 0.9350795149803162, 'y1': 0.019997864961624146, 'y2': 0.9653385281562805}}, 'request_id': '855be4d7-7896-4428-bcf1-507a89a835c5#359896'}
+        
+        >>> af.clothes_detect(image_fname="red_dress.jpeg")
+        {'image': {'height': 541, 'id': '2755c68dfc1b44301219bc9f399b3148', 'url': 'https://images.aifashion.com/27/55/c6/2755c68dfc1b44301219bc9f399b3148.jpg', 'width': 500}, 'objects': [{'category': '连衣裙', 'category_id': 302, 'confidence': 0.9999842643737793, 'region': {'x1': 0.15614866256713866, 'x2': 0.8775624847412109, 'y1': 0.22497901348686994, 'y2': 0.9921972458030277}}], 'request_id': '5ec403e2-d5f1-4dc3-aa51-0109c6e43b56#363567'}
+        ```
+        
+        
+        
+        
+Platform: Linux
+Platform: Darwin
+Platform: Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Microsoft :: Windows :: Windows NT/2000
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: POSIX :: BSD :: NetBSD
+Classifier: Operating System :: POSIX :: BSD :: OpenBSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: SunOS/Solaris
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests

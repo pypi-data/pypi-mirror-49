@@ -1,0 +1,4 @@
+pseq
+gensim
+terminaltables
+click

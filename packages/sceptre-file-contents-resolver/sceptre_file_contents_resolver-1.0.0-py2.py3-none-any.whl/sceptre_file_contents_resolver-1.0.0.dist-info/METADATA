@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: sceptre-file-contents-resolver
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/sceptre/sceptre-file-contents-resolver
+Author: Sceptre
+Author-email: sceptre@cloudreach.com
+License: Apache2
+Keywords: sceptre,sceptre-resolver
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: packaging (==16.8)
+Provides-Extra: test
+Requires-Dist: pytest (>=3.2) ; extra == 'test'
+
+# File Contents Resolver
+
+Reads in the contents of a file.
+
+Syntax:
+
+```yaml
+parameters|sceptre_user_data:
+  <name>: !file_contents /path/to/file.txt
+```
+
+Example:
+
+```yaml
+sceptre_user_data:
+  iam_policy: !file_contents /path/to/policy.json
+```
+
+

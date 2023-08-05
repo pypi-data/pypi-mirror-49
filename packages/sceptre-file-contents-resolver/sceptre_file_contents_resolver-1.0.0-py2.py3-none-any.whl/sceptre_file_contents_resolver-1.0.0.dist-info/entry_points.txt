@@ -1,0 +1,3 @@
+[sceptre.resolvers]
+file_contents = resolver.file_contents:FileContents
+

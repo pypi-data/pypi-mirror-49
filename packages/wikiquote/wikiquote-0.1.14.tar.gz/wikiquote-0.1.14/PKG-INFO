@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: wikiquote
+Version: 0.1.14
+Summary: Retrieve quotes from any Wikiquote article.
+Home-page: https://github.com/federicotdn/wikiquote
+Author: Federico Tedin
+Author-email: federicotedin@gmail.com
+License: MIT
+Download-URL: https://github.com/federicotdn/wikiquote/archive/0.1.14.tar.gz
+Description: =========
+        wikiquote
+        =========
+        
+        The ``wikiquote`` Python 3 module allows you to search and retrieve quotes from any Wikiquote article, and also retrieve the quote of the day. Please keep in mind that due to Wikiquote's varying article layouts, some quotes may not be retrieved correctly.
+        
+        For more information, please visit the project's `GitHub repo <https://github.com/federicotdn/wikiquote>`_.
+        
+Keywords: quotes,wikiquote,python,api,qotd,quote,day
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities

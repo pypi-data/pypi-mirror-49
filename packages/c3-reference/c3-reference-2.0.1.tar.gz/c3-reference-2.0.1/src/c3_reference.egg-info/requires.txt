@@ -1,0 +1,8 @@
+attr
+automat
+click
+protobuf
+python-lzo
+
+[test]
+tox

@@ -1,0 +1,3 @@
+[console_scripts]
+swaggercheck = swaggercheck.__main__:main
+

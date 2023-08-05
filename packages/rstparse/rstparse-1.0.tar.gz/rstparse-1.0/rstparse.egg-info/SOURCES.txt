@@ -1,0 +1,7 @@
+README.md
+setup.py
+rstparse/__init__.py
+rstparse.egg-info/PKG-INFO
+rstparse.egg-info/SOURCES.txt
+rstparse.egg-info/dependency_links.txt
+rstparse.egg-info/top_level.txt

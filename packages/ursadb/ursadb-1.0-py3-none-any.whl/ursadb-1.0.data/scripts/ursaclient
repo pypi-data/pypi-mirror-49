@@ -1,0 +1,4 @@
+#!python
+
+from ursadb import ursaclient
+ursaclient.main()

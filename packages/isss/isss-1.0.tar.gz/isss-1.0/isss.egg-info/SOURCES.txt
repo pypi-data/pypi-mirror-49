@@ -1,0 +1,10 @@
+README.md
+isss-fw
+setup.py
+isss/__init__.py
+isss.egg-info/PKG-INFO
+isss.egg-info/SOURCES.txt
+isss.egg-info/dependency_links.txt
+isss.egg-info/top_level.txt
+isss/script/__init__.py
+isss/stubs/__init__.py

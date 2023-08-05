@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: pysga
+Version: 1.2.3
+Summary: Search Group Algorithm metaheuristic optimization method python adaptation
+Home-page: https://github.com/Ginklings/pysga
+Author: André Ginklings
+Author-email: andre.ginklings@gmail.com
+License: UNKNOWN
+Keywords: metaheuristic optimization algorithm
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Provides-Extra: full
+Requires-Dist: numpy
+Provides-Extra: full
+Requires-Dist: docutils; extra == 'full'
+Requires-Dist: kivy; extra == 'full'
+Requires-Dist: kivy-deps.angle (==0.1.9); extra == 'full'
+Requires-Dist: kivy-deps.glew (==0.1.12); extra == 'full'
+Requires-Dist: kivy-deps.gstreamer (==0.1.17); extra == 'full'
+Requires-Dist: kivy-deps.sdl2 (==0.1.22); extra == 'full'
+Requires-Dist: pygments; extra == 'full'
+Requires-Dist: pypiwin32; extra == 'full'
+
+UNKNOWN
+
+

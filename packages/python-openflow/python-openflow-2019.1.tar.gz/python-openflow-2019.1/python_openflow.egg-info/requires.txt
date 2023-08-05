@@ -1,0 +1,6 @@
+
+[dev]
+coverage
+pip-tools
+tox
+yala

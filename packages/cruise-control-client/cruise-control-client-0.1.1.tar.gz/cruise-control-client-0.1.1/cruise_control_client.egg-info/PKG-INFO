@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cruise-control-client
+Version: 0.1.1
+Summary: A Python client for cruise-control
+Home-page: https://github.com/linkedin/cruise-control
+Author: mgrubent
+Author-email: mgrubentrejo@linkedin.com
+License: Copyright 2019 LinkedIn Corp. Licensed under the BSD 2-Clause License (the "License"). See License in the project root for license information.
+Description: UNKNOWN
+Platform: UNKNOWN

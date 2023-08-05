@@ -1,0 +1,9 @@
+news_extract/__init__.py,sha256=lAkEYkIO209_J941B4TC1G8vx2IouwXaCpoFuaQeOjU,53
+news_extract/news_extract.py,sha256=5KPWrYd69WhqbkEDjYXOPZSZlAJRJwxYnjEj70oPLKw,12842
+news_extract/striprtf2.py,sha256=SefCYazIGIqBBFkCnt2DxPwgQkdFy5Ef0FQykW7yxZI,6300
+news_extract-1.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+news_extract-1.0.0.dist-info/METADATA,sha256=P6s2alXotASN1TUMnHQ_H2dqlbh7p3gnQXQpeY99nII,372
+news_extract-1.0.0.dist-info/RECORD,,
+news_extract-1.0.0.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+news_extract-1.0.0.dist-info/metadata.json,sha256=1IW7CVsnkACqJGUaonBt4lOQ4kzZCvH5oBR9AuDu9Ns,586
+news_extract-1.0.0.dist-info/top_level.txt,sha256=FJbz7MW_EHsdmDSX_LnjHtPr43wHo41-0N9Bbic9BVg,13

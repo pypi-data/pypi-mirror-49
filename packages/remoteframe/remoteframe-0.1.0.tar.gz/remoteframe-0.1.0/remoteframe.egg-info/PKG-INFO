@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: remoteframe
+Version: 0.1.0
+Summary: Wrappers for remote exec, local exec.
+Home-page: http://vixal.net
+Author: James M
+Author-email: jimferd@gmail.com
+License: UNKNOWN
+Description: # Remotelib
+        ---
+        ---
+        
+        Various wrappers for subprocess, ssh, fabric.
+        
+        ---
+        
+        ## REX: Remote execute:
+        REX(
+        	target,
+        	user = None,
+        	pass_ = None,
+        	port = None,
+        	audit_file = None,
+        	silent = True
+        )
+        
+        ### REX.rex("cmd", audit=True, bg=False, logfilename="deploy1.log")
+        Remotely execute the command specified by cmd. If bg=True, runs with nohup
+        and returns immediately. If audit = True, writes the stdout of the command
+        to the specified logfilename on the remote server.
+        
+        #### REX.rex_push(local_path, remote_path): scp from the user over the active REX connection
+        
+        #### REX.rex_pull(remote_path, local_path): scp a file towards the user over an active REX connection
+        
+        
+        
+        ## SSHTunnel(object)
+        
+        ```python
+        import import ssh_tunnel
+        tun = ssh_tunnel.SSHTunnel(
+                <remote-site> [local_port(4444), remote_port(3306), 
+                remote interface("localhost"), remote_user=<current_user>, spin=(True,False),
+                foreground=(True,False), immediate=(True, False)
+                )
+        ```
+        ### RemoteDB(SSHTunnel):
+         -- Execute MySQL queries over a forwarded SSH connection
+        ```pytho
+        remote_db = ssh_tunnel.RemoteDB(
+            db_hostname, db_user=<current_user>, db_pass=<None>, db_port=4444, database=<None>, **SSHTunnel(*, **)
+            )
+        ```
+        ### Tunnels(object):
+         -- Registry for SSH Tunnels; also allows iteration (for example, to kill the connection.) Allows iteration.
+         -- To register a tunnel, use the register()
+         
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

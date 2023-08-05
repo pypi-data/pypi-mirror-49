@@ -1,0 +1,5 @@
+include README.md
+include TIStan/tests/sinusoid_data_20161004.dill
+include TIStan/tests/sinusoids.stan
+include LICENSE
+include COPYING.LESSER

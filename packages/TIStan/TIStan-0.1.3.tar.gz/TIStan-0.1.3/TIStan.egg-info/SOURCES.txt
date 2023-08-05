@@ -1,0 +1,15 @@
+COPYING.LESSER
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+TIStan/__init__.py
+TIStan.egg-info/PKG-INFO
+TIStan.egg-info/SOURCES.txt
+TIStan.egg-info/dependency_links.txt
+TIStan.egg-info/requires.txt
+TIStan.egg-info/top_level.txt
+TIStan/tests/__init__.py
+TIStan/tests/sinusoid_data_20161004.dill
+TIStan/tests/sinusoids.stan
+TIStan/tests/tests.py

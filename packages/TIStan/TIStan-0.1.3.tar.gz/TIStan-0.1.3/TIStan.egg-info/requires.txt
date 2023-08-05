@@ -1,0 +1,4 @@
+pystan
+numpy
+matplotlib
+dill

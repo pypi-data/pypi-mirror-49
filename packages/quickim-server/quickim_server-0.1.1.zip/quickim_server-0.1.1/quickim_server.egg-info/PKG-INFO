@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: quickim-server
+Version: 0.1.1
+Summary: QuickIM server application
+Home-page: https://github.com/Simper007/quickIM
+Author: Artem Naumov
+Author-email: simperu@yandex.ru
+License: UNKNOWN
+Description: Server for QuickIM messenger
+Platform: UNKNOWN
+Requires-Python: >=3.5

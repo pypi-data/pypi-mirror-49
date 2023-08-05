@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: oodi
+Version: 1.0
+Summary: python tools to manage music libraries and files
+Home-page: https://github.com/hile/oodi/
+Author: Ilkka Tuohela
+Author-email: hile@iki.fi
+License: PSF
+Keywords: music library tagging transcoding management soundforest
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >3.6.0
+Requires-Dist: filemagic
+Requires-Dist: lxml
+Requires-Dist: mutagen
+Requires-Dist: requests
+Requires-Dist: ruamel.yaml
+Requires-Dist: pillow
+Requires-Dist: systematic
+
+UNKNOWN
+
+

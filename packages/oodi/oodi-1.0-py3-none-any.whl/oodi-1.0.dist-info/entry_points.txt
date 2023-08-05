@@ -1,0 +1,3 @@
+[console_scripts]
+oodi = oodi.bin.oodi:main
+

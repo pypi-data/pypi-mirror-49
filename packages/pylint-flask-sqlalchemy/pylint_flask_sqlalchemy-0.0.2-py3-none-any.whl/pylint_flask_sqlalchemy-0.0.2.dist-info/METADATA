@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: pylint-flask-sqlalchemy
+Version: 0.0.2
+Summary: A Pylint plugin for improving code analysis when editing code using Flask-SQLAlchemy
+Home-page: https://gitlab.anybox.cloud/rboyer/pylint_flask_sqlalchemy
+Author: Anybox
+Author-email: rboyer@anybox.fr
+Maintainer: Renaud Boyer
+Maintainer-email: rboyer@anybox.fr
+License: GPL
+Project-URL: Bug Tracker, https://gitlab.anybox.cloud/rboyer/pylint_flask_sqlalchemy/issues
+Project-URL: Documentation, https://gitlab.anybox.cloud/rboyer/pylint_flask_sqlalchemy
+Project-URL: Source Code, https://gitlab.anybox.cloud/rboyer/pylint_flask_sqlalchemy
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Typing :: Typed
+Requires-Python: >= 3.5
+Description-Content-Type: text/markdown
+Requires-Dist: pylint
+Requires-Dist: Flask-SQLAlchemy (>=2)
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: gitchangelog ; extra == 'dev'
+Requires-Dist: pystache ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+
+# pylint_flask_sqlalchemy
+
+**Beware: this is still a WIP.**
+
+## About
+
+pylint_flask_sqlalchemy is [Pylint](https://www.pylint.org/) plugin for improving code
+analysis when editing code using
+[Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com).
+
+## Usage
+
+Using a simple flask app
+
+```python
+# app.py
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
+db = SQLAlchemy(app)
+
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+
+    def __repr__(self):
+        return '<User %r>' % self.username
+```
+
+Before pylint_flask_sqlalchemy :
+
+```sh
+pylint app.py
+```
+
+After :
+
+```sh
+pylint --load-plugins pylint_flask_sqlalchemy app.py
+```
+
+
+## Installation 
+
+```
+pip install pylint_flask_sqlalchemy
+```
+
+## Roadmap
+
+* [ ] write tests
+* [ ] silence too-few-public-methods for models
+
+# Changelog
+
+## Current version
+
+### New
+
+* First draft of the plugin.
+
+### Fixes
+
+* Packaging.
+
+
+
+

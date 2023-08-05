@@ -1,0 +1,12 @@
+README.md
+setup.py
+uwgs/__init__.py
+uwgs/client.py
+uwgs/group.py
+uwgs/membership.py
+uwgs/search.py
+uwgs/types.py
+uwgs.egg-info/PKG-INFO
+uwgs.egg-info/SOURCES.txt
+uwgs.egg-info/dependency_links.txt
+uwgs.egg-info/top_level.txt

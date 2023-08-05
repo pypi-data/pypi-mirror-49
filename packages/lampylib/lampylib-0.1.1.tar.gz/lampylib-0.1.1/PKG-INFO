@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: lampylib
+Version: 0.1.1
+Summary: Launchpad Mini python library
+Home-page: https://github.com/pkulev/lampy
+License: MIT
+Keywords: launchpad,midi
+Author: Pavel Kulyov
+Author-email: kulyov.pavel@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: python-rtmidi
+Project-URL: Repository, https://github.com/pkulev/lampy
+Description-Content-Type: text/x-rst
+
+|PyPI| |Build Status| |Coverage|
+
+=============================================================
+Lampy: **La**\ unchpad **M**\ ini **p**\ ython librar\ **y**
+=============================================================
+
+.. image:: https://github.com/pkulev/lampy/raw/master/launchpad.jpg
+
+Requirements
+============
+
+* Python >= 3.7
+* python-rtmidi
+* TODO
+* TODO
+
+Installation
+============
+
+For usage only
+--------------
+
+Unfortunately name **lampy** was already in use in PyPI.
+
+.. code-block:: console
+
+   # via pipsi
+   $ pipsi install lampylib
+
+   # via pip
+   $ pip install --user lampylib
+
+For development
+---------------
+
+You need `poetry <https://poetry.eustace.io/>`__ installed.
+(It's great tool! Check it out, please.)
+
+.. code-block:: console
+
+   $ poetry install --develop .
+
+Testing
+=======
+
+* TODO
+
+Documentation
+=============
+
+* TODO
+
+.. |Build Status| image:: https://travis-ci.org/pkulev/lampy.svg?branch=master
+   :target: https://travis-ci.org/pkulev/lampy
+.. |Coverage| image:: https://codecov.io/gh/pkulev/lampy/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/pkulev/lampy
+.. |PyPI| image:: https://badge.fury.io/py/lampylib.svg
+    :target: https://badge.fury.io/py/lampylib
+

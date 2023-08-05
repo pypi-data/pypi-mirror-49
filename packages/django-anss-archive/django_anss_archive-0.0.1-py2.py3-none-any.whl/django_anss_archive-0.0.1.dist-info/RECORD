@@ -1,0 +1,12 @@
+anss/__init__.py,sha256=4uX31MkG-PlscciuZZ9ZwkpEIL1ZespzFoVW75mtFuY,293
+anss/admin.py,sha256=5hf5KJyTxLrQu1Gzf1HCcqc2gfObQ6AEbAWltGQA7mo,4497
+anss/apps.py,sha256=_p7Scjwk0TZu4N0kiJt4ioM3ZWopL8nBpB3oz4dgnNE,137
+anss/models.py,sha256=EQvCE2c0GSpgMMppjbjNgCTS18W2Q4fcWXXsmC_j2dA,11368
+anss/tests.py,sha256=GgOVNrOKEsX3CweM7GyOkc8ZQOTQQbgzJBARXcS-QqA,180
+anss/urls.py,sha256=gwF7tIRFa9QYhfpr-B9l1smsSFU5lTKpE2OHkhFzR40,192
+anss/views.py,sha256=Ua6XqzO_ha4-qUz6DNfCOkiFKhxeP8VGUSuwjYiTjQQ,991
+django_anss_archive-0.0.1.dist-info/LICENSE,sha256=uD2lQodCfJV84rHd6eTMLPW7zw7O_QykjhNvxwIu9YU,1084
+django_anss_archive-0.0.1.dist-info/METADATA,sha256=nOHt3DNZ-Hi_ai4xnQgxERnr0nB5VgmTCxgxuyGsNOw,2057
+django_anss_archive-0.0.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+django_anss_archive-0.0.1.dist-info/top_level.txt,sha256=ANV1X6_gevwlA6OkfR_W5eq20x2EE-yUIiTAJLccPZ8,5
+django_anss_archive-0.0.1.dist-info/RECORD,,

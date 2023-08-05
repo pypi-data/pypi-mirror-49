@@ -1,0 +1,6 @@
+README.md
+setup.py
+aws_event_check.egg-info/PKG-INFO
+aws_event_check.egg-info/SOURCES.txt
+aws_event_check.egg-info/dependency_links.txt
+aws_event_check.egg-info/top_level.txt

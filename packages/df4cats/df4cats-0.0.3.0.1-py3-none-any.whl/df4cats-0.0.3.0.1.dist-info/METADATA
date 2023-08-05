@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: df4cats
+Version: 0.0.3.0.1
+Summary: DataFrames for cats
+Home-page: UNKNOWN
+Author: Francesco Cardinale
+Author-email: testadicardi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pandas
+Requires-Dist: numpy
+Provides-Extra: tests
+Requires-Dist: pytest (==4.3.0) ; extra == 'tests'
+Requires-Dist: pytest-cov (==2.6.1) ; extra == 'tests'
+
+
+DF4cats is a small package meant to facilitate Machine Learning pipelines that include
+pandas dataframes with categorical variables.
+
+

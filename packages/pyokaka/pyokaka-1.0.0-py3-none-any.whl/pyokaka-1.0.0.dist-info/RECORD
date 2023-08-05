@@ -1,0 +1,12 @@
+pyokaka/__init__.py,sha256=ElVWVge2BG3ovLJpG7-8Af6Q6gYPwJ-vWFsuLn1N5-k,21
+pyokaka/transtable.json,sha256=sN33vax_Ig1msmYZ1yGOwJHDTDBEPNmknfdJReHObP4,2284
+pyokaka/okaka/__init__.py,sha256=O3-fhQm12SBO8brWcnTK3x-ST43U3_-UBqe1x64AZ-I,90
+pyokaka/okaka/__main__.py,sha256=HMqkfJiZWWdmyWb8cgdPTKc_zlAusvzalFP5EcM-i7k,1343
+pyokaka/okaka/convert.py,sha256=SKp0Mes9hVe1TRvOKRpHReu1YSIdI0N69eexRm3bVog,1745
+pyokaka/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyokaka/util/priority_dict.py,sha256=fW78-Br2gDFPKCkjxNNgRQlC0xJfmALs_x7443YDIss,2301
+pyokaka-1.0.0.dist-info/LICENSE,sha256=xIVv5BaqLEO9-1nHhI3a5lIXo3uq5SfBxSMmjnxDv5E,1089
+pyokaka-1.0.0.dist-info/METADATA,sha256=reTloXh0MJ_RfRbZPi2wDB9qog2WmXdJf8poU_Pr3ek,3818
+pyokaka-1.0.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pyokaka-1.0.0.dist-info/top_level.txt,sha256=PWy6eZrFHyTE8F_Qx2M83iaJuMUtWb1rUdeCxEHyMko,8
+pyokaka-1.0.0.dist-info/RECORD,,

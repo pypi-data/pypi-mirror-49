@@ -1,0 +1,9 @@
+kisters/water/hydraulic_network/client/__init__.py,sha256=mJUr-JMZtN40exxs_36nQ7f42oGyqbpniEeoyAXk4tY,117
+kisters/water/hydraulic_network/client/auth.py,sha256=aGaNnpE6rF_xGaqPTwhWdm-JDEt4Dm1tv-PBBS6-v9A,3953
+kisters/water/hydraulic_network/client/clients.py,sha256=cypzjvuOPFRPKV-B0nDAEgbtO-dNdAgiaej2ARrHzuE,2437
+kisters/water/hydraulic_network/client/network.py,sha256=W5C_NChKlNMuzWEIt5XqsiqjeHagEtoqcOTtyYZuEQU,7834
+kisters.water.hydraulic_network.client-0.0.1.dist-info/LICENSE,sha256=4MkSMuUmaIPLG0gUMj17noVLIfEZ4cyFa9TgVTOQAAc,26979
+kisters.water.hydraulic_network.client-0.0.1.dist-info/METADATA,sha256=kKlsKTrqAzGeapTtLhdtJCsZUhE06qtUAa9zHLT6VU4,1457
+kisters.water.hydraulic_network.client-0.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+kisters.water.hydraulic_network.client-0.0.1.dist-info/top_level.txt,sha256=GBdmGz2WHTLUJ5yO7B4FTyMCbzITLr2QtsI4X1xTSEs,8
+kisters.water.hydraulic_network.client-0.0.1.dist-info/RECORD,,

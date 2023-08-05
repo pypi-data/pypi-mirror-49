@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+g2pC.egg-info/PKG-INFO
+g2pC.egg-info/SOURCES.txt
+g2pC.egg-info/dependency_links.txt
+g2pC.egg-info/requires.txt
+g2pC.egg-info/top_level.txt
+g2pc/__init__.py
+g2pc/cedict.pkl
+g2pc/crf100.bin
+g2pc/g2pc.py

@@ -1,0 +1,2 @@
+pkuseg>=0.0.22
+sklearn_crfsuite>=0.3.6

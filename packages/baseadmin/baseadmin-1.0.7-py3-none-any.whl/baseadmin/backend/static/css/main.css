@@ -1,0 +1,36 @@
+body {
+  margin:  0px;
+  padding: 0px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  padding: 10px;
+}
+
+DIV.notification.vue-notification {
+  font-size: 18px;
+}
+
+/* fix for addional padding on datetime picker */
+
+DIV.input-group.date {
+  padding-top: 0px;
+}
+
+fieldset {
+  border: 0px;
+}
+
+table.overview {
+  padding: 5px;
+}
+table.overview TH {
+  text-align: left;
+  padding: 5px;
+  background: #efefef;
+}
+table.overview TD {
+  padding: 5px;
+}

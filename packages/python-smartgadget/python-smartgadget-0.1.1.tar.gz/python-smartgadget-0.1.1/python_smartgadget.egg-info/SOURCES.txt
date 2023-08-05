@@ -1,0 +1,11 @@
+README.md
+setup.py
+python_smartgadget.egg-info/PKG-INFO
+python_smartgadget.egg-info/SOURCES.txt
+python_smartgadget.egg-info/dependency_links.txt
+python_smartgadget.egg-info/requires.txt
+python_smartgadget.egg-info/top_level.txt
+sensirionbt/__init__.py
+sensirionbt/connection.py
+sensirionbt/constants.py
+sensirionbt/smartgadget.py

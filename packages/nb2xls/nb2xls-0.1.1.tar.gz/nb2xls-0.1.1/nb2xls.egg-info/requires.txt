@@ -1,0 +1,12 @@
+nbconvert
+xlsxwriter
+beautifulsoup4
+pypng
+mistune
+pandas
+numpy
+
+[test]
+pytest
+testpath
+openpyxl

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: srv6-tracert
+Version: 0.0.5
+Summary: SRv6 compatible traceroute
+Home-page: https://github.com/vmag/srv6_tracert
+Author: Virginijus Magelinskas
+Author-email: virginijus@noia.network
+License: MIT
+Platform: any
+Requires-Python: >=3
+Requires-Dist: scapy
+Requires-Dist: prettytable
+Requires-Dist: ipwhois
+Requires-Dist: pyyaml
+
+SRv6 compatible traceroute (runs alongside ICMP traceroute). Also supports running from a config file, and several Scapy verbosity levels
+
+

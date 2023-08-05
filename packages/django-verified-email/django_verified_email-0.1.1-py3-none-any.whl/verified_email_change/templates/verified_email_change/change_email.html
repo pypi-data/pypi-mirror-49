@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans 'Change email' %}<h2>
+
+<p>{% trans 'Changing your email address will require confirming it again.' %}</p>
+
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="{% trans 'Submit' %}">
+</form>
+{% endblock %}

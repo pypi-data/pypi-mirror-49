@@ -1,0 +1,15 @@
+verified_email_change/__init__.py,sha256=jYDfTBrKA2791Jayxg2Q6ChvPkDUaMxiwHvSy2MD2zk,186
+verified_email_change/apps.py,sha256=y4ZNREPzRmjOkY2KSdIGPl6g_v_BoqDeBgAaYQH7EI8,115
+verified_email_change/forms.py,sha256=XGthpXobkDkRBwaX522UHe9YBsR-6iRLrNOh1wB9Q34,1065
+verified_email_change/signals.py,sha256=H8O6Th9UFMWgn4xbxI0wNnGqHt0o6ScgdGdjhM9-7gs,110
+verified_email_change/urls.py,sha256=HMAF2i91V84SWi73hBlLjRGJGpwV-nu6j9AIqjZQ8EU,331
+verified_email_change/utils.py,sha256=pjzrz7o3usmiSSxpjEf8BVwFNn5M03RACOTjK4xlX0A,471
+verified_email_change/views.py,sha256=EgGJNVcfMad2cFW4rv3CIkGwzJdOUmVbs-NVvIC3Vxk,3206
+verified_email_change/templates/verified_email_change/change_email.html,sha256=hCMPBXYoe-k7mHXkHPHOrqUK55uDYAUI4W5ZdNduRBA,317
+verified_email_change/templates/verified_email_change/change_email_confirm.html,sha256=ihBf_e_mIMSBI76x8upkPkCtMkg2Lesy5soj9JJJT8I,409
+verified_email_change/templates/verified_email_change/change_email_confirmation_email.html,sha256=ryDcJKN0I79oEqRzpebFqm8G2eMNXmbP0-PRUf_ISaA,293
+django_verified_email-0.1.1.dist-info/LICENSE,sha256=SMw4wrCWowfd93IoQszyq2m7YPlz6vX1NsL-7ttlgVY,1297
+django_verified_email-0.1.1.dist-info/METADATA,sha256=uoD26uMBnqx5n6NOetWT-QQ9lZraf4iwf5UVEiFdbT0,451
+django_verified_email-0.1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+django_verified_email-0.1.1.dist-info/top_level.txt,sha256=ACtQ6T7EPkFNyHsNHcFa9E59wYaUWzqaEUTMQ9nUQx0,22
+django_verified_email-0.1.1.dist-info/RECORD,,

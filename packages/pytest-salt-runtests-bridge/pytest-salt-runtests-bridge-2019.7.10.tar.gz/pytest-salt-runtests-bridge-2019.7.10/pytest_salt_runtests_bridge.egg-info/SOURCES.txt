@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+pytest_salt_runtests_bridge.py
+setup.cfg
+setup.py
+pytest_salt_runtests_bridge.egg-info/PKG-INFO
+pytest_salt_runtests_bridge.egg-info/SOURCES.txt
+pytest_salt_runtests_bridge.egg-info/dependency_links.txt
+pytest_salt_runtests_bridge.egg-info/entry_points.txt
+pytest_salt_runtests_bridge.egg-info/requires.txt
+pytest_salt_runtests_bridge.egg-info/top_level.txt

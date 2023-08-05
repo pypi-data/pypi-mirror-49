@@ -1,0 +1,9 @@
+setup.py
+chikfactor/__init__.py
+chikfactor/kfactor.py
+chikfactor.egg-info/PKG-INFO
+chikfactor.egg-info/SOURCES.txt
+chikfactor.egg-info/dependency_links.txt
+chikfactor.egg-info/not-zip-safe
+chikfactor.egg-info/requires.txt
+chikfactor.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+Django>=1.7
+django-absoluteuri
+django-decoratormixins
+django-ogmios

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tracking-util
+Version: 0.1rc4
+Summary: Util scripts for tracking tasks
+Home-page: UNKNOWN
+Author: tianling.bian
+Author-email: bian_tianling@sjtu.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# Tracking util
+
+This package is created for research purposes. It contains a set of utility scripts for io and processing image sequences along with its annotations.
+
+

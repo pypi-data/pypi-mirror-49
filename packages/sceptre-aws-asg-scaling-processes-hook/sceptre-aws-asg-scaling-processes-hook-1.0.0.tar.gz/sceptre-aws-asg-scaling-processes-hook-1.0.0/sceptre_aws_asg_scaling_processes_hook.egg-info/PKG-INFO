@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: sceptre-aws-asg-scaling-processes-hook
+Version: 1.0.0
+Summary: AWS Auto Scaling Group Scaling Processes hook.
+Home-page: https://github.com/sceptre/sceptre-aws-asg-scaling-processes-hook
+Author: Sceptre
+Author-email: sceptre@cloudreach.com
+License: Apache2
+Description: # ASG Scaling Processes
+        
+        Suspends or resumes autoscaling scaling processes.
+        
+        Syntax:
+        
+        ```yaml
+        <hook_point>:
+          - !asg_scaling_processes <suspend|resume>::<process-name>
+        ```
+        
+        Example:
+        
+        ```yaml
+        before_update:
+          - !asg_scaling_processes suspend::ScheduledActions
+        ```
+        
+        More information on suspend and resume processes can be found in the AWS
+        [documentation](http://docs.aws.amazon.com/autoscaling/latest/userguide/as-suspend-resume-processes.html).
+        
+Keywords: sceptre,sceptre-hook
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test

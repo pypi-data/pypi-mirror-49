@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_pgcrypto2.egg-info/PKG-INFO
+django_pgcrypto2.egg-info/SOURCES.txt
+django_pgcrypto2.egg-info/dependency_links.txt
+django_pgcrypto2.egg-info/requires.txt
+django_pgcrypto2.egg-info/top_level.txt
+pgcrypto/__init__.py
+pgcrypto/base.py
+pgcrypto/fields.py

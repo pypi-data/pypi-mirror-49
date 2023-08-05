@@ -1,0 +1,11 @@
+urbansim_defaults/__init__.py,sha256=d7xhKVWi_0vr_zZkiFRWv9CupBKAcSxW0ACv2dZG5GQ,31
+urbansim_defaults/datasources.py,sha256=r96PosXldupCeewngKhFoMKn10xvUaGyr33aJva2UXo,5685
+urbansim_defaults/models.py,sha256=aQ4aMLhIQXP_rXldcEMkskD1qYlDv8vq-ZM4uGJHNVQ,8984
+urbansim_defaults/utils.py,sha256=ybkyfZVcf18geURzOHUvdv67bUJx5qWZIM-Q1_IZF2k,41847
+urbansim_defaults/variables.py,sha256=OkmxsCMXO_aVWo_cQBKO5O6tu8n_QVCDKx2dBRan3Ng,5182
+urbansim_defaults-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+urbansim_defaults-0.1.1.dist-info/METADATA,sha256=rwkCtG4M_lm280JQjN3aB1Xfp6Xyt_cHLM0qYYPqiwQ,439
+urbansim_defaults-0.1.1.dist-info/RECORD,,
+urbansim_defaults-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+urbansim_defaults-0.1.1.dist-info/metadata.json,sha256=IBoizUR2xhIZqDgfnINIRiP2FZLL6WT2EbFMuTMpxD8,610
+urbansim_defaults-0.1.1.dist-info/top_level.txt,sha256=29fy2b6jmFyFBkARvYUbKoDSU3vLsepgbyaSAICU0ic,18

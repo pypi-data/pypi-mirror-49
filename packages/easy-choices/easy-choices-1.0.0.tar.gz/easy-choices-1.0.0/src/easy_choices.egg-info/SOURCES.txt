@@ -1,0 +1,15 @@
+CHANGES.rst
+CONTRIBUTING.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/easy_choices/__init__.py
+src/easy_choices/choices.py
+src/easy_choices/exceptions.py
+src/easy_choices.egg-info/PKG-INFO
+src/easy_choices.egg-info/SOURCES.txt
+src/easy_choices.egg-info/dependency_links.txt
+src/easy_choices.egg-info/requires.txt
+src/easy_choices.egg-info/top_level.txt

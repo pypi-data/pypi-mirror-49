@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: biliget
+Version: 1.2.1
+Summary: Help with bilibili.
+Home-page: https://github.com/lixiaobai468/biliget
+Author: lixiaobai
+Author-email: 18108274905@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Bilibili Package
+
+
+

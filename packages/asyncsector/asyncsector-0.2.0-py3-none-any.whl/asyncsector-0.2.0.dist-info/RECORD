@@ -1,0 +1,10 @@
+asyncsector/__init__.py,sha256=IwyCyh_C777OWZh4Gq47BSqKMavwMUDK-DsQVMf2me8,126
+asyncsector/__main__.py,sha256=wDpzaCeDbqdhcrmtxVJd6wR30bJDCiJzFE9Luu5Lc88,2352
+asyncsector/asyncsector.py,sha256=ZBxrPWRIGw8BCOrTFLh7Doa-gpN9jOHsc_Ou_qUEbdQ,3557
+asyncsector/util.py,sha256=aK4n4klqot28FgC9o98TKlUFArMlHlxclsCss3_o_Yc,972
+asyncsector-0.2.0.dist-info/LICENSE.md,sha256=mWkxErkdCWXzw5Bpi5ZxkgsfSnimEf8PHbeYZmj9Gf4,1495
+asyncsector-0.2.0.dist-info/METADATA,sha256=WPhVJOk3jqEkJVLhp7I1Ei21LdODpGAMC2B7HSkps3A,264
+asyncsector-0.2.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+asyncsector-0.2.0.dist-info/entry_points.txt,sha256=1nZP2f_i8y8AhUBhZJyDRm0BriiCZa-QednUlz2kOBs,59
+asyncsector-0.2.0.dist-info/top_level.txt,sha256=_EFgkKofbWiZQioPDu5B3JFx71BkfX5_cvvFqijpR78,12
+asyncsector-0.2.0.dist-info/RECORD,,

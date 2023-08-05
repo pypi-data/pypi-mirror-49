@@ -1,0 +1,2 @@
+include README.md LICENSE.md requirements.txt Pipfile Pipfile.lock
+recursive-include tests *.py

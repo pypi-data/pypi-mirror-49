@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: threedi-modelchecker
+Version: 0.5
+Summary: Checks validity of a threedi-model
+Home-page: https://github.com/nens/threedi-modelchecker
+Author: Richard Boon
+Author-email: richard.boon@nelen-schuurmans.nl
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Requires-Dist: Click
+Requires-Dist: GeoAlchemy2 (>=0.6)
+Requires-Dist: SQLAlchemy (>=0.8)
+Requires-Dist: threedigrid
+Provides-Extra: test
+Requires-Dist: factory-boy ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# Threedi-modelchecker
+
+Threedi-modelchecker is a tool to verify the correctness of a 3Di model.
+The goal is to provide a tool for model builders to quickly check if his/her 
+model is correct and can run a 3Di simulation. It provides detailed 
+information about any potential errors in the model.
+
+Threedi-modelchecks works with both spatialite and postgis databases. However, 
+the database should always have the latest 3Di migration: https://docs.3di.lizard.net/en/stable/d_before_you_begin.html#database-overview 
+
+Installation:
+
+    pip install threedi-modelchecker
+
+
+Threedi-modelchecker is also integrated into the ThreediToolbox Qgis plugin: https://github.com/nens/ThreeDiToolbox
+
+# Development
+
+A docker image has been created for easy development. It contains an postgis 
+server with an empty 3Di database to allow for easy testing.
+
+Build the image:
+
+    docker-compose build
+
+Run the tests:
+
+    docker-compose run modelchecker pytest
+
+# Release
+
+Make sure you have [zest.releaser](https://zestreleaser.readthedocs.io/en/latest/) installed. 
+
+    fullrelease
+
+When you create a tag on git, Travis CI automatically creates a new release to [pypi](https://pypi.org/project/threedi-modelchecker/).
+
+
+Changelog of threedi-modelchecker
+===================================================
+
+
+0.5 (2019-07-12)
+----------------
+
+- Retry release (release of 0.4 is missing changes).
+
+
+0.4 (2019-07-12)
+----------------
+
+- Update to readme.
+- No longer raise a MigrationTooHighError when the migration is larger than expected.
+
+
+0.3 (2019-07-08)
+----------------
+
+- Fixed TypeError with CrossSectionShapeCheck when width/height are `None`.
+- Updated some constraints on CrossSectionShapeCheck:
+  - Heights of tabulated shape must be increasing.
+  - Egg only requires a width, which must be greater than 0.
+- Added 0 to a valid value for ZoomCategories. Also renamed the ZoomCategories names 
+  to something clear names.
+
+
+0.2 (2019-06-12)
+----------------
+
+- Renamed some methods of ThreediModelChecker.
+- Added basic to the 3di model schema: checks if the model has the latest migration 
+  applied and raises an error if not.
+- Rewrote CrossSectionShape check to no longer use regex and added it to config.
+
+
+0.1 (2019-06-04)
+----------------
+
+- Initial project structure.
+- Added ORM for a threedi-model in sqlalchemy.
+- Added several types of checks.
+- Manually configured many checks.
+- Added check factories, which generate many checks based on the ORM.
+
+

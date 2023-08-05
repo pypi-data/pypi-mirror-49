@@ -1,0 +1,7 @@
+knack
+urllib3
+pyperclip
+colorama
+
+[:python_version>="3.6"]
+enum34

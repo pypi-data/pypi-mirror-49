@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: calcatime
+Version: 0.5
+Summary: Calculates total time from calendar events, grouped by an event attribute.
+Home-page: https://github.com/eirannejad/calcatime
+Author: Ehsan Iran-Nejad
+Author-email: eirannejad@gmail.com

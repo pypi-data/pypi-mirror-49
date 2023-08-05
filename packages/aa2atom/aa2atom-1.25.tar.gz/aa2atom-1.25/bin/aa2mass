@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+import argparse
+
+from aa2atom import atom2mass, aa2atom
+from aa2atom.aa2atom import UnknownAminoAcid
+
+parser = argparse.ArgumentParser(description='Calculate the (monoisotopic or average) mass of a sequence of amino acids.')
+parser.add_argument("aaseq", type=str, help="Sequence of amino-acids.")
+parser.add_argument('--nowater', dest='no_water', action='store_const',
+                    const=True, default=False,
+                    help='Output the molecule without adding in H2O.')
+parser.add_argument('--PLGSptms', nargs='+',
+                    help='List of PLGS modifications. Currently accepts expressions like "Carbamidomethyl+C(7)", "Oxidation+M(2)", etc.')
+parser.add_argument('--chemdiff', 
+					help='A custom chemical difference to the formula, e.g. "C2H3S-1". Nonnegativity of atom counts of the outcome is checked for!')
+parser.add_argument('--average_mass', dest='which_mass', action='store_const',
+                    const='average', default='monoisotopic',
+                    help='Return the average mass instead of the monoisotopic one.')
+
+args = parser.parse_args()
+try:
+	atoms = aa2atom(aaseq = args.aaseq, no_water=args.no_water)
+except UnknownAminoAcid as uaa:
+	print(uaa)
+	if 'B' in uaa.unknown_aas:
+		print('"B" can be either aspartate or asparagine.')
+	if 'X' in uaa.unknown_aas:
+		print('"X" can be anything')
+	print('Mass without the mass of these things equals:')
+	atoms = uaa.res
+
+# dealing with PLGSptms
+if args.PLGSptms:
+	for ptms in args.PLGSptms:
+		for ptm in PLGSptms2atom(ptms, args.aaseq):
+			atoms.update(ptm)
+
+# dealing with custom PTM
+if args.chemdiff:
+	chemdiff = chem2atom(args.chemdiff)
+	atoms = add_formulas(atoms, chemdiff)
+
+res = atom2mass(atoms, args.which_mass)
+print(res)

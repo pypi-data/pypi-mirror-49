@@ -1,0 +1,15 @@
+cli.py,sha256=W42l-JMGNikr2lISyVa7Lmo2pEvsMR4JlZmXxc_gXCQ,44
+crawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crawler/crawler.py,sha256=gYYHx8bkf_6Y2OakswXMIfbnOwL6NMh5Grk10YYFk7w,1375
+crawler/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crawler/config/settings.py,sha256=SEnASnsYkfVfwMkxglrntKXJxqBQ05fIsbYgJMAkow4,356
+fuck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fuck/cli.py,sha256=gZgj__bGfYGMQ-0tE_1gtxZ2TAWK0YZtyuvPeExwDyw,50
+fuck/manage.py,sha256=I56Ylu7wpyncxSA-kgvwSTB5FvYNtKpc8B_bmUKcFdk,1506
+fuck_spoiler-1.1.1.dist-info/METADATA,sha256=M7Rkfgw18asB2HIbaGpwkYNGnIfn9Cm15Wj4fS3mduk,1499
+fuck_spoiler-1.1.1.dist-info/RECORD,,
+fuck_spoiler-1.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+fuck_spoiler-1.1.1.dist-info/entry_points.txt,sha256=-JyPpd-86XaZlQo1zTMm8YFNNHrMsqnNpd6xJu0Btw8,40
+fuck_spoiler-1.1.1.dist-info/top_level.txt,sha256=wCUT9-vEnbfGFhhBxD427Pv3Yc5Ny82dqkLUn_Az-pI,19
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/rules.py,sha256=a8A8vvqTb3zWDMeDdX-yY_IDmSmRyCP_QgShuDBaAuI,281

@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+simple_calc/__init__.py
+simple_calc/__main__.py
+simple_calc.egg-info/PKG-INFO
+simple_calc.egg-info/SOURCES.txt
+simple_calc.egg-info/dependency_links.txt
+simple_calc.egg-info/entry_points.txt
+simple_calc.egg-info/top_level.txt

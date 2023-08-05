@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cherrypicker
+Version: 0.0.0
+Summary: Pluck and flatten complex data.
+Home-page: https://github.com/big-o/cherrypicker
+License: UNKNOWN
+Keywords: cherrypicker etl data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3.5
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+Cherrypicker
+------------
+
+A Python package for extracting flat tables of data from complex structures.
+
+

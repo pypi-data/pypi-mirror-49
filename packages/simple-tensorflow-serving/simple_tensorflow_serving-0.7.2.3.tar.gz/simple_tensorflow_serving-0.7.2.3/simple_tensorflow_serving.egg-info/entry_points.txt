@@ -1,0 +1,4 @@
+[console_scripts]
+simple_tensorflow_serving = simple_tensorflow_serving.command:main
+stfs = simple_tensorflow_serving.command:main
+

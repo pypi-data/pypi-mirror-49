@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: py-spring-config
+Version: 3.52
+Summary: Module for custom Dynaconf loader                 to access a Spring Config server
+Home-page: https://github.com/Receptiviti/py_spring_config
+Author: Tanya Whyte & Lucas Sant' Anna
+Author-email: twhyte@receptiviti.com
+License: Receptiviti Inc.
+Description: UNKNOWN
+Keywords: python spring cloud config
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5

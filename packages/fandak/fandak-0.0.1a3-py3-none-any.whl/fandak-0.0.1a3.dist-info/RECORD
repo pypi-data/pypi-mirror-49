@@ -1,0 +1,16 @@
+fandak/__init__.py,sha256=Li1FmrUELm3QaD09c5nqH677jy_2ScndTk-ArF19M90,158
+fandak/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fandak/core/datasets.py,sha256=WcGPONPTLK65Ollp9zM3wfywD3ACP5j4QpLZVcBPU6E,1452
+fandak/core/evaluators.py,sha256=oqd33KhBZGKJPMb-B7EMyjtl6gHVZKtRl9uVeGDZuDg,1894
+fandak/core/models.py,sha256=7-pYk4IjzX1U34-TOjtOOa8VFxK_feZzmnGqMbi6Z_s,1212
+fandak/core/trainers.py,sha256=T1pQg_tubrIKgAFgk8JKIE0fNn6UUMAh9fWnHp4JG0g,13033
+fandak/utils/__init__.py,sha256=n_Z4i64HVq6qJGH8kfd3xQveJj1WCiQkqVg95MhC2WE,62
+fandak/utils/config.py,sha256=t1rqe23Ld6TXK8ipBsxHMG4HQGVqOpOaHgV9UxaISPA,1095
+fandak/utils/metrics.py,sha256=PJEqR7JHif5dUTkXsBxm05blm2N_vZw9k7ZbVvU0NTE,3608
+fandak/utils/misc.py,sha256=sRDBxg2FTLobRngU_5jk3jwBN-Hllrf87KuU3Seof7k,763
+fandak/utils/torch.py,sha256=DPllcYwV9j9kIwtnOKBzFC9SKXAjiCj9uFMnyWWKcdU,3317
+fandak-0.0.1a3.dist-info/LICENSE,sha256=4mLEFfa57tKjGMz-pHFgTcF034sHGhYpo80VeXn1CbY,1069
+fandak-0.0.1a3.dist-info/METADATA,sha256=uX6H28_g7xzpzwNUqdhRtxBgKct3J54P_ZSdp7WjoCU,1254
+fandak-0.0.1a3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+fandak-0.0.1a3.dist-info/top_level.txt,sha256=tSoC1jVDLHZ7ws6fhJ7E9DHs_SsxAo6BoIsKIGJXaKc,7
+fandak-0.0.1a3.dist-info/RECORD,,

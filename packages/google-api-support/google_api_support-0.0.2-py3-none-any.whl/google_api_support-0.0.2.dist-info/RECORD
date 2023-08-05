@@ -1,0 +1,10 @@
+GoogleApiSupport/__init__.py,sha256=0Vfs-wqrn0_H5Ae2IeJFckuK38POsBjwT9WIvNfL5gM,27
+GoogleApiSupport/auth.py,sha256=iDYU5e3lboMYtuekfFDb32MB9XemW1XRbcKCdZOL4Uw,1038
+GoogleApiSupport/drive.py,sha256=BN_gxjD32CxciRIjLF3N5lK0h8q34ghl_zS3HEQSBVw,5478
+GoogleApiSupport/sheets.py,sha256=1lvDD65OAtCYENS7Ir3ZIvi-sWZNCgkyZu72NIEmulY,2770
+GoogleApiSupport/slides.py,sha256=ryF40hS--X7XRg1Jb_cE7788PC_gItURvo2vNcsdPZA,9721
+google_api_support-0.0.2.dist-info/LICENSE.md,sha256=6bDpT2KOALXtmARs-gQWlv-J7ru91UEI7jUGJbxtA2M,1234
+google_api_support-0.0.2.dist-info/METADATA,sha256=JX6CFlQxlCKKQhK4HoeOHYR-JnJWJOD6cUcl7_RKz-M,3184
+google_api_support-0.0.2.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+google_api_support-0.0.2.dist-info/top_level.txt,sha256=aQXX94vVrB83r2NnkNgBuF-MSaKECB264_N8KC5ZGro,17
+google_api_support-0.0.2.dist-info/RECORD,,

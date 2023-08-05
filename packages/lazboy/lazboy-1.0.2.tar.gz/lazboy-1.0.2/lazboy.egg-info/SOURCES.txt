@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+lazboy/__init__.py
+lazboy/__main__.py
+lazboy.egg-info/PKG-INFO
+lazboy.egg-info/SOURCES.txt
+lazboy.egg-info/dependency_links.txt
+lazboy.egg-info/requires.txt
+lazboy.egg-info/top_level.txt

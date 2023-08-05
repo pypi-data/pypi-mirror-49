@@ -1,0 +1,108 @@
+# mark-python-client
+
+## Description 
+
+A client implemented in Python script to connect to the MARK framework and access the MONGO-DB
+
+### Project overview:
+
+1. mark_client - source folder of the project
+    
+    1.1. mark_python_client.py - script responsible for connecting to the MARK server
+ 
+    1.2. conftest.py - empty script used by pytest unit test library to point the global PATH variable
+ to the modules and scripts used in the unit tests
+ 
+2. tests - test folder of the project
+ 
+   2.1. mark_python_client_test.py - script responsible for testing the mark_client's ability to create a MARK client,
+   set the server url, adding new data to the DB via the server and fetching data from the DB via the server
+ 
+3. .gitlab-ci.yml - file responsible for the DOCKER tests ran on the project
+ 
+4. requirements.txt - file responsible for listing all dependencies of the project
+  
+
+## Installation
+
+To install all dependencies run :
+
+```bash
+$pip install -r requirements.txt
+```
+
+## Usage
+
+To use the mark_python_client.py script just add it to your python code and you can invoke the different
+methods defined in the script
+
+```python
+from mark_client import mark_python_client as mark_client
+
+#initialize the MARK Client
+client = mark_client.MarkClient()
+#set the url of the MARK server
+client.set_server_url("http://server.ip.address:ip.port")
+#add evidence to the database via the MARK server
+client.add_evidence(evidence_to_be_added)
+#fetch the ranked list of the k-most suspicious entries
+ranked_list = client.get_evidence()
+#fetch evidences with a specific label and subject
+evidences = client.find_evidence(label, subject)
+```
+
+## Testing
+
+There are two ways to test the project:
+
+* **pytest**
+
+By installing the dependencies in **requirements.txt**, you will also install the pytest module for unit 
+testing. To run **pytest** just run it from bash in the folder of the project:
+
+```bash
+$pytest
+```
+
+* running **gitlab-ci**
+
+The project can be tested using the gitlab-runner tool, distributed by gitlab. First docker and gitlab-runner have to
+be set up following this tutorial:
+
+[Setting up gitlab-runner locally]()
+
+Create a new test or run the test available in the gitlab-ci file:
+
+```yaml
+test:integration:
+  stage: mark-integration
+  image: ubuntu:18.04
+  script:
+    # install what we need
+    - apt-get update
+    - apt-get install -y mongodb openjdk-8-jdk python2.7 python-pip wget unzip
+    - pip install -r requirements.txt
+    - service mongodb start
+    # Download and unzip mark server
+    - wget https://download.cylab.be/mark/server-$MARK_VERSION-standalone.zip
+    - unzip server*
+    # Launch server and let it run...
+    - bash server*/run.sh &
+    - sleep 30
+    - pytest
+    # Kill server and check if db entries are correct
+    - kill %1
+```
+
+Once gitlab-runner is set up it can easily be called using:
+
+```bash
+$gitlab-runner exec docker {name_of_your_test_in_gitlab-ci_file}
+```
+
+When the gitlab-runner is ran it will automatically start a docker container with the image specified in the test
+that is to be run and test the project in it by downloading the required libraries from the 
+**requirements.txt** file and also install other needed packages via **apt-get**.
+
+
+

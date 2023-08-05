@@ -1,0 +1,233 @@
+CHANGES
+=======
+
+* update setuptools for correct markdown rendering
+* fix typo
+* add environment variables support for CLI
+* additional information about SSL cert error on mac osx
+
+1.0.0
+-----
+
+* update travis CI
+* more luck without quotes?
+* render readme as markdown
+* update requirements-dev
+* update travis
+* added demo cast
+* remove unused tests, examples and docs
+* black with 79 characters limit
+* update docs to explain design changes
+* remove test cases that have been broken by CLI refactoring
+* update requirements
+* better exception handling for unknown security
+* allow security name override from CLI
+* added CLI colors 🌈
+* add basic auth from CLI
+* rename package, use pbr for packaging, add proper CLI, remove deprecation warnings
+
+0.2.5
+-----
+
+* Bump version once more
+* Fix out of date setup.py dependencies
+* Narrower exception catching
+* Latest version of pyswagger removes need for workaruond code - delete it
+* Try to fix install problems by simplifying setup.py
+* Require an up-to-date version of sphinx [skip ci]
+* Fix readthedocs badge link [skip ci]
+* Migrate to readthedocs for documentation hosting
+
+0.2.3
+-----
+
+* New point release with two bug fixes: - Support Content-Type header parameters - Handle args correctly when called with 'python -m'
+* Support content-type parameters with parameters
+* Fix extremely dumb and embarassing bug from issue #2
+* Add pylint checking to maintain a consistent and standard code style
+* Uploading to pypi no longer requires registering beforehand
+
+0.2.2
+-----
+
+* Bump the version for new release
+* Pin the responses package to a working version - latest one is bugged
+* Fix linter error
+* The response headers are now case insensitive
+* Major rename of most objects for final API version
+* Use more appropriate names for some objects
+* Report more details of failed tests in basic conformance test
+* Don't expose pyswagger objects over any external interfaces
+* Better special case handling for the X-Fields header
+* Standardise the way underlying pyswagger objects are accessed
+* Fix warnings raised by recent versions of hypothesis
+* Improve api and operation template interfaces
+* Expose the template API as a property of the client
+* Minor unit test tidying
+* Add support for 'byte' format fields
+* Minor test tidying
+* Add tests for converting JSON objects with the codec
+* Wrap pyswagger in the codec API so the implementation is not leaked
+* Add the ability to register custom mappings of objects and JSON
+* Rework parameters and values so ValueTemplates generate their children
+* Rework ValueTemplates to take SwaggerParameters
+* Add tests for registering custom ValueTypes for formats
+* Add basic registration functions
+* If we try a little, we can actually test \_\_main\_\_.py
+* Add support for running the package directly from the command line
+* Support the X-Fields header
+
+0.2.1
+-----
+
+* Bump version - Python 3.4 support is fixed
+* Add automated process for documentation upload
+* Fix exceptions hit in logging due to unicode characters
+* Remove dictionary unpacking to add Python 3.4 support
+* Add Python 3.4 to CI builds
+* Add docs, PyPI version, and License badges
+* Add a PyPI version badge
+* Display code-coverage badge in readme
+* Enable code coverage reporting
+* Show build status icon in readme
+* Add a Travis CI YAML file to enable CI testing
+* Add a code coverage build target, and ensure 100% coverage
+* Slight tweak to a schema file to exercise specific code
+* Minor diagnostic improvements
+* Add tests for new failure handling in the basic API conformance tests
+* Minor doc fixes
+* Set some more documentation options
+* Remove the underscore from the path of module docs
+
+0.2
+---
+
+* Bump version to next point release due to reworked API and new docs
+* Final changes to support generation and upload of documentation
+* Add continue-on-failure support to the basic tests
+* Another set of documentation updates
+* main.py no longer serves any purpose
+* Improve valuetemplates documentation
+* Documentation generation should fail if there are any warnings
+* Better client and basictests documentation
+* Rework strategies interface to match hypothesis and improve docs
+* Don't show link to documentation sources
+* Delete built docs before rebuilding for cleanliness
+* Allow cross-references to pyswagger docs
+* Restructure package further to remove duplication in API and namespace sensibly
+* Delete the setup.cfg file - it does nothing
+* Create a master Makefile for docs, builds, tests, etc
+* Specify all development requirements, and allow future versions
+* A \_\_init\_\_.py file in the tests directory is required for unittest discovery
+* Store a single version string in a text file
+* There are no templates or static files
+* Re-structure docs directories to separate source and build
+* Initial commit of documentation generation
+* Explicit link to examples directory
+* Remove nested formatting which isn't supported by ReST
+* Re-arrange submodule/package layout for easier user access
+* Sphinx annotations require a preceeding newline
+* Indicate package does not depend on OS
+* Various readme typo fixes and clarifications
+
+0.1.2
+-----
+
+* Bump version and specify  minimum pyswagger version required
+* Take the new pyswagger fix to encode path parameters and test it
+* Remove some unnecessary code
+* Fixes to get upload to live PyPI working due to differences with test version
+
+0.1.1
+-----
+
+* Bump version in setup.py for pypi release
+* Minor readme touch-up
+* Use full URLs in readme so links work when not viewed on github
+* Document pip install
+* Add long description to setup.py
+* Fix up setup.py issues
+
+0.1
+---
+
+* setup.py syntax error
+* Fix test bug and improve naming
+* Create setup.py
+* Create setup.cfg
+* Add a license
+* More readme improvements
+* Finish remaining section in examples
+* Update readme
+* Continue improving examples
+* Fix small logic error in dictionary combining
+* Start adding usage examples
+* Improve diagnostic output in various places
+* Test to show how multiple requests would work
+* Improve API for more thorough manual tests of API endpoints
+* Better test documentation
+* Add a test to cover parameter constraints
+* Minor code tidying
+* Add support for non-required object properties
+* Move all basic hypothesis strategies into one file
+* Add support for optional parameters
+* Remove duplicated boilerplate in test code
+* Update variable name
+* Make response codes a set for lookup efficiency
+* Improve repr to remove need for extra logging
+* Move response code population to its own method
+* Refactor API template code
+* Add another test using an example schema
+* Add support for UUID generation
+* Separate out collections from value templates
+* Add a wrapper around swagger definitions
+* Rename test file to match package
+* Ignore all sublime files
+* Put test files in test directory
+* Add a pylintrc file
+* Restructure repository to create a python package
+* Move value template creation to a factory
+* Split value generation into submethods per-type
+* Use base class to remove duplication in strategies
+* Add common base class for Parameters and Models
+* Minor tidy before combining Models and Parameters
+* Remove \`type\` and \`format\` attr from ValueTemplate
+* Remove dead code and fix \`multiple\_of\` logic
+* Remove duplication - models use value templates
+* Support for petstore - commit while tests passing
+* Header values may not contain newlines
+* Add file type parameter support
+* Add array parameter support
+* Test date and date-time support, and fix bug there
+* Add date and date-time support
+* Add better hypothesis diagnostics
+* Add enum support
+* Add various missing docstrings
+* Support arrays and make models more generic
+* Add the petstore example schema and initial test
+* Add support for 'default' response code value
+* Whitespace fix
+* Add support for Boolean parameters
+* Make sure UTs work when run from any directory
+* Expect an integer path parameter in the PUT test
+* Move first test schema to the schemas folder
+* Add a simple server to generate the test schema
+* Validate returned content-type is application/json
+* Fix rtype comment
+* Initial support and tests for more variable types
+* Add vscode folder to .gitignore
+* Update test
+* Add readme and requirements
+* Only allow response codes matching those specified in the schema
+* Move overall API template into templates file
+* Move strategies and templates to their own files
+* Move client to its own file
+* Fix test and add missing operations
+* Simple schema defined payload parameters now work
+* First hypothesis test working!
+* End-to-end request test passes
+* Separate app connection out into a Client object
+* Add a second test and keep building up the object model
+* Add an initial test
+* Started to expand API
+* Initial commit - trying to use pyswagger to enumerate all testable operations

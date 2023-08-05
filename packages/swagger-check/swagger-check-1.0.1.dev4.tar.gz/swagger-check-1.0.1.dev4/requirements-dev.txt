@@ -1,0 +1,9 @@
+black==19.3b0
+coveralls
+pytest==4.4.1
+pytest-cov==2.7.1
+responses==0.5.1
+
+setuptools>=38.6.0
+twine>=1.11.0
+wheel>=0.31.0

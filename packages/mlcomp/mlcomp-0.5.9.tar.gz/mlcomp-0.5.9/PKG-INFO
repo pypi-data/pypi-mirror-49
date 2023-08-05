@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mlcomp
+Version: 0.5.9
+Summary: Machine learning pipelines. Especially, for competitions, like Kaggle
+Home-page: https://github.com/lightforever/mlcomp
+Author: Evgeny Semyonov
+Author-email: lightsanweb@gmail.com
+License: MIT
+Description: 
+        # mlcomp
+        Machine learning pipelines. Especially, for competitions, like Kaggle
+        
+        Install Nvidia-docker:
+        
+        https://chunml.github.io/ChunML.github.io/project/Installing-NVIDIA-Docker-On-Ubuntu-16.04/
+        
+        If you have troubles, check you have removed old docker before the installation:
+        
+        https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker
+        
+        After that:
+        
+        https://github.com/NVIDIA/nvidia-docker
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown

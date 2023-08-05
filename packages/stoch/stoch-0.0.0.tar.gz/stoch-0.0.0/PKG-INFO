@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: stoch
+Version: 0.0.0
+Summary: Stochastic Process
+Home-page: http://github.com/zhiqingxiao/stoch/
+Author: Zhiqing Xiao
+Author-email: xzq.xiaozhiqing@gmail.com
+License: UNKNOWN
+Description: stoch
+        =======================
+        
+        A package for stochastic processes.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown

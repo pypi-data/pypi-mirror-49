@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "groupark"
+version = "0.2.0"
+description = "Quick Python Aggregations"
+authors = ["eecheverry <eecheverry@nubark.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.0"
+mypy = "^0.711.0"
+pytest-cov = "^2.7"
+bump2version = "^0.5.10"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+

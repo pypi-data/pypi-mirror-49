@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: gui-automation
+Version: 2
+Summary: Simple python library useful for automating tasks using images.
+Home-page: https://github.com/marcosboggia/gui_automation
+Author: Marcos Boggia
+Author-email: marcos_boggia@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: PyAutoGUI
+
+# Gui automation
+
+Simple python library useful for automating tasks using images.
+
+It uses OpenCV and PyAutoGui. Made with Python 3.7.
+
+* Little example: 
+
+```python
+import cv2
+from gui_automation import GuiAuto
+
+tpl = cv2.imread("win10key.png")
+GuiAuto(tpl, 0.8).detect_and_click()
+```
+
+It searches windows 10 key image in the screen with at least a 80% of coincidence. If it is found it gets clicked (opens windows 10 start menu).
+
+
+* Brief show of available methods:
+```python
+detect()
+
+detect_and_move()
+
+detect_and_click(clicks)
+
+detect_and_hold(time)
+
+detect_and_drag(start_x_fraction, start_y_fraction, end_x_fraction, end_y_fraction)
+```
+

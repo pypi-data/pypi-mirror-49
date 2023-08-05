@@ -1,0 +1,15 @@
+piccolo_admin/__init__.py,sha256=NRAHmuVCgLw1vR9zV-xWXldFn4Af80Iw4NR94PJSLDk,22
+piccolo_admin/endpoints.py,sha256=6-o62O2-XK8xSR5WBldycGctdrirBarfCk-gwc6FiAw,3706
+piccolo_admin/example.py,sha256=VxneRclAGDpETT8UF2OOoZRKB7GEU9fBNIt1cf7QrNk,953
+piccolo_admin/dist/README.md,sha256=t2ymX_HWNT6-mg_hq1R08J-nr-uPfz2DLXBmALDsCHs,153
+piccolo_admin/dist/index.html,sha256=TG-bB8purcKQDt6mC5zdjpn5M_a0lhIm1zHXvpniG3Q,705
+piccolo_admin/dist/css/app.33fc14ee.css,sha256=zf05xX9MS58X0ss8dOwh6aXOz_NJLQSsAwtOhNYlP1s,4665
+piccolo_admin/dist/js/app.dc41b327.js,sha256=U4Ja30QzqYymSwysX-Sxe8aU8_mchv9e-zk_kjxyJL0,18747
+piccolo_admin/dist/js/app.dc41b327.js.map,sha256=N7Y6byazkBMthcXVMN4WOacFQIsCiajDaOdeWPTbJRU,82575
+piccolo_admin/dist/js/chunk-vendors.18a1674d.js,sha256=8rtUnzUc0weAIN3RtL2xpg6ICQm3-9tafnYqmDlNixw,216040
+piccolo_admin/dist/js/chunk-vendors.18a1674d.js.map,sha256=sdpg0cejOp5Wa9-apmcmhtPDqqv1CXflkBR4VcX4E5I,1653935
+piccolo_admin-0.1.1.dist-info/METADATA,sha256=4bOqS6FsirSjoF8vqSvEdykocMbloTckfzaNlBu9q88,2424
+piccolo_admin-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+piccolo_admin-0.1.1.dist-info/entry_points.txt,sha256=K9P8ltyMvk6QinCzgtm-_6EIEg-9NdfqhMg8Zw3lJko,59
+piccolo_admin-0.1.1.dist-info/top_level.txt,sha256=dxVc2ttvs6riyA26Vult3VqlSdvvEnNPWmyuf4mGyCs,14
+piccolo_admin-0.1.1.dist-info/RECORD,,

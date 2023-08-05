@@ -1,0 +1,7 @@
+arrow
+boto3
+mbq.atomiq<2,>=1
+mbq.env<3,>=2
+mbq.metrics<2,>=1
+protobuf
+rollbar

@@ -1,0 +1,9 @@
+setup.py
+adventure_game/__init__.py
+adventure_game/game_scenes.py
+adventure_game/self_game.py
+adventure_game.egg-info/PKG-INFO
+adventure_game.egg-info/SOURCES.txt
+adventure_game.egg-info/dependency_links.txt
+adventure_game.egg-info/not-zip-safe
+adventure_game.egg-info/top_level.txt

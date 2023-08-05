@@ -1,0 +1,6 @@
+ipyparallel
+pexpect
+pyzmq
+paramiko
+tornado
+psutil

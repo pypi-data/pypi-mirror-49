@@ -1,0 +1,11 @@
+README.md
+setup.py
+emailprotectionslib/Resolver.py
+emailprotectionslib/__init__.py
+emailprotectionslib/dmarc.py
+emailprotectionslib/spf.py
+py_emailprotections.egg-info/PKG-INFO
+py_emailprotections.egg-info/SOURCES.txt
+py_emailprotections.egg-info/dependency_links.txt
+py_emailprotections.egg-info/requires.txt
+py_emailprotections.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+pyloa = pyloa._main:main
+

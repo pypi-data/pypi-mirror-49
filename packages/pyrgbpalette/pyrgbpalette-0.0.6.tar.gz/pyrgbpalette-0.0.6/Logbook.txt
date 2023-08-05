@@ -1,0 +1,111 @@
+Microsoft Windows [Version 10.0.17134.829]
+(c) 2018 Microsoft Corporation. Alle Rechte vorbehalten.
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>where python
+INFORMATION: Es konnten keine Dateien mit dem angegebenen
+Muster gefunden werden.
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>which python
+Der Befehl "which" ist entweder falsch geschrieben oder
+konnte nicht gefunden werden.
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>where -R . python
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette\venv\Scripts\python.exe
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>venv\Scripts\pip install -e .
+Obtaining file:///C:/Users/Wolfgang/PycharmProjects/github.com/myplaceit/pyrgbpalette
+Installing collected packages: pyrgbpalette
+  Running setup.py develop for pyrgbpalette
+Successfully installed pyrgbpalette
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>venv\Scripts\pip install -e .
+Obtaining file:///C:/Users/Wolfgang/PycharmProjects/github.com/myplaceit/pyrgbpalette
+Installing collected packages: pyrgbpalette
+  Found existing installation: pyrgbpalette 0.0.1
+    Uninstalling pyrgbpalette-0.0.1:
+      Successfully uninstalled pyrgbpalette-0.0.1
+  Running setup.py develop for pyrgbpalette
+Successfully installed pyrgbpalette
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>venv\Scripts\pip install -e .
+Obtaining file:///C:/Users/Wolfgang/PycharmProjects/github.com/myplaceit/pyrgbpalette
+Installing collected packages: pyrgbpalette
+  Found existing installation: pyrgbpalette 0.0.1
+    Uninstalling pyrgbpalette-0.0.1:
+      Successfully uninstalled pyrgbpalette-0.0.1
+  Running setup.py develop for pyrgbpalette
+Successfully installed pyrgbpalette
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>venv\Scripts\pip install -e .
+Obtaining file:///C:/Users/Wolfgang/PycharmProjects/github.com/myplaceit/pyrgbpalette
+Installing collected packages: pyrgbpalette
+  Found existing installation: pyrgbpalette 0.0.2
+    Uninstalling pyrgbpalette-0.0.2:
+      Successfully uninstalled pyrgbpalette-0.0.2
+  Running setup.py develop for pyrgbpalette
+Successfully installed pyrgbpalette
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>venv\Scripts\pip install -e .[dev]
+Obtaining file:///C:/Users/Wolfgang/PycharmProjects/github.com/myplaceit/pyrgbpalette
+Requirement already satisfied: ddt>=1.2 in c:\users\wolfgang\pycharmprojects\github.com\myplaceit\pyrgbpalette\venv\lib\site-packages (f
+rom pyrgbpalette==0.0.2) (1.2.1)
+Installing collected packages: pyrgbpalette
+  Found existing installation: pyrgbpalette 0.0.2
+    Uninstalling pyrgbpalette-0.0.2:
+      Successfully uninstalled pyrgbpalette-0.0.2
+  Running setup.py develop for pyrgbpalette
+Successfully installed pyrgbpalette
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>venv\Scripts\pip freeze >requirements.txt
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>venv\Scripts\pip install check-manifest
+Collecting check-manifest
+  Downloading https://files.pythonhosted.org/packages/28/69/f1c5860ffd151c329bfe8752fa1c187d1199b1409cb6ad947debf99bc8b7/check_manifest-
+0.39-py2.py3-none-any.whl
+Collecting toml (from check-manifest)
+  Downloading https://files.pythonhosted.org/packages/a2/12/ced7105d2de62fa7c8fb5fce92cc4ce66b57c95fb875e9318dba7f8c5db0/toml-0.10.0-py2
+.py3-none-any.whl
+Installing collected packages: toml, check-manifest
+Successfully installed check-manifest-0.39 toml-0.10.0
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>check-manifest --create
+Der Befehl "check-manifest" ist entweder falsch geschrieben oder
+konnte nicht gefunden werden.
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>venv\Scripts\check-manifest.exe --create
+lists of files in version control and sdist do not match!
+missing from sdist:
+  .idea
+  .idea\misc.xml
+  .idea\modules.xml
+  .idea\pyrgbpalette.iml
+  .idea\vcs.xml
+  LICENSE.txt
+  tests
+  tests\test_rgbpalette.py
+no MANIFEST.in found
+suggested MANIFEST.in rules:
+  include *.txt
+  recursive-include tests *.py
+creating MANIFEST.in
+don't know how to come up with rules matching
+  .idea\misc.xml
+  .idea\vcs.xml
+  .idea\pyrgbpalette.iml
+  .idea\modules.xml
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>venv\Scripts\check-manifest.exe --create
+lists of files in version control and sdist do not match!
+missing from VCS:
+  Logbook.txt
+  MANIFEST.in
+  requirements.txt
+missing from sdist:
+  .idea
+  .idea\misc.xml
+  .idea\modules.xml
+  .idea\pyrgbpalette.iml
+  .idea\vcs.xml
+no MANIFEST.in found
+
+C:\Users\Wolfgang\PycharmProjects\github.com\myplaceit\pyrgbpalette>

@@ -1,0 +1,13 @@
+LICENSE.txt
+Logbook.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/rgbpalette.py
+src/pyrgbpalette.egg-info/PKG-INFO
+src/pyrgbpalette.egg-info/SOURCES.txt
+src/pyrgbpalette.egg-info/dependency_links.txt
+src/pyrgbpalette.egg-info/requires.txt
+src/pyrgbpalette.egg-info/top_level.txt
+tests/test_rgbpalette.py

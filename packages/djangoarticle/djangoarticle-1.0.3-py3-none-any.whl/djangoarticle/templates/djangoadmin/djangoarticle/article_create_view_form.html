@@ -1,0 +1,152 @@
+{% extends 'djangoadmin/base/body/index.html' %}
+
+
+{% block body %}
+
+{% include "djangoadmin/widgets/alert.html" %}
+
+<form method="POST" action="#" enctype="multipart/form-data">
+{% csrf_token %}
+
+<div>
+{{ article_form.title }}
+</div>
+
+<div>
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+    <li class="accordion-item" data-accordion-item>
+      <!-- Accordion tab title -->
+      <a href="#" class="accordion-title" for="{{ article_form.description.id_for_label }}">{{ article_form.description.label }}</a>
+  
+      <!-- Accordion tab content -->
+      <div class="accordion-content" data-tab-content>
+        {{ article_form.description }}
+      </div>
+    </li>
+</ul>
+</div>
+<br />
+
+<div>
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+    <li class="accordion-item" data-accordion-item>
+      <!-- Accordion tab title -->
+      <a href="#" class="accordion-title" for="{{ article_form.shortlines.id_for_label }}">{{ article_form.shortlines.label }}</a>
+  
+      <!-- Accordion tab content -->
+      <div class="accordion-content" data-tab-content>
+        {{ article_form.shortlines }}
+      </div>
+    </li>
+</ul>
+</div>
+<br />
+
+<div>
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+    <li class="accordion-item is-active" data-accordion-item>
+      <!-- Accordion tab title -->
+      <a href="#" class="accordion-title" for="{{ article_form.content.id_for_label }}">{{ article_form.content.label }}</a>
+  
+      <!-- Accordion tab content -->
+      <div class="accordion-content" data-tab-content>
+        {{ article_form.content }}
+      </div>
+    </li>
+</ul>
+</div>
+
+
+{% endblock body %}
+
+
+
+
+
+
+{% block sidebar-right %}
+
+
+<div class="callout" style="margin-bottom: 5px; padding: 0; border-color: #f2f2f2;">
+    <ul class="accordion" data-accordion data-allow-all-closed="true">
+    <li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title" for="{{ article_form.status.id_for_label }}">{{ article_form.status.label }}</a>
+    <div class="accordion-content" data-tab-content style="padding: 15px;">
+        {{ article_form.status }}
+        <br />
+        <br />
+        <button type="submit" class="button expanded">Submit</button>
+    </div>
+</li>
+</ul>
+</div>
+
+
+<div class="callout" style="margin: 5px 0; padding: 0; border-color: #f2f2f2;">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+<li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title" for="{{ article_form.serial.id_for_label }}">{{ article_form.serial.label }}</a>
+    <div class="accordion-content" data-tab-content style="padding: 15px;">
+        {{ article_form.serial }}
+    </div>
+</li>
+</ul>
+</div>
+
+
+<div class="callout" style="margin: 5px 0; padding: 0; border-color: #f2f2f2;">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+<li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title" for="{{ article_form.category.id_for_label }}">{{ article_form.category.label }}</a>
+    <div class="accordion-content" data-tab-content style="padding: 15px;">
+        {{ article_form.category }}
+    </div>
+</li>
+</ul>
+</div>
+
+
+<div class="callout" style="margin: 5px 0; padding: 0; border-color: #f2f2f2;">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+<li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title">Upload cover image</a>
+    <div class="accordion-content" data-tab-content style="padding: 15px;">
+        <label for="{{ article_form.cover_image.id_for_label }}" class="button">{{ article_form.cover_image.label }}</label>
+        {{ article_form.cover_image }}
+    </div>
+</li>
+</ul>
+</div>
+
+
+<div class="callout" style="margin: 5px 0; padding: 0; border-color: #f2f2f2;">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+<li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title">Page settings</a>
+    <div class="accordion-content" data-tab-content style="padding: 0;">
+        <ul class="vertical menu rt-vertical-menu">
+           <li class="rt-vertical-menu-item" for="{{ article_form.verification.id_for_label }}">{{ article_form.verification }} {{ article_form.verification.label }}</li>
+           <li class="rt-vertical-menu-item" for="{{ article_form.is_promote.id_for_label }}">{{ article_form.is_promote }} {{ article_form.is_promote.label }}</li>
+           <li class="rt-vertical-menu-item" for="{{ article_form.is_trend.id_for_label }}">{{ article_form.is_trend }} {{ article_form.is_trend.label }}</li>
+        </ul>
+    </div>
+</li>
+</ul>
+</div>
+
+
+<div class="callout" style="margin: 5px 0; padding: 0; border-color: #f2f2f2;">
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+<li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title" for="{{ article_form.total_views.id_for_label }}">{{ article_form.total_views.label }}</a>
+    <div class="accordion-content" data-tab-content style="padding: 15px;">
+        {{ article_form.total_views }}
+    </div>
+</li>
+</ul>
+</div>
+
+
+</form>
+<!-- end form here. -->
+{% endblock sidebar-right %}

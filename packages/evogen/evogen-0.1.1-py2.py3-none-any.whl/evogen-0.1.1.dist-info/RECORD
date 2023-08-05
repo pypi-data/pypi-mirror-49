@@ -1,0 +1,11 @@
+evogen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evogen/genetic_drift_fsim.py,sha256=k2opCXIGXTylJHIfVXv1-SOyHGKq870S-YsDMRMOTN0,4713
+evogen/plot.py,sha256=DkGv_VNuqV8CfvWeVFJ48IyEcO2Mt35w9vO37H8fqpA,3596
+evogen/random_sampling.py,sha256=GONlMCFZDeiTbbuVSiNziP8j1Cxqj-NUiuPkKRxa-f4,862
+evogen/statistics.py,sha256=uiFmOoIMrUkFvsdrCBLCXE9-zG_mkezpyVtBepaxuZ0,2158
+evogen/test_instllation.py,sha256=VH2y1Zp0u00IK_ejTJuamEtAMGySyTnMoTP-PpfmIbg,161
+evogen-0.1.1.dist-info/LICENSE,sha256=IPof2Xjrq8CpRo-lX90TqfsbYq7SC0RYsabaLpnY37I,1073
+evogen-0.1.1.dist-info/METADATA,sha256=kzSkTXGwIszPjcBA7mvrOH1021G8K6JM7CgOv-nvfew,337
+evogen-0.1.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+evogen-0.1.1.dist-info/top_level.txt,sha256=MYu9VBQOH6yECSjXMG6frOtGYrqDjO5rqYA0vb4Dh1I,7
+evogen-0.1.1.dist-info/RECORD,,

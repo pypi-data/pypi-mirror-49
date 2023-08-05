@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: evogen
+Version: 0.1.1
+Summary: Encapsulates functions for simulating Evolutionary scenario and for computing Population Genetics statistics from genomic data.
+Home-page: https://github.com/yamasampo/evogen/
+Author: Haruka Yamashita
+Author-email: hyamasampo@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+
+

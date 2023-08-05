@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: django-json-ordered
+Version: 0.6
+Summary: It's an ordered json field
+Home-page: https://github.com/rafaelgontijo/django-json-ordered
+Author: Rafael Gontijo
+Author-email: rafaelgontijowinter@gmail.com
+License: MIT
+Description: Django Json Ordered
+        ====================
+        
+        # Install:
+            pip install django-json-ordered
+        
+        # Usage:
+        
+        Create your model:
+        
+            from django.db import models
+            from django_json_ordered.fields import JsonOrderedField
+        
+            class YourModel(models.Model):
+                your_field = JsonOrderedField()
+        
+        # Compatibility
+        
+        This module is only compatible with postgresql
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown

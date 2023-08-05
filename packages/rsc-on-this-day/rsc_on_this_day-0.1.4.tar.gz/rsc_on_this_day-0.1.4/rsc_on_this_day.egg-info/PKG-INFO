@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: rsc-on-this-day
+Version: 0.1.4
+Summary: Displays Royal Society of Chemistry "On This Day" fact
+Home-page: https://github.com/domdfcoding/rsc_on_this_day
+Author: Dominic Davis-Foster
+Author-email: dominic@davis-foster.co.uk
+License: GPL3
+Description: ****************
+        rsc_on_this_day
+        ****************
+        
+        Displays Royal Society of Chemistry "On This Day" fact
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

@@ -1,0 +1,11 @@
+uroboros/__init__.py,sha256=fhdv4cP1gvVFLn3LlO0DINliCX1WJcZAsqb0cr2Uw_c,134
+uroboros/command.py,sha256=6uBPwggaMI97SyXMzLsxqiRTw_fTjwf5uFG6ktLWFrU,7543
+uroboros/constants.py,sha256=cC-iduLTsdXoatd7yzwilxKDNTHoLZ3uyPy4faCA7pg,6677
+uroboros/errors.py,sha256=LrvTUzSe5hQ13BiMcT9iVixOpdu4K-sIeDO9H6oBVWw,962
+uroboros/option.py,sha256=tBkmaRHyfZiAEP6bjf7F3X8zycWoxxt_xSpzeBefvOI,632
+uroboros/utils.py,sha256=c9_uW68Fbh4KSQr_iPWrJTzCGJw7CAItZT7DB7fMBtg,196
+uroboros-0.1.0.dist-info/LICENSE,sha256=TZG0Y93WxoBI_XMW5dusZmIRkNa-IgvGB-SuYnpoEpM,11343
+uroboros-0.1.0.dist-info/METADATA,sha256=xpT_-JzflgqIU80OawOs8Jm1SAPvQEb3SAsh7NZBq48,4042
+uroboros-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+uroboros-0.1.0.dist-info/top_level.txt,sha256=Dbd95KtRAfSHhvEDRGpKzE6sW8Y8saX4Eg_wC7NmfV8,9
+uroboros-0.1.0.dist-info/RECORD,,

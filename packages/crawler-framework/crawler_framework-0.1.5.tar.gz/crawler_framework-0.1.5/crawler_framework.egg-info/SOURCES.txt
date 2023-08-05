@@ -1,0 +1,12 @@
+README.md
+setup.py
+core_framework/__init__.py
+core_framework/settings.py
+crawler_framework.egg-info/PKG-INFO
+crawler_framework.egg-info/SOURCES.txt
+crawler_framework.egg-info/dependency_links.txt
+crawler_framework.egg-info/not-zip-safe
+crawler_framework.egg-info/requires.txt
+crawler_framework.egg-info/top_level.txt
+scripts/dbconfig.py
+scripts/dbconfigv3.py

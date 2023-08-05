@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: crawler-framework
+Version: 0.1.5
+Summary: Framework for crawling
+Home-page: UNKNOWN
+Author: Dragan Matesic
+Author-email: dragan.matesic@gmail.com
+License: MIT
+Description: # Crawler Framework
+        #### About
+        Main objective is to secure fast deployment of crawler system that will help you setup all that you need to 
+        get started with data mining interactively over cmd/terminal.
+        Concept is based on long working experience and mistakes that have been learned over the years in data mining 
+        and database arhitecture. It could save you a lot of time and effort using this framework.
+        
+        ### Installation
+        Most important you should have python 3 installed on your machine. 
+        
+        In my case I use ```pip3.7 install crawler_framework```. 
+        
+        But it should work also with python 3.6 and
+        for older versions I didn't tested so please be sure to send me msg if it works on other python 3 versions.
+        
+        ### Setup
+        ####Database configuration
+        Before we can deploy anything we must setup connection strings for oneor more database 
+        servers that we are going to use.
+        Currently supported are PostgreSQL, Oracle and Microsoft SQL Server.
+        
+        **Step 1**
+        
+        Open cmd/terminal and write dbconfig.py. If you have installed python 2.7 and it is set as your primary interpreter 
+        you will have to follow instructions in program and then you will be able to work with framework. 
+        Don't worry it will not change anything for your older programs, it will only give directions to 
+        crawler framework so he could easly operate in future. It is necessary to do it only ones on single machine 
+        if python 2.7 is installed as primary interpreter. If everything goes well you should see this options below.
+        
+        
+        ![dbconfig](https://raw.githubusercontent.com/DraganMatesic/crawler_framework/master/dbconfig.PNG)
+        
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

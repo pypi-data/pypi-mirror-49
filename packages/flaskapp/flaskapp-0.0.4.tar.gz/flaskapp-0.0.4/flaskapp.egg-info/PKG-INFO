@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: flaskapp
+Version: 0.0.4
+Summary: Manage flask project simply
+Home-page: https://github.com/ksg97031/flaskapp
+Author: ksg97031
+Author-email: ksg97031@gmail.com
+License: UNKNOWN
+Description: flaskapp
+        ============================================================
+        | Create a flask project one by one is very troublesome to me.
+        | This project can create base files of flask project.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/x-rst

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: qcrit
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://www.qcrit.org
+Author: Tim Gianitsos
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Utilities for The Quantitative Criticism Lab
+https://www.qcrit.org
+
+## Installation
+
+```bash
+pip install qcrit
+```
+
+
+

@@ -1,0 +1,15 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+jt64common/__init__.py
+jt64common/help.py
+jt64common/messages.py
+jt64common/utils.py
+jt64common.egg-info/PKG-INFO
+jt64common.egg-info/SOURCES.txt
+jt64common.egg-info/dependency_links.txt
+jt64common.egg-info/requires.txt
+jt64common.egg-info/top_level.txt

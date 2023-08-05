@@ -1,0 +1,4 @@
+pika==1.0.1
+PyJWT==1.7.1
+PyYAML==5.1.1
+Werkzeug==0.15.4

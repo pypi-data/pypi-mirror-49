@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+goomba/__init__.py
+goomba/goomba.py
+goomba.egg-info/PKG-INFO
+goomba.egg-info/SOURCES.txt
+goomba.egg-info/dependency_links.txt
+goomba.egg-info/requires.txt
+goomba.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+CHANGES
+=======
+
+* Fix schema issue related to RoCE SR-IOV adapters

@@ -1,0 +1,15 @@
+[console_scripts]
+pkgwat = pkgwat.cli.main:main
+
+[pkgwat.subcommands]
+bugs = pkgwat.cli.subcommands:Bugs
+builds = pkgwat.cli.subcommands:Builds
+changelog = pkgwat.cli.subcommands:Changelog
+contents = pkgwat.cli.subcommands:Contents
+history = pkgwat.cli.subcommands:History
+icon = pkgwat.cli.subcommands:Icon
+info = pkgwat.cli.subcommands:Info
+releases = pkgwat.cli.subcommands:Releases
+search = pkgwat.cli.subcommands:Search
+updates = pkgwat.cli.subcommands:Updates
+

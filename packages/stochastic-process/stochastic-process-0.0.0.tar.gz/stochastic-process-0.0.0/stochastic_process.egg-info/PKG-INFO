@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: stochastic-process
+Version: 0.0.0
+Summary: Zhiqing
+Home-page: http://github.com/zhiqingxiao/zhiqingxiao.github.io/
+Author: Zhiqing Xiao
+Author-email: xzq.xiaozhiqing@gmail.com
+License: UNKNOWN
+Description: stochastic-process
+        =======================
+        
+        Stochastic Process
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown

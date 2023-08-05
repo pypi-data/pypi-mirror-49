@@ -1,0 +1,10 @@
+README.md
+setup.py
+aphrodite.egg-info/PKG-INFO
+aphrodite.egg-info/SOURCES.txt
+aphrodite.egg-info/dependency_links.txt
+aphrodite.egg-info/not-zip-safe
+aphrodite.egg-info/requires.txt
+aphrodite.egg-info/top_level.txt
+poseidon/__init__.py
+poseidon/poseidon.py

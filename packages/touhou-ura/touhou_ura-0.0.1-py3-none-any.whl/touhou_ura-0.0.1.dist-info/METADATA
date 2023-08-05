@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: touhou-ura
+Version: 0.0.1
+Summary: Python tool to get or/and download data from touhou-ura threads (futaba)
+Home-page: https://github.com/blackrose514/touhou-ura
+Author: blackrose514
+Author-email: dmtri3sukuna@gmail.com
+License: MIT
+Download-URL: https://github.com/blackrose514/touhou-ura/releases
+Keywords: touhou,futaba,4chan
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: beautifulsoup4
+
+# Touhou-ura
+
+Python tool to get or/and download data from touhou-ura threads (futaba).
+
+## Installation
+
+```bash
+pip install touhou-ura
+```
+Requirements: [requests](https://pypi.org/project/requests/),
+[tqdm](https://pypi.org/project/tqdm/), 
+[beautifulsoup4](https://pypi.org/project/beautifulsoup4/)
+
+
+## Usage
+
+```python
+from touhou_ura import ThUra
+
+th_ura = ThUra()
+```
+### Methods
+
+* `threads_all()`  
+Get all threads currently shows. [Return: list]  
+
+    Optional params:
+  * sort: (1=latest, 2=oldest, 3=comments(desc), 4=comments(asc), 6/8=no idea)
+  * x: Rows to return (default: 20)
+  * y: Columns to return (default: 10)
+  * l: Title length (default: 4)
+  * thumbnail_size: Size of thumbnail (0~6, default: 6)  
+
+* `get_thread_images(id)`  
+  Get image links(src) from a thread. [Return: list]
+
+  Params:
+    * id: Thread ID (You can find it on the url) https://dec.2chan.net/55/res/{THREAD_ID}.htm
+
+* `download_images(id, directory=None, custom=False)`  
+  Download images form a thread. By default, images will be saved on your desktop in 'touhou_ura/images' (Creates if does not exist)  
+
+  Params:
+    * id: Thread ID
+    * directory: Directory you want to save (optional).
+    * custom: (optional)  
+
+    Example: 
+    ```python
+    import os
+    from touhou_ura import ThUra
+
+    th_ura = ThUra()
+    directory = os.path.expanduser("~/Desktop/some_folder")
+
+    th_ura.download_images(id, directory)
+    # Will be saved at ~Desktop/some_folder/touhou_ura/images/{id}
+
+    th_ura.download_images(id, directory, True)
+    # Will be saved at ~Desktop/some_folder
+    ```
+* `download_archive(id, directory=None, custom=False)`
+Download archive of a thread (html, css & images). By default, archives will be saved on your desktop in 'touhou_ura/archives' (Creates if does not exist) 
+
+    Params:
+    * id: Thread ID
+    * directory: Directory you want to save (optional).
+    * custom: (optional)  
+
+    Example: 
+    ```python
+    import os
+    from touhou_ura import ThUra
+
+    th_ura = ThUra()
+    directory = os.path.expanduser("~/Desktop/some_folder")
+
+    th_ura.download_archive(id, directory)
+    # Will be saved at ~Desktop/some_folder/touhou_ura/archives/{id}
+
+    th_ura.download_archive(id, directory, True)
+    # Will be saved at ~Desktop/some_folder
+    ```
+
+#### More features coming soon
+
+## License
+MIT License
+
+
+

@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: python-streams
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/JaviOverflow/python-streams
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,streams,lambda
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

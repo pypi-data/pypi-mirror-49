@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: legos.ai
+Version: 0.0.2
+Summary: A simple framework for fast protopying of Deep Learning researches.
+Home-page: https://github.com/quanhua92/legos
+Author: Quan Hua
+Author-email: quanhua92@gmail.com
+License: Apache
+Description: # LEGOS
+        
+        Documentation: https://legos.readthedocs.io
+        
+        A simple framework for fast protopying of Deep Learning researches.
+        
+        # Installation
+        - Install using `pip`
+        ```
+        pip install legos.ai
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

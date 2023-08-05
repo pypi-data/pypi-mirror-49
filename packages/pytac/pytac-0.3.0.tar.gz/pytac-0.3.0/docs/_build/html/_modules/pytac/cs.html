@@ -1,0 +1,271 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pytac.cs &mdash; pytac 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> pytac
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Python Toolkit for Accelerator Controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developers.html">Developers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pytac.html">API Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">pytac</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>pytac.cs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for pytac.cs</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Class representing an abstract control system.&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="ControlSystem"><a class="viewcode-back" href="../../pytac.html#pytac.cs.ControlSystem">[docs]</a><span class="k">class</span> <span class="nc">ControlSystem</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Abstract base class representing a control system.</span>
+
+<span class="sd">    A specialised implementation of this class would be used to communicate</span>
+<span class="sd">    over channel access with the hardware in the ring.</span>
+
+<span class="sd">    **Methods:**</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<div class="viewcode-block" id="ControlSystem.get_single"><a class="viewcode-back" href="../../pytac.html#pytac.cs.ControlSystem.get_single">[docs]</a>    <span class="k">def</span> <span class="nf">get_single</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pv</span><span class="p">,</span> <span class="n">throw</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the value of a given PV.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            pv (string): PV to get the value of.</span>
+<span class="sd">                         readback or a setpoint PV.</span>
+<span class="sd">            throw (bool): On failure, if True raise ControlSystemException, if</span>
+<span class="sd">                           False None will be returned for any PV that fails</span>
+<span class="sd">                           and log a warning.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            object: the current value of the given PV.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ControlSystemException: if it cannot connect to the specified PVs.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="ControlSystem.get_multiple"><a class="viewcode-back" href="../../pytac.html#pytac.cs.ControlSystem.get_multiple">[docs]</a>    <span class="k">def</span> <span class="nf">get_multiple</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pvs</span><span class="p">,</span> <span class="n">throw</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the value for given PVs.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            pvs (sequence): PVs to get values of.</span>
+<span class="sd">            throw (bool): On failure, if True raise ControlSystemException, if</span>
+<span class="sd">                           False None will be returned for any PV that fails</span>
+<span class="sd">                           and log a warning.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list(object): the current values of the PVs.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ControlSystemException: if it cannot connect to the specified PV.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="ControlSystem.set_single"><a class="viewcode-back" href="../../pytac.html#pytac.cs.ControlSystem.set_single">[docs]</a>    <span class="k">def</span> <span class="nf">set_single</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pv</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">throw</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the value of a given PV.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            pv (string): The PV to set the value of.</span>
+<span class="sd">            value (object): The value to set the PV to.</span>
+<span class="sd">            throw (bool): On failure, if True raise ControlSystemException, if</span>
+<span class="sd">                           False log a warning.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ControlSystemException: if it cannot connect to the specified PV.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="ControlSystem.set_multiple"><a class="viewcode-back" href="../../pytac.html#pytac.cs.ControlSystem.set_multiple">[docs]</a>    <span class="k">def</span> <span class="nf">set_multiple</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pvs</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">throw</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the values for given PVs.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            pvs (sequence): PVs to set the values of.</span>
+<span class="sd">            values (sequence): values to set no the PVs.</span>
+<span class="sd">            throw (bool): On failure, if True raise ControlSystemException, if</span>
+<span class="sd">                           False return a list of True and False values</span>
+<span class="sd">                           corresponding to successes and failures and log a</span>
+<span class="sd">                           warning.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: if the PVs or values are not passed in as sequences</span>
+<span class="sd">                        or if they have different lengths</span>
+<span class="sd">            ControlSystemException: if it cannot connect to one or more PVs.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Will Rogers, Razvan Vasile
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

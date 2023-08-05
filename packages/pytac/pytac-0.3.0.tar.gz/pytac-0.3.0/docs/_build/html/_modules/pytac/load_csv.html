@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pytac.load_csv &mdash; pytac 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> pytac
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Python Toolkit for Accelerator Controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developers.html">Developers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pytac.html">API Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">pytac</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>pytac.load_csv</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for pytac.load_csv</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Module to load the elements of the machine from csv files.</span>
+
+<span class="sd">The csv files are stored in one directory with specified names:</span>
+
+<span class="sd"> * elements.csv</span>
+<span class="sd"> * devices.csv</span>
+<span class="sd"> * families.csv</span>
+<span class="sd"> * unitconv.csv</span>
+<span class="sd"> * uc_poly_data.csv</span>
+<span class="sd"> * uc_pchip_data.csv</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">collections</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="kn">import</span> <span class="nn">pytac</span>
+<span class="kn">from</span> <span class="nn">pytac</span> <span class="k">import</span> <span class="n">data_source</span><span class="p">,</span> <span class="n">device</span><span class="p">,</span> <span class="n">element</span><span class="p">,</span> <span class="n">lattice</span><span class="p">,</span> <span class="n">units</span><span class="p">,</span> <span class="n">utils</span>
+<span class="kn">from</span> <span class="nn">pytac.exceptions</span> <span class="k">import</span> <span class="n">ControlSystemException</span>
+
+
+<span class="c1"># Create a default unit conversion object that returns the input unchanged.</span>
+<span class="n">DEFAULT_UC</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">NullUnitConv</span><span class="p">()</span>
+
+<span class="n">ELEMENTS_FILENAME</span> <span class="o">=</span> <span class="s1">&#39;elements.csv&#39;</span>
+<span class="n">DEVICES_FILENAME</span> <span class="o">=</span> <span class="s1">&#39;devices.csv&#39;</span>
+<span class="n">FAMILIES_FILENAME</span> <span class="o">=</span> <span class="s1">&#39;families.csv&#39;</span>
+<span class="n">UNITCONV_FILENAME</span> <span class="o">=</span> <span class="s1">&#39;unitconv.csv&#39;</span>
+<span class="n">POLY_FILENAME</span> <span class="o">=</span> <span class="s1">&#39;uc_poly_data.csv&#39;</span>
+<span class="n">PCHIP_FILENAME</span> <span class="o">=</span> <span class="s1">&#39;uc_pchip_data.csv&#39;</span>
+
+
+<div class="viewcode-block" id="load_poly_unitconv"><a class="viewcode-back" href="../../pytac.html#pytac.load_csv.load_poly_unitconv">[docs]</a><span class="k">def</span> <span class="nf">load_poly_unitconv</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Load polynomial unit conversions from a csv file.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        filename (path-like object): The pathname of the file from which to</span>
+<span class="sd">                                      load the polynomial unit conversions.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        dict: A dictionary of the unit conversions.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">unitconvs</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">poly</span><span class="p">:</span>
+        <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">poly</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">csv_reader</span><span class="p">:</span>
+            <span class="n">data</span><span class="p">[(</span><span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;uc_id&#39;</span><span class="p">]))]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;coeff&#39;</span><span class="p">]),</span>
+                                               <span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;val&#39;</span><span class="p">])))</span>
+    <span class="c1"># Create PolyUnitConv for each item and put in the dict</span>
+    <span class="k">for</span> <span class="n">uc_id</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="n">u</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">PolyUnitConv</span><span class="p">([</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">uc_id</span><span class="p">]))])</span>
+        <span class="n">unitconvs</span><span class="p">[</span><span class="n">uc_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">u</span>
+    <span class="k">return</span> <span class="n">unitconvs</span></div>
+
+
+<div class="viewcode-block" id="load_pchip_unitconv"><a class="viewcode-back" href="../../pytac.html#pytac.load_csv.load_pchip_unitconv">[docs]</a><span class="k">def</span> <span class="nf">load_pchip_unitconv</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Load pchip unit conversions from a csv file.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        filename (path-like object): The pathname of the file from which to</span>
+<span class="sd">                                      load the pchip unit conversions.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        dict: A dictionary of the unit conversions.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">unitconvs</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">pchip</span><span class="p">:</span>
+        <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">pchip</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">csv_reader</span><span class="p">:</span>
+            <span class="n">data</span><span class="p">[(</span><span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;uc_id&#39;</span><span class="p">]))]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;eng&#39;</span><span class="p">]),</span>
+                                               <span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;phy&#39;</span><span class="p">])))</span>
+    <span class="c1"># Create PchipUnitConv for each item and put in the dict</span>
+    <span class="k">for</span> <span class="n">uc_id</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="n">eng</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">uc_id</span><span class="p">])]</span>
+        <span class="n">phy</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">uc_id</span><span class="p">])]</span>
+        <span class="n">u</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">PchipUnitConv</span><span class="p">(</span><span class="n">eng</span><span class="p">,</span> <span class="n">phy</span><span class="p">)</span>
+        <span class="n">unitconvs</span><span class="p">[</span><span class="n">uc_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">u</span>
+    <span class="k">return</span> <span class="n">unitconvs</span></div>
+
+
+<div class="viewcode-block" id="load_unitconv"><a class="viewcode-back" href="../../pytac.html#pytac.load_csv.load_unitconv">[docs]</a><span class="k">def</span> <span class="nf">load_unitconv</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">lattice</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Load the unit conversion objects from a file.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        directory (str): The directory where the data is stored.</span>
+<span class="sd">        mode (str): The name of the mode that is used.</span>
+<span class="sd">        lattice(Lattice): The lattice object that will be used.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">unitconvs</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="c1"># Assemble datasets from the polynomial file</span>
+    <span class="n">poly_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">POLY_FILENAME</span><span class="p">)</span>
+    <span class="n">unitconvs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">load_poly_unitconv</span><span class="p">(</span><span class="n">poly_file</span><span class="p">))</span>
+    <span class="c1"># Assemble datasets from the pchip file</span>
+    <span class="n">pchip_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">PCHIP_FILENAME</span><span class="p">)</span>
+    <span class="n">unitconvs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">load_pchip_unitconv</span><span class="p">(</span><span class="n">pchip_file</span><span class="p">))</span>
+    <span class="c1"># Add the unitconv objects to the elements</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">UNITCONV_FILENAME</span><span class="p">))</span> <span class="k">as</span> <span class="n">unitconv</span><span class="p">:</span>
+        <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">unitconv</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">csv_reader</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;el_id&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;uc_type&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;null&#39;</span><span class="p">:</span>
+                    <span class="n">uc</span> <span class="o">=</span> <span class="n">unitconvs</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;uc_id&#39;</span><span class="p">])]</span>
+                    <span class="n">uc</span><span class="o">.</span><span class="n">phys_units</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;phys_units&#39;</span><span class="p">]</span>
+                    <span class="n">uc</span><span class="o">.</span><span class="n">eng_units</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;eng_units&#39;</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">uc</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">NullUnitConv</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;eng_units&#39;</span><span class="p">],</span>
+                                            <span class="n">item</span><span class="p">[</span><span class="s1">&#39;phys_units&#39;</span><span class="p">])</span>
+                <span class="n">lattice</span><span class="o">.</span><span class="n">set_unitconv</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;field&#39;</span><span class="p">],</span> <span class="n">uc</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">element</span> <span class="o">=</span> <span class="n">lattice</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;el_id&#39;</span><span class="p">])</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+                <span class="c1"># For certain magnet types, we need an additional rigidity</span>
+                <span class="c1"># conversion factor as well as the raw conversion.</span>
+                <span class="k">if</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;uc_type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;null&#39;</span><span class="p">:</span>
+                    <span class="n">uc</span> <span class="o">=</span> <span class="n">units</span><span class="o">.</span><span class="n">NullUnitConv</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;eng_units&#39;</span><span class="p">],</span>
+                                            <span class="n">item</span><span class="p">[</span><span class="s1">&#39;phys_units&#39;</span><span class="p">])</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">uc</span> <span class="o">=</span> <span class="n">unitconvs</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;uc_id&#39;</span><span class="p">])]</span>
+                    <span class="k">if</span> <span class="n">element</span><span class="o">.</span><span class="n">families</span><span class="o">.</span><span class="n">intersection</span><span class="p">((</span><span class="s1">&#39;HSTR&#39;</span><span class="p">,</span> <span class="s1">&#39;VSTR&#39;</span><span class="p">,</span> <span class="s1">&#39;QUAD&#39;</span><span class="p">,</span>
+                                                      <span class="s1">&#39;SEXT&#39;</span><span class="p">)):</span>
+                        <span class="n">energy</span> <span class="o">=</span> <span class="n">lattice</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="s1">&#39;energy&#39;</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="n">pytac</span><span class="o">.</span><span class="n">PHYS</span><span class="p">)</span>
+                        <span class="n">uc</span><span class="o">.</span><span class="n">_post_eng_to_phys</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">get_div_rigidity</span><span class="p">(</span><span class="n">energy</span><span class="p">)</span>
+                        <span class="n">uc</span><span class="o">.</span><span class="n">_pre_phys_to_eng</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">get_mult_rigidity</span><span class="p">(</span><span class="n">energy</span><span class="p">)</span>
+                    <span class="n">uc</span><span class="o">.</span><span class="n">phys_units</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;phys_units&#39;</span><span class="p">]</span>
+                    <span class="n">uc</span><span class="o">.</span><span class="n">eng_units</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;eng_units&#39;</span><span class="p">]</span>
+                <span class="n">element</span><span class="o">.</span><span class="n">set_unitconv</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;field&#39;</span><span class="p">],</span> <span class="n">uc</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="load"><a class="viewcode-back" href="../../pytac.html#pytac.load_csv.load">[docs]</a><span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="n">control_system</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">symmetry</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Load the elements of a lattice from a directory.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        mode (str): The name of the mode to be loaded.</span>
+<span class="sd">        control_system (ControlSystem): The control system to be used. If none</span>
+<span class="sd">                                         is provided an EpicsControlSystem will</span>
+<span class="sd">                                         be created.</span>
+<span class="sd">        directory (str): Directory where to load the files from. If no</span>
+<span class="sd">                          directory is given the data directory at the root of</span>
+<span class="sd">                          the repository is used.</span>
+<span class="sd">        symmetry (int): The symmetry of the lattice (the number of cells).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Lattice: The lattice containing all elements.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ControlSystemException: if the default control system, cothread, is not</span>
+<span class="sd">                                 installed.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">control_system</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># Don&#39;t import epics unless we need it to avoid unnecessary</span>
+            <span class="c1"># installation of cothread</span>
+            <span class="kn">from</span> <span class="nn">pytac</span> <span class="k">import</span> <span class="n">cothread_cs</span>
+            <span class="n">control_system</span> <span class="o">=</span> <span class="n">cothread_cs</span><span class="o">.</span><span class="n">CothreadControlSystem</span><span class="p">()</span>
+    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">ControlSystemException</span><span class="p">(</span><span class="s2">&quot;Please install cothread to load a &quot;</span>
+                                     <span class="s2">&quot;lattice using the default control &quot;</span>
+                                     <span class="s2">&quot;system (found in cothread_cs.py).&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">directory</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)),</span>
+                                 <span class="s1">&#39;data&#39;</span><span class="p">)</span>
+    <span class="n">lat</span> <span class="o">=</span> <span class="n">lattice</span><span class="o">.</span><span class="n">EpicsLattice</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="n">control_system</span><span class="p">,</span> <span class="n">symmetry</span><span class="o">=</span><span class="n">symmetry</span><span class="p">)</span>
+    <span class="n">lat</span><span class="o">.</span><span class="n">set_data_source</span><span class="p">(</span><span class="n">data_source</span><span class="o">.</span><span class="n">DeviceDataSource</span><span class="p">(),</span> <span class="n">pytac</span><span class="o">.</span><span class="n">LIVE</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">ELEMENTS_FILENAME</span><span class="p">))</span> <span class="k">as</span> <span class="n">elements</span><span class="p">:</span>
+        <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">elements</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">csv_reader</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span> <span class="k">else</span> <span class="kc">None</span>
+            <span class="n">e</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">EpicsElement</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;length&#39;</span><span class="p">]),</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">],</span>
+                                     <span class="n">name</span><span class="p">,</span> <span class="n">lat</span><span class="p">)</span>
+            <span class="n">e</span><span class="o">.</span><span class="n">add_to_family</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">])</span>
+            <span class="n">e</span><span class="o">.</span><span class="n">set_data_source</span><span class="p">(</span><span class="n">data_source</span><span class="o">.</span><span class="n">DeviceDataSource</span><span class="p">(),</span> <span class="n">pytac</span><span class="o">.</span><span class="n">LIVE</span><span class="p">)</span>
+            <span class="n">lat</span><span class="o">.</span><span class="n">add_element</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">DEVICES_FILENAME</span><span class="p">))</span> <span class="k">as</span> <span class="n">devices</span><span class="p">:</span>
+        <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">devices</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">csv_reader</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+            <span class="n">get_pv</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;get_pv&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;get_pv&#39;</span><span class="p">]</span> <span class="k">else</span> <span class="kc">None</span>
+            <span class="n">set_pv</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;set_pv&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;set_pv&#39;</span><span class="p">]</span> <span class="k">else</span> <span class="kc">None</span>
+            <span class="n">pve</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">d</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">EpicsDevice</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">control_system</span><span class="p">,</span> <span class="n">pve</span><span class="p">,</span> <span class="n">get_pv</span><span class="p">,</span> <span class="n">set_pv</span><span class="p">)</span>
+            <span class="c1"># Devices on index 0 are attached to the lattice not elements.</span>
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;el_id&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">lat</span><span class="o">.</span><span class="n">add_device</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;field&#39;</span><span class="p">],</span> <span class="n">d</span><span class="p">,</span> <span class="n">DEFAULT_UC</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">lat</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;el_id&#39;</span><span class="p">])</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">add_device</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;field&#39;</span><span class="p">],</span> <span class="n">d</span><span class="p">,</span>
+                                                       <span class="n">DEFAULT_UC</span><span class="p">)</span>
+        <span class="c1"># Add basic devices to the lattice.</span>
+        <span class="n">positions</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">lat</span><span class="p">:</span>
+            <span class="n">positions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">elem</span><span class="o">.</span><span class="n">s</span><span class="p">)</span>
+        <span class="n">lat</span><span class="o">.</span><span class="n">add_device</span><span class="p">(</span><span class="s1">&#39;s_position&#39;</span><span class="p">,</span> <span class="n">device</span><span class="o">.</span><span class="n">BasicDevice</span><span class="p">(</span><span class="n">positions</span><span class="p">),</span> <span class="n">DEFAULT_UC</span><span class="p">)</span>
+        <span class="n">lat</span><span class="o">.</span><span class="n">add_device</span><span class="p">(</span><span class="s1">&#39;energy&#39;</span><span class="p">,</span> <span class="n">device</span><span class="o">.</span><span class="n">BasicDevice</span><span class="p">(</span><span class="mf">3.e+09</span><span class="p">),</span> <span class="n">DEFAULT_UC</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">FAMILIES_FILENAME</span><span class="p">))</span> <span class="k">as</span> <span class="n">families</span><span class="p">:</span>
+        <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">families</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">csv_reader</span><span class="p">:</span>
+            <span class="n">lat</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;el_id&#39;</span><span class="p">])</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">add_to_family</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;family&#39;</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">UNITCONV_FILENAME</span><span class="p">)):</span>
+        <span class="n">load_unitconv</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">lat</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">lat</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Will Rogers, Razvan Vasile
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

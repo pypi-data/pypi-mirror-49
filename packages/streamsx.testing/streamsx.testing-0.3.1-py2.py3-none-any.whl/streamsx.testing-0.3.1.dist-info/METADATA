@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: streamsx.testing
+Version: 0.3.1
+Summary: IBM Streams tester
+Home-page: https://github.com/IBMStreams/streamsx.testing
+Author: IBM Streams @ github.com
+Author-email: debrunne@us.ibm.com
+License: Apache License - Version 2.0
+Keywords: streams,ibmstreams,streaming,analytics,streaming-analytics,testing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: streamsx (>=1.11.8)
+Requires-Dist: nose
+
+Overview
+========
+
+Testing framework for IBM Streams SPL and Python applications.
+
+Includes nose plugins to control the tests when run with nosetests.
+
+Documentation
+=============
+
+* `streamsx.testing package documentation <http://streamsxtesting.readthedocs.io/>`_
+
+
+
+

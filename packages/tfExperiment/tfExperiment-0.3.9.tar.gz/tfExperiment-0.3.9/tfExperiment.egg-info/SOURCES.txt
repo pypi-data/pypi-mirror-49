@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+tfExperiment/__init__.py
+tfExperiment.egg-info/PKG-INFO
+tfExperiment.egg-info/SOURCES.txt
+tfExperiment.egg-info/dependency_links.txt
+tfExperiment.egg-info/requires.txt
+tfExperiment.egg-info/top_level.txt

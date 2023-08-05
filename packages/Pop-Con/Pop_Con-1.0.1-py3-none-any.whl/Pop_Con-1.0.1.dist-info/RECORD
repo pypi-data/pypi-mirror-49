@@ -1,0 +1,11 @@
+Pop_Con-1.0.1.data/scripts/Pop-Con,sha256=zN2qtHkQR64tpS8PnvMAdUScEDEefePKu2AACgs3Uz4,31432
+Pop_Con-1.0.1.data/scripts/SFS_genotypes_profiles_plot.R,sha256=gHJUfTR9OCVcK1Y75-6CiOu_9bAFhUthjD5DW5cksNs,5390
+Pop_Con-1.0.1.data/scripts/plot_SFS_genotype_profiles.py,sha256=-JKgWTLB1Hbu64B0jysXKbJyT4gDUPA1DsrVRQJFLS4,6771
+popcon/SFS_profiles_plot.py,sha256=WCUexCnDzeW4EF0-hHmFkf-h8i9ElRAcVQBo5ie8D5E,22544
+popcon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+popcon/heterozygosity.py,sha256=mj2SaZM5L0_lLTbE7giK-DvBX7FldRlsAmuNectjhpo,17951
+popcon/util.py,sha256=8lZDB-93MPc7gB9hvAQBtMr20ehQ89tF_nygjXQqoGA,246
+Pop_Con-1.0.1.dist-info/METADATA,sha256=rBc40Neac6Ux2jVu90dt7vnQq1VAzwHDhtypBu_dZtY,13769
+Pop_Con-1.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+Pop_Con-1.0.1.dist-info/top_level.txt,sha256=WDTHQJ0Sse4IqdibDYmfAHnsZT0Fk6Zjbb70ylMeLSY,7
+Pop_Con-1.0.1.dist-info/RECORD,,

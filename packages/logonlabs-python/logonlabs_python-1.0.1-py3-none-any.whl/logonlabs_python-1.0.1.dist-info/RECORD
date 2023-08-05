@@ -1,0 +1,10 @@
+logonlabs/__init__.py,sha256=bOEVpjtZPiXWIKmhXD22uY1ECjdTNOwB8igZ-lQbDVY,18
+logonlabs/allowableValues.py,sha256=IDJztEbEo9CM3RHRmkad_eH1EJGhAHCFtL-juggoyYM,225
+logonlabs/api.py,sha256=SXb_yUSGgGVMeq6UhJPSjJFbAb6kwC7zmyzE3J8fx20,801
+logonlabs/client.py,sha256=lvjEd3DuCSWpAJAX_qhBpf6KrRXwZaP6b4ZJhxaHeQ4,5226
+logonlabs/util.py,sha256=p9IWIMn5PajoZCjMruY_3CWCkgFwBkqMgmRCeDnrcg0,969
+logonlabs_python-1.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logonlabs_python-1.0.1.dist-info/METADATA,sha256=7ioBisoqfkQ7KgwzBwA26ZngjGgMdjq_uEjCvOjVibs,5937
+logonlabs_python-1.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+logonlabs_python-1.0.1.dist-info/top_level.txt,sha256=anORTbuiLoHzT7scAJI3efgUArZ-YVE0Kq2lSw2j6qc,10
+logonlabs_python-1.0.1.dist-info/RECORD,,

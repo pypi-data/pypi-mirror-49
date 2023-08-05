@@ -1,0 +1,3 @@
+[console_scripts]
+canaria_domestica_red_black = canaria_domestica_red_black:main
+

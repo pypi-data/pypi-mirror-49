@@ -1,0 +1,4 @@
+Xlib
+pygame
+perlcompat
+rgbconv

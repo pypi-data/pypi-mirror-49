@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+vignette_f_ronds_prop.ipynb
+stocknflow/__init__.py
+stocknflow/f_flux_prop.py
+stocknflow/f_ronds_prop.py
+stocknflow.egg-info/PKG-INFO
+stocknflow.egg-info/SOURCES.txt
+stocknflow.egg-info/dependency_links.txt
+stocknflow.egg-info/not-zip-safe
+stocknflow.egg-info/requires.txt
+stocknflow.egg-info/top_level.txt

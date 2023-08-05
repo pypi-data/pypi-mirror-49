@@ -1,0 +1,3 @@
+include *.txt
+recursive-include stocknflow *.csv, *.shp, *.shx, *.dbf, *.prj
+include *.ipynb

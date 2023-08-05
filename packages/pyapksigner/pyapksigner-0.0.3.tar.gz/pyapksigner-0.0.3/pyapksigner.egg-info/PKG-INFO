@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyapksigner
+Version: 0.0.3
+Summary: Sign the apk file
+Home-page: https://github.com/ksg97031/pyapksigner
+Author: ksg97031
+Author-email: ksg97031@gmail.com
+License: UNKNOWN
+Description: pyapksigner
+        ============================================================
+        | pyapksigner can sign the apk file.
+        |
+        
+        .. code:: sh
+        
+          $ pip install pyapksigner
+          $ pyapksigner --sign [apk_path]
+          > [signed_apk_path]
+          $ pyapksigner --sign --key_path="sample.jks" --key_alias="sample" --key_pass="sample_key" --ks_pass="sample_ks"
+          > [signed_apk_path]
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bouncerscript
+Version: 3.6.2
+Summary: TaskCluster Bouncer Script
+Home-page: https://github.com/mozilla-releng/bouncerscript
+Author: Mozilla Release Engineering
+Author-email: release+python@mozilla.com
+License: MPL2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: scriptworker
+Requires-Dist: mozilla-version
+
+UNKNOWN
+
+

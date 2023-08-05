@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: django-brake
+Version: 1.6.0
+Summary: Cache-based rate-limiting for Django.
+Home-page: http://github.com/gmcquillan/django-brake
+Author: James Socol, Gavin McQuillan
+Author-email: james@mozilla.com, gavin@urbanairship.com
+License: BSD
+Description: Cache-based rate-limiting for Django.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Environment :: Web Environment :: Mozilla
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cintay
+Version: 0.1
+Summary: Print CINTAY
+Home-page: https://github.com/Chinacolt/cintay-pip
+Author: Emre Cintay
+Author-email: emre@cintay.com
+License: UNKNOWN
+Description: # pip-cintay
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

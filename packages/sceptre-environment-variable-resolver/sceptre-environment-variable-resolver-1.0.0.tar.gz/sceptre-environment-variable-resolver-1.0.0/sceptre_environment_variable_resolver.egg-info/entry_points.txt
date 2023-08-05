@@ -1,0 +1,3 @@
+[sceptre.resolvers]
+environment_variable = resolver.environment_variable:EnvironmentVariable
+

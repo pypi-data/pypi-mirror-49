@@ -1,0 +1,14 @@
+datastore_viewer/__init__.py,sha256=jjYKJB6IfFGk5CQ-q410icjwYTzbldfDU7WvOjV0IIA,1650
+datastore_viewer/__pycache__/__init__.cpython-37.pyc,sha256=IAmzhOckSpyUrSJT6hgZl8LTf_Q5T0Twgtga0WXSXtU,2136
+datastore_viewer/presentation/__init__.py,sha256=tz0LBpuzv5EZTYjVfetB8Wp1j-mZ5XjFkMyfAGxuxZ0,176
+datastore_viewer/presentation/__pycache__/__init__.cpython-37.pyc,sha256=RKAl5RAAhq0WG-aOCp8_KsvXjTmcYVHcsJWrdhB-Khw,389
+datastore_viewer/presentation/template/dashboard.html,sha256=1YdPIERt5x6meyO1W7SbrdezLMye-UwxNLLblSRGarU,301
+datastore_viewer/presentation/template/project_dashboard.html,sha256=1q7MKRAr9GVwWfZvn6Pxkmz5LdmYNV9MloHlL9zF5FM,1442
+datastore_viewer/presentation/ui/__init__.py,sha256=nGaGBtkZ-aZ0DWdIhOojkcO8NedGNYfcFu1yN-UMumE,6409
+datastore_viewer/presentation/ui/__pycache__/__init__.cpython-37.pyc,sha256=F3azKLw9RnUL8iRy5iqT7DGlUgt3W9D0S6QHcmTytKk,7298
+datastore_viewer-0.0.6a0.data/scripts/datastore-viewer,sha256=TrrCtnIrDWcaZ8mxtqKl7ogH6HuWPBdb9oLKP9r4ur0,256
+datastore_viewer-0.0.6a0.dist-info/LICENSE,sha256=_rh6LgwwXeNGTMRAd9pTk8UtjKY2LTdCcVfQTsb0UQ0,1057
+datastore_viewer-0.0.6a0.dist-info/METADATA,sha256=JD_ir9Ee5EjXA8Kl62mBGomglodEbUXTlQz1nA6IWoQ,1759
+datastore_viewer-0.0.6a0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+datastore_viewer-0.0.6a0.dist-info/top_level.txt,sha256=HIXLAooNKF591RrgGHtlKpFx9mdmRzJZ-u9EYnQpfeI,17
+datastore_viewer-0.0.6a0.dist-info/RECORD,,

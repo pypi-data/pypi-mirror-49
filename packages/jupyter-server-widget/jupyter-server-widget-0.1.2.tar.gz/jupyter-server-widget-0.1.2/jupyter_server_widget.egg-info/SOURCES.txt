@@ -1,0 +1,10 @@
+README.md
+setup.py
+jupyter_server_widget.egg-info/PKG-INFO
+jupyter_server_widget.egg-info/SOURCES.txt
+jupyter_server_widget.egg-info/dependency_links.txt
+jupyter_server_widget.egg-info/requires.txt
+jupyter_server_widget.egg-info/top_level.txt
+jupyterserverwidget/__init__.py
+jupyterserverwidget/serverwidget.py
+jupyterserverwidget/serverwidgetmagics.py

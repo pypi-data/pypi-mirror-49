@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: jupyter-server-widget
+Version: 0.1.2
+Summary: Jupyter Notebook %%magics and Widget to start and stop servers from a Cell
+Home-page: https://github.com/srizzo/jupyter-server-widget
+Author: Samuel Rizzo
+Author-email: rizzolabs@gmail.com
+License: MIT
+Description: # Jupyter Server Widget
+        
+        Jupyter Notebook %%magics and Widget to start and stop servers from a Cell
+        
+        
+        Usage
+        ------
+        
+        Load extension inside a Jupyter notebook:
+        
+        ```
+        %load_ext jupyterserverwidget
+        ```
+        
+        Add server commands with cell magic:
+        
+        ```
+        %server myserver1 --args myargs
+        ```
+        
+        ```
+        %%servers
+        myserver1 --args myargs
+        myserver2 --args myargs
+        ```
+        
+        Click buttons to start them, click again to stop.
+        
+        
+        Examples
+        ---------
+        
+        ![Screenshot](screenshot.png "Examples")
+        
+        
+        Installation
+        ------------
+        
+        Install and activate dependencies:
+        
+        - [ipywidgets](https://github.com/jupyter-widgets/ipywidgets)
+        
+        Then:
+        
+            $ pip install jupyter_server_widget
+        
+Keywords: ipython,jupyter
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+scrapy_ssdb_spider/__init__.py
+scrapy_ssdb_spider/dupefilter.py
+scrapy_ssdb_spider/queues.py
+scrapy_ssdb_spider/scheduler.py
+scrapy_ssdb_spider/spiders.py
+scrapy_ssdb_spider/ssdb.py
+scrapy_ssdb_spider/ssdb_default_settings.py
+scrapy_ssdb_spider.egg-info/PKG-INFO
+scrapy_ssdb_spider.egg-info/SOURCES.txt
+scrapy_ssdb_spider.egg-info/dependency_links.txt
+scrapy_ssdb_spider.egg-info/requires.txt
+scrapy_ssdb_spider.egg-info/top_level.txt

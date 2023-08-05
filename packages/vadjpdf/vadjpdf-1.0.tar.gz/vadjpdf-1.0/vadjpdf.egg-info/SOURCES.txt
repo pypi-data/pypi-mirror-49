@@ -1,0 +1,9 @@
+README.md
+setup.py
+vadjpdf/__init__.py
+vadjpdf/pdf2image.py
+vadjpdf/pdf2text.py
+vadjpdf.egg-info/PKG-INFO
+vadjpdf.egg-info/SOURCES.txt
+vadjpdf.egg-info/dependency_links.txt
+vadjpdf.egg-info/top_level.txt

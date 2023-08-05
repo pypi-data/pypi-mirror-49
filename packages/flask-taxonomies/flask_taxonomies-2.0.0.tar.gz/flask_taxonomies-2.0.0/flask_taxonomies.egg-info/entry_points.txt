@@ -1,0 +1,6 @@
+[invenio_db.alembic]
+flask_taxonomies = flask_taxonomies:alembic
+
+[invenio_db.models]
+flask_taxonomies = flask_taxonomies.models
+

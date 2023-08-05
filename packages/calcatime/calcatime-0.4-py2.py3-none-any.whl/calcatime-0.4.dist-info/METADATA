@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: calcatime
+Version: 0.4
+Summary: Calculates totat time from calendar events and groupes by an event attribute.
+Home-page: https://github.com/eirannejad/calcatime
+License: UNKNOWN
+Author: Ehsan Iran-Nejad
+Author-email: eirannejad@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: docopt
+Requires-Dist: exchangelib

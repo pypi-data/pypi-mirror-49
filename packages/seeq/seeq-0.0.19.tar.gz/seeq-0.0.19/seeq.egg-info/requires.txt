@@ -1,0 +1,7 @@
+certifi
+ipython~=5.8.0
+matplotlib
+numpy
+pandas
+six
+urllib3

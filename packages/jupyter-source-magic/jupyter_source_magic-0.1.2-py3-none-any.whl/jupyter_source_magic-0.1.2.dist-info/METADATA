@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: jupyter-source-magic
+Version: 0.1.2
+Summary: A Jupyter Notebook %%magic to quickly edit and run source code
+Home-page: https://github.com/srizzo/jupyter-source-magic
+Author: Samuel Rizzo
+Author-email: rizzolabs@gmail.com
+License: MIT
+Keywords: ipython,jupyter
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: jupyter
+Requires-Dist: ipywidgets
+Requires-Dist: jupyter-interval-widget
+
+# Jupyter Source Magic
+
+A Jupyter Notebook %%magic to quickly edit and run source code.
+
+- Both saves and evaluates source code when cell is run
+- Accepts and evaluates other cell magic annotations, without saving them
+- Deals with existing files and monitors external changes
+
+Disclaimer
+----------
+
+This is an experimental project. Use at your own risk.
+
+Usage
+------
+
+Load extension inside a Jupyter notebook:
+
+```
+%load_ext jupytersourcemagic
+```
+
+Add code with Cell magic:
+
+```
+%%source path/to/source.py
+# code to run
+```
+
+Run to save and evaluate.
+
+Examples
+--------
+
+Save and run a script:
+
+```
+%%source path/to/source.py
+print('hello')
+```
+
+Load an existing source to edit.
+
+```
+%loadsource path/to/source.py
+## when run, cell contents will be replaced with path/to/source.py
+```
+
+Handle other cell magic annotations:
+
+```
+%%source path/to/source.sh
+%%bash
+echo 'hello'
+```
+
+Help
+-----
+
+Display usage and configuration options:
+
+```
+%%source?
+```
+
+Installation
+------------
+
+Install and activate dependencies:
+
+- [ipywidgets](https://github.com/jupyter-widgets/ipywidgets)
+- [jupyter-interval-widget](https://github.com/srizzo/jupyter-interval-widget)
+
+Then:
+
+    $ pip install jupyter-source-magic
+
+

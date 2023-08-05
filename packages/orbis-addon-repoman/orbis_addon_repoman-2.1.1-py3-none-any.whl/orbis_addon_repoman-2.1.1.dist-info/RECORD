@@ -1,0 +1,16 @@
+orbis_addon_repoman/__init__.py,sha256=Ek2EscdweAGOvAerAtmgaZcGzQhyEGSelX56Y1Daa9Q,418
+orbis_addon_repoman/config.py,sha256=03GuOwRuw1raeJhizOkqBZVhNuP1VXteEowSdfFBeiM,89
+orbis_addon_repoman/description.txt,sha256=SX2YNLWhrQ61ks5tpFPGHMvMLi-_saqvqbGQ3qIoxWY,36
+orbis_addon_repoman/main.py,sha256=aTRmDDO9MpBeJKY72Tu681jTK2PuRArJb7buql3sZB0,1182
+orbis_addon_repoman/sources.yaml,sha256=9ZSPrqKpIoQTJ6pF043w5Fndy-L1IUVXmA1RzJpXDlg,122
+orbis_addon_repoman/corpora/__init__.py,sha256=3qZqpa8cNcELKEWkcGKRVGLNvOQtYTgSCy39zMMoPGE,58
+orbis_addon_repoman/corpora/main.py,sha256=LrVItpm-NZB957v1CrXhNWeP9s73oB8oRIBz-HfL6_I,5243
+orbis_addon_repoman/corpora/gerbil/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+orbis_addon_repoman/corpora/gerbil/main.py,sha256=rbfkwhJAk384mKUYNZduzzflJl1d3flNV9BvBDOcuec,5175
+orbis_addon_repoman/corpora/local/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+orbis_addon_repoman/corpora/local/main.py,sha256=gB308ZkQbTid1drhvIGbKp75aLoMuSEkn37veDoNUP8,54
+orbis_addon_repoman-2.1.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+orbis_addon_repoman-2.1.1.dist-info/METADATA,sha256=zAlyStWhklshz3_VAiW_YXUilS65rzi7qXXRVW2SHaM,418
+orbis_addon_repoman-2.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+orbis_addon_repoman-2.1.1.dist-info/top_level.txt,sha256=2kKqigtozDfk994FqLVPmpnFS1ZBNCuOrYhyfq5yoqw,20
+orbis_addon_repoman-2.1.1.dist-info/RECORD,,

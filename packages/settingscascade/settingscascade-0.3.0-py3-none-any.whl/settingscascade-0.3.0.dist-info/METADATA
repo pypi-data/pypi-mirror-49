@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: settingscascade
+Version: 0.3.0
+Summary: Cascade settings from multiple levels of specificity
+Home-page: https://gitlab.com/pjbecotte/settingscascade
+License: MIT
+Keywords: config,settings,ini,css,specificity
+Author: Paul Becotte
+Author-email: pjbecotte@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: jinja2 (>=2.10,<2.11)
+Requires-Dist: sortedcontainers (>=2.1,<2.2)
+Project-URL: Repository, https://gitlab.com/pjbecotte/settingscascade
+Description-Content-Type: text/x-rst
+
+Intro
+======
+
+Settings cascade is designed for situations where you need to merge
+configuration settings from different hierarchical sources. The model
+is the way that CSS cascades onto elements. You can define config
+the same way that css rules get specified-
+
+.. code-block:: yaml
+
+	task.default:
+	    command: "echo hello"
+	    on_complete: "echo world"
+	project_name: "my project"
+
+Then your app can use the config
+
+.. code-block:: python
+
+	class Task(SettingsSchema):
+		_name_ = task
+		command: str
+		on_complete: str
+
+	config = SettingsManager(yaml.load("config.yml"), [Task])
+	task_config = config.task(class="default")
+	run_task(
+		command=task_config.command,
+		on_complete=task_config.on_complete,
+		name=config.project_name,
+	)
+
+
+Installation
+==================
+
+You can install settingscascade from pypi-
+
+::
+
+	pip install settingscascade
+

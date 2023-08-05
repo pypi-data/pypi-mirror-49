@@ -1,0 +1,15 @@
+django_entity_event_slack-1.1.0.dist-info/METADATA,sha256=HzjI09srbDcEJBFFLimYmuGiK1KdofWehjshcHTMBHg,2211
+django_entity_event_slack-1.1.0.dist-info/RECORD,,
+django_entity_event_slack-1.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_entity_event_slack-1.1.0.dist-info/top_level.txt,sha256=6wHo0dMPFzJ_xuIXWIzqwFmgMySKjzje-UeHLVa7xgY,19
+entity_event_slack/__init__.py,sha256=d2gUnnpMyhqkxuYnSTX5S0rBuR0mtkvTvA9O5Pvcbsg,121
+entity_event_slack/apps.py,sha256=PaTzI6Sn4yDxWc8bGGlxsKPQraEc8drMzcRkuzbYdyI,162
+entity_event_slack/constants.py,sha256=ZZf-WAX9bhMMEyfzLgw00zEzc4pR80TRb0vYLyTF99c,29
+entity_event_slack/models.py,sha256=g-d04CHGU2L2NkF4HaFLKTd9FpZ2J5a4UPymSjbHncA,1209
+entity_event_slack/tasks.py,sha256=tIe5-1wjB9jrP_NX-sKdX3vn3wKf3bXFUkKu0eAsQUE,1707
+entity_event_slack/version.py,sha256=Ac8pSTOc_HF2qITThJw8HjL8VCXLkpqcc5FZRFrnNlU,23
+entity_event_slack/migrations/0001_initial.py,sha256=TEcBKxaTyQL32jjbVxASjTLHkaI2zq7DaN1G7GbCWAw,990
+entity_event_slack/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entity_event_slack/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entity_event_slack/tests/models_tests.py,sha256=ZZV4oc6iUzrMFVZb3sq2_TLwa1occhZTSNXYCvE3Slc,834
+entity_event_slack/tests/tasks_tests.py,sha256=1cPMPYq6qszrspEgWPwQiHvG0LAEV1d806jOi8zb4ME,4646

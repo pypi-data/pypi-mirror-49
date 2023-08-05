@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: riskcontrol
+Version: 0.1.5
+Summary: risk control modeling
+Home-page: UNKNOWN
+Author: SimaShanhe
+Author-email: hsliu_em@126.com
+License: UNKNOWN
+Description: Copyright (c) 2018 The Python Packaging Authority
+        
+        The package is used for risk control modeling in Python. 
+        It mainly provides some basic and commonly data analysis methods for partners who want to learn Python data analysis or machine learning in the Internet financial industry. 
+        It also contains a large number of solutions to the problems encountered by the authors in their daily work. 
+        I hope you can actively use it. 
+        If you have any questions, please contact me at hsliu_em@126.com.
+        By the way: I love Yuqin Xu forever.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: jibrel-aiohttp-swagger
+Version: 0.1.0
+Summary: Plugin for aiohttp with swagger support a
+Home-page: https://github.com/jibrelnetwork/jibrel-aiohttp-swagger
+Author: Roman Tolkachyov
+Author-email: roman.tolkachyov@jibrel.network
+License: UNKNOWN
+Keywords: jibrel_aiohttp_swagger
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: aiohttp
+
+# Jibrel aiohttp swagger plugin
+
+Minimal aiohttp swagger UI plugin.
+
+Features:
+
+* render swagger UI
+* add spec endpoint and serve provided yaml for UI
+* serve swagger UI static
+* optional spec version substitution from file content
+
+## Install
+
+Last published release:
+
+`pip install jibrel-aiohttp-swagger`
+
+Dev version from git:
+
+`pip install git+https://github.com/jibrelnetwork/jibrel-aiohttp-swagger#egg=jibrel_aiohttp_swagger`
+
+## Usage
+
+```python
+from jibrel_aiohttp_swagger import setup_swagger
+setup_swagger(app,
+              spec_path='v1.swagger.yml',
+              version_file_path='version.txt')
+```
+
+
+=======
+History
+=======
+
+0.1.0 (2019-07-05)
+------------------
+
+* First release on PyPI.
+
+

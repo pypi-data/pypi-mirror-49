@@ -1,0 +1,12 @@
+larq_zoo/__init__.py,sha256=q_OI8FNGB-XhH-2JoJoBdYwsgwXstPBl60uE0iRQHos,280
+larq_zoo/binarynet.py,sha256=Q6nuhVWWY36Lw7MUAuRwU7LO_soS_MpqWTyLoayjoxk,4988
+larq_zoo/birealnet.py,sha256=iVhb5DKleSBUrjAWdvFwUd1JrIStEBNZYGvCX20Xy38,5860
+larq_zoo/data.py,sha256=0MUPqz99g0lxYI0caHlBQ7AZz07FZ_ui5EnHsLapaPA,8079
+larq_zoo/train.py,sha256=Ud7-HybpvXyORgRW7pH3lpxrfRyKVSMgi_gIHajvCyA,2420
+larq_zoo/utils.py,sha256=kI5cj0jsvX48YEH_JL1_mZ4kEUvveFZklh-c-7lKTAQ,2506
+larq_zoo-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+larq_zoo-0.1.0.dist-info/METADATA,sha256=eDReDbs_RhG3Tv9n0L5cZ0TKjRbhk7qwA4qlHKGapVk,2827
+larq_zoo-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+larq_zoo-0.1.0.dist-info/entry_points.txt,sha256=Ki6yC-YXtad3-MJ0y0IXjN0Kr_tchCgDApNOG_Vm7UA,62
+larq_zoo-0.1.0.dist-info/top_level.txt,sha256=YVfSwVCad0zH624WWge8XBpg0kpX9NRz1LnHFu6tDmU,9
+larq_zoo-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,8 @@
+README.md
+setup.py
+ebbinghaus/__init__.py
+ebbinghaus/database.py
+ebbinghaus.egg-info/PKG-INFO
+ebbinghaus.egg-info/SOURCES.txt
+ebbinghaus.egg-info/dependency_links.txt
+ebbinghaus.egg-info/top_level.txt

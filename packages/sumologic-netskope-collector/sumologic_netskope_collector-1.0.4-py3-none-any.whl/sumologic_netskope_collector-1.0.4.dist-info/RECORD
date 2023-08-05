@@ -1,0 +1,10 @@
+sumonetskopecollector/__init__.py,sha256=v0HNX-7zUXj9BCF1KpekQqdDvDWb2NZGzvD35GoP49I,138
+sumonetskopecollector/netskope.py,sha256=oLHLQ2lfna4erOUx7v0Cds7Gmqtnc7d0nNJtoqdwQow,9401
+sumonetskopecollector/netskope.yaml,sha256=nAlIqMJkqF5tjcCr6JYP3qQiJe9cv4I6csZyBVU58e8,1058
+sumologic_netskope_collector-1.0.4.dist-info/LICENSE,sha256=KaA-DSdAUVsJmCqTRPdl4CsRc2AGS8lqfahbhFMlptg,11346
+sumologic_netskope_collector-1.0.4.dist-info/METADATA,sha256=DCVvX-vVc-b7TRYUgRLeo3iCrX-gWJIh33HXPHLdJDU,3694
+sumologic_netskope_collector-1.0.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+sumologic_netskope_collector-1.0.4.dist-info/entry_points.txt,sha256=ykzqUhE3ygId2rUUB_i-hGm-F4wSpZybzO8QfJA8cj4,79
+sumologic_netskope_collector-1.0.4.dist-info/top_level.txt,sha256=6Jw48FXf5kZIzc0XagsKx82YNAO7ThsDO-ftygMLox0,22
+sumologic_netskope_collector-1.0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sumologic_netskope_collector-1.0.4.dist-info/RECORD,,

@@ -1,0 +1,13 @@
+numpy
+scipy==1.0.0
+pandas
+matplotlib
+seaborn
+numba
+networkx
+python-louvain==0.11
+scikit-learn==0.20.0
+MulticoreTsne
+umap-learn
+rpy2==2.8.5
+setuptools

@@ -1,0 +1,11 @@
+README.md
+setup.py
+upload_to_pypi.py
+ArduinoBoardCollection.egg-info/PKG-INFO
+ArduinoBoardCollection.egg-info/SOURCES.txt
+ArduinoBoardCollection.egg-info/dependency_links.txt
+ArduinoBoardCollection.egg-info/requires.txt
+ArduinoBoardCollection.egg-info/top_level.txt
+arduino_board_collection/__init__.py
+arduino_board_collection/board_collection.py
+arduino_board_collection/create_board.py

@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+rmq_cluster_rebalance/__init__.py
+rmq_cluster_rebalance/__main__.py
+rmq_cluster_rebalance.egg-info/PKG-INFO
+rmq_cluster_rebalance.egg-info/SOURCES.txt
+rmq_cluster_rebalance.egg-info/dependency_links.txt
+rmq_cluster_rebalance.egg-info/entry_points.txt
+rmq_cluster_rebalance.egg-info/requires.txt
+rmq_cluster_rebalance.egg-info/top_level.txt
+rmq_cluster_rebalance.egg-info/zip-safe

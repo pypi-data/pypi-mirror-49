@@ -1,0 +1,3 @@
+[console_scripts]
+rmq-cluster-rebalance = rmq_cluster_rebalance.__main__:main
+

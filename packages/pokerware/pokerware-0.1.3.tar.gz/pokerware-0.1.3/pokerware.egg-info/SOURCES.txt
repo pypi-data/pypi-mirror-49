@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+pokerware/__init__.py
+pokerware/cli.py
+pokerware/generate.py
+pokerware/pokerware-formal.txt
+pokerware/pokerware-slang.txt
+pokerware.egg-info/PKG-INFO
+pokerware.egg-info/SOURCES.txt
+pokerware.egg-info/dependency_links.txt
+pokerware.egg-info/entry_points.txt
+pokerware.egg-info/not-zip-safe
+pokerware.egg-info/top_level.txt

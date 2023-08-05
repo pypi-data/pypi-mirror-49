@@ -1,0 +1,4 @@
+include README.md
+
+# Include the data files
+include pokerware/*.txt

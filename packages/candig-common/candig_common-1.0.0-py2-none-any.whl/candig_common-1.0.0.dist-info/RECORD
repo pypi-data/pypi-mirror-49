@@ -1,0 +1,14 @@
+candig_common-1.0.0-py2.7-nspkg.pth,sha256=-k3JUuBnBGhCV5AoL6NPyk9-LxiAhztWctl5ZLnjM50,539
+candig/common/__init__.py,sha256=o3Pv7g_Jwjn98jnc2t0KSUUevCNmX5-LLX3AFho1E6s,258
+candig/common/_version.py,sha256=-kKuaufFEUdFxQgT-sdFVBb7dxoYnmamN-ynkv0HNSs,116
+candig/common/cli.py,sha256=ttsgZXzLr9kYe094xDrAgzaYgNJYpAWbWJbSty3Ex5Q,1562
+candig/common/run_tests.py,sha256=5p_v2eVxiUZV0cNu8yQyqsVbVvzMHvoZhFBQrMXcA2c,1043
+candig/common/utils.py,sha256=1mlNzi-T2pBaqIDK8V8FSkY01LgYqDU9A8QdP5dI7KI,9732
+candig_common-1.0.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+candig_common-1.0.0.dist-info/METADATA,sha256=GOdFQl-fHIbEQddeU0MNSqDnCEjXGm-HslR-34wlN-Q,784
+candig_common-1.0.0.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+candig_common-1.0.0.dist-info/entry_points.txt,sha256=-32gtZUGrCyPJI8rEtKtVHhprR-ytDErD1v1yHjBBt4,77
+candig_common-1.0.0.dist-info/namespace_packages.txt,sha256=CORn2k410DjLl9X-9WYpNn3eVWIkm4zxh3mgb7QhLJE,7
+candig_common-1.0.0.dist-info/top_level.txt,sha256=CORn2k410DjLl9X-9WYpNn3eVWIkm4zxh3mgb7QhLJE,7
+candig_common-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+candig_common-1.0.0.dist-info/RECORD,,

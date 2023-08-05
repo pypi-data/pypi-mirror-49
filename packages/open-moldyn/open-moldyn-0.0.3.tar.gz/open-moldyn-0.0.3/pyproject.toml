@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "open-moldyn"
+version = "0.0.3"
+description = "Tools for molecular dynamics simulation and analysis"
+readme = "README.md"
+authors = ["Arthur Luciani, Alexandre Faye-Bedrin"]
+license = "MIT"
+repository = "https://github.com/open-moldyn/moldyn"
+documentation = "https://open-moldyn.readthedocs.io/en/latest/"
+packages = [
+    { include = "moldyn"},
+]
+exclude = ["data/*", "docs"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Visualization"
+]
+keywords = ["moldyn", "molecular dynamics"]
+
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+moderngl = "^5.5"
+matplotlib = "^3.1"
+scipy = "^1.3"
+PyQt5 = "^5.11.3"
+numexpr = "^2.6"
+numpy = "^1.16"
+pyqtgraph = "^0.10.0"
+pillow = "^6.0"
+imageio_ffmpeg = "^0.3.0"
+asciitree = "^0.3.3"
+pathlib2 = "^2.3"
+scandir = "^1.10"
+six = "^1.12"
+fuzzywuzzy = "^0.17.0"
+pyparsing = "^2.4"
+numba = "^0.44.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.5"
+
+[tool.poetry.scripts]
+moldyn-gui = "moldyn:gui"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

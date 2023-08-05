@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: open-moldyn
+Version: 0.0.3
+Summary: Tools for molecular dynamics simulation and analysis
+Home-page: https://github.com/open-moldyn/moldyn
+License: MIT
+Keywords: moldyn,molecular dynamics
+Author: Arthur Luciani, Alexandre Faye-Bedrin
+Requires-Python: >=3.6
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Dist: PyQt5 (>=5.11.3,<6.0.0)
+Requires-Dist: asciitree (>=0.3.3,<0.4.0)
+Requires-Dist: fuzzywuzzy (>=0.17.0,<0.18.0)
+Requires-Dist: imageio_ffmpeg (>=0.3.0,<0.4.0)
+Requires-Dist: matplotlib (>=3.1,<4.0)
+Requires-Dist: moderngl (>=5.5,<6.0)
+Requires-Dist: numba (>=0.44.1,<0.45.0)
+Requires-Dist: numexpr (>=2.6,<3.0)
+Requires-Dist: numpy (>=1.16,<2.0)
+Requires-Dist: pathlib2 (>=2.3,<3.0)
+Requires-Dist: pillow (>=6.0,<7.0)
+Requires-Dist: pyparsing (>=2.4,<3.0)
+Requires-Dist: pyqtgraph (>=0.10.0,<0.11.0)
+Requires-Dist: scandir (>=1.10,<2.0)
+Requires-Dist: scipy (>=1.3,<2.0)
+Requires-Dist: six (>=1.12,<2.0)
+Project-URL: Documentation, https://open-moldyn.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/open-moldyn/moldyn
+Description-Content-Type: text/markdown
+
+# open-moldyn
+
+Open Molecular Dynamics tools in Python 3
+
+read the doc on https://open-moldyn.readthedocs.io/en/latest/
+
+## Installation instructions
+
+The package is on PyPI, to install use :
+```
+pip install open-moldyn
+```
+
+To update the package use :
+```
+pip install -U open-moldyn
+```
+
+To run open-moldyn's GUI use the script:
+```
+moldyn-gui
+```
+
+If it does not work in your terminal, 
+maybe your python installation is not in the PATH.
+
+

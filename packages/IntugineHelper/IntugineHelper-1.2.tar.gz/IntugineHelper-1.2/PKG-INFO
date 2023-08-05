@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: IntugineHelper
+Version: 1.2
+Summary: A Helper for Intugine
+Home-page: https://github.com/rishabhdeepsingh/IntugineHelper
+Author: Rishabhdeep Singh
+Author-email: rishabhdeepsingh98@gmail.com
+License: UNKNOWN
+Description: 
+        ## Installation
+        To Install IntugineHelper from the [Python Package Index](https://pypi.org/project/IntugineHelper/), simply:
+        
+            pip3 install intuginehelper
+            
+        ## Updating 
+        
+            increment the version
+            python3 setup.py sdist bdist_wheel
+            python3 -m twine upload dist/*
+        
+        ## Usage
+        
+        ### Intugien Parser 
+        
+        to get different database elements like 
+        
+        * `createdAt`
+        * `telephone`
+        * `startTime`
+        * `endTime`
+        * `eta_days`
+        * `eta_hrs`
+        * `ping_rate`
+        * `source`
+        * `destination`
+        * `operator`
+        * `trucknumber`
+        * `running`
+        * `invoice`
+        * `telephone`
+            
+            
+        --------------
+        
+        ## Itugine Helper
+        
+        To get database and other trips related things
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

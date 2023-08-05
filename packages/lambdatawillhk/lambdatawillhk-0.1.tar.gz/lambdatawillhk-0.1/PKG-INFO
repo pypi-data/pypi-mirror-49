@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: lambdatawillhk
+Version: 0.1
+Summary: collection of dataframe functions
+Home-page: https://github.com/willhk/lambdatawillhk
+Author: Will Haeck
+Author-email: will.haeck@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: pandas,null checking
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7

@@ -1,0 +1,11 @@
+pgcopy/__init__.py,sha256=4D0ajqwjcZL8hPcDI0YHRiOxkaZe4Z_7Sxyvdnz2u_0,89
+pgcopy/copy.py,sha256=dgW_BzWDFFPcyXbJK2NfAfLmjwtBi2nokLySMiPuRJg,9546
+pgcopy/inspect.py,sha256=8IT50VAl8BfPJShQupm81QaNVXEeYYavevKHJwFNjCk,1160
+pgcopy/util.py,sha256=bPKEjEI_dygbVJE-zuq8TXnUIOj6RM_XzoYriMWKg3Y,12127
+pgcopy/version.py,sha256=EyMGX1ADFzN6XVXHWbJUtKPONYKeFkvWoKIFPDDB2I8,22
+pgcopy-1.4.0.dist-info/AUTHORS.rst,sha256=ymA1b7aPUw4Q3TyXp11bQTaWKDiBsdnJsk-aywhV40w,375
+pgcopy-1.4.0.dist-info/LICENSE.txt,sha256=5N2r3v86iucPr1VZ2JlzVy8ELS6ewW70GEnrN87egEM,1110
+pgcopy-1.4.0.dist-info/METADATA,sha256=zI34dLz1s1QD1hQQi6d8sf5nFX83tKDoc0y0-qRXdAM,3222
+pgcopy-1.4.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+pgcopy-1.4.0.dist-info/top_level.txt,sha256=1LEqYcj1rZ-EV_b3QkBcJHd3x07XeJHpCzn1-5z-nC8,7
+pgcopy-1.4.0.dist-info/RECORD,,

@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+EmailTemplate/__init__.py
+EmailTemplate/admin.py
+EmailTemplate/apps.py
+EmailTemplate/models.py
+EmailTemplate/tests.py
+EmailTemplate/views.py
+EmailTemplate/migrations/0001_initial.py
+EmailTemplate/migrations/__init__.py
+django_proemail_template.egg-info/PKG-INFO
+django_proemail_template.egg-info/SOURCES.txt
+django_proemail_template.egg-info/dependency_links.txt
+django_proemail_template.egg-info/top_level.txt

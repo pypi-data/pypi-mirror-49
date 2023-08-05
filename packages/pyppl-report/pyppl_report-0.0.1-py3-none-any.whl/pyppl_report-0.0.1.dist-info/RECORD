@@ -1,0 +1,17 @@
+pyppl-report/__init__.py,sha256=ruYx5SO45alG14jXYSpP_ekM9jt1B6tzzSELwroaHVk,3269
+pyppl-report/report.py,sha256=ObzX_ZiGxwhWwzpyUfM-JkqTNNnY9dpIJUgq2yeZ_SQ,3368
+pyppl-report/resources/filters/filetable.py,sha256=7Yp2zBCQ8Kk06npV5M-uisG_CNZWFSIvBUKu0zL7zSE,2056
+pyppl-report/resources/templates/bootstrap/.gitignore,sha256=6eLrlZJqNkLD1YVT0203WKfCr08p_jBO1Z4Ehmb3Kp0,12
+pyppl-report/resources/templates/bootstrap/standalone.html,sha256=0rw2DRC8ARSzDbfUYQa4JUvVZlINI8QXyJTrfgLSZMU,2130
+pyppl-report/resources/templates/bootstrap/static/bootstrap-toc.min.css,sha256=W_ODz5gmpKA6SaehFmR8fVmBRb-lizLGsIKO3xmZy2M,1246
+pyppl-report/resources/templates/bootstrap/static/bootstrap-toc.min.js,sha256=4veVQbu7__Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo,2107
+pyppl-report/resources/templates/bootstrap/static/bootstrap.min.css,sha256=YLGeXaapI0_5IgZopewRJcFXomhRMlYYjugPLSyNjTY,155758
+pyppl-report/resources/templates/bootstrap/static/bootstrap.min.js,sha256=CjSoeELFOcH0_uxWu6mC_Vlrc1AARqbm_jiiImDGV3s,58072
+pyppl-report/resources/templates/bootstrap/static/jquery-3.4.1.slim.min.js,sha256=pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8,71037
+pyppl-report/resources/templates/bootstrap/static/popper.min.js,sha256=ZvOgfh-ptkpoa2Y4HkRY28ir89u_-VRyDE7sB7hEEcI,21004
+pyppl-report/resources/templates/bootstrap/static/template.css,sha256=VXf4SZSr7gzoXoLagVVCs1Z0RLjjGAoUKY5juj2n-q0,1092
+pyppl-report/resources/templates/bootstrap/static/template.js,sha256=YbTgRpaz9rLDb2FyZnMxh8Jb70KzIqx5sMxyqkXUC04,3089
+pyppl-report/resources/templates/bootstrap/template.html,sha256=ZqFTrdT3qg2H0VBJs6Prz9a6_lLGLTbjfQWARx5rjAA,3885
+pyppl_report-0.0.1.dist-info/WHEEL,sha256=m7_EWfYWVp7uNOTdFEhPb5K49PyhIPAZSRl16cJVmb0,85
+pyppl_report-0.0.1.dist-info/METADATA,sha256=-kKVhbih0sYrB9tHY6XHCD54cJm632VpsN_WZxD2OBE,2784
+pyppl_report-0.0.1.dist-info/RECORD,,

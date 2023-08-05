@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+pynspector/__init__.py
+pynspector/doc_parsers.py
+pynspector/func_inspections.py
+pynspector/models.py
+pynspector/module_inspections.py
+pynspector.egg-info/PKG-INFO
+pynspector.egg-info/SOURCES.txt
+pynspector.egg-info/dependency_links.txt
+pynspector.egg-info/requires.txt
+pynspector.egg-info/top_level.txt

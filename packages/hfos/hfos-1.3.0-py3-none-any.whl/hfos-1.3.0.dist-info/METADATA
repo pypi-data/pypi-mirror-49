@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: hfos
+Version: 1.3.0
+Summary: hfos - an operating system for vessels
+Home-page: https://github.com/Hackerfleet/hfos
+Author: Hackerfleet Community
+Author-email: riot@c-base.org
+License: GNU Affero General Public License v3
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: isomer
+Requires-Dist: hfos-alert
+Requires-Dist: hfos-anchor
+Requires-Dist: hfos-busrepeater
+Requires-Dist: hfos-comms
+Requires-Dist: hfos-crew
+Requires-Dist: hfos-dashboard
+Requires-Dist: hfos-dev
+Requires-Dist: hfos-equipment
+Requires-Dist: hfos-logbook
+Requires-Dist: hfos-map
+Requires-Dist: hfos-navdata
+Requires-Dist: hfos-nmea
+Requires-Dist: hfos-nodestate
+Requires-Dist: hfos-webguides
+
+HFOS
+====
+
+A module to bundle Hackerfleet's Isomer modules to a ship computer operating system.
+
+This software package is a plugin module for Isomer
+
+

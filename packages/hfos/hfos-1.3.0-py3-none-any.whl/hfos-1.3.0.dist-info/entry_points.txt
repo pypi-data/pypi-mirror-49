@@ -1,0 +1,4 @@
+[isomer.components]
+    hfoscore=isomer.hfos.core:HFOSCore
+    [isomer.schemata]
+    

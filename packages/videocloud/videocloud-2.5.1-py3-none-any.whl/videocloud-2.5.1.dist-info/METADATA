@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: videocloud
+Version: 2.5.1
+Summary: A command line tool that generates word clouds from YouTube video captions
+Home-page: https://github.com/paramt/VideoCloud
+Author: Param Thakkar
+Author-email: contact@param.me
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pillow (==6.1.0)
+Requires-Dist: wordcloud (==1.5.0)
+Requires-Dist: youtube-transcript-api (==0.1.5)
+
+
+# VideoCloud
+[![License](https://img.shields.io/github/license/paramt/videocloud.svg)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/videocloud.svg)](https://pypi.org/project/VideoCloud/)
+
+Generate word clouds from YouTube video captions
+
+## Installation
+```
+pip install videocloud
+```
+*Note: A C compiler is required for the installation process.*
+
+## Usage
+```
+videocloud <link to youtube video> [filepath] [language code] [font]
+```
+If no filepath is given, the wordcloud will be generated as `videocloud.png`.
+The lanuage code defaults to `en` and the fontpath defaults to [Noto Sans](https://github.com/paramt/videocloud/blob/master/assets/fonts/NotoSans/NotoSans.ttf)
+To use a custom font, provide the HTTP link for its TTF file. Similarly, you can provide an HTTP link to a PNG mask file. The mask defaults to
+[a generic cloud](https://github.com/paramt/videocloud/blob/v2.5/assets/masks/cloud.png).
+
+## Development
+This project is maintained by [paramt](https://github.com/paramt) on [GitHub](https://github.com/paramt/videocloud).
+
+

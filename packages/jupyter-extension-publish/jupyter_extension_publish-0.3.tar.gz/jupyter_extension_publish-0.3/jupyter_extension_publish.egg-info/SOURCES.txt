@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+jupyter_extension_publish/__init__.py
+jupyter_extension_publish/config.py
+jupyter_extension_publish/handlers.py
+jupyter_extension_publish.egg-info/PKG-INFO
+jupyter_extension_publish.egg-info/SOURCES.txt
+jupyter_extension_publish.egg-info/dependency_links.txt
+jupyter_extension_publish.egg-info/requires.txt
+jupyter_extension_publish.egg-info/top_level.txt
+jupyter_extension_publish/static/index.js

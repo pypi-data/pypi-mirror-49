@@ -1,0 +1,1 @@
+recursive-include jupyter_extension_publish *.js

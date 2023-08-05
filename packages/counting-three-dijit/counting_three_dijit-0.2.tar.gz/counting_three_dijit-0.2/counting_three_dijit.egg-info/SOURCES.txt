@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+counting_three_dijit/counting.py
+counting_three_dijit.egg-info/PKG-INFO
+counting_three_dijit.egg-info/SOURCES.txt
+counting_three_dijit.egg-info/dependency_links.txt
+counting_three_dijit.egg-info/top_level.txt

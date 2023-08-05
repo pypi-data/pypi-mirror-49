@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+log4p/__init__.py
+log4p/log4p.json
+log4p.egg-info/PKG-INFO
+log4p.egg-info/SOURCES.txt
+log4p.egg-info/dependency_links.txt
+log4p.egg-info/requires.txt
+log4p.egg-info/top_level.txt

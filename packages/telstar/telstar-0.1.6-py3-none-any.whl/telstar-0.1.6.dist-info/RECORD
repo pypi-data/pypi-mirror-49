@@ -1,0 +1,13 @@
+telstar/__init__.py,sha256=cvDXtW0cul_uXCMUku1lOYoj1nIo-c7YoP0EUcLH_kE,405
+telstar/consumer.py,sha256=BvXad2KpuYXI57I5XnG9xr1t7m6fP28C1Oaj8xyD_F4,13335
+telstar/producer.py,sha256=DI3PRCcXq-fdZSVgkOeAByPRlS6ja3PZyy6BEO2rXgw,2079
+telstar/com/__init__.py,sha256=PbmoqIRZqjo5f1JSYY4Lz58mRipkmiK06G8hJtGrWIY,1614
+telstar/tests/_dbcontent.py,sha256=hcqOIMk8GeESzJF77HqV_zr1FJjMAPMHAax_1bTBTeI,195
+telstar/tests/expected.txt,sha256=uLnjKM1w8w7a3hJg5I76WUxy8x_WxUo8ko3BrUUZ3rE,19268
+telstar/tests/test_consumer.py,sha256=eBJt-7fUurz5ExvybiNqHjOCigBSkDgEL6KJUjeBDA0,1495
+telstar/tests/test_producer.py,sha256=QZNvnMH73tkz-qv372wz4ycy2GN0BkEWv0yKz-lsi50,1814
+telstar/tests/test_telstar.sh,sha256=mIrZkxQaMqDE89SSwgWIkBHMpv0iWgxML5JLhftP7EM,4915
+telstar-0.1.6.dist-info/LICENSE,sha256=i5sk7SOrzunUz8XOuQHMwMKPb9q0taOg0F7LW1qWHPU,1075
+telstar-0.1.6.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+telstar-0.1.6.dist-info/METADATA,sha256=akOiKxzN4BIZd4K2Tjlw6UvkrbAscZCOPIDEFWPBUgU,362
+telstar-0.1.6.dist-info/RECORD,,

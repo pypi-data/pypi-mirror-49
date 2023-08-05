@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bryte
+Version: 0.0.6
+Summary: Python library of tools for enhancing your development, along with common shortcuts for speeding up your development
+Home-page: https://github.com/mikeshobes718/Python-Packages
+Author: Mike Shobes
+Author-email: mikeshobes718@yahoo.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# bryte
+
+<h1>Python library of tools for enhancing your development, along with common shortcuts for speeding up your development.</h1>
+
+[Github-flavored README.md](https://github.com/mikeshobes718/Python-Packages)
+
+Thank you.
+

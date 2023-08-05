@@ -1,0 +1,2 @@
+pre-commit==1.14.4
+pytest_runner==4.4

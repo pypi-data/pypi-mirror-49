@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyextension
+Version: 1.0.2
+Summary: file extension info
+Home-page: https://github.com/jamesacampbell/pyextension
+Author: James Campbell
+Author-email: jc@normail.co
+License: MIT
+Download-URL: https://github.com/jamesacampbell/pyextension/archive/1.0.2.tar.gz
+Keywords: mimetype,file-extension,fileinfo,file-system,drive-info
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: argparse
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+
+UNKNOWN
+
+

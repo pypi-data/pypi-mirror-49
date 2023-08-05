@@ -1,0 +1,10 @@
+colorama
+coverage
+coveralls
+html2text
+openpyxl
+pytest
+schedule
+setuptools
+twine
+wheel

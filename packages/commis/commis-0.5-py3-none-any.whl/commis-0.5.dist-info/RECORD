@@ -1,0 +1,12 @@
+commis/__init__.py,sha256=6GjbluTFXXYdOigwAiZnDBIcqFiiNKwESOvI3T0Jx1U,902
+commis/color.py,sha256=R82UWVnPvmVTLyFQyoCOhFgZ0A_nWE2kB-99h8yike4,2014
+commis/command.py,sha256=i1SLRwDlGryVgCwSvMsaWOPtVbmo8-nAs9-iLJ0TRwY,3214
+commis/exceptions.py,sha256=vJj6jCwAaJiwx6BEEiTy804Uu3bkbAXjnifcAfzvoV8,647
+commis/labeled.py,sha256=eSo87CVld81e3XJ0ucUyIacULaQuzdrjYn5K_fdobbw,2135
+commis/program.py,sha256=bGCUoo_Xt29qqD0GCa2VZJ9pIKp5cXX1Jqib6ngZZ88,5220
+commis/version.py,sha256=rZ_w2zcM5uaHSc7YpURksihboTR1FxlWygbEZ5JwgoQ,1227
+commis-0.5.dist-info/LICENSE.txt,sha256=5XDSbGiJgDKIknYVjZAt3FEm4ZWjK8nwWrRhN4doYWA,11347
+commis-0.5.dist-info/METADATA,sha256=RvxllrLBB9ayT0rB5UTMDibjO_ThZg2G3rB8pXlkeuM,1288
+commis-0.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+commis-0.5.dist-info/top_level.txt,sha256=gSj-WwOcTlF4l2tYw9TiL9jHxiW2w7YWzIeZCxyJEuQ,7
+commis-0.5.dist-info/RECORD,,

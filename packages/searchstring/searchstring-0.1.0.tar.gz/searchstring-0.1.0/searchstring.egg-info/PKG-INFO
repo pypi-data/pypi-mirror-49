@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: searchstring
+Version: 0.1.0
+Summary: A library for sophisticated parsing search queries.
+Home-page: https://github.com/maisie-dev/searchstring
+Author: Marek Kochanowski
+Author-email: marek@maisie.dev
+License: MIT
+Description: ## Searchstring
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python

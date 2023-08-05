@@ -1,0 +1,13 @@
+johansen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+johansen/criticalValues.py,sha256=GFpYo9Bh4aCMCvHVTWbxcb-C8yaOw6hQpPCdZ_kZgkw,4867
+johansen/critical_values.py,sha256=GFpYo9Bh4aCMCvHVTWbxcb-C8yaOw6hQpPCdZ_kZgkw,4867
+johansen/demo.py,sha256=Z8y6p04E9mX1YLo4lnlDE_G-OBLZzPQX6myr8ePPR74,3079
+johansen/johan.py,sha256=2PmEEqZBlr_vSesXV0Xgyp_03AnQe0ies4HvYKGflpo,8234
+johansen/johansen.py,sha256=TbZiC4RCA8p6yaXBMxMUIIWSbXjfRiy7bSGjSPSSFq0,8196
+johansen/loadUtilities.py,sha256=JE51AaXXNb8o7BUDTNeT01SFBcacm4kQFFwNfIc8x-c,2927
+johansen/utilities.py,sha256=YL5iJ3du3kS8e6TkhtAnReuR7OmVGMcG7Yw0v28fMvc,10832
+mean_reversion_utilities-2.0.4.dist-info/LICENSE,sha256=NSFFcXwif29y1GdfONV9kMTdEEKi1lx1IH9sR6nzyFI,1085
+mean_reversion_utilities-2.0.4.dist-info/METADATA,sha256=mC6fRKR5YZYsf8bZZXivakAhe4omDEmIPLewjoWPmlY,1135
+mean_reversion_utilities-2.0.4.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+mean_reversion_utilities-2.0.4.dist-info/top_level.txt,sha256=C29M4QpSF4P0DCvGwvaSknZcJKzAynua7j_S87fqiRQ,9
+mean_reversion_utilities-2.0.4.dist-info/RECORD,,

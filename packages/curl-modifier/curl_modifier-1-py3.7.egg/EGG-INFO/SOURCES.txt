@@ -1,0 +1,9 @@
+README.md
+setup.py
+curl_modifier/__init__.py
+curl_modifier/api.py
+curl_modifier.egg-info/PKG-INFO
+curl_modifier.egg-info/SOURCES.txt
+curl_modifier.egg-info/dependency_links.txt
+curl_modifier.egg-info/requires.txt
+curl_modifier.egg-info/top_level.txt

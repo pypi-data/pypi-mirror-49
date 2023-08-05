@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: curl-modifier
+Version: 1
+Summary: A module for modifying and repeatedly executing cURL requests
+Home-page: https://github.com/Zenulous/curl_modifier
+Author: Zen van Riel
+Author-email: zenvanriel@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

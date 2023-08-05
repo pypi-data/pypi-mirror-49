@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: casement
+Version: 0.0.1
+Summary: Useful functionality for managing Microsoft Windows.
+Home-page: https://github.com/blurstudio/casement
+Author: Blur Studio
+Author-email: pipeline@blur.com
+License: GNU LGPLv3
+Download-URL: https://github.com/blurstudio/casement/archive/master.zip
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Description-Content-Type: text/markdown
+Requires-Dist: pywin32
+
+# Casement
+
+A Python library that provides useful functionality for managing Microsoft Windows systems.
+
+
+## Shortcut management
+
+A interface for manipulating Windows shortcut files including pinned.
+
+Pinning shortcuts to the start menu and task bar in windows is extremely complicated.
+You can find and edit shortcuts in the User Pinned directory for for all users, but
+adding, modifying or removing those shortcuts does not affect the pinned shortcuts.
+You need to point to a copy of the pinned shortcut, and run windows verbs on that
+shortcut.
+
+Here is a example of pinning a shortcut to the start menu:
+```python
+from casement.shortcut import Shortcut
+with Shortcut(r'C:\Users\Public\Desktop\My Shortcut.lnk') as sc:
+    sc.pin_to_start_menu()
+```
+### Command line interface
+
+The features of this class can be used from the command line using ``casement shortcut
+[command] [arguments]``.
+
+To find shortcuts in common places with a given name:
+```
+    C:\blur\dev\casement>casement shortcut list "VLC media player.lnk"
+    c:\ProgramData\Microsoft\Windows\Start Menu\Programs\VideoLAN\VLC media player.lnk
+    c:\Users\Public\Desktop\VLC media player.lnk
+```
+
+Pinning/unpinning a shortcut to the taskbar:
+```
+    C:\blur\dev\casement>casement shortcut pin "C:\Users\Public\Desktop\My Shortcut.lnk" -t
+    C:\blur\dev\casement>casement shortcut unpin "C:\Users\Public\Desktop\My Shortcut.lnk" -t
+```
+
+

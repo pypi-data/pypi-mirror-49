@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pysprite
+Version: 1.2.0
+Summary: A Python 3 re-implementation of Heathers, Anaya, van der Zee, and Brown's 'Sample Parameter Reconstruction via Iterative TEchniques (SPRITE)'
+Home-page: https://github.com/QuentinAndre/pysprite/
+Author: Quentin André
+Author-email: quentin.andre@insead.edu
+License: MIT
+Description: See package on GitHub: https://github.com/QuentinAndre/pysprite
+Keywords: statistics,error-detection,granularity,testing
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: English
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: dev

@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+Ginzicut.egg-info/PKG-INFO
+Ginzicut.egg-info/SOURCES.txt
+Ginzicut.egg-info/dependency_links.txt
+Ginzicut.egg-info/entry_points.txt
+Ginzicut.egg-info/requires.txt
+Ginzicut.egg-info/top_level.txt
+ginzicut/__init__.py
+ginzicut/__main__.py
+ginzicut/config/ginzicut_settings.py
+ginzicut/examples/nntpclient.py

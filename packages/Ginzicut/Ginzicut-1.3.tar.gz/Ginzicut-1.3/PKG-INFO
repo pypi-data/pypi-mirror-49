@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: Ginzicut
+Version: 1.3
+Summary: nntp test server for ginzicut
+Home-page: https://github.com/dermatty/GINZICUT
+Author: dermatty
+Author-email: stephan@untergrabner.at
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: usenet,nntp
+Platform: posix
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7.1

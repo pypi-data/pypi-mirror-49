@@ -1,0 +1,11 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_measure_latency.py
+torchprof/__init__.py
+torchprof/latency_observer.py
+torchprof.egg-info/PKG-INFO
+torchprof.egg-info/SOURCES.txt
+torchprof.egg-info/dependency_links.txt
+torchprof.egg-info/requires.txt
+torchprof.egg-info/top_level.txt

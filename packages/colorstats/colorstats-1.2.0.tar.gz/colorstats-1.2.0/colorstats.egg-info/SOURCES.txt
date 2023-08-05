@@ -1,0 +1,9 @@
+README.md
+setup.py
+colorstats/Photo.py
+colorstats/Photoset.py
+colorstats/__init__.py
+colorstats.egg-info/PKG-INFO
+colorstats.egg-info/SOURCES.txt
+colorstats.egg-info/dependency_links.txt
+colorstats.egg-info/top_level.txt

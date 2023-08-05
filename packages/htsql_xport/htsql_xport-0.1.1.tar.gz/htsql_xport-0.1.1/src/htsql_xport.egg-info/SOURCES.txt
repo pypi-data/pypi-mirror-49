@@ -1,0 +1,10 @@
+README.rst
+setup.py
+src/htsql_xport/__init__.py
+src/htsql_xport/xpt.py
+src/htsql_xport.egg-info/PKG-INFO
+src/htsql_xport.egg-info/SOURCES.txt
+src/htsql_xport.egg-info/dependency_links.txt
+src/htsql_xport.egg-info/entry_points.txt
+src/htsql_xport.egg-info/requires.txt
+src/htsql_xport.egg-info/top_level.txt

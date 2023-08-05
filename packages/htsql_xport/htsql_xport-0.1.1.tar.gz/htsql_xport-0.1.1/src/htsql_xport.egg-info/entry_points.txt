@@ -1,0 +1,3 @@
+[htsql.addons]
+htsql_xport = htsql_xport:XPTAddon
+

@@ -1,0 +1,10 @@
+pandas
+pint
+numpy
+matplotlib
+skyfield
+scipy
+pyquaternion
+requests
+astropy
+pyyaml>=3.12

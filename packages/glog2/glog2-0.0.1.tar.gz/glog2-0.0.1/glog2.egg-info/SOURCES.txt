@@ -1,0 +1,9 @@
+README.rst
+glog.py
+setup.cfg
+setup.py
+glog2.egg-info/PKG-INFO
+glog2.egg-info/SOURCES.txt
+glog2.egg-info/dependency_links.txt
+glog2.egg-info/requires.txt
+glog2.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+lettercase/__init__.py,sha256=d34jhRDM4QFGsYe4LbTBf_ZPn-M68q6hhGwlyE4Av8s,212
+lettercase/detect.py,sha256=535e9h9iyBOB7seBrj5MrS588Ddu8F9sCYta1zSqE2g,2236
+lettercase/letter_case.py,sha256=koLw3Eb5eVSlyqcrGvEdHf3sF-I8Bwp-gRmj5CTW35c,1995
+lettercase/tools.py,sha256=u3PxH7k27SChkj1drhx6bIzL1O9RwkxA--TfywV_Xo4,7549
+lettercase/converters/__init__.py,sha256=xpXonqp66XvdxwkseKOWoWto5zbo3vkFFpz9whdbjOg,1794
+lettercase/converters/darwin_case.py,sha256=To0l4fBLBi0EmklJdM80sfSsoEbLcm76wign3okbJ6g,1082
+lettercase/converters/dromedary_case.py,sha256=-yEEw_Dh1dowm7oZe9Jqo5GC8OW14zcPo8QVAAgF934,2326
+lettercase/converters/pascal_case.py,sha256=ksl3mYpeNOH7cCXXIzCJ4xCI0KJWPvWMoc7l0d1c_s4,1397
+lettercase/converters/screaming_snake_case.py,sha256=_JlnhFSoDoUXkK4vspLhqA3dCZnhh0-Aq84wWqOWgT4,1228
+lettercase/converters/snake_case.py,sha256=quMvcEStPuLn38OzMR8htsh6NwYF-vGgfTg1ibeUm_U,2164
+lettercase-0.3.2.dist-info/LICENSE,sha256=zp3jdSORj4PVypQeO36RriFFfWi2rAohgBpvET2yBBE,1068
+lettercase-0.3.2.dist-info/METADATA,sha256=PkCgsUaiRN2wBUX9IgIC49ogaTltfywXBMoHuJ_BqHI,1438
+lettercase-0.3.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+lettercase-0.3.2.dist-info/top_level.txt,sha256=er3WMI5L5QFSGtXmlbBhKfyWDP5HAobZ8q0QzZ1csdE,11
+lettercase-0.3.2.dist-info/RECORD,,

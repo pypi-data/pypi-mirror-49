@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: xyscript
+Version: 0.3.5
+Summary: add --no-pod to pull pullsubmodule
+Home-page: https://www.baidu.com
+Author: XYCoder
+Author-email: m18221031340@163.com
+Maintainer: XYCoder
+Maintainer-email: m18221031340@163.com
+License: BSD License
+Platform: all
+Classifier: Development Status :: 6 - Mature
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Requires-Dist: requests
+Requires-Dist: GitPython
+Requires-Dist: setuptools
+Requires-Dist: configparser
+Requires-Dist: progressbar
+
+test
+
+

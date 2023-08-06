@@ -1,0 +1,3 @@
+[console_scripts]
+price_watcher = price_watcher.__main__
+

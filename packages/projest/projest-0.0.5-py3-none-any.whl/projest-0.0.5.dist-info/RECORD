@@ -1,0 +1,13 @@
+projest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+projest/aminoacid.py,sha256=I4J029KUlyLDDQG-XIqBGlcd6WcVMohmJjJHkaeQlt0,304
+projest/atom.py,sha256=uKw4Y9ok-9tVcFYISeFkmY0B0tpERzq_Kxp-1yelcXc,689
+projest/chain.py,sha256=g8c0hXo3gCmYkdOAJKuRy61wWdxB6qYKuxSeWW_AfKA,186
+projest/extract_atoms_information.py,sha256=kJe1Oy9v4E9IKyYY8AFcXT7zaQI1_rEL8foJpgS4h0M,1070
+projest/model.py,sha256=pIfaNXOIumM2oynfWmIJJ5V0WqZMRdVSOfJta6AIXMQ,164
+projest/protein.py,sha256=MKPl3lViHl5c7CkbTX5U-UGtGOF6N1myJGPwrSMfcSY,8399
+projest/test.py,sha256=5yzLNaOFxXuxSOT0s9ooaLN5o8LKJiH5-w86zOsYnxc,4658
+projest-0.0.5.dist-info/LICENSE.txt,sha256=ITZu91LAx_v5HEb_FjIS05kcbzHPXt0hZGeWbFB4Pn4,1088
+projest-0.0.5.dist-info/METADATA,sha256=s2EfxZoz65K5ecwW1uxh3ytdymiyeZxEvOBRydakbSc,3050
+projest-0.0.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+projest-0.0.5.dist-info/top_level.txt,sha256=kToVC7nhjYpSu-PwWJ7MKJjvod4InkZWYcsbFeVLFh8,8
+projest-0.0.5.dist-info/RECORD,,

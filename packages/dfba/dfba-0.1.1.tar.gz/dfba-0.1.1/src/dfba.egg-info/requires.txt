@@ -1,0 +1,10 @@
+cobra
+depinfo
+optlang
+symengine
+sympy
+
+[development]
+black
+isort
+tox

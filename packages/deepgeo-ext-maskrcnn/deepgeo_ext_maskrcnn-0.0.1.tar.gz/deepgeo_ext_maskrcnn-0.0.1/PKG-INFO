@@ -1,0 +1,215 @@
+Metadata-Version: 2.1
+Name: deepgeo_ext_maskrcnn
+Version: 0.0.1
+Summary: deepgeo_ext_maskrcnn
+Home-page: https://github.com/Sotaneum/deepgeo_ext_maskrcnn
+Author: Donggun LEE
+Author-email: gnyotnu39@gmail.com
+License: MIT
+Description: # DeepGeo Extension :: Mask R-CNN
+         - Easy Deep Learning
+          - Copyright (c) 2019 [InfoLab](http://infolab.kunsan.ac.kr) ([Donggun LEE](http://duration.digimoon.net))
+        
+         - How to install
+           ```bash
+           pip install deepgeo_ext_maskrcnn
+           ```
+           - other version
+             ```basha
+             # 0.0.1
+             pip install deepgeo_ext_maskrcnn==0.0.1
+             ```
+            - requirement
+               - Python 3.6
+               ```bash
+               pip install deepgeo
+               ```
+         - How to use
+            ```python
+            import deepgeo
+        
+            engine = deepgeo.Engine()
+            engine.add_model('maskrcnn_mscoco','maskrcnn','D:/default_config.json')
+            
+            image = deepgeo.Image.Image("image.jpg","D:/Project")
+            image = engine.detect('maskrcnn_mscoco', image)
+            image.draw_annotations(image.get_annotation())
+            image.save("D:/","test","PNG")
+            ```
+        
+         - default_config.json
+            ```json
+            {
+              "BACKBONE": "resnet101",
+              "BACKBONE_STRIDES": [
+                4,
+                8,
+                16,
+                32,
+                64
+              ],
+              "BATCH_SIZE": 1,
+              "BBOX_STD_DEV": [0.1, 0.1, 0.2, 0.2],
+              "CATEGORY": [
+                "bg",
+                "person",
+                "bicycle",
+                "car",
+                "motorcycle",
+                "airplane",
+                "bus",
+                "train",
+                "truck",
+                "boat",
+                "traffic_light",
+                "fire_hydrant",
+                "stop_sign",
+                "parking_meter",
+                "bench",
+                "bird",
+                "cat",
+                "dog",
+                "horse",
+                "sheep",
+                "cow",
+                "elephant",
+                "bear",
+                "zebra",
+                "giraffe",
+                "backpack",
+                "umbrella",
+                "handbag",
+                "tie",
+                "suitcase",
+                "frisbee",
+                "skis",
+                "snowboard",
+                "sports_ball",
+                "kite",
+                "baseball_bat",
+                "baseball_glove",
+                "skateboard",
+                "surfboard",
+                "tennis_racket",
+                "bottle",
+                "wine_glass",
+                "cup",
+                "fork",
+                "knife",
+                "spoon",
+                "bowl",
+                "banana",
+                "apple",
+                "sandwich",
+                "orange",
+                "broccoli",
+                "carrot",
+                "hot_dog",
+                "pizza",
+                "donut",
+                "cake",
+                "chair",
+                "couch",
+                "potted_plant",
+                "bed",
+                "dining_table",
+                "toilet",
+                "tv",
+                "laptop",
+                "mouse",
+                "remote",
+                "keyboard",
+                "cell_phone",
+                "microwave",
+                "oven",
+                "toaster",
+                "sink",
+                "refrigerator",
+                "book",
+                "clock",
+                "vase",
+                "scissors",
+                "teddy_bear",
+                "hair_drier",
+                "toothbrush"
+              ],
+              "COMPUTE_BACKBONE_SHAPE": null,
+              "DETECTION_MAX_INSTANCES": 100,
+              "DETECTION_MIN_CONFIDENCE": 0.7,
+              "DETECTION_NMS_THRESHOLD": 0.3,
+              "EPOCHS": 1,
+              "FPN_CLASSIF_FC_LAYERS_SIZE": 1024,
+              "GPU_COUNT": 1,
+              "GRADIENT_CLIP_NORM": 5.0,
+              "IMAGES_PER_GPU": 1,
+              "IMAGE_CHANNEL_COUNT": 3,
+              "IMAGE_MAX_DIM": 1024,
+              "IMAGE_META_SIZE": 14,
+              "IMAGE_MIN_DIM": 800,
+              "IMAGE_MIN_SCALE": 0,
+              "IMAGE_PATH": "image",
+              "IMAGE_RESIZE_MODE": "square",
+              "IMAGE_SHAPE": null,
+              "LAYERS": "all",
+              "LEARNING_MOMENTUM": 0.9,
+              "LEARNING_RATE": 0.001,
+              "LOSS_WEIGHTS": {
+                "mrcnn_bbox_loss": 1.0,
+                "mrcnn_class_loss": 1.0,
+                "mrcnn_mask_loss": 1.0,
+                "rpn_bbox_loss": 1.0,
+                "rpn_class_loss": 1.0
+              },
+              "MASK_POOL_SIZE": 14,
+              "MASK_SHAPE": [
+                28,
+                28
+              ],
+              "MAX_GT_INSTANCES": 100,
+              "MEAN_PIXEL": [123.7, 116.8, 103.9],
+              "MEMO": "",
+              "MINI_MASK_SHAPE": [
+                56,
+                56
+              ],
+              "MODEL_FILE_NAME": "mask_rcnn_coco.h5",
+              "MODEL_PATH":"model",
+              "MODEL_URI":"",
+              "NAME": "MASK_RCNN",
+              "NUM_CLASSES": 80,
+              "POOL_SIZE": 7,
+              "POST_NMS_ROIS_INFERENCE": 1000,
+              "POST_NMS_ROIS_TRAINING": 2000,
+              "PRE_NMS_LIMIT": 6000,
+              "RESULT_TEST_NUM": 100,
+              "ROI_POSITIVE_RATIO": 0.33,
+              "RPN_ANCHOR_RATIOS": [
+                0.5,
+                1,
+                2
+              ],
+              "RPN_ANCHOR_SCALES": [
+                32,
+                64,
+                128,
+                256,
+                512
+              ],
+              "RPN_ANCHOR_STRIDE": 1,
+              "RPN_BBOX_STD_DEV": [0.1,0.1,0.2,0.2],
+              "RPN_NMS_THRESHOLD": 0.7,
+              "RPN_TRAIN_ANCHORS_PER_IMAGE": 256,
+              "STEPS_PER_EPOCH": 1000,
+              "TOP_DOWN_PYRAMID_SIZE": 256,
+              "TRAIN_BN": false,
+              "TRAIN_ROIS_PER_IMAGE": 200,
+              "USE_MINI_MASK": true,
+              "USE_RPN_ROIS": true,
+              "VALIDATION_STEPS": 50,
+              "VERSION": "",
+              "WEIGHT_DECAY": 0.0001
+            }
+            ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

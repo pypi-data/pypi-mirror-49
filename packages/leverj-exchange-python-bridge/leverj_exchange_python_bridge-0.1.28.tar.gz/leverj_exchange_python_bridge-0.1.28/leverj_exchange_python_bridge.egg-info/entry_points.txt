@@ -1,0 +1,3 @@
+[console_scripts]
+run_js = leverj_exchange_python_bridge:run_js
+

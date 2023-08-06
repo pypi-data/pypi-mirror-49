@@ -1,0 +1,12 @@
+pyscaffoldext/__init__.py,sha256=vXgXMgYCDkxR9ifnsCGWSHLloiNxhHjy0mpN2L-EspA,80
+pyscaffoldext/pyproject/__init__.py,sha256=YZworIehO8Nkk82L1ABLhZ1EPDkKKlWIMYmDvNAFehQ,380
+pyscaffoldext/pyproject/extension.py,sha256=Tl1OI32jK_gL1BFtwwtHXbcE0Dq7kXjpGdnuhiGJ2YA,1343
+pyscaffoldext/pyproject/templates/__init__.py,sha256=TRHOUPpTuXa2VjJXvUjG7dQzHSvl-MnSKrLTECdxLAw,768
+pyscaffoldext/pyproject/templates/pyproject_toml.template,sha256=Oshsjp8f3-jEfxxMgHzckuJk-ahUeKb5fnbeQN-GpZQ,50
+pyscaffoldext_pyproject-0.3a1.dist-info/AUTHORS.rst,sha256=V9jcDscckn7iQaiBh8chRsqYnQHh-D9BqokVS9CiaP4,86
+pyscaffoldext_pyproject-0.3a1.dist-info/LICENSE.txt,sha256=wj5SLndBFTnNXqaHs91o4Y3aZs4U2DNNx97Hrx1beOA,1082
+pyscaffoldext_pyproject-0.3a1.dist-info/METADATA,sha256=dXPbSg3mJiNX-KxqscJy6LXRXJyQ45vyInLx65RR0d4,2700
+pyscaffoldext_pyproject-0.3a1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+pyscaffoldext_pyproject-0.3a1.dist-info/entry_points.txt,sha256=PE5Qg0LsanPNsKNIqQMzj5Vhf8oBcBNe2-k6bjiNcS0,74
+pyscaffoldext_pyproject-0.3a1.dist-info/top_level.txt,sha256=zac9JJq83qBJe5oCWbtXhQVr8mJ5TZFW2jCFlSQ6n0Y,14
+pyscaffoldext_pyproject-0.3a1.dist-info/RECORD,,

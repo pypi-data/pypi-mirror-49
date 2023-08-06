@@ -1,0 +1,14 @@
+monpa/__init__.py,sha256=_qeux5FRYpNO8lD-6cVRp1qiKKzYgrBuoqZom3rPbhw,15801
+monpa/crf_layer.py,sha256=FL0QnBbU4y_YbBuVN90tibFmwOJ9wM4dszH_yLw-EEk,16901
+monpa/modeling.py,sha256=3VANucgxozjzn1bMWsApvraeV3dOAxMRQI2N4CM2Fsk,23132
+monpa/server.py,sha256=xQPlRYsRdr1eErSShKCWJB8kG1KfB74xCJPiQpgfKEg,11619
+monpa/tokenization.py,sha256=ujSVGjl1HojoSkykvWiQoyzpjKfib0xYiZ3xvNPWTm0,11411
+monpa/bert_configs/bert_config_monpa.json,sha256=uvtLOJmsn3Ye5iKOo49nVQbCTwcfzJIjc3Ip_4DtMVA,520
+monpa/bert_configs/pos.tgt.dict,sha256=48EFwmFTn4PWRz7Br5f7jTsQyxuLzE0xMw_Ff7sV5Nw,1790
+monpa/bert_configs/vocab_monpa.vocab,sha256=GPwLKNwLzIwdeLehO5h_vKBwXvGnBoOA8YVu0huIftg,30242
+monpa/model/readme.txt,sha256=nAWy7q7o_FzkpXakXll5u53YErL-Ebg3ZZLjrycrJg0,45
+monpa-0.2.4.dist-info/LICENSE,sha256=ofxlNQglR1rLs1frR3GJItB_FXjdHGUm_a4DmuV-ap4,551
+monpa-0.2.4.dist-info/METADATA,sha256=y44veAKi3fWWurV3FCNzLBY6rDa8dO9bwT071OdFdhM,9216
+monpa-0.2.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+monpa-0.2.4.dist-info/top_level.txt,sha256=fJ9RpM9VsELVTcZoAEucgS6JF5dig8WxVHg3TIs5nIM,6
+monpa-0.2.4.dist-info/RECORD,,

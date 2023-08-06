@@ -1,0 +1,6 @@
+numpy
+scipy
+cython
+pymongo
+tqdm
+python-decouple

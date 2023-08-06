@@ -1,0 +1,5 @@
+include .piptui/config.ini
+inlcude .piptui/themes/black_on_white.json
+inlcude .piptui/themes/colorful.json
+inlcude .piptui/themes/elegant.json
+inlcude .piptui/themes/transparent.json

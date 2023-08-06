@@ -1,0 +1,9 @@
+README.md
+setup.py
+majapdf/__init__.py
+majapdf/pdf2image.py
+majapdf/pdf2text.py
+majapdf.egg-info/PKG-INFO
+majapdf.egg-info/SOURCES.txt
+majapdf.egg-info/dependency_links.txt
+majapdf.egg-info/top_level.txt

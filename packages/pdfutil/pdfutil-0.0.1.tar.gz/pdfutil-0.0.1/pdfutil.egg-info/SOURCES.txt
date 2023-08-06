@@ -1,0 +1,7 @@
+README.md
+setup.py
+pdfutil.egg-info/PKG-INFO
+pdfutil.egg-info/SOURCES.txt
+pdfutil.egg-info/dependency_links.txt
+pdfutil.egg-info/requires.txt
+pdfutil.egg-info/top_level.txt

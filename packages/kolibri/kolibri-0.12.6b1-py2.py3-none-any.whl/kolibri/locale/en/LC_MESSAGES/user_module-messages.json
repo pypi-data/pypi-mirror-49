@@ -1,0 +1,16 @@
+{
+  "SignInPage.accessAsGuest": "Explore without account",
+  "SignInPage.createAccount": "Create an account",
+  "SignInPage.documentTitle": "User Sign In",
+  "SignInPage.enterPassword": "Enter password",
+  "SignInPage.kolibri": "Kolibri",
+  "SignInPage.password": "Password",
+  "SignInPage.poweredBy": "Kolibri {version}",
+  "SignInPage.privacyLink": "Usage and privacy",
+  "SignInPage.required": "This field is required",
+  "SignInPage.requiredForCoachesAdmins": "Password is required for coaches and admins",
+  "SignInPage.signIn": "Sign in",
+  "SignInPage.signInError": "Incorrect username or password",
+  "SignInPage.username": "Username",
+  "SignInPage.usernameNotAlphaNumUnderscore": "Username can only contain letters, numbers, and underscores"
+}

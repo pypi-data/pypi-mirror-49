@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/pytest_describe_it/__init__.py
+src/pytest_describe_it/_plugin.py
+src/pytest_describe_it.egg-info/PKG-INFO
+src/pytest_describe_it.egg-info/SOURCES.txt
+src/pytest_describe_it.egg-info/dependency_links.txt
+src/pytest_describe_it.egg-info/entry_points.txt
+src/pytest_describe_it.egg-info/requires.txt
+src/pytest_describe_it.egg-info/top_level.txt

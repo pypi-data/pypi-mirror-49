@@ -1,0 +1,7 @@
+pytest
+
+[:python_version < "3"]
+typing
+
+[test]
+pycodestyle

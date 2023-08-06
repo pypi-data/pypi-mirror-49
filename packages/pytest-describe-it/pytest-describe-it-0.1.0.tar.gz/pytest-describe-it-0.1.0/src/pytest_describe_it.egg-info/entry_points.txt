@@ -1,0 +1,3 @@
+[pytest11]
+describe-it = pytest_describe_it._plugin
+

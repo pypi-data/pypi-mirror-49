@@ -1,0 +1,14 @@
+telstar/__init__.py,sha256=TspqtFqJmUG5plZSMmdGeSml_QYiSrJlEyfm50WqE00,2549
+telstar/admin.py,sha256=CHML9lm5Nl1T2Hvt2X-HpAG8VlYYYKst9HYpu5Clnyo,2094
+telstar/consumer.py,sha256=PJ1DzJJd5PzaIBBOchFYHdKT2htclaXyDC-vDwWGps0,14096
+telstar/producer.py,sha256=oX32MdLBvwy1j_8jcUIdW6-8gUWN0N1U59CwZUzZtdQ,2317
+telstar/com/__init__.py,sha256=PbmoqIRZqjo5f1JSYY4Lz58mRipkmiK06G8hJtGrWIY,1614
+telstar/tests/_dbcontent.py,sha256=hcqOIMk8GeESzJF77HqV_zr1FJjMAPMHAax_1bTBTeI,195
+telstar/tests/expected.txt,sha256=uLnjKM1w8w7a3hJg5I76WUxy8x_WxUo8ko3BrUUZ3rE,19268
+telstar/tests/test_consumer.py,sha256=eBJt-7fUurz5ExvybiNqHjOCigBSkDgEL6KJUjeBDA0,1495
+telstar/tests/test_producer.py,sha256=QZNvnMH73tkz-qv372wz4ycy2GN0BkEWv0yKz-lsi50,1814
+telstar/tests/test_telstar.sh,sha256=mIrZkxQaMqDE89SSwgWIkBHMpv0iWgxML5JLhftP7EM,4915
+telstar-0.2.1.dist-info/LICENSE,sha256=i5sk7SOrzunUz8XOuQHMwMKPb9q0taOg0F7LW1qWHPU,1075
+telstar-0.2.1.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+telstar-0.2.1.dist-info/METADATA,sha256=gos_GX6w9l_DhlmYOSGIfvAx3Q-oOEjCYYLp2L9PNps,399
+telstar-0.2.1.dist-info/RECORD,,

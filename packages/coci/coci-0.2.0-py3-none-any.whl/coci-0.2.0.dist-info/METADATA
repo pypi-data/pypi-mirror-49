@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: coci
+Version: 0.2.0
+Summary: Collective Observation on Causal Inference
+Home-page: UNKNOWN
+Author: Koki Fujiwara
+Author-email: koki.fujiwara@exwzd.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: seaborn
+
+# COCI
+
+<strong>C</strong>ollective <strong>O</strong>bservation on <strong>C</strong>ausal <strong>I</strong>nferences
+
+Coci makes it easy to observe the changes in predictions from machine learning models based on the alterations of 
+feature values.
+
+## Why Coci?
+
+Machine learning has always been understood as a black box algorithm, which makes the decision makers hesitant to trust 
+the predictions from this approach.
+
+<a href="https://github.com/slundberg/shap">Shap</a> and <a href="https://github.com/marcotcr/lime">Lime</a> has 
+unveiled a lot of mysteries around the effects of the presence of each feature on outcomes. However, these methods 
+cannot show the change in outcomes when features are tweaked.
+
+Coci takes it a step further, and reveals the effects on outcomes when changing feature values. 
+
+
+# Installation
+
+`pip install coci==0.1.7`
+
+# Summary Plot
+
+## Sample code
+
+```
+import coci
+
+explainer = coci.TreeExplainer(model)
+
+explainer.sensitivity(X_test, 
+                    feature_names=feature_names,
+                    split_num=2,
+                    sample_size=300)
+
+explainer.summary_plot(max_display=10)
+
+```
+
+## Reading the summary plot
+
+![Summary Plot](images/summary_plot.png)
+
+# Trend Plot
+## Sample code
+```
+import coci 
+
+explainer = coci.TreeExplainer(model)
+
+explainer.sensitivity(X_test, 
+                    feature_names=feature_names,
+                    split_num=2,
+                    sample_size=300)
+
+explainer.trend_plot(feature_name=['要介護認定等基準時間（食事）'])
+
+## or show by index
+explainer.trend_plot(feature_index=[1276])
+
+## or show the top ranked features
+explainer.trend_plot(max_display=10)
+
+```
+
+## Reading the trend plot
+
+
+
+
+

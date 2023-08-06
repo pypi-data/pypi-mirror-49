@@ -1,0 +1,5 @@
+setup.py
+vtscanner.egg-info/PKG-INFO
+vtscanner.egg-info/SOURCES.txt
+vtscanner.egg-info/dependency_links.txt
+vtscanner.egg-info/top_level.txt

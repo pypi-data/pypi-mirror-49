@@ -1,0 +1,7 @@
+blessings<2.0,>=1.6
+sqlalchemy<2.0,>=1.3
+PyYAML<6.0,>=5.1
+python-dateutil<3.0,>=2.8
+click<7.0,>=6.7
+czech-holidays
+python-slugify

@@ -1,0 +1,3 @@
+[console_scripts]
+crudebht = CrudeBHT.simulation:__main__
+

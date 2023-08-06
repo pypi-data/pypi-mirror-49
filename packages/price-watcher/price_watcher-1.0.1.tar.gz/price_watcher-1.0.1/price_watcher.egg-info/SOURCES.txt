@@ -1,0 +1,13 @@
+README.md
+setup.py
+price_watcher/__init__.py
+price_watcher/__main__.py
+price_watcher/amazon.py
+price_watcher/cli.py
+price_watcher/notifications.py
+price_watcher.egg-info/PKG-INFO
+price_watcher.egg-info/SOURCES.txt
+price_watcher.egg-info/dependency_links.txt
+price_watcher.egg-info/entry_points.txt
+price_watcher.egg-info/requires.txt
+price_watcher.egg-info/top_level.txt

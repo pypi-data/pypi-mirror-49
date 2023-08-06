@@ -1,0 +1,17 @@
+nickel/__init__.py,sha256=X8jvprJMMMEeI63SRLOB2OqXL5zw81m_rJ_v-hklsBQ,40
+nickel/converters.py,sha256=QzwbzWnVFOF8RF-v5K4ibJY1f_sUEKA9kLTAyP40RK8,561
+nickel/managers.py,sha256=KFAdJc_cWSLwY9dond0H4_FUyF5QJo6Uj38fXp4_IkI,1323
+nickel/settings_utils.py,sha256=NU721WB_Li0eZBoEZiNI7o17_3sHValHxs8coTIE6k8,1005
+nickel/admin_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nickel/admin_utils/decorators.py,sha256=cmDfm7duLW_imqu5gC1lrjuAWA2DsbB36N79ogVh7D0,595
+nickel/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nickel/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nickel/management/commands/new_script.py,sha256=Ne2AKCHZTC1KqouMC_kI419rk1pZM8esM9iKmEN6BCs,950
+nickel/tables/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nickel/tables/bootgrid.py,sha256=fannAwB20Jzb4a3imLSmgVjyQSmWqimG0OOU90z7etk,2343
+nickel/tables/jqgrid.py,sha256=V7B0V3iZk4K2x6B9pvL8pgAKe2aF13nzxYUFG7sG1Iw,3574
+nickel/templates/scripts/single_script.py.tpl,sha256=ZXMLXVbeIPTXKuc0xlksJcSMI9196Mavzt7fHyAY0Yc,305
+nickel-0.6.0.dist-info/METADATA,sha256=jxV5UIlE-j5pNMEEkZ-mVzX_rg_SMX6P7TlFUC84jIw,945
+nickel-0.6.0.dist-info/RECORD,,
+nickel-0.6.0.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+nickel-0.6.0.dist-info/top_level.txt,sha256=r5b9OSt6HQKBqbBRHqEj4bUtwxWRfJSbAJGmttuS2TU,7

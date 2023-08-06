@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pyerrorreport
+Version: 0.3
+Summary: Send error reports and other messages to a central server you control.
+Home-page: https://gitlab.com/toastengineer/pyerrorreport
+Author: TOASTEngineer
+Author-email: toastengineer@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

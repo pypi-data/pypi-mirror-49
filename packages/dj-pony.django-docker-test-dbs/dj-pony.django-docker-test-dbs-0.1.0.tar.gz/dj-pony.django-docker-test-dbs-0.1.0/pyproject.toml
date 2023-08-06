@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dj-pony.django-docker-test-dbs"
+version = "0.1.0"
+description = ""
+authors = ["Samuel Bishop <sam@techdragon.io>"]
+packages = [
+    { include = "dj_pony" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+docker = "^4.0"
+
+[tool.poetry.dev-dependencies]
+django = "^2.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

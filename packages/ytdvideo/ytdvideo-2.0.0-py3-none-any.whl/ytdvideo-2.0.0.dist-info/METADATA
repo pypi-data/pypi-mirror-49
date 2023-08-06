@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: ytdvideo
+Version: 2.0.0
+Summary: A Python package to get Youtube Videos from any channel can save the data as JSON and EXCEL 
+Home-page: https://github.com/soumilshah1995/YoutubeVideo
+Author: Soumil Nitin Shah
+Author-email: soushah@my.bridgeport.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (==0.24.0)
+Requires-Dist: google-api-python-client (==1.7.8)
+
+# YoutubeVideo
+This is a python Package which can download all youtube videos and save it as Excel File
+and also Json File. It allows user to get all Titles, Youtube URL and Images from their channel
+
+special Thanks to indianpythonist
+
+
+more information visit : https://github.com/soumilshah1995/YoutubeVideo
+
+# Import Library
+from ytdvideo import YoutubeVideo
+
+# Create a object and provide API key
+obj = YoutubeVideo(api_key="YOUR KEY", channel_id="UC_eOodxvwS_H7x2uLQa")
+
+# get the data
+print(obj.get_title)
+
+
+# Get all Title Return List
+print(obj.get_title)
+
+# Iterate over the Title
+for title in obj.get_title:
+    print(title)
+
+# Get all Link Return List
+print(obj.get_video_url)
+
+# Iterate over the Link
+for url in obj.get_video_url:
+    print(url)
+
+
+# Get all Images Return List
+print(obj.get_image)
+
+# Iterate over the Link
+for img in obj.get_image:
+    print(img)
+
+# Get all Data return Tuple
+print(obj.get_all)
+
+# Iterate over the Link
+for data in obj.get_all:
+    print(data)
+
+# save as Excel File
+obj.save_excel
+
+# save as JSON
+obj.save_json
+
+
+
+

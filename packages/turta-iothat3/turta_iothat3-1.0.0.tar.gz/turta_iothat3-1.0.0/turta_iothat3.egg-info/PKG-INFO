@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: turta-iothat3
+Version: 1.0.0
+Summary: Python Libraries for Turta IoT HAT 3
+Home-page: https://www.turta.io/iothat
+Author: Turta LLC
+Author-email: hello@turta.io
+License: UNKNOWN
+Project-URL: Documentation, https://docs.turta.io/raspberry-pi-hats/iot-hat-3
+Project-URL: Community, https://community.turta.io
+Project-URL: GitHub Repository, https://github.com/Turta-io/IoTHAT3
+Description: # Turta IoT HAT 3 for Raspberry Pi
+        IoT HAT is a Raspberry Pi I/O board which combines security and connectivity.
+        
+        ##Features
+        - Securely connects to the cloud services via Cryptographic co-processor.
+        - Detects theft attempts.
+        - Senses ambient & RGB light, proximity, hand gestures, 3D acceleration, 3D tilt, and board temperature.
+        - Controls home electronics via IR remote transmitter.
+        - Carries 2Ch solid-state relays, 2Ch photocoupler inputs.
+        - Has Grove compatible I2C, UART, digital and analog ports.
+        - 4Ch single-ended or 2Ch differential analog inputs are available.
+        - Carries a large user button and a piezo sounder.
+        - ID EEPROM for Raspberry Pi HAT specification compliance.
+        
+        ##Documentation
+        Visit [docs.turta.io](https://docs.turta.io) for documentation.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Topic :: System :: Hardware
+Description-Content-Type: text/markdown

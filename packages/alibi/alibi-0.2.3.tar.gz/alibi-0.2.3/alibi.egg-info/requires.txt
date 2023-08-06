@@ -1,0 +1,13 @@
+beautifulsoup4
+numpy
+Pillow
+pandas
+requests
+scikit-learn
+spacy
+scikit-image
+tensorflow
+
+[examples]
+seaborn
+Keras

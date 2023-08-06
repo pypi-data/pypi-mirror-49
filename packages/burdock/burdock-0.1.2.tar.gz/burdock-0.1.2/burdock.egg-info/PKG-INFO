@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: burdock
+Version: 0.1.2
+Summary: A Daikon frontend for Python data frames and CSV/TSV files.
+Home-page: https://github.com/DylanLukes/burdock
+Author: Dylan A. Lukes
+Author-email: dlukes@eng.ucsd.edu
+License: BSD 3-Clause
+Description: Burdock
+        =======
+        
+        ## ⚠ Warning! ⚠
+        
+        Burdock is under development, and should be considered pre-alpha quality software. 
+        
+        Nothing works yet, and everything is subject to change. Caveat emptor!
+        
+        ## What is this?
+        
+        
+        A [Daikon](http://plse.cs.washington.edu/daikon/) frontend for Python dataframes (from Pandas) and CSV/TSV files.
+        
+        Burdock is intended as:
+        
+         - A Daikon frontend for use in Python environments, including Jupyter.
+         - A replacement for `convertcsv.pl`.
+         
+          
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: preconvert_numpy
+Version: 0.0.3
+Summary: Preconverts common numpy types to their serializable (jsonifiable, msgpackable, etc...) form.
+Home-page: https://github.com/timothycrosley/preconvert_numpy
+Author: Timothy Edmund Crosley
+Author-email: timothy.crosley@gmail.com

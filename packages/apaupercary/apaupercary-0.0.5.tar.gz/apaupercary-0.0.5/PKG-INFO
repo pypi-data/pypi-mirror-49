@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: apaupercary
+Version: 0.0.5
+Summary: pauper prices for your budget brews
+Home-page: https://pypi.org/project/apaupercary/
+Author: Sumner Magruder
+Author-email: sumner.magruder@zmnh.uni-hamburg.de
+License: UNKNOWN
+Description: # appothecary
+        
+        > the nuxt app for the apaupercary
+        
+        ## Build Setup
+        
+        ``` bash
+        # install dependencies
+        $ npm run install
+        
+        # serve with hot reload at localhost:3000
+        $ npm run dev
+        
+        # build for production and launch server
+        $ npm run build
+        $ npm run start
+        
+        # generate static project
+        $ npm run generate
+        ```
+        
+        For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

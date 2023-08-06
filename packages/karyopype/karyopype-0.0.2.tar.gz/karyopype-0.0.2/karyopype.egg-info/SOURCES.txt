@@ -1,0 +1,10 @@
+README.md
+setup.py
+karyopype.egg-info/PKG-INFO
+karyopype.egg-info/SOURCES.txt
+karyopype.egg-info/dependency_links.txt
+karyopype.egg-info/requires.txt
+karyopype.egg-info/top_level.txt
+test/__init__.py
+test/test_genomes.py
+test/test_karyopype.py

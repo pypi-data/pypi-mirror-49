@@ -1,0 +1,62 @@
+{
+	"settings": {
+		"commands" 	: [
+			"wget"
+		],
+		"required_flags": [
+			"source"
+		]
+	},
+	"flags": {
+		"source": [
+			{
+				"flag"		: null,
+				"unifier"	: null,
+				"format"	: {
+					"number": 1,
+					"preset": "1"
+				}
+			}
+		],
+
+		"accept": [
+			{}
+		],
+
+		"mirror": [
+			{}
+		],
+
+		"exclude_domains": [
+			{
+				"flag"		: "--exclude-directories",
+				"unifier"	: null,
+				"format"	: {
+					"number": 1,
+					"preset": "1"
+				}
+			}
+		],
+
+		"max_speed": [
+			{
+				"flag"		: "--limit-rate",
+				"unifier"	: "=",
+				"format"	: {
+					"number": 1,
+					"preset": "dq1dq"
+				}
+			}
+		],
+		"output": [
+			{
+				"flag"		: "--output-document",
+				"unifier"	: "=",
+				"format"	: {
+					"number": 1,
+					"preset": "1"
+				}
+			}
+		]
+	}
+}

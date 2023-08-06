@@ -1,0 +1,14 @@
+pyshellwrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyshellwrapper/defs.py,sha256=i6NoDn7dOpvL1u6JWRE5CS5R0YRQ9zuwjwI64rDaFvA,1933
+pyshellwrapper/parser.py,sha256=3nhRrWrbQ9TkeR5A4Zw1XH-WPAdWKrTWssvIu-Kof1Y,4462
+pyshellwrapper/utils.py,sha256=E3qLA3173cO_H8vbjQlIEFR7A8EGVjzzEahTyQuU5NE,330
+pyshellwrapper/wrapper.py,sha256=Q3bgPGQ7yEqjgCjvCISiQQLiwI_KmXjt-2gk2zz1ATo,9855
+pyshellwrapper/blueprint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyshellwrapper/blueprint/compress_libs.json,sha256=QZgCcYbfVSLcKfiv-rSZLAcIDbvmmQyesCeEQiAzTBA,2495
+pyshellwrapper/blueprint/convert.json,sha256=84mlATObmVIe7UzBN_eW0aJZmpVcyxkiKPp1VGOsIzw,514
+pyshellwrapper/blueprint/wget.json,sha256=8CK-NtGO8FpiS27ajmZd0PhYQgYq2G3EN0LwN4tQHEE,743
+pyshellwrapper-0.4.1.dist-info/LICENSE,sha256=7PrFbH7fqr_VYTveu1_XIxagFBP3vrbVqujJR0bSbVo,1122
+pyshellwrapper-0.4.1.dist-info/METADATA,sha256=DdiV2aItebHabWnvf0seRMQrx-HRysIqhkblyv06rEA,7682
+pyshellwrapper-0.4.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyshellwrapper-0.4.1.dist-info/top_level.txt,sha256=PqiYRJs7xz5IENZmqL2quW4EWaroFzJ7LV30rmZvLv4,15
+pyshellwrapper-0.4.1.dist-info/RECORD,,

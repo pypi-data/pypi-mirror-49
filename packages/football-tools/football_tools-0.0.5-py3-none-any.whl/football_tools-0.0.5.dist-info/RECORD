@@ -1,0 +1,14 @@
+football_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+football_tools/cli.py,sha256=YczIgHA4EsbHi4jHUQot3h8dnhmHFhrrLx0wFzxNP3s,3643
+football_tools/statistics.py,sha256=Mzno85MNlW3fSgD6-W87hYe6aCpv62NN7-1DuRYE7ww,1355
+football_tools/storage.py,sha256=ZVtrDn8-whJtlP-BANAwgefGR9FTiKSH5yX1wrSatnI,1754
+football_tools/team_domain.py,sha256=ou1dqXeiyFZQHdQ3QY2fIwXh_bxoKGTe6p-y2nupApk,5265
+football_tools/tests/__init__.py,sha256=_WuiUWgRoycGRTVTcsbd08sh17yfGGW1JUtwmnrzkQ8,58
+football_tools/tests/test_storage.py,sha256=YIelXJ3flDqFL0E0AHvj-MDcD6wJTBP5DCjvJQJs-Qc,395
+football_tools/tests/test_team_domain.py,sha256=inags1PYZnGrLhbNGjOhZKcu-wWY9gcnvxSfrAFgt6E,3363
+football_tools-0.0.5.dist-info/LICENSE,sha256=U3AQD8rl6XrAAZMrGrz97mjVRbjbuviKQ9QlGNcpBVI,18387
+football_tools-0.0.5.dist-info/METADATA,sha256=gVpU_QXvdIh6q5eFved_pf4D8shy0ExLllhGDy_28fg,452
+football_tools-0.0.5.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+football_tools-0.0.5.dist-info/entry_points.txt,sha256=eXYsffknReIT_pyv2kBepckZ3PDHCkKhEsl8dQMNCuc,80
+football_tools-0.0.5.dist-info/top_level.txt,sha256=OrF-kY5nXHDPIEWxVuJseH7HMkEkNGL7F0NM8wOL508,15
+football_tools-0.0.5.dist-info/RECORD,,

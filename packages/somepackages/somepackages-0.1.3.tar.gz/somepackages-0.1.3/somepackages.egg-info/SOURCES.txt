@@ -1,0 +1,10 @@
+setup.py
+somepackages/__init__.py
+somepackages.egg-info/PKG-INFO
+somepackages.egg-info/SOURCES.txt
+somepackages.egg-info/dependency_links.txt
+somepackages.egg-info/top_level.txt
+somepackages/decorators/__init__.py
+somepackages/decorators/logging.py
+somepackages/decorators/logging_test.py
+somepackages/decorators/perfomance.py

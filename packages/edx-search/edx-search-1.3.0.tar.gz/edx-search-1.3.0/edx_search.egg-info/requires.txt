@@ -1,0 +1,4 @@
+elasticsearch<2.0.0,>=1.0.0
+Django<2
+six
+event-tracking

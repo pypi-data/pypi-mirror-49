@@ -1,0 +1,13 @@
+danlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+danlp/download.py,sha256=D7NE6uYtjYdQHt-dm0FwO-DC1vtMicvV6g30rHNdzzM,6048
+danlp/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+danlp/models/embeddings.py,sha256=cm2l403cA8cyG1xBJjrIUHJndQuwH-93MfncDq_ojkU,12128
+danlp/models/pos_taggers.py,sha256=HWxvW3FqtM0PCskFAxKJbpP1vwrESmrTD5haAcbewKc,446
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_download.py,sha256=4V4TT3neU-7ZPKIejz3PSMSnFXNee2a9V2he8juN6kk,590
+tests/test_embeddings.py,sha256=mlhQu6X_QOCQxMMXvsKny0pXi9pn_gGrtFn4hdbIAPg,2155
+danlp-0.0.1.dist-info/LICENSE,sha256=s1A2P70a4wQljsz9QfBcMlCEB63qg-DTfNS7hWDgzQw,1527
+danlp-0.0.1.dist-info/METADATA,sha256=e13eIaFkh5OuyTgKDSOlWVwHMmZgUBqlYjUjlLK_zhA,7177
+danlp-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+danlp-0.0.1.dist-info/top_level.txt,sha256=uzEQSiH-YYm_YH8Ry6XBguVVXWuL4EumevzOPQE6nAQ,12
+danlp-0.0.1.dist-info/RECORD,,

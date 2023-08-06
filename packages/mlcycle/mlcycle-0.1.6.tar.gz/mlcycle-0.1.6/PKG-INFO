@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mlcycle
+Version: 0.1.6
+Summary: MLCycle client library
+Home-page: http://git01-ifm-min.ad.fh-bielefeld.de/pvserve2/mlcycle
+Author: Cem Basoglu
+Author-email: cem.basoglu@fh-bielefeld.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PyImageConverter
+Version: 1.0.0
+Summary: Sample Package
+Home-page: https://github.com/Prateek23n/PyImageConverter
+Author: Prateek C. Tripathi
+Author-email: prateektripathi85@gmail.com
+License: MIT
+Keywords: python image converter
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+PyImageConverter
+A Python in-built function to convert the format of the image one wants to convert without using any online platform. User can browse the file of their choice which they want to convert.
+

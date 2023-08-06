@@ -1,0 +1,10 @@
+cmsip/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmsip/cmsip.py,sha256=fc3JTwgdLNr2mLdGqDnGQQFWNgEU1wlZ_D19wA4fGsg,13684
+cmsip/R/t.test.R,sha256=CSMZ3JwyfPMHKpAuOPYTuwzLJkPwnNFv-pIf-XOGvgk,883
+cmsip/perl/removeCommonRead.pl,sha256=RA-XkJh4C0QswBZfut8j46P_rXbTWluvHGXSVVBcjNw,1036
+cmsip-0.0.0.5.dist-info/LICENSE,sha256=v9Yo3YW-_mvhD1gjgIpRVL18r0yO89QKrWqYdS3LAFw,1057
+cmsip-0.0.0.5.dist-info/METADATA,sha256=sG-w6pMjDXMMPpDyNU-eJwapkUG3xtvz4Z-w5r_N9y0,3277
+cmsip-0.0.0.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+cmsip-0.0.0.5.dist-info/entry_points.txt,sha256=X6ApN0geCyNRI2Ku8oSoiLQ8Nc7r-_ZQsGMuUlnbh9c,44
+cmsip-0.0.0.5.dist-info/top_level.txt,sha256=GZgFecE-1ayqulGXqCI7Zv02cKO-qohDv574_4nl01o,6
+cmsip-0.0.0.5.dist-info/RECORD,,

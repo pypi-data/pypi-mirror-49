@@ -1,0 +1,6 @@
+README.md
+setup.py
+python_live_client.egg-info/PKG-INFO
+python_live_client.egg-info/SOURCES.txt
+python_live_client.egg-info/dependency_links.txt
+python_live_client.egg-info/top_level.txt

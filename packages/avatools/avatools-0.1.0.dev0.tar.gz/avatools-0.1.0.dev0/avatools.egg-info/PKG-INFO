@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: avatools
+Version: 0.1.0.dev0
+Summary: avatools
+Home-page: UNKNOWN
+Author: Sylvain Bellemare
+Author-email: sbellem@gmail.com
+License: UNKNOWN
+Description: avatools
+        ========
+        .
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7.0
+Description-Content-Type: text/x-rst

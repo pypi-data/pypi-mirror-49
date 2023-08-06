@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.py
+avatools/__init__.py
+avatools/__version__.py
+avatools.egg-info/PKG-INFO
+avatools.egg-info/SOURCES.txt
+avatools.egg-info/dependency_links.txt
+avatools.egg-info/top_level.txt

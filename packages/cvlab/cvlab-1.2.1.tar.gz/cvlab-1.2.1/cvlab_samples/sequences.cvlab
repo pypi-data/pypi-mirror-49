@@ -1,0 +1,204 @@
+{
+  "_filetype": "CV-Lab diagram save file. See: https://github.com/cvlab-ai/cvlab ",
+  "_type": "diagram",
+  "_version": "1.2.1",
+  "elements": {
+    "1": {
+      "_type": "element",
+      "class": "Resizer",
+      "gui_options": {
+        "position": [
+          2180,
+          2180
+        ],
+        "preview_size": 85.0,
+        "show_parameters": true,
+        "show_preview": true,
+        "show_sliders": false
+      },
+      "module": "cvlab.diagram.elements.basic_transforms",
+      "parameters": {
+        "height": 100,
+        "width": 100
+      },
+      "unique_id": "299525"
+    },
+    "2": {
+      "_type": "element",
+      "class": "ImageLoader",
+      "gui_options": {
+        "position": [
+          1960,
+          2400
+        ],
+        "preview_size": 121.0,
+        "show_parameters": true,
+        "show_preview": true,
+        "show_sliders": null
+      },
+      "module": "cvlab.diagram.elements.image_io",
+      "parameters": {
+        "path": "../cvlab/images/default.png"
+      },
+      "unique_id": "515277"
+    },
+    "4": {
+      "_type": "element",
+      "class": "ImageSequenceLoader",
+      "gui_options": {
+        "position": [
+          1960,
+          2180
+        ],
+        "preview_size": 85.0,
+        "show_parameters": true,
+        "show_preview": true,
+        "show_sliders": null
+      },
+      "module": "cvlab.diagram.elements.image_io",
+      "parameters": {
+        "paths": [
+          "../cvlab/images/icon.png",
+          "../cvlab/images/lena.jpg"
+        ]
+      },
+      "unique_id": "721059"
+    },
+    "6": {
+      "_type": "element",
+      "class": "OpenCVBlur",
+      "gui_options": {
+        "position": [
+          2380,
+          2180
+        ],
+        "preview_size": 96.0,
+        "show_parameters": true,
+        "show_preview": true,
+        "show_sliders": false
+      },
+      "module": "cvlab.diagram.elements.blur",
+      "parameters": {
+        "ratio": 8
+      },
+      "unique_id": "294025"
+    },
+    "9": {
+      "_type": "element",
+      "class": "Resizer",
+      "gui_options": {
+        "position": [
+          2180,
+          2400
+        ],
+        "preview_size": 85.0,
+        "show_parameters": false,
+        "show_preview": true,
+        "show_sliders": false
+      },
+      "module": "cvlab.diagram.elements.basic_transforms",
+      "parameters": {
+        "height": 100,
+        "width": 100
+      },
+      "unique_id": "160547"
+    },
+    "10": {
+      "_type": "element",
+      "class": "MaxOperator",
+      "gui_options": {
+        "position": [
+          2620,
+          2400
+        ],
+        "preview_size": 108.0,
+        "show_parameters": true,
+        "show_preview": true,
+        "show_sliders": null
+      },
+      "module": "cvlab.diagram.elements.operators",
+      "parameters": {},
+      "unique_id": "054495"
+    },
+    "17": {
+      "_type": "element",
+      "class": "MinOperator",
+      "gui_options": {
+        "position": [
+          2880,
+          2400
+        ],
+        "preview_size": 194.0,
+        "show_parameters": true,
+        "show_preview": true,
+        "show_sliders": null
+      },
+      "module": "cvlab.diagram.elements.operators",
+      "parameters": {},
+      "unique_id": "248032"
+    }
+  },
+  "params": [
+    {
+      "from": 0,
+      "to": 5
+    },
+    {
+      "from": 1,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 0
+    },
+    {
+      "from": 6,
+      "to": 1
+    }
+  ],
+  "wires": {
+    "0": {
+      "from_element": 4,
+      "from_output": "output",
+      "to_element": 1,
+      "to_input": "input"
+    },
+    "1": {
+      "from_element": 4,
+      "from_output": "output",
+      "to_element": 9,
+      "to_input": "input"
+    },
+    "2": {
+      "from_element": 2,
+      "from_output": "output",
+      "to_element": 9,
+      "to_input": "input"
+    },
+    "3": {
+      "from_element": 1,
+      "from_output": "output",
+      "to_element": 6,
+      "to_input": "input"
+    },
+    "4": {
+      "from_element": 6,
+      "from_output": "output",
+      "to_element": 10,
+      "to_input": "inputs"
+    },
+    "5": {
+      "from_element": 9,
+      "from_output": "output",
+      "to_element": 10,
+      "to_input": "inputs"
+    },
+    "6": {
+      "from_element": 10,
+      "from_output": "output",
+      "to_element": 17,
+      "to_input": "inputs"
+    }
+  },
+  "zoom_level": 1.0
+}

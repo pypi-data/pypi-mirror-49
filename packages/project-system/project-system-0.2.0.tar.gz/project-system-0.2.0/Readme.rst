@@ -1,0 +1,47 @@
+project-system
+==============
+
+Create and open projects.
+
+.. image:: https://img.shields.io/github/stars/iandennismiller/project-system.svg?style=social&label=GitHub
+    :target: https://github.com/iandennismiller/project-system
+
+.. image:: https://img.shields.io/pypi/v/project-system.svg
+    :target: https://pypi.python.org/pypi/project-system
+
+.. image:: https://readthedocs.org/projects/project-system/badge/?version=latest
+    :target: http://project-system.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. .. image:: https://travis-ci.org/iandennismiller/project-system.svg?branch=master
+..     :target: https://travis-ci.org/iandennismiller/project-system
+
+.. Overview
+.. --------
+
+Quick Start
+-----------
+
+Create a new project.
+Then, start working on it.
+
+::
+
+    project-new my-project
+    project-workon my-project
+
+See `<https://project-system.readthedocs.io/en/latest/usage.html>`_ for more.
+
+Installation
+------------
+
+::
+
+    pip install project-system
+    project-conf-init
+
+Online Resources
+----------------
+
+- https://project-system.readthedocs.io
+- https://github.com/iandennismiller/project-system

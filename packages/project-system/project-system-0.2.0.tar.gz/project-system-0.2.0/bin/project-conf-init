@@ -1,0 +1,61 @@
+#!/bin/bash
+# project-system 2016 Ian Dennis Miller
+# http://github.com/iandennismiller/project-system
+
+if [ -f ~/.project-system.conf  ]; then
+    source ~/.project-system.conf
+fi
+
+function usage() {
+cat <<-EOF
+project-system - http://github.com/iandennismiller/project-system
+
+Usage: project-conf-init
+
+Options:
+
+    -h, --help          output help information
+
+Description:
+
+    project-conf-init creates a basic configuration file
+    in ~/.project-system.conf and will overwrite any file
+    that is already present.
+
+EOF
+}
+
+function conf-init() {
+cat > ~/.project-system.conf <<-EOF
+# project-system
+
+# command to open a project
+# or, use your own script to open a project:
+# PROJECT_OPEN_CMD=~/bin/project-open
+PROJECT_OPEN_CMD=project-open
+
+# location of work directory
+WORK_PATH=~/Work
+
+# command to enter a virtual environment.
+# it will be invoked with argument: WORK_CMD PROJECT_NAME
+WORK_CMD="workon"
+
+# command to open an editor focused on the current path
+EDIT_CMD="subl ."
+
+# python interpreters
+PYTHON_BIN=/usr/local/bin/python3
+EOF
+echo "created ~/.project-system.conf"
+}
+
+while test $# -ne 0; do
+    arg=$1; shift
+    case $arg in
+        -h|--help) usage; exit ;;
+    esac
+done
+
+# just do the thing
+conf-init

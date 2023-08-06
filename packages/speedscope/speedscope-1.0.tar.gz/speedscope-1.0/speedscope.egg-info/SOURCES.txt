@@ -1,0 +1,7 @@
+README.md
+setup.py
+speedscope.py
+speedscope.egg-info/PKG-INFO
+speedscope.egg-info/SOURCES.txt
+speedscope.egg-info/dependency_links.txt
+speedscope.egg-info/top_level.txt

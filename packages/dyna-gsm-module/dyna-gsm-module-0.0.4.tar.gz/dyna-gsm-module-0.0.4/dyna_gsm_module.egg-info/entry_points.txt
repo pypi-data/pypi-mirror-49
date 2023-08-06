@@ -1,0 +1,3 @@
+[console_scripts]
+dyna-gsm-module = dyna_gsm_module.runner:main
+

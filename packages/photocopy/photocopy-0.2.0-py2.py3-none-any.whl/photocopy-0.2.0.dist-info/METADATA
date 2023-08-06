@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: photocopy
+Version: 0.2.0
+Summary: Copy your photos from an SD card or camera to a specific directory.
+Home-page: https://github.com/skorokithakis/photocopy/
+License: UNKNOWN
+Author: Stavros Korokithakis
+Author-email: hi@stavros.io
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: docopt >=0.6.2
+Requires-Dist: exifread >=2.1.2
+
+photocopy
+=========
+
+A script to archive photos off a camera to a directory.
+
+Usage
+-----
+What photocopy does is read the EXIF data from images and copy the latter to a
+specified directory. The use case is that you have an SD card from your camera
+and want to copy all the images/videos into specific directories by day or
+month.
+
+You run it with:
+
+    ./photocopy.py /media/sdcard/ /home/user/Photos/
+
+and it will copy the photos to directories called "2014-03-12" by default.
+

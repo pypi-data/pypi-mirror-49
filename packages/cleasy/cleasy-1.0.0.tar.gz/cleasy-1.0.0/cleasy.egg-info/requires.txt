@@ -1,0 +1,5 @@
+PyInquirer==1.0.3
+
+[prettyfy_output]
+termcolor==1.1.0
+pyfiglet==0.8.post1

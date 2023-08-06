@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: cleasy
+Version: 1.0.0
+Summary: Simple CLI shell
+Home-page: https://github.com/sergeport/cleasy
+Author: Sergii Bibikov
+Author-email: sergeport@gmail.com
+License: UNKNOWN
+Description: Cleasy
+        ====================================
+        
+        Simple CLI menu. Details are coming soon.
+        
+        
+        Installation
+        ====================================
+        
+        Via PyPI:
+        
+        .. code:: bash
+        
+            pip install cleasy
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+Provides-Extra: prettyfy_output

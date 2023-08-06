@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyunfurl/__init__.py
+pyunfurl/unfurl.py
+pyunfurl.egg-info/PKG-INFO
+pyunfurl.egg-info/SOURCES.txt
+pyunfurl.egg-info/dependency_links.txt
+pyunfurl.egg-info/entry_points.txt
+pyunfurl.egg-info/not-zip-safe
+pyunfurl.egg-info/top_level.txt

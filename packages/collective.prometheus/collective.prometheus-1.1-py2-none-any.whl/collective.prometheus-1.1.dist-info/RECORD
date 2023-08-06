@@ -1,0 +1,12 @@
+collective.prometheus-1.1-py2.7-nspkg.pth,sha256=i6xUrA2XwWgxJ31EmKS8F0wCvv6o3Db_2POBVx1bZDM,559
+collective/prometheus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+collective/prometheus/__init__.pyc,sha256=SqbCAThH_cFDMgJEFKYdO2YcQKRda23wJQNfE3vVOlo,191
+collective/prometheus/browser.py,sha256=0rMQsPtTdZ_nEgQ6OXr3Xv_sKV5wLIQhGxaFTuzistk,4967
+collective/prometheus/browser.pyc,sha256=vKSzspILi5P84KDn5TYVG_tqc0cVuWcJZ7j0WCpxmz8,6069
+collective/prometheus/configure.zcml,sha256=kSdAw8WDnl1Dk-Zi3_QZzVzIISHc34NxBU-Wny2Mir8,310
+collective.prometheus-1.1.dist-info/METADATA,sha256=mG4PgAbz9n7TdFi4jONFs-U3B2JQiim2IovrXEvI-uE,2046
+collective.prometheus-1.1.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+collective.prometheus-1.1.dist-info/entry_points.txt,sha256=6WD-GIHhN2Y_T4tg_CjfFcOrwZNi8w3aHWMspVDFtT0,53
+collective.prometheus-1.1.dist-info/namespace_packages.txt,sha256=FyC0xnd95fkjCaKazR3nfIgNqhWMpB0mYBlzALyXKTg,11
+collective.prometheus-1.1.dist-info/top_level.txt,sha256=FyC0xnd95fkjCaKazR3nfIgNqhWMpB0mYBlzALyXKTg,11
+collective.prometheus-1.1.dist-info/RECORD,,

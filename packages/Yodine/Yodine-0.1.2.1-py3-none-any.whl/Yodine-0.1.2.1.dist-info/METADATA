@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: Yodine
+Version: 0.1.2.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Gustavo6046
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: pyglet (==1.4.1)
+Requires-Dist: setuptools (==41.0.1)
+Requires-Dist: simplejson (==3.16.0)
+Requires-Dist: typing (==3.7.4)
+Requires-Dist: yodine-data (>=0.1.0)
+
+UNKNOWN
+
+

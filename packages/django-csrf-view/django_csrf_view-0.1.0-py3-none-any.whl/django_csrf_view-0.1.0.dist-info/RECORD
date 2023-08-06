@@ -1,0 +1,6 @@
+django_csrf_view/__init__.py,sha256=iHgmnTqvV0POKAR1OU79eBS4RQoJIgTjJXIXTifBqWA,51
+django_csrf_view/views.py,sha256=kh0nNO_K3fobAUqrQ8URDwSSEy2t2roQwmOEjhg5LnE,316
+django_csrf_view-0.1.0.dist-info/LICENSE,sha256=FxH9BjxYMeSqWtbyFD4_2WI3yvjJ8Zq-nejT68i6Ag4,1063
+django_csrf_view-0.1.0.dist-info/WHEEL,sha256=m7_EWfYWVp7uNOTdFEhPb5K49PyhIPAZSRl16cJVmb0,85
+django_csrf_view-0.1.0.dist-info/METADATA,sha256=cgI33uDTqzViMyCW3U0sImsbUwBVMSmMxb81uBCCj_g,383
+django_csrf_view-0.1.0.dist-info/RECORD,,

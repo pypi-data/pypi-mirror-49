@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: PyDelFEM2
+Version: 0.0.3
+Summary: Handy toolset for implementing geometry processing and finite element simulation
+Home-page: https://github.com/nobuyuki83/delfem2
+Author: Nobuyuki Umetani
+Author-email: n.umetani@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: easyode
+Version: 1.1.0
+Summary: Easy package to graph ODE
+Home-page: https://github.com/Ery4z/easyode
+Author: Ery4z
+Author-email: prog.ery4z@gmail.com
+License: UNKNOWN
+Description: For more information : 
+        https://github.com/Ery4z/easyode/wiki
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

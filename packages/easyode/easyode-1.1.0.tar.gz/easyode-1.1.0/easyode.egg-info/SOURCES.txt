@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+easyode/__init__.py
+easyode.egg-info/PKG-INFO
+easyode.egg-info/SOURCES.txt
+easyode.egg-info/dependency_links.txt
+easyode.egg-info/top_level.txt

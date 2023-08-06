@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: idtrackerai
+Version: 3.0.5a0
+Summary: A multi-animal tracking algorithm based on convolutional neural networks
+Home-page: https://www.idtracker.ai/
+Author: Francisco Romero Ferrero, Mattia G. Bergomi, Francisco J.H. Heras, Ricardo Ribeiro
+Author-email: idtracker@gmail.com
+License: GPLv3+
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Provides-Extra: gui
+Provides-Extra: gpu

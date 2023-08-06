@@ -1,0 +1,18 @@
+
+    [trytond.modules]
+    lims_project_study_plan = trytond.modules.lims_project_study_plan
+lims_account_invoice = trytond.modules.lims_account_invoice
+lims_project = trytond.modules.lims_project
+lims_sale = trytond.modules.lims_sale
+lims_production = trytond.modules.lims_production
+lims_project_water = trytond.modules.lims_project_water
+lims = trytond.modules.lims
+lims_project_tas = trytond.modules.lims_project_tas
+lims_analytic = trytond.modules.lims_analytic
+lims_project_interlaboratory = trytond.modules.lims_project_interlaboratory
+lims_instrument = trytond.modules.lims_instrument
+lims_instrument_custom_set = trytond.modules.lims_instrument_custom_set
+lims_instrument_generic_service = trytond.modules.lims_instrument_generic_service
+lims_instrument_generic_form = trytond.modules.lims_instrument_generic_form
+lims_digital_sign = trytond.modules.lims_digital_sign
+    

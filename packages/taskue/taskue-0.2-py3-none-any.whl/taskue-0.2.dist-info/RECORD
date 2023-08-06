@@ -1,0 +1,11 @@
+taskue/__init__.py,sha256=xW9xJJCVoxqKUp3xDNocgIbKcrWBTm127_fkzTzDlPY,7924
+taskue/cli.py,sha256=zgWS9Vbdoyn0e5nGd3IAR07mEOSAC7KpuP2CWV93hMc,1456
+taskue/client.py,sha256=eCrxV6gNiqYDkXfQ3-UcA15DJZCXyS5GdENTVIDpMYk,1759
+taskue/runner.py,sha256=XoB60Nm-BGu6B89HsZJ13TYOlwhWB04AVW1goaA4OBc,3871
+taskue/server.py,sha256=2UYf98Wku8Sd335ZVJZ8L_NSEr3eJ2Y1aoTmSBrElT8,3229
+taskue-0.2.dist-info/LICENSE,sha256=c2uxZ860VkSyz2TmEVWgQhku7vtMacuqllJey61UoC0,1071
+taskue-0.2.dist-info/METADATA,sha256=gSLaVxKRObec4RvE6l51kEbz2W7RFk-9FBJVxj9jPxo,3637
+taskue-0.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+taskue-0.2.dist-info/entry_points.txt,sha256=R7iUkL486r4POejaanQ41Oepi00kgWmz9ukBxp_tpF4,43
+taskue-0.2.dist-info/top_level.txt,sha256=-xt0_GcyD5-T5I7NQC-Cc0PqflEGy4t0nfA7vAzPfe0,7
+taskue-0.2.dist-info/RECORD,,

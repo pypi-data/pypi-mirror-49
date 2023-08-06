@@ -1,0 +1,9 @@
+pytest_aggreport/hooks.py,sha256=cTCuFkKD36s4owIm5LE3-eWh_c8oKwi3lC5JNmhSrtY,440
+pytest_aggreport/plugin.py,sha256=ZoYszKulitJgxhre5R8_dYm2_zTeEf5CG1T6DzSGGXM,7943
+pytest_aggreport/resources/aggreport.css,sha256=mPzrC2fzpMiAHMkzKcnQpEItZSVtzk5Vx0QU5JCJizI,1358
+pytest_aggreport-0.1.4.dist-info/LICENSE,sha256=bDfz9Uc9yrS4p7hjBfm5KUsHku78XKLL_R5tjTZNTIE,1100
+pytest_aggreport-0.1.4.dist-info/METADATA,sha256=cdubn234eLE22WJk5cQtAobJO1V20OMjeGGs5LVdtrA,4835
+pytest_aggreport-0.1.4.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pytest_aggreport-0.1.4.dist-info/entry_points.txt,sha256=tV-QCMn_Ak1yiKSi-iTvFhndCFUakmLMp8SnyLLeAk8,48
+pytest_aggreport-0.1.4.dist-info/top_level.txt,sha256=Z2Eddx18pIu-WIfRkErpZvrmvRknOmoFpRtz7Y9KrLo,17
+pytest_aggreport-0.1.4.dist-info/RECORD,,

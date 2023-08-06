@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cloud4rpi
+Version: 0.1.9
+Summary: Cloud4RPi client library
+Home-page: https://github.com/cloud4rpi/cloud4rpi
+Author: Cloud4RPi team
+Author-email: team@cloud4rpi.io
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: paho-mqtt
+
+UNKNOWN
+
+

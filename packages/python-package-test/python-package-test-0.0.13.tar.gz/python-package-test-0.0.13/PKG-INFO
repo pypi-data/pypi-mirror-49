@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: python-package-test
+Version: 0.0.13
+Summary: An example click cli project that can be published to PyPI.
+Home-page: UNKNOWN
+Author: StraightOuttaCrompton
+Author-email: soc@email.com
+License: GNU
+Project-URL: Source, https://github.com/StraightOuttaCrompton/python-package-test
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.0.*
+Provides-Extra: dev

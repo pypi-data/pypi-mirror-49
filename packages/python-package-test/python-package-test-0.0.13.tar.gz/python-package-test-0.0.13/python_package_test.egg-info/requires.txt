@@ -1,0 +1,6 @@
+click
+
+[dev]
+autopep8
+flake8
+wheel

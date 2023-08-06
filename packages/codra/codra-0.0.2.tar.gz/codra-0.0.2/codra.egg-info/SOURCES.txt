@@ -1,0 +1,12 @@
+README.md
+setup.py
+codra/__init__.py
+codra/lexer.py
+codra/main.py
+codra/parser.py
+codra/symboltable.py
+codra.egg-info/PKG-INFO
+codra.egg-info/SOURCES.txt
+codra.egg-info/dependency_links.txt
+codra.egg-info/requires.txt
+codra.egg-info/top_level.txt

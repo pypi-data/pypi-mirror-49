@@ -1,0 +1,10 @@
+aiohttp
+base58
+msgpack
+pysodium
+semver
+sortedcontainers
+
+[test]
+pytest
+pytest-asyncio

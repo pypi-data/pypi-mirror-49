@@ -1,0 +1,10 @@
+redis
+tenacity
+
+[dev]
+bpython
+pytest
+flake8
+
+[test]
+pytest

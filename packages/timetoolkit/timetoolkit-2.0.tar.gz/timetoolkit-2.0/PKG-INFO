@@ -1,0 +1,31 @@
+Metadata-Version: 1.0
+Name: timetoolkit
+Version: 2.0
+Summary: Some great tools about time.
+Home-page: https://github.com
+Author: 张乐涛
+Author-email: 1668151593@qq.com
+License: UNKNOWN
+Description: 
+            <h2>How to use this package:</h2>
+        
+        
+        
+            >>> import timetoolkit as t
+        
+        
+            >>> print(t.GetDateTimeNow())
+        
+        
+            [2019, 7, 18, 16, 27, 1, 958]
+        
+        
+            >>> c = t.Calendar.GetCalendarByYear(2018)
+        
+        
+            >>> print(c.GetWeekdayByMonthAndDay(7, 2))
+        
+        
+            0
+        
+Platform: UNKNOWN

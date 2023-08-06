@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aqtest1
+Version: 0.3
+Summary: this is just a test
+Home-page: UNKNOWN
+Author: HENRY TEST
+Author-email: liuyichen@std.uestc.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pysam
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
+

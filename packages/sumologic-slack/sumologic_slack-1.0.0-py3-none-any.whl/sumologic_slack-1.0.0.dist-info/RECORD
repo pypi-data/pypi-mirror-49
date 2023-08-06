@@ -1,0 +1,11 @@
+sumoslack/__init__.py,sha256=Ivnu79FyLTOlPXDuAS8LUerkppzWV6Hx9bZK1Iqn0yg,103
+sumoslack/api.py,sha256=9zSaVx-HSuOhuxH6NLj1Smm-DTSZbzRh3W6nc9-Exuo,28817
+sumoslack/main.py,sha256=NG8yZH5k5I_AL8TjbG_Tb9-_jfmhT1WDz5z2cG00G8g,6050
+sumoslack/slackcollector.yaml,sha256=5fY9AsLD-zFRHX7WQhzsh3EQMhTanOiPil9RgqH4epo,2604
+sumologic_slack-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sumologic_slack-1.0.0.dist-info/METADATA,sha256=WRdOLh2fz9pIf0V3oKAyjR74mJHwiez0D0Ofzk5NQ_U,1023
+sumologic_slack-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+sumologic_slack-1.0.0.dist-info/entry_points.txt,sha256=5Pgy5OtbHEsMwssZr_ID_Cov9Z9NnnBagcBJotBqynU,52
+sumologic_slack-1.0.0.dist-info/top_level.txt,sha256=WQnqFsVMwpJwdu_E5Zk-JvwyWJMTrPIsymuwpkLrHDQ,10
+sumologic_slack-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sumologic_slack-1.0.0.dist-info/RECORD,,

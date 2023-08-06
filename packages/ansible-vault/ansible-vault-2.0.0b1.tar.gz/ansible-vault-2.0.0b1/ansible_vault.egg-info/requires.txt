@@ -1,0 +1,13 @@
+ansible
+
+[dev]
+pytest
+
+[dev:python_version>"2.7"]
+isort[pyproject]
+
+[dev:python_version>="3.6"]
+black
+
+[release]
+twine

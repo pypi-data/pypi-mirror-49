@@ -1,0 +1,34 @@
+In name entity recognition projects, we need to pre-process the character in sentences, which need to be converted into numeric features. In this package, we represent each character in two features: (1) vocabulary id, and (2) capitalization type. For example, the first record in the raw data is 
+
+
+    (['EU', 'rejects', 'German', 'call', 'to', 'boycott', 'British', 'lamb', '.'],
+      ['ORG', 'O', 'MISC', 'O', 'O', 'O', 'MISC', 'O', 'O'])
+ 
+  
+  the first list in this tuple is the original sentence, the second list in the tuple is the name entity for each character.
+  
+  Using our package, the raw data bacome
+  
+    ([[1, 12],
+       [2, 11],
+       [3, 13],
+       [4, 11],
+       [5, 11],
+       [6, 11],
+       [7, 13],
+       [8, 11],
+       [9, 14]],
+      [1, 4, 3, 4, 4, 4, 3, 4, 4])
+ 
+  
+  in which the first list is the numeric features for the characters (id, capitalization type), the second list is the corresponding numeric labels for the name entity type. 
+  
+  At the same time, you can also retrieve the vocabulary dictionary built from your sentence data.
+  
+  To do this, run the following code in terminal
+  
+      python -m plnlp './plnlp/tiny.conll' './plnlp/tiny.conll'
+  
+  The first and second arguments are the path of the train dataset and the development dataset, respectively.
+  
+  The resulting datasets will be written and saved under your current working directory in a csv file.

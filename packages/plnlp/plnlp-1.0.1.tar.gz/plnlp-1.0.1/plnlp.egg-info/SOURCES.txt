@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+plnlp/__init__.py
+plnlp/__main__.py
+plnlp/defs.py
+plnlp/utils.py
+plnlp.egg-info/PKG-INFO
+plnlp.egg-info/SOURCES.txt
+plnlp.egg-info/dependency_links.txt
+plnlp.egg-info/entry_points.txt
+plnlp.egg-info/requires.txt
+plnlp.egg-info/top_level.txt

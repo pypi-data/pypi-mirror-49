@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: piculet
+Version: 2.0.0a1
+Summary: XML/HTML scraper using XPath queries.
+Home-page: https://piculet.tekir.org/
+License: LGPL-3.0+
+Keywords: xml,html,xpath,scrape
+Author: H. Turgut Uyar
+Author-email: uyar@tekir.org
+Requires-Python: >=3.5,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: Topic :: Utilities
+Provides-Extra: yaml
+Requires-Dist: strictyaml (>=1.0,<2.0); extra == "yaml"
+Project-URL: Documentation, https://piculet.tekir.org/
+Project-URL: Repository, https://github.com/uyar/piculet
+Description-Content-Type: text/x-rst
+
+|pypi| |pyversions| |license| |azure| |codecov|
+
+.. |pypi| image:: https://img.shields.io/pypi/v/piculet.svg?style=flat-square
+    :target: https://pypi.org/project/piculet/
+    :alt: PyPI version.
+
+.. |pyversions| image:: https://img.shields.io/pypi/pyversions/piculet.svg?style=flat-square
+    :target: https://pypi.org/project/piculet/
+    :alt: Supported Python versions.
+
+.. |license| image:: https://img.shields.io/pypi/l/piculet.svg?style=flat-square
+    :target: https://github.com/uyar/piculet/blob/master/LICENSE.txt
+    :alt: Project license.
+
+.. |azure| image:: https://dev.azure.com/tekir/piculet/_apis/build/status/uyar.piculet?branchName=master
+    :target: https://dev.azure.com/tekir/piculet/_build
+    :alt: Azure Pipelines build status.
+
+.. |codecov| image:: https://codecov.io/gh/uyar/piculet/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/uyar/piculet
+
+Piculet is a module for extracting data from XML or HTML documents
+using XPath queries.
+It consists of a `single source file`_ with no dependencies other than
+the standard library, which makes it very easy to integrate into applications.
+It also provides a command line interface.
+
+.. _single source file: https://github.com/uyar/piculet/blob/master/piculet.py
+
+Getting started
+---------------
+
+Piculet has been tested with Python 3.5+ and compatible versions of PyPy.
+You can install the latest version using ``pip``::
+
+    pip install piculet
+
+Installing Piculet creates a script named ``piculet`` which can be used
+to invoke the command line interface::
+
+   $ piculet -h
+   usage: piculet [-h] [--version] [--html] (-s SPEC | --h2x)
+
+For example, say you want to extract some data from the file `shining.html`_.
+An example specification is given in `movie.json`_.
+Download both of these files and run the command::
+
+   $ cat shining.html | piculet -s movie.json
+
+.. _shining.html: https://github.com/uyar/piculet/blob/master/examples/shining.html
+.. _movie.json: https://github.com/uyar/piculet/blob/master/examples/movie.json
+
+Getting help
+------------
+
+The documentation is available on: https://piculet.tekir.org/
+
+The source code can be obtained from: https://github.com/uyar/piculet
+
+License
+-------
+
+Copyright (C) 2014-2019 H. Turgut Uyar <uyar@tekir.org>
+
+Piculet is released under the LGPL license, version 3 or later.
+Read the included `LICENSE.txt`_ file for details.
+
+.. _LICENSE.txt: https://github.com/uyar/piculet/blob/master/LICENSE.txt
+

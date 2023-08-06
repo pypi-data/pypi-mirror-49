@@ -1,0 +1,3 @@
+[console_scripts]
+piculet=piculet:main
+

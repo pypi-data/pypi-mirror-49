@@ -1,0 +1,3 @@
+[console_scripts]
+xmlb = raven_formats.xmlb:main
+

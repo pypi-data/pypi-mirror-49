@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: hexlet-points
+Version: 0.2.0
+Summary: A SICP'ish Points implemented in Python using hexlet-pairs
+Home-page: https://github.com/hexlet-components/python-points
+License: ISC
+Author: Hexlet Team
+Author-email: info@hexlet.io
+Requires-Python: >=3.6,<4.0
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Dist: hexlet-pairs (>=0.1.0,<0.2.0)
+Project-URL: Repository, https://github.com/hexlet-components/python-points
+Description-Content-Type: text/markdown
+
+### hexlet-points
+
+A SICP'ish Points implemented in Python using hexlet-pairs.
+
+### Usage
+
+<!-- This code will be doctested. Do not touch the markup! -->
+
+    >>> from hexlet import points
+    >>> p = points.make(100, 200)
+    >>> print(points.to_string(p))
+    (100, 200)
+    >>> points.get_x(p)
+    100
+    >>> points.get_y(p)
+    200
+

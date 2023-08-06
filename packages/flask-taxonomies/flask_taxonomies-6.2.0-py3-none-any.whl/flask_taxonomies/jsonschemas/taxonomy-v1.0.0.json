@@ -1,0 +1,54 @@
+{
+  "definitions": {
+    "TaxonomyTerm": {
+      "$id": "#TaxonomyTerm",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Invenio DB identifier (integer).",
+          "type": "string"
+        },
+        "slug": {
+          "description": "Taxonomy slug or code.",
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "title": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lang": "string",
+              "value": "string"
+            }
+          }
+        },
+        "links": {
+          "type": "object",
+          "properties": {
+            "self": {
+              "type": "string"
+            },
+            "tree": {
+              "type": "string"
+            },
+            "parent": {
+              "type": "string"
+            },
+            "parent_tree": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "TaxonomyTermArray": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/TaxonomyTerm"
+      }
+    }
+  }
+}

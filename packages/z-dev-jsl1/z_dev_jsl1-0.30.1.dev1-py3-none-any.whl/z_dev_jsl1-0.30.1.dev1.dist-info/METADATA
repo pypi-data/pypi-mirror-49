@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: z-dev-jsl1
+Version: 0.30.1.dev1
+Summary: UNKNOWN
+Home-page: https://github.com/jsl-1/
+Author: Jsl-1
+License: UNKNOWN
+Project-URL: Source, https://github.com/jsl-1/
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Requires-Python: >=3
+Requires-Dist: pyserial
+Requires-Dist: pydispatcher
+Requires-Dist: bottle
+Requires-Dist: RPi.GPIO
+Provides-Extra: dev
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: mqtt
+Requires-Dist: paho-mqtt ; extra == 'mqtt'
+
+UNKNOWN
+
+

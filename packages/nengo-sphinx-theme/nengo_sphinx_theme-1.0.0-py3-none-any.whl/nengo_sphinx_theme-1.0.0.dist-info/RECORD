@@ -1,0 +1,17 @@
+nengo_sphinx_theme/__init__.py,sha256=1OSZArIe7V_ET-ceURtA6WMjICOUWpLGtCq4kZfDo7M,1926
+nengo_sphinx_theme/version.py,sha256=BNDwt8OLVr5_lU85AwfwQowDP09BYqhUtU9Fll0HOak,548
+nengo_sphinx_theme/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nengo_sphinx_theme/ext/resolvedefaults.py,sha256=jq0pTkA4osvfClf16BqLrF9ZBabKJaZH1ltCS4TBwZg,1771
+nengo_sphinx_theme/theme/footer.html,sha256=d1jrgb1ErGO6G1TL7zKQYsOTDS8_oK2DeC1Xp1hWGfk,468
+nengo_sphinx_theme/theme/layout.html,sha256=o4cSMQw5IK1ihQM66-bslixYZjT6-P2youR88naUsX4,4252
+nengo_sphinx_theme/theme/navbar.html,sha256=4Mv6zgtw5IQX33EUmFewlOGSDQpR8KIHtzHDhnO5nPE,4101
+nengo_sphinx_theme/theme/searchbox.html,sha256=fK5YtChVVJAakyfaYHLRcn_VXl_cJQmfFwvG7jMoxiw,512
+nengo_sphinx_theme/theme/sidebar.html,sha256=vsuWTENehAmWuVpM9Tfxrg4APJNz0XdUza2cTjx5mUA,1912
+nengo_sphinx_theme/theme/sourcelink.html,sha256=hXlqS9t9qrArTVnxfsZTMpqI97wClo60Vogr0dbj69s,198
+nengo_sphinx_theme/theme/theme.conf,sha256=GAokhtnKUuWJtlQ-98ajKvfqjzXv08-p8mQmnadyoow,216
+nengo_sphinx_theme-1.0.0.dist-info/LICENSE.rst,sha256=Kgj8zz3whu3KPuSq9ojd4oH7BuehYfq6uaFsaTZx9vA,1206
+nengo_sphinx_theme-1.0.0.dist-info/METADATA,sha256=sQRko-0CqQorjRuspZk8UDniF5XiHkvXWrUzyWIV7NE,3710
+nengo_sphinx_theme-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+nengo_sphinx_theme-1.0.0.dist-info/entry_points.txt,sha256=97e6LYaMuP1Dde61FFM06wTwmr1hlKv9_ufq5Mqy7KU,62
+nengo_sphinx_theme-1.0.0.dist-info/top_level.txt,sha256=8Cb63dCWGwM2RbbGEA5aJRYA-FF0gORHvS9wkgswPJg,19
+nengo_sphinx_theme-1.0.0.dist-info/RECORD,,

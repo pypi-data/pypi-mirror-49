@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: lib-exo-messages
+Version: 1.4.0
+Summary: ExO library to manage Messages
+Home-page: https://travis-ci.org/exolever/lib-exo-messages
+Author: Javier Sujar, Tomas Garzon, Jose Marfil
+Author-email: javier.sujar@exolever.com
+License: UNKNOWN
+Description: ExO library to manage Messages
+Keywords: lib-exo-messages
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

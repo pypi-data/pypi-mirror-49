@@ -1,0 +1,15 @@
+bananadm-1.12.0.data/scripts/bananadm,sha256=zCtEGTAoV3r0e-DSHl5al-kcrpXit5Qag8V6GyfrOeo,602
+libbananadm/__init__.py,sha256=1-B6HtvDY-44VsNFtFyvrWM8ulRJTXkAJypBPzPlLz8,21
+libbananadm/agent.py,sha256=tC8ytrLJwkO772TYMZgyKySAnMcj9NHw8EDrl49Lsxo,988
+libbananadm/args.py,sha256=x97y0LgsshWi81Stkb9t5_8xEphlxd5Mn3GIAqOijD0,3889
+libbananadm/backend.py,sha256=oRhuO2kWrJK00i4wX229r6ZCCsrm57WTqz0kgDnkYA0,1594
+libbananadm/client.py,sha256=H3xIUheWv-ttd6qXAB68wu7lm9CWEHSInh_HJLgFr9s,3316
+libbananadm/input.py,sha256=zoR410KMGr_G6_hyTTYhaDnKepp-UTHxOWXow41yZh4,341
+libbananadm/monitor.py,sha256=-HCMxa7KU_P4bFEFSbL2jZtrpqfM4qqJI61-xksqDyA,3307
+libbananadm/policies.py,sha256=WoG8ESq9o6CuyYR2ZbrT6ERxZXjimEeDUmyiPa0m504,1141
+libbananadm/user.py,sha256=jcUt_1Y39mVvso4iOub87HxKM_ZK9S_EB6ZXCoVoaL4,1113
+libbananadm/vault.py,sha256=JTE-ybthcYohc_tNRn177CsqOsCWjobe0AvJ_D4Fg-A,2445
+bananadm-1.12.0.dist-info/METADATA,sha256=GqH1S13f597FXa7XtgMRyl3puaTgsHtemUfwLNhmxlY,479
+bananadm-1.12.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+bananadm-1.12.0.dist-info/top_level.txt,sha256=LdJ56PDhWJbeAzRS55kQEziiEs9uBqLU1-PlfHoGxHk,12
+bananadm-1.12.0.dist-info/RECORD,,

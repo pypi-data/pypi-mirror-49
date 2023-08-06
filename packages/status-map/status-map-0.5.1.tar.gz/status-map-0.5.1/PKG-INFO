@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: status-map
+Version: 0.5.1
+Summary: Status map (and its transitions) data structure
+Home-page: https://github.com/lamenezes/django-choices-enum
+License: MIT
+Keywords: enum,django,models,choices
+Author: Luiz Menezes
+Author-email: luiz.menezesf@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: networkx (>=2.3,<3.0)
+Project-URL: Repository, https://github.com/lamenezes/django-choices-enum

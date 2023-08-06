@@ -1,0 +1,15 @@
+naive_translator/__init__.py,sha256=CNXEsM1_pvqP5KSoaOBGhAuulkSe25gyYexWg-1MvlM,791
+naive_translator/__main__.py,sha256=RcrnCb-Xz4htYUipveIeOZQZKlX8cTsvsMT-n6FgxRQ,203
+naive_translator/config.py,sha256=1rixOElfYdoZjGPGegohkh7p5B_vIfkTdcdC-M7E9cc,559
+naive_translator/dictionary.py,sha256=DeyQPaggzNbaemcdzIgVjCeiCzAa5XEEUn1KVXnuQRk,3366
+naive_translator/server.py,sha256=pBRDkR4Y_c1RUcwqP_vOxSOiGcoO8TcIneZp2ajYVek,1635
+naive_translator/translator.py,sha256=h3fWTkYFAAbij36X0maldHedCf_lw_u9yhgULk8nc6c,953
+naive_translator/utils.py,sha256=i9N8ShqOiPtV3SlkhauF4El1CTz7wgLG4TOhCviJTgI,1124
+naive_translator/data/dictionary,sha256=Er-SNarG9I1wFI0sJ3DBPb-4VdRwh8tXbkEtZUQ1GfQ,55078
+naive_translator/data/logs/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+naive_translator-0.0.1.dist-info/LICENSE,sha256=lVlCNaUMoVUNYEff6zW7Sw9urky3u42s9JylfMDvvUY,1072
+naive_translator-0.0.1.dist-info/METADATA,sha256=GwySPIuToQ7JZh0NmBQBVti6Z3UoJ_Y1Ivx8cIPkxIc,1451
+naive_translator-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+naive_translator-0.0.1.dist-info/entry_points.txt,sha256=IZ2Yp-6NAQgegHRwRmeQaZXnXiZramypDKee_IqqDGM,69
+naive_translator-0.0.1.dist-info/top_level.txt,sha256=SNGzYFlgfSi6K8J76LNJV9GWRQmtUhyedIocUIo2DpM,17
+naive_translator-0.0.1.dist-info/RECORD,,

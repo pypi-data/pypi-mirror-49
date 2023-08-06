@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/excel2dict/__init__.py
+src/excel2dict/converter.py
+src/excel2dict/helper.py
+src/excel2dict/serial_value_handler.py
+src/excel2dict/sheets_definition.py
+src/excel2dict.egg-info/PKG-INFO
+src/excel2dict.egg-info/SOURCES.txt
+src/excel2dict.egg-info/dependency_links.txt
+src/excel2dict.egg-info/entry_points.txt
+src/excel2dict.egg-info/requires.txt
+src/excel2dict.egg-info/top_level.txt

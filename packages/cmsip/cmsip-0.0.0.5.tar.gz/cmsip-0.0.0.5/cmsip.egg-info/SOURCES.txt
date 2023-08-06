@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cmsip/__init__.py
+cmsip/cmsip.py
+cmsip.egg-info/PKG-INFO
+cmsip.egg-info/SOURCES.txt
+cmsip.egg-info/dependency_links.txt
+cmsip.egg-info/entry_points.txt
+cmsip.egg-info/not-zip-safe
+cmsip.egg-info/requires.txt
+cmsip.egg-info/top_level.txt
+cmsip/R/t.test.R
+cmsip/perl/removeCommonRead.pl

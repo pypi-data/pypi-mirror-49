@@ -1,0 +1,8 @@
+README.md
+setup.py
+liboidc-agent/__init__.py
+liboidc-agent/liboidc-agent.py
+liboidcagent.egg-info/PKG-INFO
+liboidcagent.egg-info/SOURCES.txt
+liboidcagent.egg-info/dependency_links.txt
+liboidcagent.egg-info/top_level.txt

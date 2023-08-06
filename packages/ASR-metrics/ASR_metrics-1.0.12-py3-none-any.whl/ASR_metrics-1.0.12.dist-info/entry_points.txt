@@ -1,0 +1,3 @@
+[console_scripts]
+ASR-metrics = ASR_metrics.calculate.__main__:main
+

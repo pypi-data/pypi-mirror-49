@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: ASR-metrics
+Version: 1.0.12
+Summary: A Python package to get CER and WER for automatic speech recognitions
+Home-page: https://github.com/m-d-hasan/ASR-metrics
+Author: Md Hasan
+Author-email: mdhasan.nsu@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: python-Levenshtein (==0.12.0)
+
+# ASR_metrics
+Compute CER and WER
+
+

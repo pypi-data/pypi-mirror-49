@@ -1,0 +1,2 @@
+scripts/files/libfrida-gadget-12.6.10-android-arm.so
+scripts/files/libfrida-gadget-12.6.10-android-arm64.so

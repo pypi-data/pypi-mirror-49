@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: ogc
+Version: 0.1.6
+Summary: ogc, a runner of things
+Home-page: https://github.com/battlemidget/ogc
+Author: Adam Stokes
+Author-email: adam.stokes@ubuntu.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: awscli (<2.0,>=1.16)
+Requires-Dist: attrs (==19.1.0)
+Requires-Dist: boto3 (<2.0,>=1.9)
+Requires-Dist: click (<8.0,>=7.0)
+Requires-Dist: jinja2 (<3.0,>=2.10)
+Requires-Dist: juju-wait (==2.7.0)
+Requires-Dist: dict-deep (==2.0.2)
+Requires-Dist: flatten-dict (==0.1.0)
+Requires-Dist: juju (<0.12.0,>=0.11.7)
+Requires-Dist: kv (<0.4.0,>=0.3.0)
+Requires-Dist: launchpadlib (==1.10.6)
+Requires-Dist: melddict (<2.0,>=1.0)
+Requires-Dist: python-box (<4.0,>=3.4)
+Requires-Dist: pyyaml-include (<2.0,>=1.1)
+Requires-Dist: pyyaml (==3.13)
+Requires-Dist: requests (<3.0,>=2.22)
+Requires-Dist: semver (<3.0,>=2.8)
+Requires-Dist: sh (<2.0,>=1.12)
+Requires-Dist: staticjinja (<0.4.0,>=0.3.5)
+Requires-Dist: toml (<0.11.0,>=0.10.0)
+Requires-Dist: colorama (==0.3.9)
+
+ogc is a task runner with plugins
+
+

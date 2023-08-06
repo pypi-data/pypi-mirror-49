@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pycommon
+Version: 0.3.5
+Summary: Useful functions missing from the standard libraries
+Home-page: https://github.com/dgrant/pycommon
+Author: David Grant
+Author-email: davidgrant@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/dgrant/pycommon/tarball/0.3.5
+Description: Linux build: [![Build Status](https://travis-ci.org/dgrant/pycommon.svg?branch=master)](https://travis-ci.org/dgrant/pycommon) [![Coverage Status](https://coveralls.io/repos/dgrant/pycommon/badge.svg?branch=master)](https://coveralls.io/r/dgrant/pycommon?branch=master)
+        
+        Windows build: [![Build status](https://ci.appveyor.com/api/projects/status/96kwy8819r627u19/branch/master)](https://ci.appveyor.com/project/dgrant/pycommon/branch/master)
+        
+        A collection of useful utilities
+        
+        Installing
+        ==========
+        
+        * Install from PyPI: [pycommon on PyPI](https://pypi.python.org/pypi/pycommon)
+        * Install using pip: `pip install pycommon`
+        
+        Standards (draft)
+        =================
+        
+        * All code tested with 100% coverage.
+        * No breaking backwards compatibility after 1.0.
+        * Cross-platform.
+        * Supports Python 2.7, 3.2, 3.3, 3.4 on Linux
+        * Supports Pyton 2.7, 3.3, 3.4 on Windows (because I can't test 3.2 on Windows)
+        
+Keywords: utility,miscellaneous,library
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

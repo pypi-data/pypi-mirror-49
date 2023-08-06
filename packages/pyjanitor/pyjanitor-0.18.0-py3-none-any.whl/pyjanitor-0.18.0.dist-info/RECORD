@@ -1,0 +1,14 @@
+janitor/__init__.py,sha256=NZmfmVuY12YHKPRbpbB5mBFgHiVlSGZx8Hg-9OMuAeE,202
+janitor/biology.py,sha256=dd8MjvAMswXUrpvkChtvpo2mmvxssCl4VR2u23gCkt0,2228
+janitor/chemistry.py,sha256=u4g4LV-PdhcynXyQkL5vqnwXQmukwoAZeU2RvNhSk14,13154
+janitor/errors.py,sha256=ddDcWEh6F6AbgLyDkIVwCn5OATZytF_p4wcZoXC-ZAE,40
+janitor/finance.py,sha256=xhOgUOPw5yudrQ9XI359fkQQ3wRPF7esUJScuys7HbI,5972
+janitor/functions.py,sha256=oZMVgMDsDnsbmI79p5g_WhVD4hEYcVkwa-zlAz09Hs8,103903
+janitor/io.py,sha256=_JRtyTfe6dQM3xzIzP0nbN4P08vf5jGYDLtkzOtc7h8,1960
+janitor/utils.py,sha256=nBcOoAJZNnhqHDaLd0n8h-WsDEJwexir_-j7WXZOhys,7825
+pyjanitor-0.18.0.dist-info/AUTHORS.rst,sha256=mX5AUQZgBsJruXZ3BKjGBnmU8kCBd1hRzqZd6r27Iq0,8466
+pyjanitor-0.18.0.dist-info/LICENSE,sha256=EzE5GPLpnEXbQu84USAXbYMc1Yht6GFP65xnIuIvt0Q,1079
+pyjanitor-0.18.0.dist-info/METADATA,sha256=eSaUcn1pGJ5R71kBhKHCV0xMRCPjh7AiIG-6juB5tR4,474
+pyjanitor-0.18.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyjanitor-0.18.0.dist-info/top_level.txt,sha256=-ykHlVMKmtwoXsdpEizx9Ym500Her3NfsdtCvRhJpCA,8
+pyjanitor-0.18.0.dist-info/RECORD,,

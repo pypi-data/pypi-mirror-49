@@ -1,0 +1,8 @@
+README.md
+setup.py
+fiducialary/__init__.py
+fiducialary.egg-info/PKG-INFO
+fiducialary.egg-info/SOURCES.txt
+fiducialary.egg-info/dependency_links.txt
+fiducialary.egg-info/requires.txt
+fiducialary.egg-info/top_level.txt

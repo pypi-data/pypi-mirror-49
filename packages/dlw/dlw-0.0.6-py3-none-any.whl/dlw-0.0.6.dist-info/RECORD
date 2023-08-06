@@ -1,0 +1,16 @@
+dlw/DLWSubject.py,sha256=0rTADY8V92Mg7Z3DPTCMrtlNqKuVhc13BAG-raeg1RY,38366
+dlw/__init__.py,sha256=6s6Kpb98FozSChZEdEzf0IdPwoiZ4wsHLVXFU6wVPPM,56
+dlw/web/__init__.py,sha256=lSRz320w5n0D2rildMk4_zCq7l9aSKio_vkFek2mUUo,24
+dlw/web/app.py,sha256=OezKarLL0pzWLLEZLR-dSHu0gMCJ0zbDz2ww3hJzeh0,4880
+dlw/web/dist/app.js,sha256=M7G7V4NxsgMDgExaMBMk24i0oTNN3U7E0-MpL8r1JDg,13008586
+dlw/web/dist/codepack.js,sha256=uepYIG7Ngf8rog5TUgozLz_h5EVBMLtUSlc6qSecaWI,2627905
+dlw/web/dist/index.html,sha256=GhqQt3oLwEuyWLlC1SjCUPTu8f_vmab9AUv1YUwdrFw,353
+dlw/web/dist/assets/favicon.ico,sha256=TM1XGub-hq0h3GvJECi2XW_2NuQ8g9MsZyyw5i_Cn2A,1150
+dlw/web/dist/assets/logo_cuhs.png,sha256=GESuodDmCuelz5d-VXsla68EUc-GoXbyrwH8nY-7SmE,34806
+dlw/web/dist/assets/css/style.css,sha256=vdWIskV-7jUHzXoPRqYD05LmQxLo3TdZLGaq3s0fBHQ,1178393
+dlw-0.0.6.dist-info/LICENSE,sha256=dkU2uxp7ANpqZfGb4y7KZeg1N_vdxM3qoKxPN00VP1s,1068
+dlw-0.0.6.dist-info/METADATA,sha256=v4G679oqT17lNapVTlBlxe6vskP9vr6v8gYnkvUyt7w,379
+dlw-0.0.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+dlw-0.0.6.dist-info/entry_points.txt,sha256=JjD3QrdX3BXQt2Lx0dMOAqGSvGpL7vmIFuM1ZXMEU0k,49
+dlw-0.0.6.dist-info/top_level.txt,sha256=r5EAkEueCuqgZK2HqkNxuNGUM44rfUh4Q-T9uKbN7Vk,4
+dlw-0.0.6.dist-info/RECORD,,

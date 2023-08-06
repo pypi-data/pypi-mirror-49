@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: retrieve
+Version: 0.0.1
+Summary: Retrieve pre-trained models and cache it locally
+Home-page: https://github.com/amitness/retrieve
+Author: Amit Chaudhary
+Author-email: meamitkc@gmail.com
+License: MIT
+Description: # retrieve
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3

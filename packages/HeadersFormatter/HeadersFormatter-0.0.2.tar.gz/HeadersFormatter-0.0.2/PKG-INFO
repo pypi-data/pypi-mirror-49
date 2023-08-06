@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: HeadersFormatter
+Version: 0.0.2
+Summary: Format headers in clipboard to <dict>.
+Home-page: https://github.com/pangbo13/HeadersFormatter
+Author: pangbo
+Author-email: 373108669@qq.com
+License: UNKNOWN
+Description: # HeadersFormatter
+        Format headers in clipboard to <dict>.
+        
+        将剪贴板中的Headers格式化为<dict>并返回剪贴板
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

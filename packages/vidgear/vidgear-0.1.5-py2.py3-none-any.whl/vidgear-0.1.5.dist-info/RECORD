@@ -1,0 +1,16 @@
+vidgear/__init__.py,sha256=XV69-dxsbhOzbChYGiIvgDSpYzmymoZ4MBiFm9Et9V8,91
+vidgear/version.py,sha256=UncCeSkxBqbmnXOdp-ry0iVpzpbbxTuksdLfclUsT9M,22
+vidgear/gears/__init__.py,sha256=pTs5eezz-CeM6Qbw3k7f3YB-J-FLoRRtgqbSKWv0OSk,366
+vidgear/gears/camgear.py,sha256=U9eJW6jwOliVbe6-dZ-ec3fxdpYXV02sQQXL53gNT3s,11377
+vidgear/gears/helper.py,sha256=FcGIHk6KYZQc4JmB_LvKPbKpj9PnF_wMznuld0rJEZc,8053
+vidgear/gears/netgear.py,sha256=f-gU1DbYgrU_odhyjmi-xD3gQj7Vb0jERxo5z-x-DuQ,15848
+vidgear/gears/pigear.py,sha256=bZ6I9EyCFdQDi5nJke6Q8PT3-7UolXeG_xudQwP-Jrs,7144
+vidgear/gears/screengear.py,sha256=9tp3bMePFg7k-f7UXMafLqYmhIpvawqQ6Qb_7o7GEJI,9116
+vidgear/gears/stabilizer.py,sha256=NgfmcegF5ZHOoAzM6yzEtR3UOD7OTIJifFh3ew3GfcY,12274
+vidgear/gears/videogear.py,sha256=BPV-BIGOQ16WsCKKIZqY-BMDmlivd6Oi2S4TCaULDcY,7453
+vidgear/gears/writegear.py,sha256=vVLMp9D3KNhi-X6u2QFs28RISLjcuqP2tXiFymW74Uk,17857
+vidgear-0.1.5.dist-info/LICENSE,sha256=mvF5BCyypNa2fChwH6yo_qoUNremqby6MSfh4Vqzryg,1093
+vidgear-0.1.5.dist-info/METADATA,sha256=XXhDNfE2UgVBExYMSUoElFjA3HUVnDmmsWFHOPfdoxA,26105
+vidgear-0.1.5.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+vidgear-0.1.5.dist-info/top_level.txt,sha256=wMDpfkAXKYNUYomHMyHOMD27Wpqq7wXanN4CotSQnag,8
+vidgear-0.1.5.dist-info/RECORD,,

@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: robotframework-aws
+Version: 0.0.2
+Summary: A python package to test AWS services in Robot Framework
+Home-page: https://www.github.com/teaglebuilt/robotframework-aws
+Author: Dillan Teagle
+Author-email: softwaredeveloper@dillanteagle.me
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# robotframework-aws
+ [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+ ![PyPI](https://img.shields.io/pypi/v/robotframework-aws.svg)
+
+A library of keywords for interacting with AWS services.
+
+### Contributors are welcome. This package is at the beginning of development.
+
+> ## Session
+####  Keywords
+
+ - | `Create Session` | region | profile=optional |
+ - | `Delete Session` | region | profile=optional |
+ - | `Delete All Sessions` |
+
+ > ### S3 
+ ####  Keywords
+ - | `Get Bucket` | bucket_name |
+ - | `Get Object` | bucket_name | object_path 
+
+

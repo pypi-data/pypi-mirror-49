@@ -1,0 +1,11 @@
+pygrappa/__init__.py,sha256=y6T04u8qlKotU7WJDFaOSDQiqzM4VTuNMGQK5-15Oh0,116
+pygrappa/grappa.py,sha256=EVqvXPSyEZYfcCGgCR3Wicpz0yMOxAikpHwTtemIgJc,9049
+pygrappa/lustig_grappa.py,sha256=4Cm32uL6V63NAbgMjI9OOaqviO540KB_ec1GBOLxEio,8019
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_basic_recon.py,sha256=IFKYlVaBQfFgulVuFkYhW2HzUJXAbFHmhn7aYFErM5o,1906
+tests/test_validP_issue.py,sha256=jLACfEeNpX4itVBk8dde4bJZQvT_8eS1L-Re2ojFrsc,788
+pygrappa-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pygrappa-0.2.1.dist-info/METADATA,sha256=KN2pXJMcWDHDZoaNeXb8TPxHW1PCLdlKAixS23-Q_rs,848
+pygrappa-0.2.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pygrappa-0.2.1.dist-info/top_level.txt,sha256=mI_QP_yOGW59dukCseq2uE1l5wwklU9ckpjjhmwzEk0,15
+pygrappa-0.2.1.dist-info/RECORD,,

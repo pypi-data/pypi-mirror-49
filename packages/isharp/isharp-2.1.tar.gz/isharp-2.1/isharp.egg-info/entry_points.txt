@@ -1,0 +1,3 @@
+[console_scripts]
+datahub = isharp.broker_service.datahub_main:main
+

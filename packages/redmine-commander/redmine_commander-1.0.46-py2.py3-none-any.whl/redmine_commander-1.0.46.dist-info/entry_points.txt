@@ -1,0 +1,3 @@
+[console_scripts]
+redmine-commander = redmine_commander.main:run
+

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: redmine-commander
+Version: 1.0.46
+Summary: "Listing of tickets, projects and time-records!"
+Home-page: https://blog.lbehrens.duckdns.org/
+Author: Lars Behrens
+Author-email: behrens_lars@gmx.de
+License: GPL2
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Dist: python-redmine
+Requires-Dist: python-rofi
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+UNKNOWN
+
+

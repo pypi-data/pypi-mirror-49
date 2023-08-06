@@ -1,0 +1,14 @@
+colorama
+
+[cov]
+pytest-cov
+flake8
+mypy
+
+[github]
+pandas
+numpy
+pygithub
+
+[tests]
+pytest>=3.9

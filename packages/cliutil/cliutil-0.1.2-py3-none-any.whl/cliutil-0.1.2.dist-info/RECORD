@@ -1,0 +1,11 @@
+cliutil/Arguments.py,sha256=FiOxUrXNxlHomOpqS78vntbV7r7Fxf6oEu3uriuX_Pw,1139
+cliutil/Configuration.py,sha256=tWu7RPvcHCz73K6FBVRfcnGGfyApNsUzTzqniH60HxQ,2498
+cliutil/Permissions.py,sha256=UveujYo-nV1vI_LJlkajpQabD3lSiSMhs7nddhvHvYk,436
+cliutil/Questions.py,sha256=ycjPkhcthU91dQWbSnpicyToWUjUebwXGdklrBxINOw,2267
+cliutil/Selections.py,sha256=2dxH9eltI-qVleVn3tXmaDhvIGZju5SHOti5TzxHMrE,1024
+cliutil/__init__.py,sha256=abnfNpZoSfU5R3IZXHGldMNZX3-k05T_0_RftqNbI3A,18
+cliutil-0.1.2.dist-info/LICENSE,sha256=lkLKKltLgB55GLKWYq6AVw-vL_30FhLxNLRr-SUd2jM,1072
+cliutil-0.1.2.dist-info/METADATA,sha256=CdYqbKH69B97SoFban97-_V_wTnMLsll3M_TusRfduQ,541
+cliutil-0.1.2.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+cliutil-0.1.2.dist-info/top_level.txt,sha256=esjilsXDu4oS7sKnQ2OkJU5wgiL_2OUMlR8KbfHkTDY,8
+cliutil-0.1.2.dist-info/RECORD,,

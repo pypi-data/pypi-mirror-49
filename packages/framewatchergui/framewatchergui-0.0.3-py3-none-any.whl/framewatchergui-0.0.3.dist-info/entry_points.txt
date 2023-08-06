@@ -1,0 +1,3 @@
+[console_scripts]
+framewatchergui = framewatchergui.__main__:main
+

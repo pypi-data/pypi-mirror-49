@@ -1,0 +1,6 @@
+README.md
+setup.py
+robojslib.egg-info/PKG-INFO
+robojslib.egg-info/SOURCES.txt
+robojslib.egg-info/dependency_links.txt
+robojslib.egg-info/top_level.txt

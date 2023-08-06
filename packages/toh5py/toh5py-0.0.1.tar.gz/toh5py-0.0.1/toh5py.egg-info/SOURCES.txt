@@ -1,0 +1,6 @@
+README.md
+setup.py
+toh5py.egg-info/PKG-INFO
+toh5py.egg-info/SOURCES.txt
+toh5py.egg-info/dependency_links.txt
+toh5py.egg-info/top_level.txt

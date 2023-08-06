@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+bot/__init__.py
+bot/bd_interacting.py
+bot/main.py
+bot/record.py
+mayevsky_chatbot.egg-info/PKG-INFO
+mayevsky_chatbot.egg-info/SOURCES.txt
+mayevsky_chatbot.egg-info/dependency_links.txt
+mayevsky_chatbot.egg-info/requires.txt
+mayevsky_chatbot.egg-info/top_level.txt

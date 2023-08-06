@@ -1,0 +1,1 @@
+from pandastabletooltip.main import make_table_html_with_tooltip

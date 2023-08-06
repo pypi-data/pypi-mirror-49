@@ -1,0 +1,9 @@
+.gitignore
+LoggingWebsocketHandler.py
+README.md
+setup.py
+LoggingWebsocketHandler.egg-info/PKG-INFO
+LoggingWebsocketHandler.egg-info/SOURCES.txt
+LoggingWebsocketHandler.egg-info/dependency_links.txt
+LoggingWebsocketHandler.egg-info/requires.txt
+LoggingWebsocketHandler.egg-info/top_level.txt

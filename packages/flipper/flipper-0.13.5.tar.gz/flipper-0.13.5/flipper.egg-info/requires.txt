@@ -1,0 +1,4 @@
+pandas
+cypari
+realalg
+sympy

@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: term2md
+Version: 0.1.2
+Summary: convert terminal control characters to Markdown
+Home-page: https://github.com/jonm/term2md
+Author: Jon Moore
+Author-email: UNKNOWN
+License: MIT
+Description: # term2md
+        convert terminal control characters to markdown
+        
+Platform: UNKNOWN

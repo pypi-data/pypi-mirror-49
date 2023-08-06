@@ -1,0 +1,15 @@
+PyPDF2
+pytz
+trytond<5.1,>=5.0
+trytond_account_invoice<5.1,>=5.0
+trytond_analytic_account<5.1,>=5.0
+trytond_carrier<5.1,>=5.0
+trytond_party_relationship<5.1,>=5.0
+trytond_production<5.1,>=5.0
+trytond_purchase<5.1,>=5.0
+trytond_sale<5.1,>=5.0
+trytond_sale<5.1,>=5.0
+trytond_stock_lot<5.1,>=5.0
+trytond_stock_lot<5.1,>=5.0
+xlrd
+xlutils

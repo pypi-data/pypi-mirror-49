@@ -1,0 +1,69 @@
+Metadata-Version: 1.1
+Name: kalenis-lims
+Version: 5.0.0
+Summary: Kalenis LIMS & ERP
+Home-page: http://www.kalenislims.com/
+Author: Kalenis
+Author-email: info@kalenislims.com
+License: GPL-3
+Download-URL: https://bitbucket.org/kalenis/kalenislims
+Description: ![Alt text](http://kalenislims.com/img/isologo-kalenis.png)
+        
+        ---
+        
+        [![Alt text](https://drone.kalenislims.com/api/badges/kalenis/kalenislims/status.svg)](https://drone.kalenislims.com/kalenis/kalenislims)
+        
+        [Kalenis LIMS & ERP](http://kalenislims.com/) is an open source solution designed in an integral way with the aim of supporting all laboratory processes, prioritizing the integrity, traceability and accessibility of information. It provides a complete solution for Food, Beverages and Environment industries, in full compliance with standards [ISO 17025](http://en.wikipedia.org/wiki/ISO/IEC_17025) and [GLP](http://en.wikipedia.org/wiki/Good_laboratory_practice).
+        
+        ## Getting Started
+        
+        These instructions will get you a copy of the project up and running.
+        
+        ### Installing
+        
+        Execute:
+        
+            python setup.py install
+        
+        
+        Once installed you can activate a module with this command:
+        
+        ```
+        trytond-admin -c <config file> -d <database name> -u <module name>
+        ```
+        
+        
+        ## Built With
+        
+        * [Tryton](http://www.tryton.org/)
+        
+        ## Versioning
+        
+        We follow [Tryton](http://www.tryton.org/) for versioning.
+        
+        ## License
+        
+        See LICENSE file in each module
+        
+        ## Copyright
+        
+        See COPYRIGHT file in each module
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Framework :: Tryton
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Scientific/Engineering

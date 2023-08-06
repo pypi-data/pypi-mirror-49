@@ -1,0 +1,3 @@
+[aiida.schedulers]
+pbspro_cx1 = aiida_icl.schedulers.pbspro_cx1:PbsproCx1Scheduler
+

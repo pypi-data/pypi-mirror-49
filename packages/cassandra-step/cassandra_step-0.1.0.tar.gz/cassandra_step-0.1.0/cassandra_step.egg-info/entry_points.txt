@@ -1,0 +1,6 @@
+[org.molssi.seamm]
+Cassandra = cassandra_step:CassandraStep
+
+[org.molssi.seamm.tk]
+Cassandra = cassandra_step:CassandraStep
+

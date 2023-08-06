@@ -1,0 +1,3 @@
+[console_scripts]
+notebook_to_blog = notebook_to_blog.cli:main
+

@@ -1,0 +1,3 @@
+Click
+PyGithub
+python-dotenv

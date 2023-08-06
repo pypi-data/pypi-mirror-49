@@ -1,0 +1,8 @@
+README.md
+setup.py
+thunk_dict/ThunkDict.py
+thunk_dict/__init__.py
+thunk_dict.egg-info/PKG-INFO
+thunk_dict.egg-info/SOURCES.txt
+thunk_dict.egg-info/dependency_links.txt
+thunk_dict.egg-info/top_level.txt

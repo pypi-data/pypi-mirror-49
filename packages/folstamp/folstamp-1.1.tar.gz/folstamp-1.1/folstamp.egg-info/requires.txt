@@ -1,0 +1,2 @@
+monoshape==1.1
+pillow==6.1

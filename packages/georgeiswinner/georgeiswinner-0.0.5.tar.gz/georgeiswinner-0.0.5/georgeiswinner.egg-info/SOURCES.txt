@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/george
+georgeiswinner/__init__.py
+georgeiswinner/file.py
+georgeiswinner.egg-info/PKG-INFO
+georgeiswinner.egg-info/SOURCES.txt
+georgeiswinner.egg-info/dependency_links.txt
+georgeiswinner.egg-info/top_level.txt

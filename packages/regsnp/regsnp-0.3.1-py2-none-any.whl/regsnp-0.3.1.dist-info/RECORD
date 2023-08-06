@@ -1,0 +1,14 @@
+regsnp-0.3.1.data/scripts/regsnp_intron.py,sha256=G9DGPPWUBJszGlbGNY0R41BqykUxctuObA5HCR02eTY,2112
+regsnp-0.3.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+regsnp-0.3.1.dist-info/METADATA,sha256=2r2a9cfxe_FGpz9WVaWHwsyBVf21cIGCu4FIHYv_Uac,577
+regsnp-0.3.1.dist-info/RECORD,,
+regsnp-0.3.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+regsnp-0.3.1.dist-info/metadata.json,sha256=WiVBOi9-plV30ZN96iN07JC2zTAykKknrBVd7tUVKDw,746
+regsnp-0.3.1.dist-info/top_level.txt,sha256=7PrdRIuqSk5nqrHVZb_kLkyaJWnMeyTk4bPjj__OGgU,14
+regsnp_intron/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regsnp_intron/feature_calculator.py,sha256=b2Fk44TsK2n_5qIKTTF2h-7FLzq0ZoE2X-D07XMvazI,12006
+regsnp_intron/regsnp_intron.py,sha256=qnmkFFBYHN6qKsoKY7UzYHFL_4mhW_GdZjGnbDHCIYw,2125
+regsnp_intron/settings/settings.json,sha256=Spef0TcJtohjZfDiFVOOpv8N2P1ZpE54BiBZozb2ngA,153
+regsnp_intron/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regsnp_intron/utils/snp.py,sha256=nwzCzX6SLxq4g71QA-gZbUdkMlhVhddbkAkIUWL9HHM,2178
+regsnp_intron/utils/vcf.py,sha256=7a8sEYfYfCy-P27_UhSDiGec_ndX0PUWUmbse5Gfr5U,1597

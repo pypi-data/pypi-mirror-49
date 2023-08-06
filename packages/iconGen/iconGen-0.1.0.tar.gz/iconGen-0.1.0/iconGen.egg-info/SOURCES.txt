@@ -1,0 +1,11 @@
+README.md
+setup.py
+iconGen/__init__.py
+iconGen/__main__.py
+iconGen/iconGen.py
+iconGen.egg-info/PKG-INFO
+iconGen.egg-info/SOURCES.txt
+iconGen.egg-info/dependency_links.txt
+iconGen.egg-info/entry_points.txt
+iconGen.egg-info/requires.txt
+iconGen.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+mario_addons/__init__.py,sha256=XIaxbMbyiP-L3kguR1GhxirFblTXiHR1lMfDVITvHUI,22
+mario_addons/__main__.py,sha256=rftZm-ZoNACcx8Ge1JGouhr2nTtbCU7UAQeIXXMrUU8,378
+mario_addons/app.py,sha256=OB3BJJnG_d3W02sNLWqVCECMVFFEzlhps0Rq4Q39siA,34
+mario_addons/cli.py,sha256=fJ_FeI_AHKjXK2cUlAiGUf-pljQYx4wqdUTkxobzOQo,739
+mario_addons/plugins/__init__.py,sha256=FiQp0yx0e9VFc-XnduIymyg86dqMYQbm0EEZZP02BoI,95
+mario_addons/plugins/addons.py,sha256=PpPY4_mi_1hHc9B5_WibpFuFmzTxXDVXMSRxeATBaL4,588
+mario_addons/plugins/addons.toml,sha256=ImostyuUMovXema-nSMOOrx9s_-UL6JDueDIDJi2_sc,1897
+mario_addons/plugins/read.py,sha256=u_COA5nVKLmTbFfwGFRxSEj-SzqKRLm_CDqjYWZawfE,670
+mario_addons/plugins/read.toml,sha256=TybRM3PeKa7wQ_U8Ce4tpzDAfN2TIfDf5tqyMB1uU4M,5295
+mario_addons/plugins/write.py,sha256=TInjsjtdNrmCpXnGt7P647U1SoowG3DJPBbQ-L2qfxk,871
+mario_addons/plugins/write.toml,sha256=QC1YOd5RwnIOe9o7oyv8HWFpDzODPUGxRq0LMo1BNNo,6268
+mario_addons-0.1.9.dist-info/AUTHORS.rst,sha256=WNFx53XmBAwD_OiZkqVPe4xtBBqy2ZGqMYWCPvdsLek,86
+mario_addons-0.1.9.dist-info/METADATA,sha256=7Sh1J2UUM-pkP6QCo66pTl6Sy5hbJ4JQo63l_VHsSg8,5200
+mario_addons-0.1.9.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+mario_addons-0.1.9.dist-info/entry_points.txt,sha256=OH-phlw998sKQlkYgRwwnLJnA1xXI20-gx2YpVN8KmE,40
+mario_addons-0.1.9.dist-info/top_level.txt,sha256=G4Cq1hlE5oZoj6qGabNjzTgdG7PAB0NHEzW8oBWqY7g,13
+mario_addons-0.1.9.dist-info/RECORD,,

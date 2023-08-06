@@ -1,0 +1,10 @@
+_kratos.cpython-35m-x86_64-linux-gnu.so,sha256=8DBR4145IHi7e703cukYCW8Yw2X3I3yVn7WqoKBH8fY,5528912
+kratos/pyast.py,sha256=3jQ3baCEQhZ4hyhZCCMWdjw91CSjjrZMrZzoJfEwQvo,12043
+kratos/passes.py,sha256=AxGJoFkfn3qPg-ODmPYqTqR5Y2ZS9JZvDoQYxLGKlXQ,896
+kratos/__init__.py,sha256=btCkQmFzgNhi2QOZvzUCY-_SSPEip24U_3hrOEkXIVg,815
+kratos/util.py,sha256=q3ugqOQmbPfbpN8Ew-gQUq1tqkUUIddx1awC3w45GaI,1250
+kratos/generator.py,sha256=Ex5inIurJ74iyrx98-bDp9kPBLNbo5GIYBs_AKhRkzU,16681
+kratos-0.0.5.dist-info/WHEEL,sha256=c8uKbdQypV832y6wpTaH7LmB9UQOPgqCSt-bcR7krHw,109
+kratos-0.0.5.dist-info/top_level.txt,sha256=o66PCbIziohtP0yEqDHae3EsfQf169Bvt9q-fvMbfyM,15
+kratos-0.0.5.dist-info/METADATA,sha256=UjKp3DEbTSHVRy_7NkTKdYlwiIOE2CffOkDuRTKpVtI,9412
+kratos-0.0.5.dist-info/RECORD,,

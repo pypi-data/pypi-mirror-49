@@ -1,0 +1,6 @@
+pyelftools>=0.25
+cffi
+archinfo==8.19.7.25
+pyvex==8.19.7.25
+pefile
+sortedcontainers>=2.0

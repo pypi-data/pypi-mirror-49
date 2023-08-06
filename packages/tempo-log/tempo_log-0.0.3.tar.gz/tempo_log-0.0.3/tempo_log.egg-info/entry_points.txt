@@ -1,0 +1,3 @@
+[console_scripts]
+tlog = tempo.worklog:logwork
+

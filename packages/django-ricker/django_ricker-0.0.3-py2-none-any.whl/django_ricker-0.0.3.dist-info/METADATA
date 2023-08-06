@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: django-ricker
+Version: 0.0.3
+Summary: django some utils, make it convenient for work. 
+Home-page: https://github.com/weihuchao/django_utils
+Author: weihuchao
+Author-email: weihuchao@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+There are some django utils, make it convenient for work.
+Now only support django 1.9,  1.9+ may aslo work.
+
+
+## 1 install
+
+```
+pip install django-ricker
+
+```
+
+## 2 get all urls
+
+
+```shell
+cd project_home
+python manage.py shell
+from django_ricker.urls import get_all_urls
+print get_all_urls()
+
+```
+

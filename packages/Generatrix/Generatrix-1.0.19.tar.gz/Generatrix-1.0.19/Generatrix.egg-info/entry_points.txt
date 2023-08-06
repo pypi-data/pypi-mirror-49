@@ -1,0 +1,3 @@
+[console_scripts]
+gtrix = generatrix_py.generatrix:main
+

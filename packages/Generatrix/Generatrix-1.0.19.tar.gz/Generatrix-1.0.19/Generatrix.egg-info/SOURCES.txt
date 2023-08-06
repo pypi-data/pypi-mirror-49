@@ -1,0 +1,9 @@
+README.md
+setup.py
+Generatrix.egg-info/PKG-INFO
+Generatrix.egg-info/SOURCES.txt
+Generatrix.egg-info/dependency_links.txt
+Generatrix.egg-info/entry_points.txt
+Generatrix.egg-info/top_level.txt
+generatrix_py/__init__.py
+generatrix_py/generatrix.py

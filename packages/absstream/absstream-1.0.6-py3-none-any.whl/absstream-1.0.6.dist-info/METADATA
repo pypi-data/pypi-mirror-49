@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: absstream
+Version: 1.0.6
+Summary: Abstract Stream
+Home-page: https://github.com/narupo/absstream
+Author: narupo
+Author-email: narupo.glab@gmail.com
+License: MIT
+Keywords: absstream
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+# AbsStream
+
+AbsStream is abstract stream for string and list and tuple.
+
+# Install
+
+    $ pip install absstream
+
+# Usage
+
+    import absstream.stream import Stream
+
+    strm = Stream('text')
+
+    while not strm.eof():
+        c = strm.get()
+        print(c)
+
+

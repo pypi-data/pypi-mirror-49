@@ -1,0 +1,9 @@
+README.md
+setup.py
+atapdf/__init__.py
+atapdf/pdf2image.py
+atapdf/pdf2text.py
+atapdf.egg-info/PKG-INFO
+atapdf.egg-info/SOURCES.txt
+atapdf.egg-info/dependency_links.txt
+atapdf.egg-info/top_level.txt

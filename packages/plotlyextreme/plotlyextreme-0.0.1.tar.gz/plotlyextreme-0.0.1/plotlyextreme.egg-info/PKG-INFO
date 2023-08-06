@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: plotlyextreme
+Version: 0.0.1
+Summary: Simple wrapper functions for plotly visualization package
+Home-page: https://github.com/jonathan-marsan/plotlyextreme
+Author: Jonathan
+License: UNKNOWN
+Description: ## PlotlyExtreme
+        
+        Set of wrapper functions to abstract repetitive tasks related to plotting with
+        the plotly library.
+        
+        
+        ### Current Plots
+        
+        #### Plot a Big Number
+        
+        `plots.create_big_number`
+        
+        ![Big Number](/img/plot_big_number.png?raw=true)
+        
+        #### Plot Four Dimensions using Buttons
+        
+        `plots.plot_four_dimensions`
+        
+        ![Four Dimensions with Annotations](/img/plot_four_dimensions.png?raw=true)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+yoctoEC2/__init__.py
+yoctoEC2/core.py
+yoctoEC2.egg-info/PKG-INFO
+yoctoEC2.egg-info/SOURCES.txt
+yoctoEC2.egg-info/dependency_links.txt
+yoctoEC2.egg-info/entry_points.txt
+yoctoEC2.egg-info/requires.txt
+yoctoEC2.egg-info/top_level.txt

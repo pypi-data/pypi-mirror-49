@@ -1,0 +1,13 @@
+README.md
+setup.py
+pyselfi/__init__.py
+pyselfi/likelihood.py
+pyselfi/pool.py
+pyselfi/posterior.py
+pyselfi/selfi.py
+pyselfi/utils.py
+pyselfi.egg-info/PKG-INFO
+pyselfi.egg-info/SOURCES.txt
+pyselfi.egg-info/dependency_links.txt
+pyselfi.egg-info/requires.txt
+pyselfi.egg-info/top_level.txt

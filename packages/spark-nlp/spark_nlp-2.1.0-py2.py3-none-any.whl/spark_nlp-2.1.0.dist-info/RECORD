@@ -1,0 +1,17 @@
+com/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+com/johnsnowlabs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+com/johnsnowlabs/nlp/__init__.py,sha256=KzwKRdYrGD5MSoHsUxmi0VT3lnS9Wz4XZcCZMg1FS3c,217
+sparknlp/__init__.py,sha256=Lzpft1PW7Lwe6n6L-MiHQTLRS5QLthEoDK15yDJTQUU,2575
+sparknlp/annotator.py,sha256=yGtAEh0XGw2m805kY75lu0KY7S5SBJnmCFY4jd5hNOE,61132
+sparknlp/base.py,sha256=oHy-aDaMsTjjQKspjnmH7tPjU0PUAAzYCGxi6BYSewI,14611
+sparknlp/common.py,sha256=HF3I4j2-olsoFAWnkuk58GyfrNKadU1NER040BzvXKg,5811
+sparknlp/embeddings.py,sha256=icvWtQ0AQR32KXFRiv-pgeNUj_HybgGNC0NzLNc0qM0,1145
+sparknlp/internal.py,sha256=XD0zrYt4oZ0G3Fy1dYmi8OqSjvotEX4Xxo3hdzoIrJI,5936
+sparknlp/ocr.py,sha256=IIOgcUbzCHOXFtcDLPheHdXE7gHCoLuOpPzsze3w0gQ,2349
+sparknlp/pretrained.py,sha256=6ZWr65BUQpeWFokqmmKIB6Hu3civd8OoCDJWo1vZR0k,2014
+sparknlp/training.py,sha256=cpxInglFZtvyU9j_akw28Bcquy08obTSvOdJoyBolCM,2145
+sparknlp/util.py,sha256=QNp_ztk-6j36K0_z8IcXwxm3H8rGJFsi1JjdI9w0qs0,895
+spark_nlp-2.1.0.dist-info/METADATA,sha256=dySP6Q4fGitYiqOL4AdoeveYqz5f805Y5Lf0ZG8E8OY,213
+spark_nlp-2.1.0.dist-info/WHEEL,sha256=05Ahrak1u2K61DpLp9CDNSbUImLTITCMom_cqTFk6pE,116
+spark_nlp-2.1.0.dist-info/top_level.txt,sha256=uuytur4pyMRw2H_txNY2ZkaucZHUs22QF8-R03ch_-E,13
+spark_nlp-2.1.0.dist-info/RECORD,,

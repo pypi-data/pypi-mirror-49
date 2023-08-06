@@ -1,0 +1,7 @@
+tqdm
+boto3
+ipython
+ipywidgets
+
+[:python_version == "2.7"]
+futures

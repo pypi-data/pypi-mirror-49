@@ -1,0 +1,174 @@
+{
+	"settings": {
+		"commands" 	: [
+			"kdu_compress", "opj_compress"
+		],
+		"required_flags": [
+			"input", "output"
+		]
+	},
+	"flags": {
+		"input": [
+			{
+				"flag"		: "-i",
+				"unifier"	: null,
+				"format"	: {
+					"number"	: 1,
+					"preset":	"1"
+
+				}
+			},
+			{
+				"flag"		: "-i",
+				"unifier"	: null,
+				"format"	: {
+					"number"	: 1,
+					"preset":	"1"
+				}
+			}
+		],
+		"output": [
+			{
+				"flag"		: "-o",
+				"unifier"	: null,
+				"format"	: {
+					"number"	: 1,
+					"preset":	"1"
+				}
+			},
+			{
+				"flag"		: "-o",
+				"unifier"	: null,
+				"format"	: {
+					"number"	: 1,
+					"preset":	"1"
+				}
+			}
+		],
+		"blocks": [
+			{
+				"flag"		: "Cblk",
+				"unifier"	: "=",
+				"format"	: {
+					"number"	: 2,
+					"preset": "{2,}"
+				}
+			},
+			{
+				"flag"		: "-t",
+				"unifier"	: null,
+				"format"	: {
+					"number"	: 2,
+					"preset":	"2,"
+				}
+			}
+		],
+		"tiles": [
+			{
+				"flag"		: "Stiles",
+				"unifier"	: "=",
+				"format"	: {
+					"number"	: 2,
+					"preset": "{2,}"
+				}
+			},
+			{
+				"flag"		: "-t",
+				"unifier"	: null,
+				"format"	: {
+					"number"	: 2,
+					"preset":	"2,"
+				}
+			}
+		],
+		"precincts": [
+			{
+				"flag"		: "Cprecincts",
+				"unifier"	: "=",
+				"format"	: {
+					"number"	: 2,
+					"preset":	"{2,}",
+					"list"		: {
+						"divider": ","
+					}
+				}
+			},
+			{
+				"flag"		: "-c",
+				"unifier"	: null,
+				"format"	: {
+					"number"	: 2,
+					"preset":	"[2,]",
+					"list"		: {
+						"divider": ","
+					}
+				}
+			}
+		],
+		"mode": [
+			{
+				"flag"		: "Cmodes",
+				"unifier"	: "=",
+				"format"	: {
+					"number"	: 1,
+					"preset":	"1",
+					"list"		: {
+						"divider": "|"
+					}
+				}
+			},
+			{
+				"flag"		: "-M",
+				"unifier"	: null,
+				"format"	: {
+					"number"	: 1,
+					"preset":	"1",
+					"pattern": {
+						"match": {
+							"BYPASS"	: 1,
+							"RESET"		: 2, 
+							"RESTART"	: 4,
+							"VSC"		: 8,
+							"ERTERM"	: 16,
+							"SEGMARK"	: 32
+						}
+					}
+				}
+			}
+		],
+		"compression": [
+			{
+				"flag"			: "Creversible",
+				"unifier"		: "=",
+				"format"		: {
+					"number"	: 1,
+					"preset"	: "1",
+					"pattern" 	: {
+						"match"	: {
+							"lossy"		: "no",
+							"lossless"	: "yes"
+						}
+					}
+				}
+			},
+			{
+				"flag"			: "-I",
+				"unifier"		: null,
+				"format"		: {
+					"preset": null,
+					"pattern": {
+						"toggle": ["lossless", "lossy"]
+					}
+				}
+			}
+		],
+		"inline_rgb_420": [
+			{
+				"flag"			: "-rgb_to_420",
+				"unifier"		: null,
+				"format"		: null
+			},
+			{}
+		]
+	}
+}

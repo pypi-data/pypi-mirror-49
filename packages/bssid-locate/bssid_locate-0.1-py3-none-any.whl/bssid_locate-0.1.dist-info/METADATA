@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bssid-locate
+Version: 0.1
+Summary: Get location by bssid
+Home-page: https://github.com/AlexSSD7/bssid-locate
+Author: Alexander Sadovskyi
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+
+UNKNOWN
+
+

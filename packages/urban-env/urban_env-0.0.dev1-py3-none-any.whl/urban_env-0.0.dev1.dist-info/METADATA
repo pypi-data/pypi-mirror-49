@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: urban-env
+Version: 0.0.dev1
+Summary: An environment for simulated Urban driving tasks
+Home-page: UNKNOWN
+Author: Pinaki Gupta
+Author-email: gpinaki@yahoo.com
+License: MIT
+Keywords: Urban autonomous driving simulation environment for reinforcement learning research and testing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: deploy
+Provides-Extra: dev
+Requires-Dist: gym
+Requires-Dist: numpy
+Requires-Dist: pygame
+Requires-Dist: jupyter
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Provides-Extra: deploy
+Requires-Dist: pytest-runner; extra == 'deploy'
+Requires-Dist: sphinx (<1.7.3); extra == 'deploy'
+Requires-Dist: sphinx-rtd-theme; extra == 'deploy'
+Provides-Extra: dev
+Requires-Dist: scipy; extra == 'dev'
+
+UNKNOWN
+
+

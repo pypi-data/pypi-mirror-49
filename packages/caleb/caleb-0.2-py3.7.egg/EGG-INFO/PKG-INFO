@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: caleb
+Version: 0.2
+Summary: A tool automatically to fill in your Latex citations using AMS Lookup.
+Home-page: https://github.com/kevinywlui/caleb
+Author: Kevin Lui
+Author-email: kevinywlui@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

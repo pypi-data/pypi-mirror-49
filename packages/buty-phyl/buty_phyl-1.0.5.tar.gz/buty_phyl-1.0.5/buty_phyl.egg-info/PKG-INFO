@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: buty-phyl
+Version: 1.0.5
+Summary: Inferring traits by 16S
+Home-page: https://github.com/caozhichongchong/BayersTraits_16S
+Author: Anni Zhang
+Author-email: anniz44@mit.edu
+License: MIT
+Description: UNKNOWN
+Keywords: 16S,bacterial genomes,function,traits
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

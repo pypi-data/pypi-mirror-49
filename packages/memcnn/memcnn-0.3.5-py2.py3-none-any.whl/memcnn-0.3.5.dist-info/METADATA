@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: memcnn
+Version: 0.3.5
+Summary: A PyTorch framework for developing memory efficient deep invertible networks.
+Home-page: http://pypi.python.org/pypi/memcnn/
+Author: S.C. van de Leemput
+Author-email: silvandeleemput@gmail.com
+License: LICENSE.txt
+Keywords: memcnn invertible PyTorch
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: SimpleITK
+Requires-Dist: tensorboardX (==1.4)
+Requires-Dist: tensorflow (>=1.11.0)
+Requires-Dist: torch (>=0.4.0)
+Requires-Dist: torchvision
+Requires-Dist: tqdm
+
+======
+MemCNN
+======
+
+.. image:: https://img.shields.io/circleci/build/github/silvandeleemput/memcnn/master.svg        
+        :alt: CircleCI - Status master branch
+        :target: https://circleci.com/gh/silvandeleemput/memcnn/tree/master
+
+.. image:: https://img.shields.io/docker/cloud/build/silvandeleemput/memcnn.svg
+        :alt: Docker - Status
+        :target: https://hub.docker.com/r/silvandeleemput/memcnn
+
+.. image:: https://readthedocs.org/projects/memcnn/badge/?version=latest        
+        :alt: Documentation - Status master branch
+        :target: https://memcnn.readthedocs.io/en/latest/?badge=latest
+
+.. image:: https://img.shields.io/codacy/grade/95de32e0d7c54d038611da47e9f0948b/master.svg
+        :alt: Codacy - Branch grade
+        :target: https://app.codacy.com/project/silvandeleemput/memcnn/dashboardgit
+
+.. image:: https://img.shields.io/codecov/c/gh/silvandeleemput/memcnn/master.svg   
+        :alt: Codecov - Status master branch
+        :target: https://codecov.io/gh/silvandeleemput/memcnn
+
+.. image:: https://img.shields.io/pypi/v/memcnn.svg
+        :alt: PyPI - Latest release
+        :target: https://pypi.python.org/pypi/memcnn
+
+.. image:: https://img.shields.io/conda/vn/silvandeleemput/memcnn?label=anaconda
+        :alt: Conda - Latest release
+        :target: https://anaconda.org/silvandeleemput/memcnn
+
+.. image:: https://img.shields.io/pypi/implementation/memcnn.svg        
+        :alt: PyPI - Implementation
+        :target: https://pypi.python.org/pypi/memcnn
+
+.. image:: https://img.shields.io/pypi/pyversions/memcnn.svg        
+        :alt: PyPI - Python version
+        :target: https://pypi.python.org/pypi/memcnn
+
+.. image:: https://img.shields.io/github/license/silvandeleemput/memcnn.svg        
+        :alt: GitHub - Repository license
+        :target: https://github.com/silvandeleemput/memcnn/blob/master/LICENSE.txt
+
+A `PyTorch <http://pytorch.org/>`__ framework for developing memory-efficient invertible neural networks.
+
+* Free software: `MIT license <https://github.com/silvandeleemput/memcnn/blob/master/LICENSE.txt>`__ (please cite our work if you use it)
+* Documentation: https://memcnn.readthedocs.io.
+* Installation: https://memcnn.readthedocs.io/en/latest/installation.html
+
+Features
+--------
+
+* Simple `ReversibleBlock` wrapper class to wrap and convert arbitrary PyTorch Modules into invertible versions.
+* Simple switching between `additive` and `affine` invertible coupling schemes and different implementations.
+* Simple toggling of memory saving by setting the `keep_input` property of the `ReversibleBlock`.
+* Training and evaluation code for reproducing RevNet experiments using MemCNN.
+* CI tests for Python v2.7 and v3.6 and torch v0.4, v1.0, and v1.1 with good code coverage.
+
+Example usage: ReversibleBlock
+------------------------------
+
+.. code:: python
+
+    import torch
+    import torch.nn as nn
+    import memcnn
+
+
+    # define a new torch Module with a sequence of operations: Relu o BatchNorm2d o Conv2d
+    class ExampleOperation(nn.Module):
+        def __init__(self, channels):
+            super(ExampleOperation, self).__init__()
+            self.seq = nn.Sequential(
+                                        nn.Conv2d(in_channels=channels, out_channels=channels,
+                                                  kernel_size=(3, 3), padding=1),
+                                        nn.BatchNorm2d(num_features=channels),
+                                        nn.ReLU(inplace=True)
+                                    )
+
+        def forward(self, x):
+            return self.seq(x)
+
+    # generate some random input data (batch_size, num_channels, y_elements, x_elements)
+    X = torch.rand(2, 10, 8, 8)
+
+    # application of the operation(s) the normal way
+    model_normal = ExampleOperation(channels=10)
+    Y = model_normal(X)
+
+    # application of the operation(s) turned invertible using the reversible block
+    F = ExampleOperation(channels=10 // 2)
+    model_invertible = memcnn.ReversibleBlock(F, coupling='additive', keep_input=True, keep_input_inverse=True)
+    Y2 = model_invertible(X)
+
+    # The input (X) can be approximated (X2) by applying the inverse method of the reversible block on Y2
+    X2 = model_invertible.inverse(Y2)
+
+Run PyTorch Experiments
+-----------------------
+
+After installing MemCNN run:
+
+.. code:: bash
+
+    python -m memcnn.train [MODEL] [DATASET] [--fresh] [--no-cuda]
+
+* Available values for ``DATASET`` are ``cifar10`` and ``cifar100``.
+* Available values for ``MODEL`` are ``resnet32``, ``resnet110``, ``resnet164``, ``revnet38``, ``revnet110``, ``revnet164``
+* Use the ``--fresh`` flag to remove earlier experiment results.
+* Use the ``--no-cuda`` flag to train on the CPU rather than the GPU through CUDA.
+
+Datasets are automatically downloaded if they are not available.
+
+When using Python 3.* replace the ``python`` directive with the appropriate Python 3 directive. For example when using the MemCNN docker image use ``python3.6``.
+
+When MemCNN was installed using `pip` or from sources you might need to setup a configuration file before running this command.
+Read the corresponding section about how to do this here: https://memcnn.readthedocs.io/en/latest/installation.html
+
+
+

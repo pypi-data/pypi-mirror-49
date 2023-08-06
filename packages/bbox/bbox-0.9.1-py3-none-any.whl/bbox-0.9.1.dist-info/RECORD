@@ -1,0 +1,13 @@
+bbox/__init__.py,sha256=GmTLzQjXswqZJDWTRD4gvF_0CTCtc_m0yKhNK2unb4c,408
+bbox/bbox2d.py,sha256=dYy_0LGJnHwZpzyW7wPNalykM1907nLWkLv-I20e3AQ,7046
+bbox/bbox2d_list.py,sha256=XEk63y2L3fP_a2ZCUZ5OA3gu5TemKdjx3lAUTgKbvyY,10320
+bbox/bbox3d.py,sha256=UHOzMrPfO1LtKbv7WHmX3lzXF35LKiTpFmz8gdWfhTY,9394
+bbox/box_modes.py,sha256=S4euWbQwMaef6taQUYAFYW55GoulzcakbNN8Z4m4LpE,758
+bbox/geometry.py,sha256=tHLoMkpzNtB2J-htrRwaOfXUYhJsqwr7bRjsmNJ5xcE,4969
+bbox/metrics.py,sha256=5zknba1DZ1xoE95WdCrh0g-TeqM8VeaoNZ9WX57IUxw,4870
+bbox/utils.py,sha256=otWfVyvT0lCQNLRCqNU3GJWGwVJlGnYCe7dmPr92Htc,2490
+bbox-0.9.1.dist-info/LICENSE,sha256=vVnN2l1B2KJGONqrgWeVRGrvDJ2HWQsConriJmT3vVM,1070
+bbox-0.9.1.dist-info/METADATA,sha256=kFwDPwrKDwfrYdNKQ23qI0ZR6j12vlQOhgA4T7za7_Q,3469
+bbox-0.9.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+bbox-0.9.1.dist-info/top_level.txt,sha256=ifM3OZ-zzmngdpqBU5P0UdHSPfTD8V-qoIbzxLcX4NI,5
+bbox-0.9.1.dist-info/RECORD,,

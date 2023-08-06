@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: genmdnav
+Version: 0.1.0
+Summary: 
+Author: Sergey M
+Author-email: tz4678@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7

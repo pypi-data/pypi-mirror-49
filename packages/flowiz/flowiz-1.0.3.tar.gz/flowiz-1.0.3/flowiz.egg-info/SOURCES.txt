@@ -1,0 +1,9 @@
+README.md
+setup.py
+flowiz/__init__.py
+flowiz/__main__.py
+flowiz/flowiz.py
+flowiz.egg-info/PKG-INFO
+flowiz.egg-info/SOURCES.txt
+flowiz.egg-info/dependency_links.txt
+flowiz.egg-info/top_level.txt

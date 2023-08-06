@@ -1,0 +1,7 @@
+[console_scripts]
+pyokta-aws = pyokta_aws.__main__:main
+
+[pyokta_aws.registered_commands]
+auth = pyokta_aws.commands.auth:main
+configure = pyokta_aws.commands.configure:main
+

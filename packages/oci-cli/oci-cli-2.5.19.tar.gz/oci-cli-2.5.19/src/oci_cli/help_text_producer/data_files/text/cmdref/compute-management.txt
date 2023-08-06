@@ -1,0 +1,64 @@
+compute-management
+******************
+
+
+Description
+===========
+
+Compute Management Service CLI
+
+
+Available Commands
+==================
+
+* instance-configuration
+
+  * change-compartment
+
+  * create
+
+  * delete
+
+  * get
+
+  * launch-compute-instance
+
+  * list
+
+  * update
+
+* instance-pool
+
+  * attach-lb
+
+  * change-compartment
+
+  * create
+
+  * detach-lb
+
+  * get
+
+  * lb-attachment
+
+    * attach
+
+    * detach
+
+    * get
+
+  * list
+
+  * list-instances
+
+  * reset
+
+  * softreset
+
+  * start
+
+  * stop
+
+  * terminate
+
+  * update

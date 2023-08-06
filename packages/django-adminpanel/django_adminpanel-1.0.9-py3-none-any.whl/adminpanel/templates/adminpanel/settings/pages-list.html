@@ -1,0 +1,11 @@
+<div class="form-group">
+        <label>Home Page</label>
+		<select class="form-control" name="home_page">
+			<option value="">-Select Page-</option>
+			{% if dataList %}
+				{% for obj in dataList %}
+					<option value="{{obj.page_slug}}" {% if page_slug == obj.page_slug %} selected="true" {% endif %}>{{obj.page_title}}</option>
+				{% endfor %}
+			{% endif %}
+		</select>
+</div>

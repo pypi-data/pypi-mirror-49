@@ -1,0 +1,5 @@
+tensorflow==2.0.0-beta1
+tensorflow-datasets>=1.0.1
+torch>=1.1.0
+torchvision>=0.3.0
+py-common-util>=0.0.42

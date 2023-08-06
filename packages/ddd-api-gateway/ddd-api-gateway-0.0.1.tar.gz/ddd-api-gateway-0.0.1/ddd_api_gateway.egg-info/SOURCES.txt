@@ -1,0 +1,14 @@
+CHANGES.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+ddd_api_gateway/__init__.py
+ddd_api_gateway/__version__.py
+ddd_api_gateway/aggregate.py
+ddd_api_gateway/entity.py
+ddd_api_gateway/value_object.py
+ddd_api_gateway.egg-info/PKG-INFO
+ddd_api_gateway.egg-info/SOURCES.txt
+ddd_api_gateway.egg-info/dependency_links.txt
+ddd_api_gateway.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Click
+dataslots
+fastjsonschema
+html2text
+inflection
+inflection
+cachetools
+ujson
+yattag
+tablib
+typical>=1.10.1

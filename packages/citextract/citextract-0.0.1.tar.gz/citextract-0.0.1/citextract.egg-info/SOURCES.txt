@@ -1,0 +1,7 @@
+README.md
+setup.py
+citextract/__init__.py
+citextract.egg-info/PKG-INFO
+citextract.egg-info/SOURCES.txt
+citextract.egg-info/dependency_links.txt
+citextract.egg-info/top_level.txt

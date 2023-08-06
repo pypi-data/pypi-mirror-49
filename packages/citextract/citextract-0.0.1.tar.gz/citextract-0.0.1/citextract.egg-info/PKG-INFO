@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: citextract
+Version: 0.0.1
+Summary: CiteXtract - Bringing structure to the papers on ArXiv.
+Home-page: https://github.com/kmjjacobs/citextract
+Author: Kevin Jacobs
+Author-email: kevin91nl@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

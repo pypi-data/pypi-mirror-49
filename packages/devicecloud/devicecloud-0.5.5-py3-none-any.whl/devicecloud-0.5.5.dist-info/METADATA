@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: devicecloud
+Version: 0.5.5
+Summary: Python API to the Digi Device Cloud
+Home-page: https://github.com/digidotcom/python-devicecloud
+Author: Digi International Inc.
+Author-email: brandon.moser@digi.com
+License: UNKNOWN
+Requires-Dist: arrow (==0.12.1)
+Requires-Dist: backports.functools-lru-cache (==1.5)
+Requires-Dist: certifi (==2018.4.16)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.6)
+Requires-Dist: python-dateutil (==2.7.3)
+Requires-Dist: requests (==2.18.4)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: urllib3 (==1.22)
+
+Python Device Cloud Library
+
+

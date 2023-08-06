@@ -1,0 +1,3 @@
+[console_scripts]
+slackbot = slacker.app:main
+

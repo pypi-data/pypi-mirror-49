@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: whatsmynamejx1
+Version: 1.0.0
+Summary: Say my name
+Home-page: https://github.com/jinxin07/whatsmyname
+Author: Jin Xin
+Author-email: jin.xin@accenture.com
+License: MIT
+Description: # whatsmyname
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

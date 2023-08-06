@@ -1,0 +1,10 @@
+README.md
+setup.py
+scratchpad/__init__.py
+scratchpad/__main__.py
+scratchpad/scratchpad.py
+scratchpad_deadmund.egg-info/PKG-INFO
+scratchpad_deadmund.egg-info/SOURCES.txt
+scratchpad_deadmund.egg-info/dependency_links.txt
+scratchpad_deadmund.egg-info/entry_points.txt
+scratchpad_deadmund.egg-info/top_level.txt

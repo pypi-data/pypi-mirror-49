@@ -1,0 +1,3 @@
+[console_scripts]
+scratchpad = scratchpad.__main__:main
+

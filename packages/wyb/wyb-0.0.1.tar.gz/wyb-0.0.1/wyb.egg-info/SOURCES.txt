@@ -1,0 +1,8 @@
+README.md
+setup.py
+wyb/__init__.py
+wyb/wyb.py
+wyb.egg-info/PKG-INFO
+wyb.egg-info/SOURCES.txt
+wyb.egg-info/dependency_links.txt
+wyb.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+distribubot/__init__.py,sha256=m8C-Pwv0akEzkiMHGL_AbGQa9HoPPUwf_y5h_tctsjg,112
+distribubot/distribubot.py,sha256=kNFpfcR7Iv_Y6aFh6W-2XVJ3dMbCuNlcOhzu-MuwNVM,16061
+distribubot/utils.py,sha256=CJAQr9hGsCaEyu4ZmtaxPeGnn8q1DU8a9J5gUlW3304,4283
+distribubot/version.py,sha256=DYix2_k5ytBTccwO6AXM2jSE1CO4DsanaKSucHzZ8ew,69
+distribubot-0.1.0.dist-info/LICENSE,sha256=tvDC01Emg2DYOkkSUb3gdJGtWPVa8BpysZLoXAgo_-c,1074
+distribubot-0.1.0.dist-info/METADATA,sha256=-55Z2fHIZSo_TgknU45oT4iBJGn_LbW9Vrls4V0KWK8,919
+distribubot-0.1.0.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+distribubot-0.1.0.dist-info/entry_points.txt,sha256=jRRGKcH3a4UYPzwKGDKYakOaP095WiPjCa9rJvSRCrQ,62
+distribubot-0.1.0.dist-info/top_level.txt,sha256=X3pse7E7L3a6tkD0_kRfd4zJQtaNWpg_4LjuhghMkCc,12
+distribubot-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mc_server_manager
+Version: 0.2.0
+Summary: Manages Minecraft Servers on AWS
+Home-page: https://github.com/bwilliam0/mc-server-manager
+Author: bwilliam0
+Author-email: dev@mycodeiscompiling.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

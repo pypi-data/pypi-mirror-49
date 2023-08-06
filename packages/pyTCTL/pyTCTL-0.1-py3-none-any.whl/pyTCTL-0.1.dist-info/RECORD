@@ -1,0 +1,7 @@
+pyTCTL-0.1.dist-info/METADATA,sha256=TR_6RRzri7aPlo3on885ZgcsqrzUs404pBTjd_mky04,1748
+pyTCTL-0.1.dist-info/RECORD,,
+pyTCTL-0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pyTCTL-0.1.dist-info/top_level.txt,sha256=-oZZaOJOi43w04aI1oUYFS8UO-zql3CfRhgl5YZVBbg,13
+pytctl/__init__.py,sha256=3VR8H_sj_HN9BgT15gOORE7jW9qxCFurZVCc2T8Cvec,16
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dummy.py,sha256=i5xoWnkPp-gvWJ1N0xF_JyyIHsQIp46f5UtwHelO2Jw,144

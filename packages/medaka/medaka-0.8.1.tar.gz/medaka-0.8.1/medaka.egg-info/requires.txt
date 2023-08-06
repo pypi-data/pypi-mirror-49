@@ -1,0 +1,9 @@
+biopython
+cffi
+h5py==2.7.1
+intervaltree
+tensorflow==1.14.0
+numpy==1.16.1
+pysam
+pyyaml==5.1
+whatshap==0.18

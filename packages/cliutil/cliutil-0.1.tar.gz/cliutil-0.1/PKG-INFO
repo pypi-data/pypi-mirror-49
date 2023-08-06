@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: cliutil
+Version: 0.1
+Summary: A package that contains a lot of presets for cli interfaces
+Home-page: UNKNOWN
+Author: Aayla Pozho
+Author-email: aayla.pozho@gmail.com
+License: UNKNOWN
+Description: # cliutil
+        A pack of premade functions to make command-line user interfaces easier to build and take up less of your script
+        ## Documentation
+        ### Questions
+        CliUtil comes with a variety of built-in question formats. These are:
+        
+        Question Function | Returns
+        --- | ---
+        yesnoquestion | Boolean
+        stringquestion | String
+        numberquestion | Float
+        
+        ***
+        
+        #### yesnoquestion
+        Ask a yes or no question
+        
+        Argument | Type | Doc
+        --- | --- | ---
+        text | String | The text of the question asked
+        verify | Boolean | Should the user be given a chance to correct any mistakes?
+        returns | Boolean | True or False depending on the y/N input of the user
+        
+        Example:
+        ```python
+        from cliutil.Questions import yesnoquestion
+        answer = yesnoquestion("Are you having a nice day", verify=True)
+        print(answer)
+        ```
+        This will output
+        ```
+        Are you having a nice day? y/N y
+        True
+        ```
+        
+        ***
+        
+        #### stringquestion
+        Ask for a string from the user
+        
+        Argument | Type | Doc
+        --- | --- | ---
+        text | String | The text of the question asked
+        verify | Boolean | Should the user be given a chance to correct any mistakes?
+        returns | String | The user input
+        
+        Example:
+        ```python
+        from cliutil.Questions import stringquestion
+        answer = stringquestion("How are you today?")
+        print(answer)
+        ```
+        Will output
+        ```
+        How are you today? Good
+        Good
+        ```
+        ***
+        
+        #### numberquestion
+        Ask for a float from the user
+        
+        Argument | Type | Doc
+        --- | --- | ---
+        text | String | The text of the question asked
+        verify | Boolean | Should the user be given a chance to correct any mistakes?
+        returns | Float | The user input cast as a float
+        
+        Example:
+        ```python
+        from cliutil.Questions import numberquestion
+        answer = numberquestion("How many fingers am I holding up")
+        print(answer)
+        ```
+        Will output
+        ```
+        How many fingers am I holding up? 15
+        15.0
+        ```
+        
+        ***
+        
+        ### Command Line Argumet Handling
+        CliUtil comes with POSIX-complaint functions for handling command-line arguments.
+        #### clarguments
+        Handle arguments passed to the script through the command line. Any arguments with values will be returned as strings. Arguments with multiple values will have them comma separated inside of the string. Simple flags will have a value of type None.
+        
+        Argument | Type | Doc
+        --- | --- | ---
+        returns | Dict | Contains the variables and all the values assigned to them. Flags will have a None type.
+        
+        Example:
+        ```bash
+        python script.py -Snp 1 -r 10 -b "str" arg2 --long arg1 arg3
+        ```
+        Where script.py is
+        ```python
+        from cliutil.Arguments import clarguments
+        arguments = clarguments()
+        print(arguments)
+        ```
+        Will output
+        ```python
+        {
+            '_args': 'arg2,arg3',
+            'S': None,
+            'n': None,
+            'p': '1',
+            'r': '10',
+            'b': 'str',
+            'long': 'arg1'
+        }
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

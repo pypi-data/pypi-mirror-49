@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sv-geometry
+Version: 0.1.3
+Summary: A collection of functions for bidimensional and tridimensional arithmetic geometry.
+Home-page: https://github.com/ihavenonickname/sv-geometry
+Author: Gabriel Blank Stift Mousquer
+Author-email: gabrielblanksm@gmail.com
+License: MIT
+Description: # SV Geometry
+        
+        [![CircleCI](https://circleci.com/gh/ihavenonickname/sv-geometry.svg?style=svg)](https://circleci.com/gh/ihavenonickname/sv-geometry)
+        
+        A collection of functions for bidimensional and tridimensional arithmetic geometry.
+        
+        ## Installing
+        
+            pip install sv-geometry
+        
+        ## Relevant links:
+        
+        * Official page on PyPI: https://pypi.org/project/sv-geometry/
+        * Issue tracker: https://github.com/ihavenonickname/sv-geometry/issues
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

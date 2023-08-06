@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: photocopy
+Version: 0.2.0
+Summary: Copy your photos from an SD card or camera to a specific directory.
+Home-page: https://github.com/skorokithakis/photocopy/
+Author: Stavros Korokithakis
+Author-email: hi@stavros.io

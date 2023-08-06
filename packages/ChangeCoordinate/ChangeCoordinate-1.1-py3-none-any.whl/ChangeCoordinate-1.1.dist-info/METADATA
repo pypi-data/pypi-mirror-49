@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ChangeCoordinate
+Version: 1.1
+Summary: 百度/高德的坐标转换(仅适用于中国)
+Home-page: https://github.com/GaryLea/ChangeCoordinate.git
+Author: GrayLea
+Author-email: graylea@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+
+# ChangeCoordinate
+
+

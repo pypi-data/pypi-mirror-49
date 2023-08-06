@@ -1,0 +1,6 @@
+include eph/eph.cfg
+include README.rst
+include LICENSE
+include requirements.txt
+recursive-include docs *
+recursive-include test *

@@ -1,0 +1,13 @@
+numerai_reports/__init__.py,sha256=CzRjVOSOfgqf6HaRaDAPkKatAKZh10wbkj8GIAN1kLM,130
+numerai_reports/data.py,sha256=NExEWsOyPiF98G3mL4ewVv9hpwUdMQUux_nJeQ07JrU,7607
+numerai_reports/leaderboard.py,sha256=jyOzX8xvO0JiIyVMPGEMOACRsLMj8IIKplcXarRddKM,745
+numerai_reports/mytest_uuazed3.py,sha256=ICcQJp_4DwamKx1FwVlmoWTAkd0NZ05EP4ESIZQfME0,1735
+numerai_reports/reports.py,sha256=FNjDogfLoixpJq-jIheuVXhIqDYNQMFLSVtJcPCfy_8,8760
+numerai_reports/settings.py,sha256=IU3_EYMmDtaKtsxW0hUxGTV6HVX6Hlyh-DCwsjNnSz4,88
+numerai_reports/test.py,sha256=6GXTU2jSKhOfsuo5diVYJhDHkZ8awZ6q7qOFDHsb86w,1096
+numerai_reports/test_uuazed3.py,sha256=ICcQJp_4DwamKx1FwVlmoWTAkd0NZ05EP4ESIZQfME0,1735
+numerai_reports/utils.py,sha256=-xfEQIwUF1scAQgEea4IO8m5d5Z0bqPh_RKLxV23q5g,504
+numerai_reports-0.3.3.dist-info/METADATA,sha256=WZHsNmT83NYpLlPE7nvd3NODLftxXe428s8OYT0s-bU,2414
+numerai_reports-0.3.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+numerai_reports-0.3.3.dist-info/top_level.txt,sha256=0CVH16-PRl2zMPLf7SIRLyuvSWGEBOKv8DKBDL0alJQ,16
+numerai_reports-0.3.3.dist-info/RECORD,,

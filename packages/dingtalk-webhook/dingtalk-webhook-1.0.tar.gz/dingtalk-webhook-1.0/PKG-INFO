@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dingtalk-webhook
+Version: 1.0
+Summary: send dingtalk message to dingding webhook robot
+Home-page: UNKNOWN
+Author: zhanghe
+Author-email: x_hezhang@126.com
+License: GNU GPLv3
+Description: UNKNOWN
+Keywords: dingtalk,dingding,dingtalk-webhook,ding,alert
+Platform: UNKNOWN

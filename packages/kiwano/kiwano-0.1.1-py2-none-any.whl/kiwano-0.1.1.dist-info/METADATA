@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kiwano
+Version: 0.1.1
+Summary: Kiwano is an implementation of an approach for prioritizing epigenomic and transcriptomic experiments.
+Home-page: http://pypi.python.org/pypi/kiwano/
+Author: Jacob Schreiber
+Author-email: jmschreiber91@gmail.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Requires-Dist: apricot-select (>=0.3.0)
+Requires-Dist: numpy (>=1.16.2)
+
+UNKNOWN
+
+

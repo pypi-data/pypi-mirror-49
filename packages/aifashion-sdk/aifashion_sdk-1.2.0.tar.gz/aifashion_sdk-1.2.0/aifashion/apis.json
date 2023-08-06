@@ -1,0 +1,153 @@
+{
+    "fashion_detect":{
+        "name" : "服饰检测（v1） ",
+        "url" : "https://api.aifashion.com/fashion/detect",
+        "manual" : "\n    [服饰检测](https://developer.aifashion.com/#577c60322c)\n    现支持的二级类别包括：上衣(101), 外套(102), 裤子(201), 连衣裙(301),\n    半身裙(302), 鞋靴(401), 箱包(501), 类别详细信息，请参照 [常量](https://developer.aifashion.com/#cec3d5c599) 章节。\n\n    0: 未检测到服饰\n    1: 上衣\n    2: 半身裙\n    3: 外套\n    4: 连衣裙\n    5: 裤子\n    6: 鞋\n    7: 箱包\n\n\n    ## HTTP 请求\n    POST https://api.aifashion.com/fashion/detect\n\n    ## 请求参数\n    参数名 参数值类型   描述\n    image_url   String  待识别图片 URL，公网可访问\n    image_base64    String  待识别图片二进制数据的 base64 编码\n\n    image_url、image_base64二选一即可。\n\n\n    ## HTTP 响应结果\n    响应结果中主要字段及描述如下：\n\n    字段名 字段值类型   描述\n    image   Object  图片信息，包括 id、url 以及图的长和宽\n    objects Array   检测结果数组，数组中每个对象为一件服饰"
+    },
+    "fashion_detect_one":{
+        "name" : "单件服饰检测（v1）   ",
+        "url" : "https://api.aifashion.com/fashion/detect-one",
+        "manual" : "\n    [单件服饰检测](https://developer.aifashion.com/#e3ba86f9f1)\n\n    识别图片中一件最显著服饰，并给出检测出服饰的类别、位置和置信度。\n    单件服饰识别较多件服饰识别，算法上做了优化，在识别速度和精度上都有很大提升，适用于只需要检测图片中的主要服饰的应用场景，如拍照购物等。\n    识别结果和上面多件服饰识别的基本相同，例图如下：\n\n    ## HTTP 请求\n    POST https://api.aifashion.com/fashion/detect-one\n\n    ## 请求参数\n    参数名 参数值类型   描述\n    image_url   String  待识别图片 URL，公网可访问\n    image_base64    String  待识别图片二进制数据的 base64 编码\n    region  [Float, Float, Float, Float]    待分析区域的相对位置，[x1, y1, x2, y2]\n\n    ## HTTP 响应结果\n    响应结果中主要字段及描述如下：\n\n    字段名 字段值类型   描述\n    image   Object  图片信息，包括 id、url 以及图的长和宽\n    object  Object  检测到的最显著服饰对象"
+    },
+    "fashion_locate":{
+        "name" :" ",
+        "url" : "https://api.aifashion.com/fashion/locate",
+        "manual" : "\n    [指定服饰定位](https://developer.aifashion.com/#919c2d3050)\n\n    给定数据集中的商品或图片条目，在上传图片中识别出该服饰，并给出位置坐标和置信度。\n\n    指定服饰定位适用于服饰电商看图购、买家秀，时尚内容服饰打点等应用场景。\n\n    例如图片：\n\n    TODO 指定服饰定位图\n\n    ## HTTP 请求\n    POST https://api.aifashion.com/fashion/locate\n\n    ## 请求参数\n    参数名 参数值类型   描述\n    dataset_name    String  数据集名称，用于唯一指定数据集\n    product_id  String  条目 product_id，指定数据集中的特定商品\n    image_url   String  待识别图片 URL，公网可访问\n    image_base64    String  待识别图片二进制数据的 base64 编码\n\n    image_url、image_base64二选一即可。\n\n\n    ## HTTP 响应结果\n    响应结果中主要字段及描述如下：\n\n    字段名 字段值类型   描述\n    image   Object  图片信息，包括 id、url 以及图的长和宽\n    item    Object  定位到的服饰条目\n    location    Object  位置信息\n    返回的条目可以是商品条目或图片条目，条目字段的具体定义请参照 商品条目实体 和 图片条目实体。"
+    },
+    "fashion_tagging":{
+        "name" : "时尚标签（v1） ",
+        "url" : " https://api.aifashion.com/fashion/tagging",
+        "manual" : "\n    [时尚标签](https://developer.aifashion.com/#3750f67335)\n\n    为图片中指定的服饰智能打标签，标签内容包括类别和服饰属性等信息。\n\n    例图如下：\n\n    Alt text\n\n    ## HTTP 请求\n    POST https://api.aifashion.com/fashion/tagging\n\n    ## 请求参数\n    参数名 参数值类型   描述\n    image_url   String  待识别图片 URL，公网可访问\n    image_base64    String  待识别图片二进制数据的 base64 编码\n    region  [Float, Float, Float, Float]    待分析区域的相对位置，[x1, y1, x2, y2]\n    \n\n    image_url、image_base64二选一即可。\n    region 可以为空，当 region 为空时默认分析图片中最显著的服饰。\n\n\n    ## HTTP 响应结果\n    响应结果中主要字段及描述如下：\n\n    字段名 字段值类型   描述\n    image   Object  图片信息，包括 id、url 以及图的长和宽\n    object  Object  检测到的服饰对象\n    tags    Array   服饰对象的标签键值对列表"
+    },
+    "fashion_tagging_v2":{
+        "name" : "时尚标签（v2） ",
+        "url" : " https://api.aifashion.com/fashion/tagging-v2",
+        "manual" : ""
+    },
+    "fashion_tagging_more_beauty":{
+        "name" : "服饰标签-更美  ",
+        "url" : "https://api.aifashion.com/fashion/tagging-gm",
+        "manual" : ""
+    },
+    "fashion_tagging_ecpro":{
+        "name" : "时尚标签-ECPRO   ",
+        "url" : "https://api.aifashion.com/fashion/tagging-ecpro",
+        "manual" : ""
+    },
+    "fashion_caption":{
+        "name" :" ",
+        "url" : "https://api.aifashion.com/fashion/caption",
+        "manual" : "\n    [服饰命名](https://developer.aifashion.com/#b687deeb5f)\n\n    为图片中的给定服饰命名，当前支持多种[语言](https://developer.aifashion.com/#83b604e91d)，\n    详细情况参照[常量](https://developer.aifashion.com/#cec3d5c599)章节。\n\n\n    代码  语言  描述\n    zh_cn   简体中文\n    zh_hk   繁体中文\n    en      英文\n    ja      日语\n    ko      韩语\n    fr      法语\n    de      德语\n    es      西班牙语\n    pt      葡萄牙语\n    ar      阿拉伯语\n\n\n    以中文为例，例图如下：\n\n    Alt text\n\n    ## HTTP 请求\n    POST https://api.aifashion.com/fashion/caption\n\n    ## 请求参数\n    参数名 参数值类型   描述\n    image_url   String  待识别图片 URL，公网可访问\n    image_base64    String  待识别图片二进制数据的 base64 编码\n    region  [Float, Float, Float, Float]    待分析区域的相对位置，[x1, y1, x2, y2]\n    language    String  命名所用语言，默认为 zh_cn\n    image_url、image_base64二选一即可。\n    region 可以为空，当 region 为空时默认为图片中最显著的服饰命名。\n    ## HTTP 响应结果\n    响应结果中主要字段及描述如下：\n\n    字段名 字段值类型   描述\n    image   Object  图片信息，包括 id、url 以及图的长和宽\n    object  Object  检测到的服饰对象\n    caption String  命名结果"
+    },
+    "color_analysis":{
+        "name" : "颜色分析（v1） ",
+        "url" : "https://api.aifashion.com/fashion/color-analysis",
+        "manual" : "\n    [服饰颜色分析](https://developer.aifashion.com/#5ccae2aa21)\n\n    分析图片中指定服饰的颜色分布，包括颜色 RGB 值、名称和所占比例。\n\n    例如下图：\n\n    TODO 颜色分布图\n\n    ## HTTP 请求\n    POST https://api.aifashion.com/fashion/color-analysis\n\n    ## 请求参数\n    参数名 参数值类型   描述\n    image_url   String  待识别图片 URL，公网可访问\n    image_base64    String  待识别图片二进制数据的 base64 编码\n    region  [Float, Float, Float, Float]    待分析区域的相对位置，[x1, y1, x2, y2]\n    image_url、image_base64二选一即可。\n    region 可以为空，当 region 为空时默认分析图片中最显著服饰。\n    ## HTTP 响应结果\n    响应结果中主要字段及描述如下：\n\n    字段名 字段值类型   描述\n    image   Object  图片信息，包括 id、url 以及图的长和宽\n    object  Object  检测到的服饰对象\n    colors  Array   分析出的颜色列表"
+    },
+    "fashion_search_same":{
+        "name" : "搜索同款（v1） ",
+        "url" : "https://api.aifashion.com/fashion/imgsearch",
+        "manual" : "\n    [搜索同款](https://developer.aifashion.com/#d3fd3e289e)\n\n    在指定数据集中找出和图片中指定服饰外观相似的条目，搜索结果一般都为同类别服饰。\n\n    例图如下：\n\n    Alt text\n\n    ## HTTP 请求\n    POST https://api.aifashion.com/fashion/imgsearch\n\n    ## 请求参数\n    参数名 参数值类型   描述\n    image_url   String  待识别图片 URL，公网可访问\n    image_base64    String  待识别图片二进制数据的 base64 编码\n    region  [Float, Float, Float, Float]    待分析区域的相对位置，[x1, y1, x2, y2]\n    dataset_name    String  指定数据集进行搜索\n    max_results Integer 最多返回条目数，默认值为 20，最小值为 1，最大值为 100\n    image_url、image_base64二选一即可。\n    region 可以为空，当 region 为空时默认分析图片中最显著服饰。\n    ## HTTP 响应结果\n    响应结果中主要字段及描述如下：\n\n    字段名 字段值类型   描述\n    image   Object  图片信息，包括 id、url 以及图的长和宽\n    object  Object  检测到的服饰对象\n    similar_items   Array   搜索到的相似条目\n    返回的条目可以是商品条目或图片条目，条目字段的具体定义请参照 商品条目实体 和 图片条目实体。"
+    },
+    "fashion_search_mix":{
+        "name" :" ",
+        "url" : "https://api.aifashion.com/fashion/mix",
+        "manual" : "\n    [搜索搭配](https://developer.aifashion.com/#b415b5e17a)\n\n    在指定数据集中找出和图片中指定服饰外观搭配的条目，搜索结果一般都为跨类别服饰。\n\n    ## HTTP 请求\n    POST https://api.aifashion.com/fashion/mix\n\n    ## 请求参数\n    参数名 参数值类型   描述\n    image_url   String  待识别图片 URL，公网可访问\n    image_base64    String  待识别图片二进制数据的 base64 编码\n    region  [Float, Float, Float, Float]    待分析区域的相对位置，[x1, y1, x2, y2]\n    dataset_name    String  指定数据集进行搭配\n    max_results Integer 最多返回条目数，默认值为 20，最小值为 1，最大值为 100\n    image_url、image_base64二选一即可。\n    region 可以为空，当 region 为空时默认分析图片中最显著服饰。\n    ## HTTP 响应结果\n    响应结果中主要字段及描述如下：\n\n    字段名 字段值类型   描述\n    image   Object  图片信息，包括 id、url 以及图的长和宽\n    object  Object  检测到的服饰对象\n    mix_items   Array   搜索到的搭配条目\n    返回的条目可以是商品条目或图片条目，条目字段的具体定义请参照 商品条目实体 和 图片条目实体。"
+    },
+    "fashion_search_mix_rj":{
+        "name" : "时尚搭配搜索-锐吉魔镜  ",
+        "url" : "https://api.aifashion.com/fashion/mixing-rj",
+        "manual" : ""
+    },
+    "fashion_ocr":{
+        "name" : "服饰吊牌OCR（Beta）    ",
+        "url" : "https://api.aifashion.com/fashion/ocr",
+        "manual" : "\n    服饰吊牌OCR\n\n    https://developer.aifashion.com/#ocr\n\n    在给定吊牌图片中返回识别的文字及位置。\n\n    例图如下：\n\n    Alt text\n\n    ## HTTP 请求\n    POST https://api.aifashion.com/fashion/ocr\n\n    ## 请求参数\n    参数名 参数值类型   描述\n    image_url   String  待识别图片 URL，公网可访问\n    image_base64    String  待识别图片二进制数据的 base64 编码\n    image_url、image_base64二选一即可。\n    ## HTTP 响应结果\n    响应结果中主要字段及描述如下：\n\n    字段名 字段值类型   描述\n    image   Object  图片信息，包括 id、url 以及图的长和宽\n    degree  String  文字角度\n    text    String  识别的文字\n    x_center    Float   文字框横坐标中心点\n    y_center    Float   文字框纵坐标中心点\n    width   Float   文字框宽度\n    height  Float   文字框高度"
+    },
+    "fashion_crop":{
+        "name" : "时尚切图（v1） ",
+        "url" : "https://api.aifashion.com/fashion/crop",
+        "manual" : "\n\n    服饰智能切图\n\n\n    https://developer.aifashion.com/#7fd01860b3\n\n\n    智能分析给定服装图片，给服装的细节抠图。\n\n    例图如下：\n\n    Alt text\n\n    ## HTTP 请求\n    POST https://api.aifashion.com/fashion/crop\n\n    ## 请求参数\n    参数名 参数值类型   描述\n    image_url   String  待识别图片 URL，公网可访问\n    image_base64    String  待识别图片二进制数据的 base64 编码\n    region  [Float, Float, Float, Float]    待 crop 的服饰区域的相对位置 [x1, y1, x2, y2]\n    image_url、image_base64二选一即可。\n    ## HTTP 响应结果\n    响应结果中主要字段及描述如下：\n\n    字段名 字段值类型   描述\n    object  Object  检测到的服饰类别\n    image   Object  图片信息，包括 id、url 以及图的长和宽\n    name    String  切图的类别\n    x   Float   切图框中心点 x 坐标\n    y   Float   切图框中心点 y 坐标\n    width   Float   切图框宽\n    height  Float   切图框高\n    confidence  Float   切图置信度"
+    },
+    "human_segment":{
+        "name" :" ",
+        "url" : "https://api.aifashion.com/human/seg",
+        "manual" : "\n    [人像分割](https://developer.aifashion.com/#8924c77173)\n\n    在给定图片中返回人像的像素级分割信息。\n\n    ## HTTP 请求\n    POST https://api.aifashion.com/human/seg\n\n    ## 请求参数\n    参数名 参数值类型   描述\n    image_url   String  待识别图片 URL，公网可访问\n    image_base64    String  待识别图片二进制数据的 base64 编码\n    image_url、image_base64二选一即可。\n    ## HTTP 响应结果\n    响应结果中主要字段及描述如下：\n\n    字段名 字段值类型   描述\n    image   Object  图片信息，包括 id、url 以及图的长和宽\n    segs    list    检测到的人像语义分割信息，面积由大到小排列\n    people_num  int 图片中检测到人的个数\n    seg 返回值使用方法\n    seg信息经过了cocotools进行了编码，成为一个json类型，使用者需要将返回的seg信息进行解码，解码后得到图片的mask掩码。\n\n    以使用cocotools的python接口为例：\n\n    首先安装pycocotools的python接口，\n\n    pip install pycocotools\n\n    使用pycocotools对mask进行编码：\n\n    from pycocotools import mask;\n    img_mask_json = mask.encode(img_mask) # img_mask is a np-array mask（背景是0，人像是1）\n\n    使用pycocotools对mask进行解码：\n\n    from pycocotools import mask;\n    img_mask = mask.decode(img_mask_json) # img_mask_json 为API中segs列表中每一个对应的json值。"
+    },
+    "human_keypoints":{
+        "name" : "人体关键点（v1）    ",
+        "url" : "https://api.aifashion.com/human/keypoints",
+        "manual" : "\n    人体关键点\n\n\n    https://developer.aifashion.com/#65b5e84a9f\n\n\n    在给定图片中返回人体的关键点信息。\n\n\n    人体关键点\n    ID  英文名称    中文名称\n    0   nose        鼻子\n    1   left_eye    左眼\n    2   right_eye   右眼\n    3   left_ear    左耳\n    4   right_ear   右耳\n    5   left_shoulder   左肩\n    6   right_shoulder  右肩\n    7   left_elbow  左肘\n    8   right_elbow 右肘\n    9   left_wrist  左腕\n    10  right_wrist 右腕\n    11  left_hip    左臀\n    12  right_hip   右臀\n    13  left_knee   左膝\n    14  right_knee  右膝\n    15  left_ankle  左踝\n    16  right_ankle 右踝\n\n\n    ## HTTP 请求\n    POST https://api.aifashion.com/human/keypoints\n\n    ## 请求参数\n    参数名 参数值类型   描述\n    image_url   String  待识别图片 URL，公网可访问\n    image_base64    String  待识别图片二进制数据的 base64 编码\n    image_url、image_base64二选一即可。\n    ## HTTP 响应结果\n    响应结果中主要字段及描述如下：\n\n    字段名 字段值类型   描述\n    image   Object  图片信息，包括 id、url 以及图的长和宽\n    keypoints   list    检测到的人体关键点信息\n    people_num  int 图片中检测到人的个数\n    关键点的类别信息详见[常量](https://developer.aifashion.com/#cec3d5c599)。\n\n    经验上keypoint置信度在0.80以上为可信预测。"
+    
+    },
+    "human_detect_ecpro":{
+        "name" :" ",
+        "url" : "https://api.aifashion.com/human/detect-ecpro",
+        "manual" : ""
+    },
+    "human_detect":{
+        "name" :" ",
+        "url" : "https://api.aifashion.com/human/detect",
+        "manual" : ""
+    },
+    "fashion_goodlook":{
+        "name" : "检测、锚点——好看APP ",
+        "url" : "https://api.aifashion.com/fashion/detect-goodlook",
+        "manual" : ""
+    },
+    "fashion_attribute_goodlook":{
+        "name" : "属性-好看APP ",
+        "url" : "https://api.aifashion.com/fashion/attribute-goodlook",
+        "manual" : ""
+    },
+    "human_gender" :{
+        "name" : "性别（v1）   ",
+        "url" : "https://api.aifashion.com/human/gender",
+        "manual" : ""
+    },
+    "classification_ecpro" :{
+        "name" : "ecpro上传图分类   ",
+        "url" : "https://api.aifashion.com/fashion/classification-ecpro",
+        "manual" : ""
+    },
+    "color_ecpro" :{
+        "name" : "颜色分析-ecpro   ",
+        "url" : "https://api.aifashion.com/fashion/color-ecpro",
+        "manual" : ""
+    },
+    "imgsearch_yi23":{
+        "name" : "以图搜图-衣二三",
+        "url" : "https://api.fashion.com/fashion/imgsearch-yi23",
+        "manual" : ""
+    },
+    "imgsearch_peace_bird":{
+        "name" : "以图搜图-太平鸟",
+        "url" : "https://api.aifashion.com/fashion/imgsearch-peace-bird",
+        "manual" : ""
+    },
+    "imgsearch_modesens_gucci":{
+        "name" : "以图搜图-modesens-gucci",
+        "url" : "https://api.aifashion.com/fashion/imgsearch-modesens-gucci",
+        "manual" : ""
+    },
+    "imgsearch_goodlook":{
+        "name" : "模特图检索-好看APP",
+        "url" : "https://api.aifashion.com/fashion/imgsearch-goodlook",
+        "manual" : ""
+    },
+    "imgsearch_yishion_sketch":{
+        "name" : "yishion线稿图搜索",
+        "url" : "https://api.aifashion.com/fashion/imgsearch-yishion-sketch",
+        "manual" : ""
+    },
+    "imgsearch_modesens_gucci":{
+        "name" : "以图搜图-富力",
+        "url" : "https://api.aifashion.com/fashion/imgsearch-fuli",
+        "manual" : ""
+    },
+    "imgsearch_jnby":{
+        "name" : "以图搜图-江南布衣",
+        "url" : "https://api.aifashion.com/fashion/imgsearch-jnby",
+        "manual" : ""
+    }
+}

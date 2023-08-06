@@ -1,0 +1,11 @@
+watchdog
+portalocker
+
+[:python_version == "2.7"]
+futures
+
+[test]
+pytest
+coverage
+pytest-cov
+pymongo

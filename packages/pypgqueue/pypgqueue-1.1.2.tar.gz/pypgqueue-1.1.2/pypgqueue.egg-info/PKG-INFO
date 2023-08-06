@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pypgqueue
+Version: 1.1.2
+Summary: A job queue based on PostgreSQL's listen/notify features
+Home-page: https://gitlab.com/tcucco/pypgq
+Author: Trey Cucco
+Author-email: fcucco@gmail.com
+License: MIT
+Download-URL: https://gitlab.com/tcucco/pypgq/-/archive/master/pypgq-master.tar
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3 :: Only

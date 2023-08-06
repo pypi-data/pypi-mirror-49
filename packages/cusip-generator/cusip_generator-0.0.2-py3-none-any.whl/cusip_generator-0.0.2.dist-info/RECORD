@@ -1,0 +1,14 @@
+cusip_generator/__init__.py,sha256=dxLZFBpFmzCkXwSjCLBPJttIwr4TCJYDjGrNtDZm-DI,32
+cusip_generator/main.py,sha256=OoioX0Y9G2e33foG_zcKp4BIOgRQh2tT5u3y0Lpjmxc,884
+cusip_generator/utils.py,sha256=Jn1MXgALn0YLHHh6Cs-dLag8B56baHGsKE6C7_vAWLM,2322
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_calculate_check_digit.py,sha256=1YLMnxbKaMX7j3ji6h0qmsD_CUEPpYTVbpfif97Di6c,1021
+tests/test_compose_eight_digits_cusip.py,sha256=dQgM0m9pa2mN2TlnKPm_GbFIeOoGYOYE3sghhz59BoI,569
+tests/test_guess_year.py,sha256=NqD0Vg6r0aopW0fb9KIjCL0uEio7O_JH9ZnhsQaZ3wI,900
+tests/test_main.py,sha256=PrngGhECSnHV3izbf8QqHuWdmUpJkrfxyQIpdhVij3Q,767
+tests/test_validate.py,sha256=KDiuwrwXVBIzNozSrkSb_KM0TSiluhnz2b74DYM3Qhc,2896
+cusip_generator-0.0.2.dist-info/LICENSE,sha256=SY-OC_P_8Ow2DwwlkpDB2mPgitUslA6VSzZgFkBntxQ,1065
+cusip_generator-0.0.2.dist-info/METADATA,sha256=daO1WpFRvaPSZcB4CnwnxgrwJZugOZUl93hZW6M7sWE,523
+cusip_generator-0.0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+cusip_generator-0.0.2.dist-info/top_level.txt,sha256=Tyy8V_4inNzSKVWBui6hUmc2aLA7rMZwfiRu9vM3ew8,22
+cusip_generator-0.0.2.dist-info/RECORD,,

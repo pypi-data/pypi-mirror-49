@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: semilattices
+Version: 0.9.0rc2
+Summary: UNKNOWN
+Home-page: https://semilattices.readthedocs.io/en/latest/
+Author: Joshua Chen
+Author-email: joshuawchen@utexas.edu
+License: LGPLv3
+Description: # README #
+        
+        This package implements a lightweight library for semilattices in python.
+        
+Platform: UNKNOWN

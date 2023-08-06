@@ -1,0 +1,9 @@
+README.md
+setup.py
+HeadersFormatter/HeadersFormatter.py
+HeadersFormatter/__init__.py
+HeadersFormatter.egg-info/PKG-INFO
+HeadersFormatter.egg-info/SOURCES.txt
+HeadersFormatter.egg-info/dependency_links.txt
+HeadersFormatter.egg-info/entry_points.txt
+HeadersFormatter.egg-info/top_level.txt

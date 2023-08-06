@@ -1,0 +1,7 @@
+gunicorn
+psycopg2
+django-prometheus
+sentry-sdk
+
+[test]
+coverage

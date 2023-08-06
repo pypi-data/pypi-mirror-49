@@ -1,0 +1,9 @@
+pbr!=0.7,<1.0,>=0.6
+requests
+oslo.config
+oslo.log
+six
+dateutils
+backports.lzma
+python-glanceclient
+keystoneauth1

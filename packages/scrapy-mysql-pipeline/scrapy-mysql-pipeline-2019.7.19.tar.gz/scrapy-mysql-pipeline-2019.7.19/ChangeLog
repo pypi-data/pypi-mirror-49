@@ -1,0 +1,17 @@
+CHANGES
+=======
+
+2019.07.19
+----------
+
+* bump version [fix] license type [mod] defaults in docs
+* Make charset a Parameter
+
+2017.10.10
+----------
+
+* [fix] requirements
+* [fix] setup.py
+* bump version
+* [add] package
+* initial commit

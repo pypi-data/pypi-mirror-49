@@ -1,0 +1,44 @@
+{
+  "definitions": {
+    "multilingualString": {
+      "$id": "#multilingualString",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "lang"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "lang": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "multilingualKeyword": {
+      "$id": "#multilingualKeyword",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "lang"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "lang": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

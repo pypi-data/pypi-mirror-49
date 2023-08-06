@@ -1,0 +1,9 @@
+diffenv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diffenv/diffviewer.py,sha256=L51Qtq1JNQhUXJUrHmkrBDhExXz9rJPLuOQG10i5KzE,670
+diffenv/main.py,sha256=OnL7xfQZSqlVb7AgJxJzFbwyr1n98xS6-MeGbisJiyE,2184
+diffenv-0.1.data/scripts/diffenv,sha256=BNZhiIClrg_PYDHIgP3JkPt7jVeRS-gVBoxDYdfPAqM,1705
+diffenv-0.1.dist-info/LICENSE,sha256=lTeGqAH8VkmuB084imvYq5EfhKWRCG9jNi3Cv_dwT0U,1070
+diffenv-0.1.dist-info/METADATA,sha256=k8V3QY9AejNseEDwrkbxceQoMGVOc8XqLVJeG-Nqqvk,805
+diffenv-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+diffenv-0.1.dist-info/top_level.txt,sha256=VTTMWjMnZWfKPEvZetYl22y7ci_jo2WXwj3uu9I4ApA,8
+diffenv-0.1.dist-info/RECORD,,

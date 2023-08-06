@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: threatspec
+Version: 0.5.0
+Summary: threat modeling as code
+Home-page: https://github.com/threatspec/threatspec
+Author: Fraser Scott
+Author-email: fraser.scott@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: threat modeling,cyber security,appsec
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5

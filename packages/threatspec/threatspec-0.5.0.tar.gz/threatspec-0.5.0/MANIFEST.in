@@ -1,0 +1,2 @@
+include threatspec/data/*
+include threatspec/report_templates/*

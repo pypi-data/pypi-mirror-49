@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Config",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "object",
+      "properties": {
+        "name": { "$ref": "#/definitions/name" },
+        "description": { "$ref": "#/definitions/description" }
+      },
+      "required": ["name", "description"]
+    },
+    "imports": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/import" }
+    },
+    "paths": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/path" }
+    }
+  },
+  "required": ["project", "paths"],
+  "definitions": {
+    "path": {
+      "type": ["string", "object"],
+      "properties": {
+        "path": { "type": "string" },
+        "ignore": { "type": ["string", "array"], "items": { "type": "string" } },
+        "mime": { "type": "string" }
+      },
+      "required": ["path"]
+    },
+    "import": {
+      "type": ["string", "object"],
+      "properties": {
+        "path": { "type": "string" }
+      },
+      "required": ["path"]
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

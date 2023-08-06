@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+ethereumrpc/__init__.py
+ethereumrpc/authproxy.py
+jsonrpc/__init__.py
+jsonrpc/authproxy.py
+jsonrpc/json.py
+jsonrpc/proxy.py
+python_ethereumrpc.egg-info/PKG-INFO
+python_ethereumrpc.egg-info/SOURCES.txt
+python_ethereumrpc.egg-info/dependency_links.txt
+python_ethereumrpc.egg-info/top_level.txt

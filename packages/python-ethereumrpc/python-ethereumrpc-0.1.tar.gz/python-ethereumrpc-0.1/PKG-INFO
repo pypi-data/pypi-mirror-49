@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: python-ethereumrpc
+Version: 0.1
+Summary: Enhanced version of python-jsonrpc for use with Ethereum
+Home-page: http://www.github.com/nggih/python-ethereumrpc
+Author: Linggih Saputro
+Author-email: <linggih.saputro@sci.ui.ac.id>
+Maintainer: Linggih Saputro
+Maintainer-email: <linggih.saputro@sci.ui.ac.id>
+License: UNKNOWN
+Description: # python-ethereumrpc
+        For python ethereum users, heavily adopted from https://github.com/jgarzik/python-bitcoinrpc
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent

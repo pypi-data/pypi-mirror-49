@@ -1,0 +1,145 @@
+type: map
+mapping:
+  name:
+    type: str
+    required: false
+  description:
+    type: str
+    required: false
+  tags:
+    type: seq
+    func: validate_tags
+    required: false
+    sequence:
+      - type: str
+  requirements:
+    type: seq
+    required: false
+    sequence:
+      - type: str
+  worker:
+    type: str
+    required: false
+  environment:
+    type: str
+    required: false
+  input:
+    type: seq
+    required: false
+    sequence:
+      - type: str
+  parameters:
+    type: map
+    func: validate_parameters
+    required: false
+    allowempty: true
+    map:
+        description:
+          type: str
+          required: false
+        value:
+          type: str
+          required: false
+  properties:
+    type: seq
+    required: false
+    sequence:
+      - type: map
+        mapping:
+          key:
+            type: str
+            required: true
+          value:
+            type: str
+            required: true
+  metric:
+    type: map
+    required: false
+    mapping:
+      channel:
+        type: str
+        required: true
+      goal:
+        type: str
+        enum:
+          - minimize
+          - maximize
+        required: true
+  open-webbrowser:
+    type: bool
+    required: false
+  tracking:
+    type: bool
+    required: false
+  tracking-url:
+    type: str
+    required: false
+  tracking-app-id:
+    type: str
+    required: false
+  organization-name:
+    type: str
+    required: false
+  project:
+    type: str
+    required: false
+  project-key:
+    type: str
+    required: false
+  paths-to-copy:
+    type: seq
+    required: false
+    sequence:
+      - type: map
+        mapping:
+          src:
+            type: str
+            required: true
+          dst:
+            type: str
+            required: false
+  exclude:
+    type: seq
+    required: false
+    sequence:
+      - type: str
+  backup:
+    type: seq
+    required: false
+    sequence:
+      - type: str
+  command:
+    type: seq
+    required: false
+    sequence:
+      - type: str
+  executable:
+    type: str
+    required: false
+  notebook:
+    type: str
+    required: false
+  notebook-file:
+    type: str
+    required: false
+  positional_notebook:
+    type: str
+    required: false
+  log-channels:
+    type: seq
+    required: false
+    sequence:
+      - type: any
+  ml-framework:
+    type: str
+    func: validate_ml_framework
+    required: false
+  disable-stdout-channel:
+    type: bool
+    required: false
+  disable-stderr-channel:
+    type: bool
+    required: false
+  pip-requirements-file:
+    type: str
+    required: false

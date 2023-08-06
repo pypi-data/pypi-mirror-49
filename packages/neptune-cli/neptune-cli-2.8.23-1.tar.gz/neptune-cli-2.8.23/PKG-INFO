@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: neptune-cli
+Version: 2.8.23
+Summary: Neptune client library
+Home-page: https://neptune.ml/
+Author: deepsense.ai
+Author-email: contact@neptune.ml
+License: Apache License 2.0
+Description:                 Neptune client library
+                    
+Platform: UNKNOWN

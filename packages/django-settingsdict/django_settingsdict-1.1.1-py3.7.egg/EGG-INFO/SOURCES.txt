@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_settingsdict/__init__.py
+django_settingsdict.egg-info/PKG-INFO
+django_settingsdict.egg-info/SOURCES.txt
+django_settingsdict.egg-info/dependency_links.txt
+django_settingsdict.egg-info/requires.txt
+django_settingsdict.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cryolo
+Version: 1.4.1rc0
+Summary: Picking procedure for cryo em single particle analysis
+Home-page: UNKNOWN
+Author: Thorsten Wagner
+Author-email: thorsten.wagner@mpi-dortmund.mpg.de
+License: Other/Proprietary License (all rights reserved)
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.4.0
+Provides-Extra: cpu
+Provides-Extra: gpu

@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+publish-notifier/__init__.py
+publish-notifier/base.py
+publish-notifier/compressor.py
+publish-notifier/errors.py
+publish-notifier/notifier.py
+publish-notifier/response.py
+publish-notifier/test.py
+publish_notifier.egg-info/PKG-INFO
+publish_notifier.egg-info/SOURCES.txt
+publish_notifier.egg-info/dependency_links.txt
+publish_notifier.egg-info/requires.txt
+publish_notifier.egg-info/top_level.txt

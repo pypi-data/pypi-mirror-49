@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: foliantcontrib.slugs
+Version: 1.0.1
+Summary: Extension for Foliant documentation tools to generate custom slugs.
+Home-page: https://github.com/foliant-docs/foliantcontrib.slugs
+Author: Artemy Lomov
+Author-email: artemy@lomov.ru
+License: MIT
+Description: # Slugs Extension for Foliant
+        
+        See the full description of this project at the [Foliant official documentation site](https://foliant-docs.github.io/docs/config/slugs/).
+        
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown

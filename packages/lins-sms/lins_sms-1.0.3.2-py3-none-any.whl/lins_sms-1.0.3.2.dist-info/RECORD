@@ -1,0 +1,9 @@
+lins_sms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lins_sms/apps.py,sha256=GlgPxug96nIhifTEEO7g1zcoSpR0jKNkkfdBZTrM9po,185
+lins_sms/mensagem_sms.py,sha256=hmfkNhbH1MzXxjYUAZEJxDg3Y0dXBkeArw913CBMqXE,198
+lins_sms/models/__init__.py,sha256=llLbu8Yw45M1k88sNVF29eTLrn1kQvob0o2nho1ppQY,38
+lins_sms/models/mensagem_sms.py,sha256=UFnt5vjnF-_Xlr-mMwVvspIfm6nmhYvl6a11a6DFyHc,451
+lins_sms-1.0.3.2.dist-info/METADATA,sha256=khwVw34CAYlJ_319OlgeYBGH9m58b--4r_Tx01QBXDg,259
+lins_sms-1.0.3.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+lins_sms-1.0.3.2.dist-info/top_level.txt,sha256=b9w5tNEq5pJRre1Ddp7eeUn1AXKuwyTfg6psUJ48DRI,9
+lins_sms-1.0.3.2.dist-info/RECORD,,

@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: logiontext
+Version: 0.3
+Summary: Lib for print text
+Home-page: https://github.com/pythonDev2060/logiontext
+Author: PYTHON DEV
+Author-email: pythonDev.2030@gmail.com
+License: MIT
+Download-URL: https://github.com/pythonDev2060/logiontext/archive/v_03.tar.gz
+Description: UNKNOWN
+Keywords: TEXT,CHARS,WORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

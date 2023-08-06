@@ -1,0 +1,211 @@
+Pyux - Python ux tools to ease tracking scripts
+===============================================
+
+**version** 0.1.0    **license** MIT (see LICENSE file)
+
+*Pyux contains a set of functions and classes that help with keeping track of what is happening during a script execution. It contains simple but helpful classes, feel free to [contribute](https://gitlab.com/roamdam/pyux).* 
+
+*Three modules are available : __console__ provide tools to print stuff to console while a script is executing ; __time__ provide tools in relation with time, which is measuring it or waiting for it ; __logging__ contains a wrapper around a logger from `logging` module to spare you configuring one.*
+
+
+# Installation
+
+> This package name on PyPi is `pyux-track`, but the name of the installed package is indeed `pyux`
+
+You can download `pyux` from PyPi. There is only one requirement which is package [colorama](https://pypi.org/project/colorama), which will be automatically installed with `pyux`.
+
+```bash
+pip install pyux-track
+```
+
+## _Interactive_ demo of pyux tools
+
+Once installed, the package comes with a demo script that you can use to make contact with the available classes before using them. The demo is exhaustive and interactive so you can skip some sections if you want, or quit it if you get bored. Launch the demo by typing in a terminal : 
+
+```bash
+python -m pyux
+```
+
+***
+
+# Module `console`
+
+This module contains classes that print things to the terminal during execution. Most of them are best used within an iteration loop or as iterators, where they can help track where you are.
+
+## Wheel
+
+Use `Wheel` as an iterator's decoration to have a turning _wheel_ printed during a `for` loop, turning as fast as the iterations go. By default a counter is printed next to the wheel, you can choose to print iteration value instead of iteration number, or a custom message updated (or not) at each iteration. See the [documentation](https://readthedocs.org/projects/pyux/) for details.
+
+```python
+from time import sleep
+from pyux.console import Wheel
+
+myrange = range(20)
+for step in Wheel(range):
+    sleep(0.1)
+```
+
+If you must, you can also instantiate `Wheel` outside of a loop and trigger it manually. It is useful when the iterable is dynamically defined (with `os.walk()` for instance) so that you can't use `Wheel` as a decorator. Let's say that you want to iterate the wheel for every file obtained through `os.walk`, you can workaround as such :
+
+```python
+import os
+from time import sleep
+from pyux.console import Wheel
+# This trigger a TypeError
+for root, dirs, file in Wheel(os.walk('venv')):
+	_ = 1
+
+wheel = Wheel()    				 # no need for an iterator argument in that case
+counter = 0
+for root, dirs, file in os.walk('path/to/folder/to/walk'):
+	sleep(0.01)					 # renders best if iterations are not too fast
+	wheel.print(step = counter)
+	counter += 1
+print('\n')						 # cursor is at end of line when loop finishes
+```
+
+Another exemple of a manual usage :
+
+```python
+from time import sleep
+from pyux.console import Wheel
+
+sentence = ['A', 'whole', 'sentence', 'of', 'words']
+wheel = Wheel(iterable = sentence)
+for counter, word in enumerate(sentence):
+    sleep(0.25)
+    wheel.print(step = counter, message = 'Running on word %s%s' % (word, ' '*10))
+wheel.close(message = 'End of sentence.%s' % (' '*10))
+```
+
+## ProgressBar
+
+Use `ProgressBar` as an iterator's decoration to have a progress bar printed during a `for` loop. It mimics, in a extremely simplified way, the behavior of the great [tqdm](https://github.com/tqdm/tqdm) progress bar. As for `Wheel`, you can use it as a decorator in a `for` loop, or manually.
+
+```python
+from time import sleep
+from pyux.console import ProgressBar
+
+for index in ProgressBar(2500):		# for ranges starting at zero, you can give the length
+	# load a file, for instance
+	sleep(0.001)
+	_ = index
+```
+
+`ProgressBar` can be combined with calls such as `enumerate` in the following order : `for el in enumerate(ProgressBar(mylist))`, since it works with iterables and not generators (which have no length). As for `Wheel`, you have to use it manually if you use it with `os.walk`.
+
+## ColourPen
+
+Use `ColourPen` as its name indicates : to write coloured text in terminal. It uses `colorama` package. Use a single instance for different styles thanks to the possibility of chaining `write` instructions. See the [documentation](https://readthedocs.org/projects/pyux/) for detail usage (flush, new lines, reset styles).
+
+```python
+from pyux.console import ColourPen
+
+pen = ColourPen()
+pen.write('Hello', color = 'cyan', style = 'normal')\
+	.write(' this is another', color = 'red')\
+	.write(' color on the same line.', color = 'green', newline = True)\
+	.write("The same color on a new line. I'm reseting styles after that.", newline = True, reset = True)\
+	.write('A normal goodbye.')\
+	.close()				# close() reset styles, close colorama util and makes a new line
+```
+
+# Module `time`
+
+This module contains classes that handle time : either measure it, or wait.
+
+## Timer
+
+`Timer` pause your script for the given number of seconds. With quite the same design as wheel, you can add a counter, a message, or both.
+
+```python
+from pyux.time import Timer
+
+print('A timer for 3 seconds with a message')
+Timer(delay = 3, message = 'Pausing 3 secs, tired')
+
+print('A timer with no message nor counter')
+Timer(delay = 3)
+```
+
+The timer can also be used within a loop, when you repeatedly have to wait. Specifying `overwrite = True` allow each iteration to be rewritten on the same line.
+
+```python
+for _ in range(3):
+	Timer(delay = 3, counter = _, message = 'Pausing 3 seconds at step %d' % _, overwrite = True)
+print('\n')					# cursor is at previous line when overwrite = True
+```
+
+## Chronos
+
+Use `Chronos` to measure user execution time, for a script or a loop. It works as a stopwatch : rather than wrapping around and timing an expression, it triggers at start, and the method `Chronos.lap()` then note time with `timeit.default_timer()` each time it is called (thus resembling a lap button on a stopwatch).
+
+```python
+from time import sleep
+from pyux.time import Chronos
+
+chrono = Chronos()
+print('Step one with duration approx. 1.512 secs')
+sleep(1.512)
+chrono.lap(name = 'step 1')
+
+print('Step two with duration approx. 1.834 secs')
+sleep(1.834)
+chrono.lap(name = 'step 2')
+
+chrono.compute_durations(ms = False)
+
+print('\nNow printing durations :')
+for name, time in chrono.durations.items():
+    print('Time for step %s : %d secs' % (name, time))
+```
+
+The syntax in a loop is the same. In a next release `Chronos` will be available as `for` loop decorator too. You can write a tsv with durations. See the [documentation](https://readthedocs.org/projects/pyux/) for details about columns.
+
+```python
+from time import sleep
+from pyux.time import Chronos
+chrono = Chronos()
+for _ in range(10):
+	sleep(_)
+	chrono.lap('Iteration %d' % _)
+
+chrono.compute_durations()
+print(chrono.durations)
+
+chrono.write_tsv(run_name = 'Exemple small loop', path = 'exemple_times.tsv')
+```
+
+## Module `logging`
+
+The module contains a function `init_logger` that returns a logger from [logging package](https://docs.python.org/3/howto/logging.html) with fixed formatting, but choice in the log file name. The default name contains the date and time of execution. 
+
+A different log file is created in a given folder at each main execution, if the default name is used. If the name is fixed and equal from one execution to another, log will be written to the same log file.
+
+`pyux` comes with a default format for the logger, but you can specify your own `logging.conf`. Feel free to use `ColourPen` to color logger messages :
+
+```python
+from pyux.logging import init_logger
+from pyux.console import ColourPen
+from shutil import rmtree
+
+logger = init_logger(folder = '~/logs', filename = 'activity', run_name = 'exemple', time_format = '%Y%m%d')
+pen = ColourPen
+
+# writes in green for debug
+pen.write(color = 'green')
+logger.debug('This ia a debug')
+
+# writes in red for critical
+pen.write(color = 'red', style = 'bright')
+logger.critical('This is a critical')
+
+# go back to normal for info
+pen.write(style = 'RESET_ALL')
+logger.info('This is an info')
+
+rmtree('~/logs')
+```
+
+The same logger can be used throughout a whole project by calling `logger = logging.getLogger(__name__)` in submodules.
+

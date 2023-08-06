@@ -1,0 +1,15 @@
+README.md
+setup.py
+subshare/__init__.py
+subshare/__main__.py
+subshare/haste.py
+subshare/screen.py
+subshare/shorten.py
+subshare/subshare.py
+subshare/upload.py
+subshare.egg-info/PKG-INFO
+subshare.egg-info/SOURCES.txt
+subshare.egg-info/dependency_links.txt
+subshare.egg-info/entry_points.txt
+subshare.egg-info/requires.txt
+subshare.egg-info/top_level.txt

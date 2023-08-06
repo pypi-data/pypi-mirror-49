@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: keras-gtar
+Version: 0.1.0
+Summary: Save and load keras models from GTAR trajectory files
+Home-page: UNKNOWN
+Author: Matthew Spellings
+Author-email: matthew.p.spellings@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: gtar
+Requires-Dist: keras
+
+UNKNOWN
+
+

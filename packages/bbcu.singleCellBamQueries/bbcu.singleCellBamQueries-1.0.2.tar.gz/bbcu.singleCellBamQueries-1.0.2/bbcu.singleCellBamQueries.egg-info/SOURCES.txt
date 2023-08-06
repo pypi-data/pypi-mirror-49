@@ -1,0 +1,17 @@
+MANIFEST.in
+README.txt
+VERSION.txt
+requirements.txt
+setup.py
+tox.ini
+bbcu.singleCellBamQueries.egg-info/PKG-INFO
+bbcu.singleCellBamQueries.egg-info/SOURCES.txt
+bbcu.singleCellBamQueries.egg-info/dependency_links.txt
+bbcu.singleCellBamQueries.egg-info/top_level.txt
+scripts/__init__.py
+scripts/single-cell-bam-queries.py
+singleCellBamQueries/__init__.py
+singleCellBamQueries/positions_query.py
+singleCellBamQueries/query.py
+tests/__init__.py
+tests/test_positionsQuery.py

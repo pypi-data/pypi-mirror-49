@@ -1,0 +1,11 @@
+compneuro/__init__.py,sha256=AGY2vceeWHmtiWY5b0PF9jxeg0pRRnY0YMFf3WTWu6c,107
+compneuro/kernels/__init__.py,sha256=aYObkKcgWmaDGx4bFsWDVnu1IcrIRbPYl6ut4wRJZbA,1243
+compneuro/kernels/factory/rate.py,sha256=xnJ7N4zbKw8zLeAdyeHhVXqiYfIfwYbAcrTINmPy6Qg,1190
+compneuro/signal.py,sha256=yVUzyQCT1K_7TXxOSD6yEz9MWztAskVh-AdkQ0hrD-Q,9998
+compneuro/simulate.py,sha256=SrJxCONoPSufLxMI7B_s27lLeBVegLvY-c_UYNDSjPk,1276
+compneuro/testing.py,sha256=82-ffR2BlantKMXB-r3y9gfN7aAnTU0lwfoi9qinzZY,2476
+compneuro/visualize.py,sha256=F8B0SgoV-h44sjXsgKS4WydVAzYQ5QNXhnDjkomMPcE,2548
+lcg_neuro_compneuro-0.1.0.dist-info/LICENSE.txt,sha256=bCPNNGPj0HIz5xOGQQ3Rs1Q_4a7YFHyxrOhGlXhgqNA,1050
+lcg_neuro_compneuro-0.1.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+lcg_neuro_compneuro-0.1.0.dist-info/METADATA,sha256=Mu8fgv7I4nyyiigoOKZ3XypszBDK2aHyUloemD6_Pwc,2996
+lcg_neuro_compneuro-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fileioapi
+Version: 0.0.2
+Summary: API wrapper for file.io
+Home-page: https://github.com/gr3atwh173/fileioapi
+Author: Great White
+License: MIT
+Project-URL: Bug Reports, https://github.com/Gr3atWh173/fileioapi/issues
+Project-URL: Source, https://github.com/Gr3atWh173/fileioapi
+Requires-Dist: requests
+
+File.io
+
+

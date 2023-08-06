@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+main.py
+setup.cfg
+setup.py
+mercurio/__init__.py
+mercurio/mercurio.py
+mercurio.egg-info/PKG-INFO
+mercurio.egg-info/SOURCES.txt
+mercurio.egg-info/dependency_links.txt
+mercurio.egg-info/not-zip-safe
+mercurio.egg-info/top_level.txt

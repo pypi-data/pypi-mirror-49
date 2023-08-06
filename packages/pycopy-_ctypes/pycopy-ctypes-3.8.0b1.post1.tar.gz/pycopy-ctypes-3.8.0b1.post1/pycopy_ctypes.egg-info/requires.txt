@@ -1,0 +1,3 @@
+pycopy-_ctypes
+pycopy-os
+pycopy-struct

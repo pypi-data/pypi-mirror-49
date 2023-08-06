@@ -1,0 +1,9 @@
+setuptools
+
+[test]
+coveralls
+pytest
+pytest-clarity
+pytest-cov
+pytest-mock
+pytest-sugar

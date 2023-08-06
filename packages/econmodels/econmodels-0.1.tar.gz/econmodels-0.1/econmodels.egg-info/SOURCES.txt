@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+econmodels/__init__.py
+econmodels/adstock.py
+econmodels/decomp.py
+econmodels/features.py
+econmodels/misc.py
+econmodels/models.py
+econmodels.egg-info/PKG-INFO
+econmodels.egg-info/SOURCES.txt
+econmodels.egg-info/dependency_links.txt
+econmodels.egg-info/not-zip-safe
+econmodels.egg-info/requires.txt
+econmodels.egg-info/top_level.txt

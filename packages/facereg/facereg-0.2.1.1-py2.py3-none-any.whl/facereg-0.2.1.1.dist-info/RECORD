@@ -1,0 +1,13 @@
+facereg/__init__.py,sha256=PMwSQ0qRk2NUvVkStfUyvfMjjIDC3IrE6yC05FPX4_M,641
+facereg/__main__.py,sha256=WzVBBQrLbUq-lpreGOfK1t7-aHEwGXIpNq-M3_DonQQ,1110
+facereg/encodings.pickle,sha256=G81eT_12dRwqWB1KZGxBxFWI6NNq6C6PFU_kD2tPdC0,6666
+facereg/face_encoder.py,sha256=4sh_lLOgfkvu4cCrUWRQ_h5WthQ8jJvdsY87Q4gKbe0,1710
+facereg/google_images.py,sha256=glimxb5mojM5Eip25sxAcim8eky7enuQXWwQDxIK4H0,1095
+facereg/recognize_faces.py,sha256=ib8qCb0WpHKZxwJNauVrcF3IL0hHE4j8vpxzxFc7lfs,2270
+facereg-0.2.1.1.dist-info/COPYING,sha256=cw5z6YKRjbeKKJ6qxVw0r0kAMZI662V7cdHfnYdJcSk,1064
+facereg-0.2.1.1.dist-info/LICENSE,sha256=cw5z6YKRjbeKKJ6qxVw0r0kAMZI662V7cdHfnYdJcSk,1064
+facereg-0.2.1.1.dist-info/METADATA,sha256=pZHAHd1w_1527gF65A7UV8QDE7MGBtfw-l9G72yZjH0,4177
+facereg-0.2.1.1.dist-info/NOTICE,sha256=0WFMrzhtkhpQEjDsaJBnQNX3hScTIJNegXGrxRYvl0M,84
+facereg-0.2.1.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+facereg-0.2.1.1.dist-info/top_level.txt,sha256=d7UgSoVlYAj8ku7AL_YI170s4FA2D7Q2FOhV8bjyVnk,8
+facereg-0.2.1.1.dist-info/RECORD,,

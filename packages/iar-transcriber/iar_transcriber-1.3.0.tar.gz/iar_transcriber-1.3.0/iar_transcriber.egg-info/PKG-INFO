@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: iar-transcriber
+Version: 1.3.0
+Summary: A phonetic transcriber for Spanish language.
+Home-page: https://github.com/ivansiiito/iar_transcriber
+Author: Iván Arias Rodríguez
+Author-email: ivan.arias.rodriguez@gmail.com
+License: UNKNOWN
+Description: # IAR Transcriber
+        
+        The IAR (IvÃ¡n Arias RodrÃ­guez) Transcriber is a transcriber developed for Spanish. It is able to get the
+         phonetic transcription of a Spanish text.
+        
+        More information to be added in the future...
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

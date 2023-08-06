@@ -1,0 +1,7 @@
+setup.py
+Get_Number/__init__.py
+Get_Number/test.py
+Get_Number.egg-info/PKG-INFO
+Get_Number.egg-info/SOURCES.txt
+Get_Number.egg-info/dependency_links.txt
+Get_Number.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+README.md
+setup.py
+bilispider/__init__.py
+bilispider/bilispider.py
+bilispider/gui.py
+bilispider/headers.py
+bilispider/start.py
+bilispider.egg-info/PKG-INFO
+bilispider.egg-info/SOURCES.txt
+bilispider.egg-info/dependency_links.txt
+bilispider.egg-info/entry_points.txt
+bilispider.egg-info/top_level.txt

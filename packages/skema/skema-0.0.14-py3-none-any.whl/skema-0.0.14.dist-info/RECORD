@@ -1,0 +1,14 @@
+skema/__init__.py,sha256=eYSeERdxt7-guSRXh-bBcd_OuknKxkRdXP0ovof-Qjc,484
+skema/__main__.py,sha256=TcgJ7_p1uZJO9JrYk85M2nec4jdWKcvkgXZqq9QnIM8,1066
+skema/constants.py,sha256=YFu50AuTmFdEnNvuEkqmT2uDOaxVarAva5Ljpj8KfkI,139
+skema/make_schema.py,sha256=VL4wdn8dc1vP80GD9XH2u49YQyQ26Tq5fWChRdeZr2E,2983
+skema/make_tree.py,sha256=YKNNfdy7o8UbFyG7Ms4X5xDtEgg1TXrkaNTL2LThzmQ,4101
+skema/parser.py,sha256=mCgRgwkCouvdt30plg-CvZXaiUA-z2YnsrWuomlt_uo,12085
+skema/resolve_refs.py,sha256=p76yb_NVVK0m2HCtLle_oxyP3zn_6d6BUT3vCh8uSX8,3390
+skema/support.py,sha256=con3kix8DVONcf3S5OgnghLzdoT9UEx2INty_d1Y8E4,46
+skema/tokenize.py,sha256=jxrtvLPqiDIVnSqnDwOGo3IWQlSvzgcxI5lsJxkW6ko,1579
+skema/tree.py,sha256=Bz2RDSuaoFyyQ2ITyKPROOn1r_NN7ingnjMohJxyHLs,1583
+skema-0.0.14.dist-info/METADATA,sha256=8bK0uzelcQnDPQA_TzYgLcTfa9xMsNbXA7lfTGR0RWo,685
+skema-0.0.14.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+skema-0.0.14.dist-info/top_level.txt,sha256=_1X5Qi_JC5bM7mi2L5cBSbeYfX_8Efg7N2TGQNoZvqI,6
+skema-0.0.14.dist-info/RECORD,,

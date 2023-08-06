@@ -1,0 +1,9 @@
+cmd_tools-0.0.4.data/scripts/command.py,sha256=QjVpwD7CIYELs7BiwOrqOf8sY6-qQBlI1dpVCANpe7s,872
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=X0Cezn3mUqYCYm-PJ3Q7sUffAcNDdPngristIR3_rs4,104
+tests/test_cli.py,sha256=a9ihFEWMW5u4B--qKfI1L5m5rJwDlsrSmIMFFkP3gqc,1289
+cmd_tools-0.0.4.dist-info/METADATA,sha256=NAnMtX_aLWrUad81YbOCUdr-RFlITiQiZHzDr-QpPvc,229
+cmd_tools-0.0.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+cmd_tools-0.0.4.dist-info/entry_points.txt,sha256=tDTx_N1aTyrp3XVu0qNKeyGe5yTyur-wchfcopnUtgs,83
+cmd_tools-0.0.4.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+cmd_tools-0.0.4.dist-info/RECORD,,

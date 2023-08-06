@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        hello=command:hello
+        cmd=command:cmd
+    

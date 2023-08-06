@@ -1,0 +1,51 @@
+`Maintenance <https://GitHub.com/serhii73/ukrdict/graphs/commit-activity>`__
+`made-with-python <https://www.python.org/>`__
+`made-with-python <https://github.com/python/black>`__ `GitHub
+contributors <https://GitHub.com/serhii73/ukrdict/graphs/contributors/>`__
+`GitHub stars <https://GitHub.com/serhii73/ukrdict/stargazers/>`__
+|GitHub forks| `GitHub
+issues <https://GitHub.com/serhii73/ukrdict/issues/>`__ `Build
+Status <https://travis-ci.org/serhii73/ukrdict>`__
+`Maintainability <https://codeclimate.com/github/serhii73/ukrdict/maintainability>`__
+`BCH compliance <https://bettercodehub.com/>`__ `Total
+alerts <https://lgtm.com/projects/g/serhii73/ukrdict/alerts/>`__
+`Language grade:
+Python <https://lgtm.com/projects/g/serhii73/ukrdict/context:python>`__
+`Codacy
+Badge <https://app.codacy.com/app/serhii73/ukrdict?utm_source=github.com&utm_medium=referral&utm_content=serhii73/ukrdict&utm_campaign=Badge_Grade_Settings>`__
+`Python 3 <https://pyup.io/repos/github/serhii73/ukrdict/>`__
+`Updates <https://pyup.io/repos/github/serhii73/ukrdict/>`__
+
+ukrdict
+=======
+
+Python wrapper for `sum.in.ua/api <http://sum.in.ua/api>`__
+
+Search for the word meaning
+'''''''''''''''''''''''''''
+
+.. code:: bash
+
+   ukrdict тин
+
+::
+
+   ТИН, у, чол. Огорожа, сплетена з лози, тонкого гілля
+   пліт. Та вже ж наші слобожани Тини городили; Із-під
+   лугу, із-під гаю Лозу волочили (Яків Щоголів, Поезії, 1958, 130);
+
+Installation
+''''''''''''
+
+1. Clone the repository
+2. `Create Python virtual
+   environment <https://docs.python.org/3.7/library/venv.html>`__
+3. Install ukrdict package
+
+.. code:: bash
+
+   pip install ukrdict
+   ukrdict жовтогарячий
+
+.. |GitHub forks| image:: https://img.shields.io/github/forks/serhii73/ukrdict.svg?style=social
+

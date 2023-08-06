@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyDSlog/IO5640_stream.py
+PyDSlog/__init__.py
+PyDSlog.egg-info/PKG-INFO
+PyDSlog.egg-info/SOURCES.txt
+PyDSlog.egg-info/dependency_links.txt
+PyDSlog.egg-info/top_level.txt

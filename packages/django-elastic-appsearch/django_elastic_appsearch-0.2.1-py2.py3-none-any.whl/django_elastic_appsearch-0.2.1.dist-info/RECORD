@@ -1,0 +1,13 @@
+django_elastic_appsearch/__init__.py,sha256=eyDoV6GG1AcZZK3d_SE9GZQXKUGG-5wlHRaJGCwSHB4,214
+django_elastic_appsearch/apps.py,sha256=HWS2JmrU6BqYZtUkNAfd-fTniNFyEYkdP5ky7WG5AuY,1755
+django_elastic_appsearch/clients.py,sha256=Z42a4Ov4BSnpENr1lJBu7wc2jZvr4bRuhxa3jDPd5r0,466
+django_elastic_appsearch/orm.py,sha256=K8v6kHQHxTeKaVB1kMqPhyU0uXUShljH3bsLx9cKnC8,3718
+django_elastic_appsearch/serialisers.py,sha256=3fT-VWy5qCne6GCqkeeejZgHgbBPSNoeD78vCfeHGfU,626
+django_elastic_appsearch/slicer.py,sha256=0HrX04zr_eTTQY2tZf5muDA9BMp7D0NZ2MQ-_0suoBw,730
+django_elastic_appsearch/test.py,sha256=b8FfK6cNPcD0zu7ql2lk5n1r6QlotF1Fbb_RjAJDSCQ,4388
+django_elastic_appsearch-0.2.1.dist-info/DESCRIPTION.rst,sha256=DU5MFEmvDjRRW8UeOMZ4PLPgEh9TBY7e6o-VNEGzutk,4440
+django_elastic_appsearch-0.2.1.dist-info/METADATA,sha256=ZvIqiIg35b2atlpQ7YXhfbuh93DZD6SYILH895GYsE4,5145
+django_elastic_appsearch-0.2.1.dist-info/RECORD,,
+django_elastic_appsearch-0.2.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_elastic_appsearch-0.2.1.dist-info/metadata.json,sha256=vPBztKV3PcmHQ2n4cDWb7ub7bBEY1MecTOeopUtdLFo,843
+django_elastic_appsearch-0.2.1.dist-info/top_level.txt,sha256=KPK9Yo6KOIAz2V5_Yz1w1pqkGVWxSNTOPArhp9RbtL4,25

@@ -1,0 +1,12 @@
+.gitignore
+README.md
+setup.py
+example/main.py
+qubolepystream/__init__.py
+qubolepystream/connector.py
+qubolepystream.egg-info/PKG-INFO
+qubolepystream.egg-info/SOURCES.txt
+qubolepystream.egg-info/dependency_links.txt
+qubolepystream.egg-info/not-zip-safe
+qubolepystream.egg-info/requires.txt
+qubolepystream.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+flask
+flask-restful
+ramlfications
+dill
+pandas

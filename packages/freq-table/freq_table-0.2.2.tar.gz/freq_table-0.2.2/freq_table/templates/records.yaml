@@ -1,0 +1,21 @@
+- affiliation: '"Круглый стол" радиолюбителей Самарской области'  # 
+  call_sign: Радиолюбительские
+  date: 2007-03-06
+  description: '"Круглый стол" радиолюбителей Самарской области'
+  frequency: '3.6150'
+  modulation: SSB
+  place: Самара
+  service_type: Любительская
+  signal_type: Голос
+  url: http://www.radioscanner.ru/base/freq5063.html
+  
+- affiliation: Наземная сеть МВЛ (местные воздушные линии) зап. Узбекистана
+  call_sign: Нукус, Ургенч...
+  date: 2006-03-23
+  description: ''
+  frequency: '4.4950'
+  modulation: AM
+  place: Самара
+  service_type: Фиксированная
+  signal_type: Голос
+  url: http://www.radioscanner.ru/base/freq2524.html

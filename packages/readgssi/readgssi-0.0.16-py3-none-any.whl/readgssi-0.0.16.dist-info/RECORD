@@ -1,0 +1,17 @@
+readgssi/__init__.py,sha256=9YqjPbnLk--RJkiWJRGU7orXgmpBOsE9q0lJrFxZOQA,93
+readgssi/arrayops.py,sha256=Qt-ZavDjXEV32mQNqInZ5_bvjxxUd-JyWGJUpSBvqWk,6864
+readgssi/config.py,sha256=yABxVGOmfMyUuSm8fCmsvDeh6F0JrSGYMccu2DzQONk,4149
+readgssi/constants.py,sha256=f6onqopHpSUsi1uIN13v32WYPeJHTLPQm9xZkcw9VH4,2309
+readgssi/dzt.py,sha256=PlaiYYIA3HZhfqJALuQRiAzEYhkJdlV4mAK8fjdl2kw,13793
+readgssi/filtering.py,sha256=4LxAhlBV8CViJMC8Y2cMNQ50VYw1l-HJz-EHSVH67HU,5572
+readgssi/functions.py,sha256=dk95Or8C_5bSrUlg6osRpGaZ_ey4pQkLzpD3OAgWdM8,7477
+readgssi/gps.py,sha256=5rkaG8NbAZkZywQx7I_Qo7HCr2s36q3fDT4jrXLxX3E,12190
+readgssi/plot.py,sha256=9yKJDnBJQMLDOPlJi0ftMUIKIndhAESTsZL-KhkVOkA,12722
+readgssi/readgssi.py,sha256=YHcvUelJ4t5N4T6kG_tyZZNxS5xx55nNAQnrVYHH1Mw,28030
+readgssi/translate.py,sha256=eAbwxD1hwP52cS9sUqM74UQGpbrhpR03LsmKHCN98b4,10957
+readgssi-0.0.16.dist-info/LICENSE,sha256=dql8h4yceoMhuzlcK0TT_i-NgTFNIZsgE47Q4t3dUYI,34520
+readgssi-0.0.16.dist-info/METADATA,sha256=mz8dQo7Df0kz7QwZQ86SALU4_RZEGMJKCG_aDrPFbUY,20020
+readgssi-0.0.16.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+readgssi-0.0.16.dist-info/entry_points.txt,sha256=LLPUTkE70fYPr0vH5n9kKmzCFQ8X057TfI8Jdu76Qvc,71
+readgssi-0.0.16.dist-info/top_level.txt,sha256=KdkIgWzPYem5xCp-MkrlWceDIOanCQqtMKRzhSk0EGA,9
+readgssi-0.0.16.dist-info/RECORD,,

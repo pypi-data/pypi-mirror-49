@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: spintop
+Version: 0.5.3
+Summary: A fork of OpenHTF 1.4.2, the open hardware testing framework.
+Home-page: UNKNOWN
+Author: John Hawley
+Author-email: madsci@google.com
+Maintainer: William Laroche
+Maintainer-email: william.laroche@tackv.ca
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: serial_collection_plug
+Provides-Extra: usb_plugs
+Provides-Extra: update_units

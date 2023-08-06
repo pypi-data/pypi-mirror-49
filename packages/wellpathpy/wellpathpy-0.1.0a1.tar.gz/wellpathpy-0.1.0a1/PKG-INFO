@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: wellpathpy
+Version: 0.1.0a1
+Summary: Light package to load well deviations
+Home-page: https://github.com/Zabamund/wellpathpy
+Author: Robert Leckenby, Brendon Hall, Jørgen Kvalsvik
+Author-email: fracgeol@gmail.com
+License: LGPL-3.0
+Description: 
+        To do
+        
+Platform: any

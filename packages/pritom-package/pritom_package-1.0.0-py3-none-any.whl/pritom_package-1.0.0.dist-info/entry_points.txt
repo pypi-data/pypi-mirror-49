@@ -1,0 +1,3 @@
+[console_scripts]
+pritom_package = project.script1
+

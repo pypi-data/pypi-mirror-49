@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: needle-forms
+Version: 0.0.1
+Summary: Abstraction layer to GCP resources
+Home-page: https://github.com/ciandt-dev/needle-forms
+Author: dmiranda
+Author-email: dmiranda@ciandt.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+

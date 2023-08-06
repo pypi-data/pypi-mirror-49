@@ -1,0 +1,12 @@
+numpy
+pandas
+pycuda
+networkx
+
+[docs]
+sphinx
+sphinx-rtd-theme
+
+[molecular]
+ase
+pymatgen

@@ -1,0 +1,8 @@
+README.md
+setup.py
+bdfparse/__init__.py
+bdfparse/bdfparse.py
+bdfparse.egg-info/PKG-INFO
+bdfparse.egg-info/SOURCES.txt
+bdfparse.egg-info/dependency_links.txt
+bdfparse.egg-info/top_level.txt

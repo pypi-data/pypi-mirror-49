@@ -1,0 +1,10 @@
+pytest_bandit/__init__.py,sha256=pIxUWQG2brcif6SJXtn4CcMr6f5oY-6lwZ_FJEilJwQ,22
+pytest_bandit/controller.py,sha256=oW70Z98o0Qz10AVXNNiSSpMI41dQvoorEtiKipDggKI,2747
+pytest_bandit/errors.py,sha256=6701SwDQzVdk4B38r03HsvvkQjRO5Qk94DRDBxVL4dc,78
+pytest_bandit/plugin.py,sha256=-fiLRg8LE6MQcQxbMShMq5g0X7dTJCUn3RyQejNhRns,4997
+pytest_bandit-0.5.2.dist-info/LICENSE,sha256=TK2IkppLXMMfa-uCMMA5uCMJvUJdtTb-lAGMi-hAQ_Q,1082
+pytest_bandit-0.5.2.dist-info/METADATA,sha256=lb4xRtwqw08P-ykk2uzs5Lfjs3d7UAwJu7YndSakEBQ,3216
+pytest_bandit-0.5.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pytest_bandit-0.5.2.dist-info/entry_points.txt,sha256=6Bb_7n7UuDEDTbh_NRbSi1Eg4vs-gdFxGLWGo3OMwk8,42
+pytest_bandit-0.5.2.dist-info/top_level.txt,sha256=Q3BjPjZ9UWi0_d48XCyhbt1nXlo-VMBIrC4eqGjCh3s,14
+pytest_bandit-0.5.2.dist-info/RECORD,,

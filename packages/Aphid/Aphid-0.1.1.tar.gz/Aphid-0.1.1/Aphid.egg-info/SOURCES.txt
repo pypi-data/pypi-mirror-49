@@ -1,0 +1,10 @@
+README.md
+setup.py
+Aphid/__init__.py
+Aphid/objects.py
+Aphid/recursion_tools.py
+Aphid/tests.py
+Aphid.egg-info/PKG-INFO
+Aphid.egg-info/SOURCES.txt
+Aphid.egg-info/dependency_links.txt
+Aphid.egg-info/top_level.txt

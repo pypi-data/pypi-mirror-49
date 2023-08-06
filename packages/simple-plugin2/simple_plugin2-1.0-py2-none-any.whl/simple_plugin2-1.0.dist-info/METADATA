@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: simple-plugin2
+Version: 1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: John Doe
+Author-email: john@example.org
+License: BSD
+Platform: any
+Requires-Dist: segno
+
+UNKNOWN
+
+

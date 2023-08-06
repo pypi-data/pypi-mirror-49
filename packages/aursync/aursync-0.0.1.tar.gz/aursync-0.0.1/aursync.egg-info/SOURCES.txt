@@ -1,0 +1,10 @@
+README.md
+setup.py
+aursync/__init__.py
+aursync/messager.py
+aursync/mpmc.py
+aursync.egg-info/PKG-INFO
+aursync.egg-info/SOURCES.txt
+aursync.egg-info/dependency_links.txt
+aursync.egg-info/requires.txt
+aursync.egg-info/top_level.txt

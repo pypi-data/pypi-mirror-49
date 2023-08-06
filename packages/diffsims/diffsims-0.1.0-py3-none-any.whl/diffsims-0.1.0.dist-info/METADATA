@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: diffsims
+Version: 0.1.0
+Summary: Diffraction Simulations in Python.
+Home-page: https://github.com/pyxem/diffsims
+Author: Duncan Johnstone
+Author-email: dnj23@cam.ac.uk
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: scikit-image (==0.15.0)
+Requires-Dist: matplotlib (<3.1.0)
+Requires-Dist: transforms3d
+Requires-Dist: diffpy.structure (>=3.0.0)
+
+|Travis|_ |AppVeyor|_ |Coveralls|_ |pypi_version|_  |doi|_
+
+.. |Travis| image:: https://travis-ci.org/pyxem/diffsims.svg?branch=master
+.. _Travis: https://travis-ci.org/pyxem/diffsims
+
+.. |AppVeyor| image:: https://ci.appveyor.com/api/projects/status/github/diffsims/diffsims?svg=true&branch=master
+.. _AppVeyor: https://ci.appveyor.com/project/dnjohnstone/diffsims/branch/master
+
+.. |Coveralls| image:: https://coveralls.io/repos/github/pyxem/diffsims/badge.svg?branch=master
+.. _Coveralls: https://coveralls.io/github/pyxem/diffsims?branch=master
+
+.. |pypi_version| image:: http://img.shields.io/pypi/v/diffsims.svg?style=flat
+.. _pypi_version: https://pypi.python.org/pypi/diffsims
+
+.. |doi| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.2649351.svg
+.. _doi: https://doi.org/10.5281/zenodo.2649351
+
+
+diffsims is an open-source python library for simulating X-ray & electron diffraction.
+
+If simulations performed using diffsims form a part of published work please cite the DOI at the top of this page.
+
+diffsims is released under the GPL v3 license.
+
+

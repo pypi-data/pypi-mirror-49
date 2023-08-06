@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pytest-eucalyptus
+Version: 0.2.0
+Summary: Gherkin runner compatible with Lettuce
+Home-page: https://github.com/wayfair/pytest-eucalyptus
+Author: Dennis Miasoutov
+Author-email: dmiasoutov@wayfair.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Pytest
+Requires-Dist: ansicolors (>=1.1.8)
+Requires-Dist: colorama (>=0.3.9)
+Requires-Dist: future (>=0.17.0)
+Requires-Dist: gherkin-official (<5,>=4.1.3)
+Requires-Dist: repoze.lru
+Requires-Dist: pytest (>=4.2.0)
+Provides-Extra: tests_require
+Requires-Dist: coverage ; extra == 'tests_require'
+Requires-Dist: factory-boy ; extra == 'tests_require'
+Requires-Dist: mock ; extra == 'tests_require'
+Requires-Dist: pycodestyle ; extra == 'tests_require'
+Requires-Dist: pylint (>=1.9.3) ; extra == 'tests_require'
+Requires-Dist: setuptools-scm ; extra == 'tests_require'
+Requires-Dist: Sphinx ; extra == 'tests_require'
+Requires-Dist: pytest-cov (==2.5.1) ; extra == 'tests_require'
+
+# Eucalyptus - BDD plugin for Pytest
+> A nice fork of [Aloe](https://github.com/aloetesting/aloe). 
+Migrated from Nose to Pytest.
+
+**pytest-eucalyptus** has been built to feature the best of both worlds: 
+- [Aloe](https://github.com/aloetesting/aloe) which implements great infrastructure and uses the original Gherkin parser.
+- [pytest-bdd](https://github.com/pytest-dev/pytest-bdd) does not require a separate runner and benefits from the power and flexibility of Pytest.
+
+
+Install:
+
+    pip install pytest-eucalyptus
+
+
+Migrating from Aloe
+----------------------
+
+TBD
+
+## License
+
+DociQL is licensed under the Apache License 2.0 – see the [LICENSE.md](https://github.com/wayfair/pytest-eucalyptus/blob/master/LICENSE) for specific details.
+
+

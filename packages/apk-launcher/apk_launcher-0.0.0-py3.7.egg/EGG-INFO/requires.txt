@@ -1,0 +1,3 @@
+androguard
+adb
+click

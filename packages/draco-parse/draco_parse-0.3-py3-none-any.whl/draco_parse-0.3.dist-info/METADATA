@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: draco-parse
+Version: 0.3
+Summary: Parse and test purpose
+Home-page: https://github.com/roberto/parse
+Author: Roberto
+Author-email: roberto.gonzales@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: validators
+Requires-Dist: bs4
+
+UNKNOWN
+
+

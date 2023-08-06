@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: android-dumpkey
+Version: 0.1.2
+Summary: Python port of com.android.dumpkey.DumpPublicKey
+Home-page: http://github.com/tgalal/android-dumpkey/
+Author: Tarek Galal
+Author-email: tare2.galal@gmail.com
+License: Apache License, Version 2.0
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Dist: cryptography
+
+UNKNOWN
+
+

@@ -1,0 +1,9 @@
+roboversion/__init__.py,sha256=3dCVN_NsaM3Ft4deYBLc6XqXoygESluleJ-0aPY1s0E,3224
+roboversion/__main__.py,sha256=5C3wzON8K4FgsF0_RGgM-ZXdP7NbjOyrXHMDnLCEt5g,38
+roboversion/git.py,sha256=GPxPIZSX-ELTfi7GWro46HyDEDnqmY41sN4AvBfpiUg,7675
+roboversion/version.py,sha256=HiO6Vj-3vpm46g3w01LERPvTHU4H4O72VKzNtRL50ms,9018
+roboversion-1.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+roboversion-1.2.0.dist-info/METADATA,sha256=bhAvCbqMUqG0HVVwFN14FbjTG0uy4H5RWB8krbHpVtA,1066
+roboversion-1.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+roboversion-1.2.0.dist-info/top_level.txt,sha256=bw6bG6kersrzxA444E7dMMw4SlPf1jX4vB6NEJMNACc,12
+roboversion-1.2.0.dist-info/RECORD,,

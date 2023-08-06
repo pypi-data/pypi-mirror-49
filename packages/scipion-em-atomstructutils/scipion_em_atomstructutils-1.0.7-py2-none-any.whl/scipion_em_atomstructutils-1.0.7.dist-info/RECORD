@@ -1,0 +1,16 @@
+atomstructutils/__init__.py,sha256=630UsnVE7ET2dlgRkg5hMj24n-K-VsMnV_IyiDioThI,1489
+atomstructutils/bibtex.py,sha256=G4lXemlFJrtPGy_1O0uoT2JBCQDayzd0aCITgUSj1Ck,1566
+atomstructutils/constants.py,sha256=IjckKvqK5rMb6wJmIIEH2d_46vWtAEfoZ1HcHTUVtTc,1093
+atomstructutils/protocols.conf,sha256=WKkJNTr36FJJvDMFxIbDmjPemtfEQULlqenPGS3onBE,1236
+atomstructutils/wizards.py,sha256=U4I1EN9QdFI4X-k2H2n9lr4N_mGv0sZM9zxCw7yw20s,1793
+atomstructutils/protocols/__init__.py,sha256=jkdieSm1o4hLAZxl7dbvEEz9X7zofbMFvkjG5iunAjI,1266
+atomstructutils/protocols/protocol_convertsymmetry.py,sha256=XM8QF51sgY2wkfoiuVi9kndJ8ydlE2DdZs67IEu3-6s,7464
+atomstructutils/protocols/protocol_operate.py,sha256=4urYYI74UfYTqAV3PipPVMz6yTRaoNiwGkluy-S-O8E,6770
+atomstructutils/tests/__init__.py,sha256=UlzMk_SZUN5ljX0kbpQuJSYp486N70v523vPNKN6y3I,1260
+atomstructutils/tests/test_protocol_convertsymmetry.py,sha256=3pqlL3HA3RxYtD_XGlGzcNtYMFRGbu-a8QRRwcIwndo,5230
+atomstructutils/tests/test_protocol_operate.py,sha256=EdgQpLMszrGBWrfKp92L0O1QYiPAzDea-YGG1er2C2s,4581
+scipion_em_atomstructutils-1.0.7.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+scipion_em_atomstructutils-1.0.7.dist-info/METADATA,sha256=k5kXlpqMs_o7vra84jl5VuHdpDCs1ISKB8lOLtXZ1G0,2097
+scipion_em_atomstructutils-1.0.7.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+scipion_em_atomstructutils-1.0.7.dist-info/top_level.txt,sha256=k7F2gdr-VS4S_K37lLr2RCE19RzRsHLYDnySLW0ihLc,16
+scipion_em_atomstructutils-1.0.7.dist-info/RECORD,,

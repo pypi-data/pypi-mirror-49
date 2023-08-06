@@ -1,0 +1,10 @@
+linux_touchpad/__init__.py,sha256=PGO0LlVsK4wmhIVGAqjQKxD7V52TKyEsHTbZpLsvUu8,289
+linux_touchpad/__main__.py,sha256=7tzuGbeA5JiJWE_g9pzlcTXSsKlR-iEXNEbdYd4jZMs,62
+linux_touchpad/linux-touchpad.lock,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linux_touchpad/main.py,sha256=uFBeSfdVep0x3ju2Clz-Stmz3Rt0gASP3PqKNL-7bHQ,1361
+linux_touchpad/touchpad.py,sha256=2B19sfDHQJ5YTzLjAdf14DysiK-I3TMzmXfwCdelDv0,642
+linux_touchpad/watchdog.py,sha256=eNuScaw7CUKu_nx0sKm5Seio4VcSZtbGko2bn0SLNuY,2604
+linux_touchpad-0.2.5.dist-info/LICENSE,sha256=pmdd9UBGyPeMkbg9Eh6MUQnmH_C_12lkQa6rkwVda-8,1079
+linux_touchpad-0.2.5.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+linux_touchpad-0.2.5.dist-info/METADATA,sha256=iZlZN3GPJlwoRLYqx1RMFl5UO9NQMu6q7xrlzfTTwoo,1907
+linux_touchpad-0.2.5.dist-info/RECORD,,

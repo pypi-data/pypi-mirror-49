@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: wagtailleafletwidget
+Version: 1.0.1
+Summary: Leaflet JS based wagtail geo-location widget.
+Home-page: https://github.com/wagtail-leaflet-widget
+Author: Erick Otenyo
+Author-email: otenyo.erick@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content

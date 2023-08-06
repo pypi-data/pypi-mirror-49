@@ -1,0 +1,11 @@
+lib_collection/__init__.py,sha256=v5QKvLadWwmE_j6yXBynB6EGJbMut5k9S9yLkesT5VM,24
+lib_collection/kvstore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib_collection/kvstore/hash_map.py,sha256=-xYbCulWFzDQaKULdtQKqwBrE_g9aHJaBhHm3ZbXLQk,3843
+lib_collection/kvstore/linked_list.py,sha256=og26bpsyjb6cSBIofhbudUWHA1xmRczpJ2mm4e8TBwc,3006
+lib_collection/stack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib_collection/stack/resizing_array_stack.py,sha256=YjHQUi-CVp8fL-RfnaWVWajnJ-mIUqQCkzkxaADAtqQ,4138
+xy_libcollection-0.0.8.dist-info/LICENSE,sha256=bIQRx26gZJ5In2rV74r_QMvRJrEhPgPaf0yyyo9sdzk,1066
+xy_libcollection-0.0.8.dist-info/METADATA,sha256=kIDE-ib1xPuqriYXuZVOT2VTAi77NRq_noyqByuzHMU,251
+xy_libcollection-0.0.8.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+xy_libcollection-0.0.8.dist-info/top_level.txt,sha256=ORILZ0aDFphjy9tSg5z3jzBIU6l9gRN-ea6cs9Baoqw,15
+xy_libcollection-0.0.8.dist-info/RECORD,,

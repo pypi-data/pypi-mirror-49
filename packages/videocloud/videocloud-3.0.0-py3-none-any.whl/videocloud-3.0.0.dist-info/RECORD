@@ -1,0 +1,11 @@
+videocloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+videocloud/gui.py,sha256=WWpOWNibnQuCHWD-ImpumXtUIemfO5QgS0tPpf3LlIQ,284
+videocloud/main.py,sha256=p_gP8hR2J8g5Sdx6wAkkPYsVtF-UovsjOcOLQyCucPY,3203
+videocloud/assets/cloud.png,sha256=ACdMhU2XJErp5S02uLdGb99o6caxWR-RtZQC_wHwY_o,3931
+videocloud/assets/font/NotoSans.ttf,sha256=xqWY3UkwOEo1mQ-gwIsROBxnccOSVuUesKWlWaIiP9c,313792
+videocloud-3.0.0.dist-info/LICENSE,sha256=YrPZRCEZWh4dbJOZZkzp8IJyUNpR3Rm1c3S5JvkgEv8,1091
+videocloud-3.0.0.dist-info/METADATA,sha256=PNeXBDBrcLmiDJKuROvo8W3Hq607C_TbFuctC5H8vec,1725
+videocloud-3.0.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+videocloud-3.0.0.dist-info/entry_points.txt,sha256=-Z6Whs4cY4kvHi5pS2sZ3YpquiaGWSCWgJ7OneUaSIw,59
+videocloud-3.0.0.dist-info/top_level.txt,sha256=J9lDAUYWFW1oNGQK6VJe6oL2lXi-sBt18jz7xmvgqgg,11
+videocloud-3.0.0.dist-info/RECORD,,

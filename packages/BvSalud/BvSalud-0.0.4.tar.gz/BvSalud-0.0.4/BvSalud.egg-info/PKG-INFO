@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: BvSalud
+Version: 0.0.4
+Summary: Download cientific articles and save into the MongoDB
+Home-page: https://github.com/ankush13r/BvSalud.git
+Author: Ankush Rana
+Author-email: ankush.ran13@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

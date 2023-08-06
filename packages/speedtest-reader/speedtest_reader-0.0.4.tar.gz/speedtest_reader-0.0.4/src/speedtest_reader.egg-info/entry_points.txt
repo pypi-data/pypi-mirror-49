@@ -1,0 +1,3 @@
+[console_scripts]
+cmdltest = speedtest_reader.cmdltest:run
+

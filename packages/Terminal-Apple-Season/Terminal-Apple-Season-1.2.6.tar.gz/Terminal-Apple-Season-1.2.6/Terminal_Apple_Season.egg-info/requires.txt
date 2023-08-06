@@ -1,0 +1,10 @@
+playsound
+
+[:platform_system == "Darwin"]
+PyObjC
+
+[:platform_system == "Linux"]
+PyGObject
+
+[:platform_system == "Windows"]
+windows-curses

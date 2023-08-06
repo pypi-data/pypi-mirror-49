@@ -1,0 +1,4 @@
+[console_scripts]
+restiro = restiro.cli:main
+restiro-mock = restiro.cli:mock
+

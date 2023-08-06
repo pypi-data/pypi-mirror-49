@@ -1,0 +1,6 @@
+loggingserver.py
+setup.py
+loggingserver.egg-info/PKG-INFO
+loggingserver.egg-info/SOURCES.txt
+loggingserver.egg-info/dependency_links.txt
+loggingserver.egg-info/top_level.txt

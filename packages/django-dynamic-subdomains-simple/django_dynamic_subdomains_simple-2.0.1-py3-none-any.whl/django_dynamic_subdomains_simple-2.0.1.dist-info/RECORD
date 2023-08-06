@@ -1,0 +1,12 @@
+dynamic_subdomains/__init__.py,sha256=q77a6U8SU8eTrr-SGhnUgs1GOq9M-GZA6q9OBe36ViE,71
+dynamic_subdomains/app_settings.py,sha256=HSMXT5hTlsf1utUaBOat9hTbDaz5IHJeOLmZ03neFtY,332
+dynamic_subdomains/apps.py,sha256=ue45R95Kh1w_ra04lr_ulczBDStKBAFUzXdF4lWUrIg,550
+dynamic_subdomains/middleware.py,sha256=6YjtH6SX6DOLHacVHj5NsAihERV9TzOzrL9nIDrFk4I,5852
+dynamic_subdomains/reverse.py,sha256=tTr_rz_9pvTGiWacRXCFBgN0R_VKhpT8DIsNR34Fbp4,2413
+dynamic_subdomains/subdomains.py,sha256=AAIpTctp6tQD-czJff4Dnu63sIjCRTIhwHO58tZmPx8,264
+dynamic_subdomains/utils.py,sha256=ONDglAjD1kR5U1DhiaUS2MeN7Kdu5duzdENLCJ-YXgE,904
+django_dynamic_subdomains_simple-2.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+django_dynamic_subdomains_simple-2.0.1.dist-info/METADATA,sha256=g-OShZ5xOTQHZ78pHCrVzOMhcMbaYWQWyfKs8a9D82c,279
+django_dynamic_subdomains_simple-2.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_dynamic_subdomains_simple-2.0.1.dist-info/top_level.txt,sha256=BLb-T9M0AENlcuns5grHrcF569ERhnABmNlORL_y1pk,19
+django_dynamic_subdomains_simple-2.0.1.dist-info/RECORD,,

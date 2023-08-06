@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: DummyValidator
+Version: 0.0.0.1
+Summary: like SocValidator
+Home-page: https://www.xbox.com/en-US/
+Author: LJ
+Author-email: v-lyjen@microsoft.com
+License: Microsoft
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: clipboard
+Requires-Dist: PyQt5
+Requires-Dist: matplotlib
+Requires-Dist: PySerial
+Requires-Dist: nidaqmx
+
+like SocValidator
+
+

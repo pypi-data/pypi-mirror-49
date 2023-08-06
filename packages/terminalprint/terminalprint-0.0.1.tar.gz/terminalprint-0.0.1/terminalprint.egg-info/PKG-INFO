@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: terminalprint
+Version: 0.0.1
+Summary: a package for terminal pretty print
+Home-page: https://github.com/xsddz/py_pkg_terminalprint
+Author: xsddz
+Author-email: dingzhns@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: terminal print pretty
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3

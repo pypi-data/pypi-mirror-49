@@ -1,0 +1,9 @@
+requests
+pyopenssl
+ndg-httpsclient
+pyasn1
+configparser
+texttable
+dogpile.cache
+six
+clint

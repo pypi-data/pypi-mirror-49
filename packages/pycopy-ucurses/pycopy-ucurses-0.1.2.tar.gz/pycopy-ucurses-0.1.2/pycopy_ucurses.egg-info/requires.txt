@@ -1,0 +1,3 @@
+pycopy-os
+pycopy-tty
+pycopy-select

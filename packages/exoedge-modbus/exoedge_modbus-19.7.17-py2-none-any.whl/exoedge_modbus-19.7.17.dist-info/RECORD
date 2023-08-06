@@ -1,0 +1,17 @@
+exoedge_modbus/__init__.py,sha256=nOLaiAYPdoPEYYxlbnWFdA4jWUOP7azMmHvVMQpThaE,12788
+exoedge_modbus/__version__.py,sha256=kOzIwrvXd2WiEPKPxIp0yraAsoBqpQ2tpXh7GoVUbG8,77
+exoedge_modbus/cli.py,sha256=mjU2wqPStWH-I7zahAoePmG4-ebB1y-iBMbyqB922F0,8107
+exoedge_modbus/lib.py,sha256=2-EpejasDmL3WbdSb6-m9f0Iysfh69Bgit2TDjb4yto,19437
+exoedge_modbus-19.7.17.dist-info/DESCRIPTION.rst,sha256=dLczJV7Zikp25Vg8VvBkbR4OodF8hFKJFW0Y0J3gm0Q,4344
+exoedge_modbus-19.7.17.dist-info/METADATA,sha256=nJTwKjYBKN0wq91w56d2jjbysPwHtCsx44F50sF8sas,5248
+exoedge_modbus-19.7.17.dist-info/RECORD,,
+exoedge_modbus-19.7.17.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+exoedge_modbus-19.7.17.dist-info/entry_points.txt,sha256=PvcHdBzvsHqkpDzsuXvA9S_jfU8p7qMpfddERRmXFk4,52
+exoedge_modbus-19.7.17.dist-info/metadata.json,sha256=0sJX1JaNv_MWtbiFPWLAHEH1GJoAUQ6ukJ5UqazGnSo,1223
+exoedge_modbus-19.7.17.dist-info/top_level.txt,sha256=zS6d3dp8VWo-r6cs5qbXz_Njs0kyrBNasbs9jLyTamA,20
+test/__init__.py,sha256=LEXEfaY9YvEKxp4QH_yLN9PplcBO2CsccDU3kItxC78,1136
+test/synchronous_server.py,sha256=2zP1kjqRoQKIsbOfvcdGa_mT97VU3o0M_gLklCjllpE,2648
+test/test_app_specific_config.py,sha256=dhlZ9l0KL5H-Ije9ecKFal8dyz5KGjYSAMyJKq-goEo,790
+test/test_lib.py,sha256=gFUJG9MNv1ji1HJ4KYykvdaDUh3WgFuWNQQQyed4GlQ,1837
+test/test_read_holding_registers.py,sha256=sYBbl7bJBUxchwUlEgyO2gfBuIEHWvdRplXJqDE8Anc,7897
+test/test_read_write_coils.py,sha256=mF5z9Yk1LNsEnFmVhBHZYBSLAvCFky7WigCTwjfxfnU,2439

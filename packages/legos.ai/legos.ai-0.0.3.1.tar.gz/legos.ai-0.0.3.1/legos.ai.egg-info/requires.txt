@@ -1,0 +1,7 @@
+numpy
+matplotlib
+tqdm
+albumentations
+beautifultable
+torchprof
+hiddenlayer

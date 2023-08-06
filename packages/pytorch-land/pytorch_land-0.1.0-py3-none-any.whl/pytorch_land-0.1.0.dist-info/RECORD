@@ -1,0 +1,8 @@
+schmidt_sda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schmidt_sda/dae_unet.py,sha256=sfK_uciNPp0p_YXls5BHOffQoZxbDpEKE38T3cFMNhw,4095
+schmidt_sda/schmidt_sda.py,sha256=tXzJZn4MNB7vJd7L7S8eGgDrloCfCKQurmNXv9JsKNs,4595
+schmidt_sda/trainer.py,sha256=D6Bh1yqRjWsTqbZUzfLlAvvP-OSsa9_33qhxnpUCipI,9338
+pytorch_land-0.1.0.dist-info/METADATA,sha256=uo_eaJGMAZjjOYTbZfwC6NFuhAvEpgN6s9938ljJe84,245
+pytorch_land-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pytorch_land-0.1.0.dist-info/top_level.txt,sha256=1fYeYaFcCM4eJNeCnKrfHwVVxSg7nqU7ZqWScjHuPc0,12
+pytorch_land-0.1.0.dist-info/RECORD,,

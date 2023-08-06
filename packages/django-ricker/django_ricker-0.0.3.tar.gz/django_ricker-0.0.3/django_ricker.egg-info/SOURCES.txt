@@ -1,0 +1,8 @@
+README.md
+setup.py
+django_ricker/__init__.py
+django_ricker/urls.py
+django_ricker.egg-info/PKG-INFO
+django_ricker.egg-info/SOURCES.txt
+django_ricker.egg-info/dependency_links.txt
+django_ricker.egg-info/top_level.txt

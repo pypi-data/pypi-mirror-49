@@ -1,0 +1,4 @@
+aiohttp
+PyJWT[crypto]
+neomodel
+uvloop

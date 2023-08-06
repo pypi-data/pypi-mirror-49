@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: pymongoimport
+Version: 1.5.5
+Summary: pymongoimport - a program for reading CSV files into mongodb
+Home-page: https://github.com/jdrumgoole/pymongoimport
+Author: Joe Drumgoole
+Author-email: joe@joedrumgoole.com
+License: AGPL
+Description: 
+        Pymongo_import is a program that can parse a csv file from its header and first line to
+        create an automated type conversion file (a .ff file) to control how types in the CSV
+        file are converted. This file can be edited once created (it is a ConfigParser format file).
+        For types that fail conversion the type conversion will fail back on string conversion.
+        Blank columns in the CSV file are marked as [blank-0], [blank-1] ... [blank-n] and are ignored
+        by the parser.
+        
+Keywords: MongoDB import csv tsv
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >3.7

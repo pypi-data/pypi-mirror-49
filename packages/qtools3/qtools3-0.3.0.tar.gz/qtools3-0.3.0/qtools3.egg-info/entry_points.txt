@@ -1,0 +1,3 @@
+[console_scripts]
+qtools3 = qtools3.convert:main
+

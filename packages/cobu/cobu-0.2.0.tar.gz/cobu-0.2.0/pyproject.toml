@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cobu"
+version = "0.2.0"
+description = ""
+authors = ["gilbus"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+toml = "^0.10.0"
+jinja2 = "^2.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4"
+sphinx = "^2.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+cobu="cobu.cli:main"

@@ -1,0 +1,7 @@
+README.rst
+setup.py
+viridian/__init__.py
+viridian.egg-info/PKG-INFO
+viridian.egg-info/SOURCES.txt
+viridian.egg-info/dependency_links.txt
+viridian.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+djangorestframework_camel_case2/__init__.py,sha256=vt2ArVUscXlHeU5sZSMHqLLoRnBobsQAnAiQwDE_nGk,114
+djangorestframework_camel_case2/parser.py,sha256=BguWsoBptAKBdQV8gptwsjQgaovz6w_tvjnFg1fUUZw,829
+djangorestframework_camel_case2/render.py,sha256=XQDLRMIiTpnPJjv3YE0i0mg6vPkWTfKmNuMYWre5GCc,400
+djangorestframework_camel_case2/settings.py,sha256=czZrxpt50TIHQCRmoMKWK3mWqST7iXfzg65NEKojcuA,1204
+djangorestframework_camel_case2/util.py,sha256=vQK1GI8g0uiMqsgrgbVXAMkiBTWDxEcAL9vLIHSfYVE,1862
+djangorestframework_camel_case2-0.2.4.dist-info/LICENSE,sha256=QDk1BiIuNh5N22uGzfyYR-eN5iMHKSCvrMgYmu9e8GY,1495
+djangorestframework_camel_case2-0.2.4.dist-info/METADATA,sha256=aB_K_3uDmUMr4Edq0Z8cIxYx7-GmDYea_MjwilPuYV0,4032
+djangorestframework_camel_case2-0.2.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+djangorestframework_camel_case2-0.2.4.dist-info/top_level.txt,sha256=vCuNIraGXbaykU8sVQoy2Izqme5ZcUK1rwiK10z6pBI,32
+djangorestframework_camel_case2-0.2.4.dist-info/RECORD,,

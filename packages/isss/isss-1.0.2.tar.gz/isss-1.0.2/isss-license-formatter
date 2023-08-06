@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+
+##################################################################################################
+# Name:        isss-license-formatter.py                                                         #
+# Author:      Romain Lienard (rlienard@fr.ibm.com)                                              #
+# License:     Cookieware (if you like it, please send me biscuits)                              #
+# Description: This script parses the ISSS licenses from Thycotic email or the trial process     #
+#              and turn it into a bulk-entry-mode friendly text                                  #
+##################################################################################################
+
+import sys
+import os.path
+
+if len(sys.argv) == 2:
+	filename = sys.argv[1]
+elif len(sys.argv) > 2:
+	print("*** Error: too many arguments ***")    
+	print("Usage: isss-license-formatter.py [filename]")
+	print("If you don't specify a filename, default filename will be 'ISSS-Trial-IBM.txt'")
+	sys.exit(1)
+else:
+	filename = "ISSS-Trial-IBM.txt"
+
+if (not os.path.exists(filename)) or ():
+	print ("*** Error: the specified file doesn't exist or is not a file ({}) ***".format(filename))
+	print("Usage: isss-license-formatter.py [filename]")
+	print("If you don't specify a filename, default filename will be 'ISSS-Trial-IBM.txt'")
+	sys.exit(1)
+
+name = None
+key=None
+with open(filename) as f:
+	for line in f.readlines():
+		if "License Name: " in line:
+			name = line.split(": ")[1].strip()
+		elif "License Key: " in line:
+			key = line.split(": ")[1].strip()
+			print ( "{0}\t{1}".format(name,key) )
+input ("\n\n\nYou can now copy your licenses into the ISSS bulk entry editor, and press enter to terminate this program")

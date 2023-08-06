@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+
+import sys
+from isss import ISSS
+
+if len(sys.argv) != 5:
+    print("Usage: isss-fw <isss-server> <username> <password> <directory>")
+    sys.exit(1)
+else:
+    isss = ISSS(sys.argv[1],sys.argv[2],sys.argv[3],True,True)
+    isss.fw(sys.argv[4])
+    

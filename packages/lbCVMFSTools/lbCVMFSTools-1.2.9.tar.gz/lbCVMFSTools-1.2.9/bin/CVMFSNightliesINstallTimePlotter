@@ -1,0 +1,70 @@
+#!/usr/bin/env python
+
+###############################################################################
+# (c) Copyright 2016 CERN                                                     #
+#                                                                             #
+# This software is distributed under the terms of the GNU General Public      #
+# Licence version 3 (GPL Version 3), copied verbatim in the file "COPYING".   #
+#                                                                             #
+# In applying this licence, CERN does not waive the privileges and immunities #
+# granted to it by virtue of its status as an Intergovernmental Organization  #
+# or submit itself to any jurisdiction.                                       #
+###############################################################################
+'''
+Command line client that interfaces to the Installer class
+
+:author: Stefan-Gabriel CHITIC
+'''
+from __future__ import print_function
+
+import sys
+
+from lbCVMFSTools.GenericClient import GenericClient, ClientException
+from lbCVMFSTools.TaskHandlers.NightliesInstallTimePlotter.\
+    NightliesInstallTimePlotter import NightliesInstallTimePlotter
+from lbCVMFSTools.TransactionHandlers.DefaultTransactionHandler. \
+    DefaultTransactionHandler import DefaultTransactionHandler
+
+
+class CVMFSNightliesInstallTimePlotterClient(GenericClient, object):
+    """ Main class for the tool """
+
+    def __init__(self, prog, help):
+        """ Common setup for both clients """
+        super(CVMFSNightliesInstallTimePlotterClient, self).__init__(
+            prog=prog, help=help)
+        self.parser.add_option('--date',
+                               dest="date",
+                               default=None,
+                               action="store",
+                               help="Specify the date to parse")
+
+    def defineTaskHandler(self, args, opts):
+        return NightliesInstallTimePlotter(args[0],
+                                           date=opts.date)
+
+    def defineTransitionHandler(self, args, opts):
+        return DefaultTransactionHandler()
+
+    def configureClient(self, args, opts):
+        if len(args) != 1:
+            raise ClientException(
+                "Manager.log path needs to be provided")
+
+
+def CVMFSNightliesInstallTimePlotter(
+        prog="CVMFSNightliesInstallTimePlotter",
+        help="repo_name - installs nighlties builds on CVMFS"):
+    """
+    Default caller for command line CVMFSDevChecker client
+    :param configType: the configuration used
+    :param prog: the name of the executable
+    """
+    sys.exit(CVMFSNightliesInstallTimePlotterClient(
+        prog=prog, help=help).main())
+
+
+# Main just chooses the client and starts it
+if __name__ == "__main__":
+    CVMFSNightliesInstallTimePlotter()
+

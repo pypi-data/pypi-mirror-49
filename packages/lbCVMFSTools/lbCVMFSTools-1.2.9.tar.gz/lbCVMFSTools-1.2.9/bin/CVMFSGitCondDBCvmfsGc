@@ -1,0 +1,59 @@
+#!/usr/bin/env python
+
+###############################################################################
+# (c) Copyright 2016 CERN                                                     #
+#                                                                             #
+# This software is distributed under the terms of the GNU General Public      #
+# Licence version 3 (GPL Version 3), copied verbatim in the file "COPYING".   #
+#                                                                             #
+# In applying this licence, CERN does not waive the privileges and immunities #
+# granted to it by virtue of its status as an Intergovernmental Organization  #
+# or submit itself to any jurisdiction.                                       #
+###############################################################################
+'''
+Command line client that interfaces to the Installer class
+
+:author: Stefan-Gabriel CHITIC
+'''
+from __future__ import print_function
+
+import sys
+
+from lbCVMFSTools.GenericClient import GenericClient, ClientException
+from lbCVMFSTools.TaskHandlers.GITCONDDBCvmfsGC.GITCONDDBCvmfsGC \
+    import GITCONDDBCvmfsGC
+from lbCVMFSTools.TransactionHandlers.DefaultTransactionHandler. \
+    DefaultTransactionHandler import DefaultTransactionHandler
+
+
+class CVMFSGitCondDBCvmfsGcClient(GenericClient, object):
+    """ Main class for the tool """
+
+    def __init__(self, prog, help):
+        """ Common setup for both clients """
+        super(CVMFSGitCondDBCvmfsGcClient, self).__init__(prog=prog, help=help)
+
+    def defineTaskHandler(self, args, opts):
+        return GITCONDDBCvmfsGC(dry_run=opts.dry_run, repo=args[0])
+
+    def defineTransitionHandler(self, args, opts):
+        return DefaultTransactionHandler(dry_run=opts.dry_run)
+
+    def configureClient(self, args, opts):
+        if len(args) != 1:
+            raise ClientException("Repo name needs to be provided")
+
+
+def CVMFSGitCondDBCvmfsGc(prog="CVMFSGitCondDBCvmfsGc",
+                          help="repo_name"
+                               "performs cvmfs gc on CVMFS"):
+    """
+    Default caller for command line CVMFSDevChecker client
+    :param configType: the configuration used
+    :param prog: the name of the executable
+    """
+    sys.exit(CVMFSGitCondDBCvmfsGcClient(prog=prog, help=help).main())
+
+# Main just chooses the client and starts it
+if __name__ == "__main__":
+    CVMFSGitCondDBCvmfsGc()

@@ -1,0 +1,96 @@
+#!/usr/bin/env python
+
+###############################################################################
+# (c) Copyright 2016 CERN                                                     #
+#                                                                             #
+# This software is distributed under the terms of the GNU General Public      #
+# Licence version 3 (GPL Version 3), copied verbatim in the file "COPYING".   #
+#                                                                             #
+# In applying this licence, CERN does not waive the privileges and immunities #
+# granted to it by virtue of its status as an Intergovernmental Organization  #
+# or submit itself to any jurisdiction.                                       #
+###############################################################################
+'''
+Command line client that interfaces to the Installer class
+
+:author: Stefan-Gabriel CHITIC
+'''
+from __future__ import print_function
+
+import sys
+
+from lbCVMFSTools.Injector import injector
+from lbCVMFSTools.TaskHandlers.NightliesRemove. \
+    NightliesRemove import NightliesRemove
+from lbCVMFSTools.TransactionHandlers.CVMFSTransactionHandler.\
+    CVMFSTranscationHandler import CVMFSTransactionHandler
+from lbCVMFSTools.TransactionHandlers.DefaultTransactionHandler. \
+    DefaultTransactionHandler import DefaultTransactionHandler
+from lbCVMFSTools.TaskHandlers.NightliesInstallByProjectTask.Utils \
+    import PathManager
+from lbCVMFSTools.GenericClient import GenericClient, ClientException
+
+
+class CVMFSNightliesRemoveClient(GenericClient, object):
+    """ Main class for the tool """
+
+    def __init__(self, prog, help):
+        """ Common setup for both clients """
+        super(CVMFSNightliesRemoveClient, self).__init__(prog=prog,
+                                                         help=help)
+        self.parser.add_option('--workspace',
+                               dest="workspace",
+                               default=None,
+                               action="store",
+                               help="Sets a custom workspace. The default is "
+                                    "the user $HOME directory")
+        self.parser.add_option('--installarea',
+                               dest="installArea",
+                               default=None,
+                               action="store",
+                               help="Sets a custom install area. The default is"
+                                    "/cvmfs")
+
+        self.parser.add_option('--no-date-check',
+                               dest="overrideTodayCheck",
+                               default=False,
+                               action="store_true",
+                               help="Overrides the day check for the "
+                                    "slot build id")
+
+    def defineTaskHandler(self, args, opts):
+        if opts.overrideTodayCheck:
+            override = True
+        else:
+            override = False
+        return NightliesRemove(dry_run=self.dry_run,
+                               overrideTodayCheck=override)
+
+    def defineTransitionHandler(self, args, opts):
+        # return DefaultTransactionHandler()
+        return CVMFSTransactionHandler(args[0], dry_run=opts.dry_run)
+
+    def configureClient(self, args, opts):
+        if len(args) != 1:
+            raise ClientException("Repo name needs to be provided")
+        if not opts.workspace:
+            raise ClientException("Workspace needs to be provided")
+        if not opts.installArea:
+            raise ClientException("Installation area needs to be provided")
+        pathManager = PathManager(workspace=opts.workspace,
+                                  installArea=opts.installArea)
+        injector.provide_instance(PathManager, pathManager)
+
+
+def CVMFSNightliesRemove(prog="CVMFSNightliesRemove",
+                         help="Removes old nighlties builds on CVMFS"):
+    """
+    Default caller for command line CVMFSDevChecker client
+    :param configType: the configuration used
+    :param prog: the name of the executable
+    """
+    sys.exit(CVMFSNightliesRemoveClient(prog=prog, help=help).main())
+
+# Main just chooses the client and starts it
+if __name__ == "__main__":
+    CVMFSNightliesRemove()

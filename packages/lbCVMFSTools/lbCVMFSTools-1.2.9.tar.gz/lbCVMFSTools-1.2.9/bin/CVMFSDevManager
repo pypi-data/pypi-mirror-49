@@ -1,0 +1,103 @@
+#!/usr/bin/env python
+
+###############################################################################
+# (c) Copyright 2016 CERN                                                     #
+#                                                                             #
+# This software is distributed under the terms of the GNU General Public      #
+# Licence version 3 (GPL Version 3), copied verbatim in the file "COPYING".   #
+#                                                                             #
+# In applying this licence, CERN does not waive the privileges and immunities #
+# granted to it by virtue of its status as an Intergovernmental Organization  #
+# or submit itself to any jurisdiction.                                       #
+###############################################################################
+'''
+Command line client that interfaces to the Installer class
+
+:author: Stefan-Gabriel CHITIC
+'''
+from __future__ import print_function
+
+import sys
+
+from lbCVMFSTools.GenericClient import GenericClient, ClientException
+from lbCVMFSTools.TaskHandlers.DevPackagesInstaller.\
+    DevPackagesInstaller import DevPackagesInstaller
+from lbCVMFSTools.TransactionHandlers.CVMFSTransactionHandler.\
+    CVMFSTranscationHandler import CVMFSTransactionHandler
+
+
+class CVMFSDevCheckerClient(GenericClient, object):
+    """ Main class for the tool """
+
+    def __init__(self, prog, help):
+        """ Common setup for both clients """
+        super(CVMFSDevCheckerClient, self).__init__(prog=prog, help=help)
+        self.parser.add_option('--toinstall',
+                               dest="toinstall",
+                               default=None,
+                               action="store",
+                               help="The list of packages to install")
+        self.parser.add_option('--installed',
+                               dest="installed",
+                               default=None,
+                               action="store",
+                               help="The list of packages in the commit "
+                                    "succefully installed")
+        self.parser.add_option('--with_meta',
+                               dest="with_meta",
+                               default=True,
+                               action="store_true",
+                               help=" ")
+        self.parser.add_option('--MPriority',
+                               dest="MPriority",
+                               default=None,
+                               action="store",
+                               help="The initial priority of the message")
+        self.parser.add_option('--MMaxRetry',
+                               dest="MMaxRetry",
+                               default=None,
+                               action="store",
+                               help="The initial retry counter")
+        self.parser.add_option('--commitID',
+                               dest="commit_id",
+                               default=None,
+                               action="store",
+                               help="The commit id")
+
+    def defineTaskHandler(self, args, opts):
+        self.toInstall = []
+        self.installed = []
+        if opts.toinstall:
+            self.toInstall = opts.toinstall.replace('"', '').split()
+        if opts.installed:
+            self.installed = opts.installed.replace('"', '').split()
+        self.priority = int(opts.MPriority)
+        self.retry = int(opts.MMaxRetry) - 1
+        return DevPackagesInstaller(dry_run=opts.dry_run,
+                                    toInstall=self.toInstall,
+                                    installed=self.installed,
+                                    priority=self.priority,
+                                    commitID=opts.commit_id,
+                                    maxretry=self.retry)
+
+    def defineTransitionHandler(self, args, opts):
+        return CVMFSTransactionHandler(args[0], dry_run=opts.dry_run)
+
+    def configureClient(self, args, opts):
+        if len(args) != 1:
+            raise ClientException("Repo name needs to be provided")
+
+
+def CVMFSDevManager(prog="CVMFSDevManager",
+                    help="repo_name -  installs dev packages builds on CVMFS"):
+    """
+    Default caller for command line CVMFSDevChecker client
+    :param configType: the configuration used
+    :param prog: the name of the executable
+    """
+    sys.exit(CVMFSDevCheckerClient(prog=prog, help=help).main())
+
+# Main just chooses the client and starts it
+if __name__ == "__main__":
+    CVMFSDevManager()
+

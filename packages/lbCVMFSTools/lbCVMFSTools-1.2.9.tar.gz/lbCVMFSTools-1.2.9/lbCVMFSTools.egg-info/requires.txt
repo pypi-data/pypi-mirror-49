@@ -1,0 +1,3 @@
+lbdevmanager
+lbCVMFSchecker
+requests

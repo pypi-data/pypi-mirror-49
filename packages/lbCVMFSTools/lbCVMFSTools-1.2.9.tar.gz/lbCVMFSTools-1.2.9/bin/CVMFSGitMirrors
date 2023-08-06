@@ -1,0 +1,60 @@
+#!/usr/bin/env python
+
+###############################################################################
+# (c) Copyright 2016 CERN                                                     #
+#                                                                             #
+# This software is distributed under the terms of the GNU General Public      #
+# Licence version 3 (GPL Version 3), copied verbatim in the file "COPYING".   #
+#                                                                             #
+# In applying this licence, CERN does not waive the privileges and immunities #
+# granted to it by virtue of its status as an Intergovernmental Organization  #
+# or submit itself to any jurisdiction.                                       #
+###############################################################################
+'''
+Command line client that interfaces to the Installer class
+
+:author: Stefan-Gabriel CHITIC
+'''
+from __future__ import print_function
+
+import sys
+
+from lbCVMFSTools.GenericClient import GenericClient, ClientException
+from lbCVMFSTools.TaskHandlers.GitMirrorTask.GitMirrorTask \
+    import GitMirrorTask
+from lbCVMFSTools.TransactionHandlers.CVMFSTransactionHandler.\
+    CVMFSTranscationHandler import CVMFSTransactionHandler
+
+
+class CVMFSGitMirrorsClient(GenericClient, object):
+    """ Main class for the tool """
+
+    def __init__(self, prog, help):
+        """ Common setup for both clients """
+        super(CVMFSGitMirrorsClient, self).__init__(prog=prog, help=help)
+
+    def defineTaskHandler(self, args, opts):
+        return GitMirrorTask(dry_run=opts.dry_run, repodir=args[1])
+
+    def defineTransitionHandler(self, args, opts):
+        return CVMFSTransactionHandler(args[0], dry_run=opts.dry_run)
+
+    def configureClient(self, args, opts):
+        if len(args) != 2:
+            raise ClientException("Repo name and git dir"
+                                  "needs to be provided")
+
+
+def CVMFSGitMirrors(prog="CVMFSDevChecker",
+                    help="repo_name -  Mirrors git builds on CVMFS"):
+    """
+    Default caller for command line CVMFSDevChecker client
+    :param configType: the configuration used
+    :param prog: the name of the executable
+    """
+    sys.exit(CVMFSGitMirrorsClient(prog=prog, help=help).main())
+
+# Main just chooses the client and starts it
+if __name__ == "__main__":
+    CVMFSGitMirrors()
+

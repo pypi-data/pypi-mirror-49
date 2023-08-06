@@ -1,0 +1,78 @@
+#!/usr/bin/env python
+
+###############################################################################
+# (c) Copyright 2016 CERN                                                     #
+#                                                                             #
+# This software is distributed under the terms of the GNU General Public      #
+# Licence version 3 (GPL Version 3), copied verbatim in the file "COPYING".   #
+#                                                                             #
+# In applying this licence, CERN does not waive the privileges and immunities #
+# granted to it by virtue of its status as an Intergovernmental Organization  #
+# or submit itself to any jurisdiction.                                       #
+###############################################################################
+'''
+Command line client that interfaces to the Installer class
+
+:author: Stefan-Gabriel CHITIC
+'''
+from __future__ import print_function
+import sys
+
+from lbCVMFSTools.Injector import injector
+from lbCVMFSTools.TaskHandlers.NightliesInstallTask.NightliesInstallTask \
+    import NightliesInstallTask
+from lbCVMFSTools.TransactionHandlers.DefaultTransactionHandler. \
+    DefaultTransactionHandler import DefaultTransactionHandler
+from lbCVMFSTools.TaskHandlers.NightliesInstallTask.Utils import PathManager
+from lbCVMFSTools.GenericClient import GenericClient, ClientException
+
+
+class LocalNightliesInstallClient(GenericClient, object):
+    """ Main class for the tool """
+
+    def __init__(self, prog, help):
+        """ Common setup for both clients """
+        super(LocalNightliesInstallClient, self).__init__(
+            prog=prog, help=help)
+        self.parser.add_option('--workspace',
+                               dest="workspace",
+                               default=None,
+                               action="store",
+                               help="Sets a custom workspace. The default is "
+                                    "the user $HOME directory")
+        self.parser.add_option('--installarea',
+                               dest="installArea",
+                               default=None,
+                               action="store",
+                               help="Sets a custom install area. The default is"
+                                    "/cvmfs")
+
+    def defineTaskHandler(self, args, opts):
+        return NightliesInstallTask(dry_run=opts.dry_run)
+
+    def defineTransitionHandler(self, args, opts):
+        return DefaultTransactionHandler(dry_run=opts.dry_run)
+
+    def configureClient(self, args, opts):
+        if not opts.workspace:
+            raise ClientException("Workspace needs to be provided")
+        if not opts.installArea:
+            raise ClientException("Installation area needs to be provided")
+        pathManager = PathManager(workspace=opts.workspace,
+                                  installArea=opts.installArea)
+        injector.provide_instance(PathManager, pathManager)
+
+
+def LocalNightliesInstall(prog="LocalNightliesInstall",
+                          help="repo_name -  installs nighlties builds on"
+                               "local disk"):
+    """
+    Default caller for command line CVMFSDevChecker client
+    :param configType: the configuration used
+    :param prog: the name of the executable
+    """
+    sys.exit(LocalNightliesInstallClient(prog=prog, help=help).main())
+
+# Main just chooses the client and starts it
+if __name__ == "__main__":
+    LocalNightliesInstall()

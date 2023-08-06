@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dataglove
+Version: 0.0.6
+Summary: Python Module of the DataGlove API.
+Home-page: UNKNOWN
+Author: BeBop Sensors
+Author-email: code@bebopsensors.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# BeBop Sensors Data Glove
+## Python Module of the DataGlove API
+
+

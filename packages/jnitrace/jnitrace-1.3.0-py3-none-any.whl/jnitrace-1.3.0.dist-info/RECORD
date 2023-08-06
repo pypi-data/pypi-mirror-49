@@ -1,0 +1,10 @@
+jnitrace/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jnitrace/jnitrace.py,sha256=gne-8pdDf1IaH4iK1L0E08uD4Ucx2OsNpAkoKJ0Ww_8,10648
+jnitrace/build/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jnitrace/build/jnitrace.js,sha256=74loE6nVO0_gWhjqxCqL5XxLkqVuqNX4pgfO2R97his,167805
+jnitrace-1.3.0.dist-info/LICENSE,sha256=qa9P7RevN_P4JnyW0uQiUMljWmwYHYNuSdpUL9QN2Z8,1087
+jnitrace-1.3.0.dist-info/METADATA,sha256=PsBKvNAg36Lc3LZpgaMb5fsk_J-XXYMKb_3N27A00pY,7528
+jnitrace-1.3.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+jnitrace-1.3.0.dist-info/entry_points.txt,sha256=CyBffSEnps7DENE_E4tavri2a1xiFNR-e05L9tPmonA,53
+jnitrace-1.3.0.dist-info/top_level.txt,sha256=q7Sy47qYS1dzHlodGRg1Po7au1dScqOqpCMrFGH5syM,9
+jnitrace-1.3.0.dist-info/RECORD,,

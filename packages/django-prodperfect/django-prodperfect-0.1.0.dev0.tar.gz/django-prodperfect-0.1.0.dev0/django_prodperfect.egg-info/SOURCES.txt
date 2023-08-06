@@ -1,0 +1,17 @@
+README.md
+setup.py
+django_prodperfect.egg-info/PKG-INFO
+django_prodperfect.egg-info/SOURCES.txt
+django_prodperfect.egg-info/dependency_links.txt
+django_prodperfect.egg-info/not-zip-safe
+django_prodperfect.egg-info/requires.txt
+django_prodperfect.egg-info/top_level.txt
+prodperfect/__init__.py
+prodperfect/admin.py
+prodperfect/apps.py
+prodperfect/models.py
+prodperfect/settings.py
+prodperfect/tests.py
+prodperfect/views.py
+prodperfect/templatetags/__init__.py
+prodperfect/templatetags/prodperfect.py

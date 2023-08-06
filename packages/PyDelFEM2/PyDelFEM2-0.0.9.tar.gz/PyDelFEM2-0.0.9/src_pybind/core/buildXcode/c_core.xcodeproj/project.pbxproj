@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		12B39326A0B147D5B95C7D59 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 53F14EF7409640348BAF68AD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				7A4AFFDEAD484D328A8F15AE /* CMake Rules */,
+			);
+			dependencies = (
+				CC7F09D3DF384FF5B61A1BB1 /* PBXTargetDependency */,
+				A3A8441BC2B04451BE8C47D9 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		F86405D26500457D9D1FE572 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 98EDC218C1EE496A95941D1A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				0F5832AC33B146388A7407B6 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		07180F4B366C4CE9A69D9200 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshtopoio.cpp */ = {isa = PBXBuildFile; fileRef = 6AA248D0AF9F4455B16A5767 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshtopoio.cpp */; };
+		0C63A256D4624962BB9AA3D9 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/dyntri_v3.h */ = {isa = PBXBuildFile; fileRef = 6D9CFA859077421D97B8DC95 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/dyntri_v3.h */; };
+		0F7BBB3C526E40638A217326 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/voxel.h */ = {isa = PBXBuildFile; fileRef = 8874DF706C31492EBF992715 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/voxel.h */; };
+		14216CD2CAD740B0AFF9F73D /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/msh.h */ = {isa = PBXBuildFile; fileRef = 87194B8C686E45BB8475F1FD /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/msh.h */; };
+		14BB51B2C68E48BBB1C20255 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/objfunc_v23.h */ = {isa = PBXBuildFile; fileRef = 7F814014AE7A45ABA206B8DA /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/objfunc_v23.h */; };
+		176E6379613B484B972B4A52 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/fem.h */ = {isa = PBXBuildFile; fileRef = A6745DF02B424D49AD2484F4 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/fem.h */; };
+		19D465D377D949FAA28E5618 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/v23m3q.cpp */ = {isa = PBXBuildFile; fileRef = 1190E413D7FD4AEEAD96D32B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/v23m3q.cpp */; };
+		1CAAD8C2469541538B34E3B4 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri_v3.cpp */ = {isa = PBXBuildFile; fileRef = DE9891EE707C4A91B9779A96 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri_v3.cpp */; };
+		233FE324339348379B5588B1 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/cad2d.cpp */ = {isa = PBXBuildFile; fileRef = 819E759B743F4FC8948B025B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/cad2d.cpp */; };
+		24A35866862B4BB49B86112C /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/quat.h */ = {isa = PBXBuildFile; fileRef = AC7D97BAF06545BF9A2516F0 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/quat.h */; };
+		2C87C89647D44159A9B10D8E /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/sdf.h */ = {isa = PBXBuildFile; fileRef = F454F71B4BFC4E59BA656936 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/sdf.h */; };
+		31922FE19A0D42849B5C2E54 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/msh.cpp */ = {isa = PBXBuildFile; fileRef = 6E8459891A6A4E3D8A7CE779 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/msh.cpp */; };
+		350F9725F1E44EAAAA1CA0DA /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_field.cpp */ = {isa = PBXBuildFile; fileRef = C45EAFD7C99E4CA1ABE94A91 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_field.cpp */; };
+		359B793752484A80A2B1E1F1 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mat3.h */ = {isa = PBXBuildFile; fileRef = 9CC43D0A5DF647F8885BFB11 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mat3.h */; };
+		35B0ADACCFD442198AE94B0C /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/ilu_sparse.h */ = {isa = PBXBuildFile; fileRef = 13C95660706D43DF9974BABF /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/ilu_sparse.h */; };
+		37587855DF754BDE88ED4CC5 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/funcs.h */ = {isa = PBXBuildFile; fileRef = E05179755C44482491127685 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/funcs.h */; };
+		38E1BA958E1B4D728A60265B /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/vec2.h */ = {isa = PBXBuildFile; fileRef = 6AD9C59F411C4F8E876FAD60 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/vec2.h */; };
+		3D1D5A0EE7E44F2BAC027F92 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/matrix_sparse.cpp */ = {isa = PBXBuildFile; fileRef = 0831861382B543A9837810F8 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/matrix_sparse.cpp */; };
+		460CD9E46CAB43DE9305372D /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/vec3.h */ = {isa = PBXBuildFile; fileRef = FB5168AC826F408BB616CBBD /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/vec3.h */; };
+		490DFAEC39DA4A0490D4742A /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/bv.h */ = {isa = PBXBuildFile; fileRef = 7E94ED743B37462E92F28AD2 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/bv.h */; };
+		4ED3B92CA0D54DA797C70F95 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mshtopo.h */ = {isa = PBXBuildFile; fileRef = B3E9A7DEF6204BFCBA03A1C7 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mshtopo.h */; };
+		51F4EFBAE4B946AD91437DD2 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/ilu_sparse.cpp */ = {isa = PBXBuildFile; fileRef = E7A5DABD97064A7FB7318B87 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/ilu_sparse.cpp */; };
+		53C43ACD69124AA8A2A89976 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/funcs.cpp */ = {isa = PBXBuildFile; fileRef = 760BC1CC8AAC4CCCBC0B6D2C /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/funcs.cpp */; };
+		5AC799C3F4C8448A8D21FAD8 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/fem_ematrix.h */ = {isa = PBXBuildFile; fileRef = 8F98D59D4970486283951004 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/fem_ematrix.h */; };
+		5B21B955D5C94E81B3DBE7E6 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/quat.cpp */ = {isa = PBXBuildFile; fileRef = B07056CD615C4E7D8FEA4C97 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/quat.cpp */; };
+		62E4D46A0E224830BBE1435B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/voxel.cpp */ = {isa = PBXBuildFile; fileRef = 05942D5D955B4595B5DE14B2 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/voxel.cpp */; };
+		76D43C35BFF64270B55E9922 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/hash3d.h */ = {isa = PBXBuildFile; fileRef = BCCBFF4BF4BE44DC96A05F60 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/hash3d.h */; };
+		7F3B9B1DBE0345AA97985E37 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/isosurface_stuffing.cpp */ = {isa = PBXBuildFile; fileRef = BBF33D9420734B54B7FF5B2C /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/isosurface_stuffing.cpp */; };
+		8357A9EDE97041898FB4795B /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/isosurface_stuffing.h */ = {isa = PBXBuildFile; fileRef = 6CAE1A287CA44FBC8D953D23 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/isosurface_stuffing.h */; };
+		8788034C346347A59C147EF8 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri.cpp */ = {isa = PBXBuildFile; fileRef = B1C6F593C0A44EA98A930C08 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri.cpp */; };
+		8954C630812E4E07A9C11953 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/cad2d.h */ = {isa = PBXBuildFile; fileRef = AF2C47949CA94C62A8489E1B /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/cad2d.h */; };
+		9501EDB2AE9A4352AF2A1DB1 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_mshtopoio.cpp */ = {isa = PBXBuildFile; fileRef = 546CDDB5666A48A1BE883666 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_mshtopoio.cpp */; };
+		9A398B65D7704C00B8A6596F /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_polyline.cpp */ = {isa = PBXBuildFile; fileRef = C265BF57BD284D0281D809F4 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_polyline.cpp */; };
+		9C9F51FC04164BDFB517F653 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/hash3d.cpp */ = {isa = PBXBuildFile; fileRef = 4132AEEC52C6486BA4C78805 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/hash3d.cpp */; };
+		9CA85E9796994D098EFAA3FD /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/matrix_sparse.h */ = {isa = PBXBuildFile; fileRef = DC24D4A83F664153BEAF670F /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/matrix_sparse.h */; };
+		A2CDF9A827214579AEBDD4ED /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mshtopoio.h */ = {isa = PBXBuildFile; fileRef = 2AF25E48D9AC4CB794F6DAEA /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mshtopoio.h */; };
+		A37EFFAA0F3C4C4F95654581 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mshio.h */ = {isa = PBXBuildFile; fileRef = 0FE66CDC688047C5A01DDCF5 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mshio.h */; };
+		A3F872A6319449899E2F0702 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mathexpeval.cpp */ = {isa = PBXBuildFile; fileRef = 2F0EE4EFE1B84C9BB561A744 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mathexpeval.cpp */; };
+		AC6AEC0B2CE14C8B92236F54 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/fem.cpp */ = {isa = PBXBuildFile; fileRef = C67B55E8BC9C44B5A8F23E6B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/fem.cpp */; };
+		B3AEA377F08743AEA01D7C3F /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/vec3.cpp */ = {isa = PBXBuildFile; fileRef = FC62BF6590BE44DD90153E1D /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/vec3.cpp */; };
+		B3F286D993FE482384BB984F /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/dyntri.h */ = {isa = PBXBuildFile; fileRef = D24D61F5BE244B768EDB0562 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/dyntri.h */; };
+		B62787416D404BF0999B0456 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/dyntri_v2.h */ = {isa = PBXBuildFile; fileRef = 6B3FEFDBEFE3429E862C92B9 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/dyntri_v2.h */; };
+		BB91ACF98D61405CA2490D20 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshio.cpp */ = {isa = PBXBuildFile; fileRef = 60FBE22B223E48C2BD24EA7B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshio.cpp */; };
+		C36B01FFE8C14F60B6BCECF9 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/sdf.cpp */ = {isa = PBXBuildFile; fileRef = A42F7E4021E14828926EA2E5 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/sdf.cpp */; };
+		DF5260B4823543F09D1E10E2 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_fem.cpp */ = {isa = PBXBuildFile; fileRef = 8A19A09609074675A7D614F6 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_fem.cpp */; };
+		E0E94E3B95C54E6DA2E0BFA3 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/objfunc_v23.cpp */ = {isa = PBXBuildFile; fileRef = DEA23B65F5E74D7B8DAC870B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/objfunc_v23.cpp */; };
+		E194766E89EB48C0980B53F3 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E1B82F8DBE444B97A928792E /* /Users/nobuyuki/projects/delfem2/src_pybind/core/CMakeLists.txt */; };
+		E366FB4EDC6D4C7EA7737520 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri_v2.cpp */ = {isa = PBXBuildFile; fileRef = E7E31F0ED08040828BF77C89 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri_v2.cpp */; };
+		E88F7D5C286542CEBA328F0E /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/vec2.cpp */ = {isa = PBXBuildFile; fileRef = 359AC275DBDD4BFEADA79BFF /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/vec2.cpp */; };
+		E982922A7E9D4FE0B99B4DDF /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mat3.cpp */ = {isa = PBXBuildFile; fileRef = 245C383328AA4C3285548A48 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mat3.cpp */; };
+		F001C47D32424B3AA22885D2 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshtopo.cpp */ = {isa = PBXBuildFile; fileRef = 21AE2B2EBD7349A389FCD72D /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshtopo.cpp */; };
+		F029257E26A64329AE671D32 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/main.cpp */ = {isa = PBXBuildFile; fileRef = A839DBE8A68D477FB01A259D /* /Users/nobuyuki/projects/delfem2/src_pybind/core/main.cpp */; };
+		FD7A851C30B249569F20B5B7 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mathexpeval.h */ = {isa = PBXBuildFile; fileRef = EEFDB7C80F5941DDA851744B /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mathexpeval.h */; };
+		FE717B8DB38740EA8B5D4071 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/v23m3q.h */ = {isa = PBXBuildFile; fileRef = 420A277F26924CA28084A3C0 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/v23m3q.h */; };
+		FFD3F248269343F1B13EAF64 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/fem_ematrix.cpp */ = {isa = PBXBuildFile; fileRef = CE366815364246039FCEAEFE /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/fem_ematrix.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		14BE7F152F804D859D465763 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		26DBEFDC3C244160B3BA1D92 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		D36BFB81C84D41B4A1082DB0 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		F92BFCC751A34A18A68683B9 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		958D66B00FC84308A30F243B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53BDDDB65BCF4CC8B94B76B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F86405D26500457D9D1FE572;
+			remoteInfo = ZERO_CHECK;
+		};
+		D1BAB4C0DFED493CA9B073F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53BDDDB65BCF4CC8B94B76B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F86405D26500457D9D1FE572;
+			remoteInfo = ZERO_CHECK;
+		};
+		DA54F1B66329472189998FC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53BDDDB65BCF4CC8B94B76B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C8F7F255C4472298879F94;
+			remoteInfo = c_core;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05942D5D955B4595B5DE14B2 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/voxel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = voxel.cpp; path = ../../src_cpp/cpp/voxel.cpp; sourceTree = SOURCE_ROOT; };
+		0831861382B543A9837810F8 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/matrix_sparse.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix_sparse.cpp; path = ../../src_cpp/cpp/matrix_sparse.cpp; sourceTree = SOURCE_ROOT; };
+		0FE66CDC688047C5A01DDCF5 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mshio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mshio.h; path = ../../src_cpp/include/delfem2/mshio.h; sourceTree = SOURCE_ROOT; };
+		1190E413D7FD4AEEAD96D32B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/v23m3q.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = v23m3q.cpp; path = ../../src_cpp/cpp/v23m3q.cpp; sourceTree = SOURCE_ROOT; };
+		13C95660706D43DF9974BABF /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/ilu_sparse.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ilu_sparse.h; path = ../../src_cpp/include/delfem2/ilu_sparse.h; sourceTree = SOURCE_ROOT; };
+		200C82EC5A974EE5975C0C6C /* /Users/nobuyuki/projects/delfem2/src_pybind/core/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		21AE2B2EBD7349A389FCD72D /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshtopo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mshtopo.cpp; path = ../../src_cpp/cpp/mshtopo.cpp; sourceTree = SOURCE_ROOT; };
+		245C383328AA4C3285548A48 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mat3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mat3.cpp; path = ../../src_cpp/cpp/mat3.cpp; sourceTree = SOURCE_ROOT; };
+		2AF25E48D9AC4CB794F6DAEA /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mshtopoio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mshtopoio.h; path = ../../src_cpp/include/delfem2/mshtopoio.h; sourceTree = SOURCE_ROOT; };
+		2F0EE4EFE1B84C9BB561A744 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mathexpeval.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mathexpeval.cpp; path = ../../src_cpp/cpp/mathexpeval.cpp; sourceTree = SOURCE_ROOT; };
+		359AC275DBDD4BFEADA79BFF /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/vec2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vec2.cpp; path = ../../src_cpp/cpp/vec2.cpp; sourceTree = SOURCE_ROOT; };
+		4132AEEC52C6486BA4C78805 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/hash3d.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = hash3d.cpp; path = ../../src_cpp/cpp/hash3d.cpp; sourceTree = SOURCE_ROOT; };
+		420A277F26924CA28084A3C0 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/v23m3q.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = v23m3q.h; path = ../../src_cpp/include/delfem2/v23m3q.h; sourceTree = SOURCE_ROOT; };
+		546CDDB5666A48A1BE883666 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_mshtopoio.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = py_mshtopoio.cpp; path = py_mshtopoio.cpp; sourceTree = SOURCE_ROOT; };
+		60FBE22B223E48C2BD24EA7B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshio.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mshio.cpp; path = ../../src_cpp/cpp/mshio.cpp; sourceTree = SOURCE_ROOT; };
+		6AA248D0AF9F4455B16A5767 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshtopoio.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mshtopoio.cpp; path = ../../src_cpp/cpp/mshtopoio.cpp; sourceTree = SOURCE_ROOT; };
+		6AD9C59F411C4F8E876FAD60 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/vec2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vec2.h; path = ../../src_cpp/include/delfem2/vec2.h; sourceTree = SOURCE_ROOT; };
+		6B3FEFDBEFE3429E862C92B9 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/dyntri_v2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dyntri_v2.h; path = ../../src_cpp/include/delfem2/dyntri_v2.h; sourceTree = SOURCE_ROOT; };
+		6CAE1A287CA44FBC8D953D23 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/isosurface_stuffing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = isosurface_stuffing.h; path = ../../src_cpp/include/delfem2/isosurface_stuffing.h; sourceTree = SOURCE_ROOT; };
+		6D9CFA859077421D97B8DC95 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/dyntri_v3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dyntri_v3.h; path = ../../src_cpp/include/delfem2/dyntri_v3.h; sourceTree = SOURCE_ROOT; };
+		6E8459891A6A4E3D8A7CE779 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/msh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = msh.cpp; path = ../../src_cpp/cpp/msh.cpp; sourceTree = SOURCE_ROOT; };
+		760BC1CC8AAC4CCCBC0B6D2C /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/funcs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = funcs.cpp; path = ../../src_cpp/cpp/funcs.cpp; sourceTree = SOURCE_ROOT; };
+		7E94ED743B37462E92F28AD2 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/bv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bv.h; path = ../../src_cpp/include/delfem2/bv.h; sourceTree = SOURCE_ROOT; };
+		7F814014AE7A45ABA206B8DA /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/objfunc_v23.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = objfunc_v23.h; path = ../../src_cpp/include/delfem2/objfunc_v23.h; sourceTree = SOURCE_ROOT; };
+		819E759B743F4FC8948B025B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/cad2d.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cad2d.cpp; path = ../../src_cpp/cpp/cad2d.cpp; sourceTree = SOURCE_ROOT; };
+		87194B8C686E45BB8475F1FD /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/msh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = msh.h; path = ../../src_cpp/include/delfem2/msh.h; sourceTree = SOURCE_ROOT; };
+		8874DF706C31492EBF992715 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/voxel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = voxel.h; path = ../../src_cpp/include/delfem2/voxel.h; sourceTree = SOURCE_ROOT; };
+		8A19A09609074675A7D614F6 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_fem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = py_fem.cpp; path = py_fem.cpp; sourceTree = SOURCE_ROOT; };
+		8F98D59D4970486283951004 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/fem_ematrix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = fem_ematrix.h; path = ../../src_cpp/include/delfem2/fem_ematrix.h; sourceTree = SOURCE_ROOT; };
+		9CC43D0A5DF647F8885BFB11 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mat3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mat3.h; path = ../../src_cpp/include/delfem2/mat3.h; sourceTree = SOURCE_ROOT; };
+		A42F7E4021E14828926EA2E5 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/sdf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sdf.cpp; path = ../../src_cpp/cpp/sdf.cpp; sourceTree = SOURCE_ROOT; };
+		A6745DF02B424D49AD2484F4 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/fem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = fem.h; path = ../../src_cpp/include/delfem2/fem.h; sourceTree = SOURCE_ROOT; };
+		A839DBE8A68D477FB01A259D /* /Users/nobuyuki/projects/delfem2/src_pybind/core/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		AC7D97BAF06545BF9A2516F0 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/quat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = quat.h; path = ../../src_cpp/include/delfem2/quat.h; sourceTree = SOURCE_ROOT; };
+		AF2C47949CA94C62A8489E1B /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/cad2d.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cad2d.h; path = ../../src_cpp/include/delfem2/cad2d.h; sourceTree = SOURCE_ROOT; };
+		B07056CD615C4E7D8FEA4C97 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/quat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quat.cpp; path = ../../src_cpp/cpp/quat.cpp; sourceTree = SOURCE_ROOT; };
+		B1C6F593C0A44EA98A930C08 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dyntri.cpp; path = ../../src_cpp/cpp/dyntri.cpp; sourceTree = SOURCE_ROOT; };
+		B3E9A7DEF6204BFCBA03A1C7 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mshtopo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mshtopo.h; path = ../../src_cpp/include/delfem2/mshtopo.h; sourceTree = SOURCE_ROOT; };
+		BA1ED178C83A4391AC7DCA4F /* c_core */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = c_core.so; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF33D9420734B54B7FF5B2C /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/isosurface_stuffing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = isosurface_stuffing.cpp; path = ../../src_cpp/cpp/isosurface_stuffing.cpp; sourceTree = SOURCE_ROOT; };
+		BCCBFF4BF4BE44DC96A05F60 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/hash3d.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hash3d.h; path = ../../src_cpp/include/delfem2/hash3d.h; sourceTree = SOURCE_ROOT; };
+		C265BF57BD284D0281D809F4 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_polyline.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = py_polyline.cpp; path = py_polyline.cpp; sourceTree = SOURCE_ROOT; };
+		C45EAFD7C99E4CA1ABE94A91 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_field.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = py_field.cpp; path = py_field.cpp; sourceTree = SOURCE_ROOT; };
+		C67B55E8BC9C44B5A8F23E6B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/fem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fem.cpp; path = ../../src_cpp/cpp/fem.cpp; sourceTree = SOURCE_ROOT; };
+		CE366815364246039FCEAEFE /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/fem_ematrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fem_ematrix.cpp; path = ../../src_cpp/cpp/fem_ematrix.cpp; sourceTree = SOURCE_ROOT; };
+		D24D61F5BE244B768EDB0562 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/dyntri.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dyntri.h; path = ../../src_cpp/include/delfem2/dyntri.h; sourceTree = SOURCE_ROOT; };
+		DC24D4A83F664153BEAF670F /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/matrix_sparse.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = matrix_sparse.h; path = ../../src_cpp/include/delfem2/matrix_sparse.h; sourceTree = SOURCE_ROOT; };
+		DE9891EE707C4A91B9779A96 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri_v3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dyntri_v3.cpp; path = ../../src_cpp/cpp/dyntri_v3.cpp; sourceTree = SOURCE_ROOT; };
+		DEA23B65F5E74D7B8DAC870B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/objfunc_v23.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = objfunc_v23.cpp; path = ../../src_cpp/cpp/objfunc_v23.cpp; sourceTree = SOURCE_ROOT; };
+		E05179755C44482491127685 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/funcs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = funcs.h; path = ../../src_cpp/include/delfem2/funcs.h; sourceTree = SOURCE_ROOT; };
+		E1B82F8DBE444B97A928792E /* /Users/nobuyuki/projects/delfem2/src_pybind/core/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E7A5DABD97064A7FB7318B87 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/ilu_sparse.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ilu_sparse.cpp; path = ../../src_cpp/cpp/ilu_sparse.cpp; sourceTree = SOURCE_ROOT; };
+		E7E31F0ED08040828BF77C89 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri_v2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dyntri_v2.cpp; path = ../../src_cpp/cpp/dyntri_v2.cpp; sourceTree = SOURCE_ROOT; };
+		EEFDB7C80F5941DDA851744B /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mathexpeval.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mathexpeval.h; path = ../../src_cpp/include/delfem2/mathexpeval.h; sourceTree = SOURCE_ROOT; };
+		F454F71B4BFC4E59BA656936 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/sdf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sdf.h; path = ../../src_cpp/include/delfem2/sdf.h; sourceTree = SOURCE_ROOT; };
+		FB5168AC826F408BB616CBBD /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/vec3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vec3.h; path = ../../src_cpp/include/delfem2/vec3.h; sourceTree = SOURCE_ROOT; };
+		FC62BF6590BE44DD90153E1D /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/vec3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vec3.cpp; path = ../../src_cpp/cpp/vec3.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		15864F0A40424A12B21AC83F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		178D950E1C9A4CD0849534E3 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E94ED743B37462E92F28AD2 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/bv.h */,
+				AF2C47949CA94C62A8489E1B /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/cad2d.h */,
+				D24D61F5BE244B768EDB0562 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/dyntri.h */,
+				6B3FEFDBEFE3429E862C92B9 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/dyntri_v2.h */,
+				6D9CFA859077421D97B8DC95 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/dyntri_v3.h */,
+				A6745DF02B424D49AD2484F4 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/fem.h */,
+				8F98D59D4970486283951004 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/fem_ematrix.h */,
+				E05179755C44482491127685 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/funcs.h */,
+				BCCBFF4BF4BE44DC96A05F60 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/hash3d.h */,
+				13C95660706D43DF9974BABF /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/ilu_sparse.h */,
+				6CAE1A287CA44FBC8D953D23 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/isosurface_stuffing.h */,
+				9CC43D0A5DF647F8885BFB11 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mat3.h */,
+				EEFDB7C80F5941DDA851744B /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mathexpeval.h */,
+				DC24D4A83F664153BEAF670F /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/matrix_sparse.h */,
+				87194B8C686E45BB8475F1FD /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/msh.h */,
+				0FE66CDC688047C5A01DDCF5 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mshio.h */,
+				B3E9A7DEF6204BFCBA03A1C7 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mshtopo.h */,
+				2AF25E48D9AC4CB794F6DAEA /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/mshtopoio.h */,
+				7F814014AE7A45ABA206B8DA /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/objfunc_v23.h */,
+				AC7D97BAF06545BF9A2516F0 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/quat.h */,
+				F454F71B4BFC4E59BA656936 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/sdf.h */,
+				420A277F26924CA28084A3C0 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/v23m3q.h */,
+				6AD9C59F411C4F8E876FAD60 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/vec2.h */,
+				FB5168AC826F408BB616CBBD /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/vec3.h */,
+				8874DF706C31492EBF992715 /* /Users/nobuyuki/projects/delfem2/src_cpp/include/delfem2/voxel.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		24C20800EEE64166BC2D11A3 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				15864F0A40424A12B21AC83F /* CMake Rules */,
+				200C82EC5A974EE5975C0C6C /* /Users/nobuyuki/projects/delfem2/src_pybind/core/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		77C9654FC6894FC5944C6C28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA1ED178C83A4391AC7DCA4F /* c_core */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		901CF135777749DC942A30BA /* c_core */ = {
+			isa = PBXGroup;
+			children = (
+				178D950E1C9A4CD0849534E3 /* Header Files */,
+				B5A9C57574D444978BDFC476 /* Source Files */,
+				E1B82F8DBE444B97A928792E /* /Users/nobuyuki/projects/delfem2/src_pybind/core/CMakeLists.txt */,
+			);
+			name = c_core;
+			sourceTree = "<group>";
+		};
+		9DA9949043974223BEAC6A7E = {
+			isa = PBXGroup;
+			children = (
+				901CF135777749DC942A30BA /* c_core */,
+				24C20800EEE64166BC2D11A3 /* ALL_BUILD */,
+				77C9654FC6894FC5944C6C28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5A9C57574D444978BDFC476 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				819E759B743F4FC8948B025B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/cad2d.cpp */,
+				B1C6F593C0A44EA98A930C08 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri.cpp */,
+				E7E31F0ED08040828BF77C89 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri_v2.cpp */,
+				DE9891EE707C4A91B9779A96 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri_v3.cpp */,
+				C67B55E8BC9C44B5A8F23E6B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/fem.cpp */,
+				CE366815364246039FCEAEFE /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/fem_ematrix.cpp */,
+				760BC1CC8AAC4CCCBC0B6D2C /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/funcs.cpp */,
+				4132AEEC52C6486BA4C78805 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/hash3d.cpp */,
+				E7A5DABD97064A7FB7318B87 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/ilu_sparse.cpp */,
+				BBF33D9420734B54B7FF5B2C /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/isosurface_stuffing.cpp */,
+				245C383328AA4C3285548A48 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mat3.cpp */,
+				2F0EE4EFE1B84C9BB561A744 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mathexpeval.cpp */,
+				0831861382B543A9837810F8 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/matrix_sparse.cpp */,
+				6E8459891A6A4E3D8A7CE779 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/msh.cpp */,
+				60FBE22B223E48C2BD24EA7B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshio.cpp */,
+				21AE2B2EBD7349A389FCD72D /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshtopo.cpp */,
+				6AA248D0AF9F4455B16A5767 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshtopoio.cpp */,
+				DEA23B65F5E74D7B8DAC870B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/objfunc_v23.cpp */,
+				B07056CD615C4E7D8FEA4C97 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/quat.cpp */,
+				A42F7E4021E14828926EA2E5 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/sdf.cpp */,
+				1190E413D7FD4AEEAD96D32B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/v23m3q.cpp */,
+				359AC275DBDD4BFEADA79BFF /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/vec2.cpp */,
+				FC62BF6590BE44DD90153E1D /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/vec3.cpp */,
+				05942D5D955B4595B5DE14B2 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/voxel.cpp */,
+				A839DBE8A68D477FB01A259D /* /Users/nobuyuki/projects/delfem2/src_pybind/core/main.cpp */,
+				8A19A09609074675A7D614F6 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_fem.cpp */,
+				C45EAFD7C99E4CA1ABE94A91 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_field.cpp */,
+				546CDDB5666A48A1BE883666 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_mshtopoio.cpp */,
+				C265BF57BD284D0281D809F4 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_polyline.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61C8F7F255C4472298879F94 /* c_core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63ABFA2F462F4C4FAF6745B7 /* Build configuration list for PBXNativeTarget "c_core" */;
+			buildPhases = (
+				D958BFF206144189BBB8FC59 /* Sources */,
+				FB0D01EC69D74BD08D4BE43E /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B6525F1D5384E438FEB9AB2 /* PBXTargetDependency */,
+			);
+			name = c_core;
+			productName = c_core;
+			productReference = BA1ED178C83A4391AC7DCA4F /* c_core */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53BDDDB65BCF4CC8B94B76B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1030;
+			};
+			buildConfigurationList = D08C1EADE0284D648DA6FFCA /* Build configuration list for PBXProject "c_core" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				D36BFB81C84D41B4A1082DB0 /* Debug */,
+				14BE7F152F804D859D465763 /* Release */,
+				26DBEFDC3C244160B3BA1D92 /* MinSizeRel */,
+				F92BFCC751A34A18A68683B9 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 9DA9949043974223BEAC6A7E;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				12B39326A0B147D5B95C7D59 /* ALL_BUILD */,
+				F86405D26500457D9D1FE572 /* ZERO_CHECK */,
+				61C8F7F255C4472298879F94 /* c_core */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0873F03FA72A49B691D5848E = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		0F5832AC33B146388A7407B6 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode -f /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		700055B5B3104C3DB92E9DA3 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7A4AFFDEAD484D328A8F15AE /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode -f /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		FB0D01EC69D74BD08D4BE43E /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode -f /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode/CMakeScripts/c_core_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D958BFF206144189BBB8FC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233FE324339348379B5588B1 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/cad2d.cpp */,
+				8788034C346347A59C147EF8 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri.cpp */,
+				E366FB4EDC6D4C7EA7737520 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri_v2.cpp */,
+				1CAAD8C2469541538B34E3B4 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/dyntri_v3.cpp */,
+				AC6AEC0B2CE14C8B92236F54 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/fem.cpp */,
+				FFD3F248269343F1B13EAF64 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/fem_ematrix.cpp */,
+				53C43ACD69124AA8A2A89976 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/funcs.cpp */,
+				9C9F51FC04164BDFB517F653 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/hash3d.cpp */,
+				51F4EFBAE4B946AD91437DD2 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/ilu_sparse.cpp */,
+				7F3B9B1DBE0345AA97985E37 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/isosurface_stuffing.cpp */,
+				E982922A7E9D4FE0B99B4DDF /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mat3.cpp */,
+				A3F872A6319449899E2F0702 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mathexpeval.cpp */,
+				3D1D5A0EE7E44F2BAC027F92 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/matrix_sparse.cpp */,
+				31922FE19A0D42849B5C2E54 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/msh.cpp */,
+				BB91ACF98D61405CA2490D20 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshio.cpp */,
+				F001C47D32424B3AA22885D2 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshtopo.cpp */,
+				07180F4B366C4CE9A69D9200 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/mshtopoio.cpp */,
+				E0E94E3B95C54E6DA2E0BFA3 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/objfunc_v23.cpp */,
+				5B21B955D5C94E81B3DBE7E6 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/quat.cpp */,
+				C36B01FFE8C14F60B6BCECF9 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/sdf.cpp */,
+				19D465D377D949FAA28E5618 /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/v23m3q.cpp */,
+				E88F7D5C286542CEBA328F0E /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/vec2.cpp */,
+				B3AEA377F08743AEA01D7C3F /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/vec3.cpp */,
+				62E4D46A0E224830BBE1435B /* /Users/nobuyuki/projects/delfem2/src_cpp/cpp/voxel.cpp */,
+				F029257E26A64329AE671D32 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/main.cpp */,
+				DF5260B4823543F09D1E10E2 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_fem.cpp */,
+				350F9725F1E44EAAAA1CA0DA /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_field.cpp */,
+				9501EDB2AE9A4352AF2A1DB1 /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_mshtopoio.cpp */,
+				9A398B65D7704C00B8A6596F /* /Users/nobuyuki/projects/delfem2/src_pybind/core/py_polyline.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B6525F1D5384E438FEB9AB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F86405D26500457D9D1FE572 /* ZERO_CHECK */;
+			targetProxy = 958D66B00FC84308A30F243B /* PBXContainerItemProxy */;
+		};
+		A3A8441BC2B04451BE8C47D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F86405D26500457D9D1FE572 /* ZERO_CHECK */;
+			targetProxy = D1BAB4C0DFED493CA9B073F5 /* PBXContainerItemProxy */;
+		};
+		CC7F09D3DF384FF5B61A1BB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61C8F7F255C4472298879F94 /* c_core */;
+			targetProxy = DA54F1B66329472189998FC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		353F61C2872E452480D18460 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode/build;
+			};
+			name = MinSizeRel;
+		};
+		49AC31A9CE5D48BFB01DB09F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = .so;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",c_core_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/nobuyuki/projects/delfem2/src_pybind/core/../../src_cpp/include,/Users/nobuyuki/projects/delfem2/src_pybind/pybind11/include,"/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/include/python2.7");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-Wall -Wextra -Wno-deprecated-declarations            -DNDEBUG -fPIC -fvisibility=hidden '-std=c++14' -flto  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -undefined dynamic_lookup -flto";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = c_core;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4B41F769DFE4448E8907C13D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		75D8E2CC9BA847069D98D2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		96E04F448105418EB960935B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode/build;
+			};
+			name = Debug;
+		};
+		A6E58A455043494EBD620B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B2BC3D93FBB74FD0A2775880 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = .so;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",c_core_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/nobuyuki/projects/delfem2/src_pybind/core/../../src_cpp/include,/Users/nobuyuki/projects/delfem2/src_pybind/pybind11/include,"/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/include/python2.7");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-Wall -Wextra -Wno-deprecated-declarations         -DNDEBUG -fPIC -fvisibility=hidden '-std=c++14' -flto  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -undefined dynamic_lookup -flto";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = c_core;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C39993BF9FF843EA929D7DDC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C9CFD819A1EA4AFF8DC30ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		CCA5AC6E0E884F95B4EB2E0B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D4849DC75435403AB4A483D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = .so;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",c_core_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/nobuyuki/projects/delfem2/src_pybind/core/../../src_cpp/include,/Users/nobuyuki/projects/delfem2/src_pybind/pybind11/include,"/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/include/python2.7");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-Wall -Wextra -Wno-deprecated-declarations         -DNDEBUG -fPIC -fvisibility=hidden '-std=c++14' -flto  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -undefined dynamic_lookup -flto";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = c_core;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		DFA0F1A7441442EBA7312504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode/build;
+			};
+			name = Release;
+		};
+		E1F8F53C666C4AB991D5F865 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode/build;
+			};
+			name = RelWithDebInfo;
+		};
+		E94B61BAFDF045CC9168C8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		EAF14A9C0B11435EB37C24FB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		EEE9A3B11EEB4EB1BFBF1093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = .so;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",c_core_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/nobuyuki/projects/delfem2/src_pybind/core/../../src_cpp/include,/Users/nobuyuki/projects/delfem2/src_pybind/pybind11/include,"/usr/local/Cellar/python@2/2.7.16/Frameworks/Python.framework/Versions/2.7/include/python2.7");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-Wall -Wextra -Wno-deprecated-declarations        -fPIC -fvisibility=hidden '-std=c++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -undefined dynamic_lookup";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = c_core;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/delfem2/src_pybind/core/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53F14EF7409640348BAF68AD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D8E2CC9BA847069D98D2F7 /* Debug */,
+				C9CFD819A1EA4AFF8DC30ABD /* Release */,
+				CCA5AC6E0E884F95B4EB2E0B /* MinSizeRel */,
+				EAF14A9C0B11435EB37C24FB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		63ABFA2F462F4C4FAF6745B7 /* Build configuration list for PBXNativeTarget "c_core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE9A3B11EEB4EB1BFBF1093 /* Debug */,
+				D4849DC75435403AB4A483D9 /* Release */,
+				B2BC3D93FBB74FD0A2775880 /* MinSizeRel */,
+				49AC31A9CE5D48BFB01DB09F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		98EDC218C1EE496A95941D1A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E58A455043494EBD620B32 /* Debug */,
+				E94B61BAFDF045CC9168C8EF /* Release */,
+				C39993BF9FF843EA929D7DDC /* MinSizeRel */,
+				4B41F769DFE4448E8907C13D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D08C1EADE0284D648DA6FFCA /* Build configuration list for PBXProject "c_core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E04F448105418EB960935B /* Debug */,
+				DFA0F1A7441442EBA7312504 /* Release */,
+				353F61C2872E452480D18460 /* MinSizeRel */,
+				E1F8F53C666C4AB991D5F865 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53BDDDB65BCF4CC8B94B76B0 /* Project object */;
+}

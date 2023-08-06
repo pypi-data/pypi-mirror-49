@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: fb-accountkit
+Version: 1.0.1
+Summary: Facebook AccountKit module for Server-side implementation. https://developers.facebook.com/docs/accountkit/
+Home-page: https://github.com/laminko/fb_accountkit
+Author: lmk
+Author-email: lminko.lmk@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.5.2
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+
+# fb_accountkit
+
+A simple python module for Facebook's AccountKit server-side implementations.
+
+## Dependencies
+
+- [requests](https://2.python-requests.org/en/master/#)
+
+## Installation
+
+```bash
+pip install fb-accountkit
+```
+
+## Usage
+
+```python
+from fb_accountkit import FBAccountKit
+
+fbak = FBAccountKit(
+    'APP_ID',
+    'APP_secret',
+    version='v1.1'
+)
+
+# store token (user_access_token) to response back to client.
+token_info = fbak.retrieve_user_access_token('auth_code_from_client')
+
+# to validate token, call `get_user_session()`
+print(fbak.get_user_session())
+```
+
+

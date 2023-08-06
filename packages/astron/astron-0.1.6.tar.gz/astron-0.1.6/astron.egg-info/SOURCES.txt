@@ -1,0 +1,27 @@
+MANIFEST.in
+README.md
+setup.py
+astron/__init__.py
+astron/assests.py
+astron/game.py
+astron/pre_made.py
+astron/scene.py
+astron/utilities.py
+astron.egg-info/PKG-INFO
+astron.egg-info/SOURCES.txt
+astron.egg-info/dependency_links.txt
+astron.egg-info/requires.txt
+astron.egg-info/top_level.txt
+astron.egg-info/zip-safe
+astron/images/planets.7z
+astron/images/ship1 copy.ai
+astron/images/ship1.png
+astron/images/ship1_+x.png
+astron/images/ship1_+y.png
+astron/images/ship1_-x.png
+astron/images/ship1_-y.png
+astron/images/ship1_old.png
+astron/images/stars_1.jpg
+astron/images/stars_2.jpg
+astron/images/stars_3.jpg
+astron/images/stars_4.jpg

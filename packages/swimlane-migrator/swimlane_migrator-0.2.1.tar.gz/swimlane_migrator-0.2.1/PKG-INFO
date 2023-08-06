@@ -1,0 +1,19 @@
+Metadata-Version: 1.0
+Name: swimlane_migrator
+Version: 0.2.1
+Summary: Swimlane Content Migration Package
+Home-page: https://swimlane.com
+Author: Swimlane
+Author-email: info@swimlane.com
+License: UNKNOWN
+Description: # Swimlane Migrator
+        require swimlane python driver https://github.com/swimlane/swimlane-python
+        
+        # Change Log
+        
+        ## 0.2.1
+        * Fixed bug that threw error when integrations had an empty input
+        
+        ## 0.2.0
+        * Initial Release
+Platform: UNKNOWN

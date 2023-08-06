@@ -1,0 +1,10 @@
+facereg/__init__.py,sha256=kH8PE1QTk5nzoY6jm7ATwdwYm2t4LZhskyxhYNfsoq8,639
+facereg/__main__.py,sha256=WzVBBQrLbUq-lpreGOfK1t7-aHEwGXIpNq-M3_DonQQ,1110
+facereg/encodings.pickle,sha256=G81eT_12dRwqWB1KZGxBxFWI6NNq6C6PFU_kD2tPdC0,6666
+facereg/face_encoder.py,sha256=LoeEdbtCgoo9OMA07jvwRMAZ0x-kLFaMkpJmJ7HDsLc,1676
+facereg/google_images.py,sha256=Cdge4MRNFZRcMi0ay38dE3TbQsWRPVCdmRDLg2fIiok,1025
+facereg/recognize_faces.py,sha256=US2ojb1NgQpDn-pLxJTtTsU7p8h9IRKsEjaeDmsDBlk,2297
+facereg-0.2.1.dist-info/METADATA,sha256=AE_tsxXrSbyn8wTnnjAVsjF4caUCF23WUTgXOB8XJLA,4144
+facereg-0.2.1.dist-info/RECORD,,
+facereg-0.2.1.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+facereg-0.2.1.dist-info/top_level.txt,sha256=d7UgSoVlYAj8ku7AL_YI170s4FA2D7Q2FOhV8bjyVnk,8

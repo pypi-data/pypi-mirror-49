@@ -1,0 +1,66 @@
+# Snag 
+A program to automatically fetch free software from the web.  Any software with an unauthenticated download link can be downloaded fully automatically, while other software's download pages will be opened for manual download.
+
+While this is primarily intended to assist in regular updates of downloaded software, any file type can be downloaded with this tool.
+
+## Installation
+```
+sudo pip install snag
+```
+
+## Usage
+To download the programs, navigate to the folder in which you would like the programs to be placed and run the following command:
+
+```
+snag [config | -e/--example] [options]
+```
+### Options
+```
+config			- Specifies where to look for config file. Required (Mutually exclusive with -e)
+-e, --example		- enables use of the built-in example download list (Mutually exclusive with config)
+-o, --out		- Specifies output directory for downloaded files (default: ./)
+-q, --quiet	 	- disables printing to the terminal.  Incompatible with -v.
+-v, --verbose	 	- enables verbose status messages.  Incompatible with -q.
+-l, --log	 	- enables logging to specified log file (default: ./log)
+-c, --chars		- Specifies maximum number of characters to be printed per logging action. Set to 0 for unlimited printing. (default: 0)
+```
+
+Example:
+```
+snag -vl ./TTConfig.csv
+```
+(Enables verbose mode and logging, and uses ./TTConfig.csv as the config file)
+
+## Configuration
+The config file must be formatted as a csv with the following fields:
+```
+Program Name, Download Page URL, Link Locator, File Type Extension, Category
+```
+Each line should specify the download information for one program.  Lines starting with a '#' will be ignored.
+
+Example:
+```
+Adium,https://adium.im/.downloadInfo:a:*href,dmg,mac
+```
+This downloads the file "Adium.dmg" from the url by getting the href attribute of a link that is the child of an element with the class "downloadInfo", and saves it to the folder "mac"
+### Link Locators
+The link locator is a string that the program uses to find the download link of a program on a page.
+
+A valid link locator is composed of a series of "nodes" delimited by colons (:).
+
+Example:
+```
+ #osversion:^:a:*href
+```
+This finds the element with the ID "osversion", moves to its parent element, finds its first child of type a, and gets the href attribute of the element.
+
+The type of a node is determined by its first character.  The available node type prefixes are listed below:
+```
+. (period) 	- Class attribute
+# (pound sign)  - ID attribute
+^ (caret)	- Move to parent element
+@ (at sign)	- Get title
+* (asterisk)	- Get specified attribute
+No prefix	- Get element type
+```
+

@@ -1,0 +1,2 @@
+include README.rst
+include alphaj_naver_stock_info_cralwer/jsons/*

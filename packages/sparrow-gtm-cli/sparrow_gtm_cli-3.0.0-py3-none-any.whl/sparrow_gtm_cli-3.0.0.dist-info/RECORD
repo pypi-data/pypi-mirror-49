@@ -1,0 +1,13 @@
+sparrow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparrow/cli.py,sha256=hK3OJ--coi70VlUplJ8MBL83kE414BQWH7QM96kraIY,105
+sparrow/src/__init__.py,sha256=6DMabL52Gw6m9qx9kA1-mgEk67nvb0S0eZFtdiznVEk,51
+sparrow/src/commands.py,sha256=ImwvESiFvV-8Qjy7J-Bafq4VL7evSMl5v2Mrc_KeZoU,721
+sparrow/src/helper.py,sha256=I8vhG_zlWpBddNfymsQeUSaCG6S2XHLAYd7JOoNaST8,8141
+sparrow/src/manager.py,sha256=rygdhnCD1_ulZ7uREB6AGcK7E6MSV3NHBOZRd_VSa5E,1534
+sparrow/src/parser.py,sha256=ExmOF7R44BqxO0lth1lAZRnRlLf9q30tmZV6T3b1_RI,3595
+sparrow_gtm_cli-3.0.0.dist-info/LICENCE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+sparrow_gtm_cli-3.0.0.dist-info/METADATA,sha256=tAb866iRBMTn8n8YZ8Hp1hbR67ayjdSG3BV12jhmeks,838
+sparrow_gtm_cli-3.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+sparrow_gtm_cli-3.0.0.dist-info/entry_points.txt,sha256=Maaji7Pu2YWaI-V4eBz4V78ZsuaDOXwtLhTeQZJnG1s,46
+sparrow_gtm_cli-3.0.0.dist-info/top_level.txt,sha256=NNqD2raqEeoCcfO0mV58wPFLlQk8VyAM73yRsaM3BkI,8
+sparrow_gtm_cli-3.0.0.dist-info/RECORD,,

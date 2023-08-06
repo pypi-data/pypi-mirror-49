@@ -1,0 +1,9 @@
+README.md
+setup.py
+TakeAiBLiP/AiBLiP.py
+TakeAiBLiP/__init__.py
+TakeAiBLiPModelManager.egg-info/PKG-INFO
+TakeAiBLiPModelManager.egg-info/SOURCES.txt
+TakeAiBLiPModelManager.egg-info/dependency_links.txt
+TakeAiBLiPModelManager.egg-info/top_level.txt
+test/__init__.py

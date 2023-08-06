@@ -1,0 +1,4 @@
+plotly
+requests
+retrying>=1.3.3
+six

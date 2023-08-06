@@ -1,0 +1,8 @@
+click
+tabulate
+requests
+requests-toolbelt
+packaging
+PyYAML>=5.1
+pyperclip
+yaspin

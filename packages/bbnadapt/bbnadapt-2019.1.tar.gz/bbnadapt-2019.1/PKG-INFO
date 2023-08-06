@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: bbnadapt
+Version: 2019.1
+Summary: Adaptive meshing for fun and profit.
+Home-page: https://github.com/BBN-Q/adapt
+Author: Graham Rowlands
+Author-email: UNKNOWN
+License: Apache 2.0 License
+Download-URL: https://github.com/BBN-Q/adapt
+Description: Adaptive meshing for fun and profit.
+Keywords: adaptive refinement
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering

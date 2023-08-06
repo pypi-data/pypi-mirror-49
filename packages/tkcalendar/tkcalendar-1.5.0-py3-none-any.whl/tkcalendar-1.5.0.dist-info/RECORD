@@ -1,0 +1,10 @@
+tkcalendar/__init__.py,sha256=5hUgk87vYdClePZnVe_5dFS6b8JoZzGLd3Hw2xgIyPI,1044
+tkcalendar/__main__.py,sha256=j7Lv_5hYDV19ZrLofKdo6wNH9BwbhheQ02LcU66VN5Q,1945
+tkcalendar/calendar_.py,sha256=iP0FZ-RNlXokyPwIGJgS7TP2uvcDWQwsQUHtvlk7rvU,69307
+tkcalendar/dateentry.py,sha256=4T1wNgl3PC3q_Cxvu_YDvwShLNxylmyqGCCbJJYkoJg,13224
+tkcalendar/tooltip.py,sha256=6B2srloxxddf3TNddjhDEnqE4upXLpJNuPMSJ2HwiK4,7390
+tkcalendar-1.5.0.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+tkcalendar-1.5.0.dist-info/METADATA,sha256=U7Y9JSWGZIp6J51x4-MQg-qthpGmTRTP25H2Wuk-v6w,20811
+tkcalendar-1.5.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+tkcalendar-1.5.0.dist-info/top_level.txt,sha256=b5kRBcf5J4EY_xkjrPhmSD9a3PPJTNceA7PK0k0nofg,11
+tkcalendar-1.5.0.dist-info/RECORD,,

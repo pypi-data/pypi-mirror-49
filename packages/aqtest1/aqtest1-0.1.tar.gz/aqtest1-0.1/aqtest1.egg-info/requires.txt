@@ -1,0 +1,5 @@
+samtools
+minimap2
+pysam
+numpy
+scipy

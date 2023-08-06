@@ -1,0 +1,2 @@
+Click>=7.0
+pyzabbix>=0.7.5

@@ -1,0 +1,10 @@
+README.md
+setup.py
+UsePhysics.egg-info/PKG-INFO
+UsePhysics.egg-info/SOURCES.txt
+UsePhysics.egg-info/dependency_links.txt
+UsePhysics.egg-info/entry_points.txt
+UsePhysics.egg-info/top_level.txt
+UsePhysics.egg-info/zip-safe
+physics/__init__.py
+physics/usephysics.py

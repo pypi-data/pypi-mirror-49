@@ -1,0 +1,9 @@
+pylint
+pytest
+pytest-cov
+numpy>=1.16.2
+h5py>=2.9.0
+jsonschema
+Pillow>=5.4.1
+PyYAML>=3.13
+click

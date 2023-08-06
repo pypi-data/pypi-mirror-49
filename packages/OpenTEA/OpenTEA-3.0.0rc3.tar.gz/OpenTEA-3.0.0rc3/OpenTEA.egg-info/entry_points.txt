@@ -1,0 +1,3 @@
+[console_scripts]
+opentea_test_schema = opentea.cli:test_schema
+

@@ -1,0 +1,12 @@
+emagpy/Model.py,sha256=8fYWTMm4Uz_CUi95LhU7ABc4AueC1Pkh5KFke_O3ucs,282
+emagpy/Problem.py,sha256=CqIexMyRw5Ku7-PO4p9YEX1ZhxNKBOXeWDoSeHHPYcg,46411
+emagpy/Survey.py,sha256=yMnx7jZDHoV0kn7-OEE2YHaw2FAsoN4r3YMvK3NV0uc,33596
+emagpy/__init__.py,sha256=r08-iRm2zVQjx426W9wN3Xn6M9y-BFmHPs9nGumznwc,214
+emagpy/emMinimizeSpeedUp.py,sha256=SyrlshZ14hE98n-hC0XfBuMwKW2BcQiG0V2X8zwlv48,2896
+emagpy/invertHelper.py,sha256=HZeIHSA05ViYXth7IUxLhi950YZLewUOAav05-AWHK8,21854
+emagpy/northWyke-calibration.py,sha256=xyjWoWgtBVzqk6Trd5EKqRj7owuEi6Xkljn8lxAdwvc,277
+emagpy-0.0.1.dist-info/LICENSE,sha256=BRLYsQiOYYzZx1UW7I-VLK8b660wRVg-1kw2qFPIevk,35059
+emagpy-0.0.1.dist-info/METADATA,sha256=xL9kJtayh6KmnNF8S9oG0ZDKD1wtIkKLXqT2wLz0L1g,1908
+emagpy-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+emagpy-0.0.1.dist-info/top_level.txt,sha256=-aQlfohg9v7OZvnOCPtbZK9aGyXzVVtkoTffSXPIR84,7
+emagpy-0.0.1.dist-info/RECORD,,

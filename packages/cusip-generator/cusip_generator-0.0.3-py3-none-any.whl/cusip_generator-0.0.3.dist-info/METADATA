@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: cusip-generator
+Version: 0.0.3
+Summary: Generate modified CUSIPs given Bloomberg Tickers
+Home-page: https://github.com/luisliuchao/cusip_generator
+Author: Liu Chao
+Author-email: luis.liu.1018@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# cusip_generator
+Generate modified CUSIPs given Bloomberg Tickers
+
+# Usage
+```bash
+    # install the package
+    pip install cusip_generator
+```
+
+```python
+    # in your project
+    from cusip_generator import Generator
+    generator = Generator('AIH8 Index')
+    cusip = generator.convert_to_cusip()
+```
+
+# Run Tests
+`python -m unittest discover tests`
+
+
+
+

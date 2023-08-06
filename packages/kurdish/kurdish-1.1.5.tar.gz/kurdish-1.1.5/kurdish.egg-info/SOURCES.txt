@@ -1,0 +1,11 @@
+README.md
+setup.py
+kurdish/__init__.py
+kurdish/bizrokeRules.py
+kurdish/ku.py
+kurdish/punctuation.py
+kurdish/vowelIssues.py
+kurdish.egg-info/PKG-INFO
+kurdish.egg-info/SOURCES.txt
+kurdish.egg-info/dependency_links.txt
+kurdish.egg-info/top_level.txt

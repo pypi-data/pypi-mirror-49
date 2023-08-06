@@ -1,0 +1,15 @@
+numpy
+scipy
+scikit-learn
+tqdm
+pybind11
+joblib
+nmslib
+
+[:platform_system != "Windows"]
+falconn
+
+[test]
+coverage
+pytest
+nose

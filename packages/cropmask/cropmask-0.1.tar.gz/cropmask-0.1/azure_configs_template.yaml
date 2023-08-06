@@ -1,0 +1,43 @@
+account:
+    account_name:
+    account_key: 
+    # generated from az login
+    tenant_id: 
+    subscription_id:
+    app_id: 
+    app_key:
+    user: 
+    passwd:
+    workspace_name: 
+    resource_group: 
+    perm_resource_group:
+    location: 
+    storage_name:
+    resource_id: 
+    storage_key: 
+    vm_temp_path:
+
+storage:
+    wbd_gdb_path:
+    share_name: 
+    container: 
+    region_dir: 
+    region_name: 
+    fail_on_exist:
+
+download:
+    lsru_config: 
+    product_list: ['source_metadata', 'sr', 'sr_evi', 'sr_ndmi', 'stats', 'pixel_qa']
+    huc_level: 6
+    huc_id: 102100
+    collection: LANDSAT_TM_C1 # format according to lsru strings, see help for usgs.search
+    year_start: 2005
+    month_start: 1
+    day_start: 1
+    year_end: 2006
+    month_end: 1
+    day_end: 1
+    max_results: 300
+    max_cloud_cover: 10
+    path_row_list: ['032031']
+

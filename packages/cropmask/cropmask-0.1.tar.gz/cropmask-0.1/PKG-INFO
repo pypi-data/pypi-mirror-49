@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: cropmask
+Version: 0.1
+Summary: AI for Earth project to map center pivots and monitor crop water use.
+Home-page: https://github.com/ecohydro/CropMask_RCNN
+Author: Ryan Avery
+Author-email: ravery@ucsb.edu

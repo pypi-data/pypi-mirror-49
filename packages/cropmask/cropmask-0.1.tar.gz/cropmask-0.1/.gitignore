@@ -1,0 +1,85 @@
+./app/Dockerfile
+./app/LocalForwarder.config
+
+src/ # this is built from installing packages from github with conda
+azure_configs.yaml
+
+# Data files and directories common in repo root
+data/
+datasets/
+logs/
+*.h5
+results/
+temp/
+test/
+notebooks/aml_config/
+aml_config/
+models/*.h5
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# VS Studio Code
+.vscode
+
+# PyCharm
+.idea/
+
+# Dropbox
+.dropbox.attr
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# dotenv
+.env
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+#terraform secrets, don't commit to version control
+.vm*
+terraform/.vm*
+terraform/terraform.tfvars 
+terraform/.terraform
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform.tfvars
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.tfstate.lock.info
+terraform/.terraform.tfstate.lock.info
+
+# etc.
+cropmask/tests/.cache

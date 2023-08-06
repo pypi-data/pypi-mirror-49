@@ -1,0 +1,8 @@
+setup.py
+ruc_data/__init__.py
+ruc_data.egg-info/PKG-INFO
+ruc_data.egg-info/SOURCES.txt
+ruc_data.egg-info/dependency_links.txt
+ruc_data.egg-info/not-zip-safe
+ruc_data.egg-info/requires.txt
+ruc_data.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+.DS_Store,sha256=aCi_Snns8q1_EG1XY0up3H55W3PJsgfITahd1t7l208,6148
+agrid/__init__.py,sha256=5oaZfjmbPTy-zVGVxmE8zWPOeq1hAgGH_FHrTcg3in8,60
+agrid/acc.py,sha256=NBnw8K4ZQnSEGrUpbZE2DgkAmPxznk4hKVF753APLcw,6208
+agrid/grid.py,sha256=t-6FaFNAnKsZ63oE-J3DlQkEnCkwZlzsU5SoJ277EV4,48571
+agrid/features/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+agrid/features/morse_2019.py,sha256=-mczithSuArv_cbhz2g74lZr2eTXnYEadRZWwa2SvSc,6572
+agrid/features/staal_2019.py,sha256=2eNfMUGC7xe1NHH6hY5i5tyXLL8emrr1KAznj0NWxz8,1842
+agrid-0.3.3.dist-info/LICENSE,sha256=4GjINuA4XoXCx__YFEUIkqx8Lwwz9nizkvAggTJxNhQ,1068
+agrid-0.3.3.dist-info/METADATA,sha256=x9ks-RQOCDsJ5_wsCGnJaxk5NUXDj8ZKRwHdl7c3cQA,2169
+agrid-0.3.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+agrid-0.3.3.dist-info/top_level.txt,sha256=fabKVKu_PeyifTEo3IHCPYMPmS--RNvlodYL8dSHpSs,6
+agrid-0.3.3.dist-info/RECORD,,

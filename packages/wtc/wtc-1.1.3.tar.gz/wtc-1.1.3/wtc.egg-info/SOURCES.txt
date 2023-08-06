@@ -1,0 +1,8 @@
+README.md
+setup.py
+wtc/__init__.py
+wtc/wtc.py
+wtc.egg-info/PKG-INFO
+wtc.egg-info/SOURCES.txt
+wtc.egg-info/dependency_links.txt
+wtc.egg-info/top_level.txt

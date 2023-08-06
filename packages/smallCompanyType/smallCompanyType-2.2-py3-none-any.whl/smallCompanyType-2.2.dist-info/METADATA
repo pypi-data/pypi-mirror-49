@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: smallCompanyType
+Version: 2.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Keras (>=2.1.2)
+Requires-Dist: sklearn
+Requires-Dist: numpy (>==1.13.3)
+Requires-Dist: h5py (>=2.7.1)
+
+UNKNOWN
+
+

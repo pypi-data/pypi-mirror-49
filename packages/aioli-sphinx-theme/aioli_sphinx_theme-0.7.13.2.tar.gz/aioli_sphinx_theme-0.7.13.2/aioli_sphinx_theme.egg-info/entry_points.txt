@@ -1,0 +1,3 @@
+[sphinx.html_themes]
+aioli_sphinx_theme = aioli_sphinx_theme
+

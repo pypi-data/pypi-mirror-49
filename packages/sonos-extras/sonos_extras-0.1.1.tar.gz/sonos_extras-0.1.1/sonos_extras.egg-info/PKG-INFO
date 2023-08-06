@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: sonos-extras
+Version: 0.1.1
+Summary: Some extra useful commands for Sonos systems, based on SoCo.
+Home-page: UNKNOWN
+Author: MaziarA
+Author-email: maziara2@gmail.com
+License: MIT
+Description: sonos_extras
+        ============
+        
+        .. image:: https://img.shields.io/pypi/v/sonos_extras.svg
+            :target: https://pypi.python.org/pypi/sonos_extras
+            :alt: Latest PyPI version
+        
+        .. image:: ''.png
+           :target: ''
+           :alt: Latest Travis CI build status
+        
+        Some extra useful commands for Sonos systems, based on SoCo.
+        
+        Usage
+        -----
+        
+        Installation
+        ------------
+        
+        Requirements
+        ^^^^^^^^^^^^
+        
+        Compatibility
+        -------------
+        
+        Licence
+        -------
+        
+        Authors
+        -------
+        
+        `sonos_extras` was written by `MaziarA <maziara2@gmail.com>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7

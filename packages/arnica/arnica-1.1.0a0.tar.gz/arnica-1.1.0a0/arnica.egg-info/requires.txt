@@ -1,0 +1,8 @@
+pytest
+pytest-cov
+pylint
+numpy
+scipy
+matplotlib
+h5py
+lxml

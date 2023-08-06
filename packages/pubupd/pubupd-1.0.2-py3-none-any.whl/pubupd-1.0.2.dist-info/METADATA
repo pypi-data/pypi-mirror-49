@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pubupd
+Version: 1.0.2
+Summary: Update pubspec.yaml
+Home-page: https://github.com/v1nvn/pubupd
+Author: Vineet Kumar
+Author-email: v1n@outlook.com
+License: MIT
+Keywords: flutter pub dart v1nvn
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Utility to update dependencies in flutter project's pubspec.yaml
+
+

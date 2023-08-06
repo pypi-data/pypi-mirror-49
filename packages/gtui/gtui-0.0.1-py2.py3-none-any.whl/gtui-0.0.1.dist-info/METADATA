@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: gtui
+Version: 0.0.1
+Summary: Simple Job Scheduler with Friendly Text User Interface
+Home-page: https://github.com/CtheSky/gtui
+Author: Tianhong Chu
+Author-email: cthesky13@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Keywords: TUI,Command Line Tool,Scheduler
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >= 2.7, != 3.0.*, != 3.1.*, != 3.2.*, != 3.3.*, != 3.4.*
+Requires-Dist: urwid (==2.0.1)
+Requires-Dist: werkzeug (>=0.13)
+
+UNKNOWN
+
+

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: aicsapi-tool-python
+Version: 0.2.4
+Summary: Toolkit for Python backend template
+Home-page: https://github.com/slSeanWU/aicsapi-tool-python/
+Author: Sean (Shih-Lun) Wu
+Author-email: summer7sean@gmail.com
+License: UNKNOWN
+Description: # aicsapi-tool-python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

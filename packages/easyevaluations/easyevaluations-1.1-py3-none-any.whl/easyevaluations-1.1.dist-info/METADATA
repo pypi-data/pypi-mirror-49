@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: easyevaluations
+Version: 1.1
+Summary: Easily evaluate the predictions of machine learning algorithms
+Home-page: https://github.com/leo9226/easy_evaluations
+Author: Leo Ko
+Author-email: 33845@novasbe.pt
+License: MIT
+Download-URL: https://github.com/leo9226/easy_evaluations/archive/v1.1.tar.gz
+Platform: UNKNOWN
+
+This Python package shall facilitate the evaluation of the predictions of machine learning algorithms. In the current version, there are only two
+functions in the package. For both regression and classification algorithms there is a function called "summary", which takes the true values for the
+dependent variable and the respective predictions as an input. It returns a thorough overview of the performance including the most common metrics.
+This allows a quick analysis in order to determine the performance of the algorithm.# easy_evaluation
+
+

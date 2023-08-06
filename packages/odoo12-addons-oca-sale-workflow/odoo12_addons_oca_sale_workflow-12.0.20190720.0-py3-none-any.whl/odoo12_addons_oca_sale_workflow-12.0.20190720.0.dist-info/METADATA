@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: odoo12-addons-oca-sale-workflow
+Version: 12.0.20190720.0
+Summary: Meta package for oca-sale-workflow Odoo addons
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo12-addon-partner-prospect
+Requires-Dist: odoo12-addon-portal-sale-personal-data-only
+Requires-Dist: odoo12-addon-sale-automatic-workflow
+Requires-Dist: odoo12-addon-sale-cancel-reason
+Requires-Dist: odoo12-addon-sale-commercial-partner
+Requires-Dist: odoo12-addon-sale-discount-display-amount
+Requires-Dist: odoo12-addon-sale-double-validation
+Requires-Dist: odoo12-addon-sale-exception
+Requires-Dist: odoo12-addon-sale-force-invoiced
+Requires-Dist: odoo12-addon-sale-last-price-info
+Requires-Dist: odoo12-addon-sale-merge-draft-invoice
+Requires-Dist: odoo12-addon-sale-milestone-profile-invoicing
+Requires-Dist: odoo12-addon-sale-order-action-invoice-create-hook
+Requires-Dist: odoo12-addon-sale-order-archive
+Requires-Dist: odoo12-addon-sale-order-general-discount
+Requires-Dist: odoo12-addon-sale-order-invoicing-finished-task
+Requires-Dist: odoo12-addon-sale-order-line-input
+Requires-Dist: odoo12-addon-sale-order-line-price-history
+Requires-Dist: odoo12-addon-sale-order-line-sequence
+Requires-Dist: odoo12-addon-sale-order-price-recalculation
+Requires-Dist: odoo12-addon-sale-order-revision
+Requires-Dist: odoo12-addon-sale-order-type
+Requires-Dist: odoo12-addon-sale-partner-incoterm
+Requires-Dist: odoo12-addon-sale-product-set
+Requires-Dist: odoo12-addon-sale-stock-picking-blocking
+
+UNKNOWN
+
+

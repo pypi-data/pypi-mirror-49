@@ -1,0 +1,15 @@
+hichip_peaks/__init__.py,sha256=LWbFOE542ks2EN-xYHYjN-LfbA9sOCpXgbJXg_b2oBM,19
+hichip_peaks/bedgraph.py,sha256=OFpQgLmDkDwaLDLbq2UJvMShqE4e6qhH4z3gHXaV1u0,2871
+hichip_peaks/diffpeaks.py,sha256=nuoNWLXh8-du9-lIoi4tT0yHKAGmH4-JvKpA1nIClV0,5597
+hichip_peaks/helpers.py,sha256=1bbsRF_H3aluPPOAa8Fz1Zgg_rGMaj9fz8elWmt44-Y,753
+hichip_peaks/interaction_to_sparse.py,sha256=fysLUK8MP56DmDE0QxgQHUvjvFKETZjNIj8AM-yZ7-U,12464
+hichip_peaks/main.py,sha256=2hR5KUtq8IUf-hgcjINQlDAQBL5SReJw2ejCNPXQMbk,8465
+hichip_peaks/quality_report.py,sha256=5x7gOg2_rXCxPtplZURDDOxbbtB93GyTQwQvGsmE9C4,2918
+hichip_peaks/site_matrix_class.py,sha256=2G1GWUUg2ddL6br6KwouQ3HHu2Pr8jkOuIgU8lD4SI8,6878
+hichip_peaks/sparse_to_peaks.py,sha256=JdkYLKZrG8P8w-Bc6z7sib1SCe0FFAk_cghP3w7I8pg,19497
+hichip_peaks-0.1.1.dist-info/LICENSE,sha256=4Vc4moxFvGhfaUPj88B-TqpEoN2HEJhM9olJcRBvNrA,1508
+hichip_peaks-0.1.1.dist-info/METADATA,sha256=5nEV35zEhu-yIISGgZ2zAuZii7OOmdsAmH-Uxq2u29o,10836
+hichip_peaks-0.1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+hichip_peaks-0.1.1.dist-info/entry_points.txt,sha256=nnX8Z65bOR5rJKkoQDj7NHusFvPp5pXrRMdyH3kGe6c,138
+hichip_peaks-0.1.1.dist-info/top_level.txt,sha256=86ipuypHO4VbFQnwGGO13XpUJ_O6AT1E91fZRDne4w8,13
+hichip_peaks-0.1.1.dist-info/RECORD,,

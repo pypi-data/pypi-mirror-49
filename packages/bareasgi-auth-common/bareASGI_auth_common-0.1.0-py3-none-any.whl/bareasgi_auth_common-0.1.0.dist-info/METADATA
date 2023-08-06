@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bareasgi-auth-common
+Version: 0.1.0
+Summary: 
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Rob Blackbourn
+Author-email: rblackbourn@ugsb-rbla01.bhdgsystematic.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: PyJWT (>=1.7,<2.0)
+Requires-Dist: bareclient (>=2.0,<3.0)

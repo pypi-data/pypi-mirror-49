@@ -1,0 +1,15 @@
+spawny/__init__.py,sha256=uATUceHdJsTE3Zo0HGyoPBCAK2NhdsCkioBokS8eDQg,599
+spawny/_version.py,sha256=ekCBuJmM4_gwT0qYcAT90edXXh2ByKxYjjMsj2yLsns,116
+spawny/main.py,sha256=NWC7gpLgqHv_-8xY32kcbrfqokqqahRlzyc1RajeG8g,27493
+spawny/main_remotes_and_defs.py,sha256=Yo2v2oBGlq8JOrx-m0_-6vS1APPiwiLsE6aUkLBlsWo,4904
+spawny/utils_logging.py,sha256=TFo-QBEPKGh4w_EfyVP6lMskCVV2qWrUeYaOOCBoXn0,238
+spawny/utils_object_proxy.py,sha256=yXmLxckmvzbqnn3Ec55azsClVNLjspw_UzuJiR2hFw4,4100
+spawny/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spawny/tests/conftest.py,sha256=72ZPg_6tuc5_DKLgRghIjkJw79TH6gLiSo-1Qe8Leo8,2310
+spawny/tests/test_main.py,sha256=jlNx2BHxF39vX6HP37oyqzyAURfOXTlrS39x5gassbs,5958
+spawny/tests/test_new_api.py,sha256=yWILdLGsp3-SUKb1CvkBxXMHmw0j0AK5kNfYKmtbCE8,3956
+spawny-2.1.0.dist-info/LICENSE,sha256=AurRI-PmUWkdPal6y4EjMUkw8wvhbce3lCrR5whmm5s,1511
+spawny-2.1.0.dist-info/METADATA,sha256=807cGz6hh9VW7sJUosXGZSvNchLCo0xjaQAWXdJAlSo,2570
+spawny-2.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+spawny-2.1.0.dist-info/top_level.txt,sha256=r2OGsuGI6sWadM7xk9zoZaP9dgemBqwsaLJUQy0mBzs,7
+spawny-2.1.0.dist-info/RECORD,,

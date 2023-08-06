@@ -1,0 +1,8 @@
+README.txt
+dbdb.py
+setup.py
+dbdb_test.egg-info/PKG-INFO
+dbdb_test.egg-info/SOURCES.txt
+dbdb_test.egg-info/dependency_links.txt
+dbdb_test.egg-info/requires.txt
+dbdb_test.egg-info/top_level.txt

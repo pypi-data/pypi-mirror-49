@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: ipicat
+Version: 0.1.1
+Summary: A Picat extension for IPython and Jupyter Notebook
+Home-page: http://gitlab.com/minicz/ipicat
+Maintainer: Marcio Minicz
+Maintainer-email: marciominicz@gmail.com
+License: MPL-2.0
+Download-URL: http://gitlab.com/minicz/ipicat
+Description: # An Picat Extention for IPython and Jupyter Notebook
+        
+        ## Prerequisites
+        * [Picat](http://www.picat-lang.org)
+        * [Jupyter Notebook](http://jupyter.readthedocs.org/en/latest/install.html)
+        
+        
+        ## Instalation via pip
+        ```text
+        pip install jupyter
+        pip install ipicat
+        ```
+        
+        Add `--user` to install in your private environment.
+        
+        
+        ## Use
+        Inside a Jupyter Notebook with Python3 kernel, in a first cell, load the extension:
+        ```text
+        %load_ext ipicat
+        ```
+        
+        In other cell write a complete Picat program. It is important to note that the execution starts with the `main` predicate:
+        ```text
+        %%picat
+        
+        main =>
+            println('Teste'),
+            X = 1+1,
+            println(X).
+        ```
+        
+        You can execute a Picat script that is in the same directory that the notebook:
+        ```text
+        %picat -e t.pi
+        ```
+        
+        
+Platform: Any
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Shells
+Classifier: Framework :: IPython
+Requires: jupyter
+Description-Content-Type: text/markdown

@@ -1,0 +1,15 @@
+citextract/__init__.py,sha256=Rb4q356tzSELuP6XaIwXliwZUNvj6HzUWFumTb8i2-Q,571
+citextract/models/__init__.py,sha256=fuEnowWA3__G_20r0X-lAiPHaQKlwiQvU_GslAIUUlc,53
+citextract/models/refxtract.py,sha256=21EPlb7hAhCb2R7woJEFjS7CB8AFUDy9w2aVxKs-RtM,10353
+citextract/models/titlextract.py,sha256=pEBlDgODjrJgpEU4kTBaUEsBz4UJ9UUbRQUU76g9IoQ,7483
+citextract/utils/__init__.py,sha256=-HEcYK6171PSsGMxjTjBAcew1qpHIHuz2KB5FLiO8uQ,45
+citextract/utils/model.py,sha256=RzxHJlYYSSxvRclN_1QlxY2NQ5EeCgigOp3QGJnnoJY,2745
+citextract/utils/pdf.py,sha256=kLoqbsSXrCiBrpLzZHHx7H7mSe4t4MNu9ysc2rtSuo0,1664
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pdf_utils.py,sha256=Dx8HijfA-U-gbHVweOOze4bC9bYx280uIF3YcpNTyYA,423
+tests/utils.py,sha256=Z9kDtKagJ0biHMGEhD5GbMTn4ojxtJLNMrzhHe_NDjQ,970
+citextract-0.0.2.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+citextract-0.0.2.dist-info/METADATA,sha256=s3M0zC5UbYA_ubN0-fYvAmdQ4_ZVCp18FBDwwl5-3oU,2613
+citextract-0.0.2.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+citextract-0.0.2.dist-info/top_level.txt,sha256=i8RnzCaKUNUm7OZDv_5_jRhkm8qE0TTpRT4-Acb0zyU,17
+citextract-0.0.2.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tap-pardot
+Version: 0.0.0
+Summary: Singer.io tap for extracting data from the Salesforce Pardot API
+Home-page: https://github.com/rangle/tap-pardot
+Author: Rangle.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: dev

@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+pymse/__init__.py
+pymse/pymse.py
+pymse.egg-info/PKG-INFO
+pymse.egg-info/SOURCES.txt
+pymse.egg-info/dependency_links.txt
+pymse.egg-info/not-zip-safe
+pymse.egg-info/requires.txt
+pymse.egg-info/top_level.txt
+test/test_script.py

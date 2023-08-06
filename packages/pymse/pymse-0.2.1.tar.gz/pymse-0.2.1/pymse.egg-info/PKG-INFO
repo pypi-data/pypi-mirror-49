@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: pymse
+Version: 0.2.1
+Summary: Calculates multiscale entropy (MSE) of one or multiple data sets.
+Home-page: http://www.physionet.org/
+Author: M. Costa
+Author-email: mcosta@fsa.harvard.edu
+Maintainer: Yeison Cardona
+Maintainer-email: yeison.eng@gmail.com
+License: BSD 3-Clause
+Download-URL: https://bitbucket.org/yeisoneng/pymse/downloads
+Description: UNKNOWN
+Keywords: mse
+Platform: UNKNOWN
+Classifier: Programming Language :: Python

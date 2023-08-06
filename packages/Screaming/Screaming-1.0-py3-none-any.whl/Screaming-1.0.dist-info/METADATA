@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Screaming
+Version: 1.0
+Summary: This package gives you an authentic scream string
+Home-page: UNKNOWN
+Author: Barry
+Author-email: lordbasilofcsu@gmail.com
+License: PSF
+Project-URL: Documentation, https://github.com/havocsupremecy209/screaming
+Keywords: screaming
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Screaming is an authentic scream string package. It will provide a randomized screaming string.
+
+Here is an example script:
+
+```python
+import screaming
+
+scream_string = screaming.scream().getScream()
+```
+This package has not yet added options for different types of screams (cat, dog, ghost etc) but does plan to add that in the future.
+
+

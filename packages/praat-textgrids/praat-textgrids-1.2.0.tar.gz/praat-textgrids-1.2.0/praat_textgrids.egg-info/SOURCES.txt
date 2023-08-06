@@ -1,0 +1,8 @@
+README.md
+setup.py
+praat_textgrids.egg-info/PKG-INFO
+praat_textgrids.egg-info/SOURCES.txt
+praat_textgrids.egg-info/dependency_links.txt
+praat_textgrids.egg-info/top_level.txt
+textgrids/__init__.py
+textgrids/transcript.py

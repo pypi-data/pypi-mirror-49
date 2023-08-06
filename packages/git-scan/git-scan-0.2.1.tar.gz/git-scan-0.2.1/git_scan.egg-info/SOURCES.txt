@@ -1,0 +1,8 @@
+README.md
+setup.py
+git-scan/git-scan
+git_scan.egg-info/PKG-INFO
+git_scan.egg-info/SOURCES.txt
+git_scan.egg-info/dependency_links.txt
+git_scan.egg-info/requires.txt
+git_scan.egg-info/top_level.txt

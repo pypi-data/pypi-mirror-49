@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+simil/__init__.py
+simil/__main__.py
+simil/cli_args.py
+simil/client.py
+simil/server.py
+simil/version.py
+simil.egg-info/PKG-INFO
+simil.egg-info/SOURCES.txt
+simil.egg-info/dependency_links.txt
+simil.egg-info/entry_points.txt
+simil.egg-info/requires.txt
+simil.egg-info/top_level.txt

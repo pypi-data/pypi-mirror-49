@@ -1,0 +1,7 @@
+context_logging/__init__.py,sha256=MMqqH_NNff3LpEublJj3ZXKtAU29Op-S_Se6N5HJktI,149
+context_logging/context.py,sha256=cgnxoRdv0PzDF2DqRqsgh62cYszH4VsGsBBT7k1fy4o,2981
+context_logging/setup_log_record.py,sha256=2Fr-qmU2nk54KvvKM83P88Br67XQGkoHrwdbrxUSK6Y,357
+context_logging-1.0.0.dist-info/LICENSE,sha256=Z5LAo9AmpLOn9DG9uAMU97-2H7PgEdqJ2Krsmf8zH1o,1073
+context_logging-1.0.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+context_logging-1.0.0.dist-info/METADATA,sha256=Xzl-T62O4IUx3C2IpJEa4-GDYRJ37hV03qvmrRnepVw,4236
+context_logging-1.0.0.dist-info/RECORD,,

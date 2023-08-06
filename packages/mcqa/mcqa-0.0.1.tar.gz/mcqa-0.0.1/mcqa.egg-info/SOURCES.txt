@@ -1,0 +1,8 @@
+README.md
+setup.py
+mcqa/__init__.py
+mcqa.egg-info/PKG-INFO
+mcqa.egg-info/SOURCES.txt
+mcqa.egg-info/dependency_links.txt
+mcqa.egg-info/requires.txt
+mcqa.egg-info/top_level.txt

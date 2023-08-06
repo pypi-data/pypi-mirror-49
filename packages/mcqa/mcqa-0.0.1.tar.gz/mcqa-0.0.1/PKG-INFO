@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mcqa
+Version: 0.0.1
+Summary: Answering multiple choice questions with Language Models.
+Home-page: https://github.com/mcQA-suite/mcQA
+Author: Taycir Yahmed
+Author-email: taycir.yahmed@gmail.com
+License: UNKNOWN
+Description: 🚧 **Under construction!**
+         
+        # mcQA : Multiple Choice Questions Answering 
+        
+        Answering multiple choice questions with Language Models.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

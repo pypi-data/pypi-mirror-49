@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: pythontexfigures
+Version: 0.1.0
+Summary: Embed matplotlib figures into LaTeX documents using PythonTeX
+Home-page: https://github.com/mje-nz/pythontexfigures
+Author: Matthew Edwards
+License: BSD 3-Clause
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: pygments
+
+# LaTeX Python figures
+
+
+
+Given a Python script like this which draws a Matplotlib figure:
+
+```python
+
+def main():
+
+    x = np.arange(10)
+
+    y = x**2
+
+    plt.plot(x, y)
+
+    plt.xlabel('$x$')
+
+    plt.ylabel('$x^2$')
+
+    return 'test'  # Figure filename
+
+```
+
+
+
+you can insert it into a LaTeX document like this:
+
+
+
+```latex
+
+\begin{figure}
+
+    \pyfig{'test.py'}
+
+    \caption{Test figure.}
+
+\end{figure}
+
+```
+
+
+
+By default, the figure size defaults to `\textwidth` square and the font and font size match the rest of the document.
+
+
+
+
+
+
+
+## Installation
+
+Requires a LaTeX installation (probably TeX Live 2019), PythonTeX, and Python 3.6 or greater.
+
+Examples require latexmk.
+
+
+
+To install the Python package:
+
+```bash
+
+pip3 install pythontexfigures
+
+```
+
+
+
+To install the LaTeX package into `texmf-local`:
+
+```bash
+
+sudo python3 -m pythontexfigures.install
+
+```
+
+If you don't have root access, you can install it into `texmf-home` instead:
+
+```bash
+
+sudo python3 -m pythontexfigures.install TEXMFHOME
+
+```
+
+
+
+Alternatively, call `pf.print_preamble()` in your pythontexcustomcode and follow with `\printpythontex`.
+
+
+
+
+
+

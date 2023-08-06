@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hubo
+Version: 0.0.2
+Summary: hubo's playground for softlangding python
+Home-page: http://github.com/lordpeara/hubo
+Author: lordpeara
+Author-email: lordpeara@gmail.com
+License: GPL
+Platform: UNKNOWN
+Requires-Dist: pillow
+Requires-Dist: easygui
+
+UNKNOWN
+
+

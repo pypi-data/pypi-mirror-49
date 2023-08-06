@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyvizwizards
+Version: 0.0.5
+Summary: A small visualization package
+Home-page: UNKNOWN
+Author: Sathwik Vangari
+Author-email: sathwik.mohan@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+long_description
+
+

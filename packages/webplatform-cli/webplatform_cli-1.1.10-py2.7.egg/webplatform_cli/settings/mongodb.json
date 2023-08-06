@@ -1,0 +1,12 @@
+{
+  "num_cores": 1,
+  "host": "localhost",
+  "container": {
+    "name": "mongodb",
+    "ports": {
+      "27017": 27017
+    },
+    "user": "mongodb",
+    "mem_limit": "8g"
+  }
+}

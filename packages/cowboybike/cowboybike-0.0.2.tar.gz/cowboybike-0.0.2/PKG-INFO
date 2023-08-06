@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: cowboybike
+Version: 0.0.2
+Summary: Simple API to access Cowboy Bike data.
+Home-page: https://gitlab.com/samueldumont/python-cowboy-bike
+Author: Samuel Dumont
+Author-email: samuel@dumont.info
+License: MIT
+Download-URL: https://gitlab.com/samueldumont/python-cowboy-bike
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License

@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: py-fpl-api
+Version: 0.0.3
+Summary: Python API for accessing energy usage data from Florida Power & Light.
+Home-page: https://github.com/rwh85/python-fpl-api
+Author: Gregory Benner
+Author-email: gregbenner1@gmail.com
+License: MIT
+Download-URL: https://github.com/rwh85/python-fpl-api/archive/master.zip
+Description: UNKNOWN
+Platform: UNKNOWN

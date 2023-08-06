@@ -1,0 +1,7 @@
+sklearn
+joblib
+numpy
+pandas
+unicodedata
+requests
+boto3

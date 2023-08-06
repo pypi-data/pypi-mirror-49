@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+DataFrameManipulator/__init__.py
+DataFrameManipulator/config.py
+DataFrameManipulator/dataframe_manipulator.py
+DataFrameManipulator/dataframe_statistics.py
+DataFrameManipulator/exceptions.py
+DataFrameManipulator/s3.py
+DataFrameManipulator/sklearn_estimators.py
+DataFrameManipulator/use.py
+DataFrameManipulator.egg-info/PKG-INFO
+DataFrameManipulator.egg-info/SOURCES.txt
+DataFrameManipulator.egg-info/dependency_links.txt
+DataFrameManipulator.egg-info/requires.txt
+DataFrameManipulator.egg-info/top_level.txt

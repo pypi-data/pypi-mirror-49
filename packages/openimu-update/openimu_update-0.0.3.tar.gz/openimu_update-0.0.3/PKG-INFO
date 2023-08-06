@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: openimu_update
+Version: 0.0.3
+Summary: openimu package
+Home-page: https://github.com/Aceinna/python-openimu
+Author: Yifan
+Author-email: yifanff@126.com
+License: aceinna Licence test
+Description: easy install the openimu essential package
+Keywords: pip,python-openimu,openimu package
+Platform: any

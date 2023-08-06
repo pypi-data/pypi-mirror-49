@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/CRSPcleaner.py
+src/CRSPcleaner.egg-info/PKG-INFO
+src/CRSPcleaner.egg-info/SOURCES.txt
+src/CRSPcleaner.egg-info/dependency_links.txt
+src/CRSPcleaner.egg-info/not-zip-safe
+src/CRSPcleaner.egg-info/requires.txt
+src/CRSPcleaner.egg-info/top_level.txt

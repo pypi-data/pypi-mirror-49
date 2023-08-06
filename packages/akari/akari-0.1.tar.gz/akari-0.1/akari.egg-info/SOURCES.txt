@@ -1,0 +1,11 @@
+README.md
+setup.py
+akari/__init__.py
+akari/cli.py
+akari/gui.py
+akari/utils.py
+akari.egg-info/PKG-INFO
+akari.egg-info/SOURCES.txt
+akari.egg-info/dependency_links.txt
+akari.egg-info/entry_points.txt
+akari.egg-info/top_level.txt

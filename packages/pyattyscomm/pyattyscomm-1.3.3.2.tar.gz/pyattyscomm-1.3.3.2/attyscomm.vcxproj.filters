@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\glasgow_neuro\attys\software\AttysComm\cpp\AttysComm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\glasgow_neuro\attys\software\AttysComm\cpp\AttysScan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\glasgow_neuro\attys\software\AttysComm\cpp\attyscomm\base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\glasgow_neuro\attys\software\AttysComm\cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ABB590F1-C6EB-372A-AFFF-952EF66F599A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

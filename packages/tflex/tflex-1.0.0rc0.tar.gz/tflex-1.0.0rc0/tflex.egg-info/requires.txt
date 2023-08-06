@@ -1,0 +1,4 @@
+keras>=2.2.4
+numpy>=1.16.3
+traceback2>=1.4.0
+tensorflow-tflex>=1.12.1

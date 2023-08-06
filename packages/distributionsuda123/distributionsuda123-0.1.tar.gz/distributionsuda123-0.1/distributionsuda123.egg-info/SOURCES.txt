@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributionsuda123/Binomialdistribution.py
+distributionsuda123/Gaussiandistribution.py
+distributionsuda123/Generaldistribution.py
+distributionsuda123/__init__.py
+distributionsuda123.egg-info/PKG-INFO
+distributionsuda123.egg-info/SOURCES.txt
+distributionsuda123.egg-info/dependency_links.txt
+distributionsuda123.egg-info/not-zip-safe
+distributionsuda123.egg-info/top_level.txt

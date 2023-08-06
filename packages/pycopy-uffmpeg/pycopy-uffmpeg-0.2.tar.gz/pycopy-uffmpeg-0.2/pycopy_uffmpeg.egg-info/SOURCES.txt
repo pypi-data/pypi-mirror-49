@@ -1,0 +1,7 @@
+README.md
+setup.py
+uffmpeg.py
+pycopy_uffmpeg.egg-info/PKG-INFO
+pycopy_uffmpeg.egg-info/SOURCES.txt
+pycopy_uffmpeg.egg-info/dependency_links.txt
+pycopy_uffmpeg.egg-info/top_level.txt

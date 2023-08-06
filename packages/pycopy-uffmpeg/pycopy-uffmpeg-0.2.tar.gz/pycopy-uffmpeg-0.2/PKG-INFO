@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pycopy-uffmpeg
+Version: 0.2
+Summary: Pycopy bindings for FFmpeg video handling library
+Home-page: https://github.com/pfalcon/pycopy-uffmpeg
+Author: Paul Sokolovsky
+Author-email: pfalcon@users.sourceforge.net
+License: MIT
+Description: Pycopy (https://github.com/pfalcon/pycopy) bindings for FFmpeg video handling library.
+Platform: UNKNOWN

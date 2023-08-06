@@ -1,0 +1,9 @@
+sparkfun-qwiic-i2c
+sparkfun-qwiic-bme280
+sparkfun-qwiic-keypad
+sparkfun-qwiic-proximity
+sparkfun-qwiic-scmd
+sparkfun-qwiic-twist
+sparkfun-qwiic-ccs811
+sparkfun-qwiic-joystick
+sparkfun-qwiic-micro-oled

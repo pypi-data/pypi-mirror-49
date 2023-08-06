@@ -1,0 +1,8 @@
+README.md
+astspy.py
+setup.py
+astspy.egg-info/PKG-INFO
+astspy.egg-info/SOURCES.txt
+astspy.egg-info/dependency_links.txt
+astspy.egg-info/entry_points.txt
+astspy.egg-info/top_level.txt

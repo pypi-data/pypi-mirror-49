@@ -1,0 +1,16 @@
+numpy
+scipy
+PyMSNumpress
+cluster==1.2.2
+pyteomics>=2.4.0
+statsmodels>=0.6.0
+xlsxwriter>=0.5.3
+scikits.datasmooth
+pymzml==0.7.8
+lxml
+configobj
+biopython
+xlwt
+
+[RSmoothing]
+rpy2

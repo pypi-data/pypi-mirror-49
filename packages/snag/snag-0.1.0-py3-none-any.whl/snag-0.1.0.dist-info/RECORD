@@ -1,0 +1,12 @@
+snag/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snag/__main__.py,sha256=Cw6zR6pxX5hUxLeDzZnRCDxnf6L4y_ZC1ozfXO2YN5E,167
+snag/config.py,sha256=BNNDN6OHd7P2cMIUsKeKczZRhTdW4DSALeh-2JnCX-c,1200
+snag/core.py,sha256=xC_3Gse2SXPGAi1EOOx65OykKREAKsUEWuxOrEMm-X8,4260
+snag/fetch.py,sha256=TjVIVOQM_3LRkNZzl-hSORu5bVSywdPA6SWu3qh-Z9U,3247
+snag/logger.py,sha256=3KhbQqNbJliUL2DhwXWYM0RJYfBaVPwWPOs63zNA4WE,1073
+snag-0.1.0.data/scripts/snag,sha256=Ll5paliy-QL5OAyTUT1BSjs9thZLKpaledzZn9b9txc,36
+snag-0.1.0.dist-info/LICENSE,sha256=IukPAAVb4Ge5jaddMpntah1U243pWzChYm25jWjIPvs,1068
+snag-0.1.0.dist-info/METADATA,sha256=KY8Nl0ae8HHXR0u3uRcg4lNElA3dD3YhYdtKjbRdySk,3089
+snag-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+snag-0.1.0.dist-info/top_level.txt,sha256=H8RydU3-RQZKdTOPRJqckPcgj3abiVBXoGP5rtuGmUg,5
+snag-0.1.0.dist-info/RECORD,,

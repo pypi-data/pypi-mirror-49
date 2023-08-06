@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: pytest-nunit
+Version: 0.0.3
+Summary: A pytest plugin for generating Nunit3 test result XML output
+Home-page: https://github.com/tonybaloney/pytest-nunit
+Author: Anthony Shaw
+Author-email: anthonyshaw@apache.org
+Maintainer: Anthony Shaw
+Maintainer-email: anthonyshaw@apache.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Requires-Dist: pytest (>=3.5.0)
+Requires-Dist: enum34 (==1.1.6)
+Requires-Dist: attrs
+
+============
+pytest-nunit
+============
+
+.. image:: https://dev.azure.com/AnthonyShaw/pytest-nunit/_apis/build/status/tonybaloney.pytest-nunit?branchName=master
+   :target: https://dev.azure.com/AnthonyShaw/pytest-nunit/_build/latest?definitionId=3?branchName=master
+   :alt: Build status
+
+.. image:: https://img.shields.io/pypi/v/pytest-nunit.svg
+    :target: https://pypi.org/project/pytest-nunit
+    :alt: PyPI version
+
+.. image:: https://img.shields.io/pypi/pyversions/pytest-nunit.svg
+    :target: https://pypi.org/project/pytest-nunit
+    :alt: Python versions
+
+.. image:: https://img.shields.io/pypi/dm/pytest-nunit.svg
+     :target: https://pypi.python.org/pypi/pytest-nunit/
+     :alt: PyPI download month
+
+
+A pytest plugin for generating Nunit3 test result XML output
+
+This plugin is an early alpha release!
+
+Configuration
+-------------
+
+Use ``--nunit-xml=output.xml`` to create an Nunit3-compatible file called ``output.xml``
+
+Fixtures
+--------
+
+The following fixtures are made available by this plugin.
+
+record_nunit_property
+~~~~~~~~~~~~~~~~~~~~~
+
+Calling `record_nunit_property(key: str, value: str)` will result in `Property` tags being added to the `test-case` for the related node. 
+
+.. code-block:: python
+
+    def test_basic(record_nunit_property):
+        record_nunit_property("test", "value")
+        assert 1 == 1
+
+add_nunit_attachment
+~~~~~~~~~~~~~~~~~~~~
+
+Add an attachment to a node test-case by calling the `add_nunit_attachment()` function with the filepath and a description.
+
+.. code-block:: python
+
+    def test_attachment(add_nunit_attachment):
+        pth = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'fixture.gif')
+        add_nunit_attachment(path, "peanut butter jelly time")
+        assert 1 == 1
+
+

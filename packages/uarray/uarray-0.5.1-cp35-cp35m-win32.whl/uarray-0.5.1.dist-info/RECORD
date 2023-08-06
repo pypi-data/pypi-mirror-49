@@ -1,0 +1,12 @@
+uarray/__init__.py,sha256=GUTny68PkldQn4EwHk8Ehp3JnqMRJ4pZvTxhY7EYVx0,4654
+uarray/_backend.py,sha256=xNcXjDNOTRP3ScLdLHsZrwgUSGMvpfdRikXMSIGLs2A,11697
+uarray/_uarray.cp35-win32.pyd,sha256=LcTM6vdyP07MRxkSm_Zf5-uXsXJQMi-e8asuaUZHvr4,44032
+uarray/_version.py,sha256=gTupbW1Yfj6BV0HPYWDFSF6YkxRK9owMK9u59OaXxjc,518
+uarray/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uarray/tests/conftest.py,sha256=an49QO9dKUUekDFF13kRun8VebwduxryCIXOdTzJaS4,151
+uarray/tests/test_uarray.py,sha256=4r5VGPcaUtaoeRxR8vD5qWe4n7GEYL-ZGCV5tUMseig,3598
+uarray-0.5.1.dist-info/LICENSE,sha256=5MSswx6ChwZtfJldJuPvkCyhl37hh7JgsRwng2ZQOBE,1543
+uarray-0.5.1.dist-info/METADATA,sha256=pqvOGXNiK0wfAq1ytTFAojIwqOmwwzXppInNFBvjltw,3396
+uarray-0.5.1.dist-info/WHEEL,sha256=SqXEmGNLfw0RsMw_i1gHhm9vsvK675Vo7hljL4n1RSs,102
+uarray-0.5.1.dist-info/top_level.txt,sha256=gWrAWzY0Mj5-QR13QhN3vWteA6-PCq6QGPQsHczIWO4,7
+uarray-0.5.1.dist-info/RECORD,,

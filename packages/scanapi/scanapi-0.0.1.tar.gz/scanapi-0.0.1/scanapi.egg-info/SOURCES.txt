@@ -1,0 +1,6 @@
+README.md
+setup.py
+scanapi.egg-info/PKG-INFO
+scanapi.egg-info/SOURCES.txt
+scanapi.egg-info/dependency_links.txt
+scanapi.egg-info/top_level.txt

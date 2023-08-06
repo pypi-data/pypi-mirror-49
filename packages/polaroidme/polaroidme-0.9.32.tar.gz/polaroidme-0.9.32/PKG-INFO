@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: polaroidme
+Version: 0.9.32
+Summary: converts an image into vintage polaroid style
+Home-page: https://github.com/s3h10r/polaroidme
+Author: Sven Hessenmüller
+Author-email: sven.hessenmueller@gmail.com
+License: UNKNOWN
+Description: 
+        polaroidme is a simple to use command-line-tool for placing an image into a
+        Polaroid-like frame and optionally put a title / description on the bottom.
+        The default font mimics scribbled handwriting but any (ttf-)font
+        which suits your taste is supported. The tool offers basic features
+        like auto-scaling up-/downwards and/or cropping, using any (ttf-)font,
+        supports high-res output and gets the job just done well.
+        polaroidme is actively maintained & developed (2019).
+        To see if it fits your needs take a look at the project's
+        github-repo and check out the `examples`_
+        
+        Contributions are welcome, and they are greatly appreciated!
+        
+        _`examples`: https://github.com/s3h10r/polaroidme/blob/master/README.md
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Utilities

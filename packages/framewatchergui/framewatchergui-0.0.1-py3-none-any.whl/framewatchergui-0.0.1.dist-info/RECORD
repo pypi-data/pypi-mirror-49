@@ -1,0 +1,10 @@
+framewatchergui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+framewatchergui/__main__.py,sha256=aYwNIUdNTpDueCWOQXKNlrPexjA1xd6KfyhSnMD0Uds,4672
+framewatchergui/gui.py,sha256=1UsIzZywJjUmzbM68J9nLZhfRI2odsansBlXO2BvQzc,7686
+framewatchergui/log.py,sha256=XLn898tHBDvb8sF0o_XReiVvCISizE_TPkZoBidSKDI,214
+framewatchergui/run.py,sha256=MFm8jqCY2p9Ef0S7d8WDzSs94fFxive8z2wB27e7hEE,2642
+framewatchergui-0.0.1.dist-info/METADATA,sha256=4yDwnqrTVLgRmz0dhETgRJRA1z_471EvC5k3uH_MF7Q,424
+framewatchergui-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+framewatchergui-0.0.1.dist-info/entry_points.txt,sha256=Pr4bogmsOl_k2pPbcrILFKMDeo2KZ66-cU_bVWMdyJ8,67
+framewatchergui-0.0.1.dist-info/top_level.txt,sha256=6Z_fD6JFa012dSKN9PspAhuLHSjofSbP5TTT69KKM3Y,16
+framewatchergui-0.0.1.dist-info/RECORD,,

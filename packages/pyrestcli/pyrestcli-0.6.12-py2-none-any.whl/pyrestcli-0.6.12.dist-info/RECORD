@@ -1,0 +1,12 @@
+pyrestcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrestcli/auth.py,sha256=-IiH9MIlclyEn-H4LPDjz5GblogS-zD-5GnrflXP69E,3989
+pyrestcli/exceptions.py,sha256=eDoua5fczZzShJwsQBmrY0SMjP3R5Q_AExX5ztnUPNM,1870
+pyrestcli/fields.py,sha256=fa3dLl7dst0DULP9_HL_kvNuT5YIx6iWujnK-sIe8AQ,5454
+pyrestcli/paginators.py,sha256=5fF-VyIVeLOPmn-NeNbwC87QKx754nPJ4hL9WremYgQ,960
+pyrestcli/resources.py,sha256=gy_Aa2y6NfykL1xykZGEsIQLqS2SnLTC2P76kLg8GOM,12902
+pyrestcli-0.6.12.dist-info/AUTHORS.md,sha256=D-14ggf1soE6lmUH6mR5rEHWUBR_Es9MoixuZKd2kBI,139
+pyrestcli-0.6.12.dist-info/LICENSE,sha256=orNXmyewcqcrCqc5DaERqsJmu3konXCipPo63QHFrBo,1070
+pyrestcli-0.6.12.dist-info/METADATA,sha256=43UKxwBdcUXRbEl8OlfzEcPPvISRWPFMfkeHh8h026s,355
+pyrestcli-0.6.12.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+pyrestcli-0.6.12.dist-info/top_level.txt,sha256=4LJpQ-3eK38DL2ydpv4JubLmiVFdVBPNRc9cwJHPXos,10
+pyrestcli-0.6.12.dist-info/RECORD,,

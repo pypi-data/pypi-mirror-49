@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyrestcli
+Version: 0.6.12
+Summary: Generic REST client for Python
+Home-page: https://github.com/danicarrion/pyrestcli
+Author: Daniel Carrión
+Author-email: dani@computados.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.10.0)
+Requires-Dist: python-dateutil (>=2.5.3)
+Requires-Dist: future (>=0.15.2)
+
+UNKNOWN
+
+

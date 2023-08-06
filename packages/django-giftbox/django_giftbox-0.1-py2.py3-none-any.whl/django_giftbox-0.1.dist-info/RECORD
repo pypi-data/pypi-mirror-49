@@ -1,0 +1,12 @@
+django_giftbox-0.1.dist-info/DESCRIPTION.rst,sha256=MGrl6-Wy0SoSNrgubIPiKwG0hrnreLcoaHZux1bxJMQ,4085
+django_giftbox-0.1.dist-info/METADATA,sha256=uh2xfzNkm2Sk8Zj_FV-mRhXBz0W2oHYsq9DQrHWsD5A,5735
+django_giftbox-0.1.dist-info/RECORD,,
+django_giftbox-0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_giftbox-0.1.dist-info/metadata.json,sha256=d1mSOZ26k0qpve821PhNygYYT-RAJarVcSSyIjrZGCs,1490
+django_giftbox-0.1.dist-info/top_level.txt,sha256=hCWJ0cNO-qcIrZWJxqxmBnnnGvOfosflYLDK0ZsBbL0,8
+giftbox/__init__.py,sha256=c8Alo21y13lSIjRx7gNUlfIvEEaNa4-8REaUxP1hvrA,291
+giftbox/box.py,sha256=pJ76P2FROi6XmGDivAd5HaSw1F4sGLdLJXAeIkUs9b4,3359
+giftbox/tests.py,sha256=SaN43Vo9uWl01DRvAxnwjcYmJD7-vpeuEwRHfUOtkzQ,5908
+giftbox/testsettings.py,sha256=LslqDhI7_B0HYRA6ssLJIgnEi2xwJCAJhQKXG0EXUJE,320
+giftbox/version.py,sha256=QmrtDm1uMSA6N3Wvb3CjJZEHh5H8UG6XWHCydw4Ufqw,70
+giftbox/wrappers.py,sha256=uDLNoFxIX7n-J_AjzJVIlgOfKXE4daa3eFWE6P5TdMU,2167

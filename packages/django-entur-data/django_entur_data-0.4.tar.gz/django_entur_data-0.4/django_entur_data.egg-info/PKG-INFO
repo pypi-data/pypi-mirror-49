@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: django-entur-data
+Version: 0.4
+Summary: Load XML files with data from entur into a database
+Home-page: https://github.com/datagutten/django-entur-data
+Author: Anders Birkenes
+Author-email: datagutten@datagutten.net
+License: GPL
+Description: # django-entur-data
+        A tool to load XML files with data from entur into a database
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown

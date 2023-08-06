@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: badt
+Version: 0.0.3
+Summary: BONFY Abstract Data Types
+Home-page: https://github.com/bonfy/badt
+Author: bonfy
+Author-email: foreverbonfy@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+
+
+BADT
+=======
+
+BONFY Abstract Data Types.
+
+Author Links
+------------
+
+1. Blog: https://bonfy.im.
+2. Github: https://github.com/bonfy.
+3. Twitter: https://twitter.com/foreverbonfy.
+
+Implementations
+---------------
+
+- Union-Find
+- Stack
+- Queue
+
+Releases
+---------------
+
+- [2019.07.26] Version 0.0.3 - Add Queue
+- [2019.07.26] Version 0.0.2 - Add Stack
+- [2019.07.25] Version 0.0.1 - Add Union-Find
+

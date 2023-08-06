@@ -1,0 +1,12 @@
+gfwlist2privoxy/__init__.py,sha256=citDDlOnr5vlO_xRKXURuxBeX-yhcTY4YEMgLc2REGk,66
+gfwlist2privoxy/main.py,sha256=uVYOzwcF_9uCVQNWBMmRwkokNKDPyAwEiwpZF8MkkOg,7107
+gfwlist2privoxy/resources/__init__.py,sha256=FZk9hm7vBsK8G16pNugputbrrEciYqJc_XRAhTCcojI,46
+gfwlist2privoxy/resources/builtin.txt,sha256=bq2LlnXPuocsb5AtF8IDz3HMsZVlRSYqXjC1oAxd8Yk,78
+gfwlist2privoxy/resources/gfwlist.action,sha256=tWXI0959WyVyibQIaK55KIBHm4Avl3wYfTmf0Q_cYiI,147
+gfwlist2privoxy/resources/tld.txt,sha256=EBv4FP428XhDTLNIRlK_4z5RgX54sKkPKA_BkG9AHaE,80532
+py3_gfwlist2privoxy-1.0.0.dist-info/LICENSE,sha256=QLbsGHnRJmKxNIYqwsIXsONJm_KxVY8waSHDHli6hqg,1078
+py3_gfwlist2privoxy-1.0.0.dist-info/METADATA,sha256=lvMZNhTR3EJlLWl_mDN_MscpOofySQ5etGnHQ5J-zyA,1874
+py3_gfwlist2privoxy-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+py3_gfwlist2privoxy-1.0.0.dist-info/entry_points.txt,sha256=CWNEh-c8dbQzeBKWqyNXz6Jp5fo5f0w9EtRaBLHD44k,75
+py3_gfwlist2privoxy-1.0.0.dist-info/top_level.txt,sha256=4X_6O8eZJR1YkDEoL5Rw9Ootyu2T_PtkfHSUBQW5dTw,16
+py3_gfwlist2privoxy-1.0.0.dist-info/RECORD,,

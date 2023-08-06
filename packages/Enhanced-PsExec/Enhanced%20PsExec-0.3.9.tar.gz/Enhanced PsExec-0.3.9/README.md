@@ -1,0 +1,163 @@
+#### !!!!!!!!!! Use "help(Epsexec)" This will show you the available methods. (This usage form will contain it, but it is yet to be completed.) !!!!!!!!!!
+
+### About
+Epsexec (Enhanced psexec) uses Microsoft's Sysinternals PsExec utility that uses SMB to execute programs on remote systems.
+PsExec is a light-weight telnet replacement.    
+
+### Installation
+Run the following to install:   
+```
+pip install Enhanced-PsExec      
+```
+
+### Requirements
+**Attacker Machine:**
+1) You MUST have a 64-bit version of python.   
+2) You MUST have [psexec install](https://docs.microsoft.com/en-us/sysinternals/downloads/psexec)ed and in your system32 folder.   
+3) You MUST run python as administrator (Ctrl+Esc, type "python", Ctrl+Shift+Enter,Alt-Y).
+
+**The Remote PC:**   
+The remote pc (The pc that you are attacking) have very few requirements;
+1) SMBv2 needs to be up and running on the Windows port. Run this CMD script on the remote computer:
+`powershell.exe Set-SmbServerConfiguration -EnableSMB2Protocol $true`
+2) The ADMIN$ share to be enabled with read/write access of the user configured.   
+   I recommend making Another user that is administrator.   
+   CMD:   
+`net user /add usernameToHack passToBeUsed`   
+To enable administrator:   
+`net localgroup administrators usernameToHack /add`
+
+3) You'll need to add A registry key.   
+This is because UAC is set up to deny connections like this, so you will get an `ACCESS_IS_DENIED` error when attempting to connect.   
+Fix: run CMD as administrator and run:   
+`reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1 /f`   
+
+4) RECOMMENDED: Disable firewall on the remote machine.   
+This will allow for a faster experience while connecting.   
+Run in CMD: (There is also A method to do this, so you dont need to go to the remote PC NOW. you can do it remotely)   
+`netsh advfirewall firewall set rule name="File and Printer Sharing (SMB-In)" dir=in new enable=Yes`    
+
+5) Restart the system.   
+
+## Import
+To import the package, use 'from Epsexec import psPc'.   
+
+# Usage
+1) Create a psPc class instance.   
+```python
+pc1 = psPc("IPv4","username","password")   
+```
+General settings:   
+
+**`sleepBefore`** --- This pauses the operation {sleepBefore} millisecond before starting the operation.  (Default 100)   
+**`runAsAdmin`**  --- If true, it will run the operation in administrative privileges. (default True)   
+
+## firewallChange
+This is probably the most important method. why?   
+Well, because firewall makes the psexec process extremely slow (It takes about 12 seconds instead of 1).   
+So, it becomes very frustrating.   
+Modes:
+1. "on" to enable firewall on the remote machine.
+2. "off" to disable firewall on the remote machine.
+3. "rule" to add an SMB-only rule. This will allow connections from port 445 (smb)  
+
+## downloadNirCmd
+NirCMD is A windows command-line utility that allows you to do useful tasks without displaying any user interface.   
+Unfortunately, NirCMD is NOT installed by default on windows systems.   
+Thats why this method exists. all this method do, is download NirCMD on the remote PC using powershell.   
+Nircmd is required for the following methods:   
+1. beep   
+2. sendScreenshot   
+3. setVolume   
+4. textToSpeech   
+
+## beep
+**Requires Nircmd**   
+The beep method takes frequency(hz) and duration(millisecond) parameters.   
+Then it plays A sound at the given frequency and duration.   
+
+## getShell
+The getShell method is the most basic method.   
+It takes A shell to open as and administration privileges. (default "cmd.exe",True)   
+This is your everyday remote shell on another PC.   
+You can also choose powershell instead of cmd   
+
+
+## closeProcess
+The closeProcess method takes A process name or processID, and sleepBefore to wait before the program closes the process.   
+Then it uses taskkill (CMD command) to close it.   
+
+
+## closeChrome
+This method closes every chrome tab on the remote machine.   
+It takes 2 parameters: runAsAdmin, and sleepBefore. (Default True)    
+
+
+## textToSpeech
+**Requires Nircmd**   
+The textToSpeech method takes A string to speak, and MaleVoice as a boolean. (default True)   
+Then it uses NirCMD to speak the text on the remote PC.   
+
+## setVolume
+**Requires Nircmd**   
+The setVolume method takes a number from 0 to 100 as the precentage And sleepBefore.   
+Then it opens NirCMD in the remote pc and uses "setsysvolume" to set the computer's volume.
+
+## sendScreenshot
+**Requires Nircmd**   
+The sendScreenshot takes email address and sleepBefore.    
+It uses NirCMD to take A screenshot, save it to C:\Epsexecscreenshot.png   
+Then, it uses powershell SMTPClient.send() to send an email to the given Email Address   
+
+# OpenURL 
+This method is the most complicated method.
+It can potentially take multiple parameters.
+I will now explain every parameter:   
+**`URL`** --- This is the URL to be opened in the remote machine. If `fromFile` parameter is used, it must be: `'*://*/*'`, its default   
+
+**`fromFile`** --- This parameter is used to take A text file and get every URL and its shotcut name.   
+**[See more](https://github.com/orishamir/Epsexec/blob/master/fromFile.md)**
+
+**`tabs`** --- This parameter is responsible for the amount of tabs to open on the remote machine. (Default=1)   
+
+**`delayBeforeOpening`** --- This parameter decides how much time in millisecond the program should pause before starting the operation. (Default=100)   
+
+**`delayBetweenTabs`** --- This parameter decides how much time in millisecond the program should pause BETWEEN every time it opens A new tab.
+
+**`newWindow`** --- This parameter decides whether or not to open the tab(s) in new window each time. (Default=False)    
+
+**`incognito`** --- This parameter decides if the tab(s) would be opened in Incognito mode. (Default=False)   
+
+**`invisible`** --- This parameter decides if the tab(s) would be opened invisibly, and not interactive, so the user would not notice its opened, unless the window plays sound (Default=False).    
+
+
+Available class methods:   
+```python
+psPc(ip, username, password)   
+     
+       beep(frequency, durationMs, sleepBefore=100)   
+     
+       closeChrome(runAsAdmin=True, sleepBefore=100)   
+     
+       closeProcess(procNameOrID, sleepBefore=100)   
+     
+       downloadNirCMD()   
+     
+       firewallChange(state='off', sleepBefore=100)   
+     
+       getShell(shell='cmd.exe', runAsAdmin=True)   
+     
+       openURL(URL='*://*/*', fromFile='@fileName.txt', tabs=1, newWindow=False, delayBeforeOpening=100, delayBetweenTabs=100, incognito=False, invisible=False)   
+     
+       sendScreenshot(emailRecipientAddr, sleepBefore=100)   
+     
+       setVolume(precent, sleepBefore=100)   
+     
+       startRemoteDesktop()   
+      
+       textToSpeech(text, MaleVoice=True, sleepBefore=100)   
+
+```
+
+### Credits
+Epsexec was created by Ori Shamir.   

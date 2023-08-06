@@ -1,0 +1,15 @@
+pycommon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycommon/csvutil.py,sha256=C7pcdNmkjE_5q7SsJAthjoKZ4NSLucgroUJ9FZC7L8o,623
+pycommon/decorators.py,sha256=QCtwgB5EGmIjUlhd4KntEIfeTy_fNM9Im3n5ZGea0RE,872
+pycommon/experimental.py,sha256=bJU3CRw_DjMcF4-N_YWoTCDY08ivLxX7HJFbt_Uiqao,1327
+pycommon/fileutil.py,sha256=OccSRtGOntw4ID_Ke_7nJJUfcOdiBWZgX1ZXPTjmrVs,4116
+pycommon/hash.py,sha256=kil1lEUgM764t6sG0y1pfqcqrOUR5zUT0iYbCY2RVBE,832
+pycommon/http.py,sha256=UjPoiBg_AT56RvWR96IEAkoH0pmTuu5RhP-Dzhx_57w,518
+pycommon/procutil.py,sha256=B-Tzcv2D9mO_kH80POT6crJaikknOLri9NcePspFemA,453
+pycommon/testutil.py,sha256=iE0OWSZiiNRnHd1t6ugTDGMb_tNFmyMTfgrJNngo1I4,984
+pycommon/util.py,sha256=RasY0z86hd0jeMqFeQuVmuryM7AC4zngDX4TrvqFegI,262
+pycommon-0.3.6.dist-info/LICENSE.txt,sha256=nUnFi-ppi7L2g9ApqeXCqay5CGrW5Ney0eRuTRcePuU,1068
+pycommon-0.3.6.dist-info/METADATA,sha256=A-fWXs98ekxhp2Svcm0ORq7gIs_SQnHblt63h17HH4I,1266
+pycommon-0.3.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pycommon-0.3.6.dist-info/top_level.txt,sha256=sTKjCq0KtoAwPinJBAuZML0qbe9xmxmcoFP0FPLxh2k,9
+pycommon-0.3.6.dist-info/RECORD,,

@@ -1,0 +1,13 @@
+audible/__init__.py,sha256=2ZvARiAfTGdrXedeMDeHwp3bLt66R5yqm7yRR0-SCWY,796
+audible/_logging.py,sha256=0a14ILXVxAdeg0AsKcz2X7q2_hgq2I5hqvZuslSZHwY,2490
+audible/auth.py,sha256=9YaVGe3FxeQWxtJFY4qwCiVf7U7ZtJK-z0aFBM51MhM,21929
+audible/client.py,sha256=4i7oW5ZzFTH__D2QnZnyW8RNUkro-aXv2jcP5mDQJX8,9112
+audible/cryptography.py,sha256=xGx-EL4NxPrPBMte1FaTPgplsFbw4E3o9Rh_FWBmYyU,17830
+audible/errors.py,sha256=icPxo6H83mZEB1NRw8wY8fMJps_YJbbvEu_qNDLwA8w,2031
+audible/localization.py,sha256=yDdqfmeLlguIisR3AYUN-vCV83qakyh4wxww5kLw3bI,8205
+audible/utils.py,sha256=pnnFKNaFLX9EpyDQzquE8DMrkNhnmEDxt1q-xj29Suw,8455
+audible-0.2.0.dist-info/LICENSE,sha256=dql8h4yceoMhuzlcK0TT_i-NgTFNIZsgE47Q4t3dUYI,34520
+audible-0.2.0.dist-info/METADATA,sha256=e96Y5uXMhB7bhKKgYj3Aw4T0U9pprlAUc-sjYve_-Ko,22324
+audible-0.2.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+audible-0.2.0.dist-info/top_level.txt,sha256=KcyHNhiKP3CEJzEu4PI4orfvBqA06JlWiK00-3VxpGA,8
+audible-0.2.0.dist-info/RECORD,,

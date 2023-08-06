@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: replace-domain
+Version: 1.0.5
+Summary: Nginx conf file string replacement.
+Home-page: https://github.com/mrstephenneal/Dockerizer
+Author: Stephen Neal
+Author-email: stephen@stephenneal.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

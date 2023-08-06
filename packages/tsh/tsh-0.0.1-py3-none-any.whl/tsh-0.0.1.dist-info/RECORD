@@ -1,0 +1,14 @@
+tsh/__init__.py,sha256=vDGY_hwV62XuJ2TbyPVulcxLwarqwh9o5QJ832bhwZE,181
+tsh/command.py,sha256=6jMHyvL-0Tgp69zoUXUgLBkhqJFs2AB5LxC4ggTQeew,3460
+tsh/consts.py,sha256=hxEhzamFnHf0PdATSKAP_hDCS0CtCofr2AHKSFGMIZ8,68
+tsh/contexts.py,sha256=6YNi8e3m2fV5e4LbjR7O-N1W2ZuWVPV4P5DAcZQ1rVg,2206
+tsh/decorators.py,sha256=8I0NLyN93afIoiLtXOR3z3zhGPOQC9xvHlWA20JgiH0,377
+tsh/errors.py,sha256=ZmyH4-pcX3On7iR7bR2Vb7qnQMCPAFdBfFKGMzZXS4c,253
+tsh/process.py,sha256=nKobQUDM5Xw7x-a1SEKBt4vQ-CXBUyBBE7_nsDN1eMg,8653
+tsh/shell.py,sha256=GpWB_LT6FdxE5mYFRtzL6EUCJtIRwDmsf0g1-bsfUZA,536
+tsh/types.py,sha256=oOacZ4RfWsT144RnbJy-H3VUmTFOTb4suiBP0hBJmNc,724
+tsh-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tsh-0.0.1.dist-info/METADATA,sha256=J7FBkNYtd_AUrq6ESX9okcwKOuF3YUqoDlKY2fboTpI,1102
+tsh-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+tsh-0.0.1.dist-info/top_level.txt,sha256=002zI94O9e0Z7gYiF9KKV72O8JsDMWDOonDmjJBaExU,4
+tsh-0.0.1.dist-info/RECORD,,

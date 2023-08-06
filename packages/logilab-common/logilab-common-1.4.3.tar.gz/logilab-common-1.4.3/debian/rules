@@ -1,0 +1,73 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+#
+# Copyright (c) 2003-2011 LOGILAB S.A. (Paris, FRANCE).
+# http://www.logilab.fr/ -- mailto:contact@logilab.fr
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+include /usr/share/python/python.mk
+
+# don't build the python3 package if python3 is < 3.3
+py3k = $(subst python3.,,$(shell py3versions -d))
+build_py3k = $(shell test "$(py3k)" -gt 2 && echo 1)
+
+PYLIB:=$(call py_libdir,$(shell pyversions -d))
+PACKAGE:=$(call py_pkgname,python-logilab-common,python)
+PYLIB3:=$(call py_libdir,python3.)
+PACKAGE3:=$(call py_pkgname,python-logilab-common,python3.)
+
+ifeq (,$(build_py3k))
+    DH_OPTIONS += -N$(PACKAGE3)
+    export DH_OPTIONS
+endif
+
+build: build-indep
+.PHONY: build
+
+%:
+	dh $@ --with python2,python3
+
+override_dh_auto_install:
+	python setup.py install --no-compile \
+	                --root=$(CURDIR)/debian/$(PACKAGE)/ \
+	                ${py_setup_install_args}
+	# remove test directory
+	rm -rf debian/$(PACKAGE)/$(PYLIB)/logilab/common/test
+	
+ifneq (,$(build_py3k))
+	python3 setup.py install --no-compile \
+	                --root=$(CURDIR)/debian/$(PACKAGE3)/ \
+	                ${py_setup_install_args}
+	# remove test directory
+	rm -rf debian/$(PACKAGE3)/$(PYLIB3)/logilab/common/test
+	
+	# rename logilab-pytest and its man page for python3k
+	mv debian/$(PACKAGE3)/usr/bin/logilab-pytest debian/$(PACKAGE3)/usr/bin/logilab-pytest3
+	sed -i 's/python -u/python3 -u/' debian/$(PACKAGE3)/usr/bin/logilab-pytest3
+	install -D docs/logilab-pytest.1 debian/$(PACKAGE3)/usr/share/man/man1/logilab-pytest3.1
+	sed -i 's/logilab-pytest/logilab-pytest3/' debian/$(PACKAGE3)/usr/share/man/man1/logilab-pytest3.1
+	gzip debian/$(PACKAGE3)/usr/share/man/man1/logilab-pytest3.1
+endif
+
+override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	python setup.py install \
+                --root=$(CURDIR)/testing/ ${py_setup_install_args}
+	echo 'import site, os.path; site.addsitedir(os.path.dirname(__file__))' > testing/$(PYLIB)/sitecustomize.py
+	PYTHONPATH=$(CURDIR)/testing/$(PYLIB) $(CURDIR)/testing/usr/bin/logilab-pytest -t $(CURDIR)/test
+ifneq (,$(build_py3k))
+	python3 setup.py install \
+		--root=$(CURDIR)/testing/ ${py_setup_install_args}
+	echo 'import site, os.path; site.addsitedir(os.path.dirname(__file__))' > testing/$(PYLIB3)/sitecustomize.py
+	PYTHONPATH=$(CURDIR)/testing/$(PYLIB3) $(CURDIR)/testing/usr/bin/logilab-pytest -t $(CURDIR)/test
+endif
+endif
+
+override_dh_compress:
+	dh_compress -X.py -X.ini -X.xml -Xtest/
+
+override_dh_clean:
+	dh_clean
+	rm -rf logilab_common.egg-info

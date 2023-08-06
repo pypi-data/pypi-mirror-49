@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ffprog
+Version: 0.0.0.2
+Summary: FFmpeg progress info package
+Home-page: https://github.com/Illicitus/ffprog
+Author: Vitalii Honchar
+Author-email: honchar.vitalii@gmail.com
+License: Apache 2.0
+Project-URL: Bug Reports, https://github.com/Illicitus/ffprog/issues
+Project-URL: Source, https://github.com/Illicitus/ffprog
+Description: 
+        file: README.md
+        file: CHANGELOG.md
+Keywords: FFMPEG,FFPROBE,FFPROG
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: test
+Provides-Extra: dev

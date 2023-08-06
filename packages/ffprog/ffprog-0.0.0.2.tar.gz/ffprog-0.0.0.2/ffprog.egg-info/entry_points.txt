@@ -1,0 +1,3 @@
+[console_scripts]
+ffprog = ffprog.main:main
+

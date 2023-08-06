@@ -1,0 +1,8 @@
+aiofiles>=0.4.0
+
+[dev]
+isort
+
+[test]
+green
+coverage

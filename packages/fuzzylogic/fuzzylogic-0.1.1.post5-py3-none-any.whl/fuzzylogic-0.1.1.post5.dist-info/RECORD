@@ -1,0 +1,12 @@
+fuzzylogic/__init__.py,sha256=d-_o6umXxN-x5G_nDKhsjPY4juk-rqrNsStj-hL5dgw,23
+fuzzylogic/classes.py,sha256=6JwDBuZK6QrBjuUsXTOGLFanW0gD9FYIaXTP3sY40B0,13994
+fuzzylogic/combinators.py,sha256=gElKgmW4JJL9Fd9JtCgSiSYM_WWuC2PGEjhrDxcx_zE,4990
+fuzzylogic/functions.py,sha256=jCXs4U4wxV8EfZq8uoLJ4BQWbefDctY3oL7EzznwRg8,12953
+fuzzylogic/hedges.py,sha256=HMLQndJOcU7zaDknsrsIpsou-gy8K9Mtz_iWIZqgRwk,815
+fuzzylogic/rules.py,sha256=iOOp-K_8ERbRbVIR0ODoKBRpgO6WFVHY8L4qj_PvS98,2263
+fuzzylogic/truth.py,sha256=nPH24wF5xlT9CYZMNWmGhfhPH8EByqlhDtbBAaRHjSQ,714
+fuzzylogic-0.1.1.post5.dist-info/LICENSE,sha256=T4yjN5WhSSig6N-tgxdbfuXHHXsMDkAR_uqLDexQJ4s,1076
+fuzzylogic-0.1.1.post5.dist-info/METADATA,sha256=y0wyPb26tu2ISDGBVEcvS-DtQSWTrJFTzBksqsM9SvY,4605
+fuzzylogic-0.1.1.post5.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+fuzzylogic-0.1.1.post5.dist-info/top_level.txt,sha256=Sd79oKuRmL01UJgcMF5H802VSQ-jfMru0DeyPStbB5s,11
+fuzzylogic-0.1.1.post5.dist-info/RECORD,,

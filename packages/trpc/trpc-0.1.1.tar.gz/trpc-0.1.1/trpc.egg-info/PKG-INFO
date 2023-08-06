@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: trpc
+Version: 0.1.1
+Summary: dynamic Template-less RPC tool
+Home-page: https://github.com/itsmealves/trpc
+Author: Gabriel Alves
+Author-email: itsmealves@gmail.com
+License: UNKNOWN
+Description:    # dynamic Template-less RPC tool
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

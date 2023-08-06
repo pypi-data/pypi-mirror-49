@@ -1,0 +1,4 @@
+[console_scripts]
+gpstime = gpstime.__main__:main
+ietf-leap-seconds = ietf_leap_seconds:main
+

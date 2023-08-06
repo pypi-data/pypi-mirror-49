@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pymalscraper
+Version: 1.0.0
+Summary: Simple Anime Web Scraper.
+Home-page: https://github.com/prinsepipo/pymalscraper
+Author: prinsepipo
+Author-email: prinse.sanchez@gmail.com
+License: MIT
+Description: # Anime Web Scraper
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

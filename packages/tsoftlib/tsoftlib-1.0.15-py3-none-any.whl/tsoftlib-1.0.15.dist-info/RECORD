@@ -1,0 +1,17 @@
+tsoftlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsoftlib/api/__init__.py,sha256=ttwgBAMWLh05DKuIajywu23WCkdqTWySYKb8Qdr9oNA,10
+tsoftlib/api/external_api.py,sha256=lSSTjKRQ4K79my0HPXUp9WniUoPWxHKvRnOjS1YA4fc,10384
+tsoftlib/api/internal_api.py,sha256=kw7xea-JC1PlE-JUVeLJz-8cfg4C8S9Yd0powRZmIy0,11621
+tsoftlib/helpers/__init__.py,sha256=c5-Vql5NhjFlNyPFdRPWTnIPQwkSP2hRRosGvxBsV3g,14
+tsoftlib/helpers/excelReader.py,sha256=KDiPRxIDSqxS7WZn1s3iDIVV3Wd0ZtZ55mFhkgPH0fs,1060
+tsoftlib/helpers/fileMaker.py,sha256=m7yAgkZ7beuyQe0VHXYvVrOD_8s-6ydTq_LBO9WPzro,85
+tsoftlib/helpers/htmlMaker.py,sha256=NjIhMGNanEabvwqqw4v6U4sRxS3wpPpLl6YQ2jhzkgg,2875
+tsoftlib/helpers/logger.py,sha256=hUN3B8eXlFDEFOwIFjCSrj5P-i0bQLu0erm8x59DoNU,413
+tsoftlib/helpers/mailer.py,sha256=6fehIdtj2em1QJLWhyK2oIZGMPiedN23XnSyKmsQGhg,2377
+tsoftlib/helpers/printer.py,sha256=XJkjwwPyfCJsidSrCO7Rczp0dMrCN0bOhJdwRkxKStc,1289
+tsoftlib/helpers/scheduler.py,sha256=NPgBjFpxBAXDiYB11vpA8K7mY4fnqt6ozD1eXsKnBtM,988
+tsoftlib-1.0.15.dist-info/LICENSE.txt,sha256=Jl1oM8dySHOM_tTqmNwfEGESV6uWh6Qo9Ii1r3l9NxM,1064
+tsoftlib-1.0.15.dist-info/METADATA,sha256=ssc3epzOwlbafIWpSg3uqf9me6o9eTyVYekzjk0k8dU,440
+tsoftlib-1.0.15.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+tsoftlib-1.0.15.dist-info/top_level.txt,sha256=d1trF-w-Un8zFa6w9vIjfl4RVJMV3hddp9CAMiFOnJI,9
+tsoftlib-1.0.15.dist-info/RECORD,,

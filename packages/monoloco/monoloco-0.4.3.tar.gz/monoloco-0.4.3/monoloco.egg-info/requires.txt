@@ -1,0 +1,9 @@
+openpifpaf==0.8.0
+tabulate
+
+[prep]
+nuscenes-devkit
+
+[test]
+pylint
+pytest

@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tests/__init__.py
+xml2pandas/__init__.py
+xml2pandas/base.py
+xml2pandas.egg-info/PKG-INFO
+xml2pandas.egg-info/SOURCES.txt
+xml2pandas.egg-info/dependency_links.txt
+xml2pandas.egg-info/requires.txt
+xml2pandas.egg-info/top_level.txt

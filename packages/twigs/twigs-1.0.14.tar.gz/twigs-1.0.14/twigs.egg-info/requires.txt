@@ -1,0 +1,5 @@
+boto3
+setuptools
+requests
+requirements_parser
+pysnow==0.7.4

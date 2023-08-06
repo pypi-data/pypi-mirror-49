@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: wcm
+Version: 0.0.0.dev0
+Summary: UNKNOWN
+Home-page: https://github.com/mintproject/wcm
+Author: Rajiv Mayani
+Author-email: mayani@isi.edu
+License: Apache
+Description: # README
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Unix

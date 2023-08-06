@@ -1,0 +1,150 @@
+Metadata-Version: 2.1
+Name: djangorestframework-camel-case2
+Version: 0.2.4
+Summary: Camel case JSON support for Django REST framework
+Home-page: https://github.com/fadawar/djangorestframework-camel-case2
+Author: jozo
+Author-email: hi@jozo.io
+License: BSD
+Description: # Django REST Framework JSON CamelCase
+        
+        [![Build Status](https://travis-ci.org/jozo/djangorestframework-camel-case2.svg?branch=master)](https://travis-ci.org/jozo/djangorestframework-camel-case2)
+        [![PyPI](https://img.shields.io/pypi/v/djangorestframework-camel-case2.svg)](https://pypi.org/project/djangorestframework-camel-case2/)
+        
+        Camel case JSON support for Django REST framework.
+        
+        _Note: This is a replacement for
+        [djangorestframework-camel-case](https://github.com/vbabiy/djangorestframework-camel-case)
+        which seems currently unmaintained._
+        
+        ## Installation
+        
+        At the command line::
+        ```bash
+        $ pip install djangorestframework-camel-case2
+        ```
+        
+        Add the render and parser to your django settings file.
+        
+        ```python
+        REST_FRAMEWORK = {
+        
+            'DEFAULT_RENDERER_CLASSES': (
+                'djangorestframework_camel_case2.render.CamelCaseJSONRenderer',
+                # Any other renders
+            ),
+        
+            'DEFAULT_PARSER_CLASSES': (
+                'djangorestframework_camel_case2.parser.CamelCaseJSONParser',
+                # Any other parsers
+            ),
+        }
+        ```
+        
+        ## Swapping Renderer
+        
+        By default the package uses `rest_framework.renderers.JSONRenderer`. If you want
+        to use another renderer (the only possible alternative is
+        `rest_framework.renderers.UnicodeJSONRenderer`, only available in DRF < 3.0), you must specify it in your django
+        settings file.
+        
+        ```python
+        # ...
+        JSON_CAMEL_CASE = {
+            'RENDERER_CLASS': 'rest_framework.renderers.UnicodeJSONRenderer'
+        }
+        # ...
+        ```
+        
+        ## Underscoreize Options
+        
+        As raised in https://github.com/krasa/StringManipulation/issues/8#issuecomment-121203018
+        there are two conventions of snake case.
+        
+        ```
+        # Case 1 (Package default)
+        v2Counter -> v_2_counter
+        fooBar2 -> foo_bar_2
+        
+        # Case 2
+        v2Counter -> v2_counter
+        fooBar2 -> foo_bar2
+        ```
+        
+        By default, the package uses the first case. To use the second case, specify it in your django settings file.
+        
+        ```python
+        REST_FRAMEWORK = {
+            # ...
+            'JSON_UNDERSCOREIZE': {
+                'no_underscore_before_number': True,
+            },
+            # ...
+        }
+        ```
+        
+        Alternatively, you can change this behavior on a class level by setting `json_underscoreize`:
+        
+        ```python
+        from djangorestframework_camel_case2.parser import CamelCaseJSONParser
+        from rest_framework.generics import CreateAPIView
+        
+        class NoUnderscoreBeforeNumberCamelCaseJSONParser(CamelCaseJSONParser):
+            json_underscoreize = {'no_underscore_before_number': True}
+            
+        class MyView(CreateAPIView):
+            queryset = MyModel.objects.all()
+            serializer_class = MySerializer
+            parser_classes = (NoUnderscoreBeforeNumberCamelCaseJSONParser,)
+        ```
+        
+        ## Running Tests
+        
+        To run the current test suite, execute the following from the root of the project
+        
+        ```bash
+        $ python -m unittest discover
+        ```
+        
+        
+        # Changelog
+        
+        ## [Unreleased]
+        
+        ## [0.2.4]
+        - Added `json_underscoreize` to `CamelCaseJSONParser` as class attribute to support variables with and without an underscore before a number in the same project
+        - Fixed import of six in combination with DRF 3.10
+        
+        ## [0.2.3]
+        ## Fixed
+        - Fixed missing CHANGELOG.md in package on pypi
+        
+        ## [0.2.2]
+        ### Changed
+        - Update README
+        
+        ### Removed
+        - Old README.rst and HISTORY.rst
+        
+        ## [0.2.1]
+        ### Added
+        - Support for generators and other iterables
+        - JSON_UNDERSCOREIZE option to change behaviour of underscoize function
+        
+        ### Changed
+        - Changed name of the package and README
+        
+        ## [0.1.0] - 2013-12-20
+        - First release on PyPI.
+        
+Keywords: djangorestframework_camel_case2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Description-Content-Type: text/markdown

@@ -1,0 +1,13 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+setup.py
+djangorestframework_camel_case2/__init__.py
+djangorestframework_camel_case2/parser.py
+djangorestframework_camel_case2/render.py
+djangorestframework_camel_case2/settings.py
+djangorestframework_camel_case2/util.py
+djangorestframework_camel_case2.egg-info/PKG-INFO
+djangorestframework_camel_case2.egg-info/SOURCES.txt
+djangorestframework_camel_case2.egg-info/dependency_links.txt
+djangorestframework_camel_case2.egg-info/top_level.txt

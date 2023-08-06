@@ -1,0 +1,11 @@
+scSplit/__init__.py,sha256=J7nIQnMZ87Kw9iCcBhFTSm3LPHE7SUf-6YNatpRwXyE,86
+scSplit/__main__.py,sha256=KSoDvNm_PfDnk_IJnDS58pXsWXX9v62A1yluLt-7aC4,18745
+scSplit/genotype.py,sha256=-eTqKIAIyGDqllk05yTbjpYVaag03-4r_z9TIvlJ9i4,5225
+scSplit/matrices.py,sha256=fFbGTzM2ZPsxwY53szFvgsT_psxDqttNylhXsuKpd9s,3825
+scSplit/simulation.py,sha256=x_TQFjY6DlExnkYNlt7DKyGNr14spgsuEFN4YNioxhU,6451
+scSplit/validate.py,sha256=0BRsJGlylz9toBV4nLRQ0NNagKYY0g4kpwMbiCBsnps,4524
+scSplit-0.7.0.dist-info/LICENSE.txt,sha256=vR2z3eUszyli3pNE5DdS2gRzEwCRuQTwhfjfPkGTXpk,1091
+scSplit-0.7.0.dist-info/METADATA,sha256=fmDZtGu9KiAWr-7a8KKX1BRfvDrPM3APPMpw0GJrYB8,7348
+scSplit-0.7.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+scSplit-0.7.0.dist-info/top_level.txt,sha256=Q_4jBLP0PMqEKzHBzuNW3s8Z24o2eiFTWYCGWsibryI,8
+scSplit-0.7.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+cedl = downloader.__main__:cedl
+

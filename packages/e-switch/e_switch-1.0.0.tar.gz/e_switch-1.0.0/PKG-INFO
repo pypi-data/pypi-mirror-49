@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: e_switch
+Version: 1.0.0
+Summary: hallo world this is my packaga for "e" tha packaga that switchas all "e"s with "a"s
+Home-page: UNKNOWN
+Author: Safyre Lyons
+Author-email: lyons.safyre@gmail.com
+License: MIT
+Description: # E
+        Turn e's into a's!!
+        
+        ## Installation:
+        `pip install e_switch`
+        
+        ## Usage:
+        ```python
+        import e_switch as e
+        
+        e.switch("eeee look at meeee")
+        ```
+        #### Output:
+        aaaa look at maaaa
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

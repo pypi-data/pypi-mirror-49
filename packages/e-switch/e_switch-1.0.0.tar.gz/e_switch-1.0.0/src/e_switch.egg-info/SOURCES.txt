@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/e_switch.py
+src/e_switch.egg-info/PKG-INFO
+src/e_switch.egg-info/SOURCES.txt
+src/e_switch.egg-info/dependency_links.txt
+src/e_switch.egg-info/not-zip-safe
+src/e_switch.egg-info/top_level.txt

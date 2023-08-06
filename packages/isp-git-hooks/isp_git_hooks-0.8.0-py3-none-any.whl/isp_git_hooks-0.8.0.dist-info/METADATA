@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: isp-git-hooks
+Version: 0.8.0
+Summary: 
+Author: Marcel Hekking
+Author-email: m.hekking@isprojects.nl
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pre-commit (>=1.17,<2.0)

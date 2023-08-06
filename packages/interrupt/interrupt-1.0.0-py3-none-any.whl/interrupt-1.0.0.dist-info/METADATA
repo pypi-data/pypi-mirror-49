@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: interrupt
+Version: 1.0.0
+Summary: Interrupt silently
+Home-page: https://github.com/lmittmann/interrupt
+Author: lmittmann
+License: MIT
+Keywords: interrupt
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# interrupt
+
+[![Build Status](https://travis-ci.com/lmittmann/interrupt.svg?branch=master)](https://travis-ci.com/lmittmann/interrupt)
+[![PyPi](https://img.shields.io/pypi/v/interrupt.svg)](https://pypi.org/project/interrupt)
+
+
+> Interrupt silently
+
+
+## Install
+
+```
+$ pip install interrupt
+```
+
+
+## Usage
+
+Add a single import to enable silent interruption.
+
+```py
+import interrupt.silently
+```
+
+

@@ -1,0 +1,4 @@
+docker
+pymongo
+docopt
+pytz

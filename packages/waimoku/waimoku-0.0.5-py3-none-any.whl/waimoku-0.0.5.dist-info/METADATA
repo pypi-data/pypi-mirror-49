@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: waimoku
+Version: 0.0.5
+Summary: ワイもくのConnpasで取得しているアンケートから運営に必要な情報を抽出するPythonのScript です。
+Home-page: UNKNOWN
+Author: Atsuki Seo
+Maintainer: Atsuki Seo
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+
+waimoku
+=======
+
+ワイもくのConnpasで取得しているアンケートから運営に必要な情報を抽出するPythonのScript
+です。
+
+インストール
+------------
+
+pipを使ってこのパッケージはインストールすることができます
+
+::
+
+   pip install --upgrade waimoku
+
+ライセンス
+----------
+
+このソフトウェアは、MITライセンスのもとで公開されています。
+
+詳しくは\ `LICENSE <https://github.com/ymoku-group/waimoku_lib/blob/master/LICENSE>`__\ を御覧ください。
+
+

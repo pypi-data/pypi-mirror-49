@@ -1,0 +1,14 @@
+gimme_aws_creds/__init__.py,sha256=bA-MK0dyzOipfN2Z4dA-C3Qifc4HnoO9Q3QIhYQHnMc,55
+gimme_aws_creds/aws.py,sha256=LO4yjzCiGLlPlcuxEpZcGJOlhXqElDC08q3RRjcgcCI,5295
+gimme_aws_creds/common.py,sha256=J26IcfbYH8V5hVSU1QHVp5HPBC8NY01-9WyAWrp2DIg,690
+gimme_aws_creds/config.py,sha256=00s8toKM24m73MctV4CrYP8x4K_sw8-2OL-Jmgr6OT8,19866
+gimme_aws_creds/default.py,sha256=-xTuaHw6J97o9D49CqwLG_sQ7iKOGnUQT60F195gHmw,2872
+gimme_aws_creds/main.py,sha256=e0x2WKFC6_kUkwOlGuk940YrKhONwEtT5sNxHn5unmo,21551
+gimme_aws_creds/okta.py,sha256=C3cn_h6_03PDFEBCNGXBP-BGnd9kUf19BlXItVDhvN4,25225
+gimme_aws_creds-1.1.8.data/scripts/gimme-aws-creds,sha256=O8enkmn1hEV1cdPJSVay4H2cUGsfp7AUpvVhP8JLt88,734
+gimme_aws_creds-1.1.8.data/scripts/gimme-aws-creds.py,sha256=O8enkmn1hEV1cdPJSVay4H2cUGsfp7AUpvVhP8JLt88,734
+gimme_aws_creds-1.1.8.dist-info/LICENSE.txt,sha256=ELNI_dskD9ywi4NYOjYJvGjnxfhwU4WlUv1LlA59t9Q,11340
+gimme_aws_creds-1.1.8.dist-info/METADATA,sha256=ZRmNvYXy9BfKorl9fuljdB3757s4aWR3gOI_7brGHT4,697
+gimme_aws_creds-1.1.8.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+gimme_aws_creds-1.1.8.dist-info/top_level.txt,sha256=EVQpc94o01krGTu3MRZahAimbNpN7_e53X9LVF9lGxM,16
+gimme_aws_creds-1.1.8.dist-info/RECORD,,

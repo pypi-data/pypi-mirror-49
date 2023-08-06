@@ -1,0 +1,6 @@
+preconvert_numpy/__init__.py,sha256=RZX076hgOGI31QKwNNtCiCR0KHEc5oPm1WzzFG16tnQ,208
+preconvert_numpy/converters.py,sha256=edrWDzW9iSyfKybDRCn9ka_nLLhUYBKchhuZvYa2T2o,584
+preconvert_numpy-0.0.3.dist-info/entry_points.txt,sha256=Mwqmi-seU8GH9HyLDl9WWJFqRyQ3uvAWZWd6VuFTzNs,59
+preconvert_numpy-0.0.3.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+preconvert_numpy-0.0.3.dist-info/METADATA,sha256=8i9hrOHuKvcT348wXe6uvBIoDT_uvi4IIP4sk1FPs6A,1125
+preconvert_numpy-0.0.3.dist-info/RECORD,,

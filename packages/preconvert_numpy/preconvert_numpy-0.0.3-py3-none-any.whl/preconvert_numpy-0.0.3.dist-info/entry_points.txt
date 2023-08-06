@@ -1,0 +1,3 @@
+[preconvert.converters]
+numpy=preconvert_numpy:converters
+

@@ -1,0 +1,9 @@
+imlo/__init__.py,sha256=EsRjrHZB_Mp0oaRazgqqheJoMpWmqNe6fzH7vmaeSXU,69
+imlo/transliterate/__init__.py,sha256=ABNSu4fxnJP2w4YrEzZJ3Dn3K3erVPucZzoJ6iplFZY,42
+imlo/transliterate/charmap.py,sha256=x5wXu-w376JfqmpkYCX3qBjafZkfQ5XYLlCl89-NlOE,1633
+imlo/transliterate/core.py,sha256=5hZpxJpiJFBxJ-TSmKBb140gL_kY2Vo0PvLnLwrlCN8,421
+imlo-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+imlo-0.1.1.dist-info/METADATA,sha256=T9dC60KpCY0oVAzu6fE5UX9cOQLuqclY0Q_xSXC9Ts8,986
+imlo-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+imlo-0.1.1.dist-info/top_level.txt,sha256=gi0QUR9JeEaX6eqoJiQNPH8GTMyJC_Z-GsFMk6qDsFw,5
+imlo-0.1.1.dist-info/RECORD,,

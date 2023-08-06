@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aliddns-python
+Version: 0.0.1
+Summary: A Dynamic DNS tool for alicloud
+Home-page: https://github.com/cheng10/aliddns-python
+Author: cheng10
+Author-email: cheng10@ualberta.ca
+License: UNKNOWN
+Description: # aliddns-python
+        
+        A dynamic DNS tool for alicloud DNS.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

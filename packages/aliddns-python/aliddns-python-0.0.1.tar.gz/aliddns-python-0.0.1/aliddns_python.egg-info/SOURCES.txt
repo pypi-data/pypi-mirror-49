@@ -1,0 +1,8 @@
+README.md
+setup.py
+aliddns/__init__.py
+aliddns/ddns.py
+aliddns_python.egg-info/PKG-INFO
+aliddns_python.egg-info/SOURCES.txt
+aliddns_python.egg-info/dependency_links.txt
+aliddns_python.egg-info/top_level.txt

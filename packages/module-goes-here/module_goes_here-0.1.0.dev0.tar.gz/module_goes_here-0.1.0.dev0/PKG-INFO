@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: module_goes_here
+Version: 0.1.0.dev0
+Summary: 3Amigos Python GitHub Template
+Home-page: https://github.com/github_organization_goes_here/github_repository_goes_here
+Author: name_goes_here
+Author-email: email@goes.here
+Maintainer: name_goes_here
+Maintainer-email: email@goes.here
+License: GPLv3+
+Description: # 3Amigos Python GitHub Template
+        A GitHub Template Repository Generated via cookiecutter from https://github.com/3amigos-dev/cookiecutter-3amigos-py it can be used via the GitHub template but using the cookiecutter repository is more complicated but provides a better outcome, see that repository for more details.
+        
+        [![Build Status](https://dev.azure.com/timgates/timgates/_apis/build/status/3amigos-dev.3amigos-py?branchName=master)](https://dev.azure.com/timgates/timgates/_build/latest?definitionId=6&branchName=master)
+        [![PyPi version](https://img.shields.io/pypi/v/module_goes_here.svg)](https://pypi.org/project/module_goes_here)
+        [![Python Versions](https://img.shields.io/pypi/pyversions/module_goes_here.svg)](https://pypi.org/project/module_goes_here)
+        [![PyPi downloads per month](https://img.shields.io/pypi/dm/module_goes_here.svg)](https://pypi.org/project/module_goes_here)
+        
+        # Additional Documentation:
+        * [News](https://github.com/github_organization_goes_here/github_repository_goes_here/blob/master/NEWS.rst).
+        * [Code of Conduct](https://github.com/github_organization_goes_here/github_repository_goes_here/blob/master/CODE_OF_CONDUCT.md).
+        * [Contribution Guidelines](https://github.com/github_organization_goes_here/github_repository_goes_here/blob/master/CONTRIBUTING.md).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/markdown

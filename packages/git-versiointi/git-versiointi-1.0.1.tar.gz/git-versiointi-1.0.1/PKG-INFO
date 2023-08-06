@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: git-versiointi
+Version: 1.0.1
+Summary: Asennettavan pakettiversion haku git-leimojen mukaan
+Home-page: https://github.com/an7oine/git-versiointi.git
+Author: Antti Hautaniemi
+Author-email: antti.hautaniemi@pispalanit.fi
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3

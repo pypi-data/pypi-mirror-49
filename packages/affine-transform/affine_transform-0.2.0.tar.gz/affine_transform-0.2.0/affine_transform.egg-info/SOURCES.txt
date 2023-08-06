@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+affine_transform/__init__.py
+affine_transform/affine_transform.py
+affine_transform/version.txt
+affine_transform.egg-info/PKG-INFO
+affine_transform.egg-info/SOURCES.txt
+affine_transform.egg-info/dependency_links.txt
+affine_transform.egg-info/not-zip-safe
+affine_transform.egg-info/requires.txt
+affine_transform.egg-info/top_level.txt

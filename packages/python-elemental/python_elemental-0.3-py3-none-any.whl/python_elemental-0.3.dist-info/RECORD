@@ -1,0 +1,9 @@
+elemental/__init__.py,sha256=CBJd3wB5mafA05YOJYMAooJVDBq1IMXXSGcnF1GOQSo,190
+elemental/client.py,sha256=4GGr9F88sGM9Dt5I-39JDMgS8QmIdcDmmxIdwkH6wkM,7452
+elemental/client_test.py,sha256=C58rWuH5hlA1WmIxz7oNAWBYLnzl8cnyrNToehUiWAU,14660
+elemental/main.py,sha256=Rpu1MdVk5JqLmkfRskBoRuqxqNmzADhIyIgp4fRdB9M,2724
+elemental/templates/qvbr_mediastore.xml,sha256=837vfIW0Bd5cn5UF3CdwfNg2w06MAJZsMm35HqWO44o,54742
+python_elemental-0.3.dist-info/METADATA,sha256=1E5k72z213gqpUcElAoxPZlN4Sd68cehp-ZArybBIM8,1066
+python_elemental-0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+python_elemental-0.3.dist-info/top_level.txt,sha256=dKoONf9I2PlD2-bv-CVv99yEb4zeNWKvc3FNyUaXFn4,10
+python_elemental-0.3.dist-info/RECORD,,

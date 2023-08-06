@@ -1,0 +1,8 @@
+setup.py
+BrainFuck/__init__.py
+BrainFuck/simple.py
+theBrainFuck.egg-info/PKG-INFO
+theBrainFuck.egg-info/SOURCES.txt
+theBrainFuck.egg-info/dependency_links.txt
+theBrainFuck.egg-info/requires.txt
+theBrainFuck.egg-info/top_level.txt

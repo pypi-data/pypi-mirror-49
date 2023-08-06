@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+fisher/__init__.py
+fisher/tableprinter.py
+fisher_modified.egg-info/PKG-INFO
+fisher_modified.egg-info/SOURCES.txt
+fisher_modified.egg-info/dependency_links.txt
+fisher_modified.egg-info/requires.txt
+fisher_modified.egg-info/top_level.txt
+src/cfisher.c
+src/cfisher.pyx

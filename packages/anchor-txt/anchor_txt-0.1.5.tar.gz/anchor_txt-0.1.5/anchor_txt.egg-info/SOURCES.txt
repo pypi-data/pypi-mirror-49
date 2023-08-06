@@ -1,0 +1,13 @@
+README.md
+setup.py
+anchor_txt/__init__.py
+anchor_txt/__main__.py
+anchor_txt/mdsplit.py
+anchor_txt/section.py
+anchor_txt/utils.py
+anchor_txt.egg-info/PKG-INFO
+anchor_txt.egg-info/SOURCES.txt
+anchor_txt.egg-info/dependency_links.txt
+anchor_txt.egg-info/not-zip-safe
+anchor_txt.egg-info/requires.txt
+anchor_txt.egg-info/top_level.txt

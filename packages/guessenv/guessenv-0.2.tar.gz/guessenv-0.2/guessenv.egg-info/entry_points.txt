@@ -1,0 +1,3 @@
+[console_scripts]
+guessenv = guessenv.__main__:main
+

@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+guessenv/__init__.py
+guessenv/__main__.py
+guessenv/guesser.py
+guessenv.egg-info/PKG-INFO
+guessenv.egg-info/SOURCES.txt
+guessenv.egg-info/dependency_links.txt
+guessenv.egg-info/entry_points.txt
+guessenv.egg-info/top_level.txt
+test/test_guesser.py

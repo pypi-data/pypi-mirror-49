@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pybitcore
+Version: 0.1
+Summary: Python3 wrapper for the Bitcore API
+Home-page: https://github.com/tianshanghong/pybitcore
+Author: Wei Wang
+Author-email: tianshanghong@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Bitcore API wrapper
+
+Python3 wrapper for the [Bitcore](https://github.com/bitpay/bitcore/blob/master/packages/bitcore-node/docs/api-documentation.md) API
+
+### Installation
+PyPI
+```bash
+pip install pybitcore
+```
+or from source
+```bash
+git clone https://github.com/tianshanghong/pybitcore.git
+cd pybitcore
+python3 setup.py install
+```
+
+### Usage
+
+```python
+from pybitcore import BitCoreAPI
+bc = BitCoreAPI()
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+

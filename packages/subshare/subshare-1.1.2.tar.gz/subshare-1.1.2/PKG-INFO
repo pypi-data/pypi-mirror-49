@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: subshare
+Version: 1.1.2
+Summary: Linux ShareX alternitve
+Home-page: https://github.com/simplysublimee/subshare
+Author: SimplySublime
+Author-email: sublime@atriox.io
+License: UNKNOWN
+Description: # subShare - ShareX linux alternative.
+        
+        [![PyPI version](https://badge.fury.io/py/subshare.svg)](https://badge.fury.io/py/subshare)
+        
+        ## Features:
+        
+        - Quickly upload and share files, text documents, screenshots and shorten links.
+        - Configurable to use your own Nextcloud instance for uploads.
+        - Uploading file contents to Hastebin.
+        - Shortening links via Polr. (selfhosted/public)
+        
+        ## Examples:
+        
+        > Sharing a file:  
+        ![Alt text](/img/file.png?raw=true "Optional Title")  
+        https://s.atriox.io/EEAl4 # links are shortened via Polr :D
+        
+        > Sharing a text file:  
+        ![Alt text](/img/text.png?raw=true "Optional Title")  
+        https://s.atriox.io/bC88g
+        
+        Skip down to usage for more example commands.
+        
+        ## Summary:
+        
+        I made Subshare since I couldn't find a suitable linux alternative for ShareX, which I used on Windows to capture my screenshots, share text and files after it would upload them to the respective servies. Eg: Nextcloud/Hastebin. So I made something to fit my needs. If there are issues feel free to open up a issue and I'll try to get it fixed. Better yet write some come and help a brotha out? :D
+        
+        ## Installation:
+        Subshare is available on PyPi and can be installed with ```pip```    
+        
+        https://pypi.org/project/subshare/  
+        
+        ```pip3 install --user subshare```  
+        
+        ## Requirements
+        Linux: ```escrotum```
+        - Scrot displayed artifacts when using selection mode. Escrotum fixed this.
+        
+        ## Configuration
+        The default config file is created on the first run on ```subshare``` at ```~/.subshare.conf``` and concaints the following.
+        
+        ```
+        "nextcloud_url": "",
+        "nextcloud_dir": "",
+        "nextcloud_username": "",
+        "nextcloud_password": "",
+        "use_polr": "true/false - NO QUOTES",
+        "polr_url": "",
+        "polr_api_key": "",
+        "hastebin_url": "h",
+        "screenshot_save_dir": "/home/USERNAME/screenshots/"
+        ```
+        Enter all your respective details and a true or false for if you want to use Polr to shorten the links or not.
+        
+        
+        ## Usage
+        Note: All commands will automatically copy the link to your clipboard.
+        
+        - Sharing screenshots:  
+        ```subshare screenshot``` captures a regular screenshot.  
+        ``` subshare screenshot -t selection``` lets you drag out a selection.  
+        
+        - Sharing text:  
+        ```subshare text -f /path/to/file``` will post the contents of the file to Hastebin.  
+        
+        - Sharing files:  
+        ```subshare file -f /path/to/file``` upload the file to your nextcloud instance.  
+        
+        - Shortening links:  
+        ```subshare link -f "LINK TO SHORTEN"``` will shorten the link you specify. Dont forget the quotes around it.  
+        
+        
+        ## To-do:
+        
+        [x] Make Polr optional.  
+        [] Add alternative providers for uploading and sharing links...  
+        [] idk it pretty much does what I wanted rn. Feel free to make a pull request or open up an issue if you'd like anything added and we'll see what we can do.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

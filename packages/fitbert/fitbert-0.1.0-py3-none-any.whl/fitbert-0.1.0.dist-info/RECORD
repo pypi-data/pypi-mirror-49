@@ -1,0 +1,12 @@
+fitbert/__init__.py,sha256=rCvtiT8gIgX0icRRAtP7xdrhUTygYXA-CoXS-7ABwEg,38
+fitbert/delemmatize.py,sha256=CPst7QA-2wXs5DBf7gR8OHQmCMc2INZLkom4ogaCaeg,1396
+fitbert/fitb.py,sha256=fk9KMwNsuPR9LGaMQVrVV12hC7Oef5vyTxW50zDLa1Q,7889
+fitbert/tests.py,sha256=5dJd85jeh2H1kF0lTR3bZyWYv1EQjMQVWeIgupmp7gY,1976
+fitbert/utils.py,sha256=rL_iRaUPb-RPHoZMRHmYKu0JUso272fdB5XwoocAUWc,190
+fitbert/version.py,sha256=s1hrjNiW547MsDgaHnoA9m-TWBx_1H9kas0e7cpqS_g,86
+fitbert/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fitbert/data/lemma_lookup.py,sha256=6VbJ_CmdvyjCoQBwHDKBHADoD8c8y_e-ARRb2IprjoU,1179618
+fitbert-0.1.0.dist-info/METADATA,sha256=eyPfQIUO8oYAqSZE3IZc6lCFXstzhirnO5tsguL0oe4,5739
+fitbert-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+fitbert-0.1.0.dist-info/top_level.txt,sha256=k1naH8S0v-MqliFzBa2U8AIZ1jRn5dhGXsQyIQxjYlM,8
+fitbert-0.1.0.dist-info/RECORD,,

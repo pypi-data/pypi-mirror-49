@@ -1,0 +1,15 @@
+README.md
+setup.py
+danlp/__init__.py
+danlp/download.py
+danlp.egg-info/PKG-INFO
+danlp.egg-info/SOURCES.txt
+danlp.egg-info/dependency_links.txt
+danlp.egg-info/requires.txt
+danlp.egg-info/top_level.txt
+danlp/models/__init__.py
+danlp/models/embeddings.py
+danlp/models/pos_taggers.py
+tests/__init__.py
+tests/test_download.py
+tests/test_embeddings.py

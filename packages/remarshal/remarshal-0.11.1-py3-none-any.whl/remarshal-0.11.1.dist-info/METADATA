@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: remarshal
+Version: 0.11.1
+Summary: Convert between TOML, YAML and JSON
+Home-page: https://github.com/dbohdan/remarshal
+Author: dbohdan
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: PyYAML (>=5.1)
+Requires-Dist: python-dateutil (>=2.5.0)
+Requires-Dist: pytoml (>=0.1.11)
+Requires-Dist: u-msgpack-python (>=2.5.1)
+
+UNKNOWN
+
+

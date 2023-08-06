@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: insensitive-dict
+Version: 0.1.10
+Summary: A case insensitive dictionary that's fully tested.  Primarily broken out from the requests package
+Home-page: https://github.com/timmmartin19/case_insensitive_dict
+Author: Tim Martin
+Author-email: tim@timmartin.me
+License: MIT license
+Keywords: case_insensitive_dict
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+===============================
+case-insensitive-dict
+===============================
+
+
+.. image:: https://img.shields.io/pypi/v/case_insensitive_dict.svg
+        :target: https://pypi.python.org/pypi/case_insensitive_dict
+
+.. image:: https://img.shields.io/travis/timmmartin19/case_insensitive_dict.svg
+        :target: https://travis-ci.org/timmmartin19/case_insensitive_dict
+
+.. image:: https://readthedocs.org/projects/case-insensitive-dict/badge/?version=latest
+        :target: https://case-insensitive-dict.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. image:: https://pyup.io/repos/github/timmmartin19/case_insensitive_dict/shield.svg
+     :target: https://pyup.io/repos/github/timmmartin19/case_insensitive_dict/
+     :alt: Updates
+
+
+A case insensitive dictionary that's fully tested.  Primarily broken out from the requests package
+
+
+* Free software: MIT license
+* Documentation: https://case-insensitive-dict.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+---------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+
+=======
+History
+=======
+
+0.1.0 (2016-07-26)
+------------------
+
+* First release on PyPI.
+
+

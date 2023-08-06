@@ -1,0 +1,7 @@
+setup.py
+PyPhysics.egg-info/PKG-INFO
+PyPhysics.egg-info/SOURCES.txt
+PyPhysics.egg-info/dependency_links.txt
+PyPhysics.egg-info/entry_points.txt
+PyPhysics.egg-info/top_level.txt
+PyPhysics.egg-info/zip-safe

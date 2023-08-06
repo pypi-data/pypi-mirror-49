@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ruv-dl
+Version: 0.1.2
+Summary: Downloader/organizer for ruv programs
+Home-page: https://github.com/sindrig/ruv-dl
+Author: Sindri Guðmundsson
+Author-email: sindrigudmundsson@gmail.com
+License: GPLv3
+Description: Sync available ruv programs to your computer
+        
+        TODO: Better readme
+        
+        # Uploading a new version
+        
+        1. Set a new version in setup.py
+        2. Run `. ./prepare_upload.sh` (this is assuming you have lastpass.
+            Optional if you want to type your pypi credentials manually).
+        3. Run `make upload`
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown

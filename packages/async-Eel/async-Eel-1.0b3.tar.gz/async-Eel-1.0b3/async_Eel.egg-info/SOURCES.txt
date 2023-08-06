@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+async_Eel.egg-info/PKG-INFO
+async_Eel.egg-info/SOURCES.txt
+async_Eel.egg-info/dependency_links.txt
+async_Eel.egg-info/requires.txt
+async_Eel.egg-info/top_level.txt
+async_eel/__init__.py
+async_eel/__main__.py
+async_eel/browsers.py
+async_eel/chrome.py
+async_eel/edge.py
+async_eel/eel.js
+async_eel/electron.py
+async_eel/utils.py

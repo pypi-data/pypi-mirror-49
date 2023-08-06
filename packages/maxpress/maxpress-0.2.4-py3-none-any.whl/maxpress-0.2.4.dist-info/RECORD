@@ -1,0 +1,13 @@
+maxpress/__init__.py,sha256=rIiTMsGcts2L7Fln0O8A3tLg_f2SJbDQ2QgjLUctTl4,12338
+maxpress/__main__.py,sha256=ubt6XyZvcHwdjCQ90B_U4MeP-3YJduz5GWUC9yOgkrg,27
+maxpress/renderer.py,sha256=0Xp9j45MWdvEQ1TdT_9qHqlIIqFuldBS_m8oBuGbGCo,2030
+maxpress/css/custom.css,sha256=5gtCDKIQ3JFW05gsIMi_MY8jJ2JSEfQEPyldG2Pl6hI,165
+maxpress/css/default.css,sha256=IlSACW_Dm6OEOcyWEhmPTXqfx1eJUqK0oFYD-lmeL2A,2994
+maxpress/less/default.less,sha256=Pe6F4b0547uHD2t8mgPVYWL81bIqYYdDDdUc5-0nfns,4003
+maxpress/less/styles.less,sha256=zUjLJIIxIUmG02M3gWGELVUNvJ15CLqK-iOhx5KgMpw,3687
+maxpress-0.2.4.dist-info/LICENSE,sha256=KBEz8kPIoMIO8R0Tl1C4s8oeahzby8uCQBv448J7bu4,1072
+maxpress-0.2.4.dist-info/METADATA,sha256=nyKYTlmKZdhSmFlIVdqvEJURv5v0_FaXDqw5R0FcnV4,5174
+maxpress-0.2.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+maxpress-0.2.4.dist-info/entry_points.txt,sha256=4S-MgaNk-VzaXpV2nArQR60GexhcamgK-mSeQV0Qurk,44
+maxpress-0.2.4.dist-info/top_level.txt,sha256=BasSpqdtAYe71mY_lZrmHdKe96GJPBDEnkRZ694-EvY,9
+maxpress-0.2.4.dist-info/RECORD,,

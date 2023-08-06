@@ -1,0 +1,7 @@
+# several fixes compared to enable v. 4.7.2. TODO: update to 4.7.3 when released
+git+git://github.com/enthought/enable@d225b6f4a3516f84c6a68f1369c885f7190a18d6#egg=enable
+
+chaco==4.7.2
+traits==4.6.0 
+traitsui==6.0.0
+pyface==6.0.0

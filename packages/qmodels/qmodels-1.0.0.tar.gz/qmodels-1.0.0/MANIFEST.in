@@ -1,0 +1,11 @@
+# include the markdown files
+include *.md
+
+# include the license file
+include LICENSE
+
+# include examples and documents
+recursive-include qmodels *.py
+recursive-include notebooks *.ipynb
+prune docs/.ipynb_checkpoints
+prune notyet

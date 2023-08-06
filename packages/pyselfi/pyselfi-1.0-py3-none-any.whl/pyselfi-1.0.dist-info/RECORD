@@ -1,0 +1,11 @@
+pyselfi/__init__.py,sha256=j8fnDoVJ3zb2u0CDkYHbS00gdM-uyGFHuJXEGXguW4E,1128
+pyselfi/likelihood.py,sha256=Z7nHuQb7oircW8wMvYGOMz5SwcCg50hsL_lx3vjtIZY,14939
+pyselfi/pool.py,sha256=QUUX08vCw-1YH7mxcnGXVtPviyJpWpiv_9wciA6_PYQ,3939
+pyselfi/posterior.py,sha256=BQVB3AxmZ0RTZBHByMpLmMGS4AC9ws8OR52VZjhV0QE,10053
+pyselfi/selfi.py,sha256=kIxNl8P2Ls6IMf3pGVoRTiHSzHbmxh7C0-ky27-0FZs,6054
+pyselfi/utils.py,sha256=ShLYX75UDi8cT0_gijPLj5qETbAsulgPcGSjJ8e0cn0,12755
+pyselfi-1.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+pyselfi-1.0.dist-info/METADATA,sha256=HdI4gniopq5fWznRpl9wPE3FX8TgZQxNqhHDfutno9c,4060
+pyselfi-1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyselfi-1.0.dist-info/top_level.txt,sha256=Ojtb-EBU_Vkizol6KkMQbi9j9wbdnMmlnZgFffiG6Xw,8
+pyselfi-1.0.dist-info/RECORD,,

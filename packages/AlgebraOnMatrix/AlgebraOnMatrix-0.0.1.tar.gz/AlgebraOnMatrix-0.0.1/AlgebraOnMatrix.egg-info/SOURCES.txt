@@ -1,0 +1,8 @@
+setup.py
+AlgebraOnMatrix/Algebra_Matrix.py
+AlgebraOnMatrix/__init__.py
+AlgebraOnMatrix/test.py
+AlgebraOnMatrix.egg-info/PKG-INFO
+AlgebraOnMatrix.egg-info/SOURCES.txt
+AlgebraOnMatrix.egg-info/dependency_links.txt
+AlgebraOnMatrix.egg-info/top_level.txt

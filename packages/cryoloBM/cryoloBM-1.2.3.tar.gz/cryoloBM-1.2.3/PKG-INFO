@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cryoloBM
+Version: 1.2.3
+Summary: Boxmanager to create training data for crYOLO
+Home-page: UNKNOWN
+Author: Thorsten Wagner
+Author-email: thorsten.wagner@mpi-dortmund.mpg.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: cochl-sense
+Version: 1.0.0b2
+Summary: Python Package for Cochlear.ai sense API
+Home-page: https://github.com/cochlearai/sense-python
+Author: Cochlear.ai
+Author-email: support@cochlear.ai
+License: Apache 2.0
+Description: # sense-python (Sense API beta-v2)
+        
+        This repository implement a library working with python to interact with Cochlear.ai backend.
+        
+        
+        ## How to use
+        
+        Make sure to have install `python3` and `pip`.
+        
+        ### Initialisation
+        
+        ```
+        pip install cochl-sense
+        ```
+        
+        ### Launch Examples
+        
+        For testing a file, run 
+        ```
+        python example_file.py
+        ```
+        
+        For testing a stream from your microphone, make sure  [port-audio](http://www.portaudio.com/) is installed on your system.
+        Then run 
+        ```
+        python example_stream.py
+        ```
+        
+        For further information, please refer to our API document: http://cochlear.ai/docs/.
+        
+Keywords: Cochlear.ai sense client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown

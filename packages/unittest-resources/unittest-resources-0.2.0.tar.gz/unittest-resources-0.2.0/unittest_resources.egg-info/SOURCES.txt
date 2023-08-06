@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+unittest_resources/__init__.py
+unittest_resources/testing.py
+unittest_resources.egg-info/PKG-INFO
+unittest_resources.egg-info/SOURCES.txt
+unittest_resources.egg-info/dependency_links.txt
+unittest_resources.egg-info/requires.txt
+unittest_resources.egg-info/top_level.txt
+unittest_resources.egg-info/zip-safe
+unittest_resources/tests/__init__.py
+unittest_resources/tests/test_classes.py
+unittest_resources/tests/test_code.py

@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: projest
+Version: 0.0.7
+Summary: A small example package
+Home-page: https://github.com/sthhher/projest
+Author: Esther Vendrell
+Author-email: esvemira@hotmail.com
+License: UNKNOWN
+Description: # Projest
+        
+        Made by [Esther Vendrell]
+        
+        Last updated: July 2019
+        
+        ## Introduction
+        Projest is my first program. Consist in introduce the name of a protein and obtain information about that as the most similar protein, the differents models it has or the atoms. All the information you can obtain comes from: https://www.rcsb.org/
+        
+        ## Description
+        The main file is protein.py. In spite of main functions are in extract_atoms_information.py - load protein pdb or load protein fasta - the rest of functions are in protein. 
+        In this way we will have functions directly linked to protein like:
+        Protein("2ki5").get_similar_protein() -> We will obtain fasta file, pdb file, all the information of protein in mongodb (in the init) and the similar protein of each chain. 
+        
+        ## Functions
+        There are 7 functions:
+          - get_sequence_aminoacids: in Protein. Returns a list with chain and the sequence of aminoacids (1 letter). From fasta file.
+          - get_chain_list: in Protein. Return a list with the differents chains there are.
+          - get_aminoacid_list: in Protein. Return a list with the differents aminoacids (3 letters) with the differents sequence numbers classified in chains
+          - get_similar_protein: in Protein. Return a dictionary with differents chains and the most similar protein of that chain of the protein.
+          - general_dictionary: in Protein. Any return. It inserts in mongodb all the information classified. It is not callable.
+          - load_protein_pdb: in extract_atoms_information. Returns the pdb file of the protein. Download the pdb file of the protein in the same directory of the files. 
+          - load_protein_fasta: in extract_atoms_information. Returns the fasta file of the protein.Download the fasta file of the protein in the same directory of the files. 
+        
+        ## MongoDB
+        I could have used an other structure to upload all the information to MongoDB:
+        Protein - Model - residue_sequence_number - atom_number - information atom. 
+        
+        Class Model:
+            def __init__(self, model_identifier, model_dict):
+                self.model_identifier = model_identifier
+                self.chain_list = []
+                for chain_identifier, value in model_dict:
+                    self.chain_list.append(Chain(chain_identifier))
+        
+        In this way we obtain information from mongodb. This would be easier but I haven't had enough time since I have realized.
+        
+        The structure of my project is:
+        Portein - Model - residue_name - residue_sequence_number - element_name - atom_name - information atom. 
+        
+        This is more easy to understand the information we are getting and classified it. This is why I have used this structure. Visually is better but for obtaining this information internally it is worse.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

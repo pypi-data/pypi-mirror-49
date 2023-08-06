@@ -1,0 +1,19 @@
+language: python
+python:
+    #- "3.3" test stops at installing spyder notebook etc
+    - "3.4"
+    - "3.5"
+    - "3.6"
+
+before_install:
+    - sudo apt-get install swig zlibc zlib1g zlib1g-dev libboost-dev libboost-iostreams-dev libboost-regex-dev libboost-serialization-dev
+install: "python setup.py install"
+before_script: cd test
+script:
+    - python run_tests.py
+notifications:
+    email:
+        recipients:
+            - ben.bob@gmail.com
+        on_success: never
+        on_failure: always

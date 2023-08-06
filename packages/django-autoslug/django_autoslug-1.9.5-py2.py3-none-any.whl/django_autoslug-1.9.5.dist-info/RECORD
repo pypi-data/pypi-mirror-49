@@ -1,0 +1,10 @@
+autoslug/__init__.py,sha256=4tC9rcWLSCZo89BJWn9Ky1R35aBIcJKv_3f8Kj6fn40,452
+autoslug/fields.py,sha256=9TfipNutm41vlA71azOm4FVKUrUHf2Mx1I9GEbWTwnQ,13379
+autoslug/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoslug/settings.py,sha256=QUhAQEBZDWijCpUn1XrTKpLwMjpUfsm6irHbVQHipqI,2620
+autoslug/utils.py,sha256=qSlpU5-eOgRGazk3HM80FtaEf3S0K6up3dMEbgjd2mg,7609
+django_autoslug-1.9.5.dist-info/COPYING.LESSER,sha256=Ww2oUywfFTn242v9ksCgQdIVSpcMXJiKKePn0GFm25E,7649
+django_autoslug-1.9.5.dist-info/METADATA,sha256=cSjLwX87McFzd9TQbGpOLlUGYzNW1oiW872dD68FqrM,5458
+django_autoslug-1.9.5.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+django_autoslug-1.9.5.dist-info/top_level.txt,sha256=hHL3_c9ih_K6VK5j82mu-a13sIIgpbebr1LScPvWW-g,9
+django_autoslug-1.9.5.dist-info/RECORD,,

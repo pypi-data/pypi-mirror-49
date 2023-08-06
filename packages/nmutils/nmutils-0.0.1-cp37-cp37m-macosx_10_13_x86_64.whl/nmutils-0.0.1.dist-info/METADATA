@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nmutils
+Version: 0.0.1
+Summary: A collection of mathematical utilities, primarily to help withrepetitive elements of solving problems hosted at Project Euler
+Home-page: https://github.com/neilmarshall/nmutils.git
+Author: Neil Marshall
+Author-email: neil.marshall@dunelm.org.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Cython
+
+UNKNOWN
+
+

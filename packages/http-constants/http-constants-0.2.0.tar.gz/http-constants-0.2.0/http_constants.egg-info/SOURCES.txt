@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+http_constants.egg-info/PKG-INFO
+http_constants.egg-info/SOURCES.txt
+http_constants.egg-info/dependency_links.txt
+http_constants.egg-info/top_level.txt

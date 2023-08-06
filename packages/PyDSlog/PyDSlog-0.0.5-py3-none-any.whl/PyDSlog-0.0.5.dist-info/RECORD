@@ -1,0 +1,10 @@
+PyDSlog/__init__.py,sha256=FWfzuL3Ul2LMei-wd_y0taVoyNzBw9vvCCNcf-LvdUI,41
+PyDSlog/csv/__init__.py,sha256=PUAmFy7OM4CRoxQOwQ8mX-DI9qwc91W5RrfY0CAubTw,53
+PyDSlog/csv/csv_normal.py,sha256=Wj7grVgy9HmMnwizNpACHZxkiaWqLa0cXgYvb4HTQBI,3729
+PyDSlog/stream/IO5640_stream.py,sha256=Bk7Sxqi54rrYCbf__sx0u4Nn6LD6H-cyUXhNbh7m_6g,8091
+PyDSlog/stream/__init__.py,sha256=ScLLSxjpN0GrfbixEowUSooY8aqo0tPOXUW0LpbgarY,28
+PyDSlog-0.0.5.dist-info/LICENSE,sha256=hA05mCn2pJVp-RKkI61RUeRKkxJzZbQCKtYPmbP6Dpk,1101
+PyDSlog-0.0.5.dist-info/METADATA,sha256=59UqnbHf8tSreTAoyIs-H7jceyQsdSgLCNDc-ZrHSYc,453
+PyDSlog-0.0.5.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+PyDSlog-0.0.5.dist-info/top_level.txt,sha256=unVd4IqUlNEWhCD_H59rCmyhwV9drl5dKVS8W9wFpyc,8
+PyDSlog-0.0.5.dist-info/RECORD,,

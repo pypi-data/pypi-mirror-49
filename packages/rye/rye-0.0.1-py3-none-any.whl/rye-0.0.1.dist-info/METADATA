@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rye
+Version: 0.0.1
+Summary: 
+Home-page: https://gitlab.com/pjbecotte/rye
+License: MIT
+Author: Paul Becotte
+Author-email: pjbecotte@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: colorama (>=0.4,<0.5)
+Requires-Dist: settingscascade (>=0.3.4,<0.4.0)
+Requires-Dist: toml (>=0.10,<0.11)
+Requires-Dist: virtualenv (>=16.6,<17.0)
+Project-URL: Repository, https://gitlab.com/pjbecotte/rye
+Description-Content-Type: text/markdown
+
+#!/usr/bin/env bash

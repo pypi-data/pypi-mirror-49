@@ -1,0 +1,64 @@
+DbxDeploy.Deployer:
+  arguments:
+    - '%databricks.projectBasePath%'
+
+DbxDeploy.DeployerJobSubmitter:
+  arguments:
+    - '%databricks.projectBasePath%'
+
+DbxDeploy.Setup.SetupLoader:
+
+DbxDeploy.Setup.SetupBuilder:
+
+DbxDeploy.Whl.WhlUploader:
+  arguments:
+    - 'dbfs:/FileStore/jars'
+
+DbxDeploy.Whl.WhlDeployer:
+  arguments:
+    - '%databricks.projectBasePath%'
+
+DbxDeploy.Dbc.DbcCreator:
+  arguments:
+    - '%databricks.projectRoot%'
+
+DbxDeploy.Dbc.DbcUploader:
+  arguments:
+    - '%databricks.projectRoot%'
+
+DbxDeploy.Dbc.PathsPreparer:
+
+DbxDeploy.Dbc.DbcDeployer:
+  arguments:
+    - '%databricks.projectBasePath%'
+    - '%databricks.requirementsFile%'
+
+DbxDeploy.Notebook.LibsCellCreator:
+  arguments:
+    - 'dbfs:/FileStore/jars'
+
+DbxDeploy.Notebook.LibsNotebookCreator:
+
+DbxNotebookExporter.Json.JsonNotebookExporter:
+
+DbxDeploy.Job.JobSubmitter:
+  arguments:
+    - '%databricks.clusterId%'
+    - '%databricks.projectRoot%'
+    - '%browser%'
+
+DbxDeploy.Job.RunsGetter:
+  arguments:
+    - '%databricks.clusterId%'
+    - '%databricks.projectRoot%'
+
+DbxDeploy.Job.NotebookKiller:
+
+databricks_api.DatabricksAPI:
+  import: 'from databricks_api import DatabricksAPI'
+  autowire: False
+  arguments:
+    -
+      user: '%databricks.user%'
+      host: '%databricks.host%'
+      token: '%databricks.token%'

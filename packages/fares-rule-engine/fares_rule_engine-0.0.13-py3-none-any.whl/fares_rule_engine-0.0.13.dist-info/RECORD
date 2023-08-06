@@ -1,0 +1,11 @@
+fares/__init__.py,sha256=ZVFEIxvbnio6CK33mf71EBtCctU5J1y_eaJw659rPfI,1373
+fares/subscription_offering.py,sha256=MpeS5PHRh96fVx2kammfiWn6rV5svCuyDQ-JkdF1MB8,4961
+fares/dimension/__init__.py,sha256=XgJmgtfnST8DCiaKBllJQFIhMbSSM6s5nQ0l-lPAYYo,1332
+fares/dimension/dimension.py,sha256=MZbUAC-mcUAhArbJ3gfpECwJpU1D_USQBmRM4i1fFGM,665
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cluster_applicability.py,sha256=aFj-NxvNWSm4A-JOS5BCcfrcZb19O45ymsJGKkmTxb8,3777
+tests/test_subscription_offering.py,sha256=PkD3ZI06bQzK0FboqvfAFjhXBecBy0V2Vne10IDVNdg,11084
+fares_rule_engine-0.0.13.dist-info/METADATA,sha256=BQz7iIU4tPaVyRu6wKE3BpCtLTCHSCOdERDCDNM-SJM,660
+fares_rule_engine-0.0.13.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+fares_rule_engine-0.0.13.dist-info/top_level.txt,sha256=mV0ExlXDDadi2RP14VuTDk3MGq3Mz88rzDP0wO2D5BM,12
+fares_rule_engine-0.0.13.dist-info/RECORD,,

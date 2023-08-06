@@ -1,0 +1,6 @@
+README.md
+setup.py
+PhygitalSkills.egg-info/PKG-INFO
+PhygitalSkills.egg-info/SOURCES.txt
+PhygitalSkills.egg-info/dependency_links.txt
+PhygitalSkills.egg-info/top_level.txt

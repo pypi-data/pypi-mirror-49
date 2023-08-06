@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+elasticsearch_fixtures/__init__.py
+elasticsearch_fixtures/es_mixer.py
+elasticsearch_fixtures.egg-info/PKG-INFO
+elasticsearch_fixtures.egg-info/SOURCES.txt
+elasticsearch_fixtures.egg-info/dependency_links.txt
+elasticsearch_fixtures.egg-info/requires.txt
+elasticsearch_fixtures.egg-info/top_level.txt

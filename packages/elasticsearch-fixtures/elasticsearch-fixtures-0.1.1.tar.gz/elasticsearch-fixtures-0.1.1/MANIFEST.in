@@ -1,0 +1,13 @@
+include LICENSE
+include README.md
+graft elasticsearch_fixtures
+prune elasticsearch_fixtures/__pycache__
+
+
+
+
+
+
+
+
+

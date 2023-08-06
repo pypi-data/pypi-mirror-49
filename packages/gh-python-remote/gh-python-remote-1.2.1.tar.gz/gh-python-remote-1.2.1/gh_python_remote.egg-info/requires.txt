@@ -1,0 +1,7 @@
+rpyc>=4.1.0
+
+[dev]
+check-manifest
+
+[test]
+coverage

@@ -1,0 +1,6 @@
+setuptools==39.0.1
+openpyxl==2.5.4
+Unidecode==1.0.22
+pytest==3.0.7
+requests==2.18.4
+pandas==0.23.3

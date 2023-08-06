@@ -1,0 +1,6 @@
+README.md
+setup.py
+example_pkg_sosa_edison.egg-info/PKG-INFO
+example_pkg_sosa_edison.egg-info/SOURCES.txt
+example_pkg_sosa_edison.egg-info/dependency_links.txt
+example_pkg_sosa_edison.egg-info/top_level.txt

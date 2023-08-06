@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Crosscap
+Version: 0.4.9
+Summary: Suite of tools for enhancing the Klein web framework
+Home-page: https://github.com/corydodt/Crosscap
+Author: Cory Dodt
+Author-email: corydodt@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Provides-Extra: dev

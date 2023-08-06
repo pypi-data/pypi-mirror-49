@@ -1,0 +1,23 @@
+click>=6.7
+future>=0.16.0
+pyjwt>=1.7.1
+pyyaml<4.0,>=3.12
+twisted>=17.1.0
+werkzeug>=0.13
+wrapt>=1.11.1
+
+[:python_version < "3"]
+ftfy==4.4.3
+
+[:python_version >= "3"]
+ftfy
+
+[dev]
+pytest-cov
+pytest-twisted
+pytest
+mock
+pyflakes
+pytest-flakes
+pytz
+tox

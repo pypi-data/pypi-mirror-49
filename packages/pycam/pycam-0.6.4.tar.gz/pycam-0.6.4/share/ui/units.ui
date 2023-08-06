@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<interface>
+  <!-- interface-requires gtk+ 2.12 -->
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkListStore" id="UnitModel">
+    <columns>
+      <!-- column-name name -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">mm</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">inch</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkHBox" id="UnitPrefBox">
+    <property name="visible">True</property>
+    <child>
+      <object class="GtkLabel" id="UnitLabel">
+        <property name="visible">True</property>
+        <property name="xalign">0</property>
+        <property name="label" translatable="yes">Unit (for all dimensions):</property>
+      </object>
+      <packing>
+        <property name="position">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkComboBox" id="unit_control">
+        <property name="visible">True</property>
+        <property name="model">UnitModel</property>
+        <property name="active">0</property>
+        <child>
+          <object class="GtkCellRendererText" id="unit_name"/>
+          <attributes>
+            <attribute name="text">0</attribute>
+          </attributes>
+        </child>
+      </object>
+      <packing>
+        <property name="position">1</property>
+      </packing>
+    </child>
+  </object>
+</interface>

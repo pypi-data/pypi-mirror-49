@@ -1,0 +1,7 @@
+README.md
+setup.py
+divert_test_pkg.egg-info/PKG-INFO
+divert_test_pkg.egg-info/SOURCES.txt
+divert_test_pkg.egg-info/dependency_links.txt
+divert_test_pkg.egg-info/top_level.txt
+util_pkg/__init__.py

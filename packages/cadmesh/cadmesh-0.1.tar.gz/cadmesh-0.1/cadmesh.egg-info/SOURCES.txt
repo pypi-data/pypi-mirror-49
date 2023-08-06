@@ -1,0 +1,7 @@
+README.md
+setup.py
+cadmesh/__init__.py
+cadmesh.egg-info/PKG-INFO
+cadmesh.egg-info/SOURCES.txt
+cadmesh.egg-info/dependency_links.txt
+cadmesh.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+# TESTING AND DEVELOPMENT DEPENDENCIES
+# installation dependencies are found in setup.py
+black
+pytest
+flake8
+mypy
+twine
+
+# For smoketests
+numpy
+scipy
+pandas
+scikit-learn

@@ -1,0 +1,10 @@
+#documentation
+recursive-include docs *
+prune docs/_build
+
+#package
+include requirements.txt
+
+#Misc
+include LICENSE.txt
+include CHANGELOG.md

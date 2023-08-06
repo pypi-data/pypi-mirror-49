@@ -1,0 +1,14 @@
+allantools/__init__.py,sha256=nZ54m1AwJm0fywUCCplYEnPNEHA5GvmsxbV0WQ8eLZs,2143
+allantools/allantools.py,sha256=G8EpRHGPOOafLUhU3fLEw0UEC4igk95-PfyaxxONodc,57650
+allantools/allantools_info.json,sha256=IAxQhMr9xg8ybcu6Z2qHwBQ6BqZ8_9K1N8qZYy0i5hc,631
+allantools/ci.py,sha256=vRm-FIy_D9lcSH4JY03O2p3MYlmoqHd0Ku82nuWPkRc,25624
+allantools/dataset.py,sha256=kuhsUGrkAqT9O9WsxISpqfd7fJs0vuplQrWwjWipmcM,5692
+allantools/noise.py,sha256=ZmniW_xgSdS-hLxXk_GS6ihP0-Lumj0Jo2skRj8eGXU,4551
+allantools/noise_kasdin.py,sha256=aL91Dza-yaEoSy9U4sEqT2gRDL6H7LMAae9modrYcr0,9860
+allantools/plot.py,sha256=ZcCQtXqvuJPFtaQgK230zCxCfaoAWTSzGXL9iKlPAes,3410
+allantools/realtime.py,sha256=4E7I_pe5iDLVMD5VSq7XmNRnVf6Y5nUIXNaLl9lfuNo,7910
+AllanTools-2019.7rc1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+AllanTools-2019.7rc1.dist-info/METADATA,sha256=1sGiJGIRLQdAx7HpSb3LYxr0YBa7OnTBNYhOxbFt8EM,6642
+AllanTools-2019.7rc1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+AllanTools-2019.7rc1.dist-info/top_level.txt,sha256=UancJQazsZmYSsOOEjwnET-Qatu0iasuPlJvWt_YFkw,11
+AllanTools-2019.7rc1.dist-info/RECORD,,

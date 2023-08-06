@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Last1161.egg-info/PKG-INFO
+Last1161.egg-info/SOURCES.txt
+Last1161.egg-info/dependency_links.txt
+Last1161.egg-info/requires.txt
+Last1161.egg-info/top_level.txt
+TheLast1161/__init__.py
+TheLast1161/file61.txt
+TheLast1161/last.py

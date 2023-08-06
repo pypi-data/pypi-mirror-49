@@ -1,0 +1,5 @@
+pandas
+numpy
+azure-storage-blob
+opencv-contrib-python
+Pillow

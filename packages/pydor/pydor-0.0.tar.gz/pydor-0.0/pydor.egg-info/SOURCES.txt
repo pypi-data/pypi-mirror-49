@@ -1,0 +1,15 @@
+.gitignore
+.travis.yml
+LICENSE
+README.md
+check.sh
+dist.sh
+pydor.py
+setup.cfg
+setup.py
+pydor.egg-info/PKG-INFO
+pydor.egg-info/SOURCES.txt
+pydor.egg-info/dependency_links.txt
+pydor.egg-info/entry_points.txt
+pydor.egg-info/top_level.txt
+pydor.egg-info/zip-safe

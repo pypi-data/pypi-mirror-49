@@ -1,0 +1,5 @@
+setup.py
+badt.egg-info/PKG-INFO
+badt.egg-info/SOURCES.txt
+badt.egg-info/dependency_links.txt
+badt.egg-info/top_level.txt

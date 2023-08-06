@@ -1,0 +1,16 @@
+irdap/__init__.py,sha256=ysN8J0VhMU02yEaCmo87BH49Aq4crd3V8YthZv7KVn0,14
+irdap/__main__.py,sha256=tbUflF3ylM7iJq7Tzct_GftV_zIHSUVXMjc3IRu_6qM,8254
+irdap/config.conf,sha256=W7G1NCtULWmqUZIafq3_oZWEX41A0mcBhfKaktreHRk,1048
+irdap/irdap.py,sha256=eugKpkVXMcOhsm5Y8LM3bJu989ZDe1uxWh1rQ9FR1mY,336093
+irdap/version.py,sha256=gTggO06fb2c9XKEwlQYUSPlUfy82yVlM9pzLMOUqVcY,21
+irdap/static_calibs/master_badpix.fits,sha256=TNrtnS291I5000bxoPOsfz95m6qpMzx0rZ4wVAGFPJg,8392320
+irdap/static_calibs/master_flat_H.fits,sha256=Czky1gp-02dmMpXxJI2GG-9e9I86EmY1IpUioWSObpQ,8392320
+irdap/static_calibs/master_flat_J.fits,sha256=S9UBOUxjjCDhucmA3HN76X0c032olfTLFsiIU1rJ2u0,8392320
+irdap/static_calibs/master_flat_Ks.fits,sha256=YeU63vW5s2eX8IHc8GDW6eeDtRQPouiK-SsSqKCB3ok,8392320
+irdap/static_calibs/master_flat_Y.fits,sha256=6BtNc4MlaBe5_2eiO3eyoe_9k1K0pM9u4CY3px8Qw2w,8392320
+irdap-0.3.0.dist-info/LICENSE,sha256=S6GjlOtLaIP7qJfdGFHJ2sviaFSZIw3fJnRmbEq7AKQ,35827
+irdap-0.3.0.dist-info/METADATA,sha256=9_0SfFJmSwtp2IZ9KwYJcY8s9qDPtrB0YPQElqn9-Jw,3209
+irdap-0.3.0.dist-info/WHEEL,sha256=DJBro0f8nS8K0DYW4d4TYAaPcvNgL0R-NFsPDnpaia0,97
+irdap-0.3.0.dist-info/entry_points.txt,sha256=hU8KWPOGs2t8rmwwZ2STTXwTpPiWrzuqmca2M8hV9BY,47
+irdap-0.3.0.dist-info/top_level.txt,sha256=cpOFxC72b4xBkDomxRoZ5TvJkPnmQuMNIxHLb8l_EMM,6
+irdap-0.3.0.dist-info/RECORD,,

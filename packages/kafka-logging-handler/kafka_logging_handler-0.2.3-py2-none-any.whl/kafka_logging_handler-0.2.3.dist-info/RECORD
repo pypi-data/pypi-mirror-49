@@ -1,0 +1,8 @@
+kafka_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kafka_logger/handlers.py,sha256=cJe3mnVmS4bl4ajw0qeunUHZdasGGYEK5ZGdgtJlNR8,12621
+kafka_logging_handler-0.2.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+kafka_logging_handler-0.2.3.dist-info/METADATA,sha256=dn9PQ_d0aQ81VOlnzgj0hPxb_gWJ_qLbeJ7hPH2xJsg,1874
+kafka_logging_handler-0.2.3.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+kafka_logging_handler-0.2.3.dist-info/pbr.json,sha256=MDLF4LfSg_J8ETm2VvSRc48VZz8G2gwNRKXVWRW18OM,47
+kafka_logging_handler-0.2.3.dist-info/top_level.txt,sha256=xRjB5CWHBvYlzT00xgwkQT0vthEsRwLLW4U4I7mJDdc,13
+kafka_logging_handler-0.2.3.dist-info/RECORD,,

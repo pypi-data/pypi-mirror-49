@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: dockerctl
+Version: 0.2
+Summary: Python Script to steer (multiple) docker-compose-yaml's from everywhere.
+Home-page: https://github.com/bionade24/dockerctl
+Author: Oskar Roesler (bionade24)
+Author-email: o.roesler@oscloud.info
+License: GPLv3
+Description: # dockerctl
+        
+        Python Script to steer (multiple) docker-compose-yaml's from everywhere.
+        
+        https://pypi.org/project/dockerctl/
+        
+        Installation: `pip install dockerctl`
+        
+        This program is released under the GPLv3. See "LICENSE" for further information.
+        
+        This program is still Alpha. Please report bugs.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux

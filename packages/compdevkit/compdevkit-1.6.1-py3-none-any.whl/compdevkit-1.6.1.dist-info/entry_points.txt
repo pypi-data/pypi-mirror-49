@@ -1,0 +1,4 @@
+[console_scripts]
+cdk-init = compdevkit.cli:init
+cdk-token = compdevkit.cli:comp_token
+

@@ -1,0 +1,11 @@
+compdevkit/__init__.py,sha256=u2GtEyxS8OWNQYgcDxEpN855DxTYsmCHAsRxO-_8LXQ,6355
+compdevkit/cli.py,sha256=zln1bT6qjA9XUlvVzicA-4Rt08IcfXAMfVcik32Itls,2379
+compdevkit/exceptions.py,sha256=9Zj-recKLO8l3m8_eMWEY7GjfUaufJoLEo1pMKUiq94,91
+compdevkit/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compdevkit/tests/test_FunctionsTest.py,sha256=sP0XIHV3ZLnY0PyeQ2N5UXY8djo9X-lQ42r4pzihrok,3519
+compdevkit-1.6.1.dist-info/LICENSE,sha256=WzCqU2HeUbp1J0tI-efafTFz4VdBNi1SokRHvOQERBI,1065
+compdevkit-1.6.1.dist-info/METADATA,sha256=GkJ_4DWc3UKbzlCk2qWT3tFtd-G07kFrZu2k31_6D2c,1732
+compdevkit-1.6.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+compdevkit-1.6.1.dist-info/entry_points.txt,sha256=lkWSzT-yYD5rJji-0KWSyioR5BAegnvwFbGcXe2NUl8,88
+compdevkit-1.6.1.dist-info/top_level.txt,sha256=ZU1X9l2zw8SRwqst3mHUdUxjV1zVA9dRbzljohAM1-w,11
+compdevkit-1.6.1.dist-info/RECORD,,

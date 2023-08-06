@@ -1,0 +1,12 @@
+osxmetadata/__init__.py,sha256=t5RURRG3C8PicOwiVvdY_TKfAahoknXZrG4Q_cIuvdQ,11636
+osxmetadata/_applescript.py,sha256=59SJzle82ZrWZzR97sHW4I3_OrN4BLFbD2l-hAucSbU,6797
+osxmetadata/aecodecs.py,sha256=QrJUO7jsCfbEyupNSqfKgI7GohpHY5FhtySafoO962U,9908
+osxmetadata/cmd_line.py,sha256=UF5ixdVMs8aHkIskrKAnCPf1LnqF2SPgxzc3XJQwCQo,9764
+osxmetadata/kae.py,sha256=opLxyXUxlrv4a0-QlK4m0vHAJAsuUPafVa9OmPbhRFE,37868
+osxmetadata-0.96.5.dist-info/COPYING.md,sha256=ykcnXSSxn2nV-AIl_09cjq1mcxQEOKfrtUVLaIHZlvY,1367
+osxmetadata-0.96.5.dist-info/LICENSE,sha256=ZNx4onyWRKCurylEPpEHaWHx_NdE1oheXALgbPRYLnw,1070
+osxmetadata-0.96.5.dist-info/METADATA,sha256=DNf5rrttLCKbhFiY5GFC3Qv261y7iuorxf9tw444p3Q,8688
+osxmetadata-0.96.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+osxmetadata-0.96.5.dist-info/entry_points.txt,sha256=lnogAaVrn4xLrUaV6H-pBg-Hxld02PxVJgXWJKzQC34,59
+osxmetadata-0.96.5.dist-info/top_level.txt,sha256=CjCzPYuargsImC6CxhdzUGTx4-MrnLFxop-1PudktmQ,12
+osxmetadata-0.96.5.dist-info/RECORD,,

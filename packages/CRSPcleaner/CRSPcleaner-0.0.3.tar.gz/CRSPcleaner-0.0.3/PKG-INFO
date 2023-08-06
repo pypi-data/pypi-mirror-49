@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: CRSPcleaner
+Version: 0.0.3
+Summary: Cleans a CRSP .csv database and returns it as a Pandas Dataframe
+Home-page: https://vash.uk/python-for-finance/
+Author: Vashisht Bhatt
+Author-email: info@vash.uk
+License: MIT
+Description: # CRSPcleaner
+        
+        This programme takes in a .csv format CRSP database file and returns a cleaned version as a pandas dataframe.
+        
+        ## Installation
+        
+        Run the following to install:
+        
+        ```python
+        pip install CRSPcleaner
+        ```
+        
+        ## Usage
+        Factors can be extracted in monthly ('m') and annual ('a') frequencies. The default is monthly.
+        
+        ```python
+        from CRSPcleaner import cleanCRSP
+        
+        crsp_df = cleanCRSP()
+        
+        # With CIK identifiers:
+        crsp_df = cleanCRSP(withCIKonly=True)
+        
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

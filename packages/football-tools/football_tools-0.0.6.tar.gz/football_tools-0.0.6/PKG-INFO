@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: football_tools
+Version: 0.0.6
+Summary: A small football statistics tool
+Home-page: https://gitlab.com/tmavicente/football-tools
+Author: Tiago Vicente
+Author-email: tmavicente@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent

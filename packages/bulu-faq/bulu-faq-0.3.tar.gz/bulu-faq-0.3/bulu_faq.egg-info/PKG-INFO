@@ -1,0 +1,50 @@
+Metadata-Version: 1.1
+Name: bulu-faq
+Version: 0.3
+Summary: A simple Django app for FAQa
+Home-page: https://bulugroup.com
+Author: Tobin Brown
+Author-email: tobin@bulugroup.com
+License: MIT License
+Description: Bulu FAQ
+        ========
+        
+        Stupid simple FAQ app to use with any django project. Includes admin definitions and a read-only API using Django Rest Framework.
+        
+        Installation
+        ------------
+        
+        Install using pip::
+        
+            pip install bulu-faq
+        
+        
+        Configuration
+        -------------
+        
+        Add ``faq`` to your installed apps in ``settings.py``::
+        
+            INSTALLED_APPS = (
+                ...
+                'faq',
+            )
+        
+        Add the urls in ``urls.py``::
+        
+            urlpatterns = [
+                ...
+                path('faq/', include('faq.urls'))
+            ]
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content

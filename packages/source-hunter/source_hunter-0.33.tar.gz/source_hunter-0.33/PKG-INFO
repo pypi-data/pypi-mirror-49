@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: source_hunter
+Version: 0.33
+Summary: Tool for analysis of code dependency and calling relationship
+Home-page: https://github.com/pyeprog/source-hunter
+Author: Waylong
+Author-email: pyeprog@foxmail.com
+License: MIT
+Description: # Basic Usage
+        `hunt [project_root_path] [target_module_file] [function_or_class]`
+        
+        `hunt -h` for more helps
+        
+Keywords: source,dependency,calling,relationship,graph,analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

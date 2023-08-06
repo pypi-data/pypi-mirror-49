@@ -1,0 +1,10 @@
+README.md
+setup.py
+Notey/__init__.py
+Notey/notes.py
+Notey.egg-info/PKG-INFO
+Notey.egg-info/SOURCES.txt
+Notey.egg-info/dependency_links.txt
+Notey.egg-info/entry_points.txt
+Notey.egg-info/requires.txt
+Notey.egg-info/top_level.txt

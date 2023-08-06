@@ -1,0 +1,3 @@
+[console_scripts]
+cobu=cobu.cli:main
+

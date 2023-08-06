@@ -1,0 +1,15 @@
+cobu/Plugin.py,sha256=VOdUhdr0I0npBdjhLwutDHBTNFrs6bxMEnsHuu3ejBw,8395
+cobu/Schema.py,sha256=EdiGancJs1XtoS3IRf8YaGuumQewPRXEgzAA3xvoOwM,12687
+cobu/__init__.py,sha256=ansaP0-m0--cPc9XbfqcUSdKwIhEAma50flpdHkiH2M,63
+cobu/cli.py,sha256=I1DIeKeUN3uMV8SLCKlTMjP2x1dIzTXYgxNEhurKvVU,2208
+cobu/commands/Base.py,sha256=lBKqAgzim_4JP_7aA1jifLkZ2KQNUqyun1eXC7NEXT4,1779
+cobu/commands/__init__.py,sha256=RD52Yrf8unK1VtWhEqORzDLkfNmtIkQ9loyNPxEwtWc,32
+cobu/commands/build.py,sha256=E2wEeHXizPqfSVim_1tUdj1nkxUbmTI9Mhzwfh6VLUk,8796
+cobu/commands/dump.py,sha256=h9MijPyVVry6OeHprbQdLw_Lc1GpGSp5L3NrWqxWVfU,1401
+cobu/commands/list.py,sha256=-C_hHbpSWTABPckuV4gUAo487YbAnBdm7irQ6srAWHs,1858
+cobu/config.py,sha256=2Hq6zctBo8uuCKZSNNTH2DGVpaMkpgxGC5bkm7G-Who,3807
+cobu/helper.py,sha256=4O-1bzF-5vnc5pDRn87YS5dpjQDC3OWGsHXhDEKsaEM,1071
+cobu-0.2.0.dist-info/entry_points.txt,sha256=oRPrPfZ8jjXGKW_aTlOlNU6CEvIJHMrt7gPFH6LnW_8,38
+cobu-0.2.0.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+cobu-0.2.0.dist-info/METADATA,sha256=bd5zDsXi0y_AveuY7DqulN-s03x1-x90cfCmBx3Xt8w,324
+cobu-0.2.0.dist-info/RECORD,,

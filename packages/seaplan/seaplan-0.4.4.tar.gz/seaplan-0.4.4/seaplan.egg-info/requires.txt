@@ -1,0 +1,7 @@
+numpy
+scipy>
+matplotlib
+basemap>=1.0
+pyyaml>=3.0
+jsonschema>=2.6
+jsonref>=0.2

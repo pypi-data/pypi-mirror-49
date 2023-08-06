@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-23 14:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: django_easy_subscription/easy_subscription/admin.py:26
+msgid "id"
+msgstr "id"
+
+#: django_easy_subscription/easy_subscription/admin.py:26
+#: django_easy_subscription/easy_subscription/models.py:8
+msgid "first name"
+msgstr "nombre"
+
+#: django_easy_subscription/easy_subscription/admin.py:26
+#: django_easy_subscription/easy_subscription/models.py:9
+msgid "last name"
+msgstr "apellido"
+
+#: django_easy_subscription/easy_subscription/admin.py:26
+#: django_easy_subscription/easy_subscription/models.py:10
+msgid "email"
+msgstr "correo electrónico"
+
+#: django_easy_subscription/easy_subscription/admin.py:26
+#: django_easy_subscription/easy_subscription/models.py:11
+msgid "language"
+msgstr "idioma"
+
+#: django_easy_subscription/easy_subscription/admin.py:26
+#: django_easy_subscription/easy_subscription/models.py:12
+msgid "country"
+msgstr "país"
+
+#: django_easy_subscription/easy_subscription/admin.py:26
+msgid "date/time"
+msgstr "fecha/hora"
+
+#: django_easy_subscription/easy_subscription/admin.py:43
+msgid "Export selected subscribers"
+msgstr "Exportar suscriptores seleccionados"
+
+#: django_easy_subscription/easy_subscription/conf.py:41
+msgid "Join our Newsletter"
+msgstr "Unirse a nuestro boletín"
+
+#: django_easy_subscription/easy_subscription/conf.py:43
+msgid ""
+"You can trust us,\n"
+"we will only send you the good stuff."
+msgstr ""
+"Puedes confiar en nosotros,\n"
+"solo te enviaremos cosas buenas."
+
+#: django_easy_subscription/easy_subscription/conf.py:45
+msgid "You can cancel the subscription at any time."
+msgstr "Puedes cancelar la suscripción en cualquier momento."
+
+#: django_easy_subscription/easy_subscription/conf.py:47
+msgid "Thank you for subscribing!"
+msgstr "¡Gracias por suscribirte!"
+
+#: django_easy_subscription/easy_subscription/fields.py:31
+msgid "Invalid email domain"
+msgstr "Dominio de correo electrónico inválido"
+
+#: django_easy_subscription/easy_subscription/fields.py:49
+msgid "Invalid email"
+msgstr "Correo electrónico inválido"
+
+#: django_easy_subscription/easy_subscription/forms.py:15
+msgid "First name"
+msgstr "Nombre"
+
+#: django_easy_subscription/easy_subscription/forms.py:19
+msgid "Last name"
+msgstr "Apellido"
+
+#: django_easy_subscription/easy_subscription/forms.py:23
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: django_easy_subscription/easy_subscription/models.py:13
+msgid "subscribed"
+msgstr "suscrito"
+
+#: django_easy_subscription/easy_subscription/models.py:14
+msgid "uploaded"
+msgstr "subido"
+
+#: django_easy_subscription/easy_subscription/models.py:15
+msgid "created"
+msgstr "creado"
+
+#: django_easy_subscription/easy_subscription/models.py:19
+msgid "subscriber"
+msgstr "suscriptor"
+
+#: django_easy_subscription/easy_subscription/models.py:20
+msgid "subscribers"
+msgstr "suscriptores"
+
+#: django_easy_subscription/easy_subscription/templates/easy_subscription/subscription_form.html:30
+msgid "Subscribe"
+msgstr "Suscribirme"

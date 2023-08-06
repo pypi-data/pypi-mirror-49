@@ -1,0 +1,49 @@
+{% load static i18n %}
+<div newsletter-form class="popup-overlay" active="false">
+  <link rel="stylesheet" type="text/css" href="{% static 'easy_subscription/css/subscription_form.css' %}">
+  <div newsletter-form class="popup-modal">
+    <svg newsletter-form class="popup-close-button">
+      <use xlink:href="#popup-form-svg-cross"></use>
+    </svg>
+    <form newsletter-form class="popup-form" method="post" action="{% url 'easy_subscription_subscribe' %}" style="border: 3px solid {{ form_border_color }}">
+      <div newsletter-form class="popup-form-header">
+        <h3 newsletter-form><strong>{{ title|linebreaksbr }}</strong></h3>
+        <p newsletter-form>{{ subtitle|linebreaksbr }}</p>
+      </div>
+      <div newsletter-form class="popup-form-body">
+        <div newsletter-form class="popup-form-body-row">
+          <div newsletter-form class="popup-form-body-row-half">
+            {{ form.first_name }}
+            <p newsletter-form class="popup-form-input-error"></p>
+          </div>
+          <div newsletter-form class="popup-form-body-row-half">
+            {{ form.last_name }}
+            <p newsletter-form class="popup-form-input-error"></p>
+          </div>
+        </div>
+        <div newsletter-form class="popup-form-body-row">
+          {{ form.email }}
+          <p newsletter-form class="popup-form-input-error"></p>
+        </div>
+        {% csrf_token %}
+        <div newsletter-form class="popup-form-body-row">
+          <input newsletter-form type="submit" class="popup-form-submit" value="{% trans 'Subscribe' %}" style="background-color: {{ form_button_color }}">
+        </div>
+      </div>
+      <div newsletter-form class="popup-form-footer">
+        <p newsletter-form class="popup-form-info">{{ footer_message|linebreaksbr }}</p>
+      </div>
+    </form>
+  </div>
+  <svg style="display: none;">
+   <symbol id="popup-form-svg-cross" viewBox="0 0 10 10" preserveAspectRatio="xMinYMin meet">
+      <g>
+        <g>
+          <polygon fill-rule="evenodd" clip-rule="evenodd" points="9.949,1.465 8.535,0.051 5,3.586 1.465,0.051
+            0.051,1.465 3.586,5 0.051,8.535 1.465,9.949 5,6.414 8.535,9.949 9.949,8.535 6.414,5 		"/>
+        </g>
+      </g>
+    </symbol>
+  </svg>
+  <script src="{% static 'easy_subscription/js/subscription_form.js' %}"></script>
+</div>

@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: django-easy-subscription
+Version: 0.1.0
+Summary: A Django application that provides a subscription pop-up form, and can be integrated with multiple email marketing platforms.
+Home-page: https://github.com/rondebu/django-easy-subscription
+Author: Rondebu Software
+Author-email: info@rondebu.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+
+========================
+Django Easy Subscription
+========================
+
+A Django application that provides a subscription pop-up form, and can be integrated with multiple email marketing platforms.
+
+.. contents::
+    :local:
+    :backlinks: none
+
+
+Installation
+============
+
+1. ``pip install django-easy-subscription``
+2. Add ``easy_subscription`` to ``INSTALLED_APPS``
+3. Run `python manage.py migrate` to create the subscriber model.
+4. Add an URL entry to your project's ``urls.py``, for example::
+
+    from django.conf import settings
+
+    if 'easy_subcription' in settings.INSTALLED_APPS:
+        urlpatterns += [
+            path('easy-subscription/', include('easy_subscription.urls')),
+        ]
+
+Note: you can use whatever you wish as the URL prefix.
+
+
+
+

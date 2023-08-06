@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: datakeeper
+Version: 0.0.1
+Summary: Generalized data privacy and consent repository generator.
+Home-page: https://gitlab.com/clearos/clearfoundation/datakeeper
+Author: ClearFoundation
+Author-email: developer@clearfoundation.com
+License: GPL-3.0
+Description: [![pipeline status](https://gitlab.com/crosenbrock/app-datakeeper/badges/master/pipeline.svg)](https://gitlab.com/crosenbrock/app-datakeeper/commits/master)
+        [![coverage report](https://gitlab.com/crosenbrock/app-datakeeper/badges/master/coverage.svg)](https://gitlab.com/crosenbrock/app-datakeeper/commits/master)
+        
+        # Data Keeper Templated System
+        
+        This is a python-based project that generates other repositories for generalized
+        data privacy and consent systems.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7

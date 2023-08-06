@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+sterm.1
+sterm/__init__.py
+sterm/cli.py
+sterm/terminal.py
+sterm/uart.py
+sterm.egg-info/PKG-INFO
+sterm.egg-info/SOURCES.txt
+sterm.egg-info/dependency_links.txt
+sterm.egg-info/entry_points.txt
+sterm.egg-info/requires.txt
+sterm.egg-info/top_level.txt

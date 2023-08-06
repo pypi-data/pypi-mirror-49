@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyfunccache/__init__.py
+pyfunccache/cache.py
+pyfunccache/memo.py
+pyfunccache.egg-info/PKG-INFO
+pyfunccache.egg-info/SOURCES.txt
+pyfunccache.egg-info/dependency_links.txt
+pyfunccache.egg-info/top_level.txt

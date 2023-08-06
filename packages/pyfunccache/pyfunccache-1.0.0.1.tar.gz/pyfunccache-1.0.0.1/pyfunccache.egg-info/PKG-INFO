@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyfunccache
+Version: 1.0.0.1
+Summary: Simple caching and memoization for python functions.
+Home-page: https://github.com/victorwss/pyfunccache
+Author: Victor Williams Stafusa da Silva
+Author-email: victorwssilva@gmail.com
+License: UNKNOWN
+Description: # pyfunccache
+        Simple caching and memoization for python functions.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

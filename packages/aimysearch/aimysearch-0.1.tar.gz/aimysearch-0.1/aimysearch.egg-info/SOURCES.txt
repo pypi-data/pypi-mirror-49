@@ -1,0 +1,8 @@
+README.md
+setup.py
+aimysearch/__init__.py
+aimysearch/search.py
+aimysearch.egg-info/PKG-INFO
+aimysearch.egg-info/SOURCES.txt
+aimysearch.egg-info/dependency_links.txt
+aimysearch.egg-info/top_level.txt

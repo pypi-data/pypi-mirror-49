@@ -1,0 +1,9 @@
+README.md
+setup.py
+notebookcv/__init__.py
+notebookcv/notebookcv.py
+notebookcv.egg-info/PKG-INFO
+notebookcv.egg-info/SOURCES.txt
+notebookcv.egg-info/dependency_links.txt
+notebookcv.egg-info/requires.txt
+notebookcv.egg-info/top_level.txt

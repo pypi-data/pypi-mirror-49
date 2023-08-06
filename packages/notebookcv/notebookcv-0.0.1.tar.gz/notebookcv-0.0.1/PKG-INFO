@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: notebookcv
+Version: 0.0.1
+Summary: A package to convert your Jupyter Notebook
+Home-page: https://github.com/n-meunier-organisation-test/notebookcv/
+Author: Nicolas Meunier
+Author-email: nm.nicolasmeunier@gmail.com
+License: UNKNOWN
+Description: # notebookcv
+        Learn how to create an open source Python package with a notebook converter
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown

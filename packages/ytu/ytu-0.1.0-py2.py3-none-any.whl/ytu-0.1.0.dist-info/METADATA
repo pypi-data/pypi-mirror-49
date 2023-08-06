@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: ytu
+Version: 0.1.0
+Summary: A library to extract information from YouTube URLs.
+Home-page: https://github.com/yaph/ytu
+Author: Ramiro Gómez
+Author-email: code@ramiro.org
+License: MIT license
+Keywords: youtube,url,uri,video id
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+===
+ytu
+===
+
+
+.. image:: https://img.shields.io/pypi/v/ytu.svg
+        :target: https://pypi.python.org/pypi/ytu
+
+.. image:: https://img.shields.io/travis/yaph/ytu.svg
+        :target: https://travis-ci.org/yaph/ytu
+
+
+
+A library to extract information from YouTube URLs. Currently provides the function `video_id` to retrieve the video ID from a YouTube URL.
+
+
+Usage
+-----
+
+::
+
+        import ytu
+
+        print(ytu.video_id('https://www.youtube.com/watch?v=dQw4w9WgXcQ'))
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2019-07-27)
+------------------
+
+* First release on PyPI.
+
+

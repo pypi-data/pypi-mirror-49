@@ -1,0 +1,17 @@
+numpy
+scipy
+scikit-learn
+pandas
+joblib>=0.12
+tqdm
+pytest
+pytest-cov
+codecov
+nose
+flake8
+sphinx>=2.1
+sphinx-automodapi
+sphinx-pdj-theme
+mock
+graphviz
+numpydoc

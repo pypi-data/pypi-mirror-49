@@ -1,0 +1,17 @@
+equilibrator_api/__init__.py,sha256=Uo4D6ZKQmiyEWONJCribzqQ6echyEgEdOK_JX3X4HRw,2373
+equilibrator_api/_version.py,sha256=co9R4m3zEju2EbhPPYSoPepUx6d7qLhLZFbxvatqjjE,497
+equilibrator_api/bounds.py,sha256=GFcQGJ1LADJIRO2gLYR0BwqZp_uRFsyzGRUd6H30XzY,12694
+equilibrator_api/component_contribution.py,sha256=6xzwR4Qdb-33MPrzmMb9cSslooqJuMwFw0gVkTbvmhc,11501
+equilibrator_api/pathway.py,sha256=wvKHlK9Tth7zq_5ygGGCUw4FZu_oyqe0Y_wDirSrkL0,15687
+equilibrator_api/phased_compound.py,sha256=AsfnD_HeXjlTawc9XgICMFW3PubAllWuYbprRUxgRUM,15546
+equilibrator_api/phased_reaction.py,sha256=tAEeipG7DOtjaHPnPgTXQoyf-ebWqz7w5sP2qoRTh4M,15064
+equilibrator_api/thermo_models.py,sha256=NPXE_wMQtUrv774nNQwMIgnugo4aOLAxI1pWsdNINdM,18139
+equilibrator_api/utils.py,sha256=1lv45WGrIWAH0RS3IV4S_2o7dR1LCgaoAPItsMyEiLo,1685
+equilibrator_api/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+equilibrator_api/data/cofactors.csv,sha256=94Qhs1jewOkoPjxbAkXO9wgrDa01_KhSvY5wXN5dD08,4237
+equilibrator_api-0.2.5.dist-info/LICENSE,sha256=tCXvLauY_FZF-O37M4QDtUI9R37HnvtuQSSljPtM3wI,1311
+equilibrator_api-0.2.5.dist-info/METADATA,sha256=cdfIQCZee8UNEgPpwl36_Aw-85ku9u8k5Btd57wDj5U,1186
+equilibrator_api-0.2.5.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+equilibrator_api-0.2.5.dist-info/top_level.txt,sha256=H9VgMQ49Y-okMzFnAjxNP8GNt77BRV25QnBK3v7vQeE,17
+equilibrator_api-0.2.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+equilibrator_api-0.2.5.dist-info/RECORD,,

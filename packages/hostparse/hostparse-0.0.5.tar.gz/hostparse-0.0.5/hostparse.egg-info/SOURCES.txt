@@ -1,0 +1,11 @@
+README.md
+setup.py
+hostparse/__init__.py
+hostparse/__main__.py
+hostparse/hostparse.py
+hostparse.egg-info/PKG-INFO
+hostparse.egg-info/SOURCES.txt
+hostparse.egg-info/dependency_links.txt
+hostparse.egg-info/entry_points.txt
+hostparse.egg-info/requires.txt
+hostparse.egg-info/top_level.txt

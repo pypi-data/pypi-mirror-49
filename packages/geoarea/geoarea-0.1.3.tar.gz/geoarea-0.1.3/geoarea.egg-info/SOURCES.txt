@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+test.py
+geoarea/__init__.py
+geoarea.egg-info/PKG-INFO
+geoarea.egg-info/SOURCES.txt
+geoarea.egg-info/dependency_links.txt
+geoarea.egg-info/not-zip-safe
+geoarea.egg-info/top_level.txt

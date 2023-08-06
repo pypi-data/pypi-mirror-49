@@ -1,0 +1,3 @@
+[console_scripts]
+zabbix_controller=zabbix_controller.zabbix_controller:call_command
+

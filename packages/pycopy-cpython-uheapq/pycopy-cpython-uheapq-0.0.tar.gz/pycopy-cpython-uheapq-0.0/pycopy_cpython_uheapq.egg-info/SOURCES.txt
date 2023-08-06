@@ -1,0 +1,5 @@
+setup.py
+pycopy_cpython_uheapq.egg-info/PKG-INFO
+pycopy_cpython_uheapq.egg-info/SOURCES.txt
+pycopy_cpython_uheapq.egg-info/dependency_links.txt
+pycopy_cpython_uheapq.egg-info/top_level.txt

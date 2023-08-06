@@ -1,0 +1,3 @@
+[console_scripts]
+pruvi = pruvi.launcher:main
+

@@ -1,0 +1,15 @@
+scaraplate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scaraplate/__main__.py,sha256=K4qlIQzyJeHvexbalc1Dr3UNa2djiNpqRj99K02dm5I,1475
+scaraplate/config.py,sha256=IJo1pEKyqFRTkmi4JBbC7kksk651r4aBH2aA1lTetEI,3720
+scaraplate/cookiecutter.py,sha256=FyOLWIC1YCT2Lb68TPf4cYkY2Yy1Ir3l1nars8gZ40c,3464
+scaraplate/fields.py,sha256=H2hhFONT_Fsx4BJwe3JfSUbY4ne9sfsIDc25OfTbdDM,428
+scaraplate/gitremotes.py,sha256=KaIVITsZr8ZC4KhFzvQ2lvl5nx87iFd2qAjPu9-91Tk,3173
+scaraplate/rollup.py,sha256=LblMN85v9fxkL94uHKgwxKjFS3fL_xIzClKhv_X5FfQ,7977
+scaraplate/strategies.py,sha256=U-c2coqdmn5F0dMY_G6WuPO3_E_9x91mkfpY8FieIPM,24089
+scaraplate/template.py,sha256=DVRVr_8j2SkdFQ7FqzTWXyCIGKV6bMQTrdHoCdp8YK4,1669
+scaraplate-0.1.dist-info/LICENSE,sha256=jWdGRXRXuISIbjqbhF_E5dqsMRLuDBA6k0Vcxm18gsU,1082
+scaraplate-0.1.dist-info/METADATA,sha256=GQyHqkihUcOqzwm8itS3vZaMv8jUWXfpDYBY3ASRaqI,3097
+scaraplate-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+scaraplate-0.1.dist-info/entry_points.txt,sha256=ZqotsAPWf5FZE4O0-MPhZoGUCTRNUVEjqSZaDLTU-RQ,57
+scaraplate-0.1.dist-info/top_level.txt,sha256=KQOBf2TC7QCdY9kzr2UzIgRENNB9ZeqWlaJCg_A6mmY,11
+scaraplate-0.1.dist-info/RECORD,,

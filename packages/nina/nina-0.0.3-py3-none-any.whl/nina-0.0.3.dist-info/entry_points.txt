@@ -1,0 +1,3 @@
+[console_scripts]
+create-readme = automail.cli:_cli
+

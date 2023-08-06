@@ -1,0 +1,10 @@
+psutil
+tpPyUtils
+tpDccLib
+tpQtLib
+
+[dev]
+wheel
+
+[test]
+pytest

@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: python-elemental
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/cbsinteractive/elemental.git
+Author: CBS Interactive
+Author-email: video-processing-team@cbsinteractive.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: flake8 (==3.5.0)
+Requires-Dist: Flask (==1.0.2)
+Requires-Dist: Flask-RESTful (==0.3.7)
+Requires-Dist: Jinja2 (==2.10.1)
+Requires-Dist: mock (==3.0.5)
+Requires-Dist: pytest (==4.5.0)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: requests-mock (==1.6.0)
+Requires-Dist: pytest-cov (==2.7.1)
+Requires-Dist: codecov (==2.0.15)
+Requires-Dist: botocore (>=1.12.130)
+Requires-Dist: xmltodict (==0.12.0)
+
+
+# elemental
+
+[![CircleCI](https://circleci.com/gh/cbsinteractive/elemental.svg?style=svg&circle-token=fd7cbe049147941bb3151f2468ad6d98eaed5a6e)](https://circleci.com/gh/cbsinteractive/elemental)
+[![codecov](https://codecov.io/gh/cbsinteractive/elemental/branch/master/graph/badge.svg?token=qFdUKsI2tD)](https://codecov.io/gh/cbsinteractive/elemental)
+
+
+Python Client for Elemental On-Premises Appliances
+
+

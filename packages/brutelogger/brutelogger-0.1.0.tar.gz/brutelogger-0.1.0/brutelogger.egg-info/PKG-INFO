@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: brutelogger
+Version: 0.1.0
+Summary: A brutish file logger for when you just need to `tee` your screen.
+Home-page: https://github.com/giuse/brutelogger
+Author: Giuseppe Cuccu
+Author-email: giuseppe.cuccu@gmail.com
+License: MIT
+Download-URL: https://github.com/giuse/brutelogger/archive/0.1.0.tar.gz
+Project-URL: Bug Reports, https://github.com/giuse/brutelogger/issues
+Project-URL: Source, https://github.com/giuse/brutelogger/
+Description: # brutelogger
+        
+        A brutish file logger for when you just need to `tee` your screen. Forks `stdout` to multiple handlers.
+        
+        ## Disclaimer
+        
+        Logging done right should use [`logging`](https://docs.python.org/3/library/logging.html), or the wonderful [`loguru`](https://github.com/Delgan/loguru).
+        
+        ## Installation
+        
+        `pip install brutelogger`
+        
+        ## Usage
+        
+        ```python
+        from brutelogger import BruteLogger
+        BruteLogger.save_stdout_to_file()
+        # Everything on screen from now on will be copied to a
+        # timestamped file inside `./logs/`
+        ```
+        
+        More options:
+        
+        ```python
+        from brutelogger import BruteLogger
+        BruteLogger.save_stdout_to_file(path='captains.log', fname='stardate_41153.7',
+                                        mode='wb', encoding='utf8', also_stderr=True)
+        print("Our destination is planet Deneb IV")
+        # => outputs both to terminal and to file `captains.log/stardate_41153.7` (in binary)
+        ```
+        
+        
+        ## Applications
+        
+        Goal of this library is to offer a brute redirect of everything that comes on screen to multiple handlers, typically the original terminal and a file. The goal is not logging, but maintaining a hard copy of the terminal output in case of failure (or future processing).
+        
+        The original use case includes for example having multiple processes running asynchronously, each calling a C library which `printf()`s to screen some important algorithm statistics.
+        BruteLogger redirects everything such that what is seen on screen is copied to the file (think of `tee`). Statistics can be later easily retrieved using regular expressions, for example for plotting purposes.
+        
+        
+        ## How does it work
+        
+        Any function (or call) on the object (such as calling `sys.stdout.flush()` after using `BruteLogger.save_stdout_to_file()`) is propagated verbatim (with parameters) to each and all handlers.
+        This means that a call to `sys.stdout.flush()` will translate in calling `flush()` on both the terminal file handler and on the opened log file handler. Same goes for example with `close()` being called upon program termination.
+        
+        
+        ## Todo
+        
+        - Switching back `sys.__stdout__`
+        - Add / remove handlers
+        - Accessing handlers (e.g. calling `close()` only on the file log, not on the `__stdout__`)
+        
+Keywords: logging tee
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown

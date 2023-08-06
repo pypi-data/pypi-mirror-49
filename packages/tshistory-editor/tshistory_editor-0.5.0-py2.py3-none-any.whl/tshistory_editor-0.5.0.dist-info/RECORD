@@ -1,0 +1,9 @@
+tshistory_editor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tshistory_editor/app.py,sha256=IH-HUjvsHCVJeQMphwkVB__dx8nQUklH964QdD8eHxM,288
+tshistory_editor/command.py,sha256=3AE0qaaZtdIytQQ9iwAAPPCUdz1TMug2vahVGWsTmas,596
+tshistory_editor/editor.py,sha256=ARQ5MWvCuBEFxrMq7_P9dK3uhqa1vToxd1Ytk-TdLlE,17227
+tshistory_editor-0.5.0.dist-info/METADATA,sha256=w_UVMqh2KIRPQxiscUL6vwszyfIe1umDl9rRs9AIznA,1014
+tshistory_editor-0.5.0.dist-info/RECORD,,
+tshistory_editor-0.5.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+tshistory_editor-0.5.0.dist-info/entry_points.txt,sha256=4gL0xdpx9CVn-NnO9KmW6HW363nh_2hJH7ORAR_k2j4,62
+tshistory_editor-0.5.0.dist-info/top_level.txt,sha256=FEjrMW7WOZZqiZ5JX2cH5nHgJiGLgb9icM_n43MhuAg,17

@@ -1,0 +1,114 @@
+//\file FastaOperations.cc
+
+#include <Sequence/Fasta.hpp>
+#include <string>
+#include <iostream>
+#include <algorithm>
+#include <numeric>
+#include <boost/test/unit_test.hpp>
+
+struct fasta_operations_fixture
+{
+    std::string name, seq;
+    fasta_operations_fixture()
+        : name{ "seqname" }, seq{ "AGCGTAGACAGTAGAGTGAT" }
+    {
+    }
+};
+
+BOOST_FIXTURE_TEST_SUITE(FastaOperationsTest, fasta_operations_fixture)
+
+//A generic revcom routine written for this test
+std::string rcom( const std::string & s )
+{
+  std::string rv(s);
+  std::reverse(rv.begin(),rv.end());
+  std::transform(rv.begin(),rv.end(),
+		 rv.begin(),
+		 [](const char & ch)
+		 {
+		   switch(ch)
+		     {
+		     case 'A':
+		       return 'T';
+		       break;
+		     case 'G':
+		       return 'C';
+		       break;
+		     case 'C':
+		       return 'G';
+		       break;
+		     case 'T':
+		       return 'A';
+		       break;
+		     }
+		   return 'N';
+		 });
+  return rv;
+}
+
+
+BOOST_AUTO_TEST_CASE( revcom )
+{
+  std::string name("seqname"),seq("AGCGTAGACAGTAGAGTGAT");
+  Sequence::Fasta f(name,seq);
+
+  Sequence::Fasta f2 = f;
+  f2.Revcom();
+
+  BOOST_REQUIRE( f2.seq == rcom(seq) );
+}
+
+BOOST_AUTO_TEST_CASE( subseq )
+{
+  std::string name("seqname"),seq("AGCGTAGACAGTAGAGTGAT");
+  Sequence::Fasta f(name,seq);
+
+  Sequence::Fasta f3(f);
+  f3.Subseq(1,3);
+
+  BOOST_REQUIRE( f3.seq == "GCG" );
+
+  f3.Complement();
+
+  BOOST_REQUIRE( f3.seq == "CGC" );
+
+  BOOST_REQUIRE( std::string(f3) == "CGC" ); //operator string()
+
+}
+
+
+BOOST_AUTO_TEST_CASE( gapped )
+{
+  Sequence::Fasta f3("seqname","GCG");
+
+  BOOST_REQUIRE( !f3.IsGapped() );
+
+  f3.seq += '-';
+
+  BOOST_REQUIRE( f3.IsGapped() );
+
+  BOOST_REQUIRE( f3.length() == 4 );
+
+  BOOST_REQUIRE( f3.UngappedLength() == 3 );
+
+  //Remove the gap
+  f3.seq.erase( f3.seq.find('-'), 1 );
+
+  BOOST_REQUIRE( f3.length() == 3 );
+
+  BOOST_REQUIRE( f3.UngappedLength() == 3 );
+}
+
+BOOST_AUTO_TEST_CASE( cpp11access_1 )
+{
+  Sequence::Fasta f3("seqname","GCG");
+  for( auto & d  : f3 )
+    {
+      d = 'A';
+    }
+  BOOST_REQUIRE_EQUAL(f3.seq,"AAA");
+}
+
+BOOST_AUTO_TEST_SUITE_END()
+//EOF

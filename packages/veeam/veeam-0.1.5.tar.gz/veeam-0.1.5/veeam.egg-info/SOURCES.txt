@@ -1,0 +1,9 @@
+setup.py
+veeam/__init__.py
+veeam/client.py
+veeam/errors.py
+veeam.egg-info/PKG-INFO
+veeam.egg-info/SOURCES.txt
+veeam.egg-info/dependency_links.txt
+veeam.egg-info/requires.txt
+veeam.egg-info/top_level.txt

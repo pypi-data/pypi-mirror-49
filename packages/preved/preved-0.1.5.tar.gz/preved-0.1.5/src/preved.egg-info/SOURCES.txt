@@ -1,0 +1,7 @@
+README.txt
+setup.py
+src/helloworld.py
+src/preved.egg-info/PKG-INFO
+src/preved.egg-info/SOURCES.txt
+src/preved.egg-info/dependency_links.txt
+src/preved.egg-info/top_level.txt

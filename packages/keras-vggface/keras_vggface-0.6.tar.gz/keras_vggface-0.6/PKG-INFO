@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: keras_vggface
+Version: 0.6
+Summary: VGGFace implementation with Keras framework
+Home-page: https://github.com/rcmalli/keras-vggface
+Author: Refik Can MALLI
+Author-email: mallir@itu.edu.tr
+License: MIT
+Description: UNKNOWN
+Keywords: keras,vggface,deeplearning
+Platform: UNKNOWN
+Provides-Extra: tf_gpu
+Provides-Extra: tf

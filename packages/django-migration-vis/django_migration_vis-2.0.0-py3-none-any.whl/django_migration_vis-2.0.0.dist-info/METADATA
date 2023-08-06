@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: django-migration-vis
+Version: 2.0.0
+Summary: Django management commands to visualize migration graphs
+Home-page: https://github.com/hahey/django-migration-vis
+Author: Heuna Kim
+Author-email: heynaheyna9@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: Django
+Requires-Dist: graphviz
+
+The Django command tool for visualizing migration graphs
+========================================================
+
+How to Use
+==========
+
+1. Install
+----------
+
+Install the pip package locally or globally:
+
+.. code:: shell
+
+    pip install [--user] django-migration-vis
+
+2. Activate
+-----------
+
+Enable the Django management command by extending your Django project
+settings:
+
+.. code:: python
+
+    INSTALLED_APPS += ("django_migration_vis", )
+
+3. Apply
+--------
+
+.. code:: shell
+
+    python manage.py visualizemigrations \
+                     --comment 'captions for the picture' \
+                     example.gv
+
+

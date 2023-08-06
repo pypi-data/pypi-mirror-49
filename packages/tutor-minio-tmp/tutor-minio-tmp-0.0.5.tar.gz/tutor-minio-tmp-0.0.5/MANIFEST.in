@@ -1,0 +1,2 @@
+recursive-include tutorminiotmp/patches *
+recursive-include tutorminiotmp/templates *

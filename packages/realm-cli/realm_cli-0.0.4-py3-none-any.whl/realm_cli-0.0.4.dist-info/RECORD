@@ -1,0 +1,11 @@
+realm_cli/__init__.py,sha256=YNPNlKowEC_Im4DQN5j7rOq0ar-cqRBeVSsMEslyKb0,18
+realm_cli/compile_elm.py,sha256=CKcseCIGy3-WcZ9kaVo8mR4wYFT42M6pfPFHE-mcvxw,3388
+realm_cli/main.py,sha256=LAD-PDibh9lnSBRkVsomTsRh7i-xl2-Zqz1Bm4NVo6w,1879
+realm_cli/p_assert.py,sha256=Iqq5VWGzW4LGwCvpcwrAJu-y_W0FnGhdY0l_eL8eOmI,322
+realm_cli/rust_json.py,sha256=eUnOwJbAH2aSBsDR2zME52v0FL9GHJrVXUAm25IG77Q,9112
+realm_cli-0.0.4.dist-info/LICENSE,sha256=oYcOJ2R9EIhOckA4hbZgu8Er7t3aOtP2iQ8UaKiHh9M,1290
+realm_cli-0.0.4.dist-info/METADATA,sha256=m817TI_MbvLFPkUYlhuFxvTV61cErpme3EwIYy0hUd0,747
+realm_cli-0.0.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+realm_cli-0.0.4.dist-info/entry_points.txt,sha256=qqWk58AfV4T1h7HNTGwcuvkN_hDLJFPhx1wl12K_NJY,51
+realm_cli-0.0.4.dist-info/top_level.txt,sha256=EknYiorE5jifdIF5pq56frmJZh1OB9aPPNaVReq5nrQ,10
+realm_cli-0.0.4.dist-info/RECORD,,

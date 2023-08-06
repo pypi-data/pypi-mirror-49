@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: Fermat-FasterCoding
+Version: 1.0.1
+Summary: Example code for the Fermats-Little-Theorem modular inverse algorithm
+Home-page: https://github.com/FasterCoding/Fermats-Little-Theorem
+Author: FasterCoding
+Author-email: fastercodingtutorial@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: Euclid-FasterCoding
+
+# Fermats Little Theorem
+
+This repository contains an example
+of the Fermats Little Theorem algorithm
+for C++ and one for Python3.
+
+## C++
+
+To run the example for C++
+change into the `c++` folder
+and run the following bash script in Linux.
+
+```bash
+mkdir build && \
+cd build && \
+cmake .. -G "Unix Makefiles" && \
+make
+```
+
+The program should be build and 
+you can see an executable called `modinverse`.
+
+You can test it with `./modinverse arg1 arg2`.
+
+For example:
+
+```bash
+./modinverse 3 5
+modular inverse of 3 mod 5 is 2
+```
+
+```bash
+./modinverse 2 4
+There is no modular inverse!
+```
+
+```bash
+./modinverse 2  
+Not enough input arguments!
+```
+
+## Python3
+
+You can run this example from source or 
+install it with pip and include it in your project.
+
+### Source
+
+**Requirement**
+- virtualenv
+
+To run this example from source,
+run the following bash script in Linux.
+
+```bash
+python3 -m virtualenv . && \
+source ./bin/activate && \
+pip3 install -r requirements.txt
+```
+
+This will generate a virual environment and
+install the requirement.
+
+After that you can run the programm with
+
+`python3 Fermat/fermat.py arg1 arg2`
+
+For example:
+
+```bash
+python3 Fermat/fermat.py 2 5
+The mod inverse of 2 mod 5 is 3
+```
+
+```bash
+python3 Fermat/fermat.py 2 4
+There is no modular inverse!
+```
+
+```bash
+python3 Fermat/fermat.py 2  
+Not enough input arguments!
+```
+
+### Pip
+
+To install this example with pip, simply run:
+
+`pip3 install Fermat-FasterCoding`
+
+Then you can use it as import like this:
+
+```python
+import Fermat.fermat as fermat
+
+inverse = fermat.modInverse(3, 5) # This will return 2
+```
+

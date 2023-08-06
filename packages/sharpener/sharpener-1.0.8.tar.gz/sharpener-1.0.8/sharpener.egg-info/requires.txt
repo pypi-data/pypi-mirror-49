@@ -1,0 +1,11 @@
+astro-tigger
+astropy
+astroquery
+matplotlib
+mpdaf
+multiprocessing
+numpy
+prettytable
+PyPDF2
+pyaml
+tabulate

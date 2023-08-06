@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyartifactory
+Version: 1.0.1
+Summary: Typed interactions with the Jfrog Artifactory REST API
+Author: Ananias CARVALHO
+Author-email: carvalhoananias@hotmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: email_validator (>=1.0,<2.0)
+Requires-Dist: pydantic (>=0.23.0,<0.24.0)
+Requires-Dist: requests (>=2.21,<3.0)

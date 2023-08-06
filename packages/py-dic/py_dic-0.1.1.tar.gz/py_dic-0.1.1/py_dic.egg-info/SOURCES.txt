@@ -1,0 +1,13 @@
+README.md
+setup.py
+py_dic/__init__.py
+py_dic/__main__.py
+py_dic/dic.py
+py_dic/dic_tools.py
+py_dic/main.py
+py_dic/settings.ini
+py_dic.egg-info/PKG-INFO
+py_dic.egg-info/SOURCES.txt
+py_dic.egg-info/dependency_links.txt
+py_dic.egg-info/requires.txt
+py_dic.egg-info/top_level.txt

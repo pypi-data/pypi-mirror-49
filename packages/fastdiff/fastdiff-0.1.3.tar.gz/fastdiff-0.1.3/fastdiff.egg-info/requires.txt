@@ -1,0 +1,6 @@
+
+[:python_version > "3.2" and platform_machine == "x86_64" and sys_platform == "darwin"]
+wasmer
+
+[:python_version > "3.2" and platform_machine == "x86_64" and sys_platform == "linux"]
+wasmer

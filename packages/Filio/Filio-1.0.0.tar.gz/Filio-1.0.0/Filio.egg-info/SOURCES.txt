@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+Filio.egg-info/PKG-INFO
+Filio.egg-info/SOURCES.txt
+Filio.egg-info/dependency_links.txt
+Filio.egg-info/entry_points.txt
+Filio.egg-info/requires.txt
+Filio.egg-info/top_level.txt
+filio/__init__.py
+filio/__main__.py
+filio/utils.py

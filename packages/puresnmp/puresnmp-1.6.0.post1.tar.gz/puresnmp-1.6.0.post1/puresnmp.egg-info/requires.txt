@@ -1,0 +1,12 @@
+six
+verlib
+
+[dev]
+sphinx
+sphinx-rtd-theme
+
+[test]
+pytest
+pytest-asyncio
+pytest-coverage
+pytest-xdist

@@ -1,0 +1,10 @@
+vec2graph/__init__.py,sha256=9Eq1r9v8-5P8yJiGvtyzgJV2Z9BiqqzrhguCocaWEcs,42
+vec2graph/genviz.html,sha256=WzYF7xMfc16_P1qn-bYe5kjfOqcsUFKl5hZ6wNMHlSY,730
+vec2graph/genviz.js,sha256=n3UOWCqbnHaZuFz5xlYDfoF917X8RJmOqgC64RHdu_0,3569
+vec2graph/genviz.py,sha256=qyEC4HLUoDF0gMi6aPBi1cKw3shIov7Dn0hB2o-ayFA,7308
+vec2graph/data/genviz.html,sha256=WzYF7xMfc16_P1qn-bYe5kjfOqcsUFKl5hZ6wNMHlSY,730
+vec2graph/data/genviz.js,sha256=n3UOWCqbnHaZuFz5xlYDfoF917X8RJmOqgC64RHdu_0,3569
+vec2graph-0.3.0.dist-info/METADATA,sha256=3OOPa8uTGvBtl1f4VORboZW9GDRQ9jxuLKtKb-dnxm4,2621
+vec2graph-0.3.0.dist-info/RECORD,,
+vec2graph-0.3.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+vec2graph-0.3.0.dist-info/top_level.txt,sha256=G5c4r_521c7gsT-uL7YhQ7Xin86juI0lCOd-0dfK1fs,10

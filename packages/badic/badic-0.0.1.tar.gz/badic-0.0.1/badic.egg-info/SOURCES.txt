@@ -1,0 +1,14 @@
+README.md
+setup.py
+badic/__init__.py
+badic/automataC.c
+badic/beta_adic.c
+badic/cautomata.c
+badic/cautomata_generators.py
+badic/complex.c
+badic/draw.c
+badic/relations.c
+badic.egg-info/PKG-INFO
+badic.egg-info/SOURCES.txt
+badic.egg-info/dependency_links.txt
+badic.egg-info/top_level.txt

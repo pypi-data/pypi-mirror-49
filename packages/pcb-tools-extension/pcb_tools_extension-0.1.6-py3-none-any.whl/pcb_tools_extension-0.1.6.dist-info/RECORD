@@ -1,0 +1,16 @@
+gerberex/__init__.py,sha256=Q3CueqHEf8WMCvrHsXoaPWoYVQT2SB6TEdPrdq9KFbw,450
+gerberex/am_expression.py,sha256=VnZANrzLJdJ8prvfwu6SmlnOxLiaAZqwYgeQs2_9QlM,5360
+gerberex/am_primitive.py,sha256=q5C8kcFEq8YxaoivEEUILU70LkO_FNXq1fnuvQqltY0,17822
+gerberex/common.py,sha256=Pg_qRa2W0a402XXSWCS7TSs4lyzfynHZYlBEMhqzHNs,1313
+gerberex/composition.py,sha256=aKDptnoPIhXtfT5cT3J_8jDFEpKhy0g5eIi1MSNxZuU,8105
+gerberex/dxf.py,sha256=YQdkbIbmpcG2oZ3Rkoj_KrpwzQjJ9K9j8RhFXR9m12Y,23905
+gerberex/dxf_path.py,sha256=SF9tTdwPsAHJMp0GroeIV_Jv1Gd1K3EgPNcG_bugm-g,8029
+gerberex/excellon.py,sha256=ioWxjZQmMyyoX5Lzgz1u9vIijfVQVHODQJnmt8yETNM,2466
+gerberex/gerber_statements.py,sha256=mNdf-27FeptbJvL2osM_gIacCD83O52_LXCoaNw9gE4,3599
+gerberex/rs274x.py,sha256=gaPsCGRpqvp-FqQGqOk3D8md1KrPHJ5CxgiX31T1IFE,5100
+gerberex/utility.py,sha256=pzmWeyc8EZIfCwTePXrZRGGvq77VHgVhKdTpQuMuQ0s,608
+pcb_tools_extension-0.1.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pcb_tools_extension-0.1.6.dist-info/METADATA,sha256=FgWBYJwl9y_PnNS2QcjPA81ZTmjSwtMw2yIy8_4zZ_Y,5455
+pcb_tools_extension-0.1.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pcb_tools_extension-0.1.6.dist-info/top_level.txt,sha256=rXzz3PdLkBSfIPtbgfvIaPotLmLRYutgm_CKMdwBsxY,9
+pcb_tools_extension-0.1.6.dist-info/RECORD,,

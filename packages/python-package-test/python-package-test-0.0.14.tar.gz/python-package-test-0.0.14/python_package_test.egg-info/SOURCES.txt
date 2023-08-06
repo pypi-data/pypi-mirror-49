@@ -1,0 +1,10 @@
+README.md
+index.py
+setup.py
+lib/fact.py
+python_package_test.egg-info/PKG-INFO
+python_package_test.egg-info/SOURCES.txt
+python_package_test.egg-info/dependency_links.txt
+python_package_test.egg-info/entry_points.txt
+python_package_test.egg-info/requires.txt
+python_package_test.egg-info/top_level.txt

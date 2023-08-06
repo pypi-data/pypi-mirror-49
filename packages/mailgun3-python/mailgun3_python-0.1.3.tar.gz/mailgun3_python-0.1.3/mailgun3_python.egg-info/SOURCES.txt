@@ -1,0 +1,12 @@
+README.md
+setup.py
+mailgun/__init__.py
+mailgun/email_parsing.py
+mailgun/error.py
+mailgun/mailgun.py
+mailgun3_python.egg-info/PKG-INFO
+mailgun3_python.egg-info/SOURCES.txt
+mailgun3_python.egg-info/dependency_links.txt
+mailgun3_python.egg-info/not-zip-safe
+mailgun3_python.egg-info/requires.txt
+mailgun3_python.egg-info/top_level.txt

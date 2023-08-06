@@ -1,0 +1,4 @@
+applicationinsights==0.11.9
+adal==1.0.2
+azure-keyvault==1.1.0
+pyOpenSSL==19.0.0

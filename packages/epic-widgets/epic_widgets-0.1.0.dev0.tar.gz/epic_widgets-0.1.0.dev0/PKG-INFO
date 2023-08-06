@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: epic_widgets
+Version: 0.1.0.dev0
+Summary: EIC EPIC widgets collection
+Home-page: https://github.com/DraTeots/epic-widgets
+Author: Dmitry Romanov
+Author-email: romanov@jlab.org
+License: MIT
+Description: UNKNOWN
+Keywords: Jupyter,Widgets,IPython
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Jupyter
+Provides-Extra: docs
+Provides-Extra: examples
+Provides-Extra: test

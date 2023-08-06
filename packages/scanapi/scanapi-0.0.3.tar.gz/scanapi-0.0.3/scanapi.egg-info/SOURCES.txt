@@ -1,0 +1,11 @@
+README.md
+setup.py
+scanapi/__init__.py
+scanapi/docs_writer.py
+scanapi/requests_builder.py
+scanapi/settings.py
+scanapi/variable_parser.py
+scanapi.egg-info/PKG-INFO
+scanapi.egg-info/SOURCES.txt
+scanapi.egg-info/dependency_links.txt
+scanapi.egg-info/top_level.txt

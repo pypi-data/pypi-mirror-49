@@ -1,0 +1,14 @@
+ansible
+apache-libcloud
+docker-py
+google-api-python-client
+google-apitools>=0.5.8
+google-cloud
+Jinja2
+jsonschema
+loomengine_utils==0.7.3
+pycrypto
+python-dateutil
+PyYAML
+requests
+setuptools-git

@@ -1,0 +1,11 @@
+README.md
+setup.py
+football_tools.egg-info/PKG-INFO
+football_tools.egg-info/SOURCES.txt
+football_tools.egg-info/dependency_links.txt
+football_tools.egg-info/entry_points.txt
+football_tools.egg-info/requires.txt
+football_tools.egg-info/top_level.txt
+tests/__init__.py
+tests/test_storage.py
+tests/test_team_domain.py

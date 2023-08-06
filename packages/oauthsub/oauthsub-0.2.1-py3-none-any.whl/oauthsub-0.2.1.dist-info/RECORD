@@ -1,0 +1,13 @@
+oauthsub/__init__.py,sha256=Vdi6OffDRorPQeWjvXo2MPbidl7CNworxvziT78bjl0,18
+oauthsub/__main__.py,sha256=i52UJPbbFyO4TUX65OOTPfWAe4GGgMpD-eP2DyQqjLg,6467
+oauthsub/auth_service.py,sha256=TqLEPanCkxP2Xl-1WYxA9eT5Ws_a3yoFvzPk3eMorlU,12957
+oauthsub/configuration.py,sha256=iMyoYrUYxELg2IMvWvm9i0kVJLetxWb90ivjzo0FqRI,4854
+oauthsub/util.py,sha256=qluYqMjsXIITieodYXulj4OxHaGV6QnEg5aRDGfPAdA,1264
+oauthsub/templates/layout.html.tpl,sha256=RHLxLQmbPe3Pio05tvQAsGMkaYVsHjoY9LYFovSVfrk,717
+oauthsub/templates/message.html.tpl,sha256=H37APNmxcLoOxwyMsi6ewqPZmXde7Cofips3-vMfTFA,79
+oauthsub-0.2.1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+oauthsub-0.2.1.dist-info/METADATA,sha256=WzejlL2vZ6v5NvuP8V-mIb9y9oSnqnx3Rh0GCgZAXGA,8009
+oauthsub-0.2.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+oauthsub-0.2.1.dist-info/entry_points.txt,sha256=4t6iwJ4JE1g1mYIrUHvZSkuUhqNmYiw5coC-_s6AJJY,53
+oauthsub-0.2.1.dist-info/top_level.txt,sha256=ekCFBp1q0PEYSeUotMNvbuD0-Zf2LZIXeFNUGJIHH9w,9
+oauthsub-0.2.1.dist-info/RECORD,,

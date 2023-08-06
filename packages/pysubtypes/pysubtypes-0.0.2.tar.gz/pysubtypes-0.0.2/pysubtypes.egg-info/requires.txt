@@ -1,0 +1,12 @@
+aenum
+bs4
+case_conversion
+clipboard
+dateutil
+inflect
+lazy_property
+maybe-else
+numpy
+pandas
+regex
+tabulate

@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+easyevaluations.egg-info/PKG-INFO
+easyevaluations.egg-info/SOURCES.txt
+easyevaluations.egg-info/dependency_links.txt
+easyevaluations.egg-info/top_level.txt

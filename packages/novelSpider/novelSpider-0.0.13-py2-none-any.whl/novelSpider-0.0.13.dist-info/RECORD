@@ -1,0 +1,15 @@
+novelSpider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+novelSpider/task.py,sha256=R1y8D_TMtPHZhIxT-XefzEIoSo--7HIYurcxii3n5Tc,233
+novelSpider/app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+novelSpider/app/novelDownloader.py,sha256=xMkK69SDg0vXV5hQBKXoECqzjivmgyHI4YTVHi8BMsQ,3302
+novelSpider/app/novelTools/__init__.py,sha256=beptdBPSzESnjgvWDpkxmdoKA_4QsJCVM8koY6QG04M,14
+novelSpider/app/novelTools/novelLoger.py,sha256=nLQXnGJUg6Dy50VhL7oefhSMjqlTrPjEQffQ9sICHgo,521
+novelSpider/app/novelTools/novelORM.py,sha256=MprbjYcAEMHKDEHBTHoRZB0PtXt1BMpJHeAeU2BzLO4,1631
+novelSpider/app/novelTools/novelParser.py,sha256=GVXJNi2r5UCy5cMEyMXJdBwZXgvw7-KE8bQGBETufyw,2231
+novelSpider/app/novelTools/novelSpider.py,sha256=czpGCW5cNsPDvS1Tb5nCH3NuU0MhpaRUSgXZ7Z1Zl50,506
+novelSpider-0.0.13.dist-info/DESCRIPTION.rst,sha256=ebYpjAsrBHdbN3iE7e-I3TWwHz7XSTEwzzhLhce7KKg,1240
+novelSpider-0.0.13.dist-info/METADATA,sha256=vJSyF6wSf2tCRctagW3W14NH2DyogZbgIxlSS7bjtlc,1922
+novelSpider-0.0.13.dist-info/RECORD,,
+novelSpider-0.0.13.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+novelSpider-0.0.13.dist-info/metadata.json,sha256=lIodFxJfZ5h3cK46kGAq84hQD4-d4iu08n7Vz0jplVY,872
+novelSpider-0.0.13.dist-info/top_level.txt,sha256=MgJ4EtNj5ynPmsKyQRUSC_M6GWN1Ll64tXJoax7bLeg,12

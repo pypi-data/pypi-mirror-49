@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: readconfig
+Version: 0.0.6
+Summary: Read redis DB config for other modules
+Home-page: https://github.com/jduncan8142/read_config
+Author: Jason Duncan
+Author-email: jason.matthew.duncan@gmail.com
+License: UNKNOWN
+Description: # read_config
+        Read redis config DB for other modules
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

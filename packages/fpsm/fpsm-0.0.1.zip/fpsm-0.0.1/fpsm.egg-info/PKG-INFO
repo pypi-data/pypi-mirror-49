@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fpsm
+Version: 0.0.1
+Summary: Functional programming support modules
+Home-page: https://github.com/KeisukeToyota/fpsm
+Author: KeisukeToyota
+Author-email: hm.pudding0715@gmail.com
+Maintainer: KeisukeToyota
+Maintainer-email: hm.pudding0715@gmail.com
+License: MIT
+Description: # fpsm
+        
+        **Functional Programming Support Modules**
+        
+        Lightweight modules that summarize the functions required for functional programming
+        
+        ## Installation
+        ```
+        $ pip3 install fpsm
+        ```
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+google-cloud-storage
+google-cloud-bigquery
+pandas-gbq
+pandas
+sqlalchemy
+pymysql
+pymssql
+pyodbc==4.0.24
+cx_Oracle
+boto3

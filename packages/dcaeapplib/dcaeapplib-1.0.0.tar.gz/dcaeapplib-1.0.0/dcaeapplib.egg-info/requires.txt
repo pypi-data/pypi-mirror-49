@@ -1,0 +1,1 @@
+onap-dcae-cbs-docker-client>=2.1.0

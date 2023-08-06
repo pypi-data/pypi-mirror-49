@@ -1,0 +1,11 @@
+swdl/__init__.py,sha256=4W8VliAYUP1KY2gLJ_YDy2TmcXYVm-PY7XikQD_bFwA,2
+swdl/labels.py,sha256=ione-AZEPbVTxSaSV2-zEjztua74XlfvgWuA6-LmleA,1819
+swdl/matches.py,sha256=V4tUHszdByZX2aWuajQ0OXmLWBtosy_N2X0iXxiMrOU,11647
+swdl/swrest.py,sha256=opiVxFcs2b8mVmE1h12ll8_VMaVe9K_GlcP3w_BCyiU,15368
+swdl-1.0.10.data/scripts/swdl-login,sha256=9y6Ycym4XQada176-B14GQsPpvK1gTLjmvTCL3lMe8M,94
+swdl-1.0.10.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+swdl-1.0.10.dist-info/METADATA,sha256=BcFuuTU4zUI5hk8u0s9WSll4g0eafESSIe-FVu1Qc9Q,386
+swdl-1.0.10.dist-info/RECORD,,
+swdl-1.0.10.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+swdl-1.0.10.dist-info/metadata.json,sha256=QYPvFA7XBhcXx_2kDZ8Ksk1gPLozbDbwf1NiuiKZWJ4,516
+swdl-1.0.10.dist-info/top_level.txt,sha256=ewYoV9WP7XVlXR72d6MbUtBaYHLcNfI1TfdLZBzEjdM,5

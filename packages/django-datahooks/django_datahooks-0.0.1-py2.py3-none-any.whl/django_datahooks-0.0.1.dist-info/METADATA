@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: django-datahooks
+Version: 0.0.1
+Summary: Django datahooks
+Home-page: https://github.com/labd/django-datahooks
+Author: Lab Digital
+Author-email: opensource@labdigital.nl
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Django (>=1.11)
+Provides-Extra: docs
+Requires-Dist: mkdocs (>=1.0.4) ; extra == 'docs'
+Requires-Dist: mkdocs-material (==4.4.0) ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: coverage (==4.5.3) ; extra == 'test'
+Requires-Dist: pytest (==5.0.1) ; extra == 'test'
+Requires-Dist: pytest-django (==3.5.1) ; extra == 'test'
+Requires-Dist: isort (==4.2.5) ; extra == 'test'
+Requires-Dist: flake8 (==3.7.7) ; extra == 'test'
+Requires-Dist: flake8-blind-except (==0.1.1) ; extra == 'test'
+Requires-Dist: flake8-debugger (==1.4.0) ; extra == 'test'
+
+# django_datahooks
+
+Note: this package is experimental
+
+
+## Installation
+
+```shell
+pip install django_datahooks
+```
+
+## Usage
+
+This module auto detects modules in your django apps at `.datahooks.*` and
+scans for classes extending `django_datahooks.DataProvider` to
+makes them available for the `manage.py generate_data <provider>` command.
+
+
+Example:
+
+```python
+from django.core.management import call_command
+from django_datahooks import DataProvider
+
+
+class PagesProvider(DataProvider):
+    name = "pages"
+
+    def run(self, **options):
+        # Run creation commands
+
+```
+
+

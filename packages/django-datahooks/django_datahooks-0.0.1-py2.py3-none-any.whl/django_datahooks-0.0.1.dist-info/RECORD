@@ -1,0 +1,14 @@
+django_datahooks/__init__.py,sha256=Q1VS0jBoMnclQPQMPf-3bNP4f_hCYAOquRummvkqh_I,153
+django_datahooks/apps.py,sha256=M-aQ4mM3qfWPFtDDVIPNDrK5L_AcrEz7hKalZPbSi38,199
+django_datahooks/decorators.py,sha256=nzbSbDXzBT1_Y9izgYHgV0TGzqYpNmweXDVdb2s8xwY,243
+django_datahooks/finder.py,sha256=n6DW04u3uQRYX2tZvCxGcGIQ6LBNja0w8RcuJimThy4,712
+django_datahooks/provider.py,sha256=_tidm-OMNZyL1ck7rXR3Pls-gkt-a9_iJVdpXqswk8g,137
+django_datahooks/registry.py,sha256=1PfMh8jIilQD3Ns_V79Zb2t8nR9k8IWFn0G_s2xZjX0,75
+django_datahooks/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_datahooks/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_datahooks/management/commands/generate_data.py,sha256=ubZsfKMD3EaGF13F8391laGXVwLrTHeh-72pHANNti4,1033
+django_datahooks-0.0.1.dist-info/LICENSE,sha256=tAnX7U5JgNbjxdARYGgJz0X3v17YWwuycMCAb5oMQ70,1079
+django_datahooks-0.0.1.dist-info/METADATA,sha256=_FWx5Fhdi0G1SZSdzY5qxWXHBNDQdye1mu_Yb68OyFs,1772
+django_datahooks-0.0.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+django_datahooks-0.0.1.dist-info/top_level.txt,sha256=W03U-UuiG6XF7LDj5avsSDAi0g8QzC4H46i1MAMyeHI,17
+django_datahooks-0.0.1.dist-info/RECORD,,

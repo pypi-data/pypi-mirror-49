@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "django-csrf-view"
+version = "0.1.0"
+description = ""
+authors = ["Дмитрий <acrius@mail.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.5"
+django = "^2.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

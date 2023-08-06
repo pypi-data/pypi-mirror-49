@@ -1,0 +1,3 @@
+[console_scripts]
+dbx-deploy = DbxDeploy.DeployerCommand:DeployerCommand.run
+

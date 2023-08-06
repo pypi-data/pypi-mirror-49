@@ -1,0 +1,10 @@
+edge_pydb/__init__.py,sha256=mtWhNgYLxh9hU0-T5rA2bqCL5JKkmloyFBy8HYaTClE,6466
+edge_pydb/_config.json,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edge_pydb/conversion.py,sha256=Kgt-2CL2CMF9iLIjFHES3RgwD8yHF_5pTImGHah3gXQ,8025
+edge_pydb/fitsextract.py,sha256=QseEieLDoBNWrvYMQ1EFR8avxFq5Ox_qECbHFNqDaWo,13067
+edge_pydb/xy2hist.py,sha256=MItPT_rsE80t3eCCZBjVoGT0zFKmVQLsFzcwj57vFic,665
+edge_pydb-0.1.15.dist-info/LICENSE,sha256=Jx_JL38j-EJ6ybJX9jIRUoq4B6l7afqQ8H1sIbN1chE,1475
+edge_pydb-0.1.15.dist-info/METADATA,sha256=H_H4jtx3_MSRIenJ0kuKYM-F_pg94GO_WsEHieBg9WA,1138
+edge_pydb-0.1.15.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+edge_pydb-0.1.15.dist-info/top_level.txt,sha256=z8sILoAt7gPLbbtvV-41irKCWNrXsBfVWS_zajyh5Js,10
+edge_pydb-0.1.15.dist-info/RECORD,,

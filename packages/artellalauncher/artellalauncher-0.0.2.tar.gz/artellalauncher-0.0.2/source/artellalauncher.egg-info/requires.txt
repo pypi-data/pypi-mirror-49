@@ -1,0 +1,8 @@
+artellapipe
+pathlib2
+
+[dev]
+wheel
+
+[test]
+pytest

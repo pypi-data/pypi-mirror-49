@@ -1,0 +1,23 @@
+   GoodVibes v3.0.0 2019/07/23 09:48:52
+   REF: Luchini, G.; Alegre-Requena J. V.; Guan, Y.; Funes-Ardoiz, I.; Paton, R. S. (2019).
+        GoodVibes: GoodVibes 3.0.0 http://doi.org/10.5281/zenodo.595246
+   Requested: --ssymm 
+
+   Temperature = 298.15 Kelvin   Pressure = 1 atm
+   All energetic values below shown in Hartree unless otherwise specified.
+
+o  Found vibrational scaling factor of 0.970 for M062X/def2TZVPP level of theory
+   REF: I. M. Alecu, J. Zheng, Y. Zhao, and D. G. Truhlar, J. Chem. Theory Comput. 6, 2872-2887 (2010).
+
+   Entropic quasi-harmonic treatment: frequency cut-off value of 100.0 wavenumbers will be applied.
+   QS = Grimme: Using a mixture of RRHO and Free-rotor vibrational entropies.
+   REF: Grimme, S. Chem. Eur. J. 2012, 18, 9955-9964
+
+
+   Ssymm requested. Symmetry contribution to entropy to be calculated using S. Patchkovskii's 
+   open source software "Brute Force Symmetry Analyzer" available under GNU General Public License.
+   REF: (C) 1996, 2003 S. Patchkovskii, Serguei.Patchkovskii@sympatico.ca
+
+   Atomic radii used to calculate internal symmetry based on Cambridge Structural Database covalent radii.
+   REF: C. R. Groom, I. J. Bruno, M. P. Lightfoot and S. C. Ward, Acta Cryst. 2016, B72, 171-179
+   Cordero, B.; Gomez V.; Platero-Prats, A. E.; Reves, M.; Echeverria, J.; Cremades, E.; Barragan, F.; Alvarez, S. Dalton Trans. 2008, 2832-2838

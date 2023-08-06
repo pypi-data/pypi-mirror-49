@@ -1,0 +1,13 @@
+README.md
+setup.py
+japana/__init__.py
+japana/dictionary.py
+japana/kanji_count.py
+japana/progress_bar.py
+japana/word_classifier.py
+japana/word_count.py
+japana.egg-info/PKG-INFO
+japana.egg-info/SOURCES.txt
+japana.egg-info/dependency_links.txt
+japana.egg-info/requires.txt
+japana.egg-info/top_level.txt

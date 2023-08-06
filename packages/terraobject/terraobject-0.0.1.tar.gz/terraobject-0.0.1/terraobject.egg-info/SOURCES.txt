@@ -1,0 +1,8 @@
+README.md
+setup.py
+terraobject/__init__.py
+terraobject/terraobject.py
+terraobject.egg-info/PKG-INFO
+terraobject.egg-info/SOURCES.txt
+terraobject.egg-info/dependency_links.txt
+terraobject.egg-info/top_level.txt

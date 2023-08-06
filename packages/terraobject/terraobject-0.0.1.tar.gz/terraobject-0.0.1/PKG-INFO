@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: terraobject
+Version: 0.0.1
+Summary: Common Terraobject package
+Home-page: https://bitbucket.org/byjg/terraobject
+Author: Joao Gilberto Magalhaes
+Author-email: joao@byjg.com.br
+License: UNKNOWN
+Description: Common Terraobject package
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

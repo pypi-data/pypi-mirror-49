@@ -1,0 +1,16 @@
+README.md
+setup.py
+bbox/__init__.py
+bbox/bbox2d.py
+bbox/bbox2d_list.py
+bbox/bbox3d.py
+bbox/box_modes.py
+bbox/geometry.py
+bbox/metrics.py
+bbox/utils.py
+bbox.egg-info/PKG-INFO
+bbox.egg-info/SOURCES.txt
+bbox.egg-info/dependency_links.txt
+bbox.egg-info/not-zip-safe
+bbox.egg-info/requires.txt
+bbox.egg-info/top_level.txt

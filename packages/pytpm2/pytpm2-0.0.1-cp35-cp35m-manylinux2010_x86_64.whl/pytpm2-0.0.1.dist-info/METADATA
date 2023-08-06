@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pytpm2
+Version: 0.0.1
+Summary: pytpm2 makes TPM 2.0 devices accessible to python through the tpm2-tss library
+Home-page: https://github.com/trustforge/pytpm2/
+Author: Kevin Briggs
+Author-email: krb686@gmail.com
+License: ISC
+Platform: UNKNOWN
+
+UNKNOWN
+
+

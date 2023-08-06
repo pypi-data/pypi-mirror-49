@@ -1,0 +1,3 @@
+[console_scripts]
+cwlogs-rqid-filter=cwlogs_rqid_filter.console:run
+

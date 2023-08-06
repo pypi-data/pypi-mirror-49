@@ -1,0 +1,7 @@
+setup.py
+iqyocr/iqyocr.py
+iqyocr.egg-info/PKG-INFO
+iqyocr.egg-info/SOURCES.txt
+iqyocr.egg-info/dependency_links.txt
+iqyocr.egg-info/requires.txt
+iqyocr.egg-info/top_level.txt

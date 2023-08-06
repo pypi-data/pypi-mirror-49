@@ -1,0 +1,36 @@
+FROM sadm
+
+LABEL maintainer="Jeremías Casteglione <jrmsdev@gmail.com>"
+LABEL version="19.6.24"
+
+USER root:root
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN echo 'Acquire::http::proxy "http://localhost:3142";' >/etc/apt/apt.conf.d/02proxy
+
+RUN apt-get clean
+RUN apt-get update
+
+RUN apt-get dist-upgrade -y --purge
+
+COPY venv/requirements-test.txt /tmp
+COPY venv/requirements.txt /tmp
+
+RUN pip3 install -r /tmp/requirements-test.txt
+RUN pip3 install -r /tmp/requirements.txt
+
+RUN apt-get clean
+RUN apt-get autoremove -y --purge
+
+RUN rm -rf /var/lib/apt/lists/*
+RUN rm -f /var/cache/apt/archives/*.deb
+RUN rm -f /var/cache/apt/*cache.bin
+
+RUN rm -rf /root/.cache
+RUN rm -f /tmp/requirements-test.txt /tmp/requirements.txt
+
+USER sadm:sadm
+WORKDIR /opt/src/sadm
+
+CMD /bin/bash

@@ -1,0 +1,4 @@
+[run]
+source = _sadm
+omit =
+	_sadm/_version.py

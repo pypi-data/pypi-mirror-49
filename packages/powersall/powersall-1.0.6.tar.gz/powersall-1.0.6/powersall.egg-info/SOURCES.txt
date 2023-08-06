@@ -1,0 +1,12 @@
+README.md
+setup.py
+powersall/__init__.py
+powersall/__main__.py
+powersall/functions.py
+powersall/powersall.py
+powersall.egg-info/PKG-INFO
+powersall.egg-info/SOURCES.txt
+powersall.egg-info/dependency_links.txt
+powersall.egg-info/entry_points.txt
+powersall.egg-info/requires.txt
+powersall.egg-info/top_level.txt

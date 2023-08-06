@@ -1,0 +1,3 @@
+[console_scripts]
+powersall = powersall.powersall:main
+

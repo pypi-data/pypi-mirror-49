@@ -1,0 +1,10 @@
+setup.py
+DummyValidator.egg-info/PKG-INFO
+DummyValidator.egg-info/SOURCES.txt
+DummyValidator.egg-info/dependency_links.txt
+DummyValidator.egg-info/not-zip-safe
+DummyValidator.egg-info/requires.txt
+DummyValidator.egg-info/top_level.txt
+SocValidator/Setup.py
+SocValidator/SocValidator.py
+SocValidator/SocValidatorGUI.py

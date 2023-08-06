@@ -1,0 +1,8 @@
+sanic_json/__init__.py,sha256=WGOoRVMn8vlwId0rPxmW_grxc5dk9Z8tetgMVleESO8,2396
+sanic_json/middleware.py,sha256=xZ5WAmAjz_dceBbv3qC901EYQz0pjUVuH4ClMjpJjWA,84
+sanic_json/sig.py,sha256=rVJ5Tv2hs4kUf3vOT9_ugrUuPbFZz2wJLcvBOO2ClMY,536
+sanic_json/validate.py,sha256=uhE1bQBC387loiSDI8kV__bikiybMCvVrcMeccdj4mY,1068
+sanic_json-0.1.13.dist-info/METADATA,sha256=2xVBOwtb0FfpWoxRTQG8wcx5l8n72nH9yC1lQrTq70g,1676
+sanic_json-0.1.13.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+sanic_json-0.1.13.dist-info/top_level.txt,sha256=L9kaeQ-Sg-sA23RCYT7aatzmgXHy-dxuX1kGDWo0lM8,11
+sanic_json-0.1.13.dist-info/RECORD,,

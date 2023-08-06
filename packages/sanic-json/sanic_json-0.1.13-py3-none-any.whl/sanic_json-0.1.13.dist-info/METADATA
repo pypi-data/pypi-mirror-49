@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: sanic-json
+Version: 0.1.13
+Summary: Sanic framework thin wapper to write JSON API
+Home-page: https://github.com/weaming/sanic-json
+Author: weaming
+Author-email: garden.yuen@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/weaming/sanic-json
+Project-URL: Bug Reports, https://github.com/weaming/sanic-json
+Keywords: sanic json api
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# sanic json
+
+A thin wrapper on sanic web framework to help writting JSON API.
+
+Recommond use [json-api](https://github.com/weaming/json-api) instead. It's a abstraction library of this library.
+
+```
+pip3 install sanic-json
+```
+
+## Exmaple
+
+file `api/random.py`
+
+```python
+def obj_to_dict(obj):
+    if not obj or isinstance(obj, (str, int, float)):
+        return obj
+    elif isinstance(obj, list):
+        return [obj_to_dict(x) for x in obj]
+    elif isinstance(obj, dict):
+        return {k: obj_to_dict(v) for k, v in obj.items()}
+    else:
+        return {k: obj_to_dict(v) for k, v in obj.__dict__.items()}
+
+
+# the wrapper will get the args and kwargs value from the `request`
+async def random_pohoto(req, count=10):
+    res = api.photo.random(count=count)
+    return {"data": obj_to_dict(res)}
+```
+
+file `app.py`
+
+```python
+from sanic import Sanic
+from sanic_json import get_json_route
+from api.random import random_pohoto
+
+app = Sanic()
+json_route = get_json_route(app)
+
+json_route("/api/random", random_pohoto)
+
+
+if __name__ == "__main__":
+    import os
+
+    debug = bool(os.getenv("DEBUG"))
+    # hot reload in next release: https://github.com/channelcat/sanic/issues/168
+    app.run(host="0.0.0.0", port=8000, debug=debug)
+```
+
+

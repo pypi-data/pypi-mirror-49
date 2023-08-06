@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: artellapipe
+Version: 0.0.2
+Summary: Framework to create generic Artella based pipelines
+Home-page: https://github.com/tpoveda/artellapipe
+Author: Tomas Poveda
+Author-email: tpovedatd@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: artellapipe
+        ============================================================
+        
+        Framework to create generic Artella based pipelines
+        
+Platform: UNKNOWN

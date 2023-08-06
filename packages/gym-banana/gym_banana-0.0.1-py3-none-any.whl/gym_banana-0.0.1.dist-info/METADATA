@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gym-banana
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: gym (>=0.2.3)
+Requires-Dist: pandas
+Requires-Dist: cfg-load
+
+UNKNOWN
+
+

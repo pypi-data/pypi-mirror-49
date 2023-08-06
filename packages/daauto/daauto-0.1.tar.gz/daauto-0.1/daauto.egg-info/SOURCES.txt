@@ -1,0 +1,7 @@
+setup.py
+daauto/__init__.py
+daauto.egg-info/PKG-INFO
+daauto.egg-info/SOURCES.txt
+daauto.egg-info/dependency_links.txt
+daauto.egg-info/not-zip-safe
+daauto.egg-info/top_level.txt

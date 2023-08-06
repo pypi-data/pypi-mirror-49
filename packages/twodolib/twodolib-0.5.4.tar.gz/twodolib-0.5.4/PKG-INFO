@@ -1,0 +1,174 @@
+Metadata-Version: 1.1
+Name: twodolib
+Version: 0.5.4
+Summary: Functions to manage the 2DoApp from the command line.
+Home-page: https://github.com/KarstenSchulz/twodolib
+Author: Karsten Schulz
+Author-email: github@karstenschulz.biz
+License: ISCL
+Description: ======================================================
+        twodolib - A commandline helper to add tasks to 2DoApp
+        ======================================================
+        
+        
+        .. image:: https://img.shields.io/github/release/KarstenSchulz/twodolib.svg
+            :target: https://github.com/KarstenSchulz/twodolib/releases
+        
+        .. image:: https://img.shields.io/coveralls/KarstenSchulz/twodolib.svg
+            :target: https://coveralls.io/github/KarstenSchulz/twodolib?branch=master
+        
+        .. image:: https://img.shields.io/requires/github/KarstenSchulz/twodolib.svg
+            :target: https://requires.io/github/KarstenSchulz/twodolib/requirements/?branch=master
+        
+        .. image:: https://img.shields.io/pypi/v/twodolib.svg
+            :target: https://pypi.python.org/pypi/twodolib
+        
+        .. image:: https://img.shields.io/github/license/KarstenSchulz/twodolib.svg
+            :target: https://opensource.org/licenses/ISC
+        
+        
+        Description
+        -----------
+        
+        This package provides the library ``twodolib`` and a command line utility
+        ``task2do`` to add tasks, projects and checklists to the macOS App
+        `2DoApp <http://www.2doapp.com>`_ from the command line.
+        
+        Since version 1.5 (Mac) 2Do supports adding tasks by using an URL scheme.
+        For example, if you want to add the task *Save the world.*, you can open the
+        URL::
+        
+            twodo://x-callback-url/add?task=Save%20the%20world.
+        
+        to add this task to your 2Do App (see: https://www.2doapp.com/kb/article/url-schemes.html)
+        
+        The ``task2do`` command supports creating such URLs from the command line.
+        To print such an URL for a task without adding it, just enter::
+        
+            task2do "Save the world."
+        
+        which prints the URL to stdout like this::
+        
+            twodo://x-callback-url/add?task=Save%20the%20world.
+        
+        If you want to actually add the task to your 2Do App, use the ``-e`` or
+        ``--execute`` option::
+        
+                task2do -e "Save the world."
+                # no output here, but the task should be added into your standard list in 2Do
+        
+        Features
+        --------
+        
+        * runs with Python 3 (if you need py27 support please use release `0.4.0 <https://github.com/KarstenSchulz/twodolib/releases/tag/0.4.1>`_)
+        * Create tasks on the command line and show the corresponding URL scheme, for copy and pasting it.
+        * Create tasks on the command line and open the corresponding URL scheme to send it to `2DoApp <http://www.2doapp.com>`_
+        
+        See the documentation at http://twodolib.readthedocs.org/en/latest/
+        
+        Install
+        -------
+        
+        See `docs/installation.rst <https://github.com/KarstenSchulz/twodolib/blob/master/docs/installation.rst>`_
+        (It's just ``pip install twodolib``)
+        
+        
+        Dependencies
+        ------------
+        
+        * wheel
+        
+        License
+        -------
+        
+        * Free software: ISC license
+        
+        .. Documentation: https://twodolib.readthedocs.org.
+        
+        
+        
+        
+        
+        History
+        =======
+        
+        0.5.4 (2019-07-28)
+        ------------------
+        
+        updated HISTORY.txt file (gosh!)
+        
+        0.5.3 (2019-07-28)
+        ------------------
+        
+        removes unnecessary dependencies.
+        
+        0.5.2 (2019-07-15)
+        ------------------
+        
+        Updated requirements.
+        
+        
+        0.5.1 (2018-11-14)
+        ------------------
+        
+        Please update, because package requests was updated for security reasons!
+        
+        * updated requirements
+        
+        
+        0.5.0 (2018-08-08)
+        ------------------
+        
+        * dropping Python 2.7 support
+        * implemented ``forParentName``
+        * print taskid
+        
+        0.4.0 (2018-08-07)
+        ------------------
+        
+        * you can paste tasks now, even as subtasks of a project. See help or docs!
+        * minor fixes
+        
+        0.3.0 (2017-05-28)
+        ------------------
+        
+        * added 'action' property of tasks (e.g. url, phone, ...)
+        * switched from webbrowser.open to subprocess.call(['open', ...)
+        
+        0.2.1 (2015-09-21)
+        ------------------
+        
+        * fixed classifier in setup.py
+        * fixed #3 - adding to lists works now.
+        
+        
+        0.2.0 (2015-09-20)
+        ------------------
+        
+        * first public release.
+        
+        
+        0.1.0 (unreleased)
+        ------------------
+        
+        * ADD: more commandline options implemented: repeat, due, dueTime, start
+        * ADD: docs
+        
+        
+        0.0.1 (2015-09-14)
+        ------------------
+        
+        * not released - pre alpha.
+        
+Keywords: twodolib tool task2do task-management
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities

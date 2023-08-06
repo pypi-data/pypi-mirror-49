@@ -1,0 +1,6 @@
+README.md
+setup.py
+rubypass.egg-info/PKG-INFO
+rubypass.egg-info/SOURCES.txt
+rubypass.egg-info/dependency_links.txt
+rubypass.egg-info/top_level.txt

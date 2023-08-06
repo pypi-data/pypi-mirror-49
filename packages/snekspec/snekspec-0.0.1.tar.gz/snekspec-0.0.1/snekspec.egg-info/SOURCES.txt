@@ -1,0 +1,10 @@
+README.md
+setup.py
+snekspec/__init__.py
+snekspec/core.py
+snekspec/wiadro.py
+snekspec.egg-info/PKG-INFO
+snekspec.egg-info/SOURCES.txt
+snekspec.egg-info/dependency_links.txt
+snekspec.egg-info/requires.txt
+snekspec.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: pymultienv
+Version: 0.0.1
+Summary: pymultienv is a command to help you deal with multiple python environments
+Home-page: https://veltzer.github.io/pymultienv
+Author: Mark Veltzer
+Author-email: mark.veltzer@gmail.com
+Maintainer: Mark Veltzer
+Maintainer-email: mark.veltzer@gmail.com
+License: MIT
+Download-URL: https://github.com/veltzer/pymultienv
+Description: this is the long description of pymultienv
+Keywords: git python repositories multiple
+Platform: python3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3

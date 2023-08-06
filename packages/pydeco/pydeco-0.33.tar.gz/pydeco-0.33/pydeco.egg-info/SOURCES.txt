@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pydeco/__init__.py
+pydeco/decorator.py
+pydeco/utils.py
+pydeco.egg-info/PKG-INFO
+pydeco.egg-info/SOURCES.txt
+pydeco.egg-info/dependency_links.txt
+pydeco.egg-info/not-zip-safe
+pydeco.egg-info/requires.txt
+pydeco.egg-info/top_level.txt

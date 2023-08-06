@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: khipupy
+Version: 0.1.1
+Summary: A Python wrapper for the khipu APIs, for the forgotten devs
+Home-page: https://github.com/N1c0Dev/khipupy
+Author: Nicolás Góngora 
+Author-email: nicolasgongar@gmail.com
+License: MIT
+Download-URL: https://github.com/N1c0Dev/khipupy/archive/v0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: khipu,api,apiclient,api-wrapper,pagos-khipu
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

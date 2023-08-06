@@ -1,0 +1,6 @@
+#!python
+from xtgen import cmd_line
+
+cmdline = cmd_line.CmdLine()
+cmdline.run()
+

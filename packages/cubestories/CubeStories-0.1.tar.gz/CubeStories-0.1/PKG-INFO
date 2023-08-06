@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: CubeStories
+Version: 0.1
+Summary: Data Story Pattern Analysis for LOSD
+Home-page: https://github.com/MaciejJanowski/CubeStories
+Author: Maciej Janowski
+Author-email: maciej.janowski@insight-centre.org
+License: MIT
+Description: # CubeStories
+        CubeStories allows querying Linked Open Statistical by Providing parameters in a form of Python dictionaries(JSON)
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

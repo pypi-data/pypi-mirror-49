@@ -1,0 +1,8 @@
+README.md
+go_stats.py
+setup.py
+go_stats.egg-info/PKG-INFO
+go_stats.egg-info/SOURCES.txt
+go_stats.egg-info/dependency_links.txt
+go_stats.egg-info/requires.txt
+go_stats.egg-info/top_level.txt

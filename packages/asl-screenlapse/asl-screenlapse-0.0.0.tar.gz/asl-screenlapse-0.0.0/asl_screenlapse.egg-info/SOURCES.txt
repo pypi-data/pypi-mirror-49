@@ -1,0 +1,6 @@
+README.md
+setup.py
+asl_screenlapse.egg-info/PKG-INFO
+asl_screenlapse.egg-info/SOURCES.txt
+asl_screenlapse.egg-info/dependency_links.txt
+asl_screenlapse.egg-info/top_level.txt

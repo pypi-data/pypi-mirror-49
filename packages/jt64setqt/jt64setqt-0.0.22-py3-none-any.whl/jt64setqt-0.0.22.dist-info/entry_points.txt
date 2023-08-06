@@ -1,0 +1,3 @@
+[console_scripts]
+jt64setqt = jt64setqt.__main__:main
+

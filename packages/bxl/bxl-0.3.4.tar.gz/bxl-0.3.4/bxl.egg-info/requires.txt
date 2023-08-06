@@ -1,0 +1,4 @@
+requests>=2.0.0
+urllib3>=1.2
+dateparser>=0.7.0
+six>=1.12.0

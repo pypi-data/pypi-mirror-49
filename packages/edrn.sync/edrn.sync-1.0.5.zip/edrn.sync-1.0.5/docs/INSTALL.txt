@@ -1,0 +1,79 @@
+Installation
+************
+
+This document tells you how to install edrn.sync.
+
+
+Quick Instructions
+==================
+
+Run::
+
+    pip install edrn.sync
+
+What?  You don't have pip_?  You're seriously still using easy_install_?
+Sigh::
+
+    easy_install edrn.sync
+
+That's it.  (Of course, you might want to put it into a buildout_ or a
+virtualenv_).
+
+
+Full Instructions
+=================
+
+edrn.sync requires the Python_ programming language.  We recommend version 2.4
+or later.  As of this writing, 2.7 is the latest stable version.  If Python is
+not yet installed on your system, you can find binary and and source
+distributions from the Python website.
+
+To test if a correct version of Python is available on your system, run::
+
+    python -V
+    
+You should see output similar to::
+
+    Python 2.7
+    
+indicating the version of Python installed.  edrn.sync also requires `Agile
+OODT`_.  OODT_ is Object Oriented Data Technology, a framework for metadata
+and data grids.  Agile OODT is a Python version of OODT that supports higher
+performance and easier integration than the Java_ version.
+
+By far the easiest, recommended, and encouraged way to install edrn.sync is
+to use pip_.  If your Python installation has pip available to it (and *all*
+virtualenvs do), then this one command is all you need to run in order to
+download, build, install, and generate command-line tools all in one go::
+
+    pip install edrn.sync
+    
+That will also download and install all dependencies, including Agile OODT.  
+
+
+Executables
+-----------
+
+The commands ``dmccsync`` and ``dmccgroupsync`` will be generated and placed
+with your standard installation directory for Python commands.  Usually, this
+is the same location as the ``python`` executable itself.
+
+
+Issues and Questions
+====================
+
+To report any problems with or ask for help about edrn.sync, visit our
+contact_  web page.
+
+
+.. References:
+.. _Agile OODT: http://oodt.apache.org/components/agility/
+.. _buildout: http://www.buildout.org/
+.. _contact: http://cancer.jpl.nasa.gov/
+.. _easy_install: http://peak.telecommunity.com/DevCenter/EasyInstall
+.. _Java: http://tinyurl.com/5kng2h
+.. _OODT: http://oodt.apache.org/
+.. _Python: http://python.org/
+.. _virtualenv: http://pypi.python.org/pypi/virtualenv
+.. _pip: http://www.pip-installer.org/
+

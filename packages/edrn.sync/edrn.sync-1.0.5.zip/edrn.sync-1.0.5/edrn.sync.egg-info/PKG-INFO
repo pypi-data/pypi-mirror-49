@@ -1,0 +1,213 @@
+Metadata-Version: 2.1
+Name: edrn.sync
+Version: 1.0.5
+Summary: EDRN Sync Services
+Home-page: https://github.com/EDRN/edrn.sync
+Author: Chris Mattmann
+Author-email: chris.a.mattmann@jpl.nasa.gov
+License: Copyright 2008-2019 by the California Institute of Technology.  ALL RIGHTS
+RESERVED.
+
+The Software is owned by Caltech/JPL and is protected by United States
+copyright laws and applicable international treaties and/or conventions.  The
+United States Government may have prior rights to use some or all of the
+Software as determined under applicable contracts and license agreements with
+Caltech/JPL.
+
+This software was developed at the Jet Propulsion Laboratory, an operating
+division of the California Institute of Technology and is not available for
+use by any person, organization, or other entity without prior, specific
+written permission.
+
+Description: **********
+        edrn.sync
+        **********
+        
+        .. contents::
+        
+        EDRN Sync provides an API for slurping up DMCC RDF representing
+        EDRN users and groups and registering those users into our EDRN 
+        IC LDAP server.
+        
+        Installation
+        ************
+        
+        This document tells you how to install edrn.sync.
+        
+        
+        Quick Instructions
+        ==================
+        
+        Run::
+        
+            pip install edrn.sync
+        
+        What?  You don't have pip_?  You're seriously still using easy_install_?
+        Sigh::
+        
+            easy_install edrn.sync
+        
+        That's it.  (Of course, you might want to put it into a buildout_ or a
+        virtualenv_).
+        
+        
+        Full Instructions
+        =================
+        
+        edrn.sync requires the Python_ programming language.  We recommend version 2.4
+        or later.  As of this writing, 2.7 is the latest stable version.  If Python is
+        not yet installed on your system, you can find binary and and source
+        distributions from the Python website.
+        
+        To test if a correct version of Python is available on your system, run::
+        
+            python -V
+            
+        You should see output similar to::
+        
+            Python 2.7
+            
+        indicating the version of Python installed.  edrn.sync also requires `Agile
+        OODT`_.  OODT_ is Object Oriented Data Technology, a framework for metadata
+        and data grids.  Agile OODT is a Python version of OODT that supports higher
+        performance and easier integration than the Java_ version.
+        
+        By far the easiest, recommended, and encouraged way to install edrn.sync is
+        to use pip_.  If your Python installation has pip available to it (and *all*
+        virtualenvs do), then this one command is all you need to run in order to
+        download, build, install, and generate command-line tools all in one go::
+        
+            pip install edrn.sync
+            
+        That will also download and install all dependencies, including Agile OODT.  
+        
+        
+        Executables
+        -----------
+        
+        The commands ``dmccsync`` and ``dmccgroupsync`` will be generated and placed
+        with your standard installation directory for Python commands.  Usually, this
+        is the same location as the ``python`` executable itself.
+        
+        
+        Issues and Questions
+        ====================
+        
+        To report any problems with or ask for help about edrn.sync, visit our
+        contact_  web page.
+        
+        
+        .. References:
+        .. _Agile OODT: http://oodt.apache.org/components/agility/
+        .. _buildout: http://www.buildout.org/
+        .. _contact: http://cancer.jpl.nasa.gov/
+        .. _easy_install: http://peak.telecommunity.com/DevCenter/EasyInstall
+        .. _Java: http://tinyurl.com/5kng2h
+        .. _OODT: http://oodt.apache.org/
+        .. _Python: http://python.org/
+        .. _virtualenv: http://pypi.python.org/pypi/virtualenv
+        .. _pip: http://www.pip-installer.org/
+        
+        
+        Using EDRN Sync Services
+        ************************
+        
+        Installing the EDRN Sync Services package makes available the following
+        commands on your computer:
+        
+        ``dmccsync`` command
+            The ``dmccsync`` command lets you slurp up a DMCC RDF file containing users
+            that need to be entered into EDRN IC LDAP.
+        ``dmccgroupsync`` command
+            Takes a DMCC RDF users file and a sites file and imports the associated
+            PI groups and collaborative groups into the EDRN IC LDAPS server.
+        ``secureoldpasswords`` command
+            Goes through all existing LDAP users and tests if they're using the old,
+            insecure default password and changes those passwords to something
+            randomized.
+        
+        Changelog
+        *********
+        
+        
+        1.0.5 - Security
+        ================
+        
+        This release addresses a vulnerability created by weak default passwords
+        sync'd from the DMCC user list. It generates more secure random passwords for
+        new users and also provides a utility for detecting old weak passwords and
+        changing them to something randomized.
+        
+        
+        1.0.4 - Packaging
+        =================
+        
+        This release updates the package to be compatible with PEP-470 and updates
+        zc.buildout & setuptools compatibility.
+        
+        
+        1.0.3 - Holding Onto Heather's Changes
+        ======================================
+        
+        This release addresses the following issue:
+        
+        * CA-1022 - Preserve people manually added to groups
+        
+        
+        1.0.2 - Where's My Chair?
+        =========================
+        
+        This release addresses the following issues:
+        
+        * CA-1020 - dmccgroupsync script ignores chair, cochair, consultant; it adds
+          only "member" to collaborative groups
+        
+        
+        1.0.1 - Fixed URL
+        =================
+        
+        This release fixes the download URL of the package.
+        
+        
+        1.0.0 - All Official-Like
+        =========================
+        
+        This release marks an official release of edrn.sync for use with the EDRN
+        Directory Service.
+        
+        
+        0.0.1 - Kumbaya
+        ===============
+        
+        This release adds group creation programs and APIs including the ``dmccgroupsync``
+        script which implements Heather Kincaid's algorithm for adding groups and syncing them
+        based on the DMCC RDF. For more information see https://oodt.jpl.nasa.gov/jira/browse/CA-669.
+        
+        For the issue tracker, see
+        http://oodt.jpl.nasa.gov/jira/browse/CA.
+        
+        
+        0.0.0 - Initial
+        ===============
+        
+        This is an initial release of EDRN (EDRN_) Sync Services supporting minimal ``dmccsync``
+        functionality.
+        
+        
+        .. References:
+        .. _EDRN: http://cancer.jpl.nasa.gov
+        
+Keywords: edrn sync ldap dmcc informatics center
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: test

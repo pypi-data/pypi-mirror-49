@@ -1,0 +1,5 @@
+[console_scripts]
+dmccgroupsync = edrn.sync.dmccmakegroups:main
+dmccsync = edrn.sync.dmccsync:main
+secureoldpasswords = edrn.sync.oldpasswords:main
+

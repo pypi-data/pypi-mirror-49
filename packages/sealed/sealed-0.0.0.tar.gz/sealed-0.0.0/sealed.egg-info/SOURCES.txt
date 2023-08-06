@@ -1,0 +1,7 @@
+setup.py
+sealed.egg-info/PKG-INFO
+sealed.egg-info/SOURCES.txt
+sealed.egg-info/dependency_links.txt
+sealed.egg-info/top_level.txt
+src/__init__.py
+tests/__init__.py

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+rm -rf meridional; git clone https://patriciacclarke1992:Z0xIlc9aw@github.com/patriciacclarke1992/meridional && cd meridional && python3 saracen.py $1

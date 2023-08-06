@@ -1,0 +1,10 @@
+aspider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aspider/aspider.py,sha256=gAn-U-87rcWo92YBo33_9s7-aIiW-xrZXyxSs0YJ4_8,3497
+aspider/crawling.py,sha256=FaSxV6l0R6PDh0Wf_PYPnxbImRrbYEcjOIzgR79P3kc,10401
+aspider/reporting.py,sha256=kBMIgo52Eiqod2rik4FxWRU-pgcMItL_pWjjGRuGWyU,2483
+aspider/routeing.py,sha256=0NohK5qDFqWzCwvKgEdzOf5O8g6USUNZLUuoQm08xu8,4833
+aspider-0.0.1.dist-info/LICENSE.md,sha256=Sgoj0gdJ4NN_5s5SQtOw15mA4W1ig3w-2te57Hdmgbg,1479
+aspider-0.0.1.dist-info/METADATA,sha256=nxIh3EiR9JQ_t-Vr3-kaH13o4NI-WlNUd8m0P_NuwAM,919
+aspider-0.0.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+aspider-0.0.1.dist-info/top_level.txt,sha256=GE7cG1AQctr8Uk8IJoxgjm2xCKiFabfMdTNCD4CaecY,8
+aspider-0.0.1.dist-info/RECORD,,

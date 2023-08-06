@@ -1,0 +1,8 @@
+README.md
+setup.py
+prettierfier/__init__.py
+prettierfier/prettierfier.py
+prettierfier.egg-info/PKG-INFO
+prettierfier.egg-info/SOURCES.txt
+prettierfier.egg-info/dependency_links.txt
+prettierfier.egg-info/top_level.txt

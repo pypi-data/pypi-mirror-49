@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pyslicetime
+Version: 0.2
+Summary: Python Slice Timing Correction
+Home-page: https://github.com/Charestlab/pyslicetime
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: neuroscience
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research

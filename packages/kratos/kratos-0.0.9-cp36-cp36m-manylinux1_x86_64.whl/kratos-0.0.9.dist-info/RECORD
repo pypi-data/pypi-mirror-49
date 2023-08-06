@@ -1,0 +1,11 @@
+_kratos.cpython-36m-x86_64-linux-gnu.so,sha256=6pqFmZX9I7YXUFSxdzzS4Rdr-LstwxdBP44zUn3V3jE,4066008
+kratos/pyast.py,sha256=LyUQDs50tmJftyRnaP4r9qZE06-ur8GlHgplD7T1dh0,12223
+kratos/passes.py,sha256=lxidhmO5GSu45DTnCTeh2UewDAw8VLc6wG7dUwX-qB4,3314
+kratos/__init__.py,sha256=8JBmZ8TDoSi-HYmYCi7C9tyml_eTl_obAPQILxpii7g,1078
+kratos/util.py,sha256=uTtpFHB_nzt0lYD9c2zC5gLRwcdsCOObXGzl8x5ZgVo,3178
+kratos/generator.py,sha256=njKeGV76UzmYULPx2sAatD_RC9j6mQZmyiSSP2imm8E,19301
+kratos/stmts.py,sha256=aucmzdDHgzEAvzbs4r24wymYPWJJzGrq6GlrrLrXOSA,1599
+kratos-0.0.9.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
+kratos-0.0.9.dist-info/top_level.txt,sha256=o66PCbIziohtP0yEqDHae3EsfQf169Bvt9q-fvMbfyM,15
+kratos-0.0.9.dist-info/METADATA,sha256=3FLIvL28chEph1XiNB2ztoGaObMGfCUrztiQfeh09ro,9206
+kratos-0.0.9.dist-info/RECORD,,

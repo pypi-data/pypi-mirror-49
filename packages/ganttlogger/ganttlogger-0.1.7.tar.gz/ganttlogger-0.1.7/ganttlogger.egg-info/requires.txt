@@ -1,0 +1,7 @@
+matplotlib
+numpy
+psutil
+pynput
+pypiwin32
+colorama
+pywin32>=223

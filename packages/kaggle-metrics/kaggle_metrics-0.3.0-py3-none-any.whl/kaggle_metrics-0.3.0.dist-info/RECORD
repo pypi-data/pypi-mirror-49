@@ -1,0 +1,11 @@
+kaggle_metrics/__init__.py,sha256=VcIu3QiG5OsKpomIv3pCScgZRrrfBfAkQep7Kt1iVhY,903
+kaggle_metrics/classification.py,sha256=2u5uD_V-pLYhR2hmNxOHu--747nVwnJsFsl3AbfaWI0,6126
+kaggle_metrics/order_based.py,sha256=c4cpr_nBEh5urlJ3NgSP-imVBUJulagzDSJj-s6ImFs,3202
+kaggle_metrics/other.py,sha256=iD-kDc7VKJF7CmMSvSd7RiXckFVoWU0ePMFRKcVS1Ho,1476
+kaggle_metrics/pdf.py,sha256=6p9Ok1_hyDBWr-mJpVBfBzrnjgelAyV8oQ7DhibKsvA,626
+kaggle_metrics/regression.py,sha256=CtVSZih9S0jvnM3WnGJGj9WQwiWLX5bIZW5FzwU2dqo,3667
+kaggle_metrics/utils.py,sha256=-Y5Npt9YzjK-Cjdzci_fjehNLdUTh8C5mAAn3f6JN9w,1889
+kaggle_metrics-0.3.0.dist-info/METADATA,sha256=JiH3HAV3BLXUS2F1yD3gkcKOmuCKyDRU3NdrTMDQcmk,1669
+kaggle_metrics-0.3.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+kaggle_metrics-0.3.0.dist-info/top_level.txt,sha256=_S2kHwEL6xULjUL5jvT3gpnMZ66Cyj8KbZpkKY46ZJw,15
+kaggle_metrics-0.3.0.dist-info/RECORD,,

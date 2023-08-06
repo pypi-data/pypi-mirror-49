@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PyReinforce
+Version: 0.1
+Summary: Deep Reinforcement Learning library for Python
+Home-page: https://github.com/aserhiychuk/pyreinforce
+Author: Anton Serhiychuk
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.0)
+Provides-Extra: gym
+Requires-Dist: gym ; extra == 'gym'
+Provides-Extra: tensorflow
+Requires-Dist: tensorflow (>=1.0) ; extra == 'tensorflow'
+
+UNKNOWN
+
+

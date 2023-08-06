@@ -1,0 +1,8 @@
+setup.py
+dbmgt/__init__.py
+dbmgt/mysql.py
+dbmgt.egg-info/PKG-INFO
+dbmgt.egg-info/SOURCES.txt
+dbmgt.egg-info/dependency_links.txt
+dbmgt.egg-info/requires.txt
+dbmgt.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: dbmgt
+Version: 1.1
+Summary: mysql management package
+Home-page: http://blog.swcloud.top
+Author: sunway
+Author-email: sw1022@gmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: bee,egg
+Platform: any
+Requires-Python: >=3.5, <=3.8

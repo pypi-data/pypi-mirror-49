@@ -1,0 +1,10 @@
+texttoppt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+texttoppt/chatParser.py,sha256=WcpMn7asNovGdxYt7C9FB5x1IAlk7t5BE_zK5lJJ8PQ,3992
+texttoppt/orchestrator.py,sha256=Imp-Bqbi-6ACRPnatT9hszfOiq4mtAan1BfSFMUYpfc,2045
+texttoppt/slideGenerator.py,sha256=c2Dw1qEGoc3DktTko6n-zuSOGjz59dIgPNA-oK99oIk,2382
+texttoppt/test_chatParser.py,sha256=MTrfwUci1BGgXPqqz5zqjWgDLYQloRJLsFmrNFRb7Qw,2480
+TextToPPT-0.1.1.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+TextToPPT-0.1.1.dist-info/METADATA,sha256=drdxRV5gWuOr6eWfa43NKcMORhvmtwJo-rzbmULYfNo,884
+TextToPPT-0.1.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+TextToPPT-0.1.1.dist-info/top_level.txt,sha256=cbmreDy45h4C0ZQn6Td9XDGOrDKFetQm9Wr_2KuY9uY,10
+TextToPPT-0.1.1.dist-info/RECORD,,

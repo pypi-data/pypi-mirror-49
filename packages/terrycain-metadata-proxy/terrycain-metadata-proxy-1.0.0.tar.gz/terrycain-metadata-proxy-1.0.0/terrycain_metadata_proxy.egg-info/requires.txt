@@ -1,0 +1,5 @@
+aiohttp>=3.5.4
+netifaces>=0.10.7
+
+[uvloop]
+uvloop>=0.12.2

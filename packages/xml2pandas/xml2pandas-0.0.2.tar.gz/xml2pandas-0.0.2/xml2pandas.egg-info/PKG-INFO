@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: xml2pandas
+Version: 0.0.2
+Summary: A simple Django app to compare numerical matrices simply
+Home-page: https://github.com/chasek23/xml2pandas
+Author: Chase Kelly
+Author-email: chase@microsearch.net
+License: MIT License
+Download-URL: https://github.com/chasek23/xml2pandas/archive/0.0.0.tar.gz
+Project-URL: Funding, https://microsearch.cloud/
+Project-URL: Say Thanks!, http://chasekel.ly/
+Project-URL: Source, https://github.com/chasek23/xml2pandas
+Project-URL: Tracker, https://github.com/chasek23/xml2pandas/issues
+Description: # xml2pandas
+        
+        ##### Creator: Chase Kelly
+        ##### Last Updated: 7/2019
+        
+        This package is intended to turn 2-D data in `.xml` format into a pandas DataFrame.
+        
+        ### Use:
+        
+        - `from xml2pandas import ReadXML`
+        - `xml = ReadXML('/path/to/file.xml')`
+        - `xml()` - preserving call for inevitable keywords and options
+            - `xml(detect=True)` will convert numeric colum
+        - `df = xml.df`
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown

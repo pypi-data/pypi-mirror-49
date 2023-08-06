@@ -1,0 +1,12 @@
+clusterking_physics/__init__.py,sha256=8Ij17tGOqujtGADnapEGny08ejFZrhV2gXN2alYoJs0,50
+clusterking_physics/version.txt,sha256=KXtQ8IOG01Ifj9ry94642dCs30UtLmFZaQX7o3IIx5I,6
+clusterking_physics/models/__init__.py,sha256=8Ij17tGOqujtGADnapEGny08ejFZrhV2gXN2alYoJs0,50
+clusterking_physics/models/bdlnu/__init__.py,sha256=8Ij17tGOqujtGADnapEGny08ejFZrhV2gXN2alYoJs0,50
+clusterking_physics/models/bdlnu/amplitude.py,sha256=ZIhT1uL4Fsc4zauC2TQWqhEeqQWlIOjyvgSDN1DAyCw,5051
+clusterking_physics/models/bdlnu/distribution.py,sha256=KTI_m10PeE-GCZ_ZJMjeX2oHLT8gTPXkc4GoOnIGpPg,10071
+clusterking_physics/models/bdlnu/form_factors.py,sha256=qM5wX4o2FawvUDrstmSZNIQYfl5bwukiFMK7uJxDN04,479
+clusterking_physics/models/bdlnu/inputs.py,sha256=_DRaF4qAXG-V3ozNi5zwOyxQnctf556HtFK4GXAl-vs,775
+clusterking_physics-0.1.2.dist-info/METADATA,sha256=GTgNRJ5MAmVtNkRQ-QuoGEq9Ekv2I2s_JYQUTQc96aw,2311
+clusterking_physics-0.1.2.dist-info/RECORD,,
+clusterking_physics-0.1.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+clusterking_physics-0.1.2.dist-info/top_level.txt,sha256=OVSqgZjMpQbZeakrQimXfC-kg82mCEc5PFtdb48wsPQ,20

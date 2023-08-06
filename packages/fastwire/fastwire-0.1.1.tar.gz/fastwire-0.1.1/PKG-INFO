@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: fastwire
+Version: 0.1.1
+Summary: Easy data transfer between classes.
+Home-page: https://github.com/pythoro/fastwire.git
+Author: Reuben Rusk
+Author-email: pythoro@mindquip.com
+License: UNKNOWN
+Download-URL: https://github.com/pythoro/fastwire/archive/v0.1.1.zip
+Description: # fastwire
+        
+        Fastwire is a simple package to facilitate communication between objects. It provides similar functionality to Blinker, but uses some newer Python features. It uses an Inversion-of-Control and Dependency injection to help keep code simple.
+        
+        ## Basic usage
+        
+        It's recommended to use the decorator to connect signals, like this.
+        
+        ```python
+        
+        import fastwire
+        
+        sc = fastwire.SignalContainer()
+        signal = sc.signal()
+        
+        class A():
+        	@fastwire.connect_to(signal)
+        	def connected(self, a):
+        		print(a)
+        
+        a = A()		
+        signal.emit(a=5.7) # Prints 5.7
+        
+        ```
+        
+        Alternatively, connect manually:
+        
+        
+        ```python
+        
+        import fastwire
+        
+        sc = fastwire.SignalContainer()
+        signal = sc.signal()
+        
+        class B():
+        	def connected(self, a):
+        		print(a)
+        
+        a = B()
+        signal.connect(a.connected)	
+        signal.emit(a=5.7) # Prints 5.7
+        
+        ```
+Keywords: WIRE,CONNECTION,UTILITY
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown

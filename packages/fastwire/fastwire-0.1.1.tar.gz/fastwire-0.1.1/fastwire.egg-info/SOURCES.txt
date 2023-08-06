@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+fastwire/__init__.py
+fastwire/core.py
+fastwire.egg-info/PKG-INFO
+fastwire.egg-info/SOURCES.txt
+fastwire.egg-info/dependency_links.txt
+fastwire.egg-info/top_level.txt
+test/test_decorators.py
+test/test_signal.py
+test/test_signalcontainer.py

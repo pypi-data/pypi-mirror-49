@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+cells_detection/__init__.py
+cells_detection/data_loader.py
+cells_detection/fct.py
+cells_detection/ki67_segmentation.py
+cells_detection/segmentation.py
+cells_detection/utils.py
+ki67segmentation.egg-info/PKG-INFO
+ki67segmentation.egg-info/SOURCES.txt
+ki67segmentation.egg-info/dependency_links.txt
+ki67segmentation.egg-info/top_level.txt

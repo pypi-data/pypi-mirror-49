@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+alogs/__init__.py
+alogs.egg-info/PKG-INFO
+alogs.egg-info/SOURCES.txt
+alogs.egg-info/dependency_links.txt
+alogs.egg-info/top_level.txt

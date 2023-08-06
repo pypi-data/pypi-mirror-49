@@ -1,0 +1,14 @@
+invenio_config/__init__.py,sha256=XhpsunavgujWNzkFmtqoCJLk_1DZMIWq_-viANPqi-A,6731
+invenio_config/default.py,sha256=7WnCDN6l-bkYBwgyAjgiF0Czz2PIkXbBTXVBBvA5gHw,1765
+invenio_config/entrypoint.py,sha256=w5Vk70Wcq9tJ0ujfTy6dTGCSWzIN4CnO5uxivzCg8KE,1499
+invenio_config/env.py,sha256=Ec_SxX2SfqJSZNeKBxW91_4RYGWE3VRA_3uO61EI2T0,1245
+invenio_config/folder.py,sha256=xvUWFM78YnKI8wBpTNdWcAQDXvwwVX3B9VyuNiAS6ZY,1008
+invenio_config/module.py,sha256=hye5fiueYprycyJhMgO9IoraiU1a0gXEpJuwTMH0lZ0,746
+invenio_config/utils.py,sha256=WrUAOJB_9OQ6E4LkZFeGaAT2JiBzgHVz-qKV9UScnEk,2874
+invenio_config/version.py,sha256=0Z26zEvXCxeDZP1M9EM7Qoh5Jg5bsHAwbEJKAZw7U6Y,444
+invenio_config-1.0.2.dist-info/AUTHORS.rst,sha256=sBBcnK2REpIu4rmel815yOA7CM3Es1yAJcCdjna4QJY,361
+invenio_config-1.0.2.dist-info/LICENSE,sha256=7NdusrwW2CBXoBZXOYFnEKLE736o9LpcXGBRdwj0lQg,1067
+invenio_config-1.0.2.dist-info/METADATA,sha256=oHrDCzM6tmL_XZYMguse4efaNgQUxHMNHOV18S76Gn8,3738
+invenio_config-1.0.2.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+invenio_config-1.0.2.dist-info/top_level.txt,sha256=NVOLzL8_yQWDxgoZelcTfYeAHMoDTpGFUE_RYOtcSp8,15
+invenio_config-1.0.2.dist-info/RECORD,,

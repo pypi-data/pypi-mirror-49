@@ -1,0 +1,16 @@
+numpy>=1.10
+xarray
+geomagindices
+
+[cov]
+pytest-cov
+coveralls
+flake8
+mypy
+
+[plot]
+matplotlib
+seaborn
+
+[tests]
+pytest>=3.9

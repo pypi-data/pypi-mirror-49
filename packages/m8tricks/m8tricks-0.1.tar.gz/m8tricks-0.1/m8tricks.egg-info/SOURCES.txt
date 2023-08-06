@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+licence.md
+project.rst
+setup.py
+m8tricks/__init__.py
+m8tricks/m8tricks.py
+m8tricks.egg-info/PKG-INFO
+m8tricks.egg-info/SOURCES.txt
+m8tricks.egg-info/dependency_links.txt
+m8tricks.egg-info/entry_points.txt
+m8tricks.egg-info/requires.txt
+m8tricks.egg-info/top_level.txt

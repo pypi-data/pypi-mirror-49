@@ -1,0 +1,15 @@
+itk/ITKVtkGluePython.py,sha256=52TsLxUrzMlyfS5TiWli7JsC6UutllOlpQYfxSRxUQg,4395
+itk/_ITKVtkGluePython.pyd,sha256=9W8uYghH7bZsNrrPtUNar8Q2nNb3s3Yjje63f_OkXMI,2444800
+itk/itkBoxSpatialObjectToVTKPolyDataFilterPython.py,sha256=2WruihdmJyLpE3D2xl33T3QZjugA3otYcAtHSLGOS24,14953
+itk/itkImageToVTKImageFilterPython.py,sha256=aFhKrQz7hzVdzKgoGm-OAGTo2CEh5tTl0uUAH14czb8,143012
+itk/itkSpatialObjectToVTKPolyDataFilterPython.py,sha256=uSkLVcAzPiNaTN_veX89EU7cDuRANxfur6qwF9_GVZw,16101
+itk/itkVTKImageExportPython.py,sha256=Z36zJgQnsNn5tNozh_ikO4Z69nU6GmbQ7he5lf-p3QM,106140
+itk/itkVTKImageImportPython.py,sha256=Eyux1abtVR1eLYiA_YD-r4jwZfUogmask6n3BRQKbZQ,103417
+itk/itkVTKImageToImageFilterPython.py,sha256=2C0u6uCcCbfSwh8DTv8aVNd-MgXF0w4wGuJ0sXVjapI,123253
+itk/itkViewImagePython.py,sha256=4UUCG9mwQ3A9m8ixyBAEXtfrqrgcna_SHQebBHUITKQ,17935
+itk/Configuration/ITKVtkGlueConfig.py,sha256=M2fxV30Ntsgx8TcpRrZZipZizg57cxfnt_l1BLN-RmU,15210
+itk_vtkglue-0.3.0.dist-info/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+itk_vtkglue-0.3.0.dist-info/METADATA,sha256=iE9awxNanVXzOBBusx23RBR0Fz_1iY7ezHyx35COzSo,1588
+itk_vtkglue-0.3.0.dist-info/WHEEL,sha256=9xypf12nKImEmeTXPJW_OaUqDbHGuvtNEl_1mrZ5ndo,99
+itk_vtkglue-0.3.0.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_vtkglue-0.3.0.dist-info/RECORD,,

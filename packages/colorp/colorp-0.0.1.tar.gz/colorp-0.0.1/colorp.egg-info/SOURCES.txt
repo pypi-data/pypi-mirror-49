@@ -1,0 +1,7 @@
+README.md
+setup.py
+colorp/__init__.py
+colorp.egg-info/PKG-INFO
+colorp.egg-info/SOURCES.txt
+colorp.egg-info/dependency_links.txt
+colorp.egg-info/top_level.txt

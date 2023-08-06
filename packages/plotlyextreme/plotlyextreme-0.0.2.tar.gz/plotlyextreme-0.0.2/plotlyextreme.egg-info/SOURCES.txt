@@ -1,0 +1,7 @@
+README.md
+setup.py
+plotlyextreme.egg-info/PKG-INFO
+plotlyextreme.egg-info/SOURCES.txt
+plotlyextreme.egg-info/dependency_links.txt
+plotlyextreme.egg-info/requires.txt
+plotlyextreme.egg-info/top_level.txt

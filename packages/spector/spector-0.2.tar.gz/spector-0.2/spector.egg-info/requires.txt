@@ -1,0 +1,7 @@
+numpy
+
+[docs]
+m2r
+nbsphinx
+jupyter
+pandas

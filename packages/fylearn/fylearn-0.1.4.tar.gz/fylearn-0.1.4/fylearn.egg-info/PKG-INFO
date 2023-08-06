@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: fylearn
+Version: 0.1.4
+Summary: Fuzzy Machine Learning Algorithms
+Home-page: https://github.com/sorend/fylearn
+Author: Søren Atmakuri Davidsen
+Author-email: sorend@cs.svu-ac.in
+License: MIT
+Download-URL: https://github.com/sorend/fylearn/tarball/0.1.4
+Description: UNKNOWN
+Keywords: machine learning,fuzzy logic,scikit-learn
+Platform: UNKNOWN

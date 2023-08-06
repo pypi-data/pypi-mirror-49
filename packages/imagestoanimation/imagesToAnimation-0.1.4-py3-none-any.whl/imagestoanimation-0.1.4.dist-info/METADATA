@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: imagestoanimation
+Version: 0.1.4
+Summary: Converts a series of images to an animation using OpenCV
+Author: jpsmithnl
+Author-email: jp.smith@mun.ca
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: configargparse (>=0.14.0,<0.15.0)
+Requires-Dist: opencv-python (>=4.1,<5.0)

@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: datakeeper
+Version: 0.0.0
+Summary: Generalized data privacy and consent repository generator.
+Home-page: https://gitlab.com/clear/ClearID/app-datakeeper
+Author: Conrad W Rosenbrock
+Author-email: crosenbrockc@clearcenter.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: argparse
+Requires-Dist: pyparsing
+Requires-Dist: termcolor
+Requires-Dist: tqdm
+Requires-Dist: jinja2
+Requires-Dist: flask
+Requires-Dist: flask-jsonpify
+Requires-Dist: flask-restful
+Requires-Dist: flask-restplus
+Requires-Dist: pyyaml
+Requires-Dist: attrdict
+Requires-Dist: numpy
+
+# ClearID Templated System
+
+This is a python-based project that generates other repositories for generalized
+data privacy and consent systems. For example, the Universal Genealogical System
+(UGS) allows privatized storage of genealogical records and then uses Indy
+Hyperledger to enable consent. This same system is redeployed as ClearID for
+generalized storage of individual data at private home nodes, with consent
+added on top.
+
+

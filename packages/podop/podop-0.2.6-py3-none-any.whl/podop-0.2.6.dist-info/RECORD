@@ -1,0 +1,10 @@
+podop/__init__.py,sha256=RCWdx4b1KopfMv3s5JM9M7985IRGgpcY2dCIY3zv3cQ,1184
+podop/dovecot.py,sha256=5UqkFIpxiXZb65L0cT_AM8VJAEFGv7Hd4tnI6Jg9RGM,6179
+podop/postfix.py,sha256=EPZLlttdlkh216rT_NhBTikQSgOSENzFDdJ6eQABVcM,4116
+podop/table.py,sha256=FhuXC58eAvI4d1zqkKHJ9-mLA_3_pBFV7IZM6vpDIU0,2057
+podop-0.2.6.data/scripts/podop,sha256=JBRArUBcI5frRUiLaMosGUNNBqQsjge5jNxnZc7_EZI,1266
+podop-0.2.6.dist-info/LICENSE.md,sha256=IX_IXzJBhU7IB78mQ-XfE8g0cHZ4HihOT39sDwrnuQ4,1277
+podop-0.2.6.dist-info/METADATA,sha256=hPpnz7_Xy2Uq2SodJRtzNObVT_FAGb7HcbL76nv9aO4,3657
+podop-0.2.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+podop-0.2.6.dist-info/top_level.txt,sha256=gtjp6zuin6iUjWuY11zPkwCjz0ghPaOC0t0oZLsZTc0,6
+podop-0.2.6.dist-info/RECORD,,

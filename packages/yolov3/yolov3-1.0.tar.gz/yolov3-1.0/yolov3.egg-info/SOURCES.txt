@@ -1,0 +1,8 @@
+README.md
+setup.py
+yolov3.egg-info/PKG-INFO
+yolov3.egg-info/SOURCES.txt
+yolov3.egg-info/dependency_links.txt
+yolov3.egg-info/entry_points.txt
+yolov3.egg-info/requires.txt
+yolov3.egg-info/top_level.txt

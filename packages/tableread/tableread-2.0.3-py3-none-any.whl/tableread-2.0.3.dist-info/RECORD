@@ -1,0 +1,5 @@
+tableread/__init__.py,sha256=1BDFVo7Zr4O1VmW9tmLYoX7fe8ruZC7VM2SaNEPS87c,12298
+tableread/writer.py,sha256=nN4WPsXNTLJDDwl85fwqVozimhTtxFn1afR2RWzuvIk,3270
+tableread-2.0.3.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+tableread-2.0.3.dist-info/METADATA,sha256=sI3VoLn2ytHmmZtPsCNF1P_XshwhXq-Lq6yvaMST4C4,4539
+tableread-2.0.3.dist-info/RECORD,,

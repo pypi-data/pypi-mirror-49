@@ -1,0 +1,25 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "rlc"
+author = "A. S."
+author-email = "admin-pypi@sotai.tk"
+description-file="README.md"
+dist-name = "RLC"
+keywords = "electronics resistor reactance impedance"
+requires = []
+requires-python = ">=3.5"
+license = "CC0-1.0"
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Intended Audience :: Other Audience",
+	"License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+	"Programming Language :: Python :: 3.5",
+	"Programming Language :: Python :: 3.6",
+	"Programming Language :: Python :: 3.7",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3 :: Only",
+	"Topic :: Scientific/Engineering"
+]

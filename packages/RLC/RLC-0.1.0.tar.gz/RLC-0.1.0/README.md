@@ -1,0 +1,1 @@
+RLC is a collection of methods that aim to make calculations around passive electronic networks like resonant circuits, filters, or resistor networks, easier. It provides functions that allow the user to quickly and painlessly calculate complex impedances, time constants for simple passive networks, the right component values for resonant circuits, etc.

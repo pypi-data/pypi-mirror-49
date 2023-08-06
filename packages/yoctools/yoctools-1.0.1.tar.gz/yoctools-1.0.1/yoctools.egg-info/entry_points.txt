@@ -1,0 +1,3 @@
+[console_scripts]
+toolchain = yoc.toolchain:main
+

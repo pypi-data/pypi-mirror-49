@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: django-stomp
+Version: 0.0.14
+Summary: A simple implementation of STOMP with Django
+Home-page: https://github.com/juntossomosmais/django-stomp
+Author: Ricardo Baltazar Chaves, Willian Antunes
+Author-email: Ricardo Baltazar <ricardobchaves6@gmail.com>, Willian Antunes <willian.lima.antunes@gmail.com>
+License: MIT
+Description: # Django Stomp
+        
+        [![Build Status](https://dev.azure.com/juntos-somos-mais-loyalty/python/_apis/build/status/django-stomp?branchName=master)](https://dev.azure.com/juntos-somos-mais-loyalty/python/_build/latest?definitionId=23&branchName=master)
+        [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+        
+        A simple implementation of STOMP with Django.
+        
+        ## Installation
+        
+        `pip install django_stomp`
+        
+        Add `django_stomp` in your `INSTALLED_APPS` and so be it.
+        
+        ## Configuration process
+        
+        Not yet available, but feel free to see our tests to get insights.
+        
+        
+        ## Tests
+        
+        In order to execute tests, first do the following:
+        
+            docker-compose up -d
+            
+        Then:
+        
+            pipenv run tox
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django :: 2.1
+Classifier: Environment :: Web Environment
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

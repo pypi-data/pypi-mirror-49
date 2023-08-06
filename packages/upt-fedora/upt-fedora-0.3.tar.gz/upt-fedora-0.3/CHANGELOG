@@ -1,0 +1,22 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+Based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
+
+## [0.3] - 2019-07-21
+### Added
+- The "sources" file is now created
+
+### Changed
+- The --output option is no longer discarded.
+
+## [0.2] - 2019-06-29
+### Added
+- Python: default "%files" section
+- Python: add pythonX-devel as a build requirement
+- Python: add a command in the "%prep" section
+
+## [0.1] - 2018-10-04
+###Added
+- Initial code
+- Handle Python packages

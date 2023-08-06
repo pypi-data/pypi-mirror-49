@@ -1,0 +1,7 @@
+pandas
+urllib3
+maya
+certifi
+pyarrow
+requests
+loguru

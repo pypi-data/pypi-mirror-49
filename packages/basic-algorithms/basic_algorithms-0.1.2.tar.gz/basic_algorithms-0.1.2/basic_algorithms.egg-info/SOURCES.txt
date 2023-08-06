@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+basic_algorithms/__init__.py
+basic_algorithms/sorting_algorithms.py
+basic_algorithms/sorting_algorithms_helpers.py
+basic_algorithms.egg-info/PKG-INFO
+basic_algorithms.egg-info/SOURCES.txt
+basic_algorithms.egg-info/dependency_links.txt
+basic_algorithms.egg-info/top_level.txt

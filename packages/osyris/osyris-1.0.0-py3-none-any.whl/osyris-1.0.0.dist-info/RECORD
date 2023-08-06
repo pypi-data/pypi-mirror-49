@@ -1,0 +1,11 @@
+osyris/__init__.py,sha256=MKwcrokLJV9mFvFdcR1XYgXfTcMpBq72LM6JtPuU-cE,135
+osyris/config.py,sha256=sp4SEeMFrz4PB6FAG5sRpNrYoo_bAsWN2rpcV4pN4_M,5885
+osyris/engine.py,sha256=rS4GHiG2MYMY5v5lyGI85ji9qTzl8_pQN0mQXR34BIk,31709
+osyris/ism_physics.py,sha256=pHDj3etVWlL1DmVhsQFZ7MuWiim2yXT0w73D_ZzmNZU,14029
+osyris/load_ramses.py,sha256=82gcSkNKB6ytElJGNG7v_2DRfiyBUsXolTmCJiia5Pc,49724
+osyris/plot.py,sha256=n-KhgO8ltN7y2jxM3UvR-HEPLbMallXjFGfknvBfCQs,59199
+osyris-1.0.0.dist-info/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+osyris-1.0.0.dist-info/METADATA,sha256=GWNhV4ocVc1DhaK-mfUSAMtNxznQLyEvyK7qlGtxeTI,3928
+osyris-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+osyris-1.0.0.dist-info/top_level.txt,sha256=_7138fINpMb2GwHiTaVKlrYqe25vKx5wePxJsBgcUcs,7
+osyris-1.0.0.dist-info/RECORD,,

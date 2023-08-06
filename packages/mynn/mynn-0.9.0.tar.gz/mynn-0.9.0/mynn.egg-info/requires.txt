@@ -1,0 +1,3 @@
+numpy>=1.13
+numba>=0.38
+mygrad>=1.0

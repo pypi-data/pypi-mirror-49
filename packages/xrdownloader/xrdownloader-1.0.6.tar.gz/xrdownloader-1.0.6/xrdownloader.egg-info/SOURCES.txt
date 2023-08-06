@@ -1,0 +1,13 @@
+README.rst
+setup.py
+xrdownloader/__init__.py
+xrdownloader/banner.py
+xrdownloader/convert.py
+xrdownloader/resume.py
+xrdownloader/xrUrllib3Conf.py
+xrdownloader/xrmain.py
+xrdownloader.egg-info/PKG-INFO
+xrdownloader.egg-info/SOURCES.txt
+xrdownloader.egg-info/dependency_links.txt
+xrdownloader.egg-info/requires.txt
+xrdownloader.egg-info/top_level.txt

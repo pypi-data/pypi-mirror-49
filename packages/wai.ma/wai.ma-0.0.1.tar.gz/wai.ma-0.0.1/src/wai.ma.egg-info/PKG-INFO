@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: wai.ma
+Version: 0.0.1
+Summary: Python library of 2-dimensional matrix algorithms.
+Home-page: https://github.com/waikato-datamining/py-matrix-algorithms
+Author: Peter "fracpete" Reutemann
+Author-email: fracpete@waikato.ac.nz
+License: GNU General Public License version 3.0 (GPLv3)
+Description: Python library of 2-dimensional matrix algorithms. 
+        
+        Changelog
+        =========
+        
+        0.0.1 (2019-07-15)
+        -------------------
+        
+        - Initial release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: Python :: 3

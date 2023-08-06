@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: SWMM-xsections-shape-generator
+Version: 0.2
+Summary: US-EPA SWMM Cross-Section curve shape generator
+Home-page: https://github.com/MarkusPic/SWMM_xsections_shape_generator
+Author: Markus Pichler
+Author-email: markus.pichler@tugraz.at
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: sympy
+
+UNKNOWN
+
+

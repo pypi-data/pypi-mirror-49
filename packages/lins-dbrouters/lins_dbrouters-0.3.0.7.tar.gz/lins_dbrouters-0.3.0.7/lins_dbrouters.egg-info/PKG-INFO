@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: lins-dbrouters
+Version: 0.3.0.7
+Summary: Database routers para django rest framework.
+Home-page: https://bitbucket.org/grupolinsferrao/pypck-lins_dbrouters/
+Author: Lucas Lehnen
+Author-email: lucas@lojaspompeia.com.br
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

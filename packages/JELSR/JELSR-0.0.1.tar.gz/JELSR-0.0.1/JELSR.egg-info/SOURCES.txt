@@ -1,0 +1,8 @@
+README.md
+setup.py
+JELSR/JELSR.py
+JELSR/__init__.py
+JELSR.egg-info/PKG-INFO
+JELSR.egg-info/SOURCES.txt
+JELSR.egg-info/dependency_links.txt
+JELSR.egg-info/top_level.txt

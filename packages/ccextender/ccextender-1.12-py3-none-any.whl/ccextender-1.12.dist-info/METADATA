@@ -1,0 +1,299 @@
+Metadata-Version: 2.1
+Name: ccextender
+Version: 1.12
+Summary: Cookiecutter Extended
+Home-page: https://github.com/aslape/ccextender
+Author: aslape
+Author-email: aslape@atlassian.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+<a id="markdown-CCExtender" name="CCExtender"></a>
+# CCExtender -- Cookiecutter with branching builds
+
+(Public github link to be added soon)
+
+<!-- TOC -->
+
+- [CCExtender](#CCExtender)
+    - [Overview](#overview)
+    - [Commands](#commands)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Hello World](#helloworld)
+    - [Configuration](#configuration)
+
+<!-- /TOC -->
+
+<a id="markdown-commands" name="commands"></a>
+## Commands
+
+```bash
+ccextender
+    help
+    --ccx_config, -c <Path to configuration file>
+    --std_template, -s <Path to template containing defaults for your standards> (See #standards)
+    --test_mode, -t #Activates test mode (which disables prompts for stdin)
+    --outdir, -o <Path to desired repository location>
+```
+
+<a id="markdown-installation" name="installation"></a>
+## Installation
+
+Prequisites:
+
+Python 3
+
+oyaml - a python package allowing for yaml files to read as an ordered dictionary
+cookiecutter - a templating application
+
+
+```bash
+pip3 install cookiecutter oyaml
+```
+
+```bash
+pip3 install ccextender
+```
+
+<a id="markdown-usage" name="usage"></a>
+## Usage
+
+CCExtender requires a yaml configuration file and at least one cookiecutter template directory to function.
+
+For more information on how to set up cookiecutter templates, visit: https://cookiecutter.readthedocs.io/en/latest/first_steps.html
+
+For how to setup a configuration file, read the #Configuration section of this doc.
+
+1. Create a configuration file.
+
+Your configuration file will contain the logic for your interactive build, directions to the templates you plan to use, and what templatized changes should be associated with your decisions.
+
+By default, ccextender will look for a file named ccextender.yaml in your current directory, but you can direct it to read any file through the --ccx_config flag:
+
+```bash
+ccextender --ccx_config=/Users/me/Documents/myconfig.yaml
+```
+
+Your configuration file must follow the YAML format. To see how to write a CCExtender config file, see #Configuration.
+
+2. Run CCExtender
+
+Once the configuration file is created, CCExtender will do the rest. All that remains is for you to respond to the prompts established in your YAML file.
+
+Examples of use:
+
+To read in a particular configuration file and write the output to a different directory:
+```bash
+ccextender -c /Users/me/Documents/SecDev_Build.yaml -o /python/src/github.com/asecurityteam/
+```
+
+To see available commands:
+```bash
+ccextender help
+```
+
+To use a specific template for the default values for your standards (#standards):
+```bash
+ccextender -s template-standards
+```
+
+NOTE: This isn't a path or location of the template, but merely the template's directory name. You should add the templates location in the configuration file under the "locations" section.(#configuration)
+
+To run using the default variables:
+
+```bash
+ccextender
+```
+The default values for each command is:
+
+```bash
+--ccx_config, -c = ccextender.yaml
+--std_template, -s = template-standards
+--test_mode, -t = None
+--outdir, -o = .
+```
+
+<a id="markdown-helloworld" name="helloworld"></a>
+Hello World
+
+1. Create practice templates
+
+Create template directories
+
+```bash
+mkdir templates
+cd templates
+
+mkdir -p template-project-info/{{cookiecutter.project_name}}
+mkdir -p template-hello/{{cookiecutter.project_name}}
+mkdir -p template-goodbye/{{cookiecutter.project_name}}
+mkdir -p template-standards/{{cookiecutter.project_name}}
+```
+
+Create README template
+
+In the template-project-info/ directory, add file cookiecutter.json with the following contents:
+
+```json
+{
+"project_name": "HelloWorld",
+"owner": "New User",
+"contact_email": "you@default.com"
+}
+```
+
+Then move into the lower directory:
+
+```bash
+cd {{cookiecutter.project_name}}
+```
+
+Add file README.txt with the following contents:
+
+```text
+{{cookiecutter.project_name}} Project Documentation
+
+This project was created by:
+{{cookiecutter.owner}}
+
+For questions about this project, please email {{cookiecutter.contact_email}}.
+```
+
+Create Hello World template
+
+In the template-hello directory, add file cookiecutter.json with the following contents:
+
+```json
+{
+    "project_name": "HelloWorld",
+    "contact_email": "you@default.com",
+    "owner": "New User",
+    "greeting": "Hello"
+}
+```
+
+Then move into the lower directory:
+
+```bash
+cd {{cookiecutter.project_name}}
+```
+
+Add file hello.py with the following contents:
+
+```python
+print("{{cookiecutter.owner}} would like to say {{cookiecutter.greeting}}")
+```
+
+Create Goodbye template
+
+In the template-goodbye directory, add a file cookiecutter.json with the following content:
+
+```json
+{
+    "project_name": "HelloWorld",
+    "contact_email": "you@default.com",
+    "owner": "New User",
+    "greeting": "Goodbye"
+}
+```
+
+Then move into the lower directory:
+
+```bash
+cd {{cookiecutter.project_name}}
+```
+
+Add file hello.py with the following contents:
+
+```python
+print("{{cookiecutter.owner}} would like to say {{cookiecutter.greeting}}")
+```
+
+Create Standards Template
+
+In the template-standards directory, add file cookiecutter.json with the following contents:
+
+```json
+{
+"project_name": "HelloWorld",
+"owner": "New User",
+"contact_email": "you@default.com"
+}
+```
+
+Create your configuration file
+
+In your templates folder, create a file ccextender.yaml with the following content:
+
+```yaml
+CCX_Version: 1.1
+standard-context:
+  project_name: "HelloWorld"
+  owner: "New User"
+  contact_email: "you@default.com"
+decisions:
+  readme:
+    query:
+      prompt: "Would you like to [1] add project readme info?"
+    yes:
+      - project-info
+  greeting:
+    query:
+      prompt: "Would you like to say [1] hello or [2] goodbye?"
+      include-if:
+        - yes
+    hello:
+      - hello-pack
+    goodbye:
+      - goodbye-pack
+change-packs:
+  hello-pack:
+    template-hello:
+      greeting: "Howdy"
+  goodbye-pack:
+    template-goodbye:
+  project-info:
+    template-project-info:
+locations:
+  home:
+    - <path to your templates folder>
+  template-hello:
+    - $!home$
+    - template-hello
+  template-goodbye:
+    - $!home$
+    - template-goodbye
+  template-project-info:
+    - $!home$
+    - template-project-info
+  template-standards:
+    - $!home$
+    - template-standards
+```
+
+Run CCExtender
+
+Now, navigate to the directory where you saved ccextender.yaml and then type:
+
+```bash
+ccextender
+```
+
+Answer the prompts. Once you are finished, you should see a new repository has been created in your current directory. Navigate into the repo and the run:
+
+```bash
+python hello.py
+```
+
+You should see that your changes have been implemented. Try running the program a few times, and you’ll see how the build changes.
+
+<a id="markdown-configuration" name="configuration"></a>
+## Configuration
+
+
+

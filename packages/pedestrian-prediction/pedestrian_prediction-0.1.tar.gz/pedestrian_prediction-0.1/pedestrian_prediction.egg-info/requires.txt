@@ -1,0 +1,6 @@
+enum34
+scipy
+scikit-learn
+
+[plots]
+plotly

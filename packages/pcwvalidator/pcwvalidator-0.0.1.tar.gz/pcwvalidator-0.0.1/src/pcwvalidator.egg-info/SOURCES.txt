@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/pcwvalidator.egg-info/PKG-INFO
+src/pcwvalidator.egg-info/SOURCES.txt
+src/pcwvalidator.egg-info/dependency_links.txt
+src/pcwvalidator.egg-info/top_level.txt

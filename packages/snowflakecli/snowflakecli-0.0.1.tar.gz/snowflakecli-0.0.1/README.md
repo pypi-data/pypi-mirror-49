@@ -1,0 +1,1 @@
+A mycli-inspired command line interface to snowflake.

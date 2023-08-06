@@ -1,0 +1,9 @@
+metadata_proxy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metadata_proxy/core.py,sha256=z0ZIrn7YvZ8JKrItOYg6EL3hWB_osgWEXTT-5aRd4lI,10626
+metadata_proxy/server.py,sha256=z6HP-J-UKDEsdDas0PpwF4X6Pj6VIqvo6bryqHU33Lk,7786
+metadata_proxy/version.py,sha256=Q5UugsEnTbL68RFvW9YO9CWSDugF8XjbysDvrd_fFo8,116
+terrycain_metadata_proxy-1.5.0.dist-info/METADATA,sha256=HYWV8pobCuhMJ6oCbToVkD4RuX-xgJ8Os-BJuWYTfuQ,5796
+terrycain_metadata_proxy-1.5.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+terrycain_metadata_proxy-1.5.0.dist-info/entry_points.txt,sha256=yQAv1FmOpU3-D0csCOU_CPnwePNXePQW95WsgkQNjds,62
+terrycain_metadata_proxy-1.5.0.dist-info/top_level.txt,sha256=qtdAtS5thlKjmRrGGMPavM9hWhayjg3TBDFqC3Zoba0,15
+terrycain_metadata_proxy-1.5.0.dist-info/RECORD,,

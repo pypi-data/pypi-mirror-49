@@ -1,0 +1,4 @@
+GitPython
+click
+PyGithub
+python-decouple

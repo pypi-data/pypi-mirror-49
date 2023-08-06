@@ -1,0 +1,18 @@
+[paths]
+source =
+   src
+   */site-packages
+
+[run]
+branch = true
+source =
+    mario
+    tests
+parallel = true
+omit =
+     src/mario/sphinx_click.py
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*

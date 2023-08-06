@@ -1,0 +1,9 @@
+README.md
+setup.py
+mplot3d_dragger/__init__.py
+mplot3d_dragger/dragger.py
+mplot3d_dragger.egg-info/PKG-INFO
+mplot3d_dragger.egg-info/SOURCES.txt
+mplot3d_dragger.egg-info/dependency_links.txt
+mplot3d_dragger.egg-info/not-zip-safe
+mplot3d_dragger.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+artellalauncher
+
+[dev]
+wheel
+
+[test]
+pytest

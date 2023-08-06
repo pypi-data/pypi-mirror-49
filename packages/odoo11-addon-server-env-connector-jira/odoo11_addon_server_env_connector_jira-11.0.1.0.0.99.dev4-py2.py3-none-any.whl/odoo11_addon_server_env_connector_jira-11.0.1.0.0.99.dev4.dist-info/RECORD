@@ -1,0 +1,11 @@
+odoo/addons/server_env_connector_jira/README.rst,sha256=daALTWLCg2h-qlBdkrBlcbQCplQmrLv0OKE1jcjWLYk,651
+odoo/addons/server_env_connector_jira/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/server_env_connector_jira/__manifest__.py,sha256=TLH9nQ54ETc3W7U9FBNyfl7fdPpJaB8Bt5OhaFmG6Ps,460
+odoo/addons/server_env_connector_jira/i18n/server_env_connector_jira.pot,sha256=GqNrXygXnGmzgHo5IItPDjmionAS1WtJQmZ7W-UrNtk,1691
+odoo/addons/server_env_connector_jira/models/__init__.py,sha256=JuL1d8OL_Pa0AqtUqwYyvxqzXVJ0I7IhXGjcmFaB6Z4,27
+odoo/addons/server_env_connector_jira/models/jira_backend.py,sha256=kiS9IjvsYgNkjek_JUHILMbV2igH0Fgjbr4qmZS5Z1s,468
+odoo/addons/server_env_connector_jira/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo11_addon_server_env_connector_jira-11.0.1.0.0.99.dev4.dist-info/METADATA,sha256=bEqp9tPawEyK_lx0gkw0ZeYJwBvkJ37rMYCboW1eyYE,1307
+odoo11_addon_server_env_connector_jira-11.0.1.0.0.99.dev4.dist-info/RECORD,,
+odoo11_addon_server_env_connector_jira-11.0.1.0.0.99.dev4.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+odoo11_addon_server_env_connector_jira-11.0.1.0.0.99.dev4.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5

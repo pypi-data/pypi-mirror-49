@@ -1,0 +1,12 @@
+setup.py
+framewatchergui/__init__.py
+framewatchergui/__main__.py
+framewatchergui/gui.py
+framewatchergui/log.py
+framewatchergui/run.py
+framewatchergui.egg-info/PKG-INFO
+framewatchergui.egg-info/SOURCES.txt
+framewatchergui.egg-info/dependency_links.txt
+framewatchergui.egg-info/entry_points.txt
+framewatchergui.egg-info/requires.txt
+framewatchergui.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: raspi-servo
+Version: 1.0.2
+Summary: raspi-servo
+Home-page: https://github.com/weidacn/raspi-servo
+Author: AW
+Author-email: weidacn@qq.com
+License: Public domain
+Description: A tool for raspberry PI to control 180 degree servo
+Keywords: pip,raspi-servo,servo
+Platform: any

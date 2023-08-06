@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Experimentor
+Version: 0.0.1
+Summary: Experiments performed with Python
+Home-page: https://github.com/aquilesC/experimentor
+Author: Aquiles Carattino
+Author-email: aquiles@uetke.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+
+Collection of tools to perform experiments.
+
+

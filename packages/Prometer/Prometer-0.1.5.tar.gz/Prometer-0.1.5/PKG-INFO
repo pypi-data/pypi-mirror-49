@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Prometer
+Version: 0.1.5
+Summary: Measuring Programmer Performance using some metrics from GitHub
+Home-page: https://github.com/Susi-Eva/Prometer
+Author: Susi Eva
+Author-email: susipurba2@gmail.com
+License: MIT
+Description: # Parsing-API
+        
+Keywords: Programmer,Measuring,GitHub
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

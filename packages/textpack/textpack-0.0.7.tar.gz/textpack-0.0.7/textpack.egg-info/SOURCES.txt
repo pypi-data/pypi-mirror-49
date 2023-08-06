@@ -1,0 +1,9 @@
+README.md
+setup.py
+textpack/__init__.py
+textpack/tp.py
+textpack.egg-info/PKG-INFO
+textpack.egg-info/SOURCES.txt
+textpack.egg-info/dependency_links.txt
+textpack.egg-info/requires.txt
+textpack.egg-info/top_level.txt

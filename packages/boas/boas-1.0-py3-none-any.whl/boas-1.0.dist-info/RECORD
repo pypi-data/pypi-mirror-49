@@ -1,0 +1,9 @@
+boas-1.0.data/scripts/boas,sha256=ctx5RKSFRvqekJ_k5q693BFQq1KDkUoXjuLuDi41BEk,4041
+test/FullTests.py,sha256=OwyWF3zUoiYRYQLVick_dAA3PMXot9qGH36in6GC_OA,1400
+test/LoginTests.py,sha256=YL6T7y1s0evTJx5jsNQReAdw0H06UcnBGOVt4xkd5iM,478
+test/MyAccountsTests.py,sha256=Jq89MvweO0ybp64t2iBY3d3mOq0BES-NRERUhrcA3Qs,1127
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boas-1.0.dist-info/METADATA,sha256=LhW3PSC2pyrMnExVNeyV01K3UYOBSFpAw9bP9YK7sQU,3441
+boas-1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+boas-1.0.dist-info/top_level.txt,sha256=8sobtsfpB9Btr-Roflefznazfk6Tt2BQItpS5szCb9I,5
+boas-1.0.dist-info/RECORD,,

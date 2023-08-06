@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: chromemin
+Version: 1.0.0
+Summary: A Python Package for the Google Chrome Dev Protocol
+Home-page: https://github.com/mousemin/chromemin
+Author: mousemin
+Author-email: mousezjf@gmail.com
+License: BSD license
+Description: chromemin
+        ===============================
+        A Python Package for the Google Chrome Dev Protocol
+        
+Keywords: chromemin
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3

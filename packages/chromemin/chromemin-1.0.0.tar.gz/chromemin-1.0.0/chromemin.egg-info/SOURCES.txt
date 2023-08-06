@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+README.rst
+setup.py
+chromemin/__init__.py
+chromemin/chrome.py
+chromemin/exceptions.py
+chromemin/tab.py
+chromemin.egg-info/PKG-INFO
+chromemin.egg-info/SOURCES.txt
+chromemin.egg-info/dependency_links.txt
+chromemin.egg-info/not-zip-safe
+chromemin.egg-info/requires.txt
+chromemin.egg-info/top_level.txt

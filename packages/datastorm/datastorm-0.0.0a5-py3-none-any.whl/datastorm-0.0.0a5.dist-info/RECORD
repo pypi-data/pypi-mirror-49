@@ -1,0 +1,12 @@
+datastorm/__init__.py,sha256=psHfntPvhRF3lXQ2ZxsEu_RaTc8mHc7lI_6ORJ072KY,58
+datastorm/base.py,sha256=mx5TPMvJ1U34A3pGf7KJdZyI_TMrQhk_InZ2tcsRMJ8,904
+datastorm/datastorm.py,sha256=Qkf8OnNAG53IIBAMxZaWydqMneNa0rKHR4pMFWBI4-Q,997
+datastorm/entity.py,sha256=zaUAZ4X4PPowGQvdJ-5h_-bdOZHkQD1CXBiOFQtvjxE,2879
+datastorm/fields.py,sha256=py08U65xOmkiPlgrlqnaNaq9ATxWVva4yItReIvgI8U,2269
+datastorm/filter.py,sha256=NUsQ6UiRPjFS338CmP2monWpSGlqDSm7hgh7MW2CsZg,319
+datastorm/query.py,sha256=ztiOlfWa9lM3Gcty98zyHOgdXoUa3SHrlNqTPips170,4055
+datastorm-0.0.0a5.dist-info/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+datastorm-0.0.0a5.dist-info/METADATA,sha256=vZw1dKrCVC917ls4PNEJmKhqRf4CpBKmX5y0ThgoKpc,819
+datastorm-0.0.0a5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+datastorm-0.0.0a5.dist-info/top_level.txt,sha256=Oboe_UaC5y8dJNgqsM11U9-92WlOURKA8_t-hvxeovE,10
+datastorm-0.0.0a5.dist-info/RECORD,,

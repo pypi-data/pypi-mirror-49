@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: zabbix-controller
+Version: 0.1.4
+Summary: 
+Author: hamadakafu
+Author-email: kafu.h1998@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: bullet
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: pyzabbix

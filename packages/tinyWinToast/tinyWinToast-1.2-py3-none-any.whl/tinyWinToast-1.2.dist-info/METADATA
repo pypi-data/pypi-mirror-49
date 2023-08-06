@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tinyWinToast
+Version: 1.2
+Summary: Tiny Python library for displaying Windows toasts
+Home-page: https://github.com/J-CITY/tinyWinToast
+Author: J-CITY (Glushchenko Daniil)
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+
+TinyWinToast
+
+Tiny library to show windows toast
+
+See to get more information https://github.com/J-CITY/tinyWinToast.git
+
+

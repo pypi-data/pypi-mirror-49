@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: wix-utils
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Provides-Extra: download
+Requires-Dist: requests; extra == 'download'
+
+UNKNOWN
+
+

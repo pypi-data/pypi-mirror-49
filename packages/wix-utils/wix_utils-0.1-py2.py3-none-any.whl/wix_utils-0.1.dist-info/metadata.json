@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"document_names": {"description": "DESCRIPTION.rst"}}}, "extras": ["download"], "generator": "bdist_wheel (0.30.0)", "license": "MIT", "metadata_version": "2.0", "name": "wix-utils", "run_requires": [{"extra": "download", "requires": ["requests"]}], "summary": "UNKNOWN", "version": "0.1"}

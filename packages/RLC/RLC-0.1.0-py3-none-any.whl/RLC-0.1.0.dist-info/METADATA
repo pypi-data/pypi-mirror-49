@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: RLC
+Version: 0.1.0
+Summary: A collection of methods that aim to make calculations around passive electronic networks like resonant circuits, filters, or resistor networks, easier.
+Home-page: UNKNOWN
+License: CC0-1.0
+Keywords: electronics resistor reactance impedance
+Author: A. S.
+Author-email: admin-pypi@sotai.tk
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+
+RLC is a collection of methods that aim to make calculations around passive electronic networks like resonant circuits, filters, or resistor networks, easier. It provides functions that allow the user to quickly and painlessly calculate complex impedances, time constants for simple passive networks, the right component values for resonant circuits, etc.
+

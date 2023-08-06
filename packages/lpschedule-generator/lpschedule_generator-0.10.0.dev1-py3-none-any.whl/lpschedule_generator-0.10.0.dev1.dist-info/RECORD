@@ -1,0 +1,11 @@
+lps_gen.py,sha256=U7WRXeIeEVNIvyKnpq6iEU3ryNeahlsYeIPHqH3ofXE,20260
+lpschedule_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lpschedule_generator/_version.py,sha256=jieUzo3PhVN8St40sM7CnJsAbN2lmXQbG2FPkZk7E_4,144
+lpschedule_generator/data/schedule.jinja2,sha256=rK-JH3ssIzdOyDTBgQcotI8Etp2KMPQyYzVWU6RgriQ,4578
+lpschedule_generator/data/speakers.jinja2,sha256=SUCoXg_o58REk3M-NF1s3-ROIcK9cuwGYKqMu7hqsVU,3916
+lpschedule_generator-0.10.0.dev1.dist-info/COPYING,sha256=comYz2P5UsS38R9jtKWC-wwVjpyYyUypbbnepkNtTFc,7027
+lpschedule_generator-0.10.0.dev1.dist-info/METADATA,sha256=0zpxqX8WuzbdMz1aQ_k2EF4bAfyp1cCDH8bcfkKl3po,1113
+lpschedule_generator-0.10.0.dev1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+lpschedule_generator-0.10.0.dev1.dist-info/entry_points.txt,sha256=ydEcg__7yjcbHzdVqlMmlPcVTQ8kjdVUKva2IUfQEtI,42
+lpschedule_generator-0.10.0.dev1.dist-info/top_level.txt,sha256=M6tI_Bg2RxamrADWKLSnTscfqOWNj3qoQzy_LjqcvAM,29
+lpschedule_generator-0.10.0.dev1.dist-info/RECORD,,

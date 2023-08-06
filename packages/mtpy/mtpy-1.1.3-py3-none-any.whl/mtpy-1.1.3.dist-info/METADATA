@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mtpy
+Version: 1.1.3
+Summary: Python toolkit for standard magnetotelluric data processing.
+Home-page: https://github.com/MTgeophysics/mtpy
+Author: Alison Kirkby,Fei Zhang,Jared Peacock,Rakib Hassan, Jinming Duan
+Author-email: Fei.Zhang@ga.gov.au
+License: GNU GENERAL PUBLIC LICENSE v3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy (>=1.8.1)
+Requires-Dist: scipy (>=0.14.0)
+Requires-Dist: matplotlib
+Requires-Dist: pyyaml
+Requires-Dist: pyproj
+Requires-Dist: configparser
+
+
+MTPy is an open source Python package to assist with magnetotelluric (MT) data processing, analysis,
+modelling, visualization and interpretation. 
+
+

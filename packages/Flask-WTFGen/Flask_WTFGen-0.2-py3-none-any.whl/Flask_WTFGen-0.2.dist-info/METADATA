@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Flask-WTFGen
+Version: 0.2
+Summary: Flask plugin to automatically generate customizable HTML from wtforms form
+Home-page: https://github.com/adh/flask-wtfgen
+Author: Ales Hakl
+Author-email: ales@hakl.net
+License: MIT
+Keywords: flask bootstrap wtforms
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: Flask (>=1.0)
+Requires-Dist: Flask-WTF
+Requires-Dist: Flask-Bootstrap-Components
+
+Flask-WTFGen
+============
+
+Flask-WTFGen is simple wrapper that automates rendering of Wtforms based forms.
+
+Output HTML by default uses Bootstrap4-style classes.
+
+
+

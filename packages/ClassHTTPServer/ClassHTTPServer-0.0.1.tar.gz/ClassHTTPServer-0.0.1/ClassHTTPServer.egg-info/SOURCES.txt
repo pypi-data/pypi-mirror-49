@@ -1,0 +1,6 @@
+setup.py
+ClassHTTPServer/__init__.py
+ClassHTTPServer.egg-info/PKG-INFO
+ClassHTTPServer.egg-info/SOURCES.txt
+ClassHTTPServer.egg-info/dependency_links.txt
+ClassHTTPServer.egg-info/top_level.txt

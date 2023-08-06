@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pyConnectomist
+Version: 2.0.0
+Summary: 
+Using Connectomist in Python.
+
+Home-page: https://github.com/neurospin/pyconnectomist
+Author: pyConnectomist developers
+Author-email: antoine.grigis@cea.fr
+License: CeCILL-B
+Description: pyConnectomist 
+        
+        Python wrappers for Connectomist: wrap the Connectomist software and simplify scripting calls. Each preprocessing, tractography and labeling step (i.e. one Connectomist tab) can be run through the use of a dedicated function of the package.
+        
+        pyConnectomist, developed by the NeuroSpin software platform, is a wrapping of the Connectomist software developped by the `UNIRS team <http://i2bm.cea.fr/drf/i2bm/Pages/NeuroSpin/UNIRS/Presentation.aspx>`. It is meant to be run as part of a research collaboration or a charged service. For more information about its terms of use, please contact Cyril Poupon and Vincent Frouin.
+        
+Platform: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Provides-Extra: standalone

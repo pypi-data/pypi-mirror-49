@@ -1,0 +1,5 @@
+requests
+Paramiko
+argcomplete
+PyYAML
+urllib3

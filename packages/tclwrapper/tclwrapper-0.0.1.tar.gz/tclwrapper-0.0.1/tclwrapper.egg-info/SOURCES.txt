@@ -1,0 +1,9 @@
+README.rst
+setup.py
+tclwrapper/__init__.py
+tclwrapper/tclutil.py
+tclwrapper/tclwrapper.py
+tclwrapper.egg-info/PKG-INFO
+tclwrapper.egg-info/SOURCES.txt
+tclwrapper.egg-info/dependency_links.txt
+tclwrapper.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: stocknews
+Version: 0.9.0
+Summary: PoC for scraping Yahoo News with sentiment analysis
+Home-page: http://github.com/primus852/stock-news.git
+Author: Torsten Wolter
+Author-email: tow.berlin@gmail.com
+License: MIT
+Description: # StockNews
+        Scrape financial News from Yahoo and analyse the sentiment (PoC)
+        
+Keywords: sentiment news rss stock
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing :: Linguistic
+Description-Content-Type: text/markdown

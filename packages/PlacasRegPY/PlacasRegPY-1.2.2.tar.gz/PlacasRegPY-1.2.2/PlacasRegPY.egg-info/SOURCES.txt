@@ -1,0 +1,9 @@
+README.md
+setup.py
+PlacasRegPY/Modulos.py
+PlacasRegPY/__init__.py
+PlacasRegPY/main.py
+PlacasRegPY.egg-info/PKG-INFO
+PlacasRegPY.egg-info/SOURCES.txt
+PlacasRegPY.egg-info/dependency_links.txt
+PlacasRegPY.egg-info/top_level.txt

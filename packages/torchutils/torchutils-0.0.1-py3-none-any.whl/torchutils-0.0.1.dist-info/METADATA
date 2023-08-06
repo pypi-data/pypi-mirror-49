@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: torchutils
+Version: 0.0.1
+Summary: PyTorch utility functions.
+Home-page: https://github.com/anjandeepsahni/pytorch_utils
+Author: Anjandeep Singh Sahni
+Author-email: sahni.anjandeep@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Keywords: machine-learning deep-learning pytorch neuralnetwork
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# torchutils
+
+PyTorch utility functions.
+
+

@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: yaf
+Version: 0.0.1
+Summary: YRNO Weather Forecast Client
+Home-page: https://github.com/qba73/yaf
+Author: Jakub Jarosz
+Author-email: jakub.jarosz@postpro.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+
+# yaf
+Yet Another Forecast. A minimalistic weather forecast library and a cli app.
+
+
+Weather forecast data from Yr, delivered by the [Norwegian Meteorological Institute and the NRK](http://om.yr.no/verdata/free-weather-data/).
+
+
+Usage conditions and guidelines:
+
+- [Original version](http://om.yr.no/verdata/)
+- [English explanation](http://om.yr.no/verdata/free-weather-data)
+
+

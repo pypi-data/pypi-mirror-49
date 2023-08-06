@@ -1,0 +1,12 @@
+README.md
+setup.py
+outfit/__init__.py
+outfit/models.py
+outfit/utils.py
+outfit/wardrobe.py
+outfit.egg-info/PKG-INFO
+outfit.egg-info/SOURCES.txt
+outfit.egg-info/dependency_links.txt
+outfit.egg-info/not-zip-safe
+outfit.egg-info/requires.txt
+outfit.egg-info/top_level.txt

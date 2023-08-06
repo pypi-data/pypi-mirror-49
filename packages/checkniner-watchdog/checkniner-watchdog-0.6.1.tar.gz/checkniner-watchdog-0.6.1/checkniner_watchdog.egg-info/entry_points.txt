@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        watchdog=watchdog.watchdog:watchdog
+    

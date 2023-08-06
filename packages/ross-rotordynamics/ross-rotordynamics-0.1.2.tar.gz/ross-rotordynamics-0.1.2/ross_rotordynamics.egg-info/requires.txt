@@ -1,0 +1,11 @@
+numpy
+scipy
+matplotlib
+toml
+pandas
+bokeh
+coverage
+xlrd
+
+[dev]
+pytest

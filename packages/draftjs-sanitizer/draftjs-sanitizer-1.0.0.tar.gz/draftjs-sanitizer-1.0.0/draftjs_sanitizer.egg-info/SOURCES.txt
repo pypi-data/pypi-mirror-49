@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+VERSION.txt
+requirements.txt
+requirements_dev.txt
+setup.cfg
+setup.py
+draftjs_sanitizer/__init__.py
+draftjs_sanitizer/definitions.py
+draftjs_sanitizer/encoder.py
+draftjs_sanitizer/sanitizer.py
+draftjs_sanitizer.egg-info/PKG-INFO
+draftjs_sanitizer.egg-info/SOURCES.txt
+draftjs_sanitizer.egg-info/dependency_links.txt
+draftjs_sanitizer.egg-info/not-zip-safe
+draftjs_sanitizer.egg-info/requires.txt
+draftjs_sanitizer.egg-info/top_level.txt

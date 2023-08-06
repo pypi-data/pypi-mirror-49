@@ -1,0 +1,6 @@
+urllib3
+
+[dev]
+pre-commit
+pytest
+mock

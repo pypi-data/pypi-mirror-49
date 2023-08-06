@@ -1,0 +1,32 @@
+Metadata-Version: 1.2
+Name: ginzyenc
+Version: 1.2.3
+Summary: yEnc Module for Python modified for SABnzbd
+Home-page: https://github.com/dermatty/GINZYENC
+Author: dermatty
+Author-email: stephan@untergrabner.at
+License: LGPLv3
+Description: 
+        yEnc Decoding for Python 3
+        ---------------------------------
+        
+        Mofied the original yenc module by Alessandro Duca & saphirefor use within ginzibix.
+        
+        The module was extended to do header parsing and full yEnc decoding from a Python
+        list of chunks, the way in which data is retrieved from usenet.
+        
+        Currently CRC-checking of decoded data is disabled to allow for increased performance.
+        It can only be re-enabled by locally altering 'sabyenc.h' and setting 'CRC_CHECK 1'.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: C
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: Unix
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Usenet News
+Requires-Python: >=3.6.1

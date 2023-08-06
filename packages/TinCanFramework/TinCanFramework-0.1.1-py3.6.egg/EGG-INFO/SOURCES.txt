@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+tincan.py
+TinCanFramework.egg-info/PKG-INFO
+TinCanFramework.egg-info/SOURCES.txt
+TinCanFramework.egg-info/dependency_links.txt
+TinCanFramework.egg-info/requires.txt
+TinCanFramework.egg-info/top_level.txt
+bin/install-static
+bin/launch

@@ -1,0 +1,47 @@
+#!/Library/Frameworks/Python.framework/Versions/3.6/bin/python3
+# XXX - This code must not be in tincan.py, because the built-in class
+# loader will then confuse __main__.Page and tincan.Page, and fail to
+# locate the code-behind.
+
+# I m p o r t s
+
+import os, sys
+from argparse import ArgumentParser
+import logging
+from tincan import launch, ENCODING
+
+# V a r i a b l e s
+
+MYNAME = os.path.basename(sys.argv[0])
+
+# M a i n   P r o g r a m
+
+parser = ArgumentParser(prog=sys.argv[0], usage="%(prog)s [options] [directory [path]]")
+opt = parser.add_argument
+opt("-b", "--bind", default="localhost", help="address to bind to (default: localhost)")
+opt("-c", "--compile", action="store_true", help="compile .py files only; do not run a server")
+opt("-d", "--debug", action="store_true", help="enable debug mode")
+opt("-e", "--encoding", default=ENCODING, help="encoding to use (default {0})".format(ENCODING))
+opt("-f", "--force", action="store_true", help="do not abort on errors")
+opt("-p", "--port", default=8080, help="port to listen on (default: 8080)")
+opt("-s", "--static", action="store_true", help="serve static files")
+opt("directory", default=".", help="directory to serve", nargs='?')
+opt("path", default="/", help="URL path to serve", nargs='?')
+args = parser.parse_args(sys.argv[1:])
+
+mylog = logging.getLogger(MYNAME)
+mylog.addHandler(logging.StreamHandler())
+mylog.setLevel(logging.DEBUG if args.debug else logging.INFO)
+
+app, errors = launch(fsroot=args.directory, urlroot=args.path, logger=mylog,
+    encoding=args.encoding, static=args.static)
+if errors:
+    action = "continuing" if args.force else "aborting"
+    sys.stderr.write("{0}: {1} error{2} detected, {3}\n".format(
+        MYNAME, errors, "" if errors == 1 else "s", action))
+    if not args.force: sys.exit(1)
+
+if not args.compile:
+    app.run(host=args.bind, port=args.port)
+
+sys.exit(1 if errors else 0)

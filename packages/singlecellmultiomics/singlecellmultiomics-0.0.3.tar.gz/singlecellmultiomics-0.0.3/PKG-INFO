@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: singlecellmultiomics
+Version: 0.0.3
+Summary: Tools to deal with one or more measurements from single cells
+Home-page: https://github.com/BuysDB/SingleCellMultiOmics
+Author: Buys de Barbanson
+Author-email: b.barbanson@hubrecht.eu
+License: MIT
+Download-URL: https://github.com/BuysDB/SingleCellMultiOmics/archive/v0.0.3-alpha.tar.gz
+Description-Content-Type: text/markdown
+Description: [![Build Status](https://travis-ci.com/BuysDB/SingleCellMultiOmics.svg?branch=master)](https://travis-ci.com/BuysDB/SingleCellMultiOmics)
+        
+        ## Single cell multi omics
+        Single cell multi omics is a set of tools to deal with multiple measurements from the same cell.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License

@@ -1,0 +1,17 @@
+vFXT/__init__.py,sha256=hA0qceKIwap1BpUqC7P6nbrfQYWjQRGCcczJboD_a14,440
+vFXT/aws.py,sha256=bFZbZaK_ryfO2f-kjSEbvLv8-gLMezq5heXKUrz0KRg,105924
+vFXT/cidr.py,sha256=7SyENxAg7VROsRArutVB9XIIlTe_laLZtjj1z4ZHT1Q,6452
+vFXT/cluster.py,sha256=hI0uPKpEY5VaMdHBxT2L6mCv7RRp63GJJRXw4K2QNwo,96158
+vFXT/gce.py,sha256=mlF81l93TjOybt4msWalTHM4N9y2-Seq3jp-vHpSQuE,122716
+vFXT/msazure.py,sha256=ft0WQhln5duHA4WSMkVet8UXG7nHQ1dZosQSrhChZLU,140381
+vFXT/service.py,sha256=cEXwllrwCwk7uq_ouT_CjKBXbKzmdJ40PIMhfXQRvIo,13504
+vFXT/serviceInstance.py,sha256=YJW43Plvq2-W_wTIJLMd4O4gwvtDH_LzTh_FK9y6ZJ4,6654
+vFXT/version.py,sha256=ebAT0WrTSgHlBCA7-f3HllERtXNyvoMak26j3n3884A,275
+vFXT/xmlrpcClt.py,sha256=gfp2NbWCyS3O0HhfA5HWdHGOoMInvA7CfejjF8JqMj0,4851
+vFXT-0.5.3.0-1.data/scripts/vfxt.py,sha256=mMKsEAK6d3WLpoo3GHMI-rw1dAfyxsi0g5Tgd5vh0Ow,57292
+vFXT-0.5.3.0-1.dist-info/DESCRIPTION.rst,sha256=g8zB8LR6g-l5RfZRor2Owb7M7obEK97N1B_OpHYwIbc,226
+vFXT-0.5.3.0-1.dist-info/METADATA,sha256=vCVkQ25j9IOTa8IFD8u5Og4eB1b2cx_3nNIBY8NKBsg,1819
+vFXT-0.5.3.0-1.dist-info/RECORD,,
+vFXT-0.5.3.0-1.dist-info/WHEEL,sha256=O_ShGhl3RZyV3wlqBVu314LOEh3tyGzbzVE7e_caFIQ,119
+vFXT-0.5.3.0-1.dist-info/metadata.json,sha256=cTouKaGUKT19ABzvvG-ZZRp-ewLaH41yJNCINhfGHLA,1472
+vFXT-0.5.3.0-1.dist-info/top_level.txt,sha256=B-mnKSn_1-gjddaJrThrI1sOzlSRoCIrL7u8PCOK6fE,5

@@ -1,0 +1,11 @@
+README.md
+setup.py
+alephmarcreader/__init__.py
+alephmarcreader/abstractalephmarcreader.py
+alephmarcreader/alephmarc21reader.py
+alephmarcreader/alephmarcxmlreader.py
+alephmarcreader/alephxreader.py
+alephmarcreader.egg-info/PKG-INFO
+alephmarcreader.egg-info/SOURCES.txt
+alephmarcreader.egg-info/dependency_links.txt
+alephmarcreader.egg-info/top_level.txt

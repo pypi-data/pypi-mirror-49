@@ -1,0 +1,7 @@
+README.rst
+setup.py
+combo.egg-info/PKG-INFO
+combo.egg-info/SOURCES.txt
+combo.egg-info/dependency_links.txt
+combo.egg-info/requires.txt
+combo.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+setup.py
+drf_docs/__init__.py
+drf_docs/api_docs.py
+drf_docs/api_endpoint.py
+drf_docs/settings.py
+drf_docs/urls.py
+drf_docs/views.py
+drf_docs.egg-info/PKG-INFO
+drf_docs.egg-info/SOURCES.txt
+drf_docs.egg-info/dependency_links.txt
+drf_docs.egg-info/requires.txt
+drf_docs.egg-info/top_level.txt

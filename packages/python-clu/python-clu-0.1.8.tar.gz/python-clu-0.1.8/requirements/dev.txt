@@ -1,0 +1,21 @@
+-r tox.txt
+Pillow
+PyYAML
+asciiplotlib
+abpython
+bumpversion
+colorio
+colormath
+cython
+flake8
+flake8-bugbear
+instakit
+ipython
+pythonpy
+pytz
+readme-renderer
+requests
+scipy
+twine
+yajl
+xerox

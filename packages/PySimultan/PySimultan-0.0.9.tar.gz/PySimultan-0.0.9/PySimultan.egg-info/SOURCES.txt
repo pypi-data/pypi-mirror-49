@@ -1,0 +1,8 @@
+README.md
+setup.py
+PySimultan.egg-info/PKG-INFO
+PySimultan.egg-info/SOURCES.txt
+PySimultan.egg-info/dependency_links.txt
+PySimultan.egg-info/top_level.txt
+resources/__init__.py
+resources/json_import_config_creator.py

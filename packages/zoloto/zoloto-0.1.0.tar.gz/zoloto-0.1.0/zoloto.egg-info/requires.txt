@@ -1,0 +1,8 @@
+opencv-contrib-python-headless<5,>=4
+cached-property
+coordinates
+fastcache
+ujson
+
+[rpi]
+picamera[array]

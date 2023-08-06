@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+zoloto/__init__.py
+zoloto/calibration.py
+zoloto/coords.py
+zoloto/exceptions.py
+zoloto/marker.py
+zoloto/marker_dict.py
+zoloto.egg-info/PKG-INFO
+zoloto.egg-info/SOURCES.txt
+zoloto.egg-info/dependency_links.txt
+zoloto.egg-info/entry_points.txt
+zoloto.egg-info/requires.txt
+zoloto.egg-info/top_level.txt

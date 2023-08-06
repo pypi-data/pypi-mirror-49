@@ -1,0 +1,5 @@
+setup.py
+pycopy_cpython_gc.egg-info/PKG-INFO
+pycopy_cpython_gc.egg-info/SOURCES.txt
+pycopy_cpython_gc.egg-info/dependency_links.txt
+pycopy_cpython_gc.egg-info/top_level.txt

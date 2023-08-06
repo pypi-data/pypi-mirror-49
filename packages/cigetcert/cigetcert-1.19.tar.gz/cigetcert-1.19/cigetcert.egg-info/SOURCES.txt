@@ -1,0 +1,17 @@
+.gitignore
+COPYING
+MANIFEST.in
+Makefile
+README
+cigetcert
+cigetcert.1
+cigetcert.bak
+cigetcert.html
+cigetcert.sh
+cigetcert.spec
+setup.py
+cigetcert.egg-info/PKG-INFO
+cigetcert.egg-info/SOURCES.txt
+cigetcert.egg-info/dependency_links.txt
+cigetcert.egg-info/requires.txt
+cigetcert.egg-info/top_level.txt

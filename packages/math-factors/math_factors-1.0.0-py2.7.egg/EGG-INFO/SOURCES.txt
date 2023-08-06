@@ -1,0 +1,7 @@
+setup.py
+math_factors.egg-info/PKG-INFO
+math_factors.egg-info/SOURCES.txt
+math_factors.egg-info/dependency_links.txt
+math_factors.egg-info/entry_points.txt
+math_factors.egg-info/not-zip-safe
+math_factors.egg-info/top_level.txt

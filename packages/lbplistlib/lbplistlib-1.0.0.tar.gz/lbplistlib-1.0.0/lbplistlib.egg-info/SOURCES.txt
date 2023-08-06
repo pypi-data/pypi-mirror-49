@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+Tool.py
+setup.py
+lbplistlib/__init__.py
+lbplistlib/lbsubplist.py
+lbplistlib.egg-info/PKG-INFO
+lbplistlib.egg-info/SOURCES.txt
+lbplistlib.egg-info/dependency_links.txt
+lbplistlib.egg-info/top_level.txt

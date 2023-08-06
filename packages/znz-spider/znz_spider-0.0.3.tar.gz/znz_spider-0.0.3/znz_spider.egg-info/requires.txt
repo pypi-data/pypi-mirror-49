@@ -1,0 +1,8 @@
+numpy
+pandas
+lxml
+requests
+matplotlib
+seaborn
+scikit-learn
+mysqlclient

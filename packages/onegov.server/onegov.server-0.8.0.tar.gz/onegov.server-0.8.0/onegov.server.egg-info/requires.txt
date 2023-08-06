@@ -1,0 +1,16 @@
+cached_property
+click
+bjoern
+PyYAML
+watchdog
+webob
+xtermcolor
+
+[test]
+coverage
+morepath
+port-for
+psutil
+pytest
+requests
+webtest

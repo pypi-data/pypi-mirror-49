@@ -1,0 +1,80 @@
+Metadata-Version: 1.0
+Name: jsoncomparedeep
+Version: 1.12
+Summary: A recursive Json comparing library that handles list orders and fuzzy types
+Home-page: https://rainydew.blog.csdn.net/article/details/93904318
+Author: Rainy Chan
+Author-email: rainydew@qq.com
+License: UNKNOWN
+Description: Deep_Json_Compare
+        =================
+        
+        A library to compare any json string/json-like objects.
+        
+        Features
+        --------
+        
+        -  Compare jsons and print the differences (and where they are,
+           recursion supported). Useful for interface testing.
+        -  Ignore the order of items in a list or not, recursively.
+        -  Both python 27 and 36 supported.
+        -  Regular expression supported for string to skip unconcerned keys or
+           just to assert the format.
+        -  Compact **string** and **unicode** (or **bytes** and **str** in
+           python3), they are considered equal. Good for non ascii coding
+           languages.
+        -  Support tuples, so results from pymysql.cursors.DictCursor can
+           compare with interface response directly.
+        -  Json type legal check.
+        -  Support skipping anywhere using argument like *ignore_path=[“/a/1/k”,
+           “/a/1/l”]*, dict keys or list indexes. Skipped fields are regarded as
+           match. (New)
+        
+        QuickStart
+        ----------
+        
+        .. code:: shell
+        
+           pip install deepjsoncompare
+        
+        .. code:: python
+        
+           from json_compare import Jcompare
+           cp=Jcompare()
+           print(cp.compare({"key1":["v1","v2"],"key2":{"key3":1}},{"key1":["v2","v1"],"key2":{"key3":2}}))
+        
+        to see
+        
+        ::
+        
+           a is {'key2': {'key3': 1}, 'key1': ['v1', 'v2']}
+           b is {'key2': {'key3': 2}, 'key1': ['v2', 'v1']}
+           ignore_list_seq = True, re_compare = True
+           different value at /key2/key3
+           a: 1
+           b: 2
+           False
+        
+        for more demo and information, just install it and visit the test file
+        **test_json_compare.py** in **Your Python
+        Path/Lib/site-packages/deepjsoncompare/**
+        
+        Small Hints
+        -----------
+        
+        -  Datetime in SQL result is not JSON serializable type, use something
+           like *CAST(create_time as CHAR) ‘create_time’* in SQL statement to
+           solve it.
+        
+        Todo
+        ----
+        
+        -  Fuzzy equal when handling floats.
+        
+        Bug report
+        ----------
+        
+        -  Issues and bug reports to rainydew@qq.com.
+        
+Keywords: json compare comparison order unicode fuzzy
+Platform: UNKNOWN

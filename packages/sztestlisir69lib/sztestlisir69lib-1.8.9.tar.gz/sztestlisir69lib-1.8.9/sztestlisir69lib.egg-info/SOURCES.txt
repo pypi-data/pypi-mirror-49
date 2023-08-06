@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+tool.py
+sztestlisir69lib/__init__.py
+sztestlisir69lib/szlibone.py
+sztestlisir69lib.egg-info/PKG-INFO
+sztestlisir69lib.egg-info/SOURCES.txt
+sztestlisir69lib.egg-info/dependency_links.txt
+sztestlisir69lib.egg-info/top_level.txt

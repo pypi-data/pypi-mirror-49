@@ -1,0 +1,13 @@
+pypi_flow/__init__.py,sha256=xGFCccVRYaPaKTf3MiL4LZe9qWeJ2qOdmL5rBLc9ts4,113
+pypi_flow/packageTemplate/PypiUpload.py,sha256=p2NxtqOwIe9YsNTfX0n1nv9tg0FUnpD6_sH3AlS4sZ0,599
+pypi_flow/packageTemplate/__init__.py,sha256=xGFCccVRYaPaKTf3MiL4LZe9qWeJ2qOdmL5rBLc9ts4,113
+pypi_flow/packageTemplate/setup.py,sha256=lVqcpXJxNz2iSuL5PtP5eCwPUdk3dGY6BcHgzU6kDIg,607
+pypi_flow/packageTemplate/package_name/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypi_flow/packageTemplate/package_name/__pycache__/__init__.cpython-37.pyc,sha256=ofYJGOI9QuqMaybx0AW3nUxZdhcJbQ3_bGyxLHRqHsI,204
+pypi_flow-19.7.35.data/scripts/cascade.bat,sha256=nDfPS9CdPunQbyO6aSJsmrpbGwFAzoAinLnlCG0riDo,28
+pypi_flow-19.7.35.data/scripts/waterfall.py,sha256=Fym16rNOI27VEwm_BpMHAGz5UNOCiSZRYoC-zZXOZ6Y,5392
+pypi_flow-19.7.35.dist-info/LICENSE,sha256=NBI4sH7onpFbTiq2Aef8uj649K8N5Q0_624RUfq2jqg,1093
+pypi_flow-19.7.35.dist-info/METADATA,sha256=F8Hytwowm1JJc3l3lASFakrCTBKq-J4NqsJJTXfZuzc,609
+pypi_flow-19.7.35.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pypi_flow-19.7.35.dist-info/top_level.txt,sha256=Sh1UJIxb0M4-0PxtS2OPRepO856rxIgVkIviIPSg_c8,10
+pypi_flow-19.7.35.dist-info/RECORD,,

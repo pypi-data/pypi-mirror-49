@@ -1,0 +1,2 @@
+git+https://github.com/kenjyoung/MinAtar@master#egg=MinAtar-1.0.4
+git+https://github.com/ntasfi/PyGame-Learning-Environment@master#egg=ple-0.0.1

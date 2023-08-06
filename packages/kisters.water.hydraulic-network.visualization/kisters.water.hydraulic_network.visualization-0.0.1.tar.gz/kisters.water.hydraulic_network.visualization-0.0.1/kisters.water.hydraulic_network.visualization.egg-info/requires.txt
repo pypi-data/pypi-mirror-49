@@ -1,0 +1,5 @@
+bokeh
+kisters.water.hydraulic-network.client
+kisters.water.hydraulic-network.models
+numpy
+scipy

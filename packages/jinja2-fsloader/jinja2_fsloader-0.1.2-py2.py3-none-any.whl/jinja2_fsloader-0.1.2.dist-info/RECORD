@@ -1,0 +1,13 @@
+jinja2_fsloader/__init__.py,sha256=FebYnRVx5w_cgqEP5UtHWMy40VGP6r0ctAJqSekChE4,2183
+jinja2_fsloader/_version.txt,sha256=KXtQ8IOG01Ifj9ry94642dCs30UtLmFZaQX7o3IIx5I,6
+jinja2_fsloader-0.1.2.dist-info/DESCRIPTION.rst,sha256=oEnXO5_6UXJ_Lcu9VlCthoFrr7cuWX5UeCT4JF6AJvk,2869
+jinja2_fsloader-0.1.2.dist-info/LICENSE.txt,sha256=qgmmdS45rpmABjPCJqU1pbLS9t6rejldkGoB1FxfmAA,1072
+jinja2_fsloader-0.1.2.dist-info/METADATA,sha256=J8dRFeJM8uPbt1YETfMYMvuxWqMcO-1LUGvYwU8pO20,4194
+jinja2_fsloader-0.1.2.dist-info/RECORD,,
+jinja2_fsloader-0.1.2.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+jinja2_fsloader-0.1.2.dist-info/metadata.json,sha256=41l7idLz1hclkQopb9kVz-lya3qTT0pgscnTNU9lVJM,1501
+jinja2_fsloader-0.1.2.dist-info/top_level.txt,sha256=Cie8gOlN0GcBWVgqTKKnMVvWYEEOWbJFB3ATmPjAm1g,22
+jinja2_fsloader-0.1.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/__init__.py,sha256=_5YVNwrX-5ORMHPvQKO634QX-wVY5n5H4YEDptKe7VM,107
+tests/test_fsloader.py,sha256=NVw3PXAuM8Dd_buKNZ93cvemlxRouJY_tsFlDGukQTo,4859
+tests/utils.py,sha256=HshyDgr722-MEYZBqgtLv4d476_Q5faY973xQGXguYM,330

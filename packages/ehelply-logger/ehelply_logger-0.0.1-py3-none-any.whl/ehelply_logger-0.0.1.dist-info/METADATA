@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ehelply-logger
+Version: 0.0.1
+Summary: Logger.
+Home-page: https://github.com/ehelply/Logger
+Author: Shawn Clake
+Author-email: shawn.clake@gmail.com
+License: UNKNOWN
+Keywords: logger
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+
+# Logger
+Supports levels of logging, automatic flushing, and coloring
+
+

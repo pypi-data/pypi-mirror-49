@@ -1,0 +1,7 @@
+setup.py
+ujson.py
+pycopy_cpython_ujson.egg-info/PKG-INFO
+pycopy_cpython_ujson.egg-info/SOURCES.txt
+pycopy_cpython_ujson.egg-info/dependency_links.txt
+pycopy_cpython_ujson.egg-info/requires.txt
+pycopy_cpython_ujson.egg-info/top_level.txt

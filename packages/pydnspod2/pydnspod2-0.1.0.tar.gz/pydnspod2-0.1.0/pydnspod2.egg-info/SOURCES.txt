@@ -1,0 +1,15 @@
+ChangeLog.txt
+LICENES.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pydnspod/__init__.py
+pydnspod/config.py
+pydnspod/pydnspod.py
+pydnspod2.egg-info/PKG-INFO
+pydnspod2.egg-info/SOURCES.txt
+pydnspod2.egg-info/dependency_links.txt
+pydnspod2.egg-info/not-zip-safe
+pydnspod2.egg-info/requires.txt
+pydnspod2.egg-info/top_level.txt

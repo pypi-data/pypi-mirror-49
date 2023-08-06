@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: RTRTC
+Version: 0.0.1
+Summary: Toy ray-tracer based on ThrustRTC on CURandRTC
+Home-page: https://github.com/fynv/RTRTC
+Author: Fei Yang
+Author-email: hyangfeih@gmail.com
+License: Anti 996
+Requires-Dist: CURandRTC
+Requires-Dist: ThrustRTC
+Requires-Dist: numpy
+Requires-Dist: pillow
+
+RTRTC
+
+

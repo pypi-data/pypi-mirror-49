@@ -1,0 +1,55 @@
+---
+module_path: .optimizer.res_mean_risk
+strategy: &strat 'global'
+# strategy: &strat 'techno'
+# strategy: &strat 'none'
+postfix:
+input:
+  postfix: *strat
+  # Period selection
+  select_period: False
+  # start_date: '1990-01-01 00:00:00'
+  # end_date: '1999-12-31 23:00:00'
+  # start_date: '2000-01-01 00:00:00'
+  # end_date: '2009-12-31 23:00:00'
+  # start_date: '1989-01-01 00:00:00'
+  # end_date: '1989-12-31 23:00:00'
+  start_date: '1996-01-01 00:00:00'
+  end_date: '1996-12-31 23:00:00'
+component:
+  demand: demand
+  capacity_factor:
+    - wind
+    - pv
+# Reference capacity
+reference_capacity:
+  wind: gse
+  pv: gse
+reference_year: '2015'
+# Constraints to add
+cstr:
+  bounds: True
+  # Total capacity constraint:
+  #   - False/True: No constraint/Hard constraint
+  #   - float: soft constraint weighted by float
+  tot_cap: [True, False]
+  total_penetration: True
+# The range of target RES penetration rates
+penetration:
+  start: 0.12
+  stop: .251
+  step: 0.001
+# scipy.optimize.minimize arguments
+scipy:
+  method: SLSQP
+  #method: trust-constr
+  tol: 1.e-2
+  options:
+    maxiter: 500
+    disp: False
+
+grid:
+  max_capacity: 99999999999
+  min_capacity: 0.0
+  max_conventional: 0.8
+  max_res: 0.4

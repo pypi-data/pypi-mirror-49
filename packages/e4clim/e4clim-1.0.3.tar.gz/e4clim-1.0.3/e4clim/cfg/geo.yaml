@@ -1,0 +1,7 @@
+data:
+# Make bidding zones from regions (True/False)
+zones_from_regions: False
+# Filepath from which to read the zone-region membership
+# (if not given, tries to read from package data)
+zones_filepath:
+

@@ -1,0 +1,23 @@
+---
+module_path: .api.entsoe
+host: https://transparency.entsoe.eu/api
+period_start: '201412312300'
+period_end: '201812312300'
+tz: 'UTC'
+lookup_bzones: True
+variable_names:
+  generation: 'generation'
+  capacity: 'installed_generation_capacity'
+  wind_and_solar_forecast: 'wind_and_solar_forecast'
+  crossborder_flows: 'crossborder_flows'
+  imbalance_prices: 'imbalance_prices'
+  unavailability_of_generation_units: 'unavailability_of_generation_units'
+  withdrawn_unavailability_of_generation_units: 'withdrawn_unavailability_of_generation_units'
+  day_ahead_prices: 'day_ahead_prices'
+  demand: 'load'
+  load_forecast: 'load_forecast'
+  generation_forecast: 'generation_forecast'
+
+component_names:
+  pv: 'Solar'
+  wind: 'Wind Onshore'

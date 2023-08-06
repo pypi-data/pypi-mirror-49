@@ -1,0 +1,559 @@
+EicCode ,EicDisplayName ,EicLongName ,EicParent ,EicResponsibleParty ,EicStatus,MarketParticipantPostalCode ,MarketParticipantIsoCountryCode ,MarketParticipantVatCode,EicTypeFunctionList,type
+10Y1001A1001A008,BE-FR-NL-MARKET,Market coupling area Belgium - France - Netherlands,,,Active,,,,Market Balance Area,Y
+10Y1001A1001A016,GB-NI,Northern Ireland,,,Active,BT6 9RT,GB,,"Market Balance Area, Control Area",Y
+10Y1001A1001A39I,EE,Estonia,,,Active,12915,EE,,"Bidding Zone, Control Area, Market Balance Area, Member State",Y
+10Y1001A1001A42T,CB-ES,CB Spain,,10XES-REE------E,Active,,,,Control Block,Y
+10Y1001A1001A43R,COMP-SMM-AREA,Comp. Control Block Area  Macedonia-Montenegro-Serbia,,,Active,,,,Valid EIC Function needed,Y
+10Y1001A1001A44P,SE1,Swedish Elspot Area 1,,,Active,,,,"Market Balance Area, Bidding Zone",Y
+10Y1001A1001A45N,SE2,Swedish Elspot Area 2,,,Active,,,,"Bidding Zone, Market Balance Area",Y
+10Y1001A1001A46L,SE3,Swedish Elspot Area 3,,,Active,,,,"Market Balance Area, Bidding Zone",Y
+10Y1001A1001A47J,SE4,Swedish Elspot Area 4,,,Active,,,,"Bidding Zone, Market Balance Area",Y
+10Y1001A1001A48H,NO5,Norwegian Area Elspot Area 5,,,Active,,,,"Market Balance Area, Bidding Zone",Y
+10Y1001A1001A49F,RUSSIAN_AREA,Russian area,,,Active,,,,Market Balance Area,Y
+10Y1001A1001A50U,KALININGRAD_AREA,Kaliningrad area,,,Active,,,,Market Balance Area,Y
+10Y1001A1001A51S,BELARUS_AREA,Belarus area,,,Active,,,,Market Balance Area,Y
+10Y1001A1001A52Q,CZ-SK-HU-MARKET,Market coupling area Czech Republic – Slovakia –  Hungary,,,Active,,,,Market Area,Y
+10Y1001A1001A53O,NWE-EU,NWE Region,,,Active,,,,Market Balance Area,Y
+10Y1001A1001A54M,CB_PORTUGAL,Control Block Portugal,,10XPT-REN------9,Active,,,,Control Block,Y
+10Y1001A1001A55K,LT_BEL_IMP_AREA,Lithuania-Belarus Import Area,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A56I,LT_BEL_EXP_AREA,Lithuania-Belarus Export Area,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A57G,GB_N2EX_PRICZONE,Bidding Zone - Great Britain (N2EX),,,Active,,,,Bidding Zone,Y
+10Y1001A1001A58E,GB_APX_PRICEZONE,Bidding Zone - Great Britain (APX),,,Active,,,,Bidding Zone,Y
+10Y1001A1001A59C,SEM,Ireland and Northern Ireland,,,Active,,,,"Market Balance Area, Bidding Zone",Y
+10Y1001A1001A62N,CZ-SK-HU-RO-MCA,Market coupling area Czech Republic – Slovakia – Hungary- Romania,,,Active,,,,Market Area,Y
+10Y1001A1001A63L,DE_AT_LU,Germany_Austria_Luxemburg,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A64J,FICTIT_AREA_1A,Norwegian Fictitious Area 1A,,,Active,,,,Market Balance Area,Y
+10Y1001A1001A65H,DK,Denmark,,10X1001A1001A248,Active,7000,DK,,Member State,Y
+10Y1001A1001A66F,IT-GR,Italy Greece,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A67D,IT-NORTH_SI,Italy North_Slovenia,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A68B,IT-NORTH_CH,Italy North_Switzerland,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A70O,IT-CENTRE_NORTH,Italy Centre-North,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A71M,IT-CENTRE_SOUTH,Italy Centre-South,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A73I,IT-NORTH,Italy North,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A74G,IT-SARDINIA,Italy Sardinia,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A75E,IT-SICILY,Italy Sicily,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A77A,IT-ROSSANO,Italy Rossano,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A788,IT-SOUTH,Italy South,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A796,CA-------DENMARK,Control Area Denmark,,10X1001A1001A248,Active,7000,DK,,Control Area,Y
+10Y1001A1001A80L,IT-NORTH_AT,Italy North_Austria,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A81J,IT-NORTH_FR,Italy North_France,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A82H,DE_LU,Germany_Luxemburg,,,Active,,,,Market Balance Area,Y
+10Y1001A1001A83F,DE,Germany,,,Active,,,,Member State,Y
+10Y1001A1001A84D,IT-MACRZONENORTH,Market Balance Area MACROZONE NORTH,,,Active,,,,Market Balance Area,Y
+10Y1001A1001A85B,IT-MACRZONESOUTH,Market Balance Area MACROZONE SOUTH,,,Active,,,,Market Balance Area,Y
+10Y1001A1001A869,UA-DOB_TPP,Ukrainian Area of Dobrotvirska TPP,,10X1001C--00001X,Active,,,,Control Area,Y
+10Y1001A1001A877,IT-MT,Italy_Malta,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A885,IT-SACO_AC,Italy Saco_AC,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A893,IT-SACODC,Italy Saco_DC,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A90I,IT-MONFALCONE,Italy Monfalcone,,,Active,,,,Bidding Zone,Y
+10Y1001A1001A91G,NORDIC_AREA,Nordic Market Area,,,Active,,,,Market Area,Y
+10Y1001A1001A92E,UK,United Kingdom,,10X1001A1001A515,Active,,,,Member State,Y
+10Y1001A1001A93C,MALTA_AREA,CONTROL AREA ITALY MALTA,,,Active,,,,Control Area,Y
+10Y1001A1001A94A,SYN_BALTICS,Synchronous area of Baltic states,,,Active,,,,Valid EIC Function needed,Y
+10Y1001A1001A958,ICELAND,Member State Iceland,,,Active,,,,Member State,Y
+10Y1001A1001A990,MOLDOVA,Moldova,,,Active,,,,Market Area,Y
+10Y1001A1001B004,ARMENIA,Armenia,,,Active,1000,BE,,Market Area,Y
+10Y1001A1001B012,GEORGIA,Georgia,,,Active,1000,BE,,Market Area,Y
+10Y1001A1001B020,SYRIA,Syria,,,Active,1001,BE,,Market Area,Y
+10Y1001A1001B03Z,IRAQ,Iraq,,,Active,1001,BE,,Market Area,Y
+10Y1001A1001B04X,IRAN,Iran,,,Active,1002,BE,,Market Area,Y
+10Y1001A1001B05V,AZERBAIJAN,Azerbaijan,,,Active,1002,BE,,Market Area,Y
+10Y1001C--00002H,LFC-AREA-AMPRION,Load-frequency control area of Amprion GmbH,,10XDE-RWENET---W,Active,,,,LFC Area,Y
+10Y1001C--00003F,UA,Ukraine,,10X1001C--00001X,Active,,,,"Market Area, Market Balance Area, Bidding Zone",Y
+10Y1001C--00005B,DEAMP-LU-AREA,Border Area DE-Amprion-Luxembourg,,,Active,,,,Border Area,Y
+10Y1001C--000069,DETNG-CH-AREA,Border Area DE-TransnetBW-Switzerland,,,Active,,,,Border Area,Y
+10Y1001C--000077,DEAMP-FR-AREA,Border Area DE-Amprion-France,,,Active,,,,Border Area,Y
+10Y1001C--000085,DEAMP-CH-AREA,Border Area DE-Amprion-Switzerland,,,Active,,,,Border Area,Y
+10Y1001C--000093,DETNG-FR-AREA,Border Area DE-TransnetBW-France,,,Active,,,,Border Area,Y
+10Y1001C--00010I,DETTG-DE50H-AREA,Border Area DE-TenneT-DE-50Hertz,,,Active,,,,Border Area,Y
+10Y1001C--00011G,DETTG-DEAMP-AREA,Border Area DE-TenneT - DE-Amprion,,,Active,,,,Border Area,Y
+10Y1001C--00012E,DETNG-DE50H-AREA,Border Area DE-TransnetBW - DE-50Hertz,,,Active,,,,Border Area,Y
+10Y1001C--00013C,DETNG-DETTG-AREA,Border Area DE-TransnetBW - DE-TenneT,,,Active,,,,Border Area,Y
+10Y1001C--00014A,DETNG-DEAMP-AREA,Border Area DE-TransnetBW - DE-Amprion,,,Active,,,,Border Area,Y
+10Y1001C--000158,PL-UA-AREA,Border Area Poland-Ukraine,,,Active,,,,Border Area,Y
+10Y1001C--000166,UA-SK-AREA,Border Area Ukraine-Slovakia,,,Active,,,,Border Area,Y
+10Y1001C--000174,DE50H-DEAMP-AREA,Border Area DE-50Hertz-DE-Amprion,,,Active,,,,Border Area,Y
+10Y1001C--000182,UA-IPS,Ukraine IPS,,,Active,,,,Control Area,Y
+10Y1001C--000190,BE-GB-AREA,Border Area Belgium-Great Britain,,,Active,,,,Border Area,Y
+10Y1001C--00020F,EE-ESTLINKBORDER,Border Area Estonia Estlink,,,Active,,EE,,Border Area,Y
+10Y1001C--00021D,FI-ESTLINKBORDER,Border Area Finland Estlink,,,Active,,FI,,Border Area,Y
+10Y1001C--00022B,CCR-IU,Capacity Calculation Region Ireland - United Kingdom,,10X1001A1001A361,Active,,,,Border Area,Y
+10Y1001C--000239,CCR-CHANNEL,Capacity Calculation Region Channel,,10X1001A1001A361,Active,,,,Border Area,Y
+10Y1001C--000247,BDL-AREA,Interconnector area BritNed,,,Active,,,,Scheduling Area,Y
+10Y1001C--000255,IF1-AREA,Interconnector area IFA,,,Active,,,,Scheduling Area,Y
+10Y1001C--000263,IF2-AREA,Interconnector area IFA2,,,Active,,,,Scheduling Area,Y
+10Y1001C--000271,NLL-AREA,Interconnector area Nemo Link,,,Active,,,,Scheduling Area,Y
+10Y1001C--00029Y,DE-CZ-AREA,Border Area Germany - Czech Republic,,,Active,,,,Border Area,Y
+10Y1001C--00030C,CE,Central Europe,,,Active,,,,Scheduling Area,Y
+10Y1001C--00031A,WE,Western Europe,,,Active,,,,Scheduling Area,Y
+10Y1001C--000328,EAST-EUROPE,Eastern Europe,,,Active,,,,Scheduling Area,Y
+10Y1001C--000336,CGMA_AREA,Common Grid Model Alignment Area,,10X1001A1001A450,Active,,,,Market Balance Area,Y
+10Y1001C--000344,ELECLINK_IC,ElecLink Interconnector,,,Active,,,,Scheduling Area,Y
+10Y1001C--000352,DE-LU-SE4,Germany-Luxembourg-Sweden 4 Border,,,Active,,SE,,Border Area,Y
+10Y1001C--000360,DE-NO-AREA,Border Area Germany - Norway,,,Active,,,,"Metering Grid Area, Border Area",Y
+10Y1001C--00037Z,EUROPE_EEA_CH,"European Single Market Area, EEA plus Switzerland",,,Active,,,,Market Area,Y
+10Y1001C--00038X,CZ-DE-SK-LT-SE4,Polish optimization area PLC,,,Active,,,,Border Area,Y
+10Y1001C--00039V,IT-SDC-CN-BORDER,Border Area IT-SACODC-CNorth,,,Active,,,,Border Area,Y
+10Y1001C--000409,IT-CS-CN-BORDER,Border Area IT-CSouth-CNorth,,,Active,,,,Border Area,Y
+10Y1001C--000417,IT-N-CN-BORDER,Border Area IT-North-CNorth,,,Active,,,,Border Area,Y
+10Y1001C--000425,IT-SA-SDC-BORDER,Border Area IT-Sardinia-SACODC,,,Active,,,,Border Area,Y
+10Y1001C--000433,IT-SA-CS-BORDER,Border Area IT-Sardinia-CSouth,,,Active,,,,Border Area,Y
+10Y1001C--000441,IT-S-CS-BORDER,Border Area IT-South-CSouth,,,Active,,,,Border Area,Y
+10Y1001C--00055X,IT-S-RSN-BORDER,Border Area IT-South-Rossano,,,Active,,,,Border Area,Y
+10Y1001C--00056V,IT-SIC-RSN-BORDE,Border Area IT-Sicily-Rossano,,,Active,,,,Border Area,Y
+10Y1001C--00057T,ME-IT-AREA,Border area Montenegro Italy,,10XCS-CG-TSO---5,Active,,,,Border Area,Y
+10YAD-AND------X,ANDORRA,Andorra Market area,,,Active,,,,Market Balance Area,Y
+10YAL-COMP-----O,COMP-KESH-AREA,Comp. Control area Albania,,,Active,,AL,,Valid EIC Function needed,Y
+10YAL-KESH-----5,AL,Albania,,,Active,,AL,,"Bidding Zone, Market Balance Area, Control Area, Member State",Y
+10YAPG--COMP---0,FICT_COMP_AT,fictitious comp. control area Austria,,,Active,,,,Valid EIC Function needed,Y
+10YAT-APG------L,AT,Austria,,,Active,1220,AT,,"Market Balance Area, Control Area, Control Block",Y
+10YAT-TIRAG-N--C,TIWAG-NETZ_AREA,TIWAG-Netz AG,,,Active,,,,Market Balance Area,Y
+10YAT-VKW-UNG--K,VUEN_AREA,VUEN Area,,,Active,,,,Market Balance Area,Y
+10YBA-JPCC-----D,BA,Bosnia and Herzegovina,,,Active,71000,BA,,"Member State, Bidding Zone, Market Balance Area, Control Area",Y
+10YBE----------2,BE,Belgium,,,Active,,,,"Market Balance Area, Control Block, Member State, Bidding Zone, Control Area",Y
+10YBE--COMP----Y,FICT_COMP_BE,fictitious comp. control area Belgium,,,Active,,,,Valid EIC Function needed,Y
+10YCA-BULGARIA-R,BG,Bulgaria,,,Active,1407,BG,,"Bidding Zone, Member State, Market Balance Area, Control Block, Control Area",Y
+10YCB-ALBANIA--1,CB-AL,CB Albania,,,Active,,AL,,Control Block,Y
+10YCB-BE-------T,CB-ELIA,Control Block  Belgium,,,Active,,,,Control Block,Y
+10YCB-BULGARIA-F,CB_BULGARIA,Elektroenergien Sistemen Operator EAD,,,Active,1407,BG,,Control Block,Y
+10YCB-CZECH-REP5,CB-CZECH-REP-ARE,"CEPS, a. s.",,,Active,10152,CZ,,Control Block,Y
+10YCB-FIC-NORTH8,FICT_CB,Fictitious Control Block for fictive control areas,10YCC-UCTE-NO--K,10XDE-RWENET---W,Active,50259,DE,,Valid EIC Function needed,Y
+10YCB-FR-ES-PT-S,CB_FR-ES-PT,Control Block France-Spain-Portugal,,,Active,,,,Control Block,Y
+10YCB-GERMANY--8,DE_DK1_LU,CB Germany_Denmark_Luxemburg,10YCC-UCTE-NO--K,10XDE-RWENET---W,Active,50259,DE,,Control Block,Y
+10YCB-GREECE---2,CB-GR,CB Greece,,,Active,,GR,,Control Block,Y
+10YCB-HUNGARY--J,CB-HU,Control Block Hungary,,,Active,,HU,,Control Block,Y
+10YCB-ITALY----1,ITALY_AREA_CB,Control Block  Italy,,,Active,,,,Control Block,Y
+10YCB-JIEL-----9,CB-RS_MK_ME,CB Serbia_FYROM_Montenegro,,,Active,,,,Control Block,Y
+10YCB-NL-------V,CB_NL_TENNET,Control Block Netherlands,,,Active,,,,Control Block,Y
+10YCB-POLAND---Z,CB-PL,CB Poland,,,Active,,PL,,Control Block,Y
+10YCB-ROMANIA--C,CB_ROMANIA,Control Block Romanian Power Grid,,,Active,RO-010325,RO,,Control Block,Y
+10YCB-SI-HR-BA-3,CB-SI_HR_BA,CB Slovenia_Croatia_Bosnia and Hercegovina,,,Active,,,,Control Block,Y
+10YCB-SLOVAKIA-H,CB-SLOVAKIA-AREA,"Slovenska elektrizacna prenosova sustava, a.s.",,,Active,824 84,SL,,Control Block,Y
+10YCB-SWITZERL-D,CB_CH,Control Block  Switzerland,,,Active,,,,Control Block,Y
+10YCB-TURKEY---V,CB_TURKEY,Control Block Turkey,,,Active,,TR,,Control Block,Y
+10YCC-UCTE-NO--K,CC_RG_CE_NORTH,Coordination Center RG CE North (Amprion),10YEU-CONT-SYNC0,10XDE-RWENET---W,Active,50259,DE,,Coordination Center Zone,Y
+10YCC-UCTE-SO--W,UCTE_SOUTH,Control Centre UCTE South (ETRANS),,,Active,,,,Coordination Center Zone,Y
+10YCH-SWISSGRIDZ,CH,Switzerland,,,Active,5070,CH,,"Member State, Control Area, Control Block, Bidding Zone, Market Balance Area",Y
+10YCS-CG-TSO---S,ME,Montenegro,,10XCS-CG-TSO---5,Active,,ME,,"Bidding Zone, Control Area, Market Balance Area, Member State",Y
+10YCS-SERBIATSOV,RS,Serbia,,,Active,11000,RS,,"Market Balance Area, Control Area, Member State, Bidding Zone",Y
+10YCY-1001A0003J,CY,Cyprus,,,Active,,CY,,"Market Balance Area, Bidding Zone, Member State",Y
+10YCZ-CEPS-----N,CZ,Czech Republic,,,Active,,,,"Control Block, Control Area, Bidding Zone, Member State, Market Balance Area",Y
+10YCZ--COMP----S,CEPS_COMP_AREA,CEPS,,,Active,-,CZ,,Valid EIC Function needed,Y
+10YDE--COMP----8,FICT_COMP_DE,fictitious Comp. Control area Germany,10YCB-GERMANY--8,10XDE-RWENET---W,Active,50259,DE,,Valid EIC Function needed,Y
+10YDE-ENBW-----N,DE-TRANSNETBW,Germany TransnetBW,,,Active,70173,DE,,Control Area,Y
+10YDE-EON------1,DE-TENNET_DE,Germany TenneT DE,,,Active,,,,Control Area,Y
+10YDE-RWENET---I,DE-AMPRION-SCHED,Amprion GmbH,10YCB-GERMANY--8,10XDE-RWENET---W,Active,50259,DE,,"Control Area, Scheduling Area",Y
+10YDE-VE-------2,DE-50HERTZ,Germany 50Hertz,,,Active,,DE,,Control Area,Y
+10YDK-1-------AA,OPT_AREA_DENMARK,Optimization area Denmark1,,,Active,,,,Market Balance Area,Y
+10YDK-1--------W,DK1,Denmark DK1,,10X1001A1001A248,Active,,,,"Market Balance Area, Control Area, Bidding Zone",Y
+10YDK-2--------M,DK2,Denmark DK2,,10X1001A1001A248,Active,,,,"Bidding Zone, Market Balance Area, Control Area",Y
+10YDOM-1001A001A,BALIT,FR and GB Cross Border Coordinated Market Balance Area,,,Active,,,,Border Area,Y
+10YDOM-1001A0028,GB-NL_MARKET,Market domain Great Britain – the Netherlands,,,Active,,,,Border Area,Y
+10YDOM-1001A0036,IT-SI-AREA,Border area Italy Slovenia,,,Active,,,,Border Area,Y
+10YDOM-1001A0044,HR-SI-AREA,Border area Croatia Slovenia,,,Active,,,,Border Area,Y
+10YDOM-1001A0060,CH-IT-AREA,Border area Switzerland Italy,,,Active,,,,Border Area,Y
+10YDOM-1001A027T,HU-RO-AREA,Border area Hungary Romania,,,Active,,,,Border Area,Y
+10YDOM-1001A028R,HU-SK-AREA,Border area Hungary Slovakia,,,Active,,,,Border Area,Y
+10YDOM-1001A029P,HU-UA-AREA,Border area Hungary Ukraine,,,Active,,,,Border Area,Y
+10YDOM-1001A0303,BA-RS-AREA,Border area BiH Serbia,,,Active,,,,Border Area,Y
+10YDOM-1001A0311,MK-RS-AREA,Border area Macedonia Serbia,,,Active,,,,Border Area,Y
+10YDOM-1001A033Y,BG-RS-AREA,Border area Bulgaria Serbia,,,Active,,,,Border Area,Y
+10YDOM-1001A034W,ME-RS-AREA,Border area Montenegro Serbia,,,Active,,,,Border Area,Y
+10YDOM-1001A035U,RO-RS-AREA,Border area Romania Serbia,,,Active,,,,Border Area,Y
+10YDOM-1001A036S,ES-AD-AREA,Border Area Spain Andorra,,,Active,,,,Border Area,Y
+10YDOM-1001A037Q,FR-GB-SEL-AREA,Border area between France and the UK at Sellindge delivery point,,,Active,,,,Border Area,Y
+10YDOM-1001A038O,FR-GB-MAN-AREA,Border area between France and the UK at Mandarins delivery point,,,Active,,,,Border Area,Y
+10YDOM-1001A039M,NO-NL-EEMSHAVEN,Border domain Norway-Netherlands at Eemshaven,,,Active,,,,Border Area,Y
+10YDOM-1001A0400,NO-NL-FEDA,Border domain Norway-Netherlands at Feda,,,Active,,,,Border Area,Y
+10YDOM-1001A041Z,NO-NL-AREA,Border Area Norway-Netherlands,,,Active,,,,Border Area,Y
+10YDOM-1001A042X,AL-GR-AREA,BORDER AREA ALBANIA GREECE,,,Active,,,,Border Area,Y
+10YDOM-1001A043V,BG-GR-AREA,BORDER AREA GREECE BULGARIA,,,Active,,,,Border Area,Y
+10YDOM-1001A044T,ENDK-DK1-DK2,Energinet.dk Storebælt,,10X1001A1001A248,Active,,,,Border Area,Y
+10YDOM-1001A045R,ME-BA-AREA,Border area Montenegro BiH,,,Active,,,,Border Area,Y
+10YDOM-1001A046P,HR-BA-AREA,Border area Croatia BiH,,,Active,,,,Border Area,Y
+10YDOM-1001A047N,CWE-RGCE-BORDER,Border between CWE Zone and the rest of Continental Europe,,,Active,,,,Border Area,Y
+10YDOM-1001A048L,FR-RGCE-BORDER,Border between France and the rest of Continental Europe,,,Active,,,,Border Area,Y
+10YDOM-1001A049J,ENDK-DK-NO,Energinet.dk/Statnett Skagerrak,,,Active,,,,Border Area,Y
+10YDOM-1001A050Y,ENDK-SK1-SK2,Energinet.dk/Statnett SK1 &  SK2,,,Active,,,,Border Area,Y
+10YDOM-1001A051W,ENDK-SK3-SK4,Energinet.dk/Statnett SK3 &  SK4,,,Active,,,,Border Area,Y
+10YDOM-1001A052U,DE-RGCE-BORDER,Border between Germany and the rest of Continental Europe,,,Active,,,,Border Area,Y
+10YDOM-1001A053S,GR-MK-AREA,BORDER AREA FYROM GREECE,,,Active,,,,Border Area,Y
+10YDOM-1001A054Q,ME-AL-AREA,Border area Montenegro - Albania,,,Active,,,,Border Area,Y
+10YDOM-1001A055O,LV-LT-AREA,Border Area Latvia Lithuania,,,Active,,,,Border Area,Y
+10YDOM-1001A056M,LV-RU-AREA,Border Area Latvia Russia,,,Active,,,,Border Area,Y
+10YDOM-1001A057K,EE-FI-AREA,Border area Estonia Finland,,,Active,,,,Border Area,Y
+10YDOM-1001A058I,EE-LV-AREA,Border area Estonia Latvia,,,Active,,,,Border Area,Y
+10YDOM-1001A059G,EE-RU-AREA,Border area Estonia Russia,,,Active,,,,Border Area,Y
+10YDOM-1001A060V,LT-SE-AREA,Border Area Lithuania Sweden,,,Active,,,,Border Area,Y
+10YDOM-1001A061T,NORTH-ITALY-BORD,"Border between Italy and France, Austria, Slovenia, Switzerland",,,Active,,,,Border Area,Y
+10YDOM-1001A063P,FI-SE1-AREA,Border area FI-SE1,,,Active,,,,Border Area,Y
+10YDOM-1001A064N,FI-SE3-AREA,Border area FI-SE3,,,Active,,,,Border Area,Y
+10YDOM-1001A065L,NO1-SE3-AREA,Border area NO1-SE3,,,Active,,,,Border Area,Y
+10YDOM-1001A066J,NO3-SE2-AREA,Border area NO3-SE2,,,Active,,,,Border Area,Y
+10YDOM-1001A067H,NO4-SE1-AREA,Border area NO4-SE1,,,Active,,,,Border Area,Y
+10YDOM-1001A068F,NO4-SE2-AREA,Border area NO4-SE2,,,Active,,,,Border Area,Y
+10YDOM-1001A069D,PL-SE4-AREA,Border area PL-SE4,,,Active,,,,Border Area,Y
+10YDOM-1001A070S,SE1-SE2-AREA,Border area SE1-SE2,,,Active,,,,Border Area,Y
+10YDOM-1001A071Q,SE2-SE3-AREA,Border area SE2-SE3,,,Active,,,,Border Area,Y
+10YDOM-1001A072O,SE3-SE4-AREA,Border area SE3-SE4,,,Active,,,,Border Area,Y
+10YDOM-1001A073M,BORDER_NO1-NO2,Border area NO1-NO2,,,Active,,,,Border Area,Y
+10YDOM-1001A074K,BORDER_NO1-NO3,Border area NO1-NO3,,,Active,,,,Border Area,Y
+10YDOM-1001A075I,BORDER_NO1-NO5,Border area NO1-NO5,,,Active,,,,Border Area,Y
+10YDOM-1001A076G,BORDER_NO2-NO5,Border area NO2-NO5,,,Active,,,,Border Area,Y
+10YDOM-1001A077E,BORDER_NO3-NO4,Border area NO3-NO4,,,Active,,,,Border Area,Y
+10YDOM-1001A078C,BORDER_NO4-FI,Border area NO4-FI,,,Active,,,,Border Area,Y
+10YDOM-1001A079A,ENDK-DK1-SE3,Energinet.dk/Svenska Kraftnat Kontiskan,,,Active,,,,Border Area,Y
+10YDOM-1001A080P,ENDK-DK2-SE4,Energinet.dk/Svenska Kraftnät Øresund,,,Active,,,,Border Area,Y
+10YDOM-1001A081N,LT-PL-AREA,Border Area LT-PL,,,Active,,,,Border Area,Y
+10YDOM-1001A082L,DE-PL-CZ-AREA,"Technical Profile between Germany (50Hertz), Poland and Czech Republic",,,Active,,,,Border Area,Y
+10YDOM-1001A083J,CZ-SK-AREA,Border Area Czech Republic Slovakia,,,Active,,,,Border Area,Y
+10YDOM-1001A084H,FI_RU_AREA,Border Area Finland Russia,,,Active,,,,Border Area,Y
+10YDOM-1001A085F,IT-MT-AREA,Border Area Italy Malta,,,Active,,,,Border Area,Y
+10YDOM-1001A086D,BE-LU-AREA,Border Area between Belgium (BE) and Luxembourg (LU),,,Active,,,,Border Area,Y
+10YDOM-1001A087B,EE-RU-LV-AREA,Border area Estonia-Russia-Latvia,,,Active,,,,Border Area,Y
+10YDOM-1001A0889,BORDER_NO3-NO5,Border area NO3-NO5,,,Active,,,,Border Area,Y
+10YDOM-1001A0897,RO-UA-AREA,Border Area Romania-Ucraina,,,Active,,,,Border Area,Y
+10YDOM-1001A090M,RO-BG-AREA,Border Area Romania-Bulgaria,,,Active,,,,Border Area,Y
+10YDOM-1001A091K,RO-MD-AREA,Border Area Romania- Republica Moldova,,,Active,,,,Border Area,Y
+10YDOM-1001A092I,BORDER_DE-NL,Border area Germany - Netherlands,,,Active,,,,Border Area,Y
+10YDOM-1001A093G,BG-MK-AREA,BORDER AREA BULGARIA MACEDONIA,,,Active,,,,Border Area,Y
+10YDOM-1001A094E,BORDER_DK1-NL,Border area Denmark1 - Netherlands,,10X1001A1001A361,Active,,,,Border Area,Y
+10YDOM-1010A009U,CH-AT-AREA,Border Area Switzerland Austria,,,Active,,,,Border Area,Y
+10YDOM-1010A0108,GR-IT-AREA,Border Area Greece Italy,,,Active,,,,Border Area,Y
+10YDOM-1010A0116,AT-IT-AREA,Border area Austria-Italy,,,Active,,,,Border Area,Y
+10YDOM-1010A0124,CH-DE-AREA,Border area Germany-Switzerland,,,Active,70173,DE,,Border Area,Y
+10YDOM-1010A0132,HU-RS-AREA,Border area Serbia Hungary,,,Active,,,,Border Area,Y
+10YDOM-1010A0140,ES-MA-AREA,Border Area Spain Morocco,,,Active,,,,Border Area,Y
+10YDOM-1010A016X,AT-DE-AREA,Border Area Austria–Germany,,,Active,,,,Border Area,Y
+10YDOM-1010A018T,APG-TENNET-AREA,Border Area APG–TenneT (Germany),,,Active,,,,Border Area,Y
+10YDOM-1010A019R,APG-ENBW-AREA,Border Area APG–EnBW,,,Active,,,,Border Area,Y
+10YDOM-1010A0205,APG-AMPRION-AREA,Border Area APG–Amprion,,,Active,,,,Border Area,Y
+10YDOM-1010A0213,TTG-ENDK-AREA,Border area TenneT Gmbh – EnDK,,,Active,,,,Border Area,Y
+10YDOM-1010A0221,50HZT-ENDK-AREA,Border area 50Hertz-EnDk,,,Active,,DE,,Border Area,Y
+10YDOM-1010A024Y,NI-GB-AREA,Border area between Northern Ireland (NI) and Great Britain (GB),,,Active,,,,Border Area,Y
+10YDOM-1010A025W,IE-GB-AREA,Border area between Republic of Ireland (IE) and Great Britain (GB),,,Active,,,,Border Area,Y
+10YDOM-1010A026U,HR-RS-AREA,Border area Croatia Serbia,,,Active,,,,Border Area,Y
+10YDOM-1010A032Z,AL-RS-AREA,Border area Albania Serbia,,,Active,,,,Border Area,Y
+10YDOM-AT-CZ---5,AT-CZ-AREA,Border Area Austria-Czech Republic,,,Active,,,,Border Area,Y
+10YDOM-AT-HU---0,HU-AT,Border Area,,,Active,,,,Border Area,Y
+10YDOM-AT-SI---V,AT-SI-AREA,Border Area Austria-Slovenia,,,Active,,,,Border Area,Y
+10YDOM--BE-FR--O,BE-FR-AREA,Border area Belgium France,,,Active,,,,Border Area,Y
+10YDOM--BE-NL--8,BE-NL-AREA,Border area Belgium Netherlands.,,,Active,,,,Border Area,Y
+10YDOM--BG-TR--E,BG-TR-AREA,Border Area Bulgaria-Turkey,,,Active,,TR,,Border Area,Y
+10YDOM--CH-FR--W,CH-FR-AREA,Border area Switzerland  France,,,Active,,,,Border Area,Y
+10YDOM-CZ-D2---O,CZ-DETENNET-AREA,CZ-TenneTDE Domain,,,Active,,,,Border Area,Y
+10YDOM-CZ-D8---V,CZ-D8-AREA,Border Area Czech Republic 50Hertz,,,Active,,,,Border Area,Y
+10YDOM-CZ-DE-SKK,CZ-DE-SK-AREA,Border area Czech Repulbic Germany and Slovakia,,,Active,,,,Border Area,Y
+10YDOM--CZ-PL--S,CZ-PL-AREA,Border area Czech Repulbic and Poland,,,Active,,,,Border Area,Y
+10YDOM-D8-PL---R,D8-PL-AREA,Border Area 50Hertz Poland,,,Active,,,,Border Area,Y
+10YDOM--DE-FR--8,DE-FR-AREA,Border area Germany France,,,Active,,,,Border Area,Y
+10YDOM-EON-NL--2,DE-NL-AREA,Border area Germany (TSO: TenneT DE) Netherlands,,,Active,50259,DE,,Border Area,Y
+10YDOM--ES-FR--D,ES-FR-AREA,Border area Spain France,,,Active,,,,Border Area,Y
+10YDOM--ES-PT--T,ES-PT-AREA,Border Area Spain Portugal,,,Active,,,,Border Area,Y
+10YDOM--FR-GB--Y,FR-GB-AREA,Border area between France and the United Kingdom,,,Active,,,,Border Area,Y
+10YDOM--FR-IT--Q,FR-IT-AREA,Border area France Italy,,,Active,,,,Border Area,Y
+10YDOM--GR-TR--8,GR-TR-AREA,Border Area Greece-Turkey,,,Active,,TR,,Border Area,Y
+10YDOM--HR-HU--B,HR-HU-AREA,Border Area Croatia Hungary,,,Active,,,,Border Area,Y
+10YDOM-PL-SE-LT2,LT-SE4-AREA,Polish optimization area PLA,,,Active,,,,Border Area,Y
+10YDOM-PL-SK---O,PL-SK-AREA,Border Area Poland - Slovakia,,,Active,,,,Border Area,Y
+10YDOM-REGION-1V,CWE-EU,CWE Region,,,Active,,EU,,Market Balance Area,Y
+10YDOM-RWE-NL--W,AMPRION-NL-AREA,Border area Amprion TSO GmbH (DE) TenneT TSO BV (NL),,,Active,,,,Border Area,Y
+10YES-REE------0,ES,Spain,,10XES-REE------E,Active,,,,"Control Area, Bidding Zone, Market Balance Area",Y
+10YEU-CONT-SYNC0,EU-CONTINENT-SYN,Synchronous Zone of Continental Europe,,10XDE-RWENET---W,Active,50259,DE,,Valid EIC Function needed,Y
+10YFEP-COMP----T,FICT_COMP_FR,Comp. Control area France-Spain-Portugal,,,Active,,,,Valid EIC Function needed,Y
+10YFI-0--------3,FINORTH,FINorth,,,Active,,FI,,Market Balance Area,Y
+10YFI-1C-------O,FI_CUT_P1,Finnish cut P1,,,Active,,FI,,Market Balance Area,Y
+10YFI-1--------U,FI,Finland,,,Active,,FI,,"Member State, Bidding Zone, Control Area, Market Balance Area",Y
+10YFI-2--------K,FISOUTH,FISouth,,,Active,,FI,,Market Balance Area,Y
+10YFR-RTE------C,FR,France,,,Active,,,,"Control Area, Member State, Market Balance Area, Control Block, Bidding Zone",Y
+10YGB----------A,GB,Great Britain,,,Active,,GB,,"Control Area, Bidding Zone, Market Balance Area",Y
+10YGR-COMP-----M,COMP-HTSO-AREA,Comp. Control area Greece,,,Active,,GR,,Valid EIC Function needed,Y
+10YGR-HTSO-----Y,GR,Greece,,,Active,,GR,,"Bidding Zone, Member State, Control Area, Market Balance Area",Y
+10YHR-HEP------M,HR,Croatia,,,Active,,HR,,"Member State, Market Balance Area, Control Area, Bidding Zone",Y
+10YHU-COMP-----A,FICT-COMP-HU,Fictitious compensation control area Hungary,,,Active,1014,HU,,Valid EIC Function needed,Y
+10YHU-MAVIR----U,HU,Hungary,,,Active,,HU,,"Bidding Zone, Market Balance Area, Member State, Control Area, Control Block",Y
+10YIE-1001A00010,IE,Ireland,,,Active,,IE,,"Market Balance Area, Member State, Control Area",Y
+10YIT-GRTN-----B,IT,Italy,,,Active,,,,"Member State, Market Balance Area, Control Area, Control Block",Y
+10YIT-GRTN-COMPL,GRTN_AREA_COMP,Comp. Control area Italy,,,Active,,,,Valid EIC Function needed,Y
+10YLT-1001A0008Q,LT,Lithuania,,,Active,LT-09311,LT,,"Market Balance Area, Bidding Zone, Member State, Control Area",Y
+10YLU-CEGEDEL-NQ,LU,Luxembourg,,,Active,,,,"Member State, Control Area, Scheduling Area",Y
+10YLV-1001A00074,LV,Latvia,,,Active,LV-1073,LV,,"Member State, Bidding Zone, Control Area, Market Balance Area",Y
+10YMA-ONE------O,MOROCCO,Morocco Market area,,,Active,,,,Market Balance Area,Y
+10YMK-MEPSO----8,MK,FYROM,,,Active,,MK,,"Bidding Zone, Control Area, Market Balance Area, Member State",Y
+10YNL--COMP----G,NL_COMP_TENNET,fictitious comp. control area Netherlands,,,Active,,,,Valid EIC Function needed,Y
+10YNL----------L,NL,Netherlands,,,Active,,,,"Bidding Zone, Control Area, Market Balance Area, Member State, Control Block",Y
+10YNO-0--------C,NO,Norway,,,Active,,,,"Member State, Market Balance Area, Control Area",Y
+10YNO-1--------2,NO1,Norwegian Area Elspot Area 1,,,Active,,,,"Bidding Zone, Market Balance Area",Y
+10YNO-2--------T,NO2,Norwegian Area Elspot Area 2,,,Active,,,,"Bidding Zone, Market Balance Area",Y
+10YNO-3--------J,NO3,Norwegian Area Elspot Area 3,,,Active,,,,"Bidding Zone, Market Balance Area",Y
+10YNO-4--------9,NO4,Norwegian Area Elspot Area 4,,,Active,,,,"Market Balance Area, Bidding Zone",Y
+10Y--NORTHCOMP-H,FICT_CA_NORTH,Fictitious CA in UCTE North for Mngt of compensation UCTE North/South,10YCB-FIC-NORTH8,10XDE-RWENET---W,Active,50259,DE,,Valid EIC Function needed,Y
+10YPL-AREA-----S,PL,Poland,,,Active,05-520,PL,,"Member State, Bidding Zone, Market Balance Area, Control Area",Y
+10YPL-COMP-----E,FICT_COMP_PL,Fictitious comp. control area Poland,,,Active,,PL,,Valid EIC Function needed,Y
+10YPT-REN------W,PT,Portugal,,10XPT-REN------9,Active,,,,"Market Balance Area, Control Area, Member State, Bidding Zone, Control Block",Y
+10YRO--COMP----2,FICT_COMP_RO,Fictitious comp. control area Romania,,,Active,,RO,,Valid EIC Function needed,Y
+10YRO-TEL------P,RO,Romania,,,Active,,RO,,"Control Area, Control Block, Member State, Bidding Zone, Market Balance Area",Y
+10YSE-0--------U,SE_CUT_AREA_1,Swedish cut area 1,,,Active,,,,Market Balance Area,Y
+10YSE-1-------AZ,OPT_AREA_SWEDEN,Optimization area Sweden,,,Active,,,,Market Balance Area,Y
+10YSE-1C-------E,SE_CUT_1,Swedish cut 1,,,Active,,,,Market Balance Area,Y
+10YSE-1--------K,SE,Sweden,,,Active,,,,"Member State, Control Area",Y
+10YSE-2--------A,SE_CUT_AREA_2,Swedish cut area 2,,,Active,,,,Market Balance Area,Y
+10YSE-2C-------4,SE_CUT_2,Swedish cut 2,,,Active,,,,Market Balance Area,Y
+10YSE-3--------0,SE_CUT_AREA_3,Swedish cut area 3,,,Active,,,,Market Balance Area,Y
+10YSE-3C-------V,SE_CUT_3,Swedish cut 3,,,Active,,,,Market Balance Area,Y
+10YSE-4C-------R,SE_CUT_4,Swedish cut 4,,,Active,,,,Market Balance Area,Y
+10YSE-4--------R,SE_CUT_AREA_4,Swedish cut area 4,,,Active,,,,Market Balance Area,Y
+10YSH-COMP-----N,FICT_COMP_SH,Comp. Control area Slovenia – Croatia – part of Bosnia,,,Active,,,,Valid EIC Function needed,Y
+10YSI-ELES-----O,SI,Slovenia,,,Active,,SI,,"Bidding Zone, Control Area, Market Balance Area, Member State",Y
+10YSK--COMP----0,FICT_COMP_SK,"Slovenska elektrizacna prenosova sustava, a.s.",,,Active,824 84,SL,,Valid EIC Function needed,Y
+10YSK-SEPS-----K,SK,Slovak Republic,,,Active,,,,"Bidding Zone, Market Balance Area, Control Area, Control Block, Member State",Y
+10Y--SOUTHCOMP-9,FICT_CA_SOUTH,Fictive CA in UCTE South for Mngt of compensation UCTE Noth/South,,,Active,,,,Valid EIC Function needed,Y
+10YTR--COMP----E,COMP_AREA_TEIAS,Compensation area Turkey,,,Active,,TR,,Valid EIC Function needed,Y
+10YTR-TEIAS----W,TEIAS_AREA,TEIAS Area,,,Active,06100,TR,,"Control Block, Market Balance Area, Control Area, Bidding Zone",Y
+10YUA-WEPS-----0,UA-BEI,Ukrainian Area of Burshtyn island,,10X1001C--00001X,Active,,,,Control Area,Y
+11Y0-0000-0001-T,NP-ID-C,Nord Pool AS,,11XNPSPOT-ELBASW,Active,1325,NO,,,Y
+11Y0-0000-0004-K,VORTEX-TRADE,vortex energy - Obrot Sp. z o.o.,,,Active,70-419,PL,,Balance Group,Y
+11Y0-0000-0133-6,KWH_ESB,KW_HAAG,,11XHVHP2010----K,Active,81539,DE,,Balance Group,Y
+11Y0-0000-0149-L,NP-DA-C,Nord Pool DayAhead,,11XNPSPOT-ELBASW,Active,1325,NO,,Balance Group,Y
+11Y0-0000-0202-G,EMCO_BG_RDIFF,EMCO BG Rounding Diff,,11XNPSPOT-ELBASW,Active,1325,NO,,Balance Group,Y
+11YRBAHNSTROM--P,DBBAHNSTROMREGEL,"DB Energie GmbH Regelzone 16,7 Hz Bahnstromnetz",,,Active,60326,DE,,Market Balance Area,Y
+12Y-0000000947-3,ATHINAENERGIE-BG,Athina Energie AG,,12X-0000001972-E,Active,9495,LI,,Balance Group,Y
+12Y-0000000958-X,AXPO-RENEW---BG,Axpo Trading AG,,,Active,5401,CH,,Balance Group,Y
+14Y----0000041-W,AT-EXAAMC,Virtual Bidding Zone EXAA,,13X----EXAA----G,Active,1090,AT,,Market Area,Y
+14YATAPG-00040-E,APG-BID,APG Market Area Intraday,,,Active,1220,AT,,Market Area,Y
+14Y-BZN-AT-SI--F,BZNATSI,Austrian Power Grid AG,,,Active,1220,AT,,Border Area,Y
+14YEXAADATENML2F,EXAACCP2,EXAA Abwicklungsstelle für Energieprodukte AG,,,Active,1090,AT,,"Market Area, Balance Group",Y
+14YEXAADATENMLDU,EXAACCP,EXAA Abwicklungsstelle für Energieprodukte AG,,,Active,1090,AT,,"Balance Group, Market Area",Y
+21Y000000000001U,PEGNORDB,Point Exchange Gas - NORD B,,,Active,,FR,,Valid EIC Function needed,Y
+21Y000000000002S,PEGTEREGA,Point Exchange Gas - TIGF,,,Active,64000,FR,,Market Balance Area,Y
+21Y000000000009E,VTP-CEGH,VTP-CEGH,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000011R,VPPV,VPPV,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000012P,TTFB,TTFB,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000014L,BVP,Virtual area for balancing gas Shipper allocation,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000017F,NAP,Virtual area for balancing gas System Operator emergency gas,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000018D,NVP,Virtual area for balancing gas Shipper emergency gas,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000019B,NOMFLXQTR,Virtual area for quarterly flexable contract transfers,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000020Q,EEMSO,EEMSHAVEN O,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000021O,EEMSE,EEMSHAVEN E,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000022M,NOMFLXYR,Virtual area for yearly flexable contract transfers,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000023K,BLZONE,Belgian Balancing L Zone,,,Active,,BE,,Market Balance Area,Y
+21Y000000000024I,BHZONE,Belgian Balancing H Zone,,,Active,,BE,,Market Balance Area,Y
+21Y000000000025G,MG-OST-AT,Market Area East AT,,,Active,,,,Market Balance Area,Y
+21Y000000000026E,NGTN-BG,National gas transmission network (Bulgaria),,,Active,,,,Valid EIC Function needed,Y
+21Y000000000027C,GTNTT-BG,Gas transmission network for transit transmission (Bulgaria),,,Active,,,,Valid EIC Function needed,Y
+21Y000000000028A,AE-SI,Aggregated exit in Slovenia,,21X-SI-A-A0A0A-8,Active,,,,Market Area,Y
+21Y0000000000298,PCTD_PCLD-ES,EXITS PCTD/PCLD ENAGAS Spain,,,Active,,,,Market Area,Y
+21Y000000000030N,PRODUCTION-ES,PRODUCTION SITES  ENAGAS Spain,,,Active,,,,Market Area,Y
+21Y000000000031L,AGGREX_NS_BG,Aggregated exits NGTN (BG),,,Active,,,,Market Area,Y
+21Y000000000032J,AGGREX_TS_BG,Aggregated exits GTNTT (BG),,,Active,,,,Market Area,Y
+21Y000000000033H,AGGR_PROD_ONTRAS,ONTRAS Aggregate National Production entries,,,Active,,,,Market Area,Y
+21Y000000000034F,AGGR_IND_ONTRAS,ONTRAS Aggregate exits industrial consumers,,,Active,,,,Local Market Area,Y
+21Y000000000035D,TG_AGGR_CUSTOM_L,Thyssengas Aggregated final customers L,,,Active,,,,Local Market Area,Y
+21Y000000000036B,TG_AGGR_CUSTOM_H,Thyssengas aggregated final customers H,,,Active,,,,Local Market Area,Y
+21Y0000000000379,TG_AGGR_PRODUC_L,Thyssengas Aggregated production L,,,Active,,,,Market Area,Y
+21Y0000000000387,TG_AGGR_PRODUC_H,Thyssengas aggregated production H,,,Active,,,,Market Area,Y
+21Y0000000000395,VPM01,VIP Romgaz UGS (RO),,,Active,,,,Market Area,Y
+21Y000000000040K,AGGREN_PR_NS_BG,Aggregated entries NGTN (BG),,,Active,,,,Border Area,Y
+21Y000000000041I,TRS,TRADING REGION SOUTH (GRTgaz - TEREGA) France,,,Active,,,,Border Area,Y
+21Y000000000042G,VTP-CZ,CZ Virtual Trading Point,,,Active,,,,Market Area,Y
+21Y000000000043E,FLXBELPP,Final consumers (BE) (Fluxys) Power Plants L-zone,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000044C,FLXBEHPP,Final consumers (BE) (Fluxys) Power Plants H-zone,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000045A,FLXBELINDUST,Final consumers (BE) (Fluxys) Industrial clients L-zone,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000468,FLXBEHINDUST,Final consumers (BE) (Fluxys) Industrial clients H-zone,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000476,FLXBELDISTRIB,Distribution (BE) L-zone,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000484,FLXBEHDISTRIB,Distribution (BE) H-zone,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000492,GREATERBELFAST,Greater Belfast Exit Point,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000050H,AGGREE_PROD_HR,Aggregated production entrance (HR),,,Active,,,,Valid EIC Function needed,Y
+21Y000000000051F,AGGREX_HR,Aggregated exits (HR),,,Active,,,,Valid EIC Function needed,Y
+21Y000000000052D,TEREGA-PIC-FR,TEREGA Delivery Pool - Industrials (FR),,,Active,,,,Local Market Area,Y
+21Y000000000053B,TEREGA-PITD-FR,TEREGA Delivery Pool - Distribution (FR),,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000549,THERMAL_PLANT_IT,Thermal Plants Italy,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000557,DEL_OTHERNET_IT,Delivery to other networks Italy,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000565,NAT_PROD_IT,National Production Italy,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000573,IND_CONSUMERS_IT,Industrial customers Italy,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000581,DISTR_NETWORK_IT,Distribution networks Italy,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000060E,VTP_PL_BAL_PLATF,Virtual Trading Point - balancing platform (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y000000000061C,VTP_PL_POLPX,Virtual Trading Point - Gas Exchange (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y000000000062A,VTP_PL_OTC,Virtual Trading Point - OTC (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000638,DOM_GAS_FIELD_PL,PL - Domestic Gas Fields,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000646,NITROG_REMOV_PL,Nitrogen Removal Plants (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000654,GAS_MIX_FAC_PL,Gas mixing facilities (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000662,END_USERS_PL,Final Consumers (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000670,AGG_DISTRIB_PL,Aggregated Distribution (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y000000000068Z,SCHNEEREN,Schneeren,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000069X,ZONE_PRODUKTION,Zone Produktion,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000070B,POOL_S,Aggregated total exits South Zone,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000719,POOL_N,Aggregated total exits North Zone,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000727,INDUS_POOL_S,Aggregated industrial exits South Zone,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000735,INDUS_POOL_N,Aggregated industrial exits North Zone,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000743,DISTRIB_POOL_S,Aggregated distribution exits South Zone,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000751,DISTRIB_POOL_N,Aggregated distribution exits North Zone,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000077Y,AGGREX_BN,Aggregated endconsumers bayernets,21X-DE-A-A0A0A-A,21X-DE-A-A0A0A-A,Active,80336,GE,,Valid EIC Function needed,Y
+21Y000000000078W,VTP-FI,Virtual Trading Point Finland,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000079U,VTP-LT,Virtual Trading Point Lithuania,,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000808,VTP_PL_BALP_L,Virtual Trading Point - balancing platform - L gas (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000816,VTP_PL_OTC_L,Virtual Trading Point - OTC - L gas(PL),,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000824,VTP_PL_BALP_SGT,Virtual Trading Point - balancing platform TGPS (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000832,VTP_PL_POLPX_SGT,Virtual Trading Point - Gas Exchange TGPS (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y0000000000840,VTP_PL_OTC_SGT,Virtual Trading Point - OTC - TGPS (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y000000000085Z,PL_TGPS_BAL_AREA,PL - TGPS balancing area,,,Active,,,,Market Balance Area,Y
+21Y000000000086X,PL_L_BAL_AREA,PL - L balancing area,,,Active,,,,Market Balance Area,Y
+21Y000000000087V,PL_E_BAL_AREA,PL - E balancing area,,,Active,,,,Market Balance Area,Y
+21Y000000000088T,VPP,Virtual Production Point,,,Active,,,,Balance Group,Y
+21Y000000000089R,VTP,Virtual Technical Point,,,Active,,,,Balance Group,Y
+21Y0000000000905,CREOSIND,Final Consumer Creos Industrial Clients,,,Active,,,,Market Area,Y
+21Y0000000000913,CREOSDIST,Public Distribution Lux,,,Active,,,,Market Area,Y
+21Y0000000000921,CREOSPOW,Final Consumers Creos Power Plant,,,Active,,,,Market Area,Y
+21Y000000000094Y,CREOSINDPOW,Final Consumers Creos Industrial,,,Active,,,,Market Area,Y
+21Y000000000095W,DOM_GAS_FLD_L_PL,PL - Domestic Gas Fields -  L-gas,,,Active,,,,Valid EIC Function needed,Y
+21Y000000000096U,NITR_REMOV_L_PL,Nitrogen Removal Plants - L-gas (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y000000000097S,END_USERS_L_PL,Final Consumers - L-gas (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y000000000098Q,AGG_DISTRIB_L_PL,Aggregated Distribution - L-gas  (PL),,,Active,,,,Valid EIC Function needed,Y
+21Y000000000099O,END_USERS_LV,Final consumers LV,,21X0000000013724,Active,LV1009,LV,,"Market Area, Member State, Local Market Area",Y
+21Y000000000100S,DISTRIBUTION_LV,Distribution LV,,21X0000000013724,Active,LV1009,LV,,"Member State, Local Market Area, Market Area, Market Balance Area",Y
+21Y000000000101Q,VTP_LV,Virtual Trading Point Latvia,,21X0000000013724,Active,LV1009,LV,,"Member State, Market Area, Market Balance Area",Y
+21Y000000000102O,DP-SK,Aggregated point to distribution systems and storage,,,Active,,,,Local Market Area,Y
+21Y000000000103M,VTP-SK,Virtual Trading Point Eustream,,,Active,,,,Market Area,Y
+21Y000000000105I,VTT_CROATIA,Croatia,,,Active,,,,Market Balance Area,Y
+21Y000000000106G,GAS_SYS_ESTONIA,Estonian gas system,,,Active,,EE,,Market Area,Y
+21Y000000000107E,KK_PETRO,Croatia PETRO domestic network point for single customer,,,Active,,,,Local Market Area,Y
+21Y000000000108C,KK_EL_TO_ZG,Croatia EL_TO_ZG domestic network point for single customer,,,Active,,,,Local Market Area,Y
+21Y000000000109A,KK_TE_TO_ZG,Croatia TE_TO_ZG domestic network point for single customer,,,Active,,,,Local Market Area,Y
+21Y000000000110P,KK_RAF_URINJ,Croatia RAF_URINJ domestic network point for single customer,,,Active,,,,Local Market Area,Y
+21Y000000000111N,UMS_ETAN,Croatia ETAN point related to domestic gas production facility,,,Active,,,,Local Market Area,Y
+21Y000000000112L,UMS_GOLA,Croatia GOLA point related to domestic gas production facility,,,Active,,,,Local Market Area,Y
+21Y000000000113J,UMS_FERDINAND,Croatia FERDINAND point related to domestic gas production facility,,,Active,,,,Local Market Area,Y
+21Y000000000114H,UMS_HAMPOVICA,Croatia HAMPOVICA point related to domestic gas production facility,,,Active,,,,Local Market Area,Y
+21Y000000000115F,UMS_MOLVE,Croatia MOLVE point related to domestic gas production facility,,,Active,,,,Local Market Area,Y
+21Y000000000116D,UMS_TERM_PULA,Croatia TERM_PULA point related to domestic gas production facility,,,Active,,,,Local Market Area,Y
+21Y000000000117B,OKOLI_GAS_STOR,PSP OKOLI,,,Active,,,,Local Market Area,Y
+21Y0000000001189,AGG_PPG_TGPS_PL,Aggregated PPG -TGPS (PL),,,Active,,,,Local Market Area,Y
+21Y0000000001197,AGG_PPG_E_PL,Aggregated PPG -E gas (PL),,,Active,,,,Local Market Area,Y
+21Y000000000120M,AGG_PPG_L_PL,Aggregated PPG -L gas (PL),,,Active,,,,Local Market Area,Y
+21Y000000000122I,KK_TE_SISAK,Croatia KK_TE_SISAK,,,Active,,,,Local Market Area,Y
+21Y000000000123G,INTERGAS_LT,Druskininkai Municipality Republic of Lithuania,,,Active,,,,Local Market Area,Y
+21Y000000000124E,AGG_EX_DE_GTG_L,Final Consumers DE GTG Nord L Gas,,,Active,,,,Market Area,Y
+21Y000000000125C,SWEDEN_GAS_BALZ,SE ZONE,,,Active,,,,Market Balance Area,Y
+21Y000000000126A,AGGREGATED_EXIT,GASCADE Aggregated final customers,,,Active,,,,Market Area,Y
+21Y0000000001278,PEG_TRF,PEG TRF,,,Active,,,,Market Balance Area,Y
+21Y0000000001286,AGGREGATED_ENTRY,GASCADE Aggregated production ,,,Active,,,,Market Area,Y
+21Y0000000001294,NWG_AGGR_CUSTOM,NOWEGA AGGREGATION CUSTOMER,,,Active,,,,Market Area,Y
+21Y000000000130J,NWG_AGGR_PROD,NOWEGA AGGREGATION PRODUCTION,,,Active,,,,Market Area,Y
+21Y000000000131H,VTP-GREECE,Virtual Trading Point Greece,,,Active,,,,"Market Area, Market Balance Area",Y
+21Y000000000132F,AGGREGATE_NAP,AGGR Exit terranets,,,Active,,DE,,Market Area,Y
+21Y000000000133D,ISAC_ORLOV_2-3,Transit 2 and Transit 3,,,Active,,,,Metering Grid Area,Y
+21Y000000000134B,VTP_PL_POLPX_L,Virtual Trading Point Gas Exchange L gas PL,,,Active,,,,Market Area,Y
+21Y---A001A001-B,VOB-CZ,Virtual Trading Point RWE Transgas Net,,,Active,,CZ,,Valid EIC Function needed,Y
+21Y---A001A002-8,ELLUND-DK,Ellund,,,Active,,DK,,Valid EIC Function needed,Y
+21Y---A001A003-5,GTF-DK,Bilateral Trading Point,,,Active,,DK,,Valid EIC Function needed,Y
+21Y---A001A004-2,NPTF-DK,Exchange NordPool,,,Active,,DK,,Valid EIC Function needed,Y
+21Y---A001A006-X,FOS-FR,Fos (Cavaou &  Tonkin),,,Active,,FR,,Valid EIC Function needed,Y
+21Y---A001A007-U,MIDI-FR,MIDI (Dordogne/Hérault),,,Active,,FR,,Valid EIC Function needed,Y
+21Y---A001A008-R,TAISNI-FR,Taisnierès (H) (FR),,,Active,,FR,,Valid EIC Function needed,Y
+21Y---A001A009-O,IBP-IE,IBP,,,Active,,IE,,Valid EIC Function needed,Y
+21Y---A001A010-A,PSV-IT,PSV,,,Active,,IT,,Valid EIC Function needed,Y
+21Y---A001A011-7,MH-EC-UK,Milford Haven (Terminal Entry Cap),,,Active,,GB,,Valid EIC Function needed,Y
+21Y---A001A012-4,OBER-AT,Oberkappel,,,Active,,AT,,Valid EIC Function needed,Y
+21Y---A001A013-1,UBERACK-AT,Überackern,,,Active,,AT,,Valid EIC Function needed,Y
+21Y---A001A014-Z,OBERGAIL-FR-DE,Obergailbach FR DE Area,,,Active,,,,Valid EIC Function needed,Y
+21Y---A001A016-T,WALL-CH-DE,Wallbach CH DE area,,,Active,,,,Valid EIC Function needed,Y
+21Y---A001A018-N,VTP-CH,Virtual Trading Point - VTP CH,,,Active,,,,Valid EIC Function needed,Y
+21Y---A001A023-Y,BAUM-SK-AT,Baumgarten SK AT Area,,,Active,,,,Valid EIC Function needed,Y
+21Y---A002A005-T,PVB,PVB ES,,,Active,,,,Valid EIC Function needed,Y
+21YBA-EC-------B,BA-EC,Terminal Bacton Entry Cap,,,Active,,,,Valid EIC Function needed,Y
+21YBP-EC-------G,BP-EC,Terminal Burton Entry Cap,,,Active,,,,Valid EIC Function needed,Y
+21YBR-EC-------T,BR-EC,Terminal Barrow Entry Cap,,,Active,,,,Valid EIC Function needed,Y
+21YEA-EC-------9,EA-EC,Terminal Easington Entry Cap,,,Active,,,,Valid EIC Function needed,Y
+21YGB-UKGASGRIDW,UK-GAS-GRID,UK GAS GRID,,,Active,,GB,,Valid EIC Function needed,Y
+21YHS-EC------0B,HS-EC,Terminal Hornsea Entry Cap,,,Active,,,,Valid EIC Function needed,Y
+21YIG-EC-------X,IG-EC,Terminal Isle of Grain Entry Cap,,,Active,,,,Valid EIC Function needed,Y
+21YNL----TTF---1,NL-TTF,NL TTF,,,Active,,NL,,Market Balance Area,Y
+21YPNT-EX-GAS-NT,PEGNORD,Point Exchange Gas - NORD,,,Active,,FR,,Valid EIC Function needed,Y
+21YPNT-EX-GAS-SJ,PEGSUD,Point Exchange Gas - SUD,,,Active,,FR,,Valid EIC Function needed,Y
+21YRH-EC-------F,RH-EC,Terminal Rough Entry Cap,,,Active,,,,Valid EIC Function needed,Y
+21YSF-EC-------Q,SF-EC,Terminal St Fergus Entry Cap,,,Active,,,,Valid EIC Function needed,Y
+21YTE-EC-------P,TE-EC,Terminal Teesside Entry Cap,,,Active,,,,Valid EIC Function needed,Y
+21YTH-EC-------Q,TH-EC,Terminal Theddlethorpe Entry Cap,,,Active,,,,Valid EIC Function needed,Y
+22Y201903141---O,BE-DEAMP-AREA,Border Area Belgium-DE-Amprion,,10X1001A1001A094,Active,,,,,Y
+22Y201903142---J,DEAMP-BE-AREA,Border Area DE-Amprion-Belgium,,10X1001A1001A094,Active,,,,Border Area,Y
+22Y201903143---E,ALEGRO-AREA,ALEGRO Area,,10X1001A1001A094,Active,,,,,Y
+22Y201903144---9,BE-AL-VH-AREA,Belgium ALEGRO Virtual HUB,,10X1001A1001A094,Active,,,,,Y
+22Y201903145---4,DEAMP-AL-VH-AREA,DE Amprion ALEGRO Virtual HUB,,10X1001A1001A094,Active,,,,,Y
+27YG-RTN-TSO-CZW,G-RTN-TSO-CZ,"RWE Transgas NET, s.r.o",,,Active,140 21,CZ,,Valid EIC Function needed,Y
+28Y0000000000001,EDP_CELJE,"Elektro Celje, DO EDP",,,Active,2000,SI,,Distribution Network Area,Y
+28Y000000000002Y,EDP_LJUBLJANA,"Elektro Ljubljana, DO EDP",,,Active,2000,SI,,Distribution Network Area,Y
+28Y000000000003W,EDP_MARIBOR,"Elektro Maribor, DO EDP",,,Active,2000,SI,,Distribution Network Area,Y
+28Y000000000004U,EDP_GORENJSKA,"Elektro Gorenjska, DO EDP",,,Active,2000,SI,,Distribution Network Area,Y
+28Y000000000005S,EDP_PRIMORSKA,"Elektro Primorska, DO EDP",,,Active,2000,SI,,Distribution Network Area,Y
+28Y000000000006Q,SODO_DO,SODO d.o.o.,,,Active,2000,SI,,Distribution Network Area,Y
+28Y000000000007O,ZDS_PE_RAVNE,ZDS Petrol Energetika Ravne,,,Active,2000,SI,,Distribution Network Area,Y
+28Y000000000008M,ZDS_PE_STORE,ZDS Petrol Energetika Štore,,,Active,2000,SI,,Distribution Network Area,Y
+28Y000000000009K,ZDS-JESENICE,ZDS JESENICE,,,Active,2000,SI,,Distribution Network Area,Y
+28Y000000000010Z,ZDS_JES_ACRONI,ZDS Acroni Jesenice,,,Active,2000,SI,,Distribution Network Area,Y
+28Y000000000011X,ZDS_KID_TALUM,ZDS Talum Kidričevo,,,Active,2000,SI,,Distribution Network Area,Y
+37Y701125MH0000I,DVGW-MH0000I,Marktgebiet HGas NetConnect,,,Active,,,,Market Area,Y
+37Y701130ML0000P,DVGW-ML0000P,Marktgebiet L-Gas 1,,,Active,53121,DE,,Market Area,Y
+37Y701133MH0000P,DVGW-MH0000P,Marktgebiet GASPOOL,,,Active,53121,DE,,Market Area,Y
+39YSINBP000000NE,MGPHUNGARY,MGP-HUNGARY,,,Active,8600,HU,,Balance Group,Y
+44Y-000000000005,FI_FSJ000,Caruna Oy,,44X-000000000253,Active,00068,FI,,Metering Grid Area,Y
+44Y-000000000013,FI_FED000,Caruna Espoo Oy,,44X-000000000261,Active,00068,FI,,Metering Grid Area,Y
+44Y-000000000021,FI_FAS000,"Caruna Oy, aluesiirto",,44X-000000000253,Active,00068 ,FI,,Metering Grid Area,Y
+44Y-00000000004Y,FI_SKE000,Seiverkot Oy,,44X-00000000028Y,Active,60100,FI,,Metering Grid Area,Y
+44Y-00000000005W,FI_KVK000,Verkko Korpela Oy,,44X-00000000029W,Active,69100,FI,,Metering Grid Area,Y
+44Y-00000000006U,FI_KVK001,Verkko Korpela Oy,,44X-00000000029W,Active,69100,FI,,Metering Grid Area,Y
+44Y-00000000007S,FI_KVK002,Verkko Korpela Oy,,44X-00000000029W,Active,69100,FI,,Metering Grid Area,Y
+44Y-00000000008Q,FI_TOHE00,Verkko Korpela Oy,,44X-00000000029W,Active,69100,FI,,Metering Grid Area,Y
+44Y-00000000009O,FI_VE0000,Vantaan Energia Sähköverkot Oy,,44X-00000000030A,Active,01300,FI,,Metering Grid Area,Y
+44Y-000000000102,FI_KSS000,Köyliön-Säkylän Sähkö Oy,,44X-000000000326,Active,27800,FI,,Metering Grid Area,Y
+44Y-000000000110,FI_KOSE00,KSS Verkko Oy,,44X-000000000334,Active,45100,FI,,Metering Grid Area,Y
+44Y-00000000012Z,FI_PKS000,PKS Sähkönsiirto Oy,,44X-000000000342,Active,80101,FI,,Metering Grid Area,Y
+44Y-00000000013X,FI_KRN000,PKS Sähkönsiirto Oy,,44X-000000000342,Active,80101,FI,,Metering Grid Area,Y
+44Y-00000000014V,FI_PAL000,PKS Sähkönsiirto Oy,,44X-000000000342,Active,80101,FI,,Metering Grid Area,Y
+44Y-00000000015T,FI_PUN000,PKS Sähkönsiirto Oy,,44X-000000000342,Active,80101,FI,,Metering Grid Area,Y
+44Y-00000000016R,FI_RUSK00,PKS Sähkönsiirto Oy,,44X-000000000342,Active,80101,FI,,Metering Grid Area,Y
+44Y-00000000017P,FI_SRI000,PKS Sähkönsiirto Oy,,44X-000000000342,Active,80101,FI,,Metering Grid Area,Y
+44Y-00000000018N,FI_VIHT00,PKS Sähkönsiirto Oy,,44X-000000000342,Active,80101,FI,,Metering Grid Area,Y
+44Y-00000000019L,FI_VAAR00,PKS Sähkönsiirto Oy,,44X-000000000342,Active,80101,FI,,Metering Grid Area,Y
+44Y-00000000021Y,FI_HKE000,Helen Sähköverkko Oy,,44X-000000000350,Active,00090,FI,,Metering Grid Area,Y
+44Y-00000000022W,FI_KE0000,Helen Sähköverkko Oy,,44X-000000000350,Active,00090,FI,,Metering Grid Area,Y
+44Y-00000000023U,FI_HAB000,Helen Sähköverkko Oy,,44X-000000000350,Active,00090,FI,,Metering Grid Area,Y
+44Y-00000000024S,FI_SAB000,Helen Sähköverkko Oy,,44X-000000000350,Active,00090,FI,,Metering Grid Area,Y
+44Y-00000000025Q,FI_VUA000,Helen Sähköverkko Oy,,44X-000000000350,Active,00090,FI,,Metering Grid Area,Y
+44Y-00000000026O,FI_VUB000,Helen Sähköverkko Oy,,44X-000000000350,Active,00090,FI,,Metering Grid Area,Y
+44Y-00000000027M,FI_PEL000,Pori Energia Sähköverkot Oy,,44X-00000000036Z,Active,28101,FI,,Metering Grid Area,Y
+44Y-00000000028K,FI_REO000,Rauman Energia Sähköverkko Oy,,44X-00000000037X,Active,26100,FI,,Metering Grid Area,Y
+44Y-00000000029I,FI_VSV000,Vakka-Suomen Voima Oy,,44X-00000000038V,Active,23800,FI,,Metering Grid Area,Y
+44Y-00000000030X,FI_AHV000,Helen Oy,,44X-00000000039T,Active,00090,FI,,Metering Grid Area,Y
+44Y-00000000031V,FI_MAN000,Helen Oy,,44X-00000000039T,Active,00090,FI,,Metering Grid Area,Y
+44Y-00000000032T,FI_PTA000,Helen Oy,,44X-00000000039T,Active,00090,FI,,Metering Grid Area,Y
+44Y-00000000033R,FI_KRP000,Kronoby Elverk Ab,,44X-000000000407,Active,68500,FI,,Metering Grid Area,Y
+44Y-00000000034P,FI_PKV000,Paneliankosken Voima Oy,,44X-000000000431,Active,27430,FI,,Metering Grid Area,Y
+44Y-00000000035N,FI_OE0000,Oulun Energia Siirto ja Jakelu Oy,,44X-00000000045Y,Active,90101,FI,,Metering Grid Area,Y
+44Y-00000000036L,FI_KME000,Keminmaan Energia ja Vesi Oy,,44X-00000000048S,Active,94450,FI,,Metering Grid Area,Y
+44Y-00000000037J,FI_ASV000,Esse Elektro-Kraft Ab,,44X-00000000049Q,Active,68820,FI,,Metering Grid Area,Y
+44Y-00000000039F,FI_LANK00,Lankosken Sähkö Oy ,,44X-000000000512,Active,29810,FI,,Metering Grid Area,Y
+44Y-00000000040U,FI_RKE000,Raahen Energia Oy ,,44X-000000000520,Active,92101,FI,,Metering Grid Area,Y
+44Y-00000000041S,FI_KOKE00,Kokemäen Sähkö Oy,,44X-00000000053Z,Active,32800,FI,,Metering Grid Area,Y
+44Y-00000000042Q,FI_LAMM00,Lammaisten Energia Oy,,44X-00000000054X,Active,29200,FI,,Metering Grid Area,Y
+44Y-00000000043O,FI_NUR000,Nurmijärven Sähköverkko Oy,,44X-00000000055V,Active,01900 ,FI,,Metering Grid Area,Y
+44Y-00000000044M,FI_TKS000,Tampereen Sähköverkko Oy,,44X-00000000057R,Active,33100,FI,,Metering Grid Area,Y
+44Y-00000000045K,FI_HER000,Herrfors Nät-verkko Oy Ab,,44X-00000000058P,Active,68600,FI,,Metering Grid Area,Y
+44Y-00000000046I,FI_HER001,Herrfors Nät-verkko Oy Ab,,44X-00000000058P,Active,68600,FI,,Metering Grid Area,Y
+44Y-00000000047G,FI_HER002,Herrfors Nät-verkko Oy Ab,,44X-00000000058P,Active,68600,FI,,Metering Grid Area,Y
+44Y-00000000048E,FI_HER003,Herrfors Nät-verkko Oy Ab,,44X-00000000058P,Active,68600,FI,,Metering Grid Area,Y
+49Y000000000000S,XBID-MC,Single Intraday Coupling Domain,,10X1001A1001A361,Active,,NL,,Market Area,Y
+52Y0000000000006,GTS_LDC,GTS Local Distribution Companies,52Y0000000000006,21X-NL-A-A0A0A-Z,Active,9727KC,NL,,Local Market Area,Y
+52Y0000000000014,GTS_PRODUCTION,GTS Aggregated Production,52Y0000000000014,21X-NL-A-A0A0A-Z,Active,9727KC,NL,,Market Area,Y
+52Y0000000000022,GTS_PDC,GTS Private Distribution Companies,52Y0000000000022,21X-NL-A-A0A0A-Z,Active,9727KC,NL,,Local Market Area,Y
+52Y0000000000030,GTS_INDUSTRY,GTS Aggregated Industry,52Y0000000000030,21X-NL-A-A0A0A-Z,Active,9727KC,NL,,Market Area,Y
+55Y11NG-NBP--11D,NG-NBP,National Grid NBP,,21X-GB-A-A0A0A-7,Active,CV34 6DA,GB,,Market Balance Area,Y
+55YCOUL1-ENERGY0,COULOMBENERGY,Coulomb Energy,,,Active,TS17 6BF,GB,,Balance Group,Y
+55YENERGY-24LTDW,ENERGY24LTD,Energy24limited,,,Active,TS17 6BF,GB,,Balance Group,Y
+55YINOVYN77RUNCK,NOVYNRUNCORNG,Inovyn Runcorn G,,,Active,WA7 4JE,GB,,Balance Group,Y
+55YIUKCONNECTOR4,IUK,Interconnector UK Ltd,,,Active,EC4A 1AB,GB,,Market Area,Y
+59Y-0-LITASCO-9M,LITASCO,LITASCO S.A.,,59X-7-LITASCO-5Y,Active,1205,IT,,Balance Group,Y
+60Y000000000001I,AREA-RO-NTS,Market Area Romania (NTS),,,Active,,RO,,"Market Area, Market Balance Area",Y
+60Y000000000002G,AREA-RO-DTS,Market Area Romania (DTS),,,Active,,RO,,"Market Balance Area, Market Area",Y
+63Y2261598125895,FRG_POOL_DISTRIB,GRTgaz aggregated end consumers  distribution,,,Active,,FR,,,Y
+63Y2681718729982,FRG_POOL_INDUS,GRTgaz aggregated end consumers  industrial,,,Active,,FR,,,Y
+63Y564764785539O,FRG_POOL_GRTGAZ,GRTgaz aggregated end consumers,,,Active,,FR,,,Y

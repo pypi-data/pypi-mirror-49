@@ -1,0 +1,24 @@
+---
+# Project name
+project_name: 
+
+# Region name (Italy, France,)
+area: 
+
+# Data frequency ('hour', 'day')
+frequency: 'hour'
+
+# Path of the log file name
+log_path:
+# Log description-level
+# ('DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL')
+log_level: 'INFO'
+
+components:
+
+optimizer:
+
+cfg_path:
+  geo:
+  plot:
+

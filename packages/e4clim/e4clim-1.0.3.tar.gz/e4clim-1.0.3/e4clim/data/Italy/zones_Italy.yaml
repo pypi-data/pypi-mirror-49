@@ -1,0 +1,48 @@
+---
+NORD:
+  regions:
+    - Piemonte
+    - "Valle d'Aosta"
+    - Lombardia
+    - Trentino Alto Adige
+    # Division of TAA in 2:
+    - Provincia Autonoma di Bolzano/Bozen
+    - Provincia Autonoma di Trento
+    - Veneto
+    - Friuli Venezia Giulia
+    - Liguria
+    - Emilia Romagna
+  entsoe: NORTH
+CNOR:
+  regions:
+    - Toscana
+    - Umbria
+    - Marche
+  entsoe: CENTRE_NORTH
+CSUD:
+  regions:
+    - Lazio
+    - Abruzzo
+    - Campania
+  entsoe: CENTRE_SOUTH
+SUD:
+  regions:
+    - Molise
+    - Puglia
+    - Basilicata
+    - Calabria
+  entsoe: SOUTH
+SARD:
+  regions:
+    - Sardegna
+  entsoe: SARDINIA
+SICI:
+  regions:
+    - Sicilia
+  entsoe: SICILY
+
+
+
+
+
+

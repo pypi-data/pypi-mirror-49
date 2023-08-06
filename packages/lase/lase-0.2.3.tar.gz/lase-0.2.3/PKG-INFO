@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: lase
+Version: 0.2.3
+Summary: Gitflow release tool
+Home-page: https://github.com/node13h/lase
+Author: Sergej Alikov
+Author-email: sergej.alikov@gmail.com
+License: AGPL-3.0
+Description: # lase - Gitflow release tool
+        
+        
+        ## Installing
+        
+        ```sh
+        pip install lase
+        ```
+        
+        
+        ## Using
+        
+        Start a release:
+        
+        ```sh
+        lase start
+        ```
+        
+        Finish a release:
+        
+        ```sh
+        lase finish
+        ```
+        
+        
+        ## Developing
+        
+        Prerequisites:
+        
+        - Python 3
+        - pipenv
+        
+        
+        Initialize a virtualenv with dev dependencies installed:
+        
+        ```sh
+        make develop
+        ```
+        
+        Run unit-tests:
+        
+        ```sh
+        make test
+        ```
+        
+        Run functional tests (you'll need [Shelter](https://github.com/node13h/shelter) installed to run these tests):
+        
+        ```sh
+        make e2e-test
+        ```
+        
+        Start a release:
+        
+        ```sh
+        make release-start
+        ```
+        
+        Finish a release:
+        
+        ```sh
+        make release-finish
+        ```
+        
+        Buld and publish the source distribution for the version X.Y.Z:
+        
+        ```sh
+        git checkout X.Y.Z
+        make publish
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

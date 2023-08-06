@@ -1,0 +1,8 @@
+README.md
+setup.py
+cymove/__init__.py
+cymove.egg-info/PKG-INFO
+cymove.egg-info/SOURCES.txt
+cymove.egg-info/dependency_links.txt
+cymove.egg-info/not-zip-safe
+cymove.egg-info/top_level.txt

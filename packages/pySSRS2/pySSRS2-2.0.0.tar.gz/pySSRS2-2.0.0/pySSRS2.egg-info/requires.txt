@@ -1,0 +1,4 @@
+suds-py3
+requests
+requests_ntlm
+suds_requests4

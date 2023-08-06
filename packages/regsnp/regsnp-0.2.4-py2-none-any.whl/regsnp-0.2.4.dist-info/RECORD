@@ -1,0 +1,9 @@
+regsnp-0.2.4.data/scripts/regsnp_intron,sha256=rYPfeA4Lq2nX9N6xLAipoZnNkeLEKlVkN3SYryyvsiI,2478
+regsnp_intron/feature_calculator.py,sha256=7xNY3J0HMY9icTLlyiZ506nRf1wJeoo3D344cHyVIkY,12171
+regsnp_intron/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regsnp_intron/utils/snp.py,sha256=67SeVTBHhc2Pm4Gaw4RsBzipO-4OagRY95EtZ5w0tbk,2247
+regsnp_intron/utils/vcf.py,sha256=2_7NXp1oNaqj2cTM_uxl6IMzb7e9eHxERQdrm-l14Pw,1641
+regsnp-0.2.4.dist-info/METADATA,sha256=tfPDToJKKVbPx-AmGtf48C21A3_vThSZaEwLJeZufOw,3582
+regsnp-0.2.4.dist-info/WHEEL,sha256=2n5gfr2CmDNU5qrqPgO0uSe7oSWu-GEpPLFa0_ueMrk,97
+regsnp-0.2.4.dist-info/top_level.txt,sha256=7PrdRIuqSk5nqrHVZb_kLkyaJWnMeyTk4bPjj__OGgU,14
+regsnp-0.2.4.dist-info/RECORD,,

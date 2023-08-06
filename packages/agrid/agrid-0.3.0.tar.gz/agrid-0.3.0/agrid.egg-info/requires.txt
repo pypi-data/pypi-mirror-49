@@ -1,0 +1,11 @@
+numpy
+xarray
+matplotlib
+pyproj
+scipy
+fiona
+geopandas
+rasterio
+imageio
+json
+re

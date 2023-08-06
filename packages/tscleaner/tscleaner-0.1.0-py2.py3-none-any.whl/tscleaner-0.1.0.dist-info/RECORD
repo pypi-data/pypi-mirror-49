@@ -1,0 +1,13 @@
+tscleaner/__init__.py,sha256=u4CA-CSqXAHLFCgDr6Yue0sVhJ6vP1JuXRTJ5QGfkkI,177
+tscleaner/cleaner.py,sha256=SqUsqV7wacrOpqURHm1BHe6omeAUQsFoUpZ6N3r09UE,118
+tscleaner/dataframe.py,sha256=Hf2OvnUeN-cjPAo-i2h3K6Sq6he4eYrU9cueTMxJGCY,10536
+tscleaner/error.py,sha256=NShP6NgJ43q2IAgTlxy8ORWb51XQiUyS0JLgRJGnYwo,2509
+tscleaner/figure_plotter.py,sha256=mL2nI0Xouc2ej5Wi6rIVTVyVAbUN4TLBGlf2lEZnzXE,5856
+tscleaner/loop_files.py,sha256=Mld1he9uDfiq26OEvGsEf9t19xZQ6dKi8ojMD5zyh9M,899
+tscleaner/reservoir_series.py,sha256=GB0KkjbWuUreFEhFTLck1Mi8PB620IYsgoCVemmfctU,12709
+tscleaner-0.1.0.dist-info/AUTHORS.rst,sha256=9vxxDFChnfLfZHeiaOYqcuk11cae51jOSVTfHG-UNxo,177
+tscleaner-0.1.0.dist-info/LICENSE,sha256=HE-nokHoVH2kmNKiGK_E_T8bPJV7cEWFVyME5zUIbUc,1097
+tscleaner-0.1.0.dist-info/METADATA,sha256=utIQZXVNfKPinTxxjK6uHlQ9i_f_cGkrBdsSKCae3cw,1887
+tscleaner-0.1.0.dist-info/WHEEL,sha256=05Ahrak1u2K61DpLp9CDNSbUImLTITCMom_cqTFk6pE,116
+tscleaner-0.1.0.dist-info/top_level.txt,sha256=tv1cofFHWZPTeRnQJQuKWBZzahVvVBj-4BZmxZgPDI8,10
+tscleaner-0.1.0.dist-info/RECORD,,

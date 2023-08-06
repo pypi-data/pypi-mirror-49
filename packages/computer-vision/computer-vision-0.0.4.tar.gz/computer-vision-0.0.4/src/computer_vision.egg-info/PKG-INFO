@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: computer-vision
+Version: 0.0.4
+Summary: Machine Learning utilities to make your Project Development Life easier
+Home-page: https://github.com/nishgaba-ai/computer-vision
+Author: Nishchal Gaba
+Author-email: nishchal@unrealai.xyz
+License: UNKNOWN
+Description: # Computer-Vision
+        
+        
+        This package overs a wide range of Machine Learning utilities to make your research simpler. Most of the algorithms will be centered around computer-vision but some other useful algorithms may as well be added later down the line.
+        
+        ## Installation
+        Run the following to install:
+        ### pip install computer-vision
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

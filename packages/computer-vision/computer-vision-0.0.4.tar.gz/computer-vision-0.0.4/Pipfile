@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = ">=3.7"
+twine = "*"
+
+[packages]
+mlutils = {editable = true,path = "."}
+computer-vision = {editable = true,path = "."}
+unrealai = {editable = true,path = "."}
+
+[requires]
+python_version = "3.6"

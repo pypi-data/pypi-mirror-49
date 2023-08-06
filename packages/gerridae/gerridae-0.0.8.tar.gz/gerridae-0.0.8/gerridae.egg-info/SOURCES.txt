@@ -1,0 +1,17 @@
+setup.py
+gerridae/__init__.py
+gerridae/field.py
+gerridae/item.py
+gerridae/request.py
+gerridae/response.py
+gerridae/spider.py
+gerridae.egg-info/PKG-INFO
+gerridae.egg-info/SOURCES.txt
+gerridae.egg-info/dependency_links.txt
+gerridae.egg-info/requires.txt
+gerridae.egg-info/top_level.txt
+gerridae/log/__init__.py
+gerridae/log/log.py
+tests/__init__.py
+tests/test_logger.py
+tests/test_spider.py

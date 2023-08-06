@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: aiida-icl
+Version: 0.3.1
+Summary: AiiDA plugin interfacing with the Imperial College London cx1 HPC
+Home-page: https://github.com/aiidateam/aiida-scheduler-cx1
+Author: Chris Sewell
+Author-email: chrisj_sewell@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: AiiDA
+Requires-Dist: aiida-core (==1.0.0b5)
+Requires-Dist: six
+Requires-Dist: ruamel.yaml
+Provides-Extra: code_style
+Requires-Dist: flake8 (<3.8.0,>=3.7.0) ; extra == 'code_style'
+Requires-Dist: yapf (==0.26.0) ; extra == 'code_style'
+Requires-Dist: pre-commit (==1.14.4) ; extra == 'code_style'
+Provides-Extra: testing
+Requires-Dist: mock (==2.0.0) ; extra == 'testing'
+Requires-Dist: pgtest (==1.2.0) ; extra == 'testing'
+Requires-Dist: sqlalchemy-diff (==0.1.3) ; extra == 'testing'
+Requires-Dist: pytest (==3.6.3) ; extra == 'testing'
+Requires-Dist: wheel (>=0.31) ; extra == 'testing'
+Requires-Dist: coverage ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: pytest-timeout ; extra == 'testing'
+Requires-Dist: pytest-regressions ; extra == 'testing'
+
+UNKNOWN
+
+

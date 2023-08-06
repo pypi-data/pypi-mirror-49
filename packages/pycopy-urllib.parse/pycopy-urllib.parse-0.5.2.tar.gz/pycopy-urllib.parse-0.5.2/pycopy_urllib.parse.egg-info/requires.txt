@@ -1,0 +1,3 @@
+pycopy-re-pcre
+pycopy-collections
+pycopy-collections.defaultdict

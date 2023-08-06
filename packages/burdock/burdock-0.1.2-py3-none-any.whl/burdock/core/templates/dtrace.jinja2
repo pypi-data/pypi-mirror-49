@@ -1,0 +1,9 @@
+{% for trace in traces -%}
+{{name}}.data:::POINT
+{%- for item in trace %}
+{{item.var.name}}
+{{item.var|daikon(item.value)}}
+1{# (var modified: 0 = no, 1 = yes #}
+{%- endfor %}
+
+{% endfor %}

@@ -1,0 +1,3 @@
+[console_scripts]
+burdock = burdock.cli.__main__:entry
+

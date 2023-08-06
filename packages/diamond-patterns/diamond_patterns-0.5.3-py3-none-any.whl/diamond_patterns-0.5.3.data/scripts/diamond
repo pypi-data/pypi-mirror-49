@@ -1,0 +1,64 @@
+#!python
+# -*- coding: utf-8 -*-
+# diamond-patterns (cc) 2019 Ian Dennis Miller
+
+import click
+import sys
+sys.path.insert(0, '.')
+from diamond_patterns import Pattern
+
+
+@click.group()
+def cli():
+    pass
+
+
+@click.command('pattern', short_help='Scaffold a folder with a pattern.')
+@click.option('--interactive/--no-interactive', default=True, help='Interactive configuration.')
+@click.argument('pattern')
+def scaffold(pattern, interactive):
+    p = Pattern()
+    p.run_scaffold(pattern, interactive)
+
+
+@click.command('docs', short_help='Documentation for a pattern.')
+@click.option('--web/--no-web', default=False, help='Open docs in browser.')
+@click.argument('pattern')
+def docs(pattern, web):
+    p = Pattern()
+    p.open_docs(pattern, web)
+
+
+@click.command('list', short_help='List available patterns.')
+def list_patterns():
+    p = Pattern()
+    print("Available patterns:\n")
+    for pattern in p.patterns:
+        print("- {0}".format(pattern))
+    print("")
+
+
+@click.command('version', short_help='Show version')
+def version():
+    print()
+
+
+@click.command('update', short_help='Update patterns')
+def update():
+    p = Pattern()
+    print("Updating {}".format(p.config["manifest_file"]))
+    p.download_manifest()
+
+
+cli.add_command(list_patterns)
+cli.add_command(docs)
+cli.add_command(scaffold)
+cli.add_command(version)
+cli.add_command(update)
+
+
+if __name__ == '__main__':
+    from diamond_patterns.__meta__ import __version__
+    print("Diamond-Patterns", __version__)
+    print("")
+    cli()

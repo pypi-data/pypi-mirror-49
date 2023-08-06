@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: north-devices
+Version: 0.0.2
+Summary: Drivers and utilities for third-party North Robotics devices
+Home-page: https://gitlab.com/north-robotics/north_devices
+Author: Sean Clark
+Author-email: sclark@northrobotics.com
+License: MIT
+Description: 
+        # North Devices
+        
+        The `north_devices` library contains drivers and utilities for third-party devices that can be used in the North 
+        Robotics ecosystem.
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown

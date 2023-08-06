@@ -1,0 +1,7 @@
+jsonkv/__init__.py,sha256=7ukmxOzVgxoAh8nA0HUnY51DKAKJz_xVIhzMxz_4UYE,22
+jsonkv/filelock.py,sha256=549KT4vcdswkSS6WyT5nivNzAuHaRD3mgnA-NUEPDGI,2992
+jsonkv/kv.py,sha256=E0FBNAYq7vq1DXGnOQS4_sxkulS8PhhW5jXf_0HkODA,2879
+jsonkv-1.1.10.dist-info/METADATA,sha256=_7WyaE_a55VOWjNca-0_F2rTcmvsI1IPVrwcxcwpcXg,750
+jsonkv-1.1.10.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+jsonkv-1.1.10.dist-info/top_level.txt,sha256=rDRxymGpptBIb7JddipkWSe2sTJCQFPNbavO7e45uFo,7
+jsonkv-1.1.10.dist-info/RECORD,,

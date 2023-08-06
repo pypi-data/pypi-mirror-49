@@ -1,0 +1,8 @@
+README.rst
+setup.py
+invx/empty.py
+invx.egg-info/PKG-INFO
+invx.egg-info/SOURCES.txt
+invx.egg-info/dependency_links.txt
+invx.egg-info/not-zip-safe
+invx.egg-info/top_level.txt

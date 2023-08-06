@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: LoggingWebsocketHandler
+Version: 0.1.2.2
+Summary: simple handler logging to websocket endpoint
+Home-page: https://github.com/aleiphoenx/python-LoggingWebsocketHandler
+Author: aleiphoenix
+Author-email: aleiphoenix@gmail.com
+License: WTFPL
+Platform: UNKNOWN
+Requires-Dist: websocket-client
+
+UNKNOWN
+
+

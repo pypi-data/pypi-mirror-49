@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pyfplapi/__init__.py
+pyfplapi.egg-info/PKG-INFO
+pyfplapi.egg-info/SOURCES.txt
+pyfplapi.egg-info/dependency_links.txt
+pyfplapi.egg-info/requires.txt
+pyfplapi.egg-info/top_level.txt
+pyfplapi.egg-info/zip-safe

@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+FoxedoKMS.egg-info/PKG-INFO
+FoxedoKMS.egg-info/SOURCES.txt
+FoxedoKMS.egg-info/dependency_links.txt
+FoxedoKMS.egg-info/requires.txt
+FoxedoKMS.egg-info/top_level.txt
+foxedo_kms/__init__.py
+foxedo_kms/keys.py

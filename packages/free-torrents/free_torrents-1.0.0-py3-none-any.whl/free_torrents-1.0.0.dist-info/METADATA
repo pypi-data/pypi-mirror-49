@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: free-torrents
+Version: 1.0.0
+Summary: Script to facilitate downloading free (as-in-speech) torrents
+Home-page: https://legoktm.com/w/index.php?title=free-torrents
+Author: Kunal Mehta
+Author-email: legoktm@member.fsf.org
+License: GPL-3.0-or-later
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+

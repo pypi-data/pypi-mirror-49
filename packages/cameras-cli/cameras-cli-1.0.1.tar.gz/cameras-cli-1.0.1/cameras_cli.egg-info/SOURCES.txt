@@ -1,0 +1,10 @@
+README.md
+setup.py
+cameras_cli/__init__.py
+cameras_cli.egg-info/PKG-INFO
+cameras_cli.egg-info/SOURCES.txt
+cameras_cli.egg-info/dependency_links.txt
+cameras_cli.egg-info/entry_points.txt
+cameras_cli.egg-info/not-zip-safe
+cameras_cli.egg-info/requires.txt
+cameras_cli.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+
+[docs]
+sphinxcontrib_trio==1.1.0

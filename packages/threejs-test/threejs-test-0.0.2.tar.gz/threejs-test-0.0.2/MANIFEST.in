@@ -1,0 +1,4 @@
+include src/*
+include src/build/*
+include src/jsm/controls/*
+include src/jsm/libs/*

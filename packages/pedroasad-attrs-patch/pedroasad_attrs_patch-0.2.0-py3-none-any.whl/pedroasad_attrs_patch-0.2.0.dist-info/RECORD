@@ -1,0 +1,8 @@
+attrs_patch/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+attrs_patch/attr/__init__.py,sha256=uokQ5swAKUNeRvrdPV3nQJwwCeMCpuN4-z6L-_9X5Ig,6892
+attrs_patch/attr/converters.py,sha256=Y869OPKomJ8RhFq8afO23FWq0BT2cOVZWAYRXrnuqj0,716
+attrs_patch/attr/validators.py,sha256=DQeCUJZ_0v1FKzf4q2QbEmyUBgKtGSDlEEDIOmiBw6s,1347
+pedroasad_attrs_patch-0.2.0.dist-info/LICENSE.txt,sha256=bCPNNGPj0HIz5xOGQQ3Rs1Q_4a7YFHyxrOhGlXhgqNA,1050
+pedroasad_attrs_patch-0.2.0.dist-info/WHEEL,sha256=B9sUljbermATdnR9vRc7_PZudWzu8UpY6g74X8l4XFg,85
+pedroasad_attrs_patch-0.2.0.dist-info/METADATA,sha256=S_CJ668nsSJXWtn-X4Lgc_bRH-kszOlQcUcG4TP_iDE,4912
+pedroasad_attrs_patch-0.2.0.dist-info/RECORD,,

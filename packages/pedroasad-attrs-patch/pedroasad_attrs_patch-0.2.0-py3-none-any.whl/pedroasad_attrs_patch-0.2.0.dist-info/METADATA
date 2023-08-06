@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: pedroasad-attrs-patch
+Version: 0.2.0
+Summary: A set of patches for the excellent attrs library
+Home-page: https://psa-exe.gitlab.io/python-attrs-patch
+License: MIT
+Author: Pedro Asad
+Author-email: pasad@lcg.ufrj.br
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: all
+Provides-Extra: numpy
+Requires-Dist: attrs (>=19.1,<20.0)
+Requires-Dist: numpy (>=1.16,<2.0); extra == "all" or extra == "numpy"
+Project-URL: Documentation, https://psa-exe.gitlab.io/python-attrs-patch
+Project-URL: Repository, https://gitlab.com/psa-exe/python-attrs-patch
+Description-Content-Type: text/markdown
+
+# Python application template
+
+[![][badge-python]][python-docs]
+[![][badge-version]][repository-latest-release]
+
+[![][badge-mit]][MIT License]
+[![][badge-black]][Black] + [![][badge-flake8]][flake8]
+
+[![][badge-ci-status]][repository-master]
+[![][badge-ci-security]][repository-security]
+[![][badge-codecov]][repository-codecov]
+
+*A set of patches for the excellent attrs library*
+
+| For                            | See                                                  |
+| ------------------------------ | ---------------------------------------------------- |
+| Documentation                  | https://psa-exe.gitlab.io/python-attrs-patch         |
+| Issue tracker                  | https://gitlab.com/psa-exe/python-attrs-patch/issues |
+| Repository contents            | [MANIFEST]                                           |
+| History of changes             | [CHANGELOG]                                          |
+| Contribution/development guide | [CONTRIBUTING]                                       |
+| Copy of [MIT License]          | [LICENSE]                                            |
+
+---
+
+## Installation
+
+```bash
+pip install pedroasad-attrs-patch
+```
+
+This library contains optional support for [Numpy] arrays in [attrs frozen classes](http://www.attrs.org/en/stable/how-does-it-work.html?highlight=frozen#immutability).
+It may be installed by passing the `[numpy]` option when installing.
+
+
+## Usage
+
+It acts as a drop-in replacement to [attrs].
+The example below shows how to use it, including all currently existing improvements.
+
+```python
+from attrs_patch import attr
+
+
+@attr.autodoc
+@attr.s(frozen=True)
+class SomeClass:
+    a = attr.ib(metadata={"help": "An immutable numpy array."}, 
+                converter=attr.frozen_numpy_array,
+                hash=False)
+    b = attr.ib(metadata={"help": "A positive integer."},
+                converter=int,
+                validator=attr.validators.positive)
+    c = attr.ib(metadata={"help": "A non-zero integer."}, 
+                converter=int,
+                validator=attr.validators.nonzero)
+```
+
+---
+
+*&mdash; Powered by [GitLab CI]*  
+*&mdash; Created by [Pedro Asad &lt;pasad@lcg.ufrj.br&gt;](mailto:pasad@lcg.ufrj.br) using [cookiecutter] and [@pedroasad.com/templates/python/python-app-1.0](https://gitlab.com/pedroasad.com/templates/python/python-app/tags/1.0.0)*
+
+[Black]: https://black.readthedocs.io/en/stable/
+[CHANGELOG]: ./CHANGELOG.md
+[CONTRIBUTING]: ./CONTRIBUTING.md
+[Gitlab CI]: https://docs.gitlab.com/ee/ci
+[LICENSE]: ./LICENSE.txt
+[MANIFEST]: ./MANIFEST.md
+[MIT License]: https://opensource.org/licenses/MIT
+[Numpy]: https://www.numpy.org/
+[README]: https://gitlab.com/psa-exe/python-attrs-patch/blob/master/README.md
+[TestPyPI]: https://test.pypi.org/
+[attrs]: https://www.attrs.org
+[autopep8]: https://pypi.org/project/autopep8/
+[badge-black]: https://img.shields.io/badge/code%20style-Black-black.svg
+[cookiecutter]: https://cookiecutter.readthedocs.io
+[badge-ci-coverage]: https://gitlab.com/psa-exe/python-attrs-patch/badges/master/coverage.svg
+[badge-ci-security]: https://img.shields.io/badge/security-Check%20here!-yellow.svg
+[badge-ci-status]: https://gitlab.com/psa-exe/python-attrs-patch/badges/master/pipeline.svg
+[badge-codecov]: https://codecov.io/gl/psa-exe/python-attrs-patch/branch/master/graph/badge.svg
+[badge-flake8]: https://img.shields.io/badge/code%20style-Flake8-blue.svg
+[badge-mit]: https://img.shields.io/badge/license-MIT-blue.svg
+[badge-python]: https://img.shields.io/badge/Python-%E2%89%A53.6-blue.svg
+[badge-version]: https://img.shields.io/badge/version-0.2.0%20(alpha)-orange.svg
+[flake8]: http://flake8.pycqa.org/en/latest/
+[python-docs]: https://docs.python.org/3.5
+[repository-codecov]: https://codecov.io/gl/psa-exe/python-attrs-patch
+[repository-latest-release]: https://test.pypi.org/project/attrs-patch/0.2.0/
+[repository-master]: https://gitlab.com/psa-exe/python-attrs-patch
+[repository-security]: https://gitlab.com/psa-exe/python-attrs-patch/security
+[repository]: https://gitlab.com/psa-exe/python-attrs-patch
+
+

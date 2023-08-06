@@ -1,0 +1,3 @@
+requests
+shlex>="3"
+pipes<"3"

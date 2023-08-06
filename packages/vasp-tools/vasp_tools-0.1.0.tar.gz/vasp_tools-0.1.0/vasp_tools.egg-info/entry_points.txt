@@ -1,0 +1,3 @@
+[console_scripts]
+vasp_tools = vasp_tools.cli:main
+

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pie-jerry
+Version: 1.0.1
+Summary: Please, pie Jerry
+Home-page: UNKNOWN
+Author: Jerry
+License: UNKNOWN
+Description: # Pie Jerry
+        
+        People! We need your attention! It is very important to pie Jerry!
+        
+        ## Usage
+        
+        Following program will say what all people should do
+        
+        ```
+        
+        pip install pie-jerry
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

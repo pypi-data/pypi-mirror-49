@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: oam-sso
+Version: 0.0.1
+Summary: Easily access pages protected with Oracle Access Management SSO
+Home-page: https://github.com/mtucker502/oam-sso
+Author: mtucker502
+Author-email: github@netzolt.com
+License: MIT License
+Description: # OAM_SSO
+        
+        Easily access pages protected with Oracle Access Management SSO
+        
+        ## Example
+        
+        
+        
+Platform: UNKNOWN

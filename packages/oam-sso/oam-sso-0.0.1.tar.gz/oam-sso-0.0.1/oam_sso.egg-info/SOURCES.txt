@@ -1,0 +1,8 @@
+README.md
+setup.py
+oam_sso/__init__.py
+oam_sso.egg-info/PKG-INFO
+oam_sso.egg-info/SOURCES.txt
+oam_sso.egg-info/dependency_links.txt
+oam_sso.egg-info/requires.txt
+oam_sso.egg-info/top_level.txt

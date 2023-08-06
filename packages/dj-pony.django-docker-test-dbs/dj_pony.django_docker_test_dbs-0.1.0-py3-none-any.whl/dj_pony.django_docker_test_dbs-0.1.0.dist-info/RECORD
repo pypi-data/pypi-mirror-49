@@ -1,0 +1,14 @@
+dj_pony/django_docker_test_dbs/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+dj_pony/django_docker_test_dbs/apps.py,sha256=HcSbhJ1B1WGd2FCGPgYic9OELHwJCvHbH0vyCU11szU,136
+dj_pony/django_docker_test_dbs/docker_db_in_memory.py,sha256=QaDVStYoIaDqP4Q6cJAdAzCk_0hA4zflp9Dn7M-UqKw,4872
+dj_pony/django_docker_test_dbs/models.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+dj_pony/django_docker_test_dbs/static/css/dj_pony_docker_test_dbs.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_pony/django_docker_test_dbs/static/img/.gitignore,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_pony/django_docker_test_dbs/static/js/dj_pony_docker_test_dbs.js,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_pony/django_docker_test_dbs/templates/dj_pony_docker_test_dbs/base.html,sha256=zzaUPjEgvwxg-Gn2rZ6gIMWphucmEGvAU_skUXJIcDA,661
+dj_pony/django_docker_test_dbs/urls.py,sha256=2A35ryDQeBlfPpMCDuSowAkQloZH2PaKsQoawsdu6_Y,247
+dj_pony/django_docker_test_dbs/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_pony.django_docker_test_dbs-0.1.0.dist-info/LICENSE,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+dj_pony.django_docker_test_dbs-0.1.0.dist-info/WHEEL,sha256=HUejAL96bSDvQpUkCNKadL6Cm0IW6dzTOQCrETOEbeI,85
+dj_pony.django_docker_test_dbs-0.1.0.dist-info/METADATA,sha256=cOFCkwmexpVz0QISDLZojrvGOy4mVSKbScI5YEjUU1s,349
+dj_pony.django_docker_test_dbs-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,33 @@
+News
+====
+1.2.0
+* Release date: 25-Jul-2019
+* New metric MountOK with value 0 (no) 1 (yes)
+* Mounts now use scandir to avoid hanging.
+
+1.1.0
+-----
+* Release date: 13-May-2019
+* remove memory type definition
+
+1.0.3
+-----
+
+* Release date: 18-Oct-2017
+* Make collectd aware of explicit interval so
+  that it does not flush the value to soon.
+* Documentation about TypesDB file.
+
+1.0.2
+-----
+
+* Release date: 25-May-2017
+* Correct name of type database.
+
+1.0.1
+-----
+
+* Release date: 25-May-2017
+* First release
+
+

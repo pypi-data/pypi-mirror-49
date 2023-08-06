@@ -1,0 +1,104 @@
+Metadata-Version: 1.1
+Name: collectd_cvmfs
+Version: 1.2.2
+Summary: Collectd Plugin to Monitor CvmFS Clients
+Home-page: https://github.com/cvmfs/collectd-cvmfs
+Author: Luis Fenandez Alvarez
+Author-email: luis.fernandez.alvarez@cern.ch
+License: Apache II
+Description: Collectd Module for CvmFS
+        =========================
+        
+        Configuration
+        -------------
+        
+        Example::
+        
+            TypesDB "/usr/share/collectd/collectd_cvmfs.db"
+            <Plugin "python">
+              Import "collectd_cvmfs"
+              <Module "collectd_cvmfs">
+                Repo "alice.cern.ch" "atlas.cern.ch"
+                Repo "ams.cern.ch"
+                MountTime True
+                MountTimeout 10
+                Memory True
+                Attribute ndownload nioerr
+                Attribute usedfd
+                Verbose False
+                Interval "300"
+              </Module>
+            </Plugin>
+        
+        * ``TypesDB``: types used by the plugin and shipped with the package.
+        * ``Repo``: cvmfs repository to monitor.
+        * ``MountTime``: boolean value to specify whether mount time should be reported or not.
+        * ``MountTimeout``: timeout in seconds while trying to mount the repositories.
+        * ``Memory``: boolean value to specify whether the memory footprint should be reported or not.
+        * ``Attribute``: attribute to monitor on the given repositories. You can get the list from of valid attributes from the type db in ``resources/collectd_cvmfs.db``.
+        * ``Interval``: interval in seconds to probe the CVMFS repositories.
+        * ``Verbose``: boolean value to produce logs more verbosed in collectd. It is false by default.
+        
+        The plugin allows multiple instances for different configurations. This allows probing different repos at different intervals or probing different attributes depending on the repository.
+        
+        Metrics
+        -------
+        
+        The metrics are published in the following structure::
+        
+            Plugin: cvmfs
+            PluginInstance: <repo>
+            Type: {<Attribute>|MountTime|Memory|Mountok}
+        
+            # Only with Memory:
+            TypeInstance: [rss|vms]
+        
+        Example::
+        
+            lxplus123.cern.ch/cvmfs-lhcb.cern.ch/mounttime values=[0.000999927520751953]
+            lxplus123.cern.ch/cvmfs-lhcb.cern.ch/nioerr values=[0]
+            lxplus123.cern.ch/cvmfs-lhcb.cern.ch/memory-rss values=[31760384]
+            lxplus123.cern.ch/cvmfs-repo.domain.ch/mountok values=[1]
+        
+        
+        News
+        ====
+        1.2.0
+        * Release date: 25-Jul-2019
+        * New metric MountOK with value 0 (no) 1 (yes)
+        * Mounts now use scandir to avoid hanging.
+        
+        1.1.0
+        -----
+        * Release date: 13-May-2019
+        * remove memory type definition
+        
+        1.0.3
+        -----
+        
+        * Release date: 18-Oct-2017
+        * Make collectd aware of explicit interval so
+          that it does not flush the value to soon.
+        * Documentation about TypesDB file.
+        
+        1.0.2
+        -----
+        
+        * Release date: 25-May-2017
+        * Correct name of type database.
+        
+        1.0.1
+        -----
+        
+        * Release date: 25-May-2017
+        * First release
+        
+        
+        
+Keywords: collectd cvmfs monitoring
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: System :: Monitoring

@@ -1,0 +1,12 @@
+MANIFEST.in
+NEWS.txt
+README.rst
+setup.py
+resources/collectd_cvmfs.db
+src/collectd_cvmfs/__init__.py
+src/collectd_cvmfs.egg-info/PKG-INFO
+src/collectd_cvmfs.egg-info/SOURCES.txt
+src/collectd_cvmfs.egg-info/dependency_links.txt
+src/collectd_cvmfs.egg-info/not-zip-safe
+src/collectd_cvmfs.egg-info/requires.txt
+src/collectd_cvmfs.egg-info/top_level.txt

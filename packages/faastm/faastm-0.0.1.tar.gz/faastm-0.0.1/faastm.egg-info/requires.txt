@@ -1,0 +1,5 @@
+cachetools
+dill
+fdk
+oci>=2.2.18
+requests

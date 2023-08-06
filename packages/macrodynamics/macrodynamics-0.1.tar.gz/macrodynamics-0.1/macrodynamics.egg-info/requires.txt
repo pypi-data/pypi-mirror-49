@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+
+[tests]
+pytest
+pytest-cov
+sphinx
+numpydoc

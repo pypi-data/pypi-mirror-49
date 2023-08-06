@@ -1,0 +1,8 @@
+beautifulsoup4
+pandas
+selenium
+spacy
+news-please
+newspaper3k
+fake_useragent
+chromedriver-binary==74.0.3729.6.0

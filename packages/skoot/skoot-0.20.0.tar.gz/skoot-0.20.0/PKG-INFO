@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: skoot
+Version: 0.20.0
+Summary: Skoot: Accelerate your data science pipelines
+Home-page: https://github.com/tgsmith61591/skoot
+Maintainer: Taylor G. Smith
+Maintainer-email: taylor.smith@alkaline-ml.com
+License: MIT
+Download-URL: https://github.com/tgsmith61591/skoot/archive/v0.20.0.tar.gz
+Description: UNKNOWN
+Keywords: scikit-learn pandas machine-learning data-science
+Platform: Windows
+Platform: Linux
+Platform: Unix
+Platform: Mac OS-X
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Fortran
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Requires-Python: >=3.5, <4

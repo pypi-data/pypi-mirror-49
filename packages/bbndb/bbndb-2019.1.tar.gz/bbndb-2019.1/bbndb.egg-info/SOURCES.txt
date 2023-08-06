@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+bbndb/__init__.py
+bbndb/auspex.py
+bbndb/calibration.py
+bbndb/qgl.py
+bbndb/session.py
+bbndb.egg-info/PKG-INFO
+bbndb.egg-info/SOURCES.txt
+bbndb.egg-info/dependency_links.txt
+bbndb.egg-info/requires.txt
+bbndb.egg-info/top_level.txt

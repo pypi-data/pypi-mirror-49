@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: bbndb
+Version: 2019.1
+Summary: BBN Configuration Database
+Home-page: https://github.com/BBN-Q/bbndb
+Author: Graham Rowlands
+License: Apache 2.0 License
+Download-URL: https://github.com/BBN-Q/bbndb
+Description: # BBNDB
+        
+        Configuration database for BBN Qubit Measurement Framework. Used by both Auspex and QGL as a shared, versioned, means of storing instrument, qubit, and filter configurations. Based on SQLAlchemy framework. 
+Keywords: quantum qubit instrument experiment control database configuration
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

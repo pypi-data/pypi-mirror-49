@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: avm_client
+Version: 1.0.4
+Summary: This is api for AVM (automated valuation machine)
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: info@enbisys.com
+License: UNKNOWN
+Description:     This is api for AVM (automated valuation machine)  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,AVM
+Platform: UNKNOWN

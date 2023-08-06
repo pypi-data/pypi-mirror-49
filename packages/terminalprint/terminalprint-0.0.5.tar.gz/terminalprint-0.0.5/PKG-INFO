@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: terminalprint
+Version: 0.0.5
+Summary: a package for terminal pretty print
+Home-page: https://github.com/xsddz/py_pkg_terminalprint
+Author: xsddz
+Author-email: dingzhns@gmail.com
+License: MIT
+Description: =============
+        terminalprint
+        =============
+        
+        
+        Quickstart
+        ----------
+        
+        Install::
+        
+            pip install terminalprint
+        
+        Usage::
+        
+            >>> table = [
+            ...     ['Heading1', 'Heading2'],
+            ...     ['row1 column1', 'row1 column2'],
+            ...     ['row2 column1', 'row2 column2'],
+            ...     ['row3 column1', 'row3 column2']
+            ... ]
+            >>> 
+            >>> import terminalprint as tp
+            >>> tp.table_print(table)
+            +--------------+--------------+
+            | Heading1     | Heading2     |
+            +--------------+--------------+
+            | row1 column1 | row1 column2 |
+            | row2 column1 | row2 column2 |
+            | row3 column1 | row3 column2 |
+            +--------------+--------------+
+            >>> 
+        
+        Example
+        -------
+        
+        .. image:: https://raw.githubusercontent.com/xsddz/py_pkg_terminalprint/master/docs/example-01.png
+        
+Keywords: terminal print pretty table
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/x-rst

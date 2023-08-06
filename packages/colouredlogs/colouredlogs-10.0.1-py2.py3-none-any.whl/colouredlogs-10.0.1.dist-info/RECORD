@@ -1,0 +1,14 @@
+colouredlogs.pth,sha256=yPS54Cj-63pM-7hNbCulF9-PiHGTq27DRVEmjkONjG0,147
+colouredlogs/__init__.py,sha256=ImdAbdK4440EgP40Z5i2RkHtOvyV_PGjBFQeAFDs71E,62150
+colouredlogs/cli.py,sha256=9F84CKvd1DjD_vEHZzXvXb2YcGYbU0xflhclw-COxq4,3506
+colouredlogs/demo.py,sha256=_9gyTX6h9B0GxGOU8fhpJmeLI7ziXUd4oZWINjnI-4Y,1838
+colouredlogs/syslog.py,sha256=g5N1bqCDeZyTW6P4gToK3ZGJ4pjSCGpvFzcCjhN5g7s,9766
+colouredlogs/tests.py,sha256=K5yYUKLoijU_a8E8g8RWsyFUl8D9Jy92se-DlaaqFi8,27179
+colouredlogs/converter/__init__.py,sha256=d1jieoJvPU1L5lC_sIbu265bHkg7uGBjjXNPEXKSp78,18393
+colouredlogs/converter/colours.py,sha256=CoiAyIACPBfXLYL7Ua9uo-Iuf2Aff2OyJVQcczNVcZo,5411
+colouredlogs-10.0.1.dist-info/LICENSE.txt,sha256=6hElRueon3NbX5Gwa4v0QJRw3-vG59MffMwY-sHhYYc,1056
+colouredlogs-10.0.1.dist-info/METADATA,sha256=KEy1m9OEeX2bGiokqnJh8reO1-WYZIADd1bVArDC5yw,11495
+colouredlogs-10.0.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+colouredlogs-10.0.1.dist-info/entry_points.txt,sha256=xFmq0a1VpKKLle-EaeR0nNbQtFOAv70WAypaeSgBgsY,56
+colouredlogs-10.0.1.dist-info/top_level.txt,sha256=eXOIqV2hynP4pMsRHTOS0V5I4Bi6O3jfOLwZz8tOsgc,13
+colouredlogs-10.0.1.dist-info/RECORD,,

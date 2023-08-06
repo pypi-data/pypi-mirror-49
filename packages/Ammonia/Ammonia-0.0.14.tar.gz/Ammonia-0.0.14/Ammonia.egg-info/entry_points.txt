@@ -1,0 +1,3 @@
+[console_scripts]
+ammonia = ammonia.command.start:start
+

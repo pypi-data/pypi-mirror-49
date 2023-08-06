@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: eigensheep
+Version: 0.0.1
+Summary: Run Jupyter cells in AWS Lambda for massively parallel experimentation
+Home-page: https://github.com/antimatter15/eigensheep
+Author: Kevin Kwok
+Author-email: antimatter15@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Jupyter
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: boto3
+Requires-Dist: ipython
+Requires-Dist: ipywidgets
+
+<img src="https://raw.githubusercontent.com/antimatter15/lambdu/master/logo.png" alt="eigensheep"/>
+
+# eigensheep
+massively parallel experimentation with jupyter
+
+
+
+# Goals
+
+    pip3 install eigensheep
+
+Open Jupyter
+
+    import eigensheep
+
+Follow instructions to set up.
+
+

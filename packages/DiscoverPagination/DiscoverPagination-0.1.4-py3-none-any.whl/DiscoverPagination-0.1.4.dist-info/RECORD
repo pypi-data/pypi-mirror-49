@@ -1,0 +1,12 @@
+discoverpagination/__init__.py,sha256=Q70Bs2-ehiwKO6bCw85HrF-01GVu-azW7fTjk5sGo3E,35
+discoverpagination/fuzzyfind.py,sha256=6za1wATh5PdEI4FHLh0wYCzHQ1-iTwPL80RK4NJsowY,944
+discoverpagination/helpers.py,sha256=yI9BMQqvQ6AyieTXLOFBrJ0t8LIRWf0nlnVGHq8gOCs,4891
+discoverpagination/paginateddocument.py,sha256=2QX3pETaBERicr1v45hVe82onbj04iwMQw3sG5XCJ1w,13173
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_helpers.py,sha256=CskpRVvLSaa3hgZN6zwPbNEf2H-q2nQeZgF-VZFXKZM,17814
+test/test_paginateddocument.py,sha256=ShGlFxoB7Fb4zkSKAnfN0EwksH2C1DO7USu2T2Yj6cQ,2668
+DiscoverPagination-0.1.4.dist-info/LICENSE,sha256=P-kfo8wL51FEMl2sg2vL7MAEYaKAS7FpzcaWbLm1NiI,1075
+DiscoverPagination-0.1.4.dist-info/METADATA,sha256=eEtY3VIZguKtHIyiRkqY6BUkx6gtymMzMORauOY5vX0,3653
+DiscoverPagination-0.1.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+DiscoverPagination-0.1.4.dist-info/top_level.txt,sha256=yHF6atezWu733JcZ6VOCKupgSJpwyKqsIjJVVZ2ggMc,24
+DiscoverPagination-0.1.4.dist-info/RECORD,,

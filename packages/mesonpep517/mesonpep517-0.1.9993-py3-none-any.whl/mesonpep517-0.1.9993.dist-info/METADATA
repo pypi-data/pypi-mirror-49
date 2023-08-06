@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: mesonpep517
+Version: 0.1.9993
+Summary: Create pep517 compliant packages from the meson build system
+Home-page: https://gitlab.com/thiblahute/mesonpep517
+Author: Thibault Saunier
+Author-email: tsaunier@gnome.org
+Description-Content-Type: text/markdown
+Requires-Dist: wheel
+Requires-Dist: meson
+Requires-Dist: pytoml
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Source, https://gitlab.com/thiblahute/mesonpep517
+Project-URL: Documentation, https://thiblahute.gitlab.io/mesonpep517/
+
+    # mesonpep517
+    
+    This is a simple module that implements pep517 for the [meson] build system.
+    
+    This means that you only need to provide a `pyproject.toml` in your project
+    source root to be able to publish your project built with meson on PyPi
+    and to create a wheel for the project.
+    
+    [meson]: https://mesonbuild.com

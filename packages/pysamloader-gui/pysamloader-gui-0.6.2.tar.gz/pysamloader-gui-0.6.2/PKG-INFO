@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pysamloader-gui
+Version: 0.6.2
+Summary: Kivy GUI for pysamloader
+Home-page: https://github.com/ebs-universe/pysamloader-gui
+Author: Chintalagiri Shashank
+Author-email: shashank@chintal.in
+License: UNKNOWN
+Project-URL: Source Repository, https://github.com/ebs-universe/pysamloader-gui/
+Project-URL: Documentation, https://pysamloader-gui.readthedocs.io/en/latest/index.html
+Project-URL: Issue Tracker, https://github.com/ebs-universe/pysamloader-gui/issues
+Description: UNKNOWN
+Keywords: utilities
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.4
+Provides-Extra: build
+Provides-Extra: publish
+Provides-Extra: docs
+Provides-Extra: dev
+Provides-Extra: tests

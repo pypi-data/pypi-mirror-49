@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sumologic-slack
+Version: 1.0.0
+Summary: Sumo Logic collection solution for slack
+Home-page: https://github.com/SumoLogic/sumologic-slack
+Author: SumoLogic
+Author-email: it@sumologic.com
+License: PSF
+Description: # sumologic-slack
+        Repository for Slack integration
+        
+Keywords: sumologic python rest api log management analytics logreduce slack agent security siem collector forwarder
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

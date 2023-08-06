@@ -1,0 +1,1 @@
+fire==0.1.3python-crfsuite==0.9.6tqdm==4.32.2

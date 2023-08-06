@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: datadriver
+Version: 0.1.3
+Summary: DataDriver is a unified set of tools for accelerating the industrialization of Data Science projects.
+Home-page: http://datadriver-doc-ddapi.s3-website-eu-west-1.amazonaws.com/
+Author: BDA TEAM
+Author-email: datadriver@octo.com
+License: Apache 2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: pyddapi
+Requires-Dist: ddui
+
+# DataDriver
+DataDriver is a unified set of tools for accelerating the industrialization of Data Science projects.
+
+## Our vision
+We noticed that the most impactful parameter on the success of a data science project was the ability to go to the production phase. We focused on making a tool that facilitate the transition from exploration to production rather than a tool to help the data scientist to explore data or make good models.
+
+We think that the sooner we can put a model in a production environment, the better our project chances are at being succesful. The true difficulty of a data science project lies not in solving the problem using a machine learning model but in facing the complexity of the production setting.
+
+## What it is
+It packages together [ddapi](https://github.com/octo-technology/ddapi) and [ddui](https://github.com/octo-technology/ddui).
+
+We made an API (pyddapi) that lets data scientists use the technologies they use in exploration be compatible with the industrialization phase. We rely on Airflow to schedule, execute reliably and monitor jobs.  
+We also developped an Airflow plugin for Data Science (ddui) that, combined with ddapi, allows you to visualize the output of any task with metrics and charts.
+
+## Installation
+```bash
+pip install datadriver
+```
+
+## Usage
+Go to the root of your project directory and launch DataDriver with a single command.
+```bash
+datadriver
+```
+
+

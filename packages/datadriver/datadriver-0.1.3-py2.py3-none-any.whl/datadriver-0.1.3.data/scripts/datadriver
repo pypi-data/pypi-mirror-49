@@ -1,0 +1,52 @@
+#!python
+import time
+import os
+import subprocess
+import signal
+import sys
+
+print()
+print("Launching DataDriver")
+print()
+time.sleep(1)
+
+# AIRFLOW_HOME
+if not os.getenv("AIRFLOW_HOME"):
+  os.environ["AIRFLOW_HOME"] = os.getcwd()
+airflow_home = os.getenv("AIRFLOW_HOME")
+
+# Initdb
+if not os.path.exists(airflow_home + '/airflow.db'):
+  subprocess.call(["airflow", "initdb"])
+
+# ddui install
+if not os.path.exists(airflow_home + '/plugins/'):
+  subprocess.call(["ddui", "install"])
+
+# Launch webserver and scheduler
+b = subprocess.Popen(["airflow", "webserver"])
+c = subprocess.Popen(["airflow", "scheduler"])
+print()
+print()
+print()
+print("webserver on PID:", b.pid)
+print()
+print("scheduler on PID:", c.pid)
+print()
+print()
+print()
+
+
+def signal_handler(sig, frame):
+  print()
+  print('Closing subprocesses')
+  b.kill()
+  c.kill()
+  time.sleep(5)
+  sys.exit(0)
+
+
+signal.signal(signal.SIGINT, signal_handler)
+
+while True:
+  pass

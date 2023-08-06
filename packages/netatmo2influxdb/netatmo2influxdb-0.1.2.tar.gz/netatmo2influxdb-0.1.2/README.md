@@ -1,0 +1,90 @@
+# Netatmo2InfluxDB
+
+`Netatmo2InfluxDB` supports the import of multiple Netatmo Thermostats across multiple houses into InfluxDB.
+
+## How it works
+
+By using the [Netatmo Developer API](https://dev.netatmo.com/), we can fetch data using their `api/homesdata` and `api/getroommeasure` endpoints (see: [`netatmo2influxdb/data.py`](https://gitlab.com/envsense/netatmo-to-influxdb/tree/master/netatmo2influxdb/data.py)). The `api/getroommeasure` endpoint allows a granularity of 30 minutes, which is fine for our application.
+
+To be able to actually retrieve data, we first have to gather access and refresh tokens. We get those for a given username using their `oauth2/token` endpoint (see: [`netatmo2influxdb/tokens.py`](https://gitlab.com/envsense/netatmo-to-influxdb/tree/master/netatmo2influxdb/tokens.py)). This requires a one-time use of the user's password. The subsequent tokens are then stored in a small sqlite database (`netatmo.db`).
+
+In a normal use-case we want to retrieve all data there is. For this we use the command-line argument `--all`. This retrieves all home-IDs and related room-IDs (see: [`netatmo2influxdb/data.py:get_home`](https://gitlab.com/envsense/netatmo-to-influxdb/blob/masternetatmo2influxdb/data.py#L15) and [`netatmo2influxdb/parser.py`](https://gitlab.com/envsense/netatmo-to-influxdb/blob/master/netatmo2influxdb/parser.py)), and collects the data. Because we don't want to fetch new data every single time, all the import records (`username`, `home_id`, `room_id`, `start_ts`, `end_ts`, `count`) are stored.
+
+To store the data in InfluxDB, some small changes have to be made to the data. We parse the epoch timestamp into dt.isoformat and unpack the temperature. By using the provided InfluxDB SeriesHelper, we make sure we only send packages of 512 records at a time. The following tags are included by default: `user`, `home_name`, `home_id`, `room_name`, `room_id`.
+
+Because some of us like to have extra tags in our InfluxDB database measurements, this capability is added with the `--custom-tags` argument. Just add space-separated `tag:value`'s (see [`netatmo2influxdb/store.py:**custom_tags`](https://gitlab.com/envsense/netatmo-to-influxdb/blob/master/netatmo2influxdb/store.py#L78)).
+
+If you want to play around, The `--interactive` argument was added. This makes sure all your CLI arguments are parsed, but nothing is actually run. Use like this: `pipenv run python -it app {username} {args} --interactive`. You can also do a dry run with `--dry`. This makes sure nothing gets stored locally or in the InfluxDB instance.
+
+## Install
+
+Install with pipenv, run `pipenv install`
+
+Make sure to copy `.env.tpl` -> `.env` and add the appropriate values.
+
+## CLI
+
+Run the application with `pipenv run app {netatmo username} {--all or --home ...} {optional arguments}`
+
+To get insight in what houses and thermostats are available, run `pipenv run app {netatmo username} --get-home`. 
+
+```txt
+usage: app [-h] [--home [home_id [['room_id'] ...]]]
+           [--custom-tags [tag:value [tag:value ...]]] [--get-home] [--all]
+           [--dry] [--clear-db] [--interactive]
+           user
+
+Gather thermostat data from Netatmo
+
+positional arguments:
+  user                  User to parse
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --home [home_id [['room_id'] ...]]
+                        Homes and rooms to parse. Use format --home {home_id_1} {room_id_1} {room_id2} ... --home {home_id_2} ...
+  --custom-tags [tag:value [tag:value ...]]
+                        Provide custom tags for InfluxDB. Format: --custom-tags tag:value tag:value
+  --get-home            Get home and room information
+  --all                 Parse all homes and rooms
+  --dry                 Do a dry-run (don't store in InfluxDB)
+  --clear-db            Wipes database from users and import history
+  --interactive         Allows interactive use (ignores all other args)
+  ```
+
+## Use with Docker
+
+Because I run all my internal tools in Docker, here is a brief description on how to get up and running.
+
+### Build the Docker Image
+
+`docker build -t netatmo2influxdb .`
+
+### Use with Docker Crontab
+
+Using [Docker Crontab](https://github.com/willfarrell/docker-crontab) we can start the container every 30 minutes and shut it down after we're done getting our data.
+
+Use and adjust the following `config.json` file for Crontab:
+
+```json
+[{
+    "schedule":"@every 30m",
+    "image":"netatmo2influxdb",
+    "dockerargs": "-d \
+    --env-file /location/of/.env \
+    -v /location/of/netatmo.db:/netatmo2influxdb/netatmo.db",
+    "command":"python app [USERNAME] --all & shutdown -h now"
+}]
+```
+
+If you don't have Crontab running yet, use the following command to run the container:
+
+```bash
+docker run -d \
+    -v /var/run/docker.sock:/var/run/docker.sock:ro \
+    -v ./env:/opt/env:ro \
+    -v /path/to/config/dir:/opt/crontab:rw \
+    -v /path/to/logs:/var/log/crontab:rw \
+    willfarrell/crontab:latest
+```
+

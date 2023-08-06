@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: anaparser
+Version: 1.9
+Summary: Возможно, это бесполезно.
+Home-page: UNKNOWN
+Author: Denis Zagorodnev
+Author-email: denis.zagorodnev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# anaparser
+
+Here is an first anaplan parser.
+
+

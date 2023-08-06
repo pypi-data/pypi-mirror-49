@@ -1,0 +1,7 @@
+[console_scripts]
+ckpl = ckpl.__init__:main
+ckpl-ast = ckpl.astrometry:cli
+ckpl-ls = ckpl.preprocessing:cli
+ckpl-red = ckpl.reduction:cli
+ckpl-stack = ckpl.stacking:cli
+

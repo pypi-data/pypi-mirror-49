@@ -1,0 +1,15 @@
+README.md
+setup.py
+ckpl/__init__.py
+ckpl/astrometry.py
+ckpl/photometry.py
+ckpl/plots.py
+ckpl/preprocessing.py
+ckpl/reduction.py
+ckpl/stacking.py
+ckpl.egg-info/PKG-INFO
+ckpl.egg-info/SOURCES.txt
+ckpl.egg-info/dependency_links.txt
+ckpl.egg-info/entry_points.txt
+ckpl.egg-info/requires.txt
+ckpl.egg-info/top_level.txt

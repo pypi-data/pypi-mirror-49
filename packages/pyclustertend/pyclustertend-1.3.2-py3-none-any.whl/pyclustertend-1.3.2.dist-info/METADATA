@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pyclustertend
+Version: 1.3.2
+Summary: A package to assess cluster tendency
+Home-page: https://github.com/lachhebo/pyclustertend
+Author: Ismaël Lachheb
+Author-email: ismael.lachheb@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# pyclustertend [![Build Status](https://travis-ci.com/lachhebo/pyclustertend.svg?branch=master)](https://travis-ci.com/lachhebo/pyclustertend)  [![PyPi Status](https://img.shields.io/pypi/v/pyclustertend.svg?color=brightgreen)](https://pypi.org/project/pyclustertend/) [![Documentation Status](https://readthedocs.org/projects/pyclustertend/badge/?version=latest)](https://pyclustertend.readthedocs.io/en/latest/?badge=latest) [![Downloads](https://pepy.tech/badge/pyclustertend)](https://pepy.tech/project/pyclustertend) [![Downloads](https://pepy.tech/badge/pyclustertend/month)](https://pepy.tech/project/pyclustertend/month) 
+
+
+
+## Presentation : 
+
+pyclustertend is a python package to do cluster tendency. Cluster tendency consist to assess if clustering algorithms are relevant for a dataset.
+
+Two methods for assessing cluster tendency are currently implemented  :
+
+- [x] Hopkins Statistics 
+- [x] VAT
+
+## Installation : 
+
+```shell
+    pip install pyclustertend
+```
+
+## Usage : 
+
+### Example 1 : 
+
+```python
+    from sklearn import datasets
+    from pyclustertend import hopkins
+
+    X = datasets.load_iris().data
+    hopkins(X,150)
+```
+
+### Example 2 :
+
+```python
+    from sklearn import datasets
+    from pyclustertend import vat
+
+    X = datasets.load_iris().data
+    vat(X)
+```
+
+

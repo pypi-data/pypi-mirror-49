@@ -1,0 +1,13 @@
+class: WordVectorTrainPlus
+cluster: zjyprc-hadoop
+driver_memory: 6g
+executor_cores: 2
+executor_memory: 6g
+jar: Spark-Nanjing-1.0-SNAPSHOT.jar
+mail: yuanjie@xiaomi.com
+master: yarn-cluster
+name: SparkApp
+num_executors: 64
+owners: yuanjie
+phone: 18550288233
+queue: production.miui_group.browser.miui_browser_zjy_1

@@ -1,0 +1,56 @@
+CHANGES
+=======
+
+0.2.4
+-----
+
+* Update an outdated docstring
+* Create dummy modules for all python package attributes
+* Add pbr-generated files to .gitignore
+* Clean up the README a bit
+* Update README instructions to use upstream packages
+
+0.2.3
+-----
+
+* Change imported name NixRef -> NixError
+* Update example in README to 0.2.2
+
+0.2.2
+-----
+
+* turns out nix.NixError is exported, as NixRef
+* turns out nix.NixError is not exported
+* Update example in README to 0.2.1
+
+0.2.1
+-----
+
+* resolve directories with .pth files via site.addsitedir
+* avoid a bare except
+* enforce a line length limit
+* drop the subproccess import, thanks adisbladis
+* Abuse IFD to realise store paths
+* Add support for .so modules
+* Update example in README to 0.2.0
+* Update an import in README to new syntax
+
+0.2.0
+-----
+
+* Add dev python env
+* Change import API to support module names not matching nixpkgsattribute names
+* Use pythonix for nix evaluation
+
+0.1.1
+-----
+
+* Autodetect python version, support 3.5+
+* fix typos in README
+* add a way to try it
+
+0.1.0
+-----
+
+* initial revision
+* Initial commit

@@ -1,0 +1,9 @@
+matplotlib
+mpl_finance
+numpy
+SQLAlchemy
+zaifer
+requests
+
+[ta-lib]
+TA-Lib

@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: micropython-mtx
+Version: 1
+Summary: Extra-fast Matrix Multiplication and Linear System Solver on MicroPython
+Home-page: https://gitlab.com/nickoala/micropython-mtx
+Author: Nick Lee
+Author-email: lee1nick@yahoo.ca
+License: MIT
+Description: Extra-fast Matrix Multiplication and Linear System Solver on MicroPython
+Keywords: micropython openmv matrix
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

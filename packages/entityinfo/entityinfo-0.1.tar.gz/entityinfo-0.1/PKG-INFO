@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: entityinfo
+Version: 0.1
+Summary: With entityinfo, you can extract information correct and full entity name
+Home-page: https://github.com/ravinderkhatri/entityinfo
+Author: ravindersingh
+Author-email: ravinderkhatri@outlook.com
+License: MIT
+Download-URL: https://github.com/ravinderkhatri/entityinfo/archive/v01.tar.gz
+Description: UNKNOWN
+Keywords: EntityName,EntityInformation,RawName to Business Name,Trasactional Info
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7

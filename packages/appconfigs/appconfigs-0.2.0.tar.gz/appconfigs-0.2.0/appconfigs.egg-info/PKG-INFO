@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: appconfigs
+Version: 0.2.0
+Summary: User configuration file management features for Python applications.
+Home-page: https://github.com/jnsebgosselin/appconfigs
+Author: Jean-Sébastien Gosselin
+Author-email: jean-sebastien.gosselin@outlook.ca
+License: MIT
+Description: The appconfig module provides user configuration file management features for Python applications. It is based on the config module of the Spyder project, which is available at https://github.com/spyder-ide/spyder.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

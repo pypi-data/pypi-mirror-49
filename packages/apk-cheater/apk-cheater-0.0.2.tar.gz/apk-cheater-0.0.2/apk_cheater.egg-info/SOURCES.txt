@@ -1,0 +1,10 @@
+README.rst
+setup.py
+apk_cheater.egg-info/PKG-INFO
+apk_cheater.egg-info/SOURCES.txt
+apk_cheater.egg-info/dependency_links.txt
+apk_cheater.egg-info/entry_points.txt
+apk_cheater.egg-info/requires.txt
+apk_cheater.egg-info/top_level.txt
+scripts/__init__.py
+scripts/main.py

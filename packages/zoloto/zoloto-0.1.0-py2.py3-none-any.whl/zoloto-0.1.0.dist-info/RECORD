@@ -1,0 +1,12 @@
+zoloto/__init__.py,sha256=4T09Bd2aSOu00uKzZqgs3fQ2Xb2kbNs975q7g8-4tPI,596
+zoloto/calibration.py,sha256=XCLw4doe51GHhXlS_7f0QUvpcmjcpAFzGbcZafqEhHc,2661
+zoloto/coords.py,sha256=b_OC2FeXUKKZbHNS2pNGYz3Uy0x48Tn5hd46iCGHvb8,387
+zoloto/exceptions.py,sha256=bzXjcAU8uks1xz74-r1ixXBKbJJRTTA_SOuKkulkvcM,104
+zoloto/marker.py,sha256=Okmxeuebb8KJ7msRmq9ZIqTR6wOpCvkRJIZJfRmGJ9E,3104
+zoloto/marker_dict.py,sha256=3z52RiBgQTDocXYepf4ByMb2OHhQ8HMgfACtTmBn5GI,941
+zoloto-0.1.0.dist-info/LICENSE,sha256=NU-5Wdf1xoif4X6GGZE5Kl7433W_xfjemW9goD1p34E,1519
+zoloto-0.1.0.dist-info/METADATA,sha256=Ci2y3J4HemVS9Q6Jhrht-qugkqThxlQOjh7od6OjV9o,2432
+zoloto-0.1.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+zoloto-0.1.0.dist-info/entry_points.txt,sha256=EssDNaVGDAxyi4-jHtc1qnZgJXp4hxMEnUNHIOlbwwg,105
+zoloto-0.1.0.dist-info/top_level.txt,sha256=ypq3yK_knR5pYIEa7yIBrd8Ow7y88RmZw6dmtDp4h2U,7
+zoloto-0.1.0.dist-info/RECORD,,

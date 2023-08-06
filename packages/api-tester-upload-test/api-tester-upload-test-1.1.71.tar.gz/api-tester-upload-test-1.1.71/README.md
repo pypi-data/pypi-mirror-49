@@ -1,0 +1,1333 @@
+# Getting started
+
+## How to Build
+
+
+You must have Python ```2 >=2.7.9``` or Python ```3 >=3.4``` installed on your system to install and run this SDK. This SDK package depends on other Python packages like nose, jsonpickle etc. 
+These dependencies are defined in the ```requirements.txt``` file that comes with the SDK.
+To resolve these dependencies, you can use the PIP Dependency manager. Install it by following steps at [https://pip.pypa.io/en/stable/installing/](https://pip.pypa.io/en/stable/installing/).
+
+Python and PIP executables should be defined in your PATH. Open command prompt and type ```pip --version```.
+This should display the version of the PIP Dependency Manager installed if your installation was successful and the paths are properly defined.
+
+* Using command line, navigate to the directory containing the generated files (including ```requirements.txt```) for the SDK.
+* Run the command ```pip install -r requirements.txt```. This should install all the required dependencies.
+
+![Building SDK - Step 1](https://apidocs.io/illustration/python?step=installDependencies&workspaceFolder=Bitcasa-Python)
+
+
+## How to Use
+
+The following section explains how to use the ApiTesterUploadTest SDK package in a new project.
+
+### 1. Open Project in an IDE
+
+Open up a Python IDE like PyCharm. The basic workflow presented here is also applicable if you prefer using a different editor or IDE.
+
+![Open project in PyCharm - Step 1](https://apidocs.io/illustration/python?step=pyCharm)
+
+Click on ```Open``` in PyCharm to browse to your generated SDK directory and then click ```OK```.
+
+![Open project in PyCharm - Step 2](https://apidocs.io/illustration/python?step=openProject0&workspaceFolder=Bitcasa-Python)     
+
+The project files will be displayed in the side bar as follows:
+
+![Open project in PyCharm - Step 3](https://apidocs.io/illustration/python?step=openProject1&workspaceFolder=Bitcasa-Python&projectName=api_tester_upload_test)     
+
+### 2. Add a new Test Project
+
+Create a new directory by right clicking on the solution name as shown below:
+
+![Add a new project in PyCharm - Step 1](https://apidocs.io/illustration/python?step=createDirectory&workspaceFolder=Bitcasa-Python&projectName=api_tester_upload_test)
+
+Name the directory as "test"
+
+![Add a new project in PyCharm - Step 2](https://apidocs.io/illustration/python?step=nameDirectory)
+   
+Add a python file to this project with the name "testsdk"
+
+![Add a new project in PyCharm - Step 3](https://apidocs.io/illustration/python?step=createFile&workspaceFolder=Bitcasa-Python&projectName=api_tester_upload_test)
+
+Name it "testsdk"
+
+![Add a new project in PyCharm - Step 4](https://apidocs.io/illustration/python?step=nameFile)
+
+In your python file you will be required to import the generated python library using the following code lines
+
+```Python
+from api_tester_upload_test.api_tester_upload_test_client import ApiTesterUploadTestClient
+```
+
+![Add a new project in PyCharm - Step 4](https://apidocs.io/illustration/python?step=projectFiles&workspaceFolder=Bitcasa-Python&libraryName=api_tester_upload_test.api_tester_upload_test_client&projectName=api_tester_upload_test&className=ApiTesterUploadTestClient)
+
+After this you can write code to instantiate an API client object, get a controller object and  make API calls. Sample code is given in the subsequent sections.
+
+### 3. Run the Test Project
+
+To run the file within your test project, right click on your Python file inside your Test project and click on ```Run```
+
+![Run Test Project - Step 1](https://apidocs.io/illustration/python?step=runProject&workspaceFolder=Bitcasa-Python&libraryName=api_tester_upload_test.api_tester_upload_test_client&projectName=api_tester_upload_test&className=ApiTesterUploadTestClient)
+
+
+## How to Test
+
+You can test the generated SDK and the server with automatically generated test
+cases. unittest is used as the testing framework and nose is used as the test
+runner. You can run the tests as follows:
+
+  1. From terminal/cmd navigate to the root directory of the SDK.
+  2. Invoke ```pip install -r test-requirements.txt```
+  3. Invoke ```nosetests```
+
+## Initialization
+
+### Authentication
+In order to setup authentication and initialization of the API client, you need the following information.
+
+| Parameter | Description |
+|-----------|-------------|
+| account_id | TODO: add a description |
+| o_auth_access_token | OAuth 2.0 Access Token |
+
+
+
+API client can be initialized as following.
+
+```python
+# Configuration parameters and credentials
+account_id = 'TODO Add Value for parameter...'
+o_auth_access_token = 'o_auth_access_token' # OAuth 2.0 Access Token
+
+client = ApiTesterUploadTestClient(account_id, o_auth_access_token)
+```
+
+
+
+# Class Reference
+
+## <a name="list_of_controllers"></a>List of Controllers
+
+* [AuthenticationOperationsController](#authentication_operations_controller)
+* [FoldersOperationsController](#folders_operations_controller)
+* [TrashOperationsController](#trash_operations_controller)
+* [HistoryOperationsController](#history_operations_controller)
+* [ShareOperationsController](#share_operations_controller)
+* [AdministratorsOperationsController](#administrators_operations_controller)
+* [FileOperationsController](#file_operations_controller)
+* [CreateAccountController](#create_account_controller)
+* [UserOperationsController](#user_operations_controller)
+
+## <a name="authentication_operations_controller"></a>![Class: ](https://apidocs.io/img/class.png ".AuthenticationOperationsController") AuthenticationOperationsController
+
+### Get controller instance
+
+An instance of the ``` AuthenticationOperationsController ``` class can be accessed from the API Client.
+
+```python
+ authentication_operations_controller = client.authentication_operations
+```
+
+### <a name="get_ping"></a>![Method: ](https://apidocs.io/img/method.png ".AuthenticationOperationsController.get_ping") get_ping
+
+> TODO: Add a method description
+
+```python
+def get_ping(self,
+                 authorization)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| authorization |  ``` Required ```  | Bearer |
+
+
+
+#### Example Usage
+
+```python
+authorization = 'Authorization'
+
+authentication_operations_controller.get_ping(authorization)
+
+```
+
+
+### <a name="create_o_auth_2_password_credentials_grant"></a>![Method: ](https://apidocs.io/img/method.png ".AuthenticationOperationsController.create_o_auth_2_password_credentials_grant") create_o_auth_2_password_credentials_grant
+
+> TODO: Add a method description
+
+```python
+def create_o_auth_2_password_credentials_grant(self,
+                                                   authorization,
+                                                   date,
+                                                   username,
+                                                   password)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| authorization |  ``` Required ```  | BCS : |
+| date |  ``` Required ```  | TODO: Add a parameter description |
+| username |  ``` Required ```  | TODO: Add a parameter description |
+| password |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+authorization = 'Authorization'
+date = datetime.now()
+username = 'username'
+password = 'password'
+
+result = authentication_operations_controller.create_o_auth_2_password_credentials_grant(authorization, date, username, password)
+
+```
+
+
+[Back to List of Controllers](#list_of_controllers)
+
+## <a name="folders_operations_controller"></a>![Class: ](https://apidocs.io/img/class.png ".FoldersOperationsController") FoldersOperationsController
+
+### Get controller instance
+
+An instance of the ``` FoldersOperationsController ``` class can be accessed from the API Client.
+
+```python
+ folders_operations_controller = client.folders_operations
+```
+
+### <a name="delete_folder"></a>![Method: ](https://apidocs.io/img/method.png ".FoldersOperationsController.delete_folder") delete_folder
+
+> TODO: Add a method description
+
+```python
+def delete_folder(self,
+                      path,
+                      commit=None,
+                      force=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| commit |  ``` Optional ```  | TODO: Add a parameter description |
+| force |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+commit = 'commit'
+force = 'force'
+
+result = folders_operations_controller.delete_folder(path, commit, force)
+
+```
+
+
+### <a name="list_folder"></a>![Method: ](https://apidocs.io/img/method.png ".FoldersOperationsController.list_folder") list_folder
+
+> TODO: Add a method description
+
+```python
+def list_folder(self,
+                    path=None,
+                    depth=None,
+                    filter=None,
+                    strict_traverse=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Optional ```  | TODO: Add a parameter description |
+| depth |  ``` Optional ```  | TODO: Add a parameter description |
+| filter |  ``` Optional ```  | TODO: Add a parameter description |
+| strictTraverse |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+depth = 'depth'
+filter = 'filter'
+strict_traverse = 'strict-traverse'
+
+result = folders_operations_controller.list_folder(path, depth, filter, strict_traverse)
+
+```
+
+
+### <a name="create_move_folder"></a>![Method: ](https://apidocs.io/img/method.png ".FoldersOperationsController.create_move_folder") create_move_folder
+
+> TODO: Add a method description
+
+```python
+def create_move_folder(self,
+                           path,
+                           to,
+                           name,
+                           exists=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| to |  ``` Required ```  | TODO: Add a parameter description |
+| name |  ``` Required ```  | TODO: Add a parameter description |
+| exists |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+to = 'to'
+name = 'name'
+exists = ExistsEnum.FAIL
+
+result = folders_operations_controller.create_move_folder(path, to, name, exists)
+
+```
+
+
+### <a name="create_copy_folder"></a>![Method: ](https://apidocs.io/img/method.png ".FoldersOperationsController.create_copy_folder") create_copy_folder
+
+> TODO: Add a method description
+
+```python
+def create_copy_folder(self,
+                           path,
+                           to,
+                           name,
+                           exists=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| to |  ``` Required ```  | TODO: Add a parameter description |
+| name |  ``` Required ```  | TODO: Add a parameter description |
+| exists |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+to = 'to'
+name = 'name'
+exists = ExistsEnum.FAIL
+
+result = folders_operations_controller.create_copy_folder(path, to, name, exists)
+
+```
+
+
+### <a name="get_folder_meta"></a>![Method: ](https://apidocs.io/img/method.png ".FoldersOperationsController.get_folder_meta") get_folder_meta
+
+> TODO: Add a method description
+
+```python
+def get_folder_meta(self,
+                        path)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+
+result = folders_operations_controller.get_folder_meta(path)
+
+```
+
+
+### <a name="create_folder"></a>![Method: ](https://apidocs.io/img/method.png ".FoldersOperationsController.create_folder") create_folder
+
+> TODO: Add a method description
+
+```python
+def create_folder(self,
+                      path,
+                      name,
+                      exists=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| name |  ``` Required ```  | TODO: Add a parameter description |
+| exists |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+name = 'name'
+exists = ExistsEnum.FAIL
+
+result = folders_operations_controller.create_folder(path, name, exists)
+
+```
+
+
+### <a name="alter_folder_meta"></a>![Method: ](https://apidocs.io/img/method.png ".FoldersOperationsController.alter_folder_meta") alter_folder_meta
+
+> TODO: Add a method description
+
+```python
+def alter_folder_meta(self,
+                          operation,
+                          name,
+                          version,
+                          version_conflict,
+                          path=None,
+                          date_created=None,
+                          date_meta_last_modified=None,
+                          date_content_last_modified=None,
+                          application_data=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| operation |  ``` Required ```  | TODO: Add a parameter description |
+| name |  ``` Required ```  | TODO: Add a parameter description |
+| version |  ``` Required ```  | TODO: Add a parameter description |
+| versionConflict |  ``` Required ```  | TODO: Add a parameter description |
+| path |  ``` Optional ```  | TODO: Add a parameter description |
+| dateCreated |  ``` Optional ```  | TODO: Add a parameter description |
+| dateMetaLastModified |  ``` Optional ```  | TODO: Add a parameter description |
+| dateContentLastModified |  ``` Optional ```  | TODO: Add a parameter description |
+| applicationData |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+operation = 'operation'
+name = 'name'
+version = 11
+version_conflict = 'version-conflict'
+path = 'path'
+date_created = datetime.now()
+date_meta_last_modified = datetime.now()
+date_content_last_modified = datetime.now()
+application_data = { }
+
+result = folders_operations_controller.alter_folder_meta(operation, name, version, version_conflict, path, date_created, date_meta_last_modified, date_content_last_modified, application_data)
+
+```
+
+
+[Back to List of Controllers](#list_of_controllers)
+
+## <a name="trash_operations_controller"></a>![Class: ](https://apidocs.io/img/class.png ".TrashOperationsController") TrashOperationsController
+
+### Get controller instance
+
+An instance of the ``` TrashOperationsController ``` class can be accessed from the API Client.
+
+```python
+ trash_operations_controller = client.trash_operations
+```
+
+### <a name="delete_trash_items"></a>![Method: ](https://apidocs.io/img/method.png ".TrashOperationsController.delete_trash_items") delete_trash_items
+
+> TODO: Add a method description
+
+```python
+def delete_trash_items(self,
+                           path)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+
+trash_operations_controller.delete_trash_items(path)
+
+```
+
+
+### <a name="get_browse_trash"></a>![Method: ](https://apidocs.io/img/method.png ".TrashOperationsController.get_browse_trash") get_browse_trash
+
+> TODO: Add a method description
+
+```python
+def get_browse_trash(self,
+                         path)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+
+result = trash_operations_controller.get_browse_trash(path)
+
+```
+
+
+### <a name="create_recover_trash_items"></a>![Method: ](https://apidocs.io/img/method.png ".TrashOperationsController.create_recover_trash_items") create_recover_trash_items
+
+> TODO: Add a method description
+
+```python
+def create_recover_trash_items(self,
+                                   path,
+                                   restore=None,
+                                   rescue_path=None,
+                                   recreate_path=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| restore |  ``` Optional ```  | TODO: Add a parameter description |
+| rescuePath |  ``` Optional ```  | TODO: Add a parameter description |
+| recreatePath |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+restore = 'restore'
+rescue_path = 'rescue-path'
+recreate_path = 'recreate-path'
+
+trash_operations_controller.create_recover_trash_items(path, restore, rescue_path, recreate_path)
+
+```
+
+
+[Back to List of Controllers](#list_of_controllers)
+
+## <a name="history_operations_controller"></a>![Class: ](https://apidocs.io/img/class.png ".HistoryOperationsController") HistoryOperationsController
+
+### Get controller instance
+
+An instance of the ``` HistoryOperationsController ``` class can be accessed from the API Client.
+
+```python
+ history_operations_controller = client.history_operations
+```
+
+### <a name="list_history"></a>![Method: ](https://apidocs.io/img/method.png ".HistoryOperationsController.list_history") list_history
+
+> TODO: Add a method description
+
+```python
+def list_history(self,
+                     start=None,
+                     stop=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| start |  ``` Optional ```  | TODO: Add a parameter description |
+| stop |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+start = 11
+stop = 11
+
+result = history_operations_controller.list_history(start, stop)
+
+```
+
+
+[Back to List of Controllers](#list_of_controllers)
+
+## <a name="share_operations_controller"></a>![Class: ](https://apidocs.io/img/class.png ".ShareOperationsController") ShareOperationsController
+
+### Get controller instance
+
+An instance of the ``` ShareOperationsController ``` class can be accessed from the API Client.
+
+```python
+ share_operations_controller = client.share_operations
+```
+
+### <a name="create_unlock_share"></a>![Method: ](https://apidocs.io/img/method.png ".ShareOperationsController.create_unlock_share") create_unlock_share
+
+> TODO: Add a method description
+
+```python
+def create_unlock_share(self,
+                            share_key,
+                            password)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| shareKey |  ``` Required ```  | TODO: Add a parameter description |
+| password |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+share_key = 'share_key'
+password = 'password'
+
+result = share_operations_controller.create_unlock_share(share_key, password)
+
+```
+
+
+### <a name="create_receive_share"></a>![Method: ](https://apidocs.io/img/method.png ".ShareOperationsController.create_receive_share") create_receive_share
+
+> TODO: Add a method description
+
+```python
+def create_receive_share(self,
+                             share_key,
+                             path=None,
+                             exists=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| shareKey |  ``` Required ```  | TODO: Add a parameter description |
+| path |  ``` Optional ```  | TODO: Add a parameter description |
+| exists |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+share_key = 'share_key'
+path = 'path'
+exists = ExistsEnum.FAIL
+
+result = share_operations_controller.create_receive_share(share_key, path, exists)
+
+```
+
+
+### <a name="delete_share"></a>![Method: ](https://apidocs.io/img/method.png ".ShareOperationsController.delete_share") delete_share
+
+> TODO: Add a method description
+
+```python
+def delete_share(self,
+                     share_key)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| shareKey |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+share_key = 'share_key'
+
+share_operations_controller.delete_share(share_key)
+
+```
+
+
+### <a name="alter_share_info"></a>![Method: ](https://apidocs.io/img/method.png ".ShareOperationsController.alter_share_info") alter_share_info
+
+> TODO: Add a method description
+
+```python
+def alter_share_info(self,
+                         share_key,
+                         current_password=None,
+                         password=None,
+                         name=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| shareKey |  ``` Required ```  | TODO: Add a parameter description |
+| currentPassword |  ``` Optional ```  | TODO: Add a parameter description |
+| password |  ``` Optional ```  | TODO: Add a parameter description |
+| name |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+share_key = 'share_key'
+current_password = 'current_password'
+password = 'password'
+name = 'name'
+
+result = share_operations_controller.alter_share_info(share_key, current_password, password, name)
+
+```
+
+
+### <a name="get_browse_share"></a>![Method: ](https://apidocs.io/img/method.png ".ShareOperationsController.get_browse_share") get_browse_share
+
+> TODO: Add a method description
+
+```python
+def get_browse_share(self,
+                         share_key,
+                         path=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| shareKey |  ``` Required ```  | TODO: Add a parameter description |
+| path |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+share_key = 'share_key'
+path = 'path'
+
+result = share_operations_controller.get_browse_share(share_key, path)
+
+```
+
+
+### <a name="create_share"></a>![Method: ](https://apidocs.io/img/method.png ".ShareOperationsController.create_share") create_share
+
+> TODO: Add a method description
+
+```python
+def create_share(self,
+                     path)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+
+result = share_operations_controller.create_share(path)
+
+```
+
+
+### <a name="list_shares"></a>![Method: ](https://apidocs.io/img/method.png ".ShareOperationsController.list_shares") list_shares
+
+> TODO: Add a method description
+
+```python
+def list_shares(self)
+```
+
+#### Example Usage
+
+```python
+
+result = share_operations_controller.list_shares()
+
+```
+
+
+[Back to List of Controllers](#list_of_controllers)
+
+## <a name="administrators_operations_controller"></a>![Class: ](https://apidocs.io/img/class.png ".AdministratorsOperationsController") AdministratorsOperationsController
+
+### Get controller instance
+
+An instance of the ``` AdministratorsOperationsController ``` class can be accessed from the API Client.
+
+```python
+ administrators_operations_controller = client.administrators_operations
+```
+
+### <a name="create_account"></a>![Method: ](https://apidocs.io/img/method.png ".AdministratorsOperationsController.create_account") create_account
+
+> TODO: Add a method description
+
+```python
+def create_account(self,
+                       authorization,
+                       date,
+                       username,
+                       password,
+                       email=None,
+                       first_name=None,
+                       last_name=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| authorization |  ``` Required ```  | BCS client_application_id:request_signature |
+| date |  ``` Required ```  | TODO: Add a parameter description |
+| username |  ``` Required ```  | TODO: Add a parameter description |
+| password |  ``` Required ```  | TODO: Add a parameter description |
+| email |  ``` Optional ```  | TODO: Add a parameter description |
+| firstName |  ``` Optional ```  | TODO: Add a parameter description |
+| lastName |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+authorization = 'Authorization'
+date = datetime.now()
+username = 'username'
+password = 'password'
+email = 'email'
+first_name = 'first_name'
+last_name = 'last_name'
+
+result = administrators_operations_controller.create_account(authorization, date, username, password, email, first_name, last_name)
+
+```
+
+
+[Back to List of Controllers](#list_of_controllers)
+
+## <a name="file_operations_controller"></a>![Class: ](https://apidocs.io/img/class.png ".FileOperationsController") FileOperationsController
+
+### Get controller instance
+
+An instance of the ``` FileOperationsController ``` class can be accessed from the API Client.
+
+```python
+ file_operations_controller = client.file_operations
+```
+
+### <a name="list_file_versions"></a>![Method: ](https://apidocs.io/img/method.png ".FileOperationsController.list_file_versions") list_file_versions
+
+> TODO: Add a method description
+
+```python
+def list_file_versions(self,
+                           path,
+                           start_version=None,
+                           stop_version=None,
+                           limit=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| startVersion |  ``` Optional ```  | TODO: Add a parameter description |
+| stopVersion |  ``` Optional ```  | TODO: Add a parameter description |
+| limit |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+start_version = 11
+stop_version = 11
+limit = 11
+
+result = file_operations_controller.list_file_versions(path, start_version, stop_version, limit)
+
+```
+
+
+### <a name="create_move_file"></a>![Method: ](https://apidocs.io/img/method.png ".FileOperationsController.create_move_file") create_move_file
+
+> TODO: Add a method description
+
+```python
+def create_move_file(self,
+                         path,
+                         to,
+                         name=None,
+                         exists=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| to |  ``` Required ```  | TODO: Add a parameter description |
+| name |  ``` Optional ```  | TODO: Add a parameter description |
+| exists |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+to = 'to'
+name = 'name'
+exists = ExistsEnum.FAIL
+
+result = file_operations_controller.create_move_file(path, to, name, exists)
+
+```
+
+
+### <a name="create_copy_file"></a>![Method: ](https://apidocs.io/img/method.png ".FileOperationsController.create_copy_file") create_copy_file
+
+> TODO: Add a method description
+
+```python
+def create_copy_file(self,
+                         path,
+                         to,
+                         name,
+                         exists='rename')
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| to |  ``` Required ```  | TODO: Add a parameter description |
+| name |  ``` Required ```  | TODO: Add a parameter description |
+| exists |  ``` Optional ```  ``` DefaultValue ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+to = 'to'
+name = 'name'
+exists = ExistsEnum.RENAME
+
+result = file_operations_controller.create_copy_file(path, to, name, exists)
+
+```
+
+
+### <a name="get_download_file"></a>![Method: ](https://apidocs.io/img/method.png ".FileOperationsController.get_download_file") get_download_file
+
+> TODO: Add a method description
+
+```python
+def get_download_file(self,
+                          path,
+                          range=None,
+                          version=None,
+                          version_conflict=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | Base64-encoded path to any location in the authenticated user�s account. |
+| range |  ``` Optional ```  | TODO: Add a parameter description |
+| version |  ``` Optional ```  | TODO: Add a parameter description |
+| versionConflict |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+range = 'Range'
+version = 11
+version_conflict = 'version-conflict'
+
+file_operations_controller.get_download_file(path, range, version, version_conflict)
+
+```
+
+#### Errors
+
+| Error Code | Error Description |
+|------------|-------------------|
+| 400 | Version was not supplied, or version was not the current version. |
+
+
+
+
+### <a name="create_promote_file_version"></a>![Method: ](https://apidocs.io/img/method.png ".FileOperationsController.create_promote_file_version") create_promote_file_version
+
+> TODO: Add a method description
+
+```python
+def create_promote_file_version(self,
+                                    path,
+                                    version)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| version |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+version = 11
+
+result = file_operations_controller.create_promote_file_version(path, version)
+
+```
+
+
+### <a name="get_file_meta"></a>![Method: ](https://apidocs.io/img/method.png ".FileOperationsController.get_file_meta") get_file_meta
+
+> TODO: Add a method description
+
+```python
+def get_file_meta(self,
+                      path)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+
+result = file_operations_controller.get_file_meta(path)
+
+```
+
+
+### <a name="list_single_file_version"></a>![Method: ](https://apidocs.io/img/method.png ".FileOperationsController.list_single_file_version") list_single_file_version
+
+> TODO: Add a method description
+
+```python
+def list_single_file_version(self,
+                                 path,
+                                 version)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| version |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+version = 11
+
+result = file_operations_controller.list_single_file_version(path, version)
+
+```
+
+
+### <a name="delete_file"></a>![Method: ](https://apidocs.io/img/method.png ".FileOperationsController.delete_file") delete_file
+
+> TODO: Add a method description
+
+```python
+def delete_file(self,
+                    path,
+                    commit='false')
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| commit |  ``` Optional ```  ``` DefaultValue ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+commit = 'false'
+
+result = file_operations_controller.delete_file(path, commit)
+
+```
+
+
+### <a name="create_after_file_meta"></a>![Method: ](https://apidocs.io/img/method.png ".FileOperationsController.create_after_file_meta") create_after_file_meta
+
+> TODO: Add a method description
+
+```python
+def create_after_file_meta(self,
+                               path,
+                               name=None,
+                               extension=None,
+                               date_created=None,
+                               date_meta_last_modified=None,
+                               date_content_last_modified=None,
+                               mime=None,
+                               application_data=None,
+                               version=None,
+                               version_conflict=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| name |  ``` Optional ```  | TODO: Add a parameter description |
+| extension |  ``` Optional ```  | TODO: Add a parameter description |
+| dateCreated |  ``` Optional ```  | TODO: Add a parameter description |
+| dateMetaLastModified |  ``` Optional ```  | TODO: Add a parameter description |
+| dateContentLastModified |  ``` Optional ```  | TODO: Add a parameter description |
+| mime |  ``` Optional ```  | TODO: Add a parameter description |
+| applicationData |  ``` Optional ```  | TODO: Add a parameter description |
+| version |  ``` Optional ```  | TODO: Add a parameter description |
+| versionConflict |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+name = 'name'
+extension = 'extension'
+date_created = datetime.now()
+date_meta_last_modified = datetime.now()
+date_content_last_modified = datetime.now()
+mime = 'mime'
+application_data = { }
+version = 11
+version_conflict = 'version-conflict'
+
+result = file_operations_controller.create_after_file_meta(path, name, extension, date_created, date_meta_last_modified, date_content_last_modified, mime, application_data, version, version_conflict)
+
+```
+
+
+[Back to List of Controllers](#list_of_controllers)
+
+## <a name="create_account_controller"></a>![Class: ](https://apidocs.io/img/class.png ".CreateAccountController") CreateAccountController
+
+### Get controller instance
+
+An instance of the ``` CreateAccountController ``` class can be accessed from the API Client.
+
+```python
+ create_account_controller = client.create_account
+```
+
+### <a name="create_account"></a>![Method: ](https://apidocs.io/img/method.png ".CreateAccountController.create_account") create_account
+
+> create new user 
+
+```python
+def create_account(self,
+                       date,
+                       username,
+                       password,
+                       authorization,
+                       email=None,
+                       first_name=None,
+                       last_name=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| date |  ``` Required ```  | TODO: Add a parameter description |
+| username |  ``` Required ```  | TODO: Add a parameter description |
+| password |  ``` Required ```  | TODO: Add a parameter description |
+| authorization |  ``` Required ```  | BCS client_application_id:request_signature |
+| email |  ``` Optional ```  | TODO: Add a parameter description |
+| firstName |  ``` Optional ```  | TODO: Add a parameter description |
+| lastName |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+date = datetime.now()
+username = 'username'
+password = 'password'
+authorization = 'Authorization'
+email = 'email'
+first_name = 'first_name'
+last_name = 'last_name'
+
+result = create_account_controller.create_account(date, username, password, authorization, email, first_name, last_name)
+
+```
+
+
+[Back to List of Controllers](#list_of_controllers)
+
+## <a name="user_operations_controller"></a>![Class: ](https://apidocs.io/img/class.png ".UserOperationsController") UserOperationsController
+
+### Get controller instance
+
+An instance of the ``` UserOperationsController ``` class can be accessed from the API Client.
+
+```python
+ user_operations_controller = client.user_operations
+```
+
+### <a name="upload_file"></a>![Method: ](https://apidocs.io/img/method.png ".UserOperationsController.upload_file") upload_file
+
+> TODO: Add a method description
+
+```python
+def upload_file(self,
+                    path,
+                    file,
+                    exists=None,
+                    reuse_attributes=None,
+                    reuse_fallback=None)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| path |  ``` Required ```  | TODO: Add a parameter description |
+| file |  ``` Required ```  | TODO: Add a parameter description |
+| exists |  ``` Optional ```  | TODO: Add a parameter description |
+| reuseAttributes |  ``` Optional ```  | TODO: Add a parameter description |
+| reuseFallback |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```python
+path = 'path'
+file = open("pathtofile", 'rb')
+exists = ExistsEnum.FAIL
+reuse_attributes = 'reuse-attributes'
+reuse_fallback = 'reuse-fallback'
+
+result = user_operations_controller.upload_file(path, file, exists, reuse_attributes, reuse_fallback)
+
+```
+
+
+### <a name="get_profile"></a>![Method: ](https://apidocs.io/img/method.png ".UserOperationsController.get_profile") get_profile
+
+> TODO: Add a method description
+
+```python
+def get_profile(self)
+```
+
+#### Example Usage
+
+```python
+
+result = user_operations_controller.get_profile()
+
+```
+
+
+[Back to List of Controllers](#list_of_controllers)
+
+
+

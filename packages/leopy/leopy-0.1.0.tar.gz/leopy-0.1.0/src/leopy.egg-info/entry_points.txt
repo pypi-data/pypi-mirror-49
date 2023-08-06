@@ -1,0 +1,3 @@
+[console_scripts]
+leopy = leopy.cli:main
+

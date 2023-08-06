@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+deepgeo_ext_yolo/Config.py
+deepgeo_ext_yolo/Dataset.py
+deepgeo_ext_yolo/Model.py
+deepgeo_ext_yolo/__init__.py
+deepgeo_ext_yolo.egg-info/PKG-INFO
+deepgeo_ext_yolo.egg-info/SOURCES.txt
+deepgeo_ext_yolo.egg-info/dependency_links.txt
+deepgeo_ext_yolo.egg-info/not-zip-safe
+deepgeo_ext_yolo.egg-info/requires.txt
+deepgeo_ext_yolo.egg-info/top_level.txt

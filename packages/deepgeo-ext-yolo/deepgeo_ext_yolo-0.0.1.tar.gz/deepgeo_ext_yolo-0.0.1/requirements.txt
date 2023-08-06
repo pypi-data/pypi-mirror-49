@@ -1,0 +1,3 @@
+deepgeo
+numpy
+opencv-python

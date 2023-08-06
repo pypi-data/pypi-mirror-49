@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: deepgeo-ext-yolo
+Version: 0.0.1
+Summary: deepgeo_ext_yolo
+Home-page: https://github.com/Sotaneum/deepgeo_ext_yolo
+Author: Donggun LEE
+Author-email: gnyotnu39@gmail.com
+License: MIT
+Description: # DeepGeo Extension :: YOLO
+         - Easy Deep Learning
+          - Copyright (c) 2019 [InfoLab](http://infolab.kunsan.ac.kr) ([Donggun LEE](http://duration.digimoon.net))
+        
+         - How to install
+           ```bash
+           pip install deepgeo_ext_yolo
+           ```
+           - other version
+             ```basha
+             # 0.0.1
+             pip install deepgeo_ext_yolo==0.0.1
+             ```
+            - requirement
+               - Python 3.6
+               ```bash
+               pip install deepgeo opencv-python numpy
+               ```
+         - How to use
+            ```python
+            import deepgeo
+        
+            engine = deepgeo.Engine()
+            engine.add_model('maskrcnn_yolo','yolo','D:/default_config.json')
+        
+            image = deepgeo.Image("image.jpg","D:/Project")
+            image = engine.detect('maskrcnn_yolo', image)[0]
+            image.draw_annotations(image.get_annotation())
+            image.save("D:/","test","PNG")
+            ```
+        
+         - default_config.json
+            ```json
+              {
+                 "VERSION" = ""
+                 "MODEL_FILE_NAME" : "road-damage.weights",
+                 "MODEL_PATH" : "model",
+                 "CLASSES" : "road-damage-class.txt",
+                 "CONFIG" : "road-damage.cfg",
+                 "MEMO" : "road damage detect"
+              }
+            ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

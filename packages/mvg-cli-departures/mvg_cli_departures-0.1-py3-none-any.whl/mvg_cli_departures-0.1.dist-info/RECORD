@@ -1,0 +1,9 @@
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/interface.py,sha256=qQJncbGmPdHoYdIsN50dIyC5m_Y4_Do4FsO7sQiaf5A,854
+app/mvg_monitor.py,sha256=YMHRvUS1ylFhDhOdb2GGzk0x6LfT-1db8jsseGD5l1s,4549
+mvg_cli_departures-0.1.dist-info/LICENSE,sha256=FdG3WNeqVqom4z7_R-fK_XZd3xbv0i1cnfW-DeHA890,1158
+mvg_cli_departures-0.1.dist-info/METADATA,sha256=zCXSDBNwxzG3lnJfOLMba522sKAVOq8ine6WwSbG-nA,536
+mvg_cli_departures-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+mvg_cli_departures-0.1.dist-info/entry_points.txt,sha256=HQ27vqOXGuEYwAARTU1KLiaKyrhid-0JaHjLIRSN3pY,51
+mvg_cli_departures-0.1.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+mvg_cli_departures-0.1.dist-info/RECORD,,

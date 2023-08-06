@@ -1,0 +1,3 @@
+[console_scripts]
+mvg-depart = app.interface:main
+

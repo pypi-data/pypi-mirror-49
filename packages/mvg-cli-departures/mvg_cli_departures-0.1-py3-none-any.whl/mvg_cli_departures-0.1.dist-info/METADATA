@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mvg-cli-departures
+Version: 0.1
+Summary: Command line departure monitor for the MVG - munich's public transport
+Home-page: https://gitlab.com/maternusherold/mvg-command-line-departure-monitor
+Author: Turnman H
+Author-email: turnmanh@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# mvg-command-line-departure-monitor 
+
+Command line departure and journey monitor. 
+
+Based on the location and the destination finding a route provided by the MVG (Munich's public transport) 
+

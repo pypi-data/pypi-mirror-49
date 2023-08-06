@@ -1,0 +1,6 @@
+Click>=6.0
+pandas>=0.24
+numpy>=1.16
+networkx
+pulp
+matplotlib

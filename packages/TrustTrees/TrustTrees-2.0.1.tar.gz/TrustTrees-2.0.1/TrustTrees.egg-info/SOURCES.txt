@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+trusttrees.py
+TrustTrees.egg-info/PKG-INFO
+TrustTrees.egg-info/SOURCES.txt
+TrustTrees.egg-info/dependency_links.txt
+TrustTrees.egg-info/requires.txt
+TrustTrees.egg-info/top_level.txt

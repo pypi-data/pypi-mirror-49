@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: TrustTrees
+Version: 2.0.1
+Summary: A Tool for DNS Delegation Trust Graphing
+Home-page: https://github.com/mandatoryprogrammer/TrustTrees
+Author: mandatoryprogrammer
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Check out TrustTrees on `GitHub <https://github.com/mandatoryprogrammer/TrustTrees>`_!
+Keywords: subdomain,subdomain-takeover,dns,dnssec,security,bug-bounty,bugbounty
+Platform: UNKNOWN

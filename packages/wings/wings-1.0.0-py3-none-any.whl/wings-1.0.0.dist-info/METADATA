@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: wings
+Version: 1.0.0
+Summary: Interact with a WINGS instance
+Home-page: https://github.com/KnowledgeCaptureAndDiscovery/wings-client
+Author: Maximiliano Osorio
+Author-email: mosorio@isi.edu
+License: Apache-2
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+Requires-Dist: certifi
+Requires-Dist: chardet
+Requires-Dist: idna
+Requires-Dist: requests
+Requires-Dist: urllib3
+
+# wings-client
+
+

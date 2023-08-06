@@ -1,0 +1,5 @@
+[emzed_package]
+extension = idms_pairfinder_2
+main = idms_pairfinder_2.app:run
+package = idms_pairfinder_2
+

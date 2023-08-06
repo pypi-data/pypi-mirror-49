@@ -1,0 +1,16 @@
+freq_table/__init__.py,sha256=-09bYdPxzwWQdL57cyI3y9cAi2BOtHhunfhGLIKGjaE,144
+freq_table/__main__.py,sha256=OOFqnWfjBrmcwnDqwvA9K48Y3OzMOFslhWpfPn3Zi1w,547
+freq_table/cli.py,sha256=PeXLlWHWVh6fpeaATespF2ieIC1vkXwxQUAkCUdSUPQ,6522
+freq_table/generator.py,sha256=_Fh8xO_vB4BnDeetthh62xJVNFxYe9nzBGv5HGnRsEE,2369
+freq_table/records.py,sha256=YixZS3r8YxVa4vBIFB09Y2vXnyyKIiab7Z8yMMR7LSk,306
+freq_table/scraper.py,sha256=YXP5Vtylk22B8eteLjN8OJf8wIxw5JfSyVaJycL1_RE,2029
+freq_table/utils.py,sha256=_masPnRzoDaHyrk4j49x9NSDSuTnT1ERJRgM86Blrzw,947
+freq_table/templates/config.yaml,sha256=Pt8YzGEWWWB2CY2lTEMDhduDolOoCEyhqntRDNJMegU,1130
+freq_table/templates/output.html.mako,sha256=jTPsmK_85pPeSyMRHyw8xEnNrc1nB7r4A_YzwhHs6tw,1808
+freq_table/templates/style.css,sha256=OWilcid71IMDWWVgfjfaJLkpkOG874M1cWbhZEiNW3c,1307
+freq_table-0.2.1.dist-info/LICENSE,sha256=L_dKvcoHvDrqYGHxH0V9h1PfaZb-210mwcbjeVCuIVI,1071
+freq_table-0.2.1.dist-info/METADATA,sha256=EHrKXXfkcbAScbJeOw8x8j5l8wYRHE3LQsUniMbJifo,6237
+freq_table-0.2.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+freq_table-0.2.1.dist-info/entry_points.txt,sha256=y16DPao1SeTyd8wZHFeSEAbLhbmBQAM7MWgVnheUglA,57
+freq_table-0.2.1.dist-info/top_level.txt,sha256=fb8RxHwYG1OOSI1JHgFfUrYmKN44qQ9VSSNnQrifmLk,11
+freq_table-0.2.1.dist-info/RECORD,,

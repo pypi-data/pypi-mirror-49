@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: alphaj_naver_stock_cralwer
+Version: 0.1.5
+Summary: A Naver Stock Cralwer
+Home-page: UNKNOWN
+Author: Alpha J
+Author-email: jaeminyx@gmail.com
+License: UNKNOWN
+Description: A Naver Stock Cralwer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

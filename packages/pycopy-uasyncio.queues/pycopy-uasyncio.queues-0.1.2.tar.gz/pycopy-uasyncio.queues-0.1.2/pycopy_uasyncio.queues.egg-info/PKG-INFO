@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: pycopy-uasyncio.queues
+Version: 0.1.2
+Summary: uasyncio.queues module for Pycopy
+Home-page: https://github.com/pfalcon/pycopy-lib
+Author: Paul Sokolovsky
+Author-email: pycopy-dev@googlegroups.com
+Maintainer: Paul Sokolovsky
+Maintainer-email: pycopy-dev@googlegroups.com
+License: MIT
+Description: Port of asyncio.queues to uasyncio.
+Platform: UNKNOWN

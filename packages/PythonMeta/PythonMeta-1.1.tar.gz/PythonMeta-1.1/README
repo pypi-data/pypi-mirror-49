@@ -1,0 +1,145 @@
+PythonMeta
+---
+Info
+---
+Name = PythonMeta
+
+Version = 1.1 
+
+Author = Deng Hongyong (dhy)
+
+Email = dephew@126.com
+
+URL = www.pymeta.com
+
+Date = 2019.7.21 (First developed in 2017)
+
+About
+---
+This is a Meta-Analysis package. 
+
+This module was designed to perform some Evidence-based medicine (EBM) tasks, such as:
+
+* Combining effect measures (OR, RR, RD for count data and MD, SMD for continuous data);
+* Heterogeneity test(Q/Chi-square test);
+* Subgroup analysis;
+* Plots drawing: forest plot, funnel plot, etc.
+
+Statistical algorithms in this software cited from:
+**Jonathan J Deeks and Julian PT Higgins, on behalf of the Statistical Methods Group of The Cochrane Collaboration. Statistical algorithms in Review Manager 5, August 2010.**
+
+Please cite me in any publictions like:
+**Deng Hongyong. PyMeta, Python module of Meta-analysis, cited 20xx-xx-xx (or your time); 1 screen(s). Available from URL: http://www.pymeta.com**
+
+This is an ongoing project, so, any questions and suggestions from you are very welcome.
+
+Installing
+---
+Install and update using `pip`:
+```
+    pip install PythonMeta
+```
+
+Example
+---
+
+Sample code: **sample.py**
+```Python
+
+import PythonMeta as PMA
+
+def showstudies(studies):    
+    text = "%-10s %-20s %-20s \n"%("Study ID","Experiment Group","Control Group")
+    text += "%-10s %-10s %-10s %-10s %-10s \n"%(" ","e1","n1","e2","n2")
+    for i in range(len(studies)):
+        text += "%-10s %-10s %-10s %-10s %-10s \n"%(
+        studies[i][4],        #study ID
+        str(studies[i][0]),   #event num of group1
+        str(studies[i][1]),   #total num of group1
+        str(studies[i][2]),   #event num of group2
+        str(studies[i][3])    #total num of group2
+        )
+    return text
+
+def showresults(rults):
+    text = "%-10s %-6s  %-18s %-10s"%("Study ID","n","ES[95% CI]","Weight(%)\n")    
+    for i in range(1,len(rults)):
+        text += "%-10s %-6d  %-4.2f[%.2f %.2f]   %6.2f\n"%(
+        rults[i][0],     #study ID
+        rults[i][5],     #total num
+        rults[i][1],     #effect size
+        rults[i][3],     #lower of CI
+        rults[i][4],     #higher of CI
+        100*(rults[i][2]/rults[0][2])  #weight
+        )
+    text += "%-10s %-6d  %-4.2f[%.2f %.2f]   %6d\n"%(
+        rults[0][0],     #total effect size name
+        rults[0][5],     #total N (all studies)
+        rults[0][1],     #total effect size
+        rults[0][3],     #total lower CI
+        rults[0][4],     #total higher CI
+        100
+        )  
+    text += "%d studies included (N=%d)\n"%(len(rults)-1,rults[0][5])
+    text += "Heterogeneity: Tau\u00b2=%.3f "%(rults[0][12]) if not rults[0][12]==None else "Heterogeneity: "
+    text += "Q(Chisquare)=%.2f(p=%s); I\u00b2=%s\n"%(
+        rults[0][7],     #Q test value
+        rults[0][8],     #p value for Q test
+        str(round(rults[0][9],2))+"%")   #I-square value
+    text += "Overall effect test: z=%.2f, p=%s\n"%(rults[0][10],rults[0][11])  #z-test value and p-value
+    
+    return text
+
+def main():
+    d = PMA.Data()  #Load Data class
+    m = PMA.Meta()  #Load Meta class
+    f = PMA.Fig()   #Load Fig class
+    
+    d.datatype = 'CATE'           #set data type, 'CATE' for binary data or 'CONT' for continuous data
+    studies = d.getdata(d.readfile('studies.txt'))  #get data from 'studies.txt'
+    print(showstudies(studies))   #show studies
+
+    m.datatype=d.datatype         #set data type for meta-analysis calculating
+    m.models = 'Fixed'            #set effect models: 'Fixed' or 'Random'
+    m.algorithm = 'MH'            #set algorithm, based on datatype and effect size
+    m.effect = 'RR'               #set effect size:RR/OR/RD for binary data; SMD/MD for continuous data
+    results = m.meta(studies)     #performing the analysis
+    print(m.models + " " + m.algorithm + " " + m.effect)
+    print (showresults(results))  #show results table
+    f.forest(results).show()      #show results figure
+    f.funnel(results).show()      #show results figure
+    
+if __name__ == '__main__':
+    main()
+```
+
+Datafile: **studies.txt**
+```
+
+    Fang 2015, 15, 40,  24, 37 
+    Gong 2012, 10, 40,  18, 35 
+    Liu 2015,  30, 50,  40, 50 
+    Long 2012, 19, 40,  26, 40 
+    Pan 2015a, 57, 100, 68, 100 
+    Wang 2001, 13, 18,  17, 18 
+    Wang 2003, 7,  86,  15, 86
+
+    #This is a sample of binary data.
+    #Input one study in a line;
+    #Syntax: study name, e1, n1, e2, n2
+    #e1,n1: events and number of experiment group;
+    #e2,n2: events and number of control group.
+```
+
+Contact
+---
+
+Deng Hongyong Ph.D
+
+Shanghai University of Traditional Chinese Medicine
+
+Shanghai, China 201203
+
+Email: dephew@126.com
+
+Web: www.PyMeta.com

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rangeSlicing
+Version: 0.1.2
+Summary: A range splitting package to divide a longer range in smaller batches.
+Home-page: https://github.com/panaitandrei/rangeSlicing
+Author: Andrei Panait
+Author-email: pnt_andrei@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# rangeSlicing
+
+

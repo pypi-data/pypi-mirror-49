@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: UCpyR
+Version: 0.1
+Summary: A package implementing the UCPR algorithm
+Home-page: http://acceleratedresearch.ca
+Author: Matthew Leighton
+Author-email: Matthew.Leighton@Dal.ca
+License: UNKNOWN
+Description: # This Package implements the UCPR (Uniform Covering by Probabilistic Rejection) algorithm as detailed in Klepper et al, 1994.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

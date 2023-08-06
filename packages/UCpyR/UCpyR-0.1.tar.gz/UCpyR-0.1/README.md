@@ -1,0 +1,1 @@
+# This Package implements the UCPR (Uniform Covering by Probabilistic Rejection) algorithm as detailed in Klepper et al, 1994.

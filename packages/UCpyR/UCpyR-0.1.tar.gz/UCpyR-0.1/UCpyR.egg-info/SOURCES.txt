@@ -1,0 +1,7 @@
+README.md
+setup.py
+UCpyR/__init__.py
+UCpyR.egg-info/PKG-INFO
+UCpyR.egg-info/SOURCES.txt
+UCpyR.egg-info/dependency_links.txt
+UCpyR.egg-info/top_level.txt

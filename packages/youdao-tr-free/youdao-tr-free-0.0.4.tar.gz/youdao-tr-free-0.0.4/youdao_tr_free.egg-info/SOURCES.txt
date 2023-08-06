@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+youdao_tr/__init__.py
+youdao_tr/make_throttle_hook.py
+youdao_tr/youdao_tr.py
+youdao_tr_free.egg-info/PKG-INFO
+youdao_tr_free.egg-info/SOURCES.txt
+youdao_tr_free.egg-info/dependency_links.txt
+youdao_tr_free.egg-info/requires.txt
+youdao_tr_free.egg-info/top_level.txt

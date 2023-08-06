@@ -1,0 +1,4 @@
+[console_scripts]
+AMT = pyhttp.main:run_min
+amt = pyhttp.main:run_min
+

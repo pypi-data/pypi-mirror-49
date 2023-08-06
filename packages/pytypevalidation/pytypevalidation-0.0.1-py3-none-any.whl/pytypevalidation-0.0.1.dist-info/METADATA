@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pytypevalidation
+Version: 0.0.1
+Summary: Python type validation and conversion
+Home-page: https://github.com/ocordes/pytypevalidation
+Author: Oliver Cordes
+Author-email: ocordes@astro.uni-bonn.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# pytypevalidation
+python type validation and conversion
+
+

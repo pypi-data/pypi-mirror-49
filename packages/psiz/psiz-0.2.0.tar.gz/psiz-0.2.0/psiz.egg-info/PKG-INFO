@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: psiz
+Version: 0.2.0
+Summary: Toolbox for inferring psychological embeddings.
+Home-page: https://github.com/roads/psiz
+Author: Brett D. Roads
+Author-email: brett.roads@gmail.com
+License: Apache Licence 2.0
+Download-URL: https://github.com/roads/psiz/archive/v0.2.0.tar.gz
+Description: See README for more information.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3

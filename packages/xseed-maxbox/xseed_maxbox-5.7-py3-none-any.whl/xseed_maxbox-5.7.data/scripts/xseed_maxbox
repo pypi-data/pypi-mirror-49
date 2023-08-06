@@ -1,0 +1,74 @@
+#!python
+
+import os
+import subprocess as sp
+from getpass import getpass
+from xseed_maxbox.sub_modules import installCommonPackagesTools as installCommon
+from xseed_maxbox.sub_modules import prerequisiteChecks as checks
+from xseed_maxbox.sub_modules import packageCleanUp as cleanup
+from xseed_maxbox.sub_modules import configureMasterBox as configure
+from xseed_maxbox.sub_modules import dockerCompose as dc
+from xseed_maxbox.sub_modules import config
+from xseed_maxbox.sub_modules import encryption
+from xseed_maxbox.sub_modules import buildInstall
+
+#Code to accept sudo password from user
+sudo_password  = getpass("Enter sudo password: ")
+miniCampus = input("Enter the miniCampus code: ")
+while True:
+    buildEnv = input("Enter the env - Staging/Production: ")
+    if buildEnv.lower() not in ('staging', 'production'):
+        print("Not an appropriate choice.")
+    else:
+        break
+buildEnv = buildEnv.lower()
+key = '1234'
+
+dbusername = encryption.decode(config.mysql['username'],key)
+dbpassword = encryption.decode(config.mysql['password'], key)
+dockerusername = encryption.decode(config.docker['username'], key)
+dockerpassword = encryption.decode(config.docker['password'], key)
+
+os.system("printf \"\n\
+##########################################################\n\
+######################## Welcome #########################\n\
+##########################################################\n\
+Please select operation: \n\n\
+Option #1 : Fresh Max box creation \n\
+Option #2 : Installation/Updation of builds\n\
+########################################################## \n\"")
+
+while True:
+    Input = int(input("Enter option #: "))
+    if Input not in (1,2):
+        print("ERROR: Entered option which is not supported\n\
+        Supported range : 1 / 2\n")
+    else:
+        break
+
+
+if Input == 1:
+    #1. Install common packages and common tools
+    installCommon.installCommonPackagesTools(sudo_password)
+
+    #2. Perform Prerequisite Checks
+    checks.checks()
+
+    # 3. Configure configureMasterBox
+    configure.configureMaster(sudo_password)
+
+    #4. Updating dockerCompose
+    dc.configureDocker(miniCampus, sudo_password, dbusername, dbpassword, dockerusername, dockerpassword, buildEnv)
+
+    #5. System cleanUp
+    cleanup.cleanUp()
+
+    #6. Install builds
+    buildInstall.getUserInput(miniCampus, dbusername, dbpassword, buildEnv)
+
+else:
+    #1 Updating dockerCompose
+    dc.configureDocker(miniCampus,sudo_password, dbusername, dbpassword, dockerusername, dockerpassword, buildEnv)
+
+    #2. Install builds
+    buildInstall.getUserInput(miniCampus, dbusername, dbpassword, buildEnv)

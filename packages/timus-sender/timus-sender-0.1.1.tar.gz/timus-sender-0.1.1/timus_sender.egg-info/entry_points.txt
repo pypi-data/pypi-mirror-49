@@ -1,0 +1,3 @@
+[console_scripts]
+timus-sender = timus.__main__:main
+

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: methpype
+Version: 1.0.2
+Summary: Python-based Illumina methylation array preprocessing software
+Home-page: https://github.com/LifeEGX/methpype
+Author: Life Epigenetics
+Author-email: info@lifeegx.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: tqdm
+
+Python-based Illumina methylation array preprocessing software
+
+

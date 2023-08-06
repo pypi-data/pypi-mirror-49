@@ -1,0 +1,13 @@
+semvercomp/Version.py,sha256=39KEUwEKYdfnqxsyYInock4zHO1rQEVagaENq1L78dI,1901
+semvercomp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+semvercomp/utils.py,sha256=xpAnMkNQKL8PDCI7xUv8zpXO5VWaZ45a2LEreG_WojA,499
+semvercomp/validators.py,sha256=AJQjh5H25WQ8cx-IOhYV2oHB_JnmGXU2FvCV8nibg-s,761
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_Version.py,sha256=NrIFyhDGGQKdgndpzvOfru--_98rjorFscoUgrCT32o,3040
+tests/test_utils.py,sha256=ME9gQSnfa_b0CNO-SphtOGOuq9tSKKrRgrJtBbDY-qw,738
+tests/test_validators.py,sha256=Q54-WKwEBYFkqBSnAIgTjE_qro2GS_sUFsTGW26ctSU,739
+semvercomp-0.1.0.dist-info/LICENSE,sha256=j03eYOosU8Ms_uxv6qOy3vFuIiFfakNCxHLO5qs-pOg,1057
+semvercomp-0.1.0.dist-info/METADATA,sha256=Tuu6srDSUl2jfwB1nzFdBAwbRrCt9O-zZU9IeESIsg4,1546
+semvercomp-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+semvercomp-0.1.0.dist-info/top_level.txt,sha256=1KGd99cSmlrt82iFjanhOIwQyWySoNL2JfT_96KCVWM,17
+semvercomp-0.1.0.dist-info/RECORD,,

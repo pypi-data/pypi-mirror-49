@@ -1,0 +1,17 @@
+black
+flake8
+isort==4.3.10
+sphinx
+sphinx_rtd_theme
+sphinx-autodoc-typehints
+bumpversion
+amqpstorm
+apacheconfig
+file-magic
+holidays
+jsonpointer
+jsonschema
+python-keystoneclient
+python-statsd
+python-swiftclient
+redis

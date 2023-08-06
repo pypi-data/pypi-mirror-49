@@ -1,0 +1,6 @@
+sd_cloud_utils/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+sd_cloud_utils/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sd_cloud_utils/aws/sqs.py,sha256=vD4xh4Rn_UbBUYok1687xyvT_uc7CSSXc58CUQ-r2x4,1394
+sd_cloud_utils-0.1.0.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+sd_cloud_utils-0.1.0.dist-info/METADATA,sha256=TwBBe4z4tNBjQDKW9hhk6axIQHC7zqpH2VUWT_JE3MQ,280
+sd_cloud_utils-0.1.0.dist-info/RECORD,,

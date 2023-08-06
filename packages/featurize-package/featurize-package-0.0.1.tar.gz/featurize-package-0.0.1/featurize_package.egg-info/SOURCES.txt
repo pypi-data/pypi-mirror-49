@@ -1,0 +1,6 @@
+README.md
+setup.py
+featurize_package.egg-info/PKG-INFO
+featurize_package.egg-info/SOURCES.txt
+featurize_package.egg-info/dependency_links.txt
+featurize_package.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+tqdm
+click
+mutagen
+sklearn
+PyInquirer
+pyreadline

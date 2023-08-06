@@ -1,0 +1,7 @@
+plotly
+pyqt5
+pyqtgraph
+numpy
+scipy
+matplotlib
+h5py

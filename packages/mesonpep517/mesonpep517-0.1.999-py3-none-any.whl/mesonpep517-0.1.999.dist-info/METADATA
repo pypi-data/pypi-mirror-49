@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: mesonpep517
+Version: 0.1.999
+Summary: Create pep517 compliant packages from the meson build system
+Home-page: https://gitlab.com/thiblahute/mesonpep517
+Author: Thibault Saunier
+Author-email: tsaunier@gnome.org
+Description: Just a test
+Requires-Dist: wheel
+Requires-Dist: meson
+Requires-Dist: pytoml
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Source, https://gitlab.com/thiblahute/mesonpep517
+Project-URL: Documentation, https://thiblahute.gitlab.io/mesonpep517/

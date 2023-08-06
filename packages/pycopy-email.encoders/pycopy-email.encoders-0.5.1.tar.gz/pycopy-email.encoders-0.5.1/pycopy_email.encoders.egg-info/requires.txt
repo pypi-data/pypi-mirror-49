@@ -1,0 +1,5 @@
+pycopy-base64
+pycopy-binascii
+pycopy-quopri
+pycopy-re-pcre
+pycopy-string

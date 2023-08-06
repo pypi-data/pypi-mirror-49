@@ -1,0 +1,2 @@
+fastavro>=0.22.3
+requests-async==0.4.1aiofiles==0.4.0

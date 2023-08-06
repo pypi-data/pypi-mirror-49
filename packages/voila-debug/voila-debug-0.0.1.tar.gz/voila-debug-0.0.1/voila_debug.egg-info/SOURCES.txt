@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+share/jupyter/voila/templates/debug/conf.json
+share/jupyter/voila/templates/debug/nbconvert_templates/debug.tpl
+share/jupyter/voila/templates/debug/nbconvert_templates/util.js
+share/jupyter/voila/templates/debug/static/jquery.min.js
+voila_debug.egg-info/PKG-INFO
+voila_debug.egg-info/SOURCES.txt
+voila_debug.egg-info/dependency_links.txt
+voila_debug.egg-info/requires.txt
+voila_debug.egg-info/top_level.txt

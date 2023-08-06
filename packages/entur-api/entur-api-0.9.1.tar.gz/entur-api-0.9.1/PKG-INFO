@@ -1,0 +1,39 @@
+Metadata-Version: 1.1
+Name: entur-api
+Version: 0.9.1
+Summary: Tools to work with enturs API
+Home-page: https://github.com/datagutten/entur-api
+Author: Anders Birkenes
+Author-email: datagutten@datagutten.net
+License: GPL
+Description: =============
+        Entur API
+        =============
+        
+        Tools to work with Enturs API
+        
+        Quick start
+        -----------
+        
+        1. Add "entur-monitor" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'entur-api',
+            ]
+        
+        2. Include the polls URLconf in your project urls.py like this::
+        
+            path('entur-monitor/', include('entur-monitor.urls')),
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content

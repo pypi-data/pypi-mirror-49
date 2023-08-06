@@ -1,0 +1,13 @@
+jupytertoolbox/__init__.py,sha256=M74TQGVaKQvZvgpY2fvLDa4YE1kVKAbIPrxXOWjFomo,860
+jupytertoolbox/handlers.py,sha256=hZ0z2Q-bxV6YzVn_OZ7nqKmizFuj2A90wkCSHYqyd3c,4447
+jupytertoolbox/static/handlers.js,sha256=xj5chEdZRdaKijYGdzt8PyBMDiJc5lcE-IGkLYPbTdo,6145
+jupytertoolbox/static/index.js,sha256=hnVg999Tr49dpwe438z57kPJ-fSZLQ3s3URGNXgc8x0,2987
+jupytertoolbox-0.0.1a1.dev5.data/data/etc/jupyter/jupyter_notebook_config.d/jupytertoolbox.json,sha256=Frt2XpWtuB_4MxKrtX8m9qJO1UhYToV0zAuxiAOTjnA,102
+jupytertoolbox-0.0.1a1.dev5.data/data/etc/jupyter/nbconfig/notebook.d/jupytertoolbox.json,sha256=_4J_buKf0dxVGTmDj6bevz47zEXCaWM2ZSKUVKsjgwA,63
+jupytertoolbox-0.0.1a1.dev5.data/data/share/jupyter/nbextensions/jupytertoolbox/handlers.js,sha256=xj5chEdZRdaKijYGdzt8PyBMDiJc5lcE-IGkLYPbTdo,6145
+jupytertoolbox-0.0.1a1.dev5.data/data/share/jupyter/nbextensions/jupytertoolbox/index.js,sha256=hnVg999Tr49dpwe438z57kPJ-fSZLQ3s3URGNXgc8x0,2987
+jupytertoolbox-0.0.1a1.dev5.dist-info/LICENSE,sha256=ZfS9uzUT2Gd5Yvhrw2UnroU6-0ALHsaGmMKUhoQX4IM,1344
+jupytertoolbox-0.0.1a1.dev5.dist-info/METADATA,sha256=-hdlucKmjfJ55iEuW_QxqclCkwPziqiIIKN6NnyKKxU,863
+jupytertoolbox-0.0.1a1.dev5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+jupytertoolbox-0.0.1a1.dev5.dist-info/top_level.txt,sha256=DpG1tSWhH2DnE3kMtxDBqONP-8Rcy1XiptR-0LYSyEg,15
+jupytertoolbox-0.0.1a1.dev5.dist-info/RECORD,,

@@ -1,0 +1,9 @@
+moralizer/__init__.py,sha256=S-SuqUE1cXZLcdCKBzY571VXwCdJjkgXBZRQCDNh4XY,27646
+moralizer/auxilliary_functions.py,sha256=np5gvNii_ZKVg_keDEu6TyTQu8P-O4xCYJqJ1er3Eaw,1347
+moralizer/moral_foundations.json,sha256=Bc1GE9uCh2FQXfr-9WvladJC7336RicwlDdsOwfFOlk,25673
+moralizer/moralizer.py,sha256=opnoeU2wiylG9K4tXGlWABCFtc0n6mYNl3zvj025CbE,660
+moralizer/practice_text.txt,sha256=Y7n3TnvKjSTDpcEKdzCK8GCeEW1g9qtku7ibBqeN6Rs,7641
+moralizer-0.1.1.dist-info/LICENSE,sha256=g-TdIUKakft86mekdgMqlkFCXlNV3y4PWJpzi27J_Sw,1057
+moralizer-0.1.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+moralizer-0.1.1.dist-info/METADATA,sha256=9lJiuS53xXjMx0yc_-gBTCAGqLuAhbX3XkwHQ3dSxQk,1701
+moralizer-0.1.1.dist-info/RECORD,,

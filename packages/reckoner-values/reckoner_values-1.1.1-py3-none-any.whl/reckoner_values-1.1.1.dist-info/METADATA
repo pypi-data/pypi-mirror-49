@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: reckoner-values
+Version: 1.1.1
+Summary: Package to find helm values and update autohelm / reckoner files
+Home-page: UNKNOWN
+Author: Jim Robinson
+Author-email: jscrobinson@gmail.com
+License: Apache2.0
+Platform: UNKNOWN
+Requires-Dist: click (==7.0)
+Requires-Dist: GitPython (>=2.1.11)
+Requires-Dist: oyaml (>=0.8)
+Requires-Dist: coloredlogs (>=9.0)
+Requires-Dist: semver (>=2.8.1)
+Requires-Dist: PyYAML (>=5.1)
+Requires-Dist: awscli (>=1.16)
+Requires-Dist: boto3 (>=1.9)
+Requires-Dist: jinja2 (>=1.2)
+Requires-Dist: yq (>=2.7)
+Requires-Dist: urllib3 (>=1.25)
+Requires-Dist: pyhelm (>=0.1)
+Requires-Dist: kubernetes (>=10.0)
+
+UNKNOWN
+
+

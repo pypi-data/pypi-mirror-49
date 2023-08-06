@@ -1,0 +1,4 @@
+ #for click integration
+          [console_scripts]
+          reckoner-values=reckoner_values.cli:cmd
+      

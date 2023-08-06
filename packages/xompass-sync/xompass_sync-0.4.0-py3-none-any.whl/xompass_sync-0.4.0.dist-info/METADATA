@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xompass-sync
+Version: 0.4.0
+Summary: Xompass Asset/Sensor sync library
+Home-page: https://github.com/rcastill/xompass-fc-sync
+Author: Rodolfo Castillo Mateluna
+Author-email: rodolfocastillomateluna@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Xompass Sync (Python)
+
+
+

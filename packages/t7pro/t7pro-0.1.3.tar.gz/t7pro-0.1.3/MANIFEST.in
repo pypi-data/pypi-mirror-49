@@ -1,0 +1,5 @@
+include README
+include t7pro/bin/t7pro-gui
+recursive-include data *.svg
+recursive-include data *.desktop
+recursive-include t7pro *.py

@@ -1,0 +1,39 @@
+README FILE
+
+t7pro
+Benoit Dubois
+July 18th, 2019
+
+
+INTRODUCTION
+------------
+
+t7pro is dedicated to handle Labjack T7-Pro device (DAQ board).
+Provide a GUI to display acquired signals.
+
+
+REQUIREMENTS
+------------
+
+Preferably a Linux system with a Debian distribution (not tested with others OS
+nor others distributions).
+The program requires the folowing packages:
+
+ * Python 3 (Normally already installed on a Debian system)
+          $ [sudo] apt-get install python3
+
+Packages:
+ * PyQt5
+ * numpy
+ * labjack
+ * benutils
+
+
+INSTALLATION
+------------
+
+ * PyPi
+         $ python3 -m pip install --user t7pro
+
+ * From source
+         $ python3 -m pip install --user t7pro-x.x.tar.gz

@@ -1,0 +1,17 @@
+MANIFEST.in
+README
+setup.py
+bin/t7pro-gui
+data/t7pro.desktop
+data/t7pro.svg
+t7pro/__init__.py
+t7pro/constants.py
+t7pro/t7pro_form.py
+t7pro/t7pro_gui.py
+t7pro/version.py
+t7pro.egg-info/PKG-INFO
+t7pro.egg-info/SOURCES.txt
+t7pro.egg-info/dependency_links.txt
+t7pro.egg-info/not-zip-safe
+t7pro.egg-info/requires.txt
+t7pro.egg-info/top_level.txt

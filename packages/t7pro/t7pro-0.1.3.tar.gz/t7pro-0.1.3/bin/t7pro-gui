@@ -1,0 +1,101 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""package t7pro
+author    Benoit Dubois
+copyright FEMTO Engineering, 2019
+license   GPL v3.0+
+brief     Main script of GUI handling T7Pro DAQ board.
+details   T7Pro is connected through the ethernet interface.
+"""
+
+import sys
+import signal
+import logging
+import logging.handlers
+from pathlib import Path
+from PyQt5.QtCore import QSettings, QFileInfo
+from PyQt5.QtWidgets import QApplication, QMessageBox
+
+from t7pro.t7pro_gui import T7ProGui
+from t7pro.constants import ORGANIZATION, APP_NAME
+
+
+DEFAULT_WORK_DIR = str(Path.home())
+APP_CFG_DIR = QFileInfo(
+    QSettings(ORGANIZATION, APP_NAME).fileName()).absolutePath()
+
+LOG_FILE = APP_CFG_DIR + '/t7pro_gui.log'
+
+
+def reset_ini():
+    """Resets the ini file with default values.
+    :returns: None
+    """
+    settings = QSettings()
+    settings.setValue("dev/ip", "")
+    settings.setValue("ui/work_dir", DEFAULT_WORK_DIR)
+    settings.setValue("ui/file", "")
+
+
+def check_ini():
+    """Basic check of .ini file integrity: we try to read all ini parameters,
+    if no exception raised, we assume that file is OK.
+    :returns: True if Ini file OK else False (bool)
+    """
+    settings = QSettings()
+    is_key = []
+    is_key.append(settings.contains("dev/ip"))
+    is_key.append(settings.contains("ui/work_dir"))
+    if False in is_key:
+        logging.error("Broken or missing ini file")
+        logging.info("Create ini file with default values.")
+        QMessageBox.warning(None, "Broken or missing .ini file",
+                            "Create .ini file with default values created")
+
+        return False
+    return True
+
+
+def main():
+    """The main entry script.
+    :returns: None
+    """
+    app = QApplication(sys.argv)
+    app.setOrganizationName(ORGANIZATION)
+    app.setApplicationName(APP_NAME)
+
+    if check_ini() is False:
+        reset_ini()
+
+    t7 = T7ProGui()
+
+    t7.ui.setVisible(True)
+    sys.exit(app.exec_())
+
+
+# =============================================================================
+if __name__ == "__main__":
+    # Ctrl-c closes the application
+    signal.signal(signal.SIGINT, signal.SIG_DFL)
+
+    # Handles app log
+    date_fmt = "%d/%m/%Y %H:%M:%S"
+    log_format = "%(asctime)s %(levelname) -8s %(filename)s " + \
+                 " %(funcName)s (%(lineno)d): %(message)s"
+    # Create base application logger (logging to stderr)
+    logging.basicConfig(level=logging.INFO, ## set to ERROR in 'production'
+                        datefmt=date_fmt,
+                        format=log_format)
+    # Create file handler which logs even debug messages
+    fh = logging.handlers.RotatingFileHandler(LOG_FILE,
+                                              maxBytes=10000,
+                                              backupCount=5)
+    fh.setLevel(logging.DEBUG)
+    # Create formatter and add it to the handlers
+    formatter = logging.Formatter(log_format, date_fmt)
+    fh.setFormatter(formatter)
+    # Add the handler to the logger
+    logging.getLogger('').addHandler(fh)
+    
+    main()

@@ -1,0 +1,15 @@
+persim/__init__.py,sha256=yZtTGKslaTqH_IXy-G-w-cKDVXIEAq9x2bG6n3EDlY8,212
+persim/_version.py,sha256=-nNlMKS9nph3FR78_ZG9RGKrbxseeNp2K6nMr0pVGaU,23
+persim/bottleneck.py,sha256=j1qik3pxvHaibPhm_d9IknxVgrRZ_jMFCVDVo9_4W3A,2750
+persim/gromov_hausdorff.py,sha256=NG6Mb-QU9tJU3Jcp8KzdmOHL5Q6XxIyjK1OrZzZGwCg,29552
+persim/heat.py,sha256=Tj09Todb8ZdhydnvXHioFSPhwQuzcJtGgrIFuFibGgY,1596
+persim/images.py,sha256=rANRsYiguqrxsYBaEMjCSr5iyaUg0k-rCLAkrZZxv6E,6618
+persim/persistent_entropy.py,sha256=j5n9ZD9NsXnV-l2u-vRPlX7SCv3JhQ0JmWZ9ctAjjls,2932
+persim/plot.py,sha256=ocHTzet430Cv-Y4-ZAl6l0SOw0y1KM4L1drqkfEujs0,2539
+persim/sliced_wasserstein.py,sha256=riiMIFawOfq-QfSq3e0WqBVjyRK6EoNHpLb6PhioUFE,1717
+persim/visuals.py,sha256=Z-UC3VsUVgyUUkwAXmhSWVCTqima4ecvrn10e82BwZs,5206
+persim-0.0.10.dist-info/LICENSE.txt,sha256=AxEE0HIoYXC4IzlXeXUWf7QsfbKu8WAGrD2EnEZpZbk,1100
+persim-0.0.10.dist-info/METADATA,sha256=83N3XRSQsMmfS9rVMOWOcTU0iTqQDvk5yDh6HDSdTxE,3219
+persim-0.0.10.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+persim-0.0.10.dist-info/top_level.txt,sha256=H-T0Rl2WGfDbNNQdfO-6mAjlJAouygAqNVL4w4bQrto,7
+persim-0.0.10.dist-info/RECORD,,

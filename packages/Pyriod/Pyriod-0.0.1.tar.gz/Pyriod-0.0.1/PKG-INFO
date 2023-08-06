@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Pyriod
+Version: 0.0.1
+Summary: Sinusoid fitting for the astronomical time domain.
+Home-page: https://github.com/keatonb/Pyriod
+Author: Keaton Bell
+Author-email: keatonbell@utexas.edu
+License: UNKNOWN
+Description: # Pyriod
+        
+        Python implementation of basic period detection and fitting routines for astronomical time series.
+        
+        To install, run
+        ```python setup.py install```
+        
+        This code uses [Qgrid](https://github.com/quantopian/qgrid) to interactively display the frequency solution.  Follow their [installation instructions](https://github.com/quantopian/qgrid) to make sure that runs, making sure to enable the notebook extensions specifically.
+        
+        This is a serious work in progress with many planned improvements.  Please be patient.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

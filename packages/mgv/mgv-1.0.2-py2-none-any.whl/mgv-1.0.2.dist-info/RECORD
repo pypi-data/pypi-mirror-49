@@ -1,0 +1,14 @@
+mangrove/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mangrove/markdown.py,sha256=SDrtISnd5aoZdR2zZjOry7Mm2z8biweW4BcY-aDatOw,57793
+mangrove/mgvApi.py,sha256=mZgReC-MiR5n7bJfBGyp9NVERrCnYAZpQY1SpWcbKjg,112868
+mangrove/mgvCom.py,sha256=KeYx4351I5n68vsgLdMHm2U10lIfIViNYg9oUeQETLo,5285
+mangrove/mgvTextEditor.py,sha256=zrT1cKv-Fh59QYTnUH3zW_3z4bVZS1uY1WK-aHr61PY,27020
+mangrove/mgvUI.py,sha256=Z9HmVUON09a3raL8aFH3RAGrxNA9panJhpuT5t768vA,306036
+mangrove/mgvWrapperMongo.py,sha256=GjzN2dRbCDfeJgUlA1iXKc2TLs1KH04zEmIv54L5Nus,27502
+mangrove/mgvWrapperNeo4j.py,sha256=qeKjbnlbbQFMjZgGwN90tp3v3jMlVpScelRGdWzs3Uc,31839
+mangrove/mgvWrapperNoServer.py,sha256=3it_2Qcs5bA_CHKqD6emI-1miJww7s4WIWV-Za2ngOY,32636
+mgv-1.0.2.data/scripts/mgv,sha256=zkTVIEudGS0uAEjPgAGJCHsHCtSUD5XVZI0x386Pitg,32
+mgv-1.0.2.dist-info/METADATA,sha256=Rx9-JfHZRs94aC0XKA0nBEGszLikyhmb-n3I215BZfk,911
+mgv-1.0.2.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+mgv-1.0.2.dist-info/top_level.txt,sha256=ulZCw6_-_yaSaMoPmuxrk0V6uH5MPqWFuDMNUDv9ebk,9
+mgv-1.0.2.dist-info/RECORD,,

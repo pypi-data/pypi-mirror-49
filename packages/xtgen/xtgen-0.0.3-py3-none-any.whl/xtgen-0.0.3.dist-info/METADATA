@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: xtgen
+Version: 0.0.3
+Summary: A cmdline tool for generating code to train ML models, using latest research datasets and architectures
+Home-page: https://github.com/rfernand2
+Author: Roland Fernandez
+Author-email: rfernand@microsoft.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: arrow
+Requires-Dist: toml
+
+# XTGen
+Command line tool for generating ML training apps with research data sets and models
+
+

@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: wtbox
+Version: 0.0.54
+Summary: an emzed2 extension providing additional routines for LC-MS workflow building
+Home-page: UNKNOWN
+Author: Patrick Kiefer
+Author-email: pkiefer@ethz.ch
+License: http://opensource.org/licenses/GPL-3.0
+Description: 
+        An emzed2 extension with additional routines for enhanced LC-MS data analysis workflow 
+        building. It provides additional routines for emzed Table operations, Feature extraction,
+        IO, peak integration, etc. 
+        
+        
+Platform: UNKNOWN

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mctorch
+Version: 0.1.0
+Summary: MCMC for Pytorch models.
+Home-page: https://github.com/yngtodd/mctorch
+Author: Todd Young
+Author-email: youngmt1@ornl.gov
+License: MIT
+Keywords: mctorch
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: numpy
+
+UNKNOWN
+
+

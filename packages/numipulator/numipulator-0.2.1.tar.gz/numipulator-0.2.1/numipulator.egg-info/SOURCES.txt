@@ -1,0 +1,8 @@
+README.md
+numipulator.py
+setup.py
+numipulator.egg-info/PKG-INFO
+numipulator.egg-info/SOURCES.txt
+numipulator.egg-info/dependency_links.txt
+numipulator.egg-info/requires.txt
+numipulator.egg-info/top_level.txt

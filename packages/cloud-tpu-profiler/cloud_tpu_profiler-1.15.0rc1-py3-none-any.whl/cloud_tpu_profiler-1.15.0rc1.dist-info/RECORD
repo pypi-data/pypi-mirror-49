@@ -1,0 +1,10 @@
+cloud_tpu_profiler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_tpu_profiler/capture_tpu_profile.py,sha256=mbmPpNNdsdD8OwIqWIqlwmMaKRzHDLNGaS9tPSwdjB8,7962
+cloud_tpu_profiler/version.py,sha256=4gg2I6cJpiA-C4hQElFEk6uld2reIHFoqniocIwZsp8,1034
+cloud_tpu_profiler-1.15.0rc1.dist-info/DESCRIPTION.rst,sha256=DY_trjGPL9DXhNgGoB4L5FP3qpZo5lRgQ0qO_wPaLjI,32
+cloud_tpu_profiler-1.15.0rc1.dist-info/METADATA,sha256=VFPqwYJO8Wnr2mpr2zYfk4Xozpz54JPaJ2gMNDU3RZU,1221
+cloud_tpu_profiler-1.15.0rc1.dist-info/RECORD,,
+cloud_tpu_profiler-1.15.0rc1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+cloud_tpu_profiler-1.15.0rc1.dist-info/entry_points.txt,sha256=vAoxBfop2rFt4k4V-U72uajDuQ2vgnV-E99IU66Yr5Y,89
+cloud_tpu_profiler-1.15.0rc1.dist-info/metadata.json,sha256=5lBbl3jIxxHsZN5P_j2XVuskLQHrJT3R0xvlCfSbC10,1480
+cloud_tpu_profiler-1.15.0rc1.dist-info/top_level.txt,sha256=raG8hdZrl1zA6Y1NCs6Z9lS57PTF_RbznmbRy3cMSm8,19

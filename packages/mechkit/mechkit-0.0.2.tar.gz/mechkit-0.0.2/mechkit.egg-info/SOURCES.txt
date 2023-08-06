@@ -1,0 +1,13 @@
+README.md
+setup.py
+mechkit/__init__.py
+mechkit/notation.py
+mechkit/operators.py
+mechkit/tensors.py
+mechkit/utils.py
+mechkit.egg-info/PKG-INFO
+mechkit.egg-info/SOURCES.txt
+mechkit.egg-info/dependency_links.txt
+mechkit.egg-info/requires.txt
+mechkit.egg-info/top_level.txt
+test/test_notation.py

@@ -1,0 +1,11 @@
+README.md
+setup.py
+vec2graph/__init__.py
+vec2graph/genviz.py
+vec2graph.egg-info/PKG-INFO
+vec2graph.egg-info/SOURCES.txt
+vec2graph.egg-info/dependency_links.txt
+vec2graph.egg-info/requires.txt
+vec2graph.egg-info/top_level.txt
+vec2graph/data/genviz.html
+vec2graph/data/genviz.js

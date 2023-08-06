@@ -1,0 +1,54 @@
+# AnimatedGraphs
+
+Build and awesome animated graph easily
+![](https://github.com/lgbaeza/py-animated-graph/raw/master/news_sample.gif)
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install AnimatedGraphs.
+
+```bash
+pip install AnimatedGraphs
+```
+
+## Usage
+
+```python
+import AnimatedGraphs as ag
+from AnimatedGraphs import AnimatedBar as agBar
+
+GRAPH_FILENAME = agBar.CreateGraphBar(
+    dataset,
+    args**
+)
+if (GRAPH_FILENAME != ""):
+    print("Succeed. Animated grahBar available at {}" + GRAPH_FILENAME)
+else:
+    print("something went wrong")
+```
+
+## Args** details
+
+| Argument                  | Required?     | Possible Values        | Default value / action |
+| -------------             | ------------- | --------------         | -------------          |
+| dataset                   |  Yes          |  numpy arr             |                        |
+| aggregation_type          |  Yes          |  "COUNT", "SUM"        |                        |
+| bar_column_name           |  Yes          |  String                |                        |
+| iteration_column_name     |  Yes          |  String                |                        |
+| series_column_name        |  Yes          |  String                |                        |
+| graph_title               |  Yes          |  String                |                        |
+| x_label                   |  Opcional     |  String                |                        |
+| y_label                   |  Opcional     |  String                |                        |
+| zip_image_url             |  Opcional     |  String: URL to Zip    | <No image>             |
+| bar_sort_list             |  Opcional     |  Array of String       | <No sorting>           |
+| graph_steps               |  Opcional     |  Integer               | 10                     |
+| animation_frame_duration  |  Opcional     |  Float (0-3]           | 1.0                    |
+| output_filename           |  Opcional     |  String                | "animated-graph.gif"   |
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

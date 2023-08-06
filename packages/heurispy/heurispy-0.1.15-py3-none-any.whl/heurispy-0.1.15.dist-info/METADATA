@@ -1,0 +1,223 @@
+Metadata-Version: 2.1
+Name: heurispy
+Version: 0.1.15
+Summary: Framework para exploración de heurísticas de búsqueda local en problemas de optimización discreta
+Home-page: https://gitlab.com/escamilla.een/heurispy
+Author: Esteban Escamilla Navarro
+Author-email: escamilla.een@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pathos
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: fpdf
+Requires-Dist: matplotlib
+Requires-Dist: pypdf2
+
+ï»¿HeurisPy
+======
+
+``HeurisPy`` es un framework orientado a objetos desarrollado en Python que busca 
+auxiliar en la obtenciÃ³n de experiencia para el uso de heurÃ­sticas de bÃºsqueda
+local en problemas de optimizaciÃ³n discreta.
+
+Se ha diseÃ±ado con los siguientes principios en mente:
+
+--``HeurisPy`` debe ser lo suficientemente general para permitir el planteamiento 
+de varios problemas de optimizaciÃ³n discreta.
+
+--``HeurisPy`` debe ser accesible para usuarios con poca experiencia tanto en el
+uso de heurÃ­sticas de bÃºsqueda local como en programaciÃ³n.
+
+--``HeurisPy`` debe contener varias heurÃ­sticas de bÃºsqueda local listas para su
+uso, asÃ­ como una clase lo suficientemente general para permitir el agregado
+de nuevas heurÃ­sticas.
+
+--``HeurisPy`` debe permitir el trabajo en paralelo para facilitar el anÃ¡lisis
+estadÃ­stico, y brindar herramientas que faciliten el trabajo.
+
+AsÃ­, se espera que el usuario sÃ³lo deba preocuparse por la programaciÃ³n de su 
+problema de optimizaciÃ³n discreta y de experimentar con las heurÃ­sticas. ``HeurisPy``
+se encargarÃ¡ de realizar las bÃºsquedas y de brindar la informaciÃ³n 
+estadÃ­stica para que el usuario pueda realizar una decisiÃ³n informada.
+
+``HeurisPy`` fue programado en Python 3.7 [(que se descarga aquÃ­)](https://www.python.org/downloads/)
+, y requiere de las siguientes bibliotecas para su funcionamiento:
+
+--**numpy**: biblioteca para el cÃ³mputo cientÃ­fico en Python.
+
+--**pathos**: biblioteca para el procesamiento en paralelo.
+
+--**pandas**: biblioteca para el anÃ¡lisis de datos.
+
+--**pyFPDF**: biblioteca para la generaciÃ³n de archivos PDF.
+
+--**matplotlib**:biblioteca para la generaciÃ³n de grÃ¡ficas.
+
+--**tqdm**: biblioteca para la muestra del progreso de la exploraciÃ³n heurÃ­stica.
+
+InstalaciÃ³n
+======
+
+
+``HeurisPy`` estÃ¡ disponible como una biblioteca en PyPi, y se puede instalar con el
+siguiente comando:
+
+    pip install heurispy
+
+Para comprobar su instalaciÃ³n, basta con...
+
+CÃ³mo funciona
+======
+
+``HeurisPy`` tiene tres clases principales que necesitan del usuario para funcionar:
+Problema, HeurÃ­stica, y Framework.
+
+--**Problema**: Se encarga de retener la informaciÃ³n del problema de 
+optimizaciÃ³n definido por el usuario.
+
+--**HeurÃ­stica**: Recibe los atributos del problema para iniciar la bÃºsqueda de
+soluciones con parÃ¡metros que el usuario determina.
+
+--**Framework**: Dirige todos los procesos internos, como el procesamiento en
+paralelo, la recolecciÃ³n de los datos y el llamado de mÃ©todos para la generaciÃ³n
+de archivos.
+
+Planteando el p.o.d.
+======
+
+Antes que nada, se necesita definir el problema de optimizaciÃ³n discreta en ``HeurisPy``. Para esto, se debe:
+
+--Definir un mÃ©todo para la creaciÃ³n de nuevas soluciones.
+
+--Crear un mÃ©todo encargado de variar una soluciÃ³n existente.
+
+--Crear una funciÃ³n objetivo a minimizar.
+
+Por ejemplo, en el problema de coloraciÃ³n de grafos, se asignan colores a los vÃ©rtices de un grafo, tratando de minimizar la cantidad 
+de colores utilizados para colorearlo sin tener colores adyacentes repetidos. Como soluciÃ³n inicial, se le asigna a cada vÃ©rtice un
+color aleatorio (representado por un nÃºmero entero). Esto se puede definir como sigue:
+
+    def crear_solucion():
+        import random
+        nueva_solucion = []
+        for indice in range(cantidad_vertices):
+            nueva_solucion.append(random.randint(0, cantidad_vertices-1))
+        return nueva_solucion
+
+Para variar una soluciÃ³n dada, se elige un Ã­ndice al azar de la soluciÃ³n, se verifican los vÃ©rtices adyacentes y los valores de su 
+coloraciÃ³n, y se elige un color diferente a todos ellos. Entonces:
+
+    def variar_solucion(solucion):
+        import random
+        nueva_solucion = solucion.copy()
+        longitud_solucion = len(nueva_solucion)
+        indice_a_cambiar = random.randint(0, longitud_solucion-1)
+        colores = list(range(cantidad_vertices))
+        colores_adyacentes = obtener_colores_adyacentes(nueva_solucion, indice_a_cambiar)
+        colores_disponibles = [color for color in colores if color not in colores_adyacentes]
+        nueva_solucion[indice_a_cambiar] = random.choice(colores_disponibles)
+        return nueva_solucion
+
+La funciÃ³n objetivo comprueba la cantidad de colores diferentes en una soluciÃ³n, y quÃ© tantos vÃ©rtices adyacentes tienen colores repetidos. 
+Esto es de la siguiente manera:
+
+    def funcion_objetivo(solucion):
+        costo_colores = costo_colores_diferentes(solucion)
+        costo_adyacencia = costo_colores_adyacentes(solucion)
+        return c_1 * costo_colores + c_2 * costo_adyacencia
+
+Para finalizar, se necesita definir una instancia de la clase Problema, que se logra de la siguiente manera:
+
+    from heurispy.problema import Problema
+
+    problema_coloracion = Problema(dominio=crear_solucion , funcion_objetivo=funcion_objetivo, funcion_variacion_soluciones)
+
+Los detalles de los mÃ©todos obtener_colores_adyacentes, costo_colores_diferentes, y costo_colores_adyacentes se encuentran en la 
+ruta "/heurispy/ejemplos/problema_coloracion_grafo.py". Se necesitan definir para que la implementaciÃ³n de ejemplo funcione.
+
+Preparando una heurÃ­stica para su uso
+======
+
+Toda heurÃ­stica implementada en ``HeurisPy`` es una clase que hereda de Heuristica. Para utilizar alguna en particular, 
+sÃ³lo se necesita importar
+la clase correspondiente, asignarle una instancia de la clase Problema, y definir algunos parÃ¡metros generales. Por ejemplo, para utilizar
+la bÃºsqueda tabÃº, se escribe lo siguiente:
+
+    from heurispy.heuristicas.busqueda_tabu import BusquedaTabu
+
+    busqueda_tabu = BusquedaTabu(problema_coloracion, max_iteraciones = 100000)
+
+Sin embargo, todavÃ­a faltan definir parÃ¡metros especÃ­ficos de la heurÃ­stica que se desea utilizar.
+
+Definiendo parÃ¡metros de la heurÃ­stica
+======
+
+Para definir los parÃ¡metros especÃ­ficos de la heurÃ­stica, se necesita generar un diccionario. Un diccionario es un conjunto de valores a
+los que se les asigna etiquetas llamadas "llaves". Para la bÃºsqueda tabÃº:
+
+    parametros_busqueda_tabu = dict(espacio_memoria=[50, 100, 150], max_busquedas_sin_mejoras=[100])
+
+Este diccionario es la base que HeurisPy necesita para realizar la exploraciÃ³n. En este caso, se tienen tres tipos de corridas:
+
+--Espacio en memoria = 50, MÃ¡ximo de bÃºsquedas sin mejora=100
+
+--Espaio en memoria= 100, MÃ¡ximo de bÃºsquedas sin mejora=100
+
+--Espacio en memoria= 150, MÃ¡ximo de bÃºsquedas sin mejora=100
+
+Se necesita que todo valor en el diccionario sea una lista con todos los valores esperados en cada parÃ¡metro. El siguiente paso es determinar
+cuÃ¡ntas repeticiones se realizarÃ¡n para cada tipo de corrida.
+
+Determinando repeticiones
+======
+
+Para determinar las repeticiones en cada tipo de corrida, se necesita del siguiente mÃ©todo:
+
+    from heurispy.framework import genera_bloque_parametros
+
+    lista_corridas = genera_bloque_parametros(parametros_busqueda_tabu, repeticiones=10)
+
+Con esto, se realizarÃ¡n 30 ejecuciones en total. 10 para el espacio en memoria de 50, 10 para el espacio en memoria de 100, y 10 para
+el espacio en memoria de 150, todas con un mÃ¡ximo de bÃºsqueda sin mejora de 100. 
+
+Teniendo la heurÃ­stica a utilizar definida por el problema y el total de ejecuciones a realizar, ya se puede iniciar el funcionamiento
+de ``HeurisPy``.
+
+Iniciando la explorciÃ³n heurÃ­stica
+======
+
+Basta utiliar los siguientes comandos para iniciar la exploraciÃ³n:
+
+    from heurispy.framework import inicia_exploracion_heuristica
+
+    inicia_exploracion_heuristica(busqueda_tabu, lista_corridas)
+
+Como ``HeurisPy`` utiliza el procesamiento en paralelo, se puede definir la cantidad de nucleos a ocupar con el parÃ¡metro nucleos_cpu.
+Por defecto, se utilizan todos los nucleos del procesdor.
+
+Al iniciar el proceso, ``HeurisPy`` manda una barra de progreso (generada por la biblioteca tqdm) que contabiliza las ejecuciones a realizar, y
+va arrojando informaciÃ³n sobre la informaciÃ³n recopilada y los archivos generados como resultados. 
+
+Examinando los archivos
+======
+
+Al terminar la exploraciÃ³n heurÃ­stica, se crean dos carpetas: Resultados, que guarda los resultados estadÃ­sticos y grÃ¡ficos creados por
+exploraciÃ³n heurÃ­stica, e InformaciÃ³n, que 
+contiene los datos e informaciÃ³n avanzada sobre las exploraciones realizadas. En Resultados, se genera una carpeta con el nombre de la
+heurÃ­stica utilizada, y dentro de ella se encuentran las exploraciones realizadas, cuyo nombre es la fecha y la hora en la que se finalizÃ³
+la exploraciÃ³n. Por ejemplo, si el ejemplo antes descrito terminÃ³ su exploraciÃ³n el 4 de julio del 2019 a las 12:31 pm, entonces se guardan
+en la carpeta "2019-07-04---12-31". AquÃ­ se encuentra un archivo pdf, cuyo nombre contiene la heurÃ­stca utilizada, los parÃ¡metros que 
+corresponden a la corrida evaluada, y la fecha y hora en la que se generÃ³ el archivo. Se destaca que la informaciÃ³n que despliegan los 
+archivos es dependiente de la heurÃ­stica, por lo que los datos estadÃ­sticos y grÃ¡ficos pueden variar.
+
+Como el desempeÃ±o de la heurÃ­stica es muy dependiente de sus parÃ¡metros y del problema de optimizaciÃ³n discreta, no hay una regla que 
+determine la combinaciÃ³n ideal entre heurÃ­stica y parÃ¡metros, por lo que es conveniente poner a prueba el p.o.d. con varias heurÃ­sticas y 
+varias configuraciones de parÃ¡metros, buscando diversificar las corridas para obtener la mayor cantidad de informaciÃ³n posible, y buscar 
+consistencia en los resultados.
+
+
+
+

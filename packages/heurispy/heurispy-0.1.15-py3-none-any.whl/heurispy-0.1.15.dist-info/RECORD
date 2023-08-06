@@ -1,0 +1,16 @@
+heurispy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+heurispy/ayudantes.py,sha256=IzMQBo3z6U3DnAn0fcV9PeAE5XiqvnjUWYRMnDmpNBg,9684
+heurispy/framework.py,sha256=uQej9Fjh5TMllcmO8wEWPE4xr9xxhiqDE6ugP_L_GpY,7018
+heurispy/problema.py,sha256=A0SdIc51l0aviybbCrpDmUxfYS3SXfsZboR6Uap-jMo,1794
+heurispy/recolector_resultados.py,sha256=j7BqQOz2Pe-MXQSRbU2n1zOoBDib5WDg3e9lB5gkRx4,6512
+heurispy/script_prueba_automatizada.py,sha256=js9AdFCtjkLc3GJLu-gVWmPaxbAa0pAqQGPqmhaOrmQ,8393
+heurispy/heuristicas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+heurispy/heuristicas/busqueda_armonica.py,sha256=cOpipTyRlUNhMbyS5j8BCKfZIQeSL5PfO7Iq5tFuP0E,11041
+heurispy/heuristicas/busqueda_local_iterada.py,sha256=wIomxGgrFR5_j1dfVActPygWPOTvAwHA4QO_FyN5iow,9332
+heurispy/heuristicas/busqueda_tabu.py,sha256=-CIZie83LrPSA20IycflOoCPupY4KT46v0gm84qHrww,8602
+heurispy/heuristicas/heuristica.py,sha256=J1iqJsVAM9FHiQRt0pmfqWvZMbeGzMBsmfokppURdIY,3432
+heurispy/heuristicas/recocido_simulado.py,sha256=XE9gOR2PvHVSkTU_7w55z8ZgeDG8ZID1PgwqNsjE_Dc,9431
+heurispy-0.1.15.dist-info/METADATA,sha256=Nir7BEkdlhCojPQjXi6H3qEfR2G72H_4g1EZ20AeIbw,10282
+heurispy-0.1.15.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+heurispy-0.1.15.dist-info/top_level.txt,sha256=violcoorzM6uwdWt0JrbOBKhP4Xh4t1uTJ3UszpbF9Y,9
+heurispy-0.1.15.dist-info/RECORD,,

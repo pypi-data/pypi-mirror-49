@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: dominant_color
+Version: 0.0.1
+Summary: Just a demo of different dominant color extraction algorithms
+Home-page: None
+Author: Julien Palard
+Author-email: julien@python.org

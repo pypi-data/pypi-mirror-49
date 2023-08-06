@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "dominant_color"
+author = "Julien Palard"
+author-email = "julien@python.org"
+requires = [
+    "scipy",
+    "matplotlib",
+    "pillow",
+]
+description-file = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Intended Audience :: Developers",
+]
+requires-python = ">=3.7"
+
+[tool.flit.scripts]
+dominant-color = "dominant_color.image_palette:main"

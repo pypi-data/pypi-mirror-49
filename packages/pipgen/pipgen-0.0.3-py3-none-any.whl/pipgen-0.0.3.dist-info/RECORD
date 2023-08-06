@@ -1,0 +1,9 @@
+pipgen/__init__.py,sha256=OBIHHA0Eb3MJyB6gmc5x0JrFRaieVdnyq8lcL_1K4Ec,23
+pipgen/wrapper.py,sha256=yUBCfTFdiVPSNn8t78zzZfnK7cwJ5GXlJjQvXImUFdk,666
+pipgen-0.0.3.data/scripts/depipify.sh,sha256=uIwJKSooz645k0uJtCZs83TfmU3gHDSZZxNC4lsjiMA,434
+pipgen-0.0.3.data/scripts/pipify.sh,sha256=oUcdA_y437P3b-k5a4hb_z2j_ar4AtiZQZ-rsIAH2CI,3429
+pipgen-0.0.3.data/scripts/update.sh,sha256=RnMQ0NH9wtZG2EBJ5t8BjYO6B8zpULq_1aRI8Au7IJQ,1715
+pipgen-0.0.3.dist-info/METADATA,sha256=fs7h7ZsLGD19SzgC1JztX6Lxsej3mPw3xAl36_mdyCc,1592
+pipgen-0.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pipgen-0.0.3.dist-info/top_level.txt,sha256=DQmeJtIgD1bWdy18W-lAtwN5wGvrRFCmuQiIRjwJIlg,7
+pipgen-0.0.3.dist-info/RECORD,,

@@ -1,0 +1,9 @@
+mailgun/__init__.py,sha256=NuBwRST528kAODjwfmro9uJNMU2DmaRzQy7mmLnVIwM,29
+mailgun/email_parsing.py,sha256=nj_rdf9MQLlk5DF7Tjj4-sHKPe5BTXjoMqFD6LHqlfI,4410
+mailgun/error.py,sha256=5w0aYJt7CZPc-n-8QmPtLQN7zC4ltf91yEEN7vRn5Kw,127
+mailgun/mailgun.py,sha256=-KwlOVSlfYxD7z3Ros1BjLkmQG3dkmgYzRGpbstTGSE,7914
+mailgun3_python-0.1.1.dist-info/LICENSE,sha256=jqFbGW7hag2nPCUMvJvA9suD5GQglq_F_DtYhEAoXHQ,1069
+mailgun3_python-0.1.1.dist-info/METADATA,sha256=9cmnodHv9z0mu13sEzQzRVOpfC_KKoPc_5iah879wxs,747
+mailgun3_python-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+mailgun3_python-0.1.1.dist-info/top_level.txt,sha256=grT7DtpSFqeOuEpEwIa-s3mz86IhGItBkS1f8i6qU5s,8
+mailgun3_python-0.1.1.dist-info/RECORD,,

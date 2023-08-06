@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: plnlp
+Version: 1.0.0
+Summary: Keyword Recognition and Pre-processing
+Home-page: https://github.com/pengluyaoyao/lpnlp
+Author: ['Luyao Peng', 'Rui Yang']
+Author-email: luyaopeng.cn@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: logging
+Requires-Dist: csv
+
+README.md
+
+

@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: python-minesweeper
+Version: 0.1.0
+Summary: Minesweeper module for Python
+Home-page: https://github.com/BaibhaVatsa/minesweeper
+Author: Baibhav Vatsa
+Author-email: baibhavvatsa@gmail.com
+License: UNKNOWN
+Description: # Minesweeper
+        
+        Implementation of Minesweeper game and agent in Python 3.
+        
+        ## Screenshots
+        
+        <img src="https://raw.githubusercontent.com/BaibhaVatsa/minesweeper/master/screenshots/play.jpg" width="500" alt="A Game of 5x5 Map in progress"/>
+        
+        A Game of 5x5 Map in progress
+        
+        <img src="https://raw.githubusercontent.com/BaibhaVatsa/minesweeper/master/screenshots/exportedmap.jpg" width="500" alt="Sample exported 20x20 Map"/>
+        
+        Sample exported 20x20 Map
+        
+        ## Modules
+        
+        pyminesweeper
+        - MinesweeperMap
+           - Contains the functions to create the minesweeper grid and help connect to a frontend
+        - MinesweeperUI
+           - Contains terminal UI for playing the game and functions to create a customised game UI
+        
+        ## Installing
+        
+        ```
+        pip install -i https://test.pypi.org/simple/ python-minesweeper
+        ```
+        
+        ## How to Play
+        
+        ```python
+        import pyminesweeper
+        game = pyminesweeper.MinesweeperUI()
+        game.run()
+        ```
+        
+        ## Planned additions
+        
+        - ability to load maps
+        - a working agent
+        
+        ## Development
+        
+        All kinds of contributions are very welcome.
+        <br>
+        Source: [python-minesweeper](https://github.com/BaibhaVatsa/python-minesweeper)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

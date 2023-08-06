@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: granate
+Version: 0.1a1
+Summary: GNU Tools for python
+Home-page: https://granate.io
+Author-email: granate.contact@pm.me
+License: MIT
+Platform: linux_ubuntu_18_04_x86_64
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
+
+UNKNOWN
+
+

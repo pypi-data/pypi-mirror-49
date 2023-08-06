@@ -1,0 +1,10 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+setup.py
+crystal_ball.egg-info/PKG-INFO
+crystal_ball.egg-info/SOURCES.txt
+crystal_ball.egg-info/dependency_links.txt
+crystal_ball.egg-info/requires.txt
+crystal_ball.egg-info/top_level.txt
+crystalball/__init__.py

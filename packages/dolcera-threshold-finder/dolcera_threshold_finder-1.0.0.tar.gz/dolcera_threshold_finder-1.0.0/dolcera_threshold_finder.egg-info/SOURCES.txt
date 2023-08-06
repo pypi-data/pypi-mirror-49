@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dolcera_threshold_finder.egg-info/PKG-INFO
+dolcera_threshold_finder.egg-info/SOURCES.txt
+dolcera_threshold_finder.egg-info/dependency_links.txt
+dolcera_threshold_finder.egg-info/entry_points.txt
+dolcera_threshold_finder.egg-info/requires.txt
+dolcera_threshold_finder.egg-info/top_level.txt
+project/app.py
+project/database.py

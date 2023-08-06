@@ -1,0 +1,6 @@
+requests
+xml
+pandas
+fuzzywuzzy
+psycopg2
+re

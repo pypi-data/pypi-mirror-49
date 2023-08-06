@@ -1,0 +1,11 @@
+README.rst
+setup.py
+django_migration_vis/__init__.py
+django_migration_vis.egg-info/PKG-INFO
+django_migration_vis.egg-info/SOURCES.txt
+django_migration_vis.egg-info/dependency_links.txt
+django_migration_vis.egg-info/requires.txt
+django_migration_vis.egg-info/top_level.txt
+django_migration_vis/management/__init__.py
+django_migration_vis/management/commands/__init__.py
+django_migration_vis/management/commands/visualizemigrations.py

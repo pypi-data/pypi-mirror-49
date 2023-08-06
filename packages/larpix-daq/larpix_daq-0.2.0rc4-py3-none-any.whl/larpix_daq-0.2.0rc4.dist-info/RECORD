@@ -1,0 +1,16 @@
+larpixdaq/__init__.py,sha256=7iiy_H8iqgRhHRUzBkriPvKn-NaeIqF_w23YRikZkH4,3775
+larpixdaq/aggregator.py,sha256=BFsMW_J6Mm3FgdqR6IiWR96I1XC8fMDoJ10xGjCPRwA,3267
+larpixdaq/core.py,sha256=BdJRPuD_R9qvXKI5GSX_3Jl971XQ3hRMc6w2NsxV1J4,2849
+larpixdaq/logger_producer.py,sha256=XOWcy9WzuVCxKXAc1jWIV_t0xnTxurQEkZHWwrQFHf4,484
+larpixdaq/offline_storage.py,sha256=_CLcdtcJAom2Rw_wOTA1YooDIOecNCl2rqUrFQpxFZQ,3730
+larpixdaq/online_monitor.py,sha256=854aIplLbsLm8L9VpTjXyYxlM5t-h-GuSZx0GRfUkvI,11401
+larpixdaq/operator.py,sha256=QuC53HK1Uo_ezAC-1uonCJlUpgIZtEWz1CJQdP0rB0E,7204
+larpixdaq/packetformat.py,sha256=ESldwbCpoAAu1tNDfgaVRwj6Kud2kx4rdekjgxrNts4,3418
+larpixdaq/producer.py,sha256=CD2tuPwqyL-FjitfNAOthXy__SyyCR8yfrvN9D4qFR8,14488
+larpixdaq/routines/__init__.py,sha256=977i0B2kboLaR0d5Mg8n8tkHFr9c1wR3gDxHhckHAOM,6013
+larpixdaq/routines/hello_world.py,sha256=bim-tK29n-ZV9zgAyAJXm0Yt3IS5WjgEMo4_1vTwBXI,300
+larpixdaq/routines/quickstart.py,sha256=uQrub1o5s0o_hX4bGR9YX9-OP2VCjngXBlkY7LkyavE,592
+larpix_daq-0.2.0rc4.dist-info/METADATA,sha256=MTx64fB1JeOwGdFovNN1f3T0XprHSPF9KXvmaOl-e5Q,3248
+larpix_daq-0.2.0rc4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+larpix_daq-0.2.0rc4.dist-info/top_level.txt,sha256=31vyL1626abQKdSD_Tc8C189kFdMPRgBANURNlnQekE,10
+larpix_daq-0.2.0rc4.dist-info/RECORD,,

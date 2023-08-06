@@ -1,0 +1,8 @@
+setup.py
+nrn/__init__.py
+nrn/nrn.py
+nrn.egg-info/PKG-INFO
+nrn.egg-info/SOURCES.txt
+nrn.egg-info/dependency_links.txt
+nrn.egg-info/entry_points.txt
+nrn.egg-info/top_level.txt

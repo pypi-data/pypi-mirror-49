@@ -1,0 +1,3 @@
+[console_scripts]
+nrn = nrn.nrn:main
+

@@ -1,0 +1,14 @@
+README.rst
+setup.py
+preparenovonix/__init__.py
+preparenovonix/compare.py
+preparenovonix/novonix_add.py
+preparenovonix/novonix_clean.py
+preparenovonix/novonix_io.py
+preparenovonix/novonix_prep.py
+preparenovonix/novonix_variables.py
+preparenovonix.egg-info/PKG-INFO
+preparenovonix.egg-info/SOURCES.txt
+preparenovonix.egg-info/dependency_links.txt
+preparenovonix.egg-info/requires.txt
+preparenovonix.egg-info/top_level.txt

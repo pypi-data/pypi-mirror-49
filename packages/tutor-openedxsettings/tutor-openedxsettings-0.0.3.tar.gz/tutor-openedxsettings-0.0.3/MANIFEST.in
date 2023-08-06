@@ -1,0 +1,2 @@
+recursive-include tutoropenedxsettings/patches * 
+recursive-include tutoropenedxsettings/templates * 

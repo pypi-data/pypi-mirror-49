@@ -1,0 +1,4 @@
+colorama
+click
+paramiko
+pysftp

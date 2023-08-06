@@ -1,0 +1,2 @@
+recursive-include pyfission/sql *.sql
+include requirements.txt

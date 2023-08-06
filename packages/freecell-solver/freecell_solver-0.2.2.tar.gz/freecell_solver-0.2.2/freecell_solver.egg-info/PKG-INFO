@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: freecell-solver
+Version: 0.2.2
+Summary: Freecell Solver bindings
+Home-page: https://fc-solve.shlomifish.org/
+Author: Shlomi Fish
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: ===============================
+        freecell_solver
+        ===============================
+        
+        Freecell Solver Python bindings
+        
+        Freecell Solver Python bindings
+        
+        * Free software: Expat
+        * Documentation: https://docs.openstack.org/python-freecell_solver/latest
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5

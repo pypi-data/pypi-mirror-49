@@ -1,0 +1,10 @@
+snappy
+snappy/dev
+snappy/manifolds
+snappy/ptolemy
+snappy/snap
+snappy/snap/peripheral
+snappy/snap/t3mlite
+snappy/togl
+snappy/twister
+snappy/verify

@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: prom-url-checker
+Version: 0.0.3
+Summary: Prom-url-checker, a url checker with prometheus metrics output
+Home-page: https://github.com/datalyze-solutions/prom-url-checker
+Author: Matthias Ludwig
+Author-email: m.ludwig@datalyze-solutions.com

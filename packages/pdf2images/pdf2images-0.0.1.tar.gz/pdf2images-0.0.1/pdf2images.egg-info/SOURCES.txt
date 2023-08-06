@@ -1,0 +1,7 @@
+README.md
+setup.py
+pdf2images.egg-info/PKG-INFO
+pdf2images.egg-info/SOURCES.txt
+pdf2images.egg-info/dependency_links.txt
+pdf2images.egg-info/requires.txt
+pdf2images.egg-info/top_level.txt

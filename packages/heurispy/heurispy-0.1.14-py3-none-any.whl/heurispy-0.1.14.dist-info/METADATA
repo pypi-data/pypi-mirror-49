@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: heurispy
+Version: 0.1.14
+Summary: Framework para exploración de heurísticas de búsqueda local en problemas de optimización discreta
+Home-page: https://gitlab.com/escamilla.een/heurispy
+Author: Esteban Escamilla Navarro
+Author-email: escamilla.een@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pathos
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: fpdf
+Requires-Dist: matplotlib
+Requires-Dist: pypdf2
+
+HeurisPy
+======
+
+``HeurisPy`` es un framework orientado a objetos desarrollado en Python que busca 
+auxiliar en la obtenciÃ³n de experiencia para el uso de heurÃ­sticas de bÃºsqueda
+local en problemas de optimizaciÃ³n discreta.
+
+Se ha diseÃ±ado con los siguientes principios en mente:
+
+--``HeurisPy`` debe ser lo suficientemente general para permitir el planteamiento 
+de varios problemas de optimizaciÃ³n discreta.
+
+--``HeurisPy`` debe ser accesible para usuarios con poca experiencia tanto en el
+uso de heurÃ­sticas de bÃºsqueda local como en programaciÃ³n.
+
+--``HeurisPy`` debe contener varias heurÃ­sticas de bÃºsqueda local listas para su
+uso, asÃ­ como una clase lo suficientemente general para permitir el agregado
+de nuevas heurÃ­sticas.
+
+--``HeurisPy`` debe permitir el trabajo en paralelo para facilitar el anÃ¡lisis
+estadÃ­stico, y brindar herramientas que faciliten el trabajo.
+
+AsÃ­, se espera que el usuario sÃ³lo deba preocuparse por la programaciÃ³n de su 
+problema de optimizaciÃ³n discreta y de experimentar con las heurÃ­sticas. ``HeurisPy``
+se encargarÃ¡ de realizar las bÃºsquedas y de brindar la informaciÃ³n 
+estadÃ­stica para que el usuario pueda realizar una decisiÃ³n informada.
+
+``HeurisPy`` fue programado en Python 3.7 [(que se descarga aquÃ­)](https://www.python.org/downloads/)
+, y requiere de las siguientes bibliotecas para su funcionamiento:
+
+--**numpy**: biblioteca para el cÃ³mputo cientÃ­fico en Python.
+
+--**pathos**: biblioteca para el procesamiento en paralelo.
+
+--**pandas**: biblioteca para el anÃ¡lisis de datos.
+
+--**pyFPDF**: biblioteca para la generaciÃ³n de archivos PDF.
+
+--**matplotlib**:biblioteca para la generaciÃ³n de grÃ¡ficas.
+
+--**tqdm**: biblioteca para la muestra del progreso de la exploraciÃ³n heurÃ­stica.
+
+HeurisPy estÃ¡ disponible como una biblioteca en PyPi, y se puede instalar con el siguiente comando:
+
+    pip install heurispy
+
+Y se deberÃ­a instalar en su versiÃ³n mÃ¡s reciente.
+
+Se puede probar el funcionamiento de HeurisPy con cualquiera de los scripts contenidos en
+la carpeta "ejemplos", que se tiene incluÃ­da al momento e instalar el framework.
+
+

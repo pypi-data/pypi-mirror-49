@@ -1,0 +1,3 @@
+[cubicweb.cubes]
+email = cubicweb_email
+

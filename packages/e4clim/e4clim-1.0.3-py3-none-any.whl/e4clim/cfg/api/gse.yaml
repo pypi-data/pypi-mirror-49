@@ -1,0 +1,10 @@
+---
+module_path: .api.gse
+# Period used to correct the computed capacity factors bias
+first_year: '2013'
+last_year: '2017'
+component_names:
+  wind: wind
+  pv: pv
+  hydro: hydro
+

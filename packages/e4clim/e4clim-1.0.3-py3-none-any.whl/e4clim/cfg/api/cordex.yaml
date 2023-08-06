@@ -1,0 +1,77 @@
+---
+data_dir:
+module_path: .api.cordex
+# domain: MED-44
+domain: MED-18
+# domain: MED-11
+frequency: day
+# frequency: 3hr
+
+streams:
+  # Evaluation
+  start_dates:
+    - '19890101'
+    # - '19910101'
+    # - '19960101'
+    # - '20010101'
+    # - '20060101'
+    # - '20110101'
+
+  end_dates:
+    - '19901231'
+    # - '19951231'
+    # - '20001231'
+    # - '20051231'
+    # - '20101231'
+    # - '20111130'
+  # rcp
+  # start_dates:
+  #   - '20060101'
+  #   - '20110101'
+  #   - '20160101'
+  #   - '20210101'
+  #   - '20260101'
+  #   - '20310101'
+  #   - '20360101'
+  #   - '20410101'
+  #   - '20460101'
+  # end_dates:
+  #   - '20101231'
+  #   - '20151231'
+  #   - '20201231'
+  #   - '20251231'
+  #   - '20301231'
+  #   - '20351231'
+  #   - '20401231'
+  #   - '20451231'
+  #   - '20501231'
+
+institution: IPSL
+gcm_model_name: ECMWF-ERAINT
+rcm_model_name: IPSL-WRF311
+
+rcm_version_id: v1
+cmip5_experiment_name: evaluation
+cmip5_ensemble_member: r1i1p1
+
+# # For CMCC-CCLM4, GUF-CCLM4
+# dims:
+#   - rlat
+#   - rlon
+# For IPSL-WRF311
+dims:
+  - y
+  - x
+
+variable_names:
+  surface_temperature: tas
+  zonal_wind: uas
+  meridional_wind: vas
+  surface_downward_radiation: rsds
+  surface_specific_humidity: huss
+  surface_pressure: ps
+  # sea_level_pressure: psl
+# Height coordinate name
+height: height
+
+server: www.medcordex.eu

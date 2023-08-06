@@ -1,0 +1,91 @@
+{
+  "section_name": "Survived", 
+  "content_blocks": [
+    {
+      "sub_header": {
+        "tooltip": {
+          "content": "expect_column_values_to_be_of_type <br>expect_column_values_to_be_in_type_list"
+        }, 
+        "template": "Type: None"
+      }, 
+      "header": {
+        "tooltip": {
+          "content": "expect_column_to_exist", 
+          "placement": "top"
+        }, 
+        "template": "Survived"
+      }, 
+      "styling": {
+        "header": {
+          "classes": [
+            "alert", 
+            "alert-secondary"
+          ]
+        }, 
+        "classes": [
+          "col-12"
+        ]
+      }, 
+      "content_block_type": "header"
+    }, 
+    {
+      "bullet_list": [
+        {
+          "params": {
+            "is_passing": "True", 
+            "expectation_type": "expect_column_to_exist"
+          }, 
+          "styling": {
+            "classes": [
+              "list-group-item", 
+              "d-flex", 
+              "justify-content-between", 
+              "align-items-center"
+            ], 
+            "params": {
+              "is_passing": {
+                "classes": [
+                  "badge", 
+                  "badge-secondary", 
+                  "badge-pill"
+                ]
+              }
+            }
+          }, 
+          "template": "$expectation_type $is_passing"
+        }
+      ], 
+      "header": "Expectation types <span class=\"mr-3 triangle\"></span>", 
+      "styling": {
+        "styles": {
+          "margin-top": "20px"
+        }, 
+        "header": {
+          "styles": {
+            "cursor": "pointer"
+          }, 
+          "attributes": {
+            "aria-controls": "collapseExample", 
+            "data-toggle": "collapse", 
+            "href": "#{{content_block_id}}-body", 
+            "role": "button", 
+            "aria-expanded": "true"
+          }, 
+          "classes": [
+            "collapsed"
+          ]
+        }, 
+        "classes": [
+          "col-12"
+        ], 
+        "body": {
+          "classes": [
+            "list-group", 
+            "collapse"
+          ]
+        }
+      }, 
+      "content_block_type": "bullet_list"
+    }
+  ]
+}

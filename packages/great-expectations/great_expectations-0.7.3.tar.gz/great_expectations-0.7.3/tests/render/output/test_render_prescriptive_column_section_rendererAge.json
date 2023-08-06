@@ -1,0 +1,99 @@
+{
+  "section_name": "Age", 
+  "content_blocks": [
+    {
+      "header": "Age", 
+      "styling": {
+        "header": {
+          "classes": [
+            "alert", 
+            "alert-secondary"
+          ]
+        }, 
+        "classes": [
+          "col-12"
+        ]
+      }, 
+      "content_block_type": "header"
+    }, 
+    {
+      "bullet_list": [
+        {
+          "params": {
+            "column": "Age", 
+            "column_index": null
+          }, 
+          "styling": {
+            "default": {
+              "classes": [
+                "badge", 
+                "badge-secondary"
+              ]
+            }, 
+            "params": {
+              "sparklines_histogram": {
+                "styles": {
+                  "font-family": "serif"
+                }
+              }
+            }
+          }, 
+          "template": "is a required field."
+        }, 
+        {
+          "params": {
+            "column": "Age", 
+            "max_value": 40, 
+            "min_value": 20
+          }, 
+          "styling": {
+            "default": {
+              "classes": [
+                "badge", 
+                "badge-secondary"
+              ]
+            }, 
+            "params": {
+              "sparklines_histogram": {
+                "styles": {
+                  "font-family": "serif"
+                }
+              }
+            }
+          }, 
+          "template": "mean must be between $min_value and $max_value."
+        }, 
+        {
+          "params": {
+            "column": "Age", 
+            "max_value": 80, 
+            "min_value": 0, 
+            "mostly": null
+          }, 
+          "styling": {
+            "default": {
+              "classes": [
+                "badge", 
+                "badge-secondary"
+              ]
+            }, 
+            "params": {
+              "sparklines_histogram": {
+                "styles": {
+                  "font-family": "serif"
+                }
+              }
+            }
+          }, 
+          "template": "values must always be between $min_value and $max_value."
+        }
+      ], 
+      "styling": {
+        "classes": [
+          "col-12"
+        ]
+      }, 
+      "content_block_type": "bullet_list"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+fs/googledrivefs/__init__.py,sha256=VdJFYIVs1pXvUv5fTQ7QOG9Qim-FbHdE5yjyyEWtc54,143
+fs/googledrivefs/googledrivefs.py,sha256=UsvcbgwdtRyLZNfabeL9kLWTcZos-yU0Q6Cbh8-CUwo,19916
+fs/googledrivefs/opener.py,sha256=V9YtVTq8KtpFlwveRvCz9lRWtcLKBeeZyRLh4WHszfA,894
+fs.googledrivefs-1.1.0.dist-info/entry_points.txt,sha256=07IJVmBBReo_T4V_HrZJyhpp0GyCNTl8J8ByGKxN1jQ,69
+fs.googledrivefs-1.1.0.dist-info/LICENSE,sha256=bbolPbjN1qDsvQgbpELixA1qQ21RE2lsN4QXPPVRp_E,1088
+fs.googledrivefs-1.1.0.dist-info/WHEEL,sha256=m7_EWfYWVp7uNOTdFEhPb5K49PyhIPAZSRl16cJVmb0,85
+fs.googledrivefs-1.1.0.dist-info/METADATA,sha256=Jv0sZza0xOYIXUBzGGqmgRMRpCASkcBxdnIS0DjHwbE,2172
+fs.googledrivefs-1.1.0.dist-info/RECORD,,

@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+isodatetime/__init__.py
+isodatetime/data.py
+isodatetime/datetimeoper.py
+isodatetime/dumpers.py
+isodatetime/main.py
+isodatetime/parser_spec.py
+isodatetime/parsers.py
+isodatetime/timezone.py
+isodatetime.egg-info/PKG-INFO
+isodatetime.egg-info/SOURCES.txt
+isodatetime.egg-info/dependency_links.txt
+isodatetime.egg-info/entry_points.txt
+isodatetime.egg-info/top_level.txt

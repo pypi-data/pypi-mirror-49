@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: gatenlp
+Version: 0.1
+Summary: Library for GATE NLP interaction and resource manipulation
+Home-page: https://github.com/GateNLP/python-gatenlp
+Author: Johann Petrak
+Author-email: johann.petrak@gmail.com
+License: MIT
+Description: # Python library gatenlp
+        
+        [![PyPi version](https://img.shields.io/pypi/v/gatenlp.svg)](https://pypi.python.org/pypi/gatenlp/)
+        [![Python compatibility](https://img.shields.io/pypi/pyversions/gatenlp.svg)](https://pypi.python.org/pypi/gatenlp/)
+        
+        
+        Library for GATE NLP interaction and resource manipulation.
+        
+        **NOTE: This is in the planning/development stage for now**
+        
+        
+        
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

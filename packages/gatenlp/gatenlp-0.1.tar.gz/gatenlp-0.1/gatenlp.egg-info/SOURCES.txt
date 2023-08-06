@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+gatenlp/__init__.py
+gatenlp.egg-info/PKG-INFO
+gatenlp.egg-info/SOURCES.txt
+gatenlp.egg-info/dependency_links.txt
+gatenlp.egg-info/top_level.txt

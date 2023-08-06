@@ -1,0 +1,5 @@
+pandas
+numpy
+pysqa
+h5io
+pyfileindex

@@ -1,0 +1,12 @@
+scipy
+numpy
+pytest
+pytest-mock
+glom
+pytest-repeat
+dacite
+pyyaml
+cachetools
+tblib
+click
+asciitree

@@ -1,0 +1,9 @@
+LICENCE
+MANIFEST.in
+README.rst
+html5validate.py
+setup.py
+html5validate.egg-info/PKG-INFO
+html5validate.egg-info/SOURCES.txt
+html5validate.egg-info/dependency_links.txt
+html5validate.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+jupyter_packaging/__init__.py,sha256=k_XaAZ-oK2HLXHkO9MJUZ-YpUogEtcAjvSNw-wfqcPU,173
+jupyter_packaging/__main__.py,sha256=5QZ0MNGink5q3dc9PI-pM6fKZA7FPjylViKqwnlbwkg,1021
+jupyter_packaging/setupbase.py,sha256=maz8nGohQav6piBbomg1r-sBGtwEENCqgwbN2xwkqjY,23062
+jupyter_packaging-0.4.0.dist-info/LICENSE,sha256=BexOW5585z6SBR38Wh2X0CdHOD2p7NFKJMQgJO_1gH8,1544
+jupyter_packaging-0.4.0.dist-info/METADATA,sha256=dqXzEGxEmiaBsmGC0I7DQaIMBoVYTV1l2Jv4hCLLeb0,949
+jupyter_packaging-0.4.0.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+jupyter_packaging-0.4.0.dist-info/top_level.txt,sha256=oxgvjPc6iRsoeLJOIQWCy_wzrbEKIQ5ElrAg0XCWO-U,18
+jupyter_packaging-0.4.0.dist-info/RECORD,,

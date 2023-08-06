@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+mkdocs-nav-enhancements = mkdocs_nav_enhancements:MkDocsNavEnhancements
+

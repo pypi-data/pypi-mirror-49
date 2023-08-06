@@ -1,0 +1,7 @@
+README.md
+setup.py
+nsoenv/__init__.py
+nsoenv.egg-info/PKG-INFO
+nsoenv.egg-info/SOURCES.txt
+nsoenv.egg-info/dependency_links.txt
+nsoenv.egg-info/top_level.txt

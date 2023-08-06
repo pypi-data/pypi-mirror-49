@@ -1,0 +1,4 @@
+[console_scripts]
+hush = secretconf:hush
+hush_keygen = secretconf:hush_keygen
+

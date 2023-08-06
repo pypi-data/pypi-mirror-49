@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: snekspec
+Version: 0.0.1
+Summary: Validate data & generate test examples from scheme
+Home-page: https://github.com/alexjuda/snekspec
+Author: Alexander Juda
+Author-email: alexanderjuda@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Software Development :: Testing
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Requires-Dist: hypothesis (>=4)
+
+# snekspec
+
+Data validator inspired by clojure.spec.
+
+## Project status 
+
+Proof of concept. If you have a suggestion please [file an issue](https://github.com/alexjuda/snekspec/issues/new). If you just like the idea, star the repo. :)
+
+

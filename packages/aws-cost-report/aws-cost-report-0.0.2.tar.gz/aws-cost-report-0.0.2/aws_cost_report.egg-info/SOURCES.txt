@@ -1,0 +1,9 @@
+README.md
+setup.py
+aws_cost_report.egg-info/PKG-INFO
+aws_cost_report.egg-info/SOURCES.txt
+aws_cost_report.egg-info/dependency_links.txt
+aws_cost_report.egg-info/entry_points.txt
+aws_cost_report.egg-info/top_level.txt
+costreport/__init__.py
+costreport/main.py

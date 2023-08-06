@@ -1,0 +1,16 @@
+qsettingswidget/__init__.py,sha256=Mk6CwIPOCR-Yof-TWs5v1Y63ZdiX85Mqq_m-_4htPMI,815
+qsettingswidget/converters/__init__.py,sha256=eW1tHiRfLGA8zuEgijj_MHA_krC1ENgoRRa90lNGop4,1369
+qsettingswidget/converters/converter.py,sha256=08i8qaX3CBdzq5d9zqPQO1KAbrvPp32rFqgU5xa1i28,1208
+qsettingswidget/converters/qcheckbox_converter.py,sha256=A76cMvvYyQ1tAOQQYzPZBDSUnO-I3Hz1DmG7dR8pBKc,1272
+qsettingswidget/converters/simple_converter.py,sha256=QtxqqruI_yUj8rn4H9ZNAueIVPBbT_1SNXhbgNl88EQ,2423
+qsettingswidget/model/__init__.py,sha256=P6Jlt1kcmd3tdKcZGYhhJ_FqIhLZgX9OEJ7ivIpE88w,695
+qsettingswidget/model/settings_field_node.py,sha256=0S-gYRCYwfvgFis2fHnwa1POiZtvAjYI2Cf0h7LjLeU,1379
+qsettingswidget/model/settings_group_nodel.py,sha256=Ls6dTCKSqKTSdBKEZ4vqQabaTqEOcbn33iZZjB2pE-8,1174
+qsettingswidget/model/settings_node.py,sha256=dFbD0aqmXLqd7ohvX8iRSxn1f1zTCSj961AwXEOXqjo,1023
+qsettingswidget/widgets/__init__.py,sha256=P6Jlt1kcmd3tdKcZGYhhJ_FqIhLZgX9OEJ7ivIpE88w,695
+qsettingswidget/widgets/q_settings_widget.py,sha256=zbt9zLXCdADd-jdhdbK9yFnd5Qgvsp9wfUhSvtRyRPY,9907
+python_qsettingswidget-0.1.0.dist-info/LICENSE,sha256=qUMpFKoh3DWO31NRWELDVpQJkU9l8USpaikDqG7AJBM,35097
+python_qsettingswidget-0.1.0.dist-info/METADATA,sha256=xriOLhkX_AiaQECEvwEosweFwvFIH7oLuFPrjQ9kyzo,945
+python_qsettingswidget-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+python_qsettingswidget-0.1.0.dist-info/top_level.txt,sha256=VWfKBkyy9ccHtlJk2_8AdDwybS84iwya8pQe1gfmHB8,16
+python_qsettingswidget-0.1.0.dist-info/RECORD,,

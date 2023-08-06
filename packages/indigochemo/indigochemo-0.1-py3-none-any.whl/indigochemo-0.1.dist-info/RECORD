@@ -1,0 +1,10 @@
+indigochem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+indigochem/bingo.py,sha256=mqWo1PFOp6vy9UceybKHTRV2aInIQqMjHdW0lga02U8,10396
+indigochem/indigo.py,sha256=oTSs9OhOfrRTt3dQNU5c42O_o2qv6zbXQUhp3KqzcSw,116950
+indigochem/indigo_inchi.py,sha256=SPTjeRfT4-Ja2HavUY8yz_SZ28zRc1XODBEiOJnnM54,3386
+indigochem/indigo_renderer.py,sha256=BobJS94MLU_YD0LhjChetKoR9W-AiwCfUzGYg_ZnR54,3495
+indigochemo-0.1.data/scripts/indigo.py,sha256=oTSs9OhOfrRTt3dQNU5c42O_o2qv6zbXQUhp3KqzcSw,116950
+indigochemo-0.1.dist-info/METADATA,sha256=G3n0DokV0ZrV6jOvBMdJTA7PpnV4Q-kVTZBuC4TE7PM,472
+indigochemo-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+indigochemo-0.1.dist-info/top_level.txt,sha256=XGi9zrOlapmnIIWOysPpNf_jHljwK6kZMH6zfRHKhZA,11
+indigochemo-0.1.dist-info/RECORD,,

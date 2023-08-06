@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+karyopype/__init__.py
+karyopype/karyopype.py
+karyopype.egg-info/PKG-INFO
+karyopype.egg-info/SOURCES.txt
+karyopype.egg-info/dependency_links.txt
+karyopype.egg-info/requires.txt
+karyopype.egg-info/top_level.txt

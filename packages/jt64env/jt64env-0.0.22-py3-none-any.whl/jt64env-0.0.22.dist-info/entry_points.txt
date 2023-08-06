@@ -1,0 +1,3 @@
+[console_scripts]
+jt64env = jt64env.__main__:main
+

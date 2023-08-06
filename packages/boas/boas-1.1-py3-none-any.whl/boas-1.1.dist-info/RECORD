@@ -1,0 +1,14 @@
+boas-1.1.data/scripts/boas,sha256=-IrWMH9yJlIJOaIJyNzts5XDK6QP-PeaiZwbbL4d6ao,4045
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/locators.py,sha256=meWou59wUx9Zf47FsO17qcZq8zJ4at_bDItS3CC9NYo,2140
+src/page.py,sha256=b290-7hah4cVdhwQDiNWvQ0dU_uJt3d3Ij5A1YQid9w,7532
+src/parser.py,sha256=972iyq6Uyvyq0Ke3MXwLmc3RhUGdNOVLfWECbNIiK4E,3548
+src/runner.py,sha256=YWtGfkYquXULduT63e_d4yxzLalWrg87AWL54tS6X7o,2821
+test/FullTests.py,sha256=DPpJcLgNt5eRYSDJYP94kRYZxd1VYCnon3DNnKTwkS8,1408
+test/LoginTests.py,sha256=at9jWxuSRsEgoLNvh6qcEQmY-gmNHJVbLx00gP115j0,482
+test/MyAccountsTests.py,sha256=xhV_kjA0m9Hwcy_ysQOGWNwlQwIw7hbasSzEhOB23Uo,1131
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boas-1.1.dist-info/METADATA,sha256=aVdrtEKMAWhmOykbH6A1wMbru_g_AXKXuTSupuo_HiY,3375
+boas-1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+boas-1.1.dist-info/top_level.txt,sha256=ko5Zp-GH1-aCqmTB-_pzAfcKWZ9D29cRgzo8EmAy2_k,9
+boas-1.1.dist-info/RECORD,,

@@ -1,0 +1,15 @@
+webmention/__init__.py,sha256=i4sq2bSKJBIDfrWUleW924N0c7FxpmOEqHaHNzU2QtU,43
+webmention/admin.py,sha256=YV7om1olSgaXoAGRSiAZ5hIQaTf3jzh55eiEYEsLie4,891
+webmention/checks.py,sha256=WeSR3ckKgFnNtsPQBkpBaTqSeI9uLv11-5RYMxOIjbs,781
+webmention/middleware.py,sha256=ifWGP0y6FP0p0sHSFNnirIU2wQIwJ3QiRPpTKtG6tqk,1033
+webmention/models.py,sha256=tfstv-PopNPYUWCwUNA1Z5G5ojfEJi7u3LEloMtxDN0,1261
+webmention/resolution.py,sha256=cPAGIRbzAoN9uozEC6g1uklx68kEkY5HxKUTRN2jRYw,779
+webmention/urls.py,sha256=1AW9Q02tunJYBeYvyEVtB6YvCFt8OeC8Gad3ipUBZCI,147
+webmention/views.py,sha256=5yzmi6uJLOjGHT0qr1NpXuQOQCocoaN6m6Ng1SwX9E0,1476
+webmention/migrations/0001_initial.py,sha256=IBT7k_TTyzUCmUtQ_EcxvSyC9a15YdkNs4As5qQG0vw,949
+webmention/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_webmention-1.1.0.dist-info/LICENSE,sha256=XEl1aqL3TzH91p5p8zKk3491ZcTF9_kL3NPlIEi-PT4,1052
+django_webmention-1.1.0.dist-info/METADATA,sha256=Nog-2d4X3VDxGJG8pNKCrwtBptb7bJeOj80bVeoh7xA,2736
+django_webmention-1.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_webmention-1.1.0.dist-info/top_level.txt,sha256=ndDsZ8lGm6aimpyUcPzowpdvQxrTWuIN42yh4P_wxCs,11
+django_webmention-1.1.0.dist-info/RECORD,,

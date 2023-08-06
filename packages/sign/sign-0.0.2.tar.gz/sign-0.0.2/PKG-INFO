@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: sign
+Version: 0.0.2
+Summary: inherit **kwargs from another fucntion in the signature. 
+Home-page: https://github.com/Carreau/sign
+Author: Matthias Bussonnier
+Author-email: bussonniermatthias@gmail.com

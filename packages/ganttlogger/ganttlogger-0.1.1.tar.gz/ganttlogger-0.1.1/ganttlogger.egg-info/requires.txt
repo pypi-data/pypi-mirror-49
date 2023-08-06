@@ -1,0 +1,6 @@
+matplotlib
+numpy
+psutil
+pynput
+pypiwin32
+colorama

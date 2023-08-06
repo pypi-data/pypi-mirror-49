@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ganttlogger
+Version: 0.1.1
+Summary: This CLI will monitor(active-tab, mouse, keyboard), log, and generate graphs.
+Home-page: https://github.com/KagenoMoheji/GanttLogger
+Author: Goki Sugimura(KagenoMoheji)
+Author-email: shadowmoheji.pd@gmail.com
+License: MIT
+Description: # GanttLogger
+        - [README.md - 日本語バージョン](https://github.com/KagenoMoheji/GanttLogger/blob/master/README-ja.md)
+        
+        ## Quick Start
+        
+        
+        
+        
+        
+        
+        
+        ## In the future...
+        - Implement mode remote 'observer' and 'logger/plotter'.
+Keywords: gantt,log,graph,plot,keyboard,mouse,active tab
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

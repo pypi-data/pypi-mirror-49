@@ -1,0 +1,4 @@
+requests
+Click==7.0
+colorama
+tld==0.9.3

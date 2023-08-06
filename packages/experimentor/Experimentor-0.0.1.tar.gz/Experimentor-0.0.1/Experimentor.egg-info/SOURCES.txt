@@ -1,0 +1,6 @@
+setup.py
+Experimentor.egg-info/PKG-INFO
+Experimentor.egg-info/SOURCES.txt
+Experimentor.egg-info/dependency_links.txt
+Experimentor.egg-info/top_level.txt
+experimentor/__init__.py

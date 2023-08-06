@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+citextract/__init__.py
+citextract.egg-info/PKG-INFO
+citextract.egg-info/SOURCES.txt
+citextract.egg-info/dependency_links.txt
+citextract.egg-info/top_level.txt
+citextract/models/__init__.py
+citextract/models/refxtract.py
+citextract/models/titlextract.py
+citextract/utils/__init__.py
+citextract/utils/model.py
+citextract/utils/pdf.py
+tests/__init__.py
+tests/test_pdf_utils.py
+tests/utils.py

@@ -1,0 +1,14 @@
+telegram_click/__init__.py,sha256=cLXyQahyF81v10C0JXqkh5NRIgs2z-9IRToBuqguyPU,1734
+telegram_click/argument.py,sha256=ExHzx9oMG1SeQF5qYWQ1a0P0E2NnBhfnAbQmkgPkL9Q,5386
+telegram_click/decorator.py,sha256=ZMFo_GpJ66-DdPQeS-bZHhqbAjsbFqEqmadaWfuquAQ,5934
+telegram_click/util.py,sha256=fjD4BV7KXvu0PcxQwgkckYVyo-DWSXYCJxDwi5lRklI,3370
+telegram_click/permission/__init__.py,sha256=EtSRMlcXKmXZnrvNhUA5qRwjz9LN_Hp6vUMivQdpDZM,1454
+telegram_click/permission/base.py,sha256=6y2-QCuhdass9K-O_bIq1DASNTA2AhjJ589sVUnPWKI,4182
+telegram_click/permission/chat.py,sha256=TbiQALTWIuY6itJPq_eoivPQWC5uBKIhmcBAQxPynJg,1726
+telegram_click/permission/groupadmin.py,sha256=FaQ2BGwTZQQNjo1HqOr02KuScGAL494tdAb6xTVZyNY,1864
+telegram_click/permission/user.py,sha256=X8zuzkLBVfdBLZ643rh104O3tck6-u375ZHX2K4IMGc,4187
+telegram_click-2.2.0.dist-info/LICENSE,sha256=wFysPQyRrlCVpkf7TzC3PQhpw1VlTE3Fpkxjwajtylw,1070
+telegram_click-2.2.0.dist-info/METADATA,sha256=MOcx3oEeEm6fIgP1lm3C2r2pde2zZnRaq8uPSqqUnCo,7934
+telegram_click-2.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+telegram_click-2.2.0.dist-info/top_level.txt,sha256=Waorn8eJhzBlYWSEHC6cAaGedUtNGD4qcDRwFYz_GYY,15
+telegram_click-2.2.0.dist-info/RECORD,,

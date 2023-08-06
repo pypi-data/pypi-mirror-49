@@ -1,0 +1,8 @@
+README.md
+setup.py
+numstranslate/__init__.py
+numstranslate/alg.py
+numstranslate.egg-info/PKG-INFO
+numstranslate.egg-info/SOURCES.txt
+numstranslate.egg-info/dependency_links.txt
+numstranslate.egg-info/top_level.txt

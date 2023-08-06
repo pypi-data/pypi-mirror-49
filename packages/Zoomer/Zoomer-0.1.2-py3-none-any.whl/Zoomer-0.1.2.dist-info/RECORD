@@ -1,0 +1,12 @@
+zoomer/__init__.py,sha256=QGP3WEWKTz9srl2dw3uhS0Rm_jFTU3Ay2b6YspiofCY,57
+zoomer/__version__.py,sha256=MobQVtrO9Ze27biO6l6QreTAONnDTqbALI54Q1gpCI8,352
+zoomer/base.py,sha256=u99toULr-f0tuG9nN0Vf8o5GpKLkuXkYV8TZIJ1EYDI,645
+zoomer/face.py,sha256=EiyYrPa_bRu9_46YMbxnV_V92E5L6hKMktbnMJjpvrk,3447
+zoomer/facedetect.py,sha256=nZ8rDpIzb1VYMceBtQXqagqDDALckbYgNx40QUjECn0,1611
+zoomer/run.py,sha256=oysu589L3s2ZrgnELizQayladSLt1zrr7ZgSvnWeD6k,333
+zoomer/test.py,sha256=jVmtA-AhLkisuIJOlPRAn_M-PNjh-mGkyL3wEXs5uBE,107
+Zoomer-0.1.2.dist-info/LICENSE,sha256=RnTViHAFvgYMFpJ-mKEB69rGlJ5LmQ5NaleGpW9rTAA,1048
+Zoomer-0.1.2.dist-info/METADATA,sha256=bxsuttxUTvpLaE1bdMGhWlNkkseNeBKhTMjJB1flKEY,239
+Zoomer-0.1.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+Zoomer-0.1.2.dist-info/top_level.txt,sha256=LiJBhtqYHyVa-tmBZTEQmzhSfPoEbh_ExoTyM4knVw0,7
+Zoomer-0.1.2.dist-info/RECORD,,

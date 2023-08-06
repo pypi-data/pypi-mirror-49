@@ -1,0 +1,12 @@
+pandas
+pint
+numpy
+matplotlib
+skyfield
+scipy
+pyquaternion
+requests
+astropy
+pyyaml>=3.12
+mpld3
+jinja2

@@ -1,0 +1,64 @@
+<head>
+    <meta charset="utf-8">
+    <title>布尔数据</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <title>Login | Flask</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="jumbotron">
+                <h1>
+                    布尔数据风险报告测试
+                </h1>
+            </div>
+            <form role="form" action="/batch-test-huizu/"
+                  target="_self"
+                  accept-charset="UTF-8"
+                  method="POST"
+                  autocomplete="off"
+                  enctype="application/x-www-form-urlencoded">
+                <p><b>请认真阅读提示文字，然后再填充测试数据. 推荐表头，name,phone,idcard</b></p>
+                <p>1. 用英文逗号隔开字符，不要使用中文逗号;</p>
+                <p>2. 一行结束按回车换行;</p>
+                <p>3. 第一行指定表头: name,phone,idcard. 表头可以调换顺序，但是不要使用其他的英文单词&#10;</p>
+                <p>4.样例：</p>
+                <p>name,phone,idcard</p>
+                <p>张**,1536**,14273219***</p>
+                <p>韩**,1521**7881,370303**6110320</p>
+                <div class="form-group">
+                    <label for="biz_data"></label>
+                    <textarea
+                            style="width:100%;height: 100%"
+                            class="form-control"
+                            id="biz_data"
+                            name="biz_data"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="account">账户名</label>
+                    <input type="text" class="form-control" id="account" name="account" size="4" style="width: 30%"/>
+                </div>
+                <div class="form-group">
+                    <label for="passwd">密码</label>
+                    <input type="password" class="form-control" id="passwd" name="passwd" size="4" style="width: 30%"/>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">提交</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById('submit').addEventListener('click', ()=>alert('已向服务器发送请求，请耐心等待，请勿重复提交。'))
+</script>
+</body>

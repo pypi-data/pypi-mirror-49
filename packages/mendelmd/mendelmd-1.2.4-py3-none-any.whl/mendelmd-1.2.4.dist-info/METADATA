@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mendelmd
+Version: 1.2.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: wheel
+Requires-Dist: django
+Requires-Dist: pysam
+Requires-Dist: cython
+Requires-Dist: Django
+Requires-Dist: psycopg2-binary
+Requires-Dist: django-allauth
+Requires-Dist: django-debug-toolbar
+Requires-Dist: django-crispy-forms
+Requires-Dist: SOAPpy
+Requires-Dist: Sphinx
+Requires-Dist: Fabric3
+Requires-Dist: pynnotator
+Requires-Dist: pyvcf
+Requires-Dist: celery
+Requires-Dist: django-celery-results
+Requires-Dist: docutils (<0.15)
+Requires-Dist: django-appconf
+Requires-Dist: gunicorn
+Requires-Dist: boto3
+Requires-Dist: django-formtools
+Requires-Dist: dj-database-url
+Requires-Dist: django-gravatar2
+Requires-Dist: pandas
+
+UNKNOWN
+
+

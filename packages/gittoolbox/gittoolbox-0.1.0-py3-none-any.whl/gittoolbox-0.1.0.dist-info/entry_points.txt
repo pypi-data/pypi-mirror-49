@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        git-heatmap=gittoolbox.heatmap.heatmap_cli:create
+    

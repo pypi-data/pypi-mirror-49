@@ -1,0 +1,6 @@
+kubernetes_asyncio==9.1.0
+jinja2==2.10.1
+prometheus-client==0.7.1
+
+[tests]
+pytest==4.6.3

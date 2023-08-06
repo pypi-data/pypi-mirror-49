@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mosaik.Demo-semver
+Version: 0.1.0rc20190716190717
+Summary: Demonstration project for the mosaik co-simulation middleware.
+Home-page: https://gitlab.com/offis.energy/mosaik/mosaik.demo_semver
+Author: Bengt Lüers
+Author-email: bengt.lueers@offis.de
+License: LGPL
+Platform: UNKNOWN
+Requires-Dist: mosaik.API-semver (>=2.4.2rc20190716091443)
+Requires-Dist: mosaik.Core-semver (>=2.5.2rc20190715231038)
+Requires-Dist: mosaik-pypower (>=0.7.2)
+
+UNKNOWN
+
+

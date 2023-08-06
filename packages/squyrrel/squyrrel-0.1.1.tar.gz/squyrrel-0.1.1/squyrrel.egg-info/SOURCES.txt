@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+squyrrel/__init__.py
+squyrrel.egg-info/PKG-INFO
+squyrrel.egg-info/SOURCES.txt
+squyrrel.egg-info/dependency_links.txt
+squyrrel.egg-info/top_level.txt
+squyrrel/core/__init__.py

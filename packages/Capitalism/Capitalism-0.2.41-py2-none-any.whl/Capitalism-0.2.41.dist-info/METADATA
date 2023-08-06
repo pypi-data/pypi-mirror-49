@@ -1,0 +1,37 @@
+Metadata-Version: 2.0
+Name: Capitalism
+Version: 0.2.41
+Summary: A module for dispatching jobs
+Home-page: https://github.com/tbbatbb
+Author: traitor
+Author-email: charklamer@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free for non-commercial use
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.3
+Classifier: Programming Language :: Python :: 2.4
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 2 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# Capitalism
+A python module for dispatching jobs
+
+## Requirements
+The module requires several module listed below:
+1. Queue
+2. threading
+3. time
+4. sys
+
+## Install
+Open a terminal, and input the following command:
+`pip install Capitalism`
+then you should successfully installed the module.
+
+

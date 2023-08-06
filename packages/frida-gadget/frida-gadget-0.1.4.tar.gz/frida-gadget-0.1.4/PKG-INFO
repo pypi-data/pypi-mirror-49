@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: frida-gadget
+Version: 0.1.4
+Summary: Easy to use frida gadget
+Home-page: https://github.com/ksg97031/frida-gadget
+Author: ksg97031
+Author-email: ksg97031@gmail.com
+License: UNKNOWN
+Description: frida-gadget
+        ============================================================
+        | Easy to use Frida Gadget. 
+        | 
+        | 1. Inject loadlibary code to dex
+        | 2. Insert libfrida-gadget.so to lib/ directory
+        | 3. Add internet permssion to AndroidManifext.xml
+        | 4. Run your apk
+        
+        
+        .. code:: sh
+        
+          $ pip install frida-gadget 
+          $ frida-gadget [apk_path] --arch=[arch, default arm]
+          > [SOMETHING DUMMY PRINT]
+          > Gadget APK: [gadget_apk_path]
+          $ adb install [gadget_apk_path]
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5.3
+Description-Content-Type: text/x-rst

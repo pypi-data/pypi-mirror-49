@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: podcast-archiver
+Version: 1.0.0a0
+Summary: Feed parser and download client for local podcast archival
+Home-page: https://github.com/janw/podcast-archiver
+License: Apache-2.0
+Author: Jan Willhaus
+Author-email: mail@janwillhaus.de
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: feedparser (>=5.2,<6.0)
+Project-URL: Repository, https://github.com/janw/podcast-archiver

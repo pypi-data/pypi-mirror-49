@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: drf_orjson
+Version: 0.3
+Summary: DRF ORJSON Renderer
+Home-page: https://github.com/n1te/drf_orjson
+Author: Stanislav Shershnev
+Author-email: shershnev.stas@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5

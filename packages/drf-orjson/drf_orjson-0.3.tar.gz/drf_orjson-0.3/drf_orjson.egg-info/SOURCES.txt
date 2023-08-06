@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+drf_orjson/__init__.py
+drf_orjson/parsers.py
+drf_orjson/renderers.py
+drf_orjson.egg-info/PKG-INFO
+drf_orjson.egg-info/SOURCES.txt
+drf_orjson.egg-info/dependency_links.txt
+drf_orjson.egg-info/requires.txt
+drf_orjson.egg-info/top_level.txt

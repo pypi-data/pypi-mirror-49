@@ -1,0 +1,17 @@
+smplpytorch/__init__.py,sha256=h3f4-HsxO7X3ahBMAcxPcirbaPtVp7_esUMV3LS8u20,20
+smplpytorch/demo.py,sha256=gDzPQRHLSOR8-646gqftIH37kurwT0-Hfw_I7XAmqv4,1006
+smplpytorch/display_utils.py,sha256=Zv0m1ny4JG5Ci9baov3pFjiggE3sXgpTuFg59A_UDBc,2439
+smplpytorch/smpl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smplpytorch/smpl/native/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smplpytorch/smpl/native/webuser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smplpytorch/smpl/native/webuser/posemapper.py,sha256=2vS_ybwOEr9G_mgX9LzNEIVvLr4vY1yGzrYSXjiFf3Q,782
+smplpytorch/smpl/native/webuser/serialization.py,sha256=IEZhSZLxYlofCLa7uyw7vUi2qTYdwzJ0obYlPHWBQsc,1507
+smplpytorch/smpl/pytorch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smplpytorch/smpl/pytorch/rodrigues_layer.py,sha256=G-H3TF7dYBAIL0OSK0UbV-mrvjZLP3UsQGmuJtKh5is,2859
+smplpytorch/smpl/pytorch/smpl_layer.py,sha256=HWEu6LbXnsT9m2om2sJUstfV0G26GgWKAfGjk1iETxI,6710
+smplpytorch/smpl/pytorch/tensutils.py,sha256=RL49pWnCOAjOylU54iJRGFPZtF0tQ7BYgFRxo1yK_W4,1464
+smpl_pytorch-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+smpl_pytorch-0.0.7.dist-info/METADATA,sha256=kMxXRaAkYb1b3oRkIlZh5Dlhno_6HayrUypkdvx2LSI,4019
+smpl_pytorch-0.0.7.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+smpl_pytorch-0.0.7.dist-info/top_level.txt,sha256=0aY4Hep1xSL8npKJCg3Phog_Gr5uriVJ8Bk1If_eXjA,12
+smpl_pytorch-0.0.7.dist-info/RECORD,,

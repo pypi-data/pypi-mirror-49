@@ -1,0 +1,3 @@
+[console_scripts]
+kisee=kisee.kisee:main
+

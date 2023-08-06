@@ -1,0 +1,17 @@
+kisee/__init__.py,sha256=6v4HsByuFNO3l6r3pJElXyjQF6HKIEbUUe8h7QmL3u8,63
+kisee/__main__.py,sha256=6TnnGTqlPbXjd4CyKmeopZgDrTHR6KZW_upXEZCRmD8,69
+kisee/authentication.py,sha256=bQku7YKBB6yxoS1IMa_3iFwtGvoHDTzRlEnNpSEemMk,2150
+kisee/emails.py,sha256=CzrpJKWaE_A4-H1l4X8a9KgaHKPi8MPiilpM4DaLRE0,1453
+kisee/identity_provider.py,sha256=6Sk7GUd-ZGq4PcL8erU_1GzqZYQJ9h9066sPXjj90xg,2600
+kisee/kisee.py,sha256=eGvI6GcbIpxpKqYXZ_5L1YIgC4sRDPhczuio4Nu_JPM,4037
+kisee/middlewares.py,sha256=YN1lLNowgKa2IhfwXgUxeJ587tBWoR3ZBIIfm1IsCEY,1088
+kisee/serializers.py,sha256=HrRVN0sbXPe6pwfSyZ0WLUfqMar0j-FI7ce8plM4MWA,680
+kisee/utils.py,sha256=toX6UUP6b4ZJBGTnjbWDzxN3kpUFdYfUxG5YAU3B6Mo,427
+kisee/views.py,sha256=bnlywXfZa_fF07tuW4FjJhxHSg8UX4iDlpQBqaOma5Q,10243
+kisee/providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kisee/providers/demo.py,sha256=BjRdAKGcW5b7wUa41vKWCDLFy2id_5vSzOkozOcPIAQ,1933
+kisee-19.7.0.dist-info/entry_points.txt,sha256=lDUkdUyKN4S7JUmfp1egz5wMMgkzEgfwopspIaAORKo,42
+kisee-19.7.0.dist-info/LICENSE,sha256=OWNBV22kJJ1WFq5cHfzwu7KNffxzbgdNGV4Jcd046PU,1066
+kisee-19.7.0.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+kisee-19.7.0.dist-info/METADATA,sha256=1EJXCl34jgqk3KHFxblnTU1qTMANu5zuiqxSNfrlHtE,3874
+kisee-19.7.0.dist-info/RECORD,,

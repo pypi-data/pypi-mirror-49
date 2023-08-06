@@ -1,0 +1,4 @@
+cython
+django
+pysam
+wheel

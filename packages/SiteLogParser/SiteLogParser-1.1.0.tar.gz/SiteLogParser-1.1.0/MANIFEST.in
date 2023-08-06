@@ -1,0 +1,5 @@
+include LICENSE.txt
+include README.md
+include Changelog.txt
+include versioneer.py
+include sitelogparser/_version.py

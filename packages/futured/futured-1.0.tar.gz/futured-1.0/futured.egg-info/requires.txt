@@ -1,0 +1,7 @@
+
+[docs]
+m2r
+nbsphinx
+jupyter
+nest_asyncio
+aiohttp

@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: badic
+Version: 0.0.2
+Summary: Beta-adics and automata tools
+Home-page: https://gitlab.com/mercatp/badic
+Author: Paul Mercat, Dominique Benielli
+Author-email: paul.mercat@univ-amu.fr
+License: GPLv3.0
+Description: Beta-adic tools
+        ---------------
+        This package implements beta-adic sets, i.e. sets of the form
+        { a_0 + a_1*b + a_2*b^2 + ... + a_n*b^n | n in N, a_0 a_1 ... a_n in L }
+        where b is a number, and L is a regular language (over an alphabet in the same ring as b).
+        It also implements efficient automata written in C language (mainly deterministic automtata).
+        
+Keywords: SageMath beta-adic automata
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C

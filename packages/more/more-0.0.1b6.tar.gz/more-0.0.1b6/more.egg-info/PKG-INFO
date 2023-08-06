@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: more
+Version: 0.0.1b6
+Summary: A helper library for Pandas, Visualizations and Scikit-learn
+Home-page: https://github.com/ngupta23/more
+Author: Nikhil Gupta
+Author-email: mywork.ng@gmail.com
+License: UNKNOWN
+Description: # "More" Package
+        
+        This is a helper package for a variety of functions as described in the Overview section below. 
+        
+        # Installation
+        
+        pip install more==0.0.1b6
+        
+        # Overview
+        
+        This is a helper package for a variety of functions
+        1. Extension for Pandas Dataframe (Beta version released)
+        2. Extension for Visualization (Beta version released)
+        3. Extension for Scikit-learn (Beta version released)
+        
+        # Examples
+        Check out the  [examples](https://github.com/ngupta23/more/tree/master/examples) folder for details on usage
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

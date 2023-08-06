@@ -1,0 +1,17 @@
+numpy>=1.11
+pandas>= 0.19
+scipy>=0.18
+patsy
+statsmodels>=0.8
+xarray>=0.9
+patsy
+cached_property>=1.5.1
+pytest>=3
+sphinx
+guzzle_sphinx_theme
+ipython
+nbsphinx
+nbconvert!=5.4
+nbformat
+matplotlib
+seaborn

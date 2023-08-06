@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dnspod-python
+Version: 1.0.0
+Summary: dnspod-python: DNSPod API python library
+Home-page:  http://www.dnspod.cn/
+Author: Chuangbo Li
+Author-email: im@chuangbo.li
+License: GPL 3.0
+Description: Assemble DNSPod functions with your own program. Build your own dns hosting service.
+Platform: any

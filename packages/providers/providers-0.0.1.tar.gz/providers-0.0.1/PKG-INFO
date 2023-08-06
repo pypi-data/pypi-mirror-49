@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: providers
+Version: 0.0.1
+Summary: Providers is a simple library to enable function signature inheritance and dependency injection in a reusable and generic way.
+Home-page: None
+Author: Timothy Edmund Crosley
+Author-email: timothy.crosley@gmail.com

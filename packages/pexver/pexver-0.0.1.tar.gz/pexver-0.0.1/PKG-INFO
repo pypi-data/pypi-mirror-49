@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pexver
+Version: 0.0.1
+Summary: Excel spreadsheet verifier.
+Home-page: https://github.com/qba73/pexver
+Author: Jakub Jarosz
+Author-email: jakub.jarosz@postpro.net
+License: UNKNOWN
+Description: # pexver
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Information Technology
+Classifier: Environment :: Console
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown

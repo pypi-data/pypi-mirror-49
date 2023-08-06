@@ -1,0 +1,8 @@
+README.md
+setup.py
+pexver/__init__.py
+pexver/pexver.py
+pexver.egg-info/PKG-INFO
+pexver.egg-info/SOURCES.txt
+pexver.egg-info/dependency_links.txt
+pexver.egg-info/top_level.txt

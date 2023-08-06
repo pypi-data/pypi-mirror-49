@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: foxcross
+Version: 0.8.0
+Summary: AsyncIO serving for data science models
+Home-page: https://github.com/laactech/foxcross
+License: BSD-3-Clause
+Keywords: data science,machine learning,serving,python,async,dataframe,pandas,scikit-learn,pytorch,http,rest api
+Author: Steven Pate
+Author-email: steven@laac.dev
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Provides-Extra: modin
+Provides-Extra: pandas
+Provides-Extra: ujson
+Requires-Dist: aiofiles (>=0.4.0,<0.5.0)
+Requires-Dist: jinja2 (>=2.10,<3.0)
+Requires-Dist: modin (>=0.5.1,<0.6.0); extra == "modin"
+Requires-Dist: pandas (>=0.24.2,<0.25.0); extra == "pandas"
+Requires-Dist: python-slugify[unidecode] (>=3.0,<4.0)
+Requires-Dist: starlette (>=0.12.2,<0.13.0)
+Requires-Dist: ujson (>=1.35,<2.0); extra == "ujson"
+Requires-Dist: uvicorn (>=0.8.3,<0.9.0)
+Project-URL: Documentation, https://www.foxcross.dev/
+Project-URL: Repository, https://github.com/laactech/foxcross
+Description-Content-Type: text/markdown
+
+# Foxcross
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/laactech/foxcross/blob/master/LICENSE.md)
+[![Build Status](https://travis-ci.org/laactech/foxcross.svg?branch=master)](https://travis-ci.org/laactech/foxcross)
+[![Build status](https://ci.appveyor.com/api/projects/status/github/laactech/foxcross?branch=master&svg=true)](https://ci.appveyor.com/project/laactech/foxcross)
+[![PyPI](https://img.shields.io/pypi/v/foxcross.svg?color=blue)](https://pypi.org/project/foxcross/)
+[![codecov](https://codecov.io/gh/laactech/foxcross/branch/master/graph/badge.svg)](https://codecov.io/gh/laactech/foxcross)
+
+AsyncIO serving for data science models built on [Starlette](https://www.starlette.io/)
+
+**Requirements**: Python 3.6+
+
+## Quick Start
+Installation using `pip`:
+```bash
+pip install foxcross
+```
+
+Create some test data and a simple model in the same directory to be served:
+
+directory structure
+```
+.
++-- data.json
++-- models.py
+```
+data.json
+```json
+[1,2,3,4,5]
+```
+models.py
+```python
+from foxcross.serving import ModelServing, run_model_serving
+
+class AddOneModel(ModelServing):
+    test_data_path = "data.json"
+
+    def predict(self, data):
+        return [x + 1 for x in data]
+
+if __name__ == "__main__":
+    run_model_serving()
+```
+
+Run the model locally
+```bash
+python models.py
+```
+
+Navigate to `localhost:8000/predict-test/` in your web browser, and you should see the
+list incremented by 1. You can visit `localhost:8000/` to see all the available
+endpoints for your model.
+
+## Why does this package exist?
+Currently, some of the most popular data science model building frameworks such as PyTorch
+and Scikit-Learn do not come with a built in serving library similar to TensorFlow Serving.
+
+To fill this gap, people create Flask applications to serve their model. This can be error
+prone, and the implementation can differ between each model. Additionally, Flask is a
+[WSGI](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)
+web framework whereas Foxcross is built on [Starlette](https://www.starlette.io/), a
+more performant [ASGI](https://asgi.readthedocs.io/en/latest/) web framework.
+
+Foxcross aims to be the serving library for data science models built with frameworks
+that do not come with their own serving library. Using Foxcross enables consistent
+and testable serving of data science models.
+
+## Security
+
+If you believe you've found a bug with security implications, please do not disclose this
+issue in a public forum.
+
+Email us at [support@laac.dev](mailto:support@laac.dev)
+

@@ -1,0 +1,90 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "foxcross"
+version = "0.8.0"
+description = "AsyncIO serving for data science models"
+authors = ["Steven Pate <steven@laac.dev>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+repository = "https://github.com/laactech/foxcross"
+documentation = "https://www.foxcross.dev/"
+keywords = [
+    "data science",
+    "machine learning",
+    "serving",
+    "python",
+    "async",
+    "dataframe",
+    "pandas",
+    "scikit-learn",
+    "pytorch",
+    "http",
+    "rest api"
+]
+classifiers = [
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Environment :: Web Environment",
+    "Development Status :: 3 - Alpha",
+    "Operating System :: OS Independent",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Topic :: Internet :: WWW/HTTP",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+python-slugify = {version = "^3.0", extras = ["unidecode"]}
+aiofiles = "^0.4.0"
+jinja2 = "^2.10"
+ujson = {version = "^1.35", optional = true}
+modin = {version = "^0.5.1", optional = true}
+pandas = {version = "^0.24.2", optional = true}
+uvicorn = "^0.8.3"
+starlette = "^0.12.2"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^1.16"
+mkdocs = "^1.0"
+mkdocs-material = "^4.3"
+pytest = "^4.5"
+pygments = "^2.4"
+pymdown-extensions = "^6.0"
+requests = "^2.22"
+coverage = "^4.5"
+pytest-cov = "^2.7"
+tomlkit = "^0.5.3"
+
+[tool.poetry.extras]
+modin = ["modin"]
+ujson = ["ujson"]
+pandas = ["pandas"]
+
+[tool.black]
+line-length = 90
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  # The following are specific to Black, you probably don't want those.
+  | blib2to3
+  | tests/data
+  | profiling
+)/
+'''

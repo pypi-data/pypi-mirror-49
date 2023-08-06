@@ -1,0 +1,20 @@
+{
+  "PROJECT_NAME": "Plot Twist",
+  "PROJECT_ENV_VARIABLE": "PLOTTWIST_PROJECT",
+  "SHELF_ICON": "plottwist_shelf",
+  "TRAY_ICON": "plottwist",
+  "PROJECT_NUMBER": "9",
+  "PROJECT_ID": "973a70a7-1494-422b-b8c1-696587030e59",
+  "PROJECT_VERSION_FILE": "version.json",
+  "ASSET_TYPES": ["Props", "Characters"],
+  "ASSET_FILES": ["textures", "model", "shading", "rig", "groom"],
+  "ASSET_MUST_FILES": ["textures", "model", "shading", "rig"],
+  "ASSET_WIP_STATUS": "working",
+  "ASSET_PUBLISH_STATUS": "published",
+  "PATHS_TO_REGISTER": ["externals", "pipeline"],
+  "PROJECT_URL": "http://www.plottwist-film.com/",
+  "PROJECT_DOCUMENTATION_URL": "https://tpoveda.github.io/plottwist/",
+  "PROJECT_KITSU_URL": "https://edouardsisternas.cg-wire.com/productions/3b22ba92-c22e-449d-8e94-7a623cd6c164/assets",
+  "PROJECT_DRIVE_URL": "https://drive.google.com/drive/folders/1MiMdE1LMWEDpXrTC8-wrlLN5iYXK8hP8",
+  "EMAILS": ["tpovedatd@gmail.com", "rodriccosta@gmail.com"]
+}

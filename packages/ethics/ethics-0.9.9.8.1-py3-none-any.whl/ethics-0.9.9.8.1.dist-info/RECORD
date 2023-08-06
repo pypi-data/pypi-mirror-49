@@ -1,0 +1,16 @@
+ethics/argumentation.py,sha256=Qsv_Quny8YwrBbjfSecv0u_r4zr_-EQav_YR5MbwUjU,27945
+ethics/explanations.py,sha256=enNgzBXZrTRXazVzf6fiNf90LVXYr3415TcjjgfGqw8,3721
+ethics/language.py,sha256=ytCNoVqThu9kF40wL5LYrweXo4Nr_ruqQ4fNAIL_Iqk,18131
+ethics/moralplans.py,sha256=OPAzsWq_aaZs_Wpsc948y3EyqKhzx7NpH9vaeGWUwLE,25262
+ethics/principles.py,sha256=V1tHp_B5DmYyddC7-WQ99DArEz687s6g_P4m_4prZo0,18485
+ethics/semantics.py,sha256=V2rzsJ3Cp1GpMXy3RHCaTwUYOk6DaCjLCZZ2Loqm6XA,25555
+ethics/solver.py,sha256=bhW4sAIA4cXDWQMxhm26_aS2w7byPlThP_2D73vxaRY,4352
+ethics/solvers.py,sha256=kAkzY5T1OOmhArB_ZWqU5X9OM92e3-9UHAcKLHLck7A,20129
+ethics/tools.py,sha256=_Sj6xTklD8ecxwayK5vDk4ZU2_m0OyiGDkiHyP4j8hI,1353
+ethics/verbalizer.py,sha256=pfoFCNtMGqqXjwUH61FMRWpfpoqFn8RfZuR7MSGVUqU,2027
+ethics-0.9.9.8.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+ethics-0.9.9.8.1.dist-info/METADATA,sha256=NFDCZjUUDvM6pzmJzRmyG9rIzWCZUNnWwNTP460xwLs,272
+ethics-0.9.9.8.1.dist-info/RECORD,,
+ethics-0.9.9.8.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+ethics-0.9.9.8.1.dist-info/metadata.json,sha256=PW337d6hcQkLf84B-7j8xfG2Hn60jxNlwLRLXnjm5Fs,462
+ethics-0.9.9.8.1.dist-info/top_level.txt,sha256=arcAzWCsOWg9x9Dq6wqhfFUgrA2yGmrNEbTkg2-9dt0,7

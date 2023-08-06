@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+statsbomb/__init__.py
+statsbomb/base.py
+statsbomb/events.yaml
+statsbomb/parser.py
+statsbomb/utils.py
+statsbomb.egg-info/PKG-INFO
+statsbomb.egg-info/SOURCES.txt
+statsbomb.egg-info/dependency_links.txt
+statsbomb.egg-info/requires.txt
+statsbomb.egg-info/top_level.txt

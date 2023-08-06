@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: pysmee
+Version: 0.1.0
+Summary: Command line client for smee.io's webhook payload delivery service
+Home-page: https://github.com/akrog/pysmee
+Author: Gorka Eguileor
+Author-email: gorka@eguileor.com
+License: Apache Software License 2.0
+Keywords: pysmee
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: sseclient (==0.0.24)
+Requires-Dist: requests
+Requires-Dist: six
+
+Smee.io CLI
+===========
+
+.. image:: https://img.shields.io/pypi/v/pysmee.svg
+   :target: https://pypi.python.org/pypi/pysmee
+
+.. image:: https://img.shields.io/pypi/pyversions/pysmee.svg
+   :target: https://pypi.python.org/pypi/pysmee
+
+.. image:: https://img.shields.io/:license-apache-blue.svg
+   :target: http://www.apache.org/licenses/LICENSE-2.0
+
+
+Command line client for Smee's webhook payload delivery service
+
+This CLI tool allows you to connect to https://smee.io and see the messages that are coming through it, forward them to an URL, save them, and then replay them from a saved file into https://smee.io or directly into an URL of your choosing.
+
+
+Features
+--------
+
+- Showing messages
+- Forwarding messages
+- Replaying messages
+- Long live support: Unlike the npm smee client that stops working after 4 hours
+
+
+Examples
+--------
+
+- Forwarding messages to a local server:
+
+  ``pysmee forward https://smee.io/xIgtwP3rRcQWPs5e http://localhost:8010/change_hook/github``
+
+- Showing messages and saving them for later:
+
+  ``pysmee show https://smee.io/xIgtwP3rRcQWPs5e --save output.txt``
+
+- Sending saved messages back to smee.io:
+
+  ``pysmee send https://smee.io/xIgtwP3rRcQWPs5e saved.txt``
+
+- Sending saved messages to a local server:
+
+  ``pysmee send http://localhost:8010/change_hook/github saved.txt``
+
+
+=======
+History
+=======
+
+0.1.0 (2019-07-22)
+------------------
+
+* First release on PyPI.
+
+

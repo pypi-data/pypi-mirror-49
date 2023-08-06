@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: flask_dataapi
+Version: 0.1.0
+Summary: Automatically generate data APIs for your Flask routes
+Home-page: https://git.legoktm.com/legoktm/flask-dataapi
+Author: Kunal Mehta
+Author-email: legoktm@member.fsf.org
+License: AGPL-3.0-or-later
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.4

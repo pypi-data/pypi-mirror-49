@@ -1,0 +1,9 @@
+README.md
+setup.py
+fastconf/__init__.py
+fastconf/fastconf.py
+fastconf.egg-info/PKG-INFO
+fastconf.egg-info/SOURCES.txt
+fastconf.egg-info/dependency_links.txt
+fastconf.egg-info/requires.txt
+fastconf.egg-info/top_level.txt

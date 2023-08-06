@@ -1,0 +1,4 @@
+[console_scripts]
+vlibras-translate = vlibras_translate.translation:main
+vlibras-translate-file = vlibras_translate.file_translation:main
+

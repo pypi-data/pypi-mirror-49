@@ -1,0 +1,15 @@
+CHANGELOG.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_giftbox.egg-info/PKG-INFO
+django_giftbox.egg-info/SOURCES.txt
+django_giftbox.egg-info/dependency_links.txt
+django_giftbox.egg-info/requires.txt
+django_giftbox.egg-info/top_level.txt
+giftbox/__init__.py
+giftbox/box.py
+giftbox/version.py
+giftbox/wrappers.py

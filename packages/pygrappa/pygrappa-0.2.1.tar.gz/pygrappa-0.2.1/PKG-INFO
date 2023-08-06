@@ -1,0 +1,30 @@
+Metadata-Version: 1.2
+Name: pygrappa
+Version: 0.2.1
+Summary: GeneRalized Autocalibrating Partially Parallel Acquisitions.
+Home-page: https://github.com/mckib2/pygrappa
+Author: Nicholas McKibben
+Author-email: nicholas.bgp@gmail.com
+License: GPLv3
+Description: Installation
+        ============
+        
+        .. code-block:: bash
+        
+            pip install pygrappa
+        
+        Usage
+        =====
+        
+        See the `examples` module.
+        
+        About
+        =====
+        
+        GRAPPA is a popular parallel imaging reconstruction algorithm.
+        Unfortunately there aren't a lot of easy to use Python implementations
+        available, so I decided to release this simple one.
+        
+Keywords: mri grappa parallel-imaging image-reconstruction python
+Platform: UNKNOWN
+Requires-Python: >=3.5

@@ -1,0 +1,10 @@
+README.md
+setup.py
+pypitchfx/__init__.py
+pypitchfx/scrape.py
+pypitchfx.egg-info/PKG-INFO
+pypitchfx.egg-info/SOURCES.txt
+pypitchfx.egg-info/dependency_links.txt
+pypitchfx.egg-info/not-zip-safe
+pypitchfx.egg-info/requires.txt
+pypitchfx.egg-info/top_level.txt

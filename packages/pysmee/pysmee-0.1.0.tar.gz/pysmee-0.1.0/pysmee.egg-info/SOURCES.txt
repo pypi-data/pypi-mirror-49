@@ -1,0 +1,15 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pysmee/__init__.py
+pysmee/pysmee.py
+pysmee.egg-info/PKG-INFO
+pysmee.egg-info/SOURCES.txt
+pysmee.egg-info/dependency_links.txt
+pysmee.egg-info/entry_points.txt
+pysmee.egg-info/not-zip-safe
+pysmee.egg-info/requires.txt
+pysmee.egg-info/top_level.txt

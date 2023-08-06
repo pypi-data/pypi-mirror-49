@@ -1,0 +1,7 @@
+cvxpy
+networkx
+numpy
+pot
+
+[faster_apsp]
+networkit

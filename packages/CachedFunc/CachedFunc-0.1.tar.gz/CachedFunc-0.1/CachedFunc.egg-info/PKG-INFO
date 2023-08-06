@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: CachedFunc
+Version: 0.1
+Summary: A hierarchical cache system for functions.
+Home-page: https://github.com/FireBrother/CachedFunc
+Author: Xian Wu
+Author-email: wuxian94@pku.edu.cn
+License: MIT
+Description-Content-Type: text/markdown
+Description: # CachedFunc
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

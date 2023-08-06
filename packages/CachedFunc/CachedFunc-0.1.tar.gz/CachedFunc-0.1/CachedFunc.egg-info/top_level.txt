@@ -1,0 +1,2 @@
+CachedFunc
+test

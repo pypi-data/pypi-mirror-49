@@ -1,0 +1,10 @@
+README.md
+kiwano
+setup.py
+src/kiwano/__init__.py
+src/kiwano/kiwano.py
+src/kiwano.egg-info/PKG-INFO
+src/kiwano.egg-info/SOURCES.txt
+src/kiwano.egg-info/dependency_links.txt
+src/kiwano.egg-info/requires.txt
+src/kiwano.egg-info/top_level.txt

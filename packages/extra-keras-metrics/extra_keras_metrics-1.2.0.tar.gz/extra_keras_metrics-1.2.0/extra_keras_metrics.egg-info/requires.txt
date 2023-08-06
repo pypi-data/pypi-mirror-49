@@ -1,0 +1,13 @@
+keras
+decorator
+
+[test]
+pytest
+codacy-coverage
+coveralls
+validate_version_code
+silence_tensorflow
+pytest-cov
+numpy
+pandas
+extra_keras_utils

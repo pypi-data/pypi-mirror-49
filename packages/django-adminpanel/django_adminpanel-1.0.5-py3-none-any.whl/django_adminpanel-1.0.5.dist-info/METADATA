@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: django-adminpanel
+Version: 1.0.5
+Summary: Admin panel for django
+Home-page: https://github.com/pythoncommunities/adminpanel
+Author: Dev
+Author-email: python.communities@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Freeware
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+django-adminpanel
+-----------
+
+BSD-licensed menu tools for Django, built by Dev
+
+django-adminpanel provides a basic structure for you to build multiple navigation menus, pages creation , basic settings as well as widgets creation facility for your website, such as the admin panel. These admin panel can be easily  maintained by administration without any knowledge 
+of HTML or Django internals.
+
+admin panel can also be easily built pages and displayed only for particular URIs.
+
+Installation & Configuration:
+-----------------------------
+
+1. ``pip install django-adminpanel``
+
+2. Add ``adminpanel`` to your ``INSTALLED_APPS``
+
+3. ``./manage.py migrate adminpanel`` (or ``./manage.py syncdb`` if you don't use South. You should use South.)
+
+
+
+

@@ -1,0 +1,11 @@
+policypools/AbstractThreadPoolExecutor.py,sha256=siYPwpLvWgm7JcVaG9QjBd8n0ZD008aa77HX4Nq-9fA,4421
+policypools/BoundedThreadPoolExecutor.py,sha256=LqYwfHfkfQUb8t2WH0LpRR2h7hWgQcjahTeWXH7SI2s,1266
+policypools/DiscardNewestThreadPoolExecutor.py,sha256=Ndq-Y-UgSVIkW1tZECaWKz7vOpSghpxOJRDIaBICm_g,1052
+policypools/DiscardOldestThreadPoolExecutor.py,sha256=tpynRLD-VvlXFFelGnmvnCY2hr3eI62z87a1r4bUNPY,1153
+policypools/InfiniteThreadPoolExecutor.py,sha256=fa7b3t9Kpl1ZlJlFcMxsuY1OMYB8FWxwVLcIhJmyyKA,1070
+policypools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+policypools-0.0.9.dist-info/LICENSE,sha256=88ds407ECJX66Wz6W0FzqCnFiaSiERlChbVSyB43jpU,1090
+policypools-0.0.9.dist-info/METADATA,sha256=UFvIWejIhG35-nKojuc0fUYye-njUuBGsCZKlVIcgRk,810
+policypools-0.0.9.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+policypools-0.0.9.dist-info/top_level.txt,sha256=I4Cy54d8QfBCEaVQM1v_g2VIqBewMnbit2h1vkqhFt4,12
+policypools-0.0.9.dist-info/RECORD,,

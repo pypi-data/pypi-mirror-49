@@ -1,0 +1,8 @@
+sqlalchemy
+requests
+PyYAML
+colander
+feedgen
+simplejson
+future
+python-stdnum

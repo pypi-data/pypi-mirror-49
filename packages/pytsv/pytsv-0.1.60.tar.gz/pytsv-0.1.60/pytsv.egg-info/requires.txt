@@ -1,0 +1,10 @@
+pytconf
+tqdm
+pyanyzip
+numpy
+pandas
+pylogconf
+attrs
+
+[:python_version == "2.7"]
+futures

@@ -1,0 +1,64 @@
+ Then the actual release was cut in r8087:
+
+   version=0.14.0
+   releaselevel='candidate'
+   serial=1
+   release=True
+   __version__='0.14rc1'
+   __version_details__='prerelease'
+
+7. Immediately afterward, in r8089:
+
+   version=0.14.0
+   releaselevel='candidate'
+   serial=2
+   release=False
+   __version__='0.14rc2.dev'  # was actually '0.14rc2' in r8089,
+                              # changed to '0.14rc2.dev' in r8091
+   __version_details__='repository'
+
+8. Upcoming release of Docutils 0.14rc2:
+
+   version=0.14.0
+   releaselevel='candidate'
+   serial=2
+   release=True
+   __version__='0.14rc2'
+   __version_details__='prerelease'
+
+9. Immediately afterward, in preparation for the final release:
+
+   version=0.14.0
+   releaselevel='final'
+   serial=0
+   release=False
+   __version__='0.14.dev'
+   __version_details__='repository'
+
+10. The final release of Docutils 0.14:
+
+   version=0.14.0
+   releaselevel='final'
+   serial=0
+   release=True
+   __version__='0.14'
+   __version_details__='release'
+
+11. Immediately afterward, the trunk becomes:
+
+    version=0.15.0
+    releaselevel='alpha'
+    serial=0
+    release=False
+    __version__='0.15a0.dev'
+    __version_details__='repository'
+
+12. If we need to cut a bugfix release of 0.14, we'll create a branch
+    off step 10 and set:
+
+    version=0.14.1
+    releaselevel='alpha'
+    serial=0
+    release=False
+    __version__='0.14.1a0.dev'
+    __version_details__='repository'

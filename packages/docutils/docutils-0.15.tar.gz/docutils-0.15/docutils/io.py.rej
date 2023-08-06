@@ -1,0 +1,17 @@
+***************
+*** 204,210 ****
+      """
+      def __init__(self, source=None, source_path=None,
+                   encoding=None, error_handler='strict',
+-                  autoclose=True, mode='rU', **kwargs):
+          """
+          :Parameters:
+              - `source`: either a file-like object (which is read directly), or
+--- 204,210 ----
+      """
+      def __init__(self, source=None, source_path=None,
+                   encoding=None, error_handler='strict',
++                  autoclose=True, mode=None, **kwargs):
+          """
+          :Parameters:
+              - `source`: either a file-like object (which is read directly), or

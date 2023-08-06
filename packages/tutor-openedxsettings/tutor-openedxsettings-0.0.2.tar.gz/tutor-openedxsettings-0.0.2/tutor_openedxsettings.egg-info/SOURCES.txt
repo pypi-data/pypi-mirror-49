@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+tutor_openedxsettings.egg-info/PKG-INFO
+tutor_openedxsettings.egg-info/SOURCES.txt
+tutor_openedxsettings.egg-info/dependency_links.txt
+tutor_openedxsettings.egg-info/entry_points.txt
+tutor_openedxsettings.egg-info/top_level.txt
+tutoropenedxsettings/__init__.py
+tutoropenedxsettings/plugin.py
+tutoropenedxsettings/patches/openedx-cms-common-settings
+tutoropenedxsettings/patches/openedx-lms-common-settings

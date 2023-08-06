@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/LGBtrainer.py
+src/LGBtrainer.egg-info/PKG-INFO
+src/LGBtrainer.egg-info/SOURCES.txt
+src/LGBtrainer.egg-info/dependency_links.txt
+src/LGBtrainer.egg-info/top_level.txt

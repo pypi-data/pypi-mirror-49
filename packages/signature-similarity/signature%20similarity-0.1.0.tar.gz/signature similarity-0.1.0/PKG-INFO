@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: signature similarity
+Version: 0.1.0
+Summary: Handwritten Signature Similarity Check
+Home-page: https://github.com/pixix/Signature-Similarity
+Author: Xi Xiong
+Author-email: xx2188@columbia.edu
+License: MIT License
+Description: # Signature-Similarity
+        Handwritten Signature Similarity Check with no SIFT
+        
+Keywords: Handwritten signature similarity verification
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown

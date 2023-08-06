@@ -1,0 +1,7 @@
+README.md
+setup.py
+signature_similarity.egg-info/PKG-INFO
+signature_similarity.egg-info/SOURCES.txt
+signature_similarity.egg-info/dependency_links.txt
+signature_similarity.egg-info/requires.txt
+signature_similarity.egg-info/top_level.txt

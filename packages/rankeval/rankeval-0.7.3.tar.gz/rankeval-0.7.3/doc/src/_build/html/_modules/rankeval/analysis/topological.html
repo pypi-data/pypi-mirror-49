@@ -1,0 +1,349 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.analysis.topological &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.analysis.topological</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.analysis.topological</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (c) 2017, All Contributors (see CONTRIBUTORS file)</span>
+<span class="c1"># Authors:  Salvatore Trani &lt;salvatore.trani@isti.cnr.it&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c1"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c1"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This package implements several topological analysis focused on the</span>
+<span class="sd">topological characteristics of ensemble-based LtR models. These</span>
+<span class="sd">functionalities can be applied to several models,</span>
+<span class="sd">so as to have a direct comparison of the shape of the resulting</span>
+<span class="sd">forests (e.g., trained by different LtR algorithms).</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span>
+
+<span class="kn">from</span> <span class="nn">..model</span> <span class="k">import</span> <span class="n">RTEnsemble</span>
+<span class="kn">from</span> <span class="nn">_efficient_topological</span> <span class="k">import</span> <span class="n">efficient_topological_analysis</span>
+
+
+<div class="viewcode-block" id="topological_analysis"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.topological.topological_analysis">[docs]</a><span class="k">def</span> <span class="nf">topological_analysis</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">include_leaves</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method implements the topological analysis of a ensemble-based</span>
+<span class="sd">    LtR model. Given a model, it studies the shape of each tree composing</span>
+<span class="sd">    the model and return several information useful for having insights</span>
+<span class="sd">    about the shape of the trees, their completeness (level by level) as</span>
+<span class="sd">    well as min/max/mean height and the fraction of trees having a specific</span>
+<span class="sd">    node (where each node is identified by a pair of coordinates row-col,</span>
+<span class="sd">    with row highlighting the depth and col the column with respect to a</span>
+<span class="sd">    full binary tree).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    model : RTEnsemble</span>
+<span class="sd">        The model to analyze</span>
+<span class="sd">    include_leaves : bool</span>
+<span class="sd">        Whether the leaves has to be included in the analysis or not</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    object : TopologicalAnalysisResult</span>
+<span class="sd">        The topological result, to use for retrieving several information</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">TopologicalAnalysisResult</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">include_leaves</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TopologicalAnalysisResult"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.topological.TopologicalAnalysisResult">[docs]</a><span class="k">class</span> <span class="nc">TopologicalAnalysisResult</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This class is used to return the topological analysis made on the model.</span>
+<span class="sd">    Several low-level information are stored in this class, and then</span>
+<span class="sd">    re-elaborated to provide high-level analysis.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">include_leaves</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Analyze the model in a topological perspective</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        model : RTEnsemble</span>
+<span class="sd">            the model to analyze from the topological perspective</span>
+<span class="sd">        include_leaves : bool</span>
+<span class="sd">            Whether the leaves has to be included in the analysis or not</span>
+
+<span class="sd">        Attributes</span>
+<span class="sd">        ----------</span>
+<span class="sd">        model : RTEnsemble</span>
+<span class="sd">            The model analyzed</span>
+<span class="sd">        height_trees : numpy array</span>
+<span class="sd">            The ordered height of each trees composing the ensemble</span>
+<span class="sd">        topology : scipy.sparse.csr_matrix</span>
+<span class="sd">            The matrix used to store low-level information related to the</span>
+<span class="sd">            aggregated shape of the trees. Each matrix cell identifies a</span>
+<span class="sd">            tree node with a pair of coordinates row-col, with row</span>
+<span class="sd">            highlighting the depth and col the column with respect</span>
+<span class="sd">            to a full binary tree.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">topology</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">height_trees</span> <span class="o">=</span> <span class="n">efficient_topological_analysis</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">include_leaves</span><span class="p">)</span>
+
+<div class="viewcode-block" id="TopologicalAnalysisResult.describe_tree_height"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.topological.TopologicalAnalysisResult.describe_tree_height">[docs]</a>    <span class="k">def</span> <span class="nf">describe_tree_height</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Computes several descriptive statistics of the height of the trees.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        nobs : int</span>
+<span class="sd">           Number of trees</span>
+<span class="sd">        minmax: tuple of ndarrays or floats</span>
+<span class="sd">           Minimum and maximum height of trees</span>
+<span class="sd">        mean : ndarray or float</span>
+<span class="sd">           Arithmetic mean of tree heights.</span>
+<span class="sd">        variance : ndarray or float</span>
+<span class="sd">           Unbiased variance of the tree heights.</span>
+<span class="sd">           denominator is number of trees minus one.</span>
+<span class="sd">        skewness : ndarray or float</span>
+<span class="sd">           Skewness, based on moment calculations with denominator equal to</span>
+<span class="sd">           the number of trees, i.e. no degrees of freedom correction.</span>
+<span class="sd">        kurtosis : ndarray or float</span>
+<span class="sd">           Kurtosis (Fisher).  The kurtosis is normalized so that it is</span>
+<span class="sd">           zero for the normal distribution.  No degrees of freedom are used.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">height_trees</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TopologicalAnalysisResult.avg_tree_shape"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.topological.TopologicalAnalysisResult.avg_tree_shape">[docs]</a>    <span class="k">def</span> <span class="nf">avg_tree_shape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Computes the fraction of trees having each node with respect to a</span>
+<span class="sd">        full binary tree. The fraction is obtained by normalizing the count</span>
+<span class="sd">        by the number of trees composing the ensemble model.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        fractions : scipy.sparse.csr_matrix</span>
+<span class="sd">            Sparse matrix with the same shape of the topology matrix, where</span>
+<span class="sd">            each matrix cell identifies a tree node by a pair of coordinates</span>
+<span class="sd">            row-col, with row highlighting the depth and col the column with</span>
+<span class="sd">            respect to a full binary tree. Each cell value highlights how many</span>
+<span class="sd">            trees have the specific node, normalized by the number of trees.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">topology</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">n_trees</span></div>
+
+<div class="viewcode-block" id="TopologicalAnalysisResult.fullness_per_level"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.topological.TopologicalAnalysisResult.fullness_per_level">[docs]</a>    <span class="k">def</span> <span class="nf">fullness_per_level</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Computes the normalized number of trees with full level i, for each</span>
+<span class="sd">        level of a full binary tree. The normalization is done by the number</span>
+<span class="sd">        of trees.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        fullness : np.array</span>
+<span class="sd">            An array long as the maximum height of a tree in the ensemble, and</span>
+<span class="sd">            where the j-th cell highlight how much the j-th level of the trees</span>
+<span class="sd">            is full (normalized by the number of trees).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Row-sums are directly supported, and the structure of the CSR format means that</span>
+        <span class="c1"># the difference between successive values in the indptr array correspond exactly</span>
+        <span class="c1"># to the number of nonzero elements in each row.</span>
+        <span class="n">sums</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">A1</span>
+        <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">indptr</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">sums</span> <span class="o">/</span> <span class="n">counts</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">n_trees</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

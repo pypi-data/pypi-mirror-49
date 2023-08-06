@@ -1,0 +1,728 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.analysis.effectiveness &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.analysis.effectiveness</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.analysis.effectiveness</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (c) 2017, All Contributors (see CONTRIBUTORS file)</span>
+<span class="c1"># Authors:  Salvatore Trani &lt;salvatore.trani@isti.cnr.it&gt;</span>
+<span class="c1">#           Franco Maria Nardini &lt;francomaria.nardini@isti.cnr.it&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c1"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c1"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This package implements several effectiveness analysis focused on assessing</span>
+<span class="sd">the performance of the models in terms of accuracy. These functionalities can</span>
+<span class="sd">be applied to several models at the same time, so to have a direct comparison</span>
+<span class="sd">of the analysis performed.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+
+<span class="kn">from</span> <span class="nn">..dataset</span> <span class="k">import</span> <span class="n">Dataset</span>
+<span class="kn">from</span> <span class="nn">..model</span> <span class="k">import</span> <span class="n">RTEnsemble</span>
+<span class="kn">from</span> <span class="nn">..metrics</span> <span class="k">import</span> <span class="n">Metric</span>
+
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">IntProgress</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span>
+
+
+<div class="viewcode-block" id="model_performance"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.effectiveness.model_performance">[docs]</a><span class="k">def</span> <span class="nf">model_performance</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">metrics</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method implements the model performance analysis (part of the</span>
+<span class="sd">    effectiveness analysis category).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    datasets : list of Dataset</span>
+<span class="sd">        The datasets to use for analyzing the behaviour of the model using</span>
+<span class="sd">        the given metrics and models</span>
+<span class="sd">    models : list of RTEnsemble</span>
+<span class="sd">        The models to analyze</span>
+<span class="sd">    metrics : list of Metric</span>
+<span class="sd">        The metrics to use for the analysis</span>
+<span class="sd">    cache : bool</span>
+<span class="sd">        Whether to cache or not the intermediate scoring results of each model</span>
+<span class="sd">        on each dataset. Caching enable instant access to the scores (after the</span>
+<span class="sd">        first scoring) but coudl make use also of a huge quantity of memory.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    metric_scores : xarray.DataArray</span>
+<span class="sd">        A DataArray containing the metric scores of the models using</span>
+<span class="sd">        the given metrics on the given datasets.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">models</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">)),</span>
+                    <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">idx_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">idx_model</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">models</span><span class="p">):</span>
+            <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">detailed</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="n">cache</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">idx_metric</span><span class="p">,</span> <span class="n">metric</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">metrics</span><span class="p">):</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">]</span> <span class="o">=</span> <span class="n">metric</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span>
+                                                                       <span class="n">y_pred</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">performance</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">data</span><span class="p">,</span>
+                               <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Model Performance&#39;</span><span class="p">,</span>
+                               <span class="n">coords</span><span class="o">=</span><span class="p">[</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">metrics</span><span class="p">],</span>
+                               <span class="n">dims</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">,</span> <span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="s1">&#39;metric&#39;</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">performance</span></div>
+
+
+<div class="viewcode-block" id="tree_wise_performance"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.effectiveness.tree_wise_performance">[docs]</a><span class="k">def</span> <span class="nf">tree_wise_performance</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">metrics</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method implements the analysis of the model on a tree-wise basis</span>
+<span class="sd">    (part of the effectiveness analysis category).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    datasets : list of Dataset</span>
+<span class="sd">        The datasets to use for analyzing the behaviour of the model using</span>
+<span class="sd">        the given metrics and models</span>
+<span class="sd">    models : list of RTEnsemble</span>
+<span class="sd">        The models to analyze</span>
+<span class="sd">    metrics : list of Metric</span>
+<span class="sd">        The metrics to use for the analysis</span>
+<span class="sd">    step : int</span>
+<span class="sd">        Step-size identifying evenly spaced number of trees for evaluating</span>
+<span class="sd">        the top=k model performance.</span>
+<span class="sd">        (e.g., step=100 means the method will evaluate the model performance</span>
+<span class="sd">        at 100, 200, 300, etc trees).</span>
+<span class="sd">    cache : bool</span>
+<span class="sd">        Whether to cache or not the intermediate scoring results of each model</span>
+<span class="sd">        on each dataset. Caching enable instant access to the scores (after the</span>
+<span class="sd">        first scoring) but coudl make use also of a huge quantity of memory.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    metric_scores : xarray.DataArray</span>
+<span class="sd">        A DataArray containing the metric scores of each model using the given</span>
+<span class="sd">        metrics on the given datasets.</span>
+<span class="sd">        The metric scores are cumulatively reported tree by tree, i.e., top 10</span>
+<span class="sd">        trees, top 20, etc., with a step-size between the number of trees</span>
+<span class="sd">        as highlighted by the step parameter.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">get_tree_steps</span><span class="p">(</span><span class="n">model_trees</span><span class="p">):</span>
+        <span class="n">trees</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">step</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">model_trees</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+        <span class="c1"># Add last tree to the steps</span>
+        <span class="k">if</span> <span class="n">trees</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="n">model_trees</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="n">trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">model_trees</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">trees</span><span class="p">)</span>
+
+    <span class="n">max_num_trees</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">model</span><span class="o">.</span><span class="n">n_trees</span> <span class="o">&gt;</span> <span class="n">max_num_trees</span><span class="p">:</span>
+            <span class="n">max_num_trees</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">n_trees</span>
+
+    <span class="n">tree_steps</span> <span class="o">=</span> <span class="n">get_tree_steps</span><span class="p">(</span><span class="n">max_num_trees</span><span class="p">)</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">models</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">tree_steps</span><span class="p">),</span>
+                          <span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">)),</span> <span class="n">fill_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+
+
+    <span class="n">progress_bar</span> <span class="o">=</span> <span class="n">IntProgress</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">)</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">)</span><span class="o">*</span>
+                               <span class="nb">sum</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="n">get_tree_steps</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">n_trees</span><span class="p">))</span> <span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span> <span class="p">]),</span> 
+                               <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Computing metrics&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">progress_bar</span><span class="p">)</span>    
+
+
+    <span class="k">for</span> <span class="n">idx_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">idx_model</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">models</span><span class="p">):</span>
+            <span class="n">y_pred</span><span class="p">,</span> <span class="n">partial_y_pred</span><span class="p">,</span> <span class="n">y_leaves</span> <span class="o">=</span> \
+                <span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">detailed</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="n">cache</span><span class="p">)</span>
+
+            <span class="c1"># the document scores are accumulated along for the various top-k</span>
+            <span class="c1"># (in order to avoid useless re-scoring)</span>
+            <span class="n">y_pred</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">n_instances</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">idx_top_k</span><span class="p">,</span> <span class="n">top_k</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">get_tree_steps</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">n_trees</span><span class="p">)):</span>
+
+                <span class="c1"># compute the document scores using only top-k trees of</span>
+                <span class="c1"># the model on the given dataset</span>
+                <span class="n">idx_tree_start</span> <span class="o">=</span> <span class="n">idx_top_k</span> <span class="o">*</span> <span class="n">step</span>
+                <span class="n">idx_tree_stop</span> <span class="o">=</span> <span class="n">top_k</span> <span class="o">+</span> <span class="mi">1</span>
+
+                <span class="n">y_pred</span> <span class="o">+=</span> <span class="n">partial_y_pred</span><span class="p">[:,</span> <span class="n">idx_tree_start</span><span class="p">:</span><span class="n">idx_tree_stop</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+                <span class="c1"># compute the metric score using the predicted document scores</span>
+                <span class="k">for</span> <span class="n">idx_metric</span><span class="p">,</span> <span class="n">metric</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">metrics</span><span class="p">):</span>
+                    <span class="n">progress_bar</span><span class="o">.</span><span class="n">value</span> <span class="o">+=</span> <span class="mi">1</span>
+
+                    <span class="n">metric_score</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">metric</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+                    <span class="n">data</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">][</span><span class="n">idx_top_k</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">]</span> <span class="o">=</span> <span class="n">metric_score</span>
+
+    <span class="n">progress_bar</span><span class="o">.</span><span class="n">bar_style</span> <span class="o">=</span> <span class="s2">&quot;success&quot;</span>
+    <span class="n">progress_bar</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="n">performance</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">data</span><span class="p">,</span>
+                               <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Tree-Wise Performance&#39;</span><span class="p">,</span>
+                               <span class="n">coords</span><span class="o">=</span><span class="p">[</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">tree_steps</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">metrics</span><span class="p">],</span>
+                               <span class="n">dims</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">,</span> <span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="s1">&#39;metric&#39;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">performance</span></div>
+
+
+<div class="viewcode-block" id="tree_wise_average_contribution"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.effectiveness.tree_wise_average_contribution">[docs]</a><span class="k">def</span> <span class="nf">tree_wise_average_contribution</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method provides the average contribution given by each tree of each</span>
+<span class="sd">    model to the scoring of the datasets.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    datasets : list of Dataset</span>
+<span class="sd">        The datasets to use for analyzing the behaviour of the model using</span>
+<span class="sd">        the given metrics and models</span>
+<span class="sd">    models : list of RTEnsemble</span>
+<span class="sd">        The models to analyze</span>
+<span class="sd">    cache : bool</span>
+<span class="sd">        Whether to cache or not the intermediate scoring results of each model</span>
+<span class="sd">        on each dataset. Caching enable instant access to the scores (after the</span>
+<span class="sd">        first scoring) but coudl make use also of a huge quantity of memory.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    average_contribution : xarray.DataArray</span>
+<span class="sd">        A DataArray containing the average contribution given by each tree of</span>
+<span class="sd">        each model to the scoring of the given datasets. The average</span>
+<span class="sd">        contribution are reported tree by tree.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">max_num_trees</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">model</span><span class="o">.</span><span class="n">n_trees</span> <span class="o">&gt;</span> <span class="n">max_num_trees</span><span class="p">:</span>
+            <span class="n">max_num_trees</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">n_trees</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">models</span><span class="p">),</span> <span class="n">max_num_trees</span><span class="p">),</span>
+                   <span class="n">fill_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">idx_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">idx_model</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">models</span><span class="p">):</span>
+            <span class="n">y_pred</span><span class="p">,</span> <span class="n">partial_y_pred</span><span class="p">,</span> <span class="n">y_leaves</span> <span class="o">=</span> \
+                <span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">detailed</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="n">cache</span><span class="p">)</span>
+
+            <span class="c1"># the document scores are accumulated along for the various top-k</span>
+            <span class="c1"># (in order to avoid useless re-scoring)</span>
+            <span class="n">y_contributes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">max_num_trees</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+            <span class="n">y_contributes</span><span class="p">[:</span><span class="n">model</span><span class="o">.</span><span class="n">n_trees</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">partial_y_pred</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+            <span class="n">data</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_contributes</span>
+
+    <span class="n">performance</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">data</span><span class="p">,</span>
+                               <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Tree-Wise Average Contribution&#39;</span><span class="p">,</span>
+                               <span class="n">coords</span><span class="o">=</span><span class="p">[</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">max_num_trees</span><span class="p">)],</span>
+                               <span class="n">dims</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">,</span> <span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="s1">&#39;trees&#39;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">performance</span></div>
+
+
+<div class="viewcode-block" id="query_wise_performance"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.effectiveness.query_wise_performance">[docs]</a><span class="k">def</span> <span class="nf">query_wise_performance</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">metrics</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                           <span class="n">start</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method implements the analysis of the model on a query-wise basis,</span>
+<span class="sd">    i.e., it compute the cumulative distribution of a given performance metric.</span>
+<span class="sd">    For example, the fraction of queries with a NDCG score smaller that any</span>
+<span class="sd">    given threshold, over the set of queries described in the dataset.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    datasets : list of Dataset</span>
+<span class="sd">        The datasets to use for analyzing the behaviour of the model using</span>
+<span class="sd">        the given metrics and models</span>
+<span class="sd">    models : list of RTEnsemble</span>
+<span class="sd">        The models to analyze</span>
+<span class="sd">    metrics : list of Metric</span>
+<span class="sd">        The metrics to use for the analysis</span>
+<span class="sd">    bins : int or None</span>
+<span class="sd">        Number of equi-spaced bins for which to computer the cumulative</span>
+<span class="sd">        distribution of the given metric. If bin is None, it will use</span>
+<span class="sd">        the maximum number of queries across all the datasets as bins value.</span>
+<span class="sd">    start : int or None</span>
+<span class="sd">        The start point of the range for which we will compute the cumulative</span>
+<span class="sd">        distribution of the given metric. If start is None, it will use</span>
+<span class="sd">        the minimum metric score as starting point for the range.</span>
+<span class="sd">    end : int or None</span>
+<span class="sd">        The end point of the range for which we will compute the cumulative</span>
+<span class="sd">        distribution of the given metric. If end is None, it will use</span>
+<span class="sd">        the maximum metric score as starting point for the range.</span>
+<span class="sd">    cache : bool</span>
+<span class="sd">        Whether to cache or not the intermediate scoring results of each model</span>
+<span class="sd">        on each dataset. Caching enable instant access to the scores (after the</span>
+<span class="sd">        first scoring) but coudl make use also of a huge quantity of memory.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    metric_scores : xarray.DataArray</span>
+<span class="sd">        A DataArray containing the metric scores of each model using the given</span>
+<span class="sd">        metrics on the given datasets. The metric scores are cumulatively</span>
+<span class="sd">        reported tree by tree, i.e., top 10 trees, top 20, etc., with a step-size</span>
+<span class="sd">        between the number of trees as highlighted by the step parameter.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">glob_metric_scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">models</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">)),</span>
+                                 <span class="n">fill_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
+
+    <span class="n">min_metric_score</span> <span class="o">=</span> <span class="n">max_metric_score</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+    <span class="k">for</span> <span class="n">idx_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">idx_model</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">models</span><span class="p">):</span>
+            <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">detailed</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="n">cache</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">idx_metric</span><span class="p">,</span> <span class="n">metric</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">metrics</span><span class="p">):</span>
+                <span class="n">_</span><span class="p">,</span> <span class="n">metric_scores</span> <span class="o">=</span> <span class="n">metric</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+                <span class="n">glob_metric_scores</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">]</span> <span class="o">=</span> <span class="n">metric_scores</span>
+                <span class="n">min_metric_score</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmin</span><span class="p">([</span><span class="n">min_metric_score</span><span class="p">,</span> <span class="n">metric_scores</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
+                <span class="n">max_metric_score</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmax</span><span class="p">([</span><span class="n">max_metric_score</span><span class="p">,</span> <span class="n">metric_scores</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+
+    <span class="k">if</span> <span class="n">start</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">start</span> <span class="o">=</span> <span class="n">min_metric_score</span>
+    <span class="k">if</span> <span class="n">end</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">end</span> <span class="o">=</span> <span class="n">max_metric_score</span>
+    <span class="k">if</span> <span class="n">bins</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">bins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">([</span><span class="n">dataset</span><span class="o">.</span><span class="n">n_queries</span> <span class="k">for</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="n">datasets</span><span class="p">])</span>
+
+    <span class="n">bin_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">end</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="n">bins</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">models</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">),</span> <span class="n">bins</span><span class="p">),</span>
+                   <span class="n">fill_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">idx_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">idx_model</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">models</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">idx_metric</span><span class="p">,</span> <span class="n">metric</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">metrics</span><span class="p">):</span>
+                <span class="n">metric_scores</span> <span class="o">=</span> <span class="n">glob_metric_scores</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">]</span>
+                <span class="c1"># evaluate the histogram</span>
+                <span class="n">values</span><span class="p">,</span> <span class="n">base</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">metric_scores</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="n">bin_values</span><span class="p">)</span>
+                <span class="c1"># evaluate the cumulative</span>
+                <span class="n">cumulative</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span> <span class="o">/</span> <span class="n">metric_scores</span><span class="o">.</span><span class="n">size</span>
+
+                <span class="n">data</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">]</span> <span class="o">=</span> <span class="n">cumulative</span>
+
+    <span class="n">performance</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">data</span><span class="p">,</span>
+                               <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Query-Wise Performance&#39;</span><span class="p">,</span>
+                               <span class="n">coords</span><span class="o">=</span><span class="p">[</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">metrics</span><span class="p">,</span>
+                                       <span class="n">bin_values</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">bins</span><span class="p">],</span>
+                               <span class="n">dims</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">,</span> <span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="s1">&#39;metric&#39;</span><span class="p">,</span> <span class="s1">&#39;bin&#39;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">performance</span></div>
+
+
+<div class="viewcode-block" id="query_class_performance"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.effectiveness.query_class_performance">[docs]</a><span class="k">def</span> <span class="nf">query_class_performance</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">metrics</span><span class="p">,</span> <span class="n">query_classes</span><span class="p">,</span>
+                            <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method implements the analysis of the effectiveness of a given model</span>
+<span class="sd">    by providing a breakdown of the performance over query class. Whenever</span>
+<span class="sd">    a query classification is provided, e.g., navigational, informational,</span>
+<span class="sd">    transactional, number of terms composing the query, etc., it provides</span>
+<span class="sd">    the model effectiveness over such classes. This analysis is important</span>
+<span class="sd">    especially in a production environment, as it allows to calibrate the</span>
+<span class="sd">    ranking infrastructure w.r.t. a specific context.</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    datasets : list of Dataset</span>
+<span class="sd">        The datasets to use for analyzing the behaviour of the model using</span>
+<span class="sd">        the given metrics and models</span>
+<span class="sd">    models : list of RTEnsemble</span>
+<span class="sd">        The models to analyze</span>
+<span class="sd">    metrics : list of Metric</span>
+<span class="sd">        The metrics to use for the analysis</span>
+<span class="sd">    query_classes : list of lists</span>
+<span class="sd">        A list containing lists of classes each one for a specific Dataset.</span>
+<span class="sd">        The i-th item in the j-th list identifies the class of the i-th query</span>
+<span class="sd">        of the j-th Dataset.</span>
+<span class="sd">    cache : bool</span>
+<span class="sd">        Whether to cache or not the intermediate scoring results of each model</span>
+<span class="sd">        on each dataset. Caching enable instant access to the scores (after the</span>
+<span class="sd">        first scoring) but coudl make use also of a huge quantity of memory.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    query_class_performance : xarray.DataArray</span>
+<span class="sd">        A DataArray containing the per-class metric scores of each model using</span>
+<span class="sd">        the given metrics on the given datasets.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">glob_metric_scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">models</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">)),</span>
+                                 <span class="n">fill_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">idx_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">idx_model</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">models</span><span class="p">):</span>
+            <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">detailed</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="n">cache</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">idx_metric</span><span class="p">,</span> <span class="n">metric</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">metrics</span><span class="p">):</span>
+                <span class="n">_</span><span class="p">,</span> <span class="n">metric_scores</span> <span class="o">=</span> <span class="n">metric</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+                <span class="n">glob_metric_scores</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">]</span> <span class="o">=</span> <span class="n">metric_scores</span>
+
+    <span class="c1"># computing unique elements for each list of query class</span>
+    <span class="n">unique_query_classes</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">query_class</span><span class="p">)</span> <span class="k">for</span> <span class="n">query_class</span> <span class="ow">in</span> <span class="n">query_classes</span><span class="p">]</span>
+    <span class="n">unique_classes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">([</span><span class="n">c</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">unique_query_classes</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">d</span><span class="p">])</span>
+
+    <span class="c1"># defining destination array now saving values of the specific metric directly</span>
+    <span class="n">query_class_metric_scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">models</span><span class="p">),</span>
+                                               <span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">unique_classes</span><span class="p">)),</span>
+                                        <span class="n">fill_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+
+    <span class="c1"># computing the average metric over the specific categorization</span>
+    <span class="k">for</span> <span class="n">idx_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">idx_model</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">models</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">idx_metric</span><span class="p">,</span> <span class="n">metric</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">metrics</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">idx_query_class</span><span class="p">,</span> <span class="n">query_class</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">unique_classes</span><span class="p">):</span>
+                    <span class="n">indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">query_classes</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">]</span> <span class="o">==</span> <span class="n">query_class</span><span class="p">)</span>
+                    <span class="c1"># If this query class is not present in this dataset, skip it</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">indices</span><span class="p">):</span>
+                        <span class="k">continue</span>
+
+                    <span class="n">query_class_metric_scores</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">][</span><span class="n">idx_query_class</span><span class="p">]</span> <span class="o">=</span> \
+                        <span class="n">glob_metric_scores</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">][</span><span class="n">indices</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+    <span class="n">performance</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">query_class_metric_scores</span><span class="p">,</span>
+                               <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Query Class Performance&#39;</span><span class="p">,</span>
+                               <span class="n">coords</span><span class="o">=</span><span class="p">[</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">metrics</span><span class="p">,</span> <span class="n">unique_classes</span><span class="p">],</span>
+                               <span class="n">dims</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">,</span> <span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="s1">&#39;metric&#39;</span><span class="p">,</span> <span class="s1">&#39;classes&#39;</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">performance</span></div>
+
+
+<div class="viewcode-block" id="document_graded_relevance"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.effectiveness.document_graded_relevance">[docs]</a><span class="k">def</span> <span class="nf">document_graded_relevance</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                              <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method implements the analysis of the model on a per-label basis,</span>
+<span class="sd">    i.e., it allows the evaluation of the cumulative predicted score</span>
+<span class="sd">    distribution. For example, for each relevance label available in each</span>
+<span class="sd">    dataset, it provides the fraction of documents with a predicted score</span>
+<span class="sd">    smaller than a given score (the latter are binned among start and end).</span>
+<span class="sd">    By plotting this fractions it is possible to obtains a curve for each</span>
+<span class="sd">    relevance label. The bigger the distance amongst curves the larger the</span>
+<span class="sd">    model&#39;s discriminative power.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    datasets : list of Dataset</span>
+<span class="sd">        The datasets to use for analyzing the behaviour of the model using</span>
+<span class="sd">        the given models</span>
+<span class="sd">    models : list of RTEnsemble</span>
+<span class="sd">        The models to analyze</span>
+<span class="sd">    bins : int or None</span>
+<span class="sd">        Number of equi-spaced bins for which to computer the cumulative</span>
+<span class="sd">        distribution of the predicted scores. If bin is None, it will use</span>
+<span class="sd">        the maximum number of queries across all the datasets as bins value.</span>
+<span class="sd">    start : int or None</span>
+<span class="sd">        The start point of the range for which we will compute the cumulative</span>
+<span class="sd">        distribution of the predicted scores. If start is None, it will use</span>
+<span class="sd">        the minimum metric score as starting point for the range.</span>
+<span class="sd">    end : int or None</span>
+<span class="sd">        The end point of the range for which we will compute the cumulative</span>
+<span class="sd">        distribution of the predicted scores. If end is None, it will use</span>
+<span class="sd">        the maximum metric score as starting point for the range.</span>
+<span class="sd">    cache : bool</span>
+<span class="sd">        Whether to cache or not the intermediate scoring results of each model</span>
+<span class="sd">        on each dataset. Caching enable instant access to the scores (after the</span>
+<span class="sd">        first scoring) but coudl make use also of a huge quantity of memory.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    graded_relevance : xarray.DataArray</span>
+<span class="sd">        A DataArray containing the fraction of documents with a predicted score</span>
+<span class="sd">        smaller than a given score, for each model and each dataset.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">glob_doc_scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">models</span><span class="p">)),</span>
+                              <span class="n">fill_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
+
+    <span class="n">min_doc_score</span> <span class="o">=</span> <span class="n">max_doc_score</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+    <span class="k">for</span> <span class="n">idx_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">idx_model</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">models</span><span class="p">):</span>
+            <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">detailed</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="n">cache</span><span class="p">)</span>
+            <span class="n">glob_doc_scores</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_pred</span>
+            <span class="n">min_doc_score</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmin</span><span class="p">([</span><span class="n">min_doc_score</span><span class="p">,</span> <span class="n">y_pred</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
+            <span class="n">max_doc_score</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmax</span><span class="p">([</span><span class="n">max_doc_score</span><span class="p">,</span> <span class="n">y_pred</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+
+    <span class="k">if</span> <span class="n">start</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">start</span> <span class="o">=</span> <span class="n">min_doc_score</span>
+    <span class="k">if</span> <span class="n">end</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">end</span> <span class="o">=</span> <span class="n">max_doc_score</span>
+
+    <span class="n">bin_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">end</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="n">bins</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">rel_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">([</span><span class="n">dataset</span><span class="o">.</span><span class="n">y</span> <span class="k">for</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="n">datasets</span><span class="p">]))</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">models</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">rel_labels</span><span class="p">),</span> <span class="n">bins</span><span class="p">),</span>
+                   <span class="n">fill_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">idx_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">idx_model</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">models</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">idx_label</span><span class="p">,</span> <span class="n">graded_rel</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">rel_labels</span><span class="p">):</span>
+                <span class="n">indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">y</span> <span class="o">==</span> <span class="n">graded_rel</span><span class="p">)</span>
+                <span class="c1"># If this graded relevance is not present in this dataset, skip it</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">indices</span><span class="p">):</span>
+                    <span class="k">continue</span>
+                <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">detailed</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="n">cache</span><span class="p">)</span>
+                <span class="n">y_pred_curr</span> <span class="o">=</span> <span class="n">y_pred</span><span class="p">[</span><span class="n">indices</span><span class="p">]</span>
+                <span class="c1"># evaluate the histogram</span>
+                <span class="n">values</span><span class="p">,</span> <span class="n">base</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">y_pred_curr</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="n">bin_values</span><span class="p">)</span>
+                <span class="c1"># evaluate the cumulative</span>
+                <span class="n">cumulative</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_pred_curr</span><span class="p">)</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">][</span><span class="n">idx_label</span><span class="p">]</span> <span class="o">=</span> <span class="n">cumulative</span>
+
+    <span class="n">performance</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">data</span><span class="p">,</span>
+                               <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Document Graded Relevance&#39;</span><span class="p">,</span>
+                               <span class="n">coords</span><span class="o">=</span><span class="p">[</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">rel_labels</span><span class="p">,</span>
+                                       <span class="n">bin_values</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">bins</span><span class="p">],</span>
+                               <span class="n">dims</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">,</span> <span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="s1">&#39;bin&#39;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">performance</span></div>
+
+
+<div class="viewcode-block" id="rank_confusion_matrix"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.effectiveness.rank_confusion_matrix">[docs]</a><span class="k">def</span> <span class="nf">rank_confusion_matrix</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">skip_same_label</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    RankEval allows for a novel rank-oriented confusion matrix by reporting for</span>
+<span class="sd">    any given relevance label  l_i, the number of document with a predicted</span>
+<span class="sd">    score smaller than documents with label l_j. When  l_i &gt; l_j this</span>
+<span class="sd">    corresponds to the number of mis-ranked document pairs. This can be</span>
+<span class="sd">    considered as a breakdown over the relevance labels of the ranking</span>
+<span class="sd">    effectiveness of the model.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    datasets : list of Dataset</span>
+<span class="sd">        The datasets to use for analyzing the behaviour of the model using</span>
+<span class="sd">        the given models</span>
+<span class="sd">    models : list of RTEnsemble</span>
+<span class="sd">        The models to analyze</span>
+<span class="sd">    skip_same_label : bool</span>
+<span class="sd">        True if the method has to skip the pair with the same labels,</span>
+<span class="sd">        False otherwise</span>
+<span class="sd">    cache : bool</span>
+<span class="sd">        Whether to cache or not the intermediate scoring results of each model</span>
+<span class="sd">        on each dataset. Caching enable instant access to the scores (after the</span>
+<span class="sd">        first scoring) but coudl make use also of a huge quantity of memory.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    ranked_matrix: xarray.DataArray</span>
+<span class="sd">        A DataArray reporting for any given relevance label  l_i, the number of</span>
+<span class="sd">        documents with a predicted score smaller than documents with label l_j</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">rel_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">([</span><span class="n">dataset</span><span class="o">.</span><span class="n">y</span> <span class="k">for</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="n">datasets</span><span class="p">]))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">models</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">rel_labels</span><span class="p">),</span>
+                           <span class="nb">len</span><span class="p">(</span><span class="n">rel_labels</span><span class="p">)),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">idx_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">idx_model</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">models</span><span class="p">):</span>
+            <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">detailed</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="n">cache</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">query_id</span><span class="p">,</span> <span class="n">start_offset</span><span class="p">,</span> <span class="n">end_offset</span> <span class="ow">in</span> <span class="n">dataset</span><span class="o">.</span><span class="n">query_iterator</span><span class="p">():</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">start_offset</span><span class="p">,</span> <span class="n">end_offset</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end_offset</span><span class="p">):</span>
+                        <span class="c1"># check if the two documents have the same label and skip them</span>
+                        <span class="k">if</span> <span class="n">skip_same_label</span> <span class="ow">and</span> <span class="n">dataset</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">dataset</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                            <span class="k">continue</span>
+                        <span class="n">y_i</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+                        <span class="n">y_j</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+                        <span class="k">if</span> <span class="n">y_pred</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">y_pred</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                            <span class="n">data</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">][</span><span class="n">y_i</span><span class="p">,</span> <span class="n">y_j</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">data</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_model</span><span class="p">][</span><span class="n">y_j</span><span class="p">,</span> <span class="n">y_i</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="n">performance</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">data</span><span class="p">,</span>
+                               <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Rank Confusion Matrix&#39;</span><span class="p">,</span>
+                               <span class="n">coords</span><span class="o">=</span><span class="p">[</span><span class="n">datasets</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">rel_labels</span><span class="p">,</span> <span class="n">rel_labels</span><span class="p">],</span>
+                               <span class="n">dims</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">,</span> <span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="s1">&#39;label_i&#39;</span><span class="p">,</span> <span class="s1">&#39;label_j&#39;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">performance</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

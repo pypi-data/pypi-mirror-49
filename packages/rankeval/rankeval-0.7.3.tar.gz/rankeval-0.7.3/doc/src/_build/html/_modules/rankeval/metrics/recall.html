@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.metrics.recall &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.metrics.recall</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.metrics.recall</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (c) 2017, All Contributors (see CONTRIBUTORS file)</span>
+<span class="c1"># Authors: Cristina Muntean &lt;cristina.muntean@isti.cnr.it&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c1"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c1"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">rankeval.metrics.metric</span> <span class="k">import</span> <span class="n">Metric</span>
+
+
+<div class="viewcode-block" id="Recall"><a class="viewcode-back" href="../../../rankeval.metrics.html#rankeval.metrics.Recall">[docs]</a><span class="k">class</span> <span class="nc">Recall</span><span class="p">(</span><span class="n">Metric</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This class implements Recall as:</span>
+<span class="sd">    (relevant docs &amp; retrieved docs) / relevant docs.</span>
+
+<span class="sd">    It allows setting custom values for cutoff and threshold, otherwise it uses</span>
+<span class="sd">    the default values.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">_threshold</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;R&#39;</span><span class="p">,</span> <span class="n">no_relevant_results</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+                 <span class="n">cutoff</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="n">_threshold</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This is the constructor of Recall, an object of type Metric, with</span>
+<span class="sd">        the name R. The constructor also allows setting custom values</span>
+<span class="sd">        for cutoff and threshold, otherwise it uses the default values.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        name: string</span>
+<span class="sd">            R</span>
+<span class="sd">        no_relevant_results: float</span>
+<span class="sd">            Float indicating how to treat the cases where then are no relevant</span>
+<span class="sd">            results (e.g. 0.0).</span>
+<span class="sd">        cutoff: int</span>
+<span class="sd">            The top k results to be considered at per query level (e.g. 10)</span>
+<span class="sd">        threshold: float</span>
+<span class="sd">            This parameter considers relevant results all instances with labels</span>
+<span class="sd">            different from 0, thus with a minimum label value of 1. It can be</span>
+<span class="sd">            set to other values as well (e.g. 3), in the range of possible</span>
+<span class="sd">            labels.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">Recall</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">no_relevant_results</span> <span class="o">=</span> <span class="n">no_relevant_results</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cutoff</span> <span class="o">=</span> <span class="n">cutoff</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">threshold</span> <span class="o">=</span> <span class="n">threshold</span>
+
+<div class="viewcode-block" id="Recall.eval"><a class="viewcode-back" href="../../../rankeval.metrics.html#rankeval.metrics.Recall.eval">[docs]</a>    <span class="k">def</span> <span class="nf">eval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This method computes the Recall score over the entire dataset and the</span>
+<span class="sd">        detailed scores per query. It calls the eval_per query method for each</span>
+<span class="sd">        query in order to get the detailed Recall score.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        dataset : Dataset</span>
+<span class="sd">            Represents the Dataset object on which to apply Recall.</span>
+<span class="sd">        y_pred : numpy 1d array of float</span>
+<span class="sd">            Represents the predicted document scores for each instance in the</span>
+<span class="sd">            dataset.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        avg_score: float</span>
+<span class="sd">            The overall Recall score (averages over the detailed precision</span>
+<span class="sd">            scores).</span>
+<span class="sd">        detailed_scores: numpy 1d array of floats</span>
+<span class="sd">            The detailed Recall scores for each query, an array of length of</span>
+<span class="sd">            the number of queries.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">Recall</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="Recall.eval_per_query"><a class="viewcode-back" href="../../../rankeval.metrics.html#rankeval.metrics.Recall.eval_per_query">[docs]</a>    <span class="k">def</span> <span class="nf">eval_per_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This methods computes Recall at per query level (on the instances</span>
+<span class="sd">        belonging to a specific query). The Recall per query is calculated as</span>
+<span class="sd">        &lt;(relevant docs &amp; retrieved docs) / relevant docs&gt;.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        y: numpy array</span>
+<span class="sd">            Represents the labels of instances corresponding to one query in</span>
+<span class="sd">            the dataset (ground truth).</span>
+<span class="sd">        y_pred: numpy array.</span>
+<span class="sd">            Represents the predicted document scores obtained during the model</span>
+<span class="sd">            scoring phase for that query.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        recall: float</span>
+<span class="sd">            The Recall score per query.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">idx_y_pred_sorted</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">y_pred</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">cutoff</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">idx_y_pred_sorted</span> <span class="o">=</span> <span class="n">idx_y_pred_sorted</span><span class="p">[:</span><span class="bp">self</span><span class="o">.</span><span class="n">cutoff</span><span class="p">]</span>
+
+        <span class="n">n_relevant_retrieved</span> <span class="o">=</span> <span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">idx_y_pred_sorted</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">threshold</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+        <span class="n">n_relevant</span> <span class="o">=</span> <span class="p">(</span><span class="n">y</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">threshold</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">n_relevant</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">n_relevant_retrieved</span><span class="p">)</span> <span class="o">/</span> <span class="n">n_relevant</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">no_relevant_results</span></div>
+
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">cutoff</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;@</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cutoff</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">threshold</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_threshold</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;[&gt;</span><span class="si">{}</span><span class="s2">]&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">threshold</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">s</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

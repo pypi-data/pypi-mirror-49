@@ -1,0 +1,671 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.visualization.topological &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.visualization.topological</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.visualization.topological</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This package provides support for topological analysis visualizations. </span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">graphviz</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
+<span class="kn">import</span> <span class="nn">six</span>
+
+<span class="kn">from</span> <span class="nn">numbers</span> <span class="k">import</span> <span class="n">Integral</span>
+
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib.colors</span> <span class="k">import</span> <span class="n">LinearSegmentedColormap</span>
+<span class="kn">from</span> <span class="nn">matplotlib.transforms</span> <span class="k">import</span> <span class="n">Affine2D</span>
+<span class="kn">from</span> <span class="nn">matplotlib.projections</span> <span class="k">import</span> <span class="n">PolarAxes</span>
+
+<span class="kn">from</span> <span class="nn">mpl_toolkits.axisartist</span> <span class="k">import</span> <span class="n">floating_axes</span> <span class="k">as</span> <span class="n">floating_axes</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.axisartist.grid_finder</span> <span class="k">import</span> <span class="p">(</span><span class="n">FixedLocator</span><span class="p">,</span> <span class="n">DictFormatter</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">rankeval.analysis.topological</span> <span class="k">import</span> <span class="n">TopologicalAnalysisResult</span>
+<span class="kn">from</span> <span class="nn">rankeval.model</span> <span class="k">import</span> <span class="n">RTEnsemble</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">xrange</span>
+<span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+    <span class="c1"># Python3&#39;s range is Python2&#39;s xrange</span>
+    <span class="n">xrange</span> <span class="o">=</span> <span class="nb">range</span>
+
+
+<div class="viewcode-block" id="plot_shape"><a class="viewcode-back" href="../../../rankeval.visualization.html#rankeval.visualization.topological.plot_shape">[docs]</a><span class="k">def</span> <span class="nf">plot_shape</span><span class="p">(</span><span class="n">topological</span><span class="p">,</span> <span class="n">max_level</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Shows the average tree shape as a bullseye plot.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    topological : TopologicalAnalysisResult</span>
+<span class="sd">        Topological stats of the model to be visualized.</span>
+<span class="sd">    max_level : int</span>
+<span class="sd">        Maximul tree-depth of the visualization. Maximum allowed value is 16.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    : matplotlib.figure.Figure</span>
+<span class="sd">        The matpotlib Figure</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">ts</span> <span class="o">=</span> <span class="n">topological</span><span class="o">.</span><span class="n">avg_tree_shape</span><span class="p">()</span>
+    <span class="n">max_levels</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">max_levels</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">max_levels</span><span class="p">,</span> <span class="n">max_level</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1"># precision of the plot (should be at least 2**max_levels)</span>
+    <span class="n">max_nodes</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">2</span><span class="o">**</span><span class="n">max_levels</span><span class="p">)</span>
+
+    <span class="c1"># custom color map</span>
+    <span class="n">cm</span> <span class="o">=</span> <span class="n">LinearSegmentedColormap</span><span class="o">.</span><span class="n">from_list</span><span class="p">(</span><span class="s1">&#39;w2r&#39;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mf">23.</span><span class="o">/</span><span class="mf">255.</span><span class="p">,</span><span class="mf">118.</span><span class="o">/</span><span class="mf">255.</span><span class="p">,</span><span class="mf">182.</span><span class="o">/</span><span class="mf">255.</span><span class="p">)],</span> <span class="n">N</span><span class="o">=</span><span class="mi">256</span><span class="p">)</span>
+
+    <span class="c1"># figure</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+    <span class="n">tr</span> <span class="o">=</span> <span class="n">Affine2D</span><span class="p">()</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">PolarAxes</span><span class="o">.</span><span class="n">PolarTransform</span><span class="p">()</span>
+    <span class="n">x_ticks</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">+</span><span class="mf">2.</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_levels</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+    <span class="n">grid_locator2</span> <span class="o">=</span> <span class="n">FixedLocator</span><span class="p">(</span> <span class="n">x_ticks</span> <span class="p">)</span>
+    <span class="n">tick_formatter2</span> <span class="o">=</span> <span class="n">DictFormatter</span><span class="p">({</span><span class="n">k</span><span class="p">:</span><span class="s2">&quot; &quot;</span> <span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">x_ticks</span><span class="p">})</span>
+    <span class="n">grid_helper</span> <span class="o">=</span> <span class="n">floating_axes</span><span class="o">.</span><span class="n">GridHelperCurveLinear</span><span class="p">(</span><span class="n">tr</span><span class="p">,</span> <span class="n">extremes</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">max_levels</span><span class="p">),</span>
+                                                      <span class="n">grid_locator2</span><span class="o">=</span><span class="n">grid_locator2</span><span class="p">,</span>
+                                                      <span class="n">tick_formatter2</span> <span class="o">=</span> <span class="n">tick_formatter2</span><span class="p">)</span>
+
+    <span class="n">ax3</span> <span class="o">=</span> <span class="n">floating_axes</span><span class="o">.</span><span class="n">FloatingSubplot</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="n">grid_helper</span><span class="o">=</span><span class="n">grid_helper</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">(</span><span class="n">ax3</span><span class="p">)</span>
+
+    <span class="c1"># fix axes</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">axis</span><span class="p">[</span><span class="s2">&quot;bottom&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">axis</span><span class="p">[</span><span class="s2">&quot;top&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">axis</span><span class="p">[</span><span class="s2">&quot;right&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_direction</span><span class="p">(</span><span class="s2">&quot;top&quot;</span><span class="p">)</span>
+    
+    <span class="n">ax3</span><span class="o">.</span><span class="n">axis</span><span class="p">[</span><span class="s2">&quot;left&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_axis_direction</span><span class="p">(</span><span class="s2">&quot;bottom&quot;</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">axis</span><span class="p">[</span><span class="s2">&quot;left&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">major_ticklabels</span><span class="o">.</span><span class="n">set_pad</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">axis</span><span class="p">[</span><span class="s2">&quot;left&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">major_ticklabels</span><span class="o">.</span><span class="n">set_rotation</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
+<span class="c1">#    ax3.axis[&quot;left&quot;].label.set_text(&quot;tree level&quot;)</span>
+<span class="c1">#    ax3.axis[&quot;left&quot;].label.set_ha(&quot;right&quot;)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">axis</span><span class="p">[</span><span class="s2">&quot;left&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">set_rotation</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">axis</span><span class="p">[</span><span class="s2">&quot;left&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">set_pad</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">axis</span><span class="p">[</span><span class="s2">&quot;left&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">major_ticklabels</span><span class="o">.</span><span class="n">set_ha</span><span class="p">(</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">ax3</span><span class="o">.</span><span class="n">get_aux_axes</span><span class="p">(</span><span class="n">tr</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">patch</span> <span class="o">=</span> <span class="n">ax3</span><span class="o">.</span><span class="n">patch</span> <span class="c1"># for aux_ax to have a clip path as in ax</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">zorder</span><span class="o">=.</span><span class="mi">9</span> <span class="c1"># but this has a side effect that the patch is</span>
+                        <span class="c1"># drawn twice, and possibly over some other</span>
+                        <span class="c1"># artists. So, we decrease the zorder a bit to</span>
+                        <span class="c1"># prevent this.            </span>
+    <span class="c1"># data to be plotted</span>
+    <span class="n">theta</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mgrid</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">:(</span><span class="n">max_nodes</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="n">max_levels</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">theta</span><span class="o">.</span><span class="n">size</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">theta</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">level</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="n">max_levels</span><span class="p">):</span>
+        <span class="n">num_nodes</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="n">level</span>
+        <span class="n">num_same_color</span> <span class="o">=</span> <span class="n">max_nodes</span><span class="o">/</span><span class="n">num_nodes</span>
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="n">num_nodes</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">node</span><span class="o">&lt;</span><span class="n">ts</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="n">z</span><span class="p">[</span> <span class="n">num_same_color</span><span class="o">*</span><span class="n">node</span><span class="p">:</span><span class="n">num_same_color</span><span class="o">*</span><span class="p">(</span><span class="n">node</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">level</span> <span class="p">]</span> <span class="o">=</span> <span class="n">ts</span><span class="p">[</span><span class="n">level</span><span class="p">,</span> <span class="n">node</span><span class="p">]</span>
+
+    <span class="c1"># draw the tree nodes frequencies</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cm</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mf">0.</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">1.</span><span class="p">)</span>
+
+    <span class="c1"># color bar</span>
+    <span class="n">cax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="o">.</span><span class="mi">95</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">])</span> <span class="c1"># axes for the colot bar</span>
+    <span class="n">cbar</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">cax</span><span class="o">=</span><span class="n">cax</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">))</span>
+    <span class="n">cbar</span><span class="o">.</span><span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span> 
+    <span class="n">cax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Frequency&#39;</span><span class="p">,</span> <span class="n">verticalalignment</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="c1"># separate depths</span>
+    <span class="k">for</span> <span class="n">level</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">max_levels</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="n">num</span><span class="o">=</span><span class="mi">128</span><span class="p">),</span> <span class="p">[</span><span class="mi">1</span><span class="o">*</span><span class="n">level</span><span class="p">]</span><span class="o">*</span><span class="mi">128</span><span class="p">,</span> <span class="s1">&#39;k:&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+    <span class="c1"># separate left sub-tree from right sub-tree</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;k-&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;k-&#39;</span><span class="p">)</span>
+
+    <span class="c1"># label tree depths</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="mi">3</span><span class="p">,</span><span class="o">.</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;ROOT&quot;</span><span class="p">,</span> <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-.</span><span class="mi">08</span><span class="p">,</span><span class="n">max_levels</span><span class="p">,</span> <span class="s2">&quot;Tree level&quot;</span><span class="p">,</span> <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    
+    <span class="c1"># left/right subtree</span>
+<span class="c1">#    ax.text(np.pi/4.,max_levels*1.15, &quot;Left subtree&quot;, fontsize=12,</span>
+<span class="c1">#            horizontalalignment=&quot;center&quot;, verticalalignment=&quot;center&quot;)</span>
+<span class="c1">#    ax.text(np.pi/4.*3,max_levels*1.15, &quot;Right subtree&quot;, fontsize=12, </span>
+<span class="c1">#            horizontalalignment=&quot;center&quot;, verticalalignment=&quot;center&quot;)</span>
+
+    <span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Average Tree Shape: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">topological</span><span class="o">.</span><span class="n">model</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.2</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">fig</span></div>
+
+
+<div class="viewcode-block" id="export_graphviz"><a class="viewcode-back" href="../../../rankeval.visualization.html#rankeval.visualization.topological.export_graphviz">[docs]</a><span class="k">def</span> <span class="nf">export_graphviz</span><span class="p">(</span><span class="n">ensemble</span><span class="p">,</span> <span class="n">tree_id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                    <span class="n">output_leaves</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">,</span> <span class="n">label_show</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                    <span class="n">feature_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">highlight_leaves</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                    <span class="n">leaves_parallel</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">node_ids</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">rounded</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                    <span class="n">proportion</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">special_characters</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Export a single decision tree in DOT format.</span>
+<span class="sd">    This function generates a GraphViz representation of the decision tree,</span>
+<span class="sd">    which is then written into `out_file`. Once exported, graphical renderings</span>
+<span class="sd">    can be generated using, for example::</span>
+<span class="sd">        $ dot -Tps tree.dot -o tree.ps      (PostScript format)</span>
+<span class="sd">        $ dot -Tpng tree.dot -o tree.png    (PNG format)</span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    ensemble : RTEnsemble of regression trees</span>
+<span class="sd">        The ensemble of regression trees to be exported to GraphViz.</span>
+<span class="sd">    tree_id : int (default 0)</span>
+<span class="sd">        The tree identifier in the ensemble to export (starts from 0)</span>
+<span class="sd">    out_file : file object or string, optional (default=None)</span>
+<span class="sd">        Handle or name of the output file. If ``None``, the result is</span>
+<span class="sd">        returned as a string.</span>
+<span class="sd">    max_depth : int, optional (default=None)</span>
+<span class="sd">        The maximum depth of the representation. If None, the tree is fully</span>
+<span class="sd">        generated.</span>
+<span class="sd">    output_leaves : numpy 2d array (default=None</span>
+<span class="sd">        Output leaves computed while scoring this model on a given dataset using</span>
+<span class="sd">        the score method of the RTEnsemble model (the third return variable,</span>
+<span class="sd">        y_leaves, reports the output leaf of each dataset sample for each tree).</span>
+<span class="sd">    label : {&#39;all&#39;, &#39;leaves&#39;}, optional (default=&#39;all&#39;)</span>
+<span class="sd">        Whether to compute the counts of dataset samples that during the scoring</span>
+<span class="sd">        touched a specific node (i.e., how many times each node have been</span>
+<span class="sd">        involved in the scoring activity, on a specific dataset).</span>
+<span class="sd">        Options include &#39;all&#39; to compute counts at every node or &#39;leaves&#39; to</span>
+<span class="sd">        compute it only on the leaf nodes.</span>
+<span class="sd">    label_show : bool, optional (default=False)</span>
+<span class="sd">        When set to ``True``, print counts information in each node.</span>
+<span class="sd">    feature_names : list of strings, optional (default=None)</span>
+<span class="sd">        Names of each of the features.</span>
+<span class="sd">    highlight_leaves : bool, optional (default=False)</span>
+<span class="sd">        When set to ``True``, paint leaves to indicate extremity of values for</span>
+<span class="sd">        regression.</span>
+<span class="sd">    leaves_parallel : bool, optional (default=False)</span>
+<span class="sd">        When set to ``True``, draw all leaf nodes at the bottom of the tree.</span>
+<span class="sd">    node_ids : bool, optional (default=False)</span>
+<span class="sd">        When set to ``True``, show the ID number on each node.</span>
+<span class="sd">    rounded : bool, optional (default=False)</span>
+<span class="sd">        When set to ``True``, draw node boxes with rounded corners and use</span>
+<span class="sd">        Helvetica fonts instead of Times-Roman.</span>
+<span class="sd">    proportion : bool, optional (default=False)</span>
+<span class="sd">        When set to ``True``, change the display of &#39;counts&#39;</span>
+<span class="sd">        adding the percentages.</span>
+<span class="sd">    special_characters : bool, optional (default=False)</span>
+<span class="sd">        When set to ``False``, ignore special characters for PostScript</span>
+<span class="sd">        compatibility.</span>
+<span class="sd">    precision : int, optional (default=3)</span>
+<span class="sd">        Number of digits of precision for floating point in the values of</span>
+<span class="sd">        impurity, threshold and value attributes of each node.</span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    dot_data : string</span>
+<span class="sd">        String representation of the input tree in GraphViz dot format.</span>
+<span class="sd">        Only returned if ``out_file`` is None.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">get_color</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">colormap</span><span class="p">):</span>
+        <span class="n">hex_codes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;</span><span class="si">%x</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">16</span><span class="p">)]</span>
+        <span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="n">colormap</span><span class="p">)</span>
+
+        <span class="n">ratio</span> <span class="o">=</span> <span class="p">(</span><span class="n">value</span> <span class="o">-</span> <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;bounds&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> \
+                <span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="s1">&#39;bounds&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;bounds&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">color</span> <span class="o">=</span> <span class="n">cmap</span><span class="p">(</span><span class="n">ratio</span><span class="p">)</span>
+        <span class="n">color</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">c</span><span class="o">*</span><span class="mi">255</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">color</span><span class="p">]</span>
+        <span class="c1"># we increase the alpha in order to make the color brighter</span>
+        <span class="n">color</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">color</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mf">0.75</span><span class="p">))</span>
+        <span class="n">color</span> <span class="o">=</span> <span class="p">[</span><span class="n">hex_codes</span><span class="p">[</span><span class="n">c</span> <span class="o">//</span> <span class="mi">16</span><span class="p">]</span> <span class="o">+</span> <span class="n">hex_codes</span><span class="p">[</span><span class="n">c</span> <span class="o">%</span> <span class="mi">16</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">color</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="s1">&#39;#&#39;</span> <span class="o">+</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">node_to_str</span><span class="p">(</span><span class="n">ensemble</span><span class="p">,</span> <span class="n">tree_id</span><span class="p">,</span> <span class="n">node_id</span><span class="p">):</span>
+        <span class="c1"># Generate the node content string</span>
+
+        <span class="c1"># PostScript compatibility for special characters</span>
+        <span class="k">if</span> <span class="n">special_characters</span><span class="p">:</span>
+            <span class="n">characters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&amp;#35;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;FONT POINT-SIZE=&quot;10&quot;&gt;&lt;SUB&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;/SUB&gt;&lt;/FONT&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;le;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;br/&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;#37;&#39;</span><span class="p">]</span>
+            <span class="n">node_string</span> <span class="o">=</span> <span class="s1">&#39;&lt;&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">characters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="s1">&#39;[&#39;</span><span class="p">,</span> <span class="s1">&#39;]&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;=&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">n&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s1">&#39;%&#39;</span><span class="p">]</span>
+            <span class="n">node_string</span> <span class="o">=</span> <span class="s1">&#39;&quot;&#39;</span>
+
+        <span class="c1"># Write node ID</span>
+        <span class="k">if</span> <span class="n">node_ids</span><span class="p">:</span>
+            <span class="n">node_string</span> <span class="o">+=</span> <span class="s1">&#39;node &#39;</span>
+            <span class="n">node_string</span> <span class="o">+=</span> <span class="n">characters</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">node_id</span><span class="p">)</span> <span class="o">+</span> <span class="n">characters</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+
+        <span class="n">count_label</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">output_leaves</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">label_show</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">label</span> <span class="o">==</span> <span class="s1">&#39;all&#39;</span> <span class="ow">or</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">is_leaf_node</span><span class="p">(</span><span class="n">node_id</span><span class="p">):</span>
+                <span class="n">proportion_txt</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+                <span class="k">if</span> <span class="n">proportion</span><span class="p">:</span>
+                    <span class="n">proportion_txt</span> <span class="o">=</span> <span class="s2">&quot; (</span><span class="si">%.2f%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span>
+                        <span class="nb">float</span><span class="p">(</span><span class="n">counts</span><span class="p">[</span><span class="n">node_id</span><span class="p">])</span> <span class="o">/</span> <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;bounds&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span>
+                        <span class="n">characters</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span>
+                <span class="n">count_label</span> <span class="o">+=</span> <span class="s1">&#39;counts = </span><span class="si">%s%s%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">counts</span><span class="p">[</span><span class="n">node_id</span><span class="p">],</span>
+                                                    <span class="n">proportion_txt</span><span class="p">,</span>
+                                                    <span class="n">characters</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+
+        <span class="c1"># Write decision criteria, except for leaves</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">is_leaf_node</span><span class="p">(</span><span class="n">node_id</span><span class="p">):</span>
+            <span class="n">feature_id</span> <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_nodes_feature</span><span class="p">[</span><span class="n">node_id</span><span class="p">]</span>
+            <span class="n">feature_value</span> <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_nodes_value</span><span class="p">[</span><span class="n">node_id</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">feature_names</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">feature_txt</span> <span class="o">=</span> <span class="n">feature_names</span><span class="p">[</span><span class="n">feature_id</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">feature_txt</span> <span class="o">=</span> <span class="s2">&quot;f</span><span class="si">%s%s%s</span><span class="s2"> &quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">characters</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                                            <span class="n">feature_id</span><span class="p">,</span>
+                                            <span class="n">characters</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+            <span class="k">if</span> <span class="n">label_show</span><span class="p">:</span>
+                <span class="n">node_string</span> <span class="o">+=</span> <span class="n">count_label</span>
+            <span class="n">node_string</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> </span><span class="si">%s</span><span class="s1"> </span><span class="si">%s%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">feature_txt</span><span class="p">,</span>
+                                           <span class="n">characters</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+                                           <span class="nb">round</span><span class="p">(</span><span class="n">feature_value</span><span class="p">,</span> <span class="n">precision</span><span class="p">),</span>
+                                           <span class="n">characters</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Write node output value, only for leaves</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_nodes_value</span><span class="p">[</span><span class="n">node_id</span><span class="p">]</span>
+            <span class="n">value_text</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">precision</span><span class="p">)</span>
+            <span class="c1"># Strip whitespace</span>
+            <span class="n">value_text</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">value_text</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;S32&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;b&#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span>
+            <span class="n">value_text</span> <span class="o">=</span> <span class="n">value_text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&#39; &#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;, &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="n">value_text</span> <span class="o">=</span> <span class="n">value_text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;[&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;]&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="n">value_text</span> <span class="o">=</span> <span class="n">value_text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> &quot;</span><span class="p">,</span> <span class="n">characters</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+            <span class="k">if</span> <span class="n">label_show</span><span class="p">:</span>
+                <span class="n">node_string</span> <span class="o">+=</span> <span class="n">count_label</span>
+            <span class="n">node_string</span> <span class="o">+=</span> <span class="s1">&#39;output = &#39;</span> <span class="o">+</span> <span class="n">value_text</span> <span class="o">+</span> <span class="n">characters</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+
+
+        <span class="c1"># Clean up any trailing newlines</span>
+        <span class="k">if</span> <span class="n">node_string</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span> <span class="o">==</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">n&#39;</span><span class="p">:</span>
+            <span class="n">node_string</span> <span class="o">=</span> <span class="n">node_string</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">node_string</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:]</span> <span class="o">==</span> <span class="s1">&#39;&lt;br/&gt;&#39;</span><span class="p">:</span>
+            <span class="n">node_string</span> <span class="o">=</span> <span class="n">node_string</span><span class="p">[:</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">node_string</span> <span class="o">+</span> <span class="n">characters</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">recursive_count</span><span class="p">(</span><span class="n">ensemble</span><span class="p">,</span> <span class="n">tree_id</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span> <span class="n">node_id</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">is_leaf_node</span><span class="p">(</span><span class="n">node_id</span><span class="p">):</span>
+            <span class="n">left_count</span> <span class="o">=</span> <span class="n">recursive_count</span><span class="p">(</span><span class="n">ensemble</span><span class="p">,</span> <span class="n">tree_id</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span>
+                                         <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_left_child</span><span class="p">[</span><span class="n">node_id</span><span class="p">])</span>
+            <span class="n">right_count</span> <span class="o">=</span> <span class="n">recursive_count</span><span class="p">(</span><span class="n">ensemble</span><span class="p">,</span> <span class="n">tree_id</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span>
+                                          <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_right_child</span><span class="p">[</span><span class="n">node_id</span><span class="p">])</span>
+            <span class="n">counts</span><span class="p">[</span><span class="n">node_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">left_count</span> <span class="o">+</span> <span class="n">right_count</span>
+        <span class="k">return</span> <span class="n">counts</span><span class="p">[</span><span class="n">node_id</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">recurse</span><span class="p">(</span><span class="n">ensemble</span><span class="p">,</span> <span class="n">tree_id</span><span class="p">,</span> <span class="n">node_id</span><span class="p">,</span> <span class="n">parent_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">depth</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">parent_id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">is_leaf_node</span><span class="p">(</span><span class="n">parent_id</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Invalid node (parent </span><span class="si">%d</span><span class="s2"> is a LEAF) &quot;</span> <span class="o">%</span> <span class="n">parent_id</span><span class="p">)</span>
+
+        <span class="c1"># Add node with description</span>
+        <span class="k">if</span> <span class="n">max_depth</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">depth</span> <span class="o">&lt;=</span> <span class="n">max_depth</span><span class="p">:</span>
+
+            <span class="c1"># Collect ranks for &#39;leaf&#39; option in plot_options</span>
+            <span class="k">if</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">is_leaf_node</span><span class="p">(</span><span class="n">node_id</span><span class="p">):</span>
+                <span class="n">ranks</span><span class="p">[</span><span class="s1">&#39;leaves&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">node_id</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">ranks</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">depth</span><span class="p">)]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">node_id</span><span class="p">))</span>
+
+            <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> [label=</span><span class="si">%s</span><span class="s1">&#39;</span>
+                           <span class="o">%</span> <span class="p">(</span><span class="n">node_id</span><span class="p">,</span>
+                              <span class="n">node_to_str</span><span class="p">(</span><span class="n">ensemble</span><span class="p">,</span> <span class="n">tree_id</span><span class="p">,</span> <span class="n">node_id</span><span class="p">)))</span>
+
+            <span class="k">if</span> <span class="n">output_leaves</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">is_leaf_node</span><span class="p">(</span><span class="n">node_id</span><span class="p">)</span> <span class="ow">or</span> <span class="n">label</span> <span class="o">==</span> <span class="s1">&#39;all&#39;</span><span class="p">:</span>
+                    <span class="n">node_val</span> <span class="o">=</span> <span class="n">counts</span><span class="p">[</span><span class="n">node_id</span><span class="p">]</span>
+                    <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;, fillcolor=&quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span>
+                                   <span class="n">get_color</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">node_val</span><span class="p">),</span>
+                                             <span class="n">colormap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;, fillcolor=&quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="s2">&quot;#ffffffff&quot;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">highlight_leaves</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">is_leaf_node</span><span class="p">(</span><span class="n">node_id</span><span class="p">):</span>
+                    <span class="n">node_val</span> <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_nodes_value</span><span class="p">[</span><span class="n">node_id</span><span class="p">]</span>
+                    <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;, fillcolor=&quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span>
+                                   <span class="n">get_color</span><span class="p">(</span><span class="n">node_val</span><span class="p">,</span>
+                                             <span class="n">colormap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;, fillcolor=&quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="s2">&quot;#ffffffff&quot;</span><span class="p">)</span>
+            <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;] ;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">parent_id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="c1"># Add edge to parent</span>
+                <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> -&gt; </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">parent_id</span><span class="p">,</span> <span class="n">node_id</span><span class="p">))</span>
+                <span class="k">if</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[</span><span class="n">tree_id</span><span class="p">]</span> <span class="o">==</span> <span class="n">parent_id</span><span class="p">:</span>
+                    <span class="c1"># Draw True/False labels if parent is root node</span>
+                    <span class="n">angles</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">45</span><span class="p">,</span> <span class="o">-</span><span class="mi">45</span><span class="p">])</span>
+                    <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39; [labeldistance=2.5, labelangle=&#39;</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_left_child</span><span class="p">[</span><span class="n">parent_id</span><span class="p">]</span> <span class="o">==</span> <span class="n">node_id</span><span class="p">:</span>
+                        <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">, headlabel=&quot;True&quot;]&#39;</span> <span class="o">%</span> <span class="n">angles</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">, headlabel=&quot;False&quot;]&#39;</span> <span class="o">%</span> <span class="n">angles</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39; ;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">is_leaf_node</span><span class="p">(</span><span class="n">node_id</span><span class="p">):</span>
+                <span class="n">recurse</span><span class="p">(</span><span class="n">ensemble</span><span class="p">,</span> <span class="n">tree_id</span><span class="p">,</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_left_child</span><span class="p">[</span><span class="n">node_id</span><span class="p">],</span>
+                        <span class="n">parent_id</span><span class="o">=</span><span class="n">node_id</span><span class="p">,</span>
+                        <span class="n">depth</span><span class="o">=</span><span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="n">recurse</span><span class="p">(</span><span class="n">ensemble</span><span class="p">,</span> <span class="n">tree_id</span><span class="p">,</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_right_child</span><span class="p">[</span><span class="n">node_id</span><span class="p">],</span>
+                        <span class="n">parent_id</span><span class="o">=</span><span class="n">node_id</span><span class="p">,</span>
+                        <span class="n">depth</span><span class="o">=</span><span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">ranks</span><span class="p">[</span><span class="s1">&#39;leaves&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">node_id</span><span class="p">))</span>
+            <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> [label=&quot;(...)&quot;&#39;</span> <span class="o">%</span> <span class="n">node_id</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">highlight_leaves</span> <span class="ow">or</span> <span class="n">output_leaves</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="c1"># color cropped nodes grey</span>
+                <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;, fillcolor=&quot;#C0C0C0&quot;&#39;</span><span class="p">)</span>
+            <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;] ;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">node_id</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">parent_id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="c1"># Add edge to parent</span>
+                <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> -&gt; </span><span class="si">%d</span><span class="s1"> ;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">parent_id</span><span class="p">,</span> <span class="n">node_id</span><span class="p">))</span>
+
+    <span class="n">own_file</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">return_string</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span> <span class="n">six</span><span class="o">.</span><span class="n">string_types</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">six</span><span class="o">.</span><span class="n">PY3</span><span class="p">:</span>
+                <span class="n">out_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">out_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span>
+            <span class="n">own_file</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="k">if</span> <span class="n">out_file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">return_string</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">out_file</span> <span class="o">=</span> <span class="n">six</span><span class="o">.</span><span class="n">StringIO</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">precision</span><span class="p">,</span> <span class="n">Integral</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">precision</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;&#39;precision&#39; should be greater or equal to 0.&quot;</span>
+                                 <span class="s2">&quot; Got </span><span class="si">{}</span><span class="s2"> instead.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">precision</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;&#39;precision&#39; should be an integer. Got </span><span class="si">{}</span><span class="s2">&quot;</span>
+                             <span class="s2">&quot; instead.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">precision</span><span class="p">)))</span>
+
+        <span class="c1"># Check length of feature_names before getting into the tree node</span>
+        <span class="c1"># Raise error if length of feature_names does not match</span>
+        <span class="c1"># n_features_ in the decision_tree</span>
+        <span class="k">if</span> <span class="n">feature_names</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">max_feature_id</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">ensemble</span><span class="o">.</span><span class="n">trees_nodes_feature</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">feature_names</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">max_feature_id</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Length of feature_names, </span><span class="si">%d</span><span class="s2"> &quot;</span>
+                                 <span class="s2">&quot;does not match number of features, </span><span class="si">%d</span><span class="s2">&quot;</span>
+                                 <span class="o">%</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">feature_names</span><span class="p">),</span>
+                                    <span class="n">max_feature_id</span><span class="p">))</span>
+
+        <span class="c1"># Check tree_id is correct with reference the current ensemble</span>
+        <span class="k">if</span> <span class="n">tree_id</span> <span class="o">&gt;</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">n_trees</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Tree_id (</span><span class="si">%d</span><span class="s2">) is higher than the number of trees &quot;</span>
+                             <span class="s2">&quot;in the current ensemble (</span><span class="si">%d</span><span class="s2">)&quot;</span> <span class="o">%</span>
+                             <span class="p">(</span><span class="n">tree_id</span><span class="p">,</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">n_trees</span><span class="p">))</span>
+
+        <span class="c1"># The depth of each node for plotting with &#39;leaf&#39; option</span>
+        <span class="n">ranks</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+        <span class="c1"># The colors to render each node with</span>
+        <span class="n">colors</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">output_leaves</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">leaves_count</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">output_leaves</span><span class="p">[:,</span> <span class="n">tree_id</span><span class="p">],</span>
+                                     <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">counts</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">leaves_count</span><span class="p">))</span>
+            <span class="n">recursive_count</span><span class="p">(</span><span class="n">ensemble</span><span class="p">,</span> <span class="n">tree_id</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span>
+                            <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[</span><span class="n">tree_id</span><span class="p">])</span>
+
+            <span class="k">if</span> <span class="n">label</span> <span class="o">==</span> <span class="s1">&#39;all&#39;</span><span class="p">:</span>
+                <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;bounds&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">counts</span><span class="o">.</span><span class="n">values</span><span class="p">()),</span>
+                                    <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">counts</span><span class="o">.</span><span class="n">values</span><span class="p">()))</span>
+            <span class="k">elif</span> <span class="n">label</span> <span class="o">==</span> <span class="s1">&#39;leaves&#39;</span><span class="p">:</span>
+                <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;bounds&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">leaves_count</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+                                    <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">leaves_count</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Label parameter not supported, </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">label</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Compute leaf output bounds to be used for colouring the leaves</span>
+            <span class="n">leaves_output</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">start_id</span> <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[</span><span class="n">tree_id</span><span class="p">]</span>
+            <span class="n">end_id</span> <span class="o">=</span> <span class="n">start_id</span> <span class="o">+</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">num_nodes</span><span class="p">()[</span><span class="n">tree_id</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">start_id</span><span class="p">,</span> <span class="n">end_id</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">is_leaf_node</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+                    <span class="n">leaves_output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ensemble</span><span class="o">.</span><span class="n">trees_nodes_value</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+            <span class="c1"># Find max and min values in leaf nodes for regression</span>
+            <span class="n">colors</span><span class="p">[</span><span class="s1">&#39;bounds&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">leaves_output</span><span class="p">),</span>
+                                <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">leaves_output</span><span class="p">))</span>
+
+        <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;digraph Tree {</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Specify node aesthetics</span>
+        <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;node [shape=box&#39;</span><span class="p">)</span>
+        <span class="n">rounded_filled</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">highlight_leaves</span> <span class="ow">or</span> <span class="n">output_leaves</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">rounded_filled</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;filled&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">rounded</span><span class="p">:</span>
+            <span class="n">rounded_filled</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;rounded&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">rounded_filled</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;, style=&quot;</span><span class="si">%s</span><span class="s1">&quot;, color=&quot;black&quot;&#39;</span>
+                           <span class="o">%</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">rounded_filled</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">rounded</span><span class="p">:</span>
+            <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;, fontname=helvetica&#39;</span><span class="p">)</span>
+        <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;] ;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Specify graph &amp; edge aesthetics</span>
+        <span class="k">if</span> <span class="n">leaves_parallel</span><span class="p">:</span>
+            <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;graph [ranksep=equally, splines=polyline] ;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">rounded</span><span class="p">:</span>
+            <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;edge [fontname=helvetica] ;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+        <span class="n">recurse</span><span class="p">(</span><span class="n">ensemble</span><span class="p">,</span> <span class="n">tree_id</span><span class="p">,</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[</span><span class="n">tree_id</span><span class="p">])</span>
+
+        <span class="c1"># If required, draw leaf nodes at same depth as each other</span>
+        <span class="k">if</span> <span class="n">leaves_parallel</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">rank</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">ranks</span><span class="p">):</span>
+                <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;{rank=same ; &quot;</span> <span class="o">+</span>
+                               <span class="s2">&quot;; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">r</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">ranks</span><span class="p">[</span><span class="n">rank</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;} ;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;}&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">return_string</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">out_file</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">own_file</span><span class="p">:</span>
+            <span class="n">out_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="plot_tree"><a class="viewcode-back" href="../../../rankeval.visualization.html#rankeval.visualization.topological.plot_tree">[docs]</a><span class="k">def</span> <span class="nf">plot_tree</span><span class="p">(</span><span class="n">dot_data</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">graphviz</span><span class="o">.</span><span class="n">Source</span><span class="p">(</span><span class="n">dot_data</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

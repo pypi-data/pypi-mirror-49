@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.dataset.write_json_dataset_catalogue &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.dataset.write_json_dataset_catalogue</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.dataset.write_json_dataset_catalogue</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (c) 2017, All Contributors (see CONTRIBUTORS file)</span>
+<span class="c1"># Authors: Franco Maria Nardini &lt;francomaria.nardini@isti.cnr.it&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c1"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c1"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This is a simple python script that generates the dataset catalogue. It is then</span>
+<span class="sd">dumped in JSON for simple and easy handling.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="n">output_file</span> <span class="o">=</span> <span class="s2">&quot;dataset_dictionary.json&quot;</span>
+
+<span class="k">def</span> <span class="nf">__add_istella_full__</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;TRAIN_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;full/train.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;TEST_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;full/test.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;VALIDATION_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;None&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;LICENSE_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;istella-letor-LA.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_ARCHIVE_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;istella-letor.tar.gz&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;MODELS_ARCHIVE_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;istella-letor-models.tar.gz&#39;</span><span class="p">,</span>
+            <span class="c1"># DATASET_URL = (&quot;http://library.istella.it/&quot; &quot;dataset/istella-letor.tar.gz&quot;)</span>
+            <span class="s1">&#39;DATASET_URL&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;http://rankeval.isti.cnr.it/&quot;</span> <span class="s2">&quot;rankeval-datasets/istella-letor/dataset/istella-letor.tar.gz&quot;</span><span class="p">),</span>
+            <span class="s1">&#39;MODELS_URL&#39;</span> <span class="p">:</span> <span class="p">(</span><span class="s2">&quot;http://rankeval.isti.cnr.it/&quot;</span> <span class="s2">&quot;rankeval-datasets/istella-letor/models/istella-letor-models.tar.gz&quot;</span><span class="p">),</span>
+            <span class="s1">&#39;BLOG_POST_URL&#39;</span><span class="p">:</span> <span class="s1">&#39;http://blog.istella.it/istella-learning-to-rank-dataset/&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;istella-full&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_DESCRIPTION&#39;</span><span class="p">:</span> <span class="s1">&#39;The istella LETOR full dataset&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_FORMAT&#39;</span><span class="p">:</span> <span class="s1">&#39;svmlight&#39;</span><span class="p">}</span>
+    <span class="n">data</span><span class="p">[</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;DATASET_NAME&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">item</span>
+    <span class="k">return</span> <span class="n">data</span>
+
+<span class="k">def</span> <span class="nf">__add_istella_sample__</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;TRAIN_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;sample/train.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;TEST_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;sample/test.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;VALIDATION_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;sample/vali.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;LICENSE_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;istella-letor-LA.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_ARCHIVE_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;istella-s-letor.tar.gz&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;MODELS_ARCHIVE_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;istella-s-letor-models.tar.gz&#39;</span><span class="p">,</span>
+            <span class="c1"># DATASET_URL = (&quot;http://library.istella.it/&quot; &quot;dataset/istella-letor.tar.gz&quot;)</span>
+            <span class="s1">&#39;DATASET_URL&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;http://rankeval.isti.cnr.it/&quot;</span> <span class="s2">&quot;rankeval-datasets/istella-s-letor/dataset/istella-s-letor.tar.gz&quot;</span><span class="p">),</span>
+            <span class="s1">&#39;MODELS_URL&#39;</span> <span class="p">:</span> <span class="p">(</span><span class="s2">&quot;http://rankeval.isti.cnr.it/&quot;</span> <span class="s2">&quot;rankeval-datasets/istella-s-letor/models/istella-s-letor-models.tar.gz&quot;</span><span class="p">),</span>
+            <span class="s1">&#39;BLOG_POST_URL&#39;</span><span class="p">:</span> <span class="s1">&#39;http://blog.istella.it/istella-learning-to-rank-dataset/&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;istella-sample&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_DESCRIPTION&#39;</span><span class="p">:</span> <span class="s1">&#39;The istella LETOR sample dataset&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_FORMAT&#39;</span><span class="p">:</span> <span class="s1">&#39;svmlight&#39;</span><span class="p">}</span>
+    <span class="n">data</span><span class="p">[</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;DATASET_NAME&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">item</span>
+    <span class="k">return</span> <span class="n">data</span>
+
+<span class="k">def</span> <span class="nf">__add_msn10k__</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;COMMON_SUBFOLDER_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;Fold&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;TRAIN_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;train.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;TEST_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;test.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;VALIDATION_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;vali.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_ARCHIVE_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;msn10k.tar.gz&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;MODELS_ARCHIVE_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;msn10k-models.tar.gz&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_URL&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;http://rankeval.isti.cnr.it/&quot;</span> <span class="s2">&quot;rankeval-datasets/msn10k/dataset/msn10k.tar.gz&quot;</span><span class="p">),</span>
+            <span class="s1">&#39;MODELS_URL&#39;</span> <span class="p">:</span> <span class="p">(</span><span class="s2">&quot;http://rankeval.isti.cnr.it/&quot;</span> <span class="s2">&quot;rankeval-datasets/msn10k/models/msn10k-models.tar.gz&quot;</span><span class="p">),</span>
+            <span class="s1">&#39;BLOG_POST_URL&#39;</span><span class="p">:</span> <span class="s1">&#39;https://www.microsoft.com/en-us/research/project/mslr/&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;msn10k&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_DESCRIPTION&#39;</span><span class="p">:</span> <span class="s1">&#39;Microsoft Learning to Rank Datasets (WEB10K)&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_FORMAT&#39;</span><span class="p">:</span> <span class="s1">&#39;svmlight&#39;</span><span class="p">}</span>
+    <span class="n">data</span><span class="p">[</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;DATASET_NAME&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">item</span>
+    <span class="k">return</span> <span class="n">data</span>
+
+<span class="k">def</span> <span class="nf">__add_msn30k__</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;COMMON_SUBFOLDER_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;Fold&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;TRAIN_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;train.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;TEST_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;test.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;VALIDATION_FILE&#39;</span><span class="p">:</span> <span class="s1">&#39;vali.txt&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_ARCHIVE_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;msn30k.tar.gz&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;MODELS_ARCHIVE_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;msn30k-models.tar.gz&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_URL&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;http://rankeval.isti.cnr.it/&quot;</span> <span class="s2">&quot;rankeval-datasets/msn30k/dataset/msn30k.tar.gz&quot;</span><span class="p">),</span>
+            <span class="s1">&#39;MODELS_URL&#39;</span> <span class="p">:</span> <span class="p">(</span><span class="s2">&quot;http://rankeval.isti.cnr.it/&quot;</span> <span class="s2">&quot;rankeval-datasets/msn30k/models/msn30k-models.tar.gz&quot;</span><span class="p">),</span>
+            <span class="s1">&#39;BLOG_POST_URL&#39;</span><span class="p">:</span> <span class="s1">&#39;https://www.microsoft.com/en-us/research/project/mslr/&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;msn30k&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_DESCRIPTION&#39;</span><span class="p">:</span> <span class="s1">&#39;Microsoft Learning to Rank Datasets (WEB30K)&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DATASET_FORMAT&#39;</span><span class="p">:</span> <span class="s1">&#39;svmlight&#39;</span><span class="p">}</span>
+    <span class="n">data</span><span class="p">[</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;DATASET_NAME&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">item</span>
+    <span class="k">return</span> <span class="n">data</span>
+
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../../../rankeval.dataset.html#rankeval.dataset.write_json_dataset_catalogue.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="n">__add_istella_full__</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">__add_istella_sample__</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">__add_msn10k__</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">__add_msn30k__</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">fp</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span></div>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

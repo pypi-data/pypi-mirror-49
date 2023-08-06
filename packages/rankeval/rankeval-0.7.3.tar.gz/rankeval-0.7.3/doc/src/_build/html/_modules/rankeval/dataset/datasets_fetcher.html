@@ -1,0 +1,457 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.dataset.datasets_fetcher &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.dataset.datasets_fetcher</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.dataset.datasets_fetcher</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (c) 2017, All Contributors (see CONTRIBUTORS file)</span>
+<span class="c1"># Authors: Franco Maria Nardini &lt;francomaria.nardini@isti.cnr.it&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c1"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c1"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">six</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+<span class="kn">import</span> <span class="nn">tarfile</span>
+<span class="kn">import</span> <span class="nn">fnmatch</span>
+<span class="kn">from</span> <span class="nn">os</span> <span class="k">import</span> <span class="n">environ</span><span class="p">,</span> <span class="n">makedirs</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="k">import</span> <span class="n">exists</span><span class="p">,</span> <span class="n">expanduser</span><span class="p">,</span> <span class="n">join</span>
+
+<span class="kn">from</span> <span class="nn">.dataset</span> <span class="k">import</span> <span class="n">Dataset</span>
+<span class="kn">from</span> <span class="nn">.dataset_container</span> <span class="k">import</span> <span class="n">DatasetContainer</span>
+
+<span class="k">if</span> <span class="n">six</span><span class="o">.</span><span class="n">PY3</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">urllib.request</span> <span class="k">import</span> <span class="n">urlopen</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">urllib2</span> <span class="k">import</span> <span class="n">urlopen</span>
+
+
+<span class="k">def</span> <span class="nf">__dataset_catalogue__</span><span class="p">():</span>
+    <span class="n">resource_path</span> <span class="o">=</span> <span class="s2">&quot;http://rankeval.isti.cnr.it/rankeval-datasets/dataset_dictionary.json&quot;</span>
+    <span class="n">json_file</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">resource_path</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span>
+
+
+<span class="k">def</span> <span class="nf">__get_data_home__</span><span class="p">(</span><span class="n">data_home</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return the path of the rankeval data dir.</span>
+<span class="sd">    This folder is used by some large dataset loaders to avoid</span>
+<span class="sd">    downloading the data several times.</span>
+<span class="sd">    By default the data dir is set to a folder named &#39;rankeval_data&#39;</span>
+<span class="sd">    in the user home folder.</span>
+<span class="sd">    Alternatively, it can be set by the &#39;RANKEVAL_DATA&#39; environment</span>
+<span class="sd">    variable or programmatically by giving an explicit folder path. The</span>
+<span class="sd">    &#39;~&#39; symbol is expanded to the user home folder.</span>
+<span class="sd">    If the folder does not already exist, it is automatically created.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">data_home</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">data_home</span> <span class="o">=</span> <span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;RANKEVAL_DATA&#39;</span><span class="p">,</span> <span class="n">join</span><span class="p">(</span><span class="s1">&#39;~&#39;</span><span class="p">,</span> <span class="s1">&#39;rankeval_data&#39;</span><span class="p">))</span>
+    <span class="n">data_home</span> <span class="o">=</span> <span class="n">expanduser</span><span class="p">(</span><span class="n">data_home</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">exists</span><span class="p">(</span><span class="n">data_home</span><span class="p">):</span>
+        <span class="n">makedirs</span><span class="p">(</span><span class="n">data_home</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data_home</span>
+
+
+<span class="k">def</span> <span class="nf">__fetch_dataset_and_models__</span><span class="p">(</span><span class="n">dataset_dictionary</span><span class="p">,</span> <span class="n">fold</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">data_home</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                                 <span class="n">download_if_missing</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">force_download</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                                 <span class="n">with_models</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Download a given dataset (and models, if needed).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    dataset_dictionary : mandatory.</span>
+<span class="sd">        the properties of the requested dataset (name, url, repo, license, etc.)</span>
+<span class="sd">    fold : optional, None by default.</span>
+<span class="sd">        If provided, an integer identifying the specific fold to load.</span>
+<span class="sd">        ex. dataset_name=msn10k, fold=1 will load train/validation/test files</span>
+<span class="sd">        from the &#39;Fold1&#39; directory. This option holds when using datasets</span>
+<span class="sd">        that are already k-folded.</span>
+<span class="sd">    data_home : optional, default: None.</span>
+<span class="sd">        Specify a data folder for the datasets. If None,</span>
+<span class="sd">        all data is stored in the &#39;~/rankeval_data&#39; subfolder.</span>
+<span class="sd">    download_if_missing : optional, True by default.</span>
+<span class="sd">        If False, raise an IOError if the data is not locally available</span>
+<span class="sd">        instead of trying to download the data from the source site.</span>
+<span class="sd">    force_download : optional, False by default.</span>
+<span class="sd">        If True, download data even if it is on disk.</span>
+<span class="sd">    with_models : optional, True by default.</span>
+<span class="sd">        When True, the method downloads the models generated with different</span>
+<span class="sd">        tools (QuickRank, LightGBM, XGBoost, etc.) to ease the comparison.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">data_home</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_home</span><span class="p">,</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;DATASET_NAME&#39;</span><span class="p">])</span>
+    <span class="n">dataset_home</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_home</span><span class="p">,</span> <span class="s2">&quot;dataset&quot;</span><span class="p">)</span>
+    <span class="n">models_home</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_home</span><span class="p">,</span> <span class="s2">&quot;models&quot;</span><span class="p">)</span>
+
+    <span class="c1"># DATASET</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">download_if_missing</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">data_home</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="s1">&#39;dataset not found&#39;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">fold</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">dataset_dictionary</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;COMMON_SUBFOLDER_NAME&#39;</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;no k-fold available for the dataset&#39;</span><span class="p">)</span>
+
+    <span class="c1"># delete data_home if force_download is True, then re-create data_home dir</span>
+    <span class="k">if</span> <span class="n">force_download</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">data_home</span><span class="p">):</span>
+            <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">data_home</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">data_home</span><span class="p">)</span>
+
+    <span class="c1"># preparing file names...</span>
+    <span class="n">archive_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dataset_home</span><span class="p">,</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;DATASET_ARCHIVE_NAME&#39;</span><span class="p">])</span>
+    <span class="n">models_archive_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">models_home</span><span class="p">,</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;MODELS_ARCHIVE_NAME&#39;</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">fold</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">train_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dataset_home</span><span class="p">,</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;TRAIN_FILE&#39;</span><span class="p">])</span>
+        <span class="n">test_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dataset_home</span><span class="p">,</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;TEST_FILE&#39;</span><span class="p">])</span>
+        <span class="k">if</span> <span class="n">dataset_dictionary</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;VALIDATION_FILE&#39;</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">validation_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dataset_home</span><span class="p">,</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;VALIDATION_FILE&#39;</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">subfolder_fold</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dataset_home</span><span class="p">,</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;COMMON_SUBFOLDER_NAME&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">fold</span><span class="p">))</span>
+        <span class="n">train_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">subfolder_fold</span><span class="p">,</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;TRAIN_FILE&#39;</span><span class="p">])</span>
+        <span class="n">test_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">subfolder_fold</span><span class="p">,</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;TEST_FILE&#39;</span><span class="p">])</span>
+        <span class="k">if</span> <span class="n">dataset_dictionary</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;VALIDATION_FILE&#39;</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">validation_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">subfolder_fold</span><span class="p">,</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;VALIDATION_FILE&#39;</span><span class="p">])</span>
+        <span class="n">model_subfolder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">models_home</span><span class="p">,</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;COMMON_SUBFOLDER_NAME&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">fold</span><span class="p">))</span>
+
+    <span class="c1"># everything will be stored in a dictionary to return</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+    <span class="n">dataset_already_downloaded</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">dataset_home</span><span class="p">):</span>
+        <span class="n">dataset_already_downloaded</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">dataset_already_downloaded</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">dataset_home</span><span class="p">)</span>
+
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Downloading dataset. This may take a few minutes.&quot;</span><span class="p">)</span>
+
+        <span class="n">data_url</span> <span class="o">=</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;DATASET_URL&#39;</span><span class="p">]</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Downloading dataset from </span><span class="si">%s</span><span class="s2"> &quot;</span> <span class="o">%</span> <span class="n">data_url</span><span class="p">)</span>
+        <span class="n">opener</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">data_url</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">archive_name</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">opener</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Decompressing </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">archive_name</span><span class="p">)</span>
+        <span class="n">tarfile</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">archive_name</span><span class="p">,</span> <span class="s2">&quot;r:gz&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">dataset_home</span><span class="p">)</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">archive_name</span><span class="p">)</span>
+
+    <span class="n">license_agreement</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">dataset_dictionary</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;LICENSE_FILE&#39;</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dataset_home</span><span class="p">,</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;LICENSE_FILE&#39;</span><span class="p">]),</span> <span class="s1">&#39;r&#39;</span><span class="p">):</span>
+            <span class="n">license_agreement</span> <span class="o">+=</span> <span class="n">line</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">license_agreement</span> <span class="o">=</span> <span class="s2">&quot;Please, check the terms of use before using the dataset. Here the link: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;BLOG_POST_URL&#39;</span><span class="p">]</span>
+
+    <span class="c1"># filling data structure to return</span>
+    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">train_file_path</span>
+    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">test_file_path</span>
+
+    <span class="k">if</span> <span class="n">dataset_dictionary</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;VALIDATION_FILE&#39;</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">data</span><span class="p">[</span><span class="s1">&#39;validation&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">validation_file_path</span>
+
+    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;license_agreement&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">license_agreement</span>
+
+    <span class="c1"># MODELS</span>
+    <span class="k">if</span> <span class="n">with_models</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">models_already_downloaded</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">models_home</span><span class="p">):</span>
+            <span class="n">models_already_downloaded</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">models_already_downloaded</span><span class="p">:</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">models_home</span><span class="p">)</span>
+
+            <span class="n">models_url</span> <span class="o">=</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;MODELS_URL&#39;</span><span class="p">]</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Downloading letor models from </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">models_url</span><span class="p">)</span>
+            <span class="n">opener</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">models_url</span><span class="p">)</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">models_archive_name</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">opener</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Decompressing </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">models_archive_name</span><span class="p">)</span>
+            <span class="n">tarfile</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">models_archive_name</span><span class="p">,</span> <span class="s2">&quot;r:gz&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span>
+                <span class="n">path</span><span class="o">=</span><span class="n">models_home</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">models_archive_name</span><span class="p">)</span>
+
+        <span class="c1"># filling data structure to return</span>
+        <span class="n">matches</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">fold</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirnames</span><span class="p">,</span> <span class="n">filenames</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">models_home</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">fnmatch</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">filenames</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">):</span>
+                    <span class="n">matches</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">filename</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirnames</span><span class="p">,</span> <span class="n">filenames</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">model_subfolder</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">fnmatch</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">filenames</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">):</span>
+                    <span class="n">matches</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">filename</span><span class="p">))</span>
+
+        <span class="n">data</span><span class="p">[</span><span class="s1">&#39;models&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">matches</span>
+
+    <span class="k">return</span> <span class="n">data</span>
+
+
+<div class="viewcode-block" id="load_dataset"><a class="viewcode-back" href="../../../rankeval.dataset.html#rankeval.dataset.datasets_fetcher.load_dataset">[docs]</a><span class="k">def</span> <span class="nf">load_dataset</span><span class="p">(</span><span class="n">dataset_name</span><span class="p">,</span> <span class="n">fold</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">download_if_missing</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                 <span class="n">force_download</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">with_models</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The method allow to download a given dataset (and available models)</span>
+<span class="sd">    by providing its name.</span>
+
+<span class="sd">    Datasets and models are available at the following link:</span>
+<span class="sd">        http://rankeval.isti.cnr.it/rankeval-datasets/dataset_dictionary.json</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    dataset_name:</span>
+<span class="sd">        The name of the dataset (and models) to download.</span>
+<span class="sd">    fold : optional, None by default.</span>
+<span class="sd">        If provided, an integer identifying the specific fold to load.</span>
+<span class="sd">        Example: dataset_name=msn10k, fold=1, will load train/validation/test</span>
+<span class="sd">        files from the &#39;Fold1&#39; directory. This option holds when using datasets</span>
+<span class="sd">        that are already k-folded.</span>
+<span class="sd">    download_if_missing : optional, True by default.</span>
+<span class="sd">        If False, raise an IOError if the data is not locally available</span>
+<span class="sd">        instead of trying to download the data from the source site.</span>
+<span class="sd">    force_download : optional, False by default.</span>
+<span class="sd">        If True, download data even if it is on disk.</span>
+<span class="sd">    with_models : optional, True by default.</span>
+<span class="sd">        When True, the method downloads the models generated with different</span>
+<span class="sd">        tools (QuickRank, LightGBM, XGBoost, etc.) to ease the comparison.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">dataset_catalogue</span> <span class="o">=</span> <span class="n">__dataset_catalogue__</span><span class="p">()</span>
+    <span class="n">dataset_dictionary</span> <span class="o">=</span> <span class="n">dataset_catalogue</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">dataset_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">dataset_dictionary</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">data_home</span> <span class="o">=</span> <span class="n">__get_data_home__</span><span class="p">()</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">__fetch_dataset_and_models__</span><span class="p">(</span><span class="n">dataset_dictionary</span><span class="p">,</span> <span class="n">fold</span><span class="p">,</span> <span class="n">data_home</span><span class="p">,</span>
+                                        <span class="n">download_if_missing</span><span class="p">,</span>
+                                        <span class="n">force_download</span><span class="p">,</span>
+                                        <span class="n">with_models</span><span class="p">)</span>
+
+    <span class="n">dataset_name</span> <span class="o">=</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;DATASET_NAME&#39;</span><span class="p">]</span>
+    <span class="n">dataset_format</span> <span class="o">=</span> <span class="n">dataset_dictionary</span><span class="p">[</span><span class="s1">&#39;DATASET_FORMAT&#39;</span><span class="p">]</span>
+
+    <span class="n">container</span> <span class="o">=</span> <span class="n">DatasetContainer</span><span class="p">()</span>
+
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Loading files. This may take a few minutes.&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;train&#39;</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">train_dataset</span> <span class="o">=</span> <span class="n">Dataset</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="n">dataset_name</span> <span class="o">+</span> <span class="s2">&quot;_train&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="n">dataset_format</span><span class="p">)</span>
+        <span class="n">container</span><span class="o">.</span><span class="n">train_dataset</span> <span class="o">=</span> <span class="n">train_dataset</span>
+
+    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">test_dataset</span> <span class="o">=</span> <span class="n">Dataset</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="n">dataset_name</span> <span class="o">+</span> <span class="s2">&quot;_test&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="n">dataset_format</span><span class="p">)</span>
+        <span class="n">container</span><span class="o">.</span><span class="n">test_dataset</span> <span class="o">=</span> <span class="n">test_dataset</span>
+
+    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;validation&#39;</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">validation_dataset</span> <span class="o">=</span> <span class="n">Dataset</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;validation&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="n">dataset_name</span> <span class="o">+</span> <span class="s2">&quot;_validation&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="n">dataset_format</span><span class="p">)</span>
+        <span class="n">container</span><span class="o">.</span><span class="n">validation_dataset</span> <span class="o">=</span> <span class="n">validation_dataset</span>
+
+    <span class="n">container</span><span class="o">.</span><span class="n">license_agreement</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;license_agreement&#39;</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">with_models</span><span class="p">:</span>
+        <span class="n">container</span><span class="o">.</span><span class="n">model_filenames</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;models&#39;</span><span class="p">]</span>
+
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;done loading dataset!&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">container</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

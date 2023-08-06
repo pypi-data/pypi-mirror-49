@@ -1,0 +1,2234 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.metrics package &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="rankeval.model package" href="rankeval.model.html" />
+    <link rel="prev" title="rankeval.dataset package" href="rankeval.dataset.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="rankeval.html">rankeval package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="rankeval.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="rankeval.analysis.html">rankeval.analysis package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.dataset.html">rankeval.dataset package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">rankeval.metrics package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.dcg">rankeval.metrics.dcg module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.err">rankeval.metrics.err module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.kendall_tau">rankeval.metrics.kendall_tau module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.map">rankeval.metrics.map module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.metric">rankeval.metrics.metric module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.mrr">rankeval.metrics.mrr module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.mse">rankeval.metrics.mse module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.ndcg">rankeval.metrics.ndcg module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.pfound">rankeval.metrics.pfound module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.precision">rankeval.metrics.precision module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.rbp">rankeval.metrics.rbp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.recall">rankeval.metrics.recall module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.rmse">rankeval.metrics.rmse module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.metrics.spearman_rho">rankeval.metrics.spearman_rho module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.model.html">rankeval.model package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.scoring.html">rankeval.scoring package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.visualization.html">rankeval.visualization package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="rankeval.html">rankeval package</a> &raquo;</li>
+        
+      <li>rankeval.metrics package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/rankeval.metrics.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-rankeval.metrics">
+<span id="rankeval-metrics-package"></span><h1>rankeval.metrics package<a class="headerlink" href="#module-rankeval.metrics" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference internal" href="#module-rankeval.metrics" title="rankeval.metrics"><code class="xref py py-mod docutils literal notranslate"><span class="pre">rankeval.metrics</span></code></a> module includes the definition and implementation of
+the most common metrics adopted in the Learning to Rank community.</p>
+<dl class="class">
+<dt id="rankeval.metrics.Metric">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">Metric</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/metric.html#Metric"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Metric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Metric is an abstract class which provides an interface for specific metrics.
+It also offers 2 methods, one for iterating over the indeces for a certain
+query and another for iterating over the entire dataset based on those
+indices.</p>
+<p>Some intuitions:
+<a class="reference external" href="https://stats.stackexchange.com/questions/159657/metrics-for-evaluating-ranking-algorithms">https://stats.stackexchange.com/questions/159657/metrics-for-evaluating-ranking-algorithms</a></p>
+<p>The constructor for any metric; it initializes that metric with the
+proper name.</p>
+<dl class="docutils">
+<dt>name <span class="classifier-delimiter">:</span> <span class="classifier">string</span></dt>
+<dd>Represents the name of that metric instance.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.Metric.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/metric.html#Metric.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Metric.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This abstract method computes a specific metric over the predicted
+scores for a test dataset. It calls the eval_per query method for each
+query in order to get the detailed metric score.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which we want to apply the metric.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in the
+dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>Represents the average values of a metric over all metric scores
+per query.</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>Represents the detailed metric scores for each query. It has the
+length of n_queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.Metric.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/metric.html#Metric.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Metric.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods helps to evaluate the predicted scores for a specific
+query within the dataset.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the instance labels corresponding to the queries in the
+dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>dcg: float</dt>
+<dd>Represents the metric score for one query.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.Metric.query_iterator">
+<code class="descname">query_iterator</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/metric.html#Metric.query_iterator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Metric.query_iterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method iterates over dataset document scores and predicted scores
+in blocks of instances which belong to the same query.
+Parameters
+———-
+dataset :  Datatset
+y_pred  : numpy array</p>
+<dl class="docutils">
+<dt>: int</dt>
+<dd>The query id.</dd>
+<dt>: numpy.array</dt>
+<dd>The document scores of the instances in the labeled dataset
+(instance labels) belonging to the same query id.</dd>
+<dt>: numpy.array</dt>
+<dd>The predicted scores for the instances in the dataset belonging to
+the same query id.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.Precision">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">Precision</code><span class="sig-paren">(</span><em>name='P'</em>, <em>cutoff=None</em>, <em>threshold=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/precision.html#Precision"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Precision" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Precision as:
+(relevant docs &amp; retrieved docs) / retrieved docs.</p>
+<p>It allows setting custom values for cutoff and threshold, otherwise it uses
+the default values.</p>
+<p>This is the constructor of Precision, an object of type Metric, with
+the name P. The constructor also allows setting custom values for cutoff
+and threshold, otherwise it uses the default values.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>P</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10)</dd>
+<dt>threshold: float</dt>
+<dd>This parameter considers relevant results all instances with labels
+different from 0, thus with a minimum label value of 1. It can be
+set to other values as well (e.g. 3), in the range of possible
+labels.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.Precision.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/precision.html#Precision.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Precision.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method computes the Precision score over the entire dataset and
+the detailed scores per query. It calls the eval_per query method for
+each query in order to get the detailed Precision score.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply Precision.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in the
+dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall Precision score (averages over the detailed precision
+scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed Precision scores for each query, an array of length of
+the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.Precision.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/precision.html#Precision.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Precision.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods computes Precision at per query level (on the instances
+belonging to a specific query). The Precision per query is calculated as
+&lt;(relevant docs &amp; retrieved docs) / retrieved docs&gt;.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>precision: float</dt>
+<dd>The precision per query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.Recall">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">Recall</code><span class="sig-paren">(</span><em>name='R'</em>, <em>no_relevant_results=0.0</em>, <em>cutoff=None</em>, <em>threshold=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/recall.html#Recall"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Recall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Recall as:
+(relevant docs &amp; retrieved docs) / relevant docs.</p>
+<p>It allows setting custom values for cutoff and threshold, otherwise it uses
+the default values.</p>
+<p>This is the constructor of Recall, an object of type Metric, with
+the name R. The constructor also allows setting custom values
+for cutoff and threshold, otherwise it uses the default values.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>R</dd>
+<dt>no_relevant_results: float</dt>
+<dd>Float indicating how to treat the cases where then are no relevant
+results (e.g. 0.0).</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10)</dd>
+<dt>threshold: float</dt>
+<dd>This parameter considers relevant results all instances with labels
+different from 0, thus with a minimum label value of 1. It can be
+set to other values as well (e.g. 3), in the range of possible
+labels.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.Recall.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/recall.html#Recall.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Recall.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method computes the Recall score over the entire dataset and the
+detailed scores per query. It calls the eval_per query method for each
+query in order to get the detailed Recall score.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply Recall.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in the
+dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall Recall score (averages over the detailed precision
+scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed Recall scores for each query, an array of length of
+the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.Recall.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/recall.html#Recall.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Recall.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods computes Recall at per query level (on the instances
+belonging to a specific query). The Recall per query is calculated as
+&lt;(relevant docs &amp; retrieved docs) / relevant docs&gt;.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>recall: float</dt>
+<dd>The Recall score per query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.NDCG">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">NDCG</code><span class="sig-paren">(</span><em>name='NDCG'</em>, <em>cutoff=None</em>, <em>no_relevant_results=1.0</em>, <em>implementation='exp'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/ndcg.html#NDCG"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.NDCG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements NDCG with several parameters.</p>
+<p>This is the constructor of NDCG, an object of type Metric, with the
+name NDCG.
+The constructor also allows setting custom values</p>
+<blockquote>
+<div><ul class="simple">
+<li>cutoff: the top k results to be considered at per query level</li>
+<li><dl class="first docutils">
+<dt>no_relevant_results: is a float values indicating how to treat</dt>
+<dd>the cases where then are no relevant results</dd>
+</dl>
+</li>
+<li>ties: indicates how we should consider the ties</li>
+<li><dl class="first docutils">
+<dt>implementation: indicates whether to consider the flat or the</dt>
+<dd>exponential NDCG formula</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>NDCG</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10)</dd>
+<dt>no_relevant_results: float</dt>
+<dd>Float indicating how to treat the cases where then are no relevant
+results (e.g. 0.5). Default is 1.0.</dd>
+<dt>implementation: string</dt>
+<dd>Indicates whether to consider the flat or the exponential DCG
+formula: “flat” or “exp” (default).</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.NDCG.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/ndcg.html#NDCG.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.NDCG.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes NDCG by taking as input the dataset and the
+predicted document scores (obtained with the scoring methods). It
+returns the averaged NDCG score over the entire dataset and the
+detailed NDCG scores per query.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply NDCG.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in the
+dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>Represents the average NDCG over all NDCG scores per query.</dd>
+<dt>detailed_scores: numpy array of floats</dt>
+<dd>Represents the detailed NDCG scores for each query. It has the
+length of n_queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.NDCG.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/ndcg.html#NDCG.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.NDCG.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the NDCG score per query. It is called by the
+eval function which averages and aggregates the scores for each query.</p>
+<p>It calculates NDCG per query as &lt;dcg_score/idcg_score&gt;.
+If there are no relevant results, NDCG returns the values set by default
+or by the user when creating the metric.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in the
+dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>dcg: float</dt>
+<dd>Represents the DCG score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.DCG">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">DCG</code><span class="sig-paren">(</span><em>name='DCG'</em>, <em>cutoff=None</em>, <em>implementation='flat'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/dcg.html#DCG"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.DCG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements DCG with several parameters.</p>
+<p>This is the constructor of DCG, an object of type Metric,
+with the name DCG. The constructor also allows setting custom values
+in the following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>DCG</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10).</dd>
+<dt>no_relevant_results: float</dt>
+<dd>Float indicating how to treat the cases where then are no relevant
+results (e.g. 0.5).</dd>
+<dt>implementation: string</dt>
+<dd>Indicates whether to consider the flat or the exponential DCG
+formula (e.g.  {“flat”, “exp”}).</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.DCG.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/dcg.html#DCG.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.DCG.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes DCG by taking as input the dataset and
+the predicted document scores. It returns the averaged DCG score
+over the entire dataset and the detailed DCG scores per query.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply DCG.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance
+in the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float </dt>
+<dd>Represents the average DCG over all DCG scores per query.</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>Represents the detailed DCG scores for each query.
+It has the length of n_queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.DCG.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/dcg.html#DCG.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.DCG.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the DCG score per query. It is called by
+the eval function which averages and aggregates the scores
+for each query.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array. </dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>dcg: float</dt>
+<dd>Represents the DCG score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.ERR">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">ERR</code><span class="sig-paren">(</span><em>name='ERR'</em>, <em>cutoff=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/err.html#ERR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.ERR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Expected Reciprocal Rank as proposed
+in <a class="reference external" href="http://olivier.chapelle.cc/pub/err.pdf">http://olivier.chapelle.cc/pub/err.pdf</a></p>
+<p>This is the constructor of ERR, an object of type Metric,
+with the name ERR. The constructor also allows setting custom values
+in the following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>ERR</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10)</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.ERR.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/err.html#ERR.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.ERR.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes ERR by taking as input the dataset and the
+predicted document scores. It returns the averaged ERR score over
+the entire dataset and the detailed ERR scores per query.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply ERR.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance
+in the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>Represents the average ERR over all ERR scores per query.</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>Represents the detailed ERR scores for each query. It has the
+length of n_queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.ERR.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/err.html#ERR.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.ERR.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the ERR score per query. It is called by
+the eval function which averages and aggregates the scores
+for each query.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during
+the model scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>err: float</dt>
+<dd>Represents the ERR score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.Kendalltau">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">Kendalltau</code><span class="sig-paren">(</span><em>name='K'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/kendall_tau.html#Kendalltau"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Kendalltau" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Kendall’s Tau.
+We use the Kendall tau coefficient implementation from scipy.</p>
+<p>This is the constructor of Kendall Tau, an object of type Metric,
+with the name K. The constructor also allows setting custom values in
+the following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>K</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.Kendalltau.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/kendall_tau.html#Kendalltau.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Kendalltau.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method computes the Kendall tau score over the entire dataset and
+the detailed scores per query. It calls the eval_per query method
+for each query in order to get the detailed Kendall tau score.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply Kendall Tau.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance
+in the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall Kendall tau score (averages over the detailed scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed Kendall tau scores for each query, an array with length
+of the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.Kendalltau.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/kendall_tau.html#Kendalltau.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Kendalltau.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods computes Kendall tau at per query level (on the instances
+belonging to a specific query). The Kendall tau per query is
+calculated as:</p>
+<blockquote>
+<div>tau = (P - Q) / sqrt((P + Q + T) * (P + Q + U))</div></blockquote>
+<p>where P is the number of concordant pairs, Q the number of discordant
+pairs, T the number of ties only in x, and U the number of ties only
+in y. If a tie occurs for the same pair in both x and y, it is not
+added to either T or U.
+s
+Whether to use lexsort or quicksort as the sorting method for the
+initial sort of the inputs.  Default is lexsort (True), for which
+kendalltau is of complexity O(n log(n)). If False, the complexity
+is O(n^2), but with a smaller pre-factor (so quicksort may be faster
+for small arrays).</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>kendalltau: float</dt>
+<dd>The Kendall tau per query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.MAP">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">MAP</code><span class="sig-paren">(</span><em>name='MAP'</em>, <em>cutoff=None</em>, <em>no_relevant_results=1.0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/map.html#MAP"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.MAP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements MAP with several parameters. We implemented MAP as in
+<a class="reference external" href="https://www.kaggle.com/wiki/MeanAveragePrecision">https://www.kaggle.com/wiki/MeanAveragePrecision</a>, adapted from:
+<a class="reference external" href="http://en.wikipedia.org/wiki/Information_retrieval">http://en.wikipedia.org/wiki/Information_retrieval</a>
+<a class="reference external" href="https://www.ethz.ch/content/dam/ethz/special-interest/gess/computational-social-science-dam/documents/education/Spring2017/ML/LinkPrediction.pdf">https://www.ethz.ch/content/dam/ethz/special-interest/gess/computational-social-science-dam/documents/education/Spring2017/ML/LinkPrediction.pdf</a>
+<a class="reference external" href="http://sdsawtelle.github.io/blog/output/mean-average-precision-MAP-for-recommender-systems.html">http://sdsawtelle.github.io/blog/output/mean-average-precision-MAP-for-recommender-systems.html</a></p>
+<p>This is the constructor of MAP, an object of type Metric, with
+the name MAP. The constructor also allows setting custom values in the
+following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>MAP</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10),
+otherwise the default value is None and is computed on all the
+instances of a query.</dd>
+<dt>no_relevant_results: float</dt>
+<dd>Float indicating how to treat the cases where then are no relevant
+results (e.g. 0.5). Default is 1.0.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.MAP.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/map.html#MAP.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.MAP.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method takes the AP&#64;k for each query and calculates the average,
+thus MAP&#64;k.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply MAP.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in
+the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall MAP&#64;k score (averages over the detailed MAP scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed AP&#64;k scores for each query, an array of length of
+the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.MAP.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/map.html#MAP.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.MAP.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods computes AP&#64;k at per query level (on the instances
+belonging to a specific query). The AP&#64;k per query is calculated as</p>
+<p>ap&#64;k = sum( P(k) / min(m,n) ), for k=1,n</p>
+<dl class="docutils">
+<dt>where:</dt>
+<dd><ul class="first simple">
+<li>P(k) means the precision at cut-off k in the item list. P(k)</li>
+</ul>
+<p class="last">equals 0 when the k-th item is not followed upon recommendation
+- m is the overall number of relevant documents
+- n is the number of predicted documents</p>
+</dd>
+</dl>
+<p>If the denominator is zero, P(k)/min(m,n) is set to zero.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>map <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd>The MAP per query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.MRR">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">MRR</code><span class="sig-paren">(</span><em>name='MRR'</em>, <em>cutoff=None</em>, <em>threshold=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/mrr.html#MRR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.MRR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Mean Reciprocal Rank.</p>
+<p>This is the constructor of MRR, an object of type Metric, with the
+name MRR. The constructor also allows setting custom values in the
+following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>MRR</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10)</dd>
+<dt>threshold: float</dt>
+<dd>This parameter considers relevant results all instances with labels
+different from 0, thus with a minimum label value of 1. It can be
+set to other values as well (e.g. 3), in the range of possible labels.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.MRR.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/mrr.html#MRR.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.MRR.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes MRR by taking as input the dataset and the predicted
+document scores. It returns the averaged MRR score over the entire
+dataset and the detailed MRR scores per query.</p>
+<p>The mean reciprocal rank is the average of the reciprocal ranks of
+results for a sample of queries.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply MRR.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance
+in the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>Represents the average MRR over all MRR scores per query.</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>Represents the detailed MRR scores for each query. It has
+the length of n_queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.MRR.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/mrr.html#MRR.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.MRR.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the MRR score per query. It is called by the
+eval function which averages and aggregates the scores for each query.</p>
+<p>We compute the reciprocal rank. The reciprocal rank of a query response
+is the multiplicative inverse of the rank of the first correct answer.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in the
+dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>mrr: float</dt>
+<dd>Represents the MRR score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.Pfound">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">Pfound</code><span class="sig-paren">(</span><em>name='Pf'</em>, <em>cutoff=None</em>, <em>p_abandonment=0.15</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/pfound.html#Pfound"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Pfound" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Pfound with several parameters.</p>
+<p>The ERR metric is very similar to the pFound metric used by
+Yandex (Segalovich, 2010).
+[<a class="reference external" href="http://proceedings.mlr.press/v14/chapelle11a/chapelle11a.pdf">http://proceedings.mlr.press/v14/chapelle11a/chapelle11a.pdf</a>].</p>
+<p>In fact pFound is identical to the ERR variant described in
+(Chapelle et al., 2009, Section 7.2). We implemented pFound similar
+to ERR in section 7.2 of <a class="reference external" href="http://olivier.chapelle.cc/pub/err.pdf">http://olivier.chapelle.cc/pub/err.pdf</a>.</p>
+<p>This is the constructor of Pfound, an object of type Metric, with
+the name Pf. The constructor also allows setting custom values in
+the following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>Pf</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10),
+otherwise the default value is None and is computed on all the
+instances of a query.</dd>
+<dt>p_abandonment: float</dt>
+<dd>This parameter indicates the probability of abandonment, i.e.
+the user stops looking a the ranked list due to an external reason.
+The original cascade model of ERR has later been extended to include
+an abandonment probability: if the user is not satisfied at a given
+position, he will examine the next url with probability y, but has
+a probability 1-y of abandoning.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.Pfound.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/pfound.html#Pfound.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Pfound.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes Pfound by taking as input the dataset and the
+predicted document scores. It returns the averaged Pfound score over
+the entire dataset and the detailed Pfound scores per query.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply Pfound.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in
+the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>Represents the average Pfound over all Pfound scores per query.</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>Represents the detailed Pfound scores for each query. It has the
+length of n_queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.Pfound.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/pfound.html#Pfound.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.Pfound.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the Pfound score per query. It is called by
+the eval function which averages and aggregates the scores for each
+query.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>pfound: float</dt>
+<dd>Represents the Pfound score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.RBP">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">RBP</code><span class="sig-paren">(</span><em>name='RBP'</em>, <em>cutoff=None</em>, <em>threshold=1</em>, <em>p=0.5</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/rbp.html#RBP"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.RBP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Ranked biased Precision (RBP) with several parameters.
+We implemented RBP as in: Alistair Moffat and Justin Zobel. 2008.</p>
+<blockquote>
+<div>Rank-biased precision for measurement of retrieval effectiveness.</div></blockquote>
+<p>ACM Trans. Inf. Syst. 27, 1, Article 2 (December 2008), 27 pages.
+DOI=http://dx.doi.org/10.1145/1416950.1416952</p>
+<p>RBP is an extension of P&#64;k. User has certain chance to view each result.</p>
+<p>RBP = E(# viewed relevant results) / E(# viewed results)</p>
+<p>p is based on the user model perspective and allows simulating different
+types of users, e.g.:</p>
+<blockquote>
+<div>p = 0.95 for persistent user
+p = 0.8 for patient users
+p = 0.5 for impatient users
+p = 0 for i’m feeling lucky - P&#64;1</div></blockquote>
+<p>The use of different values of p reflects different ways in which ranked
+lists can be used. Values close to 1.0 are indicative of highly persistent
+users, who scrutinize many answers before ceasing their search. For example,
+at p = 0.95, there is a roughly 60% likelihood that a user will enter a
+second page of 10 results, and a 35% chance that they will go to a third
+page. Such users obtain a relatively low per-document utility from a search
+unless a high number of relevant documents are encountered, scattered
+through a long prefix of the ranking.</p>
+<p>This is the constructor of RBP, an object of type Metric, with the name
+RBP. The constructor also allows setting custom values in the following
+parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>RBP</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10)</dd>
+<dt>threshold: float</dt>
+<dd>This parameter considers relevant results all instances with labels
+different from 0, thus with a minimum label value of 1. It can be
+set to other values as well (e.g. 3), in the range of possible
+labels.</dd>
+<dt>p: float</dt>
+<dd>This parameter which simulates user type, and consequently the
+probability that a viewer actually inspects the document at rank k.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.RBP.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/rbp.html#RBP.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.RBP.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method takes the RBP for each query and calculates the average RBP.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply RBP.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in the
+dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall RBP score (averages over the detailed MAP scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed RBP&#64;k scores for each query, an array of length of the
+number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.RBP.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/rbp.html#RBP.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.RBP.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the RBP score per query. It is called by the
+eval function which averages and aggregates the scores for each query.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>rbp: float</dt>
+<dd>Represents the RBP score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.MSE">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">MSE</code><span class="sig-paren">(</span><em>name='MSE'</em>, <em>cutoff=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/mse.html#MSE"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.MSE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Mean squared error (MSE) with several parameters.</p>
+<p>This is the constructor of MSE, an object of type Metric, with
+the name MSE. The constructor also allows setting custom values in
+the following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>MSE</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10),
+otherwise the default value is None and is computed on all the
+instances of a query.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.MSE.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/mse.html#MSE.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.MSE.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method takes the MSE for each query and calculates
+the average MSE.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply MSE.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance
+in the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall MSE score (summed over the detailed MSE scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed MSE&#64;k scores for each query, an array of length of
+the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.MSE.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/mse.html#MSE.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.MSE.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the MSE score per query. It is called by
+the eval function which averages and aggregates the scores
+for each query.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>rmse: float</dt>
+<dd>Represents the MSE score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.RMSE">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">RMSE</code><span class="sig-paren">(</span><em>name='RMSE'</em>, <em>cutoff=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/rmse.html#RMSE"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.RMSE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Root mean squared error (RMSE) with
+several parameters.</p>
+<p>This is the constructor of RMSE, an object of type Metric, with the
+name RMSE. The constructor also allows setting custom values in the
+following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>RMSE</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10),
+otherwise the default value is None and is computed on all the
+instances of a query.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.RMSE.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/rmse.html#RMSE.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.RMSE.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method takes the RMSE for each query and calculates
+the average RMSE.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply RMSE.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance
+in the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall RMSE score (averages over the detailed RMSE scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed RMSE&#64;k scores for each query, an array of length of
+the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.RMSE.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/rmse.html#RMSE.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.RMSE.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the RMSE score per query. It is called by
+the eval function which averages and aggregates the scores
+for each query.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>rmse: float</dt>
+<dd>Represents the RMSE score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.metrics.SpearmanRho">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.</code><code class="descname">SpearmanRho</code><span class="sig-paren">(</span><em>name='Rho'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/spearman_rho.html#SpearmanRho"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.SpearmanRho" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Spearman’s Rho.
+We use the Spearman Rho coefficient implementation from scipy.</p>
+<p>This is the constructor of Spearman Rho, an object of type Metric, with
+the name Rho. The constructor also allows setting custom values in the
+following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>Rho</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.SpearmanRho.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/spearman_rho.html#SpearmanRho.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.SpearmanRho.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method computes the Spearman Rho tau score over the entire dataset
+and the detailed scores per query. It calls the eval_per query method
+for each query in order to get the detailed Spearman Rho score.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply Spearman Rho.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in the
+dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall Spearman Rho score (averages over the detailed scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed Spearman Rho scores for each query, an array of length
+of the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.SpearmanRho.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/spearman_rho.html#SpearmanRho.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.SpearmanRho.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods computes Spearman Rho at per query level (on the instances
+belonging to a specific query).</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in the
+dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>rho: float</dt>
+<dd>The Spearman Rho per query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-rankeval.metrics.dcg">
+<span id="rankeval-metrics-dcg-module"></span><h2>rankeval.metrics.dcg module<a class="headerlink" href="#module-rankeval.metrics.dcg" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.dcg.DCG">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.dcg.</code><code class="descname">DCG</code><span class="sig-paren">(</span><em>name='DCG'</em>, <em>cutoff=None</em>, <em>implementation='flat'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/dcg.html#DCG"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.dcg.DCG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements DCG with several parameters.</p>
+<p>This is the constructor of DCG, an object of type Metric,
+with the name DCG. The constructor also allows setting custom values
+in the following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>DCG</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10).</dd>
+<dt>no_relevant_results: float</dt>
+<dd>Float indicating how to treat the cases where then are no relevant
+results (e.g. 0.5).</dd>
+<dt>implementation: string</dt>
+<dd>Indicates whether to consider the flat or the exponential DCG
+formula (e.g.  {“flat”, “exp”}).</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.dcg.DCG.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/dcg.html#DCG.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.dcg.DCG.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes DCG by taking as input the dataset and
+the predicted document scores. It returns the averaged DCG score
+over the entire dataset and the detailed DCG scores per query.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply DCG.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance
+in the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float </dt>
+<dd>Represents the average DCG over all DCG scores per query.</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>Represents the detailed DCG scores for each query.
+It has the length of n_queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.dcg.DCG.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/dcg.html#DCG.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.dcg.DCG.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the DCG score per query. It is called by
+the eval function which averages and aggregates the scores
+for each query.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array. </dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>dcg: float</dt>
+<dd>Represents the DCG score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.err">
+<span id="rankeval-metrics-err-module"></span><h2>rankeval.metrics.err module<a class="headerlink" href="#module-rankeval.metrics.err" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.err.ERR">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.err.</code><code class="descname">ERR</code><span class="sig-paren">(</span><em>name='ERR'</em>, <em>cutoff=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/err.html#ERR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.err.ERR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Expected Reciprocal Rank as proposed
+in <a class="reference external" href="http://olivier.chapelle.cc/pub/err.pdf">http://olivier.chapelle.cc/pub/err.pdf</a></p>
+<p>This is the constructor of ERR, an object of type Metric,
+with the name ERR. The constructor also allows setting custom values
+in the following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>ERR</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10)</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.err.ERR.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/err.html#ERR.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.err.ERR.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes ERR by taking as input the dataset and the
+predicted document scores. It returns the averaged ERR score over
+the entire dataset and the detailed ERR scores per query.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply ERR.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance
+in the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>Represents the average ERR over all ERR scores per query.</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>Represents the detailed ERR scores for each query. It has the
+length of n_queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.err.ERR.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/err.html#ERR.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.err.ERR.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the ERR score per query. It is called by
+the eval function which averages and aggregates the scores
+for each query.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during
+the model scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>err: float</dt>
+<dd>Represents the ERR score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.kendall_tau">
+<span id="rankeval-metrics-kendall-tau-module"></span><h2>rankeval.metrics.kendall_tau module<a class="headerlink" href="#module-rankeval.metrics.kendall_tau" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.kendall_tau.Kendalltau">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.kendall_tau.</code><code class="descname">Kendalltau</code><span class="sig-paren">(</span><em>name='K'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/kendall_tau.html#Kendalltau"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.kendall_tau.Kendalltau" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Kendall’s Tau.
+We use the Kendall tau coefficient implementation from scipy.</p>
+<p>This is the constructor of Kendall Tau, an object of type Metric,
+with the name K. The constructor also allows setting custom values in
+the following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>K</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.kendall_tau.Kendalltau.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/kendall_tau.html#Kendalltau.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.kendall_tau.Kendalltau.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method computes the Kendall tau score over the entire dataset and
+the detailed scores per query. It calls the eval_per query method
+for each query in order to get the detailed Kendall tau score.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply Kendall Tau.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance
+in the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall Kendall tau score (averages over the detailed scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed Kendall tau scores for each query, an array with length
+of the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.kendall_tau.Kendalltau.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/kendall_tau.html#Kendalltau.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.kendall_tau.Kendalltau.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods computes Kendall tau at per query level (on the instances
+belonging to a specific query). The Kendall tau per query is
+calculated as:</p>
+<blockquote>
+<div>tau = (P - Q) / sqrt((P + Q + T) * (P + Q + U))</div></blockquote>
+<p>where P is the number of concordant pairs, Q the number of discordant
+pairs, T the number of ties only in x, and U the number of ties only
+in y. If a tie occurs for the same pair in both x and y, it is not
+added to either T or U.
+s
+Whether to use lexsort or quicksort as the sorting method for the
+initial sort of the inputs.  Default is lexsort (True), for which
+kendalltau is of complexity O(n log(n)). If False, the complexity
+is O(n^2), but with a smaller pre-factor (so quicksort may be faster
+for small arrays).</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>kendalltau: float</dt>
+<dd>The Kendall tau per query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.map">
+<span id="rankeval-metrics-map-module"></span><h2>rankeval.metrics.map module<a class="headerlink" href="#module-rankeval.metrics.map" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.map.MAP">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.map.</code><code class="descname">MAP</code><span class="sig-paren">(</span><em>name='MAP'</em>, <em>cutoff=None</em>, <em>no_relevant_results=1.0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/map.html#MAP"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.map.MAP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements MAP with several parameters. We implemented MAP as in
+<a class="reference external" href="https://www.kaggle.com/wiki/MeanAveragePrecision">https://www.kaggle.com/wiki/MeanAveragePrecision</a>, adapted from:
+<a class="reference external" href="http://en.wikipedia.org/wiki/Information_retrieval">http://en.wikipedia.org/wiki/Information_retrieval</a>
+<a class="reference external" href="https://www.ethz.ch/content/dam/ethz/special-interest/gess/computational-social-science-dam/documents/education/Spring2017/ML/LinkPrediction.pdf">https://www.ethz.ch/content/dam/ethz/special-interest/gess/computational-social-science-dam/documents/education/Spring2017/ML/LinkPrediction.pdf</a>
+<a class="reference external" href="http://sdsawtelle.github.io/blog/output/mean-average-precision-MAP-for-recommender-systems.html">http://sdsawtelle.github.io/blog/output/mean-average-precision-MAP-for-recommender-systems.html</a></p>
+<p>This is the constructor of MAP, an object of type Metric, with
+the name MAP. The constructor also allows setting custom values in the
+following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>MAP</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10),
+otherwise the default value is None and is computed on all the
+instances of a query.</dd>
+<dt>no_relevant_results: float</dt>
+<dd>Float indicating how to treat the cases where then are no relevant
+results (e.g. 0.5). Default is 1.0.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.map.MAP.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/map.html#MAP.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.map.MAP.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method takes the AP&#64;k for each query and calculates the average,
+thus MAP&#64;k.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply MAP.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in
+the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall MAP&#64;k score (averages over the detailed MAP scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed AP&#64;k scores for each query, an array of length of
+the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.map.MAP.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/map.html#MAP.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.map.MAP.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods computes AP&#64;k at per query level (on the instances
+belonging to a specific query). The AP&#64;k per query is calculated as</p>
+<p>ap&#64;k = sum( P(k) / min(m,n) ), for k=1,n</p>
+<dl class="docutils">
+<dt>where:</dt>
+<dd><ul class="first simple">
+<li>P(k) means the precision at cut-off k in the item list. P(k)</li>
+</ul>
+<p class="last">equals 0 when the k-th item is not followed upon recommendation
+- m is the overall number of relevant documents
+- n is the number of predicted documents</p>
+</dd>
+</dl>
+<p>If the denominator is zero, P(k)/min(m,n) is set to zero.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>map <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd>The MAP per query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.metric">
+<span id="rankeval-metrics-metric-module"></span><h2>rankeval.metrics.metric module<a class="headerlink" href="#module-rankeval.metrics.metric" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.metric.Metric">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.metric.</code><code class="descname">Metric</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/metric.html#Metric"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.metric.Metric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Metric is an abstract class which provides an interface for specific metrics.
+It also offers 2 methods, one for iterating over the indeces for a certain
+query and another for iterating over the entire dataset based on those
+indices.</p>
+<p>Some intuitions:
+<a class="reference external" href="https://stats.stackexchange.com/questions/159657/metrics-for-evaluating-ranking-algorithms">https://stats.stackexchange.com/questions/159657/metrics-for-evaluating-ranking-algorithms</a></p>
+<p>The constructor for any metric; it initializes that metric with the
+proper name.</p>
+<dl class="docutils">
+<dt>name <span class="classifier-delimiter">:</span> <span class="classifier">string</span></dt>
+<dd>Represents the name of that metric instance.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.metric.Metric.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/metric.html#Metric.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.metric.Metric.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This abstract method computes a specific metric over the predicted
+scores for a test dataset. It calls the eval_per query method for each
+query in order to get the detailed metric score.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which we want to apply the metric.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in the
+dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>Represents the average values of a metric over all metric scores
+per query.</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>Represents the detailed metric scores for each query. It has the
+length of n_queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.metric.Metric.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/metric.html#Metric.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.metric.Metric.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods helps to evaluate the predicted scores for a specific
+query within the dataset.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the instance labels corresponding to the queries in the
+dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>dcg: float</dt>
+<dd>Represents the metric score for one query.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.metric.Metric.query_iterator">
+<code class="descname">query_iterator</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/metric.html#Metric.query_iterator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.metric.Metric.query_iterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method iterates over dataset document scores and predicted scores
+in blocks of instances which belong to the same query.
+Parameters
+———-
+dataset :  Datatset
+y_pred  : numpy array</p>
+<dl class="docutils">
+<dt>: int</dt>
+<dd>The query id.</dd>
+<dt>: numpy.array</dt>
+<dd>The document scores of the instances in the labeled dataset
+(instance labels) belonging to the same query id.</dd>
+<dt>: numpy.array</dt>
+<dd>The predicted scores for the instances in the dataset belonging to
+the same query id.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.mrr">
+<span id="rankeval-metrics-mrr-module"></span><h2>rankeval.metrics.mrr module<a class="headerlink" href="#module-rankeval.metrics.mrr" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.mrr.MRR">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.mrr.</code><code class="descname">MRR</code><span class="sig-paren">(</span><em>name='MRR'</em>, <em>cutoff=None</em>, <em>threshold=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/mrr.html#MRR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.mrr.MRR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Mean Reciprocal Rank.</p>
+<p>This is the constructor of MRR, an object of type Metric, with the
+name MRR. The constructor also allows setting custom values in the
+following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>MRR</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10)</dd>
+<dt>threshold: float</dt>
+<dd>This parameter considers relevant results all instances with labels
+different from 0, thus with a minimum label value of 1. It can be
+set to other values as well (e.g. 3), in the range of possible labels.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.mrr.MRR.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/mrr.html#MRR.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.mrr.MRR.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes MRR by taking as input the dataset and the predicted
+document scores. It returns the averaged MRR score over the entire
+dataset and the detailed MRR scores per query.</p>
+<p>The mean reciprocal rank is the average of the reciprocal ranks of
+results for a sample of queries.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply MRR.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance
+in the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>Represents the average MRR over all MRR scores per query.</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>Represents the detailed MRR scores for each query. It has
+the length of n_queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.mrr.MRR.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/mrr.html#MRR.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.mrr.MRR.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the MRR score per query. It is called by the
+eval function which averages and aggregates the scores for each query.</p>
+<p>We compute the reciprocal rank. The reciprocal rank of a query response
+is the multiplicative inverse of the rank of the first correct answer.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in the
+dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>mrr: float</dt>
+<dd>Represents the MRR score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.mse">
+<span id="rankeval-metrics-mse-module"></span><h2>rankeval.metrics.mse module<a class="headerlink" href="#module-rankeval.metrics.mse" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.mse.MSE">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.mse.</code><code class="descname">MSE</code><span class="sig-paren">(</span><em>name='MSE'</em>, <em>cutoff=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/mse.html#MSE"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.mse.MSE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Mean squared error (MSE) with several parameters.</p>
+<p>This is the constructor of MSE, an object of type Metric, with
+the name MSE. The constructor also allows setting custom values in
+the following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>MSE</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10),
+otherwise the default value is None and is computed on all the
+instances of a query.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.mse.MSE.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/mse.html#MSE.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.mse.MSE.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method takes the MSE for each query and calculates
+the average MSE.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply MSE.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance
+in the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall MSE score (summed over the detailed MSE scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed MSE&#64;k scores for each query, an array of length of
+the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.mse.MSE.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/mse.html#MSE.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.mse.MSE.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the MSE score per query. It is called by
+the eval function which averages and aggregates the scores
+for each query.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>rmse: float</dt>
+<dd>Represents the MSE score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.ndcg">
+<span id="rankeval-metrics-ndcg-module"></span><h2>rankeval.metrics.ndcg module<a class="headerlink" href="#module-rankeval.metrics.ndcg" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.ndcg.NDCG">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.ndcg.</code><code class="descname">NDCG</code><span class="sig-paren">(</span><em>name='NDCG'</em>, <em>cutoff=None</em>, <em>no_relevant_results=1.0</em>, <em>implementation='exp'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/ndcg.html#NDCG"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.ndcg.NDCG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements NDCG with several parameters.</p>
+<p>This is the constructor of NDCG, an object of type Metric, with the
+name NDCG.
+The constructor also allows setting custom values</p>
+<blockquote>
+<div><ul class="simple">
+<li>cutoff: the top k results to be considered at per query level</li>
+<li><dl class="first docutils">
+<dt>no_relevant_results: is a float values indicating how to treat</dt>
+<dd>the cases where then are no relevant results</dd>
+</dl>
+</li>
+<li>ties: indicates how we should consider the ties</li>
+<li><dl class="first docutils">
+<dt>implementation: indicates whether to consider the flat or the</dt>
+<dd>exponential NDCG formula</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>NDCG</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10)</dd>
+<dt>no_relevant_results: float</dt>
+<dd>Float indicating how to treat the cases where then are no relevant
+results (e.g. 0.5). Default is 1.0.</dd>
+<dt>implementation: string</dt>
+<dd>Indicates whether to consider the flat or the exponential DCG
+formula: “flat” or “exp” (default).</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.ndcg.NDCG.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/ndcg.html#NDCG.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.ndcg.NDCG.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes NDCG by taking as input the dataset and the
+predicted document scores (obtained with the scoring methods). It
+returns the averaged NDCG score over the entire dataset and the
+detailed NDCG scores per query.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply NDCG.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in the
+dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>Represents the average NDCG over all NDCG scores per query.</dd>
+<dt>detailed_scores: numpy array of floats</dt>
+<dd>Represents the detailed NDCG scores for each query. It has the
+length of n_queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.ndcg.NDCG.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/ndcg.html#NDCG.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.ndcg.NDCG.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the NDCG score per query. It is called by the
+eval function which averages and aggregates the scores for each query.</p>
+<p>It calculates NDCG per query as &lt;dcg_score/idcg_score&gt;.
+If there are no relevant results, NDCG returns the values set by default
+or by the user when creating the metric.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in the
+dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>dcg: float</dt>
+<dd>Represents the DCG score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.pfound">
+<span id="rankeval-metrics-pfound-module"></span><h2>rankeval.metrics.pfound module<a class="headerlink" href="#module-rankeval.metrics.pfound" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.pfound.Pfound">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.pfound.</code><code class="descname">Pfound</code><span class="sig-paren">(</span><em>name='Pf'</em>, <em>cutoff=None</em>, <em>p_abandonment=0.15</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/pfound.html#Pfound"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.pfound.Pfound" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Pfound with several parameters.</p>
+<p>The ERR metric is very similar to the pFound metric used by
+Yandex (Segalovich, 2010).
+[<a class="reference external" href="http://proceedings.mlr.press/v14/chapelle11a/chapelle11a.pdf">http://proceedings.mlr.press/v14/chapelle11a/chapelle11a.pdf</a>].</p>
+<p>In fact pFound is identical to the ERR variant described in
+(Chapelle et al., 2009, Section 7.2). We implemented pFound similar
+to ERR in section 7.2 of <a class="reference external" href="http://olivier.chapelle.cc/pub/err.pdf">http://olivier.chapelle.cc/pub/err.pdf</a>.</p>
+<p>This is the constructor of Pfound, an object of type Metric, with
+the name Pf. The constructor also allows setting custom values in
+the following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>Pf</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10),
+otherwise the default value is None and is computed on all the
+instances of a query.</dd>
+<dt>p_abandonment: float</dt>
+<dd>This parameter indicates the probability of abandonment, i.e.
+the user stops looking a the ranked list due to an external reason.
+The original cascade model of ERR has later been extended to include
+an abandonment probability: if the user is not satisfied at a given
+position, he will examine the next url with probability y, but has
+a probability 1-y of abandoning.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.pfound.Pfound.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/pfound.html#Pfound.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.pfound.Pfound.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>The method computes Pfound by taking as input the dataset and the
+predicted document scores. It returns the averaged Pfound score over
+the entire dataset and the detailed Pfound scores per query.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply Pfound.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in
+the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>Represents the average Pfound over all Pfound scores per query.</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>Represents the detailed Pfound scores for each query. It has the
+length of n_queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.pfound.Pfound.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/pfound.html#Pfound.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.pfound.Pfound.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the Pfound score per query. It is called by
+the eval function which averages and aggregates the scores for each
+query.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>pfound: float</dt>
+<dd>Represents the Pfound score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.precision">
+<span id="rankeval-metrics-precision-module"></span><h2>rankeval.metrics.precision module<a class="headerlink" href="#module-rankeval.metrics.precision" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.precision.Precision">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.precision.</code><code class="descname">Precision</code><span class="sig-paren">(</span><em>name='P'</em>, <em>cutoff=None</em>, <em>threshold=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/precision.html#Precision"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.precision.Precision" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Precision as:
+(relevant docs &amp; retrieved docs) / retrieved docs.</p>
+<p>It allows setting custom values for cutoff and threshold, otherwise it uses
+the default values.</p>
+<p>This is the constructor of Precision, an object of type Metric, with
+the name P. The constructor also allows setting custom values for cutoff
+and threshold, otherwise it uses the default values.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>P</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10)</dd>
+<dt>threshold: float</dt>
+<dd>This parameter considers relevant results all instances with labels
+different from 0, thus with a minimum label value of 1. It can be
+set to other values as well (e.g. 3), in the range of possible
+labels.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.precision.Precision.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/precision.html#Precision.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.precision.Precision.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method computes the Precision score over the entire dataset and
+the detailed scores per query. It calls the eval_per query method for
+each query in order to get the detailed Precision score.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply Precision.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in the
+dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall Precision score (averages over the detailed precision
+scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed Precision scores for each query, an array of length of
+the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.precision.Precision.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/precision.html#Precision.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.precision.Precision.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods computes Precision at per query level (on the instances
+belonging to a specific query). The Precision per query is calculated as
+&lt;(relevant docs &amp; retrieved docs) / retrieved docs&gt;.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>precision: float</dt>
+<dd>The precision per query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.rbp">
+<span id="rankeval-metrics-rbp-module"></span><h2>rankeval.metrics.rbp module<a class="headerlink" href="#module-rankeval.metrics.rbp" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.rbp.RBP">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.rbp.</code><code class="descname">RBP</code><span class="sig-paren">(</span><em>name='RBP'</em>, <em>cutoff=None</em>, <em>threshold=1</em>, <em>p=0.5</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/rbp.html#RBP"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.rbp.RBP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Ranked biased Precision (RBP) with several parameters.
+We implemented RBP as in: Alistair Moffat and Justin Zobel. 2008.</p>
+<blockquote>
+<div>Rank-biased precision for measurement of retrieval effectiveness.</div></blockquote>
+<p>ACM Trans. Inf. Syst. 27, 1, Article 2 (December 2008), 27 pages.
+DOI=http://dx.doi.org/10.1145/1416950.1416952</p>
+<p>RBP is an extension of P&#64;k. User has certain chance to view each result.</p>
+<p>RBP = E(# viewed relevant results) / E(# viewed results)</p>
+<p>p is based on the user model perspective and allows simulating different
+types of users, e.g.:</p>
+<blockquote>
+<div>p = 0.95 for persistent user
+p = 0.8 for patient users
+p = 0.5 for impatient users
+p = 0 for i’m feeling lucky - P&#64;1</div></blockquote>
+<p>The use of different values of p reflects different ways in which ranked
+lists can be used. Values close to 1.0 are indicative of highly persistent
+users, who scrutinize many answers before ceasing their search. For example,
+at p = 0.95, there is a roughly 60% likelihood that a user will enter a
+second page of 10 results, and a 35% chance that they will go to a third
+page. Such users obtain a relatively low per-document utility from a search
+unless a high number of relevant documents are encountered, scattered
+through a long prefix of the ranking.</p>
+<p>This is the constructor of RBP, an object of type Metric, with the name
+RBP. The constructor also allows setting custom values in the following
+parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>RBP</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10)</dd>
+<dt>threshold: float</dt>
+<dd>This parameter considers relevant results all instances with labels
+different from 0, thus with a minimum label value of 1. It can be
+set to other values as well (e.g. 3), in the range of possible
+labels.</dd>
+<dt>p: float</dt>
+<dd>This parameter which simulates user type, and consequently the
+probability that a viewer actually inspects the document at rank k.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.rbp.RBP.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/rbp.html#RBP.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.rbp.RBP.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method takes the RBP for each query and calculates the average RBP.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply RBP.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in the
+dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall RBP score (averages over the detailed MAP scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed RBP&#64;k scores for each query, an array of length of the
+number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.rbp.RBP.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/rbp.html#RBP.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.rbp.RBP.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the RBP score per query. It is called by the
+eval function which averages and aggregates the scores for each query.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>rbp: float</dt>
+<dd>Represents the RBP score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.recall">
+<span id="rankeval-metrics-recall-module"></span><h2>rankeval.metrics.recall module<a class="headerlink" href="#module-rankeval.metrics.recall" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.recall.Recall">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.recall.</code><code class="descname">Recall</code><span class="sig-paren">(</span><em>name='R'</em>, <em>no_relevant_results=0.0</em>, <em>cutoff=None</em>, <em>threshold=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/recall.html#Recall"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.recall.Recall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Recall as:
+(relevant docs &amp; retrieved docs) / relevant docs.</p>
+<p>It allows setting custom values for cutoff and threshold, otherwise it uses
+the default values.</p>
+<p>This is the constructor of Recall, an object of type Metric, with
+the name R. The constructor also allows setting custom values
+for cutoff and threshold, otherwise it uses the default values.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>R</dd>
+<dt>no_relevant_results: float</dt>
+<dd>Float indicating how to treat the cases where then are no relevant
+results (e.g. 0.0).</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10)</dd>
+<dt>threshold: float</dt>
+<dd>This parameter considers relevant results all instances with labels
+different from 0, thus with a minimum label value of 1. It can be
+set to other values as well (e.g. 3), in the range of possible
+labels.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.recall.Recall.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/recall.html#Recall.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.recall.Recall.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method computes the Recall score over the entire dataset and the
+detailed scores per query. It calls the eval_per query method for each
+query in order to get the detailed Recall score.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply Recall.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in the
+dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall Recall score (averages over the detailed precision
+scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed Recall scores for each query, an array of length of
+the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.recall.Recall.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/recall.html#Recall.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.recall.Recall.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods computes Recall at per query level (on the instances
+belonging to a specific query). The Recall per query is calculated as
+&lt;(relevant docs &amp; retrieved docs) / relevant docs&gt;.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>recall: float</dt>
+<dd>The Recall score per query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.rmse">
+<span id="rankeval-metrics-rmse-module"></span><h2>rankeval.metrics.rmse module<a class="headerlink" href="#module-rankeval.metrics.rmse" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.rmse.RMSE">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.rmse.</code><code class="descname">RMSE</code><span class="sig-paren">(</span><em>name='RMSE'</em>, <em>cutoff=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/rmse.html#RMSE"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.rmse.RMSE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Root mean squared error (RMSE) with
+several parameters.</p>
+<p>This is the constructor of RMSE, an object of type Metric, with the
+name RMSE. The constructor also allows setting custom values in the
+following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>RMSE</dd>
+<dt>cutoff: int</dt>
+<dd>The top k results to be considered at per query level (e.g. 10),
+otherwise the default value is None and is computed on all the
+instances of a query.</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.rmse.RMSE.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/rmse.html#RMSE.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.rmse.RMSE.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method takes the RMSE for each query and calculates
+the average RMSE.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply RMSE.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance
+in the dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall RMSE score (averages over the detailed RMSE scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed RMSE&#64;k scores for each query, an array of length of
+the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.rmse.RMSE.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/rmse.html#RMSE.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.rmse.RMSE.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method helps compute the RMSE score per query. It is called by
+the eval function which averages and aggregates the scores
+for each query.</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in
+the dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>rmse: float</dt>
+<dd>Represents the RMSE score for one query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.metrics.spearman_rho">
+<span id="rankeval-metrics-spearman-rho-module"></span><h2>rankeval.metrics.spearman_rho module<a class="headerlink" href="#module-rankeval.metrics.spearman_rho" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="rankeval.metrics.spearman_rho.SpearmanRho">
+<em class="property">class </em><code class="descclassname">rankeval.metrics.spearman_rho.</code><code class="descname">SpearmanRho</code><span class="sig-paren">(</span><em>name='Rho'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/spearman_rho.html#SpearmanRho"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.spearman_rho.SpearmanRho" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#rankeval.metrics.metric.Metric" title="rankeval.metrics.metric.Metric"><code class="xref py py-class docutils literal notranslate"><span class="pre">rankeval.metrics.metric.Metric</span></code></a></p>
+<p>This class implements Spearman’s Rho.
+We use the Spearman Rho coefficient implementation from scipy.</p>
+<p>This is the constructor of Spearman Rho, an object of type Metric, with
+the name Rho. The constructor also allows setting custom values in the
+following parameters.</p>
+<dl class="docutils">
+<dt>name: string</dt>
+<dd>Rho</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.metrics.spearman_rho.SpearmanRho.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>dataset</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/spearman_rho.html#SpearmanRho.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.spearman_rho.SpearmanRho.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method computes the Spearman Rho tau score over the entire dataset
+and the detailed scores per query. It calls the eval_per query method
+for each query in order to get the detailed Spearman Rho score.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>Represents the Dataset object on which to apply Spearman Rho.</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array of float</span></dt>
+<dd>Represents the predicted document scores for each instance in the
+dataset.</dd>
+</dl>
+<dl class="docutils">
+<dt>avg_score: float</dt>
+<dd>The overall Spearman Rho score (averages over the detailed scores).</dd>
+<dt>detailed_scores: numpy 1d array of floats</dt>
+<dd>The detailed Spearman Rho scores for each query, an array of length
+of the number of queries.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.metrics.spearman_rho.SpearmanRho.eval_per_query">
+<code class="descname">eval_per_query</code><span class="sig-paren">(</span><em>y</em>, <em>y_pred</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/metrics/spearman_rho.html#SpearmanRho.eval_per_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.metrics.spearman_rho.SpearmanRho.eval_per_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>This methods computes Spearman Rho at per query level (on the instances
+belonging to a specific query).</p>
+<dl class="docutils">
+<dt>y: numpy array</dt>
+<dd>Represents the labels of instances corresponding to one query in the
+dataset (ground truth).</dd>
+<dt>y_pred: numpy array.</dt>
+<dd>Represents the predicted document scores obtained during the model
+scoring phase for that query.</dd>
+</dl>
+<dl class="docutils">
+<dt>rho: float</dt>
+<dd>The Spearman Rho per query.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="rankeval.model.html" class="btn btn-neutral float-right" title="rankeval.model package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="rankeval.dataset.html" class="btn btn-neutral" title="rankeval.dataset package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

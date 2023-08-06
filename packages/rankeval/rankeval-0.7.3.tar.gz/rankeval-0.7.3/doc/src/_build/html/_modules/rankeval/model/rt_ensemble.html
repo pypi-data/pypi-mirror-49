@@ -1,0 +1,629 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.model.rt_ensemble &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.model.rt_ensemble</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.model.rt_ensemble</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (c) 2017, All Contributors (see CONTRIBUTORS file)</span>
+<span class="c1"># Authors: Salvatore Trani &lt;salvatore.trani@isti.cnr.it&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c1"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c1"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Class for efficient modelling of an ensemble-based model of binary regression</span>
+<span class="sd">trees.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">copy</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">..scoring.scorer</span> <span class="k">import</span> <span class="n">Scorer</span>
+
+
+<div class="viewcode-block" id="RTEnsemble"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.RTEnsemble">[docs]</a><span class="k">class</span> <span class="nc">RTEnsemble</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Class for efficient modelling of an ensemble-based model composed of binary</span>
+<span class="sd">    regression trees.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    This class only provides the sketch of the data structure to use for storing</span>
+<span class="sd">    the model. The responsibility to correctly fill these data structures is</span>
+<span class="sd">    delegated to the various proxies model.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;QuickRank&quot;</span><span class="p">,</span>
+                 <span class="n">base_score</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">learning_rate</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_trees</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Load the model from the file identified by file_path using the given</span>
+<span class="sd">        format.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        file_path : str</span>
+<span class="sd">            The fpath to the filename where the model has been saved</span>
+<span class="sd">        name : str</span>
+<span class="sd">            The name to be given to the current model</span>
+<span class="sd">        format : [&#39;QuickRank&#39;, &#39;ScikitLearn&#39;, &#39;XGBoost&#39;, &#39;LightGBM&#39;]</span>
+<span class="sd">            The format of the model to load.</span>
+<span class="sd">        base_score : None or float</span>
+<span class="sd">            The initial prediction score of all instances, global bias.</span>
+<span class="sd">            If None, it uses default value used by each software</span>
+<span class="sd">            (0.5 XGBoost, 0.0 all the others).</span>
+<span class="sd">        learning_rate : None or float</span>
+<span class="sd">            The learning rate used by the model to shrinks the contribution of</span>
+<span class="sd">             each tree. By default it is set to 1 (no shrinking at all).</span>
+<span class="sd">        n_trees : None or int</span>
+<span class="sd">            The maximum number of trees to load from the model. By default it is</span>
+<span class="sd">            set to None, meaning the method will load all the trees.</span>
+
+<span class="sd">        Attributes</span>
+<span class="sd">        ----------</span>
+<span class="sd">        file : str</span>
+<span class="sd">            The path to the filename where the model has been saved</span>
+<span class="sd">        name : str</span>
+<span class="sd">            The name to be given to the current model</span>
+<span class="sd">        n_trees : integer</span>
+<span class="sd">            The number of regression trees in the ensemble.</span>
+<span class="sd">        n_nodes : integer</span>
+<span class="sd">            The total number of nodes (splitting nodes and leaves) in the ensemble</span>
+<span class="sd">        trees_root: list of integers</span>
+<span class="sd">            Numpy array modelling the indexes of the root nodes of the regression trees composing the ensemble. The indexes</span>
+<span class="sd">            refer to the following data structures:</span>
+<span class="sd">            * trees_left_child</span>
+<span class="sd">            * trees_right_child</span>
+<span class="sd">            * trees_nodes_value</span>
+<span class="sd">            * trees_nodes_feature</span>
+<span class="sd">        trees_weight: list of floats</span>
+<span class="sd">            Numpy array modelling the weights of the regression trees composing the ensemble.</span>
+<span class="sd">        trees_left_child: list of integers</span>
+<span class="sd">            Numpy array modelling the structure (shape) of the regression trees, considering only the left children.</span>
+<span class="sd">            Given a node of a regression tree (a single cell in this array), the value identify the index of the left</span>
+<span class="sd">            children. If the node is a leaf, the children assumes -1 value.</span>
+<span class="sd">        trees_right_child: list of integers</span>
+<span class="sd">            Numpy array modelling the structure (shape) of the regression trees, considering only the right children.</span>
+<span class="sd">            Given a node of a regression tree (a single cell in this array), the value identify the index of the right</span>
+<span class="sd">            children. If the node is a leaf, the children assumes -1 value.</span>
+<span class="sd">        trees_nodes_value: list of integers</span>
+<span class="sd">            Numpy array modelling either the output of a leaf node (whether the node is a leaf, in accordance with the</span>
+<span class="sd">            trees_structure data structure) or the splitting value of the node in the regression trees (with respect to the</span>
+<span class="sd">            feature identified by the trees_nodes_feature data structure).</span>
+<span class="sd">        trees_nodes_feature: list of integers</span>
+<span class="sd">            Numpy array modelling the feature-id used by the selected splitting node (or -1 if the node is a leaf).</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        model : RegressionTreeEnsemble</span>
+<span class="sd">            The loaded model as a RTEnsemble object</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">file</span> <span class="o">=</span> <span class="n">file_path</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;RTEnsemble: &quot;</span> <span class="o">+</span> <span class="n">file_path</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">learning_rate</span> <span class="o">=</span> <span class="n">learning_rate</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">base_score</span> <span class="o">=</span> <span class="n">base_score</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_score</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="nb">format</span> <span class="o">==</span> <span class="s2">&quot;XGBoost&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">base_score</span> <span class="o">=</span> <span class="mf">0.5</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_nodes</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_root</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_weight</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_left_child</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_right_child</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_nodes_value</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_nodes_feature</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_scorer</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="nb">format</span> <span class="o">==</span> <span class="s2">&quot;QuickRank&quot;</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">rankeval.model</span> <span class="k">import</span> <span class="n">ProxyQuickRank</span>
+            <span class="n">ProxyQuickRank</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">format</span> <span class="o">==</span> <span class="s2">&quot;LightGBM&quot;</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">rankeval.model</span> <span class="k">import</span> <span class="n">ProxyLightGBM</span>
+            <span class="n">ProxyLightGBM</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">format</span> <span class="o">==</span> <span class="s2">&quot;XGBoost&quot;</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">rankeval.model</span> <span class="k">import</span> <span class="n">ProxyXGBoost</span>
+            <span class="n">ProxyXGBoost</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">format</span> <span class="o">==</span> <span class="s2">&quot;ScikitLearn&quot;</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">rankeval.model</span> <span class="k">import</span> <span class="n">ProxyScikitLearn</span>
+            <span class="n">ProxyScikitLearn</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">format</span> <span class="o">==</span> <span class="s2">&quot;Jforests&quot;</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">rankeval.model</span> <span class="k">import</span> <span class="n">ProxyJforests</span>
+            <span class="n">ProxyJforests</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">format</span> <span class="o">==</span> <span class="s2">&quot;CatBoost&quot;</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">rankeval.model</span> <span class="k">import</span> <span class="n">ProxyCatBoost</span>
+            <span class="n">ProxyCatBoost</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Model format </span><span class="si">%s</span><span class="s2"> not yet supported!&quot;</span> <span class="o">%</span> <span class="nb">format</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">n_trees</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">n_trees</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_prune_model</span><span class="p">(</span><span class="n">n_trees</span><span class="p">)</span>
+
+<div class="viewcode-block" id="RTEnsemble.initialize"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.RTEnsemble.initialize">[docs]</a>    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_trees</span><span class="p">,</span> <span class="n">n_nodes</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize the internal data structures in order to reflect the given</span>
+<span class="sd">        shape and size of the ensemble. This method should be called only by</span>
+<span class="sd">        the Proxy Models (the specific format-based loader/saver)</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        n_trees : integer</span>
+<span class="sd">            The number of regression trees in the ensemble.</span>
+<span class="sd">        n_nodes : integer</span>
+<span class="sd">            The total number of nodes (splitting nodes and leaves) in the</span>
+<span class="sd">            ensemble</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span> <span class="o">=</span> <span class="n">n_trees</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_nodes</span> <span class="o">=</span> <span class="n">n_nodes</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_root</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="n">n_trees</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_weight</span> <span class="o">=</span> \
+            <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="n">n_trees</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_left_child</span> <span class="o">=</span> \
+            <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="n">n_nodes</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_right_child</span> <span class="o">=</span> \
+            <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="n">n_nodes</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_nodes_value</span> <span class="o">=</span> \
+            <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="n">n_nodes</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_nodes_feature</span> <span class="o">=</span> \
+            <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="n">n_nodes</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int16</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RTEnsemble.is_leaf_node"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.RTEnsemble.is_leaf_node">[docs]</a>    <span class="k">def</span> <span class="nf">is_leaf_node</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This method returns true if the node identified by the given index is a</span>
+<span class="sd">        leaf node, false otherwise</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        index : integer</span>
+<span class="sd">            The index of the node to test</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_left_child</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">and</span> \
+               <span class="bp">self</span><span class="o">.</span><span class="n">trees_right_child</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span></div>
+
+<div class="viewcode-block" id="RTEnsemble.max_leaves"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.RTEnsemble.max_leaves">[docs]</a>    <span class="k">def</span> <span class="nf">max_leaves</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Computes the maximum number of leaves across the trees of the model.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        max_leaves : int</span>
+<span class="sd">            Maximum number of leaves</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_leaves</span><span class="p">()</span><span class="o">.</span><span class="n">max</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="RTEnsemble.num_leaves"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.RTEnsemble.num_leaves">[docs]</a>    <span class="k">def</span> <span class="nf">num_leaves</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Computes the number of leaves for each tree of the model.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        n_leaves : numpy 1d array (n_trees)</span>
+<span class="sd">            Number of leaves</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">n_leaves</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">idx_tree</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span><span class="p">):</span>
+            <span class="n">root_node</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[</span><span class="n">idx_tree</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">idx_tree</span><span class="o">+</span><span class="mi">1</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span><span class="p">:</span>
+                <span class="n">next_root_node</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_nodes</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">next_root_node</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[</span><span class="n">idx_tree</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+            <span class="n">n_leaves</span><span class="p">[</span><span class="n">idx_tree</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">trees_left_child</span><span class="p">[</span><span class="n">root_node</span><span class="p">:</span><span class="n">next_root_node</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="n">n_leaves</span></div>
+
+<div class="viewcode-block" id="RTEnsemble.num_nodes"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.RTEnsemble.num_nodes">[docs]</a>    <span class="k">def</span> <span class="nf">num_nodes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Computes the number of nodes for each tree of the model.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        n_nodes : numpy 1d array (n_trees)</span>
+<span class="sd">            Number of nodes</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">n_nodes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">idx_tree</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span><span class="p">):</span>
+            <span class="n">root_node</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[</span><span class="n">idx_tree</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">idx_tree</span><span class="o">+</span><span class="mi">1</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span><span class="p">:</span>
+                <span class="n">next_root_node</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_nodes</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">next_root_node</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[</span><span class="n">idx_tree</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+            <span class="n">n_nodes</span><span class="p">[</span><span class="n">idx_tree</span><span class="p">]</span> <span class="o">=</span> <span class="n">next_root_node</span> <span class="o">-</span> <span class="n">root_node</span>
+
+        <span class="k">return</span> <span class="n">n_nodes</span></div>
+
+<div class="viewcode-block" id="RTEnsemble.height_trees"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.RTEnsemble.height_trees">[docs]</a>    <span class="k">def</span> <span class="nf">height_trees</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Computes the height of each tree of the model.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        heights : numpy 1d array (n_trees)</span>
+<span class="sd">            Height of each tree</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">def</span> <span class="nf">height_node</span><span class="p">(</span><span class="n">idx_node</span><span class="p">,</span> <span class="n">depth</span><span class="p">):</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_left_child</span><span class="p">[</span><span class="n">idx_node</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">depth</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="nb">max</span><span class="p">(</span>
+                    <span class="n">height_node</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">trees_left_child</span><span class="p">[</span><span class="n">idx_node</span><span class="p">],</span>
+                               <span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span>
+                    <span class="n">height_node</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">trees_right_child</span><span class="p">[</span><span class="n">idx_node</span><span class="p">],</span>
+                               <span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="p">)</span>
+
+        <span class="n">height_trees</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">idx_tree</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span><span class="p">):</span>
+            <span class="n">root_node</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[</span><span class="n">idx_tree</span><span class="p">]</span>
+            <span class="n">height_trees</span><span class="p">[</span><span class="n">idx_tree</span><span class="p">]</span> <span class="o">=</span> <span class="n">height_node</span><span class="p">(</span><span class="n">root_node</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">height_trees</span></div>
+
+<div class="viewcode-block" id="RTEnsemble.save"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.RTEnsemble.save">[docs]</a>    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;QuickRank&quot;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Save the model onto the file identified by file_path, using the given</span>
+<span class="sd">        model format.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        f : str</span>
+<span class="sd">            The path to the filename where the model has to be saved</span>
+<span class="sd">        format : str</span>
+<span class="sd">            The format to use for saving the model</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        status : bool</span>
+<span class="sd">            Returns true if the save is successful, false otherwise</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">format</span> <span class="o">==</span> <span class="s2">&quot;QuickRank&quot;</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">rankeval.model</span> <span class="k">import</span> <span class="n">ProxyQuickRank</span>
+            <span class="k">return</span> <span class="n">ProxyQuickRank</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">format</span> <span class="o">==</span> <span class="s2">&quot;LightGBM&quot;</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">rankeval.model</span> <span class="k">import</span> <span class="n">ProxyLightGBM</span>
+            <span class="k">return</span> <span class="n">ProxyLightGBM</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">format</span> <span class="o">==</span> <span class="s2">&quot;XGBoost&quot;</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">rankeval.model</span> <span class="k">import</span> <span class="n">ProxyXGBoost</span>
+            <span class="k">return</span> <span class="n">ProxyXGBoost</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">format</span> <span class="o">==</span> <span class="s2">&quot;ScikitLearn&quot;</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">rankeval.model</span> <span class="k">import</span> <span class="n">ProxyScikitLearn</span>
+            <span class="k">return</span> <span class="n">ProxyScikitLearn</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Model format </span><span class="si">%s</span><span class="s2"> not yet supported!&quot;</span> <span class="o">%</span> <span class="nb">format</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RTEnsemble.score"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.RTEnsemble.score">[docs]</a>    <span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">,</span> <span class="n">detailed</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Score the given model on the given dataset. Depending on the detailed</span>
+<span class="sd">        parameter, the scoring will be either basic (i.e., compute only the</span>
+<span class="sd">        document scores) or detailed (i.e., besides computing the document</span>
+<span class="sd">        scores analyze also several characteristics of the model. The scorer is</span>
+<span class="sd">        cached until existance of the model instance.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        dataset : Dataset</span>
+<span class="sd">            The dataset to be scored</span>
+<span class="sd">        detailed : bool</span>
+<span class="sd">            True if the model has to be scored in a detailed fashion, false</span>
+<span class="sd">            otherwise</span>
+<span class="sd">        cache : bool</span>
+<span class="sd">            True if the scoring results has to be cached, False otherwise. Take</span>
+<span class="sd">            into account that caching the results could need quite a lot of</span>
+<span class="sd">            memory, and this negative effect is particularly evident when</span>
+<span class="sd">            scoring multiple models on huge dataset. Default is False.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        y_pred : numpy 1d array (n_instances)</span>
+<span class="sd">            The predictions made by scoring the model on the given dataset</span>
+<span class="sd">        partial_y_pred : numpy 2d array (n_instances x n_trees)</span>
+<span class="sd">            The predictions made by scoring the model on the given dataset, on a</span>
+<span class="sd">            tree basis (i.e., tree by tree and instance by instance)</span>
+<span class="sd">        y_leaves : numpy 2d array (n_instances x n_trees)</span>
+<span class="sd">            The leaf nodes predicted by scoring the model on the given dataset,</span>
+<span class="sd">            on a tree basis (i.e., tree by tree and instance by instance)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># check that the features used by the model are &quot;compatible&quot; with the</span>
+        <span class="c1"># features in the dataset (at least, in terms of their number)</span>
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">trees_nodes_feature</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="n">dataset</span><span class="o">.</span><span class="n">n_features</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Dataset features are not compatible with &quot;</span>
+                               <span class="s2">&quot;model features&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">dataset</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache_scorer</span> <span class="ow">or</span> \
+                <span class="n">detailed</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache_scorer</span><span class="p">[</span><span class="n">dataset</span><span class="p">]</span><span class="o">.</span><span class="n">partial_y_pred</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+
+            <span class="n">scorer</span> <span class="o">=</span> <span class="n">Scorer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">cache</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_cache_scorer</span><span class="p">[</span><span class="n">dataset</span><span class="p">]</span> <span class="o">=</span> <span class="n">scorer</span>
+            <span class="c1"># The scoring is performed only if it has not been done before...</span>
+            <span class="n">scorer</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">detailed</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">learning_rate</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">scorer</span><span class="o">.</span><span class="n">y_pred</span> <span class="o">*=</span> <span class="bp">self</span><span class="o">.</span><span class="n">learning_rate</span>
+                <span class="k">if</span> <span class="n">detailed</span><span class="p">:</span>
+                    <span class="n">scorer</span><span class="o">.</span><span class="n">partial_y_pred</span> <span class="o">*=</span> <span class="bp">self</span><span class="o">.</span><span class="n">learning_rate</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_score</span><span class="p">:</span>
+                <span class="n">scorer</span><span class="o">.</span><span class="n">y_pred</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_score</span>
+                <span class="k">if</span> <span class="n">detailed</span><span class="p">:</span>
+                    <span class="n">scorer</span><span class="o">.</span><span class="n">partial_y_pred</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_score</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">scorer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache_scorer</span><span class="p">[</span><span class="n">dataset</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">detailed</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">scorer</span><span class="o">.</span><span class="n">y_pred</span><span class="p">,</span> <span class="n">scorer</span><span class="o">.</span><span class="n">partial_y_pred</span><span class="p">,</span> <span class="n">scorer</span><span class="o">.</span><span class="n">out_leaves</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">scorer</span><span class="o">.</span><span class="n">y_pred</span></div>
+
+<div class="viewcode-block" id="RTEnsemble.clear_cache"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.RTEnsemble.clear_cache">[docs]</a>    <span class="k">def</span> <span class="nf">clear_cache</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This method is used to clear the internal cache of the model from the</span>
+<span class="sd">        scoring objects. Call this method at the end of the analysis of the</span>
+<span class="sd">        current model (the memory otherwise will be automatically be freed on</span>
+<span class="sd">        object deletion)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_scorer</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="RTEnsemble.copy"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.RTEnsemble.copy">[docs]</a>    <span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_trees</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a copy of this model, with all the trees up to the given number.</span>
+<span class="sd">        By default n_trees is set to None, meaning to copy all the trees</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        n_trees : None or int</span>
+<span class="sd">            The number of trees the model will have after calling this method.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        model : RTEnsemble</span>
+<span class="sd">            The copied model, pruned from all the trees exceeding the given</span>
+<span class="sd">            number of trees chosen</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">new_model</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">n_trees</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">new_model</span><span class="o">.</span><span class="n">_prune_model</span><span class="p">(</span><span class="n">n_trees</span><span class="o">=</span><span class="n">n_trees</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">new_model</span></div>
+
+    <span class="k">def</span> <span class="nf">_prune_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_trees</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This method prunes the ensemble of trees up to the given number of trees</span>
+<span class="sd">        in order to reduce the size of the model. Useful for creating smaller</span>
+<span class="sd">        models starting from a bigger model.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        n_trees : int</span>
+<span class="sd">            The number of trees the model will have after calling this method.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># skip the pruning if the model already contains less or equals trees</span>
+        <span class="c1"># than expected</span>
+        <span class="k">if</span> <span class="n">n_trees</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="n">start_idx_prune</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[</span><span class="n">n_trees</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_root</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[:</span><span class="n">n_trees</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_weight</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_weight</span><span class="p">[:</span><span class="n">n_trees</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_nodes_feature</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_nodes_feature</span><span class="p">[:</span><span class="n">start_idx_prune</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_nodes_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_nodes_value</span><span class="p">[:</span><span class="n">start_idx_prune</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_right_child</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_right_child</span><span class="p">[:</span><span class="n">start_idx_prune</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trees_left_child</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trees_left_child</span><span class="p">[:</span><span class="n">start_idx_prune</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span> <span class="o">=</span> <span class="n">n_trees</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_nodes</span> <span class="o">=</span> <span class="n">start_idx_prune</span>
+
+        <span class="c1"># Reset cache scorer</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache_scorer</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.scoring package &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="rankeval.visualization package" href="rankeval.visualization.html" />
+    <link rel="prev" title="rankeval.model package" href="rankeval.model.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="rankeval.html">rankeval package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="rankeval.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="rankeval.analysis.html">rankeval.analysis package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.dataset.html">rankeval.dataset package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.metrics.html">rankeval.metrics package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.model.html">rankeval.model package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">rankeval.scoring package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.scoring.scorer">rankeval.scoring.scorer module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.visualization.html">rankeval.visualization package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="rankeval.html">rankeval package</a> &raquo;</li>
+        
+      <li>rankeval.scoring package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/rankeval.scoring.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-rankeval.scoring">
+<span id="rankeval-scoring-package"></span><h1>rankeval.scoring package<a class="headerlink" href="#module-rankeval.scoring" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference internal" href="#module-rankeval.scoring" title="rankeval.scoring"><code class="xref py py-mod docutils literal notranslate"><span class="pre">rankeval.scoring</span></code></a> module includes utilities to score a model on a given dataset.</p>
+<dl class="class">
+<dt id="rankeval.scoring.Scorer">
+<em class="property">class </em><code class="descclassname">rankeval.scoring.</code><code class="descname">Scorer</code><span class="sig-paren">(</span><em>model</em>, <em>dataset</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/scoring/scorer.html#Scorer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.scoring.Scorer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for efficient scoring of an ensemble-based model composed of binary regression trees on a given dataset.</p>
+<p>This class can be used for simple or detailed scoring, depending on the mode selected at scoring time.
+The document scores are cached as to avoid useless re-scoring. Thus, calling multiple times the <cite>score</cite> method
+does not involve the scoring activity to be executed again, except for a detailed scoring following a basic scoring.
+Indeed in this situation the scoring has to be repeated as to analyze in depth the scoring behaviour.</p>
+<dl class="docutils">
+<dt>model: RTEnsemble</dt>
+<dd>The model to use for scoring</dd>
+<dt>dataset: Dataset</dt>
+<dd>The dataset to use for scoring</dd>
+</dl>
+<dl class="docutils">
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model to use for scoring</dd>
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>The dataset to use for scoring</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy array of float</span></dt>
+<dd>The predicted scores produced by the given model for each sample of the given dataset X</dd>
+<dt>partial_y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 2d-array of float</span></dt>
+<dd>The predicted score of each tree of the model for each dataset instance</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.scoring.Scorer.get_partial_predicted_scores">
+<code class="descname">get_partial_predicted_scores</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/scoring/scorer.html#Scorer.get_partial_predicted_scores"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.scoring.Scorer.get_partial_predicted_scores" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide an accessor to the partial scores produced by the given model
+for each sample of the given dataset X. Each partial score reflects the
+score produced by a single tree of the ensemble model to a single
+dataset instance. Thus, the returned numpy matrix has a shape of
+(n_instances, n_trees). The partial scores does not take into account
+the tree weights, thus for producing the final score is needed to
+multiply each row for the tree weight vector.</p>
+<dl class="docutils">
+<dt>scores <span class="classifier-delimiter">:</span> <span class="classifier">numpy 2d-array of float</span></dt>
+<dd>The predicted score of each tree of the model for each dataset instance</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.scoring.Scorer.get_predicted_leaves">
+<code class="descname">get_predicted_leaves</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/scoring/scorer.html#Scorer.get_predicted_leaves"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.scoring.Scorer.get_predicted_leaves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide an accessor to the leaves that identify the exit nodes of each
+sample of the given dataset X using the given model.</p>
+<p>Each leaf value reflects the output node of a single tree of the
+ensemble model to a single dataset instance. Thus, the returned numpy
+matrix has a shape of (n_instances, n_trees).</p>
+<dl class="docutils">
+<dt>scores <span class="classifier-delimiter">:</span> <span class="classifier">numpy 2d-array of int</span></dt>
+<dd>The leaves predicted by each tree of the model on scoring
+each dataset instance.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.scoring.Scorer.get_predicted_scores">
+<code class="descname">get_predicted_scores</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/scoring/scorer.html#Scorer.get_predicted_scores"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.scoring.Scorer.get_predicted_scores" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide an accessor to the predicted scores produced by the given model for each sample of the given dataset X</p>
+<dl class="docutils">
+<dt>scores <span class="classifier-delimiter">:</span> <span class="classifier">numpy array of float</span></dt>
+<dd>The predicted scores produced by the given model for each sample of the given dataset X</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.scoring.Scorer.score">
+<code class="descname">score</code><span class="sig-paren">(</span><em>detailed</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/scoring/scorer.html#Scorer.score"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.scoring.Scorer.score" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>detailed <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>True if the class has to performs a detailed scoring, false otherwise</dd>
+</dl>
+<dl class="docutils">
+<dt>y <span class="classifier-delimiter">:</span> <span class="classifier">numpy array of float</span></dt>
+<dd>the predicted scores produced by the given model for each sample of the given dataset X</dd>
+</dl>
+<dl class="docutils">
+<dt>self.y <span class="classifier-delimiter">:</span> <span class="classifier">array of float</span></dt>
+<dd>The predicted scores of each dataset instance</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-rankeval.scoring.scorer">
+<span id="rankeval-scoring-scorer-module"></span><h2>rankeval.scoring.scorer module<a class="headerlink" href="#module-rankeval.scoring.scorer" title="Permalink to this headline">¶</a></h2>
+<p>Class for efficient scoring of an ensemble-based model composed of binary regression trees on a given dataset.</p>
+<dl class="class">
+<dt id="rankeval.scoring.scorer.Scorer">
+<em class="property">class </em><code class="descclassname">rankeval.scoring.scorer.</code><code class="descname">Scorer</code><span class="sig-paren">(</span><em>model</em>, <em>dataset</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/scoring/scorer.html#Scorer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.scoring.scorer.Scorer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for efficient scoring of an ensemble-based model composed of binary regression trees on a given dataset.</p>
+<p>This class can be used for simple or detailed scoring, depending on the mode selected at scoring time.
+The document scores are cached as to avoid useless re-scoring. Thus, calling multiple times the <cite>score</cite> method
+does not involve the scoring activity to be executed again, except for a detailed scoring following a basic scoring.
+Indeed in this situation the scoring has to be repeated as to analyze in depth the scoring behaviour.</p>
+<dl class="docutils">
+<dt>model: RTEnsemble</dt>
+<dd>The model to use for scoring</dd>
+<dt>dataset: Dataset</dt>
+<dd>The dataset to use for scoring</dd>
+</dl>
+<dl class="docutils">
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model to use for scoring</dd>
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>The dataset to use for scoring</dd>
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy array of float</span></dt>
+<dd>The predicted scores produced by the given model for each sample of the given dataset X</dd>
+<dt>partial_y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 2d-array of float</span></dt>
+<dd>The predicted score of each tree of the model for each dataset instance</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.scoring.scorer.Scorer.get_partial_predicted_scores">
+<code class="descname">get_partial_predicted_scores</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/scoring/scorer.html#Scorer.get_partial_predicted_scores"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.scoring.scorer.Scorer.get_partial_predicted_scores" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide an accessor to the partial scores produced by the given model
+for each sample of the given dataset X. Each partial score reflects the
+score produced by a single tree of the ensemble model to a single
+dataset instance. Thus, the returned numpy matrix has a shape of
+(n_instances, n_trees). The partial scores does not take into account
+the tree weights, thus for producing the final score is needed to
+multiply each row for the tree weight vector.</p>
+<dl class="docutils">
+<dt>scores <span class="classifier-delimiter">:</span> <span class="classifier">numpy 2d-array of float</span></dt>
+<dd>The predicted score of each tree of the model for each dataset instance</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.scoring.scorer.Scorer.get_predicted_leaves">
+<code class="descname">get_predicted_leaves</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/scoring/scorer.html#Scorer.get_predicted_leaves"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.scoring.scorer.Scorer.get_predicted_leaves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide an accessor to the leaves that identify the exit nodes of each
+sample of the given dataset X using the given model.</p>
+<p>Each leaf value reflects the output node of a single tree of the
+ensemble model to a single dataset instance. Thus, the returned numpy
+matrix has a shape of (n_instances, n_trees).</p>
+<dl class="docutils">
+<dt>scores <span class="classifier-delimiter">:</span> <span class="classifier">numpy 2d-array of int</span></dt>
+<dd>The leaves predicted by each tree of the model on scoring
+each dataset instance.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.scoring.scorer.Scorer.get_predicted_scores">
+<code class="descname">get_predicted_scores</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/scoring/scorer.html#Scorer.get_predicted_scores"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.scoring.scorer.Scorer.get_predicted_scores" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide an accessor to the predicted scores produced by the given model for each sample of the given dataset X</p>
+<dl class="docutils">
+<dt>scores <span class="classifier-delimiter">:</span> <span class="classifier">numpy array of float</span></dt>
+<dd>The predicted scores produced by the given model for each sample of the given dataset X</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.scoring.scorer.Scorer.score">
+<code class="descname">score</code><span class="sig-paren">(</span><em>detailed</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/scoring/scorer.html#Scorer.score"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.scoring.scorer.Scorer.score" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>detailed <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>True if the class has to performs a detailed scoring, false otherwise</dd>
+</dl>
+<dl class="docutils">
+<dt>y <span class="classifier-delimiter">:</span> <span class="classifier">numpy array of float</span></dt>
+<dd>the predicted scores produced by the given model for each sample of the given dataset X</dd>
+</dl>
+<dl class="docutils">
+<dt>self.y <span class="classifier-delimiter">:</span> <span class="classifier">array of float</span></dt>
+<dd>The predicted scores of each dataset instance</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="rankeval.visualization.html" class="btn btn-neutral float-right" title="rankeval.visualization package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="rankeval.model.html" class="btn btn-neutral" title="rankeval.model package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

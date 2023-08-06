@@ -1,0 +1,1249 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.model package &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="rankeval.scoring package" href="rankeval.scoring.html" />
+    <link rel="prev" title="rankeval.metrics package" href="rankeval.metrics.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="rankeval.html">rankeval package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="rankeval.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="rankeval.analysis.html">rankeval.analysis package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.dataset.html">rankeval.dataset package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.metrics.html">rankeval.metrics package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">rankeval.model package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.model.proxy_CatBoost">rankeval.model.proxy_CatBoost module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.model.proxy_Jforests">rankeval.model.proxy_Jforests module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.model.proxy_LightGBM">rankeval.model.proxy_LightGBM module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.model.proxy_QuickRank">rankeval.model.proxy_QuickRank module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.model.proxy_ScikitLearn">rankeval.model.proxy_ScikitLearn module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.model.proxy_XGBoost">rankeval.model.proxy_XGBoost module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.model.rt_ensemble">rankeval.model.rt_ensemble module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.scoring.html">rankeval.scoring package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.visualization.html">rankeval.visualization package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="rankeval.html">rankeval package</a> &raquo;</li>
+        
+      <li>rankeval.model package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/rankeval.model.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-rankeval.model">
+<span id="rankeval-model-package"></span><h1>rankeval.model package<a class="headerlink" href="#module-rankeval.model" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference internal" href="#module-rankeval.model" title="rankeval.model"><code class="xref py py-mod docutils literal notranslate"><span class="pre">rankeval.model</span></code></a> module includes utilities to load a model
+and dump it according to several supported model’s format.</p>
+<dl class="class">
+<dt id="rankeval.model.RTEnsemble">
+<em class="property">class </em><code class="descclassname">rankeval.model.</code><code class="descname">RTEnsemble</code><span class="sig-paren">(</span><em>file_path</em>, <em>name=None</em>, <em>format='QuickRank'</em>, <em>base_score=None</em>, <em>learning_rate=1</em>, <em>n_trees=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.RTEnsemble" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for efficient modelling of an ensemble-based model composed of binary
+regression trees.</p>
+<p>This class only provides the sketch of the data structure to use for storing
+the model. The responsibility to correctly fill these data structures is
+delegated to the various proxies model.</p>
+<p>Load the model from the file identified by file_path using the given
+format.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The fpath to the filename where the model has been saved</dd>
+<dt>name <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The name to be given to the current model</dd>
+<dt>format <span class="classifier-delimiter">:</span> <span class="classifier">[‘QuickRank’, ‘ScikitLearn’, ‘XGBoost’, ‘LightGBM’]</span></dt>
+<dd>The format of the model to load.</dd>
+<dt>base_score <span class="classifier-delimiter">:</span> <span class="classifier">None or float</span></dt>
+<dd>The initial prediction score of all instances, global bias.
+If None, it uses default value used by each software
+(0.5 XGBoost, 0.0 all the others).</dd>
+<dt>learning_rate <span class="classifier-delimiter">:</span> <span class="classifier">None or float</span></dt>
+<dd><dl class="first last docutils">
+<dt>The learning rate used by the model to shrinks the contribution of</dt>
+<dd>each tree. By default it is set to 1 (no shrinking at all).</dd>
+</dl>
+</dd>
+<dt>n_trees <span class="classifier-delimiter">:</span> <span class="classifier">None or int</span></dt>
+<dd>The maximum number of trees to load from the model. By default it is
+set to None, meaning the method will load all the trees.</dd>
+</dl>
+<dl class="docutils">
+<dt>file <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>name <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The name to be given to the current model</dd>
+<dt>n_trees <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd>The number of regression trees in the ensemble.</dd>
+<dt>n_nodes <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd>The total number of nodes (splitting nodes and leaves) in the ensemble</dd>
+<dt>trees_root: list of integers</dt>
+<dd>Numpy array modelling the indexes of the root nodes of the regression trees composing the ensemble. The indexes
+refer to the following data structures:
+* trees_left_child
+* trees_right_child
+* trees_nodes_value
+* trees_nodes_feature</dd>
+<dt>trees_weight: list of floats</dt>
+<dd>Numpy array modelling the weights of the regression trees composing the ensemble.</dd>
+<dt>trees_left_child: list of integers</dt>
+<dd>Numpy array modelling the structure (shape) of the regression trees, considering only the left children.
+Given a node of a regression tree (a single cell in this array), the value identify the index of the left
+children. If the node is a leaf, the children assumes -1 value.</dd>
+<dt>trees_right_child: list of integers</dt>
+<dd>Numpy array modelling the structure (shape) of the regression trees, considering only the right children.
+Given a node of a regression tree (a single cell in this array), the value identify the index of the right
+children. If the node is a leaf, the children assumes -1 value.</dd>
+<dt>trees_nodes_value: list of integers</dt>
+<dd>Numpy array modelling either the output of a leaf node (whether the node is a leaf, in accordance with the
+trees_structure data structure) or the splitting value of the node in the regression trees (with respect to the
+feature identified by the trees_nodes_feature data structure).</dd>
+<dt>trees_nodes_feature: list of integers</dt>
+<dd>Numpy array modelling the feature-id used by the selected splitting node (or -1 if the node is a leaf).</dd>
+</dl>
+<dl class="docutils">
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RegressionTreeEnsemble</span></dt>
+<dd>The loaded model as a RTEnsemble object</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.model.RTEnsemble.clear_cache">
+<code class="descname">clear_cache</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.clear_cache"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.RTEnsemble.clear_cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used to clear the internal cache of the model from the
+scoring objects. Call this method at the end of the analysis of the
+current model (the memory otherwise will be automatically be freed on
+object deletion)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.RTEnsemble.copy">
+<code class="descname">copy</code><span class="sig-paren">(</span><em>n_trees=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.copy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.RTEnsemble.copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a copy of this model, with all the trees up to the given number.
+By default n_trees is set to None, meaning to copy all the trees</p>
+<dl class="docutils">
+<dt>n_trees <span class="classifier-delimiter">:</span> <span class="classifier">None or int</span></dt>
+<dd>The number of trees the model will have after calling this method.</dd>
+</dl>
+<dl class="docutils">
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The copied model, pruned from all the trees exceeding the given
+number of trees chosen</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.RTEnsemble.height_trees">
+<code class="descname">height_trees</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.height_trees"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.RTEnsemble.height_trees" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the height of each tree of the model.</p>
+<dl class="docutils">
+<dt>heights <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array (n_trees)</span></dt>
+<dd>Height of each tree</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.RTEnsemble.initialize">
+<code class="descname">initialize</code><span class="sig-paren">(</span><em>n_trees</em>, <em>n_nodes</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.initialize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.RTEnsemble.initialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the internal data structures in order to reflect the given
+shape and size of the ensemble. This method should be called only by
+the Proxy Models (the specific format-based loader/saver)</p>
+<dl class="docutils">
+<dt>n_trees <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd>The number of regression trees in the ensemble.</dd>
+<dt>n_nodes <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd>The total number of nodes (splitting nodes and leaves) in the
+ensemble</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.RTEnsemble.is_leaf_node">
+<code class="descname">is_leaf_node</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.is_leaf_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.RTEnsemble.is_leaf_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method returns true if the node identified by the given index is a
+leaf node, false otherwise</p>
+<dl class="docutils">
+<dt>index <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd>The index of the node to test</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.RTEnsemble.max_leaves">
+<code class="descname">max_leaves</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.max_leaves"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.RTEnsemble.max_leaves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the maximum number of leaves across the trees of the model.</p>
+<dl class="docutils">
+<dt>max_leaves <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>Maximum number of leaves</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.RTEnsemble.num_leaves">
+<code class="descname">num_leaves</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.num_leaves"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.RTEnsemble.num_leaves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the number of leaves for each tree of the model.</p>
+<dl class="docutils">
+<dt>n_leaves <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array (n_trees)</span></dt>
+<dd>Number of leaves</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.RTEnsemble.num_nodes">
+<code class="descname">num_nodes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.num_nodes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.RTEnsemble.num_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the number of nodes for each tree of the model.</p>
+<dl class="docutils">
+<dt>n_nodes <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array (n_trees)</span></dt>
+<dd>Number of nodes</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.RTEnsemble.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>f</em>, <em>format='QuickRank'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.RTEnsemble.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path, using the given
+model format.</p>
+<dl class="docutils">
+<dt>f <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>format <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The format to use for saving the model</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.RTEnsemble.score">
+<code class="descname">score</code><span class="sig-paren">(</span><em>dataset</em>, <em>detailed=False</em>, <em>cache=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.score"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.RTEnsemble.score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Score the given model on the given dataset. Depending on the detailed
+parameter, the scoring will be either basic (i.e., compute only the
+document scores) or detailed (i.e., besides computing the document
+scores analyze also several characteristics of the model. The scorer is
+cached until existance of the model instance.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>The dataset to be scored</dd>
+<dt>detailed <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>True if the model has to be scored in a detailed fashion, false
+otherwise</dd>
+<dt>cache <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>True if the scoring results has to be cached, False otherwise. Take
+into account that caching the results could need quite a lot of
+memory, and this negative effect is particularly evident when
+scoring multiple models on huge dataset. Default is False.</dd>
+</dl>
+<dl class="docutils">
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array (n_instances)</span></dt>
+<dd>The predictions made by scoring the model on the given dataset</dd>
+<dt>partial_y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 2d array (n_instances x n_trees)</span></dt>
+<dd>The predictions made by scoring the model on the given dataset, on a
+tree basis (i.e., tree by tree and instance by instance)</dd>
+<dt>y_leaves <span class="classifier-delimiter">:</span> <span class="classifier">numpy 2d array (n_instances x n_trees)</span></dt>
+<dd>The leaf nodes predicted by scoring the model on the given dataset,
+on a tree basis (i.e., tree by tree and instance by instance)</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.model.ProxyQuickRank">
+<em class="property">class </em><code class="descclassname">rankeval.model.</code><code class="descname">ProxyQuickRank</code><a class="reference internal" href="_modules/rankeval/model/proxy_QuickRank.html#ProxyQuickRank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyQuickRank" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing the implementation for loading/storing a QuickRank model
+from/to file.</p>
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyQuickRank.load">
+<em class="property">static </em><code class="descname">load</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_QuickRank.html#ProxyQuickRank.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyQuickRank.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the model from the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model instance to fill</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyQuickRank.save">
+<em class="property">static </em><code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_QuickRank.html#ProxyQuickRank.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyQuickRank.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model RTEnsemble model to save on file</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.model.ProxyLightGBM">
+<em class="property">class </em><code class="descclassname">rankeval.model.</code><code class="descname">ProxyLightGBM</code><a class="reference internal" href="_modules/rankeval/model/proxy_LightGBM.html#ProxyLightGBM"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyLightGBM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing the implementation for loading/storing a LightGBM model
+from/to file.</p>
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyLightGBM.load">
+<em class="property">static </em><code class="descname">load</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_LightGBM.html#ProxyLightGBM.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyLightGBM.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the model from the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model instance to fill</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyLightGBM.save">
+<em class="property">static </em><code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_LightGBM.html#ProxyLightGBM.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyLightGBM.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model RTEnsemble model to save on file</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.model.ProxyXGBoost">
+<em class="property">class </em><code class="descclassname">rankeval.model.</code><code class="descname">ProxyXGBoost</code><a class="reference internal" href="_modules/rankeval/model/proxy_XGBoost.html#ProxyXGBoost"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyXGBoost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing the implementation for loading/storing a XGBoost model
+from/to file.</p>
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyXGBoost.load">
+<em class="property">static </em><code class="descname">load</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_XGBoost.html#ProxyXGBoost.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyXGBoost.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the model from the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model instance to fill</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyXGBoost.save">
+<em class="property">static </em><code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_XGBoost.html#ProxyXGBoost.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyXGBoost.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model RTEnsemble model to save on file</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.model.ProxyScikitLearn">
+<em class="property">class </em><code class="descclassname">rankeval.model.</code><code class="descname">ProxyScikitLearn</code><a class="reference internal" href="_modules/rankeval/model/proxy_ScikitLearn.html#ProxyScikitLearn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyScikitLearn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing the implementation for loading/storing a Scikit-Learn model
+from/to file.</p>
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyScikitLearn.export_scikit_model">
+<em class="property">static </em><code class="descname">export_scikit_model</code><span class="sig-paren">(</span><em>model</em>, <em>file_path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_ScikitLearn.html#ProxyScikitLearn.export_scikit_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyScikitLearn.export_scikit_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyScikitLearn.load">
+<em class="property">static </em><code class="descname">load</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_ScikitLearn.html#ProxyScikitLearn.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyScikitLearn.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the model from the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model instance to fill</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyScikitLearn.save">
+<em class="property">static </em><code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_ScikitLearn.html#ProxyScikitLearn.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyScikitLearn.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model RTEnsemble model to save on file</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.model.ProxyJforests">
+<em class="property">class </em><code class="descclassname">rankeval.model.</code><code class="descname">ProxyJforests</code><a class="reference internal" href="_modules/rankeval/model/proxy_Jforests.html#ProxyJforests"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyJforests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing the implementation for loading/storing a Jforests model
+from/to file.</p>
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyJforests.load">
+<em class="property">static </em><code class="descname">load</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_Jforests.html#ProxyJforests.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyJforests.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the model from the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model instance to fill</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyJforests.save">
+<em class="property">static </em><code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_Jforests.html#ProxyJforests.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyJforests.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model RTEnsemble model to save on file</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="rankeval.model.ProxyCatBoost">
+<em class="property">class </em><code class="descclassname">rankeval.model.</code><code class="descname">ProxyCatBoost</code><a class="reference internal" href="_modules/rankeval/model/proxy_CatBoost.html#ProxyCatBoost"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyCatBoost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing the implementation for loading/storing a ProxyCatBoost model
+from/to file.</p>
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyCatBoost.load">
+<em class="property">static </em><code class="descname">load</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_CatBoost.html#ProxyCatBoost.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyCatBoost.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the model from the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model instance to fill</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyCatBoost.remap_nodeId">
+<em class="property">static </em><code class="descname">remap_nodeId</code><span class="sig-paren">(</span><em>nodeId</em>, <em>n_nodes_per_tree</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_CatBoost.html#ProxyCatBoost.remap_nodeId"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyCatBoost.remap_nodeId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.ProxyCatBoost.save">
+<em class="property">static </em><code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_CatBoost.html#ProxyCatBoost.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.ProxyCatBoost.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model RTEnsemble model to save on file</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-rankeval.model.proxy_CatBoost">
+<span id="rankeval-model-proxy-catboost-module"></span><h2>rankeval.model.proxy_CatBoost module<a class="headerlink" href="#module-rankeval.model.proxy_CatBoost" title="Permalink to this headline">¶</a></h2>
+<p>Class providing the implementation for loading/storing a CatBoost model
+from/to file.</p>
+<dl class="docutils">
+<dt>The CatBoost project is described here:</dt>
+<dd><a class="reference external" href="https://github.com/catboost/catboost">https://github.com/catboost/catboost</a></dd>
+</dl>
+<p>CatBoost allows to save the learned model in several formats (binary, coreml,
+etc). Among them, we chose to adopts the Apple CoreML format for reading and
+converting a model into the rankeval representation. It s possible to read  the
+coreML representation using the coremltools python package. Once read it
+provides all the structured information of the ensemble, with split nodes (both
+features and thresholds), leaf values and tree structure. Not all the
+information reported in the model are useful for the different analysis, thus
+only the relevant parts are parsed.</p>
+<p>NOTE: CatBoost trains oblivious trees, i.e., trees where at each level a single
+condition is checked, independently from the which node we are currently working
+on. Rankeval does not exploit oblivious trees, but instead it represent them
+as normal decision trees Thus the same condition will appear on all the nodes
+of a single level of a tree. The reason behind this choice is to fasten the
+development of the CatBoost proxy, allowing to analyze it without focusing too
+much on prediction time (that is not currently measured by rankeval).</p>
+<dl class="class">
+<dt id="rankeval.model.proxy_CatBoost.ProxyCatBoost">
+<em class="property">class </em><code class="descclassname">rankeval.model.proxy_CatBoost.</code><code class="descname">ProxyCatBoost</code><a class="reference internal" href="_modules/rankeval/model/proxy_CatBoost.html#ProxyCatBoost"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_CatBoost.ProxyCatBoost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing the implementation for loading/storing a ProxyCatBoost model
+from/to file.</p>
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_CatBoost.ProxyCatBoost.load">
+<em class="property">static </em><code class="descname">load</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_CatBoost.html#ProxyCatBoost.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_CatBoost.ProxyCatBoost.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the model from the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model instance to fill</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_CatBoost.ProxyCatBoost.remap_nodeId">
+<em class="property">static </em><code class="descname">remap_nodeId</code><span class="sig-paren">(</span><em>nodeId</em>, <em>n_nodes_per_tree</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_CatBoost.html#ProxyCatBoost.remap_nodeId"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_CatBoost.ProxyCatBoost.remap_nodeId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_CatBoost.ProxyCatBoost.save">
+<em class="property">static </em><code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_CatBoost.html#ProxyCatBoost.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_CatBoost.ProxyCatBoost.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model RTEnsemble model to save on file</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.model.proxy_Jforests">
+<span id="rankeval-model-proxy-jforests-module"></span><h2>rankeval.model.proxy_Jforests module<a class="headerlink" href="#module-rankeval.model.proxy_Jforests" title="Permalink to this headline">¶</a></h2>
+<p>Class providing the implementation for loading/storing a QuickRank model
+from/to file.</p>
+<p>The Jforests project is described here: <a class="reference external" href="https://github.com/yasserg/jforests">https://github.com/yasserg/jforests</a></p>
+<p>The Jforests format adopts an XML representation. There is an ensemble node,
+with a sub-node for each tree, identified by the “Tree” tag, followed by the
+description of the tree (with splitting and leaf nodes). The splitting nodes are
+described with two information: the feature-id used for splitting, and the
+threshold value. Leaf nodes on the other hand are described by a “LeafOutputs”
+tag with the value as content.</p>
+<dl class="class">
+<dt id="rankeval.model.proxy_Jforests.ProxyJforests">
+<em class="property">class </em><code class="descclassname">rankeval.model.proxy_Jforests.</code><code class="descname">ProxyJforests</code><a class="reference internal" href="_modules/rankeval/model/proxy_Jforests.html#ProxyJforests"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_Jforests.ProxyJforests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing the implementation for loading/storing a Jforests model
+from/to file.</p>
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_Jforests.ProxyJforests.load">
+<em class="property">static </em><code class="descname">load</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_Jforests.html#ProxyJforests.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_Jforests.ProxyJforests.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the model from the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model instance to fill</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_Jforests.ProxyJforests.save">
+<em class="property">static </em><code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_Jforests.html#ProxyJforests.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_Jforests.ProxyJforests.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model RTEnsemble model to save on file</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.model.proxy_LightGBM">
+<span id="rankeval-model-proxy-lightgbm-module"></span><h2>rankeval.model.proxy_LightGBM module<a class="headerlink" href="#module-rankeval.model.proxy_LightGBM" title="Permalink to this headline">¶</a></h2>
+<p>Class providing the implementation for loading/storing a LightGBM model
+from/to file.</p>
+<dl class="docutils">
+<dt>The LightGBM project is described here:</dt>
+<dd><a class="reference external" href="https://github.com/Microsoft/LightGBM">https://github.com/Microsoft/LightGBM</a></dd>
+</dl>
+<p>The LightGBM format adopts a textual representation using arrays for storing
+split nodes (both features and thresholds), leaf values and tree structure.
+Not all the information reported in the model are useful for the different
+analysis, thus only the relevant parts are parsed.</p>
+<p>NOTE: the leaves output of the regression trees already take into account the
+weight of the tree (i.e., the learning rate or shrinkage factor). In order to
+maintain the scoring made by rankeval (that multiply the leaf output by the tree
+weight), the weight of the trees have been set equals to 1.</p>
+<p>NOTE: currently rankeval does not support missing features. This features is not
+strictly required because all the most popular open-domain Learning to Rank
+datasets do not have missing values. To this regard, take thus into account that
+you may experience an unexpected behaviour if the LightGBM model you are trying
+to load is trained on a dataset with missing values (especially in the case you
+use the setting zero_as_missing=true).</p>
+<dl class="class">
+<dt id="rankeval.model.proxy_LightGBM.ProxyLightGBM">
+<em class="property">class </em><code class="descclassname">rankeval.model.proxy_LightGBM.</code><code class="descname">ProxyLightGBM</code><a class="reference internal" href="_modules/rankeval/model/proxy_LightGBM.html#ProxyLightGBM"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_LightGBM.ProxyLightGBM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing the implementation for loading/storing a LightGBM model
+from/to file.</p>
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_LightGBM.ProxyLightGBM.load">
+<em class="property">static </em><code class="descname">load</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_LightGBM.html#ProxyLightGBM.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_LightGBM.ProxyLightGBM.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the model from the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model instance to fill</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_LightGBM.ProxyLightGBM.save">
+<em class="property">static </em><code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_LightGBM.html#ProxyLightGBM.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_LightGBM.ProxyLightGBM.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model RTEnsemble model to save on file</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.model.proxy_QuickRank">
+<span id="rankeval-model-proxy-quickrank-module"></span><h2>rankeval.model.proxy_QuickRank module<a class="headerlink" href="#module-rankeval.model.proxy_QuickRank" title="Permalink to this headline">¶</a></h2>
+<p>Class providing the implementation for loading/storing a QuickRank model
+from/to file.</p>
+<p>The QuickRank project is described here: <a class="reference external" href="http://quickrank.isti.cnr.it">http://quickrank.isti.cnr.it</a></p>
+<p>The QuickRank format adopts an XML representation. There is an header section,
+identified by the “info” tag, with the most important parameters adopted to
+learn such a model. It follows then the description of the ensemble, with a node
+for each tree, identified by the “tree” tag, followed by the description of the
+tree (with splitting and leaf nodes). The splitting nodes are described with two
+information: the feature id used for splitting, and the threshold value. Leaf
+nodes on the other hand are described by an “output” tag with the value as
+content.</p>
+<dl class="class">
+<dt id="rankeval.model.proxy_QuickRank.ProxyQuickRank">
+<em class="property">class </em><code class="descclassname">rankeval.model.proxy_QuickRank.</code><code class="descname">ProxyQuickRank</code><a class="reference internal" href="_modules/rankeval/model/proxy_QuickRank.html#ProxyQuickRank"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_QuickRank.ProxyQuickRank" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing the implementation for loading/storing a QuickRank model
+from/to file.</p>
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_QuickRank.ProxyQuickRank.load">
+<em class="property">static </em><code class="descname">load</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_QuickRank.html#ProxyQuickRank.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_QuickRank.ProxyQuickRank.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the model from the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model instance to fill</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_QuickRank.ProxyQuickRank.save">
+<em class="property">static </em><code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_QuickRank.html#ProxyQuickRank.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_QuickRank.ProxyQuickRank.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model RTEnsemble model to save on file</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.model.proxy_ScikitLearn">
+<span id="rankeval-model-proxy-scikitlearn-module"></span><h2>rankeval.model.proxy_ScikitLearn module<a class="headerlink" href="#module-rankeval.model.proxy_ScikitLearn" title="Permalink to this headline">¶</a></h2>
+<p>Class providing the implementation for loading/storing a Scikit-Learn model
+from/to file. The model has to be saved using the export_scikit_model method:
+.. code-block:: python</p>
+<blockquote>
+<div>from sklearn import ensemble
+from rankeval.model import ProxyScikitLearn
+…
+gbrt = ensemble.GradientBoostingRegressor(…)
+gbrt.fit(X, y)
+ProxyScikitLearn.export_scikit_model(model=gbrt, file_path=model_path)
+gbrt_rankeval = RTEnsemble(file_path=model_path, format=’ScikitLearn’)</div></blockquote>
+<dl class="docutils">
+<dt>The Scikit-Learn project is described here:</dt>
+<dd><a class="reference external" href="http://scikit-learn.org/">http://scikit-learn.org/</a></dd>
+</dl>
+<dl class="class">
+<dt id="rankeval.model.proxy_ScikitLearn.ProxyScikitLearn">
+<em class="property">class </em><code class="descclassname">rankeval.model.proxy_ScikitLearn.</code><code class="descname">ProxyScikitLearn</code><a class="reference internal" href="_modules/rankeval/model/proxy_ScikitLearn.html#ProxyScikitLearn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_ScikitLearn.ProxyScikitLearn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing the implementation for loading/storing a Scikit-Learn model
+from/to file.</p>
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_ScikitLearn.ProxyScikitLearn.export_scikit_model">
+<em class="property">static </em><code class="descname">export_scikit_model</code><span class="sig-paren">(</span><em>model</em>, <em>file_path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_ScikitLearn.html#ProxyScikitLearn.export_scikit_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_ScikitLearn.ProxyScikitLearn.export_scikit_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_ScikitLearn.ProxyScikitLearn.load">
+<em class="property">static </em><code class="descname">load</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_ScikitLearn.html#ProxyScikitLearn.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_ScikitLearn.ProxyScikitLearn.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the model from the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model instance to fill</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_ScikitLearn.ProxyScikitLearn.save">
+<em class="property">static </em><code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_ScikitLearn.html#ProxyScikitLearn.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_ScikitLearn.ProxyScikitLearn.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model RTEnsemble model to save on file</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.model.proxy_XGBoost">
+<span id="rankeval-model-proxy-xgboost-module"></span><h2>rankeval.model.proxy_XGBoost module<a class="headerlink" href="#module-rankeval.model.proxy_XGBoost" title="Permalink to this headline">¶</a></h2>
+<p>Class providing the implementation for loading/storing a XGBoost model
+from/to file. The model has to be saved using textual representation, i.e., by
+using the following method:
+.. code-block:: python</p>
+<blockquote>
+<div>import xgboost as xgb
+…
+bst = xgb.train(param, dtrain, num_round)
+bst.dump_model(‘xgboost.model’)</div></blockquote>
+<dl class="docutils">
+<dt>The XGBoost project is described here:</dt>
+<dd><a class="reference external" href="https://github.com/dmlc/xgboost">https://github.com/dmlc/xgboost</a></dd>
+</dl>
+<p>The XGBoost format adopts a textual representation where each line of the file
+represent a single split node or a leaf node, with several attributes describing
+the feature and the threshold involved (in case of a split node) or the output
+(in case of a leaf). Each node is identified by a unique integer as well as
+additional information not usefull for rankeval and thus ignored.</p>
+<p>NOTE: the XGBoost version 0.6 does not properly dump the model. Indeed, as
+reported in the issue here:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/dmlc/xgboost/issues/2077">https://github.com/dmlc/xgboost/issues/2077</a></li>
+</ul>
+<p>The precision of the dumping is not sufficient and cause inconsistencies with
+the XGBoost model. This inconsistencies cause rankeval scoring to return
+different predictions with respect to the original model. Without a fix by
+XGBoost authors, DO NOT USE this proxy.</p>
+<dl class="class">
+<dt id="rankeval.model.proxy_XGBoost.ProxyXGBoost">
+<em class="property">class </em><code class="descclassname">rankeval.model.proxy_XGBoost.</code><code class="descname">ProxyXGBoost</code><a class="reference internal" href="_modules/rankeval/model/proxy_XGBoost.html#ProxyXGBoost"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_XGBoost.ProxyXGBoost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class providing the implementation for loading/storing a XGBoost model
+from/to file.</p>
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_XGBoost.ProxyXGBoost.load">
+<em class="property">static </em><code class="descname">load</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_XGBoost.html#ProxyXGBoost.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_XGBoost.ProxyXGBoost.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the model from the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model instance to fill</dd>
+</dl>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="rankeval.model.proxy_XGBoost.ProxyXGBoost.save">
+<em class="property">static </em><code class="descname">save</code><span class="sig-paren">(</span><em>file_path</em>, <em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/proxy_XGBoost.html#ProxyXGBoost.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.proxy_XGBoost.ProxyXGBoost.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The model RTEnsemble model to save on file</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.model.rt_ensemble">
+<span id="rankeval-model-rt-ensemble-module"></span><h2>rankeval.model.rt_ensemble module<a class="headerlink" href="#module-rankeval.model.rt_ensemble" title="Permalink to this headline">¶</a></h2>
+<p>Class for efficient modelling of an ensemble-based model of binary regression
+trees.</p>
+<dl class="class">
+<dt id="rankeval.model.rt_ensemble.RTEnsemble">
+<em class="property">class </em><code class="descclassname">rankeval.model.rt_ensemble.</code><code class="descname">RTEnsemble</code><span class="sig-paren">(</span><em>file_path</em>, <em>name=None</em>, <em>format='QuickRank'</em>, <em>base_score=None</em>, <em>learning_rate=1</em>, <em>n_trees=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.rt_ensemble.RTEnsemble" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for efficient modelling of an ensemble-based model composed of binary
+regression trees.</p>
+<p>This class only provides the sketch of the data structure to use for storing
+the model. The responsibility to correctly fill these data structures is
+delegated to the various proxies model.</p>
+<p>Load the model from the file identified by file_path using the given
+format.</p>
+<dl class="docutils">
+<dt>file_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The fpath to the filename where the model has been saved</dd>
+<dt>name <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The name to be given to the current model</dd>
+<dt>format <span class="classifier-delimiter">:</span> <span class="classifier">[‘QuickRank’, ‘ScikitLearn’, ‘XGBoost’, ‘LightGBM’]</span></dt>
+<dd>The format of the model to load.</dd>
+<dt>base_score <span class="classifier-delimiter">:</span> <span class="classifier">None or float</span></dt>
+<dd>The initial prediction score of all instances, global bias.
+If None, it uses default value used by each software
+(0.5 XGBoost, 0.0 all the others).</dd>
+<dt>learning_rate <span class="classifier-delimiter">:</span> <span class="classifier">None or float</span></dt>
+<dd><dl class="first last docutils">
+<dt>The learning rate used by the model to shrinks the contribution of</dt>
+<dd>each tree. By default it is set to 1 (no shrinking at all).</dd>
+</dl>
+</dd>
+<dt>n_trees <span class="classifier-delimiter">:</span> <span class="classifier">None or int</span></dt>
+<dd>The maximum number of trees to load from the model. By default it is
+set to None, meaning the method will load all the trees.</dd>
+</dl>
+<dl class="docutils">
+<dt>file <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has been saved</dd>
+<dt>name <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The name to be given to the current model</dd>
+<dt>n_trees <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd>The number of regression trees in the ensemble.</dd>
+<dt>n_nodes <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd>The total number of nodes (splitting nodes and leaves) in the ensemble</dd>
+<dt>trees_root: list of integers</dt>
+<dd>Numpy array modelling the indexes of the root nodes of the regression trees composing the ensemble. The indexes
+refer to the following data structures:
+* trees_left_child
+* trees_right_child
+* trees_nodes_value
+* trees_nodes_feature</dd>
+<dt>trees_weight: list of floats</dt>
+<dd>Numpy array modelling the weights of the regression trees composing the ensemble.</dd>
+<dt>trees_left_child: list of integers</dt>
+<dd>Numpy array modelling the structure (shape) of the regression trees, considering only the left children.
+Given a node of a regression tree (a single cell in this array), the value identify the index of the left
+children. If the node is a leaf, the children assumes -1 value.</dd>
+<dt>trees_right_child: list of integers</dt>
+<dd>Numpy array modelling the structure (shape) of the regression trees, considering only the right children.
+Given a node of a regression tree (a single cell in this array), the value identify the index of the right
+children. If the node is a leaf, the children assumes -1 value.</dd>
+<dt>trees_nodes_value: list of integers</dt>
+<dd>Numpy array modelling either the output of a leaf node (whether the node is a leaf, in accordance with the
+trees_structure data structure) or the splitting value of the node in the regression trees (with respect to the
+feature identified by the trees_nodes_feature data structure).</dd>
+<dt>trees_nodes_feature: list of integers</dt>
+<dd>Numpy array modelling the feature-id used by the selected splitting node (or -1 if the node is a leaf).</dd>
+</dl>
+<dl class="docutils">
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RegressionTreeEnsemble</span></dt>
+<dd>The loaded model as a RTEnsemble object</dd>
+</dl>
+<dl class="method">
+<dt id="rankeval.model.rt_ensemble.RTEnsemble.clear_cache">
+<code class="descname">clear_cache</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.clear_cache"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.rt_ensemble.RTEnsemble.clear_cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used to clear the internal cache of the model from the
+scoring objects. Call this method at the end of the analysis of the
+current model (the memory otherwise will be automatically be freed on
+object deletion)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.rt_ensemble.RTEnsemble.copy">
+<code class="descname">copy</code><span class="sig-paren">(</span><em>n_trees=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.copy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.rt_ensemble.RTEnsemble.copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a copy of this model, with all the trees up to the given number.
+By default n_trees is set to None, meaning to copy all the trees</p>
+<dl class="docutils">
+<dt>n_trees <span class="classifier-delimiter">:</span> <span class="classifier">None or int</span></dt>
+<dd>The number of trees the model will have after calling this method.</dd>
+</dl>
+<dl class="docutils">
+<dt>model <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble</span></dt>
+<dd>The copied model, pruned from all the trees exceeding the given
+number of trees chosen</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.rt_ensemble.RTEnsemble.height_trees">
+<code class="descname">height_trees</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.height_trees"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.rt_ensemble.RTEnsemble.height_trees" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the height of each tree of the model.</p>
+<dl class="docutils">
+<dt>heights <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array (n_trees)</span></dt>
+<dd>Height of each tree</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.rt_ensemble.RTEnsemble.initialize">
+<code class="descname">initialize</code><span class="sig-paren">(</span><em>n_trees</em>, <em>n_nodes</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.initialize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.rt_ensemble.RTEnsemble.initialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the internal data structures in order to reflect the given
+shape and size of the ensemble. This method should be called only by
+the Proxy Models (the specific format-based loader/saver)</p>
+<dl class="docutils">
+<dt>n_trees <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd>The number of regression trees in the ensemble.</dd>
+<dt>n_nodes <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd>The total number of nodes (splitting nodes and leaves) in the
+ensemble</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.rt_ensemble.RTEnsemble.is_leaf_node">
+<code class="descname">is_leaf_node</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.is_leaf_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.rt_ensemble.RTEnsemble.is_leaf_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method returns true if the node identified by the given index is a
+leaf node, false otherwise</p>
+<dl class="docutils">
+<dt>index <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd>The index of the node to test</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.rt_ensemble.RTEnsemble.max_leaves">
+<code class="descname">max_leaves</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.max_leaves"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.rt_ensemble.RTEnsemble.max_leaves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the maximum number of leaves across the trees of the model.</p>
+<dl class="docutils">
+<dt>max_leaves <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>Maximum number of leaves</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.rt_ensemble.RTEnsemble.num_leaves">
+<code class="descname">num_leaves</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.num_leaves"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.rt_ensemble.RTEnsemble.num_leaves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the number of leaves for each tree of the model.</p>
+<dl class="docutils">
+<dt>n_leaves <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array (n_trees)</span></dt>
+<dd>Number of leaves</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.rt_ensemble.RTEnsemble.num_nodes">
+<code class="descname">num_nodes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.num_nodes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.rt_ensemble.RTEnsemble.num_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the number of nodes for each tree of the model.</p>
+<dl class="docutils">
+<dt>n_nodes <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array (n_trees)</span></dt>
+<dd>Number of nodes</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.rt_ensemble.RTEnsemble.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>f</em>, <em>format='QuickRank'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.rt_ensemble.RTEnsemble.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the model onto the file identified by file_path, using the given
+model format.</p>
+<dl class="docutils">
+<dt>f <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The path to the filename where the model has to be saved</dd>
+<dt>format <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>The format to use for saving the model</dd>
+</dl>
+<dl class="docutils">
+<dt>status <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Returns true if the save is successful, false otherwise</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="rankeval.model.rt_ensemble.RTEnsemble.score">
+<code class="descname">score</code><span class="sig-paren">(</span><em>dataset</em>, <em>detailed=False</em>, <em>cache=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/model/rt_ensemble.html#RTEnsemble.score"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.model.rt_ensemble.RTEnsemble.score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Score the given model on the given dataset. Depending on the detailed
+parameter, the scoring will be either basic (i.e., compute only the
+document scores) or detailed (i.e., besides computing the document
+scores analyze also several characteristics of the model. The scorer is
+cached until existance of the model instance.</p>
+<dl class="docutils">
+<dt>dataset <span class="classifier-delimiter">:</span> <span class="classifier">Dataset</span></dt>
+<dd>The dataset to be scored</dd>
+<dt>detailed <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>True if the model has to be scored in a detailed fashion, false
+otherwise</dd>
+<dt>cache <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>True if the scoring results has to be cached, False otherwise. Take
+into account that caching the results could need quite a lot of
+memory, and this negative effect is particularly evident when
+scoring multiple models on huge dataset. Default is False.</dd>
+</dl>
+<dl class="docutils">
+<dt>y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 1d array (n_instances)</span></dt>
+<dd>The predictions made by scoring the model on the given dataset</dd>
+<dt>partial_y_pred <span class="classifier-delimiter">:</span> <span class="classifier">numpy 2d array (n_instances x n_trees)</span></dt>
+<dd>The predictions made by scoring the model on the given dataset, on a
+tree basis (i.e., tree by tree and instance by instance)</dd>
+<dt>y_leaves <span class="classifier-delimiter">:</span> <span class="classifier">numpy 2d array (n_instances x n_trees)</span></dt>
+<dd>The leaf nodes predicted by scoring the model on the given dataset,
+on a tree basis (i.e., tree by tree and instance by instance)</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="rankeval.scoring.html" class="btn btn-neutral float-right" title="rankeval.scoring package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="rankeval.metrics.html" class="btn btn-neutral" title="rankeval.metrics package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

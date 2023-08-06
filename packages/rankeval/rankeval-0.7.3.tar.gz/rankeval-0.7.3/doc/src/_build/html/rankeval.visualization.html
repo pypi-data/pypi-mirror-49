@@ -1,0 +1,525 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.visualization package &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="rankeval.scoring package" href="rankeval.scoring.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="rankeval.html">rankeval package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="rankeval.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="rankeval.analysis.html">rankeval.analysis package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.dataset.html">rankeval.dataset package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.metrics.html">rankeval.metrics package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.model.html">rankeval.model package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rankeval.scoring.html">rankeval.scoring package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">rankeval.visualization package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.visualization.effectiveness">rankeval.visualization.effectiveness module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.visualization.feature">rankeval.visualization.feature module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-rankeval.visualization.topological">rankeval.visualization.topological module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="rankeval.html">rankeval package</a> &raquo;</li>
+        
+      <li>rankeval.visualization package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/rankeval.visualization.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-rankeval.visualization">
+<span id="rankeval-visualization-package"></span><h1>rankeval.visualization package<a class="headerlink" href="#module-rankeval.visualization" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-rankeval.visualization.effectiveness">
+<span id="rankeval-visualization-effectiveness-module"></span><h2>rankeval.visualization.effectiveness module<a class="headerlink" href="#module-rankeval.visualization.effectiveness" title="Permalink to this headline">¶</a></h2>
+<p>This package provides visualizations for several effectiveness analysis focused on assessing
+the performance of the models in terms of accuracy.</p>
+<dl class="function">
+<dt id="rankeval.visualization.effectiveness.init_plot_style">
+<code class="descclassname">rankeval.visualization.effectiveness.</code><code class="descname">init_plot_style</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/effectiveness.html#init_plot_style"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.effectiveness.init_plot_style" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize plot style for RankEval visualization utilities.
+Returns
+——-</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="rankeval.visualization.effectiveness.is_log_scale_matrix">
+<code class="descclassname">rankeval.visualization.effectiveness.</code><code class="descname">is_log_scale_matrix</code><span class="sig-paren">(</span><em>matrix</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/effectiveness.html#is_log_scale_matrix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.effectiveness.is_log_scale_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method receives in input a matrix created as
+performance.sel(dataset=X, model=Y) with li and lj as axes.</p>
+<p>In case the first values is at least 2 times bigger than the second values,
+we return True and the matrix will be rescaled in
+plot_rank_confusion_matrix by applying log2; otherwise we return False
+and nothing happens.</p>
+<dl class="docutils">
+<dt>matrix <span class="classifier-delimiter">:</span> <span class="classifier">xarray</span></dt>
+<dd>created as performance.sel(dataset=X, model=Y) with li and lj as axes</dd>
+</dl>
+<dl class="docutils">
+<dt>: bool</dt>
+<dd>True or False</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="rankeval.visualization.effectiveness.plot_document_graded_relevance">
+<code class="descclassname">rankeval.visualization.effectiveness.</code><code class="descname">plot_document_graded_relevance</code><span class="sig-paren">(</span><em>performance</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/effectiveness.html#plot_document_graded_relevance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.effectiveness.plot_document_graded_relevance" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method plots the results obtained from the document_graded_relevance
+analysis.</p>
+<dl class="docutils">
+<dt>performance: xarray</dt>
+<dd>The xarray obtained after computing document_graded_relevance.</dd>
+</dl>
+<dl class="docutils">
+<dt>fig_list <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>The list of figures.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="rankeval.visualization.effectiveness.plot_model_performance">
+<code class="descclassname">rankeval.visualization.effectiveness.</code><code class="descname">plot_model_performance</code><span class="sig-paren">(</span><em>performance</em>, <em>compare='models'</em>, <em>show_values=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/effectiveness.html#plot_model_performance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.effectiveness.plot_model_performance" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method plots the results obtained from the model_performance analysis.</p>
+<dl class="docutils">
+<dt>performance: xarray</dt>
+<dd>The xarray obtained after computing model_performance.</dd>
+<dt>compare: string</dt>
+<dd>The compare parameter indicates what elements to compare between
+each other.
+Accepted values are ‘models’ or ‘metrics’.</dd>
+<dt>show_values: bool</dt>
+<dd>If show values is True, we add numeric labels on each bar in the plot
+with the rounded value to which the bar corresponds. The default is
+False and shows no values on the bars.</dd>
+</dl>
+<dl class="docutils">
+<dt>fig_list <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>The list of figures.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="rankeval.visualization.effectiveness.plot_query_class_performance">
+<code class="descclassname">rankeval.visualization.effectiveness.</code><code class="descname">plot_query_class_performance</code><span class="sig-paren">(</span><em>performance</em>, <em>show_values=False</em>, <em>compare='models'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/effectiveness.html#plot_query_class_performance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.effectiveness.plot_query_class_performance" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method plots the results obtained from the query_class_performance
+analysis.</p>
+<dl class="docutils">
+<dt>performance: xarray</dt>
+<dd>The xarray obtained after computing query_class_performance.</dd>
+<dt>compare: string</dt>
+<dd>The compare parameter indicates what elements to compare between
+each other.
+Accepted values are ‘models’ or ‘metrics’.</dd>
+<dt>show_values: bool</dt>
+<dd>If show values is True, we add numeric labels on each bar in the plot
+with the rounded value to which the bar corresponds. The default is
+False and shows no values on the bars.</dd>
+</dl>
+<dl class="docutils">
+<dt>fig_list <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>The list of figures.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="rankeval.visualization.effectiveness.plot_query_wise_performance">
+<code class="descclassname">rankeval.visualization.effectiveness.</code><code class="descname">plot_query_wise_performance</code><span class="sig-paren">(</span><em>performance</em>, <em>compare='models'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/effectiveness.html#plot_query_wise_performance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.effectiveness.plot_query_wise_performance" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method plots the results obtained from the query_wise_performance
+analysis.</p>
+<dl class="docutils">
+<dt>performance: xarray</dt>
+<dd>The xarray obtained after computing query_wise_performance.</dd>
+<dt>compare: string</dt>
+<dd>The compare parameter indicates what elements to compare between
+each other.
+Accepted values are ‘models’ or ‘metrics’.</dd>
+</dl>
+<dl class="docutils">
+<dt>fig_list <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>The list of figures.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="rankeval.visualization.effectiveness.plot_rank_confusion_matrix">
+<code class="descclassname">rankeval.visualization.effectiveness.</code><code class="descname">plot_rank_confusion_matrix</code><span class="sig-paren">(</span><em>performance</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/effectiveness.html#plot_rank_confusion_matrix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.effectiveness.plot_rank_confusion_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method plots the results obtained from the rank_confusion_matrix
+analysis.</p>
+<dl class="docutils">
+<dt>performance: xarray</dt>
+<dd>The xarray obtained after computing rank_confusion_matrix.</dd>
+</dl>
+<dl class="docutils">
+<dt>fig_list <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>The list of figures.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="rankeval.visualization.effectiveness.plot_tree_wise_average_contribution">
+<code class="descclassname">rankeval.visualization.effectiveness.</code><code class="descname">plot_tree_wise_average_contribution</code><span class="sig-paren">(</span><em>performance</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/effectiveness.html#plot_tree_wise_average_contribution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.effectiveness.plot_tree_wise_average_contribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method plots the results obtained from the
+tree_wise_average_contribution analysis.</p>
+<dl class="docutils">
+<dt>performance: xarray</dt>
+<dd>The xarray obtained after computing tree_wise_average_contribution.</dd>
+</dl>
+<dl class="docutils">
+<dt>fig_list <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>The list of figures.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="rankeval.visualization.effectiveness.plot_tree_wise_performance">
+<code class="descclassname">rankeval.visualization.effectiveness.</code><code class="descname">plot_tree_wise_performance</code><span class="sig-paren">(</span><em>performance</em>, <em>compare='models'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/effectiveness.html#plot_tree_wise_performance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.effectiveness.plot_tree_wise_performance" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method plots the results obtained from the tree_wise_performance
+analysis.</p>
+<dl class="docutils">
+<dt>performance: xarray</dt>
+<dd>The xarray obtained after computing tree_wise_performance.</dd>
+<dt>compare: string</dt>
+<dd>The compare parameter indicates what elements to compare between
+each other. The default is ‘models’.
+Accepted values are ‘models’ or ‘metrics’ or ‘datasets’.</dd>
+</dl>
+<dl class="docutils">
+<dt>fig_list <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>The list of figures.</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.visualization.feature">
+<span id="rankeval-visualization-feature-module"></span><h2>rankeval.visualization.feature module<a class="headerlink" href="#module-rankeval.visualization.feature" title="Permalink to this headline">¶</a></h2>
+<p>This package provides support for feature analysis visualizations.</p>
+<dl class="function">
+<dt id="rankeval.visualization.feature.align_y_axis">
+<code class="descclassname">rankeval.visualization.feature.</code><code class="descname">align_y_axis</code><span class="sig-paren">(</span><em>ax1</em>, <em>ax2</em>, <em>minresax1</em>, <em>minresax2</em>, <em>num_ticks=7</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/feature.html#align_y_axis"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.feature.align_y_axis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets tick marks of twinx axes to line up with num_ticks total tick marks</p>
+<p>ax1 and ax2 are matplotlib axes
+Spacing between tick marks will be a factor of minresax1 and minresax2</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="rankeval.visualization.feature.plot_feature_importance">
+<code class="descclassname">rankeval.visualization.feature.</code><code class="descname">plot_feature_importance</code><span class="sig-paren">(</span><em>feature_perf</em>, <em>max_features=10</em>, <em>sort_by='gain'</em>, <em>feature_names=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/feature.html#plot_feature_importance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.feature.plot_feature_importance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows the most important features as a bar plot.</p>
+<dl class="docutils">
+<dt>feature_perf <span class="classifier-delimiter">:</span> <span class="classifier">xarray.DataArray</span></dt>
+<dd>Feature importance stats of the model to be visualized</dd>
+<dt>max_features <span class="classifier-delimiter">:</span> <span class="classifier">int or None</span></dt>
+<dd>Maximul number of features to be visualized. If None is passed, it will
+show all the features</dd>
+<dt>sort_by <span class="classifier-delimiter">:</span> <span class="classifier">‘gain’ or ‘count’</span></dt>
+<dd>The method to use for selecting the top features to display. ‘gain’
+method selects the top features by importance, ‘count’ selects the top
+features by usage (i.e., number of times it has been used by a split
+node).</dd>
+<dt>feature_names <span class="classifier-delimiter">:</span> <span class="classifier">list of string</span></dt>
+<dd>The name of the features to use for plotting. If None, their index is
+used in place of the name (starting from 1).</dd>
+</dl>
+<dl class="docutils">
+<dt>: matplotlib.figure.Figure</dt>
+<dd>The matpotlib Figure</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-rankeval.visualization.topological">
+<span id="rankeval-visualization-topological-module"></span><h2>rankeval.visualization.topological module<a class="headerlink" href="#module-rankeval.visualization.topological" title="Permalink to this headline">¶</a></h2>
+<p>This package provides support for topological analysis visualizations.</p>
+<dl class="function">
+<dt id="rankeval.visualization.topological.export_graphviz">
+<code class="descclassname">rankeval.visualization.topological.</code><code class="descname">export_graphviz</code><span class="sig-paren">(</span><em>ensemble</em>, <em>tree_id=0</em>, <em>out_file=None</em>, <em>max_depth=None</em>, <em>output_leaves=None</em>, <em>label='all'</em>, <em>label_show=False</em>, <em>feature_names=None</em>, <em>highlight_leaves=False</em>, <em>leaves_parallel=False</em>, <em>node_ids=False</em>, <em>rounded=False</em>, <em>proportion=False</em>, <em>special_characters=False</em>, <em>precision=3</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/topological.html#export_graphviz"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.topological.export_graphviz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export a single decision tree in DOT format.
+This function generates a GraphViz representation of the decision tree,
+which is then written into <cite>out_file</cite>. Once exported, graphical renderings
+can be generated using, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ dot -Tps tree.dot -o tree.ps      (PostScript format)
+$ dot -Tpng tree.dot -o tree.png    (PNG format)
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>ensemble <span class="classifier-delimiter">:</span> <span class="classifier">RTEnsemble of regression trees</span></dt>
+<dd>The ensemble of regression trees to be exported to GraphViz.</dd>
+<dt>tree_id <span class="classifier-delimiter">:</span> <span class="classifier">int (default 0)</span></dt>
+<dd>The tree identifier in the ensemble to export (starts from 0)</dd>
+<dt>out_file <span class="classifier-delimiter">:</span> <span class="classifier">file object or string, optional (default=None)</span></dt>
+<dd>Handle or name of the output file. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, the result is
+returned as a string.</dd>
+<dt>max_depth <span class="classifier-delimiter">:</span> <span class="classifier">int, optional (default=None)</span></dt>
+<dd>The maximum depth of the representation. If None, the tree is fully
+generated.</dd>
+<dt>output_leaves <span class="classifier-delimiter">:</span> <span class="classifier">numpy 2d array (default=None</span></dt>
+<dd>Output leaves computed while scoring this model on a given dataset using
+the score method of the RTEnsemble model (the third return variable,
+y_leaves, reports the output leaf of each dataset sample for each tree).</dd>
+<dt>label <span class="classifier-delimiter">:</span> <span class="classifier">{‘all’, ‘leaves’}, optional (default=’all’)</span></dt>
+<dd>Whether to compute the counts of dataset samples that during the scoring
+touched a specific node (i.e., how many times each node have been
+involved in the scoring activity, on a specific dataset).
+Options include ‘all’ to compute counts at every node or ‘leaves’ to
+compute it only on the leaf nodes.</dd>
+<dt>label_show <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional (default=False)</span></dt>
+<dd>When set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, print counts information in each node.</dd>
+<dt>feature_names <span class="classifier-delimiter">:</span> <span class="classifier">list of strings, optional (default=None)</span></dt>
+<dd>Names of each of the features.</dd>
+<dt>highlight_leaves <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional (default=False)</span></dt>
+<dd>When set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, paint leaves to indicate extremity of values for
+regression.</dd>
+<dt>leaves_parallel <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional (default=False)</span></dt>
+<dd>When set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, draw all leaf nodes at the bottom of the tree.</dd>
+<dt>node_ids <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional (default=False)</span></dt>
+<dd>When set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, show the ID number on each node.</dd>
+<dt>rounded <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional (default=False)</span></dt>
+<dd>When set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, draw node boxes with rounded corners and use
+Helvetica fonts instead of Times-Roman.</dd>
+<dt>proportion <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional (default=False)</span></dt>
+<dd>When set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, change the display of ‘counts’
+adding the percentages.</dd>
+<dt>special_characters <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional (default=False)</span></dt>
+<dd>When set to <code class="docutils literal notranslate"><span class="pre">False</span></code>, ignore special characters for PostScript
+compatibility.</dd>
+<dt>precision <span class="classifier-delimiter">:</span> <span class="classifier">int, optional (default=3)</span></dt>
+<dd>Number of digits of precision for floating point in the values of
+impurity, threshold and value attributes of each node.</dd>
+</dl>
+<dl class="docutils">
+<dt>dot_data <span class="classifier-delimiter">:</span> <span class="classifier">string</span></dt>
+<dd>String representation of the input tree in GraphViz dot format.
+Only returned if <code class="docutils literal notranslate"><span class="pre">out_file</span></code> is None.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="rankeval.visualization.topological.plot_shape">
+<code class="descclassname">rankeval.visualization.topological.</code><code class="descname">plot_shape</code><span class="sig-paren">(</span><em>topological</em>, <em>max_level=10</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/topological.html#plot_shape"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.topological.plot_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows the average tree shape as a bullseye plot.</p>
+<dl class="docutils">
+<dt>topological <span class="classifier-delimiter">:</span> <span class="classifier">TopologicalAnalysisResult</span></dt>
+<dd>Topological stats of the model to be visualized.</dd>
+<dt>max_level <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>Maximul tree-depth of the visualization. Maximum allowed value is 16.</dd>
+</dl>
+<dl class="docutils">
+<dt>: matplotlib.figure.Figure</dt>
+<dd>The matpotlib Figure</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="rankeval.visualization.topological.plot_tree">
+<code class="descclassname">rankeval.visualization.topological.</code><code class="descname">plot_tree</code><span class="sig-paren">(</span><em>dot_data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/rankeval/visualization/topological.html#plot_tree"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#rankeval.visualization.topological.plot_tree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="rankeval.scoring.html" class="btn btn-neutral" title="rankeval.scoring package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,429 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.model.proxy_LightGBM &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.model.proxy_LightGBM</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.model.proxy_LightGBM</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (c) 2017, All Contributors (see CONTRIBUTORS file)</span>
+<span class="c1"># Authors: Salvatore Trani &lt;salvatore.trani@isti.cnr.it&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c1"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c1"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+<span class="sd">&quot;&quot;&quot;Class providing the implementation for loading/storing a LightGBM model</span>
+<span class="sd">from/to file.</span>
+
+<span class="sd">The LightGBM project is described here:</span>
+<span class="sd">    https://github.com/Microsoft/LightGBM</span>
+
+<span class="sd">The LightGBM format adopts a textual representation using arrays for storing</span>
+<span class="sd">split nodes (both features and thresholds), leaf values and tree structure.</span>
+<span class="sd">Not all the information reported in the model are useful for the different</span>
+<span class="sd">analysis, thus only the relevant parts are parsed.</span>
+
+<span class="sd">NOTE: the leaves output of the regression trees already take into account the</span>
+<span class="sd">weight of the tree (i.e., the learning rate or shrinkage factor). In order to</span>
+<span class="sd">maintain the scoring made by rankeval (that multiply the leaf output by the tree</span>
+<span class="sd">weight), the weight of the trees have been set equals to 1.</span>
+
+<span class="sd">NOTE: currently rankeval does not support missing features. This features is not</span>
+<span class="sd">strictly required because all the most popular open-domain Learning to Rank</span>
+<span class="sd">datasets do not have missing values. To this regard, take thus into account that</span>
+<span class="sd">you may experience an unexpected behaviour if the LightGBM model you are trying</span>
+<span class="sd">to load is trained on a dataset with missing values (especially in the case you</span>
+<span class="sd">use the setting zero_as_missing=true).</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">.rt_ensemble</span> <span class="k">import</span> <span class="n">RTEnsemble</span>
+
+<span class="n">tree_reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^Tree=(\d+)&quot;</span><span class="p">)</span>
+<span class="n">num_leaves_reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^num_leaves=(\d+)&quot;</span><span class="p">)</span>
+<span class="n">split_feature_reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^split_feature=(.*)&quot;</span><span class="p">)</span>
+<span class="n">threshold_reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^threshold=(.*)&quot;</span><span class="p">)</span>
+<span class="n">decision_type_reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^decision_type=(.*)&quot;</span><span class="p">)</span>
+<span class="n">default_value_reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^default_value=(.*)&quot;</span><span class="p">)</span>
+<span class="n">left_child_reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^left_child=(.*)&quot;</span><span class="p">)</span>
+<span class="n">right_child_reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^right_child=(.*)&quot;</span><span class="p">)</span>
+<span class="n">leaf_parent_reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^leaf_parent=(.*)&quot;</span><span class="p">)</span>
+<span class="n">leaf_value_reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^leaf_value=(.*)&quot;</span><span class="p">)</span>
+<span class="n">shrinkage_reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^shrinkage=(.*)&quot;</span><span class="p">)</span>
+<span class="n">has_categorical_reg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;^has_categorical=(.*)&quot;</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="ProxyLightGBM"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.ProxyLightGBM">[docs]</a><span class="k">class</span> <span class="nc">ProxyLightGBM</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Class providing the implementation for loading/storing a LightGBM model</span>
+<span class="sd">    from/to file.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="ProxyLightGBM.load"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.ProxyLightGBM.load">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Load the model from the file identified by file_path.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        file_path : str</span>
+<span class="sd">            The path to the filename where the model has been saved</span>
+<span class="sd">        model : RTEnsemble</span>
+<span class="sd">            The model instance to fill</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">n_trees</span><span class="p">,</span> <span class="n">n_nodes</span> <span class="o">=</span> <span class="n">ProxyLightGBM</span><span class="o">.</span><span class="n">_count_nodes</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="c1"># Initialize the model and allocate the needed space</span>
+        <span class="c1"># given the shape and size of the ensemble</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">n_trees</span><span class="p">,</span> <span class="n">n_nodes</span><span class="p">)</span>
+
+        <span class="n">curr_tree</span> <span class="o">=</span> <span class="n">root_node</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">num_leaves</span> <span class="o">=</span> <span class="n">num_splits</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+
+                <span class="n">match</span> <span class="o">=</span> <span class="n">tree_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="n">curr_tree</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+                    <span class="n">root_node</span> <span class="o">+=</span> <span class="n">num_leaves</span> <span class="o">+</span> <span class="n">num_splits</span>
+                    <span class="n">model</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[</span><span class="n">curr_tree</span><span class="p">]</span> <span class="o">=</span> <span class="n">root_node</span>
+                    <span class="k">continue</span>
+
+                <span class="n">match</span> <span class="o">=</span> <span class="n">split_feature_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="n">split_features</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="p">)</span>
+                    <span class="k">for</span> <span class="n">pos</span><span class="p">,</span> <span class="n">feature</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">split_features</span><span class="p">):</span>
+                        <span class="n">model</span><span class="o">.</span><span class="n">trees_nodes_feature</span><span class="p">[</span><span class="n">root_node</span> <span class="o">+</span> <span class="n">pos</span><span class="p">]</span> <span class="o">=</span> <span class="n">feature</span>
+                    <span class="n">num_splits</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">split_features</span><span class="p">)</span>
+                    <span class="k">continue</span>
+
+                <span class="n">match</span> <span class="o">=</span> <span class="n">threshold_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="n">thresholds</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="nb">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="p">)</span>
+                    <span class="k">for</span> <span class="n">pos</span><span class="p">,</span> <span class="n">threshold</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">thresholds</span><span class="p">):</span>
+                        <span class="n">model</span><span class="o">.</span><span class="n">trees_nodes_value</span><span class="p">[</span><span class="n">root_node</span> <span class="o">+</span> <span class="n">pos</span><span class="p">]</span> <span class="o">=</span> <span class="n">threshold</span>
+                    <span class="k">continue</span>
+
+                <span class="n">match</span> <span class="o">=</span> <span class="n">left_child_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="n">left_children</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="p">)</span>
+                    <span class="k">for</span> <span class="n">pos</span><span class="p">,</span> <span class="n">child</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">left_children</span><span class="p">):</span>
+                        <span class="k">if</span> <span class="n">child</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                            <span class="n">model</span><span class="o">.</span><span class="n">trees_left_child</span><span class="p">[</span><span class="n">root_node</span> <span class="o">+</span> <span class="n">pos</span><span class="p">]</span> <span class="o">=</span> \
+                                <span class="n">root_node</span> <span class="o">+</span> <span class="n">child</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">model</span><span class="o">.</span><span class="n">trees_left_child</span><span class="p">[</span><span class="n">root_node</span> <span class="o">+</span> <span class="n">pos</span><span class="p">]</span> <span class="o">=</span> \
+                                <span class="n">root_node</span> <span class="o">+</span> <span class="n">num_splits</span> <span class="o">+</span> <span class="nb">abs</span><span class="p">(</span><span class="n">child</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+                    <span class="k">continue</span>
+
+                <span class="n">match</span> <span class="o">=</span> <span class="n">right_child_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="n">right_children</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="p">)</span>
+                    <span class="k">for</span> <span class="n">pos</span><span class="p">,</span> <span class="n">child</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">right_children</span><span class="p">):</span>
+                        <span class="k">if</span> <span class="n">child</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                            <span class="n">model</span><span class="o">.</span><span class="n">trees_right_child</span><span class="p">[</span><span class="n">root_node</span> <span class="o">+</span> <span class="n">pos</span><span class="p">]</span> <span class="o">=</span> \
+                                <span class="n">root_node</span> <span class="o">+</span> <span class="n">child</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">model</span><span class="o">.</span><span class="n">trees_right_child</span><span class="p">[</span><span class="n">root_node</span> <span class="o">+</span> <span class="n">pos</span><span class="p">]</span> <span class="o">=</span> \
+                                <span class="n">root_node</span> <span class="o">+</span> <span class="n">num_splits</span> <span class="o">+</span> <span class="nb">abs</span><span class="p">(</span><span class="n">child</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+                    <span class="k">continue</span>
+
+                <span class="n">match</span> <span class="o">=</span> <span class="n">shrinkage_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="c1"># weight should be the shrinkage but it is set to 1 because</span>
+                    <span class="c1"># leaves output already take into account the shrinkage</span>
+                    <span class="c1"># shrinkage = float(match.group(1))</span>
+                    <span class="n">model</span><span class="o">.</span><span class="n">trees_weight</span><span class="p">[</span><span class="n">curr_tree</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+                    <span class="k">continue</span>
+
+                <span class="n">match</span> <span class="o">=</span> <span class="n">leaf_value_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="n">leaf_values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="nb">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="p">)</span>
+                    <span class="n">num_leaves</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">leaf_values</span><span class="p">)</span>
+                    <span class="k">for</span> <span class="n">pos</span><span class="p">,</span> <span class="n">leaf_value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">leaf_values</span><span class="p">):</span>
+                        <span class="n">model</span><span class="o">.</span><span class="n">trees_nodes_value</span><span class="p">[</span><span class="n">root_node</span> <span class="o">+</span> <span class="n">num_splits</span> <span class="o">+</span> <span class="n">pos</span><span class="p">]</span> \
+                            <span class="o">=</span> <span class="n">leaf_value</span>
+                    <span class="n">num_splits</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">split_features</span><span class="p">)</span>
+                    <span class="k">continue</span>
+
+                <span class="n">match</span> <span class="o">=</span> <span class="n">decision_type_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="n">types</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">types</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
+                        <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">(</span><span class="s2">&quot;Decision Tree not supported. RankEval does not &quot;</span>
+                                             <span class="s2">&quot;support categorical features and missing values.&quot;</span><span class="p">)</span>
+                    <span class="k">continue</span>
+
+                <span class="n">match</span> <span class="o">=</span> <span class="n">default_value_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span>
+                                      <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">values</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
+                        <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">(</span><span class="s2">&quot;Missing Values not supported!&quot;</span><span class="p">)</span>
+                    <span class="k">continue</span>
+
+                <span class="n">match</span> <span class="o">=</span> <span class="n">has_categorical_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="n">categorical</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)))</span>
+                    <span class="k">if</span> <span class="n">categorical</span><span class="p">:</span>
+                        <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">(</span><span class="s2">&quot;Decision Tree not supported&quot;</span><span class="p">)</span>
+                    <span class="k">continue</span></div>
+
+
+<div class="viewcode-block" id="ProxyLightGBM.save"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.ProxyLightGBM.save">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Save the model onto the file identified by file_path.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        file_path : str</span>
+<span class="sd">            The path to the filename where the model has to be saved</span>
+<span class="sd">        model : RTEnsemble</span>
+<span class="sd">            The model RTEnsemble model to save on file</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        status : bool</span>
+<span class="sd">            Returns true if the save is successful, false otherwise</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Feature not implemented!&quot;</span><span class="p">)</span></div>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_count_nodes</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Count the total number of nodes (both split and leaf nodes)</span>
+<span class="sd">        in the model identified by file_path.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        file_path : str</span>
+<span class="sd">            The path to the filename where the model has been saved</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        tuple(n_trees, n_nodes) : tuple(int, int)</span>
+<span class="sd">            The total number of trees and nodes (both split and leaf nodes)</span>
+<span class="sd">            in the model identified by file_path.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">n_nodes</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">n_trees</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">match</span> <span class="o">=</span> <span class="n">num_leaves_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="n">n_nodes</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+                    <span class="k">continue</span>
+                <span class="n">match</span> <span class="o">=</span> <span class="n">split_feature_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="n">n_nodes</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+                    <span class="k">continue</span>
+                <span class="n">match</span> <span class="o">=</span> <span class="n">tree_reg</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                    <span class="n">n_trees</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="k">continue</span>
+
+        <span class="k">return</span> <span class="n">n_trees</span><span class="p">,</span> <span class="n">n_nodes</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

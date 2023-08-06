@@ -1,0 +1,574 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.analysis.statistical &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.analysis.statistical</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.analysis.statistical</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (c) 2017, All Contributors (see CONTRIBUTORS file)</span>
+<span class="c1"># Authors: Claudio Lucchese &lt;claudio.lucchese@isti.cnr.it&gt;, Cristina I. Muntean &lt;cristina.muntean@isti.cnr.it&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c1"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c1"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This package implements several statistical significance tests.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+
+<span class="kn">from</span> <span class="nn">..dataset</span> <span class="k">import</span> <span class="n">Dataset</span>
+<span class="kn">from</span> <span class="nn">..metrics.metric</span> <span class="k">import</span> <span class="n">Metric</span>
+<span class="kn">from</span> <span class="nn">rankeval.metrics</span> <span class="k">import</span> <span class="n">MSE</span>
+
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">IntProgress</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span>
+
+<div class="viewcode-block" id="statistical_significance"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.statistical.statistical_significance">[docs]</a><span class="k">def</span> <span class="nf">statistical_significance</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">model_a</span><span class="p">,</span> <span class="n">model_b</span><span class="p">,</span> <span class="n">metrics</span><span class="p">,</span>
+                             <span class="n">n_perm</span><span class="o">=</span><span class="mi">100000</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method computes the statistical significance of the performance difference between model_a and.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    datasets : list of Dataset</span>
+<span class="sd">        The datasets to use for analyzing the behaviour of the model using the given metrics and models</span>
+<span class="sd">    model_a : RTEnsemble</span>
+<span class="sd">        The first model considered.</span>
+<span class="sd">    model_b : RTEnsemble</span>
+<span class="sd">        The second model considered.</span>
+<span class="sd">    metrics : list of Metric</span>
+<span class="sd">        The metrics to use for the analysis</span>
+<span class="sd">    n_perm : int</span>
+<span class="sd">        Number of permutations for the randomization test.</span>
+<span class="sd">    cache : bool</span>
+<span class="sd">        Whether to cache or not the intermediate scoring results of each model</span>
+<span class="sd">        on each dataset. Caching enable instant access to the scores (after the</span>
+<span class="sd">        first scoring) but coudl make use also of a huge quantity of memory.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    stat_sig : xarray.DataArray</span>
+<span class="sd">        A DataArray containing the statistical significance of the performance difference</span>
+<span class="sd">        between any pair of models on the given dataset.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">progress_bar</span> <span class="o">=</span> <span class="n">IntProgress</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">)</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">),</span> 
+                               <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Iterating datasets and metrics&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">progress_bar</span><span class="p">)</span>    
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">),</span> <span class="mi">2</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">idx_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">):</span>
+        <span class="n">y_pred_a</span> <span class="o">=</span> <span class="n">model_a</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">detailed</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="n">cache</span><span class="p">)</span>
+        <span class="n">y_pred_b</span> <span class="o">=</span> <span class="n">model_b</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">detailed</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="n">cache</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">idx_metric</span><span class="p">,</span> <span class="n">metric</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">metrics</span><span class="p">):</span>
+            <span class="n">progress_bar</span><span class="o">.</span><span class="n">value</span> <span class="o">+=</span> <span class="mi">1</span>
+
+            <span class="n">metrics_a</span> <span class="o">=</span> <span class="n">metric</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">y_pred_a</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">metrics_b</span> <span class="o">=</span> <span class="n">metric</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">y_pred_b</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+
+            <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span> <span class="o">=</span> <span class="n">_randomization</span><span class="p">(</span><span class="n">metrics_a</span><span class="p">,</span> <span class="n">metrics_b</span><span class="p">,</span> <span class="n">n_perm</span><span class="o">=</span><span class="n">n_perm</span><span class="p">)</span>
+
+            <span class="n">data</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">p1</span>
+            <span class="n">data</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">p2</span>
+
+    <span class="n">progress_bar</span><span class="o">.</span><span class="n">bar_style</span> <span class="o">=</span> <span class="s2">&quot;success&quot;</span>
+    <span class="n">progress_bar</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="n">performance</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">data</span><span class="p">,</span>
+                               <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Statistical Significance&#39;</span><span class="p">,</span>
+                               <span class="n">coords</span><span class="o">=</span><span class="p">[</span><span class="n">datasets</span><span class="p">,</span> <span class="n">metrics</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;one-sided&#39;</span><span class="p">,</span> <span class="s1">&#39;two-sided&#39;</span><span class="p">]],</span>
+                               <span class="n">dims</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">,</span> <span class="s1">&#39;metric&#39;</span><span class="p">,</span> <span class="s1">&#39;p-value&#39;</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">performance</span></div>
+
+
+<span class="k">def</span> <span class="nf">_randomization</span><span class="p">(</span><span class="n">metric_scores_a</span><span class="p">,</span> <span class="n">metric_scores_b</span><span class="p">,</span> <span class="n">n_perm</span><span class="o">=</span><span class="mi">100000</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method computes the randomization test as described in [1].</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    metric_scores_a : numpy array</span>
+<span class="sd">        Vector of per-query metric scores for the IR system A.</span>
+<span class="sd">    metric_scores_b : numpy array</span>
+<span class="sd">        Vector of per-query metric scores for the IR system B.</span>
+<span class="sd">    n_perm : int</span>
+<span class="sd">        Number of permutations evaluated in the randomization test.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    metric_scores : (float, float)</span>
+<span class="sd">        A tuple (p-value_1, p-value_2) being respectively the one-sided and two-sided p-values.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] Smucker, Mark D., James Allan, and Ben Carterette.</span>
+<span class="sd">        &quot;A comparison of statistical significance tests for information retrieval evaluation.&quot;</span>
+<span class="sd">        In Proceedings of the sixteenth ACM conference on Conference on information and knowledge management, pp. 623-632. ACM, 2007.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">progress_bar</span> <span class="o">=</span> <span class="n">IntProgress</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Randomization Test&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">progress_bar</span><span class="p">)</span>    
+
+    <span class="c1"># find the best system</span>
+    <span class="n">metric_scores_a_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">metric_scores_a</span><span class="p">)</span>
+    <span class="n">metric_scores_b_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">metric_scores_b</span><span class="p">)</span>
+
+    <span class="n">best_metrics</span> <span class="o">=</span> <span class="n">metric_scores_a</span>
+    <span class="n">worst_metrics</span> <span class="o">=</span> <span class="n">metric_scores_b</span>
+    <span class="k">if</span> <span class="n">metric_scores_a_mean</span> <span class="o">&lt;</span> <span class="n">metric_scores_b_mean</span><span class="p">:</span>
+        <span class="n">best_metrics</span> <span class="o">=</span> <span class="n">metric_scores_b</span>
+        <span class="n">worst_metrics</span> <span class="o">=</span> <span class="n">metric_scores_a</span>
+
+    <span class="n">difference</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">best_metrics</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">worst_metrics</span><span class="p">)</span>
+    <span class="n">abs_difference</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">difference</span><span class="p">)</span>
+
+    <span class="n">p1</span> <span class="o">=</span> <span class="mf">0.0</span>  <span class="c1"># one-sided</span>
+    <span class="n">p2</span> <span class="o">=</span> <span class="mf">0.0</span>  <span class="c1"># two-sided</span>
+    <span class="n">N</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">metric_scores_a</span><span class="p">))</span>
+
+    <span class="n">a_sum</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">best_metrics</span><span class="p">)</span>
+    <span class="n">b_sum</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">worst_metrics</span><span class="p">)</span>
+
+    <span class="c1"># repeat n_prem times</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_perm</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="p">(</span><span class="n">n_perm</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="n">progress_bar</span><span class="o">.</span><span class="n">value</span><span class="o">+=</span><span class="mi">1</span>
+        
+        <span class="c1"># select a random subset</span>
+        <span class="n">sel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span> <span class="nb">len</span><span class="p">(</span><span class="n">metric_scores_a</span><span class="p">))</span>
+
+        <span class="n">a_sel_sum</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">best_metrics</span><span class="p">[</span><span class="n">sel</span><span class="p">])</span>
+        <span class="n">b_sel_sum</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">worst_metrics</span><span class="p">[</span><span class="n">sel</span><span class="p">])</span>
+
+        <span class="c1"># compute avg performance of randomized models</span>
+        <span class="n">a_mean</span> <span class="o">=</span> <span class="p">(</span><span class="n">a_sum</span> <span class="o">-</span> <span class="n">a_sel_sum</span> <span class="o">+</span> <span class="n">b_sel_sum</span><span class="p">)</span> <span class="o">/</span> <span class="n">N</span>
+        <span class="n">b_mean</span> <span class="o">=</span> <span class="p">(</span><span class="n">b_sum</span> <span class="o">-</span> <span class="n">b_sel_sum</span> <span class="o">+</span> <span class="n">a_sel_sum</span><span class="p">)</span> <span class="o">/</span> <span class="n">N</span>
+
+        <span class="c1"># performance difference</span>
+        <span class="n">delta</span> <span class="o">=</span> <span class="n">a_mean</span> <span class="o">-</span> <span class="n">b_mean</span>
+
+        <span class="k">if</span> <span class="n">delta</span> <span class="o">&gt;=</span> <span class="n">difference</span><span class="p">:</span>
+            <span class="n">p1</span> <span class="o">+=</span> <span class="mf">1.</span>
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">delta</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">abs_difference</span><span class="p">:</span>
+            <span class="n">p2</span> <span class="o">+=</span> <span class="mf">1.</span>
+
+    <span class="n">progress_bar</span><span class="o">.</span><span class="n">bar_style</span> <span class="o">=</span> <span class="s2">&quot;success&quot;</span>
+    <span class="n">progress_bar</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="n">p1</span> <span class="o">/=</span> <span class="n">n_perm</span>
+    <span class="n">p2</span> <span class="o">/=</span> <span class="n">n_perm</span>
+
+    <span class="k">return</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span>
+
+
+<span class="k">def</span> <span class="nf">_kfold_scoring</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">algo</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Scored the given datset with the given algo unsing k-fold train/test.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    dataset : rankeval.dataset.Dataset</span>
+<span class="sd">        The dataset instance.</span>
+<span class="sd">    k : int</span>
+<span class="sd">        Number of folds.</span>
+<span class="sd">    algo : function</span>
+<span class="sd">        See :func:`bias_variance`.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    score : numpy.ndarray</span>
+<span class="sd">        A vecotr of num_instances scores.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">progress_bar</span> <span class="o">=</span> <span class="n">IntProgress</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Processing k folds&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">progress_bar</span><span class="p">)</span>    
+
+    <span class="n">scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">n_instances</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+    <span class="n">query_sizes</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">get_query_sizes</span><span class="p">()</span>
+    <span class="c1"># shuffle queries</span>
+    <span class="n">shuffled_qid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">n_queries</span><span class="p">)</span>
+    <span class="n">chunk_query_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">n_queries</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">k</span><span class="p">)))</span>
+    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">dataset</span><span class="o">.</span><span class="n">n_queries</span><span class="p">,</span> <span class="n">chunk_query_size</span><span class="p">):</span>
+        <span class="n">progress_bar</span><span class="o">.</span><span class="n">value</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="c1"># p-th fold is used for testing</span>
+        <span class="n">test_rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">n_instances</span><span class="p">,</span>
+                            <span class="n">fill_value</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                            <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">bool</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">shuffled_qid</span><span class="p">[</span><span class="n">p</span><span class="p">:</span> <span class="n">p</span> <span class="o">+</span> <span class="n">chunk_query_size</span><span class="p">]:</span>
+            <span class="n">test_rows</span><span class="p">[</span><span class="n">dataset</span><span class="o">.</span><span class="n">query_offsets</span><span class="p">[</span><span class="n">q</span><span class="p">]:</span><span class="n">dataset</span><span class="o">.</span><span class="n">query_offsets</span><span class="p">[</span><span class="n">q</span><span class="o">+</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="c1"># other folds are used for training</span>
+        <span class="n">train_rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_not</span><span class="p">(</span><span class="n">test_rows</span><span class="p">)</span>
+
+        <span class="n">train_q</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">n_queries</span><span class="p">,</span>
+                          <span class="n">fill_value</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                          <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">bool</span><span class="p">)</span>
+        <span class="n">train_q</span><span class="p">[</span><span class="n">shuffled_qid</span><span class="p">[</span><span class="n">p</span><span class="p">:</span> <span class="n">p</span><span class="o">+</span><span class="n">chunk_query_size</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="c1"># get algorithm predictions</span>
+        <span class="n">fold_scores</span> <span class="o">=</span> <span class="n">algo</span><span class="p">(</span>
+            <span class="n">dataset</span><span class="o">.</span><span class="n">X</span><span class="p">[</span><span class="n">train_rows</span><span class="p">],</span>
+            <span class="n">dataset</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">train_rows</span><span class="p">],</span>
+            <span class="n">query_sizes</span><span class="p">[</span><span class="n">train_q</span><span class="p">],</span>
+            <span class="n">dataset</span><span class="o">.</span><span class="n">X</span><span class="p">[</span><span class="n">test_rows</span><span class="p">]</span>
+        <span class="p">)</span>
+        <span class="c1"># update scores for the current fold</span>
+        <span class="n">scores</span><span class="p">[</span><span class="n">test_rows</span><span class="p">]</span> <span class="o">=</span> <span class="n">fold_scores</span>
+        
+    <span class="n">progress_bar</span><span class="o">.</span><span class="n">bar_style</span> <span class="o">=</span> <span class="s2">&quot;success&quot;</span>
+    <span class="n">progress_bar</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        
+    <span class="k">return</span> <span class="n">scores</span>
+
+
+<span class="k">def</span> <span class="nf">_multi_kfold_scoring</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">algo</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Performs multiple scorings of the given dataset.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    dataset : rankeval.dataset.Dataset</span>
+<span class="sd">        The dataset instance.</span>
+<span class="sd">    algo : function</span>
+<span class="sd">        See :func:`bias_variance`.</span>
+<span class="sd">    L : int</span>
+<span class="sd">        Number of iterations</span>
+<span class="sd">    k : int</span>
+<span class="sd">        Number of folds.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    score : numpy.ndarray</span>
+<span class="sd">        A matrix num_instances x L.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">progress_bar</span> <span class="o">=</span> <span class="n">IntProgress</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="n">L</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Computing L scores&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">progress_bar</span><span class="p">)</span>    
+
+    <span class="n">scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">n_instances</span><span class="p">,</span> <span class="n">L</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+        <span class="n">progress_bar</span><span class="o">.</span><span class="n">value</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="n">scores</span><span class="p">[:,</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="n">_kfold_scoring</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">algo</span><span class="p">)</span>
+
+    <span class="n">progress_bar</span><span class="o">.</span><span class="n">bar_style</span> <span class="o">=</span> <span class="s2">&quot;success&quot;</span>
+    <span class="n">progress_bar</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+    <span class="k">return</span> <span class="n">scores</span>
+
+
+<div class="viewcode-block" id="bias_variance"><a class="viewcode-back" href="../../../rankeval.analysis.html#rankeval.analysis.statistical.bias_variance">[docs]</a><span class="k">def</span> <span class="nf">bias_variance</span><span class="p">(</span><span class="n">datasets</span><span class="o">=</span><span class="p">[],</span> <span class="n">algos</span><span class="o">=</span><span class="p">[],</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[],</span> <span class="n">L</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method computes the bias vs. variance decomposition of the error.</span>
+<span class="sd">    The approach used here is based on the works of [Webb05]_ and [Dom05]_.</span>
+
+<span class="sd">    Each instance of the dataset is scored `L` times.</span>
+<span class="sd">    A single scoring is achieved by splitting the dataset at random into</span>
+<span class="sd">    `k` folds. Each fold is scored by the model `M` trained on the remainder folds.</span>
+<span class="sd">    [Webb05]_ recommends the use of 2 folds.</span>
+
+<span class="sd">    If metric is MSE then the standard decomposition is used.</span>
+<span class="sd">    The Bias for and instance `x` is defined as mean squared error of the `L` trained models</span>
+<span class="sd">    w.r.t. the true label `y`, denoted with :math:`{\\sf E}_{L} [M(x) - y]^2`. </span>
+<span class="sd">    The Variance for an instance `x` is measured across the `L` trained models: </span>
+<span class="sd">    :math:`{\\sf E}_{L} [M(x) - {\\sf E}_{L} M(x)]^2`. </span>
+<span class="sd">    Both are averaged over all instances in the dataset.</span>
+
+<span class="sd">    If metric is any of the IR quality measures, we resort to the bias variance</span>
+<span class="sd">    decomposition of the mean squared error of the given metric w.r.t. its ideal value,</span>
+<span class="sd">    e.g., for the case of NDCG, :math:`{\\sf E}_{L} [1 - NDCG]^2`. </span>
+<span class="sd">    Recall that, a formal Bias/Variance decomposition was not proposed yet.</span>
+
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    dataset : rankeval.dataset.Dataset</span>
+<span class="sd">        The dataset instance.</span>
+<span class="sd">    algo : function</span>
+<span class="sd">        This should be a wrapper of learning algorithm.</span>
+<span class="sd">        The function should accept four parameters: `train_X`, `train_Y`, `train_q`, `test_X`.</span>
+<span class="sd">            - `train_X`: numpy.ndarray storing a 2-D matrix of size num_docs x num_features</span>
+<span class="sd">            - `train_Y`: numpy.ndarray storing a vector of document&#39;s relevance labels</span>
+<span class="sd">            - `train_q`: numpy.ndarray storing a vector of query lengths</span>
+<span class="sd">            - `test_X`: numpy.ndarray as for `train_X`</span>
+<span class="sd">        </span>
+<span class="sd">        A model is trained on `train_X`, `train_Y`, `train_q`, and used to score `test_X`.</span>
+<span class="sd">        An numpy.ndarray with such score must be returned.</span>
+<span class="sd">    metric : &quot;mse&quot; or rankeval.metrics.metric.Metric</span>
+<span class="sd">        The metric used to compute the error.</span>
+<span class="sd">    L : int</span>
+<span class="sd">        Number of iterations</span>
+<span class="sd">    k : int</span>
+<span class="sd">        Number of folds.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    bias_variance : xarray.DataArray</span>
+<span class="sd">        A DataArray containing the bias/variance decomposition of the error</span>
+<span class="sd">        for any given dataset, algorithm and metric.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [Webb05] Webb, Geoffrey I., and Paul Conilione. &quot;Estimating bias and variance from data.&quot; </span>
+<span class="sd">            Pre-publication manuscript (`pdf &lt;http://www.csse.monash.edu/webb/-Files/WebbConilione06.pdf&gt;`_) (2005).</span>
+<span class="sd">    .. [Dom05] Domingos P. A unified bias-variance decomposition. </span>
+<span class="sd">            In Proceedings of 17th International Conference on Machine Learning 2000 (pp. 231-238).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">assert</span><span class="p">(</span><span class="n">k</span><span class="o">&gt;=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">assert</span><span class="p">(</span><span class="n">L</span><span class="o">&gt;=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">assert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">assert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">metric</span> <span class="ow">in</span> <span class="n">metrics</span><span class="p">:</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">metric</span><span class="p">,</span> <span class="n">Metric</span><span class="p">)</span>
+
+    <span class="n">progress_bar</span> <span class="o">=</span> <span class="n">IntProgress</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">)</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">)</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">algos</span><span class="p">),</span>
+                               <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Iterating datasets and metrics&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">progress_bar</span><span class="p">)</span>    
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">datasets</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">metrics</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">algos</span><span class="p">),</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">idx_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">idx_algo</span><span class="p">,</span> <span class="n">algo</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">algos</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">idx_metric</span><span class="p">,</span> <span class="n">metric</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">metrics</span><span class="p">):</span>
+                <span class="n">progress_bar</span><span class="o">.</span><span class="n">value</span> <span class="o">+=</span> <span class="mi">1</span>
+                
+                <span class="n">scores</span> <span class="o">=</span> <span class="n">_multi_kfold_scoring</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">algo</span><span class="o">=</span><span class="n">algo</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+                
+                <span class="n">avg_error</span> <span class="o">=</span> <span class="mf">0.</span>
+                <span class="n">avg_bias</span> <span class="o">=</span> <span class="mf">0.</span>
+                <span class="n">avg_var</span> <span class="o">=</span> <span class="mf">0.</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">metric</span><span class="p">,</span> <span class="n">MSE</span><span class="p">):</span>
+                    <span class="c1"># mse over metric, assume error is 1-metric</span>
+                    <span class="c1"># not exactly domingos paper</span>
+                    <span class="n">q_scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">dataset</span><span class="o">.</span><span class="n">n_queries</span><span class="p">,</span> <span class="n">L</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span> 
+                    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+                        <span class="n">q_scores</span><span class="p">[:,</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">metric</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">dataset</span><span class="o">=</span><span class="n">dataset</span><span class="p">,</span> <span class="n">y_pred</span><span class="o">=</span><span class="n">scores</span><span class="p">[:,</span><span class="n">i</span><span class="p">])[</span><span class="mi">1</span><span class="p">]</span>            
+                    <span class="n">avg_error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span> <span class="p">(</span><span class="n">q_scores</span><span class="o">-</span><span class="mf">1.</span><span class="p">)</span><span class="o">**</span><span class="mf">2.</span> <span class="p">)</span>
+                    <span class="n">avg_pred</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">q_scores</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+                    <span class="n">avg_bias</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="n">avg_pred</span> <span class="o">-</span> <span class="mf">1.</span><span class="p">)</span><span class="o">**</span><span class="mf">2.</span><span class="p">)</span>
+                    <span class="n">avg_var</span>   <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span> <span class="p">(</span><span class="n">q_scores</span><span class="o">-</span><span class="n">avg_pred</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span><span class="o">**</span><span class="mf">2.</span> <span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1"># mse</span>
+                    <span class="n">avg_error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span> <span class="p">(</span><span class="n">scores</span><span class="o">-</span><span class="n">dataset</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span><span class="o">**</span><span class="mf">2.</span> <span class="p">)</span>
+                    <span class="n">avg_pred</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">scores</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+                    <span class="n">avg_bias</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="n">avg_pred</span> <span class="o">-</span> <span class="n">dataset</span><span class="o">.</span><span class="n">y</span><span class="p">)</span><span class="o">**</span><span class="mf">2.</span><span class="p">)</span>
+                    <span class="n">avg_var</span>   <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span> <span class="p">(</span><span class="n">scores</span><span class="o">-</span><span class="n">avg_pred</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span><span class="o">**</span><span class="mf">2.</span> <span class="p">)</span>
+
+                <span class="n">data</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">][</span><span class="n">idx_algo</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">avg_error</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">][</span><span class="n">idx_algo</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">avg_bias</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">idx_dataset</span><span class="p">][</span><span class="n">idx_metric</span><span class="p">][</span><span class="n">idx_algo</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">avg_var</span>
+                
+
+    <span class="n">progress_bar</span><span class="o">.</span><span class="n">bar_style</span> <span class="o">=</span> <span class="s2">&quot;success&quot;</span>
+    <span class="n">progress_bar</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="n">performance</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">data</span><span class="p">,</span>
+                               <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Bias/Variance Decomposition&#39;</span><span class="p">,</span>
+                               <span class="n">coords</span><span class="o">=</span><span class="p">[</span><span class="n">datasets</span><span class="p">,</span> <span class="n">metrics</span><span class="p">,</span> <span class="p">[</span><span class="n">a</span><span class="o">.</span><span class="vm">__name__</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">algos</span><span class="p">],</span> 
+                               <span class="p">[</span><span class="s1">&#39;Error&#39;</span><span class="p">,</span> <span class="s1">&#39;Bias&#39;</span><span class="p">,</span> <span class="s1">&#39;Variance&#39;</span><span class="p">]],</span>
+                               <span class="n">dims</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;dataset&#39;</span><span class="p">,</span> <span class="s1">&#39;metric&#39;</span><span class="p">,</span> <span class="s1">&#39;algo&#39;</span><span class="p">,</span> <span class="s1">&#39;error&#39;</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">performance</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

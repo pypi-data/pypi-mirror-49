@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.dataset.svmlight_format &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.dataset.svmlight_format</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.dataset.svmlight_format</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot; This module implements a fast and memory-efficient (no memory copying)</span>
+<span class="sd">loader for the svmlight / libsvm sparse dataset format.  &quot;&quot;&quot;</span>
+
+<span class="c1"># Authors: Mathieu Blondel &lt;mathieu@mblondel.org&gt;</span>
+<span class="c1">#          Lars Buitinck &lt;L.J.Buitinck@uva.nl&gt;</span>
+<span class="c1"># License: Simple BSD.</span>
+
+<span class="kn">from</span> <span class="nn">._svmlight_format</span> <span class="k">import</span> <span class="n">_load_svmlight_file</span><span class="p">,</span> <span class="n">_dump_svmlight_file</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+
+<div class="viewcode-block" id="load_svmlight_file"><a class="viewcode-back" href="../../../rankeval.dataset.html#rankeval.dataset.svmlight_format.load_svmlight_file">[docs]</a><span class="k">def</span> <span class="nf">load_svmlight_file</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">buffer_mb</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">query_id</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Load datasets in the svmlight / libsvm format into sparse CSR matrix</span>
+
+<span class="sd">    This format is a text-based format, with one sample per line. It does</span>
+<span class="sd">    not store zero valued features hence is suitable for sparse dataset.</span>
+
+<span class="sd">    The first element of each line can be used to store a target variable</span>
+<span class="sd">    to predict.</span>
+
+<span class="sd">    This format is used as the default format for both svmlight and the</span>
+<span class="sd">    libsvm command line programs.</span>
+
+<span class="sd">    Parsing a text based source can be expensive. When working on</span>
+<span class="sd">    repeatedly on the same dataset, it is recommended to wrap this</span>
+<span class="sd">    loader with joblib.Memory.cache to store a memmapped backup of the</span>
+<span class="sd">    CSR results of the first call and benefit from the near instantaneous</span>
+<span class="sd">    loading of memmapped structures for the subsequent calls.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    file_path: str</span>
+<span class="sd">        Path to a file to load.</span>
+<span class="sd">    buffer_mb : integer</span>
+<span class="sd">        Buffer size to use for low level read</span>
+<span class="sd">    query_id : bool</span>
+<span class="sd">        True if the query ids has to be loaded, false otherwise</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    (X, y, [query_ids])</span>
+
+<span class="sd">    where X is a dense numpy matrix of shape (n_samples, n_features) and type dtype,</span>
+<span class="sd">          y is a ndarray of shape (n_samples,).</span>
+<span class="sd">          query_ids is a ndarray of shape(nsamples,) if query_id is True.</span>
+<span class="sd">          Otherwise it is not returned.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">data</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">qids</span> <span class="o">=</span> <span class="n">_load_svmlight_file</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">buffer_mb</span><span class="p">)</span>
+
+    <span class="c1"># reshape the numpy array into a matrix</span>
+    <span class="n">n_samples</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+    <span class="n">n_features</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">/</span> <span class="n">n_samples</span> <span class="p">)</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="n">n_samples</span><span class="p">,</span> <span class="n">n_features</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">dtype</span> <span class="o">!=</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">:</span>
+        <span class="n">new_data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+        <span class="k">del</span> <span class="n">data</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">new_data</span>
+
+    <span class="c1"># Convert infinite values to max_float representation (SVM reader problem)</span>
+    <span class="c1"># This patch is needed because some dataset have infinite values and because</span>
+    <span class="c1"># the split condition is &lt;=, while sole software uses &lt;. In order to</span>
+    <span class="c1"># reconduct the former condition to the latter, we slightly decrease the</span>
+    <span class="c1"># split. However, slightly decreasing inf does not have any effect.</span>
+    <span class="n">data</span><span class="p">[</span><span class="n">data</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">finfo</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span><span class="o">.</span><span class="n">max</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">query_id</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">data</span><span class="p">,</span> <span class="n">labels</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">data</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">qids</span></div>
+
+
+<div class="viewcode-block" id="load_svmlight_files"><a class="viewcode-back" href="../../../rankeval.dataset.html#rankeval.dataset.svmlight_format.load_svmlight_files">[docs]</a><span class="k">def</span> <span class="nf">load_svmlight_files</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="n">buffer_mb</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">query_id</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Load dataset from multiple files in SVMlight format</span>
+
+<span class="sd">    This function is equivalent to mapping load_svmlight_file over a list of</span>
+<span class="sd">    files, except that the results are concatenated into a single, flat list</span>
+<span class="sd">    and the samples vectors are constrained to all have the same number of</span>
+<span class="sd">    features.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    files : iterable over str</span>
+<span class="sd">        Paths to files to load.</span>
+
+<span class="sd">    n_features: int or None</span>
+<span class="sd">        The number of features to use. If None, it will be inferred from the</span>
+<span class="sd">        first file. This argument is useful to load several files that are</span>
+<span class="sd">        subsets of a bigger sliced dataset: each subset might not have</span>
+<span class="sd">        examples of every feature, hence the inferred shape might vary from</span>
+<span class="sd">        one slice to another.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    [X1, y1, ..., Xn, yn]</span>
+
+<span class="sd">    where each (Xi, yi, [comment_i, query_id_i]) tuple is the result from load_svmlight_file(files[i]).</span>
+
+<span class="sd">    Rationale</span>
+<span class="sd">    ---------</span>
+<span class="sd">    When fitting a model to a matrix X_train and evaluating it against a</span>
+<span class="sd">    matrix X_test, it is essential that X_train and X_test have the same</span>
+<span class="sd">    number of features (X_train.shape[1] == X_test.shape[1]). This may not</span>
+<span class="sd">    be the case if you load them with load_svmlight_file separately.</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    load_svmlight_file</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">files</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">files</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">load_svmlight_file</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">files</span><span class="p">),</span> <span class="n">buffer_mb</span><span class="p">,</span> <span class="n">query_id</span><span class="o">=</span><span class="n">query_id</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="n">load_svmlight_file</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">buffer_mb</span><span class="p">,</span> <span class="n">query_id</span><span class="o">=</span><span class="n">query_id</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">result</span></div>
+
+
+<div class="viewcode-block" id="dump_svmlight_file"><a class="viewcode-back" href="../../../rankeval.dataset.html#rankeval.dataset.svmlight_format.dump_svmlight_file">[docs]</a><span class="k">def</span> <span class="nf">dump_svmlight_file</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">query_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">zero_based</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Dump the dataset in svmlight / libsvm file format.</span>
+
+<span class="sd">    This format is a text-based format, with one sample per line. It does</span>
+<span class="sd">    not store zero valued features hence is suitable for sparse dataset.</span>
+
+<span class="sd">    The first element of each line can be used to store a target variable</span>
+<span class="sd">    to predict.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    X : CSR sparse matrix, shape = [n_samples, n_features]</span>
+<span class="sd">        Training vectors, where n_samples is the number of samples and</span>
+<span class="sd">        n_features is the number of features.</span>
+
+<span class="sd">    y : array-like, shape = [n_samples]</span>
+<span class="sd">        Target values.</span>
+
+<span class="sd">    f : str</span>
+<span class="sd">        Specifies the path that will contain the data.</span>
+
+<span class="sd">    comment : list, optional </span>
+<span class="sd">        Comments to append to each row after a # character</span>
+<span class="sd">        If specified, len(comment) must equal n_samples</span>
+
+<span class="sd">    query_id: list, optional </span>
+<span class="sd">        Query identifiers to prepend to each row</span>
+<span class="sd">        If specified, len(query_id) must equal n_samples</span>
+
+<span class="sd">    zero_based : boolean, optional</span>
+<span class="sd">        Whether column indices should be written zero-based (True) or one-based</span>
+<span class="sd">        (False). Default is False.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="s2">&quot;write&quot;</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;File handler not supported. Use a file path.&quot;</span><span class="p">)</span>
+
+    <span class="c1"># todo: this test is ok if we know the number of features! to divide X.shape[0] with</span>
+    <span class="c1"># if X.shape[0] != y.shape[0]:</span>
+    <span class="c1">#     raise ValueError(&quot;X.shape[0] and y.shape[0] should be the same, &quot;</span>
+    <span class="c1">#                      &quot;got: %r and %r instead.&quot; % (X.shape[0], y.shape[0]))</span>
+
+    <span class="c1"># elif X.shape[0] != len(query_id):</span>
+    <span class="c1">#         raise ValueError(&quot;X.shape[0] and len(query_id) should be the same, &quot;</span>
+    <span class="c1">#                      &quot;got: %r and %r instead.&quot; % (X.shape[0], len(query_id)))</span>
+
+    <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">query_id</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">query_id</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">query_id</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">query_id</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+
+    <span class="n">_dump_svmlight_file</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">query_id</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">zero_based</span><span class="p">))</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

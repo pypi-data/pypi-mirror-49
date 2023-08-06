@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.model.proxy_CatBoost &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.model.proxy_CatBoost</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.model.proxy_CatBoost</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (c) 2017, All Contributors (see CONTRIBUTORS file)</span>
+<span class="c1"># Authors: Salvatore Trani &lt;salvatore.trani@isti.cnr.it&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c1"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c1"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+<span class="sd">&quot;&quot;&quot;Class providing the implementation for loading/storing a CatBoost model</span>
+<span class="sd">from/to file.</span>
+
+<span class="sd">The CatBoost project is described here:</span>
+<span class="sd">    https://github.com/catboost/catboost</span>
+
+<span class="sd">CatBoost allows to save the learned model in several formats (binary, coreml,</span>
+<span class="sd">etc). Among them, we chose to adopts the Apple CoreML format for reading and</span>
+<span class="sd">converting a model into the rankeval representation. It s possible to read  the</span>
+<span class="sd">coreML representation using the coremltools python package. Once read it</span>
+<span class="sd">provides all the structured information of the ensemble, with split nodes (both</span>
+<span class="sd">features and thresholds), leaf values and tree structure. Not all the</span>
+<span class="sd">information reported in the model are useful for the different analysis, thus</span>
+<span class="sd">only the relevant parts are parsed.</span>
+
+<span class="sd">NOTE: CatBoost trains oblivious trees, i.e., trees where at each level a single</span>
+<span class="sd">condition is checked, independently from the which node we are currently working</span>
+<span class="sd">on. Rankeval does not exploit oblivious trees, but instead it represent them</span>
+<span class="sd">as normal decision trees Thus the same condition will appear on all the nodes</span>
+<span class="sd">of a single level of a tree. The reason behind this choice is to fasten the</span>
+<span class="sd">development of the CatBoost proxy, allowing to analyze it without focusing too</span>
+<span class="sd">much on prediction time (that is not currently measured by rankeval).</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">coremltools</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">.rt_ensemble</span> <span class="k">import</span> <span class="n">RTEnsemble</span>
+
+
+<div class="viewcode-block" id="ProxyCatBoost"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.ProxyCatBoost">[docs]</a><span class="k">class</span> <span class="nc">ProxyCatBoost</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Class providing the implementation for loading/storing a ProxyCatBoost model</span>
+<span class="sd">    from/to file.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="ProxyCatBoost.load"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.ProxyCatBoost.load">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Load the model from the file identified by file_path.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        file_path : str</span>
+<span class="sd">            The path to the filename where the model has been saved</span>
+<span class="sd">        model : RTEnsemble</span>
+<span class="sd">            The model instance to fill</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">coreml_model</span> <span class="o">=</span> <span class="n">coremltools</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">MLModel</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+
+        <span class="n">n_trees</span><span class="p">,</span> <span class="n">n_nodes</span> <span class="o">=</span> <span class="n">ProxyCatBoost</span><span class="o">.</span><span class="n">_count_nodes</span><span class="p">(</span><span class="n">coreml_model</span><span class="p">)</span>
+        <span class="c1"># Initialize the model and allocate the needed space</span>
+        <span class="c1"># given the shape and size of the ensemble</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">n_trees</span><span class="p">,</span> <span class="n">n_nodes</span><span class="p">)</span>
+
+        <span class="n">n_nodes_per_tree</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">n_nodes</span> <span class="o">/</span> <span class="n">n_trees</span><span class="p">)</span>
+
+        <span class="n">nodes</span> <span class="o">=</span> <span class="n">coreml_model</span><span class="o">.</span><span class="n">get_spec</span><span class="p">()</span><span class="o">.</span><span class="n">treeEnsembleRegressor</span><span class="o">.</span><span class="n">treeEnsemble</span><span class="o">.</span><span class="n">nodes</span>
+        <span class="n">behaviors</span> <span class="o">=</span> <span class="n">coremltools</span><span class="o">.</span><span class="n">proto</span><span class="o">.</span><span class="n">TreeEnsemble_pb2</span><span class="o">.</span><span class="n">TreeEnsembleParameters</span><span class="o">.</span>\
+            <span class="n">TreeNode</span><span class="o">.</span><span class="n">TreeNodeBehavior</span>
+
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">:</span>
+            <span class="n">tree_offset</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">treeId</span> <span class="o">*</span> <span class="n">n_nodes_per_tree</span>
+            <span class="n">node_id_remap</span> <span class="o">=</span> <span class="n">ProxyCatBoost</span><span class="o">.</span><span class="n">remap_nodeId</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">nodeId</span><span class="p">,</span>
+                                                       <span class="n">n_nodes_per_tree</span><span class="p">)</span>
+            <span class="n">node_id_off</span> <span class="o">=</span> <span class="n">node_id_remap</span> <span class="o">+</span> <span class="n">tree_offset</span>
+
+            <span class="k">if</span> <span class="n">node_id_remap</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># this is the root of a tree</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">trees_root</span><span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">treeId</span><span class="p">]</span> <span class="o">=</span> <span class="n">tree_offset</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">trees_weight</span><span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">treeId</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+            <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">nodeBehavior</span> <span class="o">==</span> <span class="n">behaviors</span><span class="o">.</span><span class="n">Value</span><span class="p">(</span><span class="s1">&#39;LeafNode&#39;</span><span class="p">):</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">trees_nodes_value</span><span class="p">[</span><span class="n">node_id_off</span><span class="p">]</span> <span class="o">=</span> \
+                    <span class="n">node</span><span class="o">.</span><span class="n">evaluationInfo</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">evaluationValue</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">nodeBehavior</span> <span class="o">==</span> <span class="n">behaviors</span><span class="o">.</span><span class="n">Value</span><span class="p">(</span><span class="s1">&#39;BranchOnValueGreaterThan&#39;</span><span class="p">):</span>
+                    <span class="c1"># we need to flip the condition given we use &quot;&lt;=&quot;</span>
+                    <span class="n">left</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">falseChildNodeId</span>
+                    <span class="n">right</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">trueChildNodeId</span>
+                <span class="k">elif</span> <span class="n">node</span><span class="o">.</span><span class="n">nodeBehavior</span> <span class="o">==</span> <span class="n">behaviors</span><span class="o">.</span><span class="n">Value</span><span class="p">(</span><span class="s1">&#39;BranchOnValueLessThanEqual&#39;</span><span class="p">):</span>
+                    <span class="n">right</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">falseChildNodeId</span>
+                    <span class="n">left</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">trueChildNodeId</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">(</span>
+                        <span class="s2">&quot;Branching condition not supported. RankEval does not &quot;</span>
+                        <span class="s2">&quot;support branching conditions different from &quot;</span>
+                        <span class="s2">&quot;BranchOnValueGreaterThan or BranchOnValueLessThanEqual.&quot;</span><span class="p">)</span>
+
+                <span class="n">model</span><span class="o">.</span><span class="n">trees_nodes_value</span><span class="p">[</span><span class="n">node_id_off</span><span class="p">]</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">branchFeatureValue</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">trees_nodes_feature</span><span class="p">[</span><span class="n">node_id_off</span><span class="p">]</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">branchFeatureIndex</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">trees_left_child</span><span class="p">[</span><span class="n">node_id_off</span><span class="p">]</span> <span class="o">=</span> <span class="n">tree_offset</span> <span class="o">+</span>\
+                    <span class="n">ProxyCatBoost</span><span class="o">.</span><span class="n">remap_nodeId</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">n_nodes_per_tree</span><span class="p">)</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">trees_right_child</span><span class="p">[</span><span class="n">node_id_off</span><span class="p">]</span> <span class="o">=</span> <span class="n">tree_offset</span> <span class="o">+</span> \
+                    <span class="n">ProxyCatBoost</span><span class="o">.</span><span class="n">remap_nodeId</span><span class="p">(</span><span class="n">right</span><span class="p">,</span> <span class="n">n_nodes_per_tree</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ProxyCatBoost.remap_nodeId"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.ProxyCatBoost.remap_nodeId">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">remap_nodeId</span><span class="p">(</span><span class="n">nodeId</span><span class="p">,</span> <span class="n">n_nodes_per_tree</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">n_nodes_per_tree</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">nodeId</span></div>
+
+<div class="viewcode-block" id="ProxyCatBoost.save"><a class="viewcode-back" href="../../../rankeval.model.html#rankeval.model.ProxyCatBoost.save">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Save the model onto the file identified by file_path.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        file_path : str</span>
+<span class="sd">            The path to the filename where the model has to be saved</span>
+<span class="sd">        model : RTEnsemble</span>
+<span class="sd">            The model RTEnsemble model to save on file</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        status : bool</span>
+<span class="sd">            Returns true if the save is successful, false otherwise</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Feature not implemented!&quot;</span><span class="p">)</span></div>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_count_nodes</span><span class="p">(</span><span class="n">coreml_model</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Count the total number of nodes (both split and leaf nodes)</span>
+<span class="sd">        in the CoreML model.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        coreml_model : CoreML model</span>
+<span class="sd">            The CoreML model to load from</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        tuple(n_trees, n_nodes) : tuple(int, int)</span>
+<span class="sd">            The total number of trees and nodes (both split and leaf nodes)</span>
+<span class="sd">            in the model identified by file_path.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">nodes</span> <span class="o">=</span> <span class="n">coreml_model</span><span class="o">.</span><span class="n">get_spec</span><span class="p">()</span><span class="o">.</span><span class="n">treeEnsembleRegressor</span><span class="o">.</span><span class="n">treeEnsemble</span><span class="o">.</span><span class="n">nodes</span>
+
+        <span class="n">n_trees</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">([</span><span class="n">node</span><span class="o">.</span><span class="n">treeId</span> <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span>
+
+        <span class="n">n_nodes_trees</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">n_trees</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint16</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">:</span>
+            <span class="n">n_nodes_trees</span><span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">treeId</span><span class="p">]</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">nodeId</span>
+
+        <span class="c1"># node_Id starts from 0, thus + 1</span>
+        <span class="n">n_nodes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">n_nodes_trees</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">n_trees</span><span class="p">,</span> <span class="n">n_nodes</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

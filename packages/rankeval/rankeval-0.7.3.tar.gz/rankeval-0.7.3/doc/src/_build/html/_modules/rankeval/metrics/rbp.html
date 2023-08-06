@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.metrics.rbp &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.metrics.rbp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.metrics.rbp</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (c) 2017, All Contributors (see CONTRIBUTORS file)</span>
+<span class="c1"># Authors: Cristina Muntean &lt;cristina.muntean@isti.cnr.it&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c1"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c1"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">rankeval.metrics</span> <span class="k">import</span> <span class="n">Metric</span>
+
+
+<div class="viewcode-block" id="RBP"><a class="viewcode-back" href="../../../rankeval.metrics.html#rankeval.metrics.RBP">[docs]</a><span class="k">class</span> <span class="nc">RBP</span><span class="p">(</span><span class="n">Metric</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This class implements Ranked biased Precision (RBP) with several parameters.</span>
+<span class="sd">    We implemented RBP as in: Alistair Moffat and Justin Zobel. 2008.</span>
+<span class="sd">     Rank-biased precision for measurement of retrieval effectiveness.</span>
+<span class="sd">    ACM Trans. Inf. Syst. 27, 1, Article 2 (December 2008), 27 pages.</span>
+<span class="sd">    DOI=http://dx.doi.org/10.1145/1416950.1416952</span>
+
+<span class="sd">    RBP is an extension of P@k. User has certain chance to view each result.</span>
+
+<span class="sd">    RBP = E(# viewed relevant results) / E(# viewed results)</span>
+
+<span class="sd">    p is based on the user model perspective and allows simulating different</span>
+<span class="sd">    types of users, e.g.:</span>
+<span class="sd">        p = 0.95 for persistent user</span>
+<span class="sd">        p = 0.8 for patient users</span>
+<span class="sd">        p = 0.5 for impatient users</span>
+<span class="sd">        p = 0 for i&#39;m feeling lucky - P@1</span>
+
+<span class="sd">    The use of different values of p reflects different ways in which ranked</span>
+<span class="sd">    lists can be used. Values close to 1.0 are indicative of highly persistent</span>
+<span class="sd">    users, who scrutinize many answers before ceasing their search. For example,</span>
+<span class="sd">    at p = 0.95, there is a roughly 60% likelihood that a user will enter a</span>
+<span class="sd">    second page of 10 results, and a 35% chance that they will go to a third</span>
+<span class="sd">    page. Such users obtain a relatively low per-document utility from a search</span>
+<span class="sd">    unless a high number of relevant documents are encountered, scattered</span>
+<span class="sd">    through a long prefix of the ranking.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">_threshold</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;RBP&#39;</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="n">_threshold</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This is the constructor of RBP, an object of type Metric, with the name</span>
+<span class="sd">        RBP. The constructor also allows setting custom values in the following</span>
+<span class="sd">        parameters.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        name: string</span>
+<span class="sd">            RBP</span>
+<span class="sd">        cutoff: int</span>
+<span class="sd">            The top k results to be considered at per query level (e.g. 10)</span>
+<span class="sd">        threshold: float</span>
+<span class="sd">            This parameter considers relevant results all instances with labels</span>
+<span class="sd">            different from 0, thus with a minimum label value of 1. It can be</span>
+<span class="sd">            set to other values as well (e.g. 3), in the range of possible</span>
+<span class="sd">            labels.</span>
+<span class="sd">        p: float</span>
+<span class="sd">            This parameter which simulates user type, and consequently the</span>
+<span class="sd">            probability that a viewer actually inspects the document at rank k.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">RBP</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cutoff</span> <span class="o">=</span> <span class="n">cutoff</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">threshold</span> <span class="o">=</span> <span class="n">threshold</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">p</span> <span class="o">=</span> <span class="n">p</span>
+
+<div class="viewcode-block" id="RBP.eval"><a class="viewcode-back" href="../../../rankeval.metrics.html#rankeval.metrics.RBP.eval">[docs]</a>    <span class="k">def</span> <span class="nf">eval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This method takes the RBP for each query and calculates the average RBP.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        dataset : Dataset</span>
+<span class="sd">            Represents the Dataset object on which to apply RBP.</span>
+<span class="sd">        y_pred : numpy 1d array of float</span>
+<span class="sd">            Represents the predicted document scores for each instance in the</span>
+<span class="sd">            dataset.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        avg_score: float</span>
+<span class="sd">            The overall RBP score (averages over the detailed MAP scores).</span>
+<span class="sd">        detailed_scores: numpy 1d array of floats</span>
+<span class="sd">            The detailed RBP@k scores for each query, an array of length of the</span>
+<span class="sd">            number of queries.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">RBP</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RBP.eval_per_query"><a class="viewcode-back" href="../../../rankeval.metrics.html#rankeval.metrics.RBP.eval_per_query">[docs]</a>    <span class="k">def</span> <span class="nf">eval_per_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        This method helps compute the RBP score per query. It is called by the</span>
+<span class="sd">        eval function which averages and aggregates the scores for each query.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        y: numpy array</span>
+<span class="sd">            Represents the labels of instances corresponding to one query in</span>
+<span class="sd">            the dataset (ground truth).</span>
+<span class="sd">        y_pred: numpy array.</span>
+<span class="sd">            Represents the predicted document scores obtained during the model</span>
+<span class="sd">            scoring phase for that query.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        rbp: float</span>
+<span class="sd">            Represents the RBP score for one query.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">idx_y_pred_sorted</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">y_pred</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">cutoff</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">idx_y_pred_sorted</span> <span class="o">=</span> <span class="n">idx_y_pred_sorted</span><span class="p">[:</span><span class="bp">self</span><span class="o">.</span><span class="n">cutoff</span><span class="p">]</span>
+
+        <span class="n">discount</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">idx_y_pred_sorted</span><span class="p">)))</span>
+        <span class="n">gain</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="n">idx_y_pred_sorted</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">threshold</span>
+
+        <span class="n">rbp</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">gain</span> <span class="o">*</span> <span class="n">discount</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">rbp</span></div>
+
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">cutoff</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;@</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cutoff</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">threshold</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_threshold</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;[&gt;</span><span class="si">{}</span><span class="s2">]&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">threshold</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">s</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

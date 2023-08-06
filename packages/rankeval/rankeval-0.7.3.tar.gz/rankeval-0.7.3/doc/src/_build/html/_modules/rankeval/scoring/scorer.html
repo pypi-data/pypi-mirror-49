@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>rankeval.scoring.scorer &mdash; RankEval 0.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> RankEval
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../rankeval.html">rankeval package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">RankEval</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>rankeval.scoring.scorer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for rankeval.scoring.scorer</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (c) 2017, All Contributors (see CONTRIBUTORS file)</span>
+<span class="c1"># Authors: Salvatore Trani &lt;salvatore.trani@isti.cnr.it&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c1"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c1"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Class for efficient scoring of an ensemble-based model composed of binary regression trees on a given dataset.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">..dataset</span> <span class="k">import</span> <span class="n">Dataset</span>
+<span class="kn">from</span> <span class="nn">._efficient_scoring</span> <span class="k">import</span> <span class="n">basic_scoring</span><span class="p">,</span> <span class="n">detailed_scoring</span>
+
+
+<div class="viewcode-block" id="Scorer"><a class="viewcode-back" href="../../../rankeval.scoring.html#rankeval.scoring.Scorer">[docs]</a><span class="k">class</span> <span class="nc">Scorer</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Class for efficient scoring of an ensemble-based model composed of binary regression trees on a given dataset.</span>
+
+<span class="sd">    This class can be used for simple or detailed scoring, depending on the mode selected at scoring time.</span>
+<span class="sd">    The document scores are cached as to avoid useless re-scoring. Thus, calling multiple times the `score` method</span>
+<span class="sd">    does not involve the scoring activity to be executed again, except for a detailed scoring following a basic scoring.</span>
+<span class="sd">    Indeed in this situation the scoring has to be repeated as to analyze in depth the scoring behaviour.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    model: RTEnsemble</span>
+<span class="sd">        The model to use for scoring</span>
+<span class="sd">    dataset: Dataset</span>
+<span class="sd">        The dataset to use for scoring</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    model : RTEnsemble</span>
+<span class="sd">        The model to use for scoring</span>
+<span class="sd">    dataset : Dataset</span>
+<span class="sd">        The dataset to use for scoring</span>
+<span class="sd">    y_pred : numpy array of float</span>
+<span class="sd">        The predicted scores produced by the given model for each sample of the given dataset X</span>
+<span class="sd">    partial_y_pred : numpy 2d-array of float</span>
+<span class="sd">        The predicted score of each tree of the model for each dataset instance</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">dataset</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dataset</span> <span class="o">=</span> <span class="n">dataset</span>
+
+        <span class="c1"># Save the predicted scores for each dataset instance</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y_pred</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="c1"># Save the partial scores of each tree for each dataset instance</span>
+        <span class="c1"># (if detailed scoring is True)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">partial_y_pred</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="c1"># Save the leaf id of each tree for each dataset instance</span>
+        <span class="c1"># (if detailed scoring is True)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">out_leaves</span> <span class="o">=</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="Scorer.score"><a class="viewcode-back" href="../../../rankeval.scoring.html#rankeval.scoring.Scorer.score">[docs]</a>    <span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">detailed</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        detailed : bool</span>
+<span class="sd">            True if the class has to performs a detailed scoring, false otherwise</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        y : numpy array of float</span>
+<span class="sd">            the predicted scores produced by the given model for each sample of the given dataset X</span>
+
+<span class="sd">        Attributes</span>
+<span class="sd">        ----------</span>
+<span class="sd">        self.y : array of float</span>
+<span class="sd">            The predicted scores of each dataset instance</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># Skip the scoring if it has already been done (return cached results)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">detailed</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_pred</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">or</span> \
+                        <span class="n">detailed</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">out_leaves</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_pred</span>
+
+        <span class="k">if</span> <span class="n">detailed</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">out_leaves</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">partial_y_pred</span> <span class="o">=</span> \
+                <span class="n">detailed_scoring</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dataset</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">y_pred</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">partial_y_pred</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">basic_scoring</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dataset</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_pred</span></div>
+
+<div class="viewcode-block" id="Scorer.get_predicted_scores"><a class="viewcode-back" href="../../../rankeval.scoring.html#rankeval.scoring.Scorer.get_predicted_scores">[docs]</a>    <span class="k">def</span> <span class="nf">get_predicted_scores</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Provide an accessor to the predicted scores produced by the given model for each sample of the given dataset X</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        scores : numpy array of float</span>
+<span class="sd">            The predicted scores produced by the given model for each sample of the given dataset X</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_pred</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">detailed</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_pred</span></div>
+
+<div class="viewcode-block" id="Scorer.get_partial_predicted_scores"><a class="viewcode-back" href="../../../rankeval.scoring.html#rankeval.scoring.Scorer.get_partial_predicted_scores">[docs]</a>    <span class="k">def</span> <span class="nf">get_partial_predicted_scores</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Provide an accessor to the partial scores produced by the given model</span>
+<span class="sd">        for each sample of the given dataset X. Each partial score reflects the</span>
+<span class="sd">        score produced by a single tree of the ensemble model to a single</span>
+<span class="sd">        dataset instance. Thus, the returned numpy matrix has a shape of</span>
+<span class="sd">        (n_instances, n_trees). The partial scores does not take into account</span>
+<span class="sd">        the tree weights, thus for producing the final score is needed to</span>
+<span class="sd">        multiply each row for the tree weight vector.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        scores : numpy 2d-array of float</span>
+<span class="sd">            The predicted score of each tree of the model for each dataset instance</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">partial_y_pred</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">detailed</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">partial_y_pred</span></div>
+
+<div class="viewcode-block" id="Scorer.get_predicted_leaves"><a class="viewcode-back" href="../../../rankeval.scoring.html#rankeval.scoring.Scorer.get_predicted_leaves">[docs]</a>    <span class="k">def</span> <span class="nf">get_predicted_leaves</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Provide an accessor to the leaves that identify the exit nodes of each</span>
+<span class="sd">        sample of the given dataset X using the given model.</span>
+
+<span class="sd">        Each leaf value reflects the output node of a single tree of the</span>
+<span class="sd">        ensemble model to a single dataset instance. Thus, the returned numpy</span>
+<span class="sd">        matrix has a shape of (n_instances, n_trees).</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        scores : numpy 2d-array of int</span>
+<span class="sd">            The leaves predicted by each tree of the model on scoring</span>
+<span class="sd">            each dataset instance.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">self</span><span class="o">.</span><span class="n">y_leaves</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">detailed</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">self</span><span class="o">.</span><span class="n">y_leaves</span></div></div>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, HPC Lab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.00',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

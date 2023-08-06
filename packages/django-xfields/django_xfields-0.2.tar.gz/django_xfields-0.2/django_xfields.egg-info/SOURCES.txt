@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+django_xfields/__init__.py
+django_xfields/apps.py
+django_xfields.egg-info/PKG-INFO
+django_xfields.egg-info/SOURCES.txt
+django_xfields.egg-info/dependency_links.txt
+django_xfields.egg-info/requires.txt
+django_xfields.egg-info/top_level.txt
+django_xfields/db/__init__.py
+django_xfields/db/models/__init__.py
+django_xfields/db/models/fields/__init__.py
+django_xfields/forms/__init__.py
+django_xfields/forms/fields.py

@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: django_xfields
+Version: 0.2
+Summary: Extra fields for Django framework
+Home-page: https://github.com/leviplj/django_xfields
+Author: leviplj
+Author-email: leviplj@gmail.com
+License: MIT License
+Download-URL: https://github.com/leviplj/django_xfields/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: django,fields,extra
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

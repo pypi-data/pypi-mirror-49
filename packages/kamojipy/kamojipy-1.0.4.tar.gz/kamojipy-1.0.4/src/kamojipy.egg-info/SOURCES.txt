@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/kamojipy.py
+src/kamojipy.egg-info/PKG-INFO
+src/kamojipy.egg-info/SOURCES.txt
+src/kamojipy.egg-info/dependency_links.txt
+src/kamojipy.egg-info/not-zip-safe
+src/kamojipy.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+README.md
+setup.py
+S3Dictionary.egg-info/PKG-INFO
+S3Dictionary.egg-info/SOURCES.txt
+S3Dictionary.egg-info/dependency_links.txt
+S3Dictionary.egg-info/requires.txt
+S3Dictionary.egg-info/top_level.txt
+s3dictionary/__init__.py

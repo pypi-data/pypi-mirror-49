@@ -1,0 +1,7 @@
+setup.py
+hello/__init__.py
+hello/hello.py
+hello_world_lizixi.egg-info/PKG-INFO
+hello_world_lizixi.egg-info/SOURCES.txt
+hello_world_lizixi.egg-info/dependency_links.txt
+hello_world_lizixi.egg-info/top_level.txt

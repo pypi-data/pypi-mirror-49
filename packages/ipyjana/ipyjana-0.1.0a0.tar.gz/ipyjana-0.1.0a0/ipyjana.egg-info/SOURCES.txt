@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+ipyjana.json
+setup.cfg
+setup.py
+ipyjana/__init__.py
+ipyjana/_version.py
+ipyjana/example.py
+ipyjana.egg-info/PKG-INFO
+ipyjana.egg-info/SOURCES.txt
+ipyjana.egg-info/dependency_links.txt
+ipyjana.egg-info/not-zip-safe
+ipyjana.egg-info/requires.txt
+ipyjana.egg-info/top_level.txt
+ipyjana/static/extension.js
+ipyjana/static/index.js
+ipyjana/static/index.js.map

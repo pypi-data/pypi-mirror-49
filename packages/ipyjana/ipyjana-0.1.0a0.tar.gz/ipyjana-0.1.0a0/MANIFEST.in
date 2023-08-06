@@ -1,0 +1,2 @@
+recursive-include ipyjana/static *.*
+include ipyjana.json

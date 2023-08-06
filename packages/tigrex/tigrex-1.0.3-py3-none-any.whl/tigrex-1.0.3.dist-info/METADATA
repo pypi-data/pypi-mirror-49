@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tigrex
+Version: 1.0.3
+Summary: A Magic the Gathering CLI Tool
+Home-page: UNKNOWN
+Author: Eric Chi
+Author-email: ericjaychi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests (<=2.21.0)
+Requires-Dist: fire (<=0.1.3)
+
+# project-tigrex
+
+

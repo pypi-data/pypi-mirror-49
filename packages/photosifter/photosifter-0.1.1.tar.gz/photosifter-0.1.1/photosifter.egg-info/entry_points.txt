@@ -1,0 +1,4 @@
+[console_scripts]
+gphotos_deleter = gphotos_deleter.gphotos_deleter:main
+photosifter = photosifter.__main__:main
+

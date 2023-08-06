@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: semilattices
+Version: 0.9.0rc1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Joshua Chen
+Author-email: joshuawchen@utexas.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: future-fstrings
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: sortedcontainers
+
+# README #
+
+This package implements a lightweight library for semilattices in python.
+
+

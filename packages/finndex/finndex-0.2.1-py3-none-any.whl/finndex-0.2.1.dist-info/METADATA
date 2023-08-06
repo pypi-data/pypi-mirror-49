@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: finndex
+Version: 0.2.1
+Summary: A useful tool for crypto analysts providing several metrics on various cryptocurrencies.
+Home-page: https://github.com/FinnitoProductions/Crypto-Sentiment-Tracker
+Author: Finn Frankis
+Author-email: finn@teachmy.com
+License: MIT
+Download-URL: https://github.com/FinnitoProductions/finndex/archive/v0.2.1-alpha.tar.gz
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4
+Requires-Dist: ipykernel
+Requires-Dist: ipython
+Requires-Dist: ipywidgets
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pycorenlp
+Requires-Dist: pytrends
+Requires-Dist: requests
+Requires-Dist: stanfordnlp
+
+UNKNOWN
+
+

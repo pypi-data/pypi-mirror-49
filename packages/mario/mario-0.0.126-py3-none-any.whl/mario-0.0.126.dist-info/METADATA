@@ -1,0 +1,814 @@
+Metadata-Version: 2.1
+Name: mario
+Version: 0.0.126
+Summary: Shell pipes for Python.
+Home-page: https://github.com/python-mario/mario
+Author: mario contributors
+Author-email: mario@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: click
+Requires-Dist: toolz
+Requires-Dist: attrs
+Requires-Dist: parso
+Requires-Dist: bump2version
+Requires-Dist: trio
+Requires-Dist: async-generator
+Requires-Dist: async-exit-stack
+Requires-Dist: appdirs
+Requires-Dist: toml
+Requires-Dist: asks
+Requires-Dist: marshmallow (>=3.0rc1)
+Requires-Dist: pyrsistent
+Requires-Dist: trio-typing
+Requires-Dist: docutils
+Requires-Dist: sphinx
+Provides-Extra: dev
+Requires-Dist: aiohttp (==3.5.4) ; extra == 'dev'
+Requires-Dist: alabaster (==0.7.12) ; extra == 'dev'
+Requires-Dist: ansicolors (==1.0.2) ; extra == 'dev'
+Requires-Dist: anyio (==1.0.0) ; extra == 'dev'
+Requires-Dist: appdirs (==1.4.3) ; extra == 'dev'
+Requires-Dist: argh (==0.26.2) ; extra == 'dev'
+Requires-Dist: asks (==2.3.5) ; extra == 'dev'
+Requires-Dist: asn1crypto (==0.24.0) ; extra == 'dev'
+Requires-Dist: astroid (==2.2.5) ; extra == 'dev'
+Requires-Dist: async-exit-stack (==1.0.1) ; extra == 'dev'
+Requires-Dist: async-generator (==1.10) ; extra == 'dev'
+Requires-Dist: async-timeout (==3.0.1) ; extra == 'dev'
+Requires-Dist: atomicwrites (==1.3.0) ; extra == 'dev'
+Requires-Dist: attrs (==19.1.0) ; extra == 'dev'
+Requires-Dist: automat (==0.7.0) ; extra == 'dev'
+Requires-Dist: babel (==2.6.0) ; extra == 'dev'
+Requires-Dist: black (==19.3b0) ; extra == 'dev'
+Requires-Dist: bleach (==3.1.0) ; extra == 'dev'
+Requires-Dist: bump2version (==0.5.10) ; extra == 'dev'
+Requires-Dist: certifi (==2019.3.9) ; extra == 'dev'
+Requires-Dist: cffi (==1.12.2) ; extra == 'dev'
+Requires-Dist: chardet (==3.0.4) ; extra == 'dev'
+Requires-Dist: click (==7.0) ; extra == 'dev'
+Requires-Dist: constantly (==15.1.0) ; extra == 'dev'
+Requires-Dist: coverage (==4.5.3) ; extra == 'dev'
+Requires-Dist: cryptography (==2.6.1) ; extra == 'dev'
+Requires-Dist: cuvner (==18.0.1) ; extra == 'dev'
+Requires-Dist: docshtest (==0.0.2) ; extra == 'dev'
+Requires-Dist: docutils (==0.14) ; extra == 'dev'
+Requires-Dist: filelock (==3.0.10) ; extra == 'dev'
+Requires-Dist: h11 (==0.9.0) ; extra == 'dev'
+Requires-Dist: hyperlink (==19.0.0) ; extra == 'dev'
+Requires-Dist: hypothesis (==4.17.1) ; extra == 'dev'
+Requires-Dist: idna (==2.8) ; extra == 'dev'
+Requires-Dist: imagesize (==1.1.0) ; extra == 'dev'
+Requires-Dist: incremental (==17.5.0) ; extra == 'dev'
+Requires-Dist: isort (==4.3.17) ; extra == 'dev'
+Requires-Dist: jedi (==0.13.3) ; extra == 'dev'
+Requires-Dist: jinja2 (==2.10.1) ; extra == 'dev'
+Requires-Dist: lazy-object-proxy (==1.3.1) ; extra == 'dev'
+Requires-Dist: lockfile (==0.12.2) ; extra == 'dev'
+Requires-Dist: lxml (==4.3.4) ; extra == 'dev'
+Requires-Dist: markupsafe (==1.1.1) ; extra == 'dev'
+Requires-Dist: marshmallow (==3.0.0rc8) ; extra == 'dev'
+Requires-Dist: mccabe (==0.6.1) ; extra == 'dev'
+Requires-Dist: more-itertools (==7.0.0) ; extra == 'dev'
+Requires-Dist: multidict (==4.5.2) ; extra == 'dev'
+Requires-Dist: mypy-extensions (==0.4.1) ; extra == 'dev'
+Requires-Dist: mypy (==0.720) ; extra == 'dev'
+Requires-Dist: outcome (==1.0.0) ; extra == 'dev'
+Requires-Dist: packaging (==19.0) ; extra == 'dev'
+Requires-Dist: parso (==0.4.0) ; extra == 'dev'
+Requires-Dist: pathtools (==0.1.2) ; extra == 'dev'
+Requires-Dist: pkginfo (==1.5.0.1) ; extra == 'dev'
+Requires-Dist: pluggy (==0.9.0) ; extra == 'dev'
+Requires-Dist: py (==1.8.0) ; extra == 'dev'
+Requires-Dist: pyasn1-modules (==0.2.4) ; extra == 'dev'
+Requires-Dist: pyasn1 (==0.4.5) ; extra == 'dev'
+Requires-Dist: pycparser (==2.19) ; extra == 'dev'
+Requires-Dist: pygments (==2.4.2) ; extra == 'dev'
+Requires-Dist: pyhamcrest (==1.9.0) ; extra == 'dev'
+Requires-Dist: pylint (==2.3.1) ; extra == 'dev'
+Requires-Dist: pyopenssl (==19.0.0) ; extra == 'dev'
+Requires-Dist: pyparsing (==2.4.0) ; extra == 'dev'
+Requires-Dist: pyrsistent (==0.15.3) ; extra == 'dev'
+Requires-Dist: pytest-clarity (==0.1.0a1) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.6.1) ; extra == 'dev'
+Requires-Dist: pytest-sugar (==0.9.2) ; extra == 'dev'
+Requires-Dist: pytest (==4.4.1) ; extra == 'dev'
+Requires-Dist: pytz (==2019.1) ; extra == 'dev'
+Requires-Dist: pyyaml (==5.1) ; extra == 'dev'
+Requires-Dist: readme-renderer (==24.0) ; extra == 'dev'
+Requires-Dist: requests-toolbelt (==0.8.0) ; extra == 'dev'
+Requires-Dist: requests (==2.21.0) ; extra == 'dev'
+Requires-Dist: service-identity (==18.1.0) ; extra == 'dev'
+Requires-Dist: six (==1.12.0) ; extra == 'dev'
+Requires-Dist: sniffio (==1.1.0) ; extra == 'dev'
+Requires-Dist: snowballstemmer (==1.2.1) ; extra == 'dev'
+Requires-Dist: sortedcontainers (==2.1.0) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (==0.4.3) ; extra == 'dev'
+Requires-Dist: sphinx (==2.0.1) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-applehelp (==1.0.1) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-devhelp (==1.0.1) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-htmlhelp (==1.0.2) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-jsmath (==1.0.1) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-qthelp (==1.0.2) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-serializinghtml (==1.1.3) ; extra == 'dev'
+Requires-Dist: termcolor (==1.1.0) ; extra == 'dev'
+Requires-Dist: toml (==0.10.0) ; extra == 'dev'
+Requires-Dist: toolz (==0.10.0) ; extra == 'dev'
+Requires-Dist: tox (==3.9.0) ; extra == 'dev'
+Requires-Dist: tqdm (==4.31.1) ; extra == 'dev'
+Requires-Dist: treq (==18.6.0) ; extra == 'dev'
+Requires-Dist: trio-typing (==0.2.0) ; extra == 'dev'
+Requires-Dist: trio (==0.11.0) ; extra == 'dev'
+Requires-Dist: twine (==1.13.0) ; extra == 'dev'
+Requires-Dist: twisted[tls] (==19.2.0) ; extra == 'dev'
+Requires-Dist: typed-ast (==1.4.0) ; extra == 'dev'
+Requires-Dist: typing-extensions (==3.7.4) ; extra == 'dev'
+Requires-Dist: unidiff (==0.5.5) ; extra == 'dev'
+Requires-Dist: urllib3 (==1.24.2) ; extra == 'dev'
+Requires-Dist: virtualenv (==16.4.3) ; extra == 'dev'
+Requires-Dist: vulture (==1.0) ; extra == 'dev'
+Requires-Dist: watchdog (==0.9.0) ; extra == 'dev'
+Requires-Dist: webencodings (==0.5.1) ; extra == 'dev'
+Requires-Dist: wrapt (==1.11.1) ; extra == 'dev'
+Requires-Dist: yapf (==0.27.0) ; extra == 'dev'
+Requires-Dist: yarl (==1.3.0) ; extra == 'dev'
+Requires-Dist: zope.interface (==4.6.0) ; extra == 'dev'
+
+====================================
+Mario: Shell pipes in Python
+====================================
+
+Your favorite plumbing snake 🐍🔧 with your favorite pipes, right in your shell 🐢.
+
+
+
+.. image:: https://readthedocs.org/projects/python-mario/badge/?style=flat
+   :target: https://readthedocs.org/projects/python-mario
+   :alt: Documentation Status
+
+.. image:: https://travis-ci.com/python-mario/mario.svg?branch=master
+   :target: https://travis-ci.com/python-mario/mario#
+   :alt: Build status
+
+.. image:: https://img.shields.io/pypi/v/mario.svg
+   :target: https://pypi.python.org/pypi/mario
+   :alt: PyPI package
+
+.. image:: https://img.shields.io/codecov/c/github/python-mario/mario.svg
+   :target: https://codecov.io/gh/python-mario/mario
+   :alt: Coverage
+
+
+============
+Installation
+============
+
+Mario
+-------------
+
+
+Get Mario with pip:
+
+.. code-block:: bash
+
+   python3.7 -m pip install mario
+
+If you're not inside a virtualenv, you might get a ``PermissionsError``. In that case, try using:
+
+.. code-block:: bash
+
+    python3.7 -m pip install --user mario
+
+or for more flexibility and safety, use `pipx <https://github.com/pipxproject/pipx/>`_:
+
+.. code-block:: bash
+
+     pipx install --python python3.7 mario
+
+
+
+Mario addons
+-----------------
+
+The `mario-addons <https://mario-addons.readthedocs.io/>`__ package provides a number of useful commands not found in the base collection.
+
+
+Get Mario addons with pip:
+
+.. code-block:: bash
+
+   python3.7 -m pip install mario-addons
+
+If you're not inside a virtualenv, you might get a ``PermissionsError``. In that case, try using:
+
+.. code-block:: bash
+
+    python3.7 -m pip install --user mario-addons
+
+or for more flexibility and safety, use `pipx <https://github.com/pipxproject/pipx/>`_:
+
+.. code-block:: bash
+
+     pipx install --python python3.7 mario-addons
+
+
+=====
+Usage
+=====
+
+Basics
+-----------------------------------
+
+Invoke with  ``mario`` at the command line.
+
+.. code-block:: bash
+
+  $ mario eval 1+1
+  2
+
+Use ``map`` to act on each item in the file with python commands:
+
+.. code-block:: bash
+
+  $ mario map 'x.upper()' <<<'abc'
+  ABC
+
+
+Chain python functions together with ``!``:
+
+.. code-block:: bash
+
+  $ mario map 'x.upper() ! len(x)' <<<hello
+  5
+
+or by adding another command
+
+.. code-block:: bash
+
+   $ mario map 'x.upper()' map 'len(x)' <<<hello
+   5
+
+
+Use ``x`` as a placeholder for the input at each stage:
+
+.. code-block:: bash
+
+  $ mario map ' x.split()[0] ! x.upper() + "!"' <<<'Hello world'
+  HELLO!
+
+  $ mario map 'x.split()[0] ! x.upper() + "!" ! x.replace("H", "J")' <<<'Hello world'
+  JELLO!
+
+
+
+Automatically import modules you need:
+
+.. code-block:: bash
+
+   $ mario stack 'itertools.repeat(x, 2) ! "".join' <<<hello,world!
+   hello,world!
+   hello,world!
+
+
+Autocall
+-----------------------------------
+
+You don't need to explicitly call the function with ``some_function(x)``; just use the function's name ``some_function``. For example, instead of
+
+.. code-block:: bash
+
+  $ mario map 'len(x)' <<<'a\nbb'
+  5
+
+try
+
+.. code-block:: bash
+
+  $ mario map len <<<'a\nbb'
+  5
+
+
+
+
+Commands
+-----------------------------------
+
+
+``eval``
+________
+
+
+Use ``eval`` to evaluate a Python expression.
+
+.. code-block:: bash
+
+  $ mario eval 'datetime.datetime.utcnow()'
+  2019-01-01 01:23:45.562736
+
+
+
+``map``
+_______
+
+Use ``map`` to act on each input item.
+
+.. code-block:: bash
+
+   $ mario map 'x * 2' <<<'a\nbb\n'
+   aa
+   bbbb
+
+``filter``
+__________
+
+
+Use ``filter`` to evaluate a condition on each line of input and exclude false values.
+
+.. code-block:: bash
+
+   $  mario filter 'len(x) > 1' <<<'a\nbb\nccc\n'
+   bb
+   ccc
+
+
+``apply``
+_________
+
+Use ``apply`` to act on the sequence of items.
+
+.. code-block:: bash
+
+    $ mario apply 'len(x)' <<<$'a\nbb'
+    2
+
+
+``stack``
+_________
+
+Use ``stack`` to treat the input as a single string, including newlines.
+
+.. code-block:: bash
+
+    $  mario stack 'len(x)' <<<$'a\nbb'
+    5
+
+
+``reduce``
+__________
+
+Use ``reduce`` to evaluate a function of two arguments successively over a sequence, like `functools.reduce <https://docs.python.org/3/library/functools.html#functools.reduce>`_.
+
+For example, to multiply all the values together, first convert each value to ``int`` with ``map``, then use ``reduce`` to successively multiply each item with the product.
+
+.. code-block:: bash
+
+
+   $ mario map int reduce operator.mul <<EOF
+   1
+   2
+   3
+   4
+   EOF
+
+   24
+
+``chain``
+_________
+
+Use ``chain`` to flatten an iterable of iterables of items into an iterable of items, like `itertools.chain.from_iterable <https://docs.python.org/3/library/itertools.html#itertools.chain.from_iterable>`_.
+
+For example, after calculating a several rows of items,
+
+.. code-block:: bash
+
+
+    $ mario  map 'x*2 ! [x[i:i+2] for i in range(len(x))]'   <<<$'ab\nce'
+    ['ab', 'ba', 'ab', 'b']
+    ['ce', 'ec', 'ce', 'e']
+
+
+use ``chain`` to put each item on its own row:
+
+.. code-block:: bash
+
+    $ mario  map 'x*2 ! [x[i:i+2] for i in range(len(x))]' chain  <<<$'ab\nce'
+    ab
+    ba
+    ab
+    b
+    ce
+    ec
+    ce
+    e
+
+Then subsequent commands will act on these new rows, as normal. Here we get the length of each row.
+
+.. code-block:: bash
+
+    $ mario  map 'x*2 ! [x[i:i+2] for i in range(len(x))]' chain map len <<<$'ab\nce'
+    2
+    2
+    2
+    1
+    2
+    2
+    2
+    1
+
+
+
+Async
+-----------------------------------
+
+Making sequential requests is slow. These requests take 20 seconds to complete.
+
+.. code-block:: bash
+
+   % time mario map 'requests.get ! x.text ! len' apply max <<EOF
+   http://httpbin.org/delay/5
+   http://httpbin.org/delay/1
+   http://httpbin.org/delay/4
+   http://httpbin.org/delay/3
+   http://httpbin.org/delay/4
+   EOF
+
+   302
+
+   0.61s user
+   0.06s system
+   19.612 total
+
+Concurrent requests can go much faster. The same requests now take only 6 seconds. Use ``async-map``, or ``async-filter``, or ``reduce`` with ``await some_async_function`` to get concurrency out of the box.
+
+.. code-block:: bash
+
+   % time mario async-map 'await asks.get ! x.text ! len' apply max <<EOF
+   http://httpbin.org/delay/5
+   http://httpbin.org/delay/1
+   http://httpbin.org/delay/4
+   http://httpbin.org/delay/3
+   http://httpbin.org/delay/4
+   EOF
+
+   297
+
+   0.57s user
+   0.08s system
+   5.897 total
+
+
+Async streaming
+-----------------------------------
+
+``async-map`` and ``async-filter`` values are handled in streaming fashion, while retaining the order of the input items in the output. The order of function calls is not constrained -- if you need the function to be **called** with items in a specific order, use the synchronous version.
+
+Making concurrent requests, each response is printed one at a time, as soon as (1) it is ready and (2) all of the preceding requests have already been handled.
+
+For example, the ``3 seconds`` item is ready before the preceding ``4 seconds`` item, but it is held until the ``4 seconds`` is ready because ``4 seconds`` was started first, so the ordering of the input items is maintained in the output.
+
+
+
+.. code-block:: bash
+
+    % time mario --exec-before 'import datetime; now=datetime.datetime.utcnow; START_TIME=now(); print("Elapsed time | Response size")' map 'await asks.get !  f"{(now() - START_TIME).seconds} seconds    | {len(x.content)} bytes"'  <<EOF
+    http://httpbin.org/delay/1
+    http://httpbin.org/delay/2
+    http://httpbin.org/delay/4
+    http://httpbin.org/delay/3
+    EOF
+    Elapsed time | Response size
+    1 seconds    | 297 bytes
+    2 seconds    | 297 bytes
+    4 seconds    | 297 bytes
+    3 seconds    | 297 bytes
+
+
+===============
+Configuration
+===============
+
+The config file location follows the `freedesktop.org standard <https://www.freedesktop.org/wiki/Software/xdg-user-dirs/>`_. Check the location on your system by running ``mario --help``:
+
+
+.. code-block:: bash
+
+    % mario --help
+    Usage: mario [OPTIONS] COMMAND1 [ARGS]... [COMMAND2 [ARGS]...]...
+
+      Mario: Python pipelines for your shell.
+
+      GitHub: https://github.com/python-mario/mario
+
+      Configuration:
+        Declarative config: /home/user/.config/mario/config.toml
+        Python modules: /home/user/.config/mario/modules/*.py
+
+
+
+
+For example on Ubuntu we use ``~/.config/mario/config.toml`` for declarative configuration. Add code and settings into your config.
+
+
+
+.. code-block:: toml
+
+  # ~/.config/mario/config.toml
+
+  base_exec_before = """
+
+  from itertools import *
+  from collections import Counter
+
+  """
+
+Then you can directly use the imported objects without referencing the module.
+
+.. code-block:: bash
+
+
+    % mario map 'Counter ! json.dumps' <<<$'hello\nworld'
+    {"h": 1, "e": 1, "l": 2, "o": 1}
+    {"w": 1, "o": 1, "r": 1, "l": 1, "d": 1}
+
+
+You can set any of the ``mario`` options in your config. For example, to set a different default value for the concurrency maximum ``mario --max-concurrent``, add ``max_concurrent`` to your config file (note the underscore):
+
+.. code-block:: toml
+
+    # ~/.config/mario/config.toml
+
+    max_concurrent = 10
+
+then just use ``mario`` as normal.
+
+
+
+Custom commands
+-----------------------------------
+
+Define new commands in your config file which provide commands to other commands. For example, this config adds a ``jsonl`` command for reading jsonlines streams into Python objects, by calling calling out to the ``map`` traversal.
+
+.. code-block:: toml
+
+   [[command]]
+
+   name = "jsonl"
+   help = "Load jsonlines into python objects."
+
+   [[command.stage]]
+
+   command = "map"
+   params = {code="json.loads"}
+
+
+Now we can use it like a regular command:
+
+.. code-block:: bash
+
+    % mario jsonl  <<< $'{"a":1, "b":2}\n{"a": 5, "b":9}'
+    {'a': 1, 'b': 2}
+    {'a': 5, 'b': 9}
+
+
+The new command ``jsonl`` can be used in pipelines as well. To get the maximum value in a sequence of jsonlines objects:
+
+.. code-block:: bash
+
+   $ mario jsonl map 'x["a"]' apply max <<< $'{"a":1, "b":2}\n{"a": 5, "b":9}'
+   5
+
+More command examples
+______________________
+
+
+Convert yaml to json
+++++++++++++++++++++++++
+
+Convenient for removing trailing commas.
+
+.. code-block:: bash
+
+    % mario yml2json <<<'{"x": 1,}'
+    {"x": 1}
+
+.. code-block:: toml
+
+    [[command]]
+
+        name = "yml2json"
+        help = "Convert yaml to json"
+
+        [[command.stage]]
+
+        command = "stack"
+        params = {code="yaml.safe_load ! json.dumps"}
+
+Search for xpath elements with xpath
++++++++++++++++++++++++++++++++++++++++++
+
+Pull text out of xml documents.
+
+.. code-block:: bash
+
+
+    % mario xpath '//'  map 'x.text' <<EOF
+          <slide type="all">
+            <title>Overview</title>
+              <item>Anything <em>can be</em> in here</item>
+              <item>Or <em>also</em> in here</item>
+          </slide>
+    EOF
+
+    Overview
+    Anything
+    can be
+    Or
+    also
+
+
+
+
+.. code-block:: toml
+
+    [[command]]
+        name="xpath"
+        help = "Find xml elements matching xpath query."
+        arguments = [{name="query", type="str"}]
+        inject_values=["query"]
+
+        [[command.stage]]
+        command = "stack"
+        params = {code="x.encode() ! io.BytesIO ! lxml.etree.parse ! x.findall(query) ! list" }
+
+        [[command.stage]]
+        command="chain"
+
+
+Generate json objects
+++++++++++++++++++++++
+
+.. code-block:: bash
+
+    % mario jo 'name=Alice age=21 hobbies=["running"]'
+    {"name": "Alice", "age": 21, "hobbies": ["running"]}
+
+
+.. code-block:: toml
+
+    [[command]]
+
+
+        name="jo"
+        help="Make json objects"
+        arguments=[{name="pairs", type="str"}]
+        inject_values=["pairs"]
+
+        [[command.stage]]
+        command = "eval"
+        params = {code="pairs"}
+
+        [[command.stage]]
+        command = "map"
+        params = {code="shlex.split(x, posix=False)"}
+
+        [[command.stage]]
+        command = "chain"
+
+        [[command.stage]]
+        command = "map"
+        params = {code="x.partition('=') ! [x[0], ast.literal_eval(re.sub(r'^(?P<value>[A-Za-z]+)$', r'\"\\g<value>\"', x[2]))]"}
+
+        [[command.stage]]
+        command = "apply"
+        params = {"code"="dict"}
+
+        [[command.stage]]
+        command = "map"
+        params = {code="json.dumps"}
+
+
+
+Read csv file
++++++++++++++
+
+Read a csv file into Python dicts. Given a csv like this:
+
+
+.. code-block:: bash
+
+    % cat names.csv
+    name,age
+    Alice,21
+    Bob,25
+
+try:
+
+.. code-block:: bash
+
+    % mario csv < names.csv
+    {'name': 'Alice', 'age': '21'}
+    {'name': 'Bob', 'age': '25'}
+
+
+.. code-block:: toml
+
+    base_exec_before = '''
+    import csv
+    import typing as t
+
+
+    def read_csv(
+        file, header: bool, **kwargs
+    ) -> t.Iterable[t.Dict[t.Union[str, int], str]]:
+        "Read csv rows into an iterable of dicts."
+
+        rows = list(file)
+
+        first_row = next(csv.reader(rows))
+        if header:
+            fieldnames = first_row
+            reader = csv.DictReader(rows, fieldnames=fieldnames, **kwargs)
+            return list(reader)[1:]
+
+        fieldnames = range(len(first_row))
+        return csv.DictReader(rows, fieldnames=fieldnames, **kwargs)
+
+    '''
+
+
+
+
+    [[command]]
+        name = "csv"
+        help = "Load csv rows into python dicts. With --no-header, keys will be numbered from 0."
+        inject_values=["delimiter", "header"]
+
+        [[command.options]]
+        name = "--delimiter"
+        default = ","
+        help = "field delimiter character"
+
+        [[command.options]]
+        name = "--header/--no-header"
+        default=true
+        help = "Treat the first row as a header?"
+
+        [[command.stage]]
+        command = "apply"
+        params = {code="read_csv(x, header=header, delimiter=delimiter)"}
+
+        [[command.stage]]
+        command = "chain"
+
+        [[command.stage]]
+        command = "map"
+        params = {code="dict(x)"}
+
+
+=========
+Plugins
+=========
+
+Add new commands like ``map`` and ``reduce`` by installing Mario plugins. You can try them out without installing by adding them to any ``.py`` file in your ``~/.config/mario/modules/``.
+
+Share popular commands by installing the `mario-addons <https://mario-addons.readthedocs.io/en/latest/readme.html>`_ package.
+
+
+
+
+======
+Q & A
+======
+
+
+What's the status of this package?
+--------------------------------------
+
+* Check the `issues page <https://www.github.com/python-mario/mario/issues>`_ for open tickets.
+* This package is experimental and is subject to change without notice.
+
+
+Why another package?
+-----------------------------------
+
+A number of cool projects have pioneered in the Python-in-shell space. I wrote Mario because I didn't know these existed at the time, but now Mario has a bunch of features the others don't (user configuration, multi-stage pipelines, async, plugins, etc).
+
+* https://github.com/Russell91/pythonpy
+* http://gfxmonk.net/dist/doc/piep/
+* https://spy.readthedocs.io/en/latest/intro.html
+* https://github.com/ksamuel/Pyped
+* https://github.com/ircflagship2/pype
+
+

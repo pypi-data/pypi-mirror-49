@@ -1,0 +1,9 @@
+README.rst
+crossref-ordered-list
+pandoc-inline-headers
+setup.py
+pandoc_inline_headers.egg-info/PKG-INFO
+pandoc_inline_headers.egg-info/SOURCES.txt
+pandoc_inline_headers.egg-info/dependency_links.txt
+pandoc_inline_headers.egg-info/requires.txt
+pandoc_inline_headers.egg-info/top_level.txt

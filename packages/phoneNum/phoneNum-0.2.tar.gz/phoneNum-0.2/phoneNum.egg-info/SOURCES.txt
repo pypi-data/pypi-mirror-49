@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+phoneNum/__init__.py
+phoneNum/phoneNum.py
+phoneNum.egg-info/PKG-INFO
+phoneNum.egg-info/SOURCES.txt
+phoneNum.egg-info/dependency_links.txt
+phoneNum.egg-info/entry_points.txt
+phoneNum.egg-info/top_level.txt

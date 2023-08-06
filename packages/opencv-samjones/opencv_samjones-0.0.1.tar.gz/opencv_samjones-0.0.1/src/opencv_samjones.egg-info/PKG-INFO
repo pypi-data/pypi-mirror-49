@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: opencv-samjones
+Version: 0.0.1
+Summary: Perform Some Opencv face detection functions.
+Home-page: UNKNOWN
+Author: Sam Jones
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent

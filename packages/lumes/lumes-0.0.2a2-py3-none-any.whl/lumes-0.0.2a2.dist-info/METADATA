@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: lumes
+Version: 0.0.2a2
+Summary: A simple wraper for screenshot
+Home-page: https://github.com/juliancoffee/lumes
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/juliancoffee/lumes/issues
+Project-URL: Source, https://github.com/juliancoffee/lumes/
+Keywords: screenshot
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3, <4
+Description-Content-Type: text/markdown
+
+What it can?
+==========
+
+Simple wrapper around maim and xclip for doing screenshots
+Call `lumes -h` for information
+
+Capabilities
+-----------
+
+1. Selection area
+2. Move screen to clipboard (by default)
+3. Save screenshot in file or in catalogs
+
+Requirements
+----------
+
+1. maim
+2. xclip
+
+

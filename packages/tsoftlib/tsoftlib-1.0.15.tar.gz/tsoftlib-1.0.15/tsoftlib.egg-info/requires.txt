@@ -1,0 +1,4 @@
+xlrd
+cx_Oracle
+dicttoxml
+xlsxwriter

@@ -1,0 +1,3 @@
+[console_scripts]
+primertool = primerserver2.cmd.primertool:main
+

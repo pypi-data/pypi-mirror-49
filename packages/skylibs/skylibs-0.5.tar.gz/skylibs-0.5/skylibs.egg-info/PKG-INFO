@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: skylibs
+Version: 0.5
+Summary: Tools to read, write, perform projections and handle LDR/HDR environment maps (IBL).
+Home-page: https://github.com/soravux/skylibs
+Author: Yannick Hold
+Author-email: yannickhold@gmail.com
+License: LGPLv3
+Description: UNKNOWN
+Platform: UNKNOWN

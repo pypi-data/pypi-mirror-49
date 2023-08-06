@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ExasolMonitoringPlugins
+Version: 2019.7
+Summary: Exasol monitoring plugins
+Home-page: https://github.com/EXASOL/nagios-monitoring/wiki/Plugin-Descriptions
+Maintainer: Exasol AG
+Maintainer-email: support@exasol.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: ExasolDatabaseConnector
+
+Exasol monitoring plugins for python >= 3.5
+
+

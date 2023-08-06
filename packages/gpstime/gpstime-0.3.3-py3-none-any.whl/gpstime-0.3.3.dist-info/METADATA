@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gpstime
+Version: 0.3.3
+Summary: GPS-aware datetime module
+Home-page: https://git.ligo.org/cds/gpstime
+Author: Jameson Graef Rollins
+Author-email: jameson.rollins@ligo.org
+License: GNU GPL v3+
+Platform: UNKNOWN
+Requires-Dist: python-dateutil
+Requires-Dist: requests
+
+UNKNOWN
+
+

@@ -1,0 +1,6 @@
+setup.py
+src/hello.py
+src/snifhex.egg-info/PKG-INFO
+src/snifhex.egg-info/SOURCES.txt
+src/snifhex.egg-info/dependency_links.txt
+src/snifhex.egg-info/top_level.txt

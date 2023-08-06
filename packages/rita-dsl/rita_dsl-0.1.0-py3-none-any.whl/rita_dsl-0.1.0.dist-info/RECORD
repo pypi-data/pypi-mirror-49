@@ -1,0 +1,15 @@
+rita/__init__.py,sha256=I4XV9vuwXYHCtt3lu3E1TK2qRfaCTFI6kjZxMGhtjgk,435
+rita/lexer.py,sha256=Nkn6YjOHEH6RiwGEAG1ghNpjNaPto9GO0ygV-zc7VdA,1540
+rita/macros.py,sha256=ziaw97QSwWwWwSNcf-xiZoNtuQnH1omU6rkMNiXHL3E,2653
+rita/parser.py,sha256=n6PK5_feQ3vsRfLCJqx4w1TW6nEtvddPFWfwv9Tl_dA,4295
+rita/parsetab.py,sha256=1i0MAIXyHqHH1i96pQ_MC024Ea5i-f0kBZ5QK40ZRq4,5174
+rita/run.py,sha256=HfLD4nMlQZ8r98Fw5b5I4GCGVmwxv88QiBatBdXggus,452
+rita/translate.py,sha256=p88Tbg0RAEwI7CQBSAPRjeEcAlt3KJq35kkn9gOLcnU,1118
+rita/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rita/modules/fuzzy.py,sha256=bgYGv_OPu-nKAxudImwePg44Sc_1cXzf59li_rEdfBI,153
+rita_dsl-0.1.0.dist-info/LICENSE,sha256=T4FXh84ho3l8yOSPnz-kK7IsdDoF4sOz2kOu5A8Fz7o,1075
+rita_dsl-0.1.0.dist-info/METADATA,sha256=__BtDyVQbsFm2BznjpSNCUMhilM2CwN5kON2e1HyDQs,3205
+rita_dsl-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+rita_dsl-0.1.0.dist-info/entry_points.txt,sha256=JTvwUVxSV9hdGlajvU5lxLWqgNgo8QN-AGCJrUZnOs4,40
+rita_dsl-0.1.0.dist-info/top_level.txt,sha256=JBRYW5VHCPFYPVv-7W5h0nlzKjTkFZPCKVkhPNyhVaQ,5
+rita_dsl-0.1.0.dist-info/RECORD,,

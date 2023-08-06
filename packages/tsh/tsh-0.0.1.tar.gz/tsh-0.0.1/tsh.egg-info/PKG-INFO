@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: tsh
+Version: 0.0.1
+Summary: tea-shell - execute command line tools like python functions, while you sit back and sip on your tea.
+Home-page: https://github.com/alefnula/tsh
+Author: Viktor Kerkez
+Author-email: alefnula@gmail.com
+Maintainer: Viktor Kerkez
+Maintainer-email: alefnula@gmail.com
+License: Apache-2.0
+Description: # tee-shell
+        
+        Tee shell is a set of utilities for running other applications.
+        
+        It enables you to run shell commands in various modes and has an api for fine
+        tuning your running processes.
+        
+        
+        ## Usage
+        
+        ```pycon
+        >>> import tsh
+        >>> ls = tsh.Command("ls")
+        >>> ls = ls.bake("-1")
+        >>> process = ls("tsh")
+        >>> process.wait()
+        True
+        >>> print(process.read())
+        __init__.py
+        __pycache__
+        command.py
+        consts.py
+        contexts.py
+        decorators.py
+        errors.py
+        process.py
+        shell.py
+        types.py
+        ```
+        
+Platform: Windows
+Platform: POSIX
+Platform: MacOSX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

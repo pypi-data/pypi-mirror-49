@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: extension-swap
+Version: 0.0.7
+Summary: change file extension to nope and back to .tf (for terraform resource wiping)
+Home-page: https://bitbucket.org/rednap/extension-swap
+Author: Andy Klier
+Author-email: andyklier@gmail.com
+License: UNKNOWN
+Description: # nope  
+          
+        swap file extension to nope and back (default to tf for terraform files).  
+          
+        ### dependencies  
+          
+        python3  
+          
+        ### usage  
+          
+        `$ nope filename.tf` # change filename.tf to filename.nope  
+          
+        `$ nope filename.nope` # change filename.nope to filename.tf  
+          
+        `$ nope anotherfile.nope -x py` # use custom extension flag and change anotherfile.nope to anotherfile.py   
+          
+        ### install
+        
+        `$ pip install extension-swap`   
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

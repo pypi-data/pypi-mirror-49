@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+AnimatedGraphs/AnimatedBar.py
+AnimatedGraphs/__init__.py
+AnimatedGraphs.egg-info/PKG-INFO
+AnimatedGraphs.egg-info/SOURCES.txt
+AnimatedGraphs.egg-info/dependency_links.txt
+AnimatedGraphs.egg-info/requires.txt
+AnimatedGraphs.egg-info/top_level.txt

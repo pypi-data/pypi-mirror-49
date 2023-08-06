@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: usit
+Version: 0.1
+Summary: Universal Scanning Interface : Python automation package for scientific laboratory experiments
+Home-page: https://upload.pypi.org/legacy/
+Author: Quentin Chateiller
+Author-email: q.chateiller@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/qcha41/usit/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: Universal,Scanning,Interface,automation,scientific,laboratory,experiments,measures
+Platform: UNKNOWN

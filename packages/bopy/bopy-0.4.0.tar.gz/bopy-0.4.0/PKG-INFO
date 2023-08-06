@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: bopy
+Version: 0.4.0
+Summary: Bo Zhang (@NAOC)s python package.
+Home-page: http://github.com/hypergravity/bopy
+Author: Bo Zhang
+Author-email: bozhang@nao.cas.cn
+License: New BSD
+Description: ### BOPY
+        **Bo Zhang**'s python package, for those who need it.
+        
+        - Github url: [https://github.com/hypergravity/bopy](https://github.com/hypergravity/bopy)
+        - PYPI url: [https://pypi.python.org/pypi/bopy](https://pypi.python.org/pypi/bopy)
+        
+        ### AUTHOR
+        - Bo Zhang (@NAOC, bozhang@nao.cas.cn, bzhang@mpia.de)
+        
+        If you find this code useful in your research, please let me know. Thanks!
+        
+        Any people are welcome to contribute to this package.
+        
+        ### CONTRIBUTORS
+        - Bo Zhang (@NAOC, bozhang@nao.cas.cn, bzhang@mpia.de)
+        
+        ### DOCUMENTATION
+        Will be featured in the near future.
+        
+        ### INSTALL
+        `sudo pip install -U bopy` or `pip install --user bopy`
+        
+        ### PYTHON VERSIONS AND DEPENDENCIES
+        - Python 3.6
+        
+        ### ISSUES
+        **BOPY** is originally designed to work under python2.7, but will support python3.X in the future.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires: numpy
+Requires: scipy
+Requires: matplotlib
+Requires: astropy
+Requires: emcee
+Requires: joblib
+Description-Content-Type: text/markdown

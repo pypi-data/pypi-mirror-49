@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+activity/__init__.py
+activity/admin.py
+activity/api.py
+activity/apps.py
+activity/client.py
+activity/constants.py
+activity/models.py
+activity/services.py
+activity/views.py
+p1_activity.egg-info/PKG-INFO
+p1_activity.egg-info/SOURCES.txt
+p1_activity.egg-info/dependency_links.txt
+p1_activity.egg-info/top_level.txt

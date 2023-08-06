@@ -1,0 +1,2 @@
+opal-azure-cli-core
+azure-mgmt-maps==0.1.0

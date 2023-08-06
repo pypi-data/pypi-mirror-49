@@ -1,0 +1,9 @@
+README.md
+setup.py
+xconfig/__init__.py
+xconfig/__main__.py
+xconfig.egg-info/PKG-INFO
+xconfig.egg-info/SOURCES.txt
+xconfig.egg-info/dependency_links.txt
+xconfig.egg-info/requires.txt
+xconfig.egg-info/top_level.txt

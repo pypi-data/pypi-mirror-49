@@ -1,0 +1,14 @@
+jupyter_eg_renderer/__init__.py,sha256=x7s7d1QZ42HB-uhxZS9gUDMZpcSdb_xpWOuPffRRpI4,274
+jupyter_eg_renderer/_version.py,sha256=nZ27WLDG7iROxfHgBuVMdtfmxqkYw-ILLi_ci49Phpk,281
+jupyter_eg_renderer/example.py,sha256=fdx8AvRsyMHXviqzMz4B5ASUfODkSiNZFdKqzj9Yk3s,1557
+jupyter_eg_renderer/static/extension.js,sha256=C6keyiGfeNRzdHFDPdMTkJ0BT24rxYInmUH_Lz_4PFE,3363
+jupyter_eg_renderer/static/index.js,sha256=Q3ZPcauzoU_Q-1IW9dn_na48a1CpMkY3t2QOQ8MuNBc,6720158
+jupyter_eg_renderer/static/index.js.map,sha256=1d_aB4mfA7MUnTQGZXLm8wYY0pVEMbW5HXn7wsVDINA,9065986
+jupyter_eg_renderer-0.1.0a0.data/data/etc/jupyter/nbconfig/notebook.d/jupyter-eg-renderer.json,sha256=IyTbUhCBN56SmYm4NiUuDgJSni1ZkgTd04TQQaP1p3U,73
+jupyter_eg_renderer-0.1.0a0.data/data/share/jupyter/nbextensions/jupyter-eg-renderer/extension.js,sha256=C6keyiGfeNRzdHFDPdMTkJ0BT24rxYInmUH_Lz_4PFE,3363
+jupyter_eg_renderer-0.1.0a0.data/data/share/jupyter/nbextensions/jupyter-eg-renderer/index.js,sha256=Q3ZPcauzoU_Q-1IW9dn_na48a1CpMkY3t2QOQ8MuNBc,6720158
+jupyter_eg_renderer-0.1.0a0.data/data/share/jupyter/nbextensions/jupyter-eg-renderer/index.js.map,sha256=1d_aB4mfA7MUnTQGZXLm8wYY0pVEMbW5HXn7wsVDINA,9065986
+jupyter_eg_renderer-0.1.0a0.dist-info/METADATA,sha256=KXntxL9dqXoBA0hEw6GcnwHoC2Z0id0RdBopMJL8hx8,877
+jupyter_eg_renderer-0.1.0a0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+jupyter_eg_renderer-0.1.0a0.dist-info/top_level.txt,sha256=fkxiGwJSPGIrumwV6DBpZsqvB_mnyPBtSuNEnY9d3wk,20
+jupyter_eg_renderer-0.1.0a0.dist-info/RECORD,,

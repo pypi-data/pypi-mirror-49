@@ -1,0 +1,11 @@
+README.md
+setup.py
+apaupercary/__init__.py
+apaupercary/cardkingdom.py
+apaupercary/pipelines.py
+apaupercary/scryfall.py
+apaupercary/utils.py
+apaupercary.egg-info/PKG-INFO
+apaupercary.egg-info/SOURCES.txt
+apaupercary.egg-info/dependency_links.txt
+apaupercary.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+cdek/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdek/__version__.py,sha256=DDPndsLHuG_nuoYTByFfmqTz-rQfIm78vz-0DynJi1s,63
+cdek/api.py,sha256=kLCbfi5Dj1KuMXT4EpVh6YhPYVab_0BEXwXMZ16VoiI,15594
+cdek/entities.py,sha256=3l19BRtWaginvj1y-WtPQX6iiwnqnx9lZuFlfaNiyVQ,14567
+cdek/utils.py,sha256=SZaeIq946sR3MKjLV3t6h35YqRmiM7MeZwfGwLP8aAw,1763
+fs_cdek_api-1.4.0.dist-info/LICENSE,sha256=aOCDuHtFYY-iH7K8xrD79xgOJSZ0SEwcqtvBXY_xGJQ,1066
+fs_cdek_api-1.4.0.dist-info/METADATA,sha256=HGDbzETOH5xfT3CTdkwj740cm_G36OTldhdek9CeJmI,5563
+fs_cdek_api-1.4.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+fs_cdek_api-1.4.0.dist-info/top_level.txt,sha256=CRnhaI-M6war_yuS7nv2POUiAFR5dJxHIdI_oHx-69s,5
+fs_cdek_api-1.4.0.dist-info/RECORD,,

@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ project_name }}-ingress
+spec:
+  rules:
+    - host: {{ project_name }}-app-$(NAMESPACE_URL).{{ base_url }}
+      http:
+        paths:
+          - backend:
+              serviceName: {{ project_name }}-app
+              servicePort: 8000
+status:
+  loadBalancer: {}
+
+

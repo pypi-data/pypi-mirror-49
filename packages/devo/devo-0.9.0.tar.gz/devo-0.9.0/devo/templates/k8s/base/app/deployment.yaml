@@ -1,0 +1,75 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ project_name }}-app
+spec:
+  template:
+    spec:
+      containers:
+      - name: {{ project_name }}-app
+        image: {{ registry_image }}
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "125m"
+          limits:
+            memory: "128Mi"
+            cpu: "250m"
+        ports:
+        - containerPort: 8000
+{% if db %}
+        env:
+        - name: POSTGRES_USER
+          valueFrom:
+            secretKeyRef:
+              name: {{ project_name }}-secrets
+              key: POSTGRES_USER
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: {{ project_name }}-secrets
+              key: POSTGRES_PASSWORD
+        - name: POSTGRES_DB
+          value: {{ project_name }}-db
+        - name: POSTGRES_HOST
+          value: {{ project_name }}-db
+      initContainers:
+        - name: init-db
+          image: postgres:11-alpine
+          command: ['sh', '-c', 'until pg_isready -U $POSTGRES_USER -d $POSTGRES_DB -h $POSTGRES_HOST; do echo waiting for {{ project_name }}-db; sleep 5; done;']
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: {{ project_name }}-secrets
+                  key: POSTGRES_USER
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ project_name }}-secrets
+                  key: POSTGRES_PASSWORD
+            - name: POSTGRES_DB
+              value: {{ project_name }}-db
+            - name: POSTGRES_HOST
+              value: {{ project_name }}-db
+        - name: init-migrate
+          image: {{ registry_image }}
+          command: ['/scripts/migrate']
+          env:
+          - name: POSTGRES_USER
+            valueFrom:
+              secretKeyRef:
+                name: {{ project_name }}-secrets
+                key: POSTGRES_USER
+          - name: POSTGRES_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: {{ project_name }}-secrets
+                key: POSTGRES_PASSWORD
+          - name: POSTGRES_DB
+            value: {{ project_name }}-db
+          - name: POSTGRES_HOST
+            value: {{ project_name }}-db
+{% endif %}
+      imagePullSecrets:
+        - name: {{ project_name }}-registry

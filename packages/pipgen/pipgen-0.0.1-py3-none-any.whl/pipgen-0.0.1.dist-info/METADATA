@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pipgen
+Version: 0.0.1
+Summary: A package for easily creating and distributing pip packages.
+Home-page: https://github.com/caseyjohnsonwv/pip-package-generator
+Author: Casey Johnson
+Author-email: ctj0001@mix.wvu.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# pip-package-generator
+
+- _Maintained by Casey Johnson._
+- A series of shell scripts for easily creating and distributing pip packages.
+- https://github.com/caseyjohnsonwv/pip-package-generator
+
+
+To create a new Python project with the pip package structure:
+1. Run `pipify.sh (project-name)`
+
+To convert a Python project into a pip package:
+1. Move `pipify.sh` to the top-level source folder.
+2. Run `pipify.sh .`
+
+To update a pip package distribution:
+1. Move `update.sh` to the top-level package folder (containing `setup.py`).
+2. Run `update.sh . (local | test | prod)`
+
+To convert a pip package back into a Python project (for testing only):
+1. Move `depipify.sh` to the top-level package folder (containing `setup.py`).
+2. Run `depipify.sh .`
+
+

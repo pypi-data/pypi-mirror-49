@@ -1,0 +1,3 @@
+[console_scripts]
+crudebht = simulation:__main__
+

@@ -1,0 +1,8 @@
+README.md
+setup.py
+get_nic/__init__.py
+get_nic/getnic.py
+get_nic.egg-info/PKG-INFO
+get_nic.egg-info/SOURCES.txt
+get_nic.egg-info/dependency_links.txt
+get_nic.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+README.md
+setup.py
+test/__init__.py
+test/test_visualise_pattern.py
+visualise_spacy_pattern/__init__.py
+visualise_spacy_pattern/util.py
+visualise_spacy_pattern/visualise_spacy_pattern.py
+visualise_spacy_pattern.egg-info/PKG-INFO
+visualise_spacy_pattern.egg-info/SOURCES.txt
+visualise_spacy_pattern.egg-info/dependency_links.txt
+visualise_spacy_pattern.egg-info/requires.txt
+visualise_spacy_pattern.egg-info/top_level.txt

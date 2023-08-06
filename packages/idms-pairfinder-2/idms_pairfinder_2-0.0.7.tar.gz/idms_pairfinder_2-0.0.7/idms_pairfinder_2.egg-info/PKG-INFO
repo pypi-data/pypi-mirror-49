@@ -1,0 +1,32 @@
+Metadata-Version: 1.0
+Name: idms-pairfinder-2
+Version: 0.0.7
+Summary: An APP for untargeted feature extraction from isotope dilution metabolomics data.
+Home-page: UNKNOWN
+Author: Patrick Kiefer
+Author-email: pkiefer@ethz.ch
+License: http://opensource.org/licenses/GPL-3.0
+Description: 
+        An emzed2 application for LC-MS data acquired with Orbitrap high mass resolution instruments.
+        
+        The application allows untargeted extraction of metabolites based on isotope dilution 
+        mass spectrometry (IDMS) method. For each metabolite a pair of an natural labeled [12C] and an 
+        uniformly 13C labeled [13C] isotopologue is present in the same sample, since the sample is a 
+        mixture of respective cell extracts. 
+        As unlabeled and labeled isotopologues have the same physicochemical properties, the corresponding 
+        LC-MS peaks will co-elute and the m/z difference equals 
+        
+        n* (mz.C13 - mz.C12)*z 
+         
+        where n corresponds to the number of the metabolite carbon atoms,
+        mz.c12 is the m/z of the 12C isotope, mz.C13 equals the m/z of the correpsonding 13C isotope, 
+        and z is the charge state of the ions. 
+        In addition, untargeted metabolite extraction is not only based on analysis of an IDMS sample, 
+        but also on individual LC-MS measurements of the corresponding [12C] and the [13C] extracts, 
+        respectively. Separate analysis allows direct assignment of isotopologue identity ([12C], [13C]) 
+        in the IDMS sample. 
+        Overall, this approach significantly reduces the number of false positive metabolites 
+        and enhances metabolite annotation as the number carbon atoms can be determined from the 
+        isotopologue mass distances.
+        
+Platform: UNKNOWN

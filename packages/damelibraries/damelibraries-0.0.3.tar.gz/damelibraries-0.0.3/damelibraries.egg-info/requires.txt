@@ -1,0 +1,8 @@
+damealgorithms
+damejson
+damemysql
+damenltk
+damenumpy
+damepandas
+damescipy
+damescraping

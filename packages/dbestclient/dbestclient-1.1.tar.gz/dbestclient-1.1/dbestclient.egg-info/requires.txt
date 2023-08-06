@@ -1,0 +1,6 @@
+numpy
+sqlparse
+pandas
+scikit-learn
+qregpy
+scipy

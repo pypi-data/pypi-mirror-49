@@ -1,0 +1,11 @@
+README.md
+setup.py
+openaihub/__init__.py
+openaihub/cli.py
+openaihub/func/__init__.py
+openaihub_install.egg-info/PKG-INFO
+openaihub_install.egg-info/SOURCES.txt
+openaihub_install.egg-info/dependency_links.txt
+openaihub_install.egg-info/entry_points.txt
+openaihub_install.egg-info/requires.txt
+openaihub_install.egg-info/top_level.txt

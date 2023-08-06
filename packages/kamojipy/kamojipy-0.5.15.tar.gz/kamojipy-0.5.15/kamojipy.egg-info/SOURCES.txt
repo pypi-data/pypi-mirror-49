@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+kamojipy/__init__.py
+kamojipy.egg-info/PKG-INFO
+kamojipy.egg-info/SOURCES.txt
+kamojipy.egg-info/dependency_links.txt
+kamojipy.egg-info/not-zip-safe
+kamojipy.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Get_Number
+Version: 0.0.1
+Summary: 获得一些特定数字
+Home-page: https://github.com/clodlingxi
+Author: ClodLingxi
+Author-email: clodlingxi@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

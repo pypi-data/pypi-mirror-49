@@ -1,0 +1,4 @@
+script std_test()
+{
+    return true;
+}

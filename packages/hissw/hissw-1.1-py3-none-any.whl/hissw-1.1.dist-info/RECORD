@@ -1,0 +1,12 @@
+hissw/__init__.py,sha256=NEzmg4SkzJt0gAtfI6SJFm9qZ7p5fjLYSdHbrQjkAl0,124
+hissw/environment.py,sha256=WKxq7z1n6Kx6o-J9WE00VQjEIceUto5YWwudY3Y0Yww,5736
+hissw/read_config.py,sha256=6UPkSiRmFBOmhQd6jESeBYjhioOZEK9estPmLw0HCHA,593
+hissw/util.py,sha256=7O-6rUjsmtJMeA0ZRlBSSHSTLCgcZbwMzv4o-psffnY,146
+hissw/templates/parent.pro,sha256=xnAE71yv8ltqQRulKoa6IY1KOzli1DmqWCsTpv3GBEc,331
+hissw/templates/procedure.pro,sha256=eM6JVBBGTHV4IBRXKoj31qh9FjZOewwtGQ7-akUOZQw,190
+hissw/templates/startup.sh,sha256=XsI_nHbCcX7L8Ke9dDyBW57YfS3_JsFqYcJVG-Oibh8,296
+hissw-1.1.dist-info/LICENSE,sha256=BOSQvDts_RQOK9tmr_bBR9ooY3Jj9IZTb8Cj6T_C_q8,1068
+hissw-1.1.dist-info/METADATA,sha256=TZefkkCefHHJAiyP9GAYkZQodUt3ElXW5T1XDI3t6gs,2109
+hissw-1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+hissw-1.1.dist-info/top_level.txt,sha256=fc-89aPRvOOQjSsunMyVDgjqOmyT7L0VcCN99TVUpqc,6
+hissw-1.1.dist-info/RECORD,,

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mercurio
+Version: 0.1
+Summary: Send email with python, my way
+Home-page: https://github.com/pietrogiuffrida/mercurio/
+Author: Pietro Giuffrida
+Author-email: pietro.giuffri@gmail.com
+License: MIT
+Description: Mercurio
+        =========
+        
+        Send email with python, my way
+        
+        A simple class to send email with python, managing
+        smtp, attachments and mimetypes, multiple recipients,
+        attachments with a specific content id (to html email templating)...
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst

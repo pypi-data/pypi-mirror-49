@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: md2xmind
+Version: 1.0.4
+Summary: md2xmind
+Home-page: https://github.com/jingle1267/md2xmind
+Author: jingle1267
+Author-email: jingle1267@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: xmind
+
+
+# md2xmind
+Translate markdown file to xmind file.
+
+python setup.py sdist
+pip install twine
+twine upload dist/*
+
+https://github.com/pypa/twine
+
+
+

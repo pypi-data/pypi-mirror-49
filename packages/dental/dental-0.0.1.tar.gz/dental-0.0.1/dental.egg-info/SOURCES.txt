@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+dental/__init__.py
+dental.egg-info/PKG-INFO
+dental.egg-info/SOURCES.txt
+dental.egg-info/dependency_links.txt
+dental.egg-info/top_level.txt

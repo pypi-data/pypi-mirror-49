@@ -1,0 +1,4 @@
+Click
+appdirs
+configparser
+requests

@@ -1,0 +1,10 @@
+README.md
+cli.py
+setup.cfg
+setup.py
+sublime_backup.egg-info/PKG-INFO
+sublime_backup.egg-info/SOURCES.txt
+sublime_backup.egg-info/dependency_links.txt
+sublime_backup.egg-info/entry_points.txt
+sublime_backup.egg-info/requires.txt
+sublime_backup.egg-info/top_level.txt

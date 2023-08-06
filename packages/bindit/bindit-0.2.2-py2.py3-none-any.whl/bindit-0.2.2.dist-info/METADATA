@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: bindit
+Version: 0.2.2
+Summary: Takes the drudgery out of bind-mounting volumes on Docker and Singularity
+Home-page: https://github.com/jooh/bindit
+Author: Johan Carlin
+Author-email: johan.carlin@gmail.com
+License: MIT license
+Keywords: bindit
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Click (>=6.0)
+
+======
+bindit
+======
+
+
+.. image:: https://img.shields.io/pypi/v/bindit.svg
+        :target: https://pypi.python.org/pypi/bindit
+
+.. image:: https://img.shields.io/travis/jooh/bindit.svg
+        :target: https://travis-ci.org/jooh/bindit
+
+.. image:: https://readthedocs.org/projects/bindit/badge/?version=latest
+        :target: https://bindit.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+Takes the drudgery out of binding volumes on Docker and (soon) Singularity
+
+bindit is a wrapper for container runners that makes it easy to handle file input and
+output for containerised command-line applications. It works by detecting file paths in
+the container image arguments, and rebasing these as necessary onto new bind mounts. See
+`docs`_ for full detail, but here is the high-level API:
+
+.. _docs: https://bindit.readthedocs.io
+
+.. code-block:: console
+
+   Usage: bindit [OPTIONS] COMMAND [ARGS]...
+
+     bindit is a wrapper for container runners that makes it easy to handle
+     file input and output for containerized command-line applications. It
+     works by detecting file paths in the container image arguments, and
+     rebasing these as necessary onto new bind mounts.
+
+   Options:
+     -i, --ignorepath PATH  path(s) on the host to ignore when detecting new bind
+                            mounts. Typical         linux binary locations
+                            (/usr/bin etc) are included on this list by default.
+     -a, --absonly          Only rebase absolute paths.
+     -d, --dryrun           Return formatted shell command without invoking
+                            container runner
+     -l, --loglevel TEXT    Logging level  [default: INFO]
+     --help                 Show this message and exit.
+
+   Commands:
+     docker
+
+.. code-block:: console
+
+   Usage: bindit_partial [OPTIONS] SCRIPT_ARG...
+
+     bindit_partial constructs a shell script wrapper for bindit (or your
+     container runner directly) that can be used as a command line interface
+     for the container. It works a bit like functools.partial in the standard
+     library - you can offload some default parameters (e.g. for volume binds
+     mounts) to the script in order to obtain a cleaner API for the container.
+
+     For main documentation, see bindit.
+
+   Options:
+     --output_file TEXT     Output to file instead of standard out
+     --shebang TEXT         Shell interpreter directive  [default: #!/bin/bash]
+     --vararg_pattern TEXT  vararg pattern (try "$argv" for csh/tcsh)  [default:
+                            "$@"]
+     --help                 Show this message and exit.   Usage: bindit_partial [OPTIONS] SCRIPT_ARG...
+
+* Free software: MIT license
+* Documentation: https://bindit.readthedocs.io
+* Pull requests are welcome!
+
+
+=======
+History
+=======
+0.2.2 (2019-07-26)
+------------------
+
+* Patch --version argument for standalone installs.
+
+0.2.1 (2019-07-26)
+------------------
+
+* Handle missing docker binary more gracefully to support e.g. dryrun mode on machines
+  without docker installed (and eventually, singularity).
+
+0.2.0 (2019-07-25)
+------------------
+
+* New bindit_partial utility for generating command-line wrapper scripts
+* Tests improved, bugs squashed (0.1.0 was easy to break, this release is much more
+  robust
+* Comprehensive documentation with reasonable docstrings
+
+0.1.0 (2019-04-30)
+------------------
+
+* First release on PyPI.
+
+

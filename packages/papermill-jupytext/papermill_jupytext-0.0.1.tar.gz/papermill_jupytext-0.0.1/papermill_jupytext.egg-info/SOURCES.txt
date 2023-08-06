@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+papermill_jupytext/__init__.py
+papermill_jupytext/io.py
+papermill_jupytext/version.py
+papermill_jupytext.egg-info/PKG-INFO
+papermill_jupytext.egg-info/SOURCES.txt
+papermill_jupytext.egg-info/dependency_links.txt
+papermill_jupytext.egg-info/entry_points.txt
+papermill_jupytext.egg-info/requires.txt
+papermill_jupytext.egg-info/top_level.txt

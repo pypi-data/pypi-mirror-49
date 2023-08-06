@@ -1,0 +1,3 @@
+[papermill.io]
+txt:// = papermill_jupytext:TextFileHandler
+

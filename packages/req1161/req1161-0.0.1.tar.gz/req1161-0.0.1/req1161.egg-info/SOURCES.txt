@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+req1161.egg-info/PKG-INFO
+req1161.egg-info/SOURCES.txt
+req1161.egg-info/dependency_links.txt
+req1161.egg-info/requires.txt
+req1161.egg-info/top_level.txt
+reqL1166/__init__.py
+reqL1166/file62.txt
+reqL1166/req.py

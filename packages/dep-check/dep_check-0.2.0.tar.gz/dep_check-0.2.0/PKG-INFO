@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: dep_check
+Version: 0.2.0
+Summary: Python Dependency Check Tool
+Home-page: https://github.com/lumapps/dep-check
+Author: LumApps
+Author-email: core-devs@lumapps.com
+License: MIT License
+Download-URL: https://github.com/lumapps/dep-check/tarball/master
+Description: # dep-check
+        
+        [![image](https://img.shields.io/pypi/v/dep-check.svg)](https://pypi.python.org/pypi/dep-check)
+        
+        ## Version: Pre-alpha
+        
+        Python Dependency Check Tool
+        
+        * Free software: MIT license
+        
+        ## Authors & contributors
+        
+        Check out all the [Authors and contributors](https://github.com/lumapps/dep-check/blob/master/doc/authors.md) of this project!
+        
+        ## Features
+        
+        * [Auto-build your configuration file](https://github.com/lumapps/dep-check/blob/master/doc/usage.md#the-configuration-file)
+        * [Check your configuration](https://github.com/lumapps/dep-check/blob/master/doc/usage.md#checking-your-configuration)
+        * [Draw a dependency graph](https://github.com/lumapps/dep-check/blob/master/doc/usage.md#drawing-a-dependency-graph)
+        
+        ## Usage
+        
+        Everything you need to know is in the [User Manual](https://github.com/lumapps/dep-check/blob/master/doc/usage.md)!
+        
+        ## Contributing
+        
+        If you want to make a contribution, be sure to follow the [Contribution guide](https://github.com/lumapps/dep-check/blob/master/doc/contributing.md).
+        
+        ## History
+        
+        Here is all the [histoy of this project](https://github.com/lumapps/dep-check/blob/master/doc/history.md).
+        
+        ## Credits
+        
+        This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the
+        [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template
+        
+        # History
+        
+        ## 0.2.0 (2019-07-16)
+        
+        - You can now add layers to your graph.
+        - The tool now warns you if a rule in your configuration file is not used.
+        
+        ## 0.1.0 (2019-07-09)
+        
+        - First release on PyPI.
+        
+Keywords: python,Dependency,linter,architecture,quality,dep-check,dep_check
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

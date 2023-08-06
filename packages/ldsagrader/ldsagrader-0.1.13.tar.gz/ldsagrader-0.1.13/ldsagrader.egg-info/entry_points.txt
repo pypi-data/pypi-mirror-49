@@ -1,0 +1,3 @@
+[console_scripts]
+ldsagrader = ldsagrader.ldsagrader:main
+

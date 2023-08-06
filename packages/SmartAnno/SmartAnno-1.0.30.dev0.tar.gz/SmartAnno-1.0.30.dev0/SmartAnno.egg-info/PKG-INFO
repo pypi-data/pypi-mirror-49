@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: SmartAnno
+Version: 1.0.30.dev0
+Summary: A smart snippet annotation tool with deep learning backbone.
+Home-page: https://github.com/jianlins/SmartAnno
+Author: Jianlin
+Author-email: jianlinshi.cn@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/jianlins/SmartAnno/archive/1.0.0.zip
+Description: kkxxxx
+Keywords: SmartAnno,NLP,annotation,Deep Learning,Machine Learning,semi-supervised
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
+Provides-Extra: tf_gpu
+Provides-Extra: tf

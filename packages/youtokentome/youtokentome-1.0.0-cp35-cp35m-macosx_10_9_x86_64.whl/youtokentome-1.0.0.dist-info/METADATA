@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: youtokentome
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Ivan Belonogov
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.5.0
+Requires-Dist: Click (>=7.0)
+
+UNKNOWN
+
+

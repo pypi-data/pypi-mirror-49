@@ -1,0 +1,14 @@
+Funk-0.5.0.dist-info/DESCRIPTION.rst,sha256=RmdNedtkLudTvMzmMMg9f752I2DfL_ryTRod3oeL0oc,5807
+Funk-0.5.0.dist-info/METADATA,sha256=8ht7bmIiNmxaZdefZKj85ZklccnsqJYKZ7de3Ab6vs4,6149
+Funk-0.5.0.dist-info/RECORD,,
+Funk-0.5.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Funk-0.5.0.dist-info/metadata.json,sha256=czMmRkEw-iQzUTSnrNK1UOv_CoYRx8AuxCD1oiSPna0,576
+Funk-0.5.0.dist-info/top_level.txt,sha256=qZlioa-x6eqK7KMgsXicZH_ADgQ5azkgDM5oFPHtYe0,5
+funk/__init__.py,sha256=sKxqPP6woQOS1R-RYH3kpr3UF0ROb4tnsuzRlG1h5nY,6979
+funk/call.py,sha256=7HejuRu4NR9ghbXMejyUz6No3AzqQ0kMwYOpwq3rugg,4799
+funk/error.py,sha256=_OAiBCd-TcPTx5-HDPbpgXzPzaflSgF_ZuV5jImLz3Q,158
+funk/matchers.py,sha256=dGJQGF2nJopaszyEOMgvn9LjyotmC2EbYqjfKGgckyM,150
+funk/pycompat.py,sha256=OPzZLKTVJEcEvLe1KhDcF2FxkXCbB9UDw2o6jc7YGlc,316
+funk/sequence.py,sha256=KIjGdFxILXhrfnxozkgu3tQYdQb348ObMQ4BP8th6Cs,709
+funk/tools.py,sha256=sRu7Zzo2AL4Rm5IfxKwnT0JgR6acnlDrMaDpTgMnNKg,449
+funk/util.py,sha256=n43OjFLUoghhKjtYN-6EqXzl5l4pGFsB-OI0V1oeaZQ,895

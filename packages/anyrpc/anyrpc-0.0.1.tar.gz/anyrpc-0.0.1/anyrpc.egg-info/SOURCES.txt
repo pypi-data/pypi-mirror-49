@@ -1,0 +1,9 @@
+setup.py
+anyrpc/__init__.py
+anyrpc/serve.py
+anyrpc/stub.py
+anyrpc/test_client.py
+anyrpc.egg-info/PKG-INFO
+anyrpc.egg-info/SOURCES.txt
+anyrpc.egg-info/dependency_links.txt
+anyrpc.egg-info/top_level.txt

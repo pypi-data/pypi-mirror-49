@@ -1,0 +1,3 @@
+#!python
+
+from snag import __main__

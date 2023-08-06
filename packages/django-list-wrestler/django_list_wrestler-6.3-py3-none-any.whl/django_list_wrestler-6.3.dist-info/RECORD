@@ -1,0 +1,17 @@
+django_list_wrestler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_list_wrestler/admin.py,sha256=2C9xCAgnd-NVf3pEXtJnwn-RsshU_DRDZWquXliim5M,3935
+django_list_wrestler/static/django_list_wrestler/css/django-list-wrestler-collapsible.css,sha256=ldyakqZ9vmpV7cD8n0UewjZw89R2fuD4kaCz0jPr63Q,1405
+django_list_wrestler/static/django_list_wrestler/css/django-list-wrestler-orderable.css,sha256=zgpnI7_6Dundttw6GVBuodZtvv8GH-1bEjT36oqEymY,2525
+django_list_wrestler/static/django_list_wrestler/css/django-skin-collapsible.css,sha256=l7jkFi8yLdfYgqIWEUAslyJDgyCXBkvqFtndudol7KY,957
+django_list_wrestler/static/django_list_wrestler/css/django-skin-orderable.css,sha256=tSkiqyoWowxF5_yKV6Msv_qyQfqIp3RWF5OgV2Az5dU,2983
+django_list_wrestler/static/django_list_wrestler/css/grappelli-skin-collapsible.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_list_wrestler/static/django_list_wrestler/css/grappelli-skin-orderable.css,sha256=gpHEIsI2x7fW3HRQ5k4WHjBCW6HzvjlZf4lUhuOJt4o,4266
+django_list_wrestler/static/django_list_wrestler/images/icons-s846f870921.png,sha256=LKqrckhBzR1j2dpmSOJa5pJ_7YldTAcWbS5ZJ1A1wSo,9306
+django_list_wrestler/static/django_list_wrestler/js/django-list-wrestler-collapsible.js,sha256=Fhq0rEnVeGhggKzGdBcSCIb2X1kGX2V8sYJBxN_Du6U,8938
+django_list_wrestler/static/django_list_wrestler/js/django-list-wrestler-orderable.js,sha256=O2YJli1eDOfb7WfmBu0QhS571undMzjZko5grWi_23c,42789
+django_list_wrestler-6.3.dist-info/AUTHORS.rst,sha256=eaXiEdPH6OcYa2AF0KLj_Hv9AGxqkQI-VSf_z063-CQ,89
+django_list_wrestler-6.3.dist-info/LICENSE.txt,sha256=p1qDXqYscQH8Wfs_7XmPN-c74jbmMnlQhVYInGU2LME,1079
+django_list_wrestler-6.3.dist-info/METADATA,sha256=3nQIGJI4Nj7nPzIOIV43rJd0J9wPErnsOjcC0p1vCXE,568
+django_list_wrestler-6.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_list_wrestler-6.3.dist-info/top_level.txt,sha256=RL-pDum5R3-R5v2tSFCoEDAv39ptKKuXrgR5flB3P3E,21
+django_list_wrestler-6.3.dist-info/RECORD,,

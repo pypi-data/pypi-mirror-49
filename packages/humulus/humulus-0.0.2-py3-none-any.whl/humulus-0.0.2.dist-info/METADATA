@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: humulus
+Version: 0.0.2
+Summary: Humulus is a beer recipe builder.
+Home-page: https://github.com/shouptech/humulus
+Author: Mike Shoup
+Author-email: mike@shoup.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Description-Content-Type: text/x-rst
+Requires-Dist: Flask (==1.0.3)
+Requires-Dist: Flask-WTF (==0.14.2)
+Requires-Dist: simplejson (==3.16.0)
+Requires-Dist: python-slugify (==3.0.2)
+Requires-Dist: cloudant (==2.12.0)
+
+.. image:: https://drone.shoup.io/api/badges/shouptech/humulus/status.svg
+  :target: https://drone.shoup.io/shouptech/humulus
+  :alt: Drone build status
+
+.. image:: https://codecov.io/gh/shouptech/humulus/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/shouptech/humulus
+  :alt: Code Coverage
+
+Humulus
+=======
+
+Humulus is an open-source homebrew beer recipe webapp built using Flask_ and CouchDB_.
+
+.. _Flask: http://couchdb.apache.org/
+.. _CouchDB: http://flask.pocoo.org/
+
+License
+-------
+
+Humulus is licensed under the `Apache Version 2.0 license`_.
+
+.. _`Apache Version 2.0 license`: LICENSE
+
+

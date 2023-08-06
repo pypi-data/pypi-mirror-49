@@ -1,0 +1,5 @@
+recursive-include src *
+recursive-include binds *
+recursive-include include *
+recursive-include 3rdparty *
+include CMakeLists.txt

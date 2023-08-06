@@ -1,0 +1,8 @@
+README.md
+setup.py
+zabbi/__init__.py
+zabbi/fcall.py
+zabbi.egg-info/PKG-INFO
+zabbi.egg-info/SOURCES.txt
+zabbi.egg-info/dependency_links.txt
+zabbi.egg-info/top_level.txt

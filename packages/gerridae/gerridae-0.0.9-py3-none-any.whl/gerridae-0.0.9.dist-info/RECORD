@@ -1,0 +1,14 @@
+gerridae/__init__.py,sha256=kOmD21jpdXy15QFWBd5vdskHxLqzUAZdvpI2OjhR6o8,90
+gerridae/field.py,sha256=-DRmmk8V9BIM3hRm9ekoV9gc6sww2DRdURiJVOhQB1Y,1857
+gerridae/item.py,sha256=96pHNsJXVy-kvI0Y5iXgJcqjVAeSR1AtzPdYYP4kvyY,2342
+gerridae/request.py,sha256=ZFyqnPs47fwIw47iYrCrSro3gY74Og9KSvqiOSDqkxs,71
+gerridae/response.py,sha256=DH1HdKvdC29guxdfzVdEl-kP4YNOtnnuqQAiZsW-qFk,73
+gerridae/spider.py,sha256=ygRsKl7Z3aUrsqy2fZyNO-qfZfzE0nasG3NnADxIBco,1160
+gerridae/log/__init__.py,sha256=_RFgyWOfNBxXkLra90_C50qFq0oq6tfJInRde3UyzqA,51
+gerridae/log/log.py,sha256=-xgEoiANj7eIE0Sg0TFLMCyPixTf0BYdKb6k_t6DfQ8,304
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_spider.py,sha256=7uHxRYZyueHGSsxAalJG9OtJo8JHRS4V3FptgbCSzG8,368
+gerridae-0.0.9.dist-info/METADATA,sha256=XuIbOJ50ArQVqSYkG1aeJMh2c9elAAgL8JRklNo9bsY,615
+gerridae-0.0.9.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+gerridae-0.0.9.dist-info/top_level.txt,sha256=1C7GmMfBhSLlARgdmg0RetzOWJMbFMhwtlGwcNdCxWg,15
+gerridae-0.0.9.dist-info/RECORD,,

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: interval-list
+Version: 1.0.0
+Summary: 区間演算用のパッケージ
+Home-page: https://github.com/YutaUra/Interval
+Author: Yuta Ura
+Author-email: yuuta3594@outlook.jp
+License: MIT
+Keywords: interval-list
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+
+区間を用いた演算等に使ってください
+
+

@@ -1,0 +1,16 @@
+dsws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsws/duct.py,sha256=DmuU6eonNNZBgiLm0NiRAoLwd5eyPFQSLX-wjM9jylU,2824
+dsws/util.py,sha256=W82Zb81YRZcDZFGr4w-1JajmmYK6LTGrfiNS8n0HaZQ,5386
+dsws/ws_daskyarn.py,sha256=rPXDSiX_OBmUtOwQMzGvNFmUZzf9CUAo_P6Jl97M0nk,744
+dsws/ws_ibis.py,sha256=-5KRy0k5VRIP_Mnk3EY-UiYnxIVwyhaNNpmwmGSUaxI,3289
+dsws/ws_impyla.py,sha256=sGudrmpLV7r2N7Bv1Ot8xsBaR2ojolgqcdAvMgf5hyQ,3190
+dsws/ws_iopro.py,sha256=Q--BpQ-LJxi-bmgLzvz3TOnMKDQ16e-Esbc0l-672hw,2918
+dsws/ws_pheonix.py,sha256=gMEDL9qtv41_vThweiOWXa6uznmLg_XMZ2Qw-6ipFN0,2695
+dsws/ws_pyodbc.py,sha256=ylzfwJQEC8IKLxnC5tWQ3isniMnhyTscjctIf_dg3WU,2865
+dsws/ws_pyspark.py,sha256=GQbBNW5o9GVqfdCvL63ODyooI7R_a3IXL_NQLcIoWhY,2755
+dsws/ws_sqlalchemy.py,sha256=jij17olghRVbpT3jsTNJAgNhaE7jmKbgnJ6y7lnkp8o,2306
+dsws-0.16.dist-info/LICENSE,sha256=SkLf8V1h8qB25nyZDPp4y4c7oYiy-FZu9rXte8bgQjU,1068
+dsws-0.16.dist-info/METADATA,sha256=NVmoUEL_DXX27zyJMHyeV12poc5vbrCNo8yKKoLGrQ0,3607
+dsws-0.16.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+dsws-0.16.dist-info/top_level.txt,sha256=leX6ZkP-l2PW4UKvfrReIFVpz8qH8j8AhSRbGebeVWU,5
+dsws-0.16.dist-info/RECORD,,

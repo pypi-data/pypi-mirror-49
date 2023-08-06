@@ -1,0 +1,3 @@
+[console_scripts]
+treedoc = treedoc.main:CLI_entrypoint
+

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: multiwall
+Version: 1.1
+Summary: Wallpaper Getter and Setter
+Home-page: https://gitlab.com/avalonparton/multiwall
+Author: Avalon Parton
+Author-email: avalonlee@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: Pillow
+Requires-Dist: python-unsplash
+
+UNKNOWN
+
+

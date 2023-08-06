@@ -1,0 +1,12 @@
+scriptax_runtime/ScriptaxDriver.py,sha256=uKpuPv8hbDDh6WARdy47pvoAsJ5kGVoC0IrwOrCY8rI,2168
+scriptax_runtime/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scriptax_runtime/invoker.py,sha256=OtjeIuA7AW0qJXyIWQKH3p5OpPR-5J5-kudyj46R5mM,2326
+scriptax_runtime/scriptax/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scriptax_runtime/scriptax/cli.py,sha256=BsN-ki_1E7UjiRFcaFLpr_5LY1gvm1iSXE7k8yVonGI,935
+scriptax_runtime/scriptax/spm.py,sha256=AiCCZhsXBcJmT-FxCDDCDH0Lz7wd4RY5nUurbkY9O2Q,2371
+scriptax_runtime-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+scriptax_runtime-0.1.0.dist-info/METADATA,sha256=eXNoGt62zjzrRnA8VgYaKiabU-XTH0nPbSGH_eSiSgY,733
+scriptax_runtime-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+scriptax_runtime-0.1.0.dist-info/entry_points.txt,sha256=2ZyBkJGmfLRZM78eGJMEM-qR1KdcGuWLBjXw08-ebZw,109
+scriptax_runtime-0.1.0.dist-info/top_level.txt,sha256=WmlLHLZ1A6CP5vUzIEOJiuMbyQq_xjIvhsc_HAsHPBk,17
+scriptax_runtime-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,6 @@
+numpy
+pywt
+pathlib
+scipy
+biosppy
+gatspy

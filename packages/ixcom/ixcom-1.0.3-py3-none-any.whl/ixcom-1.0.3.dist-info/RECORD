@@ -1,0 +1,10 @@
+ixcom/__init__.py,sha256=OcICFABAeHLXeYX8rcmZeC441t1oo_CuvyeS-5N8n_M,31
+ixcom/crc16.py,sha256=-0dCWIPFPRvMJrOfbGNTKc4sLa7j4MkjIpBW3kSPUog,2557
+ixcom/data.py,sha256=yUw1jYQOKojCavONR63-Q2UysYpOVRZWzvOF_bJmsb8,110545
+ixcom/grep.py,sha256=8z7fcIBudZe-T9AChXF13ZnQWPrAUYiYXpv05uxorCI,4411
+ixcom/parser.py,sha256=GADafzxuGce_8B_EGj5uXtfgsLhuwRdY9ZO4N7UkLfs,53997
+ixcom-1.0.3.dist-info/LICENSE,sha256=kX7IqsiccUxwb7QJZRYHwGlHvNUPzk6boSxA3qXnRh0,1063
+ixcom-1.0.3.dist-info/METADATA,sha256=_KttHGNBYHP770G7gxWcxicrhRnlZmLQqT03IiwTXfk,467
+ixcom-1.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ixcom-1.0.3.dist-info/top_level.txt,sha256=XBJfTrxF3igw62VihosQSAdkXgmzEz75ss10rGgWzr0,6
+ixcom-1.0.3.dist-info/RECORD,,

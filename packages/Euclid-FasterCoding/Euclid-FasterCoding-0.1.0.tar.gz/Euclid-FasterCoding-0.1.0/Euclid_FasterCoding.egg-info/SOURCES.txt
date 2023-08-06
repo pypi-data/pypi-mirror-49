@@ -1,0 +1,7 @@
+setup.py
+Euclid/__init__.py
+Euclid/euclid.py
+Euclid_FasterCoding.egg-info/PKG-INFO
+Euclid_FasterCoding.egg-info/SOURCES.txt
+Euclid_FasterCoding.egg-info/dependency_links.txt
+Euclid_FasterCoding.egg-info/top_level.txt

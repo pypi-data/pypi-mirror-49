@@ -1,0 +1,89 @@
+.coveragerc
+.dockerignore
+.gitignore
+AUTHORS.rst
+CHANGELOG.rst
+CONTRIBUTING.rst
+Dockerfile
+HISTORY.rst
+LICENSE.txt
+README.md
+docker-compose.yml
+setup.cfg
+setup.py
+.circleci/config.yml
+docs/Makefile
+docs/OpenTNSim.png
+docs/authors.rst
+docs/changelog.rst
+docs/conf.py
+docs/contributing.rst
+docs/history.rst
+docs/index.rst
+docs/installation.rst
+docs/license.rst
+docs/opentnsim.rst
+docs/_static/.gitignore
+notebooks/Example 01 - Defining a basic graph.ipynb
+notebooks/Example 02 - Defining a basic vessel.ipynb
+notebooks/Example 03 - Defining a basic simulation.ipynb
+notebooks/Example 04 - Create a graph from shapefile.ipynb
+notebooks/Example 05 - Defining a basic simulation on a real graph.ipynb
+notebooks/Example 06 - Visualizing the sailed path.ipynb
+notebooks/Example 07 - Using actual graphs and graph_module.py.ipynb
+notebooks/Example 08 - Multiple vessels.ipynb
+notebooks/Example 09 - Multiple vessels - edge constraints.ipynb
+notebooks/Example 10 - Lock.ipynb
+notebooks/Example 11 - Multiple vessels - from database.ipynb
+notebooks/Example 12 - Use model simulation.ipynb
+notebooks/Example 13 - Path selection by vessel limits.ipynb
+notebooks/Amsterdam_Nautical_Traffic_Analysis/README
+notebooks/Shape-Files/Graph.kml
+notebooks/Shape-Files/New graph.ipynb
+notebooks/Shape-Files/.ipynb_checkpoints/New graph-checkpoint.ipynb
+notebooks/Shape-Files/Amsterdam-Canals/ReadMe.txt
+notebooks/Shape-Files/Amsterdam-Canals/final_network_v4.dbf
+notebooks/Shape-Files/Amsterdam-Canals/final_network_v4.prj
+notebooks/Shape-Files/Amsterdam-Canals/final_network_v4.qpj
+notebooks/Shape-Files/Amsterdam-Canals/final_network_v4.shp
+notebooks/Shape-Files/Amsterdam-Canals/final_network_v4.shx
+notebooks/Shape-Files/Kilometermarkeringen/Definitie.txt
+notebooks/Shape-Files/Kilometermarkeringen/kmmarkeringen.dbf
+notebooks/Shape-Files/Kilometermarkeringen/kmmarkeringen.prj
+notebooks/Shape-Files/Kilometermarkeringen/kmmarkeringen.shp
+notebooks/Shape-Files/Kilometermarkeringen/kmmarkeringen.shx
+notebooks/Shape-Files/Rotterdam-Antwerpen-corridor/ReadMe.txt
+notebooks/Shape-Files/Rotterdam-Antwerpen-corridor/edges_2.cpg
+notebooks/Shape-Files/Rotterdam-Antwerpen-corridor/edges_2.dbf
+notebooks/Shape-Files/Rotterdam-Antwerpen-corridor/edges_2.prj
+notebooks/Shape-Files/Rotterdam-Antwerpen-corridor/edges_2.qpj
+notebooks/Shape-Files/Rotterdam-Antwerpen-corridor/edges_2.shp
+notebooks/Shape-Files/Rotterdam-Antwerpen-corridor/edges_2.shx
+notebooks/Shape-Files/Rotterdam-Antwerpen-corridor/graaf.pdf
+notebooks/Shape-Files/Vaarwegvakken/Definitie.txt
+notebooks/Shape-Files/Vaarwegvakken/Vaarwegvakken.dbf
+notebooks/Shape-Files/Vaarwegvakken/Vaarwegvakken.prj
+notebooks/Shape-Files/Vaarwegvakken/Vaarwegvakken.shp
+notebooks/Shape-Files/Vaarwegvakken/Vaarwegvakken.shx
+notebooks/Vessels/richtlijnen-vaarwegen-2017.csv
+notebooks/Vessels/richtlijnen-vaarwegen-2017.pdf
+opentnsim/__init__.py
+opentnsim/cli.py
+opentnsim/core.py
+opentnsim/graph_module.py
+opentnsim/model.py
+opentnsim/plot.py
+opentnsim.egg-info/PKG-INFO
+opentnsim.egg-info/SOURCES.txt
+opentnsim.egg-info/dependency_links.txt
+opentnsim.egg-info/entry_points.txt
+opentnsim.egg-info/not-zip-safe
+opentnsim.egg-info/requires.txt
+opentnsim.egg-info/top_level.txt
+tests/conftest.py
+tests/test_make_graph.py
+tests/test_make_vessel.py
+tests/test_route_selection.py
+tests/test_sailing_times.py
+tests/test_vessel_generator.py
+tests/vessels/vessels.csv

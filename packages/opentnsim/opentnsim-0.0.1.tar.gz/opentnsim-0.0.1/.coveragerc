@@ -1,0 +1,5 @@
+[run]
+source = opentnsim
+
+[report]
+omit = test*, .eggs*, opentnsim/plot.py

@@ -1,0 +1,86 @@
+# https://docs.python.org/3/distutils/sourcedist.html#specifying-the-files-to-distribute
+
+include *.py
+include *.sh
+include *.txt
+
+include .coveragerc
+
+include LICENSE
+include pyproject.toml
+include pytest.ini
+
+include etc/sudoers.d/sadm
+
+include tdata/.gitignore
+include tdata/deploy.cfg
+include tdata/sadm.cfg
+include tdata/profile-dir-isfile.test
+
+recursive-include _sadm/plugin *.ini
+
+recursive-include _sadm/scripts *.sh
+
+recursive-include _sadm/web/html *.html
+recursive-include _sadm/web/static *.css
+recursive-include _sadm/web/static *.ico
+recursive-include _sadm/web/static *.png
+include _sadm/web/app.conf
+
+recursive-include t *.py
+
+recursive-include tlib *.py
+recursive-include tlib/_sadmtest/plugin *.ini
+recursive-include tlib/_sadmtest/scripts *.sh
+
+recursive-include tdata/envsetup *.ini
+recursive-include tdata/envsetup *.test
+
+recursive-include tdata/testing *.ini
+recursive-include tdata/testing *.test
+
+recursive-include tdata/plugin *.ini
+recursive-include tdata/plugin *.cfg
+recursive-include tdata/plugin *.conf
+recursive-include tdata/plugin *.txt
+
+include tdata/plugin/network/iptables/etc/iptables/rules.v4
+include tdata/plugin/service/postfix/etc/aliases
+include tdata/plugin/service/postfix/etc/mailname
+include tdata/plugin/users/sadmtest/.bashrc
+
+recursive-include venv *.sh
+recursive-include venv *.txt
+
+include Dockerfile
+include Dockerfile.dev
+include Dockerfile.test
+
+include docker/build.sh
+include docker/run.sh
+include docker/bin/sadm
+
+include docker/deploy.py
+include docker/sadm.cfg
+include docker/etc/deploy.cfg
+include docker/build.test.sh
+include docker/envbuild.py
+include docker/envs_test.py
+include docker/test.run.sh
+include docker/trun.py
+
+recursive-include docker/env *.ini
+
+include docker/env/sync/asset.file
+recursive-include docker/env/sync/asset.dir file.*
+
+recursive-include docker/env/apache *.conf
+recursive-include docker/env/munin *.conf
+
+include docker/env/iptables/iptables/rules.*
+
+include docker/env/postfix/etc/aliases
+include docker/env/postfix/etc/mailname
+
+include docker/env/fail2ban/iptables/rules.*
+recursive-include docker/env/fail2ban *.conf

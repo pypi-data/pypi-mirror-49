@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+loopimer/Loopimer.py
+loopimer/__init__.py
+loopimer.egg-info/PKG-INFO
+loopimer.egg-info/SOURCES.txt
+loopimer.egg-info/dependency_links.txt
+loopimer.egg-info/top_level.txt

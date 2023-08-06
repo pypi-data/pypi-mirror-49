@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ehelply-bootstrapper
+Version: 0.0.3
+Summary: eHelply Bootstrapper
+Home-page: https://github.com/ehelply/Bootstrapper
+Author: Shawn Clake
+Author-email: shawn.clake@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pika
+Requires-Dist: librabbitmq
+Requires-Dist: kombu
+Requires-Dist: pydantic
+Requires-Dist: pymlconf
+Requires-Dist: fastapi
+Requires-Dist: pymongo
+Requires-Dist: redis
+Requires-Dist: python-socketio
+Requires-Dist: email-validator
+Requires-Dist: uvicorn
+Requires-Dist: pprint
+Requires-Dist: pyjwt
+Requires-Dist: passlib[bcrypt]
+Requires-Dist: pytest
+Requires-Dist: python-multipart
+Requires-Dist: requests
+Requires-Dist: sentry-asgi
+Requires-Dist: python-dateutil (==2.6.0)
+Requires-Dist: six
+Requires-Dist: boto3
+Requires-Dist: ehelply-logger (>=0.0.4)
+
+# Bootstrapper
+Microservice bootstrapper
+
+

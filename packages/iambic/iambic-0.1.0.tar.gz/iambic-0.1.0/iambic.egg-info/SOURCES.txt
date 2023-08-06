@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+iambic/__about__.py
+iambic/__init__.py
+iambic/ast.py
+iambic/roman.py
+iambic.egg-info/PKG-INFO
+iambic.egg-info/SOURCES.txt
+iambic.egg-info/dependency_links.txt
+iambic.egg-info/requires.txt
+iambic.egg-info/top_level.txt

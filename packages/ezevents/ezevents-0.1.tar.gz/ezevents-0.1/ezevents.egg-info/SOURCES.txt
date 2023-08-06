@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ezevents/__init__.py
+ezevents/ezevents.py
+ezevents.egg-info/PKG-INFO
+ezevents.egg-info/SOURCES.txt
+ezevents.egg-info/dependency_links.txt
+ezevents.egg-info/requires.txt
+ezevents.egg-info/top_level.txt

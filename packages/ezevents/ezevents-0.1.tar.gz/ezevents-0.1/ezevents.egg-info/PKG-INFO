@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ezevents
+Version: 0.1
+Summary: View your upcoming events and add events to your Google Calendar
+Home-page: http://github.com/CyberDrudge/EZEvents
+Author: Satyam Saxena
+Author-email: cyberdrudge77@gmail.com
+License: UNKNOWN
+Description: 
+                                  EZEvents
+        
+                                 View your upcoming events and add events to your Google Calendar
+        
+        
+            ~ What do I need?
+              
+              Python 2.6+
+              pip
+              A Google account
+        
+            ~ Usage
+              
+              Run the command like so:
+              
+                ezevents [options] 
+              
+              You will be prompted for your Google Calendar email and password the
+              first time, which will be stored safely.
+              
+              Once logged in, events from all your calendars should be displayed
+              on running the command.
+        
+Keywords: calendar,python,events
+Platform: UNKNOWN
+Requires-Python: >=2.6
+Description-Content-Type: text/markdown

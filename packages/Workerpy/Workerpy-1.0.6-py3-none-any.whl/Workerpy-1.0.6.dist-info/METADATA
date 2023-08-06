@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: Workerpy
+Version: 1.0.6
+Summary: Libreria para crear Workers que responden a eventos desde kafka
+Home-page: UNKNOWN
+Author: Enoi Barrera Guzman
+Author-email: zafiro3000x@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: kafka-python (==1.4.6)
+Requires-Dist: Logbook (==1.4.3)
+
+# Worker
+
+Libreria la implementacion de workes basados en kafka.
+
+
+### Ejemplo
+
+```python
+from Workerpy import Manager, Worker, Options
+
+@Manager.Define(
+    Options(
+        'DemoWorker', # Nombre del worker
+        'gitlab_push', # Topico que escucha
+        ['kafka:9092'] # Kafka Hosts
+    )
+)
+class demo(Worker):
+    def process(self, data):
+        print(data)
+```
+
+> Los workes solo escuchan, no tienen posibilidad de responder
+

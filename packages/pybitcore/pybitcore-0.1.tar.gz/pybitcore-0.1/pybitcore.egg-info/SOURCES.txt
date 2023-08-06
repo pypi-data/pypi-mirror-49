@@ -1,0 +1,9 @@
+README.md
+pybitcore
+setup.py
+pybitcore/__init__.py
+pybitcore/api.py
+pybitcore.egg-info/PKG-INFO
+pybitcore.egg-info/SOURCES.txt
+pybitcore.egg-info/dependency_links.txt
+pybitcore.egg-info/top_level.txt

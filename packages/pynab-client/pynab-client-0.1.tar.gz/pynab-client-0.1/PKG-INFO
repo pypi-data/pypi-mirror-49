@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pynab-client
+Version: 0.1
+Summary: Python API to access YNAB v1 API
+Home-page: https://github.com/irunasroot/pynab-client
+Author: Dennis Whitney
+Author-email: dennis@irunasroot.com
+License: GNU GPLv3
+Download-URL: https://github.com/irunasroot/pynab-client/archive/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: ynab,pynab,budgeting,budgets
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6

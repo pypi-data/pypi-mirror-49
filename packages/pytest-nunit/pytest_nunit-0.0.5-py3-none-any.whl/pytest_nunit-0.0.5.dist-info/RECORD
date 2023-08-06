@@ -1,0 +1,12 @@
+pytest_nunit/__init__.py,sha256=S7u1lbuWmM3A3ajykBialmPoJUK6Jg-WmNqM-9OZFdk,22
+pytest_nunit/attrs2xml.py,sha256=WXP_4pzevxb_73D4DDaI0BTKatZ8HF6cvx7zkAXEJ84,2464
+pytest_nunit/nunit.py,sha256=mpvZc-6uC2c9WvKDGzISuIkxK8fTnEdcLFZfgQyP3MY,6147
+pytest_nunit/plugin.py,sha256=Osg4VSgwWhBtZAYbZQztDCYVEa0DHQLFHGfQs0Mg6gs,10358
+pytest_nunit/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_nunit/models/nunit.py,sha256=tQdQWLq2hi7AU6_TUM4Dj58zeWNXERbCbPm2JvUz5hU,21515
+pytest_nunit-0.0.5.dist-info/LICENSE,sha256=fcENDzYjt9ShjmzpK_3vVLIfVeNXmferCxkc2grhonA,1080
+pytest_nunit-0.0.5.dist-info/METADATA,sha256=ZM61M_c4b8ugf7CpzK7ZdA9VnimAa1NquRtuk8Wxbwc,3061
+pytest_nunit-0.0.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pytest_nunit-0.0.5.dist-info/entry_points.txt,sha256=Wl6n7V2lf56Jtqz8nvDBACAGbYZGiwoNiXlZA9gLIq4,40
+pytest_nunit-0.0.5.dist-info/top_level.txt,sha256=cEB_h3quDbkkW7Rwx0MP_b_ohGHN6IkKgpp_qtataXI,13
+pytest_nunit-0.0.5.dist-info/RECORD,,

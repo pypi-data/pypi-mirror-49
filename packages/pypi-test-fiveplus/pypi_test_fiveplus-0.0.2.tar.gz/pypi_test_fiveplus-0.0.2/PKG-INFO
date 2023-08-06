@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pypi_test_fiveplus
+Version: 0.0.2
+Summary: PyPI Test
+Home-page: https://github.com/
+Author: 姬小野
+Author-email: 2622075127wjh@gmail.com
+License: UNKNOWN
+Description: 一段描述
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

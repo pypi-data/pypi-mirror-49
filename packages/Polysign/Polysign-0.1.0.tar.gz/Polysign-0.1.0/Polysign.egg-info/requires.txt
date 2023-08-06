@@ -1,0 +1,4 @@
+pycryptodomex
+ed25519
+base58
+coincurve

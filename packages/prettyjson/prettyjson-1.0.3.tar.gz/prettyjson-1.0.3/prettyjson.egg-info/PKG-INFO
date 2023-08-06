@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: prettyjson
+Version: 1.0.3
+Summary: Command-line tool to validate and pretty-print JSON(just for the missing options in `json.tool`)
+Home-page: https://github.com/vimfunny/prettyjson
+Author: vimfun
+Author-email: vimfunny@gmail.com
+License: PSF license
+Description: # Pretty JSON
+        Tool for printing pretty JSON (just for the missing options in `json.tool`)
+        
+        For the issues in [Python bug tracker](https://bugs.python.org):
+        * [Specifying indent in the json.tool command](https://bugs.python.org/issue29636)
+        * [Add an option to json.tool to bypass non-ASCII characters](https://bugs.python.org/issue27413)
+        
+        ## Installing
+        
+        Install and update using `pip`:
+        
+        ```shell
+            pip install -U prettyjson
+        ```
+        
+        
+        ## Usage Examples
+        
+        #### Example 1
+        ```shell
+        echo '{"name": "vimfun", "from": "The Earth"}' | python -m prettyjson
+        ```
+        Result:
+        ```json
+        {
+            "name": "vimfun",
+            "from": "The Earth",
+            
+        }
+        ```
+        
+        #### Example 2
+        ```shell
+        echo '{"name": "vimfun", "from": "The Earth"}' | python -m prettyjson --indent=2
+        ```
+        Result:
+        ```json
+        {
+          "name": "vimfun",
+          "from": "The Earth"
+        }
+        ```
+        
+        #### Example 3
+        ```shell
+        echo '{"name": "王旭林", "from": "The Earth"}' | python -m prettyjson --indent=2 --no-ensure-ascii
+        ```
+        Result:
+        ```json
+        {
+          "name": "王旭林",
+          "from": "The Earth"
+        }
+        ```
+        
+        ## Links
+        
+        * Website: https://github.com/vimfun/prettyjson
+        * Releases: https://pypi.org/project/prettyjson/
+        * Code: https://github.com/vimfun/prettyjson
+        * Issue tracker: https://github.com/vimfun/prettyjson/issues
+        * Test status:
+        
+          * Linux, Mac: https://travis-ci.org/vimfun/prettyjson
+          * Windows: https://ci.appveyor.com/project/vimfun/prettyjson
+        
+        * Test coverage: https://codecov.io/gh/vimfun/prettyjson
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Filters
+Description-Content-Type: text/markdown

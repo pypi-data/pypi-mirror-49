@@ -1,0 +1,9 @@
+README.md
+setup.py
+prettyjson/__init__.py
+prettyjson/__main__.py
+prettyjson/tool.py
+prettyjson.egg-info/PKG-INFO
+prettyjson.egg-info/SOURCES.txt
+prettyjson.egg-info/dependency_links.txt
+prettyjson.egg-info/top_level.txt

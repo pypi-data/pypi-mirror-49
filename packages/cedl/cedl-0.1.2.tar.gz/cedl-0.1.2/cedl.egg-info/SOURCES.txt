@@ -1,0 +1,14 @@
+README.md
+setup.py
+cedl.egg-info/PKG-INFO
+cedl.egg-info/SOURCES.txt
+cedl.egg-info/dependency_links.txt
+cedl.egg-info/entry_points.txt
+cedl.egg-info/requires.txt
+cedl.egg-info/top_level.txt
+downloader/__init__.py
+downloader/__main__.py
+downloader/downloader.py
+downloader/settings.py
+tests/__init__.py
+tests/test_regex.py

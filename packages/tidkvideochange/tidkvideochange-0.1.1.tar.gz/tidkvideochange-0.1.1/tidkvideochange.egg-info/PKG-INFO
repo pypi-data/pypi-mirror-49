@@ -1,0 +1,63 @@
+Metadata-Version: 1.1
+Name: tidkvideochange
+Version: 0.1.1
+Summary: Custom modification of VideoText, incorporating pyscenedetect and batching frames.
+Home-page: https://github.com/DominikHuss/tidkvideochange
+Author: Dominik Huss
+Author-email: dhuss@tidk.pl
+License: MIT license
+Description: ===============
+        TIDKVideoChange
+        ===============
+        
+        
+        .. image:: https://img.shields.io/pypi/v/tidkvideochange.svg
+                :target: https://pypi.python.org/pypi/tidkvideochange
+        
+        .. image:: https://img.shields.io/travis/DominikHuss/tidkvideochange.svg
+                :target: https://travis-ci.com/DominikHuss/tidkvideochange
+        
+        .. image:: https://readthedocs.org/projects/tidkvideochange/badge/?version=latest
+                :target: https://tidkvideochange.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        Custom modification of VideoText, incorporating pyscenedetect and batching frames.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://tidkvideochange.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Additional requirements
+        -----------------------
+        
+        * ffmpeg installed and linked to in PATH
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-07-15)
+        ------------------
+        
+        * First release on PyPI.
+        
+        0.1.1 (2019-07-16)
+        ------------------
+        * Fixed compatibility issues
+        * Added timestamp field to frames
+Keywords: tidkvideochange
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5

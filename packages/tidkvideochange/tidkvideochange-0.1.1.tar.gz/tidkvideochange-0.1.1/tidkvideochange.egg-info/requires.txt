@@ -1,0 +1,12 @@
+Click>=6.0
+tqdm
+six
+lmdb
+numpy
+matplotlib
+torch
+torchvision
+pillow
+importlib_resources
+opencv-python
+tensorflow-gpu

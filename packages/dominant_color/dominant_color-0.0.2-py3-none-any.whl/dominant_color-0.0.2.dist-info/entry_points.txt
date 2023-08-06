@@ -1,0 +1,3 @@
+[console_scripts]
+dominant-color=dominant_color.image_palette:main
+

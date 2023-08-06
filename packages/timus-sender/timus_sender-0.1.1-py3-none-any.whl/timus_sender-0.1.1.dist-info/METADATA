@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: timus-sender
+Version: 0.1.1
+Summary: Timus console solution submitter
+Home-page: https://github.com/kirillsulim/timus-sender
+Author: Kirill Sulim
+Author-email: kirillsulim@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.19.1)
+
+# timus-sender
+
+Timus sender is simple python script to send solution of problems to [timus](https://timus.online/).
+
+## How to use
+
+Pass required parameters to script:
+
+```
+sender.py --judge-id=<your id> --compiler=<compiler code> --problem=<problem id> <path/to/solution>
+```
+
+Script will return link to your submissons to this problem.
+
+## Parameters deduction
+
+All parameters can be deducted from context.
+
+### judge-id
+
+If `judge-id` parameter doesn't passed to script it will be read from `.judge_id` file in your home directory.
+
+### compiler
+
+If `compiler` parameter doesn't passed to script compiler will be defined by file extension. Actual default compilers available in source code.
+
+### problem
+
+If `problem` parameter doesn't passed to script problem number will be defined by directory of file.
+Possible directory name formats:
+
+- `<problem id>`
+- `<problem id>-<description>`
+- `<description>-<problem id>`
+
+

@@ -1,0 +1,11 @@
+pyfmmlib/__init__.py,sha256=QDIDvy715NC4WNM66aXbWEQ7Cu6n5zEJipqFBrWcTOI,10191
+pyfmmlib/_internal.so,sha256=77ivYu8wjCQIrIKoBQva8tr6phEw2DOu9nSuCB_SPjE,2214376
+pyfmmlib/version.py,sha256=eOhQ4BecG_r6BBHE6xIqAHko2h6AiojxhxnqKxrxnUU,109
+pyfmmlib/.dylibs/libgcc_s.1.dylib,sha256=hzhZ1p8FNA_QZR4F7Zc9w7SpYSWaE5EwzKj6pfrKgW4,273072
+pyfmmlib/.dylibs/libgfortran.3.dylib,sha256=5qHVXAhfkoa7e2P_R_l9grUrIF8TqfQNPRdRjam19EQ,1550456
+pyfmmlib/.dylibs/libgomp.1.dylib,sha256=xH49nVphgp0Q1rFGA-3g_JI7JfJ84WLXOtKc4cdri9s,124656
+pyfmmlib/.dylibs/libquadmath.0.dylib,sha256=CVNmSA9CEmUxLOHq_kSzsO29e2OMhBkBjwAQWVOInus,279932
+pyfmmlib-2019.1.3.dist-info/METADATA,sha256=5fCCFfrVdAdhe7u4_f1Jgz9mFWury4urkINF7eywrgs,5365
+pyfmmlib-2019.1.3.dist-info/RECORD,,
+pyfmmlib-2019.1.3.dist-info/top_level.txt,sha256=pHWpjThnr0tRTWeNVpl-ngQsuHZbH2blMU7btJVeDQ8,9
+pyfmmlib-2019.1.3.dist-info/WHEEL,sha256=4RwGi-6hahjo59Rpq3GZ1JGebDdJ4CjE-Iu3cmc03Ms,249

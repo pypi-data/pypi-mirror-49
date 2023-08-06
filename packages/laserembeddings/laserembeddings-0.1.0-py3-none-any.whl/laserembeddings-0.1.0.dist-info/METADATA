@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: laserembeddings
+Version: 0.1.0
+Summary: Production-ready LASER multilingual embeddings
+Home-page: https://github.com/yannvgn/laserembeddings
+License: BSD-3-Clause
+Author: yannvgn
+Author-email: hi@yannvgn.io
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: numpy (>=1.15.4,<2.0.0)
+Requires-Dist: sacremoses (>=0.0.21,<0.0.22)
+Requires-Dist: subword-nmt (>=0.3.6,<0.4.0)
+Requires-Dist: torch (>=1.0.1.post2,<2.0.0)
+Project-URL: Repository, https://github.com/yannvgn/laserembeddings

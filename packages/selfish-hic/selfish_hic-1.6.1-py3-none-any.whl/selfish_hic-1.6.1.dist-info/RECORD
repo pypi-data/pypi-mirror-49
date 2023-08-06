@@ -1,0 +1,10 @@
+selfish/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selfish/__main__.py,sha256=0aKgubY1UFdFCV7HmSzXToWOtRjzbrj68QMw2FNhtk8,32
+selfish/_version.py,sha256=UB0rz0TMsR0fTvEwewaJTcQXyTNQSEi2_Jkyoms_bss,22
+selfish/selfish.py,sha256=_7bkSStDU0YqCVdmFNRRfnmjT5O34LoMSHlhujgdfyc,18388
+selfish_hic-1.6.1.dist-info/LICENSE,sha256=t4SEGrfrZiSqxV5avP-6Xqde9EuAe4soNXTlffj5Ztw,1072
+selfish_hic-1.6.1.dist-info/METADATA,sha256=r-BMkeCagsr65tAenQgKmeF0e2JZLewQzbHTLyQ-F3g,851
+selfish_hic-1.6.1.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+selfish_hic-1.6.1.dist-info/entry_points.txt,sha256=SAw-9Gk9-JbVLmMM7TEKUEadPIuTONHu9P2na6gfdV8,50
+selfish_hic-1.6.1.dist-info/top_level.txt,sha256=cs9SQyWoY7PQycbZ8zpQkCwUY6KXIuM9-zaUgJ0QebA,8
+selfish_hic-1.6.1.dist-info/RECORD,,

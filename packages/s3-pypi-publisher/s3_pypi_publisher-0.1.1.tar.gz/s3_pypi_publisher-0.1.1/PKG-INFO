@@ -1,0 +1,23 @@
+Metadata-Version: 1.0
+Name: s3_pypi_publisher
+Version: 0.1.1
+Summary: A utility to publish Python packages to S3 buckets
+Home-page: https://github.com/gzzo/s3_pypi_publisher
+Author: Guido Rainuzzo
+Author-email: hi@guido.nyc
+License: License :: OSI Approved :: Apache Software License 2.0 (Apache-2.0)
+Description: # Installation
+        
+        `pip install s3_pypi_publisher`
+        
+        # Usage
+        
+        ```bash
+        cd /path/to/your/package
+        publish_package
+        ```
+        
+        # Read more
+        
+        https://guido.nyc/s3-pypi
+Platform: UNKNOWN

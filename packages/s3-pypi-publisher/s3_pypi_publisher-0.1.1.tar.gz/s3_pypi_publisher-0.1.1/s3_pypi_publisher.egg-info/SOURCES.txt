@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+s3_pypi_publisher/__init__.py
+s3_pypi_publisher/publish_package.py
+s3_pypi_publisher.egg-info/PKG-INFO
+s3_pypi_publisher.egg-info/SOURCES.txt
+s3_pypi_publisher.egg-info/dependency_links.txt
+s3_pypi_publisher.egg-info/requires.txt
+s3_pypi_publisher.egg-info/top_level.txt
+scripts/publish_package

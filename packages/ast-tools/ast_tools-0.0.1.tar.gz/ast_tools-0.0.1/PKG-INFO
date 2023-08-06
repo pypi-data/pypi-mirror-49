@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ast_tools
+Version: 0.0.1
+Summary: Toolbox for working with the Python AST
+Home-page: https://github.com/leonardt/ast_tool_box
+Author: Leonard Truong
+Author-email: lenny@cs.stanford.edu
+License: UNKNOWN
+Description: Toolbox for working with the Python AST
+        
+        ```
+        pip install ast_tool_box
+        ```
+        
+        # Useful References
+        * [Green Tree Snakes - the missing Python AST docs](greentreesnakes.readthedocs.io/)
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,7 @@
+include LICENSE
+include README.rst
+include projects/static *
+include projects/templates/*.html
+include blog/templates/*.html
+include personal_portfolio/templates/*.html
+include docs

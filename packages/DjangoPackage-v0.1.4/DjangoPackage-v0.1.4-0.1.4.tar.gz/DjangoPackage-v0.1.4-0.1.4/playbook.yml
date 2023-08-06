@@ -1,0 +1,33 @@
+---     #Preferable syntax to start .yml file
+- name: Installation          # Name of the task to be performed in the destinaton host
+  hosts: all
+  #host = All -- Incase you have many servers in your ssh.cfg file
+  #hosts: localhost
+  become: True        #Makes you an user for the remote host
+  tasks:        # Tasks to be performed
+    - name: Create file
+      copy:     # Ansible module
+        src: /home/kathurima/Music
+      #If you wanted to copy from a particular source, you would have used 'src:' instead of 'content'
+        #content: Create \n      # What is to be written in the test.txt
+        #dest: /home/kathurima/Music/tmp
+        dest: /home/kathurima/Music/tmp
+
+    - name: Install a list of packages
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+        - htop
+        - python3-pip
+        - build-essential
+        - python-setuptools
+        - fabric
+        - nginx
+        state: forcereinstall
+
+    - name: Install pip packages
+      pip:
+        name: ['Django', 'gunicorn', 'flake8', 'coverage',
+         'pytz', 'sqlparse', 'DjangoPackage-v0.0.6']
+

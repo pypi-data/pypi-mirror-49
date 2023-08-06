@@ -1,0 +1,13 @@
+# version of the docker compose
+version: '3.6'
+
+#We can have many services for example db,web
+services:
+  web:
+    #build the current directory
+    build: .
+    command: python3 /code/manage.py runserver 0.0.0.0:8000 
+    volumes: #Where the code is to be located(in this case, code/)
+      - .:/code
+    ports:   #external port:internal port...(Directs the container port to use the external OS port
+      - 8000:8000

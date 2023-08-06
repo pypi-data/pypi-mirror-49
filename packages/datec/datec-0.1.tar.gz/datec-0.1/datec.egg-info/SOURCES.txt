@@ -1,0 +1,9 @@
+setup.py
+datec/__init__.py
+datec/__main__.py
+datec.egg-info/PKG-INFO
+datec.egg-info/SOURCES.txt
+datec.egg-info/dependency_links.txt
+datec.egg-info/entry_points.txt
+datec.egg-info/requires.txt
+datec.egg-info/top_level.txt

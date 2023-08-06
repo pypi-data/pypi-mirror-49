@@ -1,0 +1,3 @@
+[console_scripts]
+datec = datec.__main__:main
+

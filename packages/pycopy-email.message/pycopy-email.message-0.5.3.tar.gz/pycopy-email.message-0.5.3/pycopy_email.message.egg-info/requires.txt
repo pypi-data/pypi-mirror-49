@@ -1,0 +1,7 @@
+pycopy-re-pcre
+pycopy-uu
+pycopy-base64
+pycopy-binascii
+pycopy-email.utils
+pycopy-email.errors
+pycopy-email.charset

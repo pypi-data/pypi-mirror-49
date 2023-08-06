@@ -1,0 +1,13 @@
+include MANIFEST.in
+include setup.py
+include README.md
+include LICENSE
+include NOTES
+include contributors.txt
+include CMakeLists.txt
+
+# sources
+recursive-include c3 *.c *.h *.txt
+recursive-include wrappers/python *.py *.c *.i
+recursive-include pyexamples *
+

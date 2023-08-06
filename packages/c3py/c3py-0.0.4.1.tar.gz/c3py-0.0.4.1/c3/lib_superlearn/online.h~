@@ -1,0 +1,13 @@
+/** \struct StochasticUpdater
+ * \brief Interface to online learning
+ * \var StochasticUpdater::eta
+ * Learning Rate
+ */ 
+struct StochasticUpdater
+{
+    double eta;
+
+    size_t nparams;
+    struct SLMemManager * mem;
+    struct ObjectiveFunction * obj;
+};

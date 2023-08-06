@@ -1,0 +1,5 @@
+recursive-include hgext3rd *.py
+recursive-include tests *.py
+recursive-include tests *.t
+exclude .hg-format-source
+include *.in

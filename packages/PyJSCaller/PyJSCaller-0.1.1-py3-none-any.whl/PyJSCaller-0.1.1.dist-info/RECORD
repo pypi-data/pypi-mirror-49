@@ -1,0 +1,12 @@
+jscaller/__init__.py,sha256=BDvjtaHV2vou_iNdvF7z3iMIbLYIZMcnyC431mEhhGE,1093
+jscaller/_compatiable.py,sha256=DGnWfRKK4L55gJYmhDQVUBlLS5QwQ9tRv62wJ0CeFB4,200
+jscaller/_engine.py,sha256=u5XTZj-n7WhZu2uuXkXSb-f5pL4PsWQyPv5Ab9ukzow,3583
+jscaller/collect.py,sha256=VjJrsb_821zFsPs88Zyz-cPLE7sk49JK4Xgl6AD13-M,3745
+jscaller/engine.py,sha256=1Y29G43LdHmGKyondH6OQCg9BDWj01nFa60UTtjtPvM,271
+jscaller/express.py,sha256=yHuF-sr8x2X9qfGeE57U-oFxFlrFg_YaVsmwFZ7-LRc,11288
+jscaller/session.py,sha256=oI6SCxeaJ287xFP2J00oZCSGIzIEd4oz4WK9tlYS4Ks,6582
+PyJSCaller-0.1.1.dist-info/LICENSE,sha256=p7C4m8mE9-7SeHKJe1_imTkM68hko27pjGqZL9bFPx0,1083
+PyJSCaller-0.1.1.dist-info/METADATA,sha256=4NqmZpyHLia-TWoEAcroUZkHpozqNRvTWW2nht1LQ0I,2594
+PyJSCaller-0.1.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+PyJSCaller-0.1.1.dist-info/top_level.txt,sha256=Z2MjBvSTmzxzkeuRyF_ago9P6rHcKKQp-_dj-dP_JzQ,9
+PyJSCaller-0.1.1.dist-info/RECORD,,

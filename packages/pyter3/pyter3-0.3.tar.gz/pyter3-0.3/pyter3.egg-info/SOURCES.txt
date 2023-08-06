@@ -1,0 +1,7 @@
+README.rst
+setup.py
+pyter/__init__.py
+pyter3.egg-info/PKG-INFO
+pyter3.egg-info/SOURCES.txt
+pyter3.egg-info/dependency_links.txt
+pyter3.egg-info/top_level.txt

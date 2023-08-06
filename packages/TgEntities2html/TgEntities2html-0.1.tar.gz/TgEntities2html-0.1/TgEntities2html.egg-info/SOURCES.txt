@@ -1,0 +1,8 @@
+README.md
+setup.py
+TgEntities2html/__init__.py
+TgEntities2html.egg-info/PKG-INFO
+TgEntities2html.egg-info/SOURCES.txt
+TgEntities2html.egg-info/dependency_links.txt
+TgEntities2html.egg-info/not-zip-safe
+TgEntities2html.egg-info/top_level.txt

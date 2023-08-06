@@ -1,0 +1,9 @@
+README.md
+paramsuits.py
+setup.py
+paramsuits.egg-info/PKG-INFO
+paramsuits.egg-info/SOURCES.txt
+paramsuits.egg-info/dependency_links.txt
+paramsuits.egg-info/entry_points.txt
+paramsuits.egg-info/requires.txt
+paramsuits.egg-info/top_level.txt

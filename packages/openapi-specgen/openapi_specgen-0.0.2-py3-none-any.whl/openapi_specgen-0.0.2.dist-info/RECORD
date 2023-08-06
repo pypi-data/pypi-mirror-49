@@ -1,0 +1,12 @@
+openapi_specgen/__init__.py,sha256=KmzJI1q3R3HgQG3CiQXeWmY3JAHsOG21RRBqLp9xmY8,208
+openapi_specgen/marshmallow_schema.py,sha256=UhRwkCDLNbO7Pu_ESwWTG6WOowZ4hh-BhOnUOLhWoRY,2533
+openapi_specgen/openapi.py,sha256=-jOMl1awqj8HprR6b8qnlIOi_eSoLg5zc2vF0ae_M-E,1535
+openapi_specgen/param.py,sha256=hb9YcV--o92ZqPOyCbYmueKfROLzi3GrJRYjacyGkOM,890
+openapi_specgen/path.py,sha256=dGSiJeFnt3E64dxAY-RkgqnbFrwv-qYgQMNNjDpDjx0,1655
+openapi_specgen/response.py,sha256=F3UEk3KKaz9sgRfG9Mj7cbrZIGL1EiHQRY81iJWcSP4,840
+openapi_specgen/schema.py,sha256=6RyQSZUvTkFwohVV3P5xPXVjice3HXLEYMtDg1Hpj2w,2392
+openapi_specgen-0.0.2.dist-info/LICENSE,sha256=LpPBgGy6TZ_4r9hfcwj8H4AHKw4GJLbZJ-rXD9xR-0Q,1072
+openapi_specgen-0.0.2.dist-info/METADATA,sha256=3rW0M2-r5eIC0YsqE8dOGHj1MZ1nkpaVfuBuC4K3msQ,561
+openapi_specgen-0.0.2.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+openapi_specgen-0.0.2.dist-info/top_level.txt,sha256=sWrDDYIQc-wpXzg67hO50prJKGZF9f6oHyA-68yurNk,16
+openapi_specgen-0.0.2.dist-info/RECORD,,

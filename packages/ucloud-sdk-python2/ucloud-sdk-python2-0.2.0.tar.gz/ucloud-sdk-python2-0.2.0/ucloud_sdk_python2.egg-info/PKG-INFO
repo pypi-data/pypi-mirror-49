@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: ucloud-sdk-python2
+Version: 0.2.0
+Summary: UCloud Service Development Kit - Python
+Home-page: https://github.com/ucloud/ucloud-sdk-python2
+Author: ucloud
+Author-email: esl_ipdd@ucloud.cn
+License: Apache License 2.0
+Description: UCloud SDK Python 2
+        ===================
+        
+        UCloud SDK is a Python client library for accessing the UCloud API.
+        
+        This client can run on Linux, macOS and Windows. It requires Python 2.7 and
+        above.
+        
+        - Website: https://www.ucloud.cn/
+        - Free software: Apache 2.0 license
+        - `Documentation <https://ucloud.github.io/ucloud-sdk-python2/>`_
+        
+        .. image:: https://img.shields.io/pypi/v/ucloud-sdk-python2.svg
+           :target: https://pypi.python.org/pypi/ucloud-sdk-python2/
+           :alt: Latest Version
+        .. image:: https://travis-ci.org/ucloud/ucloud-sdk-python2.svg?branch=master
+           :target: https://travis-ci.org/ucloud/ucloud-sdk-python2
+           :alt: Travis CI Status
+        .. image:: https://codecov.io/github/ucloud/ucloud-sdk-python2/coverage.svg?branch=master
+           :target: https://codecov.io/github/ucloud/ucloud-sdk-python2?branch=master
+           :alt: Codecov Status
+        .. image:: https://img.shields.io/badge/docs-passing-brightgreen.svg
+           :target: https://ucloud.github.io/ucloud-sdk-python2/
+           :alt: Doc Status
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 2 :: Only
+Classifier: Topic :: Software Development
+Requires-Python: >=2.7
+Provides-Extra: test
+Provides-Extra: doc
+Provides-Extra: dev

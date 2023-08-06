@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cusip_generator
+Version: 0.0.2
+Summary: Generate modified CUSIPs given Bloomberg Tickers
+Home-page: https://github.com/luisliuchao/cusip_generator
+Author: Liu Chao
+Author-email: luis.liu.1018@gmail.com
+License: UNKNOWN
+Description: # cusip_generator
+        Generate modified CUSIPs given Bloomberg Tickers
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

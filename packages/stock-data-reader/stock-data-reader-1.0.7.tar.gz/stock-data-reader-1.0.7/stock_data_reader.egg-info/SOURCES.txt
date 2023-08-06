@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+stock_data_reader/stockreader.py
+stock_data_reader.egg-info/PKG-INFO
+stock_data_reader.egg-info/SOURCES.txt
+stock_data_reader.egg-info/dependency_links.txt
+stock_data_reader.egg-info/entry_points.txt
+stock_data_reader.egg-info/requires.txt
+stock_data_reader.egg-info/top_level.txt

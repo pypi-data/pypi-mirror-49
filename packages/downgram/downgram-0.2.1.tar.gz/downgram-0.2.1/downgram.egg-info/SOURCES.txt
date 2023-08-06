@@ -1,0 +1,14 @@
+README.md
+setup.py
+downgram/__init__.py
+downgram/__main__.py
+downgram/downgram.py
+downgram/errors.py
+downgram/settings.py
+downgram/utils.py
+downgram/version.py
+downgram.egg-info/PKG-INFO
+downgram.egg-info/SOURCES.txt
+downgram.egg-info/dependency_links.txt
+downgram.egg-info/entry_points.txt
+downgram.egg-info/top_level.txt

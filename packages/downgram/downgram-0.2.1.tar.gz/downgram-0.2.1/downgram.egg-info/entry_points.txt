@@ -1,0 +1,3 @@
+[console_scripts]
+downgram = downgram.downgram:main
+

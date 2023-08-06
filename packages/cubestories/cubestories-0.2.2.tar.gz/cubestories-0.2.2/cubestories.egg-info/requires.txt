@@ -1,0 +1,6 @@
+SPARQLWrapper
+sparql_dataframe
+pandas
+datastories
+numpy
+scipy

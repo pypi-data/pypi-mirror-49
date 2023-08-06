@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: aspire
+Version: 0.5.1
+Summary: Algorithms for Single Particle Reconstruction
+Home-page: https://github.com/ComputationalCryoEM/ASPIRE-Python
+Author: Joakim Anden, Yoel Shkolnisky, Itay Sason, Robbie Brook, Vineet Bansal, Junchao Xia
+Author-email: devs.aspire@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

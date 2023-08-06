@@ -1,0 +1,14 @@
+README.md
+setup.py
+semvercomp/Version.py
+semvercomp/__init__.py
+semvercomp/utils.py
+semvercomp/validators.py
+semvercomp.egg-info/PKG-INFO
+semvercomp.egg-info/SOURCES.txt
+semvercomp.egg-info/dependency_links.txt
+semvercomp.egg-info/top_level.txt
+tests/__init__.py
+tests/test_Version.py
+tests/test_utils.py
+tests/test_validators.py

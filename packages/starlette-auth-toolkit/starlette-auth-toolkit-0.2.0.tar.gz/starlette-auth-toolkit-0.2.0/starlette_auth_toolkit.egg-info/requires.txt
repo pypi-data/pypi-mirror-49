@@ -1,0 +1,12 @@
+
+[dev]
+pytest
+pytest-asyncio
+starlette>=0.11
+requests
+black
+pylint
+bumpversion
+
+[passlib]
+passlib<2,>=1.7

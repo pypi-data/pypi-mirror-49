@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: pycopy-stat
+Version: 0.5.1
+Summary: CPython stat module ported to Pycopy
+Home-page: https://github.com/pfalcon/pycopy-lib
+Author: CPython Developers
+Author-email: python-dev@python.org
+Maintainer: Paul Sokolovsky
+Maintainer-email: pycopy-dev@googlegroups.com
+License: Python
+Description: This is a module ported from CPython standard library to be compatible with
+        Pycopy project (https://github.com/pfalcon/pycopy). Usually, this means that
+        small patches were applied for features not supported (yet, or at all) in
+        Pycopy. Sometimes, heavier changes might have been done. Note that CPython
+        modules are written with availability of vast resources in mind, and may not
+        work for Pycopy ports with limited heap memory (RAM). If you are affected by
+        such a case, please help reimplement the module in minimalistic way from
+        scratch.
+Platform: UNKNOWN

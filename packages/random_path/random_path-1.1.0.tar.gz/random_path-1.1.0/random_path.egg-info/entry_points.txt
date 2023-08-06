@@ -1,0 +1,3 @@
+[console_scripts]
+random-path = random_path.random_path:main
+

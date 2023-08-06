@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: random-path
+Version: 1.1.0
+Summary: Choose random file paths with conditions
+Home-page: https://github.com/jbaber/random_path
+Author: John Baber-Lucero
+Author-email: pypi@frundle.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5, <4

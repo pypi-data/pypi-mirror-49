@@ -1,0 +1,10 @@
+setup.py
+random_path/__init__.py
+random_path/random_path.py
+random_path/test_random_path.py
+random_path.egg-info/PKG-INFO
+random_path.egg-info/SOURCES.txt
+random_path.egg-info/dependency_links.txt
+random_path.egg-info/entry_points.txt
+random_path.egg-info/requires.txt
+random_path.egg-info/top_level.txt

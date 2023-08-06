@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: us-netview-non-major
+Version: 0.9
+Summary: National public meter US Netview
+Home-page: https://adlm.nielsen.com/bitbucket/users/anal8003/repos/non_major_netview/browse
+Author: Alex Anthony
+Author-email: alex.anthony@nielsen.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Welcome to US Netview Process
+
+You can call the process codes by simply install the us_netview package in your local system.
+
+pip install us_netview_non_major
+
+
+And calling in your python scripts by 
+
+from us_netview import us_netview_non_major
+

@@ -1,0 +1,6 @@
+imageio
+pandas
+IPython
+numpy
+requests
+matplotlib

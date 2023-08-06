@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: json-schema-discovery
+Version: 0.1.0
+Summary: Database-agnostic JSON schema discovery
+Author: Stepland
+Author-email: Stepland@hotmail.fr
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7

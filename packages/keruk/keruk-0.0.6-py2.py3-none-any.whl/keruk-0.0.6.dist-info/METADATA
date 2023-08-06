@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: keruk
+Version: 0.0.6
+Summary: Simple Web Downloader
+Home-page: https://github.com/AdityaSidharta/keruk
+License: UNKNOWN
+Author: Aditya Kelvianto Sidharta
+Author-email: aditya.sdrt@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests>=2.22.0
+Requires-Dist: pandas>=0.24
+Requires-Dist: beautifulsoup4>=4.8
+Requires-Dist: loguru>=0.3

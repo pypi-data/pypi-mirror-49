@@ -1,0 +1,10 @@
+README.md
+setup.py
+pytypevalidation.egg-info/PKG-INFO
+pytypevalidation.egg-info/SOURCES.txt
+pytypevalidation.egg-info/dependency_links.txt
+pytypevalidation.egg-info/requires.txt
+pytypevalidation.egg-info/top_level.txt
+typevalidation/__init__.py
+typevalidation/decorator.py
+typevalidation/types.py

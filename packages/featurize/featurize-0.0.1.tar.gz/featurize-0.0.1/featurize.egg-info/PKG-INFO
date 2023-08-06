@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: featurize
+Version: 0.0.1
+Summary: A framework which help people to build deep learning application.
+Home-page: https://github.com/louis-she/featurize
+Author: louis
+Author-email: chenglu.she@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: pytorch minecraft
+Platform: UNKNOWN

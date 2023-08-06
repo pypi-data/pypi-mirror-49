@@ -1,0 +1,17 @@
+language: python
+python:
+- '3.6'
+script:
+- echo "OK"
+install:
+  pip install .
+deploy:
+  provider: script
+  script:
+  - "./deploy.sh"
+  on:
+    branch: master    
+env:
+  global:
+  - secure: "HNAUNxASs2RsQR/KvfV824ZhJ/320/k6oK/GhUB5inpMLC9uG9i/Z/8kQXrxhFqPJh/L5ZpwO1zBU2SmTYX+o55WHDz85hb+i6DOIxfaurHzWkX75VyvgUSgWH0mavuYHGGn7kvppU8xAqp3Iwo1eN0SyKiNzOIZj6qyTs9pqafACFNNNXyLDMl3cUiqOMEZ/iH1FkKlFrHPkOg/8s3T0HYKXzp4PEqY9WKmjGaEUwNtnmuGNovII25tAivCSuBHzD5u14AD3wxc1hXOeXUMkuaIoxpWZgxSO60+XQ8nWavfIS6Bqe2f9gs/bGLIaEAvlTXp9ckYcsOwV953XRI9uOfSqLAeCcHPYzEj01YmAMPadZ9dEs2kD+W8g9QkM9XxExlR8WyVkTWLQEbsT5X19VT/ILpVxkKhBxhlFL4Ro2lw/jWGoz+bhvhO5BNqZyBWM51beF3L6xJ2bba/hoBB5rVErdxGLXnejzROeyWVhuddWpdHMSZOFHzHb1kPwbupMAY0DGeM/IcVKuL1vc+IRwzC4peQ3qUJ1GeIJVQ3FAVzDSfnCBAnAXybMUZq8ugy4emv54wrghJUVQJOZcePpHYs/cZndzCJdSNJYzgGzdTfricV6ana6uwxHVhYeFeXPNU2By2D6KLWuD8KTQu5bwzhJKy1VxQn1qQ8aRRp3Ec="
+  - secure: "cea67qQd7aiq3a7Vl/tJGLWYrA8WDhGDaN/iRQ+++g8kVJPea9ZH4ONj5dD1iF8ZQWhP2Acce1O2IWlcJeKuXkBcci1xfx1DVbeXxGZk/fyfVJwjKOqTXiC0xy5AoQiXByMuCXKekdzyTzuwGltPvHe/Lq2aKcIiBGfQDumzetin4f/ZbO9TqZxtp0H/jXodx2+Rq9Xlk3SPjvHaUjcR1lqbdBYI8bQPCwlp8Evn3fEac6VzTgSWXFsqNDTOlgSlmfaTcNCulZKZ6ZKlKFsomqGrh9GXG6EETqvg+zoNJpsMXLeRuZS4EoLd0ERPKryUA7LhwXMzL8/rW7CG9e5Lk3R/aIOyGul3Aw3mewaiPlp1n4kkGl+9518puxQmtf/BMNKiqNXpOYFGMVVE8lfnnMddQHUjtNW7vctu3a8SbnxBbbHThOAIV7nNDfGJcivenQBDiwX/zW7PRoMu52IXfGyp1xAuCV0YarzIPeBfMyBw8Yxf70qDfM+YyU2X15T1bm82A3HH6/cF7J+tfWBmNL9LsxsQ5Ws02kjpPolpKf+786T5mB0nxtAK6qrIZVpWrt2pni2shADwWe5lG4KZWdciB02UpV5rOBspysfO/a3PcQKx2/mWrCq93Wo861OrwvlX+yUNFPQTklfuhVsEBRwOTrVhGseiqdbyBEPGQ84="

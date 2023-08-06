@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/fluxx/__init__.py
+src/fluxx/fluxx.py
+src/fluxx.egg-info/PKG-INFO
+src/fluxx.egg-info/SOURCES.txt
+src/fluxx.egg-info/dependency_links.txt
+src/fluxx.egg-info/not-zip-safe
+src/fluxx.egg-info/top_level.txt
+test/test_functionality.py
+test/test_units.py

@@ -1,0 +1,140 @@
+Metadata-Version: 2.1
+Name: MiScan
+Version: 1.0.0
+Summary: Maxout-inferred SNV-based cancer prediction model
+Home-page: UNKNOWN
+Author: Qulab USTC
+Author-email: jeffery_cpu@163.com
+License: UNKNOWN
+Project-URL: MiScan website, http://galaxy.ustc.edu.cn
+Keywords: deep learning SNV breast cancer prediction
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: English
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: absl-py (==0.7.1)
+Requires-Dist: adjustText (==0.7.3)
+Requires-Dist: astor (==0.8.0)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: gast (==0.2.2)
+Requires-Dist: google-pasta (==0.1.7)
+Requires-Dist: grpcio (==1.22.0)
+Requires-Dist: h5py (==2.9.0)
+Requires-Dist: Keras (==2.2.4)
+Requires-Dist: Keras-Applications (==1.0.8)
+Requires-Dist: Keras-Preprocessing (==1.1.0)
+Requires-Dist: kiwisolver (==1.1.0)
+Requires-Dist: Markdown (==3.1.1)
+Requires-Dist: matplotlib (==3.1.1)
+Requires-Dist: numpy (==1.16.4)
+Requires-Dist: pandas (==0.24.2)
+Requires-Dist: protobuf (==3.9.0)
+Requires-Dist: pyparsing (==2.4.0)
+Requires-Dist: python-dateutil (==2.8.0)
+Requires-Dist: pytz (==2019.1)
+Requires-Dist: PyYAML (==5.1.1)
+Requires-Dist: scipy (==1.3.0)
+Requires-Dist: seaborn (==0.9.0)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: tensorboard (==1.14.0)
+Requires-Dist: tensorflow (==1.14.0)
+Requires-Dist: tensorflow-estimator (==1.14.0)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: Werkzeug (==0.15.5)
+Requires-Dist: wrapt (==1.11.2)
+
+# MiScan
+
+Maxout-inferred SNV-based cancer prediction model | Apache Software License
+
+
+
+# Tutorial
+
+### Dependency data download
+
+&emsp;&emsp;To predict breast cancer risk with MiScan, Users firstly needs to do:
+
+- VCF Files
+
+  We recommend using whole exon sequencing data to obtain individual variation
+  information, but the results of whole genome sequencing and full-length RNA-seq
+  data are also compatible with the model. Please download test VCF files from [FTP](http://galaxy.ustc.edu.cn:30803/liunianping/miscan/miscan_test_data/)
+
+- Maxout model weight
+
+  Users also need a MiScan model weight to perform prediction, well-trained model weight can be downloaded from [here](http://galaxy.ustc.edu.cn:30803/liunianping/miscan/miscan_model/) 
+
+### installation
+
+- install through `pip`
+
+  for linux or Mac OS user, MiScan can be installed easily using `pip`
+
+```bash
+pip install MiScan -i https://pypi.python.org/pypi
+```
+
+- install through docker
+
+  for windows user, we provide a Docker version for convenient.
+
+```bash
+docker pull jefferyustc/miscan_command_line:v0.2.1
+docker run --name miscan_cli_test -it -v /path/to/data:/path/in/docker 9fd
+```
+
+&emsp;&emsp;More over, `Docker File`is available in the project directory, build it youself if you'd like to.
+
+### usage-commandline
+
+Suppose your VCF file and weight are placed in the `$dir` directory.
+
+```bash
+MiScan --vcf $dir/SRR5447191.combined.filtered.vcf -o outputs --weight $dir/_MiScan_weights.hdf5
+```
+
+or with below command:
+
+```bash
+python -m MiScan --vcf $dir/SRR5447191.combined.filtered.vcf -o outputs --weight $dir/_MiScan_weights.hdf5
+```
+
+if with docker, the path of VCF file or weight path shoule be path in Docker environment:
+
+```bash
+MiScan -o test_outputs --vcf $dir_in_docker/SRR5447191.combined.filtered.vcf --weight $dir_in_docker/_MiScan_weights.hdf5
+```
+
+
+
+### usage-script
+
+```python
+from MiScan import miscan_main
+
+miscan_main(
+    outDir='./outputs',
+    inVcf='/Users/jeffery/Downloads/SRR5447191.combined.filtered.vcf',
+    model_weight='/Users/jeffery/workspace/projects/outputs/_MiScan_weights.hdf5'
+)
+```
+
+
+

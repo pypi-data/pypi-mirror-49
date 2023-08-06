@@ -1,0 +1,9 @@
+[[alias]]
+
+name = "how-long"
+help="Measure how long"
+
+[[alias.stage]]
+
+command = "map"
+options = {code="len"}

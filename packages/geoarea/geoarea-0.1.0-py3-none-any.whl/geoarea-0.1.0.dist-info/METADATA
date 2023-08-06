@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: geoarea
+Version: 0.1.0
+Summary: Calculate the area from latitude longitude coordinates list
+Home-page: https://github.com/efren-cabrera/geoarea
+Author: Efren Cabrera
+Author-email: efren@cabrera.dev
+License: BSD-2-Clause
+
+geoarea
+
+

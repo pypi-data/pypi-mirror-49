@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_profile.py,sha256=1ADXOEGHz1Y9Ts4liYzdjs3lYJqvrYr_a_uzwHZhVDU,5735
+tests/test_set_paths.py,sha256=qmWVoKqVzPyl43WCXLGYPo4X0lIuS7Ca4oU7bU79lEk,466
+torchprof/__init__.py,sha256=APUBlO4oI0UwYEQB6SQNWfHqT51rPdQMbzEf3otqyKc,176
+torchprof/latency_observer.py,sha256=Mmn6yoJK_iHM_D56jcTU2wznT1AKY44Ow7z-APuVNNs,6627
+torchprof/profile.py,sha256=FBvXYosQ8vElEIEKfk3JJeoMC-irN_X-WyMLZsFVUTg,7199
+torchprof-0.3.0.dist-info/LICENSE,sha256=qPD90UEBHS0wK7wnKqegvfNnRTwOjp0WZ7AJcYksygM,1105
+torchprof-0.3.0.dist-info/METADATA,sha256=1sex279elItfCkuFt0rST-lyFAMNOieJ6-c3S8i520o,6251
+torchprof-0.3.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+torchprof-0.3.0.dist-info/top_level.txt,sha256=hIvaoesFyyQUZJz4yMbWBpYHqDv-Cat3F9lEDBWUdVw,16
+torchprof-0.3.0.dist-info/RECORD,,

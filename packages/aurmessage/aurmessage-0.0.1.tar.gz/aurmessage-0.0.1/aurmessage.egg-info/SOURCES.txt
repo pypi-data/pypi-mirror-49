@@ -1,0 +1,10 @@
+README.md
+setup.py
+aurmessage/__init__.py
+aurmessage/messager.py
+aurmessage/mpmc.py
+aurmessage.egg-info/PKG-INFO
+aurmessage.egg-info/SOURCES.txt
+aurmessage.egg-info/dependency_links.txt
+aurmessage.egg-info/requires.txt
+aurmessage.egg-info/top_level.txt

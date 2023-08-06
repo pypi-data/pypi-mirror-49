@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: overseer-slave
+Version: 1
+Summary: General interface for an Overseer slave
+Home-page: https://github.com/vdrhtc/overseer-slave
+Author: Gleb Fedorov
+Author-email: vdrhtc@gmail.com
+License: UNKNOWN
+Description: In this package, an abstract class is defined to facilitate the 
+                                creation of various monitoring clients. It implements the data transfer 
+                                layer between the client and Overseer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

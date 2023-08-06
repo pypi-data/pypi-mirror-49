@@ -1,0 +1,6 @@
+setup.py
+slave.py
+overseer_slave.egg-info/PKG-INFO
+overseer_slave.egg-info/SOURCES.txt
+overseer_slave.egg-info/dependency_links.txt
+overseer_slave.egg-info/top_level.txt

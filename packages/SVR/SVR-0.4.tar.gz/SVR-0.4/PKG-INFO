@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: SVR
+Version: 0.4
+Summary: will retive latest version of softwatre
+Home-page: https://github.com/yuvarajicon/SVR
+Author: yuvaraj,naveen
+Author-email: navicpy@gmail.com
+License: MIT
+Download-URL: https://github.com/YuvarajIcon/SVR.git
+Description: UNKNOWN
+Keywords: VERSION,RETRIVER,UPDATE,LATEST,NEW,SOFTWARE,WEBPAGE,WEBCRWALING
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

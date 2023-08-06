@@ -1,0 +1,3 @@
+[console_scripts]
+h2md = h2md.__main__:main
+

@@ -1,0 +1,4 @@
+kivy>=1.10.0
+pillow
+plyer
+sat>=0.7.0dev0

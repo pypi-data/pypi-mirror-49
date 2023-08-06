@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+fraddress/__init__.py
+fraddress/learned_settings.crfsuite
+fraddress.egg-info/PKG-INFO
+fraddress.egg-info/SOURCES.txt
+fraddress.egg-info/dependency_links.txt
+fraddress.egg-info/requires.txt
+fraddress.egg-info/top_level.txt

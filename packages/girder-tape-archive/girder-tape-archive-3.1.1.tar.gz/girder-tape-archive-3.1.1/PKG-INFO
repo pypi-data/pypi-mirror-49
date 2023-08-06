@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: girder-tape-archive
+Version: 3.1.1
+Summary: Adds support to filesystem assetstores for storing Girder files within tape archive (TAR) files via import and export processes.
+Home-page: https://github.com/girder/tape_archive
+Maintainer: Kitware, Inc.
+Maintainer-email: kitware@kitware.com
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5

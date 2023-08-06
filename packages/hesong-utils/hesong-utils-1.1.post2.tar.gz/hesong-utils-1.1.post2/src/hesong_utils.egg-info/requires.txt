@@ -1,0 +1,10 @@
+
+[all]
+PyYAML
+ujson
+
+[ujson]
+ujson
+
+[yaml]
+PyYAML

@@ -1,0 +1,6 @@
+[console_scripts]
+pwc = pymongoimport.pwc:pwc
+pymongoimport = pymongoimport.pymongoimport_main:pymongoimport_main
+pymultiimport = pymongoimport.pymongomultiimport_main:multi_import
+splitfile = pymongoimport.splitfile:split_file_main
+

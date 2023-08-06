@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: seiran
+Version: 1.3.0
+Summary: Local bookmarks manager
+Home-page: http://github.com/gargargarrick/seiran
+Author: Garrick
+Author-email: earthisthering@posteo.de
+License: GPLv3+
+Description: Save bookmarks to a local SQLite database
+Keywords: bookmarks
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Internet

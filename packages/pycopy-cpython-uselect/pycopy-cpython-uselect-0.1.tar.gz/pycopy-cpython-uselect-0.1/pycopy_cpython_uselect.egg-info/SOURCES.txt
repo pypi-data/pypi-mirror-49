@@ -1,0 +1,6 @@
+setup.py
+uselect.py
+pycopy_cpython_uselect.egg-info/PKG-INFO
+pycopy_cpython_uselect.egg-info/SOURCES.txt
+pycopy_cpython_uselect.egg-info/dependency_links.txt
+pycopy_cpython_uselect.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+starlette>=0.11
+passlib<2,>=1.7
+
+[dev]
+pytest
+pytest-asyncio
+requests
+uvicorn
+argon2-cffi
+bcrypt
+orm
+databases[sqlite]
+black
+pylint
+bumpversion

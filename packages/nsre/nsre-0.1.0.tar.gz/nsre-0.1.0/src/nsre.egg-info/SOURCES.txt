@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+README.txt
+setup.py
+src/nsre/__init__.py
+src/nsre/comparators.py
+src/nsre/fsm.py
+src/nsre/utils.py
+src/nsre.egg-info/PKG-INFO
+src/nsre.egg-info/SOURCES.txt
+src/nsre.egg-info/dependency_links.txt
+src/nsre.egg-info/top_level.txt

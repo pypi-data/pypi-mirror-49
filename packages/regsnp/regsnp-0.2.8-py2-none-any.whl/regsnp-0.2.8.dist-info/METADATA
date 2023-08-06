@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: regsnp
+Version: 0.2.8
+Summary: Predict disease-causing probability of human intronic SNVs.
+Home-page: https://github.com/mmammel12/regSNP
+Author: linhai, mamammel
+Author-email: linhai@iupui.edu, mamammel@iu.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: pandas (==0.17.1)
+Requires-Dist: pymongo
+Requires-Dist: pysam (==0.15.2)
+
+UNKNOWN
+
+

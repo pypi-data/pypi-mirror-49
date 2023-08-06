@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+pie_jerry.egg-info/PKG-INFO
+pie_jerry.egg-info/SOURCES.txt
+pie_jerry.egg-info/dependency_links.txt
+pie_jerry.egg-info/requires.txt
+pie_jerry.egg-info/top_level.txt

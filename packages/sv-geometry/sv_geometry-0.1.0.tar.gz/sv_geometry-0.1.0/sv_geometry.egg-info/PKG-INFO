@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sv-geometry
+Version: 0.1.0
+Summary: A suite of handy geometry-related functions
+Home-page: https://github.com/ihavenonickname/sv-geometry
+Author: Gabriel Blank Stift Mousquer
+Author-email: gabrielblanksm@gmail.com
+License: MIT
+Description: # SV Geometry
+        
+        A collection of functions for bidimensional and tridimensional geometry.
+        
+        ## Installing
+        
+            pip install sv_geometry
+        
+        ## Submiting an issue
+        
+        Go to https://github.com/ihavenonickname/sv-geometry/issues
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

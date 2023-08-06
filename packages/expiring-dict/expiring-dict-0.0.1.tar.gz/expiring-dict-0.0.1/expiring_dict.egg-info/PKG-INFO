@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: expiring-dict
+Version: 0.0.1
+Summary: Python dict with TTL support for auto-expiring caches
+Home-page: https://github.com/ParkerD559/py-expiring-dict
+Author: David Parker
+License: UNKNOWN
+Description: # py-expiring-dict
+        Python dict with TTL support for auto-expiring caches
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

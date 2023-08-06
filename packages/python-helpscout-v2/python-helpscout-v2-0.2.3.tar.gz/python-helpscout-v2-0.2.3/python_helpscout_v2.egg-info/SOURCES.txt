@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+helpscout/__init__.py
+helpscout/client.py
+helpscout/exceptions.py
+helpscout/model.py
+python_helpscout_v2.egg-info/PKG-INFO
+python_helpscout_v2.egg-info/SOURCES.txt
+python_helpscout_v2.egg-info/dependency_links.txt
+python_helpscout_v2.egg-info/requires.txt
+python_helpscout_v2.egg-info/top_level.txt

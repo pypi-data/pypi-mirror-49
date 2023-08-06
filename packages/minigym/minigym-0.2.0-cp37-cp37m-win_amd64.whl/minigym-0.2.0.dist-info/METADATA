@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: minigym
+Version: 0.2.0
+Summary: more gym environments
+Home-page: https://github.com/cprogrammer1994/minigym
+Author: Szabolcs Dombi
+Author-email: cprogrammer1994@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: gym
+Requires-Dist: pyprojector
+Requires-Dist: moderngl (<6.0.0)
+Requires-Dist: numpy
+Requires-Dist: pillow
+
+# minigym
+
+more gym environments
+
+## FrozenIsland
+
+```py
+env = gym.make('minigym:FrozenIsland-v0')
+```
+
+Under the hood the **FrozenLake-v0** is used.
+
+![](https://github.com/cprogrammer1994/minigym/blob/master/.github/preview/frozen_island.png)
+
+## Platformer
+
+```py
+env = gym.make('minigym:Platformer-v0')
+```
+
+![](https://github.com/cprogrammer1994/minigym/blob/master/.github/preview/platformer.png)
+
+# Acknowledgement
+
+This project is using [Box2D](https://github.com/erincatto/Box2D).
+
+This projects is using assets from [www.kenney.nl](https://www.kenney.nl).
+
+

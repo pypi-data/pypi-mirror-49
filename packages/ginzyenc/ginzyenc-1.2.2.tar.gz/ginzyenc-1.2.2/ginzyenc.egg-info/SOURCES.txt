@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+ginzyenc.egg-info/PKG-INFO
+ginzyenc.egg-info/SOURCES.txt
+ginzyenc.egg-info/dependency_links.txt
+ginzyenc.egg-info/top_level.txt
+src/ginzyenc.c
+src/ginzyenc.h

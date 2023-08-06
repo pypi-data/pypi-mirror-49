@@ -1,0 +1,12 @@
+baghchal/__init__.py,sha256=O5ieki_eKqnuICwbhrJeoTT2EB6XM3WhnLAWEWe_uuA,19
+baghchal/engine.py,sha256=8BAHvGsIG1kbZ31wP-nFZmPF97_XOCCNmNiUAtXQ13Q,2321
+baghchal/env.py,sha256=KBOoM7rwVkzqAZk-o-cXbtT4RIN2C6bbXRrVcf2wL-Y,18536
+baghchal/lookup_table.py,sha256=1NvhJS-LanYICc6rz2nClNBOr-0SsSNE3lqYSLe853U,3937
+baghchal/images/bagh.png,sha256=EOK4kl6S6xOrdabtnRDgipR4pH4oYDGIGFLaudZcPHI,6372
+baghchal/images/board.png,sha256=Wr8-jbS9aBOK-fGpuTGYD_KZHyDmOKbeOjkT8lrjByg,18523
+baghchal/images/goat.png,sha256=tElnvBCLsSvJN5LQjiB-9dLdpCNERhODxMFsLtcL_ZI,5033
+baghchal-1.0.1.dist-info/LICENSE.txt,sha256=9NxfmYa_I7uo8Z8OZAZrRcvr9m74C7pJfHCelGxeWUI,1089
+baghchal-1.0.1.dist-info/METADATA,sha256=im_FLucBCt2zVTALFIyRTRs4VCZ8YTdhyQVUVeGOT-Y,2543
+baghchal-1.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+baghchal-1.0.1.dist-info/top_level.txt,sha256=Bu6qIPPdCiAGA1uyGMwNPhGxhk3NB-wsCZJO9IJhiA4,9
+baghchal-1.0.1.dist-info/RECORD,,

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: genrss
+Version: 1.0.1
+Summary: RSS feed generator for python
+Home-page: UNKNOWN
+Author: Dmitriy Pleshevskiy
+Author-email: dmitriy@ideascup.me
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: lxml (==4.3.4)
+Requires-Dist: pytz (==2019.1)
+
+# genrss
+
+[![Build Status](https://travis-ci.org/icetemple/genrss.svg?branch=master)](https://travis-ci.org/icetemple/genrss)
+[![Coverage Status](https://coveralls.io/repos/github/icetemple/genrss/badge.svg?branch=master)](https://coveralls.io/github/icetemple/genrss?branch=master)
+
+RSS generator for python
+
+

@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: code2json
+Version: 0.1.0
+Summary: A tool to easily automatically write all your source code to a JSON file and the other way around
+Home-page: https://gitlab.com/Deathray_II/code2json
+Author: Jasper Steegmans
+Author-email: jasper.steegmans.code@gmail.com
+License: Apache-2.0
+Description: # Code 2 JSON
+        A command line utility that can insert code into JSON files and extract code from JSON to insert into a source code file.
+        
+        ## Features
+        - Create your source code in a separate file and have them be automatically written to JSON with in source markup
+        - Write all files in a directory and it's subdirectories to the json
+        - Specify the extension of the source code files
+        - Specify the delimiter of the identifiers in the source code used to indicate the marked up parts (useful if the language does not support the default delimiter (`//`)
+        - Update the source code based on the source code in the JSON
+        
+        ### Planned features
+        - A safe mode that allows the user to check the made changes before committing to them
+        
+        
+        ## Requirements
+        * Python 3: I use print functions in the Python 3 style and I just don't feel like support Python 2 especially since it won't be supported after 2020/01/01
+        * (Optionally) Pip: The Python Package Installer can be used to easily install Code 2 JSON but this can also be done by hand
+        
+        ## Installation
+        There are multiple ways to install Code 2 JSON:
+        ### Using pip and PyPi
+        Simply run the following command
+        ```
+        pip install code2json
+        ```
+        ### Cloning the repository and installing with pip
+        1. Clone the repository
+        ```
+        git clone https://gitlab.com/Deathray_II/code2json.git
+        ```
+        of if you prefer to use SSH
+        ```
+        git clone git@gitlab.com:Deathray_II/code2json.git
+        ```
+        2. go inside the git directory
+        ```
+        cd code2json
+        ```
+        3. run pip install on the setup file
+        ```
+        pip install .
+        ```
+        or if you wish to install it for just your user
+        ```
+        pip install --user .
+        ```
+        ### Cloning the repository and manually installing (on Linux)
+        1. Clone repository
+        ```
+        git clone https://gitlab.com/Deathray_II/code2json.git
+        ```
+        of if you prefer to use SSH
+        ```
+        git clone git@gitlab.com:Deathray_II/code2json.git
+        ```
+        2. Make accessible in your shell
+        There are two ways to do this either adding an alias or link it into your `/usr/bin` folder
+            - Adding an alias:
+            Got to your `~/.bashrc` or `~/.zshrc` and add the line `alisas code2json=/path/to/cmd.py "$@"`, where `/path/to/cmd.py` is the path to the `cmd.py` file in the `src/code2json/` folder in the repository.
+            - linking it into your `/usr/bin`: run (as a user who has access to write in `/usr/bin`) the command `ln -s /path/to/cmd.py /usr/bin/code2json`, where `/path/to/cmd.py` is the path to the `cmd.py` file in the `src/code2json/` folder in the repository.
+        
+        ## Usage
+        
+        If you have cloned the repository you can have a look at the test files and try some of the command on them so you get an idea of how it works
+        
+        ### Code to JSON
+        If we wish to write all the code from a file (`apples.c`) to the corresponding JSON file we would execute the the following command from the folder that contains our source file
+        ```
+        code2json ./apples.c .c 2json
+        ```
+        If we wish to write all the .js file underneath the current directory to their JSON file we would run the following command.
+        ```
+        code2json . .js 2json
+        ```
+        
+        ### JSON to code
+        
+        ```
+        code2json ./apples.c .c 2code
+        ```
+        
+        ```
+        code2json . .js 2json
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown

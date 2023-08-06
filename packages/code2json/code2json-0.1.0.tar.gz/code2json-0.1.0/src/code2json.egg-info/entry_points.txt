@@ -1,0 +1,3 @@
+[console_scripts]
+code2json = code2json.cmd.cmd:main
+

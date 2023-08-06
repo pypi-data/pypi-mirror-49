@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jarvis-cmd
+Version: 0.0.5
+Summary: CLI To Make Your Life Easier
+Home-page: UNKNOWN
+Author: Vijayaraghavan Sundararaman
+Author-email: vijaygenius123@gmail.com
+License: MIT
+Description: # JARVIS
+        
+        Is a CLI to make your life easier. It was started as a tool to manage projects.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

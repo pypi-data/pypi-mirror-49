@@ -1,0 +1,4 @@
+Click
+configparser
+requests
+PyInquirer

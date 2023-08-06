@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: macroscope
+Version: 0.0.6
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click
+Requires-Dist: numpy
+Requires-Dist: sklearn
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: community
+Requires-Dist: python-louvain
+
+UNKNOWN
+
+

@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyStatsCan/__init__.py
+pyStatsCan.egg-info/PKG-INFO
+pyStatsCan.egg-info/SOURCES.txt
+pyStatsCan.egg-info/dependency_links.txt
+pyStatsCan.egg-info/top_level.txt

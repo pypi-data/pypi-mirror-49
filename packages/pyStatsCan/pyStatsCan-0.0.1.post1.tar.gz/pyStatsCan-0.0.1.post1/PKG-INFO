@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyStatsCan
+Version: 0.0.1.post1
+Summary: A python wrapper for Statistics Canada Web Data Services API
+Home-page: https://github.com/DelBiss/pyStatsCan
+Author: Philippe Allard-Rousse
+Author-email: philrousse@gmail.com
+License: Apache 2.0
+Description: # pyStatsCan
+        ![GitHub](https://img.shields.io/github/license/DelBiss/pyStatsCan.svg?style=flat-square)![PyPI](https://img.shields.io/pypi/v/pyStatsCan.svg?style=flat-square)![GitHub last commit](https://img.shields.io/github/last-commit/DelBiss/pyStatsCan.svg?style=flat-square)
+        
+         Ceci est un wrapper python pour le service de données web (SDW) de Statistique Canada
+        
+         This is a python wrapper for Statistics Canada Web Data Services (WDS)
+        
+         ## Documentation SDW / WDS documentation
+         Pour plus d'information sur le SDW de Statistique Canada, visiter le [Guide de l'utilisateur](https://www.statcan.gc.ca/fra/developpeurs/sdw/guide-utilisateur).
+        
+         For more information on Statistics Canada WDS, visit the [User Guide](https://www.statcan.gc.ca/eng/developers/wds/user-guide)
+        
+         ## État de développement / Development status
+         Ce projet est à l'étape de **planification**
+        
+         This project in the **planning** stage
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

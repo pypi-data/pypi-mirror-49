@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+glwindow/core.hpp
+glwindow/core_linux.cpp
+glwindow/core_windows.cpp
+glwindow/glwindow.cpp
+glwindow/keys.hpp
+glwindow.egg-info/PKG-INFO
+glwindow.egg-info/SOURCES.txt
+glwindow.egg-info/dependency_links.txt
+glwindow.egg-info/requires.txt
+glwindow.egg-info/top_level.txt
+res/glwindow.rc
+res/large_icon.ico
+res/small_icon.ico

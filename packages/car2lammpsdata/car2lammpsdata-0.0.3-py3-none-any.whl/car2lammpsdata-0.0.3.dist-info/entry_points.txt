@@ -1,0 +1,3 @@
+[console_scripts]
+car2lammpsdata = car2lammpsdata.car2lammpsdata:_commandline
+

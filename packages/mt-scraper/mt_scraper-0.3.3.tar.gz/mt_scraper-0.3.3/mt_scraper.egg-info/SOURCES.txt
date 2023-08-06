@@ -1,0 +1,9 @@
+README.md
+setup.py
+mt_scraper/__init__.py
+mt_scraper/dummy_parser.py
+mt_scraper/mt_scraper.py
+mt_scraper.egg-info/PKG-INFO
+mt_scraper.egg-info/SOURCES.txt
+mt_scraper.egg-info/dependency_links.txt
+mt_scraper.egg-info/top_level.txt

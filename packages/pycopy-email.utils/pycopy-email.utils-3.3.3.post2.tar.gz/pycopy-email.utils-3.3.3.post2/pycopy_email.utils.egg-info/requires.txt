@@ -1,0 +1,9 @@
+pycopy-os
+pycopy-re-pcre
+pycopy-base64
+pycopy-random
+pycopy-datetime
+pycopy-urllib.parse
+pycopy-warnings
+pycopy-quopri
+pycopy-email.charset

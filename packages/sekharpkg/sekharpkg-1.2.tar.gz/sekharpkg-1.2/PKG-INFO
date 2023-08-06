@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: sekharpkg
+Version: 1.2
+Summary: THIS IS JUST A DEMO DUDE
+Home-page: https://github.com/sekharBuddha
+Author: SEKHAR
+Author-email: sekhar.dhana@cognitiveinnovations.in
+License: MIT
+Download-URL: https://github.com/sekharBuddha/sekharpkg/archive/v1.2.tar.gz
+Description: UNKNOWN
+Keywords: sekhar,sekharpackage,mypkg
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

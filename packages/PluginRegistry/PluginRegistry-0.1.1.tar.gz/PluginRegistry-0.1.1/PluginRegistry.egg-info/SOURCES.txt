@@ -1,0 +1,14 @@
+README.md
+setup.py
+PluginRegistry.egg-info/PKG-INFO
+PluginRegistry.egg-info/SOURCES.txt
+PluginRegistry.egg-info/dependency_links.txt
+PluginRegistry.egg-info/requires.txt
+PluginRegistry.egg-info/top_level.txt
+PluginRegistry.egg-info/zip-safe
+pregistry/__init__.py
+pregistry/_version.py
+pregistry/classproperty.py
+pregistry/loader.py
+pregistry/plugin.py
+pregistry/registry.py

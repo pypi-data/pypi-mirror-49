@@ -1,0 +1,10 @@
+pipefish/__init__.py,sha256=7bfATAVodpsNtms9spzzEfM4533oGWLdFOG_PUvgZxA,430
+pipefish/__main__.py,sha256=pupA69z2_nUWHyf2ytrYxaMScj1DmM-T2uPs26q9FFs,1235
+pipefish/process_cobertura.py,sha256=rnQUglTZx6Vu6Crqg0HOoiFLr1ZJGeLdpcfwzb0Q5yU,1781
+pipefish/process_junit.py,sha256=8PWZEkmx7fDF6KYZXCgnG9h_h3iYvWl0j53T1EOqOuA,3699
+pipefish/version.py,sha256=eV2z8MZWsoDFWHWitzIAobO1jFnnNCMhGb-GuqGV4Tw,65
+pipefish-0.4.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pipefish-0.4.2.dist-info/METADATA,sha256=PBwDAmPO2_Qa-JGKtul54qT0HC5yhCrHj2rdkLKm3z4,1691
+pipefish-0.4.2.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+pipefish-0.4.2.dist-info/top_level.txt,sha256=mDSNLlZcBvYuctKg5ptA_YmkSD1ZEN8TicgkPM0YGpY,9
+pipefish-0.4.2.dist-info/RECORD,,

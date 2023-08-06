@@ -1,0 +1,16 @@
+automail/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automail/__main__.py,sha256=T3HKdk6x62uGY1CxJ1YFS0fyMfZBOkNrSEgfHiTaKA0,68
+automail/cli.py,sha256=DRb39zHCkzaDhiF890MCa-IKTPXpXuGZdkwaFojvzxQ,3955
+automail/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automail/core/helpers.py,sha256=pe7VoLFaG9z33ze_dtgRbDXeNheScSt1tSKRPrikpUk,4968
+automail/core/parsers.py,sha256=_SsZI6KCRBqT44Gz5ISFBq1e954JwxECdsRwz621VmM,1850
+automail/core/generators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automail/core/generators/_readme.py,sha256=npqd3dR_jxFOR8art78un0yLdjn0Jf3BR5j7ThKoVtA,2705
+automail/core/generators/_setup.py,sha256=-lt29n57idX0vYjmHyUGcADX4f0xRDCWmNEJz2lSwzA,1121
+nina-0.0.5.dist-info/LICENSE-autogen.md,sha256=iNm062BXnBkew5HKBMFhMFctfu3EqG2qWL8oxuFMm80,1210
+nina-0.0.5.dist-info/LICENSE.md,sha256=hZV6nP0cbM3elqji1axQhXonL7ClP4BhP6nB2hbJ72k,1077
+nina-0.0.5.dist-info/METADATA,sha256=C_sGqhl3gp9WKdR647ER-mEXBJg4oA_pGuYlcJrgqL8,2786
+nina-0.0.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+nina-0.0.5.dist-info/entry_points.txt,sha256=0lFunmCc9hBJDtoAtZYjsitgct7k9ip0dId6__zqUtU,53
+nina-0.0.5.dist-info/top_level.txt,sha256=Pq_ZwtUhFAv6CUD1frbwsozrxB5W77x_Guokxa7hvms,9
+nina-0.0.5.dist-info/RECORD,,

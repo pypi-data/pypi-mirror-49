@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+src/pytest_tornasync/__init__.py
+src/pytest_tornasync/plugin.py
+src/pytest_tornasync.egg-info/PKG-INFO
+src/pytest_tornasync.egg-info/SOURCES.txt
+src/pytest_tornasync.egg-info/dependency_links.txt
+src/pytest_tornasync.egg-info/entry_points.txt
+src/pytest_tornasync.egg-info/requires.txt
+src/pytest_tornasync.egg-info/top_level.txt
+test/test_plugin.py
+test/test_plugin2.py

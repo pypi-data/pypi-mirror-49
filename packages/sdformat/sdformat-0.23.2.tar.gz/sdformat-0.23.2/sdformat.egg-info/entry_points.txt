@@ -1,0 +1,11 @@
+[console_scripts]
+sdf-convert-jpk2sdf = SDF.CLI.sdf_convert_jpk2sdf:main
+sdf-convert-lsm2sdf = SDF.CLI.sdf_convert_lsm2sdf:main
+sdf-convert-mfp2sdf = SDF.CLI.sdf_convert_mfp2sdf:main
+sdf-convert-oib2sdf = SDF.CLI.sdf_convert_oib2sdf:main
+sdf-convert-oif2sdf = SDF.CLI.sdf_convert_oif2sdf:main
+sdf-convert-sdf2forcesdf = SDF.CLI.sdf_convert_sdf2forcesdf:main
+
+[gui_scripts]
+sdf-browser = SDF.GUI.sdf_browser:main
+

@@ -1,0 +1,7 @@
+numpy
+Pillow
+scipy
+igor==0.3
+nose
+click
+python-dateutil

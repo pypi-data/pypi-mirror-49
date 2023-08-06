@@ -1,0 +1,12 @@
+README.md
+setup.py
+mvg_cli_departures.egg-info/PKG-INFO
+mvg_cli_departures.egg-info/SOURCES.txt
+mvg_cli_departures.egg-info/dependency_links.txt
+mvg_cli_departures.egg-info/entry_points.txt
+mvg_cli_departures.egg-info/not-zip-safe
+mvg_cli_departures.egg-info/requires.txt
+mvg_cli_departures.egg-info/top_level.txt
+mvg_monitor/__init__.py
+mvg_monitor/interface.py
+mvg_monitor/monitor.py

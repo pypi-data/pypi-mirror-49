@@ -1,0 +1,17 @@
+README.md
+setup.py
+skema/__init__.py
+skema/__main__.py
+skema/constants.py
+skema/make_schema.py
+skema/make_tree.py
+skema/parser.py
+skema/resolve_refs.py
+skema/support.py
+skema/tokenize.py
+skema/tree.py
+skema.egg-info/PKG-INFO
+skema.egg-info/SOURCES.txt
+skema.egg-info/dependency_links.txt
+skema.egg-info/requires.txt
+skema.egg-info/top_level.txt

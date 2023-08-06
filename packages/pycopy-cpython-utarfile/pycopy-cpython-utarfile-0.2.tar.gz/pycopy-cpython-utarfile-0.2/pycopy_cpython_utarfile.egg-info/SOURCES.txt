@@ -1,0 +1,7 @@
+setup.py
+utarfile.py
+pycopy_cpython_utarfile.egg-info/PKG-INFO
+pycopy_cpython_utarfile.egg-info/SOURCES.txt
+pycopy_cpython_utarfile.egg-info/dependency_links.txt
+pycopy_cpython_utarfile.egg-info/requires.txt
+pycopy_cpython_utarfile.egg-info/top_level.txt

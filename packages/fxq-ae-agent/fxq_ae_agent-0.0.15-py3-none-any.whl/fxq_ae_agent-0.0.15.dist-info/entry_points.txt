@@ -1,0 +1,3 @@
+[console_scripts]
+fxq-ae-agent = fxq.ae.agent.cli:main
+

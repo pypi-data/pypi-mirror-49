@@ -1,0 +1,9 @@
+README.md
+setup.py
+s100py/__init__.py
+s100py/s111.py
+s100py.egg-info/PKG-INFO
+s100py.egg-info/SOURCES.txt
+s100py.egg-info/dependency_links.txt
+s100py.egg-info/requires.txt
+s100py.egg-info/top_level.txt

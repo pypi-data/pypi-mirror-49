@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: batchproc
+Version: 0.1.1
+Summary: Simple batch processing framework.
+Home-page: https://github.com/metavee/batchproc
+Author: Robin Neufeld
+Author-email: raeneufe@uwaterloo.ca
+License: MIT
+Description: batchproc
+        ---------
+        
+        Simple batch processing framework for scientists and others with lots of files.
+        
+        Provides a convenient interface to scale up your data processing function to operate on multiple files.
+        
+        See demo.py for a quick example.
+        
+        If you compile your script with PyInstaller, you should be able to drag-and-drop files onto the executable to run your
+        script on those files.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

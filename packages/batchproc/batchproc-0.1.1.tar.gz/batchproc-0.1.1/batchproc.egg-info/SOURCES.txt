@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+batchproc/__init__.py
+batchproc/core.py
+batchproc/util.py
+batchproc.egg-info/PKG-INFO
+batchproc.egg-info/SOURCES.txt
+batchproc.egg-info/dependency_links.txt
+batchproc.egg-info/not-zip-safe
+batchproc.egg-info/requires.txt
+batchproc.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+janis-pipelines.core
+requests
+path.py
+ruamel.yaml
+python-dotenv
+python-dateutil

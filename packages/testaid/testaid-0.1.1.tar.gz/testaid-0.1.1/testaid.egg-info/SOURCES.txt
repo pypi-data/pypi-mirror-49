@@ -1,0 +1,14 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+testaid/__init__.py
+testaid/testpass.py
+testaid/testvars.py
+testaid.egg-info/PKG-INFO
+testaid.egg-info/SOURCES.txt
+testaid.egg-info/dependency_links.txt
+testaid.egg-info/not-zip-safe
+testaid.egg-info/requires.txt
+testaid.egg-info/top_level.txt

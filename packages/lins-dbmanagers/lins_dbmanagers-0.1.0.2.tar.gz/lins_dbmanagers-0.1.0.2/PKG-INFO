@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: lins_dbmanagers
+Version: 0.1.0.2
+Summary: Managers com funcionalidades extras para os models Django.
+Home-page: https://bitbucket.org/grupolinsferrao/pypck-lins_dbmanagers/
+Author: Lucas Lehnen
+Author-email: lucas@lojaspompeia.com.br
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

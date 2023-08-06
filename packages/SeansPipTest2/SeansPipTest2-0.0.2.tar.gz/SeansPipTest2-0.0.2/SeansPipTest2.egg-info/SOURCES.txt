@@ -1,0 +1,6 @@
+README.md
+setup.py
+SeansPipTest2.egg-info/PKG-INFO
+SeansPipTest2.egg-info/SOURCES.txt
+SeansPipTest2.egg-info/dependency_links.txt
+SeansPipTest2.egg-info/top_level.txt

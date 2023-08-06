@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: tw
+Version: 0.3.0
+Summary: TorchWrapper is a deep learning helper.
+Home-page: https://github.com/atranitell/TorchWrapper
+Author: Kai Jin
+Author-email: atranitell@gmail.com
+License: Apache 2.0 Licence
+Description: # TorchWrapper
+        
+        A collections of frameworks with inferences modules.
+        
+        ## Architecture
+        - app
+          - context
+          - distributed
+          - entrance
+        - nn
+          - csrc
+          - layer
+          - loss
+          - metric
+        - solver
+          - checkpoint
+          - convertor
+          - solver
+        - transform
+          - defaults
+          - image
+        - utils
+          - device
+          - filesystem
+          - kv
+          - logger
+          - parser
+          - stats
+          - string
+          - viz
+        
+        ## Operators Details
+        
+        
+        # Reference
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+mapGL/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mapGL/mapGL.py,sha256=MwtjfvRuCl3lJVUZv3H0IhBFX9bvFr4AfRGza1KX0aU,19778
+mapGL/newick.py,sha256=-gwtOUknenGpV0lS0iTp9iyMAsylm5zpbU-Y2SaUP2o,18394
+mapGL-0.0.1.data/scripts/setup.py,sha256=EXINwQj36iJAyTmL-Ttk73dD6jQyoc2ujDP28DjLBVc,2522
+mapGL-0.0.1.dist-info/LICENSE,sha256=7BlC-5xXMV3VWITTxG48u7CXTMZH51XX_i7A_WQofTM,1054
+mapGL-0.0.1.dist-info/METADATA,sha256=I5Mo-ZxTuHHC6nxgSvHU8AEcm3hWQlINBqC8lWZO4os,5332
+mapGL-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+mapGL-0.0.1.dist-info/entry_points.txt,sha256=4luWdFy-3ffJiECXt9SSCLL8qknZ4jFrPPKN14k_-bU,41
+mapGL-0.0.1.dist-info/top_level.txt,sha256=ST40KI8TA2YOSbVtORmiryiG8jMnkUF5ZjFUkZfZYeA,6
+mapGL-0.0.1.dist-info/RECORD,,

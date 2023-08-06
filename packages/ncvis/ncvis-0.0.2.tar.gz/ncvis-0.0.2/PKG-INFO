@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: ncvis
+Version: 0.0.2
+Summary: Noise contrastive data visualization
+Home-page: https://github.com/alartum/ncvis
+Maintainer: Aleksandr Artemenkov
+Maintainer-email: alartum@gmail.com
+License: MIT
+Description: # ncvis
+        
+        ncvis is a Python module for data visualization written in C++ with parallelism support.
+        
+        # Installation
+        
+        Install **numpy** and **cython** packages:
+        ```bash
+        pip install numpy cython
+        ```
+        
+        Install **ncvis** package:
+        ```bash
+        pip install ncvis
+        ```
+        
+        # Usage
+        
+        Import the module and use it as you would use any of **sklearn** models:
+        ```python
+        import ncvis
+        
+        vis = ncvis.NCVis()
+        Y = vis.fit(X)
+        ```
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown

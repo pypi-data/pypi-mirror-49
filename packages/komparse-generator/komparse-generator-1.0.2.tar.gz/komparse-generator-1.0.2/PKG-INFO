@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: komparse-generator
+Version: 1.0.2
+Summary: A parser generator tool
+Home-page: UNKNOWN
+Author: Thomas Bollmeier
+Author-email: developer@thomas-bollmeier.de
+License: Apache-2.0
+Description: # Komparse Generator #
+        
+        A parser generator that uses the komparse parser library (https://github.com/ThomasBollmeier/komparse).
+        
+Keywords: parser development tools
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3

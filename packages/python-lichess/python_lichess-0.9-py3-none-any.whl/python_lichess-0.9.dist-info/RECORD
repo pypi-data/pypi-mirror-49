@@ -1,0 +1,10 @@
+lichess/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lichess/api.py,sha256=ApB7YlrH_cXiKQgFtFb5R9z7lCZnVl1q-9-VUMhlAts,13763
+lichess/auth.py,sha256=D_cc3Ilx8UZLg33EXC44QcK9MYDoQqCmdpnxrWrw3Ks,466
+lichess/format.py,sha256=1xDM1riVS3LvloD8BzKxKAw5vkpJVPA_55xC4BDPogQ,4182
+lichess/pgn.py,sha256=bsq9_GKOpdwIRNz4BmD7zamWw47gWGR4bAmnOGp5Hmc,4976
+python_lichess-0.9.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+python_lichess-0.9.dist-info/METADATA,sha256=nqY_HNZEoSV_KpnTC6V2mg305We0zsmPh1Tto09m1xU,2764
+python_lichess-0.9.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+python_lichess-0.9.dist-info/top_level.txt,sha256=rh1DyAsq5oJ6yIe-utn07UUvpoh1ni_FhTn6FbbMS2I,8
+python_lichess-0.9.dist-info/RECORD,,

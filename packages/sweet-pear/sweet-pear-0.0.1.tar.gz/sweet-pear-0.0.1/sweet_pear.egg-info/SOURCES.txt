@@ -1,0 +1,7 @@
+README.md
+setup.py
+sweet-pear/__init__.py
+sweet_pear.egg-info/PKG-INFO
+sweet_pear.egg-info/SOURCES.txt
+sweet_pear.egg-info/dependency_links.txt
+sweet_pear.egg-info/top_level.txt

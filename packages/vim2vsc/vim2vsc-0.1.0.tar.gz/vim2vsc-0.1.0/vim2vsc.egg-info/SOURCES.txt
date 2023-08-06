@@ -1,0 +1,10 @@
+README.rst
+setup.py
+vim2vsc/__init__.py
+vim2vsc/__main__.py
+vim2vsc/convert.py
+vim2vsc.egg-info/PKG-INFO
+vim2vsc.egg-info/SOURCES.txt
+vim2vsc.egg-info/dependency_links.txt
+vim2vsc.egg-info/entry_points.txt
+vim2vsc.egg-info/top_level.txt

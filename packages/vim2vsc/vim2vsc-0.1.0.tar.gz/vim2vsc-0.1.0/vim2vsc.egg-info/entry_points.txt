@@ -1,0 +1,3 @@
+[console_scripts]
+vim2vsc = vim2vsc.convert:main
+

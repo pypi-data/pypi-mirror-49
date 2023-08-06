@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: majorkirby
+Version: 1.0.0
+Summary: Puts CloudFormation stacks into motion.
+Home-page: UNKNOWN
+Author: Sharp Hall
+Author-email: shall@azavea.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: aws cloudformation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: dev
+Provides-Extra: test

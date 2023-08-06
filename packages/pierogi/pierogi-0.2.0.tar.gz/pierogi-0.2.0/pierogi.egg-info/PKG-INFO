@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pierogi
+Version: 0.2.0
+Summary: Visualiwze and tweak your Machine Learning model.
+Home-page: https://github.com/nalepae/pierogi
+Author: Manu NALEPA
+Author-email: nalepae@gmail.com
+License: BSD
+Description: See https://github.com/nalepae/pierogi/tree/v0.1.0 for complete user guide.
+Platform: UNKNOWN
+Requires-Python: >=3.5

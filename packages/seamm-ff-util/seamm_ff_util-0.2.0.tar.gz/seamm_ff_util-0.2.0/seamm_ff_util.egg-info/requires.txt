@@ -1,0 +1,5 @@
+pillow
+logging>=0.4.9.6
+seamm_util
+packaging
+pprint

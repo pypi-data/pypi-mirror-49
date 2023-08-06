@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: daauto
+Version: 0.4
+Summary: autodata
+Home-page: https://github.com/AronWater/daauto
+Author: AronWater2
+Author-email: kclukac@connect.ust.hk
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Text Processing :: Linguistic

@@ -1,0 +1,9 @@
+warpscript/__init__.py,sha256=T7uATxHm47f-ccPcVVL9hn1O3x7wZaAn0wDONCsKN4M,1509
+warpscript/warp10_gateway.py,sha256=QKxV7HrJhEik35D2BmPWh-T9M5OQuT7DkU-OuSxg8Uk,7508
+warpscript/warp10_version.py,sha256=oD7blB3G9HZ0-eNjZ3nEtXzDL1ttSM21FOcqxsDIO2c,1876
+warpscript/warpscript_magics.py,sha256=lccqOLHOjN3cbIviaIgUJpTlNJ83lykEtqyPjK5Pv2Q,9389
+warpscript/warp10-2.1.0/bin/warp10-2.1.0.jar,sha256=QJ-u7TlZbjGGn0f_RhSPQBkrHxwWOxxJxgBe9gFQo28,97596705
+warp10_jupyter-0.6.3.dist-info/METADATA,sha256=nQSSJ3g28OsVvZHj6W2LxwOLgvqouuNpe2sfhjA7DOY,400
+warp10_jupyter-0.6.3.dist-info/WHEEL,sha256=-ZFxwj8mZJPIVcZGLrsQ8UGRcxVAOExzPLVBGR7u7bE,92
+warp10_jupyter-0.6.3.dist-info/top_level.txt,sha256=oN65JW7--bgO0GywkmajdAxsh2qepCsnSyG62KHxMMo,11
+warp10_jupyter-0.6.3.dist-info/RECORD,,

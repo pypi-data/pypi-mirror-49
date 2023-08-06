@@ -1,0 +1,14 @@
+krakensegment/__init__.py,sha256=WO9aT5a-W20cEC8EOPG7V4yACAceO0EL3laFE-dcJ4Q,111
+krakensegment/binarization.py,sha256=Rk-bnVMydd-cWQDPu7iHYhzud6EjsrbKsY5Jv5fvMtg,4337
+krakensegment/pageseg.py,sha256=Q_-3kmzjYjpw4Ps07hi0LMVeIObDL4gLokfmudqcLzU,17267
+krakensegment/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+krakensegment/lib/exceptions.py,sha256=S8PNdsJZvuSgsRKNFIo7wOKVRNGtxpHedLVIHVxVPVM,1422
+krakensegment/lib/log.py,sha256=I3mci2QYMxaSgnG2CWOCrPuU890Ib52YXfO2UHFBnSo,2208
+krakensegment/lib/morph.py,sha256=Q4RoDo7mT54Vm2AqlCLz4Q_eUTi7u8wJYQ3zaDij_LM,4577
+krakensegment/lib/sl.py,sha256=zxbRz-CgKVUddAQI1tCuOBocJWfqH02KVCyDmN2hBhM,697
+krakensegment/lib/util.py,sha256=jyu5evnPnrZT501Ayt3gD8salTqtyXbdQB6TavzYohY,2503
+krakensegment-0.4.dist-info/LICENSE,sha256=qK0xscP0DcpahBGTUbj6jdyGjt13-tio6_bY8tFvpK4,11324
+krakensegment-0.4.dist-info/METADATA,sha256=TAyuz4OqotjnxhMrZNbPdklqP1bfq2FHsztsNflR3RU,654
+krakensegment-0.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+krakensegment-0.4.dist-info/top_level.txt,sha256=4S5H_3x1mg-_OisGaiOxSvG3mUv0RhbG_5ssUWfBxyc,14
+krakensegment-0.4.dist-info/RECORD,,

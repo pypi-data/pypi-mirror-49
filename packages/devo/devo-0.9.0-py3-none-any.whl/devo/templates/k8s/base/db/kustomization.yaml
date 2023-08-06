@@ -1,0 +1,12 @@
+{% if db %}
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - deployment.yaml
+  - service.yaml
+
+commonLabels:
+  app.kubernetes.io/name: {{ project_name }}-db
+  app.kubernetes.io/component: db
+{% endif %}

@@ -1,0 +1,45 @@
+apiVersion: skaffold/v1beta11
+kind: Config
+build:
+  artifacts:
+  - image: {{ registry_image }}/test
+    sync:
+      manual:
+        - src: src/**/*.*
+          dest: src/
+          strip: src
+        - src: tests/**/*.*
+          dest: tests/
+          strip: tests
+    docker:
+      buildArgs:
+        REQUIREMENTS: test
+deploy:
+  kustomize:
+    path: ./k8s/test/
+profiles:
+- name: prod
+  build:
+    artifacts:
+      - image: {{ registry_image }}
+        docker:
+          buildArgs:
+            REQUIREMENTS: prod
+    local:
+      push: true
+  deploy:
+    kustomize:
+      path: ./k8s/prod
+- name: stage
+  build:
+    artifacts:
+      - image: {{ registry_image }}
+        docker:
+          buildArgs:
+            REQUIREMENTS: prod
+    local:
+      push: true
+  deploy:
+    kustomize:
+      path: ./k8s/stage
+

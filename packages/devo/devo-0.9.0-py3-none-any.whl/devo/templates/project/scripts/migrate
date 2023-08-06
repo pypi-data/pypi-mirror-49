@@ -1,0 +1,9 @@
+{% if db %}
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+true
+{% endif %}

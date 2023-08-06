@@ -1,0 +1,7 @@
+.devo/
+__pycache__/
+*.out
+.coverage
+.pytest_cache
+venv/
+*.env

@@ -1,0 +1,2 @@
+gitlab_user: {{ gitlab_user }}
+gitlab_token: {{ gitlab_token }}

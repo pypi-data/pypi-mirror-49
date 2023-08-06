@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ibis-vega-transform
+Version: 0.1.0
+Summary: Evaluate Vega transforms using Ibis expressions
+Home-page: https://github.com/Quansight/ibis-vega-transform
+Author: Ian Rose and Saul Shanabrook
+Author-email: ian.rose@quansight.com
+License: Apache-2.0 license
+Description: # ibis-vega-transform
+        
+        Python evaluation of Vega transforms using Ibis expressions.
+        
+        
+        For inspiration, see https://github.com/jakevdp/altair-transform
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

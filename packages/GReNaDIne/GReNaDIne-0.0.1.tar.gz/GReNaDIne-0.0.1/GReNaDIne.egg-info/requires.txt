@@ -1,0 +1,7 @@
+pandas
+numpy
+scikit-learn
+tqdm
+scipy
+rpy2
+POT

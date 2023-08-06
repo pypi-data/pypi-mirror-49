@@ -1,0 +1,12 @@
+communityid/__init__.py,sha256=mkv4A13aqxhJ-sksi7-1dO2dUQkmTEmBD3s_Bv5mtQ0,1042
+communityid/algo.py,sha256=3K7WW9klaCmhqBkcreDDTRBhxDHSm7WQJemdUVQ_hmM,10995
+communityid/compat.py,sha256=XXIKfycP7OPTn22oJ_tkTLMBupdxaAPTN9ZSWRJyBkg,1064
+communityid/icmp.py,sha256=U277cp2IwOHsco_s3GTpBjhlZdNPXuYMWxHgnUsCzVI,1082
+communityid/icmp6.py,sha256=ayWjbNtMfJpy97F9WtA6EGywoUPyYiseRk_RFMxBJv0,1357
+communityid-1.0.data/scripts/community-id,sha256=JP0iKNi4OYZfL6XIFsATQzAlbViNMzCAuEsfyFkDTe0,3578
+communityid-1.0.data/scripts/community-id-pcap,sha256=ZanpOetUq0PbJfoPbHxezuj6ek3r1X7w1JwFP7eeZyc,6619
+communityid-1.0.data/scripts/community-id-tcpdump,sha256=d0Y7B7YltT4Nb5dReRAGh437oC6MKKdzkiQ1AC3jtUo,1569
+communityid-1.0.dist-info/METADATA,sha256=b3fMo3eAROYR2aviRfxSa8o26cal-Oyp01Iv1MQr8_M,2370
+communityid-1.0.dist-info/RECORD,,
+communityid-1.0.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+communityid-1.0.dist-info/top_level.txt,sha256=Yn1Wf6Ekvat-kQCxR_0fhOVT0IHEV44gPJK4gBW1cqo,12

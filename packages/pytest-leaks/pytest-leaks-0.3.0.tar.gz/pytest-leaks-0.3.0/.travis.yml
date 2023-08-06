@@ -1,0 +1,24 @@
+# Config file for automatic testing at travis-ci.org
+
+language: generic
+
+addons:
+  apt:
+    packages:
+      - python2.7-dbg
+      - python3.5-dbg
+
+install:
+  - virtualenv --python=python3.5-dbg env
+  - source env/bin/activate
+  - pip install tox
+
+script:
+  - tox
+
+before_cache:
+  - rm -rf $HOME/.cache/pip/log
+
+cache:
+  directories:
+    - $HOME/.cache/pip

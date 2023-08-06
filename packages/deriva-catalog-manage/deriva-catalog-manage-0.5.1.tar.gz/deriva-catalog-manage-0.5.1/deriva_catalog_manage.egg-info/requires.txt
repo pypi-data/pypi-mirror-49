@@ -1,0 +1,10 @@
+requests
+graphviz
+tabulate
+yapf
+deriva>=0.8.4
+
+[csv]
+goodtables
+python-dateutil
+jsonschema==2.6.0

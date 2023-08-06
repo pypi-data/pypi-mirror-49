@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: winterboot
+Version: 0.1
+Summary: Winterboot is not SpringBoot
+Home-page: https://github.com/kode-konveyor/winterboot
+Author: Arpad Magosanyi
+Author-email: mag@kodekonveyor.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+#WinterBoot
+
+WinterBoot is not SpringBoot.
+You need boots more in winter, anyway.
+
+The goal was to have @Service and @Autowired annotations, and able to boot a project with inversed dependencies.
+The functionality is minimal, and will be extended as the need arises.
+
+

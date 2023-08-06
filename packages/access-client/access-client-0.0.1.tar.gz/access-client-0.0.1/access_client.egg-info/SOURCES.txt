@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+access_client/__init__.py
+access_client/about.py
+access_client.egg-info/PKG-INFO
+access_client.egg-info/SOURCES.txt
+access_client.egg-info/dependency_links.txt
+access_client.egg-info/requires.txt
+access_client.egg-info/top_level.txt
+access_client/face_vision/__init__.py
+access_client/face_vision/client.py
+tests/face_vision/__init__.py
+tests/face_vision/test_afv.py

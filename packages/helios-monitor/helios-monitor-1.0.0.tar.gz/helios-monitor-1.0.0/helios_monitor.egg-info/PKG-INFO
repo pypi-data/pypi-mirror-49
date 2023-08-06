@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: helios-monitor
+Version: 1.0.0
+Summary: Monitors the audio levels of a stream
+Home-page: https://salsa.debian.org/debconf-video-team/helios
+Author: Kyle Robbertze
+Author-email: paddatrapper@debian.org
+License: GPL-3
+Description: Helios monitors the audio levels of a stream over time.
+Keywords: streaming audio monitor R128
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Other Audience
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

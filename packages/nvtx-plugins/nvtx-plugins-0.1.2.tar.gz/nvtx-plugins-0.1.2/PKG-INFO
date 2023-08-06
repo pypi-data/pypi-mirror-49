@@ -1,0 +1,33 @@
+Metadata-Version: 1.2
+Name: nvtx-plugins
+Version: 0.1.2
+Summary: Python bindings for NVTX
+Home-page: https://github.com/NVIDIA/nvtx-plugins/
+Author: Ahmad Kiswani, Roni Forte, Jonathan Dekhtiar, Yaki Tebeka
+Author-email: akiswani@nvidia.com, rforte@nvidia.com, jdekhtiar@nvidia.com, ytebeka@nvidia.com
+Maintainer: Ahmad Kiswani, Roni Forte, Jonathan Dekhtiar, Yaki Tebeka
+Maintainer-email: akiswani@nvidia.com, rforte@nvidia.com, jdekhtiar@nvidia.com, ytebeka@nvidia.com
+License: Apache2
+Download-URL: https://github.com/NVIDIA/nvtx-plugins/
+Description: UNKNOWN
+Keywords: deep learning,machine learning,gpu,nvtx,nvidia,tensorflow,tf
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent

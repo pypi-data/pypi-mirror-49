@@ -1,0 +1,4 @@
+[console_scripts]
+clean_ipynb = clean_ipynb.clean_ipynb:main
+cleanipynb = clean_ipynb.clean_ipynb:main
+

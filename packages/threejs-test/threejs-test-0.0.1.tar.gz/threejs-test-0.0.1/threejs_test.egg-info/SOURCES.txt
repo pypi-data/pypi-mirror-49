@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+src/.DS_Store
+src/main.css
+src/template.html
+threejs_test.egg-info/PKG-INFO
+threejs_test.egg-info/SOURCES.txt
+threejs_test.egg-info/dependency_links.txt
+threejs_test.egg-info/top_level.txt

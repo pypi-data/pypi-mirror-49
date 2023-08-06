@@ -1,0 +1,8 @@
+README.md
+setup.py
+highresnet/__init__.py
+highresnet/highresnet.py
+highresnet.egg-info/PKG-INFO
+highresnet.egg-info/SOURCES.txt
+highresnet.egg-info/dependency_links.txt
+highresnet.egg-info/top_level.txt

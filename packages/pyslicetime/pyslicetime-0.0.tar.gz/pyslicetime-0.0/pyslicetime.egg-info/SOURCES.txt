@@ -1,0 +1,14 @@
+README.md
+setup.py
+pyslicetime.egg-info/PKG-INFO
+pyslicetime.egg-info/SOURCES.txt
+pyslicetime.egg-info/dependency_links.txt
+pyslicetime.egg-info/not-zip-safe
+pyslicetime.egg-info/requires.txt
+pyslicetime.egg-info/top_level.txt
+slicetime/__init__.py
+slicetime/extract_slicetimes.py
+slicetime/main.py
+slicetime/make_image_stack.py
+slicetime/nipype_interface.py
+slicetime/tseriesinterp.py

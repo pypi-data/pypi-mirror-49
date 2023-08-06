@@ -1,0 +1,3 @@
+[console_scripts]
+stock-data-reader = stock_data_reader.stockreader:StockReader.read_data
+

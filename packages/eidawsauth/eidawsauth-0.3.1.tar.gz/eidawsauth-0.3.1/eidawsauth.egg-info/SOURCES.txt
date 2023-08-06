@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+eidawsauth/__init__.py
+eidawsauth/eidawsauth.py
+eidawsauth/version.py
+eidawsauth/wsgi.py
+eidawsauth.egg-info/PKG-INFO
+eidawsauth.egg-info/SOURCES.txt
+eidawsauth.egg-info/dependency_links.txt
+eidawsauth.egg-info/requires.txt
+eidawsauth.egg-info/top_level.txt
+eidawsauth/configurations/__init__.py
+eidawsauth/configurations/default.py
+tests/exemple_gpg.py
+tests/test_eidawsauth.py

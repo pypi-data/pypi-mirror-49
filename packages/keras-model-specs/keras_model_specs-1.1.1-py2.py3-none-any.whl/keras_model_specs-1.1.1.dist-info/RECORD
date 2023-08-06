@@ -1,0 +1,12 @@
+keras_model_specs/__init__.py,sha256=F7NtyXWWBeTX6nqrGA9B2IOHYSqpGqqfjnFE-QRsNxQ,62
+keras_model_specs/model_spec.py,sha256=AZ6PYEv9k-8Xh36YexC0i9wHZ_vE8Q-3RMniMG5GUIg,2903
+keras_model_specs/model_specs.json,sha256=TmC7Eo3caWcLYMIB6OIjtLuiDi4HHBEjwk2ATRs2crM,2577
+keras_model_specs/models/__init__.py,sha256=t8m77ll4UfjmRXS8T7QBocreZNQbp9VhP9enou7c1rY,122
+keras_model_specs/models/custom_layers.py,sha256=SYeT5R4OOnp6dFtU2ba0Yji9e_BAAyXhCfY2k6jUEzI,4110
+keras_model_specs/models/inception_v4.py,sha256=ouizAwcuprpaFaYj0sC6CxYv9gqj5kOzHqFIAWp-9Z0,10862
+keras_model_specs/models/resnet152.py,sha256=AlnZacJufX7SdTtnI8dtqIJORSBsIzvDDl5Sbm0x1CM,13100
+keras_model_specs-1.1.1.dist-info/LICENSE,sha256=kpY2wSrW7K5Q3XtofifExJSjDdiZBB4aaIpJYNaurYA,1081
+keras_model_specs-1.1.1.dist-info/METADATA,sha256=vYL1ck2igOG2GO51RjityZ-C6VCEKWkIBw8IbfN9Y7M,415
+keras_model_specs-1.1.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+keras_model_specs-1.1.1.dist-info/top_level.txt,sha256=fdM91YGvsfTteAC_o-4exFAXNQkeydWztapQ17yTnEQ,18
+keras_model_specs-1.1.1.dist-info/RECORD,,

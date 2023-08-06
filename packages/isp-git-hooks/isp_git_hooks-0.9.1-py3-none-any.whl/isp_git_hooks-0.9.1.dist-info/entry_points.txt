@@ -1,0 +1,3 @@
+[console_scripts]
+check-deze=isp_git_hooks.pre_commit_hooks.check_deze:main
+

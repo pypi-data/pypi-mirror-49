@@ -1,0 +1,6 @@
+isp_git_hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isp_git_hooks/pre_commit_hooks/check_deze.py,sha256=Dg1MSWGnV_9AENvThvljtcgZHY5uUu8ojQOmNMwyy1o,806
+isp_git_hooks-0.9.1.dist-info/entry_points.txt,sha256=kh0b_5icocwHzLLHszT21ZWWSc_PzEIt2aQ4razF3W8,77
+isp_git_hooks-0.9.1.dist-info/WHEEL,sha256=B9sUljbermATdnR9vRc7_PZudWzu8UpY6g74X8l4XFg,85
+isp_git_hooks-0.9.1.dist-info/METADATA,sha256=r3sXbY_1RxAf7sX4C3ZxinScB1-iWS4xLKOjjRbr-xc,344
+isp_git_hooks-0.9.1.dist-info/RECORD,,

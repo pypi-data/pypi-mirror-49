@@ -1,0 +1,10 @@
+xrdownloader/__init__.py,sha256=HtMAVlB-0TaZ5_t3EwL2TENHQ4mONbMbgu3pXX0QcPk,2588
+xrdownloader/banner.py,sha256=ZDQCbhMU3LNk2TBle4jB70LLV1C5DwSVrLbiBc_GwZ4,409
+xrdownloader/convert.py,sha256=fKgVsdyWhym9QoaBn2qKrLpr4B2vJ0zcqwnSb6xfusU,716
+xrdownloader/resume.py,sha256=BimfBcPemMmH-H1zQXgTq8nYs2zj6NXSgtrv6r59Bdo,2565
+xrdownloader/xrUrllib3Conf.py,sha256=DzIZ0ONs0ujETaZhYWGl_EglAI2cYwbF9-aGqP_94W0,486
+xrdownloader/xrmain.py,sha256=gjzwB5RuZvfB0yU9_uQsgwSMsKuemZFx75pgIuFBAFk,11179
+xrdownloader-1.0.6.dist-info/METADATA,sha256=ADxWCA4O03WEk-Ko8_z1n8uICNgXvm1x881gD1-ZdtU,4835
+xrdownloader-1.0.6.dist-info/WHEEL,sha256=53VSps8MltPLN_x9Ib61FU2ZSaJKzgrWQqu9rS-Dkgk,116
+xrdownloader-1.0.6.dist-info/top_level.txt,sha256=ml4LCXi9-TYsuuEaIegHKKuCQe-0HxWlNOsxdPEeZ0U,13
+xrdownloader-1.0.6.dist-info/RECORD,,

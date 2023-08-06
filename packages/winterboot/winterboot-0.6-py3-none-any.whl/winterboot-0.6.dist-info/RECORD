@@ -1,0 +1,12 @@
+winterboot/Autowired.py,sha256=w_1-HzsEX92jaE-c8pMAkE3sidFeQKQewROFfuSnzyI,735
+winterboot/MockedService.py,sha256=wfuRwRvTB77_Ehki2P-WGKnuYqXeqGfUD71Dk8oZ-rw,1505
+winterboot/Service.py,sha256=NUM_KjVZaKlg_AWZ-pxTX_SiTTFlEHjJc27Q1PaNQGU,937
+winterboot/Stubs.py,sha256=Qy2RTd21BVobwiRslfM5RLfADhkE4eQO5UtLOnQivOU,537
+winterboot/TestData.py,sha256=YMPF6cWc89dU5K0DktR7cSWVVChMYAwwOFeALmi1wkA,161
+winterboot/TestDataForStub.py,sha256=Gv67ph0cTo9STHkIT_HEqKfpfaT94kOoUjowX8Lrd6k,227
+winterboot/WinterBoot.py,sha256=A5Yrvjm_rZEYoIGueZAvl0cBqoOHB2ZKUTC3AbKv4Pw,1817
+winterboot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winterboot-0.6.dist-info/METADATA,sha256=1fLMNEmtO4rBLk8ZMlFAHmTwfwx0LJADzeqCF4sH1pU,731
+winterboot-0.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+winterboot-0.6.dist-info/top_level.txt,sha256=n1SNhwiiaP-W2JoO2ko6BFmUFRc9qTN89ruMny-4FUs,11
+winterboot-0.6.dist-info/RECORD,,

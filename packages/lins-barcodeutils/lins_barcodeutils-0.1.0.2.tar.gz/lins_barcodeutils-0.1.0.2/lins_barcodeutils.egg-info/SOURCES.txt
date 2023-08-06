@@ -1,0 +1,8 @@
+README.md
+setup.py
+lins_barcodeutils/__init__.py
+lins_barcodeutils/validators.py
+lins_barcodeutils.egg-info/PKG-INFO
+lins_barcodeutils.egg-info/SOURCES.txt
+lins_barcodeutils.egg-info/dependency_links.txt
+lins_barcodeutils.egg-info/top_level.txt

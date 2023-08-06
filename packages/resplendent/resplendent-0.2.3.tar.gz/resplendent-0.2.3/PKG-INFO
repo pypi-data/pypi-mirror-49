@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: resplendent
+Version: 0.2.3
+Summary: A reStructuredText plugin filter for pyspelling to check spelling errors in reStructuredText during CI checks.
+Home-page: https://github.com/resplendent-dev/resplendent
+Author: Tim Gates
+Author-email: tim.gates@iress.com
+Maintainer: Tim Gates
+Maintainer-email: tim.gates@iress.com
+License: GPLv3+
+Description: # resplendent
+        A reStructuredText plugin filter for pyspelling to check spelling errors in reStructuredText during CI checks.
+        
+        # Additional Documentation:
+        * [News](https://github.com/resplendent-dev/resplendent/blob/master/NEWS.rst).
+        * [Code of Conduct](https://github.com/resplendent-dev/resplendent/blob/master/CODE_OF_CONDUCT.md).
+        * [Contribution Guidelines](https://github.com/resplendent-dev/resplendent/blob/master/CONTRIBUTING.md).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/markdown

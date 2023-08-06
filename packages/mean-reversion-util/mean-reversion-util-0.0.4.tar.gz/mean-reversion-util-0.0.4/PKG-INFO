@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: mean-reversion-util
+Version: 0.0.4
+Summary: Time Series mean reversion utilities
+Home-page: https://github.com/gjlr2000/johansen3.git
+Author: Gerardo Lemus
+Author-email: gerardo@alum.mit.edu
+License: MIT
+Description: # johansen
+        Python implementation of the Johansen test for cointegration
+        
+        Installation notes:
+        
+        This package requires scipy, which in turn  requires blas, lapack, atlas, and
+        gfortran. These can be installed on a Ubuntu system with:
+        
+            sudo apt-get install libblas-dev liblapack-dev libatlas-base-dev gfortran
+        
+        Examples:
+        
+        See examples folder for a jupyter notebook with example usage.
+        
+        NOTE:
+        
+        The cases when the chosen model (in the language of MacKinnon 1996) is 1\* or 2\* have not yet been fully implemented. They will be completed in the near future.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+invenio_oarepo_mapping_includes/__init__.py,sha256=i8gKvpYZ6w7Pu-hQWw9nvptLmHZVa-SW9wFsQL8938k,61
+invenio_oarepo_mapping_includes/config.py,sha256=RETXQ1yZIIpPpIPlPM0-1DJkhW5iL-R7vKsNRkD64m0,4530
+invenio_oarepo_mapping_includes/version.py,sha256=yF1kKA0VZV1WfaYFFpWLlaZDe4GHIJsT50Ak-J_msvQ,1394
+invenio_oarepo_mapping_includes/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+invenio_oarepo_mapping_includes-1.1.0.dist-info/LICENSE,sha256=oxlvOW3GiojF5mcapEzPff39MfADzIw5Qt8iOonks8c,1062
+invenio_oarepo_mapping_includes-1.1.0.dist-info/METADATA,sha256=3OfhRpAbNaxkUlCdPDGMZYW3BNO-ulB2scgV57bNmTQ,945
+invenio_oarepo_mapping_includes-1.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+invenio_oarepo_mapping_includes-1.1.0.dist-info/entry_points.txt,sha256=6MvMtz5IJVdNV5deVHzyKxRPhhj2m8ih0PPsp06LHUI,98
+invenio_oarepo_mapping_includes-1.1.0.dist-info/top_level.txt,sha256=yJMLTIPHPdBA8BLU03MyhomV3jtctftFPuUQfs-gJMo,32
+invenio_oarepo_mapping_includes-1.1.0.dist-info/RECORD,,

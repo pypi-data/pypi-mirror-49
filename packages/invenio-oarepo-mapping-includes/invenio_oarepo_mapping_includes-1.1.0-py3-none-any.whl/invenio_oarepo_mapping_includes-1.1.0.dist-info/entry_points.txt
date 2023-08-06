@@ -1,0 +1,3 @@
+[invenio_config.module]
+invenio_oarepo_mapping_includes = invenio_oarepo_mapping_includes.config
+

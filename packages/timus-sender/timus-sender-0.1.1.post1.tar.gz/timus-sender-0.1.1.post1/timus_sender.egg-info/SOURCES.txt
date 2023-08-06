@@ -1,0 +1,10 @@
+README.md
+setup.py
+timus/__init__.py
+timus/__main__.py
+timus_sender.egg-info/PKG-INFO
+timus_sender.egg-info/SOURCES.txt
+timus_sender.egg-info/dependency_links.txt
+timus_sender.egg-info/entry_points.txt
+timus_sender.egg-info/requires.txt
+timus_sender.egg-info/top_level.txt

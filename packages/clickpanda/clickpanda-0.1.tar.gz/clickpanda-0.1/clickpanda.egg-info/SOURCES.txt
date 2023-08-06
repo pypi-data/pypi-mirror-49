@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+clickpanda/__init__.py
+clickpanda/_version.py
+clickpanda/convert.py
+clickpanda/core.py
+clickpanda/http.py
+clickpanda/utils.py
+clickpanda.egg-info/PKG-INFO
+clickpanda.egg-info/SOURCES.txt
+clickpanda.egg-info/dependency_links.txt
+clickpanda.egg-info/not-zip-safe
+clickpanda.egg-info/requires.txt
+clickpanda.egg-info/top_level.txt

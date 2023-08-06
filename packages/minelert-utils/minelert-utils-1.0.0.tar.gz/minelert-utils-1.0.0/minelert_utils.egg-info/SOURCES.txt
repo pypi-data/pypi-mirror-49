@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+minelert_utils/__init__.py
+minelert_utils/reader.py
+minelert_utils/tag.py
+minelert_utils.egg-info/PKG-INFO
+minelert_utils.egg-info/SOURCES.txt
+minelert_utils.egg-info/dependency_links.txt
+minelert_utils.egg-info/requires.txt
+minelert_utils.egg-info/top_level.txt

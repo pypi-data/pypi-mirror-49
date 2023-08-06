@@ -1,0 +1,6 @@
+numpy
+scipy
+masstable
+periodictable
+matplotlib
+scikit-image

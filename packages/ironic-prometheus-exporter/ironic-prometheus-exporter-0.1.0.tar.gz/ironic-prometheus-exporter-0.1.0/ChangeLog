@@ -1,0 +1,28 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* Update setup.cfg to install package correctly
+* Migrate to opendev infra
+* Update setup name
+* Update Flask version in requirements
+* Fixes for installation
+* Move to client\_python from Prometheus
+* rename metalkube to metal3-io
+* IPMI changes
+* Review Updates
+* Flask Application to Prometheus
+* Update requirements and documentation
+* Updates for Driver, Parsers and Tests
+* Refactoring code
+* Updates for Prometheus Exporter
+* Installation guide
+* Change file format to JSON
+* Update documentation format
+* Updates for PrometheusFileDriver
+* Register configuration options before load driver
+* Initial version for Prometheus File Driver
+* Basic repository structure
+* Initial commit

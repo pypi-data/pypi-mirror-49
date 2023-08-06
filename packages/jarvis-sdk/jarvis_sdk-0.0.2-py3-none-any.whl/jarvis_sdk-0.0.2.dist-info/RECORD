@@ -1,0 +1,12 @@
+jarvis_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jarvis_sdk/jarvis_auth.py,sha256=vr2BS32-ijdNemSe8DxG1XzOoNGl0nkMdZ8izVSRPG4,5140
+jarvis_sdk/jarvis_config.py,sha256=b1Q5VgRzQk2f6S_ajtwbsBJOF3GbsxKon7mzIWmJdjs,9471
+jarvis_sdk/jarvis_configuration_manager.py,sha256=c7V2E6mNIXBiTaKcTAEEaqIBakYT6k9KzK2lbQJbV3o,4930
+jarvis_sdk/jarvis_help.py,sha256=h9lXw-c2ceGXOqX9KyDwSj8ORFcJMOhjJ9pHokALVfU,435
+jarvis_sdk/jarvis_misc.py,sha256=g3bYpxY5BZkGYUcIj_jbrdjjXQxBobtgaNRh9kTJdCQ,298
+jarvis_sdk/jarvissdk.py,sha256=R5sSbcnjCvCmi5wrF-3tFfiOAYyZQZIUe9cJHYve7zY,4928
+jarvis_sdk-0.0.2.dist-info/METADATA,sha256=Mb5bu6wMqCzWkB5cpcuCTmwFlB1t9daMGVg8POQUBrY,518
+jarvis_sdk-0.0.2.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+jarvis_sdk-0.0.2.dist-info/entry_points.txt,sha256=XTaeqe_uQVJq0_ODBgJPoITocIfRSHRJxnkJWcFvYPQ,54
+jarvis_sdk-0.0.2.dist-info/top_level.txt,sha256=VO4YmYWNfduBjjbj4LJ8n2GolS9S7r0MGU2K7el5bUk,11
+jarvis_sdk-0.0.2.dist-info/RECORD,,

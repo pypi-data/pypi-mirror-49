@@ -1,0 +1,6 @@
+social-auth-app-django
+django-registration-redux
+tweepy
+pyfacebook
+django-photologue
+Django>=1.10

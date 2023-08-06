@@ -1,0 +1,8 @@
+setup.py
+nudeclient/__init__.py
+nudeclient/client.py
+nudeclient.egg-info/PKG-INFO
+nudeclient.egg-info/SOURCES.txt
+nudeclient.egg-info/dependency_links.txt
+nudeclient.egg-info/requires.txt
+nudeclient.egg-info/top_level.txt

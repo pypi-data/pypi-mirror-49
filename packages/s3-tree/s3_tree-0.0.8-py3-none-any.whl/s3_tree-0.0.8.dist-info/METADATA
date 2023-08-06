@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: s3-tree
+Version: 0.0.8
+Summary: list s3 objects in tree-like format.
+Home-page: https://bitbucket.org/rednap/s3-tree
+Author: Andy Klier
+Author-email: andyklier@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+
+# s3-tree  
+
+uses the tree command to display the objects in an s3 bucket in a tree-like diagram.  
+
+### dependencies  
+
+tree  
+python3  
+aws cli  
+
+### installation  
+
+`$ pip install s3-tree`  
+
+### usage  
+
+`$ s3-tree bucketname`  
+
+*i tried to write this so it would work in windows. if anyone tries it lemme know.*
+
+

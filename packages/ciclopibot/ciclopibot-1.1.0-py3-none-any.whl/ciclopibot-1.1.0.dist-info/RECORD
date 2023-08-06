@@ -1,0 +1,10 @@
+ciclopibot/__init__.py,sha256=GavSk0Q56gFW_TgbmTbLrT5ciivY7rcMblbLRVVGDis,234
+ciclopibot/bot.py,sha256=tDEdmemhRiroH2vhysmUnqQPdsfgfEuiX_4hRelIR04,5816
+ciclopibot/ciclopi.py,sha256=VcmOGo-zQ20fnfy9QihKBZznQNrXvK-kxxDhEWzxkOE,45689
+ciclopibot/helper.py,sha256=ONkOp3PJSG3a2tS7ZD5In78gSkv-Vvyg2Y0rEH1Go8U,7167
+ciclopibot/data/__init__.py,sha256=wNErjIl5STjaAKiQ-SmfQBSAHVupYSKvNgcIaLFbQ5E,555
+ciclopibot/data/help.json,sha256=CCQ8a_YZ813Ttlz62ju_zO_rypUzPaIgVoURqbnVV-4,197
+ciclopibot-1.1.0.dist-info/METADATA,sha256=ObaE4stUsiOUap7Wf_Y_WrGvtzpwCtm6A5QLm4YS9Fw,2760
+ciclopibot-1.1.0.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+ciclopibot-1.1.0.dist-info/top_level.txt,sha256=Z0WgKx9QernTSwYuS1irF5buB66J3ZcrRyY8MsYn2I8,11
+ciclopibot-1.1.0.dist-info/RECORD,,

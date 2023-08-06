@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: Easpy
+Version: 0.2
+Summary: Easpy helps new developers to start programming in python by simplifying it
+Home-page: https://github.com/123Lory321/Easpy
+Author: 123Lory321
+Author-email: lorenzooliva321@gmail.com
+License: mit
+Download-URL: https://github.com/123Lory321/Easpy/archive/v0.2.tar.gz
+Description: UNKNOWN
+Keywords: Easpy,python,easy,python3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

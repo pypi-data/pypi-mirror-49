@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: CategorizerAI
+Version: 0.4.3
+Summary: An AI to categorize finantial transactions
+Home-page: https://github.com/kode-konveyor/categorizerai
+Author: Arpad Magosanyi
+Author-email: mag@kodekonveyor.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow
+Requires-Dist: keras
+Requires-Dist: pandas
+Requires-Dist: psycopg2-binary
+Requires-Dist: winterboot (>=0.3)
+
+# Install
+
+pip3 install CategorizerAI
+
+# Usage, Example
+
+There is an example database using a dataset with US government transactions.
+The Config.py in the source root is a configuration to use it.
+The updater script in the same location drives data acquisition and updating.
+
+You can set up your own setup by studying the example. Copy over the Config.py
+to somewhere in PYTHONPATH, the updater script to somewhere in your path,
+and change them to your needs. 
+
+The hardest part is tuning the AI for the particular data you have.
+use FIRST_LAYER_NEURONS, SECOND_LAYER_NEURONS, BATCH_SIZE and EPOCHS in Config.py
+for the tuning. Bigger is not always better!
+
+It might happen that the neural net cannot learn the data with enough accuracy.
+In this case it tells you so, and exits.
+
+

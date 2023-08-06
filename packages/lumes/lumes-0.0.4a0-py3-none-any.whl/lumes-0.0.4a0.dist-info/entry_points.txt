@@ -1,0 +1,3 @@
+[console_scripts]
+lumes = lumes.__main__:main
+

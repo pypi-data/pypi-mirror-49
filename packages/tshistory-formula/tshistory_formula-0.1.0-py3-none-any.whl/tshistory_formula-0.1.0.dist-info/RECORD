@@ -1,0 +1,14 @@
+tshistory_formula/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tshistory_formula/cli.py,sha256=PefoFSTIV7A8ujw3kqRiJAQ3w9McRnjg7ep5NLCHGm8,5642
+tshistory_formula/editor.py,sha256=muPBPkl7RMmwOKDwiHQc2l7NT9G2gpoZvEnGzFJjFsc,6978
+tshistory_formula/finder.py,sha256=uqUWDr4Jdeqe3EKzBcg6wqZ-j-GcrqsB0eG7vveJ4Co,293
+tshistory_formula/funcs.py,sha256=6B3r1chmoTBPkZlFSfNwjQO6yZcTltsxYMW4e12W0co,2939
+tshistory_formula/interpreter.py,sha256=fdIlQWtVdT-IXZEUXnZuHLuKWvPr1BKMSIDYa7bBWnc,2676
+tshistory_formula/registry.py,sha256=vM2HZCBjPgXtDegmgbOwr6ztjvAKieswp7XqPoTWl1o,398
+tshistory_formula/schema.py,sha256=gx2PNMRBmjJlrj2pGjNfnHNWCmRcdBkRzEK6mfHgI7Q,344
+tshistory_formula/tsio.py,sha256=h00eLFHUbD5hkrKNt2bzCbz8cCncf8Vxwmra63FWQmA,10548
+tshistory_formula-0.1.0.dist-info/METADATA,sha256=vUfWdaf4PxKlAoqckwDLCqEzBjuvNFbxlzZfnlCODr0,760
+tshistory_formula-0.1.0.dist-info/RECORD,,
+tshistory_formula-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+tshistory_formula-0.1.0.dist-info/entry_points.txt,sha256=kmwO4V7sbjtwFdmsJ47CCkmB_7SuZlT_mxVsqZkqYCc,229
+tshistory_formula-0.1.0.dist-info/top_level.txt,sha256=oTVG-cSY9aze--Bcc_B-tRrOWNSu2t8w0-4Nw-nZ2AI,18

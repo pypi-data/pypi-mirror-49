@@ -1,0 +1,6 @@
+[tshistory.subcommands]
+compare-aliases = tshistory_formula.cli:compare_aliases
+convert-aliases = tshistory_formula.cli:convert_aliases
+ingest-formulas = tshistory_formula.cli:ingest_formulas
+shell = tshistory_formula.cli:shell
+

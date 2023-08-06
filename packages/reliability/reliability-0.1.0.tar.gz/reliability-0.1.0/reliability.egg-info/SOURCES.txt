@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+code/Distributions.py
+code/Fitters.py
+code/Nonparametric.py
+code/Other_functions_and_tests.py
+code/Plotting.py
+code/Stress_Strength_Interference.py
+reliability.egg-info/PKG-INFO
+reliability.egg-info/SOURCES.txt
+reliability.egg-info/dependency_links.txt
+reliability.egg-info/requires.txt
+reliability.egg-info/top_level.txt

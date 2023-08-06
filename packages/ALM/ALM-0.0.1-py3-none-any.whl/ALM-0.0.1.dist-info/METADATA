@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ALM
+Version: 0.0.1
+Summary: ALM Model in Python
+Home-page: https://github.com/ActMartin/PyALM
+Author: Martin Zhao
+Author-email: martin@pku.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# This Module is to mimic how an insurer runs the company. Under development and not uploaded yet.
+
+## Asset
+
+## Liability
+
+## Management Actions
+
+## Policyholder Behaviour
+
+## Financial Metrics
+
+### Cash Flows
+### Balance Sheet
+### P/L, OCI
+

@@ -1,0 +1,9 @@
+{
+  "UPDATER_VERSION": "0.0.1",
+  "TOOLS_FILE_NAME": "plottwist_pipeline.zip",
+  "REPOSITORY_URL": "http://www.plottwist-film.com/phocadownload/pipeline/",
+  "LAST_VERSION_JSON_FILE_NAME": "setup.txt",
+  "VERSION_JSON_FILE_NAME": "version.json",
+  "PROGRESS_BAR_COLOR_0": "58, 92, 84",
+  "PROGRESS_BAR_COLOR_1": "213, 173, 0"
+}

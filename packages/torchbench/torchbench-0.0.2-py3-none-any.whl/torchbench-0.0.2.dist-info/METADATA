@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: torchbench
+Version: 0.0.2
+Summary: Easily benchmark Machine Learning models on selected tasks and datasets - with PyTorch
+Home-page: https://sotabench.com
+Maintainer: rstojnic
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: sotabenchapi
+Requires-Dist: torch
+Requires-Dist: torchvision
+
+Easily benchmark Machine Learning models on selected tasks and datasets - with PyTorch
+
+

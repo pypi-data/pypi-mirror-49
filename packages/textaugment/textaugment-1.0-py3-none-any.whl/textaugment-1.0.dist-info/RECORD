@@ -1,0 +1,9 @@
+textaugment/__init__.py,sha256=pIbJPwYDB4UtuEH5m00GOkr5b5MpJdwrN6g1VndW-o0,365
+textaugment/constants.py,sha256=ob5R6nYlZevOLI36WMuDTGDK0STDLKrl22vElmB8xAg,2360
+textaugment/translate.py,sha256=8eOAntLS3qubMf42vdIxJjXU6JfnxzO7-8zOoy_65QM,3815
+textaugment/word2vec.py,sha256=XBkKJXs6SEv8tY1dy5pwD6OmvrjMANOOzmAIpvdvZg8,5858
+textaugment/wordnet.py,sha256=E1vgl8se_HiIeu2Rm5miSreM9vlRxscPQydpbYUQ4VI,5740
+textaugment-1.0.dist-info/METADATA,sha256=dlmfOgVwT40Q2Dc2owfsRbTw8XDXBYDme956EwSCg80,5810
+textaugment-1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+textaugment-1.0.dist-info/top_level.txt,sha256=ckC8IhvAJeaSGD-IPQepZEt5RQOMY_UnUCL7g1AH0Sk,12
+textaugment-1.0.dist-info/RECORD,,

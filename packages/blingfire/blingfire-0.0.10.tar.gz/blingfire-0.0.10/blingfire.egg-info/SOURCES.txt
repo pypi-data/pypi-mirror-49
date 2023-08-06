@@ -1,0 +1,10 @@
+README.md
+setup.py
+blingfire/__init__.py
+blingfire/bert_base_tok.bin
+blingfire/blingfiretokdll.dll
+blingfire/libblingfiretokdll.so
+blingfire.egg-info/PKG-INFO
+blingfire.egg-info/SOURCES.txt
+blingfire.egg-info/dependency_links.txt
+blingfire.egg-info/top_level.txt

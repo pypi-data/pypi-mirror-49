@@ -1,0 +1,12 @@
+meetspace/__init__.py,sha256=N799lvjCuAxH3ZjuM0wONpLwd3zjtvZtQxJo7LleFnY,163
+meetspace/exporters.py,sha256=92FshA0N73ns4OvhFUmI0yUnWwtUFoy3aCKa9hQUJjs,1387
+meetspace/form_factory.py,sha256=KEr7i64LKL5lX8swUlPSUqiWl-SxErH-E1tiza03pJU,3062
+meetspace/routes.py,sha256=QJ2dRkyQrNgeSv0DXp3VNwpLNezlR63d-l8VxcpuZ-E,663
+meetspace/util.py,sha256=HTO4prsefi2cYbCw3ui-y0ESANYVCd_T-jMYMJX5lRs,590
+meetspace/validators.py,sha256=iPUQ5dK0j3WS0DIFo_7LCnGQw-3WoVvWrgK6LmVuMv8,960
+meetspace/schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+meetspace-0.0.1.dist-info/LICENSE,sha256=mAujYfbnxrOPzYHwTmqC7FAq6gA-4wFsDJ56Vah_KuY,1071
+meetspace-0.0.1.dist-info/METADATA,sha256=Q5obSRyRloxLK3XykeGK5-qFjjHWXUZ6q0zsBTFanjA,1448
+meetspace-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+meetspace-0.0.1.dist-info/top_level.txt,sha256=ZpaqrVOmojkRTqguROA-BqsEwJPqu419DLblbZaHVcI,10
+meetspace-0.0.1.dist-info/RECORD,,

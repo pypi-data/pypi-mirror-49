@@ -1,0 +1,7 @@
+README.md
+scolp.py
+setup.py
+scolp.egg-info/PKG-INFO
+scolp.egg-info/SOURCES.txt
+scolp.egg-info/dependency_links.txt
+scolp.egg-info/top_level.txt

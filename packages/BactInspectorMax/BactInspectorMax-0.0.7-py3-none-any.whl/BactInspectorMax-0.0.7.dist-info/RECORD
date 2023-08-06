@@ -1,0 +1,14 @@
+BactInspectorMax-0.0.7.dist-info/METADATA,sha256=FBgpnfr77jH8FZ_aeT7lMN6HUWE60aoyaJFOjgZmaHk,471
+BactInspectorMax-0.0.7.dist-info/RECORD,,
+BactInspectorMax-0.0.7.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+BactInspectorMax-0.0.7.dist-info/entry_points.txt,sha256=vNw7uk7NFt-jIg23wq7Hf9G2eMdzlejlxF2rz29o1b0,72
+BactInspectorMax-0.0.7.dist-info/top_level.txt,sha256=UIXP8pzKCON4lW3lY4cq9uZnFsAGmsau8D7yVGntE4A,14
+bactinspector/__init__.py,sha256=6xFIemavY24OVB0If5YuBkpmJMyxfgmMsVEx4Q-jatc,27
+bactinspector/commands.py,sha256=X035HBM-xTIFzS51CxTpTY_jlp_qZYxCUFWYMokRmqM,11234
+bactinspector/dataframe_parsing_functions.py,sha256=_6irH7HSjhDnlbzL6KF4__NN5CMnv67B4yIIkBxHENE,3249
+bactinspector/mash_functions.py,sha256=mo8LC8M_0JYzKubzY78wSR9S0yIWBcIQ-406OdYhc_o,4409
+bactinspector/run_bactinspector.py,sha256=lUjrza9AmqL7JIzimQ4ySlpruPS5MgaMW25-mx5Co7M,7414
+bactinspector/utility_functions.py,sha256=GISRoJFZwsMc1A1DA558AzH18ZPH7dS0Mj6I4W1dtqk,860
+bactinspector/data/all_complete_bacteria_refseq.k21s1000.msh,sha256=DE0WMV2seL_AvVJugvt8sMkSE-XXZw3EKMAaFPFIKZ0,110989360
+bactinspector/data/all_complete_bacteria_refseq.k21s1000.species.distance_and_length_metrics.tsv,sha256=oEJH4_9l6X6gdPgeUcBQaiBIL7Ut6qGU4xzCV3-rNj4,265067
+bactinspector/data/all_complete_bacteria_refseq.k21s1000.species.tsv,sha256=8xftmRkljjb-nA6C--GQUvKFRrioQwkIpRDHcbscVR0,5829658

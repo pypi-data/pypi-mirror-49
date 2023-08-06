@@ -1,0 +1,16 @@
+djxero/__init__.py,sha256=mJDgUUEIKqzYi83KpsmzfSxfomlCPTI6Vb8HszKtNrU,307
+djxero/admin.py,sha256=xYhz6q98nqy_pUycTmY--VAl6zkfPppkZJCyQo1dUag,1224
+djxero/apps.py,sha256=FkrUpVuLe4VEQVY1lVVFnNtx6iBpnC5gImrr3k-49f4,691
+djxero/decorators.py,sha256=u0g4I6pAKXN7RELZOVUxDQNbxeIDzdXXeFYpBvGNiDA,948
+djxero/middleware.py,sha256=nwEjO7YqHtEIRlMnW07vW7_CZDsrw48BoIka9096qZk,1653
+djxero/models.py,sha256=L_dLK7tnxvcGfy-jkW3qlg97iEdGPPJPzd7TDXihg5I,8507
+djxero/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+djxero/urls.py,sha256=sj7pXcs9JyIgFdq9xLLoVil7SfTHdQpBMDseM_8q48E,986
+djxero/views.py,sha256=bHNV2HqQp0qv_IobUKiLZZ8KorjssGjgj4d_cCtah8I,4235
+djxero/templates/xero/interstitial.html,sha256=C2eTMFYGDSGHeQR0SeHxv_bVLKbodOpMonpnRWDr8Z0,288
+django_xero-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_xero-0.0.3.dist-info/METADATA,sha256=djTEtuOLyyQClTOr7oC8L_8eBEzGw68ye9EfbWSeK7c,5845
+django_xero-0.0.3.dist-info/NOTICE,sha256=XhTSDwCE5YCSPpHT1pbxjJnSxWfn0XUoof5JHTUPgiM,201
+django_xero-0.0.3.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+django_xero-0.0.3.dist-info/top_level.txt,sha256=u3EZkUwefJl3O1bc9hRkT8S_syATGG2R2ClaMNDmLA8,7
+django_xero-0.0.3.dist-info/RECORD,,

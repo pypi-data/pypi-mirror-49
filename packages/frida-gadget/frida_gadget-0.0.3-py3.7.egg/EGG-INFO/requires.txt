@@ -1,0 +1,4 @@
+click
+pathlib
+frida==12.6.10
+androguard

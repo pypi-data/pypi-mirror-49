@@ -1,0 +1,50 @@
+Metadata-Version: 1.2
+Name: pytest-nunit
+Version: 0.0.2
+Summary: A pytest plugin for generating Nunit3 test result XML output
+Home-page: https://github.com/tonybaloney/pytest-nunit
+Author: Anthony Shaw
+Author-email: anthonyshaw@apache.org
+Maintainer: Anthony Shaw
+Maintainer-email: anthonyshaw@apache.org
+License: MIT
+Description: ============
+        pytest-nunit
+        ============
+        
+        .. image:: https://dev.azure.com/AnthonyShaw/pytest-nunit/_apis/build/status/tonybaloney.pytest-nunit?branchName=master
+           :target: https://dev.azure.com/AnthonyShaw/pytest-nunit/_build/latest?definitionId=3?branchName=master
+           :alt: Build status
+        
+        .. image:: https://img.shields.io/pypi/v/pytest-nunit.svg
+            :target: https://pypi.org/project/pytest-nunit
+            :alt: PyPI version
+        
+        .. image:: https://img.shields.io/pypi/pyversions/pytest-nunit.svg
+            :target: https://pypi.org/project/pytest-nunit
+            :alt: Python versions
+        
+        .. image:: https://img.shields.io/pypi/dm/pytest-nunit.svg
+             :target: https://pypi.python.org/pypi/pytest-nunit/
+             :alt: PyPI download month
+        
+        
+        A pytest plugin for generating Nunit3 test result XML output
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*

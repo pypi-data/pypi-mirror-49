@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: aws-secrets
+Version: 0.1.0
+Summary: Python library for resolving secrets from AWS Secrets Manager
+Home-page: https://github.com/davidcroda/aws_secrets
+Author: David Roda
+Author-email: davidcroda@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

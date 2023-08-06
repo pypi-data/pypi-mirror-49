@@ -1,0 +1,9 @@
+README.rst
+setup.py
+aws_secrets/__init__.py
+aws_secrets/credential.py
+aws_secrets.egg-info/PKG-INFO
+aws_secrets.egg-info/SOURCES.txt
+aws_secrets.egg-info/dependency_links.txt
+aws_secrets.egg-info/requires.txt
+aws_secrets.egg-info/top_level.txt

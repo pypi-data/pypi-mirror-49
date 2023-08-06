@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PyDSlog
+Version: 0.0.1
+Summary: Python data-science logger for the IoT
+Home-page: https://github.com/fbussv/PyDSlog
+Author: SSV Software Systems gmbh
+Author-email: fbu@ssv-embedded.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+

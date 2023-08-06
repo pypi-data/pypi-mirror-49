@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: access-face-vision
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/accessai/access-face-vision
+Author: ConvexHull Technology Private Limited
+Author-email: support@accessai.co
+Maintainer: Majeed Khan
+Maintainer-email: majeed.khan@accessai.co
+License: Apache 2.0
+Description: [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+        [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+        
+        # Access Face Vision
+        
+        Face detection and recognition Application.
+        
+        ### With pip
+         - ##### Installation
+        ```bash
+        pip install access-face-vision
+        ```
+        
+        - ##### Training/Creating FaceGroup
+        ```bash
+        python -m access_face_vision --mode train --img_dir samples/celebrities --face_group celebrities
+        
+        # Directory structure
+        # **/Images/
+        #          A/
+        #           A_K_01.jpg
+        #           A_K_02.jpg
+        #          B/
+        #           B_S_01.jpg
+        #           B_S_02.jpg
+        ```
+        
+        - ##### Running Inferences
+        ```bash
+        # Live video feed
+        >python -m access_face_vision --mode live-video --camera-index 0 --camera_wait 30 --face_group celebrities
+        
+        # server mode
+        python -m access_face_vision --mode server
+        ```
+        Use [access-client](https://github.com/accessai/access-client) to make requests to this server
+        
+        
+        ### Docker image
+        
+        - Docker Image build
+        ```bash
+        docker build -t access_face_vision:latest .
+        ```
+        
+         - Docker run
+         ```bash
+        # we will use it as root directory for access_face_vision application
+        mkdir -p accessai/afv
+        
+        # Start server
+        docker run -v $(pwd)/afv:/accessai/afv python -m access_face_vision --mode server
+        
+        # Start camera feed processor
+        docker run -v $(pwd)/afv:/accessai/af v python -m access_face_vision --mode server
+        ```
+        
+        ## Contribution
+         Contributions are welcome. Feel free to raise PRs! with any improvements.
+        
+        
+        ## Credit
+        Face Encoder model: https://github.com/nyoki-mtl/keras-facenet
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown

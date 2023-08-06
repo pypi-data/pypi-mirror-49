@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: django-admin-reports
+Version: 0.11.0
+Summary: Reports for django-admin
+Home-page: UNKNOWN
+Author: Simplyopen SRL
+Author-email: info@simplyopen.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application

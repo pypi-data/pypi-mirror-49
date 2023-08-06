@@ -1,0 +1,12 @@
+include LICENSE.txt
+include README.rst
+include AUTHORS.rst
+include MANIFEST.in
+
+recursive-exclude *.pyc
+recursive-exclude *~
+recursive-exclude \#*
+recursive-exclude \.#*
+
+recursive-include admin_reports/templates *.html
+recursive-include admin_reports/static *

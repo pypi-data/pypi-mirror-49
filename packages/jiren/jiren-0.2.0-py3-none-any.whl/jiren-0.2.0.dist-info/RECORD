@@ -1,0 +1,8 @@
+jiren/__init__.py,sha256=JWZBOkyiP2Gf3na2PsZ4t8Sofkgl615Ui1Z_VJb4tZg,68
+jiren/cli.py,sha256=BCSZZMtQl25rpVMbsiTZ3cmC1-iwRQ46bE7lPeyayYo,1175
+jiren/template.py,sha256=0GJ58rMTxcAjE9tFDhgpBCqs4Dd3K6wvecy4KzG3VKk,262
+jiren-0.2.0.dist-info/entry_points.txt,sha256=bDa3uJGR1Vm0yNGiw4unGcDcedB1eHjNdfPU-ef42y8,40
+jiren-0.2.0.dist-info/LICENSE,sha256=Lpq9GINGs6dyR9_qCu4HsbCdtN1_PNVWOEClkMCTsss,1070
+jiren-0.2.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+jiren-0.2.0.dist-info/METADATA,sha256=XF18NhSLtNOiM4Mhi_Gosf-CorKW0KCA2fkrZHG2xls,2917
+jiren-0.2.0.dist-info/RECORD,,

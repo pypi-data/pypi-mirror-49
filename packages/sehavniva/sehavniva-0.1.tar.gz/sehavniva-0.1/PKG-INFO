@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: sehavniva
+Version: 0.1
+Summary: Unofficial Python library for the Norwegian Mapping Authority's SeHavNiva API
+Home-page: https://github.com/mflage/sehavniva-python
+Author: Marius Flage
+Author-email: marius@flage.org
+License: MIT
+Download-URL: https://github.com/mflage/sehavniva-python/archive/v0.1-alpha.tar.gz
+Description: UNKNOWN
+Keywords: kartverket,sehavniva,iot,tide,sensor,smarthome,automation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3

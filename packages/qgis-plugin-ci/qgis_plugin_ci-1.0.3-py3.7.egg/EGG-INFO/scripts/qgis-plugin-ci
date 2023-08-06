@@ -1,0 +1,75 @@
+#!/home/travis/virtualenv/python3.7.1/bin/python
+
+import argparse
+import yaml
+from qgispluginci.release import release
+from qgispluginci.translation import Translation
+from qgispluginci.parameters import Parameters
+
+if __name__ == "__main__":
+    """
+    Main process
+    """
+
+    # create the top-level parser
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-v", "--version", help="print the version and exit", action='store_true')
+
+    subparsers = parser.add_subparsers(title='commands', description='qgis-plugin-ci command', dest='command')
+
+    # release
+    release_parser = subparsers.add_parser('release', help='release the plugin')
+    release_parser.add_argument('release_version', help='The version to be released')
+    release_parser.add_argument('--transifex-token', help='The Transifex API token. '
+                                                          'If specified translations will be pulled and compiled.')
+    release_parser.add_argument('--github-token', help='The Github API token. '
+                                                       'If specified, the archive will be pushed to an already '
+                                                       'existing release.')
+    release_parser.add_argument('--create-plugin-repo', action='store_true',
+                                help='Will create a XML repo as a Github release asset. Github token is required.')
+
+
+    # pull-translation
+    pull_tr_parser = subparsers.add_parser('pull-translation', help='pull translations from Transifex')
+    pull_tr_parser.add_argument('transifex_token', help='The Transifex API token')
+
+    # push-translation
+    push_tr_parser = subparsers.add_parser('push-translation', help='update strings and push translations')
+    push_tr_parser.add_argument('transifex_token', help='The Transifex API token')
+
+    args = parser.parse_args()
+
+    # print the version and exit
+    if args.version:
+        print('qgis-plugin-ci version: {}'.format('[DEV]'))
+        parser.exit()
+
+    # if no command is passed, print the help and exit
+    if not args.command:
+        parser.print_help()
+        parser.exit()
+
+    exit_val = 0
+
+    arg_dict = yaml.safe_load(open(".qgis-plugin-ci"))
+    parameters = Parameters(arg_dict)
+
+    if args.command == 'release':
+        success = release(parameters,
+                          release_version=args.release_version,
+                          transifex_token=args.transifex_token,
+                          github_token=args.github_token,
+                          upload_plugin_repo_github=args.create_plugin_repo)
+        if not success:
+            exit_val = 1
+    elif args.command == 'pull-translation':
+        success = Translation(parameters, args.transifex_token).pull()
+        if not success:
+            exit_val = 1
+    elif args.command == 'push-translation':
+        t = Translation(parameters, args.transifex_token)
+        t.update_strings()
+        t.push()
+
+    exit(exit_val)
+

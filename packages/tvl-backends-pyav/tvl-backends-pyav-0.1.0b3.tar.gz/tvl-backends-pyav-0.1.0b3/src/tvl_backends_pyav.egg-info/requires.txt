@@ -1,0 +1,4 @@
+tvl==0.1.0b3
+numpy
+torch
+av

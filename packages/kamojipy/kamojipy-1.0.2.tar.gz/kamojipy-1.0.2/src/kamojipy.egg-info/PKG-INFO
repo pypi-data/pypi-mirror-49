@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: kamojipy
+Version: 1.0.2
+Summary: Add kamoji to your python file github.com/SafyreLyons/kamojipy
+Home-page: https://github.com/SafyreLyons/kamojipy
+Author: Safyre Lyons
+Author-email: lyons.safyre@gmail.com
+License: MIT
+Description: # kamojipy
+          Based off of Owoceans [Kamojify](https://github.com/owocean/kamojify) remade in Python for pip! 
+        
+        # Usage
+        ```python
+        import kamoji as k
+        
+        k.fy()
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

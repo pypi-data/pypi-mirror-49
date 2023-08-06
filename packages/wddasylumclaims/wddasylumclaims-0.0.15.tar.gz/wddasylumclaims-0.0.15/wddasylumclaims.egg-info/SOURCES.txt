@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sample/keywords.csv
+wddasylumclaims/LoadKeywords.py
+wddasylumclaims/WebScrape.py
+wddasylumclaims/__init__.py
+wddasylumclaims/__main__.py
+wddasylumclaims.egg-info/PKG-INFO
+wddasylumclaims.egg-info/SOURCES.txt
+wddasylumclaims.egg-info/dependency_links.txt
+wddasylumclaims.egg-info/entry_points.txt
+wddasylumclaims.egg-info/requires.txt
+wddasylumclaims.egg-info/top_level.txt

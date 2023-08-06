@@ -1,0 +1,11 @@
+codelab_adapter_client/__init__.py,sha256=XplKUnSXiVopQ2xK2uys72gYBO_idrM-NxQ0LQY0bUQ,12376
+codelab_adapter_client/codelab_adapter_client.py,sha256=VYoI-gwqwBKPx84cA0KnYDRofrgIXs8xtASD2nu5fE0,44
+codelab_adapter_client/monitor.py,sha256=lALKs_HyGxvVhoCTq2rMf_9CkvkmSHIShfCFRdTp9p8,2347
+codelab_adapter_client/trigger.py,sha256=3l7WSOUHZO4Mq06rsqN2avuNQ3B1IZfsu0OJ2o4Oadc,2802
+codelab_adapter_client-0.4.1.dist-info/AUTHORS.rst,sha256=TMaLSlaeLWHuhSFwFIETWzKmD-k6y3lc45GwwZOaJLs,156
+codelab_adapter_client-0.4.1.dist-info/LICENSE,sha256=VIaUBMd7LjHk-PKeSmnYiBboJ8F_fsvFKqctTdZ7Ipc,1596
+codelab_adapter_client-0.4.1.dist-info/METADATA,sha256=t_5ctDtPoU-tltWtWqQfGVXOVXk3qghOUvqIm-R7d5E,2326
+codelab_adapter_client-0.4.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+codelab_adapter_client-0.4.1.dist-info/entry_points.txt,sha256=nCGt8bEXNOgDHxsYiAw8gQv7UIZRkoCncWpAblzoZoo,149
+codelab_adapter_client-0.4.1.dist-info/top_level.txt,sha256=pZo_RplwO_Xu4buFo1ZQepo4gTdA070ZUYLT0tVd0_U,23
+codelab_adapter_client-0.4.1.dist-info/RECORD,,

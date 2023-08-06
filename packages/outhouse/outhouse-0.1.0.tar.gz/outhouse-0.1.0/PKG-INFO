@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: outhouse
+Version: 0.1.0
+Summary: A no-nonsense dependency injection manager.
+Home-page: https://github.com/sanderevers/outhouse
+Author: Sander Evers
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7

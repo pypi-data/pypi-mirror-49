@@ -1,0 +1,7 @@
+README.md
+setup.py
+outhouse/__init__.py
+outhouse.egg-info/PKG-INFO
+outhouse.egg-info/SOURCES.txt
+outhouse.egg-info/dependency_links.txt
+outhouse.egg-info/top_level.txt

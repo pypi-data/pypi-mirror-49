@@ -1,0 +1,11 @@
+jsoncsv/__init__.py,sha256=Obrqr23VSAEt7GLBK6vJ8kW4rbp2n09TDpqeyWPJa84,95
+jsoncsv/dumptool.py,sha256=L3CMdk8Fz64KQfvCmii26BVGmKIJaiJ4pu681Oo3z44,3840
+jsoncsv/jsontool.py,sha256=5xZ5VTFJUTVlXwtpg_s99UZJ1XH1B-ecLiMypPqbrQ0,3350
+jsoncsv/main.py,sha256=F8LygyW_7Trt48Jf8Qd6SW088PexqBSc3Oipl5KzDtw,2031
+jsoncsv/utils.py,sha256=p11dpLPke0J9dSFLxHBd-SGFov6cNVCUAFR9oGWTtWw,965
+jsoncsv-2.2.0b0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+jsoncsv-2.2.0b0.dist-info/METADATA,sha256=3QbX4y_b1zgN78pTmRi_MR9pdaytaf1OqmbGoo0E5QE,4540
+jsoncsv-2.2.0b0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+jsoncsv-2.2.0b0.dist-info/entry_points.txt,sha256=OtocG2Nvsgtvf7Cgr0Cd-BV9qd0UHM0bXsOCJAJ6004,81
+jsoncsv-2.2.0b0.dist-info/top_level.txt,sha256=02RF2HsmrNaF1a2gR5Q82QhSq_Zd5TxaSgdUvjp8ycs,8
+jsoncsv-2.2.0b0.dist-info/RECORD,,

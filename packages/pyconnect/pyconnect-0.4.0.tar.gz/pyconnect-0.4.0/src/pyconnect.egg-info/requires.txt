@@ -1,0 +1,11 @@
+confluent-kafka[avro]>=1.0
+pyaml>=3.13
+
+[dev]
+black
+flake8
+
+[test]
+pytest
+pytest-mock
+pytest-cov

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ascends-toolkit
+Version: 0.4.0
+Summary: ASCENDS: Advanced data SCiENce toolkit for Non-Data Scientists
+Home-page: https://github.com/ornlpmcp/ASCENDS
+Author: Matt Sangkeun Lee, Dongwon Shin, Jian Peng
+Author-email: lees4@ornl.gov
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.2
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tensorflow
+Requires-Dist: keras
+Requires-Dist: tornado
+Requires-Dist: scikit-learn
+Requires-Dist: minepy
+Requires-Dist: np-utils
+
+UNKNOWN
+
+

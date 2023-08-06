@@ -1,0 +1,8 @@
+README.md
+setup.py
+figures/__init__.py
+figures/core.py
+planefigures.egg-info/PKG-INFO
+planefigures.egg-info/SOURCES.txt
+planefigures.egg-info/dependency_links.txt
+planefigures.egg-info/top_level.txt

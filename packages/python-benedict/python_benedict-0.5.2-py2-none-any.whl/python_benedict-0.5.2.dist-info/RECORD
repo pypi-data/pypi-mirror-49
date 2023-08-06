@@ -1,0 +1,16 @@
+benedict/__init__.py,sha256=mVoSgbhAMM_48oaFNjccRnDOZL-6ktmPVD66u3lOF5Q,184
+benedict/metadata.py,sha256=v1wprk0g8Ou0F0zMXg-RdJyEMln_UfDrLbONoieCkPA,293
+benedict/dicts/__init__.py,sha256=d3ZTi77_t8Y0RM4s4P715rGADUZkwVHio1xTlPSCh2k,3238
+benedict/dicts/io.py,sha256=tTkD0VOcpeoYbjEPUxdcnbay0IlpJ4AixqH-F_7S8fQ,3191
+benedict/dicts/keypath.py,sha256=6YjbG328n2PXjlYU6Fg7SYmko9xjEOqWodYxc7aDJ9A,5763
+benedict/dicts/parse.py,sha256=uTdjwG2luakXj5Y8khz2AjQM3ONwMmMeQoNQK93LDsg,8579
+benedict/dicts/utility.py,sha256=GonsBxRxLQX2Lrcv-gCRpgR9ROjv9KquJQXvjB9eHyo,1993
+benedict/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+benedict/utils/io_util.py,sha256=8KvzYWO1wZZ3VNoYAvyhOfQZ2aTHLAadkIskMCJjy5M,2573
+benedict/utils/keypath_util.py,sha256=j_uGsRQjHPFa9yS8Pn0HrhIjWLpFFu3KqJuDdwy-jSE,1103
+benedict/utils/parse_util.py,sha256=oXb3IzDTLj9ghmUuzPz2I7hWlqrlKTpUYKaHNi-zgXg,4409
+python_benedict-0.5.2.dist-info/LICENSE.txt,sha256=o7iBaNY0MOvBmdfVvGUiHR_ATp_gu8htA_6GK7e5vHs,1069
+python_benedict-0.5.2.dist-info/METADATA,sha256=xaRSQNZLMng2VXhtuUXNWSyMVx-j6GXWTFOsRqUav2k,10777
+python_benedict-0.5.2.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+python_benedict-0.5.2.dist-info/top_level.txt,sha256=G7Cc0BwlnASfCjFOvLWg9XqHiwJAnprbUTkJXUaj1gs,9
+python_benedict-0.5.2.dist-info/RECORD,,

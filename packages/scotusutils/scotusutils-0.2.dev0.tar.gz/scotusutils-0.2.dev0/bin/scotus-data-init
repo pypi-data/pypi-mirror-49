@@ -1,0 +1,182 @@
+#!/usr/bin/env python
+
+import os
+import shutil
+import time
+import argparse
+import logging  # FIXME: use this
+import datetime
+
+import scotusutils
+from scotusutils import documents
+from scotusutils import configtools
+from scotusutils import webtools
+from scotusutils import dbtools
+
+
+logger = logging.getLogger("scotusutils.SCOTUS_DATA_INIT")
+
+
+def get_args():
+    """Get command-line arguments from user"""
+    parser = argparse.ArgumentParser(description="Initialize SCOTUS document database")
+    parser.add_argument(
+        "-d",
+        "--dir",
+        dest="base_path",
+        type=str,
+        help="directory in which to create store data",
+        required=False,
+    )
+    parser.add_argument(
+        "-n",
+        "--name",
+        dest="name",
+        type=str,
+        help="Name of DB",
+        default="default",
+    )
+    parser.add_argument(
+        "-c",
+        "--create",
+        dest="create",
+        help="Create new DB",
+        default=False,
+        action='store_true',
+    )
+    parser.add_argument(
+        "-s",
+        "--start-year",
+        dest="start_year",
+        type=int,
+        help="First year to pull data for",
+        default=2012,
+    )
+    parser.add_argument(
+        "-e",
+        "--end-year",
+        dest="end_year",
+        type=int,
+        help="Last year to pull data for",
+        required=False,
+    )
+
+    return parser.parse_args()
+
+
+def clear_dir(base_dir):
+    """Removes all contents of specified directory"""
+    for path in os.listdir(base_dir):
+        full_path = os.path.join(base_dir, path)
+        if os.path.isdir(full_path):
+            shutil.rmtree(full_path)
+        else:
+            os.unlink(full_path)
+    return True
+
+
+def path_overwrite(args):
+    """
+    Checks that the specified base path exists and either is empty or that
+    user *really* wants to overwrite the data conttained in it already.
+
+    Parameters
+    ----------
+    args : argparse.Namespace
+        Object returned from parser.parse_args() from user inputs
+    
+    """
+    if not os.path.exists(args.base_path):
+        err_msg = "Specified target directory '{}' does not exist".format(
+            args.base_path
+        )
+        raise ValueError(err_msg)
+
+    if not os.path.isdir(args.base_path):
+        err_msg = "Specified target directory '{}' is not a directory".format(
+            args.base_path
+        )
+        raise ValueError(err_msg)
+
+    if len(os.listdir(args.base_path)) > 0:
+        really_force = input(
+            "Target directory contains content. Really overwrite? N(o)|Y(es)"
+        ).upper()
+        if really_force in ["N", "NO"]:
+            logger.info("Halting process due to existing directory & user opt-out")
+            err_msg = "User opt-out"
+            raise KeyboardInterrupt(err_msg)
+        elif really_force in ["Y", "YES"]:
+            logger.info("Overwriting specified directory")
+            status = clear_dir(args.base_path)
+            if status is not True:
+                err_msg = "Issue overwriting existing directory"
+                raise Exception(err_msg)
+
+    return True
+
+
+def init_sqlite_tables(handle):
+    """Init the SQLite3 Tables for the default data"""
+    logger.info("Initializing SQLite DB Tables")
+    results = dbtools.manage.create_tables_from_table_key_iter(
+        dbtools.mappings.TABLES_CREATE_ORDER, handle._sqlh._sqlh.cursor
+    )
+    return (True, results)
+
+
+if __name__ == "__main__":
+    logging.info("initing logging...")
+    logger.info("Starting SCOTUS Data Init Process")
+    args = get_args()
+
+    if args.create is False:
+        dbh = dbtools.Handle.grab_existing(args.name)
+    else:
+        path_overwrite(args)
+        dbh = dbtools.Handle.init_at_path(args.base_path)
+        status = init_sqlite_tables(dbh)
+
+    # FIXME: move to some utils file in the main lib
+    cur_year = datetime.datetime.now().year
+    if datetime.datetime.now().month >= 10:
+        cur_year += 1
+    logger.info(f"Collecting data from year {args.start_year} to {cur_year}")
+
+    for year in range(args.start_year, cur_year):
+        for oral_arg in webtools.scgov_tools.extract_oralargs_from_termpage(year):
+            logger.info(f"Fetching PDF for Oral Argument {oral_arg.name}")
+            try:
+                oral_arg.fetch_file()
+            except Exception as err:
+                logger.error(f"Encountered error fetching file: {err}")
+            else:
+                # FIXME: should there be "init_from_oral_arg_page" classmethods?
+                case = documents.Case.init_from_kwargs(
+                    term=year, case_id=oral_arg.id, name=oral_arg.name, date=oral_arg.date
+                )
+                oa_transcript = documents.OralArgTranscript.init_from_kwargs(
+                    case_id=oral_arg.id,
+                    name=oral_arg.name,
+                    date=oral_arg.date,
+                    file_url=oral_arg.link,
+                    transcript=oral_arg.file,
+                )
+                try:
+                    dbh.add_case(case)
+                    dbh.add_oral_arg(oa_transcript)
+                except Exception as err:
+                    logger.error(f"Encountered error saving data: {err}")
+            time.sleep(5)
+
+        # Fetch court opinions from Termpage & store
+        # opinions = scotusutils.webtools.scgov_tools.extract_oppdfs_from_termpage(year)
+        # FIXME: add db dump
+
+        time.sleep(5)
+
+    if args.create is True:
+        logger.info(f"Adding new directory as default directory")
+        config = configtools.ConfigHandle()
+        config[args.name] = args.base_path
+        config.write_and_close()

@@ -1,0 +1,6 @@
+requests
+configparser
+futures
+reportlab
+Pillow
+mutagen

@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: sister
+Version: 0.1.3
+Summary: SImple SenTence EmbeddeR
+Home-page: https://github.com/sobamchan/sister
+Author: Sotaro Takeshita
+Author-email: oh.sore.sore.soutarou@gmail.com
+License: MIT
+Description: # sister
+        SISTER (**SI**mple **S**en**T**ence **E**mbedde**R**)
+        
+        
+        # Installation
+        
+        ```bash
+        pip install sister
+        ```
+        
+        
+        # Basic Usage
+        ```python
+        import sister
+        sentence_embedding = sister.SentenceEmbedding()
+        
+        sentence = "I am a dog."
+        vector = sentence_embedding(sentence)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

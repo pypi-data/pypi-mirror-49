@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+currentsapi/__init__.py
+currentsapi/authentication.py
+currentsapi/client.py
+currentsapi/constants.py
+currentsapi.egg-info/PKG-INFO
+currentsapi.egg-info/SOURCES.txt
+currentsapi.egg-info/dependency_links.txt
+currentsapi.egg-info/requires.txt
+currentsapi.egg-info/top_level.txt

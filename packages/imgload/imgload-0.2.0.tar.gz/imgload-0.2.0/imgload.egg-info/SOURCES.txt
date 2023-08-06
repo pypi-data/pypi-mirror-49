@@ -1,0 +1,7 @@
+README.md
+setup.py
+imgload.egg-info/PKG-INFO
+imgload.egg-info/SOURCES.txt
+imgload.egg-info/dependency_links.txt
+imgload.egg-info/requires.txt
+imgload.egg-info/top_level.txt

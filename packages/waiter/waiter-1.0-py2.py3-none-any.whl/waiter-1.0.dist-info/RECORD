@@ -1,0 +1,8 @@
+waiter/__init__.py,sha256=X_ks3fV0gB20gYAeP9GEqQbMMWQCrag8hA6MFFAtIGU,157
+waiter/awaiter.py,sha256=D4N8FksEdBy4McArDPtsj8rX_bhf9cZ8XrDu7vkSsx8,1630
+waiter/base.py,sha256=1udtASpLVxWk7wbgSBOYNk9WvUDGMIw4rITIZiOPvgs,6599
+waiter-1.0.dist-info/LICENSE.txt,sha256=w8T_3wyPK5cviWrytR25z5unKYMPZIttg8mddzu9JP0,576
+waiter-1.0.dist-info/METADATA,sha256=46C3YOklFqaDza8v7ZfDqsGfwg6VsSAJ0Np-4OlN-HY,6781
+waiter-1.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+waiter-1.0.dist-info/top_level.txt,sha256=Z9pjbScIe0tWiLmnynwKVkubs-cQKJZJo_puU9S5bMA,7
+waiter-1.0.dist-info/RECORD,,

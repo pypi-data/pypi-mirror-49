@@ -1,0 +1,12 @@
+gitlabirced/__init__.py,sha256=minAJ2O3iKFNW_8V9LHQFsCGU-WbrrusPy2Cq7QW094,177
+gitlabirced/cli.py,sha256=pUfFhSuvwKtjyS-7mJ1IGSt2bYZg-tZBxCe-ptDNSkg,5177
+gitlabirced/gitlabirced.py,sha256=VYoI-gwqwBKPx84cA0KnYDRofrgIXs8xtASD2nu5fE0,44
+gitlabirced/http_server.py,sha256=Y20UBrXgLJAkmJ7hvMHAd52XrCz1DCpBsHerDhJq5NU,11724
+gitlabirced/irc_client.py,sha256=kAHkOYYD33CU91Mul-_slGMQrXeCvbsPgbLJF8zxx0Q,8845
+gitlabirced-0.4.1.dist-info/AUTHORS.rst,sha256=ct04HJ65kInm-BukfJshux-rWmiiy29KUrmVCFzlwWQ,179
+gitlabirced-0.4.1.dist-info/LICENSE,sha256=uWE3OHeE-3LFJvc_nkXPbZNGc17Ot-ZwlBEvwo98I70,1084
+gitlabirced-0.4.1.dist-info/METADATA,sha256=jfon71-lpUR6bi81Xdm_EScaqwDCqC-txU3UaKWjz1w,4409
+gitlabirced-0.4.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+gitlabirced-0.4.1.dist-info/entry_points.txt,sha256=LlWfyXn-Y0NWnbZVb9roLeJZ5ftUl_3BH2NX22nj2GM,54
+gitlabirced-0.4.1.dist-info/top_level.txt,sha256=NaBVXPocusAMxXijTMenz-HgjirLK-UzP1PaB8LwG0k,12
+gitlabirced-0.4.1.dist-info/RECORD,,

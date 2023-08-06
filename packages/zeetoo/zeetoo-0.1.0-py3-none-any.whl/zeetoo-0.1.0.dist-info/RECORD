@@ -1,0 +1,15 @@
+zeetoo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zeetoo/__main__.py,sha256=PH-O40Ripzm4Nsg384FUPvQQJCqGa5mvKizvPw1-1Dk,1088
+zeetoo/backuper.py,sha256=p0pzxT-ypUPRM-uvBD0tiMEgCbYcyMPNSBJ7Ev911kc,13427
+zeetoo/backuper_gui.py,sha256=bkDQtmokyg0A0QuJejgMBKQhz5G-qrfSi6EznT_8JP8,11914
+zeetoo/confsearch.py,sha256=XzSpDAZIR29A306IN7zCvngb56KRYcZPNOV54d9iEqs,13879
+zeetoo/fixgvmol.py,sha256=wgoTdALpKyHHky-jsjucMPKQhUommaPPAOOb98Wn61g,1746
+zeetoo/getcdx.py,sha256=--M6fRmKmrbuEPqxi9yIRpyNhPUdvHZZtyEB_joHe24,4121
+zeetoo/gofproc.py,sha256=uKGCviNLeJx7E5xdfMoeTUqL0Bv-OpS0X7n12tceobc,6240
+zeetoo/sdf_to_gjf.py,sha256=ZuPVbrtih457AdStraU1_47jkmIY19L3HOne4OgzT7g,3407
+zeetoo-0.1.0.dist-info/LICENSE.txt,sha256=NXPF33XDScNaF3_5sXCAFI6eibSUAOsYdWvGC5xkYm0,1081
+zeetoo-0.1.0.dist-info/METADATA,sha256=KIodOmzeFF0RNnb3jmiCQpyb1Gx0s5RNQJsas0Ae9cg,8962
+zeetoo-0.1.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+zeetoo-0.1.0.dist-info/entry_points.txt,sha256=yuxYQy7wjW3Q9XrRhxo6IZ9ItonTO4yGG-_mfX9uYZg,49
+zeetoo-0.1.0.dist-info/top_level.txt,sha256=1UG-KkX9EPCGR9XJWscOWZ5cRJwQhFAGszJ8RZvUA3U,7
+zeetoo-0.1.0.dist-info/RECORD,,

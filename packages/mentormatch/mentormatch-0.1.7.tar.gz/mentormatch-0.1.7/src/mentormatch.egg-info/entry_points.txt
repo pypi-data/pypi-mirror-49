@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        mentormatch=mentormatch.cli:mentormatch_cli
+    

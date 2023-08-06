@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: snowcomp
+Version: 0.0.3
+Summary: Compares files different different branches and spits out deleted files
+Home-page: https://github.com/Kaushal28/SNOW-File-Comparator.git
+Author: kaushal28
+Author-email: shah.kaushal95@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: GitPython (==2.1.11)
+
+# SNOW-File-Comparator
+Compares files different different branches and spits out deleted files
+
+

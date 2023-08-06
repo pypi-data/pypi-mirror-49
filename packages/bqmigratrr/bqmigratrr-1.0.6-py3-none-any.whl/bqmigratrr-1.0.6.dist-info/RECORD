@@ -1,0 +1,17 @@
+bqmigratrr/__init__.py,sha256=4X_9zqqrOddx7zIOtySQ24OQRfYvxcgbSvjO3IoTMe4,2038
+bqmigratrr/commands/BigQuery.py,sha256=u2MXP2mg9JpHi5n9ztvaxHTxuAXnHp-TvRn3BevNvQw,2642
+bqmigratrr/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bqmigratrr/commands/migrator.py,sha256=EPCeArIJkyMPAR1ihoJIeCRG2bez3eKlpYN7JOXTv_k,493
+bqmigratrr/enums/DataType.py,sha256=qEn4TixJSlJE9RXx6K1stqPwxBjNtOEBzCwXzPLpqD0,300
+bqmigratrr/enums/Mode.py,sha256=vvDEpCmDotvnrZZy_mXMkQpd7s2tZJencR0h_kLHP7s,120
+bqmigratrr/enums/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bqmigratrr/models/Column.py,sha256=ScZqbjFxssBGQtjCaeGA6b9dsYrUnGXj8EkEoK9Kgks,447
+bqmigratrr/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bqmigratrr-1.0.6.data/scripts/bqmigratrr,sha256=esU0UQpB1kbmq-BpDLBWOZ-OXzDe9dUEn4HWWljvCl0,51
+bqmigratrr-1.0.6.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+bqmigratrr-1.0.6.dist-info/METADATA,sha256=EqvErUgosb_fvEcRxSg6p94ETkdAWquhSXW8Gf2h_sk,439
+bqmigratrr-1.0.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+bqmigratrr-1.0.6.dist-info/top_level.txt,sha256=shS92Lc-2cnbLrLRgCaF01YvZxLQy54Ra4G8fmKOhMk,11
+bqmigratrr-1.0.6.dist-info/version.txt,sha256=4ct5uLutDTkkmV0uFpcf40QM4kZNWdiGBJJcDWsLbF0,5
+bqmigratrr-1.0.6.dist-info/version_full.txt,sha256=LyjBSvfWp1x8QAf_Bv_KSj6PuBwgbLudYV3w493rnF4,6
+bqmigratrr-1.0.6.dist-info/RECORD,,

@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: karyopype
+Version: 0.0.1
+Summary: Chromosomal visualization in Python.
+Home-page: http://github.com/jakevc/karyopype
+Author: Jake VanCampen
+Author-email: jake.vancampen7@gmail.com
+License: MIT
+Keywords: Bioinformatics
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+[![CircleCI](https://circleci.com/gh/jakevc/karyopype.svg?style=svg)](https://circleci.com/gh/jakevc/karyopype)
+
+# karyopype
+
+Karyopype is a simple chromosome plotting package in python allowing you to quickly visualize where a set of genomic regions, or multiple sets of genomic regions fall on the chromosomes.
+
+
+```
+import karyopype
+kp = Karyopype("hg38")
+kp.add_regions(regions_bed_df)
+kp.plot_chromosomes()
+```
+

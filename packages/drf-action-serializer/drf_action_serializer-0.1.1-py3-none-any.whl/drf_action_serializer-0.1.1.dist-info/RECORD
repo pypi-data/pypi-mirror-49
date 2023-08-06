@@ -1,0 +1,12 @@
+action_serializer/VERSION_STAMP,sha256=gERzFlKfxiAU-6oEf7Z8Uaww4ygwzaNwQFNJ2NZtGWw,6
+action_serializer/__init__.py,sha256=tMCWLAxp8ZQt-hsDV8pRqeYJs9zLBqQPSxk7-YxMQNE,47
+action_serializer/sample_group_viewset.py,sha256=ueCurK4CSDCEyqZLc8abm8uyVHjKIv7ZzvpMByE6JJE,838
+action_serializer/serializers.py,sha256=uwIGt17AeDxItnLEnZzuC9pvrIiy5tS54TB2FmfUzKk,6673
+action_serializer/settings.py,sha256=l6nrOy6md_RAdUwHIugKtWL87nTc8h3cfVZol_v76I8,3338
+action_serializer/urls.py,sha256=YGVcVzBjgVFPe-B1haFk3Mwe4BxBSQiY25_OJ1gTSjM,446
+action_serializer/version.py,sha256=LpeycF7yTsTpoSWq3VajBJzTkz-lXaHj6NCgZ-na73Q,1704
+drf_action_serializer-0.1.1.dist-info/LICENSE,sha256=i6KYKElsx1_aia5LlJzYJByZKl4qyZhaUgeSLL95K_U,1074
+drf_action_serializer-0.1.1.dist-info/METADATA,sha256=TQoR2dmCTX4g4OpBnciglqra7cQxcI-CbtLwDaUEAEE,3163
+drf_action_serializer-0.1.1.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+drf_action_serializer-0.1.1.dist-info/top_level.txt,sha256=zrSvMxjTT_uND09YHKuXqGqWQzWLgbtQppOEXkwUajQ,18
+drf_action_serializer-0.1.1.dist-info/RECORD,,

@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        yocto-ec2=yoctoEC2.scripts.command:cli
+    

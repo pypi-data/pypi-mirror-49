@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: login-workhours
+Version: 0.1
+Summary: Compute working hours based on login / logouts events.
+Home-page: https://framagit.org/almet/workhours
+Author: Alexis Métaireau & contributors
+Author-email: alexis@notmyidea.org
+License: Custom BSD Beerware
+Description: # Compute working hours from logins and logouts
+        
+        I never know how much time I'm spending at work per week, so I wrote a little script that gets me this information out of logins / logouts.
+        
+        It obviously only work if you have a separated computer for work and for your personal use. But that's my case!
+        
+        Installation
+        ============
+        
+        It's pretty simple to install, here are a few lines for you::
+        
+            $ pip install login-workhours
+            $ workhours
+              Week #    Duration (hours)
+            --------  ------------------
+                19                3.66
+                21                4.19
+                23                0.18
+                24                0.01
+                25               63.96
+                28               23.99
+                29               23.96
+                30                1.61
+        
+Keywords: time-management
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7

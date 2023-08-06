@@ -1,0 +1,10 @@
+README.rst
+setup.py
+login_workhours.egg-info/PKG-INFO
+login_workhours.egg-info/SOURCES.txt
+login_workhours.egg-info/dependency_links.txt
+login_workhours.egg-info/entry_points.txt
+login_workhours.egg-info/not-zip-safe
+login_workhours.egg-info/requires.txt
+login_workhours.egg-info/top_level.txt
+workhours/__init__.py

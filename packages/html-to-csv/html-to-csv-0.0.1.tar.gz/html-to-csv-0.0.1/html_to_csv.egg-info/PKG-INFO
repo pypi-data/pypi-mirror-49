@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: html-to-csv
+Version: 0.0.1
+Summary: A utility that extracts tables from html documents and converts them to csv format
+Home-page: https://github.com/hanwentao/html2csv
+Author: Wentao Han
+Author-email: wentao.han@gmail.com
+License: UNKNOWN
+Description: # html2csv
+        
+        `html2csv` is a utility that extracts tables from html documents and converts them to csv format, written in Python.
+        
+Keywords: html table csv convert
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

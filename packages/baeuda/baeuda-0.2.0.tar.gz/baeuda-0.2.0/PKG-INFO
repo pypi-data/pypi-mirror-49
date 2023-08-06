@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: baeuda
+Version: 0.2.0
+Summary: "Baeuda - Create Anki Cards from Joplin Notes"
+Home-page: https://github.com/foxmask/baeuda
+Author: FoxMaSk
+Author-email: foxmask@protonmail.com
+Maintainer: FoxMaSk
+Maintainer-email: foxmask@protonmail.com
+License: BSD License
+Description: UNKNOWN
+Keywords: anki card joplin
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications
+Classifier: Topic :: Database

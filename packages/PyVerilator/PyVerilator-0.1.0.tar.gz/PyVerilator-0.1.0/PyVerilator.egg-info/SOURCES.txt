@@ -1,0 +1,10 @@
+README.rst
+setup.py
+PyVerilator.egg-info/PKG-INFO
+PyVerilator.egg-info/SOURCES.txt
+PyVerilator.egg-info/dependency_links.txt
+PyVerilator.egg-info/requires.txt
+PyVerilator.egg-info/top_level.txt
+pyverilator/__init__.py
+pyverilator/pyverilator.py
+pyverilator/verilatorcpp.py

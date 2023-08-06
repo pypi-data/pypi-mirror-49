@@ -1,0 +1,13 @@
+repobee_plug/__init__.py,sha256=J92ux5UdVJL5V61do2YYpke1tJnvppeC61IuYd88fIA,1360
+repobee_plug/__version.py,sha256=Cah5XWrgYvWIA9ft3A_qJX6arUXZtZm_ZUQWPqZy5tA,30
+repobee_plug/apimeta.py,sha256=pmohqKRKb2vt8LlNMh9vG70Es4AqLjAO_3DcMS-d9NE,16475
+repobee_plug/containers.py,sha256=yPo3TB2uJVyCBqZ8K__Azj5gM2okd5--sChrRpouDEU,3094
+repobee_plug/corehooks.py,sha256=zkiqOfrWgsc9BC_xKhje7orpWnHPqOQ5-TCyJzYG8-U,3248
+repobee_plug/exception.py,sha256=VroNZXNeT_cB237rUXqkmhG_bnpu0tnwgxesXfe-wzw,637
+repobee_plug/exthooks.py,sha256=7sDGJo6wckdRn3K_HBIcHXDLU203vTJi5ZAC7RBuRIM,4352
+repobee_plug/pluginmeta.py,sha256=T9yREnhENdKZ9FuWHS-4SinY_KhaTTszlW_8n2THTQw,3079
+repobee_plug-0.8.0a1.dist-info/LICENSE,sha256=xMBmzTggjC_Tad-iOit7jiwOsLBPNK0WTWFC8e0JyjI,1071
+repobee_plug-0.8.0a1.dist-info/METADATA,sha256=CewYX7xbxOkg5AvznMn-D5-5FMI8qbehR_ESGcMdxIw,2127
+repobee_plug-0.8.0a1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+repobee_plug-0.8.0a1.dist-info/top_level.txt,sha256=361uKzTtCx8739JLQG92_H-X3_8-VVNP3fV7MtZ0fuE,13
+repobee_plug-0.8.0a1.dist-info/RECORD,,

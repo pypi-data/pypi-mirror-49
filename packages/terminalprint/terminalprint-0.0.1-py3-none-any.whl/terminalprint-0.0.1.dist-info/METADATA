@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: terminalprint
+Version: 0.0.1
+Summary: a package for terminal pretty print
+Home-page: https://github.com/xsddz/py_pkg_terminalprint
+Author: xsddz
+Author-email: dingzhns@gmail.com
+License: MIT
+Keywords: terminal print pretty
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
+
+=============
+terminalprint
+=============
+
+
+
+Quickstart
+----------
+
+install::
+
+    $ pip install terminalprint
+
+code::
+
+    >>> table = [
+    ...         ["测试表头1", "测试表头2", "测试表头3", '测试表头4'],
+    ...         ["哈哈d", "dasfd12f", "哈哈哈哈", '123你好'],
+    ...         ["dalfja", "啦啦啦啦短发就是佛的", '大方nmm', '的沙发啊的'],
+    ...     ]
+    >>> 
+    >>> 
+    >>> import terminalprint as tp
+    >>> 
+    >>> tp.table_print(table)
+    +-----------+----------------------+-----------+------------+
+    | 测试表头1 | 测试表头2            | 测试表头3 | 测试表头4  |
+    +-----------+----------------------+-----------+------------+
+    | 哈哈d     | dasfd12f             | 哈哈哈哈  | 123你好    |
+    | dalfja    | 啦啦啦啦短发就是佛的 | 大方nmm   | 的沙发啊的 |
+    +-----------+----------------------+-----------+------------+
+    >>> 
+
+
+

@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pyimprove
+Version: 0.0.1
+Summary: Automated Program Repair of Python Source-Code Using Genetic Improvement
+Home-page: https://gitlab.com/WilliamWCYoung/pyimprove
+Author: William Young
+Author-email: william.w.c.young@hotmail.com
+License: UNKNOWN
+Description: # Pyimprove
+        
+        This repository contains an implementation of Genetic Improvement that can be used to fix Python code.
+        
+        ## Setup
+        
+        A virtual environment is used to ensure that all requirements are installed correctly without interference with the host environment.
+        
+        ```
+        brew install pyenv
+        brew install pyenv-virtualenv
+        
+        nano ~/.bash_profile
+        eval "$(pyenv init -)"
+        eval "$(pyenv virtualenv-init -)"
+        source ~/.bash_profile
+        
+        pyenv install 3.7.4
+        pyenv virtualenv 3.7.4 pyimprove
+        
+        pyenv activate pyimprove
+        
+        pip install --upgrade pip
+        pip install -r ./requirements.txt
+        pip install --editable .
+        ```
+        
+        ```
+        python ./pyimprove/search.py ./bugs/custom/factorial.py ./bugs/custom/factorial_test.py
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

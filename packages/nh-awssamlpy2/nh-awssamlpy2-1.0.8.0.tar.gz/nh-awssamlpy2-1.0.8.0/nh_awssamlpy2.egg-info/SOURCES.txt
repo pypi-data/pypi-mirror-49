@@ -1,0 +1,9 @@
+README.txt
+aws-saml
+aws-saml.bat
+setup.py
+nh_awssamlpy2.egg-info/PKG-INFO
+nh_awssamlpy2.egg-info/SOURCES.txt
+nh_awssamlpy2.egg-info/dependency_links.txt
+nh_awssamlpy2.egg-info/requires.txt
+nh_awssamlpy2.egg-info/top_level.txt

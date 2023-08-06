@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Terminal-Apple-Season
+Version: 0.0.4
+Summary: Apple season game for terminal
+Home-page: https://github.com/lol-cubes/Terminal-Apple-Season
+Author: Arin Khare
+Author-email: arinmkhare@gmail.com
+License: UNKNOWN
+Description: # Apple Season Terminal
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Description-Content-Type: text/markdown

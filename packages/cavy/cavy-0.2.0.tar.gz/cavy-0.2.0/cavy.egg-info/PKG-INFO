@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: cavy
+Version: 0.2.0
+Summary: Library of unit testing helpers.
+Home-page: https://cavy.readthedocs.io/
+Author: Dave Shawley
+Author-email: daveshawley@gmail.com
+License: UNKNOWN
+Project-URL: Builds, https://circleci.com/gh/dave-shawley/cavy
+Project-URL: Documentation, https://cavy.readthedocs.io/
+Project-URL: Source, https://github.com/dave-shawley/cavy/
+Project-URL: Tracker, https://github.com/dave-shawley/cavy/issues/
+Description: |Version| |Python| |Source| |Coverage| |Docs| |CI|
+        
+        This is a *kitchen sink* library of utility classes that simplifies writing
+        richer tests.  I extracted the contents from various projects that I've
+        written over the past few years -- this is the result of not wanting to cut
+        and paste or rewrite the same code everywhere.
+        
+        .. |CI| image:: https://img.shields.io/circleci/project/github/dave-shawley/cavy/master.svg
+           :target: https://circleci.com/gh/dave-shawley/cavy
+        .. |Coverage| image:: https://coveralls.io/repos/github/dave-shawley/cavy/badge.svg?branch=master
+           :target: https://coveralls.io/github/dave-shawley/cavy?branch=master
+        .. |Docs| image:: https://img.shields.io/readthedocs/cavy.svg
+           :target: https://cavy.readthedocs.io/
+        .. |Python| image:: https://img.shields.io/pypi/pyversions/cavy.svg
+           :target: https://pypi.org/project/cavy
+        .. |Source| image:: https://img.shields.io/github/stars/dave-shawley/cavy.svg?logo=github
+           :target: https://github.com/dave-shawley/cavy
+        .. |Version| image:: https://img.shields.io/pypi/v/cavy.svg
+           :target: https://pypi.org/project/cavy
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
+Provides-Extra: dev

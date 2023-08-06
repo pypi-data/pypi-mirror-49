@@ -1,0 +1,7 @@
+include CHANGELOG
+include LICENSE
+include tox.ini
+graft docs
+graft tests
+
+global-exclude *.pyc

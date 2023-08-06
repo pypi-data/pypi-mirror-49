@@ -1,0 +1,9 @@
+cxgen/__init__.py,sha256=6kODwHCQwiP8FW8_JRBIoG8HNJ-QHPxkswYCDvzrPws,7807
+cxgen/appfile.py,sha256=iziA0EdZKbKvNR77O9Y96h1bo6iDVo6H9vfwPwK8I1A,1743
+cxgen/utils.py,sha256=mtXi2wTu0pvld9COShr8Yaa39ZcLLoTKYG93AL2GsKI,1992
+cxgen/files/LICENSE-for-function.txt,sha256=nCgrKvOIWeyH8lhpF26J2lFlGcQ5mlwV5v9yEJIkWDw,1091
+cxgen/files/manual.txt,sha256=6wfeOxqiGyyVD7FAv7-zOE9bZkcFNUdMGVVUMqvYZG0,1571
+cxgen-2.0.0.0.dist-info/METADATA,sha256=zUYDjbR8BldiZXC6nDW-FfR7mApZB-kN5zqlEQWztOk,629
+cxgen-2.0.0.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+cxgen-2.0.0.0.dist-info/top_level.txt,sha256=C8FuGI6_tiTjTJgS39Bc7KlpR90f_ycvtGgE8MY6E_A,6
+cxgen-2.0.0.0.dist-info/RECORD,,

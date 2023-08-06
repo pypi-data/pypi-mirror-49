@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: dominant_color
+Version: 0.0.3
+Summary: Just a demo of different dominant color extraction algorithms
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Julien Palard
+Author-email: julien@python.org
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pillow
+
+# Just a demo of different dominant color extraction algorithms
+
+Currently implemented:
+
+ - kmeans
+ - median cut quantization
+
+## Usage
+
+```
+usage: image_palette.py [-h] image {kmeans,mediancut} ...
+
+Test different color extraction algorithms.
+
+positional arguments:
+  image
+  {kmeans,mediancut}  Algorithms
+    kmeans            Using K-Means clustering
+    mediancut         Using a median cut quantization
+
+optional arguments:
+  -h, --help          show this help message and exit
+```

@@ -1,0 +1,4 @@
+Pillow
+filetype
+psycopg2-binary
+pymysql

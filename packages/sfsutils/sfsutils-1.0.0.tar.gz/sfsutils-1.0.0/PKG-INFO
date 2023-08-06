@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: sfsutils
+Version: 1.0.0
+Summary: A KSP SFS savefile parser
+Home-page: https://github.com/mark9064/sfsutils
+Author: mark9064
+License: UNKNOWN
+Description: # sfsutils
+        
+        A KSP SFS savefile parser
+        
+        ## Install
+        
+        `pip3 install sfsutils`
+        
+        ## Usage
+        
+        Example:
+        ```python
+        import sfsutils
+        data = sfsutils.parse_savefile("saves/persistent.sfs")
+        # edit data
+        sfsutils.writeout_savefile(data, destination_file="saves/edited.sfs")
+        ```
+        All documentation is in the docstrings of each function/class.
+        
+        Available functions are (see docstrings for more info):
+        * parse_savefile - Parses an SFS file from stream or file
+        * writeout_savefile - Writes out the parsed data back into the SFS format
+        
+        ## License
+        
+        GPLV3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown

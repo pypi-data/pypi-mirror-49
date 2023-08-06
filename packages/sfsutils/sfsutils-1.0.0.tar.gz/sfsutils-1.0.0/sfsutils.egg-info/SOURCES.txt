@@ -1,0 +1,8 @@
+README.md
+setup.py
+sfsutils/__init__.py
+sfsutils/sfsutils.py
+sfsutils.egg-info/PKG-INFO
+sfsutils.egg-info/SOURCES.txt
+sfsutils.egg-info/dependency_links.txt
+sfsutils.egg-info/top_level.txt

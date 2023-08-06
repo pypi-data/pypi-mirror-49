@@ -1,0 +1,7 @@
+setup.py
+xxyzfpackage/__init__.py
+xxyzfpackage/nester.py
+xxyzfpackage.egg-info/PKG-INFO
+xxyzfpackage.egg-info/SOURCES.txt
+xxyzfpackage.egg-info/dependency_links.txt
+xxyzfpackage.egg-info/top_level.txt

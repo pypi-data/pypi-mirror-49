@@ -1,0 +1,11 @@
+Capitalism-0.2.50.dist-info/DESCRIPTION.rst,sha256=wB9wKRbfg72z7iJVzAW2PK3bTj8aSCXIgb7xojrHt9g,293
+Capitalism-0.2.50.dist-info/METADATA,sha256=14tSo_MHvsz7NmNph6S1flvCCGdHKBdr2adGv5O5pZQ,1070
+Capitalism-0.2.50.dist-info/RECORD,,
+Capitalism-0.2.50.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+Capitalism-0.2.50.dist-info/metadata.json,sha256=SF4wOeGZh-HS1-ap0bGg0suoYn_1DnaJF7J1w555jfw,895
+Capitalism-0.2.50.dist-info/top_level.txt,sha256=muyrqlFfS8Qvj_3G6IjF_6BSSf5rv-gPrT0APn2ji18,11
+capitalism/__init__.py,sha256=xVgqQauxRzeTiJbaUhqz3DbNxf5_GKhGSO8s16lZ_wU,163
+capitalism/chain.py,sha256=dRBbux_ba2i-hmP--4Y1XuZbcBmgR5V18E_wjfCHVak,5960
+capitalism/factory.py,sha256=Ch7menjy3bBgLkrih6rCpM1WlqiKrszCoB8KpS3LmjE,8186
+capitalism/util.py,sha256=1JunQbius-cDkBJQg3cU7zbiohlkJG6i2sg_4QrU5XA,1788
+capitalism/worker.py,sha256=uYZsxT0IWERTuKv_qd6ffYvfjdfPx4EPRv8vKFX3A2U,9048

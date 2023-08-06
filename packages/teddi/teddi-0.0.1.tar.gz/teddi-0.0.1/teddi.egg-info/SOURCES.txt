@@ -1,0 +1,7 @@
+README.md
+setup.py
+teddi/__init__.py
+teddi.egg-info/PKG-INFO
+teddi.egg-info/SOURCES.txt
+teddi.egg-info/dependency_links.txt
+teddi.egg-info/top_level.txt

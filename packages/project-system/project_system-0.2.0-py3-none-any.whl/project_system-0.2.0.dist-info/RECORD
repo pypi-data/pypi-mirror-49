@@ -1,0 +1,13 @@
+project_system/__init__.py,sha256=eRzab-BOWdLNP9v6Oc9Bg56Xp7pvPsrYkr6GXp-_fhA,63
+project_system/__meta__.py,sha256=_zyQuO9Fb_GDgkDUcLrGoWz_tDAUv0ORTmefqlHyQZo,280
+project_system/tests.py,sha256=nXcgT0Ttro4WIalQgJgL6JcDoJWWuVt9u0cWEyUvz70,509
+project_system-0.2.0.data/scripts/project-conf-init,sha256=HBcFl9EwliPRlzRqTT9MusIyu0RvCXUnZsNvaaZXmvM,1229
+project_system-0.2.0.data/scripts/project-git-init,sha256=42L_akFIvXIH45HUOIs-D8-3WsVo4JkWMnxl9_10Ixg,510
+project_system-0.2.0.data/scripts/project-list,sha256=IPSpiiGu-PlAIXJg6n30jQbIR3EdggqQ90PFppa3O-U,270
+project_system-0.2.0.data/scripts/project-new,sha256=3pLQ6y501qKlBDGCdy-EBfm4DzTG2OGEaJo2WLac9mI,972
+project_system-0.2.0.data/scripts/project-open,sha256=yd7rv0p_253zw9oqMLc1io2e8stQOdpcN4KDNa2vmFI,729
+project_system-0.2.0.data/scripts/project-workon,sha256=3HSUGDLUNQJOdexEQjs9Uvjt7LaQm5iZcVuvDjDkT5U,883
+project_system-0.2.0.dist-info/METADATA,sha256=l6AFnjaRzt-E15AV0WodM_3DFIZ2ceGC15rjNe2O1pU,1415
+project_system-0.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+project_system-0.2.0.dist-info/top_level.txt,sha256=BrrPuWGjMwTpJ5I2UDG9b_02Ubh8B0RTYIa76E274tY,15
+project_system-0.2.0.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+#!/bin/bash
+# project-system 2016 Ian Dennis Miller
+# http://github.com/iandennismiller/project-system
+
+WORK_PATH=~/Work
+
+if [ -f ~/.project-system.conf  ]; then
+    source ~/.project-system.conf
+fi
+
+ls -1t "${WORK_PATH}" | head -n15 | awk '{printf "%d\t%s\n", NR, $0}'

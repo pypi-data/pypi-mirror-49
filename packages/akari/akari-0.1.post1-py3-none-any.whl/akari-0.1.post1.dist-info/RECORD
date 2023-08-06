@@ -1,0 +1,10 @@
+akari/__init__.py,sha256=d-8lJdSz1ehM-jxsdtHS84gG9QSgDsWO5Vm-XNCe5xI,70
+akari/cli.py,sha256=eXQdtFslr5LnfD4s1u3S7FpdYIHLcbLLWF0qcW6yYbg,470
+akari/gui.py,sha256=5iN4oGArPMmHX3sDzIXZbVVLNV3XnkbjV8pZVLcYjNk,2183
+akari/utils.py,sha256=LtfzSCATHrQRcAqwJJl7pV5815HVmOlRoMVmqHIdjc8,4111
+akari-0.1.post1.dist-info/LICENSE,sha256=AUMeKgt-8GswnXART0rcYhsH7HMRjGhp_B7-DqK-si4,1068
+akari-0.1.post1.dist-info/METADATA,sha256=D2zHBXjvxJBfCUIzQ04_aOF1q3yg3aAQx6nbid5iGG4,1565
+akari-0.1.post1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+akari-0.1.post1.dist-info/entry_points.txt,sha256=A6qnP-oDQ4me9IRmulAfqornM-CoxEURMn9ZQQuYK6c,42
+akari-0.1.post1.dist-info/top_level.txt,sha256=zU0vrW8uo9A3kOCtAJu8k4NPasDDibKt-UIbPZeLvdw,6
+akari-0.1.post1.dist-info/RECORD,,

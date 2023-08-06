@@ -1,0 +1,7 @@
+lark-parser
+numpy
+tensorflow
+keras
+termcolor
+sklearn
+mlxtend

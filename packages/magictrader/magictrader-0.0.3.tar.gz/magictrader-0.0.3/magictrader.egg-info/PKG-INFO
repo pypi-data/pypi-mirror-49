@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: magictrader
+Version: 0.0.3
+Summary: MagicTrader makes it easy to do system trade on zaif-exchange.
+Home-page: https://github.com/curio184/magictrader
+Author: Yusuke Oya
+Author-email: curio@antique-cafe.net
+License: MIT
+Description: MagicTrader
+        =============
+        
+        MagicTraderとは、zaif-exchangeでシステムトレードを行うためのフレームワークです。
+        ローソク足の取得、チャートの描画、そしてバックテスト・フォワードテストの機能を備えます。
+        各種テストでは、シグナルをチャートにプロットすることができるため、
+        チャートを確認しならアルゴリズムを検証することができます。
+        
+        セットアップ
+        =============
+        
+        ### MagicTraderをインストールする
+        
+        pipコマンドを実行し、MagicTraderをインストールしてください。
+        
+        ```
+        $ pip install magictrader
+        ```
+        
+        ### TA-Libをインストールする
+        
+        MagicTraderは「TA-Lib」のインストールを別途必要とします。
+        下記の紹介等を参考に、各々の環境に応じて、インストールしてください。
+        
+        python3でTA-Libをインストールする方法をまとめてみた
+        https://qiita.com/ConnieWild/items/cb50f36425a683c914d2
+        
+        ```
+        $ pip install TA_Lib-0.4.17-cp35-cp35m-win_amd64.whl
+        ```
+        
+        使い方
+        =============
+        
+        (記載中)
+        
+Keywords: zaif zaifapi zaif-exchange trade bot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: ta-lib

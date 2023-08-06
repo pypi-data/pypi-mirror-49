@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: PyAxeTool
+Version: 0.0.3
+Summary: An utility tool collection for make life easily
+Home-page: https://github.com/sunjinopensource/PyAxeTool/
+Author: Sun Jin
+Author-email: 412640665@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: PyAxe
+
+PyAxeTool
+=========
+
+An utility tool collection for make life easily.
+
+Examples
+--------
+TODO
+

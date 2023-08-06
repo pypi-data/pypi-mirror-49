@@ -1,0 +1,3 @@
+[console_scripts]
+naive_translator = naive_translator.__main__:main
+

@@ -1,0 +1,7 @@
+README.md
+setup.py
+d2p/__init__.py
+d2p.egg-info/PKG-INFO
+d2p.egg-info/SOURCES.txt
+d2p.egg-info/dependency_links.txt
+d2p.egg-info/top_level.txt

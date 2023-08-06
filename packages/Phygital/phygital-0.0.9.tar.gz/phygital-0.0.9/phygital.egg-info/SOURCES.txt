@@ -1,0 +1,7 @@
+README.md
+setup.py
+phygital.egg-info/PKG-INFO
+phygital.egg-info/SOURCES.txt
+phygital.egg-info/dependency_links.txt
+phygital.egg-info/requires.txt
+phygital.egg-info/top_level.txt

@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: oc
+Version: 0.2.0
+Summary: OpenShift CLI (oc) thin wrapper library for Python3
+Home-page: https://github.com/peaqe/oc/
+Author: Rudá Moura
+Author-email: rmoura@redhat.com
+License: Apache License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: pexpect
+
+OpenShift CLI (oc) thin wrapper for Python3
+===========================================
+
+This *oc library* is a thin wrapper around the OpenShift CLI `oc`.
+
+Usage
+-----
+
+```
+>>> import oc
+>>> oc.login('https://...openshift.com', 'mytoken')
+>>> oc.set_project('myproject')
+>>> oc.exec('mypod', 'curl -I http://localhost:8080')
+>>> logs = oc.logs('mypod', since='1m')
+```
+
+Installation
+------------
+
+```
+$ pip install oc
+```
+
+Documentation
+-------------
+
+```
+$ pydoc oc.api
+```
+
+

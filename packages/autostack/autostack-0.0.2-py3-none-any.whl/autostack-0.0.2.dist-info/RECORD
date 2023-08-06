@@ -1,0 +1,10 @@
+autostack/SOQuery.py,sha256=omNJJh9z1n73oJCBlQDwPx9cVTWzGwMDoWkdTxIWfRc,5623
+autostack/__init__.py,sha256=RXKO8cgStXg1D9FNgoi6d2Q6ddSRswP3gpRYpCXhMTA,18
+autostack/__main__.py,sha256=SgYebWrcd_g-CjaXcw2UyFCYcmtF0qCVaV-fXotU-PA,2610
+autostack-0.0.2.data/scripts/autostack-terminal,sha256=tiH0Jfrmmq8pVLQBaWiTI2T8ziA2oU4un4QhS6koX4k,64
+autostack-0.0.2.dist-info/LICENSE,sha256=ROlOkrIBqZp2_IUPMWB3iZtCGlSPok1-hs6-2jp9lTc,1138
+autostack-0.0.2.dist-info/METADATA,sha256=9JSRVGODQW3wk0bfnj_8ngmU1S-7lc1tBcI2OJeOT7g,1851
+autostack-0.0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+autostack-0.0.2.dist-info/entry_points.txt,sha256=wUyzUjuOjSOsDwjBIWCOXbilGRPk2MM6GpFSFmUhfxM,55
+autostack-0.0.2.dist-info/top_level.txt,sha256=3QEI0eV9O5k3w46esETpMBx0WSAywOG0qtFDT2R8_ww,10
+autostack-0.0.2.dist-info/RECORD,,

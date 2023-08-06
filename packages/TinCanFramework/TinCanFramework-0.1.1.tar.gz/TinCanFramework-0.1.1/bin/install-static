@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+# Install the static files from the source webapp tree into the target
+# directory.
+
+# I m p o r t s
+
+import os, sys
+from argparse import ArgumentParser
+import shutil
+from stat import S_ISDIR, S_ISREG
+from tincan import _casef
+
+# V a r i a b l e s
+
+NOT_STATIC = set([".pspx", ".pt", ".py", ".pyc"])
+MYNAME = os.path.basename(sys.argv[0])
+WINF = "WEB-INF"
+copyfile = shutil.copy2
+
+# F u n c t i o n s
+
+def dir_must_exist(d):
+    if not os.path.isdir(d):
+        sys.stderr.write(
+            "{0}: {1!r} - no such directory\n".format(MYNAME, d))
+        sys.exit(2)
+
+def copydir(source, target, exclude=True):
+    for entry in os.listdir(source):
+        if exclude and _casef(entry, "upper") == WINF:
+            continue
+        if entry.startswith(".") or _casef(os.path.splitext(entry)[1]) in NOT_STATIC:
+            continue
+        spath = os.path.join(source, entry)
+        tpath = os.path.join(target, entry)
+        stype = os.stat(spath).st_mode
+        try:
+            ttype = os.stat(tpath).st_mode
+        except FileNotFoundError:
+            ttype = None
+        if S_ISREG(stype):
+            if ttype is not None and not S_ISREG(ttype):
+                sys.stderr.write(
+                    "{0}: {1!r} not a file\n".format(MYNAME, tpath))
+                sys.exit(1)
+            if args.move:
+                print("mv", repr(spath), repr(tpath))
+                shutil.move(spath, tpath)
+            else:
+                print("cp", repr(spath), repr(tpath))
+                copyfile(spath, tpath)
+        elif S_ISDIR(stype):
+            if ttype is None:
+                print("mkdir", repr(tpath))
+                os.mkdir(tpath)
+            elif not S_ISDIR(ttype):
+                sys.stderr.write(
+                    "{0}: {1!r} not a directory\n".format(MYNAME, tpath))
+                sys.exit(1)
+            copydir(spath, tpath, False)
+        else:
+            sys.stderr.write(
+                "{0}: warning - {1!r} not a file or directory\n".format(spath))
+
+# M a i n   P r o g r a m
+
+parser = ArgumentParser(prog=sys.argv[0], usage="%(prog)s [options] source target")
+group = parser.add_mutually_exclusive_group()
+group.add_argument("-m", "--move",
+    action="store_true", help="move files instead of copying them")
+group.add_argument("-n", "--no-preserve",
+    action="store_true", help="DO NOT preserve modes, times, etc.")
+parser.add_argument("source", nargs=1)
+parser.add_argument("target", nargs=1)
+args = parser.parse_args(sys.argv[1:])
+source = args.source[0]
+target = args.target[0]
+
+if args.no_preserve:
+    copyfile = shutil.copyfile
+
+dir_must_exist(source)
+dir_must_exist(os.path.join(source, WINF))
+
+try:
+    if not os.path.isdir(target):
+        print("mkdir", repr(target))
+        os.mkdir(target)
+    copydir(source, target)
+except (OSError, shutil.Error) as e:
+    sys.stderr.write("{0}: {1!s}\n".format(MYNAME, e))
+    sys.exit(1)
+
+sys.exit(0)

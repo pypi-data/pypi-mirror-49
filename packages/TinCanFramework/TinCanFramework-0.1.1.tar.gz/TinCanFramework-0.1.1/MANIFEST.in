@@ -1,0 +1,5 @@
+include tincan.py
+include setup.py
+include README.txt
+include LICENSE.txt
+include bin/*

@@ -1,0 +1,26 @@
+
+/*.view-form.invoices .form-footer .btn i {*/
+/*  display: none;*/
+/*}  */
+
+/*.view-form .form-footer #new-btn {*/
+/*    font-weight: bold;*/
+/*    background-color: lightblue;*/
+/*}  */
+
+/*.edit-form  #ok-btn {*/
+/*    font-weight: bold;*/
+/*    background-color: lightblue;*/
+/*}  */
+
+/*.edit-form.invoices input.total {*/
+/*    color: red;*/
+/*}  */
+
+/*.dbtable.invoices td.customer {*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.dbtable tr:nth-child(odd) > td {*/
+/*  background-color: #f9f9f9;*/
+/*}*/

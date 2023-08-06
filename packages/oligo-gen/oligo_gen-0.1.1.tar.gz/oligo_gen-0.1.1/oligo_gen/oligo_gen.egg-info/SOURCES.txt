@@ -1,0 +1,7 @@
+setup.py
+oligo_gen/oligo_gen.py
+oligo_gen/oligo_gen.egg-info/PKG-INFO
+oligo_gen/oligo_gen.egg-info/SOURCES.txt
+oligo_gen/oligo_gen.egg-info/dependency_links.txt
+oligo_gen/oligo_gen.egg-info/requires.txt
+oligo_gen/oligo_gen.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: frappuccino
+Version: 0.0.2
+Summary: Frappuccino
+Home-page: https://github.com/Carreau/frappuccino
+License: UNKNOWN
+Author: Matthias Bussonnier
+Author-email: bussonniermatthias@gmail.com
+Requires-Python: >=3.5
+Classifier: License :: OSI Approved :: BSD License

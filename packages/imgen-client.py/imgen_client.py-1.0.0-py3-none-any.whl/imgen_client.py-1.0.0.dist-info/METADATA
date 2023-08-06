@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: imgen-client.py
+Version: 1.0.0
+Summary: A python wrapper for the Dank Memer Imgen API
+Home-page: https://dankmemer.services
+Author: Geoffrey Westhoff
+License: MIT
+Project-URL: GitHub, https://github.com/Dank-Memer/imgen-client.py
+Project-URL: Imgen-Server, https://github.com/Dank-Memer/meme-server
+Platform: UNKNOWN
+Requires-Python: >=3.5.3
+Requires-Dist: aiohttp
+Requires-Dist: requests
+Requires-Dist: discord
+
+UNKNOWN
+
+

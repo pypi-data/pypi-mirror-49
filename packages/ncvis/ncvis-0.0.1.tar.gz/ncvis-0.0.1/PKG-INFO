@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ncvis
+Version: 0.0.1
+Summary: Noise contrastive data visualization
+Home-page: https://github.com/alartum/ncvis
+Maintainer: Aleksandr Artemenkov
+Maintainer-email: alartum@gmail.com
+License: MIT
+Description: # ncvis
+        
+        ncvis is a Python module for data visualization written in C++ with parallelism support.
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown

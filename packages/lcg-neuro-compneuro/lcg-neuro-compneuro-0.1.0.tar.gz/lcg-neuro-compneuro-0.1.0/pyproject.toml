@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "lcg-neuro-compneuro"
+version = "0.1.0"
+description = "Computational neuroscience library for Python"
+authors = ["Pedro Asad <pasad@lcg.ufrj.br>"]
+repository = "https://gitlab.com/lcg/neuro/python-compneuro"
+homepage = "https://lcg.gitlab.io/neuro/python-compneuro"
+documentation = "https://lcg.gitlab.io/neuro/python-compneuro"
+license = "MIT"
+readme = "README.rst"
+packages = [
+    { include = "compneuro", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+matplotlib = {version = "^3.1",optional = true}
+scipy = "^1.3"
+
+[tool.poetry.dev-dependencies]
+black = {version = "*", allows-prereleases = true}
+bumpversion = "^0.5.3"
+codecov = "^2.0"
+pre-commit = "^1.17"
+pytest = "^5.0"
+pytest-cov = "^2.7"
+sphinx = "^2.1"
+sphinx_rtd_theme = "^0.4.3"
+sphinxcontrib-bibtex = "^0.4.2"
+toml = "^0.10.0"
+
+[tool.poetry.extras]
+all = ["matplotlib"]
+matplotlib = ["matplotlib"]
+
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = ["poetry>=0.12"]

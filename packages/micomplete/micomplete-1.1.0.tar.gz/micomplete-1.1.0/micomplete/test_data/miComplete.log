@@ -1,0 +1,7 @@
+2019-07-10 17:08:24,415 - main - INFO - miComplete has started
+2019-07-10 17:08:24,417 - main - INFO - Using 1 thread(s)
+2019-07-10 17:08:24,418 - main - INFO - List of given sequences:
+2019-07-10 17:08:24,418 - main - INFO - /home/hugoson/git/micomplete/micomplete/test_data/legionella_longbeachae.fna
+2019-07-10 17:08:24,418 - main - INFO - /home/hugoson/git/micomplete/micomplete/test_data/coxiella_burnetii.fna
+2019-07-10 17:08:24,418 - main - INFO - /home/hugoson/git/micomplete/micomplete/test_data/coxiella-like_endosymbiont.fna
+2019-07-10 17:08:41,620 - main - INFO - Finished work on all given sequences

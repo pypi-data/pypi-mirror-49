@@ -1,0 +1,17 @@
+urwid_satext/__init__.py,sha256=tgnvGVdIxRAojM-hwU4IPr4pEwOU0-ND94J_AKyW1CI,871
+urwid_satext/files_management.py,sha256=ubVkwYnByicB7dHJM_YeuRN7wsoI-bdG3iZDEOrBhOQ,11223
+urwid_satext/keys.py,sha256=finujPwtMIPCs6MBheCmXTaF83L9_2VJvBGwzrQp89s,8393
+urwid_satext/sat_widgets.py,sha256=9zmp48DAxlhT626qr5ejKahFHcKWDZ5lS0fo3iuf6j4,62042
+urwid_satext-0.7.0.data/data/share/doc/urwid_satext/CHANGELOG,sha256=zsCs0z1Shm3XcegQ5Z_5NDvr80JpRZ-zk7sV12-80aE,1647
+urwid_satext-0.7.0.data/data/share/doc/urwid_satext/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+urwid_satext-0.7.0.data/data/share/doc/urwid_satext/COPYING.LESSER,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+urwid_satext-0.7.0.data/data/share/doc/urwid_satext/README,sha256=QbZT4jJA_oIJnUTcccvK85zpjdL0AQav6YABVzjyu-U,2421
+urwid_satext-0.7.0.data/data/share/doc/urwid_satext/examples/file_dialog.py,sha256=TaNnMJX_Dv0KXf4zISRDTLYyTB6_s0ta_fh5tdXusLY,1282
+urwid_satext-0.7.0.data/data/share/doc/urwid_satext/examples/menu.py,sha256=G7j_QWYfvKnjh64E0Ucp4uHnnLQcyzWabpSDihCNBSQ,2328
+urwid_satext-0.7.0.data/data/share/locale/fr/LC_MESSAGES/urwid_satext.mo,sha256=BtUhnVgLqnsiIrsEB9TIHgPyu57kNjQvHMKtppMgH2M,1074
+urwid_satext-0.7.0.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+urwid_satext-0.7.0.dist-info/COPYING.LESSER,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+urwid_satext-0.7.0.dist-info/METADATA,sha256=XkCY2tACiiFSr5dWFQ_zbJcmRSf3wVE3j0rAlHygo7o,825
+urwid_satext-0.7.0.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+urwid_satext-0.7.0.dist-info/top_level.txt,sha256=poMcXdejOV3XGUj9AA-JkVq0TXjJRJ7X6WwATYzyWUc,13
+urwid_satext-0.7.0.dist-info/RECORD,,

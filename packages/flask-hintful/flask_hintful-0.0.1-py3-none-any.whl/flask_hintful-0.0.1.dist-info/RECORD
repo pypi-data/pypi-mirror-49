@@ -1,0 +1,9 @@
+flask_hintful/__init__.py,sha256=JCgBAeh7TSvPbtCNABgQ8YkV0uvvh_KQCXPfApYKzNE,39
+flask_hintful/flask_hintful.py,sha256=kypNg7nr6glNAMxGn4mNxgz0FFf9CtrT_KtJJMzpI9Y,4507
+flask_hintful/serializing.py,sha256=0KOM8WBWzmlq2lNggGmGbVvr3sXqhs80H9FyaCdq9bE,2168
+flask_hintful/utils.py,sha256=UkXdsSOUjVAKgjOfeC_UQITmS_KdZVm4Nw2rAiU7dbU,1524
+flask_hintful/wrappers.py,sha256=Xik5seMSvsMUx4nuLSQMiDYLgdHecrTRsQ2lzW5GTTw,1897
+flask_hintful-0.0.1.dist-info/METADATA,sha256=nsPFKfn7Q5ZLR9KYCcM6n3AMthIxZ3AURc-wrAd06Yo,624
+flask_hintful-0.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+flask_hintful-0.0.1.dist-info/top_level.txt,sha256=v2Zfd_tf57eYFQswLC50nEee5ZPjoONgf1uImaU6hs4,14
+flask_hintful-0.0.1.dist-info/RECORD,,

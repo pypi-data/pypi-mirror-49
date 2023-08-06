@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: guillotina_evolution
+Version: 0.2.0
+Summary:  
+Home-page: https://github.com/vinissimus/guillotina_evolution
+Author: Jordi Masip
+Author-email: jmasip@vinissimus.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test

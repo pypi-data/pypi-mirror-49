@@ -1,0 +1,11 @@
+README.md
+setup.py
+indigochem/__init__.py
+indigochem/bingo.py
+indigochem/indigo.py
+indigochem/indigo_inchi.py
+indigochem/indigo_renderer.py
+indigochemo.egg-info/PKG-INFO
+indigochemo.egg-info/SOURCES.txt
+indigochemo.egg-info/dependency_links.txt
+indigochemo.egg-info/top_level.txt

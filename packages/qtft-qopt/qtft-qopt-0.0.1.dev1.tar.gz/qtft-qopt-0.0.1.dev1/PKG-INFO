@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: qtft-qopt
+Version: 0.0.1.dev1
+Summary: Quantum-inspired optimization algorithms
+Home-page: https://qtft.org/
+Author: Quantum Technology Foundation of Thailand
+Author-email: contact@qtft.org
+License: LGPL-2.1
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning

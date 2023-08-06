@@ -1,0 +1,5 @@
+setup.py
+qtft_qopt.egg-info/PKG-INFO
+qtft_qopt.egg-info/SOURCES.txt
+qtft_qopt.egg-info/dependency_links.txt
+qtft_qopt.egg-info/top_level.txt

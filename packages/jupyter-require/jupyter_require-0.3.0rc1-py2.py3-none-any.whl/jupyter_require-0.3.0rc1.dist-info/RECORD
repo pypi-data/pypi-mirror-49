@@ -1,0 +1,17 @@
+jupyter_require/__about__.py,sha256=axU3VzCBWswizBgP89fXKFVJtiro2iz8lJpTcRqTi6E,548
+jupyter_require/__init__.py,sha256=2F9YwwC6LO0WXv4CCdfrkXUGPAVr7q_ec3TxQHG-uAg,3949
+jupyter_require/core.py,sha256=VhNzM_psDNjNN1RHyanGz0H8INMMqcmtXl6aF3kLozk,11701
+jupyter_require/magic.py,sha256=DU-bOZCGDgPH3QvNEkM67W8NS061C5acexRo6wRFAnc,7474
+jupyter_require/notebook.py,sha256=MMERqfdFTaD-lgi0vewoluFgdyMjXWdbvOml6Q16MJE,6427
+jupyter_require/static/core.js,sha256=XyMafulxclEk0o98f-6GzxcTlVXoC8MRgo3aZEVgq6Q,14912
+jupyter_require/static/display.js,sha256=FdDyvJfYX_B1hofzpooHXQTxA0hwyMpvx4_se8D4GMc,6768
+jupyter_require/static/extension.js,sha256=2TqTYm2n41hlUDMjPaZMaNwUP_IjQp1XFAamtypZ7_s,9562
+jupyter_require-0.3.0rc1.data/data/etc/jupyter/nbconfig/notebook.d/jupyter-require.json,sha256=cKvUtkv5qqCEc5e6oxZch5c9Z-RW4x8LdFVNotlFfSk,69
+jupyter_require-0.3.0rc1.data/data/share/jupyter/nbextensions/jupyter-require/core.js,sha256=XyMafulxclEk0o98f-6GzxcTlVXoC8MRgo3aZEVgq6Q,14912
+jupyter_require-0.3.0rc1.data/data/share/jupyter/nbextensions/jupyter-require/display.js,sha256=FdDyvJfYX_B1hofzpooHXQTxA0hwyMpvx4_se8D4GMc,6768
+jupyter_require-0.3.0rc1.data/data/share/jupyter/nbextensions/jupyter-require/extension.js,sha256=2TqTYm2n41hlUDMjPaZMaNwUP_IjQp1XFAamtypZ7_s,9562
+jupyter_require-0.3.0rc1.dist-info/LICENSE,sha256=HiGTk4vmR4tDrQOcnwRDYXdv1rjbg_26OezLBN6d2o0,1071
+jupyter_require-0.3.0rc1.dist-info/METADATA,sha256=dW4Axkg_I2xoi_oO5T7b0hwC-jvnLqr11KusDxKV0Hg,14387
+jupyter_require-0.3.0rc1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+jupyter_require-0.3.0rc1.dist-info/top_level.txt,sha256=_uWu4lzt_xfd9G2287uVwNhbQ9YL9qW5pTKpAbkhUWU,16
+jupyter_require-0.3.0rc1.dist-info/RECORD,,

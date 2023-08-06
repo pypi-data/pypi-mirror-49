@@ -1,0 +1,11 @@
+testaid/__init__.py,sha256=RX1VFO-JAWvWVTCYmSV6Emx-kok4myFlj5csUvcKb20,55
+testaid/boilerplate.py,sha256=4lryi-GZEiyPdpGN7_uniCEYK4MnitA5VoLxpTCxRJQ,407
+testaid/plugin.py,sha256=H7bb1xqq9X2CJhTqFaWHGsDjW1hkI9gdHZwEFU58yWs,582
+testaid/testpass.py,sha256=nKWv_oLouThFuAv5J3M8c9gNimiQgepNs-RZ3p7TJLQ,287
+testaid/testvars.py,sha256=TVeTnFg0BMDpoydHsMhsdgLmq3dmspa3L9tCNjeDnwo,6553
+testaid-0.4.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+testaid-0.4.1.dist-info/METADATA,sha256=urlwWdtoxnWGWK7-hwGlwtLUIYn-vSSEPfYZvf2IGfE,857
+testaid-0.4.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+testaid-0.4.1.dist-info/entry_points.txt,sha256=QTk2vZUEnrH4eOE9JtAogEmv-Iu5huXPQLkwNtQlM64,37
+testaid-0.4.1.dist-info/top_level.txt,sha256=HO1MlocF0JWGd4pHmt86O7Xk91d9i8HtDKWDsPMwnsI,8
+testaid-0.4.1.dist-info/RECORD,,

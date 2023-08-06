@@ -1,0 +1,15 @@
+malemba/__init__.py,sha256=gt7lGggHm1StdZLgER8W6wt9GI6addnYMxCrENKz4ZQ,102
+malemba/constants.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+malemba/ds_tools.py,sha256=-E069gS2umHgS8749exlcUgnEPFBJLLFa6W9-th28rU,1511
+malemba/model_base.py,sha256=eew5c6UrJ0Fz9W9XnuYcekImGZl7-0MqMq-End5OkAU,14544
+malemba/model_scheme.py,sha256=irPw6sE90-qlbGXULSOPkmZv4yHIDPx44xP63zburbo,1873
+malemba/dastruc/__init__.py,sha256=zjXdg7QLtQfigyGqAoo0dmr-UNcoOgl0xKXl5BCIL3A,73
+malemba/dastruc/data_pool.py,sha256=nc0fY4zcNAx5bjKyzraMrM9ipdZqh8Uu1IpGQ-KxesI,1924
+malemba/dastruc/generators.py,sha256=OQEfI3x7_kINGrsdhQufOsEQg_E1ZLP40mhA5CNykHU,77
+malemba/dastruc/readers.py,sha256=7s-EPXZ17hSfatCpXWxr9Ba9WK6zhUzniAY4OjYjE8o,537
+MaLeMBa-0.4.12.dist-info/LICENSE,sha256=O6k8gUvvO8P6qQ8oK7J44_mu2qQlm_GcwUJAkypPJtg,1486
+MaLeMBa-0.4.12.dist-info/METADATA,sha256=501g3lwHBOopZgIn2TaylkIosrQDu7r7Kt49jTWFieg,1041
+MaLeMBa-0.4.12.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+MaLeMBa-0.4.12.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+MaLeMBa-0.4.12.dist-info/top_level.txt,sha256=HB7fYNFsjbGt7rDrYSZKEa7Ji1qlgjisheuR2oMMhXg,8
+MaLeMBa-0.4.12.dist-info/RECORD,,

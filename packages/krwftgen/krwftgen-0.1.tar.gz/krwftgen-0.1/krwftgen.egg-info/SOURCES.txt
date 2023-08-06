@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+krwftgen.egg-info/PKG-INFO
+krwftgen.egg-info/SOURCES.txt
+krwftgen.egg-info/dependency_links.txt
+krwftgen.egg-info/entry_points.txt
+krwftgen.egg-info/not-zip-safe
+krwftgen.egg-info/requires.txt
+krwftgen.egg-info/top_level.txt

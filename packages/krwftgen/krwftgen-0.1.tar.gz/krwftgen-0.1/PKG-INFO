@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: krwftgen
+Version: 0.1
+Summary: Korean webfont generator using Google Fonts + Korean
+Home-page: https://github.com/laziu/krwftgen
+Author: Laziu Kim
+Author-email: laziu.cc@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/laziu/krwftgen/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: krwftgen,fonttools
+Platform: UNKNOWN
+Classifier: Topic :: Text Processing :: Fonts
+Classifier: Natural Language :: Korean
+Requires-Python: >=3.4

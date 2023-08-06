@@ -1,0 +1,15 @@
+pywavefront/__init__.py,sha256=oInG_j0djpltgtdo5_h1rhk7tvhIGyN8ItveV8i8Qfk,2247
+pywavefront/cache.py,sha256=nY0sbvT9HTIcLac48SSIS64BvjZB8hXqp4O4SF9V-48,7464
+pywavefront/exceptions.py,sha256=u4bPIcYtXlaeTnhz03mvfE9LcVU2pE8GcxZXjze0dx0,1842
+pywavefront/material.py,sha256=vb8KqtW7anS7jZG8LbBcMZaKjxBLjil7JBA92SKgFNQ,9007
+pywavefront/mesh.py,sha256=ruRmDQDT3Ra81b4jPn23TLKoAcAe3lgoJJL68GSFi_s,2842
+pywavefront/obj.py,sha256=NLgHDS6rySscaztHTN-VqCnzXnvuVPSRBF70G3rmbHs,16472
+pywavefront/parser.py,sha256=RFb8QygnScVhRaRNY2W_828x4fIVgX3mcOjugdywKyA,5863
+pywavefront/texture.py,sha256=2VPQ0hi1idqsbRZJOgKnvwiMxSOl78WBLHD_6LZuPa0,2607
+pywavefront/visualization.py,sha256=TBbOv9MTO0pBm-YOCHDkTlgTTjLLPGp5zQEfECg9eDk,5460
+pywavefront/wavefront.py,sha256=T8kHMDI3-o_V3HAMLVUhB21Ffb4LeexbXOwj0kaSegQ,3307
+PyWavefront-1.1.0.dist-info/LICENSE,sha256=ZfmAt_sjJfV2os5Fg1gs_fmYpFnAl6qqWpIFp9QiuC0,1496
+PyWavefront-1.1.0.dist-info/METADATA,sha256=W87-B8Jh-p3OWYptZLPnksFtBkcTvz_3fuMlCNjvG98,8211
+PyWavefront-1.1.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+PyWavefront-1.1.0.dist-info/top_level.txt,sha256=4FW3lvbVngWLNYytLtXfFbMbXRQhm92I2NhQdxGitfg,12
+PyWavefront-1.1.0.dist-info/RECORD,,

@@ -1,0 +1,4 @@
+bluesky
+openpyxl
+pandas
+xlrd

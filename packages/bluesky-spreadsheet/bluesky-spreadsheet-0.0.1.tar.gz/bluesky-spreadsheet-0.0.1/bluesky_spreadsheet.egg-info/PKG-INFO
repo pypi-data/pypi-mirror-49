@@ -1,0 +1,34 @@
+Metadata-Version: 1.2
+Name: bluesky-spreadsheet
+Version: 0.0.1
+Summary: Use a spreadsheet to input experiment procedures.
+Home-page: https://github.com/bluesky/bluesky-spreadsheet
+Author: Brookhaven National Lab
+Author-email: dallan@bnl.gov
+License: BSD (3-clause)
+Description: ===============================
+        Bluesky Spreadsheet
+        ===============================
+        
+        .. image:: https://img.shields.io/travis/bluesky/bluesky-spreadsheet.svg
+                :target: https://travis-ci.org/bluesky/bluesky-spreadsheet
+        
+        .. image:: https://img.shields.io/pypi/v/bluesky-spreadsheet.svg
+                :target: https://pypi.python.org/pypi/bluesky-spreadsheet
+        
+        
+        Use a spreadsheet to input experiment procedures.
+        
+        * Free software: 3-clause BSD license
+        * Documentation: (COMING SOON!) https://bluesky.github.io/bluesky-spreadsheet.
+        
+        Features
+        --------
+        
+        * TODO
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6

@@ -1,0 +1,654 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Elements &#8212; flatland 0.9.1.dev3+g27237b1.d20190726 documentation</title>
+    <link rel="stylesheet" href="../_static/flatland.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Traversal" href="traversal.html" />
+    <link rel="prev" title="Basic Forms" href="declarative.html" /> 
+  </head><body>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="elements">
+<h1>Elements<a class="headerlink" href="#elements" title="Permalink to this headline">¶</a></h1>
+<p>Elements describe the possible fields of a form; their names, structure,
+Python types and rules for validation.  A typical schema consists of at least
+one <span class="xref std std-ref">container</span> type and one or more <a class="reference internal" href="scalars.html#scalars"><span class="std std-ref">scalar</span></a>
+types:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">flatland</span> <span class="k">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">String</span>
+<span class="n">SearchSchema</span> <span class="o">=</span> <span class="n">Dict</span><span class="o">.</span><span class="n">named</span><span class="p">(</span><span class="s1">&#39;search&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">of</span><span class="p">(</span><span class="n">String</span><span class="o">.</span><span class="n">named</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;keywords&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>FIXME UPDATE:</p>
+<p>FieldSchemas are a bit like Python <code class="docutils literal notranslate"><span class="pre">class</span></code> definitions: they need be
+defined only once and don’t do much on their own.
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">FieldSchema.create_element()</span></code> produces <a class="reference internal" href="#flatland.schema.base.Element" title="flatland.schema.base.Element"><code class="xref py py-class docutils literal notranslate"><span class="pre">Elements</span></code></a>;
+closely related objects that hold and manipulate form data.  Much like a
+Python <code class="docutils literal notranslate"><span class="pre">class</span></code>, a single <code class="docutils literal notranslate"><span class="pre">FieldSchema</span></code> may produce an unlimited number
+of <code class="docutils literal notranslate"><span class="pre">Element</span></code> instances.</p>
+</div>
+<div class="highlight-pycon3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">form</span> <span class="o">=</span> <span class="n">SearchSchema</span><span class="p">({</span><span class="sa">u</span><span class="s1">&#39;keywords&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;foo bar baz&#39;</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">form</span><span class="o">.</span><span class="n">value</span>
+<span class="go">{u&#39;keywords&#39;: u&#39;foo bar baz&#39;}</span>
+</pre></div>
+</div>
+<div class="admonition-todo admonition" id="id2">
+<p class="admonition-title">Todo</p>
+<p>FIXME UPDATE:</p>
+<p>FieldSchema instances may be freely composed and shared among many
+containers.</p>
+</div>
+<div class="highlight-pycon3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flatland</span> <span class="k">import</span> <span class="n">List</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ComposedSchema</span> <span class="o">=</span> <span class="n">Dict</span><span class="o">.</span><span class="n">of</span><span class="p">(</span><span class="n">SearchSchema</span><span class="p">,</span>
+<span class="gp">... </span>                         <span class="n">List</span><span class="o">.</span><span class="n">named</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;many_searches&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">of</span><span class="p">(</span><span class="n">SearchSchema</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">form</span> <span class="o">=</span> <span class="n">ComposedSchema</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">sorted</span><span class="p">(</span><span class="n">form</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="go">[u&#39;many_searches&#39;, u&#39;search&#39;]</span>
+</pre></div>
+</div>
+<div class="admonition-todo admonition" id="id3">
+<p class="admonition-title">Todo</p>
+<p>FIXME UPDATE:</p>
+<p>Elements can be supplied to template environments and used to
+great effect there: elements contain all of the information needed
+to display or redisplay a HTML form field, including errors
+specific to a field.</p>
+<p>The <a class="reference internal" href="#flatland.schema.base.Element.u" title="flatland.schema.base.Element.u"><code class="xref py py-attr docutils literal notranslate"><span class="pre">u</span></code></a>, <a class="reference internal" href="#flatland.schema.base.Element.x" title="flatland.schema.base.Element.x"><code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code></a>, <a class="reference internal" href="#flatland.schema.base.Element.xa" title="flatland.schema.base.Element.xa"><code class="xref py py-attr docutils literal notranslate"><span class="pre">xa</span></code></a> and
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">el()</span></code> members are especially useful in templates and have
+shortened names to help preserve your sanity when used in markup.</p>
+</div>
+<div class="section" id="element">
+<h2><code class="docutils literal notranslate"><span class="pre">Element</span></code><a class="headerlink" href="#element" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="flatland.schema.base.Element">
+<em class="property">class </em><code class="sig-name descname">Element</code><span class="sig-paren">(</span><em class="sig-param">value=Unspecified</em>, <em class="sig-param">**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for form fields.</p>
+<p>A data node that stores a Python and a text value plus added state.</p>
+<p class="rubric">Instance Attributes</p>
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.parent">
+<code class="sig-name descname">parent</code><a class="headerlink" href="#flatland.schema.base.Element.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>An owning element, or None if element is topmost or not a member
+of a hierarchy.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.valid">
+<code class="sig-name descname">valid</code><a class="headerlink" href="#flatland.schema.base.Element.valid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.errors">
+<code class="sig-name descname">errors</code><a class="headerlink" href="#flatland.schema.base.Element.errors" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of validation error messages.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.warnings">
+<code class="sig-name descname">warnings</code><a class="headerlink" href="#flatland.schema.base.Element.warnings" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of validation warning messages.</p>
+</dd></dl>
+
+<p class="rubric">Members</p>
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.name">
+<code class="sig-name descname">name</code><em class="property"> = None</em><a class="headerlink" href="#flatland.schema.base.Element.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The string name of the element.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.optional">
+<code class="sig-name descname">optional</code><em class="property"> = False</em><a class="headerlink" href="#flatland.schema.base.Element.optional" title="Permalink to this definition">¶</a></dt>
+<dd><p>If True, <a class="reference internal" href="#flatland.schema.base.Element.validate" title="flatland.schema.base.Element.validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">validate()</span></code></a> will return True when no value has been set.</p>
+<p><a class="reference internal" href="#flatland.schema.base.Element.validators" title="flatland.schema.base.Element.validators"><code class="xref py py-attr docutils literal notranslate"><span class="pre">validators</span></code></a> are not called for optional, empty elements.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.validators">
+<code class="sig-name descname">validators</code><em class="property"> = ()</em><a class="headerlink" href="#flatland.schema.base.Element.validators" title="Permalink to this definition">¶</a></dt>
+<dd><p>A sequence of validators, invoked by <a class="reference internal" href="#flatland.schema.base.Element.validate" title="flatland.schema.base.Element.validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">validate()</span></code></a>.</p>
+<p>See <a class="reference internal" href="../validation/index.html#validation"><span class="std std-ref">Validation</span></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.default">
+<code class="sig-name descname">default</code><em class="property"> = None</em><a class="headerlink" href="#flatland.schema.base.Element.default" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default value of this element.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.default_factory">
+<code class="sig-name descname">default_factory</code><em class="property"> = None</em><a class="headerlink" href="#flatland.schema.base.Element.default_factory" title="Permalink to this definition">¶</a></dt>
+<dd><p>A callable to generate default element values.  Passed an element.</p>
+<p><em>default_factory</em> will be used preferentially over <a class="reference internal" href="#flatland.schema.base.Element.default" title="flatland.schema.base.Element.default"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default</span></code></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.ugettext">
+<code class="sig-name descname">ugettext</code><em class="property"> = None</em><a class="headerlink" href="#flatland.schema.base.Element.ugettext" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set, provides translation support to validation messages.</p>
+<p>See <a class="reference internal" href="../validation/api.html#msg-i18n"><span class="std std-ref">Message Internationalization</span></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.ungettext">
+<code class="sig-name descname">ungettext</code><em class="property"> = None</em><a class="headerlink" href="#flatland.schema.base.Element.ungettext" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set, provides translation support to validation messages.</p>
+<p>See <a class="reference internal" href="../validation/api.html#msg-i18n"><span class="std std-ref">Message Internationalization</span></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.value">
+<code class="sig-name descname">value</code><em class="property"> = None</em><a class="headerlink" href="#flatland.schema.base.Element.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>The element’s native Python value.</p>
+<p>Only validation routines should write this attribute directly: use
+<a class="reference internal" href="#flatland.schema.base.Element.set" title="flatland.schema.base.Element.set"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set()</span></code></a> to update the element’s value.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.raw">
+<code class="sig-name descname">raw</code><em class="property"> = Unset</em><a class="headerlink" href="#flatland.schema.base.Element.raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>The element’s raw, unadapted value from input.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.u">
+<code class="sig-name descname">u</code><em class="property"> = ''</em><a class="headerlink" href="#flatland.schema.base.Element.u" title="Permalink to this definition">¶</a></dt>
+<dd><p>A string representation of the element’s value.</p>
+<p>As in <a class="reference internal" href="#flatland.schema.base.Element.value" title="flatland.schema.base.Element.value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">value</span></code></a>, writing directly to this attribute should be
+restricted to validation routines.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flatland.schema.base.Element.properties">
+<code class="sig-name descname">properties</code><em class="property"> = {}</em><a class="headerlink" href="#flatland.schema.base.Element.properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>A mapping of arbitrary data associated with the element.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.named">
+<code class="sig-name descname">named</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.named" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a class with <code class="docutils literal notranslate"><span class="pre">name</span></code> = <em>name</em></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – a string or None.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a new class</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.using">
+<code class="sig-name descname">using</code><span class="sig-paren">(</span><em class="sig-param">**overrides</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.using" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a class with attributes set from <em>**overrides</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>**overrides</strong> – new values for any attributes already present on
+the class.  A <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> is raised for unknown attributes.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a new class</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.validated_by">
+<code class="sig-name descname">validated_by</code><span class="sig-paren">(</span><em class="sig-param">*validators</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.validated_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a class with validators set to <em>*validators</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>*validators</strong> – one or more validator functions, replacing any
+validators present on the class.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a new class</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.including_validators">
+<code class="sig-name descname">including_validators</code><span class="sig-paren">(</span><em class="sig-param">*validators</em>, <em class="sig-param">**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.including_validators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a class with additional <em>*validators</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>*validators</strong> – one or more validator functions</p></li>
+<li><p><strong>position</strong> – defaults to -1.  By default, additional validators
+are placed after existing validators.  Use 0 for before, or any
+other list index to splice in <em>validators</em> at that point.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a new class</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.with_properties">
+<code class="sig-name descname">with_properties</code><span class="sig-paren">(</span><em class="sig-param">*iterable</em>, <em class="sig-param">**properties</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.with_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a class with <em>**properties</em> set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>optional positional parameter, an iterable of property name /
+value pairs</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><p><strong>**properties</strong> – property names and values as keyword arguments</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a new class</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.from_flat">
+<em class="property">classmethod </em><code class="sig-name descname">from_flat</code><span class="sig-paren">(</span><em class="sig-param">pairs</em>, <em class="sig-param">**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.from_flat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a new element with its value initialized from <em>pairs</em>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>**kw</strong> – passed through to the <code class="xref py py-attr docutils literal notranslate"><span class="pre">element_type</span></code>.</p>
+</dd>
+</dl>
+<p>This is a convenience constructor for:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">element</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="n">element</span><span class="o">.</span><span class="n">set_flat</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.from_defaults">
+<em class="property">classmethod </em><code class="sig-name descname">from_defaults</code><span class="sig-paren">(</span><em class="sig-param">**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.from_defaults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a new element with its value initialized from field defaults.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>**kw</strong> – passed through to the <code class="xref py py-attr docutils literal notranslate"><span class="pre">element_type</span></code>.</p>
+</dd>
+</dl>
+<p>This is a convenience constructor for:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">element</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="n">element</span><span class="o">.</span><span class="n">set_default</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.all_valid">
+<em class="property">property </em><code class="sig-name descname">all_valid</code><a class="headerlink" href="#flatland.schema.base.Element.all_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if this element and all children are valid.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.root">
+<em class="property">property </em><code class="sig-name descname">root</code><a class="headerlink" href="#flatland.schema.base.Element.root" title="Permalink to this definition">¶</a></dt>
+<dd><p>The top-most parent of the element.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.parents">
+<em class="property">property </em><code class="sig-name descname">parents</code><a class="headerlink" href="#flatland.schema.base.Element.parents" title="Permalink to this definition">¶</a></dt>
+<dd><p>An iterator of all parent elements.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.path">
+<em class="property">property </em><code class="sig-name descname">path</code><a class="headerlink" href="#flatland.schema.base.Element.path" title="Permalink to this definition">¶</a></dt>
+<dd><p>An iterator of all elements from root to the Element, inclusive.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.children">
+<em class="property">property </em><code class="sig-name descname">children</code><a class="headerlink" href="#flatland.schema.base.Element.children" title="Permalink to this definition">¶</a></dt>
+<dd><p>An iterator of immediate child elements.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.all_children">
+<em class="property">property </em><code class="sig-name descname">all_children</code><a class="headerlink" href="#flatland.schema.base.Element.all_children" title="Permalink to this definition">¶</a></dt>
+<dd><p>An iterator of all child elements, breadth-first.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.fq_name">
+<code class="sig-name descname">fq_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.fq_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the fully qualified path name of the element.</p>
+<p>Returns <a class="reference internal" href="#flatland.schema.base.Element.find" title="flatland.schema.base.Element.find"><code class="xref py py-meth docutils literal notranslate"><span class="pre">find()</span></code></a> compatible element path string from the
+<a class="reference internal" href="#flatland.schema.base.Element.root" title="flatland.schema.base.Element.root"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Element.root</span></code></a> (<code class="docutils literal notranslate"><span class="pre">/</span></code>) down to the element.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flatland</span> <span class="k">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Integer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Point</span> <span class="o">=</span> <span class="n">Dict</span><span class="o">.</span><span class="n">named</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;point&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">of</span><span class="p">(</span><span class="n">Integer</span><span class="o">.</span><span class="n">named</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;x&#39;</span><span class="p">),</span>
+<span class="gp">... </span>                                <span class="n">Integer</span><span class="o">.</span><span class="n">named</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;y&#39;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">20</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">name</span>
+<span class="go">u&#39;point&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">fq_name</span><span class="p">()</span>
+<span class="go">u&#39;/&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">name</span>
+<span class="go">u&#39;x&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fq_name</span><span class="p">()</span>
+<span class="go">u&#39;/x&#39;</span>
+</pre></div>
+</div>
+<p>The index used in a path may not be the <a class="reference internal" href="#flatland.schema.base.Element.name" title="flatland.schema.base.Element.name"><code class="xref py py-attr docutils literal notranslate"><span class="pre">name</span></code></a> of the
+element.  For example, sequence members are referenced by their
+numeric index.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flatland</span> <span class="k">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">String</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Addresses</span> <span class="o">=</span> <span class="n">List</span><span class="o">.</span><span class="n">named</span><span class="p">(</span><span class="s1">&#39;addresses&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">of</span><span class="p">(</span><span class="n">String</span><span class="o">.</span><span class="n">named</span><span class="p">(</span><span class="s1">&#39;address&#39;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">form</span> <span class="o">=</span> <span class="n">Addresses</span><span class="p">([</span><span class="sa">u</span><span class="s1">&#39;uptown&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;downtown&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">form</span><span class="o">.</span><span class="n">name</span>
+<span class="go">u&#39;addresses&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">form</span><span class="o">.</span><span class="n">fq_name</span><span class="p">()</span>
+<span class="go">u&#39;/&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">form</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span>
+<span class="go">u&#39;address&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">form</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">fq_name</span><span class="p">()</span>
+<span class="go">u&#39;/0&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.find">
+<code class="sig-name descname">find</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">single=False</em>, <em class="sig-param">strict=True</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find child elements by string path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> – a /-separated string specifying elements to select,
+such as ‘child/grandchild/great grandchild’.  Relative &amp; absolute
+paths are supported, as well as container expansion.  See
+<a class="reference internal" href="traversal.html#path-lookups"><span class="std std-ref">Path Lookups</span></a>.</p></li>
+<li><p><strong>single</strong> – if true, return a scalar result rather than a list of
+elements.  If no elements match <em>path</em>, <code class="docutils literal notranslate"><span class="pre">None</span></code> is returned.  If
+multiple elements match, a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#LookupError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">LookupError</span></code></a> is raised.  If
+multiple elements are found and <em>strict</em> is false, an unspecified
+element from the result set is returned.</p></li>
+<li><p><strong>strict</strong> – defaults to True.  If <em>path</em> specifies children or
+sequence indexes that do not exist, a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#LookupError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">LookupError</span></code></a> is raised.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a list of <a class="reference internal" href="#flatland.schema.base.Element" title="flatland.schema.base.Element"><code class="xref py py-class docutils literal notranslate"><span class="pre">Element</span></code></a> instances, an <a class="reference internal" href="#flatland.schema.base.Element" title="flatland.schema.base.Element"><code class="xref py py-class docutils literal notranslate"><span class="pre">Element</span></code></a> if
+<em>single</em> is true, or raises <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#LookupError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">LookupError</span></code></a>.</p>
+</dd>
+</dl>
+<div class="highlight-pycon3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cities</span> <span class="o">=</span> <span class="n">form</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;/contact/addresses[:]/city&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="n">el</span><span class="o">.</span><span class="n">value</span> <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">cities</span><span class="p">]</span>
+<span class="go">[u&#39;Kingsport&#39;, u&#39;Dunwich&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">form</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;/contact/name&#39;</span><span class="p">,</span> <span class="n">single</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">&lt;String u&#39;name&#39;; value=u&#39;Obed Marsh&#39;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.find_one">
+<code class="sig-name descname">find_one</code><span class="sig-paren">(</span><em class="sig-param">path</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.find_one" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find a single element at <em>path</em>.</p>
+<p>An alias for <a class="reference internal" href="#flatland.schema.base.Element.find" title="flatland.schema.base.Element.find"><code class="xref py py-meth docutils literal notranslate"><span class="pre">find()</span></code></a>.  Equivalent to
+<code class="docutils literal notranslate"><span class="pre">find(path,</span> <span class="pre">single=True,</span> <span class="pre">strict=True)</span></code>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.add_error">
+<code class="sig-name descname">add_error</code><span class="sig-paren">(</span><em class="sig-param">message</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.add_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Register an error message on this element, ignoring duplicates.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.add_warning">
+<code class="sig-name descname">add_warning</code><span class="sig-paren">(</span><em class="sig-param">message</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.add_warning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Register a warning message on this element, ignoring duplicates.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.flattened_name">
+<code class="sig-name descname">flattened_name</code><span class="sig-paren">(</span><em class="sig-param">sep='_'</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.flattened_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the element’s complete flattened name as a string.</p>
+<p>Joins this element’s <a class="reference internal" href="#flatland.schema.base.Element.path" title="flatland.schema.base.Element.path"><code class="xref py py-attr docutils literal notranslate"><span class="pre">path</span></code></a> with <em>sep</em> and returns the fully
+qualified, flattened name.  Encodes all <code class="xref py py-class docutils literal notranslate"><span class="pre">Container</span></code> and other
+structures into a single string.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">flatland</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">form</span> <span class="o">=</span> <span class="n">flatland</span><span class="o">.</span><span class="n">List</span><span class="p">(</span><span class="s1">&#39;addresses&#39;</span><span class="p">,</span>
+<span class="gp">... </span>                     <span class="n">flatland</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="s1">&#39;address&#39;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">element</span> <span class="o">=</span> <span class="n">form</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">element</span><span class="o">.</span><span class="n">set</span><span class="p">([</span><span class="sa">u</span><span class="s1">&#39;uptown&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;downtown&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">element</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+<span class="go">u&#39;uptown&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">element</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">flattened_name</span><span class="p">()</span>
+<span class="go">u&#39;addresses_0_address&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.flatten">
+<code class="sig-name descname">flatten</code><span class="sig-paren">(</span><em class="sig-param">sep='_'</em>, <em class="sig-param">value=operator.attrgetter('u')</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.flatten" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export an element hierarchy as a flat sequence of key, value pairs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sep</strong> – a string, will join together element names.</p></li>
+<li><p><strong>value</strong> – a 1-arg callable called once for each
+element. Defaults to a callable that returns the
+<a class="reference internal" href="#flatland.schema.base.Element.u" title="flatland.schema.base.Element.u"><code class="xref py py-attr docutils literal notranslate"><span class="pre">u</span></code></a> of each element.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Encodes the element hierarchy in a <em>sep</em>-separated name
+string, paired with any representation of the element you
+like.  The default is the text value of the element, and the
+output of the default <a class="reference internal" href="#flatland.schema.base.Element.flatten" title="flatland.schema.base.Element.flatten"><code class="xref py py-meth docutils literal notranslate"><span class="pre">flatten()</span></code></a> can be round-tripped
+with <a class="reference internal" href="#flatland.schema.base.Element.set_flat" title="flatland.schema.base.Element.set_flat"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_flat()</span></code></a>.</p>
+<p>Given a simple form with a string field and a nested dictionary:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flatland</span> <span class="k">import</span> <span class="n">Schema</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">String</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">Nested</span><span class="p">(</span><span class="n">Schema</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">contact</span> <span class="o">=</span> <span class="n">Dict</span><span class="o">.</span><span class="n">of</span><span class="p">(</span><span class="n">String</span><span class="o">.</span><span class="n">named</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;name&#39;</span><span class="p">),</span>
+<span class="gp">... </span>                      <span class="n">Dict</span><span class="o">.</span><span class="n">named</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;address&#39;</span><span class="p">)</span><span class="o">.</span>
+<span class="gp">... </span>                           <span class="n">of</span><span class="p">(</span><span class="n">String</span><span class="o">.</span><span class="n">named</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;email&#39;</span><span class="p">)))</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">element</span> <span class="o">=</span> <span class="n">Nested</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">element</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+<span class="go">[(u&#39;contact_name&#39;, u&#39;&#39;), (u&#39;contact_address_email&#39;, u&#39;&#39;)]</span>
+</pre></div>
+</div>
+<p>The value of each pair can be customized with the <em>value</em> callable:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">element</span><span class="o">.</span><span class="n">flatten</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">operator</span><span class="o">.</span><span class="n">attrgetter</span><span class="p">(</span><span class="s1">&#39;u&#39;</span><span class="p">))</span>
+<span class="go">[(u&#39;contact_name&#39;, u&#39;&#39;), (u&#39;contact_address_email&#39;, u&#39;&#39;)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">element</span><span class="o">.</span><span class="n">flatten</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="k">lambda</span> <span class="n">el</span><span class="p">:</span> <span class="n">el</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+<span class="go">[(u&#39;contact_name&#39;, None), (u&#39;contact_address_email&#39;, None)]</span>
+</pre></div>
+</div>
+<p>Solo elements will return a sequence containing a single pair:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">element</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+<span class="go">[(u&#39;contact_name&#39;, u&#39;&#39;)]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process <em>obj</em> and assign the native and text values.</p>
+<p>Attempts to adapt the given <em>obj</em> and assigns this element’s
+<a class="reference internal" href="#flatland.schema.base.Element.value" title="flatland.schema.base.Element.value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">value</span></code></a> and <a class="reference internal" href="#flatland.schema.base.Element.u" title="flatland.schema.base.Element.u"><code class="xref py py-attr docutils literal notranslate"><span class="pre">u</span></code></a> attributes in tandem.  Returns True if the
+adaptation was successful.</p>
+<p>If adaptation succeeds, <a class="reference internal" href="#flatland.schema.base.Element.value" title="flatland.schema.base.Element.value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">value</span></code></a> will contain the adapted native
+value and <a class="reference internal" href="#flatland.schema.base.Element.u" title="flatland.schema.base.Element.u"><code class="xref py py-attr docutils literal notranslate"><span class="pre">u</span></code></a> will contain a text serialized version of it. A
+native value of None will be represented as u’’ in <a class="reference internal" href="#flatland.schema.base.Element.u" title="flatland.schema.base.Element.u"><code class="xref py py-attr docutils literal notranslate"><span class="pre">u</span></code></a>.</p>
+<p>If adaptation fails, <a class="reference internal" href="#flatland.schema.base.Element.value" title="flatland.schema.base.Element.value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">value</span></code></a> will be <code class="docutils literal notranslate"><span class="pre">None</span></code> and <a class="reference internal" href="#flatland.schema.base.Element.u" title="flatland.schema.base.Element.u"><code class="xref py py-attr docutils literal notranslate"><span class="pre">u</span></code></a> will
+contain <code class="docutils literal notranslate"><span class="pre">str(value)</span></code> (or unicode), or <code class="docutils literal notranslate"><span class="pre">u''</span></code> for None.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">flatland</span> <span class="k">import</span> <span class="n">Integer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">el</span> <span class="o">=</span> <span class="n">Integer</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">el</span><span class="o">.</span><span class="n">u</span><span class="p">,</span> <span class="n">el</span><span class="o">.</span><span class="n">value</span>
+<span class="go">(u&#39;&#39;, None)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">el</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s1">&#39;123&#39;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">el</span><span class="o">.</span><span class="n">u</span><span class="p">,</span> <span class="n">el</span><span class="o">.</span><span class="n">value</span>
+<span class="go">(u&#39;123&#39;, 123)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">el</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="mi">456</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">el</span><span class="o">.</span><span class="n">u</span><span class="p">,</span> <span class="n">el</span><span class="o">.</span><span class="n">value</span>
+<span class="go">(u&#39;456&#39;, 456)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">el</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">el</span><span class="o">.</span><span class="n">u</span><span class="p">,</span> <span class="n">el</span><span class="o">.</span><span class="n">value</span>
+<span class="go">(u&#39;abc&#39;, None)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">el</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">el</span><span class="o">.</span><span class="n">u</span><span class="p">,</span> <span class="n">el</span><span class="o">.</span><span class="n">value</span>
+<span class="go">(u&#39;&#39;, None)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.set_flat">
+<code class="sig-name descname">set_flat</code><span class="sig-paren">(</span><em class="sig-param">pairs</em>, <em class="sig-param">sep='_'</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.set_flat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set element values from pairs, expanding the element tree as needed.</p>
+<p>Given a sequence of name/value tuples or a dict, build out a
+structured tree of value elements.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.set_default">
+<code class="sig-name descname">set_default</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.set_default" title="Permalink to this definition">¶</a></dt>
+<dd><p>set() the element to the schema default.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.is_empty">
+<em class="property">property </em><code class="sig-name descname">is_empty</code><a class="headerlink" href="#flatland.schema.base.Element.is_empty" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the element has no value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.validate">
+<code class="sig-name descname">validate</code><span class="sig-paren">(</span><em class="sig-param">state=None</em>, <em class="sig-param">recurse=True</em><span class="sig-paren">)</span><a class="headerlink" href="#flatland.schema.base.Element.validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assess the validity of this element and its children.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state</strong> – optional, will be passed unchanged to all validator
+callables.</p></li>
+<li><p><strong>recurse</strong> – if False, do not validate children.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True or False.</p>
+</dd>
+</dl>
+<p>Iterates through this element and all of its children, invoking each
+validation on each.  Each element will be visited twice: once heading
+down the tree, breadth-first, and again heading back up in reverse
+order.</p>
+<p>Returns True if all validations pass, False if one or more fail.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.default_value">
+<em class="property">property </em><code class="sig-name descname">default_value</code><a class="headerlink" href="#flatland.schema.base.Element.default_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>A calculated “default” value.</p>
+<p>If <a class="reference internal" href="#flatland.schema.base.Element.default_factory" title="flatland.schema.base.Element.default_factory"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_factory</span></code></a> is present, it will be called with the
+element as a single positional argument.  The result of the call will
+be returned.</p>
+<p>Otherwise, returns <a class="reference internal" href="#flatland.schema.base.Element.default" title="flatland.schema.base.Element.default"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default</span></code></a>.</p>
+<p>When comparing an element’s <a class="reference internal" href="#flatland.schema.base.Element.value" title="flatland.schema.base.Element.value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">value</span></code></a> to its default value, use
+this property in the comparison.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.x">
+<em class="property">property </em><code class="sig-name descname">x</code><a class="headerlink" href="#flatland.schema.base.Element.x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sugar, the XML-escaped value of <a class="reference internal" href="#flatland.schema.base.Element.u" title="flatland.schema.base.Element.u"><code class="xref py py-attr docutils literal notranslate"><span class="pre">u</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flatland.schema.base.Element.xa">
+<em class="property">property </em><code class="sig-name descname">xa</code><a class="headerlink" href="#flatland.schema.base.Element.xa" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sugar, the XML-attribute-escaped quoted value of <a class="reference internal" href="#flatland.schema.base.Element.u" title="flatland.schema.base.Element.u"><code class="xref py py-attr docutils literal notranslate"><span class="pre">u</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/flatland.png" alt="Logo"/>
+            </a></p>
+  <h3>Contents</h3>
+  <ul>
+    <li><ul>
+<li><a class="reference internal" href="#">Elements</a><ul>
+<li><a class="reference internal" href="#element"><code class="docutils literal notranslate"><span class="pre">Element</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+  </ul>
+<h3>Topics</h3>
+<ul>
+  <li><ul>
+  <li><a href="index.html">Defining and Using Forms</a><ul>
+      <li>Previous: <a href="declarative.html" title="previous chapter">Basic Forms</a></li>
+      <li>Next: <a href="traversal.html" title="next chapter">Traversal</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2008-2018, the flatland authors and contributors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2.
+    </div>
+  </body>
+</html>

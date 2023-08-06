@@ -1,0 +1,11 @@
+ocomp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocomp/oclip_pb2.py,sha256=9a-KHwZqvc1tSnVQhDe8MoszaOts4MJ4UUi-Tz0vrrA,16680
+ocomp/oclip_pb2_grpc.py,sha256=eY8TI9ZTHj2w7veI_SE1nIlkwMqmrWhJ6kPpL37-TMU,2084
+ocomp/open_interface_client.py,sha256=Hw678K4yH2K1DLVgPOXaO2hbS0C8JZxbj23x30KftMs,3220
+ocomp/open_interface_grpc_client.py,sha256=XwkdrYpQyOCOX7xzQq51UCu2Y24-ELV3mrwP9eEE7ME,1930
+ocomp-0.6.dist-info/DESCRIPTION.rst,sha256=w1NSRUM1RfkCZlYCjYoVNPH5O3IS_dyrU4xRn3Vgbdg,499
+ocomp-0.6.dist-info/METADATA,sha256=3Ka-xPc3_YtQSex0YPtPmUULKKXAEi7gwtdtJSNURQo,1020
+ocomp-0.6.dist-info/RECORD,,
+ocomp-0.6.dist-info/WHEEL,sha256=90z-L1FjHEv_g8pMPaPbaXuhBIvSlvYObRaa122x8ag,97
+ocomp-0.6.dist-info/metadata.json,sha256=u-Vvk6mQxUFi_vgijKwpOtCExLc1ork0pVJxRKTkaaE,663
+ocomp-0.6.dist-info/top_level.txt,sha256=QKPJexfpPjz0Ci8jBmXPUqeQPzycCdrjkuJPPx1hou4,6

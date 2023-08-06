@@ -1,0 +1,8 @@
+README.md
+setup.py
+xboxgamertag.py
+xboxgamertag.egg-info/PKG-INFO
+xboxgamertag.egg-info/SOURCES.txt
+xboxgamertag.egg-info/dependency_links.txt
+xboxgamertag.egg-info/requires.txt
+xboxgamertag.egg-info/top_level.txt

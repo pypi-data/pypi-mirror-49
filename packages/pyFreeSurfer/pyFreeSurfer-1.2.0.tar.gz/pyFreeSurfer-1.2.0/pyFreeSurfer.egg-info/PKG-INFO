@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: pyFreeSurfer
+Version: 1.2.0
+Summary: 
+Using FreeSurfer in Python.
+
+Home-page: https://github.com/neurospin/pyfreesurfer
+Author: pyFreeSurfer developers
+Author-email: antoine.grigis@cea.fr
+License: CeCILL-B
+Description: pyFreeSurfer
+        
+        Python wrappers for FreeSurfer: wrap the FreeSurfer software and simplify scripting calls. Such calls can be performed through the use of a dedicated function of the package.
+        
+Platform: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities

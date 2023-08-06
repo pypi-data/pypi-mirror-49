@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: domba
+Version: 0.7.4
+Summary: Agent For RESTKnot
+Home-page: https://github.com/meongbego/domba
+Author: iank
+Author-email: meongbego@gmail.com
+License: MIT
+Description: # DOMBA KNOT AGENT
+        
+        ## INSTALLING
+        
+        For production test install domba in pypi
+        ```
+        pip install domba
+        ```
+        to developer install 
+        ```
+        pip install -e .
+        ```
+        
+        Setting Knot Environment
+        ```
+        domba envi knot
+        ```
+        
+        Before using sheep as a RESTKnot agent you are required to install kafka
+        [Get Kafka And Install](https://kafka.apache.org/)
+        
+        Setting Your Broker
+        ```
+        domba envi broker
+        ```
+        
+        ## HELP
+        Next documentation for domba run 
+        ```
+        domba --help
+        ```
+        for each command
+        ```
+        domba COMMAND --help
+        ```
+        
+        
+        
+        
+        
+Keywords: knot agent rest restknot
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: Public Domain
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: test

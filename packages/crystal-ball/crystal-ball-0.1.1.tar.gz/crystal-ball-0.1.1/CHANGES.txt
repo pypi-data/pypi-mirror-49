@@ -1,0 +1,2 @@
+v<0.1.0>, <15/7/2019> -- Initial release.
+v<0.1.1>, <16/7/2019> -- Added docstring documentation and reduced code base redundancy.

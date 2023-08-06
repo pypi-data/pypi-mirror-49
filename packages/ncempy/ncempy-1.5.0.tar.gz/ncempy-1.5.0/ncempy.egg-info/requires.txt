@@ -1,0 +1,14 @@
+numpy
+scipy
+matplotlib
+h5py
+h5py_cache
+
+[edstomo]
+glob2
+genfire
+hyperspy
+scikit-image
+scipy
+matplotlib
+ipyvolume

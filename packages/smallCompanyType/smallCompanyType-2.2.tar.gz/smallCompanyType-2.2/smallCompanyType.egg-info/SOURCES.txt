@@ -1,0 +1,11 @@
+README.md
+setup.py
+smallCompanyType/__init__.py
+smallCompanyType/smallCompanyType.py
+smallCompanyType.egg-info/PKG-INFO
+smallCompanyType.egg-info/SOURCES.txt
+smallCompanyType.egg-info/dependency_links.txt
+smallCompanyType.egg-info/requires.txt
+smallCompanyType.egg-info/top_level.txt
+test/test_pandas.py
+test/test_text.py

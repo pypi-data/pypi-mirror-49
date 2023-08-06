@@ -1,0 +1,7 @@
+dpdata
+dpdata/deepmd
+dpdata/gaussian
+dpdata/lammps
+dpdata/md
+dpdata/pwscf
+dpdata/vasp

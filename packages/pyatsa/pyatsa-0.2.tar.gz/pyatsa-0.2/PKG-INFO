@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pyatsa
+Version: 0.2
+Summary: The ATSA cloud masking method for Planetscope 4-band imagery
+Home-page: https://github.com/agroimpacts/pyatsa
+Author: Ryan Avery
+Author-email: ravery@ucsb.edu

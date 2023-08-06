@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: instaphyte
+Version: 1.1.1
+Summary: Simple Instagram hashtag and location scraper
+Home-page: https://github.com/scriptsmith/instaphyte
+Author: Adam Smith
+Author-email: adam.smith1@uq.edu.au
+License: MIT
+Description: UNKNOWN
+Keywords: instagram,instagram-scraper,instagram-api,socialreaper
+Platform: UNKNOWN
+Requires-Python: >=3.6

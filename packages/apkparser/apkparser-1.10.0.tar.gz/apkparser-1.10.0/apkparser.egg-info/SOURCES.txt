@@ -1,0 +1,13 @@
+README.md
+setup.py
+apkparser/__init__.py
+apkparser/apk.py
+apkparser/axml.py
+apkparser/build_icon.py
+apkparser/util.py
+apkparser/vd2png.py
+apkparser.egg-info/PKG-INFO
+apkparser.egg-info/SOURCES.txt
+apkparser.egg-info/dependency_links.txt
+apkparser.egg-info/requires.txt
+apkparser.egg-info/top_level.txt

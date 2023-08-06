@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: astspy
+Version: 0.0.2
+Summary: Abstract Syntax Tree SPY
+Home-page: https://github.com/Ragnarok540/astspy
+Author: Edgar Nova
+Author-email: ragnarok540@gmail.com
+License: UNKNOWN
+Description: # astspy
+        astspy (Abstract Syntax Tree SPY) is an open source command line tool to
+        get information from Python source code files.
+        
+        astspy can be used with Python 3 and 2 code, but make sure to
+        analyze files from each version in their respective environments.
+        
+        # Features
+        - Print the names of classes and functions found in the file
+        - Calculate an aproximation of the number of lines of code of each class
+          or function definition
+        - See what functions or classes have docstrings
+        
+        ## Installation
+        
+        You can install, upgrade, and uninstall ``astspy.py`` with these commands:
+        
+        ```sh
+          $ pip install astspy
+          $ pip install --upgrade astspy
+          $ pip uninstall astspy
+        ```
+        
+        ## Help
+        
+        To get help use:
+        
+        ```sh
+          $ astspy -h
+        ```
+        
+Keywords: ast,spy,static code analysis,abstract syntax tree
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

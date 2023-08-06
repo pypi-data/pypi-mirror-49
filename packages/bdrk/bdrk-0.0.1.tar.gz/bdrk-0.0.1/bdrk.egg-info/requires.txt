@@ -1,0 +1,12 @@
+requests
+pyhcl
+
+[cli]
+Click
+docker
+jsonschema
+
+[fs]
+redis
+fakeredis
+msgpack

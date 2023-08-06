@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: deuces-numpy
+Version: 0.5
+Summary: 
+Deuces-numpy: Numpy version of deuces package
+
+Home-page: https://github.com/grabantot/deuces-numpy
+Author: Anatol Grabowski
+License: MIT
+Description: descr
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Games/Entertainment
+Description-Content-Type: text/plain

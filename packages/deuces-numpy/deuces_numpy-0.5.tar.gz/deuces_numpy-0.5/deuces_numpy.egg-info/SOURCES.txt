@@ -1,0 +1,13 @@
+README.md
+setup.py
+deuces_numpy/__init__.py
+deuces_numpy/card.py
+deuces_numpy/deck.py
+deuces_numpy/evaluator.py
+deuces_numpy/evaluator_numpy.py
+deuces_numpy/lookup.py
+deuces_numpy.egg-info/PKG-INFO
+deuces_numpy.egg-info/SOURCES.txt
+deuces_numpy.egg-info/dependency_links.txt
+deuces_numpy.egg-info/requires.txt
+deuces_numpy.egg-info/top_level.txt

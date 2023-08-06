@@ -1,0 +1,7 @@
+pycodestyle
+pytest
+coveralls
+pytest-cov
+mock
+setuptools_scm
+tox

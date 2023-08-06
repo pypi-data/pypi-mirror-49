@@ -1,0 +1,2 @@
+websockets<8.0,>=7.0
+construct<3.0.0,>=2.9.0

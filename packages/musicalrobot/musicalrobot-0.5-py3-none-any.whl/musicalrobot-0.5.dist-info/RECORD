@@ -1,0 +1,11 @@
+musicalrobot/DES.py,sha256=Q4NwHQpBL5gMQGBYdHK7verJVgMdlqvrwPwuyhXhR6k,3605
+musicalrobot/__init__.py,sha256=Gz53go9AVvsgf53PkJqzvOTdLe1UbFoYXHu5JNOtZws,21
+musicalrobot/edge_detection.py,sha256=9qzxaPqoXCAxIJw2QLU49bFTUw_3leG6FMfv3RUJzO4,7299
+musicalrobot/irtemp.py,sha256=WsXZYIiS-BvJ7b6ISOjOCyrbG5zYVa97htRHbi7y0qA,5582
+musicalrobot/pixel_analysis.py,sha256=SsPa_Jz1-8bmCJpV--q2D0sFVZaau6dcIqXfk4dLwco,7890
+musicalrobot/post_data.py,sha256=HMfDT5tahWRBVPSKz9IM5X_y-dkTLnAYf870Tz-bIPY,4255
+musicalrobot-0.5.dist-info/LICENSE,sha256=p3S4Z-ca1hKd6OEdII2hov8trqslmI8S9-qUg-Q7y0k,1072
+musicalrobot-0.5.dist-info/METADATA,sha256=2YYLPuLeKZ67F_GcOcVfS60G2bNK9QubD4HQzUFggVw,4008
+musicalrobot-0.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+musicalrobot-0.5.dist-info/top_level.txt,sha256=-asTRiscY9bPk38sPXbzRYdpb5Mdwu32w3DqAFJLrYQ,13
+musicalrobot-0.5.dist-info/RECORD,,

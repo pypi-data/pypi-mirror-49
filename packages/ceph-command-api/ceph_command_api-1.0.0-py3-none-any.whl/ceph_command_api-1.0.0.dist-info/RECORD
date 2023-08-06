@@ -1,0 +1,9 @@
+ceph_command_api/__init__.py,sha256=Ql_70ipMErSif9HGanQohoyXwXiG2UQS_s0pVln6Mxc,37
+ceph_command_api/_generated.py,sha256=e__IVmIS4s_AXc6YAm5CpAzBWkbbFVoZQIWEx4KaKIw,223290
+ceph_command_api-1.0.0.dist-info/COPYING-GPL2,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+ceph_command_api-1.0.0.dist-info/COPYING-LGPL2.1,sha256=XfBwBxmJicYi9dQd6NcD577z0OedYuJDMu5zmkUq9io,26436
+ceph_command_api-1.0.0.dist-info/COPYING-LGPL3,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+ceph_command_api-1.0.0.dist-info/METADATA,sha256=ez7rrDyYLvbLb96qiZ4YthtxdDJ9HPzZohq3kFuUSXE,1079
+ceph_command_api-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ceph_command_api-1.0.0.dist-info/top_level.txt,sha256=tLG1zENX8nq9-W3Ztl0UhkBjV2yVeg_3GFMndfoqrRM,17
+ceph_command_api-1.0.0.dist-info/RECORD,,

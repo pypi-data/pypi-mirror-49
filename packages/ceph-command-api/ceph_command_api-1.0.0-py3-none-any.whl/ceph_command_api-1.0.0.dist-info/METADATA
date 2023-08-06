@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ceph-command-api
+Version: 1.0.0
+Summary: Automatically generated command API. 
+Home-page: https://github.com/sebastian-philipp/ceph-command-api
+Author: Sebastian Wagner
+Author-email: sebastian.wagner@suse.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+ceph-command-api
+================
+
+
+`ceph-command-api`. An automatically generated reference.
+
+Usage
+-----
+
+```python
+import rados
+from ceph_command_api import MonCommandApi
+cluster = rados.Rados(conffile='/etc/ceph/ceph.conf')
+cluster.connect()
+print(MonCommandApi(cluster).version())
+```   
+
+Reference
+---------
+
+See [cholcombe973/ceph_command_parser](https://github.com/cholcombe973/ceph_command_parser) for a 
+similar project.
+

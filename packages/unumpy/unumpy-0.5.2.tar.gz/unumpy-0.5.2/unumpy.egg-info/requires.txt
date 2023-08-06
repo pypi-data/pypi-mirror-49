@@ -1,0 +1,11 @@
+uarray>=0.5
+
+[all]
+
+[backends]
+
+[docs]
+
+[optional]
+
+[tests]

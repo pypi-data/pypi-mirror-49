@@ -1,0 +1,8 @@
+README.md
+setup.py
+pypoison/__init__.py
+pypoison/_impl.py
+pypoison.egg-info/PKG-INFO
+pypoison.egg-info/SOURCES.txt
+pypoison.egg-info/dependency_links.txt
+pypoison.egg-info/top_level.txt

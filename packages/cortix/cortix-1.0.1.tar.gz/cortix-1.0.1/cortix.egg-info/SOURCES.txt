@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+cortix/__init__.py
+cortix.egg-info/PKG-INFO
+cortix.egg-info/SOURCES.txt
+cortix.egg-info/dependency_links.txt
+cortix.egg-info/requires.txt
+cortix.egg-info/top_level.txt

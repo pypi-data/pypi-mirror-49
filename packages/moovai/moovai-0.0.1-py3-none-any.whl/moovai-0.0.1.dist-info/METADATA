@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: moovai
+Version: 0.0.1
+Summary: A package for working with moovai
+Home-page: https://github.com/moovai/Toolbox/
+Author: Antsa Randriamihaja
+Author-email: antsa.randriamihaja@moov.ai
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/moovai/Toolbox/blob/master/README.md
+Project-URL: Source Code, https://github.com/moovai/Toolbox/tree/master/MoovAI
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: google-cloud-error-reporting (==0.28.0)
+Requires-Dist: google-cloud-bigquery (==0.29.0)
+Requires-Dist: google-cloud-storage (==1.6.0)
+Requires-Dist: joblib
+
+## BigQuery Util
+
+This package includes code to get data to and from BigQuery
+
+
+

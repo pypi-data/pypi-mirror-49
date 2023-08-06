@@ -1,0 +1,10 @@
+moovai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moovai/cloud_storage.py,sha256=o0w47lvstHNeX_5j0ClptYJ6P3PdtS0htSpvFO5jgnc,1358
+moovai/test.py,sha256=SuPe_dmBqztj-YGdA6YY2rKHL1Z4NjR4mi9IisCRrck,43
+moovai-0.0.1.data/scripts/cloud_storage.py,sha256=o0w47lvstHNeX_5j0ClptYJ6P3PdtS0htSpvFO5jgnc,1358
+moovai-0.0.1.data/scripts/test.py,sha256=SuPe_dmBqztj-YGdA6YY2rKHL1Z4NjR4mi9IisCRrck,43
+moovai-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+moovai-0.0.1.dist-info/METADATA,sha256=sLjiTGWKIl94eFFM34L43smrzQ8gLecGMXi0NtNvHnY,848
+moovai-0.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+moovai-0.0.1.dist-info/top_level.txt,sha256=dQFgjaoDfUgdhBTN6BqDxpZLodRGdITGNQ_PW6e4VTg,7
+moovai-0.0.1.dist-info/RECORD,,

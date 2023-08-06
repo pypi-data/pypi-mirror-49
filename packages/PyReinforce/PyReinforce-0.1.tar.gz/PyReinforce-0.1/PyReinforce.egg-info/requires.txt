@@ -1,0 +1,7 @@
+numpy>=1.0
+
+[gym]
+gym
+
+[tensorflow]
+tensorflow>=1.0

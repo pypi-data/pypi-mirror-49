@@ -1,0 +1,13 @@
+pymatgen
+marshmallow
+pyyaml
+pygmo
+pandas
+scipy
+numpy
+scikit-learn
+lammps-cython
+pymatgen_lammps
+
+[mattoolkit]
+mattoolkit

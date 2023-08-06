@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: pymerkle
+Version: 4.0.0b1
+Summary: A Python library for constructing Merkle Trees and validating Proofs
+Home-page: https://github.com/FoteinosMerg/pymerkle
+Author: FoteinosMerg
+Author-email: foteinosmerg@protonmail.com
+License: License :: OSI Approved :: MIT License
+Project-URL: github, https://github.com/FoteinosMerg/pymerkle
+Project-URL: source, https://github.com/FoteinosMerg/pymerkle/tree/master/pymerkle
+Project-URL: docs, https://pymerkle.readthedocs.io/en/latest/
+Description: UNKNOWN
+Keywords: audit,consistency,merkle,proof
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6

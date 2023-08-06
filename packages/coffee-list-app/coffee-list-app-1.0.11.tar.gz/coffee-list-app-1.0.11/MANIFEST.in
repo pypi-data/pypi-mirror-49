@@ -1,0 +1,4 @@
+include LICENSE
+recursive-include personalapp/static *
+recursive-include hello/templates/*.html
+include static*

@@ -1,0 +1,171 @@
+Metadata-Version: 2.1
+Name: django-clave-unica
+Version: 1.0.1
+Summary: Aplicacion Django para integración con autenticación Clave Única
+Home-page: https://github.com/GatoSnake
+Author: Cristhian Won
+Author-email: cristhian.won@gmail.com
+License: BSD License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: urllib3 (>=1.25.3)
+
+# Django Clave Unica
+
+AplicaciÃ³n Djando que permite la autenticaciÃ³n de los ciudadanos de Chile.
+
+[![GitHub release](https://img.shields.io/github/release/gatosnake/django-clave-unica.svg)](https://github.com/GatoSnake/django-clave-unica/releases/)
+[![GitHub tag](https://img.shields.io/github/tag/gatosnake/django-clave-unica.svg)](https://github.com/GatoSnake/django-clave-unica/tags/)
+[![GitHub license](https://img.shields.io/github/license/gatosnake/django-clave-unica.svg)](https://github.com/GatoSnake/django-clave-unica/blob/master/LICENSE)
+[![Github all releases](https://img.shields.io/github/downloads/gatosnake/django-clave-unica/total.svg)](https://github.com/GatoSnake/django-clave-unica/releases/)
+
+## Codigo Fuente
+
+El cÃ³digo fuente de la aplicaciÃ³n lo puedes obtener de la siguiente url en Github:
+https://github.com/GatoSnake/django-clave-unica
+
+Si esta aplicaciÃ³n te fue de ayuda, no dudes en compartirlo y hacermelo saber. :blush: :beers:
+
+AdemÃ¡s, esta abierto para que hagan sus pull requests en casos de realizar mejoras al cÃ³digo. :sunglasses:
+
+## InstalaciÃ³n
+
+1. Descarga e instala el paquete utilizando `pipenv` o `pip` de la siguiente manera:
+```
+pip install django-clave-unica
+```
+
+2. Agrega la aplicaciÃ³n `clave_unica_auth` en el parÃ¡metro INSTALLED_APPS de tu archivo `settings.py`, 
+de la siguiente manera:
+```python
+INSTALLED_APPS = [
+	...
+	'clave_unica_auth',
+]
+```
+
+3. Incluir las credenciales de la aplicaciÃ³n para la autenticaciÃ³n de los usuarios. Como parÃ¡metros mÃ­nimos, debe ingresar en el archivo `settings.py` lo siguiente:
+```python
+CLAVE_UNICA = {
+    'CLIENT_ID': 'client_id',
+    'CLIENT_SECRET': 'client_secret',
+    'REDIRECT_URI': 'redirect_uri',
+}
+```
+**Para obtener tus credenciales de integraciÃ³n con Clave Ãšnica, accede a https://claveunica.gob.cl/institucional.**
+
+4. Incluye la ruta de autenticaciÃ³n Clave Ãšnica en el archivo `urls.py` de tu proyecto, 
+de la siguiente manera:
+```python
+urlpatterns = [
+		...
+	path('claveunica/', include('clave_unica_auth.urls')),
+	...
+]
+```
+
+5. Ejecutar `python manage.py migrate` para migrar el modelo de personas de Clave Unica a la base de datos.
+
+6. Ejecutar el servidor de desarrollo y acceder a http://127.0.0.1:8000/claveunica/login para realizar el proceso de autenticaciÃ³n.
+
+## Funcionamiento
+
+1. Cuando un usuario iniciar sesiÃ³n contra Clave Ãšnica, el sistema lo redirige al portal de autenticaciÃ³n creando para esa sesion de autenticaciÃ³n un parÃ¡metro llamado `state` en formato UUIDv4, en el cual dura 30 minutos y se guarda en el cache por defecto de Django. 
+2. Si las credenciales del usuario son correctas, Clave Ãšnica redirige nuevamente al usuario a la aplicaciÃ³n a travÃ©s de una URL callback que es registrada por el dueÃ±o de la aplicaciÃ³n en en registro de instituciones de clave Ãšnica (https://claveunica.gob.cl/institucional).
+3. El sistema verifica el parametro `state`, si no ha expirado entonces verifica si el usuario existe en base de datos. En caso de no existir lo crea automaticamente y lo dirige a la vista ya autenticada.
+
+A nivel de base de datos, la estructura de los datos esta compuesta de la siguiente manera:
+* La columna `username` de la tabla de usuario de Django posee la informaciÃ³n del RUN de la persona.
+* La informaciÃ³n de la persona, como el RUN y el DV esta guardada en la tabla `clave_unica_auth_person`, en el cual esta asociada a la tabla de usuarios de Django.
+* La tabla `clave_unica_auth_login` posee el registro de todos los intentos de inicios de sesiÃ³n. En ella se guarda la fecha, direcciÃ³n IP remoto, el parÃ¡metro state, el resultado de la autenticaciÃ³n y el usuario asociado si este existe en BD.
+
+## Otras configuraciones
+
+### CLAVEUNICA_URL_LOGIN
+Url de login en Clave Ãšnica.
+```
+Type: string
+Default: https://accounts.claveunica.gob.cl/openid/authorize
+```
+### CLAVEUNICA_URL_LOGOUT
+Url de logout Clave Ãšnica.
+```
+Type: string
+Default: https://api.claveunica.gob.cl/api/v1/accounts/app/logout
+```
+### CLAVEUNICA_REMEMBER_LOGIN
+Recuerda la autenticaciÃ³n del usuario de Clave Ãšnica.
+```
+Type: boolean
+Default: False
+```
+NOTA: Para no recordar la autenticaciÃ³n del usuario, se realiza el truco de abrir un iframe escondido en el html con la url del parÃ¡metro `CLAVEUNICA_URL_LOGOUT`.
+### CLAVEUNICA_TOKEN_URI
+Url intercambio autorization_code a access_token en Clave Ãšnica.
+```
+Type: string
+Default:  https://accounts.claveunica.gob.cl/openid/token
+```
+### CLAVEUNICA_USERINFO_URI
+Url para obtenciÃ³n de informaciÃ³n del usuario en Clave Ãšnica.
+```
+Type: string
+Default:  https://accounts.claveunica.gob.cl/openid/userinfo
+```
+### CLAVEUNICA_STATE_TIMEOUT
+Tiempo en segundos que dura el parÃ¡metro `state` antes de realizar la autenticaciÃ³n en Clave Ãšnica.
+```
+Type: int
+Default:  1800
+```
+### CLAVEUNICA_AUTO_CREATE_USER
+Crea automaticamente al usuario si no existe en BD.
+```
+Type: boolean
+Default:  True
+```
+### CLAVEUNICA_PATH_LOGIN
+Url path para login Clave Ãšnica.
+```
+Type: string
+Default:  login/
+```
+### CLAVEUNICA_PATH_REDIRECT
+Url path redirect desde Clave Ãšnica.
+```
+Type: string
+Default:  callback/
+```
+### CLAVEUNICA_PATH_SUCCESS_LOGIN
+Url path a vista que se redirige despues de hacer login correctamente.
+```
+Type: string
+Default:  /home/
+```
+### CLAVEUNICA_HTML_ERROR
+Path archivo error html.
+```
+Type: string
+Default:  clave_unica_auth/error.html
+```
+
+## Changelog
+
+* **1.0.1** [14/07/19]
+	* Se cambia la configuracion Clave Ãšnica a tipo diccionario en settings.py.
+* **1.0.0** [07/07/19]
+	* Permite la autenticaciÃ³n de los usuarios via Clave Ãšnica.
+
+

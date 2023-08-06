@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+pierogi/__init__.py
+pierogi/pierogi.py
+pierogi.egg-info/PKG-INFO
+pierogi.egg-info/SOURCES.txt
+pierogi.egg-info/dependency_links.txt
+pierogi.egg-info/top_level.txt
+pierogi/utils/__init__.py
+pierogi/utils/websocket.py
+pierogi/utils/websocket_client.html
+pierogi/webapp/pierogi.html

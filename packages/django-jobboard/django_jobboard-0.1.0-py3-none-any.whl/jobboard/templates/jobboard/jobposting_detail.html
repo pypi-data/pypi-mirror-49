@@ -1,0 +1,35 @@
+{% extends "jobboard/base.html" %}
+{% load humanize %}
+{% load i18n %}
+
+{% block head_title %} - Careers - {{ object.title }}{% endblock %}
+
+{% block content %}
+
+<h1>{{ object.title }}</h1>
+
+<h3>Details</h3>
+<p>Job Level: {{ object.get_level_display }}</p>
+
+<p>Department: {{ object.department.name }}</p>
+
+<p>Employment Type: {{ object.get_employment_display }}</p>
+
+<p>Location: {{ object.location.name }}</p>
+
+<h3>Description</h3>
+<p>{{ object.description }}</p>
+
+<h3>Responsibilities</h3>
+<p>{{ object.responsibilities }}</p>
+
+<h3>Experience</h3>
+<p>{{ object.experience }}</p>
+
+<h3>Pluses</h3>
+<p>{{ object.plusses }}</p>
+
+<h3>Salary Range</h3>
+<p>${{ object.salary_low|intcomma }}-${{ object.salary_high|intcomma }}</p>
+
+{% endblock %}

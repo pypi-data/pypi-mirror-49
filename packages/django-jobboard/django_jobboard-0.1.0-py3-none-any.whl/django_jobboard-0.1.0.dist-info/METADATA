@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: django-jobboard
+Version: 0.1.0
+Summary: Django app to add a simple job board to your site.
+Home-page: https://github.com/renderbox/django-jobboard
+Author: Grant Viklund
+Author-email: renderbox@gmail.com
+License: UNKNOWN
+Keywords: django,app
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Requires-Dist: Django (>=2.1)
+Provides-Extra: build
+Requires-Dist: setuptools ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Provides-Extra: dev
+Provides-Extra: docs
+Requires-Dist: coverage (==4.4.1) ; extra == 'docs'
+Requires-Dist: Sphinx (==1.6.4) ; extra == 'docs'
+Provides-Extra: prod
+Provides-Extra: test
+
+django-jobboard
+===============
+
+Django App for adding a Job Board/Recruiting Page to your site.
+
+To install run
+
+.. code:: bash
+
+   pip install django-jobboard
+
+then add ‘jobboard’ to your django project’s list of apps and migrate.
+
+in your project add the following to get the paths added automaticly:
+
+.. code:: python
+
+   urlpatterns = [
+       ...
+       path('jobs/', include('jobboard.urls') ),
+       ...
+   ]
+
+

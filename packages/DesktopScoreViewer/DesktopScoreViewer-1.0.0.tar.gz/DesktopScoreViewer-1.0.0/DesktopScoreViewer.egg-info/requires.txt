@@ -1,0 +1,5 @@
+wx
+re
+bs4
+selenium
+wx.lib

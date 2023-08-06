@@ -1,0 +1,53 @@
+#!/home/comiandennismillerprofile1/.virtualenvs/diamond-patterns/bin/python
+# -*- coding: utf-8 -*-
+# diamond-patterns (cc) 2019 Ian Dennis Miller
+
+import click
+import sys
+sys.path.insert(0, '.')
+from diamond_patterns import Pattern
+
+
+@click.group()
+def cli():
+    pass
+
+@click.command('scaffold', short_help='scaffold a folder with a pattern.')  
+@click.option('--interactive/--no-interactive', default=True)
+@click.argument('pattern')
+def scaffold(pattern, interactive):
+    p = Pattern()
+    p.run_scaffold(pattern, interactive)
+
+
+@click.command('list', short_help='list available patterns.')
+def list_patterns():
+    p = Pattern()
+    print("Available patterns:\n")
+    for pattern in p.patterns:
+        print("- {0}".format(pattern))
+    print("")
+
+
+@click.command('version', short_help='show version')
+def version():
+    print()
+
+
+@click.command('update', short_help='update patterns')
+def update():
+    p = Pattern()
+    print("Updating {}".format(p.manifest_file))
+    p.download_manifest()
+
+
+cli.add_command(list_patterns)
+cli.add_command(scaffold)
+cli.add_command(version)
+cli.add_command(update)
+
+
+if __name__ == '__main__':
+    from diamond_patterns.__meta__ import __version__
+    print("Diamond-Patterns", __version__)
+    cli()

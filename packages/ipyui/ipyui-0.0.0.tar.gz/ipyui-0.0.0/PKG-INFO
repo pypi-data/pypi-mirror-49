@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: ipyui
+Version: 0.0.0
+Summary: Exploratory Data Analysis and Visualization
+Home-page: https://github.com/tkrabel/ipyui
+Author: Tobias Krabel, Florian Wetschoreck
+Author-email: tobiaskrabel@gmail.com, florian.wetschoreck@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/tkrabel/ipyui/archive/0.0.0.tar.gz
+Description: UNKNOWN
+Keywords: data preparation,data exploration,data analysis,data transformation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6

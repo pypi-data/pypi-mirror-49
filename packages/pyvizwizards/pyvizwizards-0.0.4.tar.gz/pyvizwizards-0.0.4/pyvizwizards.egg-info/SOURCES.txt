@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyvizwizards.egg-info/PKG-INFO
+pyvizwizards.egg-info/SOURCES.txt
+pyvizwizards.egg-info/dependency_links.txt
+pyvizwizards.egg-info/top_level.txt

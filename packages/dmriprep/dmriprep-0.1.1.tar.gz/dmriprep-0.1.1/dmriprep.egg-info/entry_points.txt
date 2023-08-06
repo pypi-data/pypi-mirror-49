@@ -1,0 +1,5 @@
+[console_scripts]
+dmriprep = dmriprep.cli.run:main
+dmriprep-boldmask = dmriprep.cli.dmriprep_bold_mask:main
+sample_openfmri = dmriprep.cli.sample_openfmri:main
+

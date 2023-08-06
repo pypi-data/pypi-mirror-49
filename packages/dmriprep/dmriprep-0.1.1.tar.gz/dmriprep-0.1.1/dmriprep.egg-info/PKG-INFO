@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: dmriprep
+Version: 0.1.1
+Summary: dMRIPrep is a robust and easy-to-use pipeline for preprocessing of diverse dMRI data.
+Home-page: https://github.com/nipreps/dmriprep
+Author: The Nipy developers
+Author-email: code@oscaresteban.es
+Maintainer: Oscar Esteban
+Maintainer-email: code@oscaresteban.es
+License: 3-clause BSD
+Description: Preprocessing of diffusion MRI (dMRI) involves numerous steps to clean and standardize
+        the data before fitting a particular model.
+        Generally, researchers create ad hoc preprocessing workflows for each dataset,
+        building upon a large inventory of available tools.
+        The complexity of these workflows has snowballed with rapid advances in
+        acquisition and processing.
+        dMRIPrep is an analysis-agnostic tool that addresses the challenge of robust and
+        reproducible preprocessing for whole-brain dMRI data.
+        dMRIPrep automatically adapts a best-in-breed workflow to the idiosyncrasies of
+        virtually any dataset, ensuring high-quality preprocessing without manual intervention.
+        dMRIPrep equips neuroscientists with an easy-to-use and transparent preprocessing
+        workflow, which can help ensure the validity of inference and the interpretability
+        of results.
+        
+        The workflow is based on `Nipype <https://nipype.readthedocs.io>`_ and encompases a large
+        set of tools from well-known neuroimaging packages, including
+        `FSL <https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/>`_,
+        `ANTs <https://stnava.github.io/ANTs/>`_,
+        `FreeSurfer <https://surfer.nmr.mgh.harvard.edu/>`_,
+        `AFNI <https://afni.nimh.nih.gov/>`_,
+        and `Nilearn <https://nilearn.github.io/>`_.
+        This pipeline was designed to provide the best software implementation for each state of
+        preprocessing, and will be updated as newer and better neuroimaging software becomes
+        available.
+        
+        dMRIPrep performs basic preprocessing steps (coregistration, normalization, unwarping,
+        segmentation, skullstripping etc.) providing outputs that can be
+        easily submitted to a variety of tractography algorithms.
+        
+        [Documentation `dmriprep.org <https://dmriprep.readthedocs.io>`_]
+        [Support `neurostars.org <https://neurostars.org/tags/fmriprep>`_]
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: doc
+Provides-Extra: resmon
+Provides-Extra: datalad
+Provides-Extra: docs
+Provides-Extra: all
+Provides-Extra: duecredit
+Provides-Extra: sentry
+Provides-Extra: tests

@@ -1,0 +1,8 @@
+README.md
+setup.py
+redtongue/__init__.py
+redtongue/redtongue.py
+redtongue.egg-info/PKG-INFO
+redtongue.egg-info/SOURCES.txt
+redtongue.egg-info/dependency_links.txt
+redtongue.egg-info/top_level.txt

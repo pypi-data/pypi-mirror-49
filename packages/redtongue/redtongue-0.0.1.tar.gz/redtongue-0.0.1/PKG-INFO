@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: redtongue
+Version: 0.0.1
+Summary: niu bi redtongue!!!!
+Home-page: https://github.com/redtongue
+Author: redtongue
+License: UNKNOWN
+Description: # -*- coding: utf-8 -*-
+        """
+        Created on Thu Jul 18 11:36:04 2019
+        
+        @author: wangyunxiang
+        """
+        
+        about redtongue, nothing, hahahaah......
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

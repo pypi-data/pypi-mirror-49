@@ -1,0 +1,12 @@
+dalmatian/__init__.py,sha256=h8AdVhJYIrQESjN3FsV_dXL9ndz0H3uM6yB0T6CAm40,67
+dalmatian/base.py,sha256=5Zzlqcrsawz5VK0SgYWO0BFaVysV_j-RmrTYzg4nw7E,74137
+dalmatian/core.py,sha256=KFAIi9PXipRm5JhE4Kl9Vp81SJBhRzoG-uMzqhomXDc,36446
+dalmatian/schema.py,sha256=0zmYv5F487aO7PO6fPYOH3vAKy1fHUwMEqW9HBeomD4,4815
+dalmatian/wmanager.py,sha256=5EBBwwHVaR1uR9j-kF-WTqqjHKSBg1DHFKiKktcgjbI,78561
+test_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_data/test.py,sha256=yp84zpyubg7KLpsBLc2lyGNGuL30sjgxdmQaU-pquF0,3911
+firecloud_dalmatian-0.0.15.dist-info/METADATA,sha256=iEh3kBybY8eVwfpbNFO2xYIvgcE2ykzXTZ355TBJVNA,5049
+firecloud_dalmatian-0.0.15.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+firecloud_dalmatian-0.0.15.dist-info/entry_points.txt,sha256=xqjM0eUR-7xcTn7drJSfAPAGL6L9Y1SatX-pzaHy8f4,51
+firecloud_dalmatian-0.0.15.dist-info/top_level.txt,sha256=f4E6hWX2tFznhYUH09Fst80K7NJNQ4umtUe1vbbZN0E,20
+firecloud_dalmatian-0.0.15.dist-info/RECORD,,

@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+reqcreate/__init__.py
+reqcreate/built-in.txt
+reqcreate/main.py
+reqcreate/mapping.txt
+reqcreate.egg-info/PKG-INFO
+reqcreate.egg-info/SOURCES.txt
+reqcreate.egg-info/dependency_links.txt
+reqcreate.egg-info/entry_points.txt
+reqcreate.egg-info/requires.txt
+reqcreate.egg-info/top_level.txt

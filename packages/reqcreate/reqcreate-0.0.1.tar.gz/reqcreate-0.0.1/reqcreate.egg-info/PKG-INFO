@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: reqcreate
+Version: 0.0.1
+Summary: Create requirements file (from imports) for a project without it
+Home-page: https://github.com/cllbck/reqcreate
+Author: Evgeniy Kolbin
+Author-email: cllbck@cllbck.me
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

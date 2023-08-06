@@ -1,0 +1,3 @@
+[console_scripts]
+reqcreate = reqcreate.main:main
+

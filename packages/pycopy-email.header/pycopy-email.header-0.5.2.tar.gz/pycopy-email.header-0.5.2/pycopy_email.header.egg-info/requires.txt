@@ -1,0 +1,5 @@
+pycopy-re-pcre
+pycopy-binascii
+pycopy-email.encoders
+pycopy-email.errors
+pycopy-email.charset

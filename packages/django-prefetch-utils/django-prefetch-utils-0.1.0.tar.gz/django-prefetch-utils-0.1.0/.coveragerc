@@ -1,0 +1,18 @@
+[paths]
+source = src
+
+[run]
+branch = true
+source =
+    src
+    tests
+parallel = true
+omit =
+    tests/settings.py
+    tests/foreign_object/*
+    tests/prefetch_related/*
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*

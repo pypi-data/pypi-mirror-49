@@ -1,0 +1,8 @@
+README.md
+setup.py
+titulus/__init__.py
+titulus/gradient_color.py
+titulus.egg-info/PKG-INFO
+titulus.egg-info/SOURCES.txt
+titulus.egg-info/dependency_links.txt
+titulus.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: inception-android
+Version: 0.9.18
+Summary: Auto config tools for android devices
+Home-page: http://github.com/tgalal/inception/
+Author: Tarek Galal
+Author-email: tare2.galal@gmail.com
+License: GPL-3+
+Platform: linux
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: dulwich (==0.10.1a)
+Requires-Dist: argparse
+Requires-Dist: android-dumpkey (>=0.1.2)
+Requires-Dist: libusb1 (==1.4.1)
+
+UNKNOWN
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+cocotb = cocotb_test.cli:main
+

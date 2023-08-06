@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: station-check
+Version: 1.2
+Summary: A configurable workstation checker
+Home-page: https://github.com/aslape/station-check
+Author: aslape
+Author-email: aslape@atlassian.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+<a id="markdown-SecDev Check" name="SecDev Check"></a>
+# SecDev Workstation Check - A simple workstation setup tool
+
+<https://github.com/asecurityteam/secdev-check>
+
+<a id="markdown-overview" name="overview"></a>
+## Workstation Check
+
+#### Usage
+
+1. Setup a yaml file with your work station requirements. (Documentation coming soon)
+
+2. Run:
+
+```bash
+stationcheck <Path to your yaml file>
+```
+

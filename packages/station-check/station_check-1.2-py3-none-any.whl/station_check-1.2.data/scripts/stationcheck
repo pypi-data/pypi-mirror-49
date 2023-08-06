@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+CONFIG="$1"
+
+sh pkg/scripts/verify_package_installers
+
+if [ "$CONFIG" != "" ]; then
+    python3 pkg/station-check/station_check.py -c $CONFIG
+else
+    python3 pkg/station-check/station_check.py
+fi

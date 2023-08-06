@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mongo-sio
+Version: 0.0.1
+Summary: Sans-io implementation of the MongoDB protocol
+Home-page: https://github.com/SamP20/mongo-sio
+Author: Sam Partridge
+License: UNKNOWN
+Description: # mongo-sio
+        
+        Sans-io implementation of the MongoDB protocol
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

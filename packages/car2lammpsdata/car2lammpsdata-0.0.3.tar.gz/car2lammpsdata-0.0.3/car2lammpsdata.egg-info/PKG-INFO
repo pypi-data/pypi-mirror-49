@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: car2lammpsdata
+Version: 0.0.3
+Summary: car2lammpsdata
+Home-page: https://github.com/njzjz/car2lammpsdata
+Author: Jinzhe Zeng
+Author-email: jzzeng@stu.ecnu.edu.cn
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: car2lammpsdata
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Version Control :: Git
+Requires-Python: ~=3.3

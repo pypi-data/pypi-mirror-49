@@ -1,0 +1,7 @@
+setup.py
+uos.py
+pycopy_cpython_uos.egg-info/PKG-INFO
+pycopy_cpython_uos.egg-info/SOURCES.txt
+pycopy_cpython_uos.egg-info/dependency_links.txt
+pycopy_cpython_uos.egg-info/requires.txt
+pycopy_cpython_uos.egg-info/top_level.txt

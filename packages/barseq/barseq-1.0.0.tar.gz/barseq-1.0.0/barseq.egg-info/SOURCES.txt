@@ -1,0 +1,17 @@
+README.md
+setup.py
+barseq/__init__.py
+barseq/main.py
+barseq/process_reads.py
+barseq/utils.py
+barseq.egg-info/PKG-INFO
+barseq.egg-info/SOURCES.txt
+barseq.egg-info/dependency_links.txt
+barseq.egg-info/not-zip-safe
+barseq.egg-info/requires.txt
+barseq.egg-info/top_level.txt
+barseq/tests/__init__.py
+barseq/tests/test_functions.py
+barseq/tests/test_main.py
+barseq/tests/test_setup.py
+bin/barseq

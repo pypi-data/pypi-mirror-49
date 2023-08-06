@@ -1,0 +1,5 @@
+setup.py
+statisfactory.egg-info/PKG-INFO
+statisfactory.egg-info/SOURCES.txt
+statisfactory.egg-info/dependency_links.txt
+statisfactory.egg-info/top_level.txt

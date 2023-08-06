@@ -1,0 +1,5 @@
+include *.rst
+include LICENSE
+graft easy_subscription/static/easy_subscription
+graft easy_subscription/templates/easy_subscription
+graft easy_subscription/locale

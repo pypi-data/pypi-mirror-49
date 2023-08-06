@@ -1,0 +1,14 @@
+README.rst
+setup.py
+pyapksigner/__init__.py
+pyapksigner/apksigner.py
+pyapksigner/config.py
+pyapksigner/pyapksigner.jks
+pyapksigner.egg-info/PKG-INFO
+pyapksigner.egg-info/SOURCES.txt
+pyapksigner.egg-info/dependency_links.txt
+pyapksigner.egg-info/entry_points.txt
+pyapksigner.egg-info/requires.txt
+pyapksigner.egg-info/top_level.txt
+pyapksigner/scripts/__init__.py
+pyapksigner/scripts/launcher.py

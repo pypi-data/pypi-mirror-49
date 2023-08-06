@@ -1,0 +1,7 @@
+_chronogram.cp36-win32.pyd,sha256=ty_iudlf2DMQ544sp5hYeseOwpueQZlRLNStEAfdOoc,649728
+_chronogram_sse2.cp36-win32.pyd,sha256=8xo4TlTHaEy3pUpNPXEE6C77uBdRtQHNowGLlb7iaUU,649728
+chronogram/__init__.py,sha256=MLlVRLaVP5zIcEXzidZV34mch5Y5c6kra5Jtf2G9AU8,1273
+chronogram-0.1.0.dist-info/METADATA,sha256=64yXruE32wcScw7iJ2KwgxY88FDSyyRoK3lSqOVuJgg,328
+chronogram-0.1.0.dist-info/WHEEL,sha256=JzwLJJKKKvfM5aa8ugjHzCZbTNPVJ6p0eHfrxsgrcE8,102
+chronogram-0.1.0.dist-info/top_level.txt,sha256=RqMle8jlCUsinafgypftrL8bILofvD7A90-N2_Ra5h4,40
+chronogram-0.1.0.dist-info/RECORD,,

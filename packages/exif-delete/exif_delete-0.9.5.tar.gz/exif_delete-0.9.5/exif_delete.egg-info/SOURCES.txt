@@ -1,0 +1,9 @@
+README.md
+exif_delete.py
+setup.py
+exif_delete.egg-info/PKG-INFO
+exif_delete.egg-info/SOURCES.txt
+exif_delete.egg-info/dependency_links.txt
+exif_delete.egg-info/entry_points.txt
+exif_delete.egg-info/requires.txt
+exif_delete.egg-info/top_level.txt

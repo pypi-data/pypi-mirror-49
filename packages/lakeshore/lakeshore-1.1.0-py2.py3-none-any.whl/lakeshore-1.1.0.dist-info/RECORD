@@ -1,0 +1,11 @@
+lakeshore/__init__.py,sha256=pLgaHpKoHrs2THW7Sz92Q2VX-Al61LySmXYBk9sDUFc,405
+lakeshore/fast_hall.py,sha256=WdTRFvbDyzmTGaQ5v9uKQDkIMfXBG3hAPABbtlPRW48,4119
+lakeshore/precision_source.py,sha256=iSnceH170V1k1B_mn6gj2NRwQPxeU1nDsq6QkCw0wdY,17085
+lakeshore/requires_firmware_version.py,sha256=b62kQlGLBJ3B3f3recMqY8fwEMDQtCeSoDEvwC__c1E,1135
+lakeshore/teslameter.py,sha256=ca7wW4fh7Er07rEOoA_93S-ajEIIB28Dw22CrZIkrqY,21481
+lakeshore/xip_instrument.py,sha256=A-344D_jwneltC-jWeBsJqCXC30gUS_XU8j3GBG2GNk,23431
+lakeshore-1.1.0.dist-info/LICENSE,sha256=oZ-NM05pe41Uz8qT0uAHLi86QIzgti07YNFfoOS3y3I,1106
+lakeshore-1.1.0.dist-info/METADATA,sha256=5V28tkAQrFO6NQN7itZxEZcJ3u7YjX3242U0YnbjnaQ,2661
+lakeshore-1.1.0.dist-info/WHEEL,sha256=53VSps8MltPLN_x9Ib61FU2ZSaJKzgrWQqu9rS-Dkgk,116
+lakeshore-1.1.0.dist-info/top_level.txt,sha256=P1ncwjcrnySyaFI2m32yjPG7ktKR9ey_2ZLqYVFDfVQ,10
+lakeshore-1.1.0.dist-info/RECORD,,

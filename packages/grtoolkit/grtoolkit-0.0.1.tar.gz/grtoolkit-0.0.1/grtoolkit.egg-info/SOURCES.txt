@@ -1,0 +1,6 @@
+README.md
+setup.py
+grtoolkit.egg-info/PKG-INFO
+grtoolkit.egg-info/SOURCES.txt
+grtoolkit.egg-info/dependency_links.txt
+grtoolkit.egg-info/top_level.txt

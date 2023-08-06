@@ -1,0 +1,13 @@
+mrcfile>=1.0.0
+Keras>=2.2.4
+numpy==1.15.4
+h5py>=2.5.0
+Cython
+imagecodecs-lite==2019.2.22
+tifffile
+
+[cpu]
+tensorflow==1.11.0
+
+[gpu]
+tensorflow-gpu==1.11.0

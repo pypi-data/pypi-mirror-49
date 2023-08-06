@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: datacustodian
+Version: 0.0.2
+Summary: Generalized data privacy and consent repository generator.
+Home-page: https://gitlab.com/clearos/clearfoundation/datacustodian
+Author: ClearFoundation
+Author-email: developer@clearfoundation.com
+License: GPL-3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: argparse
+Requires-Dist: pyparsing
+Requires-Dist: termcolor
+Requires-Dist: tqdm
+Requires-Dist: jinja2
+Requires-Dist: flask
+Requires-Dist: flask-restful
+Requires-Dist: flask-restplus
+Requires-Dist: pyyaml
+Requires-Dist: attrdict
+
+[![pipeline status](https://gitlab.com/crosenbrock/app-datakeeper/badges/master/pipeline.svg)](https://gitlab.com/crosenbrock/app-datakeeper/commits/master)
+[![coverage report](https://gitlab.com/crosenbrock/app-datakeeper/badges/master/coverage.svg)](https://gitlab.com/crosenbrock/app-datakeeper/commits/master)
+
+# Data Keeper Templated System
+
+This is a python-based project that generates other repositories for generalized
+data privacy and consent systems.
+
+

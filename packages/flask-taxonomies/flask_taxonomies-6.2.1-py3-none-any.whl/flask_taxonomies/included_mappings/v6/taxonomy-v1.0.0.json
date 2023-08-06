@@ -1,0 +1,42 @@
+{
+    "TaxonomyTerm": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "keyword"
+            },
+            "slug": {
+                "type": "keyword"
+            },
+            "path": {
+                "type": "text"
+            },
+            "title": {
+                "type": "nested",
+                "properties": {
+                    "lang": {
+                        "type": "keyword",
+                        "value": "text"
+                    }
+                }
+            },
+            "links": {
+                "type": "nested",
+                "properties": {
+                    "self": {
+                        "type": "keyword"
+                    },
+                    "tree": {
+                        "type": "keyword"
+                    },
+                    "parent": {
+                        "type": "keyword"
+                    },
+                    "parent_tree": {
+                        "type": "keyword"
+                    }
+                }
+            }
+        }
+    }
+}

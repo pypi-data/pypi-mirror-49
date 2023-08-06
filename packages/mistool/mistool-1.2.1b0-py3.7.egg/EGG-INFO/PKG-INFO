@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: mistool
+Version: 1.2.1b0
+Summary: Miscellaneous missing tools that can help the py-developper.
+Home-page: https://github.com/bc-python-tools/mistool
+Author: Christophe BAL
+Author-email: projetmbc@gmail.com
+License: GPLv3
+Description: pypandoc.convert(str(readme), 'rst')
+Keywords: python latex os path string terminal tool
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Desktop Environment :: File Managers
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: Text Processing :: Markup :: LaTeX

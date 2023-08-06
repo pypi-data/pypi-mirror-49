@@ -1,0 +1,10 @@
+argunparse/__init__.py,sha256=G9xLEXKhLC-IqKJOGB40C4uawhyaymJqwomea-hzRBg,221
+argunparse/_version.py,sha256=GcRSFKEoGxiWw0NsAE4w94EqA1ydWB5C0GhSvnMYw1A,117
+argunparse/argument_unparser.py,sha256=wwOO4Mh7duiwXchgmRUQIDJnwfiw5z7ZeCkldxfkEas,4900
+argunparse/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+argunparse-0.1.2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+argunparse-0.1.2.dist-info/METADATA,sha256=IbPHLXjhmomsIwN5xbuRFaAGQdWgJ9j69IjTYTwSlI8,4060
+argunparse-0.1.2.dist-info/NOTICE,sha256=02npJs2qyL702yWouD8FPGIKYYH7lMYjwzHnEgvhDtE,588
+argunparse-0.1.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+argunparse-0.1.2.dist-info/top_level.txt,sha256=LieK-mDOiftt7sgAkKdJdt69v_0O6x9vZRcrb5_jLiY,11
+argunparse-0.1.2.dist-info/RECORD,,

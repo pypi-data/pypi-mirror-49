@@ -1,0 +1,36 @@
+Solver command line: ['c:\\users\\hsven\\bin\\cbc.exe', '-printingOptions', 'all', '-import', 'C:\\Users\\hsven\\code\\powergama\\powergama\\examples\\tmptb2c9juy.pyomo.lp', '-stat=1', '-solve', '-solu', 'C:\\Users\\hsven\\code\\powergama\\powergama\\examples\\tmptb2c9juy.pyomo.soln']
+
+Welcome to the CBC MILP Solver 
+Version: 2.9.7 
+Build Date: Nov 24 2015 
+
+command line - c:\users\hsven\bin\cbc.exe -printingOptions all -import C:\Users\hsven\code\powergama\powergama\examples\tmptb2c9juy.pyomo.lp -stat=1 -solve -solu C:\Users\hsven\code\powergama\powergama\examples\tmptb2c9juy.pyomo.soln (default strategy 1)
+Option for printingOptions changed from normal to all
+Presolve 8 (-38) rows, 12 (-15) columns and 30 (-60) elements
+Statistics for presolved model
+
+
+Problem has 8 rows, 12 columns (7 with objective) and 30 elements
+There are 7 singletons with objective 
+Column breakdown:
+3 of type 0.0->inf, 1 of type 0.0->up, 0 of type lo->inf, 
+7 of type lo->up, 1 of type free, 0 of type fixed, 
+0 of type -inf->0.0, 0 of type -inf->up, 0 of type 0.0->1.0 
+Row breakdown:
+2 of type E 0.0, 0 of type E 1.0, 0 of type E -1.0, 
+3 of type E other, 0 of type G 0.0, 0 of type G 1.0, 
+0 of type G other, 0 of type L 0.0, 0 of type L 1.0, 
+0 of type L other, 0 of type Range 0.0->1.0, 3 of type Range other, 
+0 of type Free 
+Presolve 8 (-38) rows, 12 (-15) columns and 30 (-60) elements
+0  Obj 350 Primal inf 549.21066 (8)
+6  Obj 2998.0346
+Optimal - objective value 2998.0346
+After Postsolve, objective 2998.0346, infeasibilities - dual 9.9999999 (1), primal 0 (0)
+Presolved model was optimal, full model needs cleaning up
+0  Obj 2998.0346
+Optimal - objective value 2998.0346
+Optimal objective 2998.03464 - 6 iterations time 0.002, Presolve 0.00
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+

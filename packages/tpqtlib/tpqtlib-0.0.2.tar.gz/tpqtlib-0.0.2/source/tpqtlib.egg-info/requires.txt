@@ -1,0 +1,8 @@
+tpPyUtils
+tpDccLib
+
+[dev]
+wheel
+
+[test]
+pytest

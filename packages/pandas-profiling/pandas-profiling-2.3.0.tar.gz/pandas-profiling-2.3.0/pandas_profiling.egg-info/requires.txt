@@ -1,0 +1,8 @@
+pandas>=0.19
+matplotlib>=1.4
+jinja2>=2.8
+missingno>=0.4.2
+htmlmin>=0.1.12
+phik>=0.9.8
+confuse>=1.0.0
+astropy

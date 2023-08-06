@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "zabbix_controller"
+version = "0.1.4"
+description = ""
+# pypi のユーザ名と一緒にする必要がない．メールアドレスも同様
+authors = ["hamadakafu <kafu.h1998@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^7.0"
+pyzabbix = "*"
+bullet = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+pylint = "^2.3"
+autopep8 = "^1.4"
+
+[tool.poetry.scripts]
+# zabbix_delete_graphディレクトリをmainで実行(init内を探す)
+main = "zabbix_controller:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

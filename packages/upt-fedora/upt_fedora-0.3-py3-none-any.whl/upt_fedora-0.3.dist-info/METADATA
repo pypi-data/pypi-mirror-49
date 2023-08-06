@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: upt-fedora
+Version: 0.3
+Summary: Fedora backend for upt
+Home-page: https://framagit.org/upt/upt-fedora
+Author: Cyril Roelandt
+Author-email: tipecaml@gmail.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Requires-Dist: jinja2
+Requires-Dist: upt (>=0.10)
+
+UNKNOWN
+
+

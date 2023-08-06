@@ -1,0 +1,3 @@
+[upt.backends]
+fedora = upt_fedora.upt_fedora:FedoraBackend
+

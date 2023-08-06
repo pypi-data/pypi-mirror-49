@@ -1,0 +1,16 @@
+upt_fedora/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upt_fedora/upt_fedora.py,sha256=8b1KJ7ILlI32ayXLNX3PArsOu8sPd6sWsYGDazdR4Ao,10037
+upt_fedora/templates/base.spec,sha256=W9fN3z5Tl_ssdU5NvyMwV8PQ-XhMQQLrs4jiBxUiyBE,604
+upt_fedora/templates/python.spec,sha256=GQE5H0X0SdKKtTZjjFF5SQf0_tB_wOUX9UcvYtW4Xs4,1268
+upt_fedora/templates/ruby.spec,sha256=TMvImGIcUTBQ7erygXcMeXq-DR6eHmmYbTaBbCyly24,1202
+upt_fedora/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upt_fedora/tests/test_fedora_backend.py,sha256=rvJhCCnTUfhKgw2oNw013_q_uUQyDkNxK5QqgVSq-Qg,587
+upt_fedora/tests/test_fedora_package.py,sha256=Ym0wTAJlrKX40hQUewbpxKiL8DhDN4L-W9_WyvjEeNg,6024
+upt_fedora/tests/test_python_package.py,sha256=hihghWjPYED64e7su65Zr6_wU754cCocRYkT140eEEA,1982
+upt_fedora/tests/test_ruby_package.py,sha256=-498Ds6ZG66ZOhC1eRd5B4_3PlPZYOWXQC5dY1gK40c,1303
+upt_fedora-0.3.dist-info/LICENSE,sha256=WKoK5u2_uNTIGKHEBRVSRAQmkMNt8-GsI43qTlbIisU,1464
+upt_fedora-0.3.dist-info/METADATA,sha256=y2JDKIGbrFAXtg6Ip1YAr5pfEGr8lWESW6uU2huka74,627
+upt_fedora-0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+upt_fedora-0.3.dist-info/entry_points.txt,sha256=e3dlzSW2Qt96iG8YufZIsHPn47Gv-D1J69zv17ZgCyQ,61
+upt_fedora-0.3.dist-info/top_level.txt,sha256=DwaZLkAh_ocxBTqY-IZmOzETTTA7x9WayPv0SzkUQfA,11
+upt_fedora-0.3.dist-info/RECORD,,

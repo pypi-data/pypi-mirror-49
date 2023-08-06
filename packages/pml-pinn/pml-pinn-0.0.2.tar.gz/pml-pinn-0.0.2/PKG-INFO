@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pml-pinn
+Version: 0.0.2
+Summary: Physics-informed neural networks
+Home-page: https://github.com/PML-UCF/pinn
+Author: Felipe Viana, Renato G. Nascimento, Yigit Yucesan, Arinan Dourado
+Author-email: viana@ucf.edu, renato.gn@knights.ucf.edu, yucesan@knights.ucf.edu, arinandourado@knights.ucf.edu
+License: MIT
+Description: [![PyPI version](https://badge.fury.io/py/pml-pinn.svg)](https://badge.fury.io/py/pml-pinn)
+        # Physics-informed neural networks
+        Welcome to the PML repository for physics-informed neural networks. We will use this repository to disseminate our research in this exciting topic. Links for some useful publications:
+        * [**Fleet Prognosis with Physics-informed Recurrent Neural Networks:**](https://arxiv.org/abs/1901.05512) This paper introduces a novel physics-informed neural network approach to prognosis by extending recurrent neural networks to cumulative damage models. We propose a new recurrent neural network cell designed to merge physics-informed and data-driven layers. With that, engineers and scientists have the chance to use physics-informed layers to model parts that are well understood (e.g., fatigue crack growth) and use data-driven layers to model parts that are poorly characterized (e.g., internal loads).
+        
+        ## Install
+        
+        To install the stable version just do:
+        ```
+        pip install pml-pinn
+        ```
+        
+        ### Develop mode
+        
+        To install in develop mode, clone this repository and do a pip install:
+        ```
+        git clone https://github.com/PML-UCF/pinn.git
+        cd pinn
+        pip install -e .
+        ```
+        
+Keywords: physics informed,neural networks,machine learning,deep learning,tensorflow,keras,python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown

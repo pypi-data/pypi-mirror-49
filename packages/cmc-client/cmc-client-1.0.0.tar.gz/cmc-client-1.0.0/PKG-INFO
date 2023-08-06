@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: cmc-client
+Version: 1.0.0
+Summary: Coinmarketcap API Swagger Implementation
+Home-page: https://github.com/wilkosz/coinmarketcap_api_sdks/tree/master/python
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description:     Define coinmarketcap&#39;s api in swagger 2.0 openapi standard  # noqa: E501
+            
+Keywords: Swagger,Coinmarketcap API Swagger Implementation
+Platform: UNKNOWN

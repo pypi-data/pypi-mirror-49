@@ -1,0 +1,12 @@
+boolean_switch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boolean_switch/admin.py,sha256=O8L6j1U8skxI-CYHBRPcCiwof1OwZTNmDC-VKgrxa_k,1845
+boolean_switch/models.py,sha256=yhjwPd0WMcoVSq9gg3pllug_oWOi5HUYLgEQv63ZsqA,29
+boolean_switch/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+boolean_switch/urls.py,sha256=6In6aKtPsqkfYv6NEBS_sTuFt-gpA_ANsRQfYbfalDc,506
+boolean_switch/views.py,sha256=bs6bHXsnXDkdz_2aTiWyAYV73uvlLvMjCDDneTtnQZ0,1339
+boolean_switch/static/boolean_switch/boolean_switch.js,sha256=I9aMWlFLTXb6tfnEKkKcowbx_wKFvFIKzYLM1NsMaZA,566
+django_boolean_switch-0.2.9.dist-info/LICENSE,sha256=Aquq3A0SRy91E2K1uMbgPMs83xCIAnRv8Y7bJIMNPoE,1058
+django_boolean_switch-0.2.9.dist-info/METADATA,sha256=5GIh4rrnTSlGWiGhk8LuGYE_gfIoem_9OaTg76E6aeo,1567
+django_boolean_switch-0.2.9.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_boolean_switch-0.2.9.dist-info/top_level.txt,sha256=_GsSIba0UA8d-XlnkdTn9YO7IShdY1vkKv_91KV6cpo,15
+django_boolean_switch-0.2.9.dist-info/RECORD,,

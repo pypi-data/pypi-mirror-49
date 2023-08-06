@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+krakensegment/__init__.py
+krakensegment/binarization.py
+krakensegment/pageseg.py
+krakensegment.egg-info/PKG-INFO
+krakensegment.egg-info/SOURCES.txt
+krakensegment.egg-info/dependency_links.txt
+krakensegment.egg-info/top_level.txt

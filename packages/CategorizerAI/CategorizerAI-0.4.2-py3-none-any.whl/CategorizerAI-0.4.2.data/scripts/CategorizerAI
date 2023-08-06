@@ -1,0 +1,12 @@
+#!python
+#coding=utf-8
+from Config import Config
+from winterboot.WinterBoot import autoload
+from winterboot.Autowired import Autowired
+
+import categorizerai
+autoload(categorizerai)
+
+categorizerService = Autowired('categorizerService')
+
+categorizerService.categorize()

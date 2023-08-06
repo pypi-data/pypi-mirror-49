@@ -1,0 +1,9 @@
+openctm/__init__.py,sha256=6W0bnHtn0_OskYLOecIwUf_APDdAJ2YiaoC4kxMjsbw,21
+openctm/ctm.py,sha256=aI_Ihr_2v-u_NKNHck7-ZvIy7B21qnlvCqJ1pzM980A,4769
+openctm/utils.py,sha256=BSN69wv471CA9y6zxolWele7gHNk4aiG-Q6pTYC7jtA,3298
+openctm/version.py,sha256=y5oLnjIFOOBzZ4AKCmjm0C6UJGM0nWrVppZiBw-0LBI,162
+python_openctm_nightly-1.0.10a20197251138.dist-info/LICENSE,sha256=pKPhxZDXujhGkPijGHMdLAAaO9zrPhV18R80hDygI4U,2844
+python_openctm_nightly-1.0.10a20197251138.dist-info/METADATA,sha256=RFfeWbzM0_s_dB2KyLUn4GiTB__iviaUT88PEEyymbU,1619
+python_openctm_nightly-1.0.10a20197251138.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+python_openctm_nightly-1.0.10a20197251138.dist-info/top_level.txt,sha256=CL9a502nOMle7Nb-BTKUJRAcTXLBjpOaTck1_H0_GJo,8
+python_openctm_nightly-1.0.10a20197251138.dist-info/RECORD,,

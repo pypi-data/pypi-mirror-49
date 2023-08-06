@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ecgclock
+Version: 2019.7.29
+Summary: ECG clock plotter
+Home-page: https://bitbucket.org/atpage/ecgclock/
+Author: Alex Page
+Author-email: alex.page@rochester.edu
+License: UNKNOWN
+Keywords: Holter ECG EKG clock QT LQTS
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: python-dateutil
+Requires-Dist: cycler
+Requires-Dist: pandas
+
+UNKNOWN
+
+

@@ -1,0 +1,8 @@
+pymysql
+psycopg2-binary
+xlsxwriter
+SQLAlchemy
+pytz
+
+[AWS]
+boto3

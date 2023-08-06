@@ -1,0 +1,11 @@
+claml2transmart/__init__.py,sha256=4aPPiyekyGmjT-WZqbCSrieM1Hi2KRuWXMisCF1bjHY,170
+claml2transmart/__version__.py,sha256=aBEbDvx4LMg8A1TJJR6dEHu8rQODVin528hLS_EDvuA,22
+claml2transmart/claml2transmart.py,sha256=7PqDYzqUoUlF5ohe4tVziJ-w6ckecgGR83gS-Q_S2Ic,2221
+claml2transmart/ontology_mapper.py,sha256=1djJbigEwTzhVerNJe9SXWBDBDUmXZb66k_kH5pNFtY,926
+claml2transmart/ontology_writer.py,sha256=b2crJGgcH6A5ABibI-fel-6rhiuHSoKHw7vtJB10B5w,1642
+claml2transmart-0.1.4.dist-info/LICENSE,sha256=EQgf9qe9YN83SkKmbn6IScKtnraVA2RkXKGmBl3Fl-4,1080
+claml2transmart-0.1.4.dist-info/METADATA,sha256=qEutTsGiGuZiy0sOiXnSRMsz2neysLh9TSMsSr3Cj48,4783
+claml2transmart-0.1.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+claml2transmart-0.1.4.dist-info/entry_points.txt,sha256=ToxanpV5m3TlmusVy5fULORr6_-NRqLh-yMIPAzcI6g,74
+claml2transmart-0.1.4.dist-info/top_level.txt,sha256=gon44fCQSM_iZpl7PCsDG3_SdQvxJOYX2xBeTRZvTjc,16
+claml2transmart-0.1.4.dist-info/RECORD,,

@@ -1,0 +1,15 @@
+README.md
+setup.py
+mctspy/__init__.py
+mctspy.egg-info/PKG-INFO
+mctspy.egg-info/SOURCES.txt
+mctspy.egg-info/dependency_links.txt
+mctspy.egg-info/requires.txt
+mctspy.egg-info/top_level.txt
+mctspy/games/__init__.py
+mctspy/games/common.py
+mctspy/games/examples/__init__.py
+mctspy/games/examples/tictactoe.py
+mctspy/tree/__init__.py
+mctspy/tree/nodes.py
+mctspy/tree/search.py

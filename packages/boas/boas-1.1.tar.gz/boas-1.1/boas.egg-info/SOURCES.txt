@@ -1,0 +1,16 @@
+README.md
+boas
+setup.py
+boas.egg-info/PKG-INFO
+boas.egg-info/SOURCES.txt
+boas.egg-info/dependency_links.txt
+boas.egg-info/top_level.txt
+src/__init__.py
+src/locators.py
+src/page.py
+src/parser.py
+src/runner.py
+test/FullTests.py
+test/LoginTests.py
+test/MyAccountsTests.py
+test/__init__.py

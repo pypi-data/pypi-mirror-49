@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: zen-of-python-he
+Version: 0.0.1
+Summary: Ultimite guide to life, python and all.
+Home-page: https://github.com/tvruikuzui/zen_he
+Author: Aharon Luzon
+Author-email: ahron901@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Zen of Python he
+
+Ultimate guide to develop good, and smooth projects.
+
+If you feel you don't know how to proceed and nothing make sense, take your time...
+Read this Zen, and, finally, you will find the answer.
+
+# Usage
+
+```bash
+from koli_he import he
+from koli_en import en
+```
+

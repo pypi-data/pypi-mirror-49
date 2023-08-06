@@ -1,0 +1,11 @@
+README.md
+setup.py
+pyannote/__init__.py
+pyannote.features.shennong.egg-info/PKG-INFO
+pyannote.features.shennong.egg-info/SOURCES.txt
+pyannote.features.shennong.egg-info/dependency_links.txt
+pyannote.features.shennong.egg-info/namespace_packages.txt
+pyannote.features.shennong.egg-info/requires.txt
+pyannote.features.shennong.egg-info/top_level.txt
+pyannote/features/__init__.py
+pyannote/features/with_shennong.py

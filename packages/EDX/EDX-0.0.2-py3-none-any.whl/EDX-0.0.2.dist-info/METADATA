@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: EDX
+Version: 0.0.2
+Summary: EDX SOAP API implementation in python
+Home-page: https://github.com/Haigutus/EDX
+Author: Kristjan Vilgo
+Author-email: kristjan.vilgo@gmail.com
+License: GPL2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: zeep
+
+# EDX
+Python implementation of EDX SOAP API (ENTSO-E Data Exchange Software) 
+
+

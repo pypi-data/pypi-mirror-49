@@ -1,0 +1,5 @@
+requests
+IPython
+ipywidgets
+pandas
+bs4

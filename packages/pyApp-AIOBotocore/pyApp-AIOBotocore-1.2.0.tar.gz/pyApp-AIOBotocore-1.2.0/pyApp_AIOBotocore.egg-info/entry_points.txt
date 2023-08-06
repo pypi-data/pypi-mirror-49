@@ -1,0 +1,3 @@
+[pyapp.extensions]
+pyapp.aiobotocore = pyapp_ext.aiobotocore:Extension
+

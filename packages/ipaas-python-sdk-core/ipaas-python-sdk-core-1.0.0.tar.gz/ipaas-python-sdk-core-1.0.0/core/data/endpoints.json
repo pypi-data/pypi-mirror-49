@@ -1,0 +1,17 @@
+{
+  "global_endpoints": {
+    "apaas-openapi": "apaas-openapi-ipaas.clickpaas.com"
+  },
+  "location_code_mapping": {
+  },
+  "regions": [
+    "cn-north-1",
+    "ap-southeast-1"
+  ],
+  "regional_endpoints": {
+    "apaas-openapi": {
+      "cn-north-1": "apaas-openapi-ipaas.clickpaas.com",
+      "ap-southeast-1": "apaas-openapi-ipaas.sg.clickpaas.com"
+    }
+  }
+}

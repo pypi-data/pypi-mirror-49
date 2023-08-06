@@ -1,0 +1,10 @@
+setup.py
+distribution_jvn/Binomialdistribution.py
+distribution_jvn/Gaussiandistribution.py
+distribution_jvn/Generaldistribution.py
+distribution_jvn/__init__.py
+distribution_jvn.egg-info/PKG-INFO
+distribution_jvn.egg-info/SOURCES.txt
+distribution_jvn.egg-info/dependency_links.txt
+distribution_jvn.egg-info/not-zip-safe
+distribution_jvn.egg-info/top_level.txt

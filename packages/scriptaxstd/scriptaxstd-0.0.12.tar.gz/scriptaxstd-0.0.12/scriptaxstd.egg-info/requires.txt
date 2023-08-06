@@ -1,0 +1,4 @@
+apitaxcore==3.0.9
+click
+commandtax==0.0.8
+scriptax==4.0.1

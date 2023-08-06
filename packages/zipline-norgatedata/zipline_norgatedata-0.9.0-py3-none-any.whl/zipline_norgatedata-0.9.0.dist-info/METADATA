@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: zipline-norgatedata
+Version: 0.9.0
+Summary: Zipline extension to provide bundles of data from Norgate Data into the Zipline algorithmic trading library for the Python programming language
+Home-page: https://norgatedata.com
+Author: NorgateData Pty Ltd
+Author-email: support@norgatedata.com
+License: EULA
+Platform: UNKNOWN
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Requires-Python: >=3.5.0,<3.6
+Description-Content-Type: text/markdown
+Requires-Dist: zipline
+Requires-Dist: pandas
+Requires-Dist: norgatedata
+Requires-Dist: numpy
+
+
+# Project description
+
+Creates an interface between Norgate data and Zipline, the pythonic algorithmic trading library, to create bundles.
+
+This is currently in alpha stage testing to selected users of Norgate Data.
+
+Currently, equities are supported.  Futures data support is coming very soon.
+
+# Installation
+
+```sh
+pip install zipline-norgatedata
+```
+or, if you prefer to use conda:
+```sh
+conda install -c norgatedata zipline-norgatedata
+```
+
+# Requirements
+
+* Python 3.5 (Note: 3.6 and 3.7 will be supported only when Zipline supports this)
+* Zipline 1.3
+* Microsoft Windows
+* An active Norgate Data subscription
+
+# Usage
+
+Add the following lines at the top of your extension.py file (typically located at c:\users\<username>\.zipline)
+
+```py
+from pandas import Timestamp
+from norgatedata import StockPriceAdjustmentType
+from zipline_norgatedata import register_norgatedata_equities_bundle,register_norgatedata_futures_bundle
+```
+
+Then create as many bundles as you desire.  These bundles will use one or more watchlists from your Norgate Data installation.
+
+Here are some examples:
+
+```py
+bundlename = 'norgatedata-sp500-backtest'
+watchlists = ['S&P 500 Current & Past']
+stock_price_adjustment_setting = StockPriceAdjustmentType.TOTALRETURN
+start_session = Timestamp("1990-01-01",tz='utc') 
+end_session = Timestamp.now(tz='utc')
+calendar_name = 'NYSE'
+register_norgatedata_equities_bundle(bundlename,stock_price_adjustment_setting,watchlists,start_session,end_session,calendar_name)
+
+
+bundlename = 'norgatedata-russell3000-backtest'
+watchlists = ['Russell 3000 Current & Past']
+stock_price_adjustment_setting = StockPriceAdjustmentType.TOTALRETURN
+start_session = Timestamp("1990-01-01",tz='utc') 
+end_session = Timestamp.now(tz='utc')
+calendar_name = 'NYSE'
+register_norgatedata_equities_bundle(bundlename,stock_price_adjustment_setting,watchlists,start_session,end_session,calendar_name)
+
+
+bundlename = 'norgatedata-all-usd-futures'
+watchlists = ['AllUSDFutures']
+start_session = Timestamp("2000-01-01",tz='utc') # Start date of data ingestion - NOTE: zipline cannot handle dates prior to 1990
+end_session = Timestamp.now(tz='utc')
+calendar_name = 'us_futures'
+register_norgatedata_futures_bundle(bundlename,watchlists,start_session,end_session,calendar_name)
+```
+
+Note:  You'll need to create your own watchlist(s) for use i
+
+# Zipline Limitations
+
+- Zipline can only handle equities data from 1990 onwards.
+- Zipline can only handle futuresequities data from 2000 onwards.
+- Zipline has unnecessarily complicated futures contracts by restricting symbols to 2 charcters.  
+- Zipline doesn't define all futures markets and doesn't provide any extensibility in this area - you will need to add them to site-packages\zipline\finance\constants.py if they are not defined
+- 
+
+# Assumptions
+- Stocks are automatically set an auto_close_date of the last quoted date 
+- Futures are automatically set an auto_close_date to the earlier of following: Last trading date (for cash settled futures, and physically delivered futures that only allow delivery after the last trading date), or 1 trading day prior to first notice date for futures that have a first notice date prior to the last trading date.
+
+# Ingest data
+
+To ingest data from one of the bundles you've defined in extension.py.  For example:
+
+```sh
+zipline ingest -b norgatedata-sp500-backtest
+zipline ingest -b norgatedata-russell3000-backtest
+```
+
+# Support
+
+[Norgate Data support](https://norgatedata.com/contact.php)
+
+
+

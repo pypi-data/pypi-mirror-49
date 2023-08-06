@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; django-xero 0.0.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Module Reference" href="module.html" />
+    <link rel="prev" title="Supported Platforms &amp; Requirements" href="requirements.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django-xero
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Supported Platforms &amp; Requirements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module.html">Module Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">Credits &amp; License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">Issues</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django-xero</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>1. Install the package</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">django</span><span class="o">-</span><span class="n">xero</span>
+</pre></div>
+</div>
+<p>2. Add <code class="docutils literal notranslate"><span class="pre">encrypted_model_fields</span></code> and <code class="docutils literal notranslate"><span class="pre">djxero</span></code> to <code class="docutils literal notranslate"><span class="pre">INSTALLED_APPS</span></code> in your settings.
+Note that the authentication system is required.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+     <span class="s1">&#39;django.contrib.auth&#39;</span><span class="p">,</span>
+     <span class="s1">&#39;django.contrib.sessions&#39;</span><span class="p">,</span>
+     <span class="o">...</span>
+     <span class="s1">&#39;encrypted_model_fields&#39;</span><span class="p">,</span>
+     <span class="s1">&#39;djxero&#39;</span><span class="p">,</span>
+     <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>3. Generate an encryption key:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s1">&#39;import base64; import os; print(base64.urlsafe_b64encode(os.urandom(32)))&#39;</span>
+</pre></div>
+</div>
+<p>and add it to your settings. NOTE: in production, you want to store this value very carefully.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FIELD_ENCRYPTION_KEY</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;A7c4T1Kx3XmttUjm2cX8ScYcUEdF7RzFziEzfoBO7x4=&#39;</span>
+</pre></div>
+</div>
+<p>4. Run migrations to create the necessary objects</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span> <span class="n">djxero</span>
+</pre></div>
+</div>
+<p>5. Set the Xero secrets for your public app. You can do this from the admin site (easier),
+or directly via <code class="docutils literal notranslate"><span class="pre">manage.py</span> <span class="pre">shell</span></code> like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">djxero.models</span> <span class="k">import</span> <span class="n">XeroSecret</span>
+<span class="n">consumer_key</span> <span class="o">=</span> <span class="n">XeroSecret</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="s1">&#39;xero_consumer_key&#39;</span><span class="p">)</span>
+<span class="n">consumer_key</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;your key&#39;</span>
+<span class="n">consumer_key</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<span class="n">consumer_secret</span> <span class="o">=</span> <span class="n">XeroSecret</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="s1">&#39;xero_consumer_secret&#39;</span><span class="p">)</span>
+<span class="n">consumer_secret</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;your secret&#39;</span>
+<span class="n">consumer_secret</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>6. in your project <code class="docutils literal notranslate"><span class="pre">urls.py</span></code>, add the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+   <span class="n">path</span><span class="p">(</span><span class="s1">&#39;xero/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;djxero.urls&#39;</span><span class="p">)),</span>
+   <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Optional: in your <code class="docutils literal notranslate"><span class="pre">templates</span></code> folder, create a <code class="docutils literal notranslate"><span class="pre">xero/interstitial.html</span></code> template to manage the page
+that will be shown whenever a user is required to log on Xero.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="module.html" class="btn btn-neutral float-right" title="Module Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="requirements.html" class="btn btn-neutral float-left" title="Supported Platforms &amp; Requirements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Giacomo Lacava
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

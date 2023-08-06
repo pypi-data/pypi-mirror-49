@@ -1,0 +1,17 @@
+wddasylumclaims/Keywords.py,sha256=t-PtKHyCmXPJKysydpGr5VXm_HeoUlqwrs1rIN5vvkY,10453
+wddasylumclaims/WebScrape.py,sha256=VIV3IqeS7Dk4uVkNes174-96cDIB8Kzx-bBi5coKrjw,11126
+wddasylumclaims/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wddasylumclaims/__main__.py,sha256=2Hs-QAfVFC7ZzUoch-x8kkmt-OWQBGKD_yDGwXtha7Q,7809
+wddasylumclaims-0.0.19.data/data/Lib/site-packages/wddasylumclaims/sample/keywords.csv,sha256=hkOTWHsSBeU1zx2GD6iOyqebEJVaXTNS7G0HQhFU350,4073
+wddasylumclaims-0.0.19.data/data/Lib/site-packages/wddasylumclaims/sample/py_case_links.csv,sha256=ZNxTiMThL6emCxJrrQW0oLkoeg_LSsTJFuutqegOmog,9481
+wddasylumclaims-0.0.19.data/data/Lib/site-packages/wddasylumclaims/sample/py_case_links.feather,sha256=GFPKTR2o0pz5dABcNhDGKLjHmeIZZUxJSlVh4fWuOmE,9096
+wddasylumclaims-0.0.19.data/data/Lib/site-packages/wddasylumclaims/sample/py_case_outcomes.csv,sha256=U7b2npaYlg4HOBTXmKrvSCRuWfpXK8PGSjLvadF2sck,834
+wddasylumclaims-0.0.19.data/data/Lib/site-packages/wddasylumclaims/sample/py_case_outcomes.feather,sha256=NClxaTF4WXJTOMBoMADlge27cfO2x7gDE5maK21gI3Q,1512
+wddasylumclaims-0.0.19.data/data/Lib/site-packages/wddasylumclaims/sample/py_case_text.csv,sha256=hg-ENiiSmYFVHYR5zJLAC5tfgg8ChkgkO-I48XmWZ2c,313279
+wddasylumclaims-0.0.19.data/data/Lib/site-packages/wddasylumclaims/sample/py_case_text.feather,sha256=WNWMII9oDrwqlXoq4amsHYMzF9QagX7r3U2Mf6kp3CM,313480
+wddasylumclaims-0.0.19.dist-info/LICENSE,sha256=oHGdT9X_4r5h6Jkg7tbtWBkFClqM6XOxRkqnBORzwOY,35803
+wddasylumclaims-0.0.19.dist-info/METADATA,sha256=2rRqrxKzQ_iqqYK4kO5tD6EKhzoJxmgn-r4AjVaIiiE,1187
+wddasylumclaims-0.0.19.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+wddasylumclaims-0.0.19.dist-info/entry_points.txt,sha256=c3LhRDKLqHeZVklkl-txE6vPdGWHNT8A1sqeWkQjjTk,67
+wddasylumclaims-0.0.19.dist-info/top_level.txt,sha256=82CtYLZl-7HMjwUh8j7jZijs2yaHe87VirOaQ6yXIhk,16
+wddasylumclaims-0.0.19.dist-info/RECORD,,

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: google-jwt
+Version: 0.1.0
+Summary: JWT Verification for Google issued JWT tokens, using Googles Well-Known OpenID Configurations and public keys.
+Home-page: https://github.com/nackjicholson/google-jwt
+Keywords: google,JWT,opendid,auth,jose,JWK
+Author: William Vaughn
+Author-email: vaughnwilld@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: python-jose (>=3.0,<4.0)
+Project-URL: Repository, https://github.com/nackjicholson/google-jwt
+Description-Content-Type: text/markdown
+
+# google-jwt
+

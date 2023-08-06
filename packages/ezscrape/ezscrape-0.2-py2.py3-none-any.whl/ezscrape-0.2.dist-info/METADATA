@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ezscrape
+Version: 0.2
+Summary: Collection of Scraping tools
+Home-page: https://github.com/ericziethen/ezscrape
+Author: Eric Ziethen
+Author-email: ericziethen@gmail.com
+License: GNU GPLv3
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >= 3.7
+Requires-Dist: beautifulsoup4 (>=4.7.1)
+Requires-Dist: requests (>=2.21.0)
+Requires-Dist: requests-html (>=0.10.0)
+Requires-Dist: selenium (>=3.141.0)
+
+UNKNOWN
+
+

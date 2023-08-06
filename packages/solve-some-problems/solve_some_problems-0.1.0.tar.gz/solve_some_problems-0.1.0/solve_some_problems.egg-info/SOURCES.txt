@@ -1,0 +1,7 @@
+game.py
+setup.py
+solve_mathematical_problems.py
+solve_some_problems.egg-info/PKG-INFO
+solve_some_problems.egg-info/SOURCES.txt
+solve_some_problems.egg-info/dependency_links.txt
+solve_some_problems.egg-info/top_level.txt

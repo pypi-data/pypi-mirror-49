@@ -1,0 +1,83 @@
+{% extends 'adminpanel/inc/layout.html'%}
+{% load static%}
+{% load query_params%}
+{% block title%} Menus{% endblock %}
+{% block bodyclass%}hold-transition skin-light-blue sidebar-mini{% endblock %}
+{% block body%}
+
+	<div class="content-wrapper">
+		<section class="content-header">
+			<h1>
+			Menus
+			<small>List</small>
+			</h1>
+			<ol class="breadcrumb">
+				<li><a href="{% url 'adminpanel_dashboard' %}"><i class="fa fa-dashboard"></i> Home</a></li>
+				<li><a href="{% url 'adminpanel_dashboard' %}">Dashboard</a></li>
+				<li class="active">Menus</li>
+			</ol>
+		</section>
+		<section class="content">
+      <!-- Info boxes -->
+		<div class="box">
+			<table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>Menu Title</th>
+                  <th>Menu Slug</th>
+                  <th>Created Date</th>
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+				
+				{% for data in dataList%}			
+				<tr>
+                  <td>{{data.menu_title}}</td>
+                  <td>{{data.menu_slug}}</td>
+                  <td>{{data.menu_created}}</td>
+				  <td class="action">
+					<span class="dropdown">
+                                <button id="btnSearchDrop2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-primary dropdown-toggle dropdownmenuright"><i class="fa fa-cog"></i></button>
+                                <span aria-labelledby="btnSearchDrop2" class="dropdown-menu mt-1 dropdown-menu-right">
+                                 
+                                  <a href="{% url 'admin_update_menu' data.id%}" class="dropdown-item edit"><i class="fa fa-pencil"></i> Edit </a>
+                                  <a href="{% url 'adminpanel_delete_menu' data.id%}" data-id="" class="dropdown-item delete"><i class="fa fa-trash"></i> Delete</a>
+                                  
+                    </span>
+				 </span></td>
+                </tr>
+				{% endfor %}
+				
+				<tr><td colspan="5">
+					<div class="pagination">
+					<ul class="pagination smt-pagination">
+						{% if dataList.has_previous %}
+							<li><a href="?{% query_params request 'page' 1 %}">&laquo; first</a></li>
+							<li><a href="?{% query_params request 'page' dataList.previous_page_number %}">previous</a></li>
+						{% endif %}
+												
+						{% if dataList.has_next %}
+						<li>	<a href="?{% query_params request 'page' dataList.next_page_number %}">next</a></li>
+						<li>	<a href="?{% query_params request 'page' dataList.paginator.num_pages %}">last &raquo;</a></li>
+						{% endif %}
+						                  
+					</ul>
+					</div>
+				</td></tr>
+                
+    
+				
+             
+                
+			  </tbody></table>
+
+
+
+   
+
+		</div>
+    </section>
+	</div>
+
+{% endblock %}

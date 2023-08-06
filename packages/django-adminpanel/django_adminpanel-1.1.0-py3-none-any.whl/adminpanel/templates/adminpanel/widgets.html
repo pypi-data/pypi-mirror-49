@@ -1,0 +1,66 @@
+{% extends 'adminpanel/inc/layout.html'%}
+{% load static%}
+{% load query_params %}
+{% block title%} Widgets{% endblock %}
+{% block bodyclass%}hold-transition skin-light-blue sidebar-mini{% endblock %}
+{% block body%}
+   
+
+ <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Widgets
+        <small>List</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="{% url 'adminpanel_dashboard' %}"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="{% url 'adminpanel_dashboard' %}">Dashboard</a></li>
+        <li class="active">Widgets</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Info boxes -->
+			
+			
+			<div class="row">
+				{% if widget_tabs %}	
+				{% for key,val in widget_tabs.items %}
+				<div class="col-md-4 col-lg-4">
+				<div class="add_new_bg">
+					<form method="post" action="javascript:void 0" class="submit_options">
+						<fieldset>
+						{% csrf_token %}
+						<legend>{{val}} (widget_{{key}}) <input type="hidden" name="data_key" value="widget_{{key}}"/> <div class="pull-right"><input type="submit" value="Save Changes" class="btn btn-success"></div></legend>
+						{% if key|widget_template_exists == True %}
+						{% with "adminpanel/widgets/"|add:key|add:".html" as template %}
+									{% with "widget_"|add:key|get_widget as data %}  
+										{% include template %}
+									{% endwith %}
+						 {% endwith %}
+						{% endif %}
+						</fieldset>
+					</form>
+				</div>
+				</div>
+				{% endfor %}
+				{% endif %}
+				
+			</div>
+      <!-- /.row -->
+	
+
+      <!-- /.row -->
+
+      <!-- Main row -->
+
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+    <!-- /.content-wrapper -->
+
+
+{% endblock %}

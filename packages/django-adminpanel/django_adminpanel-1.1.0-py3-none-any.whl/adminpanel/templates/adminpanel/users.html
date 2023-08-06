@@ -1,0 +1,109 @@
+{% extends 'adminpanel/inc/layout.html'%}
+{% load static%}
+{% load query_params%}
+{% block title%} Users{% endblock %}
+{% block bodyclass%}hold-transition skin-light-blue sidebar-mini{% endblock %}
+{% block body%}
+    
+ <div class="content-wrapper">
+    <section class="content-header">
+      <h1>
+        Users
+        <small>List</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="{% url 'adminpanel_dashboard' %}"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="{% url 'adminpanel_dashboard' %}">Dashboard</a></li>
+        <li class="active">Users</li>
+      </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+		<div class="box">
+			<table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+				  <th>Status</th>
+                  <th>User Type</th>
+                  <th>Created At</th>
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+				{% for obj in userslist %}
+                <tr>
+                  <td>{{obj.first_name}}</td>
+                  <td>{{obj.last_name}}</td>
+                  <td>{{obj.email}}</td>
+				  <td>{% if obj.is_active == 0 %} Deactive {%else%} Active {% endif %}</td>
+                  <td>{% if obj.is_staff == 0 %} Seller {% elif obj.is_staff == 1%} Agent {% else %} Admin {% endif %}</td>
+				  <td>{{obj.date_joined}}</td>
+                  <td class="action">
+					<span class="dropdown">
+                                <button id="btnSearchDrop2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-primary dropdown-toggle dropdownmenuright"><i class="fa fa-cog"></i></button>
+                        <span aria-labelledby="btnSearchDrop2" class="dropdown-menu mt-1 dropdown-menu-right">
+                            <a href="{% url 'djadmin_users_edit' obj.id %}" "="" class="dropdown-item edit"><i class="fa fa-pencil"></i> Edit </a>
+                            <a data-toggle="modal" class="RecordDeleteClass ak-delete-icon" data-target="#deleteBox" rel="{{obj.id}}" title="Delete User" data-tooltip="tooltip" data-placement="top" ><i class="fa fa-fw fa-trash-o"></i>Delete</a>
+                                  
+								 
+						</span>
+					</span>
+				 </td>
+				 
+                </tr>
+                {% endfor %}
+			  </tbody>
+			</table>
+		</div>
+		<!-- Pagination -->
+			<div class="row">
+				<div class="col-sm-6 hidden-xs">
+					<div class="dataTables_info">
+						<span class="current">
+							Showing {{ userslist.number }} to {{ userslist.paginator.num_pages }} of {{ userslist.paginator.num_pages }} records .
+						</span>                
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					
+					<ul class="pagination smt-pagination">
+						{% if userslist.has_previous %}
+							<li><a href="?{% query_params request 'page' 1 %}">&laquo; first</a></li>
+							<li><a href="?{% query_params request 'page' userslist.previous_page_number %}">previous</a></li>
+						{% endif %}
+												
+						{% if userslist.has_next %}
+						<li>	<a href="?{% query_params request 'page' userslist.next_page_number %}">next</a></li>
+						<li>	<a href="?{% query_params request 'page' userslist.paginator.num_pages %}">last &raquo;</a></li>
+						{% endif %}
+						                  
+					</ul>					
+				</div>
+			</div>
+						<!-- /.Pagination -->	
+    </section>
+    <!-- /.content -->
+  </div>
+	<div class="modal fade" id="deleteBox" tabindex="-1" role="dialog" aria-hidden="true">
+        <form enctype="multipart/form-data" method="post" accept-charset="utf-8" class="form-horizontal form-bordered" id="RecordDeleteForm" action="{% url 'djadmin_users_delete'%}">
+		{% csrf_token %}
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Are you sure, you would like to delete this record?</h4>
+                </div>
+                <input type="hidden" name="record_id" id="recordDeleteID" value="0"/>                
+				<div class="modal-footer clearfix bordertopnone">
+                    <button type="button" id="Discard" class="btn btn-primary" data-dismiss="modal"> Cancel</button>
+                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o"></i> <span class="dbxdel">Delete</span></button>
+                </div>							
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+        </form>    
+	</div>
+  
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'adminpanel/admin/layout.html'%}
+{% load static%}
+{% load query_params%}
+{% block title%}Edit Email Templates{% endblock %}
+{% block bodyclass%}hold-transition skin-light-blue sidebar-mini{% endblock %}
+{% block body%}
+<div class="wrapper">
+   {% include 'adminpanel/admin/header.html'%}  
+   <aside class="main-sidebar">
+	   {% include 'adminpanel/admin/navigation.html'%}
+	</aside>  
+	<div class="content-wrapper">
+    <section class="content-header">
+      <h1>
+        Edit
+        <small>Email Templates</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="{% url 'adminpanel_dashboard' %}"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="{% url 'client_email_template' %}">Email Templates</a></li>
+        <li class="active">Edit Email Template</li>
+      </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+		<form action="{% url 'email_update' %}" method="post" class="form_validation" enctype="multipart/form-data">
+			<div class="add_new_bg">
+			{% csrf_token %}
+				<div class="row">
+					<div class="col-md-6 col-lg-6">
+					<div class="form-group">
+							<label>Subject<span class="text-red">*</span></label>
+							<input type="text" class="form-control c_required" name="subject" value="{{data.subject}}">
+						</div>
+					<div class="form-group">
+							<label>Subject Key<span class="text-red">*</span></label>
+							<input type="text" class="form-control c_required" name="email_key" value="{{data.email_key}}">
+						</div>	
+						<div class="form-group">
+							<label>From Name<span class="text-red">*</span></label>
+							<input type="text" class="form-control c_required" name="from_name" value="{{data.from_name}}">
+						</div>
+						<div class="form-group">
+							<label>From Email<span class="text-red">*</span></label>
+							<input type="text" class="form-control c_required" name="from_email" value="{{data.from_email}}">
+						</div>
+						<div class="form-group">
+							<label>Message<span class="text-red"></span></label>
+							<textarea class="form-control post_editor" name="message" value="{{data.message}}">{{data.message}}</textarea>
+						</div>
+						<div class="form-group">
+							<label>Success Message<span class="text-red"></span></label>
+							<textarea class="form-control post_editor" name="success_message" value="{{data.success_message}}">{{data.success_message}}</textarea>
+						</div>
+						<div class="form-group">
+							<label>Error Message<span class="text-red"></span></label>
+							<textarea class="form-control post_editor" name="error_message" value="{{data.error_message}}">{{data.error_message}}</textarea>
+						</div>
+						
+						
+						
+						<input type="hidden" name="id" value="{{data.id}}">
+						<div><div class="submit_btn"><button class="btn btn-info" type="submit"> Save Page </button></div></div>
+						
+				 
+					</div>
+					
+				</div>
+				</div>
+		</form>
+    </section>
+    <!-- /.content -->
+	</div>
+	
+    {% include 'adminpanel/admin/footer.html'%}            
+</div>
+{% endblock %}

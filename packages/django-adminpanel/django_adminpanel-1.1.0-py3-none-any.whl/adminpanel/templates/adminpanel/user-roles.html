@@ -1,0 +1,5 @@
+<option value="" >-Select Role-</option>
+{% for  key, value in roles.items %}
+	<option value="{{key}}" {% if sel == key %} selected="true" {% endif %}>{{value}}</option>
+{% endfor %}	
+							

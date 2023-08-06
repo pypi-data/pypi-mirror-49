@@ -1,0 +1,8 @@
+README.md
+setup.py
+aiobook/__init__.py
+aiobook.egg-info/PKG-INFO
+aiobook.egg-info/SOURCES.txt
+aiobook.egg-info/dependency_links.txt
+aiobook.egg-info/requires.txt
+aiobook.egg-info/top_level.txt

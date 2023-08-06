@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+aiochorm/__init__.py
+aiochorm.egg-info/PKG-INFO
+aiochorm.egg-info/SOURCES.txt
+aiochorm.egg-info/dependency_links.txt
+aiochorm.egg-info/top_level.txt

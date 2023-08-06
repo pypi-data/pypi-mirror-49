@@ -1,0 +1,8 @@
+Compute_pre_deployments:
+  - ComputeHostEntryDeployment
+  - NetworkDeployment
+  - MyExtraConfigPost
+
+Compute_post_deployments:  []
+
+uuid: 2

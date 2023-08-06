@@ -1,0 +1,12 @@
+# V. 0.25 is Py3k-only
+pandas<0.25
+
+typing
+lxml
+spyne>2.13.*
+SQLAlchemy
+xmlwitch
+attrs
+pyyaml>=4.2b1
+regex
+click

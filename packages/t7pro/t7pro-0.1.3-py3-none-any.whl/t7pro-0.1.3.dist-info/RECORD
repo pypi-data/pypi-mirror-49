@@ -1,0 +1,13 @@
+t7pro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+t7pro/constants.py,sha256=Itd-Xdy8opcKvr60hEhh7Gd_mYtKQ3qkBnfQxhns39U,276
+t7pro/t7pro_form.py,sha256=YPY7pUs5_C6aUqoT13skAh52hqWuV4FOruCPDJiOiao,28301
+t7pro/t7pro_gui.py,sha256=YaNjoKxDnXHGkRVN3OzJ0RMJpok2MJkZlM6oUSjcopI,18969
+t7pro/version.py,sha256=nTRRFuQNCBnQ4O0wZE6CIE10BZ7WhYS0n9zxYvG_wVE,90
+t7pro-0.1.3.data/data/share/applications/t7pro.desktop,sha256=sNQbacanjpOC9ZXxarnQG4f5n3Ni3GQnPQTy2e0P2lM,201
+t7pro-0.1.3.data/data/share/icons/hicolor/scalable/apps/t7pro.svg,sha256=TlNMtt_4rmhPye_rE5OdKHTs-NtsqW8YJT_VhyKL9HM,5910
+t7pro-0.1.3.data/scripts/t7pro-gui,sha256=vKlj_RkGapu26nRB-VesfmbTazvhhH6W_VznM7QC9f8,3018
+t7pro-0.1.3.dist-info/LICENSE.txt,sha256=y6PMwyPrdtfoyIJCgzm7rL-i0jFDk6FF7q_sYwDwo60,780
+t7pro-0.1.3.dist-info/METADATA,sha256=8pg8jExqTWLwdra3byVP8EB3t6jnjETlyun6zoY2Kmo,732
+t7pro-0.1.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+t7pro-0.1.3.dist-info/top_level.txt,sha256=YDmLdgo9Y2-6sCLkJwg3R-UJRMOsBbKoeoOlZ_18Ltk,6
+t7pro-0.1.3.dist-info/RECORD,,

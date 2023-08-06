@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=T7Pro GUI
+Comment=GUI to display and log signals acquired from T7pro DAQ board
+Exec=t7pro-gui
+Icon=t7pro
+Terminal=false
+Categories=Science;Engineering;

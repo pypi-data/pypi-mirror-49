@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: roverApp
+Version: 1.0
+Summary: SSH Client Framework for Network Automation
+Home-page: https://johnnes-smarts.ch
+Author: David Johnnes
+Author-email: david.johnnes@gmail.com
+License: License :: OSI Approved :: MIT License
+Description: <!DOCTYPE html>
+        
+        
+        <h2>SSH Client Framework</h2>
+        
+        <h1></h1>
+        
+        <h4>This framework is Private.</h4>
+        
+        
+        </ul>
+        
+        <ul>
+            <li><strong>Contact:</strong></li>
+            <li>david.johnnes@gmail.com</li>
+        </ul>
+        
+        
+        </html>
+        
+Keywords: SSH Client,DevOps SSH,Network Automation,Network Orchestration,Vendor-Neutral Network Programmability
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

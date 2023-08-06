@@ -1,0 +1,10 @@
+ccextender-1.24.data/scripts/ccextender,sha256=pRnyMvKrmkbPLd5oeNUkXRgVQVG-PF9xBXKmJoUg-LI,301
+pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg/ccextender/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg/ccextender/ccextender.py,sha256=8Updh0aTs7B17-WqwViu0u0ZmGZCt_cHsjwFrj5T2CY,10517
+pkg/ccextender/test_ccextender.py,sha256=PER6jbCh_ZAzkQDj53kO5BJiBRI7wZlhj86KP7ygD24,5552
+pkg/ccextender/configs/ccextender.yaml,sha256=WUXpZYrhpL2MZnvpUm3jpgrzldq0_w50xuRdKyOhs-4,910
+ccextender-1.24.dist-info/METADATA,sha256=yLvRv1gdcx1sgBl5Umqpxbci0RyEPT-l2fvUnRSrB4U,20992
+ccextender-1.24.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ccextender-1.24.dist-info/top_level.txt,sha256=8jjfKuFvlaNGG7JiuNtS31gIuwOm8thUcUQoNbsxxls,4
+ccextender-1.24.dist-info/RECORD,,

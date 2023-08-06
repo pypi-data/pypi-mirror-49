@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: teste_pypip
+Version: 0.17.0
+Summary: teste de pacote python
+Home-page: UNKNOWN
+Author: Thiago Rocha Ferreira
+Author-email: thiagorocha503@gmail.com
+License: MIT License
+Description: Um teste de upload de pacote python
+Keywords: teste_pypip
+Platform: UNKNOWN
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8

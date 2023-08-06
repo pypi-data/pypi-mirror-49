@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+calc/__init__.py
+calc/simples.py
+teste_pypip.egg-info/PKG-INFO
+teste_pypip.egg-info/SOURCES.txt
+teste_pypip.egg-info/dependency_links.txt
+teste_pypip.egg-info/top_level.txt

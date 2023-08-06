@@ -1,0 +1,6 @@
+[sentry.apps]
+gitee = sentry_gitee
+
+[sentry.plugins]
+gitee = sentry_gitee.plugin:GiteePlugin
+

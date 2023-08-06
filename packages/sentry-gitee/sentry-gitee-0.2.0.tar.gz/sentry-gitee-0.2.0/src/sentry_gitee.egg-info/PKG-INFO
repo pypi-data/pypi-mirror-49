@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sentry-gitee
+Version: 0.2.0
+Summary: A Sentry extension which integrates with Gitee.
+Home-page: https://gitee.com/lei2jun/sentry-gitee
+Author: lei2jun
+Author-email: 724099654@qq.com
+License: BSD
+Description: 
+        sentry-gitee
+        =============
+        
+        An extension for Sentry which integrates with Gitee. Specifically, it allows
+        you to easily create issues from events within Sentry.
+        
+        :copyright: (c) 2015 Pancentric Ltd, see AUTHORS for more details.
+        :license: BSD, see LICENSE for more details.
+        
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Provides-Extra: test

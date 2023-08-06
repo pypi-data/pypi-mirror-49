@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/sentry_gitee/__init__.py
+src/sentry_gitee/plugin.py
+src/sentry_gitee.egg-info/PKG-INFO
+src/sentry_gitee.egg-info/SOURCES.txt
+src/sentry_gitee.egg-info/dependency_links.txt
+src/sentry_gitee.egg-info/entry_points.txt
+src/sentry_gitee.egg-info/not-zip-safe
+src/sentry_gitee.egg-info/requires.txt
+src/sentry_gitee.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: reckoner-values
+Version: 1.1.1
+Summary: Package to find helm values and update autohelm / reckoner files
+Home-page: UNKNOWN
+Author: Jim Robinson
+Author-email: jscrobinson@gmail.com
+License: Apache2.0
+Description: UNKNOWN
+Platform: UNKNOWN

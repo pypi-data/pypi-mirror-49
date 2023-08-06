@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pymsfilereader/MSFileReader.py
+pymsfilereader/__init__.py
+pymsfilereader.egg-info/PKG-INFO
+pymsfilereader.egg-info/SOURCES.txt
+pymsfilereader.egg-info/dependency_links.txt
+pymsfilereader.egg-info/requires.txt
+pymsfilereader.egg-info/top_level.txt

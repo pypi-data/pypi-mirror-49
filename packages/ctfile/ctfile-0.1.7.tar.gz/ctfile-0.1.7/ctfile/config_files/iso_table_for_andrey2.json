@@ -1,0 +1,1730 @@
+[
+    {
+        "Element": "Al",
+        "ExactMass": "26.98153863",
+        "Isotope": "Al(27)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Sb",
+        "ExactMass": "120.9038157",
+        "Isotope": "Sb(121)",
+        "NaturalAbundance": "0.5721"
+    },
+    {
+        "Element": "Sb",
+        "ExactMass": "122.904214",
+        "Isotope": "Sb(123)",
+        "NaturalAbundance": "0.4279"
+    },
+    {
+        "Element": "Ar",
+        "ExactMass": "35.967545106",
+        "Isotope": "Ar(36)",
+        "NaturalAbundance": "0.003365"
+    },
+    {
+        "Element": "Ar",
+        "ExactMass": "37.9627324",
+        "Isotope": "Ar(38)",
+        "NaturalAbundance": "0.000632"
+    },
+    {
+        "Element": "Ar",
+        "ExactMass": "39.9623831225",
+        "Isotope": "Ar(40)",
+        "NaturalAbundance": "0.996003"
+    },
+    {
+        "Element": "As",
+        "ExactMass": "74.9215965",
+        "Isotope": "As(75)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Ba",
+        "ExactMass": "129.9063208",
+        "Isotope": "Ba(130)",
+        "NaturalAbundance": "0.00106"
+    },
+    {
+        "Element": "Ba",
+        "ExactMass": "131.9050613",
+        "Isotope": "Ba(132)",
+        "NaturalAbundance": "0.00101"
+    },
+    {
+        "Element": "Ba",
+        "ExactMass": "133.9045084",
+        "Isotope": "Ba(134)",
+        "NaturalAbundance": "0.02417"
+    },
+    {
+        "Element": "Ba",
+        "ExactMass": "134.9056886",
+        "Isotope": "Ba(135)",
+        "NaturalAbundance": "0.06592"
+    },
+    {
+        "Element": "Ba",
+        "ExactMass": "135.9045759",
+        "Isotope": "Ba(136)",
+        "NaturalAbundance": "0.07854"
+    },
+    {
+        "Element": "Ba",
+        "ExactMass": "136.9058274",
+        "Isotope": "Ba(137)",
+        "NaturalAbundance": "0.11232"
+    },
+    {
+        "Element": "Ba",
+        "ExactMass": "137.9052472",
+        "Isotope": "Ba(138)",
+        "NaturalAbundance": "0.71698"
+    },
+    {
+        "Element": "Be",
+        "ExactMass": "9.0121822",
+        "Isotope": "Be(9)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Bi",
+        "ExactMass": "208.9803987",
+        "Isotope": "Bi(209)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "B",
+        "ExactMass": "10.012937",
+        "Isotope": "B(10)",
+        "NaturalAbundance": "0.199"
+    },
+    {
+        "Element": "B",
+        "ExactMass": "11.0093054",
+        "Isotope": "B(11)",
+        "NaturalAbundance": "0.801"
+    },
+    {
+        "Element": "Br",
+        "ExactMass": "78.9183371",
+        "Isotope": "Br(79)",
+        "NaturalAbundance": "0.5069"
+    },
+    {
+        "Element": "Br",
+        "ExactMass": "80.9162906",
+        "Isotope": "Br(81)",
+        "NaturalAbundance": "0.4931"
+    },
+    {
+        "Element": "Ca",
+        "ExactMass": "39.96259098",
+        "Isotope": "Ca(40)",
+        "NaturalAbundance": "0.96941"
+    },
+    {
+        "Element": "Ca",
+        "ExactMass": "41.95861801",
+        "Isotope": "Ca(42)",
+        "NaturalAbundance": "0.00647"
+    },
+    {
+        "Element": "Ca",
+        "ExactMass": "42.9587666",
+        "Isotope": "Ca(43)",
+        "NaturalAbundance": "0.00135"
+    },
+    {
+        "Element": "Ca",
+        "ExactMass": "43.9554818",
+        "Isotope": "Ca(44)",
+        "NaturalAbundance": "0.02086"
+    },
+    {
+        "Element": "Ca",
+        "ExactMass": "45.9536926",
+        "Isotope": "Ca(46)",
+        "NaturalAbundance": "4e-05"
+    },
+    {
+        "Element": "Ca",
+        "ExactMass": "47.952534",
+        "Isotope": "Ca(48)",
+        "NaturalAbundance": "0.00187"
+    },
+    {
+        "Element": "Cd",
+        "ExactMass": "105.906459",
+        "Isotope": "Cd(106)",
+        "NaturalAbundance": "0.0125"
+    },
+    {
+        "Element": "Cd",
+        "ExactMass": "107.904184",
+        "Isotope": "Cd(108)",
+        "NaturalAbundance": "0.0089"
+    },
+    {
+        "Element": "Cd",
+        "ExactMass": "109.9030021",
+        "Isotope": "Cd(110)",
+        "NaturalAbundance": "0.1249"
+    },
+    {
+        "Element": "Cd",
+        "ExactMass": "110.9041781",
+        "Isotope": "Cd(111)",
+        "NaturalAbundance": "0.128"
+    },
+    {
+        "Element": "Cd",
+        "ExactMass": "111.9027578",
+        "Isotope": "Cd(112)",
+        "NaturalAbundance": "0.2413"
+    },
+    {
+        "Element": "Cd",
+        "ExactMass": "112.9044017",
+        "Isotope": "Cd(113)",
+        "NaturalAbundance": "0.1222"
+    },
+    {
+        "Element": "Cd",
+        "ExactMass": "113.9033585",
+        "Isotope": "Cd(114)",
+        "NaturalAbundance": "0.2873"
+    },
+    {
+        "Element": "Cd",
+        "ExactMass": "115.904756",
+        "Isotope": "Cd(116)",
+        "NaturalAbundance": "0.0749"
+    },
+    {
+        "Element": "C",
+        "ExactMass": "12.0",
+        "Isotope": "C(12)",
+        "NaturalAbundance": "0.9893"
+    },
+    {
+        "Element": "C",
+        "ExactMass": "13.0033548378",
+        "Isotope": "C(13)",
+        "NaturalAbundance": "0.0107"
+    },
+    {
+        "Element": "Ce",
+        "ExactMass": "135.907172",
+        "Isotope": "Ce(136)",
+        "NaturalAbundance": "0.00185"
+    },
+    {
+        "Element": "Ce",
+        "ExactMass": "137.905991",
+        "Isotope": "Ce(138)",
+        "NaturalAbundance": "0.00251"
+    },
+    {
+        "Element": "Ce",
+        "ExactMass": "139.9054387",
+        "Isotope": "Ce(140)",
+        "NaturalAbundance": "0.8845"
+    },
+    {
+        "Element": "Ce",
+        "ExactMass": "141.909244",
+        "Isotope": "Ce(142)",
+        "NaturalAbundance": "0.11114"
+    },
+    {
+        "Element": "Cs",
+        "ExactMass": "132.905451933",
+        "Isotope": "Cs(133)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Cl",
+        "ExactMass": "34.96885268",
+        "Isotope": "Cl(35)",
+        "NaturalAbundance": "0.7576"
+    },
+    {
+        "Element": "Cl",
+        "ExactMass": "36.96590259",
+        "Isotope": "Cl(37)",
+        "NaturalAbundance": "0.2424"
+    },
+    {
+        "Element": "Cr",
+        "ExactMass": "49.9460442",
+        "Isotope": "Cr(50)",
+        "NaturalAbundance": "0.04345"
+    },
+    {
+        "Element": "Cr",
+        "ExactMass": "51.9405075",
+        "Isotope": "Cr(52)",
+        "NaturalAbundance": "0.83789"
+    },
+    {
+        "Element": "Cr",
+        "ExactMass": "52.9406494",
+        "Isotope": "Cr(53)",
+        "NaturalAbundance": "0.09501"
+    },
+    {
+        "Element": "Cr",
+        "ExactMass": "53.9388804",
+        "Isotope": "Cr(54)",
+        "NaturalAbundance": "0.02365"
+    },
+    {
+        "Element": "Co",
+        "ExactMass": "58.933195",
+        "Isotope": "Co(59)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Cu",
+        "ExactMass": "62.9295975",
+        "Isotope": "Cu(63)",
+        "NaturalAbundance": "0.6915"
+    },
+    {
+        "Element": "Cu",
+        "ExactMass": "64.9277895",
+        "Isotope": "Cu(65)",
+        "NaturalAbundance": "0.3085"
+    },
+    {
+        "Element": "Dy",
+        "ExactMass": "155.924283",
+        "Isotope": "Dy(156)",
+        "NaturalAbundance": "0.00056"
+    },
+    {
+        "Element": "Dy",
+        "ExactMass": "157.924409",
+        "Isotope": "Dy(158)",
+        "NaturalAbundance": "0.00095"
+    },
+    {
+        "Element": "Dy",
+        "ExactMass": "159.9251975",
+        "Isotope": "Dy(160)",
+        "NaturalAbundance": "0.02329"
+    },
+    {
+        "Element": "Dy",
+        "ExactMass": "160.9269334",
+        "Isotope": "Dy(161)",
+        "NaturalAbundance": "0.18889"
+    },
+    {
+        "Element": "Dy",
+        "ExactMass": "161.9267984",
+        "Isotope": "Dy(162)",
+        "NaturalAbundance": "0.25475"
+    },
+    {
+        "Element": "Dy",
+        "ExactMass": "162.9287312",
+        "Isotope": "Dy(163)",
+        "NaturalAbundance": "0.24896"
+    },
+    {
+        "Element": "Dy",
+        "ExactMass": "163.9291748",
+        "Isotope": "Dy(164)",
+        "NaturalAbundance": "0.2826"
+    },
+    {
+        "Element": "Er",
+        "ExactMass": "161.928778",
+        "Isotope": "Er(162)",
+        "NaturalAbundance": "0.00139"
+    },
+    {
+        "Element": "Er",
+        "ExactMass": "163.9292",
+        "Isotope": "Er(164)",
+        "NaturalAbundance": "0.01601"
+    },
+    {
+        "Element": "Er",
+        "ExactMass": "165.9302931",
+        "Isotope": "Er(166)",
+        "NaturalAbundance": "0.33503"
+    },
+    {
+        "Element": "Er",
+        "ExactMass": "166.9320482",
+        "Isotope": "Er(167)",
+        "NaturalAbundance": "0.22869"
+    },
+    {
+        "Element": "Er",
+        "ExactMass": "167.9323702",
+        "Isotope": "Er(168)",
+        "NaturalAbundance": "0.26978"
+    },
+    {
+        "Element": "Er",
+        "ExactMass": "169.9354643",
+        "Isotope": "Er(170)",
+        "NaturalAbundance": "0.1491"
+    },
+    {
+        "Element": "Eu",
+        "ExactMass": "150.9198502",
+        "Isotope": "Eu(151)",
+        "NaturalAbundance": "0.4781"
+    },
+    {
+        "Element": "Eu",
+        "ExactMass": "152.9212303",
+        "Isotope": "Eu(153)",
+        "NaturalAbundance": "0.5219"
+    },
+    {
+        "Element": "F",
+        "ExactMass": "18.99840322",
+        "Isotope": "F(19)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Ga",
+        "ExactMass": "68.9255736",
+        "Isotope": "Ga(69)",
+        "NaturalAbundance": "0.60108"
+    },
+    {
+        "Element": "Ga",
+        "ExactMass": "70.9247013",
+        "Isotope": "Ga(71)",
+        "NaturalAbundance": "0.39892"
+    },
+    {
+        "Element": "Gd",
+        "ExactMass": "151.919791",
+        "Isotope": "Gd(152)",
+        "NaturalAbundance": "0.002"
+    },
+    {
+        "Element": "Gd",
+        "ExactMass": "153.9208656",
+        "Isotope": "Gd(154)",
+        "NaturalAbundance": "0.0218"
+    },
+    {
+        "Element": "Gd",
+        "ExactMass": "154.922622",
+        "Isotope": "Gd(155)",
+        "NaturalAbundance": "0.148"
+    },
+    {
+        "Element": "Gd",
+        "ExactMass": "155.9221227",
+        "Isotope": "Gd(156)",
+        "NaturalAbundance": "0.2047"
+    },
+    {
+        "Element": "Gd",
+        "ExactMass": "156.9239601",
+        "Isotope": "Gd(157)",
+        "NaturalAbundance": "0.1565"
+    },
+    {
+        "Element": "Gd",
+        "ExactMass": "157.9241039",
+        "Isotope": "Gd(158)",
+        "NaturalAbundance": "0.2484"
+    },
+    {
+        "Element": "Gd",
+        "ExactMass": "159.9270541",
+        "Isotope": "Gd(160)",
+        "NaturalAbundance": "0.2186"
+    },
+    {
+        "Element": "Ge",
+        "ExactMass": "69.9242474",
+        "Isotope": "Ge(70)",
+        "NaturalAbundance": "0.2038"
+    },
+    {
+        "Element": "Ge",
+        "ExactMass": "71.9220758",
+        "Isotope": "Ge(72)",
+        "NaturalAbundance": "0.2731"
+    },
+    {
+        "Element": "Ge",
+        "ExactMass": "72.9234589",
+        "Isotope": "Ge(73)",
+        "NaturalAbundance": "0.0776"
+    },
+    {
+        "Element": "Ge",
+        "ExactMass": "73.9211778",
+        "Isotope": "Ge(74)",
+        "NaturalAbundance": "0.3672"
+    },
+    {
+        "Element": "Ge",
+        "ExactMass": "75.9214026",
+        "Isotope": "Ge(76)",
+        "NaturalAbundance": "0.0783"
+    },
+    {
+        "Element": "Au",
+        "ExactMass": "196.9665687",
+        "Isotope": "Au(197)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Hf",
+        "ExactMass": "173.940046",
+        "Isotope": "Hf(174)",
+        "NaturalAbundance": "0.0016"
+    },
+    {
+        "Element": "Hf",
+        "ExactMass": "175.9414086",
+        "Isotope": "Hf(176)",
+        "NaturalAbundance": "0.0526"
+    },
+    {
+        "Element": "Hf",
+        "ExactMass": "176.9432207",
+        "Isotope": "Hf(177)",
+        "NaturalAbundance": "0.186"
+    },
+    {
+        "Element": "Hf",
+        "ExactMass": "177.9436988",
+        "Isotope": "Hf(178)",
+        "NaturalAbundance": "0.2728"
+    },
+    {
+        "Element": "Hf",
+        "ExactMass": "178.9458161",
+        "Isotope": "Hf(179)",
+        "NaturalAbundance": "0.1362"
+    },
+    {
+        "Element": "Hf",
+        "ExactMass": "179.94655",
+        "Isotope": "Hf(180)",
+        "NaturalAbundance": "0.3508"
+    },
+    {
+        "Element": "He",
+        "ExactMass": "3.0160293191",
+        "Isotope": "He(3)",
+        "NaturalAbundance": "1.34e-06"
+    },
+    {
+        "Element": "He",
+        "ExactMass": "4.0026032542",
+        "Isotope": "He(4)",
+        "NaturalAbundance": "0.99999866"
+    },
+    {
+        "Element": "Ho",
+        "ExactMass": "164.9303221",
+        "Isotope": "Ho(165)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "H",
+        "ExactMass": "1.0078250321",
+        "Isotope": "H(1)",
+        "NaturalAbundance": "0.999885"
+    },
+    {
+        "Element": "H",
+        "ExactMass": "2.0141017778",
+        "Isotope": "H(2)",
+        "NaturalAbundance": "0.000115"
+    },
+    {
+        "Element": "In",
+        "ExactMass": "112.904058",
+        "Isotope": "In(113)",
+        "NaturalAbundance": "0.0429"
+    },
+    {
+        "Element": "In",
+        "ExactMass": "114.903878",
+        "Isotope": "In(115)",
+        "NaturalAbundance": "0.9571"
+    },
+    {
+        "Element": "I",
+        "ExactMass": "126.904473",
+        "Isotope": "I(127)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Ir",
+        "ExactMass": "190.960594",
+        "Isotope": "Ir(191)",
+        "NaturalAbundance": "0.373"
+    },
+    {
+        "Element": "Ir",
+        "ExactMass": "192.9629264",
+        "Isotope": "Ir(193)",
+        "NaturalAbundance": "0.627"
+    },
+    {
+        "Element": "Fe",
+        "ExactMass": "53.9396105",
+        "Isotope": "Fe(54)",
+        "NaturalAbundance": "0.05845"
+    },
+    {
+        "Element": "Fe",
+        "ExactMass": "55.9349375",
+        "Isotope": "Fe(56)",
+        "NaturalAbundance": "0.91754"
+    },
+    {
+        "Element": "Fe",
+        "ExactMass": "56.935394",
+        "Isotope": "Fe(57)",
+        "NaturalAbundance": "0.02119"
+    },
+    {
+        "Element": "Fe",
+        "ExactMass": "57.9332756",
+        "Isotope": "Fe(58)",
+        "NaturalAbundance": "0.00282"
+    },
+    {
+        "Element": "Kr",
+        "ExactMass": "77.9203648",
+        "Isotope": "Kr(78)",
+        "NaturalAbundance": "0.00355"
+    },
+    {
+        "Element": "Kr",
+        "ExactMass": "79.916379",
+        "Isotope": "Kr(80)",
+        "NaturalAbundance": "0.02286"
+    },
+    {
+        "Element": "Kr",
+        "ExactMass": "81.9134836",
+        "Isotope": "Kr(82)",
+        "NaturalAbundance": "0.11593"
+    },
+    {
+        "Element": "Kr",
+        "ExactMass": "82.914136",
+        "Isotope": "Kr(83)",
+        "NaturalAbundance": "0.115"
+    },
+    {
+        "Element": "Kr",
+        "ExactMass": "83.911507",
+        "Isotope": "Kr(84)",
+        "NaturalAbundance": "0.56987"
+    },
+    {
+        "Element": "Kr",
+        "ExactMass": "85.91061073",
+        "Isotope": "Kr(86)",
+        "NaturalAbundance": "0.17279"
+    },
+    {
+        "Element": "La",
+        "ExactMass": "137.907112",
+        "Isotope": "La(138)",
+        "NaturalAbundance": "0.0009"
+    },
+    {
+        "Element": "La",
+        "ExactMass": "138.9063533",
+        "Isotope": "La(139)",
+        "NaturalAbundance": "0.9991"
+    },
+    {
+        "Element": "Pb",
+        "ExactMass": "203.9730436",
+        "Isotope": "Pb(204)",
+        "NaturalAbundance": "0.014"
+    },
+    {
+        "Element": "Pb",
+        "ExactMass": "205.9744653",
+        "Isotope": "Pb(206)",
+        "NaturalAbundance": "0.241"
+    },
+    {
+        "Element": "Pb",
+        "ExactMass": "206.9758969",
+        "Isotope": "Pb(207)",
+        "NaturalAbundance": "0.221"
+    },
+    {
+        "Element": "Pb",
+        "ExactMass": "207.9766521",
+        "Isotope": "Pb(208)",
+        "NaturalAbundance": "0.524"
+    },
+    {
+        "Element": "Li",
+        "ExactMass": "6.015122795",
+        "Isotope": "Li(6)",
+        "NaturalAbundance": "0.0759"
+    },
+    {
+        "Element": "Li",
+        "ExactMass": "7.01600455",
+        "Isotope": "Li(7)",
+        "NaturalAbundance": "0.9241"
+    },
+    {
+        "Element": "Lu",
+        "ExactMass": "174.9407718",
+        "Isotope": "Lu(175)",
+        "NaturalAbundance": "0.9741"
+    },
+    {
+        "Element": "Lu",
+        "ExactMass": "175.9426863",
+        "Isotope": "Lu(176)",
+        "NaturalAbundance": "0.0259"
+    },
+    {
+        "Element": "Mg",
+        "ExactMass": "23.9850417",
+        "Isotope": "Mg(24)",
+        "NaturalAbundance": "0.7899"
+    },
+    {
+        "Element": "Mg",
+        "ExactMass": "24.98583692",
+        "Isotope": "Mg(25)",
+        "NaturalAbundance": "0.1"
+    },
+    {
+        "Element": "Mg",
+        "ExactMass": "25.982592929",
+        "Isotope": "Mg(26)",
+        "NaturalAbundance": "0.1101"
+    },
+    {
+        "Element": "Mn",
+        "ExactMass": "54.9380451",
+        "Isotope": "Mn(55)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Hg",
+        "ExactMass": "195.965833",
+        "Isotope": "Hg(196)",
+        "NaturalAbundance": "0.0015"
+    },
+    {
+        "Element": "Hg",
+        "ExactMass": "197.966769",
+        "Isotope": "Hg(198)",
+        "NaturalAbundance": "0.0997"
+    },
+    {
+        "Element": "Hg",
+        "ExactMass": "198.9682799",
+        "Isotope": "Hg(199)",
+        "NaturalAbundance": "0.1687"
+    },
+    {
+        "Element": "Hg",
+        "ExactMass": "199.968326",
+        "Isotope": "Hg(200)",
+        "NaturalAbundance": "0.231"
+    },
+    {
+        "Element": "Hg",
+        "ExactMass": "200.9703023",
+        "Isotope": "Hg(201)",
+        "NaturalAbundance": "0.1318"
+    },
+    {
+        "Element": "Hg",
+        "ExactMass": "201.970643",
+        "Isotope": "Hg(202)",
+        "NaturalAbundance": "0.2986"
+    },
+    {
+        "Element": "Hg",
+        "ExactMass": "203.9734939",
+        "Isotope": "Hg(204)",
+        "NaturalAbundance": "0.0687"
+    },
+    {
+        "Element": "Mo",
+        "ExactMass": "91.906811",
+        "Isotope": "Mo(92)",
+        "NaturalAbundance": "0.1477"
+    },
+    {
+        "Element": "Mo",
+        "ExactMass": "93.9050883",
+        "Isotope": "Mo(94)",
+        "NaturalAbundance": "0.0923"
+    },
+    {
+        "Element": "Mo",
+        "ExactMass": "94.9058421",
+        "Isotope": "Mo(95)",
+        "NaturalAbundance": "0.159"
+    },
+    {
+        "Element": "Mo",
+        "ExactMass": "95.9046795",
+        "Isotope": "Mo(96)",
+        "NaturalAbundance": "0.1668"
+    },
+    {
+        "Element": "Mo",
+        "ExactMass": "96.9060215",
+        "Isotope": "Mo(97)",
+        "NaturalAbundance": "0.0956"
+    },
+    {
+        "Element": "Mo",
+        "ExactMass": "97.9054082",
+        "Isotope": "Mo(98)",
+        "NaturalAbundance": "0.2419"
+    },
+    {
+        "Element": "Mo",
+        "ExactMass": "99.907477",
+        "Isotope": "Mo(100)",
+        "NaturalAbundance": "0.0967"
+    },
+    {
+        "Element": "Nd",
+        "ExactMass": "141.9077233",
+        "Isotope": "Nd(142)",
+        "NaturalAbundance": "0.272"
+    },
+    {
+        "Element": "Nd",
+        "ExactMass": "142.9098143",
+        "Isotope": "Nd(143)",
+        "NaturalAbundance": "0.122"
+    },
+    {
+        "Element": "Nd",
+        "ExactMass": "143.9100873",
+        "Isotope": "Nd(144)",
+        "NaturalAbundance": "0.238"
+    },
+    {
+        "Element": "Nd",
+        "ExactMass": "144.9125736",
+        "Isotope": "Nd(145)",
+        "NaturalAbundance": "0.083"
+    },
+    {
+        "Element": "Nd",
+        "ExactMass": "145.9131169",
+        "Isotope": "Nd(146)",
+        "NaturalAbundance": "0.172"
+    },
+    {
+        "Element": "Nd",
+        "ExactMass": "147.916893",
+        "Isotope": "Nd(148)",
+        "NaturalAbundance": "0.057"
+    },
+    {
+        "Element": "Nd",
+        "ExactMass": "149.920891",
+        "Isotope": "Nd(150)",
+        "NaturalAbundance": "0.056"
+    },
+    {
+        "Element": "Ne",
+        "ExactMass": "19.9924401754",
+        "Isotope": "Ne(20)",
+        "NaturalAbundance": "0.9048"
+    },
+    {
+        "Element": "Ne",
+        "ExactMass": "20.99384668",
+        "Isotope": "Ne(21)",
+        "NaturalAbundance": "0.0027"
+    },
+    {
+        "Element": "Ne",
+        "ExactMass": "21.991385114",
+        "Isotope": "Ne(22)",
+        "NaturalAbundance": "0.0925"
+    },
+    {
+        "Element": "Ni",
+        "ExactMass": "57.9353429",
+        "Isotope": "Ni(58)",
+        "NaturalAbundance": "0.680769"
+    },
+    {
+        "Element": "Ni",
+        "ExactMass": "59.9307864",
+        "Isotope": "Ni(60)",
+        "NaturalAbundance": "0.262231"
+    },
+    {
+        "Element": "Ni",
+        "ExactMass": "60.931056",
+        "Isotope": "Ni(61)",
+        "NaturalAbundance": "0.011399"
+    },
+    {
+        "Element": "Ni",
+        "ExactMass": "61.9283451",
+        "Isotope": "Ni(62)",
+        "NaturalAbundance": "0.036345"
+    },
+    {
+        "Element": "Ni",
+        "ExactMass": "63.927966",
+        "Isotope": "Ni(64)",
+        "NaturalAbundance": "0.009256"
+    },
+    {
+        "Element": "Nb",
+        "ExactMass": "92.9063781",
+        "Isotope": "Nb(93)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "N",
+        "ExactMass": "14.0030740048",
+        "Isotope": "N(14)",
+        "NaturalAbundance": "0.99636"
+    },
+    {
+        "Element": "N",
+        "ExactMass": "15.0001088982",
+        "Isotope": "N(15)",
+        "NaturalAbundance": "0.00364"
+    },
+    {
+        "Element": "Os",
+        "ExactMass": "183.9524891",
+        "Isotope": "Os(184)",
+        "NaturalAbundance": "0.0002"
+    },
+    {
+        "Element": "Os",
+        "ExactMass": "185.9538382",
+        "Isotope": "Os(186)",
+        "NaturalAbundance": "0.0159"
+    },
+    {
+        "Element": "Os",
+        "ExactMass": "186.9557505",
+        "Isotope": "Os(187)",
+        "NaturalAbundance": "0.0196"
+    },
+    {
+        "Element": "Os",
+        "ExactMass": "187.9558382",
+        "Isotope": "Os(188)",
+        "NaturalAbundance": "0.1324"
+    },
+    {
+        "Element": "Os",
+        "ExactMass": "188.9581475",
+        "Isotope": "Os(189)",
+        "NaturalAbundance": "0.1615"
+    },
+    {
+        "Element": "Os",
+        "ExactMass": "189.958447",
+        "Isotope": "Os(190)",
+        "NaturalAbundance": "0.2626"
+    },
+    {
+        "Element": "Os",
+        "ExactMass": "191.9614807",
+        "Isotope": "Os(192)",
+        "NaturalAbundance": "0.4078"
+    },
+    {
+        "Element": "O",
+        "ExactMass": "15.9949146196",
+        "Isotope": "O(16)",
+        "NaturalAbundance": "0.99757"
+    },
+    {
+        "Element": "O",
+        "ExactMass": "16.9991317",
+        "Isotope": "O(17)",
+        "NaturalAbundance": "0.00038"
+    },
+    {
+        "Element": "O",
+        "ExactMass": "17.999161",
+        "Isotope": "O(18)",
+        "NaturalAbundance": "0.00205"
+    },
+    {
+        "Element": "Pd",
+        "ExactMass": "101.905609",
+        "Isotope": "Pd(102)",
+        "NaturalAbundance": "0.0102"
+    },
+    {
+        "Element": "Pd",
+        "ExactMass": "103.904036",
+        "Isotope": "Pd(104)",
+        "NaturalAbundance": "0.1114"
+    },
+    {
+        "Element": "Pd",
+        "ExactMass": "104.905085",
+        "Isotope": "Pd(105)",
+        "NaturalAbundance": "0.2233"
+    },
+    {
+        "Element": "Pd",
+        "ExactMass": "105.903486",
+        "Isotope": "Pd(106)",
+        "NaturalAbundance": "0.2733"
+    },
+    {
+        "Element": "Pd",
+        "ExactMass": "107.903892",
+        "Isotope": "Pd(108)",
+        "NaturalAbundance": "0.2646"
+    },
+    {
+        "Element": "Pd",
+        "ExactMass": "109.905153",
+        "Isotope": "Pd(110)",
+        "NaturalAbundance": "0.1172"
+    },
+    {
+        "Element": "P",
+        "ExactMass": "30.97376163",
+        "Isotope": "P(31)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Pt",
+        "ExactMass": "189.959932",
+        "Isotope": "Pt(190)",
+        "NaturalAbundance": "0.00014"
+    },
+    {
+        "Element": "Pt",
+        "ExactMass": "191.961038",
+        "Isotope": "Pt(192)",
+        "NaturalAbundance": "0.00782"
+    },
+    {
+        "Element": "Pt",
+        "ExactMass": "193.9626803",
+        "Isotope": "Pt(194)",
+        "NaturalAbundance": "0.32967"
+    },
+    {
+        "Element": "Pt",
+        "ExactMass": "194.9647911",
+        "Isotope": "Pt(195)",
+        "NaturalAbundance": "0.33832"
+    },
+    {
+        "Element": "Pt",
+        "ExactMass": "195.9649515",
+        "Isotope": "Pt(196)",
+        "NaturalAbundance": "0.25242"
+    },
+    {
+        "Element": "Pt",
+        "ExactMass": "197.967893",
+        "Isotope": "Pt(198)",
+        "NaturalAbundance": "0.07163"
+    },
+    {
+        "Element": "K",
+        "ExactMass": "38.96370668",
+        "Isotope": "K(39)",
+        "NaturalAbundance": "0.932581"
+    },
+    {
+        "Element": "K",
+        "ExactMass": "39.96399848",
+        "Isotope": "K(40)",
+        "NaturalAbundance": "0.000117"
+    },
+    {
+        "Element": "K",
+        "ExactMass": "40.96182576",
+        "Isotope": "K(41)",
+        "NaturalAbundance": "0.067302"
+    },
+    {
+        "Element": "Pr",
+        "ExactMass": "140.9076528",
+        "Isotope": "Pr(141)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Re",
+        "ExactMass": "184.952955",
+        "Isotope": "Re(185)",
+        "NaturalAbundance": "0.374"
+    },
+    {
+        "Element": "Re",
+        "ExactMass": "186.9557531",
+        "Isotope": "Re(187)",
+        "NaturalAbundance": "0.626"
+    },
+    {
+        "Element": "Rh",
+        "ExactMass": "102.905504",
+        "Isotope": "Rh(103)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Rb",
+        "ExactMass": "84.911789738",
+        "Isotope": "Rb(85)",
+        "NaturalAbundance": "0.7217"
+    },
+    {
+        "Element": "Rb",
+        "ExactMass": "86.909180527",
+        "Isotope": "Rb(87)",
+        "NaturalAbundance": "0.2783"
+    },
+    {
+        "Element": "Ru",
+        "ExactMass": "95.907598",
+        "Isotope": "Ru(96)",
+        "NaturalAbundance": "0.0554"
+    },
+    {
+        "Element": "Ru",
+        "ExactMass": "97.905287",
+        "Isotope": "Ru(98)",
+        "NaturalAbundance": "0.0187"
+    },
+    {
+        "Element": "Ru",
+        "ExactMass": "98.9059393",
+        "Isotope": "Ru(99)",
+        "NaturalAbundance": "0.1276"
+    },
+    {
+        "Element": "Ru",
+        "ExactMass": "99.9042195",
+        "Isotope": "Ru(100)",
+        "NaturalAbundance": "0.126"
+    },
+    {
+        "Element": "Ru",
+        "ExactMass": "100.9055821",
+        "Isotope": "Ru(101)",
+        "NaturalAbundance": "0.1706"
+    },
+    {
+        "Element": "Ru",
+        "ExactMass": "101.9043493",
+        "Isotope": "Ru(102)",
+        "NaturalAbundance": "0.3155"
+    },
+    {
+        "Element": "Ru",
+        "ExactMass": "103.905433",
+        "Isotope": "Ru(104)",
+        "NaturalAbundance": "0.1862"
+    },
+    {
+        "Element": "Sm",
+        "ExactMass": "143.911999",
+        "Isotope": "Sm(144)",
+        "NaturalAbundance": "0.0307"
+    },
+    {
+        "Element": "Sm",
+        "ExactMass": "146.9148979",
+        "Isotope": "Sm(147)",
+        "NaturalAbundance": "0.1499"
+    },
+    {
+        "Element": "Sm",
+        "ExactMass": "147.9148227",
+        "Isotope": "Sm(148)",
+        "NaturalAbundance": "0.1124"
+    },
+    {
+        "Element": "Sm",
+        "ExactMass": "148.9171847",
+        "Isotope": "Sm(149)",
+        "NaturalAbundance": "0.1382"
+    },
+    {
+        "Element": "Sm",
+        "ExactMass": "149.9172755",
+        "Isotope": "Sm(150)",
+        "NaturalAbundance": "0.0738"
+    },
+    {
+        "Element": "Sm",
+        "ExactMass": "151.9197324",
+        "Isotope": "Sm(152)",
+        "NaturalAbundance": "0.2675"
+    },
+    {
+        "Element": "Sm",
+        "ExactMass": "153.9222093",
+        "Isotope": "Sm(154)",
+        "NaturalAbundance": "0.2275"
+    },
+    {
+        "Element": "Sc",
+        "ExactMass": "44.9559119",
+        "Isotope": "Sc(45)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Se",
+        "ExactMass": "73.9224764",
+        "Isotope": "Se(74)",
+        "NaturalAbundance": "0.0089"
+    },
+    {
+        "Element": "Se",
+        "ExactMass": "75.9192136",
+        "Isotope": "Se(76)",
+        "NaturalAbundance": "0.0937"
+    },
+    {
+        "Element": "Se",
+        "ExactMass": "76.919914",
+        "Isotope": "Se(77)",
+        "NaturalAbundance": "0.0763"
+    },
+    {
+        "Element": "Se",
+        "ExactMass": "77.9173091",
+        "Isotope": "Se(78)",
+        "NaturalAbundance": "0.2377"
+    },
+    {
+        "Element": "Se",
+        "ExactMass": "79.9165213",
+        "Isotope": "Se(80)",
+        "NaturalAbundance": "0.4961"
+    },
+    {
+        "Element": "Se",
+        "ExactMass": "81.9166994",
+        "Isotope": "Se(82)",
+        "NaturalAbundance": "0.0873"
+    },
+    {
+        "Element": "Si",
+        "ExactMass": "27.9769265325",
+        "Isotope": "Si(28)",
+        "NaturalAbundance": "0.92223"
+    },
+    {
+        "Element": "Si",
+        "ExactMass": "28.9764947",
+        "Isotope": "Si(29)",
+        "NaturalAbundance": "0.04685"
+    },
+    {
+        "Element": "Si",
+        "ExactMass": "29.97377017",
+        "Isotope": "Si(30)",
+        "NaturalAbundance": "0.03092"
+    },
+    {
+        "Element": "Ag",
+        "ExactMass": "106.905097",
+        "Isotope": "Ag(107)",
+        "NaturalAbundance": "0.51839"
+    },
+    {
+        "Element": "Ag",
+        "ExactMass": "108.904752",
+        "Isotope": "Ag(109)",
+        "NaturalAbundance": "0.48161"
+    },
+    {
+        "Element": "Na",
+        "ExactMass": "22.9897692809",
+        "Isotope": "Na(23)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Sr",
+        "ExactMass": "83.913425",
+        "Isotope": "Sr(84)",
+        "NaturalAbundance": "0.0056"
+    },
+    {
+        "Element": "Sr",
+        "ExactMass": "85.9092602",
+        "Isotope": "Sr(86)",
+        "NaturalAbundance": "0.0986"
+    },
+    {
+        "Element": "Sr",
+        "ExactMass": "86.9088771",
+        "Isotope": "Sr(87)",
+        "NaturalAbundance": "0.07"
+    },
+    {
+        "Element": "Sr",
+        "ExactMass": "87.9056121",
+        "Isotope": "Sr(88)",
+        "NaturalAbundance": "0.8258"
+    },
+    {
+        "Element": "S",
+        "ExactMass": "31.972071",
+        "Isotope": "S(32)",
+        "NaturalAbundance": "0.9499"
+    },
+    {
+        "Element": "S",
+        "ExactMass": "32.97145876",
+        "Isotope": "S(33)",
+        "NaturalAbundance": "0.0075"
+    },
+    {
+        "Element": "S",
+        "ExactMass": "33.9678669",
+        "Isotope": "S(34)",
+        "NaturalAbundance": "0.0425"
+    },
+    {
+        "Element": "S",
+        "ExactMass": "35.96708076",
+        "Isotope": "S(36)",
+        "NaturalAbundance": "0.0001"
+    },
+    {
+        "Element": "Ta",
+        "ExactMass": "179.9474648",
+        "Isotope": "Ta(180)",
+        "NaturalAbundance": "0.00012"
+    },
+    {
+        "Element": "Ta",
+        "ExactMass": "180.9479958",
+        "Isotope": "Ta(181)",
+        "NaturalAbundance": "0.99988"
+    },
+    {
+        "Element": "Te",
+        "ExactMass": "119.90402",
+        "Isotope": "Te(120)",
+        "NaturalAbundance": "0.0009"
+    },
+    {
+        "Element": "Te",
+        "ExactMass": "121.9030439",
+        "Isotope": "Te(122)",
+        "NaturalAbundance": "0.0255"
+    },
+    {
+        "Element": "Te",
+        "ExactMass": "122.90427",
+        "Isotope": "Te(123)",
+        "NaturalAbundance": "0.0089"
+    },
+    {
+        "Element": "Te",
+        "ExactMass": "123.9028179",
+        "Isotope": "Te(124)",
+        "NaturalAbundance": "0.0474"
+    },
+    {
+        "Element": "Te",
+        "ExactMass": "124.9044307",
+        "Isotope": "Te(125)",
+        "NaturalAbundance": "0.0707"
+    },
+    {
+        "Element": "Te",
+        "ExactMass": "125.9033117",
+        "Isotope": "Te(126)",
+        "NaturalAbundance": "0.1884"
+    },
+    {
+        "Element": "Te",
+        "ExactMass": "127.9044631",
+        "Isotope": "Te(128)",
+        "NaturalAbundance": "0.3174"
+    },
+    {
+        "Element": "Te",
+        "ExactMass": "129.9062244",
+        "Isotope": "Te(130)",
+        "NaturalAbundance": "0.3408"
+    },
+    {
+        "Element": "Tb",
+        "ExactMass": "158.9253468",
+        "Isotope": "Tb(159)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Tl",
+        "ExactMass": "202.9723442",
+        "Isotope": "Tl(203)",
+        "NaturalAbundance": "0.2952"
+    },
+    {
+        "Element": "Tl",
+        "ExactMass": "204.9744275",
+        "Isotope": "Tl(205)",
+        "NaturalAbundance": "0.7048"
+    },
+    {
+        "Element": "Th",
+        "ExactMass": "232.0380553",
+        "Isotope": "Th(232)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Tm",
+        "ExactMass": "168.9342133",
+        "Isotope": "Tm(169)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Sn",
+        "ExactMass": "111.904818",
+        "Isotope": "Sn(112)",
+        "NaturalAbundance": "0.0097"
+    },
+    {
+        "Element": "Sn",
+        "ExactMass": "113.902779",
+        "Isotope": "Sn(114)",
+        "NaturalAbundance": "0.0066"
+    },
+    {
+        "Element": "Sn",
+        "ExactMass": "114.903342",
+        "Isotope": "Sn(115)",
+        "NaturalAbundance": "0.0034"
+    },
+    {
+        "Element": "Sn",
+        "ExactMass": "115.901741",
+        "Isotope": "Sn(116)",
+        "NaturalAbundance": "0.1454"
+    },
+    {
+        "Element": "Sn",
+        "ExactMass": "116.902952",
+        "Isotope": "Sn(117)",
+        "NaturalAbundance": "0.0768"
+    },
+    {
+        "Element": "Sn",
+        "ExactMass": "117.901603",
+        "Isotope": "Sn(118)",
+        "NaturalAbundance": "0.2422"
+    },
+    {
+        "Element": "Sn",
+        "ExactMass": "118.903308",
+        "Isotope": "Sn(119)",
+        "NaturalAbundance": "0.0859"
+    },
+    {
+        "Element": "Sn",
+        "ExactMass": "119.9021947",
+        "Isotope": "Sn(120)",
+        "NaturalAbundance": "0.3258"
+    },
+    {
+        "Element": "Sn",
+        "ExactMass": "121.903439",
+        "Isotope": "Sn(122)",
+        "NaturalAbundance": "0.0463"
+    },
+    {
+        "Element": "Sn",
+        "ExactMass": "123.9052739",
+        "Isotope": "Sn(124)",
+        "NaturalAbundance": "0.0579"
+    },
+    {
+        "Element": "Ti",
+        "ExactMass": "45.9526316",
+        "Isotope": "Ti(46)",
+        "NaturalAbundance": "0.0825"
+    },
+    {
+        "Element": "Ti",
+        "ExactMass": "46.9517631",
+        "Isotope": "Ti(47)",
+        "NaturalAbundance": "0.0744"
+    },
+    {
+        "Element": "Ti",
+        "ExactMass": "47.9479463",
+        "Isotope": "Ti(48)",
+        "NaturalAbundance": "0.7372"
+    },
+    {
+        "Element": "Ti",
+        "ExactMass": "48.94787",
+        "Isotope": "Ti(49)",
+        "NaturalAbundance": "0.0541"
+    },
+    {
+        "Element": "Ti",
+        "ExactMass": "49.9447912",
+        "Isotope": "Ti(50)",
+        "NaturalAbundance": "0.0518"
+    },
+    {
+        "Element": "W",
+        "ExactMass": "179.946704",
+        "Isotope": "W(180)",
+        "NaturalAbundance": "0.0012"
+    },
+    {
+        "Element": "W",
+        "ExactMass": "181.9482042",
+        "Isotope": "W(182)",
+        "NaturalAbundance": "0.265"
+    },
+    {
+        "Element": "W",
+        "ExactMass": "182.950223",
+        "Isotope": "W(183)",
+        "NaturalAbundance": "0.1431"
+    },
+    {
+        "Element": "W",
+        "ExactMass": "183.9509312",
+        "Isotope": "W(184)",
+        "NaturalAbundance": "0.3064"
+    },
+    {
+        "Element": "W",
+        "ExactMass": "185.9543641",
+        "Isotope": "W(186)",
+        "NaturalAbundance": "0.2843"
+    },
+    {
+        "Element": "U",
+        "ExactMass": "234.0409521",
+        "Isotope": "U(234)",
+        "NaturalAbundance": "5.4e-05"
+    },
+    {
+        "Element": "U",
+        "ExactMass": "235.0439299",
+        "Isotope": "U(235)",
+        "NaturalAbundance": "0.007204"
+    },
+    {
+        "Element": "U",
+        "ExactMass": "238.0507882",
+        "Isotope": "U(238)",
+        "NaturalAbundance": "0.992742"
+    },
+    {
+        "Element": "V",
+        "ExactMass": "49.9471585",
+        "Isotope": "V(50)",
+        "NaturalAbundance": "0.0025"
+    },
+    {
+        "Element": "V",
+        "ExactMass": "50.9439595",
+        "Isotope": "V(51)",
+        "NaturalAbundance": "0.9975"
+    },
+    {
+        "Element": "Xe",
+        "ExactMass": "123.905893",
+        "Isotope": "Xe(124)",
+        "NaturalAbundance": "0.000952"
+    },
+    {
+        "Element": "Xe",
+        "ExactMass": "125.904274",
+        "Isotope": "Xe(126)",
+        "NaturalAbundance": "0.00089"
+    },
+    {
+        "Element": "Xe",
+        "ExactMass": "127.9035313",
+        "Isotope": "Xe(128)",
+        "NaturalAbundance": "0.019102"
+    },
+    {
+        "Element": "Xe",
+        "ExactMass": "128.9047794",
+        "Isotope": "Xe(129)",
+        "NaturalAbundance": "0.264006"
+    },
+    {
+        "Element": "Xe",
+        "ExactMass": "129.903508",
+        "Isotope": "Xe(130)",
+        "NaturalAbundance": "0.04071"
+    },
+    {
+        "Element": "Xe",
+        "ExactMass": "130.9050824",
+        "Isotope": "Xe(131)",
+        "NaturalAbundance": "0.212324"
+    },
+    {
+        "Element": "Xe",
+        "ExactMass": "131.9041535",
+        "Isotope": "Xe(132)",
+        "NaturalAbundance": "0.269086"
+    },
+    {
+        "Element": "Xe",
+        "ExactMass": "133.9053945",
+        "Isotope": "Xe(134)",
+        "NaturalAbundance": "0.104357"
+    },
+    {
+        "Element": "Xe",
+        "ExactMass": "135.907219",
+        "Isotope": "Xe(136)",
+        "NaturalAbundance": "0.088573"
+    },
+    {
+        "Element": "Yb",
+        "ExactMass": "167.933897",
+        "Isotope": "Yb(168)",
+        "NaturalAbundance": "0.0013"
+    },
+    {
+        "Element": "Yb",
+        "ExactMass": "169.9347618",
+        "Isotope": "Yb(170)",
+        "NaturalAbundance": "0.0304"
+    },
+    {
+        "Element": "Yb",
+        "ExactMass": "170.9363258",
+        "Isotope": "Yb(171)",
+        "NaturalAbundance": "0.1428"
+    },
+    {
+        "Element": "Yb",
+        "ExactMass": "171.9363815",
+        "Isotope": "Yb(172)",
+        "NaturalAbundance": "0.2183"
+    },
+    {
+        "Element": "Yb",
+        "ExactMass": "172.9382108",
+        "Isotope": "Yb(173)",
+        "NaturalAbundance": "0.1613"
+    },
+    {
+        "Element": "Yb",
+        "ExactMass": "173.9388621",
+        "Isotope": "Yb(174)",
+        "NaturalAbundance": "0.3183"
+    },
+    {
+        "Element": "Yb",
+        "ExactMass": "175.9425717",
+        "Isotope": "Yb(176)",
+        "NaturalAbundance": "0.1276"
+    },
+    {
+        "Element": "Y",
+        "ExactMass": "88.9058483",
+        "Isotope": "Y(89)",
+        "NaturalAbundance": "1.0"
+    },
+    {
+        "Element": "Zn",
+        "ExactMass": "63.9291422",
+        "Isotope": "Zn(64)",
+        "NaturalAbundance": "0.48268"
+    },
+    {
+        "Element": "Zn",
+        "ExactMass": "65.9260334",
+        "Isotope": "Zn(66)",
+        "NaturalAbundance": "0.27975"
+    },
+    {
+        "Element": "Zn",
+        "ExactMass": "66.9271273",
+        "Isotope": "Zn(67)",
+        "NaturalAbundance": "0.04102"
+    },
+    {
+        "Element": "Zn",
+        "ExactMass": "67.9248442",
+        "Isotope": "Zn(68)",
+        "NaturalAbundance": "0.19024"
+    },
+    {
+        "Element": "Zn",
+        "ExactMass": "69.9253193",
+        "Isotope": "Zn(70)",
+        "NaturalAbundance": "0.00631"
+    },
+    {
+        "Element": "Zr",
+        "ExactMass": "89.9047044",
+        "Isotope": "Zr(90)",
+        "NaturalAbundance": "0.5145"
+    },
+    {
+        "Element": "Zr",
+        "ExactMass": "90.9056458",
+        "Isotope": "Zr(91)",
+        "NaturalAbundance": "0.1122"
+    },
+    {
+        "Element": "Zr",
+        "ExactMass": "91.9050408",
+        "Isotope": "Zr(92)",
+        "NaturalAbundance": "0.1715"
+    },
+    {
+        "Element": "Zr",
+        "ExactMass": "93.9063152",
+        "Isotope": "Zr(94)",
+        "NaturalAbundance": "0.1738"
+    },
+    {
+        "Element": "Zr",
+        "ExactMass": "95.9082734",
+        "Isotope": "Zr(96)",
+        "NaturalAbundance": "0.028"
+    },
+    {
+        "Element": "E",
+        "ExactMass": "-0.000548579909",
+        "Isotope": "E(0)",
+        "NaturalAbundance": "1.00"
+    }
+]

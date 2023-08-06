@@ -1,0 +1,8 @@
+README.md
+setup.py
+ChangeCoordinate/__init__.py
+ChangeCoordinate/change_coordinate.py
+ChangeCoordinate.egg-info/PKG-INFO
+ChangeCoordinate.egg-info/SOURCES.txt
+ChangeCoordinate.egg-info/dependency_links.txt
+ChangeCoordinate.egg-info/top_level.txt

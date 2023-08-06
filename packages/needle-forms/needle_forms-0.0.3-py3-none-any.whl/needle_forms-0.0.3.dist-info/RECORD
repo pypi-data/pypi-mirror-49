@@ -1,0 +1,8 @@
+abstractions/__init__.py,sha256=tUb-xEjgrxZ5zWkmIFjLTMmd3fSgEF3hsoHZ30ZPziY,22
+abstractions/datastore.py,sha256=0MzAuPSVA_yWwSfsDNze3a1-Q8VtBCyFrY0WK7gB_30,2786
+abstractions/pubsub.py,sha256=bVcpeZewt0GNrACZ1UDA_Zn1sC47O9r8ewco8MyN86g,1668
+needle_forms-0.0.3.dist-info/LICENCE,sha256=-JZDFRMFH2yZdONRb3SFxgAOgwYGrzaFuw75I7_U4G8,1072
+needle_forms-0.0.3.dist-info/METADATA,sha256=DZkqrVVL5qizclBGIlvTARJF0qFqDSJP0ag5RxfTaPY,491
+needle_forms-0.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+needle_forms-0.0.3.dist-info/top_level.txt,sha256=rii2KqvC7l5GVoSUHGWVoV20AewNLyj-jsSF9G1Aoj0,13
+needle_forms-0.0.3.dist-info/RECORD,,

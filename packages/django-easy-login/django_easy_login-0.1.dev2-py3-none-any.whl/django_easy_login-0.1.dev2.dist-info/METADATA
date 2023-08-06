@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: django-easy-login
+Version: 0.1.dev2
+Summary: A simple Django app to switch between users without authentication.
+Home-page: https://django-easy-login.herokuapp.com/
+Author: SoftServe inc.
+Author-email: UNKNOWN
+License: MIT License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: Django (==1.11.22)
+Requires-Dist: pytz (==2019.1)
+
+=================
+Django Easy Login
+=================
+
+Django Easy Login is a Django app that allows end-users to login with already created users at the system without
+authentication.
+
+Quick start
+-----------
+
+1. Add 'easy_login' to your INSTALLED_APPS settings:
+
+.. code-block:: python
+
+    INSTALLED_APPS = [
+    ...
+    'easy_login',
+    ...
+    ]
+
+2. Now edit the example/urls.py module in your project:
+
+.. code-block:: python
+
+    urlpatterns = [
+    ...
+    url(r'^easy_login/', include('easy_login.urls', namespace='easy-login')),
+    ...
+    ]
+
+
+3. Set middleware class:
+
+.. code-block:: python
+
+    TEMPLATES = [
+        ...
+        'context_processors': [
+            'easy_login.context_processors.easy_login',
+        ...
+        ],
+    ]
+
+4. Define default url redirect:
+
+.. code-block:: python
+
+    EASY_URL_REDIRECT = 'test-app:index'
+
+5. In template define easy_login variable:
+
+.. code-block:: python
+
+    {{ easy_login }}
+
+

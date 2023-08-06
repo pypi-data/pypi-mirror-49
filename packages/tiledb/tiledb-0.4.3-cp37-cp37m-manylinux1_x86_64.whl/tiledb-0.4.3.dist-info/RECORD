@@ -1,0 +1,15 @@
+tiledb-0.4.3.dist-info/METADATA,sha256=L_XhRiJcOHJN4I2qrRq75Rjzrh0vzKScxwxotciT4-g,8054
+tiledb-0.4.3.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
+tiledb-0.4.3.dist-info/RECORD,,
+tiledb-0.4.3.dist-info/top_level.txt,sha256=TTVUYCu5VdKjmIqtFaTF9PPxejc3p4Xe7VNX11L4Tvk,7
+tiledb/libtiledb.cpython-37m-x86_64-linux-gnu.so,sha256=R9HjWWiy27FFQO2Ikr9oOUZpKEF_YNpG8QLX3xIiM9g,6657784
+tiledb/version.py,sha256=p6FCu6AsGy-WjTcVr3aGI0i9yKSAMKp7FT6BA19HGn0,116
+tiledb/highlevel.py,sha256=JAALhRhqfaJkpHLrf-N4LvIDfFC4cv1hEOg6zrWiRoU,3243
+tiledb/__init__.py,sha256=fPlQmfkGHMKsLfsPfVGts0efzxCoaNADRT5F_3nIaz4,2167
+tiledb/.libs/libtiledb-02856450.so.1.6.0,sha256=8S2AmgAOQORX8UYHy7mVFBQbavip2DFl968HYQqaKp8,17332792
+tiledb/tests/test_util.py,sha256=N6HiTGCIyP2MKxeuwKb0T4_jJCkZ0eJEHTXzy_dRarc,3687
+tiledb/tests/test_libtiledb.py,sha256=xxLdbC5wOPHcazOJACSPs2bUInlUpVFbWvfy4cfHE9U,84203
+tiledb/tests/__init__.py,sha256=MHLv15hzC1BoaskN-a8wK6CjRYjycull0D8OwdX5B0k,209
+tiledb/tests/all.py,sha256=SaKGq683twxU49cWvIj4ReIBXTIDkYocEBMFJGJ5NFI,484
+tiledb/tests/common.py,sha256=04oG22Nh-LaCooj6n1wL4_UGdLVkoAAwOJA_dOa542M,1118
+tiledb/tests/test_dask.py,sha256=jm4kCYZfGsgy414MYcJ7zfaT5YCl6mRKcImdssWyuxs,2939

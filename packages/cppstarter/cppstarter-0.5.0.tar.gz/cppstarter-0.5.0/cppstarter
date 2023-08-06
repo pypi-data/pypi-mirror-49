@@ -1,0 +1,319 @@
+#!/usr/bin/env python3
+"""
+A tool to generate simple yet extensable cmake based cpp project.
+"""
+import argparse
+import re
+import os
+import subprocess
+
+def main():
+    parser = argparse.ArgumentParser(description='Generate cmake based cpp project')
+    parser.add_argument(
+        'name',
+        help='Name of the lib for which you are creating a project.\
+        File/dir name will be in snake case. Class name is in camel case.'
+    )
+    parser.add_argument('--enable-boost', default=False)
+    parser.add_argument('--boost-builder-rev', default='v1.63.0', type=str)
+    parser.add_argument('--boost-builder-repo', default=r'https://github.com/bestofsong/boost-cmake.git', type=str)
+
+    parser.add_argument('--enable-ios-toolchain', default=False, help='Not fully tested yet.')
+    parser.add_argument('--ios-toolchain-rev', default='master', type=str)
+    parser.add_argument('--ios-toolchain-repo',
+      default=r'https://github.com/leetal/ios-cmake',
+      type=str)
+
+    parser.add_argument('--boost-url', default='', type=str, help='Override default boost source tarball url.')
+    parser.add_argument('--boost-url-sha256', default='', type=str, help='Tarball sha256.')
+
+    args = parser.parse_args()
+    if args.boost_url and not args.boost_url_sha256:
+        raise ValueError('If supplied --boost-url, must also supply --boost-url-sha256')
+
+    target_name = args.name
+    name_info = parse_name(target_name)
+    try:
+        dir_name = name_info['snake_case']
+        os.mkdir(dir_name)
+    except FileExistsError:
+        print('file %s already exists, remove it and retry' % dir_name)
+    try:
+        os.chdir(dir_name)
+    except:
+        print('failed to chdir to: %s, maybe permission not right?' % dir_name)
+
+    if subprocess.run(['git', 'init']).returncode != 0:
+        raise ChildProcessError()
+    process(get_root_cmake(args), name_info)
+    process(get_test_cmake(args), name_info)
+    process(get_test_main(args), name_info)
+    process(get_googletest(args), name_info)
+    if args.enable_boost:
+        process(get_boost_builder(args), name_info)
+    if args.enable_ios_toolchain:
+        process(get_ios_toolchain(args), name_info)
+    process(get_test_source(args), name_info)
+    process(get_lib_cmake(args), name_info)
+    process(get_lib_source(args), name_info)
+    process(get_lib_header(args), name_info)
+    process(get_bootstrap_script(args), name_info)
+    subprocess.run(['git', 'add', '.'])
+
+def parse_name(name):
+    name = re.sub(r'-', '_', name)
+    def replace_upper(match_obj):
+        match_str = match_obj.group(1)
+        return '_%s' % match_str.lower()
+    def replace_ul_lower(match_obj):
+        raw = match_obj.group(1)
+        match_str = raw.split('_')[1] if len(raw) > 1 else raw
+        return match_str.upper()
+    snake_case = re.sub(r'([A-Z])', replace_upper, name)
+    camel_case = re.sub(r'((?:^|_)[a-z])', replace_ul_lower, name)
+    upper_case = snake_case.upper()
+    return {
+        'raw': name,
+        'snake_case': snake_case,
+        'camel_case': camel_case,
+        'upper_case': upper_case}
+
+
+def process(info, ctx):
+    def replace_mark(match_obj):
+        name_type = match_obj.group(2)
+        return ctx[name_type]
+    def build(txt):
+        # improve
+        return re.sub(r'#([a-z_]+)\.([a-z_]+)#', replace_mark, txt)
+    if info['type'] == 'file':
+        info['content'] = build(info['content'])
+        info['path'] = build(info['path'])
+        process_file(info)
+    elif info['type'] == 'git':
+        process_git_repo(info)
+    else:
+        raise ValueError('no process for type: %s' % info['type'])
+
+
+def process_file(info):
+    realpath = info['path']
+    mkdir_for_file(realpath)
+    with open(realpath, 'w+') as fp:
+        fp.write(info['content'])
+
+
+def process_git_repo(info):
+    realpath = info['path']
+    mkdir_for_file(realpath)
+    if info['rel'] == 'submodule':
+        git_cmd = ['git', 'submodule', 'add', '-b', info['rev'], info['url'], realpath]
+        if subprocess.run(git_cmd).returncode != 0:
+            raise ChildProcessError()
+    else:
+        if subprocess.run(['git', 'clone', info['url'], realpath]).returncode != 0:
+            raise ChildProcessError()
+
+
+def mkdir_for_file(f):
+    try:
+        d = os.path.dirname(f)
+        if len(d) <= 0:
+            return
+        os.makedirs(d)
+    except FileExistsError:
+        pass
+
+
+# things to generate
+def get_root_cmake(args):
+    set_boost_url_stmt = 'set(BOOST_URL "{}" CACHE STRING "")'.format(args.boost_url) if args.boost_url else ''
+    set_boost_url_sha256_stmt = 'set(BOOST_URL_SHA256 "{}" CACHE STRING "")'.format(args.boost_url_sha256) if args.boost_url_sha256 else ''
+    add_boost_builder_subdir_stmt = 'add_subdirectory({})'.format(_BOOST_BUILDER_PATH) if args.enable_boost else ''
+    txt = '''cmake_minimum_required(VERSION 3.13)
+set(CMAKE_INSTALL_PREFIX ${{CMAKE_BINARY_DIR}} CACHE STRING "")
+
+project(#target_name.camel_case#)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS "${{CMAKE_CXX_FLAGS}} -std=c++11 -O3")
+
+include(GNUInstallDirs)
+ 
+{set_boost_url_stmt}
+{set_boost_url_sha256_stmt}
+{add_boost_builder_subdir_stmt}
+
+add_subdirectory(src/#target_name.snake_case#)
+add_subdirectory(test)
+'''.format(
+        add_boost_builder_subdir_stmt=add_boost_builder_subdir_stmt,
+        set_boost_url_stmt=set_boost_url_stmt,
+        set_boost_url_sha256_stmt=set_boost_url_sha256_stmt)
+    return {'type': 'file', 'path': 'CMakeLists.txt', 'content': txt}
+
+def get_test_cmake(args):
+    txt = '''cmake_minimum_required(VERSION 3.2)
+
+add_subdirectory(lib/googletest)
+
+set(SOURCE_FILES main.cc src/#target_name.snake_case#_tests.cc)
+
+add_executable(#target_name.snake_case#_tests ${SOURCE_FILES})
+target_link_libraries(#target_name.snake_case#_tests #target_name.snake_case# gtest)
+install(
+  TARGETS #target_name.snake_case#_tests
+  RUNTIME DESTINATION bin
+  )
+'''
+    return {'type': 'file', 'path': 'test/CMakeLists.txt', 'content': txt}
+
+def get_test_main(args):
+    txt = '''#include <gtest/gtest.h>
+
+int main(int argc, char *argv[]) {
+  ::testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
+}
+'''
+    return {'type': 'file', 'path': 'test/main.cc', 'content': txt}
+
+def get_test_source(args):
+    txt = '''#include <#target_name.snake_case#.h>
+#include <gtest/gtest.h>
+
+using namespace std;
+
+
+class #target_name.camel_case#Test : public ::testing::Test {
+
+protected:
+
+  virtual void SetUp() {
+  };
+
+  virtual void TearDown() {
+  };
+
+  virtual void do_it() {
+    say_hi();
+    EXPECT_EQ(1 + 1, 2);
+  }
+};
+
+TEST_F(#target_name.camel_case#Test, if_catch_fire) {
+  // Do sth with the cool lib to see if it catches fire.
+  do_it();
+}
+'''
+    return {'type': 'file', 'path': 'test/src/#target_name.snake_case#_tests.cc', 'content': txt}
+
+
+def get_googletest(args):
+    url = r'https://github.com/google/googletest.git'
+    return {
+        'type': 'git',
+        'rel': 'submodule',
+        'rev': 'master',
+        'url': url,
+        'path': 'test/lib/googletest'}
+
+_BOOST_BUILDER_PATH = 'third/boost-cmake'
+def get_boost_builder(args):
+    return {
+        'type': 'git',
+        'rel': 'submodule',
+        'rev': args.boost_builder_rev,
+        'url': args.boost_builder_repo,
+        'path': _BOOST_BUILDER_PATH}
+
+_IOS_TOOLCHAIN_PATH = 'third/ios-toolchain'
+def get_ios_toolchain(args):
+    return {
+        'type': 'git',
+        'rel': 'submodule',
+        'rev': args.ios_toolchain_rev,
+        'url': args.ios_toolchain_repo,
+        'path': _IOS_TOOLCHAIN_PATH}
+
+def get_lib_cmake(args):
+    txt = '''cmake_minimum_required(VERSION 3.2)
+
+set(SOURCE_HEADERS #target_name.snake_case#.h)
+set(SOURCE_FILES #target_name.snake_case#.cc)
+
+add_library(#target_name.snake_case#
+  SHARED
+  STATIC
+  ${{SOURCE_FILES}}
+  ${{SOURCE_HEADERS}}
+)
+
+target_include_directories(
+  #target_name.snake_case# PUBLIC
+  "${{CMAKE_CURRENT_SOURCE_DIR}}"
+)
+
+set_target_properties(#target_name.snake_case#
+  PROPERTIES
+  PUBLIC_HEADER "${{SOURCE_HEADERS}}"
+)
+
+{link_boost}
+
+install(
+  TARGETS #target_name.snake_case#
+  PUBLIC_HEADER DESTINATION include
+  LIBRARY DESTINATION lib
+  ARCHIVE DESTINATION lib
+)
+'''.format(
+        link_boost = 'target_link_libraries(#target_name.snake_case# PUBLIC Boost::boost)' if args.enable_boost else ''
+        )
+    return {'type': 'file', 'path': 'src/#target_name.snake_case#/CMakeLists.txt', 'content': txt}
+
+
+def get_lib_source(args):
+    txt = '''#include<iostream>
+#include <#target_name.snake_case#.h>
+int say_hi() {
+  std::cout << "Hi, " << "#target_name.snake_case#" << std::endl;
+}
+'''
+    return {
+        'type': 'file',
+        'path': 'src/#target_name.snake_case#/#target_name.snake_case#.cc',
+        'content': txt
+        }
+
+
+def get_lib_header(args):
+    txt = '''#ifndef CMAKE_#target_name.upper_case#_H
+#define CMAKE_#target_name.upper_case#_H
+int say_hi(void);
+#endif //CMAKE_#target_name.upper_case#_H
+'''
+    return {
+        'type': 'file',
+        'path': 'src/#target_name.snake_case#/#target_name.snake_case#.h',
+        'content': txt
+        }
+
+def get_bootstrap_script(args):
+    txt = '''#!/usr/bin/env bash
+cmake -S . -B build {with_toolchain_file_opt} {with_platform} -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+if [ -f "build/compile_commands.json" ] ; then
+    if [ -f compile_commands.json ] ; then
+        rm compile_commands.json
+    fi
+    ln -s "build/compile_commands.json" compile_commands.json
+fi
+'''.format(
+        with_toolchain_file_opt='{}/ios.toolchain.cmake'.format(_IOS_TOOLCHAIN_PATH) if args.enable_ios_toolchain else '',
+        with_platform='-DPLATFORM=OS64COMBINED' if args.enable_ios_toolchain else ''
+        )
+    return {'type': 'file', 'path': 'bin/bootstrap.sh', 'content': txt}
+
+# end: things to generate
+
+
+main()

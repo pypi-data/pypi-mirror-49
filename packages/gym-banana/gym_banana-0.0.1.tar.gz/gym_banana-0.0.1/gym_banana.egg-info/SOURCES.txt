@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+gym_banana.egg-info/PKG-INFO
+gym_banana.egg-info/SOURCES.txt
+gym_banana.egg-info/dependency_links.txt
+gym_banana.egg-info/requires.txt
+gym_banana.egg-info/top_level.txt

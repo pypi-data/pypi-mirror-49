@@ -1,0 +1,17 @@
+slacker/__init__.py,sha256=RANtMA87OBokuWBDCSZIvKiXo4tiQt4lW9P5JOfjFJ0,133
+slacker/base.py,sha256=WV90UEN4272kHsitzoKnrKHiBPp90abyAY09fIIuZF0,1815
+slacker/dispatch.py,sha256=cF8b8rVPrVtx4RgMkKDeShSsaTGdMeHjyQmAncr_O0Q,1635
+slacker/func.py,sha256=MNEQReVUUkCPB4axhOSkeP-wgsLEKpPqC6otsOZRpgE,3839
+slacker/persist.py,sha256=ZmKOfoovmt44wBRlRzchSbwCxauass7tTIQM8w5x4Dc,3508
+slacker/sentinel.py,sha256=tyKbQN7hSa5JB3mxNoyFmVqQ9YRjKCjaT20O3IJEKio,121
+slacker/text.py,sha256=ftO0H9FzmkgA1tLRFAUHr5l2vhJIvsnqsX64NLtROYs,4747
+slacker/service/__init__.py,sha256=t68Haea2KnA9HaTns0QvynQNcd53NBKuxwNnMpdZ4XY,130
+slacker/service/base.py,sha256=ZZyFsi14l1WTnRo7_zqpsASxlZJ9B6jvgdmpqhdxe7U,3928
+slacker/service/slack.py,sha256=lvJVd-207J91GF_poNFBbEvD0amsZQYeTmR0z9uJuXM,8115
+slacker/service/txn.py,sha256=STX3c-eS8dXKEJeu-AIKu_HhkygF6oIenGXLnLL5MUA,2810
+faastm-0.1.0.dist-info/LICENCE.md,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+faastm-0.1.0.dist-info/METADATA,sha256=7P61oaG7fjplePRLzQegLiVUScahd9O6dpIG8KvgN9o,1906
+faastm-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+faastm-0.1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+faastm-0.1.0.dist-info/top_level.txt,sha256=e4jivl37sk0la0OIBsv2DEDyPTwKQiBDCYKfLKBhGb4,8
+faastm-0.1.0.dist-info/RECORD,,

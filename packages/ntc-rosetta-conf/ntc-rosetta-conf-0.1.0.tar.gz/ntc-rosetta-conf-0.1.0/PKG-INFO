@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ntc-rosetta-conf
+Version: 0.1.0
+Summary: Restconf interface for rosetta
+Author: David Barroso
+Author-email: dbarrosop@dravetech.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: jetconf
+Requires-Dist: ntc-rosetta (>=0.2.0,<0.3.0)

@@ -1,0 +1,4 @@
+[console_scripts]
+tflexconverter = tflex.script.tflexconverter:main
+tflexviewer = tflex.script.tflexviewer:main
+

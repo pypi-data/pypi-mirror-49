@@ -1,0 +1,13 @@
+fetchy/__init__.py,sha256=-q2yWEk5FsdVlScfL4jGt93g7j70KC5mPtkSFGyjPfc,400
+fetchy/cli.py,sha256=KbEB3_QdjHn9pF1GmdbN3m3WHpvbKaMK_ipha78P3Dk,3871
+fetchy/dependency.py,sha256=A2kx31buJHa5l_PwG4UzwWexuWhCn28fiwxA5hLKTUc,4596
+fetchy/downloader.py,sha256=EaT0clG2PYdvztwBLFr7IrhVVG847U4ns5M9Sz0OnLY,4288
+fetchy/package.py,sha256=joDqI8HTXZ27CjiWjTxdcTWnECk4fE85zi9kJvmnz_M,1975
+fetchy/parser.py,sha256=83Z4TEnqfvyzkavI05R-gF5ONygjqiSTVcg54NfpDQ0,1808
+fetchy/repository.py,sha256=uhMhbdF8fb_Vve70viC_rILF3b0T5Er5QgJyQWrjcFE,1505
+fetchy/utils.py,sha256=zrNHroL9CWFWb6_C15BczP7jTu9LQLLbMuLHm8mLERY,6313
+fetchy/version.py,sha256=UIh7yeB9OvuUEdophb3Mol7e3tjnt8cNzjySiqBnX7k,1480
+fetchy-0.1.1.dist-info/entry_points.txt,sha256=oomwtOC7oJsguz61zOPWRdE7516MCQKGKYMm6tkBO2U,37
+fetchy-0.1.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+fetchy-0.1.1.dist-info/METADATA,sha256=nHP5T-lXSKKL4IljmT-jPiJNKhikTmTifN-kFq5oNzU,593
+fetchy-0.1.1.dist-info/RECORD,,

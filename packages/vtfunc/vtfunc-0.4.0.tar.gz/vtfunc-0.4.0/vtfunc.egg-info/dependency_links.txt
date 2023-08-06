@@ -1,0 +1,1 @@
+https://github.com/coleifer/pysqlite/zipball/master#egg=pysqlite

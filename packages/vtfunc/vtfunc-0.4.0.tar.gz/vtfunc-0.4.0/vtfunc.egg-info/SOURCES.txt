@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+vtfunc.c
+vtfunc.pyx
+_pysqlite/cache.h
+_pysqlite/connection.h
+_pysqlite/module.h
+vtfunc.egg-info/PKG-INFO
+vtfunc.egg-info/SOURCES.txt
+vtfunc.egg-info/dependency_links.txt
+vtfunc.egg-info/top_level.txt

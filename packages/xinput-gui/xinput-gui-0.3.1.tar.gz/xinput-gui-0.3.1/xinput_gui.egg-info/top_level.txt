@@ -1,0 +1,3 @@
+xinput_gui
+xinput_gui/gui
+xinput_gui/xinput

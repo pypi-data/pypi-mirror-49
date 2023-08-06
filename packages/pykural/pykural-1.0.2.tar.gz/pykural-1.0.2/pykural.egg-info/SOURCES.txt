@@ -1,0 +1,9 @@
+README.md
+setup.py
+pykural/__init__.py
+pykural.egg-info/PKG-INFO
+pykural.egg-info/SOURCES.txt
+pykural.egg-info/dependency_links.txt
+pykural.egg-info/entry_points.txt
+pykural.egg-info/not-zip-safe
+pykural.egg-info/top_level.txt

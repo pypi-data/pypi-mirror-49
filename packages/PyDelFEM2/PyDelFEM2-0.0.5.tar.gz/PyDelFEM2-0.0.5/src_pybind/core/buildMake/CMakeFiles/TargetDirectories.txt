@@ -1,0 +1,5 @@
+/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/core/buildMake/CMakeFiles/rebuild_cache.dir
+/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/core/buildMake/CMakeFiles/edit_cache.dir
+/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/core/buildMake/CMakeFiles/c_core.dir
+/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/core/buildMake/pybind11/CMakeFiles/rebuild_cache.dir
+/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/core/buildMake/pybind11/CMakeFiles/edit_cache.dir

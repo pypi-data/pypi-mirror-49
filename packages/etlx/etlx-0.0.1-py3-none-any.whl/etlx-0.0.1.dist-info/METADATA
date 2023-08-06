@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: etlx
+Version: 0.0.1
+Summary: ETL & Co
+Home-page: https://github.com/kedikx/etlx
+Author: Alexander Keda
+Author-email: kedikx.io@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# etlx
+
+

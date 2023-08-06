@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mentormatch
+Version: 0.1.7
+Summary: J&J Cross-Sector Mentoring Program utility that matches mentors with mentees.
+Home-page: https://github.com/jonathanchukinas/mentormatch
+Author: Jonathan Chukinas
+Author-email: chukinas@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Click
+Requires-Dist: openpyxl
+
+UNKNOWN
+
+

@@ -1,0 +1,9 @@
+README.md
+setup.py
+zen_he/__init__.py
+zen_he/en.py
+zen_he/he.py
+zen_of_python_he.egg-info/PKG-INFO
+zen_of_python_he.egg-info/SOURCES.txt
+zen_of_python_he.egg-info/dependency_links.txt
+zen_of_python_he.egg-info/top_level.txt

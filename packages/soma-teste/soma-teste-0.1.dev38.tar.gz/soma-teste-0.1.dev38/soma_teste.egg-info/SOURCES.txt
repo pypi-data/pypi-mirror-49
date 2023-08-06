@@ -1,0 +1,14 @@
+README.md
+deploy.bash
+setup.py
+tox.ini
+soma/__init__.py
+soma/estilo/__init__.py
+soma/estilo/modelling.py
+soma/estilo/utils.py
+soma_teste.egg-info/PKG-INFO
+soma_teste.egg-info/SOURCES.txt
+soma_teste.egg-info/dependency_links.txt
+soma_teste.egg-info/requires.txt
+soma_teste.egg-info/top_level.txt
+tests/test_utils.py

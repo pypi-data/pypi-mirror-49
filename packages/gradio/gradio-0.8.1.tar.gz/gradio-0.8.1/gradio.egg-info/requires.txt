@@ -1,0 +1,8 @@
+numpy
+beautifulsoup4
+Pillow
+requests
+psutil
+paramiko
+scipy
+IPython

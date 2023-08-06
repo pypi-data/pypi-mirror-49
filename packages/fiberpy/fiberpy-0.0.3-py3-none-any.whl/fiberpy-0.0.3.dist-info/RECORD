@@ -1,0 +1,11 @@
+fiberpy/__about__.py,sha256=MRzmm6LGT0cdteaS7T8138tlFAYnJH_TRkrNTg22ruA,287
+fiberpy/__init__.py,sha256=DBhdx7xK4C1hD8M_jFrGtUrPUTDV2K_JHUGcO_Ch5tA,192
+fiberpy/closure.py,sha256=D8C-ujMJL9xUbByHp-Ik-fxaHxxBep9WC3E2S2524DM,16557
+fiberpy/mechanics.py,sha256=o_1inVMxslZJBKg9d-DwmkJsOjV4UP5PATjrzwqGGr4,11800
+fiberpy/orientation.py,sha256=NQ9925TrqddvuMuElOC224fNAxMLyGWuwjt8msvozvo,10786
+fiberpy/tensor.py,sha256=CF-mCnIhIZq1MiASXKKFJlLPSh7aBIQSQGppiGn_8tU,11291
+fiberpy-0.0.3.dist-info/LICENSE,sha256=L8pwam33ctK0bRR6IlCzz4Gw1ME5gZH_YkxzkzWZ_c8,1076
+fiberpy-0.0.3.dist-info/METADATA,sha256=-4q9x2ym9MvZ1NCk7fXFrAdRmll5g9EQWowqJlFaVZY,2403
+fiberpy-0.0.3.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+fiberpy-0.0.3.dist-info/top_level.txt,sha256=jmpDv_ZQFbcJ67Vm3qPcxsLpa5xXckJEKcHtKhlU07g,8
+fiberpy-0.0.3.dist-info/RECORD,,

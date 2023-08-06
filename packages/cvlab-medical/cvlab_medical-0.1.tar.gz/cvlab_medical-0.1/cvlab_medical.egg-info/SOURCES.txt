@@ -1,0 +1,49 @@
+README.md
+setup.py
+cvlab_ct/__init__.py
+cvlab_ct/brain - code.cvlab
+cvlab_ct/brain - colormap.cvlab
+cvlab_ct/brain - slice area.cvlab
+cvlab_ct/brain - threshold.cvlab
+cvlab_ct/images/brain-3D/000000.png
+cvlab_ct/images/brain-3D/005000.png
+cvlab_ct/images/brain-3D/010000.png
+cvlab_ct/images/brain-3D/015000.png
+cvlab_ct/images/brain-3D/020000.png
+cvlab_ct/images/brain-3D/025000.png
+cvlab_ct/images/brain-3D/030000.png
+cvlab_ct/images/brain-3D/035000.png
+cvlab_ct/images/brain-3D/040000.png
+cvlab_ct/images/brain-3D/045000.png
+cvlab_ct/images/brain-3D/050000.png
+cvlab_ct/images/brain-3D/055000.png
+cvlab_ct/images/brain-3D/060000.png
+cvlab_ct/images/brain-3D/065000.png
+cvlab_ct/images/brain-3D/070000.png
+cvlab_ct/images/brain-3D/075000.png
+cvlab_ct/images/brain-3D/080000.png
+cvlab_ct/images/brain-3D/085000.png
+cvlab_ct/images/brain-3D/090000.png
+cvlab_ct/images/brain-3D/095000.png
+cvlab_ct/images/brain-3D/100000.png
+cvlab_ct/images/brain-3D/105000.png
+cvlab_ct/images/brain-3D/110000.png
+cvlab_ct/images/brain-3D/115000.png
+cvlab_ct/images/brain-3D/120000.png
+cvlab_ct/images/brain-3D/125000.png
+cvlab_ct/images/brain-3D/130000.png
+cvlab_ct/images/brain-3D/135000.png
+cvlab_ct/images/brain-3D/140000.png
+cvlab_ct/images/brain-3D/145000.png
+cvlab_ct/images/brain-3D/150000.png
+cvlab_ct/images/brain-3D/155000.png
+cvlab_ct/images/brain-3D/160000.png
+cvlab_ct/images/brain-3D/165000.png
+cvlab_ct/images/brain-3D/170000.png
+cvlab_ct/images/brain-3D/175000.png
+cvlab_medical/__init__.py
+cvlab_medical.egg-info/PKG-INFO
+cvlab_medical.egg-info/SOURCES.txt
+cvlab_medical.egg-info/dependency_links.txt
+cvlab_medical.egg-info/requires.txt
+cvlab_medical.egg-info/top_level.txt

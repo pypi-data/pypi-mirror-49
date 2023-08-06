@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: cvlab-medical
+Version: 0.1
+Summary: # Medical toolkit for CV-Lab
+Home-page: https://github.com/cvlab-ai/cvlab_medical
+Author: Adam Brzeski, Jan Cychnerski
+Author-email: adam.m.brzeski@gmail.com, jan.cychnerski@gmail.com
+License: AGPL-3.0+
+Description: # Medical toolkit for CV-Lab
+        
+        `cvlab_medical` is a plugin for [CV-Lab](https://github.com/cvlab-ai/cvlab). 
+        It adds a toolbox for medical image processing and a bunch of examples.
+        
+        Currently available:
+        
+        * `cvlab_medical` - general purpose medical toolbox
+        * `cvlab_ct` - computed tomography toolbox
+        
+        # Installation
+        
+        `pip install cvlab_medical`
+        
+        or directly from GIT repository:
+        
+        `pip install git+https://github.com/cvlab-ai/cvlab_medical.git`
+        
+          
+        
+Platform: UNKNOWN
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown

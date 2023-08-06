@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+avd/__init__.py
+avd/common.py
+avd/debug.py
+avd/fileutils.py
+avd/module.py
+avd.egg-info/PKG-INFO
+avd.egg-info/SOURCES.txt
+avd.egg-info/dependency_links.txt
+avd.egg-info/top_level.txt

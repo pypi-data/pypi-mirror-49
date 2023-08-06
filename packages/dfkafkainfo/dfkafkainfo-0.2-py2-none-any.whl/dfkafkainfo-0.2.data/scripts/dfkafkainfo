@@ -1,0 +1,48 @@
+#!python
+import os
+import argparse
+
+commands = {
+    '_status' : 'status of the cluster',
+    '_cluster/health' : 'Health of the cluster',
+    '_nodes' : 'Nodes info',
+    '_cat/indices' : 'Indices',
+    '_cat/shards' : 'Shards',
+    '_stats' : 'stats of EsCluster'
+}
+
+def get_info(dockerid):
+    cout = os.popen("hostname -i")
+    host = cout.read()
+    outs = os.popen("sudo docker inspect " + dockerid + " | grep ZOOKEEPER_CONNECT= | tr -d '\"' | cut -d'=' -f2 | tr -d ','")
+    zkUrl = outs.read()
+
+    cmd = 'sudo docker exec -i {} /opt/kafka/bin/kafka-topics.sh --describe --zookeeper {}'.format(dockerid, zkUrl)
+    output = os.popen(cmd)
+    
+    print("Topics")
+    print("==============================================================================")
+    print(output.read())
+
+    zkSplit = zkUrl.split("/")
+
+    cmd = 'sudo docker exec -i {} /opt/kafka/bin/zookeeper-shell.sh {} <<< "ls /{}/brokers/ids"'.format(dockerid, zkSplit[0], zkSplit[1])
+    output = os.popen(cmd)
+
+    print("Broker List")
+    print("==============================================================================")
+    print(output.read())
+
+
+if __name__=='__main__':
+    
+    outs = os.popen("sudo docker ps | grep kafka | awk '{print $1}'")
+    containerId = outs.read()
+    
+    #parser = argparse.ArgumentParser(description='Retrieve Docker Run Command from existing container')
+    #parser.add_argument('username', action="store", help='elasticsearch username')
+    #parser.add_argument('password', action="store", help='elasticsearch password')
+    #results = parser.parse_args()
+    
+    get_info(containerId)
+

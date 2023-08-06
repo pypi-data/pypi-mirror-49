@@ -1,0 +1,9 @@
+watchdog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+watchdog/library.py,sha256=TXPDSrQuH6GDtUeuw75SJqGzfiAzLAoi57QRBdOsuu8,4108
+watchdog/tests.py,sha256=f5YoRBDRDj_ZA1bDi06Eh9QaNl6ujxNh6fAHJ9kumgw,6456
+watchdog/watchdog.py,sha256=uTnCKfqTKXmA1o9uq2ZTg3pEXQEkP6knQ36XWeNw-cE,6261
+checkniner_watchdog-0.6.dist-info/METADATA,sha256=EoWNS0vXIDA4T9t_jzsn7Gv5Z-bI8g3lvjXJaToFj3A,504
+checkniner_watchdog-0.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+checkniner_watchdog-0.6.dist-info/entry_points.txt,sha256=9OEPy7UHdjADk7aP8a5GqOY4-_DRLLJsBNs91IbKyCw,75
+checkniner_watchdog-0.6.dist-info/top_level.txt,sha256=OVdR7GkPGZako8sRtVuM0Nis-ZIElx3he3hKFPYnTGg,9
+checkniner_watchdog-0.6.dist-info/RECORD,,

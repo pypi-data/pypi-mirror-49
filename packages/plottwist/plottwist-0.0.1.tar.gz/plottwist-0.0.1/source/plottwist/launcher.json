@@ -1,0 +1,63 @@
+{
+  "LAUNCHER_NAME": "Plot Twist",
+  "LAUNCHER_VERSION": "0.0.1",
+  "DCCS":
+  {
+    "MAYA":
+    {
+      "enabled": "True",
+      "supported_versions": ["2018", "2019"],
+      "default_version": "2018",
+      "departments": ["modeling", "shading", "fx", "lighting", "comp", "grooming", "rigging", "layout"],
+      "plugins":
+      {
+        "ARNOLD":
+        {
+          "version": ""
+        }
+      }
+    },
+    "NUKE":
+    {
+      "enabled": "True",
+      "supported_versions": ["11.3v3"],
+      "default_version": "11.3v3",
+      "departments": ["lighting", "comp"]
+    },
+    "HOUDINI":
+    {
+      "enabled": "True",
+      "supported_versions": ["17.5.173"],
+      "default_version": "17.5.173",
+      "departments": ["fx"]
+    },
+    "PHOTOSHOP":
+    {
+      "enabled": "True",
+      "supported_versions": ["2017", "2019"],
+      "default_version": "2019",
+      "departments": ["lighting", "comp", "grooming"]
+    },
+    "ZBRUSH":
+    {
+      "enabled": "True",
+      "supported_versions": ["4R8"],
+      "default_version": "4R8",
+      "departments": ["modeling"]
+    },
+    "SUBSTANCE PAINTER":
+    {
+      "enabled": "True",
+      "supported_versions": ["2019.1.3"],
+      "default_version": "2019.1.3",
+      "departments": ["shading", "grooming"]
+    },
+    "SUBSTANCE DESIGNER":
+    {
+      "enabled": "True",
+      "supported_versions": ["2019.1.2"],
+      "default_version": "2019.1.2",
+      "departments": ["shading", "grooming"]
+    }
+  }
+}

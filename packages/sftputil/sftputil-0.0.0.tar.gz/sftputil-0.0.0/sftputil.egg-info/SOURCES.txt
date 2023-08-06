@@ -1,0 +1,8 @@
+README.md
+VERSION
+setup.py
+sftputil.egg-info/PKG-INFO
+sftputil.egg-info/SOURCES.txt
+sftputil.egg-info/dependency_links.txt
+sftputil.egg-info/requires.txt
+sftputil.egg-info/top_level.txt

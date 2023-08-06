@@ -1,0 +1,13 @@
+currentsapi/__init__.py,sha256=YsLqj1CTU0cyXRlvOhS8DUp4T8lyIBqa-UWJ0JRmrbc,660
+currentsapi/authentication.py,sha256=XMaRNF5_44QoJfC7A7K2xZAkfuV2OdWHYSmwxAj9kZA,484
+currentsapi/client.py,sha256=oEsq1ekoQ6hdTceROnfuJSKeUL8yuT-ZJduXs8ZrG5k,3638
+currentsapi/constants.py,sha256=ZgvmIHPrjTL1tZbtiBEQeqBs9XYFCVXOcrATTQBS7vY,2425
+currentsapi_py/__init__.py,sha256=L4oMsEsT7meZm5L7Helua9_eBHH7eBXIPD6x0U-j5-Y,663
+currentsapi_py/authentication.py,sha256=XMaRNF5_44QoJfC7A7K2xZAkfuV2OdWHYSmwxAj9kZA,484
+currentsapi_py/client.py,sha256=TC4a2_u_x5J4SS0QlzFjt358GGSA2DSfkNooZH8DM7Q,3644
+currentsapi_py/constants.py,sha256=ZgvmIHPrjTL1tZbtiBEQeqBs9XYFCVXOcrATTQBS7vY,2425
+currentsapi-0.0.1.dist-info/LICENSE.txt,sha256=SvtJMl4TBu84IwF3M-5g1SGh6NnMnZ3q6Jbx5so0cU0,1069
+currentsapi-0.0.1.dist-info/METADATA,sha256=lR7UefilPaA91R4Z03wxLflMUzHy2eqBZytxsRp1Qt8,2614
+currentsapi-0.0.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+currentsapi-0.0.1.dist-info/top_level.txt,sha256=-fNSY7QlDmXm6IUgjyx95khZ7dlYDry5tVhHzVqVJ9E,12
+currentsapi-0.0.1.dist-info/RECORD,,

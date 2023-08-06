@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "./static/css/main.a72b7630.chunk.css",
+    "main.js": "./static/js/main.e77050fc.chunk.js",
+    "main.js.map": "./static/js/main.e77050fc.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/css/2.d438ea0b.chunk.css": "./static/css/2.d438ea0b.chunk.css",
+    "static/js/2.c9ab056c.chunk.js": "./static/js/2.c9ab056c.chunk.js",
+    "static/js/2.c9ab056c.chunk.js.map": "./static/js/2.c9ab056c.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.6e729e091e65deaf7e52e26e694d6c6a.js": "./precache-manifest.6e729e091e65deaf7e52e26e694d6c6a.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.d438ea0b.chunk.css.map": "./static/css/2.d438ea0b.chunk.css.map",
+    "static/css/main.a72b7630.chunk.css.map": "./static/css/main.a72b7630.chunk.css.map",
+    "static/media/delete.svg": "./static/media/delete.74986976.svg"
+  }
+}

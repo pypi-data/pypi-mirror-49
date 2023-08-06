@@ -1,0 +1,9 @@
+gserializer/__init__.py,sha256=bNYUg5sXEfz_VHjVTiqTNnIGq_D3c3WjoF8Phhh6T3M,306
+gserializer/__main__.py,sha256=BdUrGUQxSan1lOf_AJGq-VYjvZihuVzsS8k2NtpO8dE,215
+gserializer/Tools/Filter.py,sha256=skNjNZ_yMd4bKPt8g9vOjEaz7oIEomkpq-nChKLLr0s,4880
+gserializer/Tools/Reader.py,sha256=FpoocIG8dbPYKcO9-xHIKrLXDoNK1NbmoP_EhB6MYEc,2587
+gserializer/Tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gserializer-1.0.2.dist-info/METADATA,sha256=pDdSXY8y06e2f0pbY7fUHZS5Q511ZsXzdXhIMyQt2MQ,4593
+gserializer-1.0.2.dist-info/WHEEL,sha256=_OfpK4bWOib5kHbXgC6xhPw-kdAw9Ks7_xlOUIiTiwQ,92
+gserializer-1.0.2.dist-info/top_level.txt,sha256=ABs6qdfN37GqEF7mZgC4Kk57VdJb2Vr_WRynBR1-2gs,12
+gserializer-1.0.2.dist-info/RECORD,,

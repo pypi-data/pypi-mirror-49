@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3A95D4BD7B154B5C86F9EEFC /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 82F073CC5195446885B2B303 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				EE127AEB6B784ED8B389D291 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		FC19865E77474AE2862D31E1 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F875E2D8BC014F7890DF8F76 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				EA24E90B6CF04EA5B1AD6C66 /* CMake Rules */,
+			);
+			dependencies = (
+				05822452E80D425F896E315E /* PBXTargetDependency */,
+				FCF7E583785E427B99B06F0A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		020D916430504A34BE913F0A /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_cad_dyntri_v23.h */ = {isa = PBXBuildFile; fileRef = 818898F050674FE09A96DE31 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_cad_dyntri_v23.h */; };
+		05FD2D81D0FF44CBA487201E /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_gpusampler.cpp */ = {isa = PBXBuildFile; fileRef = 663351DC79FB4A419CCD7AD0 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_gpusampler.cpp */; };
+		0C680046BA664DFA903E5DC3 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/main.cpp */ = {isa = PBXBuildFile; fileRef = 5BE6E857B0724770B68E25D1 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/main.cpp */; };
+		26A7A56C2948414780874C48 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/mat3.cpp */ = {isa = PBXBuildFile; fileRef = 7153C6C285FD4A2C9240D6CE /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/mat3.cpp */; };
+		282A5D02205B4C359E964E1E /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/quat.cpp */ = {isa = PBXBuildFile; fileRef = 38B3D441E85D476A8069A797 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/quat.cpp */; };
+		2D302ED3AB5B407C9D442A4C /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_voxbv.cpp */ = {isa = PBXBuildFile; fileRef = F1EE1DEB13114AB9826D56AC /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_voxbv.cpp */; };
+		376B5D0F684943FC96D42035 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_v23q.h */ = {isa = PBXBuildFile; fileRef = F4A42F19C06E4EEEB19412F4 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_v23q.h */; };
+		3B2D9037AA474AE4B2E63013 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_color.h */ = {isa = PBXBuildFile; fileRef = 4D5E422F54944BC481B1E2FE /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_color.h */; };
+		3B8C1891514242F69E92C487 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/bv.h */ = {isa = PBXBuildFile; fileRef = B4E5C9FC6B6B4AEAAB0FF2B0 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/bv.h */; };
+		56FCF5C17623482485B3CF7D /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/py_sampler.cpp */ = {isa = PBXBuildFile; fileRef = 1842ADE869CF4FE084773B52 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/py_sampler.cpp */; };
+		6E6E7A812ED24484B8E735B8 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_camera.h */ = {isa = PBXBuildFile; fileRef = 615194BE8E4D4FE7B94899AB /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_camera.h */; };
+		6F01B3103DB94CA4B10C5B69 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_v23q.cpp */ = {isa = PBXBuildFile; fileRef = 8303411F794A40C1BCC10B86 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_v23q.cpp */; };
+		707DE1DFCFE945A1AB0CED6B /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_camera.cpp */ = {isa = PBXBuildFile; fileRef = 193EA73C89B34FD1A3D7176E /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_camera.cpp */; };
+		712A36250AED4B1EB1A4D834 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/voxel.h */ = {isa = PBXBuildFile; fileRef = F979C95BFC5844A48CD45336 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/voxel.h */; };
+		747F185FE2404FA79FECE41A /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/voxel.cpp */ = {isa = PBXBuildFile; fileRef = 8363225BC4914AB19D266A8F /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/voxel.cpp */; };
+		925E3C10BC9B424E95D00BC5 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/msh.h */ = {isa = PBXBuildFile; fileRef = 3241DDBF8EC342B3999A7E36 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/msh.h */; };
+		9FBEC83233CF42BE946012E8 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/py_texture.cpp */ = {isa = PBXBuildFile; fileRef = C676C2B3071E4855A354A3F6 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/py_texture.cpp */; };
+		A2603278673240168CA34BD8 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_tex.h */ = {isa = PBXBuildFile; fileRef = 25860E82882F419A914C638D /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_tex.h */; };
+		A3617F1D243E403AB92615CA /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/mat3.h */ = {isa = PBXBuildFile; fileRef = 816CF2D1DDE94F138249A42A /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/mat3.h */; };
+		A58BE3D998494398B45660F6 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/glew_funcs.h */ = {isa = PBXBuildFile; fileRef = E8D5111F2CD8458BB198EF76 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/glew_funcs.h */; };
+		AF7F752A8CBB4EC09C54F249 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/vec2.h */ = {isa = PBXBuildFile; fileRef = 6D8D38B5B129495BB20406C8 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/vec2.h */; };
+		B30C62A682994E49B86100AC /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/vec3.h */ = {isa = PBXBuildFile; fileRef = 2F68889A9C334E2AB0374771 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/vec3.h */; };
+		B6170705FF8E4F188BD5FAD6 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_color.cpp */ = {isa = PBXBuildFile; fileRef = D17A3AC6BC794C71AD766AB4 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_color.cpp */; };
+		C68DD0DD76F84E62A249E5A2 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_voxbv.h */ = {isa = PBXBuildFile; fileRef = 4FFA11A042834AD2A820DF6B /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_voxbv.h */; };
+		D8D30A81E3134714AFEE03C4 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/msh.cpp */ = {isa = PBXBuildFile; fileRef = 0DC2610210CD4696A3639961 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/msh.cpp */; };
+		D992AE741F5C4835B519CCF1 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/vec3.cpp */ = {isa = PBXBuildFile; fileRef = 66DD4C5FD90F4609AEF227FE /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/vec3.cpp */; };
+		EB6A8AA833554041BDE60A30 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_funcs.cpp */ = {isa = PBXBuildFile; fileRef = 4E98FCE5BB294BBF9D15E7A2 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_funcs.cpp */; };
+		EB80D4A941744F11A720683F /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_gpusampler.h */ = {isa = PBXBuildFile; fileRef = C261862A4E2B477CAA2A2879 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_gpusampler.h */; };
+		EF2177A5DCDB43F79A225FBB /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_tex.cpp */ = {isa = PBXBuildFile; fileRef = 3314F3835DB2400DAF3135E6 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_tex.cpp */; };
+		F1A23C39F1DB4B42A5A7B4F9 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/vec2.cpp */ = {isa = PBXBuildFile; fileRef = CD1B869CC0B2420B91EAA212 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/vec2.cpp */; };
+		F2113DD0A4354266AA7E0C2D /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_cad_dyntri_v23.cpp */ = {isa = PBXBuildFile; fileRef = 744B8B8D71664C3A8387A5E4 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_cad_dyntri_v23.cpp */; };
+		F3A10652315245BEB21D0F3F /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/quat.h */ = {isa = PBXBuildFile; fileRef = 1C0E1459F2CD40BC81C0FC58 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/quat.h */; };
+		F9522A0076B44317B730D8D1 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = DECAD20659F2401B982A409C /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/CMakeLists.txt */; };
+		FF143CECD66746DDBB218DBB /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_funcs.h */ = {isa = PBXBuildFile; fileRef = 6A53AF92ABA246489385CDD6 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_funcs.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		31F5BB4B360948A693BB8B4A /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		99831BB74BC4405CB1DBE71E /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		D16AF00CDB604543BED7F567 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		E364369868E94077B9EA029D /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		24D42CB9A57C4BD7A758B4CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB8F5456310040DB82201254 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A95D4BD7B154B5C86F9EEFC;
+			remoteInfo = ZERO_CHECK;
+		};
+		4F82D1EC06D24D5DA8BBFB53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB8F5456310040DB82201254 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A95D4BD7B154B5C86F9EEFC;
+			remoteInfo = ZERO_CHECK;
+		};
+		94617F5611AF45EDA09AF7D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB8F5456310040DB82201254 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0D52949AB6A42B2B2F70ADF;
+			remoteInfo = c_gl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DC2610210CD4696A3639961 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/msh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = msh.cpp; path = ../../src_cpp/cpp/msh.cpp; sourceTree = SOURCE_ROOT; };
+		17E364738C0840D383F2DAC5 /* c_gl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "c_gl.cpython-37m-darwin.so"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1842ADE869CF4FE084773B52 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/py_sampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = py_sampler.cpp; path = py_sampler.cpp; sourceTree = SOURCE_ROOT; };
+		193EA73C89B34FD1A3D7176E /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gl_camera.cpp; path = ../../src_cpp/cpp/gl_camera.cpp; sourceTree = SOURCE_ROOT; };
+		1C0E1459F2CD40BC81C0FC58 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/quat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = quat.h; path = ../../src_cpp/include/delfem2/quat.h; sourceTree = SOURCE_ROOT; };
+		25860E82882F419A914C638D /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_tex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gl_tex.h; path = ../../src_cpp/include/delfem2/gl_tex.h; sourceTree = SOURCE_ROOT; };
+		2F68889A9C334E2AB0374771 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/vec3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vec3.h; path = ../../src_cpp/include/delfem2/vec3.h; sourceTree = SOURCE_ROOT; };
+		3241DDBF8EC342B3999A7E36 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/msh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = msh.h; path = ../../src_cpp/include/delfem2/msh.h; sourceTree = SOURCE_ROOT; };
+		3314F3835DB2400DAF3135E6 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_tex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gl_tex.cpp; path = ../../src_cpp/cpp/gl_tex.cpp; sourceTree = SOURCE_ROOT; };
+		38B3D441E85D476A8069A797 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/quat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quat.cpp; path = ../../src_cpp/cpp/quat.cpp; sourceTree = SOURCE_ROOT; };
+		4D5E422F54944BC481B1E2FE /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_color.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gl_color.h; path = ../../src_cpp/include/delfem2/gl_color.h; sourceTree = SOURCE_ROOT; };
+		4E98FCE5BB294BBF9D15E7A2 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_funcs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gl_funcs.cpp; path = ../../src_cpp/cpp/gl_funcs.cpp; sourceTree = SOURCE_ROOT; };
+		4FFA11A042834AD2A820DF6B /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_voxbv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gl_voxbv.h; path = ../../src_cpp/include/delfem2/gl_voxbv.h; sourceTree = SOURCE_ROOT; };
+		5BE6E857B0724770B68E25D1 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		5C20179BF6FC4D8C94813CF3 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		615194BE8E4D4FE7B94899AB /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gl_camera.h; path = ../../src_cpp/include/delfem2/gl_camera.h; sourceTree = SOURCE_ROOT; };
+		663351DC79FB4A419CCD7AD0 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_gpusampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gl_gpusampler.cpp; path = ../../src_cpp/cpp/gl_gpusampler.cpp; sourceTree = SOURCE_ROOT; };
+		66DD4C5FD90F4609AEF227FE /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/vec3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vec3.cpp; path = ../../src_cpp/cpp/vec3.cpp; sourceTree = SOURCE_ROOT; };
+		6A53AF92ABA246489385CDD6 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_funcs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gl_funcs.h; path = ../../src_cpp/include/delfem2/gl_funcs.h; sourceTree = SOURCE_ROOT; };
+		6D8D38B5B129495BB20406C8 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/vec2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vec2.h; path = ../../src_cpp/include/delfem2/vec2.h; sourceTree = SOURCE_ROOT; };
+		7153C6C285FD4A2C9240D6CE /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/mat3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mat3.cpp; path = ../../src_cpp/cpp/mat3.cpp; sourceTree = SOURCE_ROOT; };
+		744B8B8D71664C3A8387A5E4 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_cad_dyntri_v23.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gl_cad_dyntri_v23.cpp; path = ../../src_cpp/cpp/gl_cad_dyntri_v23.cpp; sourceTree = SOURCE_ROOT; };
+		816CF2D1DDE94F138249A42A /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/mat3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mat3.h; path = ../../src_cpp/include/delfem2/mat3.h; sourceTree = SOURCE_ROOT; };
+		818898F050674FE09A96DE31 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_cad_dyntri_v23.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gl_cad_dyntri_v23.h; path = ../../src_cpp/include/delfem2/gl_cad_dyntri_v23.h; sourceTree = SOURCE_ROOT; };
+		8303411F794A40C1BCC10B86 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_v23q.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gl_v23q.cpp; path = ../../src_cpp/cpp/gl_v23q.cpp; sourceTree = SOURCE_ROOT; };
+		8363225BC4914AB19D266A8F /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/voxel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = voxel.cpp; path = ../../src_cpp/cpp/voxel.cpp; sourceTree = SOURCE_ROOT; };
+		B4E5C9FC6B6B4AEAAB0FF2B0 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/bv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bv.h; path = ../../src_cpp/include/delfem2/bv.h; sourceTree = SOURCE_ROOT; };
+		C261862A4E2B477CAA2A2879 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_gpusampler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gl_gpusampler.h; path = ../../src_cpp/include/delfem2/gl_gpusampler.h; sourceTree = SOURCE_ROOT; };
+		C676C2B3071E4855A354A3F6 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/py_texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = py_texture.cpp; path = py_texture.cpp; sourceTree = SOURCE_ROOT; };
+		CD1B869CC0B2420B91EAA212 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/vec2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vec2.cpp; path = ../../src_cpp/cpp/vec2.cpp; sourceTree = SOURCE_ROOT; };
+		D17A3AC6BC794C71AD766AB4 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gl_color.cpp; path = ../../src_cpp/cpp/gl_color.cpp; sourceTree = SOURCE_ROOT; };
+		DECAD20659F2401B982A409C /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E8D5111F2CD8458BB198EF76 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/glew_funcs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glew_funcs.h; path = ../../src_cpp/include/delfem2/glew_funcs.h; sourceTree = SOURCE_ROOT; };
+		F1EE1DEB13114AB9826D56AC /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_voxbv.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gl_voxbv.cpp; path = ../../src_cpp/cpp/gl_voxbv.cpp; sourceTree = SOURCE_ROOT; };
+		F4A42F19C06E4EEEB19412F4 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_v23q.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gl_v23q.h; path = ../../src_cpp/include/delfem2/gl_v23q.h; sourceTree = SOURCE_ROOT; };
+		F979C95BFC5844A48CD45336 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/voxel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = voxel.h; path = ../../src_cpp/include/delfem2/voxel.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1DCDF53EF7394C8F9F09CEF2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				744B8B8D71664C3A8387A5E4 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_cad_dyntri_v23.cpp */,
+				193EA73C89B34FD1A3D7176E /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_camera.cpp */,
+				D17A3AC6BC794C71AD766AB4 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_color.cpp */,
+				4E98FCE5BB294BBF9D15E7A2 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_funcs.cpp */,
+				663351DC79FB4A419CCD7AD0 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_gpusampler.cpp */,
+				3314F3835DB2400DAF3135E6 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_tex.cpp */,
+				8303411F794A40C1BCC10B86 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_v23q.cpp */,
+				F1EE1DEB13114AB9826D56AC /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_voxbv.cpp */,
+				7153C6C285FD4A2C9240D6CE /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/mat3.cpp */,
+				0DC2610210CD4696A3639961 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/msh.cpp */,
+				38B3D441E85D476A8069A797 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/quat.cpp */,
+				CD1B869CC0B2420B91EAA212 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/vec2.cpp */,
+				66DD4C5FD90F4609AEF227FE /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/vec3.cpp */,
+				8363225BC4914AB19D266A8F /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/voxel.cpp */,
+				5BE6E857B0724770B68E25D1 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/main.cpp */,
+				1842ADE869CF4FE084773B52 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/py_sampler.cpp */,
+				C676C2B3071E4855A354A3F6 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/py_texture.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3A6F2084165C4995ACB87D12 /* c_gl */ = {
+			isa = PBXGroup;
+			children = (
+				9C43CA5E6BC04AF29B5C4706 /* Header Files */,
+				1DCDF53EF7394C8F9F09CEF2 /* Source Files */,
+				DECAD20659F2401B982A409C /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/CMakeLists.txt */,
+			);
+			name = c_gl;
+			sourceTree = "<group>";
+		};
+		3DD037B72EEF459FA99B4F23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17E364738C0840D383F2DAC5 /* c_gl */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57BAFB00B9F64A26A3BB3301 = {
+			isa = PBXGroup;
+			children = (
+				3A6F2084165C4995ACB87D12 /* c_gl */,
+				5D8CB53E2C1B43DEADA79EE3 /* ALL_BUILD */,
+				3DD037B72EEF459FA99B4F23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D8CB53E2C1B43DEADA79EE3 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				5F8D4DE17335439B8F1BEDB5 /* CMake Rules */,
+				5C20179BF6FC4D8C94813CF3 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		5F8D4DE17335439B8F1BEDB5 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		9C43CA5E6BC04AF29B5C4706 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4E5C9FC6B6B4AEAAB0FF2B0 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/bv.h */,
+				818898F050674FE09A96DE31 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_cad_dyntri_v23.h */,
+				615194BE8E4D4FE7B94899AB /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_camera.h */,
+				4D5E422F54944BC481B1E2FE /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_color.h */,
+				6A53AF92ABA246489385CDD6 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_funcs.h */,
+				C261862A4E2B477CAA2A2879 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_gpusampler.h */,
+				25860E82882F419A914C638D /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_tex.h */,
+				F4A42F19C06E4EEEB19412F4 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_v23q.h */,
+				4FFA11A042834AD2A820DF6B /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/gl_voxbv.h */,
+				E8D5111F2CD8458BB198EF76 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/glew_funcs.h */,
+				816CF2D1DDE94F138249A42A /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/mat3.h */,
+				3241DDBF8EC342B3999A7E36 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/msh.h */,
+				1C0E1459F2CD40BC81C0FC58 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/quat.h */,
+				6D8D38B5B129495BB20406C8 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/vec2.h */,
+				2F68889A9C334E2AB0374771 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/vec3.h */,
+				F979C95BFC5844A48CD45336 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/include/delfem2/voxel.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0D52949AB6A42B2B2F70ADF /* c_gl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F212588804AA4D91B1792265 /* Build configuration list for PBXNativeTarget "c_gl" */;
+			buildPhases = (
+				DC99E644E0874062B295AE40 /* Sources */,
+				0F5D512EB5E74EF4B3A767A8 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07CBDE32A4B24507B7A65FC0 /* PBXTargetDependency */,
+			);
+			name = c_gl;
+			productName = c_gl;
+			productReference = 17E364738C0840D383F2DAC5 /* c_gl */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB8F5456310040DB82201254 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = B725EF1E1F114F39A89A2501 /* Build configuration list for PBXProject "c_gl" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				99831BB74BC4405CB1DBE71E /* Debug */,
+				31F5BB4B360948A693BB8B4A /* Release */,
+				D16AF00CDB604543BED7F567 /* MinSizeRel */,
+				E364369868E94077B9EA029D /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 57BAFB00B9F64A26A3BB3301;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				FC19865E77474AE2862D31E1 /* ALL_BUILD */,
+				3A95D4BD7B154B5C86F9EEFC /* ZERO_CHECK */,
+				C0D52949AB6A42B2B2F70ADF /* c_gl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F5D512EB5E74EF4B3A767A8 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode -f /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode/CMakeScripts/c_gl_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		5B4B0FE0EEE648A59A0E2CD7 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B92C0D44D4A24D0C8FBDF4D2 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		EA24E90B6CF04EA5B1AD6C66 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode -f /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		EE127AEB6B784ED8B389D291 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode -f /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC99E644E0874062B295AE40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2113DD0A4354266AA7E0C2D /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_cad_dyntri_v23.cpp */,
+				707DE1DFCFE945A1AB0CED6B /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_camera.cpp */,
+				B6170705FF8E4F188BD5FAD6 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_color.cpp */,
+				EB6A8AA833554041BDE60A30 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_funcs.cpp */,
+				05FD2D81D0FF44CBA487201E /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_gpusampler.cpp */,
+				EF2177A5DCDB43F79A225FBB /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_tex.cpp */,
+				6F01B3103DB94CA4B10C5B69 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_v23q.cpp */,
+				2D302ED3AB5B407C9D442A4C /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/gl_voxbv.cpp */,
+				26A7A56C2948414780874C48 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/mat3.cpp */,
+				D8D30A81E3134714AFEE03C4 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/msh.cpp */,
+				282A5D02205B4C359E964E1E /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/quat.cpp */,
+				F1A23C39F1DB4B42A5A7B4F9 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/vec2.cpp */,
+				D992AE741F5C4835B519CCF1 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/vec3.cpp */,
+				747F185FE2404FA79FECE41A /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_cpp/cpp/voxel.cpp */,
+				0C680046BA664DFA903E5DC3 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/main.cpp */,
+				56FCF5C17623482485B3CF7D /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/py_sampler.cpp */,
+				9FBEC83233CF42BE946012E8 /* /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/py_texture.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05822452E80D425F896E315E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0D52949AB6A42B2B2F70ADF /* c_gl */;
+			targetProxy = 94617F5611AF45EDA09AF7D1 /* PBXContainerItemProxy */;
+		};
+		07CBDE32A4B24507B7A65FC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A95D4BD7B154B5C86F9EEFC /* ZERO_CHECK */;
+			targetProxy = 24D42CB9A57C4BD7A758B4CB /* PBXContainerItemProxy */;
+		};
+		FCF7E583785E427B99B06F0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A95D4BD7B154B5C86F9EEFC /* ZERO_CHECK */;
+			targetProxy = 4F82D1EC06D24D5DA8BBFB53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A0EB093FD404196B78CC8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = ".cpython-37m-darwin.so";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",c_gl_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/../../src_cpp/include,/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/pybind11/include,/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/include/python3.7m);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-Wall -Wextra -Wno-deprecated-declarations            -DNDEBUG -fPIC -fvisibility=hidden '-std=c++14' -flto  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -undefined dynamic_lookup -flto -framework OpenGL -framework OpenGL /usr/local/lib/libGLEW.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = c_gl;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0955777528304E7781B0D79D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		155BF7C0C6714C8A8CCCF389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = ".cpython-37m-darwin.so";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",c_gl_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/../../src_cpp/include,/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/pybind11/include,/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/include/python3.7m);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-Wall -Wextra -Wno-deprecated-declarations        -fPIC -fvisibility=hidden '-std=c++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -undefined dynamic_lookup -framework OpenGL -framework OpenGL /usr/local/lib/libGLEW.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = c_gl;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1C5A0EBB4B0C41A984437FF2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		27AF7208E5A34B47B5689637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode/build;
+			};
+			name = Release;
+		};
+		3CC376554CD146D786B882B5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3F358C00A6F0465F92B45753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode/build;
+			};
+			name = Debug;
+		};
+		60633409B2A449349E87D962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		6211D5769FFC4CE9893B333A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode/build;
+			};
+			name = MinSizeRel;
+		};
+		622B942F1118403B928CE67B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = ".cpython-37m-darwin.so";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",c_gl_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/../../src_cpp/include,/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/pybind11/include,/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/include/python3.7m);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-Wall -Wextra -Wno-deprecated-declarations         -DNDEBUG -fPIC -fvisibility=hidden '-std=c++14' -flto  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -undefined dynamic_lookup -flto -framework OpenGL -framework OpenGL /usr/local/lib/libGLEW.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = c_gl;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		62D7F7369D2F4670AFD7245F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = ".cpython-37m-darwin.so";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",c_gl_EXPORTS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/../../src_cpp/include,/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/pybind11/include,/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/include/python3.7m);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_CPLUSPLUSFLAGS = "-Wall -Wextra -Wno-deprecated-declarations         -DNDEBUG -fPIC -fvisibility=hidden '-std=c++14' -flto  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -undefined dynamic_lookup -flto -framework OpenGL -framework OpenGL /usr/local/lib/libGLEW.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = c_gl;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8965BBD2E8B44322B83A9DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8F9DE439FAEB46C4AB11DCB0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A16A4DB198584EFF9865A8E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D74E522153EC419B82E7824B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		EC12E2257F204A588950F25D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/gl/buildXcode/build;
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82F073CC5195446885B2B303 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8965BBD2E8B44322B83A9DA7 /* Debug */,
+				D74E522153EC419B82E7824B /* Release */,
+				0955777528304E7781B0D79D /* MinSizeRel */,
+				1C5A0EBB4B0C41A984437FF2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B725EF1E1F114F39A89A2501 /* Build configuration list for PBXProject "c_gl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F358C00A6F0465F92B45753 /* Debug */,
+				27AF7208E5A34B47B5689637 /* Release */,
+				6211D5769FFC4CE9893B333A /* MinSizeRel */,
+				EC12E2257F204A588950F25D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F212588804AA4D91B1792265 /* Build configuration list for PBXNativeTarget "c_gl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				155BF7C0C6714C8A8CCCF389 /* Debug */,
+				622B942F1118403B928CE67B /* Release */,
+				62D7F7369D2F4670AFD7245F /* MinSizeRel */,
+				015A0EB093FD404196B78CC8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F875E2D8BC014F7890DF8F76 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16A4DB198584EFF9865A8E6 /* Debug */,
+				60633409B2A449349E87D962 /* Release */,
+				3CC376554CD146D786B882B5 /* MinSizeRel */,
+				8F9DE439FAEB46C4AB11DCB0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB8F5456310040DB82201254 /* Project object */;
+}

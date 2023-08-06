@@ -1,0 +1,5 @@
+/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/core/buildXcode/CMakeFiles/c_core.dir
+/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/core/buildXcode/CMakeFiles/ALL_BUILD.dir
+/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/core/buildXcode/CMakeFiles/ZERO_CHECK.dir
+/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/core/buildXcode/pybind11/CMakeFiles/ALL_BUILD.dir
+/Users/nobuyuki/projects/Aerodynamics3D/delfem2/src_pybind/core/buildXcode/pybind11/CMakeFiles/ZERO_CHECK.dir

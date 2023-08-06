@@ -1,0 +1,17 @@
+AUTHORS.rst
+LICENSE
+MANIFEST.in
+README.MD
+setup.cfg
+setup.py
+clean_ipynb/__init__.py
+clean_ipynb/clean_ipynb.py
+cleanipynb.egg-info/PKG-INFO
+cleanipynb.egg-info/SOURCES.txt
+cleanipynb.egg-info/dependency_links.txt
+cleanipynb.egg-info/entry_points.txt
+cleanipynb.egg-info/not-zip-safe
+cleanipynb.egg-info/requires.txt
+cleanipynb.egg-info/top_level.txt
+tests/__init__.py
+tests/test_clean_ipynb.py

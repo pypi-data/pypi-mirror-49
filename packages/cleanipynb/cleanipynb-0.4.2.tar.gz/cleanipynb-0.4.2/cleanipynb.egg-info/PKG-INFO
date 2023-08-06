@@ -1,0 +1,56 @@
+Metadata-Version: 1.1
+Name: cleanipynb
+Version: 0.4.2
+Summary: Cleanup imports in jupyter notebooks
+Home-page: https://github.com/i008/clean_ipynb
+Author: Jakub Cieslik
+Author-email: kubacieslik@gmail.com
+License: MIT license
+Description: 
+        ### cleanipynb
+        
+        
+        [![](https://img.shields.io/pypi/v/clean_ipynb.svg)](https://pypi.python.org/pypi/cleanipynb)
+        [![](https://img.shields.io/travis/i008/clean_ipynb.svg)](https://travis-ci.org/i008/clean_ipynb)
+        
+        
+        This package will cleanup your jupyter notebook by:
+        
+        - removing unused imports (globally)
+        - moving all imports to the first cell and reordering them
+        - reformatting your code with autopep8
+        
+        All this with preserving the cell structure thanks to jupytext smart export to python features.
+        
+        
+        
+        
+        > **WARNING**: Cleaning happens in-place - Be careful
+        
+        
+        ### Usage:
+        
+        ```bash
+        pip install cleanipynb
+        cleanipynb path_to_your_notebook.ipynb
+        ```
+        
+        ### Demo:
+        ![](beforeafter.gif)
+        
+        
+        ### Credits:
+        
+        - jupytext
+        - importanize
+        - autoflake
+        - autopep8
+        
+Keywords: cleanipynb
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

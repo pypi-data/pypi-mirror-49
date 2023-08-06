@@ -1,0 +1,3 @@
+[console_scripts]
+tidkvideochange = tidkvideochange.cli:main
+

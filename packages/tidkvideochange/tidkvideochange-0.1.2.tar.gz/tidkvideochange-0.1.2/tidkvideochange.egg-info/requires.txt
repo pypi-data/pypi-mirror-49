@@ -1,0 +1,9 @@
+Click>=6.0
+tqdm
+six
+lmdb
+numpy
+matplotlib
+pillow
+importlib_resources
+opencv-python

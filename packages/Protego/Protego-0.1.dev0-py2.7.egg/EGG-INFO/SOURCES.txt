@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/protego.py
+src/Protego.egg-info/PKG-INFO
+src/Protego.egg-info/SOURCES.txt
+src/Protego.egg-info/dependency_links.txt
+src/Protego.egg-info/requires.txt
+src/Protego.egg-info/top_level.txt

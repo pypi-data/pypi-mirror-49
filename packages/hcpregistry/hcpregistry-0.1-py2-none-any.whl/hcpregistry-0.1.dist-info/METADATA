@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hcpregistry
+Version: 0.1
+Summary: A package for hcp registry validation in chile
+Home-page: https://github.com/Ric01/validacion-supersalud
+Author: Ricardo sUAREZ
+Author-email: ricardo.suarez.atencio@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# validacion-supersalud
+Clases para gestionar programaticamente la validación de profesionales de la salud en la base de la superintendencia de Salud
+
+El link donde se puede buscar manualmente si un profesional de la salud está en el registro es el siguiente:
+http://webserver.superdesalud.gob.cl/bases/prestadoresindividuales.nsf/buscador?openForm
+
+

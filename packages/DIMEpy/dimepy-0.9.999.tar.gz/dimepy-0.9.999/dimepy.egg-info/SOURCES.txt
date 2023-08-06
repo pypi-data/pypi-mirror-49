@@ -1,0 +1,13 @@
+README.md
+setup.py
+dimepy/__init__.py
+dimepy/scan.py
+dimepy/spectrum.py
+dimepy/spectrumList.py
+dimepy/utils.py
+dimepy.egg-info/PKG-INFO
+dimepy.egg-info/SOURCES.txt
+dimepy.egg-info/dependency_links.txt
+dimepy.egg-info/not-zip-safe
+dimepy.egg-info/requires.txt
+dimepy.egg-info/top_level.txt

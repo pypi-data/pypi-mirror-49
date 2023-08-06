@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+zwende/__init__.py
+zwende/zwende.py
+zwende.egg-info/PKG-INFO
+zwende.egg-info/SOURCES.txt
+zwende.egg-info/dependency_links.txt
+zwende.egg-info/top_level.txt

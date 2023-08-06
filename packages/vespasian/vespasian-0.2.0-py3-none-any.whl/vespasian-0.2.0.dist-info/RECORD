@@ -1,0 +1,11 @@
+vespasian/__init__.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+vespasian/cli.py,sha256=USTpz67ruJXOYS4lXPiUMf5fPjRoxupA-rupsFSdgwc,2368
+vespasian/util.py,sha256=9USlgVXQDzsN9BmCj3rTmFqR-TTSKd_m58aCT6u3nYg,1071
+vespasian/vespasian.py,sha256=dwn7aGSnPR3YEsvi9cKPwYBav8W2BAMcLa2708mDOTU,15146
+vespasian-0.2.0.dist-info/LICENSE,sha256=1i8GWDCqNznMAxFWuWkIBcey6BG0oXjItKzYcl1WHJQ,35142
+vespasian-0.2.0.dist-info/METADATA,sha256=f0hzDPUHbXmy0jHMCJM6aOGPCFImDD3VMjPgTMIlNGk,449
+vespasian-0.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+vespasian-0.2.0.dist-info/entry_points.txt,sha256=n3oLaixLh87RZ6t-ddDtf2zkNAy0r9S8N-4FyMaZdD8,50
+vespasian-0.2.0.dist-info/top_level.txt,sha256=yqR8gz8YjLoCrjyvFnk_J-e9GRPP_B5KzNx52Qdidog,10
+vespasian-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+vespasian-0.2.0.dist-info/RECORD,,

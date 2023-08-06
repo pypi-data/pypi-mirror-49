@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: vespasian
+Version: 0.2.0
+Summary: Genome scale evolutionary hypothesis testing
+Home-page: UNKNOWN
+Author: Bede Constantinides, Mary O'Connell
+Author-email: bedeabc@gmail.com
+License: LICENSE
+Platform: UNKNOWN
+Requires-Dist: biopython
+Requires-Dist: treeswift
+Requires-Dist: tqdm
+Requires-Dist: argh
+Requires-Dist: pyyaml
+Requires-Dist: ete3
+Requires-Dist: parmap
+Requires-Dist: pytest
+Requires-Dist: snakemake
+
+UNKNOWN
+
+

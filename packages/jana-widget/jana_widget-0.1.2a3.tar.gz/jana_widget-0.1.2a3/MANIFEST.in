@@ -1,0 +1,2 @@
+recursive-include jana_widget/static *.*
+include jana-widget.json

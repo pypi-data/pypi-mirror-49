@@ -1,0 +1,9 @@
+starlette_auth_toolkit/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+starlette_auth_toolkit/backends.py,sha256=BnW3XTzWg4gSltwvfETXflEGm9WbQjoci-vtXADHPY4,4705
+starlette_auth_toolkit/datatypes.py,sha256=V1uq1LjQBBmvgybS1xGGVtsieVZMpITRdFg4ppS_d_E,141
+starlette_auth_toolkit/exceptions.py,sha256=l6N_ySaKgS4ymtywg_MfYDU1ljr4JAzJQDACkqa3PUQ,258
+starlette_auth_toolkit-0.2.0.dist-info/LICENSE,sha256=W9UI3E7e9REUBLGVI5fVfGcpn08PC2caVmuHIK9wd2A,1066
+starlette_auth_toolkit-0.2.0.dist-info/METADATA,sha256=LhOI77HkyJEfEznfUWN77P0trUwctqu__qhBsbDba5k,4829
+starlette_auth_toolkit-0.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+starlette_auth_toolkit-0.2.0.dist-info/top_level.txt,sha256=QUVGCpsTN2f9OkpgQkGaZ4lhRPY-M2S092uq-Pz99To,23
+starlette_auth_toolkit-0.2.0.dist-info/RECORD,,

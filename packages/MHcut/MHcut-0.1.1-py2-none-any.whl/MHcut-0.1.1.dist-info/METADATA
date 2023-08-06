@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: MHcut
+Version: 0.1.1
+Summary: Micro-Homology cut finder
+Home-page: http://github.com/WoltjenLab/MHcut
+Author: Woltjen & Bourque labs
+Author-email: jean.monlong@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pyfaidx
+Requires-Dist: tqdm
+Requires-Dist: argparse
+Requires-Dist: numpy (==1.15.3)
+Requires-Dist: pandas (==0.23.4)
+Requires-Dist: scikit-learn (==0.20.0)
+Requires-Dist: scipy (==1.1.0)
+
+UNKNOWN
+
+

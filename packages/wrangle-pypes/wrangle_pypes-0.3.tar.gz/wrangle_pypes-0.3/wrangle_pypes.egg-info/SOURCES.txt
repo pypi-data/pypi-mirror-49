@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+wrangle_pypes/__init__.py
+wrangle_pypes/pipeline.py
+wrangle_pypes/transformations.py
+wrangle_pypes.egg-info/PKG-INFO
+wrangle_pypes.egg-info/SOURCES.txt
+wrangle_pypes.egg-info/dependency_links.txt
+wrangle_pypes.egg-info/top_level.txt

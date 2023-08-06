@@ -1,0 +1,87 @@
+Class Organization
+
+Classes:
+
+Board
+  
+  Attributes:
+   	*NumPlayers = 2
+  	Players # array of Player objects
+  	*NumPieces = 4
+  	PiecePositions # NumPlayers * NumPieces array
+  	Scores # NumPlayers array
+  	*ScoreArmSpaces = 6
+  	*WidthSpaces = 3
+  	BoardLen = HomeArmLen*8 + (WidthBwPlayers-2)*4
+  	Winner
+
+  (* = only required for constructor)
+
+  Methods:
+    playGame
+    updateBoard
+  	updateScore
+  	endGame # if any Scores == NumPieces, declare winner
+
+Player
+  
+  Attributes:
+  	HomeBase
+  	StartPos
+  	ScoreBasePos
+  	Pieces
+  	HomePieces
+  	ActivePieces
+  	ScorePieces
+  	Score
+
+  Methods:
+  	rollDie
+    makeMove 
+      # check to see for which pieces a move is possible
+      # pieceToMove = 
+      # canHitVal = 0;
+      # labels for possible moves: 1) "can hit", 2) "neutral", 3) "bad"
+      # for each active piece, if can hit, update canHitVal, update pieceToMove
+      # if multiple possible hits, hit piece with larger MoveCount
+      # else, check to see if move would be within 6 of opponent (label "neutral" or "bad")
+      # if any "neutral", choose one randomly and move
+      # else, choose randomly between the "bad"
+
+Piece
+
+  Attributes:
+    PlayerID
+	  BoardPos = 0
+	  ScoreArmPos = 0
+	  MoveCount # if MoveCount == BoardLen-2, then go to score base
+  
+  Methods:
+    backToStart
+      # update BoardPos
+      # update Player HomePieces
+    move
+      # update BoardPos
+      # update HomePos
+
+
+Rules: 
+- have board deal with hits
+- repeat turn on 6
+- 6 moves piece to board position "1"
+- form blocks
+
+Gameplay:
+- check to see if entering score arm
+- check to see if score arm move is possible
+
+- can't move a piece when:
+1) all available pieces in home [x]
+2) there is a block
+3) would go past score arm
+
+things left to analyze:
+
+- add counts for pieces moved back when hit
+- plot 3-player game winners totals
+- plot 4-player game winners totals

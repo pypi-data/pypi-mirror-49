@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: hazma
+Version: 1.0.1
+Summary: Python package for computing indirect detection constraints on sub-GeV dark matter.
+Home-page: http://hazma.readthedocs.io
+Author: Logan Morrison and Adam Coogan
+Author-email: loanmorr@ucsc.edu
+Maintainer: Logan Morrison
+Maintainer-email: loanmorr@ucsc.edu
+License: gpl-3.0
+Download-URL: https://github.com/LoganAMorrison/Hazma
+Description: `hazma` is a tool for analyzing theories of sub-GeV dark matter. It can compute gamma-ray spectra from dark matter 
+        annihilations, set limits using current gamma-ray data and make projects for future gamma-ray detectors. It can generate 
+        positron spectra as well, and derive accurate CMB constraints. `hazma` includes several pre-implemented sub-GeV dark 
+        matter models, and provides the infrastructure to add custom ones. Visit https://github.com/LoganAMorrison/Hazma or 
+        https://hazma.readthedocs.io for more information.
+        
+        `hazma` can be installed from PyPI using:
+        
+            pip install hazma
+        
+        Alternatively, you can download `hazma` directly from this page, navigate to the package directory using the command line and run
+        
+            pip install .
+        
+        or
+        
+            python setup.py install
+        
+        Since `hazma` utilizes C to rapidly compute gamma ray, electron and positron spectra, you will need to have the `cython` package installed.
+Keywords: dark-matter mev-dark-matter gamma-ray-spectra
+Platform: MacOS and Linux
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown

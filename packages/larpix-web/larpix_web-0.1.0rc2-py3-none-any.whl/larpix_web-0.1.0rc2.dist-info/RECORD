@@ -1,0 +1,16 @@
+larpixweb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+larpixweb/app.py,sha256=f-ap2cpb12dUYdi_1jGNyNq11092tHaKwxkFEvpez-w,6640
+larpixweb/daq.py,sha256=9SaZ2KXJ2wYvkEAnSIgiTgbVwXaKUhsgx-2cwrDq8E8,415
+larpixweb/server.py,sha256=0BE9e5YyGELbCM1EVHFb0W63lrfTFzVqTiMtP_C9XH8,88
+larpixweb/build/index.447a9471076bfd3a6c447b18fb8601b3.css,sha256=dJJBcefSt4gRmlEW3GkSIPq6l9L6Y-TA8BPVIJvWviE,153192
+larpixweb/build/index.b82336153d77532b891f.js,sha256=dygnw2rRcVuMvlHXZ4UJ55Cj4-K0qsF64bRtKeZ9hN4,1869694
+larpixweb/build/index.html,sha256=jZ1tlPzViZvfQSXIq-Sti34Lbk-SOpkRhNZIoAHoZ6I,502
+larpixweb/build/runtime.a9edc78d5cd6127c9851.js,sha256=tGyndLrvnu2iz3EGYlSFI74ZgnUuWW0jUvf2AzOfwl4,810
+larpixweb/build/static/bootstrap.min.css,sha256=YLGeXaapI0_5IgZopewRJcFXomhRMlYYjugPLSyNjTY,155758
+larpixweb/build/static/larpix.png,sha256=tBgxTo733-53lmhzGFJZvDyyXPqKvMHvzD5JCM3CAus,4515
+larpixweb/build/static/larpixel.png,sha256=qOrxlEhpw-CO-okHTY7xCuE6CwfSJJ7y2iN7qWzNXnI,153
+larpixweb/build/static/stylesheet.css,sha256=jkWH4DKBBPKviNemoH1CXh4qWgliivGVe3yN5gHUXDQ,536
+larpix_web-0.1.0rc2.dist-info/METADATA,sha256=PeF7A3vXJYwYnjkNoYzKnoXX1ZobgpKT9m3ANudF8m8,1639
+larpix_web-0.1.0rc2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+larpix_web-0.1.0rc2.dist-info/top_level.txt,sha256=0WQZ3qnCmlLkJyPIvZQr_j2jYdGo26HD4FMaf5awPnA,10
+larpix_web-0.1.0rc2.dist-info/RECORD,,

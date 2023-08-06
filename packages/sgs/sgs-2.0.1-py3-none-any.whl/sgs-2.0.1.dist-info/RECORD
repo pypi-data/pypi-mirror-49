@@ -1,0 +1,13 @@
+sgs/__init__.py,sha256=DIu84fy0kGghXF9Mx5hyWutxdt3I7hFRHPY9KxXUnEE,443
+sgs/__version__.py,sha256=wAxkK8w13vqoF47A8iqWdSlIgRRXmZiQ0R4wePZfzhs,22
+sgs/api.py,sha256=lNFYV5xHAHcDRrBinRhS3cES0nk1WSN7ANEoWMdj4Cc,662
+sgs/common.py,sha256=ofK6be9r70mYs2P_dMOqNrjnBEnkticnfGU3J4z2xJ8,718
+sgs/dataframe.py,sha256=8GAFvuWyGTTWhehipTXtZcRuAKKGsh__RMFysNJ4fog,1162
+sgs/metadata.py,sha256=m_cXW6qSpHGWIvXGGNWYFWkSvxltCUOcHVSxSdAjeVE,1557
+sgs/search.py,sha256=U_Vj2qru8fW0f1OMCO0SJXPXTUkZWfigMGH_5IszTK4,4945
+sgs/ts.py,sha256=Uc5amQAEhZAkC7rh76vkrQPWhf7LnidovPxlZSz5M8M,1102
+sgs-2.0.1.dist-info/LICENSE,sha256=d8HTg9PDgrkQwJvW-718OXxXB8cpEPkcV3QDICp-Hdk,1071
+sgs-2.0.1.dist-info/METADATA,sha256=nd_Nx-UI_N--JfFILtEeNaskywupFivtZQ-vJGPYOz0,3994
+sgs-2.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+sgs-2.0.1.dist-info/top_level.txt,sha256=uQ0Hc6TuCpBaA-yR4RfSlg8Mrx9F7CqVPy-L6X9QdY8,4
+sgs-2.0.1.dist-info/RECORD,,

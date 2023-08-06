@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pipenv-shebang
+Version: 0.0.1
+Summary: pipenv-shebang allows you to put scripts in your path that run in a pipenv environment.
+Home-page: https://github.com/laktak/pipenv-shebang
+Author: Christian Zangl
+Author-email: laktak@cdak.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

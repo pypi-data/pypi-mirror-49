@@ -1,0 +1,9 @@
+bleach
+celery>4
+django>=2.1
+django-bootstrap-breadcrumbs
+django-reversion
+django-crispy-forms
+jinja2
+markdown
+pyparsing

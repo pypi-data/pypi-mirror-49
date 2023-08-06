@@ -1,0 +1,15 @@
+autopub/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autopub/autopub.py,sha256=uY-CGv6NIamoZYdv3U5oA4GDJZ-MBSmn2v9X5YRjn6w,1908
+autopub/base.py,sha256=oDZ7AGbRIw6ZiGEuWyYRRMtLXC5DBS0wzBT3Iny0fFc,4517
+autopub/build_release.py,sha256=QuKzFJYt8LNziwNI-ANl7gxPYf1Wbw80mAAGMtxtzAQ,302
+autopub/check_release.py,sha256=f3qyF2gRCOyhs37MYbOOpYGm0UUkJoux-0QFS9zkvRs,421
+autopub/commit_release.py,sha256=Tz-TToqEO9AaWz5HUCNrQV3mlusdyI3HaxmwvHsPIT4,680
+autopub/create_github_release.py,sha256=b6L0FWFKQR-ntjLur00ZOsTl-YaY3ccjGIZkHxIOhuE,957
+autopub/deploy_release.py,sha256=J0hkMhLaO-ktKMjNa-Zu1pVngx_fD_nM_dzC3UTWJM4,447
+autopub/prepare_release.py,sha256=AuZlK4NVb7r-4YCO4Z04ti_ISZ64wVGZzCnQ9sxybos,2135
+autopub/publish_release.py,sha256=498B1FOY66ycdfVbClI6BECa2C-if6o8ynZdTvf8Kss,478
+autopub-0.1.0a20.dist-info/entry_points.txt,sha256=dneC-sBNh-ntAab9sb46B2D6zW7GGvXHHBtIGyknjnA,48
+autopub-0.1.0a20.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+autopub-0.1.0a20.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+autopub-0.1.0a20.dist-info/METADATA,sha256=kvzsVWWBrtydwGgBPauEyGv75FxPRObVnSX-Ffh4MCE,2450
+autopub-0.1.0a20.dist-info/RECORD,,

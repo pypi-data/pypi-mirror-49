@@ -1,0 +1,9 @@
+adapt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adapt/path.py,sha256=LsXi_159M-zs5EMLgOkI7E7IoWfi_8yvOByQTRFzRBk,1906
+adapt/refine.py,sha256=qjLcdV1WPBx5MsA_E-yK7QcfbY1IYy7egvfKehdm6hQ,5095
+adapt/snap.py,sha256=IhA4mW0jGs0NMxzc19lr4mNU0vCKmSAzbEblyM0JauA,896
+bbnadapt-2019.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+bbnadapt-2019.1.dist-info/METADATA,sha256=koUYA5kBp0OGSqgVX-902qIGzLcGTiA87HTe1s9YyjY,897
+bbnadapt-2019.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+bbnadapt-2019.1.dist-info/top_level.txt,sha256=eYTupqzptbw1ENvlZotdwzJW4wFfcyG0AOwLg3F_ejQ,6
+bbnadapt-2019.1.dist-info/RECORD,,

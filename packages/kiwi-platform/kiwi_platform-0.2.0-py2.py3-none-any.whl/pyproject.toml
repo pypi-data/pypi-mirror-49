@@ -1,0 +1,63 @@
+[build-system]
+requires = ["poetry>0.*"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "kiwi-platform"
+version = "0.2.0"
+description = "Company standards as code for Kiwi.com"
+authors = [
+    "Bence Nagy <bence@kiwi.com>",
+    "Pavel Dedik <pavel.dedik@kiwi.com>",
+]
+
+packages = [
+    { include = "kw" },
+]
+
+readme = "README.md"
+keywords = ["kiwicom"]
+license = "Blue Oak License"
+
+repository = "https://github.com/kiwicom/kiwi-platform-py/"
+homepage = "https://github.com/kiwicom/kiwi-platform-py/"
+
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+include = ["*.md", "*.toml", "*.txt", "*.yaml", ".coveragerc", "tox.ini"]
+
+[tool.poetry.dependencies]
+python = "~2.7 || ^3.5.3"
+webob = "^1.8"
+python-dateutil = "^2.8"
+aiohttp = { version = "^3.5", optional = true, python = "^3.5.3" }
+sphinx = { version = "^2.1", optional = true, python = "^3.5.3" }
+wrapt = "^1.11"
+
+[tool.poetry.dev-dependencies]
+coverage = "^4.5"
+pytest = "^4.6"
+pytest-aiohttp = { version = "^0.3.0", python = "^3.5" }
+pytest-freezegun = "^0.3.0"
+wrapt = "^1.11"
+requests = "^2.22"
+httpretty = "^0.9.6"
+pytest-mock = "^1.10"
+
+[tool.poetry.extras]
+docs = ["sphinx"]
+aiohttp = ["aiohttp"]

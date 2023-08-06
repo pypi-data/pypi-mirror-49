@@ -1,0 +1,4 @@
+[console_scripts]
+gt-assign-pr=jolly_github_toolbelt:assign_pr_cli
+gt-pr-doc-link=jolly_github_toolbelt:post_docs_link_cli
+

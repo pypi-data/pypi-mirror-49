@@ -1,0 +1,8 @@
+jolly_github_toolbelt/__init__.py,sha256=PU52dFocR9pWyRYkTIxDyd91du7dDgdZagtIIur4T2A,4920
+jolly_github_toolbelt/hooks/commit-msg,sha256=S4gRHnBhStkEHFCPmgWVDwBwlu1AM9IOSm8UAZlW_C4,3065
+jolly_github_toolbelt/hooks/pre-commit,sha256=os7i0lG_cBYwiwjJ8CNmiTBsPTXVcy21xV7ss4IsDmY,163
+jolly_github_toolbelt/hooks/prepare-commit-msg,sha256=SFqxOEA1Fkx9fBuYMTfIgUZ_FI8yl-sdFHTvxfeGAU4,1295
+jolly_github_toolbelt-2.1.0.dist-info/entry_points.txt,sha256=9B8t_YsZ2q9gWuD8XYOBtg1YdpvDBzLmxyg2ZNzhW-0,124
+jolly_github_toolbelt-2.1.0.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+jolly_github_toolbelt-2.1.0.dist-info/METADATA,sha256=C_jz2a3NEVYFNbAYkCFun8Uc8Dwfv9TMa40F9iSdF2s,4138
+jolly_github_toolbelt-2.1.0.dist-info/RECORD,,

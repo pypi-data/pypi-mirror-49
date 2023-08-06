@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: probable-happiness
+Version: 0.0.4
+Summary: A library for music apis
+Home-page: https://github.com/Teakowa/probable-happiness
+Author: Teakowa
+Author-email: git@teakowa.com
+License: Anti 996 LICENSE
+Description: # Probable happiness
+        
+        some music api 
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Fermat@FasterCoding
+Version: 1.0.0
+Summary: Example code for the Fermats-Little-Theorem modular inverse algorithm
+Home-page: https://github.com/FasterCoding/Fermats-Little-Theorem
+Author: FasterCoding
+Author-email: fastercodingtutorial@gmail.com
+License: UNKNOWN
+Description: # fermats-little-theorem
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

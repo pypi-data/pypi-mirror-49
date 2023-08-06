@@ -1,0 +1,7 @@
+README.md
+setup.py
+i2clcd/__init__.py
+i2clcd.egg-info/PKG-INFO
+i2clcd.egg-info/SOURCES.txt
+i2clcd.egg-info/dependency_links.txt
+i2clcd.egg-info/top_level.txt

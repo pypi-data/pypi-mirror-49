@@ -1,0 +1,12 @@
+dict_plus/__init__.py,sha256=fW5zytJTgzXGIMgIajLtWjq_rhlyG-xlWrdPdXtR2vw,105
+dict_plus/dictplus.py,sha256=Dah25RcV3SjRFEDEEIPUn7HcPc0vPwQHC-6MCaiRdGw,4245
+dict_plus/exceptions.py,sha256=XgCqUBhETE31EecCKKbB2UEm8EDitU2dNs0qBA02jFo,177
+dict_plus/funcs.py,sha256=tXCqXzbZ4uX4WsgsJR73dKj0rYThaGALpkSE7JWCMBI,858
+dict_plus/hooked.py,sha256=vkxM3ut3sF-MqZEG2c1GahGgTtqMaAPqEXC4yOLYOgg,3988
+dict_plus/insensitive.py,sha256=g2RYHqu_CLIfhXx30hYT_f1LU-jph7ULTEdq_zp_CHM,9895
+dict_plus/iterable.py,sha256=uCrZZsSxm_zY9jnllUvS4BLLNx4hi7EVkRQqr5KrZkA,36264
+dict_plus-0.0.5.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+dict_plus-0.0.5.dist-info/METADATA,sha256=XVAiO-IHIjzU8Rq6VXE4iE9NRD49m4zUY3Tg6ls_zJY,325
+dict_plus-0.0.5.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+dict_plus-0.0.5.dist-info/top_level.txt,sha256=6dzYFrHZmNTI0m_pOp4xMLWg6YshikMU7-rksrwNKgU,10
+dict_plus-0.0.5.dist-info/RECORD,,

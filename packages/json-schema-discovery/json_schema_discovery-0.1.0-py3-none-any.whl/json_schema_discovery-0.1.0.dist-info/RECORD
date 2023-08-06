@@ -1,0 +1,5 @@
+json_schema_discovery/__init__.py,sha256=KxCsgMCTHz05s7Ec8zdtjDLvr43l9P4zVB-W7boPLW0,536
+json_schema_discovery/schemas.py,sha256=5W3qZmOy3dfJsLHam4cM4oPNoXscIjWqMFnO3T5Mgg8,10004
+json_schema_discovery-0.1.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+json_schema_discovery-0.1.0.dist-info/METADATA,sha256=7Dkg5g3bsT55wYFFspovLbxryN-uYDxgpqq-CYgccSM,291
+json_schema_discovery-0.1.0.dist-info/RECORD,,

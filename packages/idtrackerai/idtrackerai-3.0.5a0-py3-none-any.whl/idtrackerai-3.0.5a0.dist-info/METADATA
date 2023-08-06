@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: idtrackerai
+Version: 3.0.5a0
+Summary: A multi-animal tracking algorithm based on convolutional neural networks
+Home-page: https://www.idtracker.ai/
+Author: Francisco Romero Ferrero, Mattia G. Bergomi, Francisco J.H. Heras, Ricardo Ribeiro
+Author-email: idtracker@gmail.com
+License: GPLv3+
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Requires-Dist: numpy (>=1.13.0)
+Requires-Dist: natsort (>=5.0.2)
+Requires-Dist: matplotlib (>=2.1)
+Requires-Dist: seaborn (>=0.8)
+Requires-Dist: tqdm (>=4.19)
+Requires-Dist: joblib (>=0.11)
+Requires-Dist: scikit-learn (>=0.19)
+Requires-Dist: pyyaml (>=3.12)
+Requires-Dist: psutil (>=5.4.3)
+Requires-Dist: h5py (>=2.7.0)
+Requires-Dist: xlib (==0.21)
+Requires-Dist: msgpack-numpy (>=0.3.9)
+Requires-Dist: msgpack-python (>=0.4.8)
+Requires-Dist: pandas (>=0.20.2)
+Requires-Dist: scipy (>=0.19.0)
+Requires-Dist: sklearn (>=0.0)
+Requires-Dist: tables (>=3.3.0)
+Requires-Dist: dask (>=0.17.0)
+Requires-Dist: opencv-python (==3.4.5.20)
+Requires-Dist: tensorflow (==1.13.1)
+Requires-Dist: confapp
+Provides-Extra: gpu
+Requires-Dist: tensorflow-gpu (==1.13.1) ; extra == 'gpu'
+Provides-Extra: gui
+Requires-Dist: idtrackerai-app[gui] ; extra == 'gui'
+
+UNKNOWN
+
+

@@ -1,0 +1,10 @@
+too_simple_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+too_simple_server/__main__.py,sha256=2MrNAWvSMOdBIlUTaC6ebqcJS9a6rYa4jCq89NoRdkM,370
+too_simple_server/api.py,sha256=MvrRta5zy_UsA4yb-coRNiyZ4SU96Vu-vKPUShKQk8Q,980
+too_simple_server/configuration.py,sha256=qnC2rcK5waS3-Xbmdvkr7_kaxSthOGn8EzM352lDn2c,583
+too_simple_server/database.py,sha256=cuaRejOLdqJizivTziPC4f2mcDwJJtkkhp--t8SMia8,1436
+too_simple_server/run.py,sha256=kpXNO5rxKzxD-0qZmVk-u7Kejs-PGAfPftEvxAXlWJM,1136
+too_simple_server-0.1.0b1.dist-info/LICENSE,sha256=6idpzFEwXd6fkBCwLCjvUcGnNtqjBhXkSqBz531Cr5A,1088
+too_simple_server-0.1.0b1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+too_simple_server-0.1.0b1.dist-info/METADATA,sha256=mMAg8A8eu5i5hH_lN5nRhvSYs8MPV9pkfOODrzZW-7U,738
+too_simple_server-0.1.0b1.dist-info/RECORD,,

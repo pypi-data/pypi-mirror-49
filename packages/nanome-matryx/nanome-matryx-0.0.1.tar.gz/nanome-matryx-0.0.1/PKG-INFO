@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: nanome-matryx
+Version: 0.0.1
+Summary: Nanome Plugin to interface with the Matryx Platform
+Home-page: https://github.com/nanome-ai/plugin-matryx
+Author: Nanome
+Author-email: hello@nanome.ai
+License: MIT
+Description: # Nanome - Matryx
+        
+        Plugin to interface with the Matryx Platform.
+        
+        ### Installation
+        
+        ```sh
+        $ pip install nanome-matryx
+        ```
+        
+        ### Usage
+        
+        To start the plugin:
+        
+        ```sh
+        $ nanome-matryx -a plugin_server_address
+        ```
+        
+        In Nanome:
+        
+        - Activate Plugin
+        - Select Account
+        - Do stuff
+        
+        ... to be continued ...
+        
+        ### License
+        
+        MIT
+Keywords: virtual-reality,chemistry,python,api,plugin,blockchain,matryx
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

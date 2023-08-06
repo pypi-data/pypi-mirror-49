@@ -1,0 +1,14 @@
+census_map_downloader/__init__.py,sha256=mjAk9oanJ8erEbXVM-Cqdja0yWXnwl2NVT8Qelr3xnc,386
+census_map_downloader/base.py,sha256=yj5w-g0QLMHMH1dRTdpXJCYO1y7HWscdbTPPPttr4d0,2966
+census_map_downloader/cli.py,sha256=DWarPKiK0-uDYWC7HL7-yty9NM543jazeFXv_gf6dhc,1146
+census_map_downloader/geotypes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+census_map_downloader/geotypes/counties.py,sha256=p6n184yuRlpb66DZwIvGx_xpnpX2K_EsdJQvjFWXGmA,491
+census_map_downloader/geotypes/places.py,sha256=zrFge3y0gDz6xZxpWetQA-Zqi06Ep2tar_vkPtX83Pw,2820
+census_map_downloader/geotypes/tracts.py,sha256=Dg117IU41BkMMa_-WsbpzRu8XkllTw719uCboWMGdYc,2210
+census_map_downloader/geotypes/zctas.py,sha256=8oGvra0duU0tkM5nGErY0x9Di6cjO9-kBLT8pX_EdBk,2546
+census_map_downloader-0.0.3.dist-info/LICENSE,sha256=uD2lQodCfJV84rHd6eTMLPW7zw7O_QykjhNvxwIu9YU,1084
+census_map_downloader-0.0.3.dist-info/METADATA,sha256=jlJMRbPI8yhYCk76sXSndyUoYqRxTMT6JjO_DOh77NE,1921
+census_map_downloader-0.0.3.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+census_map_downloader-0.0.3.dist-info/entry_points.txt,sha256=h4JZt2HC7xizAciJZrpeYyWgJW29SEdTV62OG__qbzk,89
+census_map_downloader-0.0.3.dist-info/top_level.txt,sha256=aYgwJJDnQ7ofJFL9CtGLwGa_htdSzjf7OvxyxUj2jvg,22
+census_map_downloader-0.0.3.dist-info/RECORD,,

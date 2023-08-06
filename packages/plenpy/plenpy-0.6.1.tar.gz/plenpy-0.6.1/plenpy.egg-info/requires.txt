@@ -1,0 +1,8 @@
+numPy>=1.15
+scipy>=1.1
+scikit-image>=0.14
+matplotlib
+imageio>=2.3.0
+colour-demosaicing
+joblib
+jsmin

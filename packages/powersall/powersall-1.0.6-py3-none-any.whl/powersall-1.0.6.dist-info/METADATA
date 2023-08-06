@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: powersall
+Version: 1.0.6
+Summary: file extension info
+Home-page: https://github.com/jamesacampbell/powersall
+Author: James Campbell
+Author-email: jc@normail.co
+License: MIT
+Download-URL: https://github.com/jamesacampbell/powersall/archive/1.0.6.tar.gz
+Keywords: powerball,lottery,random-numbers,lotto,megamillions
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: lxml
+Requires-Dist: pandas
+Requires-Dist: argparse
+Requires-Dist: pathlib
+
+UNKNOWN
+
+

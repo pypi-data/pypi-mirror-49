@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: monzo
+Version: 0.10.0
+Summary: A python SDK for interacting with the Monzo API.
+Home-page: https://github.com/muyiwaolu/monzo-python
+Author: Muyiwa Olu
+Author-email: muyiolu94@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests (==2.20.0)
+Requires-Dist: requests-oauthlib (==1.0.0)
+Requires-Dist: python-dotenv (==0.5.1)
+
+UNKNOWN
+
+

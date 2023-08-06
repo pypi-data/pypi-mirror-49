@@ -1,0 +1,4 @@
+[console_scripts]
+defang = defang:client.defang
+refang = defang:client.refang
+

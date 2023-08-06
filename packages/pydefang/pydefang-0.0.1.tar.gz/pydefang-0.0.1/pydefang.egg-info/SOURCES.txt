@@ -1,0 +1,11 @@
+README.md
+setup.py
+defang/__init__.py
+defang/client.py
+defang/lib.py
+pydefang.egg-info/PKG-INFO
+pydefang.egg-info/SOURCES.txt
+pydefang.egg-info/dependency_links.txt
+pydefang.egg-info/entry_points.txt
+pydefang.egg-info/not-zip-safe
+pydefang.egg-info/top_level.txt

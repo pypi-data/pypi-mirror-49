@@ -1,0 +1,8 @@
+appconfigs/__init__.py,sha256=AMdSK2IcMJl9moNPlH6GRAfhDvdegn1f3FTPpvAa_eo,542
+appconfigs/base.py,sha256=gQ-9mRSqXj_PC_rs8kBV-R9N1yNiY6OEQ6Pp7rWQTIw,1409
+appconfigs/user.py,sha256=4COue6LS4nikjvC8hM87wg_cCHBgzjBlQu2JYzWr3uE,11148
+appconfigs-0.2.0.dist-info/LICENSE,sha256=HAVOm9gscJMaSjYBeV_qyUszrVA84Q3-kM98LJvhwTQ,1081
+appconfigs-0.2.0.dist-info/METADATA,sha256=xTzGaBJWrRRue2Rv_Gg4CbLtvctzdKUiokQq9fW-UPs,777
+appconfigs-0.2.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+appconfigs-0.2.0.dist-info/top_level.txt,sha256=Fgb559EkesIG9JY-6lLmAMz4_iopEph6uopCcKKz4rc,11
+appconfigs-0.2.0.dist-info/RECORD,,

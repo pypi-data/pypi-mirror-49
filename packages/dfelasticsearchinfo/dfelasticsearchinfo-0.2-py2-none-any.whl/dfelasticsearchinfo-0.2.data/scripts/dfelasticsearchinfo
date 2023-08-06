@@ -1,0 +1,38 @@
+#!python
+import os
+import argparse
+
+commands = {
+    '_status' : 'status of the cluster',
+    '_cluster/health' : 'Health of the cluster',
+    '_nodes' : 'Nodes info',
+    '_cat/indices' : 'Indices',
+    '_cat/shards' : 'Shards',
+    '_stats' : 'stats of EsCluster'
+}
+
+def get_info(dockerid, username, password):
+    cout = os.popen("hostname -i")
+    host = cout.read()
+    for key,value in commands.items():
+
+        cmd = 'curl -u {}:{} https://{}:9200/{}'.format(username,password,host,key)
+        output = os.popen(cmd)
+       
+        print(value)
+        print(header)
+        print(output.read())
+
+
+if __name__=='__main__':
+    parser = argparse.ArgumentParser(description='Retrieve Docker Run Command from existing container')
+    #parser.add_argument('name', action="store", help='docker container name')
+    parser.add_argument('username', action="store", help='elasticsearch username')
+    parser.add_argument('password', action="store", help='elasticsearch password')
+    results = parser.parse_args()
+    
+    outs = os.popen("sudo docker ps | grep elasticsearch | awk '{print $1}'")
+    containerId = outs.read()
+
+    get_info(containerId, results.username, results.password)
+

@@ -1,0 +1,3 @@
+django
+pytest>=2.3.0
+pytest-django

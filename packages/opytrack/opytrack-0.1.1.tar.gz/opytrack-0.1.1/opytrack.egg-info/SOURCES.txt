@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+opytrack.egg-info/PKG-INFO
+opytrack.egg-info/SOURCES.txt
+opytrack.egg-info/dependency_links.txt
+opytrack.egg-info/top_level.txt

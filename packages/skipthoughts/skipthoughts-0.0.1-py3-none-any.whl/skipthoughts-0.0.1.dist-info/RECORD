@@ -1,0 +1,10 @@
+skipthoughts/__init__.py,sha256=WsPqAbCRO8y96C-r4rjPM0vTCIduxrkVFOGhZEIwm1s,562
+skipthoughts/dropout.py,sha256=HFTGK29rHJpApoJo13yHlMtUuEC2ZNwuWQAH052odgo,3280
+skipthoughts/gru.py,sha256=evKNSpUG2T2IKeaPmLp3qcPRXhtOohNQ7yxGoQ43yeY,5594
+skipthoughts/skipthoughts.py,sha256=P0G2lHBPNtbKVHXyVXC8eyKXKeAIF_75IlLqsytH_OM,15958
+skipthoughts/version.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+skipthoughts-0.0.1.dist-info/LICENSE.txt,sha256=YtbS4eqavlo5sHehVXBasjwWAbIPfXR0jEZYp0TSfGs,1510
+skipthoughts-0.0.1.dist-info/METADATA,sha256=cI5A6VOFe9RoHettYPP-2p9jp1PqVAAP2w_eTpXUsOk,2601
+skipthoughts-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+skipthoughts-0.0.1.dist-info/top_level.txt,sha256=ffOYHdSMMrgSgalhK1oapT3Ed-U629ILw8t9PdLTORQ,13
+skipthoughts-0.0.1.dist-info/RECORD,,

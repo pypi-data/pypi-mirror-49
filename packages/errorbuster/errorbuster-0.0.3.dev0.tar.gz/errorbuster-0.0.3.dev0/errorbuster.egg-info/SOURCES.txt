@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+errorbuster/__init__.py
+errorbuster/traceback_parser.py
+errorbuster.egg-info/PKG-INFO
+errorbuster.egg-info/SOURCES.txt
+errorbuster.egg-info/dependency_links.txt
+errorbuster.egg-info/entry_points.txt
+errorbuster.egg-info/requires.txt
+errorbuster.egg-info/top_level.txt
+errorbuster.egg-info/zip-safe
+test/__init__.py
+test/test_formatError.py

@@ -1,0 +1,8 @@
+README.md
+setup.py
+spotimage/SpotImage.py
+spotimage/__init__.py
+spotimage.egg-info/PKG-INFO
+spotimage.egg-info/SOURCES.txt
+spotimage.egg-info/dependency_links.txt
+spotimage.egg-info/top_level.txt

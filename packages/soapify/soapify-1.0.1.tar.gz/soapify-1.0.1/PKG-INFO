@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: soapify
+Version: 1.0.1
+Summary: search on your all spotify playlists
+Home-page: https://github.com/tncga/soap
+Author: tncga
+Author-email: qokberk_akdeniz@hotmail.com
+License: MIT
+Description: # soapify - search on all spotify playlists
+        [![asciicast](https://asciinema.org/a/kGK0UooHleh4KBWPhvYalyEd0.svg)](https://asciinema.org/a/kGK0UooHleh4KBWPhvYalyEd0)
+        
+        ## installation
+            pip install soapify
+        
+        ## requirements
+        - python3
+            - click
+            - spotipy
+        ## usage
+            Î» soapify --help
+            -Usage: soapify [OPTIONS] TEXT
+        
+            Filter your all Spotify playlists
+        
+            Options:
+            -w, --where [artist|song|both]  Where to filter
+            -u, --username TEXT             Spotify username
+            -id, --client-id TEXT           Spotify API client id
+            -secret, --client-secret TEXT   Spotify client secret
+            --help                          Show this message and exit.
+        
+        Note: `--username`, `--client-id`, and `--client-secret` are not required if environment variables (`SPOTIFY_USERNAME`, `SPOTIFY_CLIENT_ID`, and `SPOTIFY_CLIENT_SECRET`) are defined.
+Keywords: spotify search playlist cli
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

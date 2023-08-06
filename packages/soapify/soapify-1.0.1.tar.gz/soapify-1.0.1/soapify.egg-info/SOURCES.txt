@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+soapify/auth.py
+soapify/cli.py
+soapify/gatherer.py
+soapify.egg-info/PKG-INFO
+soapify.egg-info/SOURCES.txt
+soapify.egg-info/dependency_links.txt
+soapify.egg-info/entry_points.txt
+soapify.egg-info/requires.txt
+soapify.egg-info/top_level.txt

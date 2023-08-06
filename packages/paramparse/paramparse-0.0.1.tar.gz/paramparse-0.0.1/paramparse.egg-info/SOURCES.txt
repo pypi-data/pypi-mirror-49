@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+paramparse.egg-info/PKG-INFO
+paramparse.egg-info/SOURCES.txt
+paramparse.egg-info/dependency_links.txt
+paramparse.egg-info/top_level.txt

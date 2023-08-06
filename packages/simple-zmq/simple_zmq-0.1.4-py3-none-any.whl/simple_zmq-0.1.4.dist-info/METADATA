@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: simple-zmq
+Version: 0.1.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Jacky Liang
+Author-email: jackyliang@cmu.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: zmq
+
+UNKNOWN
+
+

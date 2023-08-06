@@ -1,0 +1,12 @@
+README.md
+setup.py
+Renpy_Tools/__init__.py
+Renpy_Tools/__main__.py
+Renpy_Tools/exc_tran.py
+Renpy_Tools/get_text.py
+Renpy_Tools/get_tran_inf.py
+Renpy_Tools/repl_tran.py
+Renpy_Tools.egg-info/PKG-INFO
+Renpy_Tools.egg-info/SOURCES.txt
+Renpy_Tools.egg-info/dependency_links.txt
+Renpy_Tools.egg-info/top_level.txt

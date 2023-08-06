@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: Renpy_Tools
+Version: 0.0.2
+Summary: 操作Renpy的文件
+Home-page: https://github.com/clodlingxi
+Author: ClodLingxi
+Author-email: clodlingxi@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

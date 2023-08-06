@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<table class="table table-striped table-hover table-responsive table-condensedtable-outer-bordertable-align-center">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>User</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for object in object_list %}
+        <tr>
+            <th><a href="{{object.get_absolute_url}}">{{object.id}}</a></th>
+            <td>{{object}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}

@@ -1,0 +1,13 @@
+triangular_grid_merge/__init__.py,sha256=zL66iuAbdImkwZkIb1R4IaU_q8wSjaIMQSa9zB1zV4c,32
+triangular_grid_merge/edge.py,sha256=8ialu0Cy9ivB_C8XZZ-mQKSlRSd2hpddk4PDuQDxqQI,297
+triangular_grid_merge/face.py,sha256=ZiOz5SHDRehhclqXykDJFliZTa7iOl7jj75iJwa3PCE,373
+triangular_grid_merge/grid.py,sha256=P5LrVAFAA7gEZHGNek0PnmnbwVWW22X2DF-3r5NnD10,8706
+triangular_grid_merge/merge.py,sha256=cijGA2pKUKj0VvX_hacW8zGDguS3NxN8DcoUEYHSoAY,584
+triangular_grid_merge/node.py,sha256=JjgejnHy5_MVAiSpx3rSp-BFSnlxdMYJWBQ4W0Iu_o4,344
+triangular_grid_merge/tecplot.py,sha256=jfYTx0RpOROGlJphnEhfxAFrCf1Ue5qHjaZBBaB3fz4,9717
+triangular_grid_merge/zone.py,sha256=_eG0iybcMRUGFc-hA82DjEeCRntsEvkVsBDbfcLZ2AQ,202
+triangular_grid_merge-1.0.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+triangular_grid_merge-1.0.0.dist-info/METADATA,sha256=igG_n44L0gnOQYsasou452ezSMhNR-Y62DnC7wIVOzk,2121
+triangular_grid_merge-1.0.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+triangular_grid_merge-1.0.0.dist-info/top_level.txt,sha256=M4aJEjkaXmsGNlnZc1fWAxvluSJLdUj2YL5yYNB5yuo,22
+triangular_grid_merge-1.0.0.dist-info/RECORD,,

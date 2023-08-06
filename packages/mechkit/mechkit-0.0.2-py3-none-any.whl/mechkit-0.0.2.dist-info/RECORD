@@ -1,0 +1,10 @@
+mechkit/__init__.py,sha256=TDbuZrJ3fVpz9mPMUholsf_O27u-kyDCKogwhPm7Qw8,165
+mechkit/notation.py,sha256=yjYr9xzc_CpRDHnuE0o6kGHjRUPzqpzLq50xv57CTqY,21262
+mechkit/operators.py,sha256=_3JqfRi7H_18XkcUn5aLm8b9Iq0otoI4ZquHiw7GDSQ,70
+mechkit/tensors.py,sha256=O2wtxAjmA6zBHkmcYeFVxBFjfU_dDgNKTP8JvvWIu_0,1541
+mechkit/utils.py,sha256=mU7dixsNsyT1JFtPswOKStibAMzl8dqAcTDcchrEtx8,156
+mechkit-0.0.2.dist-info/LICENSE,sha256=MCZsG1ypmXsuHI0yiBsGS2Furhs8NEALnFkBN-h_kGw,1071
+mechkit-0.0.2.dist-info/METADATA,sha256=-s_-EL_2MDgOe2iOxRgIV0AYFArY8Nz35p63-q8dMOc,479
+mechkit-0.0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+mechkit-0.0.2.dist-info/top_level.txt,sha256=kllgTh56tNxu6kZs_pH9-gVc-dhSArSTiHzOhE-Iios,8
+mechkit-0.0.2.dist-info/RECORD,,

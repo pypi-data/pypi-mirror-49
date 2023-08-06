@@ -1,0 +1,8 @@
+README.md
+setup.py
+bin/sweepj2
+sweepj2.egg-info/PKG-INFO
+sweepj2.egg-info/SOURCES.txt
+sweepj2.egg-info/dependency_links.txt
+sweepj2.egg-info/requires.txt
+sweepj2.egg-info/top_level.txt

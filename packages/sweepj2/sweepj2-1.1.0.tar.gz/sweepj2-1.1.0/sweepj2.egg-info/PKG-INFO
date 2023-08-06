@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: sweepj2
+Version: 1.1.0
+Summary: Utilities for running parameter sweeps by providing a Jinja2 template and a parameter space (in YAML).
+Home-page: https://github.com/ivotron/sweepj2
+Author: The Popper Development Team
+Author-email: ivo@cs.ucsc.edu
+License: MIT
+Description: UNKNOWN
+Keywords: parameter sweep,grid search
+Platform: UNKNOWN

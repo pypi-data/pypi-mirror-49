@@ -1,0 +1,4 @@
+setuptools
+networkx
+jpype1-py3
+konlpy

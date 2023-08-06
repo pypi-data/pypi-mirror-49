@@ -1,0 +1,1 @@
+versionFromGradle='3.26.0',projectVersion='3.26.0.1',branch='rel-yau',lastCommitHash='fcebcc9b6d7b99dee5027463ae5a3ef917ad30f2',gitDescribe='jenkins-master-4736-3-gfcebcc9',compiledOn='2019-07-15 22:02:39',compiledBy='jenkins'

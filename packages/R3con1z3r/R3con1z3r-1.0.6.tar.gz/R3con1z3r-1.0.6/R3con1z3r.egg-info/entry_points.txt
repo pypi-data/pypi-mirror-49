@@ -1,0 +1,3 @@
+[console_scripts]
+r3con1z3r = r3con1z3r.cli:main
+

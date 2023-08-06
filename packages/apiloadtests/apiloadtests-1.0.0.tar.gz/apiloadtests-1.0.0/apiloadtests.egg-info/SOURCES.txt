@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+apiloadtests.egg-info/PKG-INFO
+apiloadtests.egg-info/SOURCES.txt
+apiloadtests.egg-info/dependency_links.txt
+apiloadtests.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+Pillow
+tensorflow-serving-api==1.14.0

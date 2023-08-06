@@ -1,0 +1,3 @@
+[console_scripts]
+ginzicut = ginzicut.__main__:run
+

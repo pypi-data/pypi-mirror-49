@@ -1,0 +1,6 @@
+ojuara.py
+setup.py
+ojuara_pypi.egg-info/PKG-INFO
+ojuara_pypi.egg-info/SOURCES.txt
+ojuara_pypi.egg-info/dependency_links.txt
+ojuara_pypi.egg-info/top_level.txt

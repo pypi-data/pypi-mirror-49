@@ -1,0 +1,16 @@
+openapi: "3.0.0"
+info:
+  description: |
+    {{ description }}
+  version: "{{ version }}"
+  title: {{ title }}
+  {% if contact %}
+  contact:
+    name: {{ contact }}
+  {% endif %}
+basePath: {{ base_path }}
+components:
+  securitySchemes:
+  schemas:
+paths:
+security:

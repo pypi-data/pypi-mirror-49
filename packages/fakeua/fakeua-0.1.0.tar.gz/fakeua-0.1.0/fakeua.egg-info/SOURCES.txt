@@ -1,0 +1,10 @@
+README.md
+setup.py
+fakeua/__init__.py
+fakeua/__main__.py
+fakeua/fakeua.py
+fakeua.egg-info/PKG-INFO
+fakeua.egg-info/SOURCES.txt
+fakeua.egg-info/dependency_links.txt
+fakeua.egg-info/entry_points.txt
+fakeua.egg-info/top_level.txt

@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: muhomor
+Version: 1.0.0
+Summary: Muhomor Micro-Services Framework
+Home-page: https://github.com/sergeport/muhomor
+Author: Sergii Bibikov
+Author-email: sergeport@gmail.com
+License: UNKNOWN
+Description: Muhomor Micro-Services Framework
+        ====================================
+        
+        Toolset for micro-services development.
+        To be updated...
+        
+        
+        Installation
+        ====================================
+        
+        Via PyPI:
+        
+        .. code:: bash
+        
+            pip install muhomor
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst

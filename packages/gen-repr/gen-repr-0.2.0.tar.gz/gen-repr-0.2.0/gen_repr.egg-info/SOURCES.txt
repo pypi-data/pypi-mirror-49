@@ -1,0 +1,7 @@
+README.md
+genrepr.py
+setup.py
+gen_repr.egg-info/PKG-INFO
+gen_repr.egg-info/SOURCES.txt
+gen_repr.egg-info/dependency_links.txt
+gen_repr.egg-info/top_level.txt

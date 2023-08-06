@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: odoo8-addon-l10n-ar-base-country-state
+Version: 8.0.1.1.0.99.dev2
+Summary: Base Argentina's States (aka Provinces)
+Home-page: UNKNOWN
+Author: Gabriel Davini
+Author-email: UNKNOWN
+License: GPL-3 or any later version
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Python: ~=2.7
+Requires-Dist: odoo (<9.0a,>=8.0a)
+
+This module provides:
+* States (aka provinces) for Argentina.
+
+

@@ -1,0 +1,5 @@
+greenswitch
+
+[dev]
+ipython
+pylint

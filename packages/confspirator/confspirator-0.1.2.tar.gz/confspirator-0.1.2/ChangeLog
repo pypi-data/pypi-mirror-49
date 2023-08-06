@@ -1,0 +1,17 @@
+CHANGES
+=======
+
+0.1.2
+-----
+
+* better error messages
+
+0.1.1
+-----
+
+* fix deepcopy for lazy\_loaded group
+
+0.1.0
+-----
+
+* First version of CONFspirator

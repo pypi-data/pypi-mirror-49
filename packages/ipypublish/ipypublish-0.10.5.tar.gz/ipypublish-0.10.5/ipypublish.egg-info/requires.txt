@@ -1,0 +1,64 @@
+bibtexparser
+jinja2
+jsonextended>=0.7
+jsonschema
+jupytext
+nbconvert
+nbformat
+ordered-set
+panflute
+ruamel.yaml
+six>=1.11.0
+traitlets
+tornado
+
+[:python_version < "3"]
+docutils<0.15
+
+[:python_version < "3.3"]
+shutilwhich
+
+[:python_version < "3.4"]
+pathlib2
+
+[:python_version < "3.5"]
+typing
+
+[:python_version >= "3"]
+docutils
+
+[rtd]
+ipykernel
+sphinxcontrib-bibtex
+matplotlib
+sphinx>=1.6
+recommonmark>=0.5
+pytest>=3.6
+sympy<1.3
+pillow
+pandas
+numpy
+
+[science]
+pandas
+sympy
+matplotlib
+numpy
+
+[sphinx]
+sphinxcontrib-bibtex
+sphinx>=1.6
+
+[tests]
+texsoup<=0.1.4
+ipykernel
+pytest-cov
+doc8
+flake8<3.8,>=3.7
+pytest-regressions
+sphinxcontrib-bibtex
+coverage
+sphinx>=1.6
+nbsphinx
+pytest>=3.6
+pillow

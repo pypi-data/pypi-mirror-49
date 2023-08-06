@@ -1,0 +1,10 @@
+score.auth-0.6.4-py3.6-nspkg.pth,sha256=Sc8n-AjC4efQEM9N970YYvqthmC_oBMk9MryXA8wB9c,534
+score/auth/__init__.py,sha256=WEgKmNK7-4kIn3YVYX4lgZ0ys2b9r5NruDrtdJDQ1mk,1647
+score/auth/_init.py,sha256=BYmOiNnySx5ECi2VdGr6fZfLgfezBmShXyMemAHoxbA,4611
+score/auth/_ruleset.py,sha256=SQyVjqUvG84Q_DLMrZsJghy7UXhIY5I-nXQVcegiufI,2768
+score/auth/authenticator.py,sha256=Ik2zkEbQhoqimsFF86DzlVebJ9XvHC5Ehd34bhx2344,3720
+score.auth-0.6.4.dist-info/METADATA,sha256=z1wr6ijgysY2nq8W95Lp6iSz_E0A6xXxIvz0ft196vM,2985
+score.auth-0.6.4.dist-info/RECORD,,
+score.auth-0.6.4.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+score.auth-0.6.4.dist-info/namespace_packages.txt,sha256=ombXQcxxoHXkOBjIMIwHIdXOU_bRR6fxpkmCd_LLxCQ,6
+score.auth-0.6.4.dist-info/top_level.txt,sha256=ombXQcxxoHXkOBjIMIwHIdXOU_bRR6fxpkmCd_LLxCQ,6

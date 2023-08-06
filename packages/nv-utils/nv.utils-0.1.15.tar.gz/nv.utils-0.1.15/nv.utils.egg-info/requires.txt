@@ -1,0 +1,16 @@
+pytz
+
+[tables]
+openpyxl
+xlwt
+xlrd
+
+[vault]
+hvac
+
+[xls]
+xlrd
+xlwt
+
+[xlsx]
+openpyxl

@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+doepy/__init__.py
+doepy/build.py
+doepy/doe_functions.py
+doepy/pydoe_corrected.py
+doepy/read_write.py
+doepy.egg-info/PKG-INFO
+doepy.egg-info/SOURCES.txt
+doepy.egg-info/dependency_links.txt
+doepy.egg-info/requires.txt
+doepy.egg-info/top_level.txt

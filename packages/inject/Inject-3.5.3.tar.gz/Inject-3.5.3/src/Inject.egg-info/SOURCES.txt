@@ -1,0 +1,11 @@
+CHANGES.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/inject.py
+src/Inject.egg-info/PKG-INFO
+src/Inject.egg-info/SOURCES.txt
+src/Inject.egg-info/dependency_links.txt
+src/Inject.egg-info/requires.txt
+src/Inject.egg-info/top_level.txt

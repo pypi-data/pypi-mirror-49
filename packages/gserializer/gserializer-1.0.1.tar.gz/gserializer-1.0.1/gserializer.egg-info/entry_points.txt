@@ -1,0 +1,3 @@
+[console_scripts]
+gserializer = gserializer.__main__:main
+

@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: flask-hsrpc
+Version: 0.1.15
+Summary: flask hsrpc plugin
+Home-page: https://github.com/AloneFire/flask-hsrpc.git
+Author: alonefire
+Author-email: alonefire@foxmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: Flask (>=1.0.2)
+Requires-Dist: marshmallow (>=2.15.1)
+Requires-Dist: python-consul (>=0.7.2)
+Requires-Dist: requests (>=2.20.0)
+
+flask hsrpc plugin
+
+

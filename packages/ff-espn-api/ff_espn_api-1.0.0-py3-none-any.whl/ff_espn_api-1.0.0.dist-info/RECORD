@@ -1,0 +1,12 @@
+ff_espn_api/__init__.py,sha256=qXM9laSgvmUXmqrY2KkVMMfsbG_9Ac1nb_O_jkjKx0o,268
+ff_espn_api/league.py,sha256=A4RbSlI3DtaLhuHYy1m1nCf_7JC-EEneRF-Majyd7pA,7045
+ff_espn_api/matchup.py,sha256=4bp9BDvnd0cKq_A4y_TWeyfj0w1NW0pykNzajAjFato,1171
+ff_espn_api/player.py,sha256=e4sD_zSC7U2qSvn52CBaQF7yDVDUsKt_soHbeD__U5s,753
+ff_espn_api/settings.py,sha256=B2P7NvGeYZtuPeGHUjx1zBi97HAmZb2Eg33PiI_gvB4,845
+ff_espn_api/team.py,sha256=83h8aHF8zsFeOQ4u67P6nYZMZ6pqjKRzoRPhQF6IILw,3859
+ff_espn_api/trade.py,sha256=YnLmfibAWHMXzqT94GuLAuOO03DNacVjnGrHF8f6GeE,816
+ff_espn_api-1.0.0.dist-info/LICENSE,sha256=JRPW_Kc93DsypN5baC8xWj-_r0d1TKdf1bYgYHIMiVI,1072
+ff_espn_api-1.0.0.dist-info/METADATA,sha256=iapsuLnUSuxqo7uzCnoOVSSlXn-w8sdmGTjOHXC_cn0,420
+ff_espn_api-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ff_espn_api-1.0.0.dist-info/top_level.txt,sha256=IxtbtHqwfdgI9xRA_H7MoirqB8NoGPMJ4_Jjx9KkGWg,12
+ff_espn_api-1.0.0.dist-info/RECORD,,

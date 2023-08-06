@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: falcon-json-rpc
+Version: 1.0.0
+Summary: JsonRpc extension for Falcon
+Home-page: https://github.com/sergeport/falcon_json_rpc
+Author: Sergii Bibikov
+Author-email: sergeport@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+
+Falcon JsonRpc Extensions
+====================================
+
+JsonRpc Extensions for Falcon framework
+
+
+Installation
+====================================
+
+Via PyPI:
+
+.. code:: bash
+
+    pip install falcon_json_rpc
+
+
+

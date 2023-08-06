@@ -1,0 +1,29 @@
+{
+  "LAUNCHER_NAME": "Artella",
+  "LAUNCHER_VERSION": "0.0.0",
+  "DCCS":
+  {
+    "MAYA":
+    {
+      "enabled": "False",
+      "supported_versions": [""],
+      "default_version": "",
+      "departments": [],
+      "plugins": {}
+    },
+    "NUKE":
+    {
+      "enabled": "False",
+      "supported_versions": [""],
+      "default_version": "",
+      "departments": []
+    },
+    "HOUDINI":
+    {
+      "enabled": "False",
+      "supported_versions": [""],
+      "default_version": "",
+      "departments": []
+    }
+  }
+}

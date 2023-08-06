@@ -1,0 +1,14 @@
+snowy/__init__.py,sha256=PtOt3EoIAiCvso7X4Tk-EjVXd4eUJkK5lGX3h0kS2Aw,1002
+snowy/color.py,sha256=LGBHGZOmc3QBiOiDmJMumTGl77_2RgbYnvS1p9TKUxM,1420
+snowy/distance.py,sha256=FyBrXR9XIQSMTaxHsoUx2XE8ZcQ32rnGbpgh-n0XNtc,6210
+snowy/draw.py,sha256=U5sNaW8soSH1dlJDjEUEKkxTgQiHEGvEaP5yAse8118,4369
+snowy/filtering.py,sha256=X3QhEZGg4Q5gYIBKVSWQ-DVGbDq1IsbnFly8Eb24NH0,6125
+snowy/io.py,sha256=z1Oru2gC3ebky6EYCdXBFWoVMAqhA2WYomhR3-7TlKI,6443
+snowy/lighting.py,sha256=kGhGGlABUvmPpeilYYq29_pKYO6aN-b9pwfuy5XwGMY,4804
+snowy/noise.py,sha256=w41_NQ14yGtOy5mZRBdVXxHyZCnsuORvE_0qbGl0owk,3603
+snowy/ops.py,sha256=C8giY8YrTOQ6mibrF8Ee-RtntMCWn8HlON5yB617czY,7247
+snowy-0.0.9.dist-info/LICENSE,sha256=JK-1NEYOQI_sO9dbwsbX76CpjyZJEE8nvNXRAldDkok,1071
+snowy-0.0.9.dist-info/METADATA,sha256=DziaYlzeeSdn0jCV1p78WZXGbkTwHePS-7NLB9n2dfs,3519
+snowy-0.0.9.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+snowy-0.0.9.dist-info/top_level.txt,sha256=VNSrxE2--X8fguMCL4isZvKPY3-R1YJjSvydx9mVces,6
+snowy-0.0.9.dist-info/RECORD,,

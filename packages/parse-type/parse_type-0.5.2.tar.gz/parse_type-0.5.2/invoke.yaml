@@ -1,0 +1,27 @@
+# =====================================================
+# INVOKE CONFIGURATION: parse_type
+# =====================================================
+# -- ON WINDOWS:
+# run:
+#   echo: true
+#   pty:  false
+#   shell: C:\Windows\System32\cmd.exe
+# =====================================================
+
+project:
+    name: parse_type
+
+tasks:
+     auto_dash_names: false
+
+run:
+    echo: true
+    # DISABLED: pty:  true
+
+cleanup_all:
+    extra_directories:
+      - build
+      - dist
+      - .hypothesis
+      - .pytest_cache
+

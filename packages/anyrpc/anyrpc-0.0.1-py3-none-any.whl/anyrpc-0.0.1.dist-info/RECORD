@@ -1,0 +1,8 @@
+anyrpc/__init__.py,sha256=q3nwf-9Y7-ZJYnh2qmaAVjS8sZwchXCyPh9lDCzJmBI,43
+anyrpc/serve.py,sha256=S3ap4WB3v1imTxPlwgAdthrb5rH4u1EHOLz3-mBc52E,2541
+anyrpc/stub.py,sha256=ScYKys73v0oF4vdpakkYmdglmPIHnQmOn682ZTGDlHY,2486
+anyrpc/test_client.py,sha256=oxMpI_QH7JP9QEeKjGNJI_wKhAdMfSCbFR3GOa5qUUQ,995
+anyrpc-0.0.1.dist-info/METADATA,sha256=96MRof9tCQocGNYQ_i_jkTNacPc5M486OSqw4poOC7w,231
+anyrpc-0.0.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+anyrpc-0.0.1.dist-info/top_level.txt,sha256=t8JBPD3eUveptIezxf8p-lrYV7O7JDinM8b4eJPCQzw,7
+anyrpc-0.0.1.dist-info/RECORD,,

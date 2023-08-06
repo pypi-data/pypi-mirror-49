@@ -1,0 +1,8 @@
+rabbitmqX/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rabbitmqX/command.py,sha256=g1q9-1myn1cus2PPBGX54QjXm-Q6eget4S7zdewm_dk,130
+rabbitmqX/rpc.py,sha256=mCmuf92Lp0Zl6iR2TiTYk-UEP05CWjUumQWxJBoHm9w,1500
+rabbitmqX-0.0.6.dist-info/LICENSE,sha256=UKq5d68373OtIsm_BVIPU-Lv2kJelU3SyQg9Gtw9KUs,11345
+rabbitmqX-0.0.6.dist-info/METADATA,sha256=tc6zgHMpDLGa3iqcvz4o4sqxZ5o1mBskFKLpXg_eXMc,424
+rabbitmqX-0.0.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+rabbitmqX-0.0.6.dist-info/top_level.txt,sha256=-4NkMNjga32OKhLRbfUcxaIhQE5YuVpmbr9uFOB-g0E,10
+rabbitmqX-0.0.6.dist-info/RECORD,,

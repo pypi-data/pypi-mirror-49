@@ -1,0 +1,8 @@
+README.md
+setup.py
+automate_django/__init__.py
+automate_django/automate_django.py
+automate_django.egg-info/PKG-INFO
+automate_django.egg-info/SOURCES.txt
+automate_django.egg-info/dependency_links.txt
+automate_django.egg-info/top_level.txt

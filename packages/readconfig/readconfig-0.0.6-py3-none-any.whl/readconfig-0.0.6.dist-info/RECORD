@@ -1,0 +1,14 @@
+read-config/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+read-config/README.md,sha256=rcdgMSHQDAI1pbT5MY3z7aFZVhjiR8bozHsR25Ncpxk,55
+read-config/__init__.py,sha256=fYJ0sUqFinB64Tl7vrVZkPt8TWX23tgXHUC6YjhoRpE,39
+read-config/read_config.py,sha256=9oncU5sPmukaQgfDqXnfOMU4B-PUreQJebQOw9UkZ34,1400
+read-config/requirements.txt,sha256=NPtGyEe7nfluUgWjnTgvZIpujc4eAUzYW0ymqI2I7QM,5
+readconfig/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+readconfig/README.md,sha256=rcdgMSHQDAI1pbT5MY3z7aFZVhjiR8bozHsR25Ncpxk,55
+readconfig/__init__.py,sha256=kzAN6gRSMwaGF3LNr9F0W2W0lZ1hHjlowOcSxl3h9Dk,39
+readconfig/read_config.py,sha256=9oncU5sPmukaQgfDqXnfOMU4B-PUreQJebQOw9UkZ34,1400
+readconfig/requirements.txt,sha256=NPtGyEe7nfluUgWjnTgvZIpujc4eAUzYW0ymqI2I7QM,5
+readconfig-0.0.6.dist-info/METADATA,sha256=SsEijY7oAqnahjNpwGxaGE-fNkhezbdJJRPi8wWBSGQ,548
+readconfig-0.0.6.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+readconfig-0.0.6.dist-info/top_level.txt,sha256=9FAs66XbZchQQNpkqdTzFnYCdJxHaojKyOTFZvwlL1g,11
+readconfig-0.0.6.dist-info/RECORD,,

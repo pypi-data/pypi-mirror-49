@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pyterm-progress-bar
+Version: 0.0.1
+Summary: Prints a progress bar to the terminal from python.
+Home-page: https://github.com/wpbdry/pyterm_progress_bar_pkg
+Author: William Dry
+Author-email: wpbdry@gmail.com
+License: MIT
+Description: # pyterm_progress_bar
+        
+        Prints a progress bar to the terminal from python.
+        
+        
+        ### ProgressBar
+        ```python
+        import pyterm_progress_bar
+        
+        progress_bar = pyterm_progress_bar.ProgressBar(
+            name='Progress',  # Default
+            char='#'  # Default
+        )
+        progress_bar.start()
+        
+        for i in range (0, 5):
+            # Do stuff
+            progress_bar.update((i+1)/5)  # between 0 and 1 inclusive.
+        
+        ```
+        
+        ### Loop
+        pyterm_progress_bar can automatically perform a loop for you to save you having to do the difficult math.
+        
+        ```python
+        import pyterm_progress_bar
+        
+        def my_func(counter, data):  # data param is optional here
+            # Do stuff
+            # 'counter' is the loop counter
+            # 'data' is whatever you pass as 'param' in the next step
+        
+        loop = pyterm_progress_bar.Loop(
+            my_func,
+            number_of_iterations=300,
+            param=['foo', 'bar', '🐙'],  # Optional
+            progress_bar_name='Running my_func',  # Default
+            progress_bar_char='#'  # Default
+        )
+        loop.execute()
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

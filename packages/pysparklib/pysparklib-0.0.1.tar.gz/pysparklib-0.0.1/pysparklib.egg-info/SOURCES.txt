@@ -1,0 +1,11 @@
+README.md
+setup.py
+pysparklib/__init__.py
+pysparklib.egg-info/PKG-INFO
+pysparklib.egg-info/SOURCES.txt
+pysparklib.egg-info/dependency_links.txt
+pysparklib.egg-info/not-zip-safe
+pysparklib.egg-info/requires.txt
+pysparklib.egg-info/top_level.txt
+pysparklib/pmml/__init__.py
+pysparklib/pmml/exceptions.py

@@ -1,0 +1,8 @@
+pdfextractdata/__init__.py,sha256=d3uXQgcIuEqimOqhtjlyWs45tD_bvJbC70_zz5Chg54,3
+pdfextractdata/extract.py,sha256=le7vBfxV_pclsXHVEr9FeXlc_KPM2REHEVtRWAh53y4,9847
+pdfextractdata/preprocessing.py,sha256=01v-IBapRHwrzevV5tPEm-KcLHQ4i6ZwYO0H2mpu0Zk,4187
+pdfextractdata-4.8.dist-info/LICENSE,sha256=ubQA97r6GgMbLLSBdMW9ETtBciBBPwdiNu_lraXXblc,1070
+pdfextractdata-4.8.dist-info/METADATA,sha256=lYMl1xdbnwSKcd92cdwNKnsWOmK9e5aPjLMdulo5tQY,370
+pdfextractdata-4.8.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pdfextractdata-4.8.dist-info/top_level.txt,sha256=jhbixdiBpAhgjqTDSR-eS34BDhqlDAgpxe3WOVMqJ1w,15
+pdfextractdata-4.8.dist-info/RECORD,,

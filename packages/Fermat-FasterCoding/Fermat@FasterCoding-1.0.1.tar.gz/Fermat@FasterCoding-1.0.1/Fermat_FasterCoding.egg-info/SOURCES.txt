@@ -1,0 +1,8 @@
+setup.py
+Fermat/__init__.py
+Fermat/fermat.py
+Fermat_FasterCoding.egg-info/PKG-INFO
+Fermat_FasterCoding.egg-info/SOURCES.txt
+Fermat_FasterCoding.egg-info/dependency_links.txt
+Fermat_FasterCoding.egg-info/requires.txt
+Fermat_FasterCoding.egg-info/top_level.txt

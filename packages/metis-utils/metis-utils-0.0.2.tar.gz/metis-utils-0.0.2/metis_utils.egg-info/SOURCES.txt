@@ -1,0 +1,8 @@
+README.md
+setup.py
+metis/__init__.py
+metis/readwrite.py
+metis_utils.egg-info/PKG-INFO
+metis_utils.egg-info/SOURCES.txt
+metis_utils.egg-info/dependency_links.txt
+metis_utils.egg-info/top_level.txt

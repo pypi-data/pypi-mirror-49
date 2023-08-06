@@ -1,0 +1,13 @@
+*.egg-info
+*pyc
+.pytest_cache/
+.cache/
+__pycache__/
+dist/
+build/
+_build/
+generated/
+.coverage
+coverage.xml
+doc/examples/
+doc/generated_gallery/

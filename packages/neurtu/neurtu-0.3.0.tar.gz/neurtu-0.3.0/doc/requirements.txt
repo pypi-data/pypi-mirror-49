@@ -1,0 +1,12 @@
+scikit-learn>=0.18
+scipy
+numpy
+pandas
+sphinx
+pillow
+recommonmark
+sphinx_rtd_theme
+sphinxcontrib-napoleon
+sphinx-gallery
+pillow
+matplotlib

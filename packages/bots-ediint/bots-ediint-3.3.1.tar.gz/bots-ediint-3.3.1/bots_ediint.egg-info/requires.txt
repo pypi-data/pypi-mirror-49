@@ -1,0 +1,33 @@
+Django>=1.10
+cheroot
+Cherrypy
+
+[:python_version <= "3.4"]
+Cherrypy==16.0.3
+
+[:python_version == "3.4"]
+django<2.1
+
+[:sys_platform == "linux" or sys_platform == "linux2"]
+pyinotify
+
+[:sys_platform == "win32" and python_version != "3.4"]
+pywin32
+
+[:sys_platform == "win32" and python_version == "3.4"]
+pypiwin32==219
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[testing]
+pytest
+pytest-cov
+pytest-django
+
+[tools]
+Genshi
+paramiko
+pdfminer
+xlrd

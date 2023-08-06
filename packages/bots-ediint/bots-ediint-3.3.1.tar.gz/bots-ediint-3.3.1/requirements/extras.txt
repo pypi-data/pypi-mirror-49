@@ -1,0 +1,4 @@
+Genshi
+paramiko
+pdfminer
+xlrd

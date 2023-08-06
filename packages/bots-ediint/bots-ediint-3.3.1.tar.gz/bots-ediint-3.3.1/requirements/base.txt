@@ -1,0 +1,5 @@
+Django>=1.10
+Django<2.1; python_version <= '3.4'
+cheroot
+Cherrypy
+Cherrypy==16.0.3; python_version <= '3.4'

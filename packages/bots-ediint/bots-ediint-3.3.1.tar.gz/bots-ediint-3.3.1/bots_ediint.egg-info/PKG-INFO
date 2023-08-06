@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: bots-ediint
+Version: 3.3.1
+Summary: Bots open source edi translator
+Home-page: https://gitlab.com/bots-ediint/bots
+Author: hjebbers
+Author-email: hjebbers@gmail.com
+License: GNU General Public License (GPL v3.0)
+Project-URL: Source, https://gitlab.com/bots-ediint/bots
+Project-URL: Bug Reports, https://gitlab.com/bots-ediint/bots/issues
+Description: Bots is complete software for edi (Electronic Data Interchange):
+            - translate:
+                All major edi data formats are supported: edifact, x12, tradacoms, xml, json, flat
+            - communicate:
+                http, ftp, email and custom made
+        
+Keywords: edi edifact x12 tradacoms xml fixedfile csv
+Platform: OS Independent (Written in an interpreted language)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Other/Nonlisted Topic
+Classifier: Topic :: Communications
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4
+Provides-Extra: tools
+Provides-Extra: testing
+Provides-Extra: docs

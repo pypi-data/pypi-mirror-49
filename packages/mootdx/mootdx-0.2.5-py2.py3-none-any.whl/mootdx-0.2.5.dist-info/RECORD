@@ -1,0 +1,15 @@
+mootdx/__init__.py,sha256=GpY5uw-TOqnKMlrtBEmaHgMgr8tB-zMVO6OGRp4wyOY,46
+mootdx/__main__.py,sha256=1Ere1OR_faIgk80k6K_c8NUcGlJ3roIIqOa39d7xp0I,394
+mootdx/affairs.py,sha256=D6qvPMCpMjlUbpnmyS9dUxxudOZgj-kbtpFkmm8sIFY,1440
+mootdx/cmdline.py,sha256=JjDnXzaE4OCf8yp1CAkkR815nINndw0dtC8viUTfHt4,3687
+mootdx/quotes.py,sha256=G-EFy_oD3i7iefISpSP7DaI3b1PupcwnkZKHiI0K7Wg,9617
+mootdx/reader.py,sha256=pqP9u8gps1XWQY6TBi1bDWzujsbqCe2gi7tEGZE6j8A,3342
+mootdx/utils.py,sha256=zD1V9VwZm9xN7oqqaPMcTusiLYThbxRkBvdxncPKnVw,1967
+mootdx/verify.py,sha256=2TNGQis1EW50zZE6pSnmb7HrGhE3Q26nOPjGBDKMNc4,2951
+mootdx-0.2.5.dist-info/AUTHORS.rst,sha256=HHPMesileYskLNBDMPArq_Sx49W5DEub-_slv05mc9o,87
+mootdx-0.2.5.dist-info/LICENSE,sha256=vujSrI4Wk_6r5MqTTicxmPTzkVnn39z0bTXQw1kJbwg,1066
+mootdx-0.2.5.dist-info/METADATA,sha256=Ykr072EBjyVWINYFxKHRnwJMrlZ5SFqMQyIIDzKJiQ8,3580
+mootdx-0.2.5.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+mootdx-0.2.5.dist-info/entry_points.txt,sha256=OhuVVxTnuiAbsdIE6yuN0XKQU6t63CdV5qQ8f_PDvmw,51
+mootdx-0.2.5.dist-info/top_level.txt,sha256=5raUWVgB4iBtdYOqhiQKKZnwMrrGeymd5SEqKTkzF7Y,7
+mootdx-0.2.5.dist-info/RECORD,,

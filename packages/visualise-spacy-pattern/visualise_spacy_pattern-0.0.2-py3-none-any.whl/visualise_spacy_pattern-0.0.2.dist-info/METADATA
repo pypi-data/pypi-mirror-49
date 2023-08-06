@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: visualise-spacy-pattern
+Version: 0.0.2
+Summary: Visualise spacy dependency patterns
+Home-page: https://github.com/cyclecycle/visualise-spacy-pattern
+Author: Nicholas Morley
+Author-email: nick.morley111@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: atomicwrites (==1.3.0)
+Requires-Dist: attrs (==19.1.0)
+Requires-Dist: importlib-metadata (==0.18)
+Requires-Dist: more-itertools (==7.0.0)
+Requires-Dist: packaging (==19.0)
+Requires-Dist: pluggy (==0.12.0)
+Requires-Dist: py (==1.8.0)
+Requires-Dist: pydot (==1.4.1)
+Requires-Dist: pyparsing (==2.4.0)
+Requires-Dist: pytest (==4.6.3)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: wcwidth (==0.1.7)
+Requires-Dist: zipp (==0.5.1)
+
+# Visualise spacy pattern
+
+## Installation
+
+```bash
+pip install visualise-spacy-pattern
+```
+
+## Usage
+
+```python
+import visualise_spacy_pattern
+
+# Load the example dependency pattern
+pattern_file = 'examples/pattern_1.json'
+with open(pattern_file) as f:
+    pattern = json.load(f)
+
+graph = visualise_spacy_pattern.to_pydot(pattern)
+png = graph.create_png()
+graph_file = 'examples/graph_1.png'.format()
+with open(graph_file, 'wb') as f:
+    f.write(png)
+```
+

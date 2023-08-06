@@ -1,0 +1,9 @@
+plone.app.theming
+setuptools
+plone.app.widgets
+
+[test]
+plone.app.testing
+plone.app.textfield
+plone.app.blocks>=4.0.0
+plone.app.tiles

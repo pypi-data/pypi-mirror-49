@@ -1,0 +1,6 @@
+pyicu
+
+[test]
+mypy
+pytest
+regex

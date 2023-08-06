@@ -1,0 +1,13 @@
+xinput_gui/__init__.py,sha256=6z4UlaFV4_OAdRJHkkos5reyq-A9rnGO2n_GvG4xodE,43
+xinput_gui/__main__.py,sha256=QH-uNRhVOUP2Dn-o7xFmBpSyPeNSRFus54_XwcxK_UA,923
+xinput_gui/config.json,sha256=5aTynu4AyeupUXI9HjPeBMhbDA2fln8VN53m9GWoMuo,82
+xinput_gui/gui.py,sha256=12U9NTXouq_YcXusc4yuSxyQQK4l-_t76pcUPtrftEc,8868
+xinput_gui/settings.py,sha256=jpKxKo5K54TDgB8XvZS6htyE9rJSTuLQQMYG-IQ0l9Q,1882
+xinput_gui/xinput-gui.ui,sha256=_nw_HJqPK5lBtDiDK5Ql06nOirI9IzW1_dM2RHi6xIk,28880
+xinput_gui/xinput.py,sha256=-OYkRL0n9KjOv6u-6cP_RlscxThhGu1e_3_weKq8jVc,3467
+xinput_gui-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+xinput_gui-0.2.0.dist-info/METADATA,sha256=-y6HFtsl5tBZ-12I82ZI50b2McV0LNOYxFLgBcjASWE,2702
+xinput_gui-0.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+xinput_gui-0.2.0.dist-info/entry_points.txt,sha256=yTusMt7Fw4YHwPLW2umjT-6htP-zNrng7bVtCpBrReE,53
+xinput_gui-0.2.0.dist-info/top_level.txt,sha256=yqKSuD2OfSJEQRcIS0OBHP8lnK2gB3aTxxHpJDyxbvk,11
+xinput_gui-0.2.0.dist-info/RECORD,,

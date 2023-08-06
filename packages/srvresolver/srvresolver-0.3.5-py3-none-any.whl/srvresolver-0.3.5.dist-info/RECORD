@@ -1,0 +1,11 @@
+srvresolver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+srvresolver/postgres_resolver.py,sha256=2F6Jlwfg3udGBcpLD7CM1aF_sL3IfQ2maDMettOahLk,4135
+srvresolver/srv_record.py,sha256=itm4WdcMVsFRJue5GGq4m7wBNGNPfuGERIyj6ZYZ4uo,2220
+srvresolver/srv_resolver.py,sha256=TSXh0NT71BB58qbijahD7yxFIdPEjZM3HgAzrwk6zNU,6993
+srvresolver/srv_resolver_cached.py,sha256=IpxkuBvjE4XUmKP12MLHzyed62lfQWHT0eV8sLczZpc,1294
+srvresolver/version.py,sha256=snJxJpwiPJe6cPv4idDkwuskE-MSt5MKd_03pSWcN8A,22
+srvresolver-0.3.5.dist-info/LICENSE,sha256=ppu27NivZM72Wol6Sysjq2UX3eTv3_wYz62F_0zYJt4,1063
+srvresolver-0.3.5.dist-info/METADATA,sha256=_PfKBcTb8zFhnilsQeiqGr1JA7IRlPE_0CtOtJ8qJ9I,2236
+srvresolver-0.3.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+srvresolver-0.3.5.dist-info/top_level.txt,sha256=Sme4nUQ1ScMmDlGNX0tPdUQeqwAMTizSPpc8YaLLcyM,12
+srvresolver-0.3.5.dist-info/RECORD,,

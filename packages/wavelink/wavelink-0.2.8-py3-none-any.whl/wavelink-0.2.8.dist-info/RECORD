@@ -1,0 +1,15 @@
+wavelink/__init__.py,sha256=33lluaN_4O8yYUC78b8b6rxRpgkK9l329B_PZ-Y9QzY,344
+wavelink/backoff.py,sha256=kVaq9ULEAFCOSnqfPLpbYvBpjFx8IghVVAJJ8J0BO0E,3212
+wavelink/client.py,sha256=R_l8bZIXvYDi8qWvzpKCdve3zjiUCajQSpXtisICnTs,11814
+wavelink/eqs.py,sha256=m5Eg5SGb3Adrt2UFYjjjjnuGmrIv3lBhzpapXMHQZKc,1918
+wavelink/errors.py,sha256=MDmeWGONaTM6M9h5a_D8MvS3dwBin4BvQ_nEfL2yenU,585
+wavelink/events.py,sha256=feNUeMeq-EeDls0KznqQmbG459Riu-H_c2_OD2tfy_M,1645
+wavelink/node.py,sha256=HzRo7xiIsWl6ppQ3GlIBe3Vcml3mkJF_T2Lr-EeW2Jg,6537
+wavelink/player.py,sha256=nOKqlBM8FIuZOao44c3iH77Af4FOonM2BfTP1WDiSzk,12588
+wavelink/stats.py,sha256=IyEEb0tIAI02qzY0Vw7shh9eOqPSjy4XPQs72zoP0jE,2681
+wavelink/websocket.py,sha256=SO3z56l3bZACfx1IYCoiaX9lEo55Jp2dgGiZ8tvGRqk,5972
+wavelink-0.2.8.dist-info/LICENSE,sha256=ghHgAqW4VxtNvorSBlmrnLYve3HvrEjGjN0JJLeqrvM,1098
+wavelink-0.2.8.dist-info/METADATA,sha256=yNWRnZoq10JjWEjQsXNw4Xg2Dq7jdmd7eFhbaBxagIo,4652
+wavelink-0.2.8.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+wavelink-0.2.8.dist-info/top_level.txt,sha256=m7vboW-4qbwGA1hCLxq2WTCJESwXbjHrRYro1nIBKoo,9
+wavelink-0.2.8.dist-info/RECORD,,

@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: tutor-openedxsettings
+Version: 0.0.4
+Summary: A Tutor plugin for openedx settings
+Home-page: UNKNOWN
+Author: eliteu
+Author-email: code@eliteu.cn
+License: AGPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5

@@ -1,0 +1,10 @@
+ldsc2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ldsc2/build_on_baseline.py,sha256=KKILB3VZqVrDX9MXj1AeoNQHdLZ0VdB4hLqXXsfh7mk,3949
+ldsc2/download.py,sha256=ijMTIbC1wU1ncvZM9K23zieAKqqkbnqN0O6A_68fxPg,7287
+ldsc2/env.py,sha256=ES3oAvpR_SWRLG7qlxci4hdILZf9Uo2oANVg2WQ9Afc,944
+ldsc2-0.0.11.dist-info/LICENSE,sha256=lN83XrrwSAo3Twrbii-3tTUQufpUNWIOYhyHmxvwCEA,1059
+ldsc2-0.0.11.dist-info/METADATA,sha256=m8gZRnIDJMAWeUBrns0YaJJHTNrobRaVsPKeRfIpUvc,707
+ldsc2-0.0.11.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+ldsc2-0.0.11.dist-info/entry_points.txt,sha256=s5X9HcFU8hxOysLHWmdKqey_a5976G9DhvgXn1QE8Gg,142
+ldsc2-0.0.11.dist-info/top_level.txt,sha256=c_IJ5EOd6e-5spCA3BByAkO0YOvmUfcMAH4Tx7B6-yQ,6
+ldsc2-0.0.11.dist-info/RECORD,,

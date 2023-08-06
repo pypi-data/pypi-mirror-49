@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tc3omega
+Version: 0.7
+Summary: Data analyzer for 3ω thermal conductivity measurements
+Home-page: https://github.com/araghukas/tc3omega
+Author: Ara Ghukasyan
+Author-email: ghukasa@mcmaster.ca
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pyyaml
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+

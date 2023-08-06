@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cqh_pyproxy
+Version: 0.0.2
+Summary: use pyproxy --port --remote_url to proxyit
+Home-page: UNKNOWN
+Author: cqh
+Author-email: 1832866299@qq.com
+License: MIT
+Description: 
+        # cqh_pyproxy
+        
+        ## usage
+        cqh_pyproxy --port=8080 --remote_url=http://localhost:9000/
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown

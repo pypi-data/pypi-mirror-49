@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/PyZE.egg-info/PKG-INFO
+src/PyZE.egg-info/SOURCES.txt
+src/PyZE.egg-info/dependency_links.txt
+src/PyZE.egg-info/entry_points.txt
+src/PyZE.egg-info/requires.txt
+src/PyZE.egg-info/top_level.txt
+src/pyze/__init__.py
+src/pyze/cli/__init__.py
+src/pyze/cli/__main__.py

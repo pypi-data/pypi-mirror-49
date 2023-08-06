@@ -1,0 +1,6 @@
+[console_scripts]
+assemble = aqtest1.Aquila_assembly_based_variants_call:main
+phasing = aqtest1.Aquila_phasing_all_variants:main
+step1 = aqtest1.Aquila_step1:main
+step2 = aqtest1.Aquila_step2:main
+

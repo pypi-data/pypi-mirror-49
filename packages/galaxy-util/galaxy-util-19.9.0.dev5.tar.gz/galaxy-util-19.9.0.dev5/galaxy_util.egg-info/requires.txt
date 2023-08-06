@@ -1,0 +1,16 @@
+bleach
+boltons
+bz2file; python_version < '3.3'
+docutils
+markupsafe
+packaging
+pyyaml
+routes
+six>=1.9.0
+
+[jstree]
+dictobj
+
+[template]
+future
+Cheetah3

@@ -1,0 +1,17 @@
+loguru/__init__.py,sha256=0g9yy9UJ2x8qQ3G43lbQ8Ope8ZAk0oXgSmg1cWlqA7o,468
+loguru/_ansimarkup.py,sha256=9zXjVjDy77wuDXkoOnn2qwNgSUECsqDokHk5ZuRqaxU,7473
+loguru/_better_exceptions.py,sha256=jOOnmscHRk367CqY8evF7KLyT451-I-9FoSCEOh4UKc,15535
+loguru/_colorama.py,sha256=OhC352Qp_Sj2g6xK8HTFY8A5OP7a7anKwzni-c0Naq8,668
+loguru/_datetime.py,sha256=_YpK2BqQVZHH-axxCX3xguIqlxpsg9n5o5RtYEcIllY,3019
+loguru/_defaults.py,sha256=OjzAwechh46E-ARL-Gb8bMR5AaQTB-sx1Bnd4u7_PPA,2830
+loguru/_file_sink.py,sha256=MJ8SAtCE7Ph00fYMSyz_Q8PpmURBC4yY7gg33iHoiI8,13331
+loguru/_get_frame.py,sha256=G0TU3prvlMQ6wEkcPUWExf1MhxrwL3ZqOBVU4NIBCn0,456
+loguru/_handler.py,sha256=Vv-8IsN8mgMfDa8gs-1stnqnpFR6YhyVxYBuR9BW8_U,9694
+loguru/_logger.py,sha256=PRQ8kMusrILz3hFoOt0JUNcf2Tia63Bcc-VM2DM-2BI,78061
+loguru/_recattrs.py,sha256=vcW-ejfA43B9JyeymcBxd_2fpJc4Fmk-y5mVuClEGN8,521
+loguru/_string_parsers.py,sha256=doIbdL1UhxxFQ19UaFJSxLGp29NltItsa9YlmD_br1k,4607
+loguru-0.3.1.dist-info/LICENSE,sha256=r7EUJuCdpAoa5Pj6F93Ma2pS0U3wTCm8W80G64cwYk0,1057
+loguru-0.3.1.dist-info/METADATA,sha256=ijj7w_t6pff8Z23QVubHLaUBwwM6AVea14orPlnRB6U,19523
+loguru-0.3.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+loguru-0.3.1.dist-info/top_level.txt,sha256=VK-Q_IWLl8JBdlENtPDjD-ZIItccWv9OFLwEGJiZcfI,7
+loguru-0.3.1.dist-info/RECORD,,

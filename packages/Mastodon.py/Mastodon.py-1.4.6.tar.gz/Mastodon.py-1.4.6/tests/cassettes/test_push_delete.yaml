@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body: subscription%5Bendpoint%5D=https%3A%2F%2Fexample.com&subscription%5Bkeys%5D%5Bp256dh%5D=BD5VwuhLRvbzTNrg6%2FHHS4pKa%2F3Cu7NBjScG0T87aIp72nLzrwXBf21yb7AzTeVTMyu7V5Z9shpF%2FxuHSMe3yps%3D&subscription%5Bkeys%5D%5Bauth%5D=9zH0t4%2FsmW0pxyoGhiZrMQ%3D%3D
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [Bearer __MASTODON_PY_TEST_ACCESS_TOKEN]
+      Connection: [keep-alive]
+      Content-Length: ['248']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.18.4]
+    method: POST
+    uri: http://localhost:3000/api/v1/push/subscription
+  response:
+    body: {string: '{"id":15,"endpoint":"https://example.com","alerts":{},"server_key":"BMimvNvIJnE4R13etr8xTuyqzJ41IjYCpSBH0LICimXu2yzRI8mDhMJzRYfKhoNrs0TMpvkaa5asJ7Dl6PorcZE="}'}
+    headers:
+      Cache-Control: ['no-cache, no-store']
+      Content-Type: [application/json; charset=utf-8]
+      Referrer-Policy: [strict-origin-when-cross-origin]
+      Transfer-Encoding: [chunked]
+      Vary: ['Accept-Encoding, Origin']
+      X-Content-Type-Options: [nosniff]
+      X-Download-Options: [noopen]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Permitted-Cross-Domain-Policies: [none]
+      X-Request-Id: [af76bd5d-1afc-4d85-957a-8249951be5d7]
+      X-Runtime: ['0.028201']
+      X-XSS-Protection: [1; mode=block]
+      content-length: ['158']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [Bearer __MASTODON_PY_TEST_ACCESS_TOKEN]
+      Connection: [keep-alive]
+      Content-Length: ['0']
+      User-Agent: [python-requests/2.18.4]
+    method: DELETE
+    uri: http://localhost:3000/api/v1/push/subscription
+  response:
+    body: {string: '{}'}
+    headers:
+      Cache-Control: ['no-cache, no-store']
+      Content-Type: [application/json; charset=utf-8]
+      Referrer-Policy: [strict-origin-when-cross-origin]
+      Transfer-Encoding: [chunked]
+      Vary: ['Accept-Encoding, Origin']
+      X-Content-Type-Options: [nosniff]
+      X-Download-Options: [noopen]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Permitted-Cross-Domain-Policies: [none]
+      X-Request-Id: [0898d9b5-c757-4dca-945a-9c4f4d7728e5]
+      X-Runtime: ['0.024530']
+      X-XSS-Protection: [1; mode=block]
+      content-length: ['2']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [Bearer __MASTODON_PY_TEST_ACCESS_TOKEN]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: http://localhost:3000/api/v1/push/subscription
+  response:
+    body: {string: '{"error":"Record not found"}'}
+    headers:
+      Cache-Control: ['no-cache, no-store']
+      Content-Type: [application/json; charset=utf-8]
+      Referrer-Policy: [strict-origin-when-cross-origin]
+      Transfer-Encoding: [chunked]
+      Vary: ['Accept-Encoding, Origin']
+      X-Content-Type-Options: [nosniff]
+      X-Download-Options: [noopen]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Permitted-Cross-Domain-Policies: [none]
+      X-Request-Id: [572850e5-b1c0-4ed7-ba8f-59d083b26edd]
+      X-Runtime: ['0.014208']
+      X-XSS-Protection: [1; mode=block]
+      content-length: ['28']
+    status: {code: 404, message: Not Found}
+version: 1

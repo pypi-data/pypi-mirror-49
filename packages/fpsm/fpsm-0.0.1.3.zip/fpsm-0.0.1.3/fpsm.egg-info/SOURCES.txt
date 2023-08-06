@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+fpsm/__init__.py
+fpsm.egg-info/PKG-INFO
+fpsm.egg-info/SOURCES.txt
+fpsm.egg-info/dependency_links.txt
+fpsm.egg-info/top_level.txt
+tests/__init__.py
+tests/test_fpsm.py

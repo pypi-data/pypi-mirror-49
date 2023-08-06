@@ -1,0 +1,11 @@
+bvs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bvs/__main__.py,sha256=VnEB-8c1UfCNWkeDklzZdiw27HRAH3GUdtDk_CB_G7g,5890
+bvs/constant.py,sha256=MYJGBkTd-2mQwNSL1hcN4RveA9GwExx1CvvXCKrCmAM,791
+bvs/crawler.py,sha256=3-k-n9s_umolg-S8rXr3KvuOATX1YBPRXfWooo8-b4w,4693
+bvs/mongo.py,sha256=C6SRcqiAiziF9NXhZaqfmP5C3wB2H8zK9K7oSmvG-MU,5068
+bvs/parse_file.py,sha256=3y5harYswubU_lzCE65rXyl_Gq0dHkda9JoGg-FfyzI,9805
+BvSalud-0.0.4.dist-info/LICENSE.txt,sha256=FeWBvc3KQczuzdftWldqOPAS5d7JqG7uupBxBr5BHCk,35152
+BvSalud-0.0.4.dist-info/METADATA,sha256=IgYa_--82k14XRwaBMNi18DGrpBLarT8wgvnqbT9KlA,415
+BvSalud-0.0.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+BvSalud-0.0.4.dist-info/top_level.txt,sha256=VKxAblPFZUcLtwmDec1_aFfK26IlV0vDnXWhAiVJM1k,4
+BvSalud-0.0.4.dist-info/RECORD,,

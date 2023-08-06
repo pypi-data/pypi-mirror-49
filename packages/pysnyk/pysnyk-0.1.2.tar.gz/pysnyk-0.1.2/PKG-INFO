@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pysnyk
+Version: 0.1.2
+Summary: A Python client for the Snyk API
+License: MIT
+Author: Gareth Rushgrove
+Author-email: garethr@snyk.io
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: mashumaro (>=1.7,<2.0)
+Requires-Dist: requests (>=2.22,<3.0)

@@ -1,0 +1,18 @@
+{% load static from staticfiles %}
+<html>
+  <head>
+    <title>Alexa Browser Client</title>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="{% static 'main.js' %}"></script>
+  </head>
+  <body>
+    <h1 id="status-label" style="font-size: 60px;"></h1>
+    <script type="text/javascript">
+      AlexaBrowserClient({
+        loginUrl: '{% url "refreshtoken" %}',
+        websocketUrl: '{{ websocket_url }}',
+        statusLabel: document.getElementById('status-label'),
+      });
+    </script>
+  </body>
+</html>

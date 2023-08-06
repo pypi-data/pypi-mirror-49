@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: idottie
+Version: 0.0.2
+Summary: record terminal tools
+Home-page: https://github.com/me/myproject
+Author: dottie
+Author-email: daejong2014@163.com
+License: MIT
+Description: 
+        ### intellectual tools
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0.0
+Description-Content-Type: text/markdown

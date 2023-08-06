@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+idottie/Tools.py
+idottie/Translate.py
+idottie/__init__.py
+idottie/__version__.py
+idottie/core.py
+idottie.egg-info/PKG-INFO
+idottie.egg-info/SOURCES.txt
+idottie.egg-info/dependency_links.txt
+idottie.egg-info/entry_points.txt
+idottie.egg-info/requires.txt
+idottie.egg-info/top_level.txt

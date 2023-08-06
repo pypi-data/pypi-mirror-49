@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pyid
+Version: 0.0.1
+Summary:  ID attributes for python objects
+Home-page: https://github.com/cyclecycle/pyid
+Author: Nicholas Morley
+Author-email: nick.morley111@gmail.com
+License: UNKNOWN
+Description: # PyID
+        
+        Turn any python object into an exactly equivalent object with an `id` attribute.
+        
+        ## Example
+        
+        ```python
+        import random
+        import pyid
+        
+        
+        mylist = [random.sample(range(10), k=3) for i in range(20)]
+        
+        
+        # Uses python uuid module to assign ID by default
+        mylist = [pyid.idfy(item) for item in mylist]
+        for item in mylist:
+            print(item, item.id)
+        
+        
+        # Assign a custom ID
+        mylist = [pyid.idfy(item, 'myid') for item in mylist]
+        for item in mylist:
+            print(item, item.id)
+        ```
+        
+        ## Installation
+        
+        ```bash
+        pip install pyid
+        ```
+        
+        ## Motivation
+        
+        When referencing related objects, we use unique IDs. In python, we might handle this pattern with a dictionary mapping IDs to objects, or use an item's position in a list as its ID. Either case requires we create variables separate from the object to represent those IDs, and that each time we iterate we explicitly include the ID by iterating with the ID dict or the enumarate function for lists. I built this to test the idea that having an ID attribute is easier and cleaner.
+        
+        ## How it works
+        
+        It takes the `type` of the passed object, creates a subclass of that type, with an ID attribute, and copies the data from the passed object into an instance that new subclass. If a custom ID is not passed, the python uuid module is used to assign one.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

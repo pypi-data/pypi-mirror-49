@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+testpackagesanc/__init__.py
+testpackagesanc/config.py
+testpackagesanc.egg-info/PKG-INFO
+testpackagesanc.egg-info/SOURCES.txt
+testpackagesanc.egg-info/dependency_links.txt
+testpackagesanc.egg-info/entry_points.txt
+testpackagesanc.egg-info/top_level.txt

@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: amendment-back-up
+Version: 0.0.2
+Summary: Incremental backup
+Home-page: https://github.com/sunyu0410/AmendmentBackUp
+Author: Yu Sun
+Author-email: sunyu0410@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: System :: Archiving :: Backup
+
+A Python class for file comparison and new file backup.
+
+Author: Yu Sun at University of Sydney
+
+Email: sunyu0410@gmail.com
+
+
+

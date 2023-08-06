@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: terminal-space
+Version: 0.1.0
+Summary: A text-based space trading game
+Home-page: https://bitbucket.org/mrdon/terminal-space
+Author: Don Brown
+Author-email: mrdon@twdata.org
+License: aplv2
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp (==3.5.4)
+Requires-Dist: colorclass (==2.0.0)
+Requires-Dist: networkx (==1.9.1)
+Requires-Dist: tabulate (==0.7.5)
+Requires-Dist: prompt-toolkit (==2.0.9)
+
+# Terminal Space - a text-based space game
+
+This is currently command line TradeWars clone that was inspired by 
+http://blog.brianseitel.com/2015/07/07/tradewars-big-bang/
+
+It currently implements the basics of a universe, sectors, and ports, 
+but will soon be taken in new directions.
+
+To run it, install Python 3.7 and run:
+
+    pip3 install terminal-space
+
+To install it locally, run:
+
+    make virtualenv
+    make run
+
+To run the server standalone (needed for the "Join Game" option), run:
+
+    make run-server
+
+
+To run it in a clean docker container, run:
+
+    make run-docker
+

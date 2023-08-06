@@ -1,0 +1,8 @@
+include README.md LICENSE.md requirements.txt Pipfile Pipfile.lock
+recursive-exclude * __pycache__
+recursive-exclude * *.pyc
+recursive-exclude * *.pyo
+recursive-exclude * *.orig
+prune tests*
+prune docs*
+prune examples*

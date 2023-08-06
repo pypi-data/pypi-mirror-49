@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pyconmech
+Version: 0.1.1
+Summary: py bindings for conmech: a C++ lib for 3D frame elastis deformation analysis.
+Home-page: https://github.com/yijiangh/conmech
+Author: Yijiang Huang
+Author-email: yijiangh@mit.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

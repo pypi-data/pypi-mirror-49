@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+jupyter-eg-renderer.json
+setup.cfg
+setup.py
+jupyter_eg_renderer/__init__.py
+jupyter_eg_renderer/_version.py
+jupyter_eg_renderer/example.py
+jupyter_eg_renderer.egg-info/PKG-INFO
+jupyter_eg_renderer.egg-info/SOURCES.txt
+jupyter_eg_renderer.egg-info/dependency_links.txt
+jupyter_eg_renderer.egg-info/not-zip-safe
+jupyter_eg_renderer.egg-info/requires.txt
+jupyter_eg_renderer.egg-info/top_level.txt
+jupyter_eg_renderer/static/extension.js
+jupyter_eg_renderer/static/index.js
+jupyter_eg_renderer/static/index.js.map

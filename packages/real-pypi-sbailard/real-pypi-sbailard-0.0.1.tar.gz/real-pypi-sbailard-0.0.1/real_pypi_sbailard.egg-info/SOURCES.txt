@@ -1,0 +1,6 @@
+README.md
+setup.py
+real_pypi_sbailard.egg-info/PKG-INFO
+real_pypi_sbailard.egg-info/SOURCES.txt
+real_pypi_sbailard.egg-info/dependency_links.txt
+real_pypi_sbailard.egg-info/top_level.txt

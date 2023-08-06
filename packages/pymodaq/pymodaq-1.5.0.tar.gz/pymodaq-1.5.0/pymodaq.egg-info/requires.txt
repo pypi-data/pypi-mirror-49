@@ -1,0 +1,11 @@
+numpy
+scipy
+pyqtgraph==0.10
+bitstring
+easydict
+pyqt5
+numba
+tables
+pymodaq_plugins>=1.1.1
+dask
+simple_pid

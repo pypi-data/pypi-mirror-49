@@ -1,0 +1,9 @@
+remote_kernel_provider
+jupyter_kernel_mgmt
+entrypoints
+yarn-api-client>=0.3.6
+
+[test]
+mock
+pytest
+pytest-console-scripts

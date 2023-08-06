@@ -1,0 +1,9 @@
+encapsia_api/__init__.py,sha256=mdwyNBqpU9PAT4Gz305Clr_52sTq2H5bOs8t2GpGjcg,441
+encapsia_api/credentials.py,sha256=P33sw1s0TqAt3yFutrn2pMcE8CiKRNevyp5Mjtt5VeE,2270
+encapsia_api/package.py,sha256=EcxrbOBFHF7qgz_qfmiaN2T_yEwEjR_v_xPJYanf0Sk,2622
+encapsia_api/rest.py,sha256=eoy51GiT_PYxYFbOB6ME067Xhmcs07Np2N1KxLTWp9U,23141
+encapsia_api/test_rest.py,sha256=9py1QWSueAok_KXQoZoeBS8GRgEOtsCvdKWh6qNNtlU,3974
+encapsia_api-0.1.20.dist-info/LICENSE,sha256=y1Jd88qurnO9HvyrERqTYbRRhAeoyEY-lFx5hV-Wg_Q,1078
+encapsia_api-0.1.20.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+encapsia_api-0.1.20.dist-info/METADATA,sha256=W0z0wK8gwWWdfFyZTwcoEyuJp7EBfP4RgjSbogxmzcU,993
+encapsia_api-0.1.20.dist-info/RECORD,,

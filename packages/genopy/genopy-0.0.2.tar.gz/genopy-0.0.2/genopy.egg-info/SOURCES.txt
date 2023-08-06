@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+genopy/__init__.py
+genopy.egg-info/PKG-INFO
+genopy.egg-info/SOURCES.txt
+genopy.egg-info/dependency_links.txt
+genopy.egg-info/requires.txt
+genopy.egg-info/top_level.txt

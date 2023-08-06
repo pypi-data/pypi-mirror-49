@@ -1,0 +1,6 @@
+numpy
+biopython
+pandas
+matplotlib
+seaborn
+ipfshttpclient

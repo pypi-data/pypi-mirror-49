@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: grandas
+Version: 0.1.dev0
+Summary: Simple and flexible graph database analysis
+Home-page: http://github.com/austinbrian/grandas
+Author: Brian Austin
+Author-email: austin.brian+gh@gmail.com
+License: BSD-3
+Description: # grandas
+        
+        Grandas as a library that allows simplified, flexible analysis of the nodes and relationships stored in a graph database. It allows a user to search for and filter information and connections contained in a subgraph of a graph database.
+        
+        
+        
+Platform: UNKNOWN

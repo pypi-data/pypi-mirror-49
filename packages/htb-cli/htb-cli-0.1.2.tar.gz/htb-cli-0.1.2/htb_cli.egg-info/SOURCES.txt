@@ -1,0 +1,8 @@
+setup.py
+bin/hackthebox.py
+htb-cli/__init__.py
+htb_cli.egg-info/PKG-INFO
+htb_cli.egg-info/SOURCES.txt
+htb_cli.egg-info/dependency_links.txt
+htb_cli.egg-info/requires.txt
+htb_cli.egg-info/top_level.txt

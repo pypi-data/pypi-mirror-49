@@ -1,0 +1,7 @@
+nltk
+unidecode
+py4j
+pygtrie
+pyparsing
+psutil
+hunspell

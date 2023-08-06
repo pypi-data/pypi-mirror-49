@@ -1,0 +1,60 @@
+pre {
+    background-color: #f6f7e2;
+    border: 1px solid #bdcc6b;
+}
+
+body {
+    overflow-y: scroll !important;
+}
+
+div.body {
+    max-width: 1024px !important;
+}
+
+.caption {
+    /*font-style: italic;*/
+}
+
+h1.logo {
+    display: none;
+}
+
+p.logo {
+    padding-left: 0 !important;
+}
+
+p.logo > img {
+    max-width: 80% !important;
+}
+
+.sphinxsidebarwrapper {
+    font-size: 17px;
+}
+
+.sphinxsidebarwrapper > p {
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.sphinxsidebarwrapper .toctree-l1 {
+    padding-left: 25px !important;
+}
+
+.sphinxsidebarwrapper > h3 {
+    display: none;
+}
+
+.admonition-title {
+    display: none !important;
+}
+
+.ethical-alabaster {
+    display: none;
+}
+
+.note {
+    background-color: #fffeeb !important;
+    padding: 0 30px 10px 30px !important;
+}
+

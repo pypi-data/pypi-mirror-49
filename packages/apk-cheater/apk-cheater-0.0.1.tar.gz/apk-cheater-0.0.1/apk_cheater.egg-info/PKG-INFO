@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: apk-cheater
+Version: 0.0.1
+Summary: Easy to use frida gadget
+Home-page: https://github.com/ksg97031/apk-cheater
+Author: ksg97031
+Author-email: ksg97031@gmail.com
+License: UNKNOWN
+Description: apk-cheater
+        ============================================================
+        | Memory editor with frida-gadget
+        
+        .. code:: sh
+        
+          $ pip install frida-gadget 
+          $ frida-gadget {APK_PATH}
+          > Gadget APK: {GADGET_APK_PATH}
+          ... singing and running your usb device
+          $ apk-cheater
+          > [Warning] Signing with default keystore.
+          > [Warning] Please pass --key_path, --key_alias, --key_pass, --ks_pass parameter, if you want to use your keystore
+          > {SIGNED_APK_PATH}
+          $ pyapksigner --key_path="sample.jks" --key_alias="sample" --key_pass="sample_key" --ks_pass="sample_ks"
+          > {SIGNED_APK_PATH}
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/x-rst

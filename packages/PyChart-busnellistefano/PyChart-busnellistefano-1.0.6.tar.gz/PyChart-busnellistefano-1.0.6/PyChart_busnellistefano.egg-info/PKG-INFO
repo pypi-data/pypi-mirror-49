@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: PyChart-busnellistefano
+Version: 1.0.6
+Summary: A simple chart class
+Home-page: https://bitbucket.org/StefanoBusnelli/pychart
+Author: Busnelli Stefano Antonio
+Author-email: busnelli.stefano@gmail.com
+License: UNKNOWN
+Description: PyChart
+        =======
+        
+        Libreria python per generare semplici grafici tramite la libreria Pillow.
+        
+        Versione 1.0.6
+        
+        Installazione
+        -------------
+        
+        pip install PyChart-busnellistefano -U
+        
+        Utilizzo
+        --------
+        
+        $ python
+        import pychart
+        
+        Classi
+        ------
+        
+        * Mapper
+        
+        * Graph
+        
+        * Panel
+        
+        * Chart
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,17 @@
+flowws/Argument.py,sha256=_7z3cVCGqgB3vdP8JvqoV7la1wECqfnHI7umNHLD5h8,4069
+flowws/DirectoryStorage.py,sha256=_mekBXBXrvFxEOUyVf7Mxmbtd18Rj8oI4UAhNMYuVEU,809
+flowws/GetarStorage.py,sha256=qxDSIRfJGih4I0c755QkQ27aG0JDeODgMEQW-6witDI,2440
+flowws/PatternMatcher.py,sha256=2nvfaIGtDxRqBE_C89PD10XouiN1p9T0RGJVnodApCA,2236
+flowws/Stage.py,sha256=CHJgQX8AKesEk5ipiqyMJooeRJAc-xz7TkVe2cdB7m0,3021
+flowws/Storage.py,sha256=3J5bjHcGaSjKTUH48ITxQ0Tlh7VQta6fvmIZUBznHS4,2917
+flowws/Workflow.py,sha256=DeIRwHe2J5PJx3k-R2m8Y9RngiD8jDO144_GAGujd1g,6231
+flowws/__init__.py,sha256=bRoir_kmHFVR1A9PG6FUqyTSKb5W-w09IC5kX07eJRo,229
+flowws/freeze.py,sha256=tRVeXZ-GxBfjWtrgcdNevB0_Q3DJEGF6BfPjWRFXArs,1210
+flowws/run.py,sha256=uIuA24rJmoT101lrZ-flL-sK4AmJL88j27bawtpNG-o,1098
+flowws/version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+flowws-0.1.0.dist-info/LICENSE,sha256=ZoIaIj06pf6p9dPMXp5FRn81SchAB4XTw47V6uTj314,1060
+flowws-0.1.0.dist-info/METADATA,sha256=9MuL-4telJ1tJEq7SvYdJk-sVJGGQp1_ZwFG0oFARqs,414
+flowws-0.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+flowws-0.1.0.dist-info/entry_points.txt,sha256=kkyt35X0DT2AQgNlJJB8kB0SGwAmQtJ1PnY9OhZThO4,83
+flowws-0.1.0.dist-info/top_level.txt,sha256=w2PlrAOAraq6qjtF3HyRBcQgjuHwUtzAKAbUY-CqkD8,7
+flowws-0.1.0.dist-info/RECORD,,

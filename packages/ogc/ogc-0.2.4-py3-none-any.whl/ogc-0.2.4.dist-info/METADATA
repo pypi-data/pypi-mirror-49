@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: ogc
+Version: 0.2.4
+Summary: ogc, a runner of things
+Home-page: https://github.com/battlemidget/ogc
+Author: Adam Stokes
+Author-email: adam.stokes@ubuntu.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: awscli (<2.0,>=1.16)
+Requires-Dist: attrs (==19.1.0)
+Requires-Dist: boto3 (<2.0,>=1.9)
+Requires-Dist: click (<8.0,>=7.0)
+Requires-Dist: jinja2 (<3.0,>=2.10)
+Requires-Dist: juju-wait (==2.7.0)
+Requires-Dist: dict-deep (==2.0.2)
+Requires-Dist: juju (<0.12.0,>=0.11.7)
+Requires-Dist: kv (<0.4.0,>=0.3.0)
+Requires-Dist: launchpadlib (==1.10.6)
+Requires-Dist: melddict (<2.0,>=1.0)
+Requires-Dist: pyyaml-include (<2.0,>=1.1)
+Requires-Dist: pyyaml (==3.13)
+Requires-Dist: requests (<3.0,>=2.22)
+Requires-Dist: semver (<3.0,>=2.8)
+Requires-Dist: sh (<2.0,>=1.12)
+Requires-Dist: staticjinja (<0.4.0,>=0.3.5)
+Requires-Dist: toml (<0.11.0,>=0.10.0)
+Requires-Dist: colorama (==0.3.9)
+Requires-Dist: pytest (==5.0.1)
+Requires-Dist: python-box (==3.4.2)
+Requires-Dist: python-dotenv (==0.10.3)
+
+[![Build Status](https://travis-ci.org/battlemidget/ogc.svg?branch=master)](https://travis-ci.org/battlemidget/ogc)
+
+# ogc
+
+ogc - Task runner with a focus on deployment/testing/reporting.
+
+# description
+
+OGC is powered by plugins that can be discovered on https://pypi.org with the
+prefix of `ogc-plugins`. With plugins installed different aspects of a run can
+be defined through a spec file, which is a toml file setting up plugin
+configuration for the particular goal.
+
+# usage
+
+```
+> pip install ogc
+> ogc --spec ogc-spec-runner.toml execute
+
+# Or with a ogc.toml file in same directory running ogc from
+> ogc execute
+```
+
+## Show plugin dependencies
+
+OGC doesn't install package dependencies automatically, but will give you a
+summary that you can pass to whatever automation strategy you want.
+
+```
+> ogc --spec ogc-spec-runner.toml plugin-deps
+Plugin dependency summary ::
+
+  - snap:juju/latest/stable
+  - snap:juju-wait/latest/stable
+  - pip:pytest==5.0.1
+```
+
+To get the install commands for the plugin deps you can pass `--installable`:
+
+```
+> ogc --spec ogc-spec-runner.toml plugin-deps --installable
+snap install juju --channel=latest/stable
+snap install juju-wait --channel=latest/stable
+pip install pytest==5.0.1
+```
+
+Or to handle installing those packages automatically (like in a CI run):
+
+```
+> ogc --spec ogc-spec-runner.toml plugin-deps --installable | sh -
+```
+
+# todo
+
+Docs..duh.
+
+

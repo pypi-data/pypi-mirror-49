@@ -1,0 +1,8 @@
+README.txt
+setup.py
+magic_defis/__init__.py
+magic_defis.egg-info/PKG-INFO
+magic_defis.egg-info/SOURCES.txt
+magic_defis.egg-info/dependency_links.txt
+magic_defis.egg-info/requires.txt
+magic_defis.egg-info/top_level.txt

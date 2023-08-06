@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ukrdict
+Version: 0.1.0
+Summary: CLI tool for looking up Ukrainian words meaning.
+License: MIT
+Author: serhii73
+Author-email: aserhii@protonmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: beautifulsoup4 (==4.7.1)
+Requires-Dist: click (==7.0)
+Requires-Dist: lxml (==4.3.4)
+Requires-Dist: requests (==2.22.0)

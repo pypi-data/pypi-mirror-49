@@ -1,0 +1,3 @@
+[console_scripts]
+ukrdict=ukrdict.__main__:main
+

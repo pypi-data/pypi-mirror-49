@@ -1,0 +1,15 @@
+README.rst
+setup.py
+update_blacklist/central_repo_updater/__init__.py
+update_blacklist/central_repo_updater/clean.py
+update_blacklist/central_repo_updater/configuration.py
+update_blacklist/central_repo_updater/core.py
+update_blacklist/central_repo_updater/deploy.py
+update_blacklist/central_repo_updater/generate.py
+update_blacklist/central_repo_updater/repositories.py
+zlocated_central_repo_updater.egg-info/PKG-INFO
+zlocated_central_repo_updater.egg-info/SOURCES.txt
+zlocated_central_repo_updater.egg-info/dependency_links.txt
+zlocated_central_repo_updater.egg-info/entry_points.txt
+zlocated_central_repo_updater.egg-info/requires.txt
+zlocated_central_repo_updater.egg-info/top_level.txt

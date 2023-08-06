@@ -1,0 +1,10 @@
+aicsapi_tool_python/__init__.py,sha256=SryuvE3uIWBQh_pWqYqMc6dF7QRZxhiewJ25YVcpWIE,134
+aicsapi_tool_python/appinsight_transport.py,sha256=XMgof63Cev82t6CtgyNtT1EWW7ETW2SK5mhpXnFXWFs,1595
+aicsapi_tool_python/keyvault_certgen.py,sha256=EzXrFmC8PmdeFxzyrNnumokBxSFAQNln9cwK-sBPbUM,3515
+aicsapi_tool_python/keyvault_tokenCache.py,sha256=BsFfU-ri1jX9f_7lWxVczccAr2f8f-8uoceU81vYmms,1735
+aicsapi_tool_python/keyvault_utils.py,sha256=7AnHqXDDV9MibGrLmb5CkzoUJa85hkzbT4WKeAgKqfA,4071
+aicsapi_tool_python-0.2.4.dist-info/LICENSE,sha256=baTNRUr0TR5zpaabmmUdtEZn77C8HPmlJciLb7PSH3Q,1096
+aicsapi_tool_python-0.2.4.dist-info/METADATA,sha256=i_-UWpwsWjzPE7TKmYsXm9l1bpikogjVca16oOrWAr8,624
+aicsapi_tool_python-0.2.4.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+aicsapi_tool_python-0.2.4.dist-info/top_level.txt,sha256=EUzAFo2XOmdgeEtKZDctIJmgpyc0-HfeJ7v_a93Ybhw,20
+aicsapi_tool_python-0.2.4.dist-info/RECORD,,

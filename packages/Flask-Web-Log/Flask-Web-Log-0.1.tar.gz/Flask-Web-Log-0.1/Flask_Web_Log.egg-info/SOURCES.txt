@@ -1,0 +1,9 @@
+README.md
+setup.py
+Flask_Web_Log.egg-info/PKG-INFO
+Flask_Web_Log.egg-info/SOURCES.txt
+Flask_Web_Log.egg-info/dependency_links.txt
+Flask_Web_Log.egg-info/not-zip-safe
+Flask_Web_Log.egg-info/requires.txt
+Flask_Web_Log.egg-info/top_level.txt
+flask_web_log/__init__.py

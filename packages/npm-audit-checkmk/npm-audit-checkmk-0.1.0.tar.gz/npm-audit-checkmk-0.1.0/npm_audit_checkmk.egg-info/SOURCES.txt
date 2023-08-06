@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+npm_audit_checkmk/__init__.py
+npm_audit_checkmk/__main__.py
+npm_audit_checkmk/lib.py
+npm_audit_checkmk.egg-info/PKG-INFO
+npm_audit_checkmk.egg-info/SOURCES.txt
+npm_audit_checkmk.egg-info/dependency_links.txt
+npm_audit_checkmk.egg-info/entry_points.txt
+npm_audit_checkmk.egg-info/top_level.txt
+tests/__init__.py
+tests/example.json
+tests/test_lib.py

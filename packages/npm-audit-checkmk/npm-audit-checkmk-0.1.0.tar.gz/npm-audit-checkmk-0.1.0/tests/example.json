@@ -1,0 +1,23 @@
+{
+  "actions": [
+    "shortend for brevity"
+  ],
+  "advisories": {
+    "shortend": "for brevity"
+  },
+  "muted": [],
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 7,
+      "moderate": 2,
+      "high": 55,
+      "critical": 0
+    },
+    "dependencies": 0,
+    "devDependencies": 5389,
+    "optionalDependencies": 2365,
+    "totalDependencies": 5389
+  },
+  "runId": "a60d3412-0b9e-45cf-a1ae-ce806759270c"
+}

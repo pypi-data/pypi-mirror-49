@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyprojector.cpp
+setup.py
+deps/miniz.c
+deps/miniz.h
+deps/opengl.hpp
+pyprojector.egg-info/PKG-INFO
+pyprojector.egg-info/SOURCES.txt
+pyprojector.egg-info/dependency_links.txt
+pyprojector.egg-info/top_level.txt
+res/pyprojector.ico
+res/pyprojector.rc

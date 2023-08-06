@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pretty-plz
+Version: 0.1.3
+Summary: pretty_plz is a tool that turns utility scripts into runnable commands
+Home-page: https://github.com/sztomi/pretty_plz/
+License: MIT
+Keywords: productivity,commandline,cli
+Author: Tamás Szelei
+Author-email: szelei.t@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Project-URL: Repository, https://github.com/sztomi/pretty_plz/

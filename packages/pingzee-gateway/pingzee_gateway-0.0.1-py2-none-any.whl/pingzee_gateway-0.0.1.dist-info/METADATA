@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: pingzee-gateway
+Version: 0.0.1
+Summary: Python library for easier interface to pingzee-gateway
+Home-page: https://github.com/nishgaba-ai/pingzee-gateway
+Author: Nishchal Gaba
+Author-email: nishchal@unrealai.xyz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# pingzee-gateway
+Python Package Library to enable easy interfacing with pingzee-gateway
+
+

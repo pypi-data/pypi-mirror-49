@@ -1,0 +1,8 @@
+cognite/correlation/__init__.py,sha256=cj8Nv7vESXCwt973B-NbZtW8siW7hdjr9g4KfkoNQEA,50
+cognite/correlation/correlation.py,sha256=FiOwFO6CY0pfX2SysRpi1CmQRvcCla5qeZ9mIJqWM1Y,3783
+cognite/correlation/plot.py,sha256=jJH2koxhpMlnTRVDPgNmS4KTC00o0r4RPODF8MsSuQs,3474
+cognite_correlation-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cognite_correlation-0.1.1.dist-info/METADATA,sha256=f_2oWTJr2u3GWNYt1FzTBiOrdppQ7UhBhmcFYPFQrIw,237
+cognite_correlation-0.1.1.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+cognite_correlation-0.1.1.dist-info/top_level.txt,sha256=64aV5H6IpuuyXlucP73BqEoQyR9A6JP1qTY380b6MpQ,8
+cognite_correlation-0.1.1.dist-info/RECORD,,

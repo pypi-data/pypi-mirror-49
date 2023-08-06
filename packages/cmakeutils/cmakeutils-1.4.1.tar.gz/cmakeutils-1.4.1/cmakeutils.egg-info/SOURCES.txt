@@ -1,0 +1,14 @@
+README.md
+cmake_setup.py
+setup.cfg
+setup.py
+cmakeutils/__init__.py
+cmakeutils/git.py
+cmakeutils/io.py
+cmakeutils/utils.py
+cmakeutils.egg-info/PKG-INFO
+cmakeutils.egg-info/SOURCES.txt
+cmakeutils.egg-info/dependency_links.txt
+cmakeutils.egg-info/entry_points.txt
+cmakeutils.egg-info/requires.txt
+cmakeutils.egg-info/top_level.txt

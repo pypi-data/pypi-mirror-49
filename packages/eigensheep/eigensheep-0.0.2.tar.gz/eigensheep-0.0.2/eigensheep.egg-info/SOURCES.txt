@@ -1,0 +1,9 @@
+README.md
+setup.py
+eigensheep/__init__.py
+eigensheep/template.py
+eigensheep.egg-info/PKG-INFO
+eigensheep.egg-info/SOURCES.txt
+eigensheep.egg-info/dependency_links.txt
+eigensheep.egg-info/requires.txt
+eigensheep.egg-info/top_level.txt

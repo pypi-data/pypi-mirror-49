@@ -1,0 +1,3 @@
+PyDelFEM2/c_core.cp37-win_amd64.pyd
+PyDelFEM2/eigen/c_eigen.cp37-win_amd64.pyd
+PyDelFEM2/gl/c_gl.cp37-win_amd64.pyd

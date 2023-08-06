@@ -1,0 +1,33 @@
+CHANGES
+=======
+
+0.5.1
+-----
+
+* Update README.rst
+* Refactor
+* Add reverse functionality. Refactor
+* Refactor
+* Fix exit code propagation in CI
+* Refactor
+* Test
+* Add tests coverage, add badges
+
+0.4.1
+-----
+
+* Refactor
+* Add flake8
+* Add mypy support
+* Add circleci deployment
+
+0.1.1
+-----
+
+* Add pbr
+* Add rstcheck
+* Update setup.py
+* Add flake8
+* Update README.rst
+* Add files
+* Initial commit

@@ -1,0 +1,49 @@
+# pyprojector
+
+**pyprojector** is a Python 3 module that creates an interpreter independent window. Tight loops, long calculation often prevents us from updating a window, using Python threads adds more complexity and a choppy rendering experience.
+
+## How pyprojector works?
+
+A window is created on a new OS thread, the WinAPI takes care of the window.
+The window has two OpenGL contexts with shared objects.
+The user can use the the OpenGL context assigned to the current thread to render arbitrary images using OpenGL. The `window.update(framebuffer=...)` method takes a `framebuffer` and copies its content into a backbuffer. The backbuffer will be used anytime the window needs a redraw.
+
+## Features
+
+- The user can create and update a window with a minimal API.
+- The rendered frames are quickly copied to a backbuffer maintained by another thread.
+- The user can render depending on the window's visibility.
+- A hidden window have an almost zero performance penalty.
+- The user is not responsible updating a window to avoid dirty frames.
+- The window can be shown/hidden from the system tray.
+- Closing the window just hides the window.
+- A screenshot can be saved with `ctrl+s`.
+- A `ctrl+c` in the window raises a `KeyboardInterrupt`.
+- A screenshot can be taken programatically using `window.screenshot()`.
+- The program can be halted with `ctrl+shift+q`.
+- The window is refreshed only when necessary.
+- There is a builtin FPS limiter.
+
+## Example
+
+```py
+import pyprojector
+
+wnd = pyprojector.window((840, 480), __file__, fps=60)
+fbo = ... # OpenGL Framebuffer Object
+
+while True:
+    # the user's loop
+    # do long calculation, train AI, run gyms, ...
+
+    if wnd.visible:
+        # render into fbo
+        # pass fbo to the window
+        wnd.update(fbo)
+```
+
+for more examples please visit the [examples](examples/).
+
+## Acknowledgement
+
+This project is using `miniz` to save PNG files.

@@ -1,0 +1,1 @@
+for pid in `ps aux | grep bruco | awk '{print $2}'`; do echo $pid; kill -9 $pid; done

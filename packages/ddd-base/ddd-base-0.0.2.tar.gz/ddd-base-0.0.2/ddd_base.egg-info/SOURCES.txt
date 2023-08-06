@@ -1,0 +1,14 @@
+CHANGES.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+ddd_base/__init__.py
+ddd_base/__version__.py
+ddd_base/aggregate.py
+ddd_base/entity.py
+ddd_base/value_object.py
+ddd_base.egg-info/PKG-INFO
+ddd_base.egg-info/SOURCES.txt
+ddd_base.egg-info/dependency_links.txt
+ddd_base.egg-info/top_level.txt

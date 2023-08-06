@@ -1,0 +1,10 @@
+fastdiff/__init__.py,sha256=zTlTpeosLD9JoTmDQF8cSGWRdJM_1NYzCg3-A0zK8O4,204
+fastdiff/_base.py,sha256=K4dRdlXQqc00bCbbait7gjPg6JC_Bm-KCLJXaW1w-LU,151
+fastdiff/_native.py,sha256=f_T_g5TIPJHoxBd52CjQ9LrBE-Wzbj2eZjvuLhQdnZg,1928
+fastdiff/compare.py,sha256=f_HBnGeULy1Xc1Kd5b1rpmjsLA_tZEh-qr-WisFjFeA,204
+fastdiff/fastdiff.wasm,sha256=wvAAgGEp6bTtQLbmHzDtul06HOr4sQyhPCusFDi7b1A,77345
+fastdiff-0.1.4.dist-info/LICENSE,sha256=2OgFmEO9r8lHqZNXstqh1AdixlQwpER8jzpoI3t7-Zk,1071
+fastdiff-0.1.4.dist-info/METADATA,sha256=8v_H7v0iCI3Cm_zkE47fhYZ6g3XJFg7VY2DJYlaNnOI,2294
+fastdiff-0.1.4.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+fastdiff-0.1.4.dist-info/top_level.txt,sha256=qapl4BCGJbPN2hp-4ptcR_v8mK4ypmnZ1-r2GYBmOqs,9
+fastdiff-0.1.4.dist-info/RECORD,,

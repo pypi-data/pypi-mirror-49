@@ -1,0 +1,3 @@
+[airflow.plugins]
+airflow_metrics = airflow_metrics:AirflowMetricsPlugin
+

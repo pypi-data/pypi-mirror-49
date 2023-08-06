@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ipython-namespaces
+Version: 0.1.0
+Summary: Extension for IPython/Jupyter Notebooks that adds namespaces that you can enter and re-enter
+Author: Denis Drescher
+Author-email: denis.drescher@claviger.net
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: ipython (>=5.0,<6.0)

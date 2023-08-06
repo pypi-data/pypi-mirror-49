@@ -1,0 +1,4 @@
+[tshistory.subcommands]
+migrate-supervision = tshistory_supervision.cli:migrate_supervision
+shell = tshistory_supervision.cli:shell
+

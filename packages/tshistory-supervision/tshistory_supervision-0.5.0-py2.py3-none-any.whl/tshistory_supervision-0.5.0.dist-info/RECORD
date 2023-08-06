@@ -1,0 +1,9 @@
+tshistory_supervision/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tshistory_supervision/cli.py,sha256=BdWGO62fNF61geLXLEXciAhOiiPmubEUZD_KE4WgYwQ,1075
+tshistory_supervision/schema.py,sha256=D_PiddJgSuEZdh2gOg6K8nsrDu0qRVPyuSvGJyGxGPI,329
+tshistory_supervision/tsio.py,sha256=XKS0H9zcAjQzxBc6YTvsxu1stOxc76mOHCw3e1j6rPw,4810
+tshistory_supervision-0.5.0.dist-info/METADATA,sha256=eY8y4vM25fFrAssouzHAqtDLonz0qiZQ4Vd7wFyYPTE,752
+tshistory_supervision-0.5.0.dist-info/RECORD,,
+tshistory_supervision-0.5.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+tshistory_supervision-0.5.0.dist-info/entry_points.txt,sha256=22GjEyeO88OSXgWHa0Ue6rwytf92sAbnf6vF56h1H90,133
+tshistory_supervision-0.5.0.dist-info/top_level.txt,sha256=3njUKwliJ85ts3t4Yh7Tm8meVGpns2jqhY_ZlYnS70E,22

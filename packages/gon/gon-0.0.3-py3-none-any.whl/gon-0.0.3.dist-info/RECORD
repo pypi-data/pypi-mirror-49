@@ -1,0 +1,12 @@
+gon/__init__.py,sha256=I8NAU5yFJOa-3N5UJWHqE8epETSzb2qu8PAB4FuWBro,53
+gon/angular.py,sha256=nVO9sCv4DNcOMbKVOKU6yF2FhHp1pTlZx4xIoyF0nlM,2318
+gon/base.py,sha256=Pdym9mEqgFmcHey2vypHMiTrVQ4PAfuwA7DyA5B-LP4,2754
+gon/hints.py,sha256=RykzxXY0cLzDkd11SXjnCBLmhGTqcBjkxGTr2jpwPT4,183
+gon/linear.py,sha256=tIh9IuxJTB9l8bSv8xNR333lNsjSndwMlDtD6FD5K8Q,5710
+gon/shaped.py,sha256=kjkIZeMaFgkVkVPfZnkxkWl1RA0NbPfli7DWfclmN0g,14619
+gon/utils.py,sha256=yxzgd3j54XJRuSj9DJjegAwjvt_HL0ZfgZxrQNi9O_M,1517
+gon-0.0.3.dist-info/LICENSE,sha256=1-Ox7Njxk_vfHVt7hoWbAXKg6uWwHCVAvfN0eO1NxQ0,1090
+gon-0.0.3.dist-info/METADATA,sha256=xZ7oMP2Skr8TccWZUZ7geXcxgKCmdtZ-qe3ThTT6UjE,4201
+gon-0.0.3.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+gon-0.0.3.dist-info/top_level.txt,sha256=estISrwhEn821GKLfebY5QYuv3EvxdY3plCG3zclTG4,4
+gon-0.0.3.dist-info/RECORD,,

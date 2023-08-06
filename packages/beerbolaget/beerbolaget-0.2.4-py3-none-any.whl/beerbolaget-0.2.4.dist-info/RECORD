@@ -1,0 +1,9 @@
+beerbolaget/__init__.py,sha256=VEVyMtB8YO6xdQorx6fXwYJrXvveZlqR8bHU1HdpPaY,191
+beerbolaget/beer.py,sha256=6KAWQSEgIMh0Zty45XUaZU2rmACG-jwSkXQhPz8GlhU,3743
+beerbolaget/common.py,sha256=qgVtJK6ghauvQWG02IurYhMLhAC31Da4PUHvYv0QSwk,3020
+beerbolaget/rating.py,sha256=osiSUN4TYgoqRPyO93zeUAjp8sWHjKAtFwjjYuX_IeE,3765
+beerbolaget-0.2.4.dist-info/LICENSE,sha256=uYraQpgO6QvAQ-6OGAhs-mVnHlAnCv33AP3bb77yQcM,1076
+beerbolaget-0.2.4.dist-info/METADATA,sha256=oVio0shOFO2ZbXM-rf2fpqQ1E5u0eCe1e_iMehbm5Jw,600
+beerbolaget-0.2.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+beerbolaget-0.2.4.dist-info/top_level.txt,sha256=rRjciZrjZi8cmOgdP0JTrJTn8XDFekk9nUnrRIFvhUo,12
+beerbolaget-0.2.4.dist-info/RECORD,,

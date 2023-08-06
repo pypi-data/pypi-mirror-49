@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: gittoolbox
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/dbradf/gittoolbox
+Author: David Bradford
+Author-email: david.bradford@mongodb.com
+License: Apache License, Version 2.0
+Description: # Git Toolbox
+        
+        A library and tools for working with git.
+        
+        ## Tools
+        
+        * *git-heatmap*: Get a heatmap of which source file and which test files are changed together.
+        
+        
+        ## Contributors Guide
+        ### Testing
+        
+        Testing is done via `pytest`.
+        
+        To run the test with code coverage:
+        
+        ```
+        $ pip install -r requirements.txt
+        $ pytest --cov=src --cov-report=html
+        ```
+        
+        This will generate an html coverage report in `htmlcov/` directory.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown

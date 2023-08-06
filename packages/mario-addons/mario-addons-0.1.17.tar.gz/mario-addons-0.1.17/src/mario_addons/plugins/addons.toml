@@ -1,0 +1,107 @@
+
+
+[[command]]
+name="xpath"
+short_help = "Find xml elements matching xpath query."
+arguments = [{name="query", type="str"}]
+inject_values=["query"]
+
+
+help = """Pull data out of xml documents using xpath.
+
+For example,
+
+.. code-block:: bash
+
+
+    $ mario xpath '//'  map 'x.text' <<EOF
+          <slide type="all">
+            <title>Overview</title>
+              <item>Anything<em>can be</em> in here</item>
+              <item>Or<em>also</em> in here</item>
+          </slide>
+    EOF
+    Overview
+    Anything
+    can be
+    Or
+    also
+
+"""
+
+[[command.stages]]
+command = "read-text"
+
+[[command.stages]]
+command = "map"
+params = {code="x.encode() ! io.BytesIO ! lxml.etree.parse ! x.findall(query) ! map(lambda y: y, x) ! list" }
+
+[[command.stages]]
+command="chain"
+
+
+[[command.tests]]
+invocation = ["xpath", "//", "map", "x.text"]
+input = '''
+<slide type="all">
+<title>Overview</title>
+<item>Anything in here</item>
+</slide>
+'''
+output = """
+Overview
+Anything in here
+"""
+
+
+
+
+[[command]]
+name="jo"
+short_help="Make json objects"
+arguments=[{name="pairs", type="str"}]
+inject_values=["pairs"]
+
+
+help = """
+
+Create json objects by providing key=value pairs. The argument should be single-quoted if passed in a shell.
+
+For example,
+
+.. code-block:: bash
+
+    $ mario jo 'name=Alice age=21 hobbies=["running"]'
+    {"name": "Alice", "age": 21, "hobbies": ["running"]}
+
+
+"""
+
+[[command.stages]]
+command = "eval"
+params = {code="pairs"}
+
+[[command.stages]]
+command = "map"
+params = {code="shlex.split(x, posix=False)"}
+
+[[command.stages]]
+command = "chain"
+
+[[command.stages]]
+command = "map"
+params = {code="x.partition('=') ! [x[0], ast.literal_eval(re.sub(r'^(?P<value>[A-Za-z]+)$', r'\"\\g<value>\"', x[2]))]"}
+
+[[command.stages]]
+command = "apply"
+params = {"code"="dict"}
+
+[[command.stages]]
+command = "map"
+params = {code="json.dumps"}
+
+
+[[command.tests]]
+invocation = ["jo", "x=1 y=2"]
+input = ""
+output = "{\"x\": 1, \"y\": 2}\n"

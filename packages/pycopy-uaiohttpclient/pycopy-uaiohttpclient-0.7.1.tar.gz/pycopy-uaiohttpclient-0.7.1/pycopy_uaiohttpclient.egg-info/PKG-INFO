@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: pycopy-uaiohttpclient
+Version: 0.7.1
+Summary: HTTP client module for MicroPython uasyncio module
+Home-page: https://github.com/pfalcon/pycopy-lib
+Author: Paul Sokolovsky
+Author-email: pycopy-dev@googlegroups.com
+Maintainer: Paul Sokolovsky
+Maintainer-email: pycopy-dev@googlegroups.com
+License: MIT
+Description: uaiohttpclient is an HTTP client module for MicroPython uasyncio module,
+        with API roughly compatible with aiohttp (https://github.com/KeepSafe/aiohttp)
+        module. Note that only client is implemented, for server see picoweb
+        microframework.
+        
+Platform: UNKNOWN

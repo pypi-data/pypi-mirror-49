@@ -1,0 +1,8 @@
+recursive-include pypi_flow/packageTemplate/*
+recursive-include pypi_flow/packageTemplate/package_name/*
+include pypi_flow/packageTemplate/README.md
+include pypi_flow/packageTemplate/MANIFEST.in
+include pypi_flow/packageTemplate/.gitignore
+
+include pypi_flow/packageTemplate/package_name/__init__.py
+include pypi_flow/packageTemplate/package_name/LicenseTemplates/MIT.txt

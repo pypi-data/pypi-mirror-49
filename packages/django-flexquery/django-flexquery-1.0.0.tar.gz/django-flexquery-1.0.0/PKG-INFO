@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: django-flexquery
+Version: 1.0.0
+Summary: Reusable QuerySet filtering logic for Django, incorporating the DRY principle and maximizing user experience and performance
+Home-page: https://github.com/efficiosoft/django-flexquery
+Author: Robert Schindler
+Author-email: r.schindler@efficiosoft.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN

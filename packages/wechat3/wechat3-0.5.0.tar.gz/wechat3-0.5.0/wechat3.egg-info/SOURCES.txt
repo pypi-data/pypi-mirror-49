@@ -1,0 +1,13 @@
+README.md
+setup.py
+wechat/__init__.py
+wechat/crypt.py
+wechat/enterprise.py
+wechat/models.py
+wechat/official.py
+wechat3.egg-info/PKG-INFO
+wechat3.egg-info/SOURCES.txt
+wechat3.egg-info/dependency_links.txt
+wechat3.egg-info/not-zip-safe
+wechat3.egg-info/requires.txt
+wechat3.egg-info/top_level.txt

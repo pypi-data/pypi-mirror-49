@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.py
+test/__init__.py
+test/test_Sample.py
+test/test_functions.py
+transmission/__init__.py
+transmission/cli_tools.py
+transmission/transmission.py
+transmission_popgen.egg-info/PKG-INFO
+transmission_popgen.egg-info/SOURCES.txt
+transmission_popgen.egg-info/dependency_links.txt
+transmission_popgen.egg-info/entry_points.txt
+transmission_popgen.egg-info/not-zip-safe
+transmission_popgen.egg-info/requires.txt
+transmission_popgen.egg-info/top_level.txt

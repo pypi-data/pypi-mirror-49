@@ -1,0 +1,10 @@
+README.md
+setup.py
+sv_geometry/__init__.py
+sv_geometry/bidimensional.py
+sv_geometry/exception.py
+sv_geometry/tridimensional.py
+sv_geometry.egg-info/PKG-INFO
+sv_geometry.egg-info/SOURCES.txt
+sv_geometry.egg-info/dependency_links.txt
+sv_geometry.egg-info/top_level.txt

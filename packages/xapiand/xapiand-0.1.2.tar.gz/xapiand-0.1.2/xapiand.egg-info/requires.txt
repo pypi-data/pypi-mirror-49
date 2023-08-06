@@ -1,0 +1,5 @@
+urllib3>=1.21.1
+msgpack_python>=0.5
+
+[requests]
+requests<3.0.0,>=2.4.0

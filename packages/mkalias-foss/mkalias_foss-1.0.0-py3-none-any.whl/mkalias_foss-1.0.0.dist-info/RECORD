@@ -1,0 +1,11 @@
+mkalias_foss/__init__.py,sha256=1_axbOw5ZzlqidyXKZcc2qYphnKHYdA5q6fFxpbgVaE,193
+mkalias_foss/alias.py,sha256=RYeEhgmfW1Oo7RJ6wZfhgMZnKuuB-Bcs-2J9GEn-O2o,1120
+mkalias_foss/log_helper.py,sha256=0eKPk0s2tFWx9AJu8HmMTVdTQt2o6UUU0X28hc65Wqg,1063
+mkalias_foss/mkalias.py,sha256=ADisIs080j_TDXIvYLYanlcNhQWtcnPnrLms8sWMhTQ,1458
+mkalias_foss/version.py,sha256=-kKuaufFEUdFxQgT-sdFVBb7dxoYnmamN-ynkv0HNSs,116
+mkalias_foss-1.0.0.dist-info/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+mkalias_foss-1.0.0.dist-info/METADATA,sha256=GPjYxMxRy11mzUSiLFaxUlZwwP35qk61m5Xt9Pw1rxc,1697
+mkalias_foss-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+mkalias_foss-1.0.0.dist-info/entry_points.txt,sha256=WxNxl8Kc7nQc7B4m-aNrrp-3K7HY0MJ8xzPtCCcZfS8,55
+mkalias_foss-1.0.0.dist-info/top_level.txt,sha256=HD8G2HZBm372KWPONhVTHsiofoDCq5i2nZR7vgrv0RU,13
+mkalias_foss-1.0.0.dist-info/RECORD,,

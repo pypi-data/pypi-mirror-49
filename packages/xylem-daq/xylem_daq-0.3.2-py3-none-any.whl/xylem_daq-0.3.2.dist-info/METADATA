@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: xylem-daq
+Version: 0.3.2
+Summary: Modular DAQ system
+Home-page: https://github.com/samkohn/xylem
+Author: Sam Kohn
+Author-email: skohn@lbl.gov
+License: UNKNOWN
+Keywords: daq physics
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pyzmq
+Requires-Dist: eventlet (>=0.24)
+
+xylem
+========
+
+A modular, parallel-ready data acquisition framework
+
+Xylem systems consist of a collection of software components connected
+to represent the flow of information (data and commands) through
+the experiment. Each component has a particular relation to data
+(e.g. Producer, Consumer, Aggregator) which determines the available
+connections and functionality. For example, Producers introduce new data
+into the xylem system, and Consumers remove data from the system (e.g.
+into offline storage). The components work together to get data through
+the pipeline as smoothly as possible.
+
+Xylem components are designed to fit into code that you already have
+which controls your experimental equipment and processes your data. For
+example, if you have code which interfaces with an instrument and prints
+the data to the console, you can replace the print statement with a
+call to ``Producer.produce()``. Then, the xylem Producer will send off
+the data to the downstream xylem components while your code continues
+running.
+
+The xylem Core is a special component which monitors and commmunicates
+with all of the other components in the system. It determines if a
+component has crashed or otherwise become unresponsive, and it also can
+send state updates and arbitrary messages to the components.
+
+Human operators can access the functionality of the Core component using
+the Controller component. This component does not participate in the
+data flow; rather, it allows the human operator to send commands to the
+system (via the Core) and query its state (also via the Core). You can
+design your system to respond to any set of commands you'd like, such
+as "Begin run," "Initialize instrumentation," "Perform calibration," or
+anything else that makes sense in your system. Internally, your code
+would translate your commands into state updates that will be sent to
+the Core. You provide the logic; xylem simply makes sure the messages
+reach their intended destination.
+
+
+## DAQ Components
+
+Fundamental building blocks for basic setups:
+
+- Data producer: produces data. Example: digitizers
+
+- Data consumer: accepts data inputs and sends no output to other
+  xylem components. Examples: offline data storage, live data display
+
+- Data aggregator: collects data from multiple data producers and
+  supplies the data to multiple data consumers
+
+Compound building blocks for more advanced setups:
+
+- Data producer group: a collection of data producers
+  whose output is aggregated before being
+  sent to the data aggregator, so that the collection can be treated as
+  a single data producer. Example: an array of identical sensors
+
+## Example basic architecture
+
+- Data producer
+- Data aggregator
+- Data consumer
+
+## Example complex architecture
+
+- Data producer group 1<sup>*</sup>
+  - Data producer
+  - Data producer
+  - ...
+- Data producer group 2<sup>*</sup>
+  - Data producer
+  - Data producer
+  - ...
+- Data aggregator 1
+    - Data consumer 1<sup>+</sup>
+    - Data consumer 2
+    - ...
+- Data aggregator 2
+    - Data consumer 1<sup>+</sup>
+    - Data consumer 3
+    - ...
+
+*: The data producer groups are located after the data producers in the
+data flow.
+
++: A single data consumer instance can receive data from multiple data
+aggregators.
+
+

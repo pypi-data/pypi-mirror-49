@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/swa_cc.core.egg-info/PKG-INFO
+src/swa_cc.core.egg-info/SOURCES.txt
+src/swa_cc.core.egg-info/dependency_links.txt
+src/swa_cc.core.egg-info/top_level.txt
+src/swa_cc/core/__init__.py

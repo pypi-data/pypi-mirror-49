@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: clogger
+Version: 0.12.3
+Summary: My way python logger configuration
+Home-page: https://github.com/pietrogiuffrida/customlogger/
+Author: Pietro Giuffrida
+Author-email: pietro.giuffri@gmail.com
+License: MIT
+Description: CLogger
+        =========
+        
+        My way python logger configuration
+        
+        CLogger contains two classes (CustomLogger and CustomFormatter)
+        based on default logging library. CustomoLogger class
+        initialize and configure logging library the way I like.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst

@@ -1,0 +1,7 @@
+docker
+pymongo
+docopt
+pytz
+twine
+webplatform-auth
+webplatform-backend

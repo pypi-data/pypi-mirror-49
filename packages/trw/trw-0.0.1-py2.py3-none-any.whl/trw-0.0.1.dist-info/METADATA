@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: trw
+Version: 0.0.1
+Summary: Train, test, debug and optimize PyTorch models
+Home-page: https://github.com/civodlu/trw
+Author: Civodlu
+Author-email: civodlu@gmail.com
+License: MIT
+Download-URL: https://github.com/civodlu/trw/tarball/0.0.1
+
+Torch Research Workflows
+
+

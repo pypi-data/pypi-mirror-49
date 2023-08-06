@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: thunk_dict
+Version: 0.1
+Summary: Memoized dictionaries
+Home-page: https://github.com/kevalii/thunk-dict
+Author: kevalii
+Author-email: alexrankine@college.harvard.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License

@@ -1,0 +1,3 @@
+[cubicweb.cubes]
+activitystream = cubicweb_activitystream
+

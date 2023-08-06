@@ -1,0 +1,10 @@
+include *.py
+include */*.py
+recursive-include cubicweb_activitystream *.py
+recursive-include cubicweb_activitystream/data *.gif *.png *.ico *.css *.js
+recursive-include cubicweb_activitystream/i18n *.po
+recursive-include cubicweb_activitystream/wdoc *
+recursive-include test *.py
+include *.ini
+prune debian
+prune cubicweb-activitystream.spec

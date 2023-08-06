@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: authentika-client
+Version: 0.0.2
+Summary: Flask-client for Authentika Server.
+Home-page: UNKNOWN
+Maintainer: PUC-Rio
+Maintainer-email: thompsonp17@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: flask
+Requires-Dist: requests
+Requires-Dist: tldextract
+Provides-Extra: documentation
+Requires-Dist: Sphinx ; extra == 'documentation'
+Requires-Dist: recommonmark ; extra == 'documentation'
+Requires-Dist: apispec ; extra == 'documentation'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-ordering ; extra == 'test'
+Requires-Dist: docker ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: requests ; extra == 'test'
+
+TO BE DONE
+
+

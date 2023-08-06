@@ -1,0 +1,10 @@
+#
+# Source Distribution Manifest
+#
+# More at https://docs.python.org/2/distutils/sourcedist.html
+
+include README.md LICENSE requirements.txt *-requirements.txt
+recursive-include project.d *.py *.md *.txt *.cfg *.json
+recursive-include src/tests *.py
+graft src/tests/data
+global-exclude *~ *.swp

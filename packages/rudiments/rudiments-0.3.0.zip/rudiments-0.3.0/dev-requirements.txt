@@ -1,0 +1,22 @@
+#
+# Development requirements
+#
+
+invoke==1.2.0
+## rituals==0.4.1 py3 only
+https://github.com/jhermann/rituals/archive/2bd3528c4d95ec8882ffeeafc38c5c2211c90b5d.zip#egg=rituals
+
+Sphinx==1.8.5
+sphinx-autobuild==0.7.1
+sphinx-rtd-theme==0.1.9
+
+pylint==1.9.5
+bpython==0.18
+yolk3k==0.9
+
+tox==3.13.2
+twine==1.13.0
+
+-r test-requirements.txt
+-r docs/requirements.txt
+-e .

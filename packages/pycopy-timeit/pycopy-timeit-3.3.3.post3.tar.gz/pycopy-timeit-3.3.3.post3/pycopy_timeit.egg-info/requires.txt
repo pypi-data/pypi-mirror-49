@@ -1,0 +1,5 @@
+pycopy-getopt
+pycopy-itertools
+pycopy-linecache
+pycopy-time
+pycopy-traceback

@@ -1,0 +1,8 @@
+setup.py
+pyerrorreport/__init__.py
+pyerrorreport/__main__.py
+pyerrorreport.egg-info/PKG-INFO
+pyerrorreport.egg-info/SOURCES.txt
+pyerrorreport.egg-info/dependency_links.txt
+pyerrorreport.egg-info/not-zip-safe
+pyerrorreport.egg-info/top_level.txt

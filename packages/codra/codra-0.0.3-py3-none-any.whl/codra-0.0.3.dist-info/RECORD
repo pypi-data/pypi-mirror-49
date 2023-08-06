@@ -1,0 +1,10 @@
+codra/__init__.py,sha256=Ggkd2-G4R-dxDjqcto8V5QeqsXJsWP3EBTTS77kqPZc,50
+codra/lexer.py,sha256=NOhdoRl1CjhwoIhQBrMztnwuhG497P3fW8PA9yHCl98,2488
+codra/main.py,sha256=FJKRQsPwfDJFFgRkY3XfdDps8ts8BivKAVWeqsQTnps,8958
+codra/parser.py,sha256=KAcaIjxWNvfawlPk-F3HIBjv48X020QW2f9PDlj5hbE,5795
+codra/parsetab.py,sha256=0kqIaMuKR8JGzs7YdGYcz0wzthaLSopFsgs6-VaYblU,11091
+codra/symboltable.py,sha256=MNcVAIYVQ4rGA36ljtztx6YuJaH946SbRMRsWO3Lp_4,343
+codra-0.0.3.dist-info/METADATA,sha256=BM9R8MomFH_lFJ19ZDsPpvUNGFgQBbl1hZPLB8caguI,5360
+codra-0.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+codra-0.0.3.dist-info/top_level.txt,sha256=imFOwEgoU_KaU3q06vbe5n55g0L0KlZjUjHU2-i-hPE,6
+codra-0.0.3.dist-info/RECORD,,

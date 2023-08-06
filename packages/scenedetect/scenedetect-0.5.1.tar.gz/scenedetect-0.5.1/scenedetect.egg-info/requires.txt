@@ -1,0 +1,6 @@
+Click
+numpy
+opencv-python
+
+[progress_bar]
+tqdm

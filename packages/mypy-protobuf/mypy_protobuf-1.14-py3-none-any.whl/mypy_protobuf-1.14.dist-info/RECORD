@@ -1,0 +1,6 @@
+mypy_protobuf-1.14.data/scripts/protoc-gen-mypy,sha256=f8LnCNYomto1zWC0bpRYSVNTnA9O8TvLrka-XSNSZdA,20895
+mypy_protobuf-1.14.data/scripts/protoc_gen_mypy.bat,sha256=12BTtPa79RGbDgVqXVaxoXOgekUlvDPyJd_R6cgv3As,42
+mypy_protobuf-1.14.dist-info/METADATA,sha256=Ty__78-IN69SFc7HFML81K-Y52LGjDL_aybl03zi9zI,416
+mypy_protobuf-1.14.dist-info/RECORD,,
+mypy_protobuf-1.14.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+mypy_protobuf-1.14.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1

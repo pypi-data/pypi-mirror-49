@@ -1,0 +1,7 @@
+pysamloader>=0.4.2
+cython
+kivy
+Sphinx>=1.8.3
+sphinx-argparse>=0.2.5
+sphinxcontrib-documentedlist
+alabaster

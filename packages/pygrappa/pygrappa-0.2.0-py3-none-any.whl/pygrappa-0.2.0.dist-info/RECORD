@@ -1,0 +1,8 @@
+pygrappa/__init__.py,sha256=y6T04u8qlKotU7WJDFaOSDQiqzM4VTuNMGQK5-15Oh0,116
+pygrappa/grappa.py,sha256=wSGhIzSAPsf_lScSINMFJ-HVyuuzl0mOehU0L0DPrD4,8786
+pygrappa/lustig_grappa.py,sha256=4Cm32uL6V63NAbgMjI9OOaqviO540KB_ec1GBOLxEio,8019
+pygrappa-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pygrappa-0.2.0.dist-info/METADATA,sha256=YZ5YBvsk2k5IjOLU0Q_5FHpRSBej1DFFIN6a9kgirXE,848
+pygrappa-0.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pygrappa-0.2.0.dist-info/top_level.txt,sha256=O-H2e1HGbUXL_xfwhcbxJug3guDUEGODhncjqBeY7To,9
+pygrappa-0.2.0.dist-info/RECORD,,

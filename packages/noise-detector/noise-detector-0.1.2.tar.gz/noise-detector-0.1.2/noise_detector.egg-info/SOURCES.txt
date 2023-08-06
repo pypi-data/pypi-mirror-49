@@ -1,0 +1,9 @@
+README.md
+noise_detector.py
+setup.py
+noise_detector.egg-info/PKG-INFO
+noise_detector.egg-info/SOURCES.txt
+noise_detector.egg-info/dependency_links.txt
+noise_detector.egg-info/entry_points.txt
+noise_detector.egg-info/requires.txt
+noise_detector.egg-info/top_level.txt

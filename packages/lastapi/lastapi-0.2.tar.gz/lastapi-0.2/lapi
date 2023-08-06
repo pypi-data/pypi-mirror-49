@@ -1,0 +1,51 @@
+#!python
+import argparse
+import re
+from lastapi.core import *
+
+PAIR = re.compile('[^=]+=[^=]+')
+def main():
+  parser = argparse.ArgumentParser(description="Invoke a REST API call defined in a YAML schema")
+  parser.add_argument(
+    '--schema',
+    type=str,
+    help="Path to the schema file without the .yaml suffix",
+    required=True
+  )
+  parser.add_argument(
+    '--func',
+    type=str,
+    help="The function name defined in the schema to be invoked.",
+    required=True
+  )
+  parser.add_argument(
+    '--vars',
+    type=str,
+    help="Variables and values to invoke the function with. eg. --vars a=1,b=2,c=good",
+    required=True
+  )
+  parser.add_argument(
+    '-v',
+    action='store_true',
+    help="Verbose output of the response content."
+  )
+
+  args = parser.parse_args()
+  lapi = LastApi(args.schema)
+  response = lapi.invoke_api(args.func, process_vars(args.vars))
+  print(response.status_code)
+  if args.v:
+    print(response.content.decode('utf-8'))
+  return response.ok
+
+def process_vars(vars):
+  params_dict = {}
+  for pair in vars.split(','):
+    if PAIR.match(pair):
+      k, v = pair.split('=')
+      params_dict[k] = v
+  return params_dict
+
+
+if __name__ == '__main__':
+  main()

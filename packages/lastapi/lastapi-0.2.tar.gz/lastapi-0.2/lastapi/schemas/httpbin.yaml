@@ -1,0 +1,20 @@
+---
+Name: httpbin
+Base:
+  Protocol: https
+  Host: httpbin.org
+Headers:
+  Header1: ${header1}
+  Header2: ${header2}
+  Content-Type: application/json
+
+Actions:
+  test_post:
+    Path:
+      - /anything/
+      - ${path}
+    Method: POST
+    Payload:
+      type: ${type}
+      ttl: 1
+      proxied: true

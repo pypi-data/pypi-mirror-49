@@ -1,0 +1,24 @@
+---
+Name: cloudflare
+Base:
+  Protocol: https
+  Host: api.cloudflare.com
+Headers:
+  X-Auth-Key: ${auth_key}
+  X-Auth-Email: ${auth_email}
+  Content-Type: application/json
+
+Actions:
+  update_dns:
+    Path:
+      - /client/v4/zones/
+      - ${zone_id}
+      - /dns_records/
+      - ${dns_id}
+    Method: PUT
+    Payload:
+      type: ${dns_type}
+      name: ${dns_name}
+      content: ${dns_content}
+      ttl: 1
+      proxied: true

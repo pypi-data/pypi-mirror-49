@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: k8s_logger
+Version: 0.0.2
+Summary: print model log to es
+Home-page: UNKNOWN
+Author: chunyu.piao
+Author-email: chunyu.piao@bianlifeng.com
+License: UNKNOWN
+Description: # k8s_logger #
+        ## 如何使用logger ##
+        + logger会从环境变量中获取"logPath"与"jobName"
+        + 调用print_log时，传入的文本需要以 "|" 分隔字符串
+        
+        demo.py
+        ```python
+        from logger.Logger import *
+        
+        # 初始化配置。只需要调用一次即可。
+        init_config()
+        
+        print_log(
+            "2019-07-19-07-30: epoch: 182 |loss 0.448047 | hm_loss 0.262451 | wh_loss 0.538236 | off_loss 0.140742 | corner_loss 0.380307 | time 3.100000 | loss 1.256430 |",
+            "loss")
+        
+        ```
+        
+        控制台输出
+        ```
+        /Users/bianlifeng/anaconda3/bin/python /Users/bianlifeng/PycharmProjects/k8s_logger/test.py
+        logging init log_path:[/Users/bianlifeng/PycharmProjects/k8s_logger/job.log] 
+        
+        Process finished with exit code 0
+        ```
+        
+        /Users/bianlifeng/PycharmProjects/k8s_logger/job.log
+        ```
+        2019-07-23 17:06-INFO-2019-07-23 | loss 0.448047  |  hm_loss 0.262451  |  wh_loss 0.538236  |  off_loss 0.140742  |  corner_loss 0.380307  |  loss 1.256430 
+        ```
+        
+        ## test ##
+        使用config_log方法手动设置文件路径即可
+        
+        demo.py
+        ```python
+        from logger.Logger import print_log
+        from logger.Config import Config
+        
+        config = Config()
+        config.config_log("/Users/bianlifeng/PycharmProjects/k8s_logger/debug.log")
+        
+        print_log(
+            "2019-07-19-07-30: epoch: 182 |loss 0.448047 | hm_loss 0.262451 | wh_loss 0.538236 | off_loss 0.140742 | corner_loss 0.380307 | time 3.100000 | loss 1.256430 |",
+            "loss")
+        
+        ```
+        控制台输出
+        ```
+        /Users/bianlifeng/anaconda3/bin/python /Users/bianlifeng/PycharmProjects/k8s_logger/test.py
+        logging init log_path:[/Users/bianlifeng/PycharmProjects/k8s_logger/debug.log] 
+        
+        Process finished with exit code 0
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

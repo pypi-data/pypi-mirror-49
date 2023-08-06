@@ -1,0 +1,13 @@
+mosaik_api.py,sha256=VLEfBJXsGKjDEu2wLwyLPFFmmHDldYjOVWagTU0lHwc,14369
+example_mas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example_mas/mosaik.py,sha256=87kMWi1KQFk4go0aml0Tph9vLwnxuKyaUnNqHCzXvfo,2230
+example_sim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example_sim/mosaik.py,sha256=4o_wDzEmCdF5lPV85HmoirGk_l_wAC8QM61XO3ErSFM,2399
+example_sim/simulator.py,sha256=bAZwgKL7DlIxsg5-22Knd__CMaa9rnHtYJfQE2yzPPU,918
+mosaik.api_semver-2.4.2rc20190715215550.dist-info/AUTHORS.txt,sha256=Zj_BtGHkWLvXdvUHeQ4FAJ7wKy5Acz22mGLWwEs1lSA,175
+mosaik.api_semver-2.4.2rc20190715215550.dist-info/LICENSE.txt,sha256=khQmLSVbUYav27gL33McM63JxHUY86v4KQOPyUU-j0k,24436
+mosaik.api_semver-2.4.2rc20190715215550.dist-info/METADATA,sha256=UxK3wyDorUWCEZyKYn1t7kafyj-5-KYw1-07R7jQUR0,5430
+mosaik.api_semver-2.4.2rc20190715215550.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+mosaik.api_semver-2.4.2rc20190715215550.dist-info/entry_points.txt,sha256=wfuY2aGXTvgBjn25YWpsgsLltI80TbkipmO0hB-wJ2I,97
+mosaik.api_semver-2.4.2rc20190715215550.dist-info/top_level.txt,sha256=ELqEusDMBzU_MhIZWN_ZolHzdtl4mg67t-TU1MUc4i0,35
+mosaik.api_semver-2.4.2rc20190715215550.dist-info/RECORD,,

@@ -1,0 +1,8 @@
+README.md
+setup.py
+fmeclient/__init__.py
+fmeclient/fmeclient.py
+fmeclient.egg-info/PKG-INFO
+fmeclient.egg-info/SOURCES.txt
+fmeclient.egg-info/dependency_links.txt
+fmeclient.egg-info/top_level.txt

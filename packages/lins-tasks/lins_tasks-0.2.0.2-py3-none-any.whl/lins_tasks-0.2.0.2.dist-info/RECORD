@@ -1,0 +1,9 @@
+lins_tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lins_tasks/tasks.py,sha256=fze8Y-fvxzO1IoTF9fhDqBxx44TqZKchG4qTRD47ruI,1747
+lins_tasks/tasksmodel.py,sha256=NadXU57N9LU36eDjL9i3SPYf5D7am_wgY0-0gJ5_zxU,559
+lins_tasks/tasksserializer.py,sha256=oM5aXuyePZn-NJOXDw0H-3ouILyEORk2e9O5e6ffHXE,269
+lins_tasks/tasksview.py,sha256=RYlkZ5L-7qY5o0KhJ9hCf-rnIA537v6nxeC_YJcdt7Y,611
+lins_tasks-0.2.0.2.dist-info/METADATA,sha256=ZUlCash0_O_COrvMOjsmIcD-SK4Zhk8cvb-AyNi9rW0,314
+lins_tasks-0.2.0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+lins_tasks-0.2.0.2.dist-info/top_level.txt,sha256=v1DLY8nfCP-m8YguxmFucve8jA6KBSoMLgpRcwUvj0Q,11
+lins_tasks-0.2.0.2.dist-info/RECORD,,

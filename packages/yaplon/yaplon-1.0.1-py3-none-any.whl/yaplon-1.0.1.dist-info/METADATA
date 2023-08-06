@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: yaplon
+Version: 1.0.1
+Summary: Python 3-based commandline converter YAML ↔ JSON ↔ PLIST
+Home-page: https://github.com/twardoch/yaplon
+Author: Adam Twardoch
+Author-email: adam+github@twardoch.com
+License: MIT
+Project-URL: Source, https://github.com/twardoch/yaplon
+Keywords: yaml json plist convert cli
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Click (>=7.0)
+Requires-Dist: PyYAML (>=5.1.1)
+Requires-Dist: click-stream (>=0.0.10)
+
+# yaplon
+
+Convert between JSON, YAML and PLIST (binary and XML) in the commandline.
+Can be used in piping. Written in Python 3.7 (not 2.7 compatible).
+
+- Copyright (c) 2019 Adam Twardoch <adam+github@twardoch.com>
+- Copyright (c) 2012-2015 Isaac Muse <isaacmuse@gmail.com>
+- [MIT license](./LICENSE)
+- Based on https://github.com/facelessuser/SerializedDataConverter
+
+## Installation
+
+Install the release version:
+
+```
+pip3 install --user --upgrade yaplon
+```
+
+Install the development version:
+
+```
+pip3 install --user --upgrade git+https://github.com/twardoch/yaplon
+```
+
+## Usage
+
+```
+yaplon j2p|j2y|p2j|p2y|y2j|y2p -i input -o output [options]
+
+Commands:
+  j2p  -i JSON -o PLIST [-b] (make binary PLIST)
+  j2y  -i JSON -o YAML [-m] (minify YAML)
+  p2j  -i PLIST -o JSON [-b] (keep binary in JSON)
+  p2y  -i PLIST -o YAML [-m] (minify YAML)
+  y2j  -i YAML -o JSON [-b] (keep binary in JSON)
+  y2p  -i YAML -o PLIST [-b] (make binary PLIST)
+```
+
+Also installs direct CLI tools: `json22plist`, `json22yaml`, `plist22json`, `plist22yaml`, `yaml22json`, `yaml22plist`.
+
+

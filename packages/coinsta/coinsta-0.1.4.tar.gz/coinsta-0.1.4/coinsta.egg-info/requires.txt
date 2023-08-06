@@ -1,0 +1,4 @@
+pandas~=0.23.1
+lxml~=4.2.2
+requests~=2.19.1
+pyquery~=1.4.0

@@ -1,0 +1,8 @@
+mt_scraper/__init__.py,sha256=fMEIO8JFyJngHjPn8KTnqgP891a2SwURxDyy5av56CU,160
+mt_scraper/dummy_parser.py,sha256=cFDO7OF0Kn3iXiDIcjoCmvko89Ie-vROLuTec_qJzq4,941
+mt_scraper/mt_scraper.py,sha256=sYnUkMV27G0E6RA3t7Dw7aLu8lrOoTR_1YEVFyHnw-0,12391
+mt_scraper/tests.py,sha256=dcZP0fCg926wOVtnfmn8bGo0vlLGa0FGv5hPzmA1n3E,972
+mt_scraper-0.3.4.dist-info/METADATA,sha256=tAD_npo0K2F7OqSOlfVj8dDZHSjMQhGesWKooJRcScE,3857
+mt_scraper-0.3.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+mt_scraper-0.3.4.dist-info/top_level.txt,sha256=0jcPRUk9sePXEvMty_22GNxQFjwyBlQXU7Sff__ldbs,11
+mt_scraper-0.3.4.dist-info/RECORD,,

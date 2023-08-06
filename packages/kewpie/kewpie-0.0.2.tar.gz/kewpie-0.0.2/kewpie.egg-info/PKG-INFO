@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: kewpie
+Version: 0.0.2
+Summary: KEyWord PIckEr with tf-idf
+Home-page: https://github.com/sobamchan/kewpie
+Author: Sotaro Takeshita
+Author-email: oh.sore.sore.soutarou@gmail.com
+License: MIT
+Description: # kewpie
+        KEyWord PIckEr with tf-idf
+        
+        Work in Progress.
+        
+        ## Installation
+        ```bash
+        pip install kewpie
+        ```
+        
+        ## Basic Usage
+        ```py
+        from kewpie import KwPicker
+        
+        docs = [
+            "I am a cat.",
+            "I am a dog."
+        ]
+        
+        picker = KwPicker.build(docs, savedir='/dir/to/save/model/')
+        
+        sentence = "I am a cat."
+        span, keyword = picker.get_keywords(sentence)
+        
+        print(keyword)  # -> 'cat'
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

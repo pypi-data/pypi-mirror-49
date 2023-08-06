@@ -1,0 +1,17 @@
+.flake8
+.gitignore
+.travis.yml
+Pipfile
+Pipfile.lock
+README.md
+setup.py
+tox.ini
+kewpie/__init__.py
+kewpie/core.py
+kewpie.egg-info/PKG-INFO
+kewpie.egg-info/SOURCES.txt
+kewpie.egg-info/dependency_links.txt
+kewpie.egg-info/requires.txt
+kewpie.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core.py

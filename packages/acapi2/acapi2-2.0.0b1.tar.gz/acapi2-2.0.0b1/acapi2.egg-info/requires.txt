@@ -1,0 +1,4 @@
+http-hmac-python>=2.4.0
+requests>=2.20.0
+requests-cache>=0.4.13
+setuptools>=38.5

@@ -1,0 +1,3 @@
+[console_scripts]
+config = testpackagesanc.config:get_config
+

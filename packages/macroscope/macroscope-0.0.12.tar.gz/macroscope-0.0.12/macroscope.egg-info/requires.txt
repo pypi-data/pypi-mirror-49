@@ -1,0 +1,14 @@
+click
+community
+matplotlib
+networkx
+numpy
+pandas
+python-louvain
+sklearn
+
+[dev]
+autopep8
+flake8
+rope
+wheel

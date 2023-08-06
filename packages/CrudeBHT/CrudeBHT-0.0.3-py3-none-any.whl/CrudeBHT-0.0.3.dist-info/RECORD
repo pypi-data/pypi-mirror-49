@@ -1,0 +1,14 @@
+code/__init__.py,sha256=910v_WYdTibE7B2HbY6vF_NXVFAGrNKX7I4jnZdLuUU,17
+code/bhtree.py,sha256=acQxCHYUkmRRV-Zyfjc51YjJ3hHtky3m8f8gJ1i6oao,4063
+code/body.py,sha256=EHs24qpyoHLdjwIdG3xEGaoM_BdVi-bEn0ZNKzlDZsI,2155
+code/example.py,sha256=1kPuKU-QulKw7dRaydLeITnScHjdlOW-UXjGwnqcj1U,461
+code/quadrant.py,sha256=zpyzwiFlWBQYQJsN98TtldodSA1FL5IF7-jpm8b3JBk,1378
+code/rendering.py,sha256=HrKQEQOlkj_VC9bjTbEAUrYWlU-OAbP1jbR7nBIcKwM,5434
+code/simulation.py,sha256=Rj7dA5_2A4fTgqcVfWwuU3KZq79oaslvDI1CgAAHzKE,1149
+code/system.py,sha256=tc_3NDO4SgKnAilWa2autNRpy4bbUyqznDT8APzq4B4,3601
+CrudeBHT-0.0.3.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+CrudeBHT-0.0.3.dist-info/METADATA,sha256=JaR7yjlr42h4SpEp8gnYhRRNh3rHFbciFrs_M9lddJM,3404
+CrudeBHT-0.0.3.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+CrudeBHT-0.0.3.dist-info/entry_points.txt,sha256=sjqqbz3qQC7mcmcUycjKp3LQdca9a8SYe1fkVJ-Hxq8,55
+CrudeBHT-0.0.3.dist-info/top_level.txt,sha256=tXsjbJvNKmH81ie2muLXputbwT8twlMRNI7gjfQ7wMQ,5
+CrudeBHT-0.0.3.dist-info/RECORD,,

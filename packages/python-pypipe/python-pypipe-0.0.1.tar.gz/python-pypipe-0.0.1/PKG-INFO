@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: python-pypipe
+Version: 0.0.1
+Summary: 
+PyPipe is a Python package that provides an easy to use user graphical
+interface to pipe processings from different processing packages.
+
+Home-page: https://github.com/AGrigis/pypipe
+Author: Antoine Grigis <antoine.grigis@cea.fr>
+Author-email: antoine.grigis@cea.fr
+License: CeCILL-B
+Description: PyPipe
+        
+        PyPipe is a Python package that provides an easy to use user graphical interface to pipe processings from different processing packages.
+        
+        * Functions exposed in the user graphical interface are defined in a configuration file.
+        
+Platform: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering

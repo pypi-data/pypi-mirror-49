@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+src/reliability.egg-info/PKG-INFO
+src/reliability.egg-info/SOURCES.txt
+src/reliability.egg-info/dependency_links.txt
+src/reliability.egg-info/requires.txt
+src/reliability.egg-info/top_level.txt

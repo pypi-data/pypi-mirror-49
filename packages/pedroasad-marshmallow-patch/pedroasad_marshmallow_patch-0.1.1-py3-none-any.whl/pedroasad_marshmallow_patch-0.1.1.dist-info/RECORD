@@ -1,0 +1,8 @@
+marshmallow_patch/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+marshmallow_patch/config.py,sha256=x9RGbp6OMWFFIBNxNpwve6FVt9zGZ5vYjQK0Hs_kaD8,799
+marshmallow_patch/marshmallow/__init__.py,sha256=DYwWm0p7HYPVLpuboEfvG17PwVpsI_n_yBoGhoEJaBA,856
+marshmallow_patch/marshmallow/fields.py,sha256=zt5bR9ZbCvWyyZs8R3J-3SjrjRhLScICJRe4Xz7DLSA,21534
+pedroasad_marshmallow_patch-0.1.1.dist-info/LICENSE.txt,sha256=bCPNNGPj0HIz5xOGQQ3Rs1Q_4a7YFHyxrOhGlXhgqNA,1050
+pedroasad_marshmallow_patch-0.1.1.dist-info/WHEEL,sha256=B9sUljbermATdnR9vRc7_PZudWzu8UpY6g74X8l4XFg,85
+pedroasad_marshmallow_patch-0.1.1.dist-info/METADATA,sha256=4VrWcUSlSy0I7z8n2dXi84xqtJ9hltq1L7rOdYQO-1k,4295
+pedroasad_marshmallow_patch-0.1.1.dist-info/RECORD,,

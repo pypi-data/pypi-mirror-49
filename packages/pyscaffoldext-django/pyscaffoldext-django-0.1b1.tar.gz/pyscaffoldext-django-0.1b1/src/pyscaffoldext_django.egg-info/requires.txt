@@ -1,0 +1,10 @@
+pyscaffold<4.1a0,>=4.0a1
+django
+
+[testing]
+flake8
+flake8-bugbear
+pytest
+pytest-cov
+pytest-virtualenv
+pytest-xdist

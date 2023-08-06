@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+AWSLibrary/Keywords/__init__.py
+AWSLibrary/Keywords/s3.py
+AWSLibrary/Keywords/session.py
+AWSLibrary/robotframework_aws.egg-info/PKG-INFO
+AWSLibrary/robotframework_aws.egg-info/SOURCES.txt
+AWSLibrary/robotframework_aws.egg-info/dependency_links.txt
+AWSLibrary/robotframework_aws.egg-info/top_level.txt

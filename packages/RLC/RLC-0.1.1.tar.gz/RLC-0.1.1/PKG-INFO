@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: RLC
+Version: 0.1.1
+Summary: A collection of methods that aim to make calculations around passive electronic networks like resonant circuits, filters, or resistor networks, easier.
+Home-page: None
+Author: A. S.
+Author-email: admin-pypi@sotai.tk

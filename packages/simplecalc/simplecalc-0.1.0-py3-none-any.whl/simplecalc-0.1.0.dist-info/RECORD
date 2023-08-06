@@ -1,0 +1,14 @@
+LICENSE,sha256=kA_oSU551VjyGQk1uvuo8aThqNsSCnWLnwaVY0SI2Bw,1075
+README.rst,sha256=u0repVi4UDUJw-24q5mQn0ojHbNgHO7RPeHSPxs6lK0,1357
+pyproject.toml,sha256=nxaoRCcmujGXupgoHdyzu4ATTwTmzU6IwZZT-ZnnPns,2248
+simplecalc/__init__.py,sha256=TK8iILueowNqQjjd8yP10doOzBdRsPP4dcIUItPmL7M,690
+simplecalc/calculator.py,sha256=F8SsrR0R2_WorfoqyCip4vm4gYpOyi_mJUqXLngYkwU,2845
+simplecalc/cli.py,sha256=4JVQ-AlG19ymLaZBynlPcCr95LvEbiNhypdLT6-bDHw,1475
+simplecalc/tests/__init__.py,sha256=3d0wu5CD0ziUmHvkQC98ugzGLJMN5JNJzTLaZwytGfY,18
+simplecalc/tests/test_calculator.py,sha256=0jetcd6hISA_lC5lbqUQS0bWs5SNg-icz2zXT8gmiGQ,4350
+simplecalc/tests/test_cli.py,sha256=feh_sGyJjkFHgE8Pxf2tHD526Fol08j37ZJ2DMCfLIQ,4606
+simplecalc-0.1.0.dist-info/entry_points.txt,sha256=wwWxsUfAGceNpWWlvozwtdB6GTi7U-pf2iD2bmmS6Ys,56
+simplecalc-0.1.0.dist-info/LICENSE,sha256=kA_oSU551VjyGQk1uvuo8aThqNsSCnWLnwaVY0SI2Bw,1075
+simplecalc-0.1.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+simplecalc-0.1.0.dist-info/METADATA,sha256=kxHADbPzs_Y8J8oJMCX0lIzF4qt9GcQultjtPXXnZYg,2189
+simplecalc-0.1.0.dist-info/RECORD,,

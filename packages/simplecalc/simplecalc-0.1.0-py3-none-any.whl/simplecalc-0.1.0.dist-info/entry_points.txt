@@ -1,0 +1,3 @@
+[console_scripts]
+simplecalc=simplecalc.cli:simplecalc
+

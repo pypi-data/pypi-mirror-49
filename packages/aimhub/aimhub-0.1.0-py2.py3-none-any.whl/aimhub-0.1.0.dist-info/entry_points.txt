@@ -1,0 +1,3 @@
+[console_scripts]
+aim-deploy = aim.cli.deploy:deploy
+

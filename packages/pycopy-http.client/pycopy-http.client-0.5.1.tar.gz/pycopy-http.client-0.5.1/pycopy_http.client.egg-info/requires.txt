@@ -1,0 +1,6 @@
+pycopy-email.parser
+pycopy-email.message
+pycopy-socket
+pycopy-collections
+pycopy-urllib.parse
+pycopy-warnings

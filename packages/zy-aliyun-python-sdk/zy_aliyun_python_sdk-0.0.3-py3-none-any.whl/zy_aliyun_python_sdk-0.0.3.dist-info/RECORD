@@ -1,0 +1,9 @@
+aliyun_sdk/__init__.py,sha256=MXz_hbuV9ngf4MSLeS5ZJawyoCefdCcJ8YU10f4rj98,908
+aliyun_sdk/client.py,sha256=HpcgYRJ5vGd3sOfOrCbF-2YBbDTgQqWY0IDtOT-oWJE,886
+aliyun_sdk/common.py,sha256=JO5HWh-eoYbWNotnX99UqHgw0HmlxSacNy0d5aqTbzQ,6719
+aliyun_sdk/oss.py,sha256=LefW5Xi1W75va6sSTSJtDHmKtlquIdq2hr-Aspy491c,4867
+zy_aliyun_python_sdk-0.0.3.dist-info/LICENSE,sha256=26AUnZaO87Jjun16IMTdZQS8RC8uybKP08EPImPmOvA,1068
+zy_aliyun_python_sdk-0.0.3.dist-info/METADATA,sha256=iFtVSj88_OI2d5qbp0ThuaMgKcCi9-0HDuQoOjrmBhU,4126
+zy_aliyun_python_sdk-0.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+zy_aliyun_python_sdk-0.0.3.dist-info/top_level.txt,sha256=XT29JcCpr6trLBYYiaSV1LNqnF2QA9t2nkRy9N9gRqw,11
+zy_aliyun_python_sdk-0.0.3.dist-info/RECORD,,

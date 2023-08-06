@@ -1,0 +1,8 @@
+README.md
+setup.py
+marktex/__init__.py
+marktex/config.py
+marktex.egg-info/PKG-INFO
+marktex.egg-info/SOURCES.txt
+marktex.egg-info/dependency_links.txt
+marktex.egg-info/top_level.txt

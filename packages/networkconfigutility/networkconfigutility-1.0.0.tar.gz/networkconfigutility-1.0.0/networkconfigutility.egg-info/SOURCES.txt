@@ -1,0 +1,10 @@
+README.md
+setup.py
+networkconfigutility/__init__.py
+networkconfigutility/__main__.py
+networkconfigutility.egg-info/PKG-INFO
+networkconfigutility.egg-info/SOURCES.txt
+networkconfigutility.egg-info/dependency_links.txt
+networkconfigutility.egg-info/not-zip-safe
+networkconfigutility.egg-info/requires.txt
+networkconfigutility.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bot/bd_interacting.py,sha256=WcgfLy524hDee5tOaaZXN3CCWiqW1EPojQ9aquycN8Q,3649
+bot/main.py,sha256=U1fhZYRQG_JFJNchx5Lr8Cf6qzx_k4BOPsQzLddVoy4,6982
+bot/record.py,sha256=SaNqEKLASGpZm3MXuhc01w-8qRKpZTDz6xxsDAfpqh0,142
+mayevsky_chatbot-1.1.1.dist-info/LICENSE,sha256=Q-rujfSoZ4Mss0yXatEBeDu6J4Zt8weBa_t0WYIEdI4,1065
+mayevsky_chatbot-1.1.1.dist-info/METADATA,sha256=P-Vta6eqUUbBqF1eAT_5uyKtnX82T3RynyDQoryzqr0,369
+mayevsky_chatbot-1.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+mayevsky_chatbot-1.1.1.dist-info/top_level.txt,sha256=BfGEUPXgtCpne5POfPQ8gBzacfrzBulmV45hd8vheOI,4
+mayevsky_chatbot-1.1.1.dist-info/RECORD,,

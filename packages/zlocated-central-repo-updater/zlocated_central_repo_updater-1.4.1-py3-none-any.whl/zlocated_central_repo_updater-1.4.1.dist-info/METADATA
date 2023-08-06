@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: zlocated-central-repo-updater
+Version: 1.4.1
+Summary: The tool to update the central repository of the ZLocated DNSMasq project.
+Home-page: https://github.com/zlocate/dev-center/tree/central-repo-updater
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Keywords: Python,hosts,hosts file
+Platform: any
+Classifier: Environment :: Console
+Classifier: Topic :: Internet
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: colorama
+Requires-Dist: PyFunceble-dev
+Requires-Dist: requests
+Requires-Dist: ultimate-hosts-blacklist-helpers (>=1.6.1)
+Requires-Dist: ultimate-hosts-blacklist-whitelist
+
+The tool to update the central repository of the ZLocated DNSMasq project.
+
+

@@ -1,0 +1,13 @@
+update_blacklist/central_repo_updater/__init__.py,sha256=c55IpsHBNHfEgcC7J1QqGCeWR0M2ZclchS4anaqwN98,3028
+update_blacklist/central_repo_updater/clean.py,sha256=7kvR8hi-nBNfhBTv4IrAGdmcfl07T7p0knQ2JSPCxU4,1810
+update_blacklist/central_repo_updater/configuration.py,sha256=J1g6PJdtVUlbjAxr3nM6jfRWiIhQijGnFpoM65PpSlU,5551
+update_blacklist/central_repo_updater/core.py,sha256=TvlxBAq_4qGr9kupNKVjwsR1J7N_wMJ1edrCbBf8hew,6955
+update_blacklist/central_repo_updater/deploy.py,sha256=79aa93WedtTn7Lh8jG73v9paaZeYhIp5L5CNe44yLeE,2309
+update_blacklist/central_repo_updater/generate.py,sha256=7J29jMUu8Y8M_INP07agpqNDVALl40NbHesSQH-GbTY,10635
+update_blacklist/central_repo_updater/repositories.py,sha256=Bo6WOJ4xII_4UbgfdTTpLWOmkQSA3HC8hpargZqFxNY,4809
+zlocated_central_repo_updater-1.4.1.dist-info/LICENSE,sha256=c2_kyzdM6krNI_wALIt2mtlSuL_xV0U_cjRKsfjRbIc,1147
+zlocated_central_repo_updater-1.4.1.dist-info/METADATA,sha256=qeOvUrwlQuMofcosXAqZoRsc7miQFF75c0HPicqAfgM,902
+zlocated_central_repo_updater-1.4.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+zlocated_central_repo_updater-1.4.1.dist-info/entry_points.txt,sha256=qUvBepVXhDN9mmxy1t22mw8g-s0KhYL_Xa2nv4ETiV0,277
+zlocated_central_repo_updater-1.4.1.dist-info/top_level.txt,sha256=91_Hd_Pi1qYTouV8CSaspfFtkD2XXe-FIweU2hmQnTE,17
+zlocated_central_repo_updater-1.4.1.dist-info/RECORD,,

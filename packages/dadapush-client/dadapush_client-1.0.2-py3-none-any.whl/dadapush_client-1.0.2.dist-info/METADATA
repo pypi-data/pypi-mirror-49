@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dadapush-client
+Version: 1.0.2
+Summary: DaDaPush Public API
+Home-page: https://github.com/dadapush/dadapush-python-client
+Author: UNKNOWN
+Author-email: contacts@dadapush.com
+License: UNKNOWN
+Keywords: DaDaPush Public API
+Platform: UNKNOWN
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+DaDaPush: Real-time Notifications App. Send real-time notifications through our API without coding and maintaining your own app for iOS or Android devices. # noqa: E501
+
+

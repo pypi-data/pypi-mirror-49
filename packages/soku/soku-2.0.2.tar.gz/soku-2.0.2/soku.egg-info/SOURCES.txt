@@ -1,0 +1,7 @@
+README.md
+setup.py
+soku/__init__.py
+soku.egg-info/PKG-INFO
+soku.egg-info/SOURCES.txt
+soku.egg-info/dependency_links.txt
+soku.egg-info/top_level.txt

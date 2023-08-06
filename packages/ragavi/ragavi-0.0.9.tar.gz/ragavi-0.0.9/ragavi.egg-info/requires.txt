@@ -1,0 +1,18 @@
+bokeh
+future
+dask[array]
+numpy>=1.14
+python-casacore
+xarray-ms
+
+[:python_version <= "2.7"]
+ipykernel<5.0,>=4.8.2
+ipython<6.0,>=5.8.0
+matplotlib<=2.2.3
+
+[:python_version >= "3"]
+ipykernel>=5
+ipython>=6
+
+[:python_version >= "3.5"]
+matplotlib>2.2.3

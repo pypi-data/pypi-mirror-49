@@ -1,0 +1,9 @@
+README.md
+setup.py
+code/__init__.py
+code/downloadDatabase.py
+getDatabase.egg-info/PKG-INFO
+getDatabase.egg-info/SOURCES.txt
+getDatabase.egg-info/dependency_links.txt
+getDatabase.egg-info/requires.txt
+getDatabase.egg-info/top_level.txt

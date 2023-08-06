@@ -1,0 +1,2 @@
+include pyshellwrapper/blueprint/*.json
+include pyshellwrapper/blueprint/__init__.py

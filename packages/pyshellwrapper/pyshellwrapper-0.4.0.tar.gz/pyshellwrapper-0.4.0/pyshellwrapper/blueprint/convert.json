@@ -1,0 +1,40 @@
+{
+	"settings": {
+		"commands": [
+			"convert"
+		],
+		"required_flags": [
+			"input", "output"
+		]
+	},
+	"flags": {
+		"input": [
+			{
+				"flag"		: null,
+				"unifier"	: null,
+				"format"	: "single"
+			}
+		],
+		"output": [
+			{
+				"flag"		: null,
+				"unifier"	: null,
+				"format"	: "single"
+			}
+		],
+		"resize": [
+			{
+				"flag"		: "-resize",
+				"unifier"	: null,
+				"format"	: "single" 
+			}
+		],
+		"colorspace": [
+			{
+				"flag"		: "-colorspace",
+				"unifier"	: "=",
+				"format"	: "single"
+			}
+		]
+	}
+}

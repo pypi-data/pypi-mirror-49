@@ -1,0 +1,10 @@
+singledispatch
+rpy2
+numpy
+pandas
+progressbar
+psutil
+biopython
+pysam
+Cython
+scipy

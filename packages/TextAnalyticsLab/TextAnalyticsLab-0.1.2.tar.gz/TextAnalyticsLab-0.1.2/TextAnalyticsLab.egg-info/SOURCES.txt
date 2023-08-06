@@ -1,0 +1,14 @@
+README.md
+setup.py
+TextAnalyticsLab.egg-info/PKG-INFO
+TextAnalyticsLab.egg-info/SOURCES.txt
+TextAnalyticsLab.egg-info/dependency_links.txt
+TextAnalyticsLab.egg-info/requires.txt
+TextAnalyticsLab.egg-info/top_level.txt
+textlab/__init__.py
+textlab/classification.py
+textlab/mining.py
+textlab/process.py
+textlab/scrape.py
+textlab/similarity.py
+textlab/utility.py

@@ -1,0 +1,8 @@
+README.rst
+setup.py
+darkseed/__init__.py
+darkseed/version.py
+darkseed.egg-info/PKG-INFO
+darkseed.egg-info/SOURCES.txt
+darkseed.egg-info/dependency_links.txt
+darkseed.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+README.md
+setup.py
+MalFox/__init__.py
+MalFox/__main__.py
+MalFox.egg-info/PKG-INFO
+MalFox.egg-info/SOURCES.txt
+MalFox.egg-info/dependency_links.txt
+MalFox.egg-info/requires.txt
+MalFox.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/baretypes/__init__.py
+src/baretypes/__version__.py
+src/baretypes/types.py
+src/baretypes.egg-info/PKG-INFO
+src/baretypes.egg-info/SOURCES.txt
+src/baretypes.egg-info/dependency_links.txt
+src/baretypes.egg-info/top_level.txt

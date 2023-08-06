@@ -1,0 +1,10 @@
+invectio/__init__.py,sha256=8TzfWv_H8SjEpbzoTTkNVN-XnICc5PisN1mUIvSHYyE,968
+invectio/cli.py,sha256=PogjLh_dOJsBZSXOmstdVBr1BcGMtYTIOqQl0PovOrU,2260
+invectio/lib.py,sha256=vbntDZez-qzr7LNK6IyYftNsDLH-zRbtThFM0db7SKA,6504
+invectio-0.0.5.dist-info/DESCRIPTION.rst,sha256=M-R2lOZnTvMw_2uI_TzsMxATioAHjJ7Ys1jmzrZPlMQ,1780
+invectio-0.0.5.dist-info/METADATA,sha256=Q8w7DhSOTLUK1VreyJ1eD5iWgd4u5hmGQpCleBPnH4k,2656
+invectio-0.0.5.dist-info/RECORD,,
+invectio-0.0.5.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+invectio-0.0.5.dist-info/entry_points.txt,sha256=r_v0hDsSA2ntB9GEndR6Bp_vcpfbMt4yVkM2FHZvhUY,47
+invectio-0.0.5.dist-info/metadata.json,sha256=uJJZNMkOoX3fxfV_ayMt3KVHPJdBjlnA5IgG-Nx_UQ0,1193
+invectio-0.0.5.dist-info/top_level.txt,sha256=dqZklbXbjbAqqiB1gUVg0y6fBpoDtR0M6VTTwc_avAA,9

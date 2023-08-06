@@ -1,0 +1,129 @@
+# Omnis: Deep Learning for Everyone
+
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/omnis-labs-company/omnis/blob/master/LICENSE)
+
+## You have just found Omnis.
+
+Omnis is a library of deep neural network applications, written in Python and capable of running on top of [Keras](https://github.com/keras-team/keras) and [Tensorflow](https://www.tensorflow.org/). It was developed with a focus on enabling fast application of deep learning.
+
+Use Omnis if you need a deep learning library that:
+
+- Is EASY to learn.
+- Allows for easy and fast use.
+- Supports CNN, LSTM, GAN applications.
+
+Omnis is compatible with: __Python 3.6-3.7__.
+
+------------------
+
+
+## Getting started: Implement a deep learning application with 4 lines of code!
+
+The core data structure of Omnis is Application which is designed to be easy to use in each field.
+
+Here is an `Image Classification` example with the [`Caltech 101`](http://www.vision.caltech.edu/Image_Datasets/Caltech101/) dataset:
+
+```python
+from omnis.application.image_processing.image_classification.image_classification import ImageClassification
+```
+
+Choose an application:
+
+```python
+image_classifier = ImageClassification()
+```
+
+Train:
+
+```python
+image_classifier.train(data_path='101_ObjectCategories', epochs=5, batch_size=32, model_type='densent121')
+```
+
+Now you can use the application to classify images:
+
+```python
+prediction_result = image_classifier.predict(data_path = '101_ObjectCategories/accordion')
+
+print(prediction_result)
+```
+
+Save / Load:
+
+```python
+image_classifier.save(model_path="weights.h5")
+```
+```python
+image_classifier = ImageClassification(model_path="weights.h5")
+```
+
+For a more in-depth tutorial about Omnis, you can check out:
+
+In the [examples folder](https://github.com/omnis-labs-company/omnis/tree/master/example) of the repository, you will find more applications.
+
+------------------
+
+
+## Installation
+
+Before installing Omnis, please prepare NVIDIA GPU(s) and install TensorFlow GPU and Keras using conda.
+
+Then, you can install Omnis itself. There are two ways to install Omnis:
+
+- **Install Omnis from PyPI (recommended):**
+
+If you don't use a conda virtual environment, you can run the command below (not recommended):
+
+```sh
+sudo pip install omnis
+```
+
+If you are using a conda virtual environment, you may want to avoid using sudo:
+
+```sh
+pip install omnis
+```
+
+- **Alternatively: install Omnis from the GitHub source:**
+
+First, clone Omnis using `git`:
+
+```sh
+git clone https://github.com/omnis-labs-company/omnis.git
+```
+
+ Then, `cd` to the Omnis folder and run the install command:
+```sh
+cd omnis
+python setup.py install
+```
+
+------------------
+
+
+## Guiding principles
+
+- __Simplicity.__ Omnis pursues a simple architecture. Designing a software with simple architecture not only helps you to understand the code easily but also helps your painful debugging.
+
+- __Easiness.__ Don't worry about complicated algorithms or theories or mathematics. Omnis will handle difficult stuffs for you. Just learn how to use deep neural networks and USE THIS!
+
+- __Modularity.__ No spaghetti code!
+
+------------------
+
+
+## Support
+
+You can ask questions and join the development 
+
+- On the [Omnis Slack channel](https://omnisteamworkspace.slack.com).
+
+You can also post **bug reports and feature requests** (only) in [GitHub issues](https://github.com/omnis-labs-company/omnis/issues). Make sure to read [our guidelines](https://github.com/omnis-labs-company/omnis/blob/master/CONTRIBUTING.md) first.
+
+------------------
+
+
+## Why this name, Omnis?
+
+Omnis means _EVERY_ in Latin. The goal of Omnis is to make deep learning technologies easier so that _EVERY_ one can use deep learning technologies without headache.
+
+------------------

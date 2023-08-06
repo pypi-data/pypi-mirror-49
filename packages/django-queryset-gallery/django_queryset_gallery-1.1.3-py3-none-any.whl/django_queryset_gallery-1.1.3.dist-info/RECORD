@@ -1,0 +1,10 @@
+queryset_gallery/__init__.py,sha256=py_QKDWuuOKHin8nwsvvE5bCkc1Fo6850iovcYAxEHg,33
+queryset_gallery/filters.py,sha256=_4lcYS3KQb7GKpMcu6xQLe0QrpLjNzXJyTHOiYUOnPg,2313
+queryset_gallery/gallery.py,sha256=e90h6TcMfdyp_RNmR2Sj1u-AyTe0wr6Xl7rek2bGf98,2484
+queryset_gallery/paginator.py,sha256=-v-vn5V0BJc3LtUgWpwbxkppTtSQcKpzv6iMf5TiGtc,3360
+queryset_gallery/tests.py,sha256=b_sVV_0fxpTGQELiFQ4KFKHrg5ST_3XaAWCZjcxcNpI,6460
+django_queryset_gallery-1.1.3.dist-info/LICENSE,sha256=fMHlk5Z96jdbk7rkYuhvwMWufL2sIFoJC4rRkyh0v-0,1064
+django_queryset_gallery-1.1.3.dist-info/METADATA,sha256=sp2wQCzRTsJqAIzuSLTu2KUeh487orkaIhnw8McMuXQ,4387
+django_queryset_gallery-1.1.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_queryset_gallery-1.1.3.dist-info/top_level.txt,sha256=Iboj5kfGHw-bJrYKabW7ZxDMiAB7G6ZTJenF47CLfhc,17
+django_queryset_gallery-1.1.3.dist-info/RECORD,,

@@ -1,0 +1,10 @@
+README.md
+setup.py
+bitfex.egg-info/PKG-INFO
+bitfex.egg-info/SOURCES.txt
+bitfex.egg-info/dependency_links.txt
+bitfex.egg-info/requires.txt
+bitfex.egg-info/top_level.txt
+bitfex_api/__init__.py
+tests/__init__.py
+tests/test_bitfex_api.py

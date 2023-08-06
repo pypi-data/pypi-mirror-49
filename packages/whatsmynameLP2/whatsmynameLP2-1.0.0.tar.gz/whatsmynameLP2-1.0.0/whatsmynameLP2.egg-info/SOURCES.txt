@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+test/teste.py
+whatsmynameLP2/whatsmyname2.py
+whatsmynameLP2.egg-info/PKG-INFO
+whatsmynameLP2.egg-info/SOURCES.txt
+whatsmynameLP2.egg-info/dependency_links.txt
+whatsmynameLP2.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: avm-client
+Version: 1.0.3
+Summary: This is api for AVM (automated valuation machine)
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: info@enbisys.com
+License: UNKNOWN
+Keywords: OpenAPI,OpenAPI-Generator,AVM
+Platform: UNKNOWN
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+This is api for AVM (automated valuation machine)  # noqa: E501
+
+

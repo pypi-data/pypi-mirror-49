@@ -1,0 +1,13 @@
+scrapping/__init__.py,sha256=8LueEiaUqOQcJIrrAgiiSeG9rAz7kDu3c9iyf6v8OVQ,115
+scrapping/data_handler.py,sha256=Srkc7aMAPVikGJmE99BZoUf2ti6tL6L94G99s_N9OeE,1637
+scrapping/requests.py,sha256=DxmUEAPeSMfOHoSk7Jt8_Byev07PDoXjEYzW_HDtyXc,5002
+scrapping/spider.py,sha256=rTKmfxTWNfq4uZkexPuc7drKaY2pRZrwkRCEK3I-HjI,5838
+scrapping/spiders.py,sha256=j_ZKSjLRBIU1q8-d6_SDJgpJqVgE4gSYsDQLs_TlzOs,2963
+tests/__init__.py,sha256=AcPGHL_V5Xd5KBekRolcHIqbvHWEr4F7FhUbhCBxbSQ,30
+tests/requests_test.py,sha256=X_i1mtU3Lc_BXggy9l-szZadY21GJ0jC2oEpdt5k6Eo,2320
+tests/spider_test.py,sha256=WlLKBDR2ntVKWSV2ZBvDwbn-Zz2xfxt_NClRd2935xg,3549
+scrapping-0.1.dev0.dist-info/LICENSE,sha256=ONmpPY85XS3dG86do75AyxjPe1yVfA58YCggKdZ8bnA,1093
+scrapping-0.1.dev0.dist-info/METADATA,sha256=xj2G6W9uNkNtH-Pym81s7B5WCAk4qxEyDTRIWQSVORs,488
+scrapping-0.1.dev0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+scrapping-0.1.dev0.dist-info/top_level.txt,sha256=koX4vG3oiYUiIh0mTxRTU699-QSoeqpbJPlFJlEG2t4,16
+scrapping-0.1.dev0.dist-info/RECORD,,

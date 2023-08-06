@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: scrapping
+Version: 0.1.dev0
+Summary: Simple multitoolable web scrapper
+Home-page: UNKNOWN
+Author: Ivan Zhytkevych
+Author-email: ipython10@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: user-agent (>=0.1.9)
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: lxml (>=4.3.4)
+Requires-Dist: bs4
+
+UNKNOWN
+
+

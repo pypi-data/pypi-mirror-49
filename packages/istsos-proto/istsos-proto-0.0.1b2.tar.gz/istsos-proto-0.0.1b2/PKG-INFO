@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: istsos-proto
+Version: 0.0.1b2
+Summary: Module containing all istsos compiled proto files.
+Home-page: https://gitlab.com/ist-supsi/istsosm/libs/istsos-grpc
+Author: IST-SUPSI
+Author-email: geoservice@supsi.ch
+License: UNKNOWN
+Project-URL: Documentation, https://gitlab.com/ist-supsi/istsosm/libs/istsos-grpc
+Project-URL: Source, https://gitlab.com/ist-supsi/istsosm/libs/istsos-grpc
+Project-URL: Tracker, https://gitlab.com/ist-supsi/istsosm/libs/istsos-grpc/issues
+Description: # istSOS𝜇 protocol buffer repository.
+        
+        
+        
+Keywords: istsos grpc
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3, <4
+Description-Content-Type: text/markdown

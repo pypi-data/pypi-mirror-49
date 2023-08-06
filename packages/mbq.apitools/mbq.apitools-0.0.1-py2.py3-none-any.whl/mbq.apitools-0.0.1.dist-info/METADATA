@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: mbq.apitools
+Version: 0.0.1
+Summary: MBQ APITools
+Home-page: https://github.com/managedbyq/mbq.apitools
+Author: Managed by Q, Inc.
+Author-email: open-source@managedbyq.com
+Maintainer: Managed by Q, Inc.
+Maintainer-email: open-source@managedbyq.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Requires-Dist: marshmallow (==3.0.0rc8)
+Requires-Dist: typing-extensions (>=3.7.2)
+Requires-Dist: python-dateutil
+
+# mbq.apitools
+
+hi travis!
+
+

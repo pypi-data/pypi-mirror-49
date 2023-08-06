@@ -1,0 +1,13 @@
+preprocess/CheckFile.py,sha256=5n1cu-Ew5jB8Ijx-55k0xxmoTO-R9240wFAxTfHTj5s,2220
+preprocess/CreateTables.py,sha256=82XbaDNkAwR3jKrUNL2RCC57iiYr8iP_-dLQpd1nYKc,15716
+preprocess/SaveClassInfo.py,sha256=CRlZkBzgTYZSe4VXPr8ZIg9nyWE_kQHwwzvbtx70XyM,2357
+preprocess/TestPerformance.py,sha256=iHAdLXvlWCv0cTw7xk1iem5IoCU-ywPuGYJsr5UgvZw,6331
+preprocess/UpdateImageInfo.py,sha256=L26QUjRDt0tKb3TKPRa9W29zbCzW4WWBuZhrSvg5xjc,6352
+preprocess/__init__.py,sha256=Dm_htvcCTrR4JUBzP7lMfxw2N2jB7e30dOedFe_mdsg,19
+sparkpreprocess/__init__.py,sha256=Fhuhx1Z5iqU5qWdNXc0t7AjO2IuIp5UA7zl6jj61agw,26
+sparkpreprocess/sparkpreprocess.py,sha256=3RtWG-fJYVpAcTyZ9Bcg-fbasQBy6zDvNbIIHXUgWsw,8404
+openImagePreprocessing-1.0.dist-info/LICENSE,sha256=nsE-pPvGE2iAhQGo9WG4DZw2Qo-Y8dOKhyRGTKLxvBY,1090
+openImagePreprocessing-1.0.dist-info/METADATA,sha256=IPF9OyKh0hm5Oa75E45Z9V1YW34f1NMW6QeMA-L-WKc,492
+openImagePreprocessing-1.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+openImagePreprocessing-1.0.dist-info/top_level.txt,sha256=TcdtSmn6Ejpje50hHpfS7W7MsJZYRb9AnjkoM2jqUs4,27
+openImagePreprocessing-1.0.dist-info/RECORD,,

@@ -1,0 +1,13 @@
+subtypes/__init__.py,sha256=jorTDtND_VKe2KPEtZDZd0xCFYYTIdk-CyGlGqCFy4o,276
+subtypes/datetime.py,sha256=h-MHv2gqnVK10iQGFEfzjt8k98QJyXhIdv6jVowxpHg,7336
+subtypes/dict.py,sha256=00aWvFzJG5nNmCQntgrJ5ZyAtvzPpOq4gddsygvfQtM,1034
+subtypes/enum.py,sha256=zVMhagVyXJfnL74-DMgleWyYA-iOlCSsm25GwAXiIUw,1464
+subtypes/frame.py,sha256=FyaIrClIcpV8g9H8TaTVnQrxsCs2fxFM6A7FdVSu5SM,16951
+subtypes/list.py,sha256=L-qFkOCV5W4t4NWWwPdgud3sCL593WprFW0hNc34Ksc,7131
+subtypes/markup.py,sha256=vpmH5tVmVhsYE4RmQsrB1typucMBavcaeyVSgt0DcMo,291
+subtypes/str.py,sha256=wzU3M6CZu3ul5oea08vK2mHXhUKSo7jzjsziX074Jww,14208
+pysubtypes-0.0.1.dist-info/LICENSE,sha256=WWOBfkT0IHpdj_X5ZrjsCW8i44gU3C-4v0O1FHptyg4,1086
+pysubtypes-0.0.1.dist-info/METADATA,sha256=Em_tGGwUyDCg55yfSNrFtZCmVewJx1eTMGzBStBsYZw,6722
+pysubtypes-0.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pysubtypes-0.0.1.dist-info/top_level.txt,sha256=qlmbkdPfbJavauXibkUFzeSniDQZQuNnG10rFKOd4gE,9
+pysubtypes-0.0.1.dist-info/RECORD,,

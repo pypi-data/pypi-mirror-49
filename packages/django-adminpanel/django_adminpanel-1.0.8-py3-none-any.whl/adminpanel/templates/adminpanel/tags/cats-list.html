@@ -1,0 +1,6 @@
+{% if dataDict %}
+	{% for key,val in dataDict.items %}
+		<option value="{{key}}" {% if cat_parent == key %} selected="true" {% endif %}>{{val}}</option>
+	{% endfor %}
+
+{% endif %}

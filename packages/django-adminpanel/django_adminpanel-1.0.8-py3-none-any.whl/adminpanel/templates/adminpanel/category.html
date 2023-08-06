@@ -1,0 +1,178 @@
+{% extends 'adminpanel/inc/layout.html'%}
+{% load static%}
+{% load query_params%}
+{% load admin_params %}
+{% load admin_apblogs %}
+{% block title%} Category List {% endblock %}
+{% block bodyclass%}hold-transition skin-light-blue sidebar-mini{% endblock %}
+{% block body%}
+<div class="content-wrapper" style="min-height: 196px;">
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1 class="transform">
+        Category
+        <small>List</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="{% url 'adminpanel_dashboard' %}"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Category</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+	   <div class="col-xs-12 col-md-5">
+			<div class="box">
+            <div class="box-header">
+              <h3 class="box-title"><span> Add New Category</span></h3>
+			  
+            </div>
+			
+            <!-- /.box-header -->
+            <div class="box-body add_attribute">
+			<form class="validate" method="post" action="{% url 'apblogs_category_submit' %}" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="form-group">
+					<label>Category Name<strong class="req">*</strong></label>
+					<input type="text" class="form-control c_required get_page_title" name="title">
+				  </div>
+				  <div class="form-group">
+					<label>Category Slug<strong class="req">*</strong></label>
+					<input type="text" class="form-control c_required set_page_title" name="cat_url">
+				  </div>
+				   <div class="form-group">
+					<label>Category Order</label>
+					<input type="number" class="form-control" name="cat_order" value="0">
+				  </div>
+				  <div class="form-group">
+					<label>Image</label>
+					{% media_image 'cat_image' %}
+				  </div>
+				  <div class="form-group">
+					<label>Parent Category</label>
+					<select  class="form-control" name="cat_parent">
+						<option value="0">-Select-</option>
+						{% load_category_options %}
+					</select>
+					
+				  </div>
+				  <div class="form-group">
+					<label>Category Description </label>
+					<textarea class="form-control" name="cat_excerpt"></textarea>
+				  </div>
+				  <div class="form-group">
+					<label>Status <strong class="req">*</strong></label>
+					<select  class="form-control c_required" name="cat_status">
+						<option value="0">Publish</option>
+						<option value="1">Unpublish</option>
+					</select>
+				  </div>
+				  <div class="form-group">
+					<div class="submit_btn"><button class="btn btn-success btn-lg"> Save Category </button></div>
+				  </div>
+			</form>
+            </div>
+            <!-- /.box-body -->
+          </div>
+	   </div>
+        <div class="col-xs-12 col-md-7">
+        
+
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title"><span> Category List</span></h3>
+			  
+            </div>
+			
+            <!-- /.box-header -->
+            <div class="box-body">
+			
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>Category Name</th>
+                  <th>Category URL</th>
+                  <th>Created Date</th>
+				  <th>Status</th>
+				  <th>Order</th>
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+				
+				
+                {% for data in dataList%}			
+				<tr>
+                  <td>{% if data.cat_parent != 0 %} - {% endif %}{{data.title}}</td>
+                  <td>{{data.cat_url}}</td>
+                  <td>{{data.cat_created}}</td>
+                  <td>{{data.cat_status}}</td>
+				  <td>{{data.cat_order}}</td>
+                  <td class="action">
+					<span class="dropdown">
+                                <button id="btnSearchDrop2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-primary dropdown-toggle dropdownmenuright"><i class="fa fa-cog"></i></button>
+                                <span aria-labelledby="btnSearchDrop2" class="dropdown-menu mt-1 dropdown-menu-right">
+                                  <!--<a href="/{{data.page_slug}}" class="dropdown-item edit" target="_blank"><i class="fa fa-eye"></i> View Blog </a>-->
+                                  <a href="{% url 'apblogs_edit_category' data.id%}" class="dropdown-item edit"><i class="fa fa-pencil"></i> Edit </a>
+                                   <a data-toggle="modal" class="RecordDeleteClass ak-delete-icon" data-target="#deleteBox" rel="{{data.id}}" title="Delete User" data-tooltip="tooltip" data-placement="top" ><i class="fa fa-fw fa-trash-o"></i>Delete</a>
+								   
+                                  
+                    </span>
+				 </span></td>
+                </tr>
+				{% endfor %}
+				
+				<tr><td colspan="5">
+					<div class="pagination">
+					<ul class="pagination smt-pagination">
+						{% if dataList.has_previous %}
+							<li><a href="?{% query_params request 'page' 1 %}">&laquo; first</a></li>
+							<li><a href="?{% query_params request 'page' dataList.previous_page_number %}">previous</a></li>
+						{% endif %}
+												
+						{% if dataList.has_next %}
+						<li>	<a href="?{% query_params request 'page' dataList.next_page_number %}">next</a></li>
+						<li>	<a href="?{% query_params request 'page' dataList.paginator.num_pages %}">last &raquo;</a></li>
+						{% endif %}
+						                  
+					</ul>
+					</div>
+					</td>
+				</tr>
+                </tfoot>
+			  </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+
+	<div class="modal fade" id="deleteBox" tabindex="-1" role="dialog" aria-hidden="true">
+        <form enctype="multipart/form-data" method="post" accept-charset="utf-8" class="form-horizontal form-bordered" id="RecordDeleteForm" action="{% url 'apblogs_category_delete'%}">
+		{% csrf_token %}
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Are you sure, you would like to delete this record?</h4>
+                </div>
+                <input type="hidden" name="record_id" id="recordDeleteID" value="0"/>                
+				<div class="modal-footer clearfix bordertopnone">
+                    <button type="button" id="Discard" class="btn btn-primary" data-dismiss="modal"> Cancel</button>
+                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o"></i> <span class="dbxdel">Delete</span></button>
+                </div>							
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+        </form>    
+	</div>
+
+
+
+</div>
+{% endblock %}

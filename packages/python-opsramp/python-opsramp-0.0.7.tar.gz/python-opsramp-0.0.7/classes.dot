@@ -1,0 +1,37 @@
+# classes.dot
+# An input file for graphviz that produces a diagram of the relationship
+# between the various classes in the python-opsramp language binding.
+#
+# (c) Copyright 2019 Hewlett Packard Enterprise Development LP
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+digraph {
+  opsramp -> { tenant globalconfig }
+  tenant -> { integrations rba monitoring policies discovery credential_sets clients }
+  rba -> categories
+  categories -> category
+  monitoring -> templates
+  integrations -> { itypes instances }
+  { rank=same categories templates clients policies itypes instances discovery credential_sets }
+
+  opsramp [label="opsramp(url,key,secret)"]
+  tenant [label="tenant(tid)"]
+  category [label="category(cid)" style="filled" fillcolor="turquoise"]
+  instances [style="filled" fillcolor="turquoise"]
+  categories [style="filled" fillcolor="turquoise"]
+  policies [style="filled" fillcolor="turquoise"]
+  clients [style="filled" fillcolor="turquoise"]
+  discovery [style="filled" fillcolor="turquoise"]
+  credential_sets [style="filled" fillcolor="turquoise"]
+}

@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+cups.egg-info/PKG-INFO
+cups.egg-info/SOURCES.txt
+cups.egg-info/dependency_links.txt
+cups.egg-info/top_level.txt

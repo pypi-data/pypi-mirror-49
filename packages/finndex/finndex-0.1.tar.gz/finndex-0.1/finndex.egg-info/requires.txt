@@ -1,0 +1,12 @@
+beautifulsoup4
+ipykernel
+ipython
+ipywidgets
+matplotlib
+newsapi-python
+numpy
+pandas
+pycorenlp
+pytrends
+requests
+stanfordnlp

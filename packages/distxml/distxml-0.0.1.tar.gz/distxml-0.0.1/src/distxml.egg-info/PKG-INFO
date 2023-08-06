@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: distxml
+Version: 0.0.1
+Summary: Converts labeled data to xml format
+Home-page: https://github.com/steventimberman/distxml
+Author: Steven Timberman
+Author-email: steventimberman@steventimberman.com
+License: UNKNOWN
+Description: # distxml
+        Convert labeled data to xml at scale.
+        
+        ## Installation
+        
+        Run the following command:
+        `python pip install distxml`
+        
+        ## Usage
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

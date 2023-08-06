@@ -1,0 +1,6 @@
+setup.py
+pyckip.egg-info/PKG-INFO
+pyckip.egg-info/SOURCES.txt
+pyckip.egg-info/dependency_links.txt
+pyckip.egg-info/requires.txt
+pyckip.egg-info/top_level.txt

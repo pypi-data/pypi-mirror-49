@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: pyckip
+Version: 0.5.0
+Summary: CKIP NLP Wrappers
+Home-page: https://pypi.org/project/ckipnlp/
+License: UNKNOWN
+Description: Use `ckipnlp <https://pypi.org/project/ckipnlp/>`_ instead.
+Platform: UNKNOWN
+Requires-Python: >=3.5

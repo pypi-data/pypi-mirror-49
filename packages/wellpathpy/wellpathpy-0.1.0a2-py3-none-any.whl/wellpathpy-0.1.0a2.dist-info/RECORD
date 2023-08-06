@@ -1,0 +1,14 @@
+wellpathpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wellpathpy/checkarrays.py,sha256=xlCD8oViMLjIdhuNQ5wK-JEmOmJlfL6KKF9qyC5P3x4,3716
+wellpathpy/header.py,sha256=gu0PfZiFnR1C-cHyjHFpV1QRnTqxqCI-eDUgsdK318M,1018
+wellpathpy/interpolate.py,sha256=LiBOvntSa8Ba7Vf5yn9xB8RFwrSHYEmmW-Rq8X4zpzo,2947
+wellpathpy/location.py,sha256=lJ2H1o71YPvfLX3uTh2LJ7sImzjIHYlnKEGCbXLkdcY,3057
+wellpathpy/mincurve.py,sha256=fkDPwq72gV_3-jf5ZLf6YMgK3QQ_5ZevgarTvUHLcYI,5070
+wellpathpy/rad_curv.py,sha256=qW1AB_R5IyOANX3oPKlwAQNQNO9vL86ur_SWIsZW7jw,3236
+wellpathpy/tan.py,sha256=pT48LNXfuSz1m_IPGpJfKuAsAHymX9SwyfjInFL93NU,7636
+wellpathpy/wellpath.py,sha256=yJ-N_IRBWnnFm7FhrNfefRfpsMkrl8EmeApnq2axZxs,916
+wellpathpy-0.1.0a2.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+wellpathpy-0.1.0a2.dist-info/METADATA,sha256=ByJWvvbG82lbevRAss9K7z5eh73biUK54cop6qQv_tc,2170
+wellpathpy-0.1.0a2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+wellpathpy-0.1.0a2.dist-info/top_level.txt,sha256=xDLT2DNLTyIPv1N8ZRIBoaPU7vDnYrpnR5cvsMKnMLg,11
+wellpathpy-0.1.0a2.dist-info/RECORD,,

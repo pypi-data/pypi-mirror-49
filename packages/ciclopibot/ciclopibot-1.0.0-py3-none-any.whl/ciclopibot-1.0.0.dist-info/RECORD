@@ -1,0 +1,12 @@
+ciclopibot/__init__.py,sha256=tGNH9siyKcyRVfUUldGRrZemM4d_kQJtG_iXFImRNbw,234
+ciclopibot/bot.py,sha256=H9Oar2nHif4knxJ5PYej-J4Hps91mU42QnZknh0mnqQ,3119
+ciclopibot/bot_tools.py,sha256=4RbKgeKCzF5-pZB1sbtCq52OdiOE5lgyac29ihgQbEE,2111
+ciclopibot/ciclopi.py,sha256=sxEcmmedBM0BW8jCkhljjHVvDgpjxW8yIiIZTlGDRjo,44836
+ciclopibot/helper.py,sha256=b1rOw6t5xD2LJqp1rWDcHM1knFwIC_qcOMic7nelZ6Y,5661
+ciclopibot/roles.py,sha256=BwRHhOO4n3tW8j4odQJXsn9SFpQYfepDMpt_xegZVE8,15556
+ciclopibot/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ciclopibot/data/help.json,sha256=CCQ8a_YZ813Ttlz62ju_zO_rypUzPaIgVoURqbnVV-4,197
+ciclopibot-1.0.0.dist-info/METADATA,sha256=3UHcezKdC4gSx5OufVFMZFuCW74zliLFKrymXB7_9jw,2760
+ciclopibot-1.0.0.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+ciclopibot-1.0.0.dist-info/top_level.txt,sha256=Z0WgKx9QernTSwYuS1irF5buB66J3ZcrRyY8MsYn2I8,11
+ciclopibot-1.0.0.dist-info/RECORD,,

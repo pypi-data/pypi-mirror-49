@@ -1,0 +1,9 @@
+README.md
+setup.py
+simple_plugin.py
+simple_plugin2.egg-info/PKG-INFO
+simple_plugin2.egg-info/SOURCES.txt
+simple_plugin2.egg-info/dependency_links.txt
+simple_plugin2.egg-info/entry_points.txt
+simple_plugin2.egg-info/requires.txt
+simple_plugin2.egg-info/top_level.txt

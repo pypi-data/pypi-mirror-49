@@ -1,0 +1,3 @@
+
+[segno.plugin.converter]
+simple = simple_plugin:write

@@ -1,0 +1,10 @@
+doepy/__init__.py,sha256=B8FYgX9b59KU6XFuoGlb10ImHH9euaYOIWm5J5rjWmM,232
+doepy/build.py,sha256=GSZqljSQCNsc6Esuo-mYH7TeChYJKtvuzE05iEHPsDc,12413
+doepy/doe_functions.py,sha256=m7k5VEQgsUTt68jTNqZheDxhvxBsy2luMwf2o-_KXN4,28103
+doepy/pydoe_corrected.py,sha256=c3coA9FODWwObnVrGy8XwPo4o_6RjrghpW5wBvQNpvw,18959
+doepy/read_write.py,sha256=bwAzw-e_6XdjeqWAAL6I1Tw9Y93Bfi54cTkZCMsAukw,1933
+doepy-0.0.1.dist-info/LICENSE,sha256=Sw2Fsb73yZD7mlJC4mwzMbWYmaPDOu5jhgCuQ5v3ixQ,1096
+doepy-0.0.1.dist-info/METADATA,sha256=Pl-bt3HUIrq_ueZCuKMlcqYq4ZoX1IBxchYoWjk3AYA,10079
+doepy-0.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+doepy-0.0.1.dist-info/top_level.txt,sha256=A-NFrSuYZSGH4UJdyQ4Wjqx0PjApgF1votkkFKqU_m8,6
+doepy-0.0.1.dist-info/RECORD,,

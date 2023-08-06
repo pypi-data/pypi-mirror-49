@@ -1,0 +1,7 @@
+numpy
+python-nmap
+colorspacious
+py-cpuinfo
+pycairo
+nvidia-ml-py3pyzmq
+psutil

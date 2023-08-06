@@ -1,0 +1,12 @@
+uarray/__init__.py,sha256=U0nibPNaegWYipl8nC1yRAW9KRarSL7aEGqlH4_wxMM,4536
+uarray/_backend.py,sha256=6RsQo3Vl6dIQouf9wKkoZGtT3fxMh8U7-1rhlPsXALk,11280
+uarray/_uarray.cpython-37m-darwin.so,sha256=rrLkQUp09qX4SW46XVEnHV_kDjDVkoqOB3gOVoiuBgs,107152
+uarray/_version.py,sha256=e5l79Iq4NWNRhLTOK3ltGoxjm0NLwmEPyD3r1DiqoGo,497
+uarray/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uarray/tests/conftest.py,sha256=6w2i7jtvvqK43_wNw6J69Ohp8edvp-EQ_ZItArjglZE,144
+uarray/tests/test_uarray.py,sha256=BxV7vvLGbSr2GfOhhqyPYOCPgN8AF977ly6tMmsuRm0,3457
+uarray-0.5.1.dist-info/LICENSE,sha256=yAw5tfzga6SJfhTgsKiLVEWDNNlR6xNhQC_60s-4Y7Q,1514
+uarray-0.5.1.dist-info/METADATA,sha256=pqvOGXNiK0wfAq1ytTFAojIwqOmwwzXppInNFBvjltw,3396
+uarray-0.5.1.dist-info/WHEEL,sha256=ubEovDPFTN5rTkBHLrZ2UHPZuj6eRdINU2td2X4r6I4,109
+uarray-0.5.1.dist-info/top_level.txt,sha256=gWrAWzY0Mj5-QR13QhN3vWteA6-PCq6QGPQsHczIWO4,7
+uarray-0.5.1.dist-info/RECORD,,

@@ -1,0 +1,11 @@
+gatenlp/__init__.py,sha256=wUSmRa88MAsbE7rOGCcTxZf2j4tIa7YX3c-gDjaqZdc,37924
+gatenlp/regex_patterns.py,sha256=r-Mv4LDuNp6Tt_qdcc6vWsGJ524jZ1dsqDUfICVAr1k,3028
+gatenlp/diff/__init__.py,sha256=hHfe1mU9QLcXt71uEqcyFWkSaCczqz9Y4ZkrG0HHhZE,10775
+gatenlphiltlab/__init__.py,sha256=r9YhfZpi0USuiugPGq_t1ZwxQ2yZ2jaJi5c3qdjDV5E,38162
+gatenlphiltlab/regex_patterns.py,sha256=ppWAdUFW_EzZIMUek6NnvqY8XWeUu3JGEBrlFeMgfjM,3035
+gatenlphiltlab/diff/__init__.py,sha256=GpBsRMU6OnpQJJvZK9NGy1iX2O3M8Khv-OebYZ7CyIA,10845
+gatenlphiltlab-4.0.0.dist-info/LICENSE.md,sha256=LmDgMWm-CDPom5JYDQGP7dutocZF5Nx3R7Dh7WdvC0Q,11414
+gatenlphiltlab-4.0.0.dist-info/METADATA,sha256=J7x2O5XjWTPbw4W5FFoOr4M3WLrYLr41JvDDLxilXVk,444
+gatenlphiltlab-4.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+gatenlphiltlab-4.0.0.dist-info/top_level.txt,sha256=6BRZY1NReQTqoCku4BmnwmzswZZw626eCi70pAMm09U,15
+gatenlphiltlab-4.0.0.dist-info/RECORD,,

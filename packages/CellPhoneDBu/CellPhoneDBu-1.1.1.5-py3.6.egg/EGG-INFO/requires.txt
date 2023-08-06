@@ -1,0 +1,7 @@
+click<6.7.99,>=6.7
+dask-jobqueue==0.4.1
+dask==1.1.4
+numpy==1.16.3
+pandas<0.23.99,>=0.23
+PyYAML<3.13.99,>=3.13
+scipy==1.2.1

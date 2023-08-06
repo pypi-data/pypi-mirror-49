@@ -1,0 +1,10 @@
+faiss/setup.py,sha256=PT2z2RHb-jZhQ_e8tAwu7iPEkOKh5Trzjb8FmOatqIk,1574
+faiss/__init__.py,sha256=BhyCBzy7syccynbNRbb0Rd3NzQddPRFCtDIrYhQ08Ys,20520
+faiss/swigfaiss.py,sha256=W4kLgkY9UROIhzr3F0dcLecWlF79NRC83Mb5nA1lnFo,305756
+faiss/_swigfaiss.so,sha256=-aDsAsm6wcmP249-tOlu5E0za0gK0QGr0vnDMNPfh5A,31400128
+faiss/.libs/libgomp-3300acd3.so.1.0.0,sha256=UeFYIEVyYUmIk-yi0ZDaTDMquk1yirgJwwQOQlWv1NU,63024
+faiss/.libs/libgfortran-ed201abd.so.3.0.0,sha256=-wq9A9a6iPJfgojsh9Fi4vj6Br_EwUqr7W5Pc4giOYg,1023960
+faiss_cpu-1.5.3.dist-info/WHEEL,sha256=M5Ujap42zjfAFnpJOoFU72TFHuBKh-JF0Rqu5vZhkVE,110
+faiss_cpu-1.5.3.dist-info/top_level.txt,sha256=nr2S-1YAhqAuAlFJukntDvRGXfI1KmwnUNs_iFlNiig,6
+faiss_cpu-1.5.3.dist-info/METADATA,sha256=8mIEo_SCNrrcegpqnIT7aZ0cGodIdyUactw7RfPIrRI,714
+faiss_cpu-1.5.3.dist-info/RECORD,,

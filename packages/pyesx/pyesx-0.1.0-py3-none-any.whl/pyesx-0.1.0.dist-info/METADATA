@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pyesx
+Version: 0.1.0
+Summary: Python modules associated to the ESX model
+Home-page: UNKNOWN
+Author: Arthur Enguehard
+Author-email: arthur.enguehard@ens.fr
+License: GPL license v3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: jdcal
+Requires-Dist: datetime
+Requires-Dist: matplotlib
+
+**pyesx module**
+
+Python modules and routines associated with the Ecosystem Surface Exchange
+Model (ESX) [Simpson & al (*unpublished*)]
+
+This contains:
+
+  **run**
+  Routines to treat and visualise the results from ESX simulations
+
+  **data**
+  Routines to visualise, treat and format independent datafiles that can be used by the ESX model as inputs
+
+  **simulation**
+  Package to setup and run ESX simulations from python
+
+  **utils**
+  Tool functions
+
+  **path**
+  Package to navigate in the ESX repository
+
+  **analysis**
+  Package to make easier the comparisons between modelled values and independent observations
+
+  **lib**
+  Libraries of data and global variables
+
+Bibliography:
+
+

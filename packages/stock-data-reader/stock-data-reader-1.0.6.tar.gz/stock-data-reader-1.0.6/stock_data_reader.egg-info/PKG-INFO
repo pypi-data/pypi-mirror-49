@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: stock-data-reader
+Version: 1.0.6
+Summary: A Python Package to get the stock data price for a company.
+Home-page: https://github.com/mukulkkumar/stock-data
+Author: Mukul Kumar
+Author-email: mukulkkumarr@gmail.com
+License: MIT
+Description: # stock-data-reader
+        
+        A Python Package to get the stock data price for a company.
+        
+        Usage
+        
+        Following query on terminal will provide you the stock price details of "tcs" company.
+        
+        stock-data-reader -q tcs
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

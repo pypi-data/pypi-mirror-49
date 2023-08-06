@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dobg
+Version: 0.0.21
+Summary: Digital Ocean CLI tool for managing Droplets
+Home-page: https://github.com/markolat/dobgcli
+Author: Marko Latinovic
+Author-email: markolat@outlook.com
+License: UNKNOWN
+Description: Describe here what cli does
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Freely Distributable
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

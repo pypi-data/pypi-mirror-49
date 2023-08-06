@@ -1,0 +1,14 @@
+
+[docs]
+sphinx<2
+sphinx-rtd-theme<0.5
+readthedocs-sphinx-ext<1.1
+sphinxcontrib-programoutput
+
+[notebook]
+ipython
+ipywidgets
+
+[tests]
+coveralls
+nose

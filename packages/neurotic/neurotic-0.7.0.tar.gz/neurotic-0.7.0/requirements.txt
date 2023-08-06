@@ -1,0 +1,12 @@
+# av  # required but typically not installable via pip, try `conda install -c conda-forge av`
+elephant>=0.6.2
+ephyviewer>=1.1.0
+neo>=0.7.2
+numpy
+packaging
+pandas
+pylttb
+pyqt5
+pyyaml
+quantities
+tqdm

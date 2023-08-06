@@ -1,0 +1,2 @@
+recursive-include pipeloyus config.json
+recursive-include pipeloyus/messages *.html

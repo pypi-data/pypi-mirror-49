@@ -1,0 +1,12 @@
+numpy>=1.16.4
+pandas>=0.24.2
+requests>=2.22.0
+beautifulsoup4>=4.7.1
+lxml>=4.3.4
+aiohttp>=3.5.4
+
+[google]
+pytrends>=4.6.0
+
+[twitter]
+twitterscraper==1.1.0

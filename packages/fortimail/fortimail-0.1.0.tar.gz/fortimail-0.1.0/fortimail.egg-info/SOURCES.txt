@@ -1,0 +1,11 @@
+setup.py
+fortimail/__init__.py
+fortimail/client.py
+fortimail/exceptions.py
+fortimail/utils.py
+fortimail.egg-info/PKG-INFO
+fortimail.egg-info/SOURCES.txt
+fortimail.egg-info/dependency_links.txt
+fortimail.egg-info/requires.txt
+fortimail.egg-info/top_level.txt
+requirements/__init__.py

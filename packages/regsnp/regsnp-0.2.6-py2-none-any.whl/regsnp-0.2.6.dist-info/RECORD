@@ -1,0 +1,13 @@
+regsnp-0.2.6.data/scripts/regsnp_intron.py,sha256=iLvPoHfbZEXnxQqiV1q1QgvwMOJG8w7QdB1Bn_SbFN4,2121
+regsnp-0.2.6.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+regsnp-0.2.6.dist-info/METADATA,sha256=Lg4aR5Yvgg32KA4qNlzcZHgBzUPsk6SfkUtfe8nzPr8,577
+regsnp-0.2.6.dist-info/RECORD,,
+regsnp-0.2.6.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+regsnp-0.2.6.dist-info/metadata.json,sha256=zr1Pkty39t8Xz8zCzPU86DI3gNjVPwdcxKRCjN5frTU,746
+regsnp-0.2.6.dist-info/top_level.txt,sha256=7PrdRIuqSk5nqrHVZb_kLkyaJWnMeyTk4bPjj__OGgU,14
+regsnp_intron/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regsnp_intron/feature_calculator.py,sha256=aRDgvvrfwmY9siSdpSSggJUM63sMQnXVNA3Z6JHjEzM,12083
+regsnp_intron/regsnp_intron.py,sha256=CLMe77DfbfA0j2fdj2-w3IzkqRq36GVtaqnOZqilJas,2134
+regsnp_intron/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regsnp_intron/utils/snp.py,sha256=nwzCzX6SLxq4g71QA-gZbUdkMlhVhddbkAkIUWL9HHM,2178
+regsnp_intron/utils/vcf.py,sha256=7a8sEYfYfCy-P27_UhSDiGec_ndX0PUWUmbse5Gfr5U,1597

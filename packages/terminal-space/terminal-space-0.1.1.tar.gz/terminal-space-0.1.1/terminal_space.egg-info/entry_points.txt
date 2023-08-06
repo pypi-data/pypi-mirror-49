@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        tspace-client = tspace.client_app:main
+        tspace-server = tspace.server_app:main
+    

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyIndego
+Version: 0.0.8
+Summary: API for Bosch Indego mower
+Home-page: https://github.com/jm-73/Indego
+Author: Jens Mazzanti-Myretyr
+Author-email: jens@myretyr.se
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# This is a simple API for the Bosch Indego lawnmowers.
+
+For usage with Home Assistant.
+Can also be used as an ordinary python library.
+Description will follow shortly.
+
+
+

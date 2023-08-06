@@ -1,0 +1,9 @@
+six
+docker
+marshmallow>=3.0.0b
+redis<3.0
+apispec>1.3
+apispec_webframeworks
+flask
+gevent==1.4.0
+pyyaml

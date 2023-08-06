@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: fmlpy
+Version: 0.1.1
+Summary: package for Financial Machine Learning
+Home-page: https://github.com/crazywiden/fmlpy
+Author: Xiuyu & Yuan
+Author-email: yuangao719@gmail.com
+License: LICENSE
+Description: UNKNOWN
+Keywords: Machine Learning,Financial
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Programming Language :: Python :: 3

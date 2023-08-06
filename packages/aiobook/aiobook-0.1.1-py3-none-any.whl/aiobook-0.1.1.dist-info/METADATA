@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aiobook
+Version: 0.1.1
+Summary: Async framework for build messenger application in facebook
+Home-page: https://github.com/Valenookua/aiobook
+Author: Valentyn Vaityshyn
+Author-email: valenook.ua@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Dist: setuptools (>=40.6.2)
+Requires-Dist: aiohttp (>=3.5.4)
+
+UNKNOWN
+
+

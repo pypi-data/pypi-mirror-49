@@ -1,0 +1,12 @@
+README.md
+setup.py
+numerauto/__init__.py
+numerauto/eventhandlers.py
+numerauto/numerauto.py
+numerauto/robust_numerapi.py
+numerauto/utils.py
+numerauto.egg-info/PKG-INFO
+numerauto.egg-info/SOURCES.txt
+numerauto.egg-info/dependency_links.txt
+numerauto.egg-info/requires.txt
+numerauto.egg-info/top_level.txt

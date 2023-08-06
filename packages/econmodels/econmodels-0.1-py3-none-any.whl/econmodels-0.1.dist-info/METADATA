@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: econmodels
+Version: 0.1
+Summary: A collection of econometric modelling tools
+Home-page: https://bitbucket.org/james_londal/econmodels/src/master/
+Author: James Londal
+Author-email: jameslondal@hearts-science.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: statsmodels
+
+UNKNOWN
+
+

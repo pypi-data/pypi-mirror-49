@@ -1,0 +1,3 @@
+[console_scripts]
+nanome-matryx = nanome_matryx.Matryx:main
+

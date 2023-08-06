@@ -1,0 +1,16 @@
+README.rst
+setup.py
+novelSpider/__init__.py
+novelSpider/task.py
+novelSpider.egg-info/PKG-INFO
+novelSpider.egg-info/SOURCES.txt
+novelSpider.egg-info/dependency_links.txt
+novelSpider.egg-info/requires.txt
+novelSpider.egg-info/top_level.txt
+novelSpider/app/__init__.py
+novelSpider/app/novelDownloader.py
+novelSpider/app/novelTools/__init__.py
+novelSpider/app/novelTools/novelLoger.py
+novelSpider/app/novelTools/novelORM.py
+novelSpider/app/novelTools/novelParser.py
+novelSpider/app/novelTools/novelSpider.py

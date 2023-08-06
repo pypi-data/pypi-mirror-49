@@ -1,0 +1,7 @@
+README.md
+setup.py
+delegate/__init__.py
+delegate_property.egg-info/PKG-INFO
+delegate_property.egg-info/SOURCES.txt
+delegate_property.egg-info/dependency_links.txt
+delegate_property.egg-info/top_level.txt

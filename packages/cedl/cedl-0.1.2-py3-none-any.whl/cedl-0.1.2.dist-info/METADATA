@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: cedl
+Version: 0.1.2
+Summary: Chrome Extension Downloader
+Home-page: https://github.com/jakkso/cedl
+Author: Alexander Potts
+Author-email: dev@jakkso.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (==2019.6.16)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: Click (==7.0)
+Requires-Dist: idna (==2.8)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: urllib3 (==1.25.3)
+
+# Chrome Extension Downloader (CEDL)
+
+This is a simple utility program to download extensions from the Chrome WebStore.
+
+## Installation
+    pip install cedl
+
+
+## Usage
+    cedl [url] [name]
+
+Where `url` is the WebStore url for the extension that you want to download and `name` is the filename you want for the downloaded extension.
+
+Downloaded extensions are placed in `$HOME/bin/chrome-extensions`   
+
+To install the downloaded extension, open `chrome://extensions` in chrome, then drag the downloaded file onto the page.
+
+#### License
+
+MIT
+

@@ -1,0 +1,9 @@
+divination/__init__.py,sha256=mLkdL1MjIkkq7e6rjdwnKAxJx68EjC2bNo40PsO5GA0,501
+divination/driver.py,sha256=plZqF4hSt6StsmDuoZxAGa8SGL9eKTWXxdz8h3e6W9g,2444
+divination/impl.py,sha256=zpOwoxQ34bFbfxfaAbMZSl-zA3_yli5YDqnLJtLKiBY,3060
+divination/memory.py,sha256=-78_-mgDNs4PPGssqf0GJXD3OtfiHzVDpzG0C3eA7UI,3192
+divination-0.1.0.dist-info/LICENSE,sha256=-QPEYp3-lpiCpnnmmWe1H39MfHKqGXAerjgD6mJoGyg,1073
+divination-0.1.0.dist-info/METADATA,sha256=fdxcJu7ZgMT8YOeZQs9Z1UCfdUUICkpTEyD4q5jheCA,5415
+divination-0.1.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+divination-0.1.0.dist-info/top_level.txt,sha256=Mp7QKa3Ea9BZmpKbWCBBS0klQ0kkl3XAzVIwRrMVwF8,11
+divination-0.1.0.dist-info/RECORD,,

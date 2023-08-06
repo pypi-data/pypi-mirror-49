@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: toh5py
+Version: 0.0.1
+Summary: Saving and loading a large number of images (data) into a single HDF5 file
+Home-page: https://github.com/rokuki
+Author: bouseng
+Author-email: c@bouseng.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## Usage
+```python
+import toh5py
+
+
+to_h5py.do(image_list = ['../../1.png', '../../2.png', '../../3.png', ...],
+           label_list = ['1', '2', '2', '3', ...],
+           ratio = 0.8，
+           data_shape = (0, 256, 256, 3)，
+           rollaxis = False，
+           output = 'output.hdf5')
+```
+
+

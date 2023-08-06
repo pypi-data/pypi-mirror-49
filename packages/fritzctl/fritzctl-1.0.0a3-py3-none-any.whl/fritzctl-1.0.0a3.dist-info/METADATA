@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: fritzctl
+Version: 1.0.0a3
+Summary: Object oriented TR64 FRITZ!Box Client Library
+Home-page: https://pypi.python.org/pypi/fritzctl
+Author: notna
+Author-email: notna@apparat.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: Topic :: Home Automation
+Provides: fritzctl
+Requires-Dist: requests
+Requires-Dist: simpletr64
+
+
+``fritzctl`` - Python Client Library for the AVM TR64 API
+=========================================================
+
+.. image:: https://readthedocs.org/projects/fritzctl/badge/?version=latest
+   :target: http://fritzctl.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
+.. image:: https://img.shields.io/github/release/not-na/fritzctl.svg?maxAge=2592000
+   :target: http://github.com/not-na/fritzctl
+
+``fritzctl`` is a fully Object-Oriented Client Library designed to be flexible and future-compatible.
+
+You can install ``fritzctl`` by executing ``pip install fritzctl`` with the appropriate rights.
+
+Refer to the `documentation <http://fritzctl.rtfd.io/>`_ for more information and a getting started guide.
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+graftpress-cli = graftpress_cli.main:main
+

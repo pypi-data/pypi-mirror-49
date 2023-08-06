@@ -1,0 +1,10 @@
+biopython
+matplotlib
+numpy
+ipython
+ipywidgets
+pandas
+pillow
+pysam
+PyYAML
+scipy

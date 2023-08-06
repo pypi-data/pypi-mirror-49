@@ -1,0 +1,3 @@
+[console_scripts]
+myidea_mange = manage:main
+

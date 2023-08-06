@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: myidea
+Version: 0.1
+Summary: Blog System Based on Django
+Home-page: https://127.0.0.1:8000
+Author: jackson
+Author-email: jackson@test.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: django (~=2.2.3)
+Requires-Dist: pillow (~=6.1.0)
+Requires-Dist: django-ckeditor (~=5.7.1)
+Requires-Dist: django-redis (~=4.10.0)
+Requires-Dist: mysqlclient (~=1.4.2)
+Requires-Dist: mistune (~=0.8.4)
+Requires-Dist: xadmin (~=2.0.1)
+Requires-Dist: django-autocomplete-light (~=3.3.5)
+Requires-Dist: djangorestframework (~=3.9.4)
+Provides-Extra: ipython
+Requires-Dist: ipython (==6.2.1) ; extra == 'ipython'
+
+UNKNOWN
+
+

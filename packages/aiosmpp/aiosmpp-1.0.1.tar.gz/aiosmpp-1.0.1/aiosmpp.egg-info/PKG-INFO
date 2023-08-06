@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: aiosmpp
+Version: 1.0.1
+Summary: SMPP library for python based on asyncio
+Home-page: https://github.com/tpark-platform/aiosmpp
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Topic :: Communications :: Telephony
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved

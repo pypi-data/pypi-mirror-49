@@ -1,0 +1,7 @@
+setup.py
+ussl.py
+pycopy_cpython_ussl.egg-info/PKG-INFO
+pycopy_cpython_ussl.egg-info/SOURCES.txt
+pycopy_cpython_ussl.egg-info/dependency_links.txt
+pycopy_cpython_ussl.egg-info/requires.txt
+pycopy_cpython_ussl.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/__init__.py
+src/hwtest.py
+uppercut.egg-info/PKG-INFO
+uppercut.egg-info/SOURCES.txt
+uppercut.egg-info/dependency_links.txt
+uppercut.egg-info/top_level.txt

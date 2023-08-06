@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: zzh
+Version: 1.0.0
+Summary: yeye
+Home-page: https://github.com/zzhwln/zzh
+Author: zzh
+Author-email: 1905811702@qq.com
+License: UNKNOWN
+Description: very log
+Platform: UNKNOWN
+Requires: aiohttp
+Requires: lxml

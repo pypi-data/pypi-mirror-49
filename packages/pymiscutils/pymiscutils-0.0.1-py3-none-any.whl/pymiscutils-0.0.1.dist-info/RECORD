@@ -1,0 +1,17 @@
+miscutils/__init__.py,sha256=3J61GdXB3kv8q-URL7m_8m5RVMsvtlC8cN016bV8OSI,1014
+miscutils/cache.py,sha256=FOSJRaU6iYFEo8CzS5JfzcODVsy011c8h5YTgrAcOgg,2811
+miscutils/commandline.py,sha256=ZefOO-e6yXoPQYL1v3gOojXbgXGaQJXscVbKXH2iTZc,6781
+miscutils/context.py,sha256=W9b7MYEl3-SdU5fjpKq2LyurIBKZQFQZdXc8yb2IBxA,3545
+miscutils/log.py,sha256=iI-CoHsfwc6yRANC6of4MiV6AO3yYvLgAaOj1VS5exo,3817
+miscutils/misc.py,sha256=cfWzlC_Z2ANkfFXEXQ5NYFyUpdT5WWviUCKqTzrkt1o,4308
+miscutils/namespace.py,sha256=hCVmzGY81Jc25rUOMKsLVb7h403YRP0QSFrNuBrIKEk,4124
+miscutils/parser.py,sha256=hJjPdAZpxG7lwbm_sq4W_T4vsUQ8Z7oP1N3YUWaypt8,4034
+miscutils/script.py,sha256=69X53UZdqhn2iSNZiSOhBwTWid-_mwp9VIU5OFuVT8I,3962
+miscutils/serializer.py,sha256=XqfgEGmD6DWUG2v9OIBAFPIz5ry7EhA1It57RY1A5mI,5846
+miscutils/singleton.py,sha256=G85Rh7NWDb1nthM6cOrzUrqJZjaXFf_akyn1RlkRudM,363
+miscutils/res/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymiscutils-0.0.1.dist-info/LICENSE,sha256=WWOBfkT0IHpdj_X5ZrjsCW8i44gU3C-4v0O1FHptyg4,1086
+pymiscutils-0.0.1.dist-info/METADATA,sha256=DGf6WUSAvNoc58uB-W0R09ckn-got1phLpSW5Gh1pIE,7470
+pymiscutils-0.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pymiscutils-0.0.1.dist-info/top_level.txt,sha256=27EwPRGvxHHtdYAe8Ilzdg3SeDdrWA9e-WUDdT11S9U,10
+pymiscutils-0.0.1.dist-info/RECORD,,

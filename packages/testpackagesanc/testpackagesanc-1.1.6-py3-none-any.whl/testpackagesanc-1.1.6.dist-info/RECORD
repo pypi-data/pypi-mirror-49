@@ -1,0 +1,9 @@
+testpackagesanc/__init__.py,sha256=yaMXt3NlF_JX4X2dQR-KDsYBtpVTgfMhb79s9vGfmdk,71
+testpackagesanc/config.py,sha256=N2GNNE_qcObxzajET3TnZRfSZPf47UopZUXpitWnP2I,946
+testpackagesanc-1.1.6.data/scripts/config.py,sha256=N2GNNE_qcObxzajET3TnZRfSZPf47UopZUXpitWnP2I,946
+testpackagesanc-1.1.6.dist-info/LICENSE,sha256=DKmz7yRq3W0RUPCIlnDLXtIuvhcAzDm-dQuRMcYHHOY,1085
+testpackagesanc-1.1.6.dist-info/METADATA,sha256=hkWbxor3WxYU0_zHSLlxmJzCYS9hvPm40bPh2lbd2OY,390
+testpackagesanc-1.1.6.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+testpackagesanc-1.1.6.dist-info/entry_points.txt,sha256=IS7T4_z7IYNGZ1TVbd8j9fP5st7SHpmKIvwSqmCsRNY,62
+testpackagesanc-1.1.6.dist-info/top_level.txt,sha256=WmR04f9pxeaPAUERQuAYuQIFhfx1YR0B3t0vauK42G0,16
+testpackagesanc-1.1.6.dist-info/RECORD,,

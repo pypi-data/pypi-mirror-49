@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: spin-and-heave
+Version: 0.0.2
+Summary: package and zip lambdas, upload to s3, then run terraform.
+Home-page: UNKNOWN
+Author: Andy Klier
+Author-email: andyklier@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+
+# spin-and-heave  
+
+use lambdaci docker image to package and zip lambda package, upload to s3 bucket, then run terraform apply.
+
+

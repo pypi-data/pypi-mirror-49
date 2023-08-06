@@ -1,0 +1,12 @@
+graphish/__init__.py,sha256=G-y1vOav_mb2rWqb3c5Z8g4wfS9brQpdhgNJrIUPC4g,115
+graphish/connector.py,sha256=8WeyZlJLMeRfpAGyC91Hb8SvLTdPtA8e9GKV3ErwYFU,4710
+graphish/delete.py,sha256=HGjLP_UWtKvukRt_ghabcAtFFX8wjTfb1PXopXhFjdg,1458
+graphish/message.py,sha256=0uONN7gfCNPWrGX5R7RP9D3xJy5GP-aLngz5ak9EdRk,852
+graphish/rules.py,sha256=cai4ZaTLSvUpabAWqcztuf53-Zkd8Cf7kfSriQWZSvE,1733
+graphish/search.py,sha256=iWFNlDcNjEQ3OQQ_-VTfT2t6cNnwyPWuXPtw_PelwtA,7589
+graphish/users.py,sha256=F_WSrYbBUnzJbChyNBoibLcHVB-XLziDHZKpInqaZIo,919
+graphish-1.1.2.dist-info/LICENSE,sha256=IxaN9x5-BQvpqPVa0qdQBkqBQ5-KWgLmqu7Pwp71PdU,1065
+graphish-1.1.2.dist-info/METADATA,sha256=Ec7sipOY2sGoKctntGgIoLcQVsV8obQ40j5QEZV6R2c,9370
+graphish-1.1.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+graphish-1.1.2.dist-info/top_level.txt,sha256=SqDgk3cjaRjt_uZOTVeZ9XAceTTJrWh4sgd2OQ1BWfw,9
+graphish-1.1.2.dist-info/RECORD,,

@@ -1,0 +1,7 @@
+setup.py
+shark/__init__.py
+sharksdr.egg-info/PKG-INFO
+sharksdr.egg-info/SOURCES.txt
+sharksdr.egg-info/dependency_links.txt
+sharksdr.egg-info/not-zip-safe
+sharksdr.egg-info/top_level.txt

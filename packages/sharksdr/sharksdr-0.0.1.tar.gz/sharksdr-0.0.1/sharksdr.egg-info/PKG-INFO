@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: sharksdr
+Version: 0.0.1
+Summary: SHaRK
+Home-page: http://github.com/storborg/shark
+Author: Scott Torborg
+Author-email: storborg@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers

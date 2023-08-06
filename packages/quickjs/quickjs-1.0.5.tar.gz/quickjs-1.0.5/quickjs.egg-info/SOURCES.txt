@@ -1,0 +1,12 @@
+README.md
+module.c
+setup.py
+quickjs/__init__.py
+quickjs.egg-info/PKG-INFO
+quickjs.egg-info/SOURCES.txt
+quickjs.egg-info/dependency_links.txt
+quickjs.egg-info/top_level.txt
+third-party/cutils.c
+third-party/libregexp.c
+third-party/libunicode.c
+third-party/quickjs.c

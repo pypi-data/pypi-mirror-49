@@ -1,0 +1,8 @@
+README.md
+setup.py
+AppiumAndroid/__init__.py
+AppiumAndroid/webdriver.py
+AppiumAndroid.egg-info/PKG-INFO
+AppiumAndroid.egg-info/SOURCES.txt
+AppiumAndroid.egg-info/dependency_links.txt
+AppiumAndroid.egg-info/top_level.txt

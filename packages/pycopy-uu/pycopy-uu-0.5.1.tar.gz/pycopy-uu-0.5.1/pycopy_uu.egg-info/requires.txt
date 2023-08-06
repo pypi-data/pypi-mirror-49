@@ -1,0 +1,2 @@
+pycopy-binascii
+pycopy-os

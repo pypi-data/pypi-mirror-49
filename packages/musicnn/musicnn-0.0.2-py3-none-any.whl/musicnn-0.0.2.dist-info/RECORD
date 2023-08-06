@@ -1,0 +1,17 @@
+musicnn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+musicnn/configuration.py,sha256=AP1ZXrFrrTpgXhC7bq8BUsuBJb7W4siEpjb2ea4QBBk,1229
+musicnn/extractor.py,sha256=Lt2GQntEaswLvzmEAow9eHI_zGjWZY_QQ40fu0LGv2w,8309
+musicnn/models.py,sha256=vyuX1hucl-okqw_Z_4ZxdUdkabR3Cfe5HBFWDY6V4go,7860
+musicnn/tagger.py,sha256=ivXepnuB9gmsnZJDl8M2InwiCcOGvTKcGhdbTHMucZQ,5239
+musicnn/MTT/.data-00000-of-00001,sha256=BB85NemBplzqc5hC0wwYjTp9Kt9EEJVchmjrPeSlrKs,9465596
+musicnn/MTT/.index,sha256=2i17tnCysx6bxEG7G9deyjG1sGH5Y8wfljDBr_Mjj1c,4948
+musicnn/MTT/.meta,sha256=SPK5GiNKH-qq5rCEvUlmhCjN_FSRKAVhdYKqWF2quyU,1185287
+musicnn/MTT/checkpoint,sha256=6HzcoV_nYuql8z08YLy52HUz-wrK7Ma-a5s92CbrCUg,175
+musicnn/MTT/config.json,sha256=4AwauvgJHulKd4PmcFgr9CG0Nluf9QIw8D9JqgXbzmQ,1169
+musicnn/MTT/experiment.result,sha256=mTVzmU02ezlulBvscjkV7RnECQStriCoXEFJ8_KUIWo,95
+musicnn/MTT/train_log.tsv,sha256=mdHGDYlS-xLAL2a7PxQOubrbLOXEoIUENOJuAElps5A,23495
+musicnn-0.0.2.dist-info/LICENSE.md,sha256=YMQZT3At3ZaflpV3dDVGMntOnbVgwH7Chr5c7Cf1X80,817
+musicnn-0.0.2.dist-info/METADATA,sha256=Y2hcXdx6hjO6BhZDeOQ_meD2A3ZJzjgJ8zQnVpfHK6U,3086
+musicnn-0.0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+musicnn-0.0.2.dist-info/top_level.txt,sha256=7ellVR6v3WGGctpiKr7iYFtFE4UxVRprdDLcF-_EOzc,8
+musicnn-0.0.2.dist-info/RECORD,,

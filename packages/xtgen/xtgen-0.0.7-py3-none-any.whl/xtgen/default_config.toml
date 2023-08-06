@@ -1,0 +1,24 @@
+#-------------------------------------------------------------------------------------------------------------------
+# xtgen_config.toml: configuration file for XTGen.  
+#
+#    The contents of this file contain the default settings for how XTGen should generate code.
+#
+#    Detailed instructions for getting started with this config file are available in the "XTGen Configuration" document.
+#-------------------------------------------------------------------------------------------------------------------
+
+[general]
+framework = "pytorch"       # framework to use for generated app
+dataset = "default"         # if model specified, use its default dataset
+model = "default"           # if dataset specified, use its default model
+zap = false                 # when true, output directory is deleted before generation    
+download-root = "~/.data"   # download root directory for all datasets
+
+[feature]
+checkpoints = false         # should checkpoint code be generated
+tb-logging = false          # should Tensorboard logging code be generated
+
+[internal]
+timing = false              # when true, detailed timing info is printed
+diagnostics = false         # when true, diagnostic messages are printed
+raise = false               # when true, stack traces are printed for errors
+

@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: avd
+Version: 0.0.1
+Summary: Apsara vulnerability database library
+Home-page: http://avd.apsara9.com
+Author: Apsara9 Team
+Author-email: avd@apsara9.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+Apsara vulnerability database library
+
+This is an exploit framework, it's recommended to install module.py instead.
+
+update: 2019-07-27
+

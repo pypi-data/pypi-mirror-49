@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"contacts": [{"email": "avd@apsara9.com", "name": "Apsara9 Team", "role": "author"}], "document_names": {"description": "DESCRIPTION.rst"}, "project_urls": {"Home": "http://avd.apsara9.com"}}}, "generator": "bdist_wheel (0.29.0)", "metadata_version": "2.0", "name": "avd", "summary": "Apsara vulnerability database library", "version": "0.0.1"}

@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: lz_test
+Version: 0.0.2
+Summary: PyPI Test
+Home-page: https://github.com/
+Author: lz
+Author-email: lz@lonzon.com
+License: UNKNOWN
+Description: **lz_test**
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

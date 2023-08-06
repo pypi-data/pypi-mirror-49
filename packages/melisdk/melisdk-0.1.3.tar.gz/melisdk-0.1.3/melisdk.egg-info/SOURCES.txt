@@ -1,0 +1,11 @@
+README.md
+setup.py
+melisdk/__init__.py
+melisdk/config.py
+melisdk/meli.py
+melisdk/ssl_helper.py
+melisdk.egg-info/PKG-INFO
+melisdk.egg-info/SOURCES.txt
+melisdk.egg-info/dependency_links.txt
+melisdk.egg-info/requires.txt
+melisdk.egg-info/top_level.txt

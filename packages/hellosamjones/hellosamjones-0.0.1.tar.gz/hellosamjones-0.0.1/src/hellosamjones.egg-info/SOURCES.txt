@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/helloworld.py
+src/hellosamjones.egg-info/PKG-INFO
+src/hellosamjones.egg-info/SOURCES.txt
+src/hellosamjones.egg-info/dependency_links.txt
+src/hellosamjones.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+jt64gentc = jt64gentc.__main__:main
+

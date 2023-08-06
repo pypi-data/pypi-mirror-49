@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: pywordapi
+Version: 1.0.9
+Summary: Python Wordpress Api Library
+Home-page: https://github.com/clchangnet/pywordapi
+Author: Allan Chang
+Author-email: allan@clchang.net
+License: MIT license
+Project-URL: Documentation, https://pywordapi.readthedocs.io/
+Project-URL: Changelog, https://pywordapi.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/clchangnet/pywordapi/issues
+Keywords: wordpress api,wordpress json,python wordpress
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Requires-Dist: requests
+
+========
+Overview
+========
+
+
+
+Python Wordpress Api Library
+
+ **Pywordapi** allows a simple way to get data in and out of WordPress over HTTP, using python and Wordpress REST API.
+
+Installation
+============
+
+To install the Pywordapi package::
+
+    pip install pywordapi
+
+Usage
+=====
+
+Get posts
+
+.. code-block:: python
+
+  from pywordapi import Pywordapi
+  api_url = "https://demo.wp-api.org/"
+  api = Pywordapi.WpRest(api_url)
+  results = api.get_posts()
+
+Get categories
+
+.. code-block:: python
+
+  from pywordapi import Pywordapi
+  api_url = "https://demo.wp-api.org/"
+  api = Pywordapi.WpRest(api_url)
+  results = api.get_categories()
+
+Variable **results** will return instance of type list (of dict).
+
+Using proxy
+
+.. code-block:: python
+
+  from pywordapi import Pywordapi
+  api_url = "https://demo.wp-api.org/"
+  proxy_url = "http://username:password@IP_ADDRESS:PORT"
+  api = Pywordapi.WpRest(api_url, proxy_url)
+  results = api.get_posts()
+
+
+Documentation
+=============
+
+
+https://pywordapi.readthedocs.io/
+
+
+Changelog
+=========
+
+1.0.0 (2019-06-21)
+------------------
+
+* First release on PyPI.
+
+

@@ -1,0 +1,6 @@
+setup.py
+squareup/__init__.py
+squareup.egg-info/PKG-INFO
+squareup.egg-info/SOURCES.txt
+squareup.egg-info/dependency_links.txt
+squareup.egg-info/top_level.txt

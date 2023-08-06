@@ -1,0 +1,10 @@
+README.rst
+setup.py
+karpet/__init__.py
+karpet/core.py
+karpet/meta.py
+karpet.egg-info/PKG-INFO
+karpet.egg-info/SOURCES.txt
+karpet.egg-info/dependency_links.txt
+karpet.egg-info/requires.txt
+karpet.egg-info/top_level.txt

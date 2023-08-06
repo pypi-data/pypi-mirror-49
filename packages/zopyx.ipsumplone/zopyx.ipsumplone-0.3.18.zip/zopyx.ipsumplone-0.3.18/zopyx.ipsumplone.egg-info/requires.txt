@@ -1,0 +1,4 @@
+loremipsum
+plone.api
+requests
+setuptools

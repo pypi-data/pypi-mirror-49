@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: graftpress-cli
+Version: 0.0.4
+Summary: A command line utitily to provide services offered by graftpress( a graft-elm web framework).
+Home-page: https://github.com/amitu/graftpress/
+Author: nilinswap
+Author-email: nilinswap@gmail.com
+License: UNKNOWN
+Description: # graftpress-cli
+        
+        A command line utitily to provide services offered by graftpress (a graftpress web 
+        framework).
+        
+        ## Usage
+        
+        ### To create a new graft project 
+        
+        `graftpress-cli init <project_name>`
+        
+        eg: `graftpress-cli init hello`
+        
+        
+        ### To build project
+        
+        Move to the project directory and run `graftpress-cli build`  
+        
+        In our example:
+           
+        `
+        $ cd hello
+        $ graftpress-cli build
+        `
+        
+        ### To get server up and running
+        
+        `$ graftpress-cli debug`  
+        
+        ## Development
+        
+        1. Use local package:
+        
+          `
+          $ pip install -e .
+          `
+        
+        2. use black `black graftpress-cli` from time to time.
+        3. run test: `graftpress-cli test`.
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

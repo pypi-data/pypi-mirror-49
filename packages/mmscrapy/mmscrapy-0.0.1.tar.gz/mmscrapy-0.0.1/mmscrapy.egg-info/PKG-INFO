@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mmscrapy
+Version: 0.0.1
+Summary: mmscrapy爬虫程序是使用scrapy框架搭建的爬虫项目，解scrapy的使用方式和学习scrapy的使用技巧、编写自己的爬虫程序、分布式爬虫功能支持，scrapy支持很多特性，不必要自己创轮子
+Home-page: https://github.com/mumupy/mmscrapy.git
+Author: 甘亮
+Author-email: lovercws@gmail.com
+License: Apache License
+Description: UNKNOWN
+Keywords: python版本的爬虫程序
+Platform: any
+Description-Content-Type: text/markdown

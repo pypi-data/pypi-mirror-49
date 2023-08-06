@@ -1,0 +1,14 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+jt64gentc/__init__.py
+jt64gentc/__main__.py
+jt64gentc.egg-info/PKG-INFO
+jt64gentc.egg-info/SOURCES.txt
+jt64gentc.egg-info/dependency_links.txt
+jt64gentc.egg-info/entry_points.txt
+jt64gentc.egg-info/requires.txt
+jt64gentc.egg-info/top_level.txt

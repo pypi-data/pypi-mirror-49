@@ -1,0 +1,8 @@
+README.md
+setup.py
+pymerkle.egg-info/PKG-INFO
+pymerkle.egg-info/SOURCES.txt
+pymerkle.egg-info/dependency_links.txt
+pymerkle.egg-info/not-zip-safe
+pymerkle.egg-info/requires.txt
+pymerkle.egg-info/top_level.txt

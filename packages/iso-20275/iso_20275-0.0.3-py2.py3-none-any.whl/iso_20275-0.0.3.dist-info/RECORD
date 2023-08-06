@@ -1,0 +1,10 @@
+iso20275/Cleaned - ISO-20275 - 2017-11-30.csv,sha256=iGx5wIjGPwsvRG8rBWFLiwkU7a0JpJpFY9wWYmdf9BM,250023
+iso20275/ISO-20275 - 2017-11-30.csv,sha256=NYvbn5vnDRl0LCx54LsY8JVuM6uzE1QXd0Cre_nMlZI,253216
+iso20275/__init__.py,sha256=miVmjdT2oMLeNBm94Z1Alc8Ekn2uTYhK5PEtUgQxxKg,3944
+tests/__init__.py,sha256=dr_7VwyTfgzin4X1_qY6RVSvD3TSUZ-ghybkg6q8l70,30
+tests/test_iso20275.py,sha256=Xn3WqmJJiaZLxEkn1tJGI8IovOhiEdwvJ_xEeULoKY8,1750
+iso_20275-0.0.3.dist-info/LICENSE,sha256=LSZm8DCw0NyIRM9WMeyab4YYHgOEnF_8XxOTDAlJ60o,1088
+iso_20275-0.0.3.dist-info/METADATA,sha256=9dEGfQ3fYQDSa-CMtnKxHA0SFWZkHt8RMgAT3C5EyF0,6447
+iso_20275-0.0.3.dist-info/WHEEL,sha256=53VSps8MltPLN_x9Ib61FU2ZSaJKzgrWQqu9rS-Dkgk,116
+iso_20275-0.0.3.dist-info/top_level.txt,sha256=zOGxyPbijWbGWTOP_uLOm6EBmCahzJ4DJguZHyAeFc0,15
+iso_20275-0.0.3.dist-info/RECORD,,

@@ -1,0 +1,8 @@
+README.md
+setup.py
+gapp/__init__.py
+gapp/main.py
+gapp.egg-info/PKG-INFO
+gapp.egg-info/SOURCES.txt
+gapp.egg-info/dependency_links.txt
+gapp.egg-info/top_level.txt

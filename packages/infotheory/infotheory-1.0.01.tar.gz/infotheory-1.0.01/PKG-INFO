@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: infotheory
+Version: 1.0.01
+Summary: Information theoretic analysis tools
+Home-page: https://mcandadai.com/infotheory/
+Author: Madhavun Candadai and Eduardo J. Izquierdo
+Author-email: madvncv@gmail.com
+License: UNKNOWN
+Description: # Package for Mulativariate Information theoretic analyses
+        
+        ## Website and docs
+        
+        https://github.com/madvn/infotheory
+Platform: UNKNOWN

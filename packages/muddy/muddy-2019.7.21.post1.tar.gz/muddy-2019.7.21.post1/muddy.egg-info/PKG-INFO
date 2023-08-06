@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: muddy
+Version: 2019.7.21.post1
+Summary: UNKNOWN
+Home-page: https://github.com/lstn/muddy
+Author: Lucas Estienne, Daniel Innes
+Author-email: lucas@estienne.sh, daniel.w.innes@gmail.com
+License: UNKNOWN
+Description: # muddy
+        Muddy is a python package and CLI tool for generating MUD files.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

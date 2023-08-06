@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+dpython/__init__.py
+dpython/__main__.py
+dpython/main.py
+dpython.egg-info/PKG-INFO
+dpython.egg-info/SOURCES.txt
+dpython.egg-info/dependency_links.txt
+dpython.egg-info/entry_points.txt
+dpython.egg-info/top_level.txt

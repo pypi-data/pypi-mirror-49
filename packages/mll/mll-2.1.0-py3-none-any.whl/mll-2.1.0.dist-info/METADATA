@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: mll
+Version: 2.1.0
+Summary: A machine learning language that have a specific grammar made to simplify large and complex machine learning and deep learning tasks
+Home-page: https://github.com/riccardobernardi/MLL-machine-learning-language
+Author: Bernardi Riccardo
+Author-email: riccardo.bernardi@rocketmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: lark-parser
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: keras
+Requires-Dist: termcolor
+Requires-Dist: sklearn
+Requires-Dist: mlxtend
+
+# MLL-language-design
+
+PoC of creating a new language focused on ML and DL.
+
+In this repo, you will find only ideas/theories but not implementation, you will find also examples of how it should work made by hand. Implementation will be added in another repo when it will be done.
+
+Feel free to contact me at riccardo.bernardi@rocketmail.com to leave ideas or issues.
+
+This is a part of my bachelor's degree thesis at Ca' Foscari University, Dept of Cs, Venice.
+My supervisors are Lucchese Claudio and Spanò Alvise.
+
+You can download this from Pypi:
+**pip install mll**
+
+

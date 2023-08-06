@@ -1,0 +1,7 @@
+README.md
+setup.py
+jhulib_slack.egg-info/PKG-INFO
+jhulib_slack.egg-info/SOURCES.txt
+jhulib_slack.egg-info/dependency_links.txt
+jhulib_slack.egg-info/requires.txt
+jhulib_slack.egg-info/top_level.txt

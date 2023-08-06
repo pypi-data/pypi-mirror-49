@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: jhulib_slack
+Version: 0.0.2
+Summary: A python implementation of the slack API including SCIM
+Home-page: https://github.com/jhu-sheridan-libraries/python_slack_api
+Author: Derek Belrose
+Author-email: dbelrose@jhu.edu
+License: Apache
+Description: UNKNOWN
+Keywords: slack api scim
+Platform: UNKNOWN

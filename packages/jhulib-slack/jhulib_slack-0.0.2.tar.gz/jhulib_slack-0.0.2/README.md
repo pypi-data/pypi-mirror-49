@@ -1,0 +1,1 @@
+This is a simple slack library that implements various APIs including the SCIM API.

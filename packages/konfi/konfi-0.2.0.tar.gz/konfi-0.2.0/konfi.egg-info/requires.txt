@@ -1,0 +1,6 @@
+toml
+pyyaml
+
+[docs]
+sphinx
+sphinx-autodoc-typehints

@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/face.py
+src/opencv_samjones.egg-info/PKG-INFO
+src/opencv_samjones.egg-info/SOURCES.txt
+src/opencv_samjones.egg-info/dependency_links.txt
+src/opencv_samjones.egg-info/top_level.txt

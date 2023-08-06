@@ -1,0 +1,8 @@
+cryptography
+PyKCS11
+
+[dev]
+pipenv
+
+[test]
+coverage

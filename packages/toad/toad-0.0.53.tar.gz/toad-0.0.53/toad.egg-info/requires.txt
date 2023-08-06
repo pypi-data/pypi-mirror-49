@@ -1,0 +1,6 @@
+numpy>=1.15
+pandas
+scipy==1.2.0
+scikit-learn
+statsmodels
+seaborn

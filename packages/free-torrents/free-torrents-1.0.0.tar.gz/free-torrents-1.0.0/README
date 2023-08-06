@@ -1,0 +1,19 @@
+free-torrents
+
+Automatically downloads free software torrents for seeding. Useful if
+you have some extra bandwith lying around and want to do some good.
+
+You should create a watch folder and point free-torrents at it.
+
+usage: __init__.py [-h] [--no-debian] [--no-ubuntu] [--no-fedora] [--no-tails]
+                   watch
+
+positional arguments:
+  watch        Watch folder to download torrents to
+
+optional arguments:
+  -h, --help   show this help message and exit
+  --no-debian  Skip debian torrents
+  --no-ubuntu  Skip ubuntu torrents
+  --no-fedora  Skip fedora torrents
+  --no-tails   Skip tails torrents

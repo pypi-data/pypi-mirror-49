@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hdface
+Version: 0.1.2
+Summary: heils face detector
+Home-page: https://github.com/hanson-young/hdface
+Author: hanson
+Author-email: hanson.young@foxmail.com
+License: MIT
+Keywords: heils face detection pytorch pip package
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+### hdface
+
+https://github.com/hanson-young/hdface
+

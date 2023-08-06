@@ -1,0 +1,10 @@
+django_currentuser/__init__.py,sha256=zrcTwxP3SA3F1Js78afrfeaZeJr8w2hLtFtEZoUqUmg,22
+django_currentuser/middleware.py,sha256=U5Y_1HsPRgZZHine8ZL2wSU2lRa_lAbFoMJmluC3KLQ,1343
+django_currentuser/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_currentuser/db/models/__init__.py,sha256=Lzn99zMCGQFl7Nc5bfaHBYvXERoxHqX7RQXXErEA5YE,98
+django_currentuser/db/models/fields.py,sha256=6RWF_M9XDiPlwQ5feP1JrY7xRqKFBpx_i09jzpwm4Zw,1238
+django_currentuser-0.4.2.dist-info/LICENSE,sha256=wL36aK6E2BsYosr5s8wQnfAvfkrJdCFLgXevPrbAGAI,1477
+django_currentuser-0.4.2.dist-info/METADATA,sha256=KselR27z9RFRuKnv_zEiZEewdlK5xNhvLYN03Y-U47Y,5884
+django_currentuser-0.4.2.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+django_currentuser-0.4.2.dist-info/top_level.txt,sha256=AlJIshEw6RgbCQSHS2uiX0vH1zWEaM2AQ9egFHwga0k,19
+django_currentuser-0.4.2.dist-info/RECORD,,

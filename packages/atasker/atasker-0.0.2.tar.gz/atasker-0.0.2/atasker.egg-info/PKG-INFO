@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: atasker
+Version: 0.0.2
+Summary: Thread pools, async workers etc.
+Home-page: https://github.com/alttch/atasker
+Author: Altertech Group
+Author-email: div@altertech.com
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown

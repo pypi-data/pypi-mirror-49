@@ -1,0 +1,4 @@
+zetup>=0.2.48
+moretools>=0.1.10
+path.py>=11.5
+whichcraft>=0.6

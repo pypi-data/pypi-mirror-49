@@ -1,0 +1,9 @@
+django_fakeredis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_fakeredis/fakeredis.py,sha256=7EQjf_7ObU89_6c7uqi75cyt9hfaCPQW5FtBiTA0gJQ,1731
+django_fakeredis/tests.py,sha256=1spLRUopcJWVS-87TDKg-bdiF8XSJhtiwuYsMs7_ENo,955
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/settings.py,sha256=HRuJHIPcu4E4u2ov-5f8hRHcgKSJKHzekoKEmx9G3Bc,315
+django_fakeredis-0.0.2.dist-info/METADATA,sha256=6k0mSEL91K3Arfbr88NcnwaRDNBpXvfcwlrCwTiiCKo,3190
+django_fakeredis-0.0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_fakeredis-0.0.2.dist-info/top_level.txt,sha256=95PlB5_dL_miu4AlfQ5GjGmYWHb8lb0zA_8AuaeddVQ,25
+django_fakeredis-0.0.2.dist-info/RECORD,,

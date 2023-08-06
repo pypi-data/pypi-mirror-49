@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+CONFIG="$1"
+
+./pkg/scripts/verify_package_installers
+
+if [ "$CONFIG" != "" ]; then
+    ./pkg/station-check/station_check.py -c $CONFIG
+else
+    ./pkg/station-check/station_check.py
+fi

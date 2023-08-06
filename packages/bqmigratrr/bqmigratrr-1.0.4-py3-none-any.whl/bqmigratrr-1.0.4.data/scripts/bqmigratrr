@@ -1,0 +1,6 @@
+#!python
+
+from bqmigratrr import init, run
+
+init()
+run()

@@ -1,0 +1,4 @@
+wxPython
+re
+bs4
+selenium

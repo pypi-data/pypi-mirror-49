@@ -1,0 +1,10 @@
+statsbomb/__init__.py,sha256=7aNGfDBXpmp6kjMUfkkM8RdHDGIrBSmBKES1BNsMSVQ,68
+statsbomb/base.py,sha256=AIsJ8cfkF3ATKJdlKZvPVOUCEuLZfsn6UGNjClROFOM,1797
+statsbomb/events.yaml,sha256=1FzY9hA6Q97mkvbLtplDn86L9SJidLUC6gtBJh6RP4Y,1796
+statsbomb/parser.py,sha256=XdcZ3ddKaZkxVeg7e4T78yHyajSVyT9idVLzrb64L3w,3499
+statsbomb/utils.py,sha256=5kYlp1z_bU865aiQKctEeEsd2dU3-pnWFPza7fb71D4,406
+statsbomb-0.3.0.dist-info/LICENSE,sha256=wHDJ1eHrXctQTrKYlTcScJ7ekFP3WgeMxBFfxOD2Dr8,1067
+statsbomb-0.3.0.dist-info/METADATA,sha256=XLkeLxK4kf0bZXbIW0tm1i9te6oP-1UZ9_Fw8mAi7qo,6920
+statsbomb-0.3.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+statsbomb-0.3.0.dist-info/top_level.txt,sha256=QalcXg-MyPghluAtNfLKdoWrKLuhEqrmlUh9o_O-iqg,10
+statsbomb-0.3.0.dist-info/RECORD,,

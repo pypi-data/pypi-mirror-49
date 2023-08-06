@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: lumes
+Version: 0.0.3a0.dev0
+Summary: A simple wraper for screenshot
+Home-page: https://github.com/juliancoffee/lumes-py/
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/juliancoffee/lumes-py/issues
+Project-URL: Source, https://github.com/juliancoffee/lumes-py/
+Description: What can it do?
+        ==========
+        
+        Simple wrapper around maim and xclip for doing screenshots.</br>
+        For help write</br>
+        `$ lumes -h`
+        
+        Installation
+        ------------
+        To upgrade pip
+        </br>`$ python3 -m pip install -U pip`
+        </br>To be sure you use proper version of python
+        </br>`$ python3 -m pip install lumes`
+        </br>To upgrade lumes
+        </br>`$ python3 -m pip install -U lumes`
+        
+        Capabilities
+        -----------
+        
+        1. Selection area
+        2. Move screen to clipboard (by default)
+        3. Save screenshot in file
+        4. Save screenshots in directory
+        
+        Requirements
+        ----------
+        
+        1. maim
+        2. xclip
+        
+        In future
+        ----------
+        
+        1. Wayland support
+        
+Keywords: screenshot
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3, <4
+Description-Content-Type: text/markdown

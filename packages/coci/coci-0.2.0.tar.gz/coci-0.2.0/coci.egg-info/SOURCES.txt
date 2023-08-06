@@ -1,0 +1,9 @@
+README.md
+setup.py
+coci/__init__.py
+coci/main.py
+coci.egg-info/PKG-INFO
+coci.egg-info/SOURCES.txt
+coci.egg-info/dependency_links.txt
+coci.egg-info/requires.txt
+coci.egg-info/top_level.txt

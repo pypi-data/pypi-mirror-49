@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: deepCR
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: http://pypi.python.org/pypi/deepCR/
+Author: Keming Zhang
+Author-email: kemingz@berkeley.edu
+License: BSD 3-Clause
+Description: deepCR: Deep Learning Based Cosmic Ray Removal for Astronomical Images
+        
+        Apply a learned DL model to a 2d numpy array to remove
+        cosmic rays.
+        
+        Code which accompanies the paper: Zhang & Bloom (2019)
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.5

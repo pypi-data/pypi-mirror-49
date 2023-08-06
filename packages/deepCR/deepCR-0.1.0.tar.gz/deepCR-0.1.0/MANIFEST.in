@@ -1,0 +1,3 @@
+include *.txt
+graft learned_models
+recursive-include docs *.txt

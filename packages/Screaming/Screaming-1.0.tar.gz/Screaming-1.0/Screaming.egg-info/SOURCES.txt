@@ -1,0 +1,7 @@
+README.md
+screaming.py
+setup.py
+Screaming.egg-info/PKG-INFO
+Screaming.egg-info/SOURCES.txt
+Screaming.egg-info/dependency_links.txt
+Screaming.egg-info/top_level.txt

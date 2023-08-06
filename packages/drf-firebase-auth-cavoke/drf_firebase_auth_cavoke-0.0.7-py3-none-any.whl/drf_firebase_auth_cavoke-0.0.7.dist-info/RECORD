@@ -1,0 +1,11 @@
+drf_firebase_auth_cavoke/__init__.py,sha256=4ztMIDqAftYzQIyIiVmxyto6RL6t_d3_gbRA3Jp7FPU,233
+drf_firebase_auth_cavoke/apps.py,sha256=bt0CgsPnzItD3-7-Z-hqBgMoXvQi3VPLIFwbmb6vRPM,133
+drf_firebase_auth_cavoke/authentication.py,sha256=hqL1FhoznvbOUpE7wduXWyaNs2Ddz3EQeir41OU5bpg,10307
+drf_firebase_auth_cavoke/models.py,sha256=8rOLW41-g9niepYWVVWJqMJvspnP6RkvTlFrvq7L8FQ,1082
+drf_firebase_auth_cavoke/settings.py,sha256=Abo7Nz-tOs-dYdQsWgWXTx16OLWrZ5cDE86Ede4Auj4,1280
+drf_firebase_auth_cavoke/migrations/0001_initial.py,sha256=aS9MsCMuY-l8zzWHehc3gOAgseoe2z8vcrLPHpBtyQU,1421
+drf_firebase_auth_cavoke/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_firebase_auth_cavoke-0.0.7.dist-info/METADATA,sha256=s62ekQlATNj2TRb5z8JTptoM8wtG-nKTjvwyHqJCQLE,4147
+drf_firebase_auth_cavoke-0.0.7.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+drf_firebase_auth_cavoke-0.0.7.dist-info/top_level.txt,sha256=Bcv7u24ICB5fcR9AP-IuRiqH-lhvSqHVuQ04bxh3S1o,61
+drf_firebase_auth_cavoke-0.0.7.dist-info/RECORD,,

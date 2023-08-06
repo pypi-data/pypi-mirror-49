@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: xboxgamertag
+Version: 1.0.1
+Summary: Python module to get data from www.xboxgamertag.com
+Home-page: https://github.com/WoolDoughnut310/xboxgamertag
+Author: J. Nma
+Author-email: wooldoughnutspi@outlook.com
+License: UNKNOWN
+Keywords: xbox-gamertag python3 data
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: lxml
+
+# xboxgamertag
+Python module to get data from www.xboxgamertag.com
+
+## Usage
+#### Installation
+`pip install xboxgamertag`
+#### Simple example
+```python
+from xboxgamertag import gamertag
+
+user = Gamertag('WoolDoughnut310') # My gamertag is WoolDoughnut310, by the way
+
+# Get my amount of gamerscore
+print(user.gamerscore)
+
+# If you want to see how many games I have played in total
+print(user.total_games_played)
+```
+
+

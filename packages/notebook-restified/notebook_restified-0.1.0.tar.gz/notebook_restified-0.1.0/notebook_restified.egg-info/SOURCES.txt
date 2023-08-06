@@ -1,0 +1,10 @@
+README.md
+setup.py
+notebook_restified/__init__.py
+notebook_restified/model.py
+notebook_restified/server_extension.py
+notebook_restified.egg-info/PKG-INFO
+notebook_restified.egg-info/SOURCES.txt
+notebook_restified.egg-info/dependency_links.txt
+notebook_restified.egg-info/requires.txt
+notebook_restified.egg-info/top_level.txt

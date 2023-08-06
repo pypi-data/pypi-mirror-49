@@ -1,0 +1,8 @@
+README.md
+setup.py
+actions/__init__.py
+actions/action.py
+github_actions.egg-info/PKG-INFO
+github_actions.egg-info/SOURCES.txt
+github_actions.egg-info/dependency_links.txt
+github_actions.egg-info/top_level.txt

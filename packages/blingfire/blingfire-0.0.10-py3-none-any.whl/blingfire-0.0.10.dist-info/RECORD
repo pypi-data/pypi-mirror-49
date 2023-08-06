@@ -1,0 +1,10 @@
+blingfire/__init__.py,sha256=qvQ41j89bHdhtIhObKRxls79St35d4iNjwTEdnH491o,5377
+blingfire/bert_base_tok.bin,sha256=zRGrNfXG2b4m4vEX_FzuOgJcu2Nh_vaJdET1P2_ZD0c,1840820
+blingfire/blingfiretokdll.dll,sha256=RE9Lw1WHfl8zBzT8oF_vYoB4xz88vwJCIK7F8m-9PHI,1360896
+blingfire/libblingfiretokdll.so,sha256=eg3dJsHgli48EnVsVe_ZrEPQZTqmscjO9bcqSBLISTQ,1442400
+blingfire/libblingfiretokdll_1404.so,sha256=5ZV68K7994XCK57XRJkzdZlQO_UdNMK_TIrKZEjIjDo,1437426
+blingfire-0.0.10.dist-info/LICENSE,sha256=3qkmU0GCkALiwjpzcjk-su1uJghftiPzikugr4M_MKY,1183
+blingfire-0.0.10.dist-info/METADATA,sha256=3yTp3jobDYw-tzDBNC9eWfHctR27wIbatXcjM7gxLts,6201
+blingfire-0.0.10.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+blingfire-0.0.10.dist-info/top_level.txt,sha256=vap8I7AZE4z7mocSG9GERPjZps3XRVeURMDKlNelPrs,10
+blingfire-0.0.10.dist-info/RECORD,,

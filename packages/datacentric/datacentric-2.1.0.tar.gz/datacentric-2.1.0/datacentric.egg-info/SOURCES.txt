@@ -1,0 +1,7 @@
+README.md
+setup.py
+datacentric/__init__.py
+datacentric.egg-info/PKG-INFO
+datacentric.egg-info/SOURCES.txt
+datacentric.egg-info/dependency_links.txt
+datacentric.egg-info/top_level.txt

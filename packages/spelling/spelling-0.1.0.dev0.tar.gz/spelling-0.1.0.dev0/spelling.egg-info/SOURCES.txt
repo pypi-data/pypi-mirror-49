@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+spelling/__init__.py
+spelling/__main__.py
+spelling/version.py
+spelling.egg-info/PKG-INFO
+spelling.egg-info/SOURCES.txt
+spelling.egg-info/dependency_links.txt
+spelling.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+README.md
+setup.py
+manip/__init__.py
+manip.egg-info/PKG-INFO
+manip.egg-info/SOURCES.txt
+manip.egg-info/dependency_links.txt
+manip.egg-info/top_level.txt

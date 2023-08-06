@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+regsnp.egg-info/PKG-INFO
+regsnp.egg-info/SOURCES.txt
+regsnp.egg-info/dependency_links.txt
+regsnp.egg-info/requires.txt
+regsnp.egg-info/top_level.txt
+regsnp_intron/__init__.py
+regsnp_intron/feature_calculator.py
+regsnp_intron/regsnp_intron.py
+regsnp_intron/utils/__init__.py
+regsnp_intron/utils/snp.py
+regsnp_intron/utils/vcf.py

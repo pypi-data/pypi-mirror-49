@@ -1,0 +1,3 @@
+[pytest11]
+gherkin = pytest_gherkin.plugin
+

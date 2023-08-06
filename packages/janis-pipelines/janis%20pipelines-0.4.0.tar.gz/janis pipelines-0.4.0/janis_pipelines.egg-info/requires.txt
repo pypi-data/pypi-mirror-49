@@ -1,0 +1,8 @@
+janis-pipelines.core
+janis-pipelines.unix
+
+[bioinformatics]
+janis-pipelines.bioinformatics>=0.4.0
+
+[runner]
+janis-pipelines.runner>=0.4.0

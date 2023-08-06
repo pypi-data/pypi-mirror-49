@@ -1,0 +1,7 @@
+README.md
+setup.py
+BinHexDecOctConversions.egg-info/PKG-INFO
+BinHexDecOctConversions.egg-info/SOURCES.txt
+BinHexDecOctConversions.egg-info/dependency_links.txt
+BinHexDecOctConversions.egg-info/top_level.txt
+bhdoconvert/__init__.py

@@ -1,0 +1,9 @@
+README.md
+setup.py
+NssErrorLogger/__init__.py
+NssErrorLogger/__main__.py
+NssErrorLogger/email.py
+NssErrorLogger.egg-info/PKG-INFO
+NssErrorLogger.egg-info/SOURCES.txt
+NssErrorLogger.egg-info/dependency_links.txt
+NssErrorLogger.egg-info/top_level.txt

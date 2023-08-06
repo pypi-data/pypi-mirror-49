@@ -1,0 +1,14 @@
+wiktionary_de_parser/__init__.py,sha256=UTkg-n1t4u75rUUPWgLvHcCFgvktRfhibl8n4yNEnfU,4492
+wiktionary_de_parser/test.py,sha256=S8_QiusBx43AR9naV-_b0DZhlQkcRx31zGs3vJtbBu4,346
+wiktionary_de_parser/methods/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wiktionary_de_parser/methods/flexion.py,sha256=pGDzlXu1AsZbOmftJnZDcuFEx0TNJm6lb0B1ou1SEX8,2360
+wiktionary_de_parser/methods/ipa.py,sha256=BEnQ3WDGOCBtmmg2gOTpGCdOEb3wsEnsIUbPOJbgvz0,2505
+wiktionary_de_parser/methods/language.py,sha256=4v-4LYEKYuSQNovc_C64sPuvVqU9rF_jwltMHRZSmZw,382
+wiktionary_de_parser/methods/lemma.py,sha256=qcBajQoxjT4GXR69NaioQb_R4ofAzSfyyc4zErmg8zw,1023
+wiktionary_de_parser/methods/pos.py,sha256=atSyxBdrEfhF41lQGcbG3Udq3CCOxAC3hDU4EIx5h2w,6163
+wiktionary_de_parser/methods/syllables.py,sha256=oaB3r--ocBcr9iwOrGF-WmgN67EXWvICgELTKSYLQK4,3159
+wiktionary_de_parser-0.7.5.dist-info/LICENSE.txt,sha256=TtyR0LlVJKb-ZV03Qyg08oQnkdgoyCM5xa5UGBXToH8,1084
+wiktionary_de_parser-0.7.5.dist-info/METADATA,sha256=O_15lQSnRKfHEGB37xoOl8nCyOA46jPLHlbWeum-xpY,6644
+wiktionary_de_parser-0.7.5.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+wiktionary_de_parser-0.7.5.dist-info/top_level.txt,sha256=gPDzTAHD2kCYBU3l7jRqkKUkf7MlFrDa-KJgtLVckCc,21
+wiktionary_de_parser-0.7.5.dist-info/RECORD,,

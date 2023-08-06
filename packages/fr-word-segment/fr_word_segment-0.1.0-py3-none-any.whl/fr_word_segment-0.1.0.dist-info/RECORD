@@ -1,0 +1,12 @@
+fr_word_segment/__init__.py,sha256=1u2F6I3Dlbvz1c85zTg4gS0Fivqb1R-hOr6xDcXNLGI,77
+fr_word_segment/main.py,sha256=kNsycqwQD2aLCZW05XoS5LVnbpXVGPqnx3IxwOPGArA,371
+fr_word_segment/wordseg.py,sha256=W81q8VlBizq0l3-VjnexqPkaxXbeKuw2VCO5zFdXv3A,4344
+fr_word_segment/.ipynb_checkpoints/main-checkpoint.py,sha256=3L4kyVkCpbujJbCWD5RbN_OJOlo7EDavjbrkT6e5MGA,357
+fr_word_segment/__pycache__/__init__.cpython-36.pyc,sha256=MiQ9I720_sfMTpFszbfqO8GH6W7DxVgsz9Ty2a0KXQA,171
+fr_word_segment/__pycache__/helpers.cpython-36.pyc,sha256=iEa5xfSEbKakryFT0NtnvFsoaeLpt5VH0xy4sN_DHrQ,2895
+fr_word_segment/__pycache__/wordseg.cpython-36.pyc,sha256=OrlsNZEp_BgNTavLH8Kv2FJxDUAj_HoO8eWM82j448s,2937
+fr_word_segment-0.1.0.dist-info/LICENSE,sha256=HPEqpuWATQgjWD4xkBaDotJ8NRhVa4UmHH1xYC8uD_4,1063
+fr_word_segment-0.1.0.dist-info/METADATA,sha256=qO-n0lOM8YXtACq-lbFs4Pzi3pGL0ECy1-Nogw0QI_Q,1767
+fr_word_segment-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+fr_word_segment-0.1.0.dist-info/top_level.txt,sha256=As4EBxzktf9njxcN_y4nlLTwIVE9Wujm5biI9Z1CgC8,16
+fr_word_segment-0.1.0.dist-info/RECORD,,

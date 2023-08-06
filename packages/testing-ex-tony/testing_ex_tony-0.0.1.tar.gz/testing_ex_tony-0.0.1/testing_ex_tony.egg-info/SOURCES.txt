@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+example_pkg/.DS_Store
+example_pkg/__init__.py
+example_pkg/point_cloud.csv
+testing_ex_tony.egg-info/PKG-INFO
+testing_ex_tony.egg-info/SOURCES.txt
+testing_ex_tony.egg-info/dependency_links.txt
+testing_ex_tony.egg-info/top_level.txt

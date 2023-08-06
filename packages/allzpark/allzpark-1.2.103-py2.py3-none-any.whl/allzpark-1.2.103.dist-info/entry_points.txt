@@ -1,0 +1,3 @@
+[console_scripts]
+allzpark = allzpark.cli:main
+

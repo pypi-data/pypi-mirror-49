@@ -1,0 +1,11 @@
+setup.py
+pythontexfigures/__init__.py
+pythontexfigures/install.py
+pythontexfigures/pythontexfigures.sty
+pythontexfigures/sty.py
+pythontexfigures.egg-info/PKG-INFO
+pythontexfigures.egg-info/SOURCES.txt
+pythontexfigures.egg-info/dependency_links.txt
+pythontexfigures.egg-info/not-zip-safe
+pythontexfigures.egg-info/requires.txt
+pythontexfigures.egg-info/top_level.txt

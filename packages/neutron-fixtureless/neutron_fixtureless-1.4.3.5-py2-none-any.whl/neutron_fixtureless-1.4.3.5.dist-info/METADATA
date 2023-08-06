@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: neutron-fixtureless
+Version: 1.4.3.5
+Summary: Test utility to create fixtureless objects in Django.
+Home-page: https://github.com/neutroninteractive/django-fixtureless
+Author: Neutron Interactive
+Author-email: admin@neutroninteractive.com
+License: LICENSE.txt
+Keywords: unittest,django,Python 3
+Platform: UNKNOWN
+Requires-Dist: django (>=1.4)
+
+UNKNOWN
+
+

@@ -1,0 +1,11 @@
+fixtureless/__init__.py,sha256=fef8bdz0TIEz4J9n99yfEt-k_BOGN9SITqhXVBnfFMg,40
+fixtureless/constants.py,sha256=PD248PUP--93EIQ7jVQl1oTyswYqK0eZD9OElR8FVT8,1984
+fixtureless/exceptions.py,sha256=txkJ8uam3GmjQcmXR_1g6exT744PJC4y7KHu3xdHssE,45
+fixtureless/factory.py,sha256=rHETvHfwAhBU085vjNp8I3lU-_ZA4S5HedTDVAC7tuI,2580
+fixtureless/generator.py,sha256=cBhkYcopxAAyTMl4iM6HuYptSa3qL-NNC3w8fFCnWUA,11625
+fixtureless/utils.py,sha256=-zz3KwN9kz422mBMPRU5oSa85d_ybHOPEyYQhFSEgT0,127
+neutron_fixtureless-1.4.3.5.dist-info/LICENSE.txt,sha256=PZ93Z_s0M81PRFUJyWrbBao8mWc1bmEPVuxaPleM6tk,1079
+neutron_fixtureless-1.4.3.5.dist-info/METADATA,sha256=t3sCPHDIyYV8ZYhTfR7xxbdlW9F1c36b6RCEe-N1O4c,382
+neutron_fixtureless-1.4.3.5.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+neutron_fixtureless-1.4.3.5.dist-info/top_level.txt,sha256=F4FL820xcq8JLpHfM2Hay9QXvI-lGB1T94y9L_hDNcQ,12
+neutron_fixtureless-1.4.3.5.dist-info/RECORD,,

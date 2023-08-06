@@ -1,0 +1,11 @@
+_kratos.cpython-37m-darwin.so,sha256=L066YndlzfbJAdlcZsVi-ZRmHx02KlTMWY-wIAWRsWs,2214920
+kratos/__init__.py,sha256=2-yHed1FNCcl_0B1Jxz99cL32tUtELHMOXghXTVNadM,1059
+kratos/generator.py,sha256=YcCxKGZtY0mawlsUJmYykfOe7_AUdY62YSAGMz0ayuY,19754
+kratos/passes.py,sha256=AxGJoFkfn3qPg-ODmPYqTqR5Y2ZS9JZvDoQYxLGKlXQ,896
+kratos/pyast.py,sha256=rQorC0n2RYdSMTm_MUNtdx6UtfyT0K6zord4DFk0Ukw,11728
+kratos/stmts.py,sha256=aucmzdDHgzEAvzbs4r24wymYPWJJzGrq6GlrrLrXOSA,1599
+kratos/util.py,sha256=7O5qbXnhhlLZ5_ZTcMHGFS0foMDsWCPRJ0ZeQMt2MUc,2908
+kratos-0.0.8.dist-info/METADATA,sha256=q_oZhkP6BfdZ0TsKoUHwvLxnSb6HsK_f2R8xxpWatJ4,9486
+kratos-0.0.8.dist-info/WHEEL,sha256=gO7GQv01HwNKoKc7wkbmsV3rCVPq8uox2-g6TCUsAJc,111
+kratos-0.0.8.dist-info/top_level.txt,sha256=o66PCbIziohtP0yEqDHae3EsfQf169Bvt9q-fvMbfyM,15
+kratos-0.0.8.dist-info/RECORD,,

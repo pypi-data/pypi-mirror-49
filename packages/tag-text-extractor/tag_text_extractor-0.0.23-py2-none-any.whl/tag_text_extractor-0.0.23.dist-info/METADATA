@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tag-text-extractor
+Version: 0.0.23
+Summary: Extract tag texts and word count
+Home-page: https://github.com/KokocGroup/tag-text-extractor
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Download-URL: https://github.com/KokocGroup/tag-text-extractor/tarball/v0.0.23
+Platform: UNKNOWN
+Requires-Dist: six (<1.11.0,>=1.0.0)
+Requires-Dist: lxml (==3.4.4)
+
+UNKNOWN
+
+

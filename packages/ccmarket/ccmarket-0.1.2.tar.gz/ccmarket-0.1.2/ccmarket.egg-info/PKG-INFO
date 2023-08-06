@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: ccmarket
+Version: 0.1.2
+Summary: Crypto Currency Market
+Home-page: https://gitlab.com/dozenc/ccmarket
+Author: dozenc
+Author-email: dozenc@outlook.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://gitlab.com/dozenc/ccmarket
+Project-URL: Funding, https://gitlab.com/dozenc/ccmarket
+Project-URL: Say Thanks!, https://gitlab.com/dozenc/ccmarket
+Project-URL: Source, https://gitlab.com/dozenc/ccmarket
+Description: # ccmarket
+        
+        Crypto Currency Market,Realtime Market of Crypto Currency Exchanges.
+        
+        # Environment
+        
+        # Install
+        Currently,Application support Linux and Mac.
+        
+        python3 -m pip install ccmarket
+        
+        
+        # Config
+        ### logging config:
+        
+        /usr/local/etc/ccmarket/logging.ini
+        
+        By default,Log file will output to /usr/local/var/log/ccmarket/ .
+        
+        ### application config:
+        
+        /usr/local/etc/ccmarket/config.ini
+        
+        You could config exchanges and symbols in this config file.
+        
+        # Run
+        Open terminal and input following commamnd:
+        ccmarket
+Keywords: Crypto Currency Exchange
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test

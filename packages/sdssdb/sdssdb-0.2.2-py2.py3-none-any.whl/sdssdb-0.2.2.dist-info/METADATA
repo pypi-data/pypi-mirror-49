@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: sdssdb
+Version: 0.2.2
+Summary: SDSS product for database management.
+Home-page: https://github.com/sdss/sdssdb
+Author: Jose Sanchez-Gallego
+Author-email: gallegoj@uw.edu
+License: BSD3
+Project-URL: Documentation, https://sdssdb.readthedocs.org
+Project-URL: Source, https://github.com/sdss/sdssdb
+Project-URL: Issues, https://github.com/sdss/sdssdb/issues
+Keywords: astronomy software database
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: pyyaml (>=5.1)
+Requires-Dist: pygments
+Requires-Dist: pgpasslib (>=1.1.0)
+Requires-Dist: psycopg2-binary (>=2.7.7)
+Requires-Dist: six (>=1.12.0)
+
+sdssdb
+======
+
+|python| |docs|
+
+SDSS product for database management.
+
+Useful links
+------------
+
+- GitHub: https://github.com/sdss/sdssdb
+- Documentation: https://sdssdb.readthedocs.org
+- Issues: https://github.com/sdss/sdssdb/issues
+
+How to use
+----------
+::
+
+    >>> from sdssdb.peewee.sdss5db import catalogdb
+    >>> targets = catalogdb.GaiaDR2Source.select().where(catalogdb.GaiaDR2Source.phot_g_mean_mag < 15)
+
+
+.. |python| image:: https://img.shields.io/badge/python-3.6%2B-green.svg
+    :alt: Requires Python 3.6+
+    :scale: 100%
+
+.. |docs| image:: https://readthedocs.org/projects/sdssdb/badge/?version=latest
+    :alt: Documentation Status
+    :scale: 100%
+    :target: https://sdssdb.readthedocs.io/en/latest/?badge=latest
+
+

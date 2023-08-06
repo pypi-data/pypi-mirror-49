@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: jsondler
+Version: 0.0.3
+Summary: JSON handler for Python
+Home-page: https://github.com/loven-doo/jsondler
+Author: Denis Moshensky
+Author-email: loven7doo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.15.1)
+Requires-Dist: pandas (>=0.23.4)
+
+# jsondler
+
+JSON handler for Python
+
+## Installation
+
+To install the package from PyPI type:
+
+```
+pip install jsondler
+```
+
+Or from the repo:
+
+```
+pip install git+https://github.com/loven-doo/jsondler.git
+```
+
+For 'dev' branch version:
+
+```
+pip install git+https://github.com/loven-doo/jsondler.git@dev
+```
+
+## Package reference
+
+### DictsList
+
+### json_tools
+
+
+

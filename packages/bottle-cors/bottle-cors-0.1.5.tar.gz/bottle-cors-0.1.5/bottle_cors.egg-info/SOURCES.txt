@@ -1,0 +1,8 @@
+README.md
+setup.py
+bottle_cors.egg-info/PKG-INFO
+bottle_cors.egg-info/SOURCES.txt
+bottle_cors.egg-info/dependency_links.txt
+bottle_cors.egg-info/requires.txt
+bottle_cors.egg-info/top_level.txt
+truckpad/bottle/cors.py

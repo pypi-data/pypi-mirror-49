@@ -1,0 +1,12 @@
+tspex/__init__.py,sha256=A8AjOZfbca1dXZjOAZPsZN9AYIgJHjmchzWVFTb6ybw,910
+tspex/cli.py,sha256=_Ol_oiE-T4DW4wiDabYS4SCg9s-Z2-72qcNz6cxzeiQ,3382
+tspex/core/__init__.py,sha256=lI00BmV-Sdt5BzTpE2gI70D0G-uZ5RUu8yjKtycuWwc,814
+tspex/core/auxiliary_functions.py,sha256=PQbZh2FsA_7KlsA79kyfoD3Fe7UO3dVv3m040wH4J3w,4187
+tspex/core/specificity_class.py,sha256=mHpT9lYQpCpKhl9UWw4_xHZZrrIk3RHiBLcYImt0X-U,9636
+tspex/core/specificity_functions.py,sha256=vgxOJapL85KJTAXBGNCYjsRH4Ih8FQSnWdRQzDhR1Vk,15064
+tspex-0.6.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tspex-0.6.0.dist-info/METADATA,sha256=_pFEvHvBY5HAGJLYGW8lvVRmRzHW_2HDCWgdcNoT8tc,4469
+tspex-0.6.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+tspex-0.6.0.dist-info/entry_points.txt,sha256=dHJ-C-crLymC_j3ulthMGN6VjfujlW_x_tokHaMFG-I,42
+tspex-0.6.0.dist-info/top_level.txt,sha256=qFZpyE8ghbNRGzz2dAI0crsv8gL_w3eIuRnQTBOV3Hs,6
+tspex-0.6.0.dist-info/RECORD,,

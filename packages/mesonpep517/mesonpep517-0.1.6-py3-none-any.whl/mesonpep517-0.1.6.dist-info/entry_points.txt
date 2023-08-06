@@ -1,0 +1,3 @@
+[console_scripts]
+buildapi = mesonpep517.buildapi
+

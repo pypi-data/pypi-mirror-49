@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: snowflakecli
+Version: 0.0.1
+Summary: A mycli-inspired command line interface for snowflake
+Home-page: https://bostata.com/
+Author: Jake Thomas
+Author-email: jake@bostata.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+A mycli-inspired command line interface to snowflake.
+
+

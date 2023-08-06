@@ -1,0 +1,7 @@
+setup.py
+openlocationcode/__init__.py
+openlocationcode/openlocationcode.py
+openlocationcode.egg-info/PKG-INFO
+openlocationcode.egg-info/SOURCES.txt
+openlocationcode.egg-info/dependency_links.txt
+openlocationcode.egg-info/top_level.txt

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: gdsHelpers
+Version: 1.0.0
+Summary: A simple Python package for creating or reading GDSII/OASIS layout files.
+Home-page: UNKNOWN
+Author: Helge Gehring, Matthias Blaicher, Wladick Hartmann, Wolfram Pernice
+Author-email: helge.gehring@uni-muenster.de, matthias@blaicher.com, wladick.hartmann@uni-muenster.de, wolfram.pernice@uni-muenster.de
+License: LGPLv3
+Description: UNKNOWN
+Platform: All
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Requires: matplotlib
+Requires: numpy
+Requires: shapely
+Requires: scipy
+Provides-Extra: image_export
+Provides-Extra: gdspy_export
+Provides-Extra: gdscad_export
+Provides-Extra: mesh_export
+Provides-Extra: oasis_export

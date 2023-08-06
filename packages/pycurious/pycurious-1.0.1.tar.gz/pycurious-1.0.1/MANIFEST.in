@@ -1,0 +1,11 @@
+include README.md
+include MANIFEST.in
+include CONTRIBUTING.md
+include COPYING
+include COPYING.LESSER
+include setup.cfg
+include src/*
+recursive-include pycurious/ *.py
+recursive-include pycurious/ *.ipynb
+include pycurious/Examples/data/test_mag_data.txt
+include tests/*.py

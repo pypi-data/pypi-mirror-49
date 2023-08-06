@@ -1,0 +1,4 @@
+[console_scripts]
+replace-domain = replace_domain.replace_domain:main
+replace_domain = replace_domain.replace_domain:main
+

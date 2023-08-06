@@ -1,0 +1,11 @@
+README.md
+setup.py
+biliget/__init__.py
+biliget/basics.py
+biliget/fun.py
+biliget/ob.py
+biliget0.egg-info/PKG-INFO
+biliget0.egg-info/SOURCES.txt
+biliget0.egg-info/dependency_links.txt
+biliget0.egg-info/requires.txt
+biliget0.egg-info/top_level.txt

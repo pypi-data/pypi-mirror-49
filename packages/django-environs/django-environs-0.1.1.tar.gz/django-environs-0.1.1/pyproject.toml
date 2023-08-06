@@ -1,0 +1,33 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "django_environs"
+dist-name = "django-environs"
+author = "Jarosław Wygoda"
+author-email = "jaroslaw@wygoda.me"
+home-page = "https://github.com/jwygoda/django-environs"
+requires = ["django", "environs[django]", "redbaron"]
+requires-python = ">=3.6"
+description-file = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+]
+
+[tool.flit.metadata.requires-extra]
+dev = ["black", "isort"]
+test = ["tox"]
+
+[tool.flit.scripts]
+django-environs = "django_environs.management:execute_from_command_line"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+known_third_party = ["django", "environs", "redbaron"]

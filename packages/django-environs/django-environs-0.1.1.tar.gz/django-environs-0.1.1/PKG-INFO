@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: django-environs
+Version: 0.1.1
+Summary: A cli tool for bootstraping django projects with environs settings
+Home-page: https://github.com/jwygoda/django-environs
+Author: Jarosław Wygoda
+Author-email: jaroslaw@wygoda.me

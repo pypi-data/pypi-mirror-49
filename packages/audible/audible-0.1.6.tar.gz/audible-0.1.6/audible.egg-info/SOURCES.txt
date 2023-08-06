@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+audible/__init__.py
+audible/__version__.py
+audible/audible.py
+audible/crypto.py
+audible/localization.py
+audible.egg-info/PKG-INFO
+audible.egg-info/SOURCES.txt
+audible.egg-info/dependency_links.txt
+audible.egg-info/requires.txt
+audible.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: knitter
+Version: 1.0.0
+Summary: A Web Automation Test Framework Based On Selenium WebDriver
+Home-page: https://github.com/hw712/knitter
+Author: Henry Wang
+Author-email: outsidematrix@126.com
+Maintainer: Henry Wang
+Maintainer-email: outsidematrix@126.com
+License: BSD License
+Description: Knitter['nitə] is a web automation test framework, with which you can develop the web ui automation with good maintainability and extendability.
+Platform: linux
+Platform: windows
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks

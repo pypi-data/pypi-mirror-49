@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: logthon
+Version: 1.0.0
+Summary: A simple logger for Python
+Home-page: https://github.com/mastrobirraio/logthon
+Author: Giuseppe "mastrobirraio" Matranga
+Author-email: matrangagiuseppe99@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+
+# logthon
+A simple python logger
+
+

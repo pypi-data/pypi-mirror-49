@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: speedtest-http
+Version: 0.0.3
+Summary: Visualize data from speedtest_sampler in a web app
+Home-page: https://github.com/shuntingyard/speedtest_http
+Author: Tobias Frei
+Author-email: shuntingard@gmail.com
+License: mit
+Description: ==============
+        speedtest_http
+        ==============
+        
+        
+        Visualize data from speedtest_sampler in a web app
+        
+        
+        Description
+        ===========
+        
+        flask / plotly web app for visualizing internet uplink speeds.
+        Environments supported so far:
+        
+        - Docker container
+        - GNU/Linux hosts with Python >= 3.6 installed
+        
+        Status
+        ======
+        
+        - Examples of lineplots, scatterplots and heatmap work.
+        
+Platform: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Provides-Extra: testing

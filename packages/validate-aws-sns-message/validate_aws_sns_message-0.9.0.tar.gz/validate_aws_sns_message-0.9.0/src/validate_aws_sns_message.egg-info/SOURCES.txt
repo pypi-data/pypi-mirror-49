@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/validate_aws_sns_message/__init__.py
+src/validate_aws_sns_message.egg-info/PKG-INFO
+src/validate_aws_sns_message.egg-info/SOURCES.txt
+src/validate_aws_sns_message.egg-info/dependency_links.txt
+src/validate_aws_sns_message.egg-info/requires.txt
+src/validate_aws_sns_message.egg-info/top_level.txt

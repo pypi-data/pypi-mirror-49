@@ -1,0 +1,3 @@
+[console_scripts]
+nanoparticle_tracking = nanoparticle_tracking.__main__:main
+

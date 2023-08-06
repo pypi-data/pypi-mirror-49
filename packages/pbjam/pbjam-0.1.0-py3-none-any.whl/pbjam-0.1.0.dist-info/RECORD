@@ -1,0 +1,13 @@
+pbjam/__init__.py,sha256=FwJT2Ysvob46qu7ZlxdKA8mwM1T5ynwhsWD4H73zvw4,282
+pbjam/asy_peakbag.py,sha256=3Qf2L86MT4600xJsSduPc2DaLCbhkOJEA0rNDcbTr7M,31897
+pbjam/guess_epsilon.py,sha256=igQW4-dgdIpPB2h1kzF0qs8k4Y79rrfp8U97cCdLwDo,9479
+pbjam/jar.py,sha256=eWNiqHeCQ3Kujp0G_Stu84F4QDqMsePKsEvg0u-9ThY,23182
+pbjam/peakbag.py,sha256=qS3TAnAbTfQb1svOJ2j7w_P73WiRW-2iyUPFxJdTflo,23491
+pbjam/star.py,sha256=Szsc-gZlw2E2JPG5FTcPW7Ia_3Diag27YpSLp1f5l4U,5476
+pbjam/version.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pbjam/data/prior_data.csv,sha256=Tq4lNlH_nnXVsytXU6nv3I5WYBu0zeY33J9aSMckBz4,173962
+pbjam-0.1.0.dist-info/LICENSE,sha256=OYFgQB4i85K3_TyDiME7Gxo144Tu_Qu97UansfxvxVE,1068
+pbjam-0.1.0.dist-info/METADATA,sha256=EA4c-lK5znyVDJN_1SbBZSoO_6x5rn4z3hq-uM5ZWyE,2647
+pbjam-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pbjam-0.1.0.dist-info/top_level.txt,sha256=UIAlILELJ3JJ4q1EsJ-9GMa37OFHPBgkNMlTA5p1ftY,6
+pbjam-0.1.0.dist-info/RECORD,,

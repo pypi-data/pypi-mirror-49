@@ -1,0 +1,13 @@
+polyaxon_dockerizer/__init__.py,sha256=sRfLY9aALJTBt-GF5BdvMQG_c8LWVqRWMctyvZnMaaE,203
+polyaxon_dockerizer/builder.py,sha256=YO3tpmr3848TiZy4xyRi1wxbnZSN2Ho3kZ7YNXoNCUI,8124
+polyaxon_dockerizer/dockerfile.py,sha256=VP8njUCbqPkZxdtdhtxb08pTYK9DUWxVZqnI006p4PA,1204
+polyaxon_dockerizer/exceptions.py,sha256=eFQ4sin-gmZYn9wZO2C3w0dxIiZwvnLcTrQbtn2gFaU,42
+polyaxon_dockerizer/generator.py,sha256=mtv0l1WsxfNxLsBd-n7HDVPBM1ahAsVwq_fffWqTcDM,5036
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_builder.py,sha256=5umxyHpLs0x3ycsl4l0gpNqUWUvGqaqqUPxcrP76RWY,5348
+tests/test_dockerfile_generator.py,sha256=gK5eOeUMKkDOHxbgxO7cft3-cAAHZJnT2TXg816vQuw,7912
+polyaxon_dockerizer-0.0.6.dist-info/LICENSE,sha256=1i2k9vJOevvg_pvlwNoayU5h9Yn9kuwDnqLORsPrwN4,1083
+polyaxon_dockerizer-0.0.6.dist-info/METADATA,sha256=WUKJC-sgV_kvt-zODBXdqFkgwdvqarhOqXrD2rhzbo8,2351
+polyaxon_dockerizer-0.0.6.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+polyaxon_dockerizer-0.0.6.dist-info/top_level.txt,sha256=YByJ-rsx72CAZdaMr3waymaMYzFOoFRbjgjXxVCSMEk,26
+polyaxon_dockerizer-0.0.6.dist-info/RECORD,,

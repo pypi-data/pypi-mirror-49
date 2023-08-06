@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+cmdline/waterfall.py
+pypi_flow/__init__.py
+pypi_flow.egg-info/PKG-INFO
+pypi_flow.egg-info/SOURCES.txt
+pypi_flow.egg-info/dependency_links.txt
+pypi_flow.egg-info/requires.txt
+pypi_flow.egg-info/top_level.txt
+pypi_flow/packageTemplate/PypiUpload.py
+pypi_flow/packageTemplate/__init__.py
+pypi_flow/packageTemplate/setup.py
+pypi_flow/packageTemplate/package_name/__init__.py

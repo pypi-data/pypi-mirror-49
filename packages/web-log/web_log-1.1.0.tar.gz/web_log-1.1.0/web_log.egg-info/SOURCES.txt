@@ -1,0 +1,13 @@
+README.md
+setup.py
+web_log/__init__.py
+web_log/constants.py
+web_log/statoil_log_handler.py
+web_log/web_log_functions.py
+web_log/wlog.py
+web_log.egg-info/PKG-INFO
+web_log.egg-info/SOURCES.txt
+web_log.egg-info/dependency_links.txt
+web_log.egg-info/entry_points.txt
+web_log.egg-info/requires.txt
+web_log.egg-info/top_level.txt

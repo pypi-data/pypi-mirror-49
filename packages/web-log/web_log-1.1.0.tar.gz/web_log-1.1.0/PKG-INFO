@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: web_log
+Version: 1.1.0
+Summary: Logs json logs to somewhere
+Home-page: https://github.com/equinor/weblog
+Author: Software Innovation, Equinor ASA
+Author-email: fg_gpl@equinor.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

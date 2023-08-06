@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: scratchpad-deadmund
+Version: 1.0
+Summary: Notepad with basic math functions
+Home-page: https://github.com/fmresearchnovak/scratchpad
+Author: Ed Novak
+Author-email: enovak@fandm.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# scratchpad
+Basic notepad app with some built in calculator functions written in python using Tkinter.
+
+

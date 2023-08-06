@@ -1,0 +1,10 @@
+metann/__init__.py,sha256=abbMY5Xa5OsCDPTQY7quqrcfWSlwSjbjqI02I6j16vw,146
+metann/dependentmodule.py,sha256=IIXaDRHCowFC-chXw07e_u2pZkA0h8oAjBYWJdIt5xQ,9493
+metann/leaner.py,sha256=a1sDkthwEwOqtaX9r-Kb9jdkXMQyHJmet7RXGnrZl_A,1349
+metann/utils/__init__.py,sha256=Wsh000Y4SqEKuidXgxKPtVWB3fjB0JF5Mf_edlOHlu8,56
+metann/utils/subdict.py,sha256=uWhQvwA0ObncMZcZRonds-wDGJJPofcsstHfl1Nolac,2221
+MetaNN-0.1.4.dist-info/LICENSE,sha256=2g6ECsLaJxmi9Hm5ZVioijaANkhfnBg1J__gb4SB8e0,1094
+MetaNN-0.1.4.dist-info/METADATA,sha256=42FlYjkV0-6djQijb2rC8P4zcjoQiFAsaKP5X_Xr7BE,1842
+MetaNN-0.1.4.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+MetaNN-0.1.4.dist-info/top_level.txt,sha256=9EJybZlVFRZ4gOVVMFtwxfmtqfWVwkEjHJ-t6KGIxXc,7
+MetaNN-0.1.4.dist-info/RECORD,,

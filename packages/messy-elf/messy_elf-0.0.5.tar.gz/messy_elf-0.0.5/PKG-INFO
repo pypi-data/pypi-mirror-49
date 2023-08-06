@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: messy_elf
+Version: 0.0.5
+Summary: Testing package for Pypi/Pipenv Functions
+Home-page: https://github.com/nnayudu/messy-elf
+Author: Nishant Nayudu
+Author-email: nishant.nayudu@gmail.com
+License: MIT
+Description: # messy-elf
+        Python package to test out pipenv / pypi functions
+        
+Keywords: pypi,testing
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

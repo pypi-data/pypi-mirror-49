@@ -1,0 +1,11 @@
+aiovkcom/__init__.py,sha256=OsDIvHJrS0g27FrAS-3CIUJGC0fr-NJeVEec2yPZkAI,228
+aiovkcom/api.py,sha256=ePqRImbOJ6blZJwcd_4aVBIjoe459adhYefAJ4jh0YU,751
+aiovkcom/exceptions.py,sha256=6hDKZ_4bTWC8xQ9c0OrucItcSw2SsgDoU609-jzB5oY,941
+aiovkcom/parsers.py,sha256=uAgDB0EzvTbwcKqGMWcecG9xBOSFg_eRHIbUBkZZEww,1310
+aiovkcom/permissions.py,sha256=uViyIGqwQPpxA0Zk50BnzvcYLmo8AOjJKKfiDSNt0pI,805
+aiovkcom/sessions.py,sha256=N_K1lxb4Xkyb3QJMdk8dV_3R2v2FbEZjjopUINNgAMY,7244
+aiovkcom-0.0.4.dist-info/LICENSE,sha256=qTkqiT8eYSCgz7hN-cVC_wHnNTbqU75iPQjcQJY0qL4,1326
+aiovkcom-0.0.4.dist-info/METADATA,sha256=-umqSDIeQpXCAVPaNc-M6tQEVwdEu5js6d1fKczLTms,3082
+aiovkcom-0.0.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+aiovkcom-0.0.4.dist-info/top_level.txt,sha256=yDpydS9uouXENXTi7FhvKILOT1A5eQDwKeY6jYHweGI,9
+aiovkcom-0.0.4.dist-info/RECORD,,

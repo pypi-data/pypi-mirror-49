@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: HandlerAPI
+Version: 0.4.7
+Summary: Parsing PR, Issue, Commit, and LOC data from GitHub REST API
+Home-page: https://github.com/Susi-Eva/Parser
+Author: Susi Eva
+Author-email: susipurba2@gmail.com
+License: MIT
+Description: # Parsing-API
+        
+Keywords: Handler,API,GitHub
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

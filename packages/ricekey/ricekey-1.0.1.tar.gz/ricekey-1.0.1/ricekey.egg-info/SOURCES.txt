@@ -1,0 +1,9 @@
+README.rst
+setup.py
+ricekey.egg-info/PKG-INFO
+ricekey.egg-info/SOURCES.txt
+ricekey.egg-info/dependency_links.txt
+ricekey.egg-info/requires.txt
+ricekey.egg-info/top_level.txt
+src/ricekey/__init__.py
+src/ricekey/ricekey.py

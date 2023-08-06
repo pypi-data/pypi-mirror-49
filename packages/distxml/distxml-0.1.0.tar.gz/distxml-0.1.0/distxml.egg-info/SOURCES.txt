@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+Pipfile
+Pipfile.lock
+README.md
+setup.py
+distxml.egg-info/PKG-INFO
+distxml.egg-info/SOURCES.txt
+distxml.egg-info/dependency_links.txt
+distxml.egg-info/requires.txt
+distxml.egg-info/top_level.txt

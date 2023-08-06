@@ -1,0 +1,3 @@
+[console_scripts]
+npm_audit_checkmk = npm_audit_checkmk.__main__:main
+

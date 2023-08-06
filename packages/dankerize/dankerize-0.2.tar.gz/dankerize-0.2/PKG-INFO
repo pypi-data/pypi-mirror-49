@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: dankerize
+Version: 0.2
+Summary: Randomly set some characters from a string to upper case.
+Home-page: https://github.com/coignetp/dankerize
+Author: Paul Coignet
+Author-email: paulcoignet1996@gmail.com
+License: MIT
+Download-URL: https://github.com/coignetp/dankerize/archive/v_02.tar.gz
+Description: UNKNOWN
+Keywords: useless,string,test
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

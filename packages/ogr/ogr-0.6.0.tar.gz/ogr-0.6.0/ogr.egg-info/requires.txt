@@ -1,0 +1,7 @@
+GitPython
+PyGithub
+python-gitlab
+PyYAML
+
+[testing]
+pytest

@@ -1,0 +1,13 @@
+datadog_lambda/__init__.py,sha256=jTIP9Z85ilPjmHjgiPm7hWjllu3CfpG5ct3pMEkyUno,142
+datadog_lambda/constants.py,sha256=RfWlWqr8VjF5pMaQCtlVjzRcOFdoFEsgexUoLPTQcjc,716
+datadog_lambda/metric.py,sha256=A_xcGNr5HQL76N3fqijkOCBbgRyQ7HuMtd5mEtTMh_8,2540
+datadog_lambda/patch.py,sha256=nJgPt45pLeU1dlOcA4Al_F2ifXDKkW8B4VyJPVizudY,2892
+datadog_lambda/tracing.py,sha256=2PEVHb-qZmHEJkvComs7pqj0nOcom5-9Npm-VABS60w,3763
+datadog_lambda/wrapper.py,sha256=Sxku9fQMdcyhG3tnNe0UcTD4ns-q_WVpZ9eB47UC-po,1757
+datadog_lambda-0.5.0.dist-info/LICENSE,sha256=4yQmjpKp1MKL7DdRDPVHkKYc2W0aezm5SIDske8oAdM,11379
+datadog_lambda-0.5.0.dist-info/LICENSE-3rdparty.csv,sha256=462QRPQeMmKfirV6Tt7X2h80Z8ZJex-eHm9Q9sGr9ls,545
+datadog_lambda-0.5.0.dist-info/METADATA,sha256=wWrbjhDL_rOP4okfXXP9MSslmpiAfNRI4dTBC9xkcCY,10678
+datadog_lambda-0.5.0.dist-info/NOTICE,sha256=fHZDHJLS6pSIZxUiuAYGL3pbrqKCMOgVhfbeRymG3zo,147
+datadog_lambda-0.5.0.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+datadog_lambda-0.5.0.dist-info/top_level.txt,sha256=k1eZ7KUdAy9ze8LgmXkoG-zgIQ5-Lyz3dnq5S2YAiyI,15
+datadog_lambda-0.5.0.dist-info/RECORD,,

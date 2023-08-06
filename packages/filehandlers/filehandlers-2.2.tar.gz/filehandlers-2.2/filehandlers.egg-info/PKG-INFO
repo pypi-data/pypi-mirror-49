@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: filehandlers
+Version: 2.2
+Summary: Package containing code to help in working with files
+Home-page: https://github.com/RDIL/filehandlers
+Author: Reece Dunham
+Author-email: me@rdil.rocks
+License: UNKNOWN
+Project-URL: Documentation, https://filehandlers.readthedocs.io
+Project-URL: Source Code, https://github.com/RDIL/filehandlers
+Project-URL: Bug Tracker, https://github.com/RDIL/filehandlers/issues
+Description: UNKNOWN
+Platform: UNKNOWN

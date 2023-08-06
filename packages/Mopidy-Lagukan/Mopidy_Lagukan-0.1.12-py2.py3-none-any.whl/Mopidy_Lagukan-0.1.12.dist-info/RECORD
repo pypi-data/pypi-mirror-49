@@ -1,0 +1,11 @@
+Mopidy_Lagukan-0.1.12.dist-info/DESCRIPTION.rst,sha256=Ro4Kxrq9EtPegIdnDuAs99_9-cMFQ86B7P0dQz4ZLYk,350
+Mopidy_Lagukan-0.1.12.dist-info/METADATA,sha256=e33kkfDPyOXPRgusJ6Xugj7Z_Ya8dZ8tSemXqKpAwRQ,1098
+Mopidy_Lagukan-0.1.12.dist-info/RECORD,,
+Mopidy_Lagukan-0.1.12.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Mopidy_Lagukan-0.1.12.dist-info/entry_points.txt,sha256=ttlJd7_va9LcDt8oQGk_KTJvpzKZt7O5neeIMwQ5qFU,49
+Mopidy_Lagukan-0.1.12.dist-info/metadata.json,sha256=HGsJeln3R-B5DQnvc3NiXwNO_65-_SepJ_EYCyAiClk,948
+Mopidy_Lagukan-0.1.12.dist-info/top_level.txt,sha256=KwPApcnPc6RuaVRdDUOjUgcC0sNsJN1yo6hfmeneC6Q,15
+mopidy_lagukan/__init__.py,sha256=HBUY-Khd11e4qEYqus45iN4SYyU6U-FmkrDmReWYNXM,1296
+mopidy_lagukan/commands.py,sha256=X5_4XVcOw8Wg3N1te5gbilLFqQE5PhKEb1leUW98TKc,450
+mopidy_lagukan/ext.conf,sha256=9w7Ekyhkb9JNGIgjUCz2HOHyOfpw8hfP5tmmIv-5znU,33
+mopidy_lagukan/frontend.py,sha256=lh2XU5kU8sS-prpoL5RO313cTMzCdExrctFMtMww2bY,7535

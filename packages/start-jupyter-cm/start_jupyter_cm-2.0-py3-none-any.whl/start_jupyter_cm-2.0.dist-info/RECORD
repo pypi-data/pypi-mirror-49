@@ -1,0 +1,15 @@
+start_jupyter_cm/__init__.py,sha256=f3MNkuuEhzY3MTDjGCrXR6ZLkMPy3q2qi2oiBUO6bEM,21
+start_jupyter_cm/command.py,sha256=HVYwGAf8SWWX0gdnDNXeER700sZG_G4NE3rF3Pfilp4,832
+start_jupyter_cm/gnome.py,sha256=P_vJkEXYk9CEN0iCesa3l8K307jXjTUne4xy4ORtr0U,2241
+start_jupyter_cm/utils.py,sha256=G25wPavBHGqQvMUOgTRmaIFgAYQ-P751tvNiiq6ZNAc,382
+start_jupyter_cm/windows.py,sha256=nLt4xEyZMOxTqIIMAfT_e8hbeZxZqq9Rnbr4Bgt5JZ4,7003
+start_jupyter_cm/icons/jupyter-qtconsole.ico,sha256=Eetm8GlleGdbwxvFye7zn1EYkUsKVmNrTh86BkKLN_Y,14447
+start_jupyter_cm/icons/jupyter-qtconsole.png,sha256=FY5Tif_eX75cJWly6efRo_5siAIJkYZBRgz6SEwc3t8,14508
+start_jupyter_cm/icons/jupyter.ico,sha256=DheA6BsipMEZwMovCM9eEMChJhvTQ889vn02hOZ8b6M,6587
+start_jupyter_cm/icons/jupyter.png,sha256=Z9jgnaN-f_SgwyYdGNI2pqmQk7G0cQM9Kmb6suh0iLc,6751
+start_jupyter_cm-2.0.dist-info/LICENSE,sha256=kmzUWrawSetOAC85DcVOsmZH7YNQYwknlV9ewL7f3pw,1483
+start_jupyter_cm-2.0.dist-info/METADATA,sha256=Cj1DCX-EyhWhGqHLpSvph4eC5iDEG0NT8oIm8WBdYvc,5054
+start_jupyter_cm-2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+start_jupyter_cm-2.0.dist-info/entry_points.txt,sha256=KvctEkXrTRoAp1mYMnV1A9ok7O0_V7qlfCzrAIYZayo,68
+start_jupyter_cm-2.0.dist-info/top_level.txt,sha256=6zh6eGiLjBvJBvfujE1tyWMnC3VVbIr8ImGQwax063M,17
+start_jupyter_cm-2.0.dist-info/RECORD,,

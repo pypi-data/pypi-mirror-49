@@ -1,0 +1,7 @@
+[console_scripts]
+labelme_draw_json = labelmetest.cli.draw_json:main
+labelme_draw_label_png = labelmetest.cli.draw_label_png:main
+labelme_json_to_dataset = labelmetest.cli.json_to_dataset:main
+labelme_on_docker = labelmetest.cli.on_docker:main
+labelmetest = labelmetest.main:main
+

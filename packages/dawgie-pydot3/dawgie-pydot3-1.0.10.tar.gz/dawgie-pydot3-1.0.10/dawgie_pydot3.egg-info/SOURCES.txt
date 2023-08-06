@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dawgie_pydot3.egg-info/PKG-INFO
+dawgie_pydot3.egg-info/SOURCES.txt
+dawgie_pydot3.egg-info/dependency_links.txt
+dawgie_pydot3.egg-info/requires.txt
+dawgie_pydot3.egg-info/top_level.txt
+pydot/__init__.py
+pydot/dot_parser.py

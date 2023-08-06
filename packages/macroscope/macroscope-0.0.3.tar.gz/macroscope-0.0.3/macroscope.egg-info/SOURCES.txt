@@ -1,0 +1,9 @@
+README.md
+macroscope.py
+setup.py
+macroscope.egg-info/PKG-INFO
+macroscope.egg-info/SOURCES.txt
+macroscope.egg-info/dependency_links.txt
+macroscope.egg-info/entry_points.txt
+macroscope.egg-info/requires.txt
+macroscope.egg-info/top_level.txt

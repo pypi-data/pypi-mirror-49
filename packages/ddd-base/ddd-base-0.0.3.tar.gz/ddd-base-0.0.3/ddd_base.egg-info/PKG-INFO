@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: ddd-base
+Version: 0.0.3
+Summary: DDD base framework for python
+Home-page: https://github.com/sunwei/ddd-base
+Author: Sun Wei
+Author-email: wayde.sun@gmail.com
+License: UNKNOWN
+Description: DDD Base Framework
+        ==================
+        
+        Changelog
+        =========
+        
+        0.0.3
+        -----
+        
+        - Smart setup
+        
+        0.0.2
+        -----
+        
+        - Minimise description
+        
+        0.0.1
+        -----
+        
+        - Initial public release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

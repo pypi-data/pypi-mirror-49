@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Termighty
+Version: 0.0.14
+Summary: A Python-based GUI development package for Ubuntu's Gnome terminal
+Home-page: https://github.com/GabrielSCabrera/Termighty
+Author: Gabriel S. Cabrera
+Author-email: gabric@uio.no
+License: UNKNOWN
+Download-URL: https://github.com/GabrielSCabrera/Termighty/archive/v0.0.14.tar.gz
+Description: UNKNOWN
+Keywords: terminal,gui,interactive
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

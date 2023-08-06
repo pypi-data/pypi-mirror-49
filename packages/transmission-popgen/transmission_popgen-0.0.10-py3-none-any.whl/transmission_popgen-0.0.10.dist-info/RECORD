@@ -1,0 +1,12 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_Sample.py,sha256=q0zDYln8Z_XjSJovxkh-6VSc92Mb6-VbM6nrphgjfYo,7015
+test/test_functions.py,sha256=37ibKsS8S-e1_d1Z24ww-krEnBXsiUnZPgySvutkNLY,1500
+transmission/__init__.py,sha256=LdE0E_XRpw1iAY9PWgiazi7We8-7ca1BkphnpzL-v28,861
+transmission/cli_tools.py,sha256=podRNI9x1mvPvennfVmz5e1CtO9DUSzmAk0SQaLNS_o,4518
+transmission/transmission.py,sha256=fIQ4GV5OjMaGw8AbRfRUO45pERAiV4i_r2Cbzh5dmrk,35874
+transmission_popgen-0.0.10.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+transmission_popgen-0.0.10.dist-info/METADATA,sha256=we8Az5ax69CE7M8B1D9s8QIU-vp3XfdwRANb4lqxV-A,394
+transmission_popgen-0.0.10.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+transmission_popgen-0.0.10.dist-info/entry_points.txt,sha256=cFKBaH8_TDHZA39kAPNhiZi45bRyhPFeEN5PMhwr_4I,105
+transmission_popgen-0.0.10.dist-info/top_level.txt,sha256=f1xef2F8_nJLmg5GJEd8sCqa5pRSoqL8PyTzzZhGK_A,18
+transmission_popgen-0.0.10.dist-info/RECORD,,

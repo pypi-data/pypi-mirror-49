@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: transmission-popgen
+Version: 0.0.10
+Summary: Tools for inferring symbiont transmission mode frommetagenomic data
+Home-page: http://github.com/mpjuers/transmission
+Author: Mark Juers
+Author-email: mpjuers@indiana.edu
+License: GPL>=3
+Platform: UNKNOWN
+Requires-Dist: click
+Requires-Dist: msprime
+Requires-Dist: numpy
+Requires-Dist: rpy2
+Requires-Dist: tqdm
+
+UNKNOWN
+
+

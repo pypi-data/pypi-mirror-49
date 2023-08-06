@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        transmission-priorgen=transmission.cli_tools:simulate_prior_stats
+    

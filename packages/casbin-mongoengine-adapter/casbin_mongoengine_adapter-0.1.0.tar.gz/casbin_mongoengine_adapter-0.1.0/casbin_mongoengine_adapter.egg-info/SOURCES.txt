@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+casbin_mongoengine_adapter.egg-info/PKG-INFO
+casbin_mongoengine_adapter.egg-info/SOURCES.txt
+casbin_mongoengine_adapter.egg-info/dependency_links.txt
+casbin_mongoengine_adapter.egg-info/requires.txt
+casbin_mongoengine_adapter.egg-info/top_level.txt

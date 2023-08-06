@@ -1,0 +1,10 @@
+README.md
+setup.py
+onn/OnlineNeuralNetwork.py
+onn/__init__.py
+onn.egg-info/PKG-INFO
+onn.egg-info/SOURCES.txt
+onn.egg-info/dependency_links.txt
+onn.egg-info/not-zip-safe
+onn.egg-info/requires.txt
+onn.egg-info/top_level.txt

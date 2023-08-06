@@ -1,0 +1,12 @@
+pregistry/__init__.py,sha256=hET_zLK07NjeKDpmb6lgmJT30GsJr5FoBD5VxtIkaNw,92
+pregistry/_version.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+pregistry/classproperty.py,sha256=9D3obFX5NKSt_MHPpMuqCZebVFiCrNsb9Gab4gkxrFc,226
+pregistry/loader.py,sha256=QhsBdG3mCbhZHUT_7Zyfz-Em4zdMoBfJgTMz0BNIsKo,2504
+pregistry/plugin.py,sha256=BbXblfog4jQE96jUc9nuWAFjzQccQ6J3PXz0WryUv4A,2192
+pregistry/registry.py,sha256=JL0L4vd89Wjd5u8QU6ttKqZ_ELEpybFcVqXFzMZaC3Y,6267
+PluginRegistry-0.1.1.dist-info/LICENSE.txt,sha256=RWUdavRcZ0s53o-1lRPPAyyF7RUS7lf1I8xblQ-AUGY,1070
+PluginRegistry-0.1.1.dist-info/METADATA,sha256=wWI4o3dKGSlQ690DCsb94ngwoMnqbxi0NJCOM_9I98E,1368
+PluginRegistry-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+PluginRegistry-0.1.1.dist-info/top_level.txt,sha256=GjUld1JS3M3OupX-AiozuwWo66mAh-dOX-Cw7oFgpGo,10
+PluginRegistry-0.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+PluginRegistry-0.1.1.dist-info/RECORD,,

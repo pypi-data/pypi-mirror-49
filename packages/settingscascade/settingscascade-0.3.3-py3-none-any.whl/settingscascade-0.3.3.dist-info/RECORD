@@ -1,0 +1,9 @@
+settingscascade/__init__.py,sha256=s2m_7ezkjhtVZiCn6lhPyToa6jlxVMug6YaE-0Y6Pj8,451
+settingscascade/manager.py,sha256=dxLV7_hpy7214IvpnqSQX3OgHXm0AnkK2ZlLSiopTbg,6230
+settingscascade/schema.py,sha256=yaKC7gquAEFtynNMUipaStACDXCNu7LhVT30tgK_7Sc,3628
+settingscascade/selector.py,sha256=OREqCHcaFVkNlH1vDlvhgtiW-o1b6Mvqq6HbKKv7shY,5030
+settingscascade/utils.py,sha256=NlEgFr6BfVme8RuJSLkS0DitJTB8YnI682ynyZ_GZtY,136
+settingscascade-0.3.3.dist-info/LICENSE,sha256=knnqHe0gKpqG5AACFyMrbLkk94hPmaOXAdLBouuzMEs,1069
+settingscascade-0.3.3.dist-info/WHEEL,sha256=B9sUljbermATdnR9vRc7_PZudWzu8UpY6g74X8l4XFg,85
+settingscascade-0.3.3.dist-info/METADATA,sha256=oGrzSuTlc5yVQj3RypS4OpE6cpJaCVYpQt4_DdT67gs,2180
+settingscascade-0.3.3.dist-info/RECORD,,

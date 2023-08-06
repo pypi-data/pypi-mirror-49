@@ -1,0 +1,10 @@
+README.rst
+setup.py
+Star_Bot_utils.egg-info/PKG-INFO
+Star_Bot_utils.egg-info/SOURCES.txt
+Star_Bot_utils.egg-info/dependency_links.txt
+Star_Bot_utils.egg-info/top_level.txt
+starbotutils/__init__.py
+starbotutils/db.py
+starbotutils/embed.py
+starbotutils/main.py

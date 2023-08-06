@@ -1,0 +1,65 @@
+- model: default
+
+- model: include-logo
+  sourcecode:
+    - include: subdir/logo.png
+
+- model: exclude-py
+  sourcecode:
+    - exclude: '*.py'
+
+- model: exclude-all
+  sourcecode:
+    - exclude: '*'
+
+- model: only-py
+  sourcecode: '*.py'
+
+- model: only-py2
+  sourcecode:
+    - exclude: '*'
+    - include: '*.py'
+
+- model: py-and-guild
+  sourcecode:
+    - exclude: '*'
+    - include:
+        - '*.py'
+        - 'guild.yml'
+
+- model: model-and-op
+  sourcecode:
+    - include: subdir/logo.png
+  operations:
+    op:
+      main: guild.pass
+      sourcecode:
+        - exclude: ['*.py', 'a.*']
+
+- model: disable
+  sourcecode: []
+  operations:
+    op: guild.pass
+
+- model: disable2
+  sourcecode: no
+
+- model: model-disable-op-enable
+  sourcecode: no
+  operations:
+    op:
+      main: guild.pass
+      sourcecode: '*.py'
+
+- model: model-enable-op-disable
+  sourcecode: '*'
+  operations:
+    op:
+      main: guild.pass
+      sourcecode: no
+
+- model: alt-root
+  sourcecode:
+    root: subdir
+  operations:
+    op: guild.pass

@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: lpschedule-generator
+Version: 0.10.0.dev2
+Summary: LibrePlanet schedule generator
+Home-page: https://notabug.org/rsd/lpschedule-generator/
+Author: rsiddharth
+Author-email: rsd@gnu.org
+License: Public Domain
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: BSD :: OpenBSD
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Requires-Dist: mistune
+Requires-Dist: Jinja2
+Requires-Dist: beautifulsoup4
+Requires-Dist: unidecode
+Requires-Dist: icalendar
+Requires-Dist: pytz
+
+lpschedule-generator
+====================
+
+Python package that enables the FSF_ to write the LibrePlanet_
+schedule in Markdown_.
+
+See "Installation_" to get started.
+
+.. _Installation: https://ricketyspace.net/lpschedule-generator/install
+.. _FSF: https://fsf.org
+.. _LibrePlanet: https://libreplanet.org/conference
+.. _Markdown: https://daringfireball.net/projects/markdown
+
+

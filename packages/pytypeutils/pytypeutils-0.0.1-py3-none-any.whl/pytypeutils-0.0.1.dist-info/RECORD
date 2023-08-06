@@ -1,0 +1,9 @@
+pytypeutils/__init__.py,sha256=fu5rlYd9DzMedr7zc1kQ0avEGqE3iYYJb7DcG0v7pTk,3632
+pytypeutils/np_checks.py,sha256=t7_ReILSn0a4oTZtLoq_ThM-D_mDwT4q4DJG6NUXU8g,1454
+pytypeutils/torch_checks.py,sha256=h2Q3Pa3SlbDndLk23SN3HoJzPCqOyXxYkdbAxa_3fgc,2138
+pytypeutils/utils.py,sha256=jxrsnUccwee-9OPPFpEtP2Lj6WEYsmEGzgKp0tNj8Hc,2839
+pytypeutils-0.0.1.dist-info/LICENSE.txt,sha256=oZ1YqqsVxNABnladHAc9G1KG_dN9vu56WKfRrnYEWuE,7167
+pytypeutils-0.0.1.dist-info/METADATA,sha256=XTv1J2hP1BW5XBl0jHSr7aM9AdMsaGEB3lqOTbXZte8,8101
+pytypeutils-0.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pytypeutils-0.0.1.dist-info/top_level.txt,sha256=LVsADbUoy3bKXnn41DtXvOwxtqx_Zj1oQ-Yb39AT5e8,12
+pytypeutils-0.0.1.dist-info/RECORD,,

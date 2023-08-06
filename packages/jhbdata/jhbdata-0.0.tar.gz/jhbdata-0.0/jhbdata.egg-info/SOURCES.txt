@@ -1,0 +1,8 @@
+setup.py
+jhbdata/__init__.py
+jhbdata.egg-info/PKG-INFO
+jhbdata.egg-info/SOURCES.txt
+jhbdata.egg-info/dependency_links.txt
+jhbdata.egg-info/not-zip-safe
+jhbdata.egg-info/requires.txt
+jhbdata.egg-info/top_level.txt

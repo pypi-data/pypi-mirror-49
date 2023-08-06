@@ -1,0 +1,9 @@
+Qt.py
+tpPyUtils
+tpDccLib
+
+[dev]
+wheel
+
+[test]
+pytest

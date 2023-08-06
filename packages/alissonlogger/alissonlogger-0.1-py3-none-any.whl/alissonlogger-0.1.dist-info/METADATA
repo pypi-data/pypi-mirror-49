@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: alissonlogger
+Version: 0.1
+Summary: pacote criado para demonstrar o pypi
+Home-page: https://github.com/AlissonMMenezes/alisson_cli
+Author: Alisson Machado
+Author-email: alisson.machado@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+modulo de logs do curso de python
+
+

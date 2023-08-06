@@ -1,0 +1,6 @@
+xlrd
+xlwt
+redis
+thrift
+pykafka
+redis-py-cluster

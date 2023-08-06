@@ -1,0 +1,8 @@
+README.md
+setup.py
+dfsmpy/__init__.py
+dfsmpy/machine.py
+dfsmpy.egg-info/PKG-INFO
+dfsmpy.egg-info/SOURCES.txt
+dfsmpy.egg-info/dependency_links.txt
+dfsmpy.egg-info/top_level.txt

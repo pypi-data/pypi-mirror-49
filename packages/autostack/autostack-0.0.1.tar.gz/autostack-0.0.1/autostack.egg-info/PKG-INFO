@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: autostack
+Version: 0.0.1
+Summary: Automatically detect python errors and search Stack Overflow.
+Home-page: https://github.com/elijahsawyers/AutoStack
+Author: Elijah Sawyers, Benjamin Sanders, Caleb Werth
+Author-email: elijahsawyers@gmail.com, ben.sanders97@gmail.com, cwerth@crimson.ua.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix

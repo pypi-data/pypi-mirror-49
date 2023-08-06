@@ -1,0 +1,3 @@
+[console_scripts]
+cellphonedbu = cellphonedb.cellphonedb_cli:cli
+

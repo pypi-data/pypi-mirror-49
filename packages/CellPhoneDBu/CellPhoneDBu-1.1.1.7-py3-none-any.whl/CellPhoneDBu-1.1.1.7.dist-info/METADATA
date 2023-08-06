@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: CellPhoneDBu
+Version: 1.1.1.7
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Lee Hong Kai
+Author-email: leehongkai@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: click (<6.7.99,>=6.7)
+Requires-Dist: dask-jobqueue (==0.4.1)
+Requires-Dist: dask (==1.1.4)
+Requires-Dist: numpy (==1.16.3)
+Requires-Dist: pandas (<0.23.99,>=0.23)
+Requires-Dist: PyYAML (<3.13.99,>=3.13)
+Requires-Dist: scipy (==1.2.1)
+
+UNKNOWN
+
+

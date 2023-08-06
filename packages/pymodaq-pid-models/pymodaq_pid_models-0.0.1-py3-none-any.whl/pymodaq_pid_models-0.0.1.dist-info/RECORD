@@ -1,0 +1,10 @@
+pymodaq_pid_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymodaq_pid_models/version.py,sha256=drJeReoVvzVx30VejD74BQzqUoZ9cYnBGGuX1ViTJgs,3097
+pymodaq_pid_models/models/PIDModelMichelsonDemo.py,sha256=xSOvYF-gTR1DaEWY8dvk0MJXYSCFD5IGppaIfLUx0WM,18176
+pymodaq_pid_models/models/PIDModelMock.py,sha256=lPTphG516aUEH0x5e4bRQ-a6iwkYLGUM6fkD4LG5NrQ,2879
+pymodaq_pid_models/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymodaq_pid_models-0.0.1.dist-info/LICENSE,sha256=MejS8UxZ3Y1b7IeinlpGhAhaZVIXueVCuV-bm7RvsGA,1062
+pymodaq_pid_models-0.0.1.dist-info/METADATA,sha256=1pWGh9AcptKoSeR15c7Apmo3Owk1SnXnhj0Lz61WMK0,1224
+pymodaq_pid_models-0.0.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+pymodaq_pid_models-0.0.1.dist-info/top_level.txt,sha256=-pOeQPS034oo4QNBU7PVorGnknQrprGORMFSDor42wQ,19
+pymodaq_pid_models-0.0.1.dist-info/RECORD,,

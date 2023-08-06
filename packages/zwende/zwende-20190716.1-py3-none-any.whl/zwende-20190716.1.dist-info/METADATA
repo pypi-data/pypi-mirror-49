@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: zwende
+Version: 20190716.1
+Summary: Zero width character encoder/decoder.
+Home-page: https://github.com/daxm/zwende
+Author: Dax Mickelson
+Author-email: dmickels@cisco.com
+License: BSD
+Keywords: encode encoding zero-width decoder secret
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+
+Sometimes it is beneficial to hide a 'plain text' message within plain text.  This module will
+do just that.
+

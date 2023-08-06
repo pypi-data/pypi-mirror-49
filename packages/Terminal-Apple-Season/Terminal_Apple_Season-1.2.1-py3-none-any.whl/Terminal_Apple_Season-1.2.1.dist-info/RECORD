@@ -1,0 +1,13 @@
+apple_season/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apple_season/apple.py,sha256=P9K1pkcKro0QGGGDuPwhp7p9DXuTXXVrElWF8z3k_uE,2365
+apple_season/assets.py,sha256=0kqC1_8CfM1A9j73DRsaKzQcHhWBx06okvN3N1owWZY,3048
+apple_season/basket.py,sha256=lDdAGPfOmDIO4SrtuKHLIfHyCor7sMC44HXsWjAh1eQ,1170
+apple_season/caught.wav,sha256=DY3vwrWy4Z8mGVwvsgH4TQKIxJqcu-6czFE9taPHuA8,56950
+apple_season/coords.py,sha256=9wRwp4rv4v9RY322X_gnQRoFuYu-zKSglpyzJJ8jPX4,1656
+apple_season/game.py,sha256=sK05b2WO3w-vv6ytqG8_k72ZiIUEYkw-3wHc9wcZ75c,4450
+apple_season/main.py,sha256=xwVKOVber03qevBC9o8HMrrDyPWHd0HcTlfBKD26mEM,4633
+Terminal_Apple_Season-1.2.1.dist-info/LICENSE.txt,sha256=LnUxc3yB8Tk8aF45OZEmLAOQD_nBiL-J4ZPvL5tmHHc,1078
+Terminal_Apple_Season-1.2.1.dist-info/METADATA,sha256=fHP0PN08NpSrM8ZakRni47wIcSRbTvYgx_jel8d9ZCE,1256
+Terminal_Apple_Season-1.2.1.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+Terminal_Apple_Season-1.2.1.dist-info/top_level.txt,sha256=rhGo7sMsa7RoOBsrW66TTwRvzVq1X38f9HuwPuj94p8,13
+Terminal_Apple_Season-1.2.1.dist-info/RECORD,,

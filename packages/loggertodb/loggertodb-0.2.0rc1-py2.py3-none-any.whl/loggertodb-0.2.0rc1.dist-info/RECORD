@@ -1,0 +1,10 @@
+loggertodb/__init__.py,sha256=3WbDd_u8UnWwNXBnDd2Y_P5gSqDzZUlPy5q6Ekmgzk4,102
+loggertodb/cli.py,sha256=vKL0xmGpUntXXfCkfvgsnm9cKwB1uFLumcuiMv9rrDg,3789
+loggertodb/exceptions.py,sha256=B4C3dfXtjbYXBr7TZfvjjPjewuUysVx12XuFAVJ4Xgk,160
+loggertodb/meteologgerstorage.py,sha256=y1TAXzH71a4FGRLw6iUzd9XjnPCpaV1IfGCNkGt8uSk,27856
+loggertodb-0.2.0rc1.dist-info/LICENSE.rst,sha256=3PLYf-UNAQ6gGm2U7vZXUuGP0sy6rbt7yqOcSpdHrkk,759
+loggertodb-0.2.0rc1.dist-info/METADATA,sha256=vwecLJ0wjdVqS7OfvuN8s31-tQn86p7t2_XUQuNiT10,3209
+loggertodb-0.2.0rc1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+loggertodb-0.2.0rc1.dist-info/entry_points.txt,sha256=XMXrp3UEw4KFJDPs2gktPmPktHkxmYypGYK_K4x5-Ks,52
+loggertodb-0.2.0rc1.dist-info/top_level.txt,sha256=U4qgBUwJla-0HgmwDHzye7rXGiLnuGn6bZND-KmZP1o,11
+loggertodb-0.2.0rc1.dist-info/RECORD,,

@@ -1,0 +1,10 @@
+README.md
+setup.py
+pandastabletooltip/__init__.py
+pandastabletooltip/main.py
+pandastabletooltip.egg-info/PKG-INFO
+pandastabletooltip.egg-info/SOURCES.txt
+pandastabletooltip.egg-info/dependency_links.txt
+pandastabletooltip.egg-info/top_level.txt
+tests/__init__.py
+tests/test_main.py

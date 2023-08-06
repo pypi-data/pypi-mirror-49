@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: pandastabletooltip
+Version: 0.0.1
+Summary: Pandas Table Tooltip is a Python librarythat only adds tooltips to Pandas tables on Jupyter.
+Home-page: https://github.com/simon-ritchie/pandas-table-tooltip
+Author: simon-ritchie
+Author-email: 
+Maintainer: simon-ritchie
+Maintainer-email: 
+License: MIT
+Description: Pandas Table Tooltip is a Python librarythat only adds tooltips to Pandas tables on Jupyter. For more information, please see github README: https://github.com/simon-ritchie/pandas-table-tooltip
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License

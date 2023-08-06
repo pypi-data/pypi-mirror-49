@@ -1,0 +1,8 @@
+click
+numpy
+sklearn
+pandas
+matplotlib
+networkx
+community
+python-louvain

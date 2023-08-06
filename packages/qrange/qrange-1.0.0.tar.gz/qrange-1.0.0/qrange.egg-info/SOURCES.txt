@@ -1,0 +1,6 @@
+README.md
+setup.py
+qrange.egg-info/PKG-INFO
+qrange.egg-info/SOURCES.txt
+qrange.egg-info/dependency_links.txt
+qrange.egg-info/top_level.txt

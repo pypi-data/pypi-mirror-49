@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lightfly
+Version: 0.1.6
+Summary: A finance platform for china.
+Home-page: https://github.com/pypa/sampleproject
+Author: Weinan Tang
+Author-email: twn39@163.com
+License: GPLv3
+Description: Lightfly finance platform python client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown

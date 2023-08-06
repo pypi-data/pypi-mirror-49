@@ -1,0 +1,6 @@
+opencv-python
+numpy
+loguru
+scikit-image
+scikit-learn
+pyecharts

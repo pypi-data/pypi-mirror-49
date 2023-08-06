@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: duo-web
+Version: 1.3.0
+Summary: Duo Web SDK for two-factor authentication
+Home-page: https://github.com/duosecurity/duo_python
+Author: Duo Security, Inc.
+Author-email: support@duosecurity.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+
+UNKNOWN
+
+

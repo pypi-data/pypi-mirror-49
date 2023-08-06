@@ -1,0 +1,10 @@
+future
+h5py>=2.8
+jupyter
+matplotlib
+nbformat
+networkx
+numpy>=1.11.0
+pubchempy
+scipy>=1.1.0
+six

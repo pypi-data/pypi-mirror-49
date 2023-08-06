@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: waimoku
+Version: 0.0.2
+Summary: PythonScript to convert "Waimoku" participant information into "Yahoo! LODGE" participant list file format
+Home-page: UNKNOWN
+Author: Waimoku
+Maintainer: Waimoku
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+
+UNKNOWN
+
+

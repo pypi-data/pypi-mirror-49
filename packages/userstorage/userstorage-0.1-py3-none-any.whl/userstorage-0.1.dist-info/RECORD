@@ -1,0 +1,14 @@
+userstorage/__init__.py,sha256=PK4YFFb1nby5ajo9dyDNmb0zAfxctGR3KUoaP3rJw0M,286
+userstorage/__main__.py,sha256=U-KeXKy67ngvImYCwBUskvwqOcBIIxEi7eq1Iz7Bq2c,1353
+userstorage/backend.py,sha256=wUUK6YFvGAD2281RvumLudpjcYDTdTZd83sxcbyDIGc,2253
+userstorage/config.py,sha256=14EM6OJUMRWpX_Spj5XPHQYPiPSF-lUmTowD3qESR0s,901
+userstorage/file.py,sha256=KpLCwqRShd4K6Vu66SMA7nFW0LERC-6jqtV_2Xj6v2s,1280
+userstorage/loop.py,sha256=sIA50ONtOxd5I53xupZz5IMhR6K42h7cWV7d90c06Sg,3024
+userstorage/mount.py,sha256=ouSgRvbLLSf7TtOTiun0C7a-v2u9dpV0yTEFJFlJM54,2152
+userstorage/osutil.py,sha256=sVqYYdYNmMtRPABKxnskZKD6bzuZxfpjTy-Awab56Rc,709
+userstorage-0.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+userstorage-0.1.dist-info/METADATA,sha256=E1ZXgBENbYO9KLTiHX5oYS5bOtZoRKwrvXOTfH1yTsA,5173
+userstorage-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+userstorage-0.1.dist-info/entry_points.txt,sha256=h2kgIo3TqTtheOZONSxAuXYZ-inww5s9kFmDTDG_SBo,59
+userstorage-0.1.dist-info/top_level.txt,sha256=w4lUJsmG-n4mhpxus18UozcyxssErZbeZ2KNvZli_SE,12
+userstorage-0.1.dist-info/RECORD,,

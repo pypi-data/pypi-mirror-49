@@ -1,0 +1,6 @@
+README.md
+setup.py
+netwbase.egg-info/PKG-INFO
+netwbase.egg-info/SOURCES.txt
+netwbase.egg-info/dependency_links.txt
+netwbase.egg-info/top_level.txt

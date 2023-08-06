@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: netwbase
+Version: 0.0.5
+Summary: A small network DBMS
+Home-page: https://github.com/n0nliner/netwbase
+Author: n0nliner
+Author-email: vkusnisaharok@gmail.com
+License: UNKNOWN
+Description: Heeey, it's DBMS called "netbase"
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

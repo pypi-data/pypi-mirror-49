@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: show-contests
+Version: 1.0
+Summary: A basic command line tool to show the upcoming competitive programming contests
+Home-page: https://github.com/singlamohit1/show-contests
+Author: singlamohit1
+Author-email: singlamohit98@gmail.com
+License: Apache 2.0
+Description: # show-contests
+        
+        ----
+        ## About
+        This is a basic CLI that lists upcoming competitive programming contests.
+        - To install use `pip install show-contests`
+        - To List Contests use `show-contests --count n` where n is the no. of contests that you want to be listed. For eg. `show-contests --count 5` would list 5 upcoming contests. If count is not used by defualt 10 contests are listed.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

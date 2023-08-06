@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        show-contests=cli:cli
+    

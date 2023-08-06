@@ -1,0 +1,10 @@
+README.md
+cli.py
+setup.cfg
+setup.py
+show_contests.egg-info/PKG-INFO
+show_contests.egg-info/SOURCES.txt
+show_contests.egg-info/dependency_links.txt
+show_contests.egg-info/entry_points.txt
+show_contests.egg-info/requires.txt
+show_contests.egg-info/top_level.txt

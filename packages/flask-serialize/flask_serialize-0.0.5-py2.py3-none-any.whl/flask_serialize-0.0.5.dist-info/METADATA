@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: flask-serialize
+Version: 0.0.5
+Summary: Easy to use JSON serialization and update/create for Flask and SQLAlchemey.
+Home-page: https://github.com/Martlark/flask-serialize
+Author: Andrew Rowe
+Author-email: rowe.andrew.d@gmail.com
+License: Apache Software License
+Download-URL: https://github.com/Martlark/flask-serialize/archive/0.0.5.tar.gz
+Requires-Dist: EasyDict
+
+flask-serialize
+
+

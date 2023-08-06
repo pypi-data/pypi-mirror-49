@@ -1,0 +1,16 @@
+rename_ts_folder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rename_ts_folder/app.py,sha256=7kOr9_wwZEfh29ImQ1sls7SheTO9Lwep9NRkFM62YjU,1917
+rename_ts_folder/rename_folder.py,sha256=5rbgIetlK7kPeBfKG-_DXJNt93B-AB8hNHi7lPpxI9U,1649
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/clean_up.py,sha256=CaC8ps1luaKb-zfK8ivDZJRZKLuGQ3ksmc7IwMZOeRg,235
+tests/conftest.py,sha256=79y2Ifc7h3BflMAjNNx5q1A8glPyn1VR6bJr2keGQ6o,451
+tests/run_test.py,sha256=_DvlzWOAYkcOYJaBAgWt0mjCBXwuRVH6OybU7IPqgmg,476
+tests/setup_tests.py,sha256=7tnw1Z3TfF9wrgyVCwK5OU3U1_djD4-HV48Xeeq6JKw,569
+tests/test_1.py,sha256=WhC0srUB-uLc9ofXl_2DGE39yNFmLztutmUFv4rr4f8,443
+tests/test_2.py,sha256=aRSXd1QqlBdzBVE4nCUtWkroZoqN4WeW1YpOcXep6xs,523
+rename_ts_folder-0.2.0.dist-info/LICENSE,sha256=KiHRRl09cMJVmrDcPHLZMDbzhxUVOVTNJFoKZ9123h8,1059
+rename_ts_folder-0.2.0.dist-info/METADATA,sha256=1ldw3c7qF7ZttJuZdfGTynnPuFNywSubp1vXJ0HFGd4,260
+rename_ts_folder-0.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+rename_ts_folder-0.2.0.dist-info/entry_points.txt,sha256=864wYkcjwvbx2xam6WcvazJxpFc7mHkaiuUV5ZpPww0,52
+rename_ts_folder-0.2.0.dist-info/top_level.txt,sha256=SOdI3mC-Mh21olIQ99tOFNQFqn07Pz9nDIjgjdatOfs,23
+rename_ts_folder-0.2.0.dist-info/RECORD,,

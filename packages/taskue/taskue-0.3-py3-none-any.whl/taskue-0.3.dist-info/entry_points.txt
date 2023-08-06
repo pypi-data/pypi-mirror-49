@@ -1,0 +1,3 @@
+[console_scripts]
+taskue = taskue.cli:cli
+

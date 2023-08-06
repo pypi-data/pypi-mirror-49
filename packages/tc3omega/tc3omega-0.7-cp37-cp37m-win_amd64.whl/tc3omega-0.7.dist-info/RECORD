@@ -1,0 +1,17 @@
+tc3omega/__init__.py,sha256=BHRVYBxXuOD1Q2MGx1ONStAyWxlSRNanTkRdj57iQzA,20
+tc3omega/analysis.py,sha256=jJ6KsigjqUb9VV0JoDOPCNvKkRHtVuQPQI7cReSFa4g,9756
+tc3omega/cli.py,sha256=JCtBjPFKUtghG5mPZL60r6jbXbQuBh2pY_Ao84Dsp_k,11270
+tc3omega/constants.py,sha256=1WDkcpwkxJgkuKAYrovvX5zgRfRt1qjo60xLRYTRass,6361
+tc3omega/datareader.py,sha256=Wr6O8u9dfre3FqSFn66YLolh1VfBzwuHcfnNNZREmHo,1471
+tc3omega/integrators.cp37-win_amd64.pyd,sha256=qYK_lcTMyGF-sBQXvuvQfZZaMs-s3AsO2KKxIrxkLQg,188928
+tc3omega/logmaker.py,sha256=zF1AjDF0DJtU41QiX5V9dHYuFBjvSS3Ej7pgdCOpyDg,5981
+tc3omega/example/measured_data_example.csv,sha256=hwAiQyhQb9otEMDP-Tte3xxE6l4BQYT7HnE_dIGX7tg,977
+tc3omega/example/sample_file_example.txt,sha256=BUREJAboQh9XQxn5JXV7z1V-cxeH0hfkSXKEOqmbWmI,1044
+tc3omega/example/sample_file_example.yml,sha256=BUREJAboQh9XQxn5JXV7z1V-cxeH0hfkSXKEOqmbWmI,1044
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_runexample.py,sha256=LbYpupSbDfwZZY2McJMOiE0hSPfqW57Kg-CnaaxnFog,1419
+tc3omega-0.7.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+tc3omega-0.7.dist-info/METADATA,sha256=jn4uS6zSFbnJmaYfoTmfPwj-PlKrPubp-qVkpEknYcU,653
+tc3omega-0.7.dist-info/WHEEL,sha256=rpJIxsZQulJdxSTRRlB5eKYFBr_5T7UwADMbZS3uepA,106
+tc3omega-0.7.dist-info/top_level.txt,sha256=NeZgjaBJW-lGk8tS4rsis6d_2E-R7PLc5M0ah1prLRI,75
+tc3omega-0.7.dist-info/RECORD,,

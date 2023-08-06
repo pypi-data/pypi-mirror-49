@@ -1,0 +1,43 @@
+# ----------------------------------------------------------------------------
+# EXAMPLE/TEMPLATE FOR CONFIGURATION FILES
+# NOTE: create your own config by changing *values* corresponding to each key
+# NOTE: only 'LAYER no. x' keys can be changed (ex: silicon_oxide1)
+# ----------------------------------------------------------------------------
+
+# PARAMETERS FOR MICROHEATER
+general:
+  name: example
+heater:
+  # [m]
+  line_length: 1.0002E-3
+  line_width: 24.42E-6
+  # [Ohm/K]
+  dRdT: 0.080216622
+
+# PARAMETERS FOR SHUNT RESISTOR
+shunt_resistor:
+  # [Ohm]
+  R: 0.099
+
+# THERMAL PARAMETERS FOR LAYERS ON SAMPLE
+layers:
+  # LAYER #1
+  silicon_oxide1:
+    thickness: 810E-9
+    heat_capacity: 1475600
+  # LAYER #2
+  silicon:
+    thickness: 287.5E-6
+    heat_capacity: 1630300
+  # LAYER #3
+  silicon_oxide2:
+    thickness: 810E-9
+    heat_capacity: 1475600
+  # LAYER #4 (artifical layer to model interface)
+  silicon_oxide_void:
+    thickness: 1E-9
+    heat_capacity: 100000
+  # LAYER #5
+  aluminum:
+    thickness: 3E-2
+    heat_capacity: 2430000

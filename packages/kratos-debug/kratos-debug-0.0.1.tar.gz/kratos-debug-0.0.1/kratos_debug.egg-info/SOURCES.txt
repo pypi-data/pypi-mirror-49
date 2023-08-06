@@ -1,0 +1,7 @@
+kratos-debug
+setup.py
+kratos_debug.egg-info/PKG-INFO
+kratos_debug.egg-info/SOURCES.txt
+kratos_debug.egg-info/dependency_links.txt
+kratos_debug.egg-info/requires.txt
+kratos_debug.egg-info/top_level.txt

@@ -1,0 +1,111 @@
+#!/usr/bin/env python 
+
+import sys
+import os
+import json
+from PyQt5 import QtCore, QtWidgets, QtGui
+
+
+class CustomMainWindow(QtWidgets.QMainWindow):
+    def __init__(self, filename, debug_filename):
+        super().__init__()
+
+        QtCore.QMetaObject.connectSlotsByName(self)
+
+        self.central_widget = QtWidgets.QWidget(self)
+        self.v_layout = QtWidgets.QVBoxLayout(self.central_widget)
+
+        self.h_layout = QtWidgets.QHBoxLayout()
+        self.h_layout.setContentsMargins(0, 0, 0, 0)
+        self.verilog_src_viewer = QtWidgets.QTextBrowser(self.central_widget)
+        self.h_layout.addWidget(self.verilog_src_viewer)
+
+        self.source_viewer = QtWidgets.QTabWidget(self.central_widget)
+        self.h_layout.addWidget(self.source_viewer)
+        self.v_layout.addLayout(self.h_layout)
+
+        self.setCentralWidget(self.central_widget)
+        QtCore.QMetaObject.connectSlotsByName(self)
+
+        # load the source file
+        with open(filename) as f:
+            src = f.read()
+            self.verilog_src_viewer.setText(src)
+
+        # load the debug file
+        with open(debug_filename) as f:
+            self.debug = json.load(f)
+
+        # highlight every line has debug info
+        fmt = QtGui.QTextCharFormat()
+        fmt.setBackground(QtGui.QColor(100, 255, 100))
+        for line_num in self.debug:
+            line_num = int(line_num) - 1
+            block = self.verilog_src_viewer.document().findBlockByLineNumber(
+                line_num)
+            block_pos = block.position()
+            cursor = QtGui.QTextCursor(self.verilog_src_viewer.document())
+            cursor.setPosition(block_pos)
+            cursor.select(QtGui.QTextCursor.LineUnderCursor)
+            cursor.setCharFormat(fmt)
+        self.fmt = fmt
+
+        # hook up events
+        self.verilog_src_viewer.cursorPositionChanged.connect(
+            self.__on_text_browser_cursor_changed)
+
+        self.__text_viewers = []
+
+        self.show()
+
+    def __on_text_browser_cursor_changed(self):
+        cursor = self.verilog_src_viewer.textCursor()
+        line = cursor.blockNumber() + 1
+        line = str(line)
+        for viewer in self.__text_viewers:
+            viewer.deleteLater()
+        self.__text_viewers.clear()
+        self.source_viewer.clear()
+        if line in self.debug:
+            info = self.debug[line]
+            for fn, ln in info:
+                base_name = os.path.basename(fn)
+                viewer = QtWidgets.QTextBrowser(self.central_widget)
+                self.source_viewer.addTab(viewer, base_name)
+                with open(fn) as f:
+                    src = f.read()
+                    viewer.setText(src)
+                # roll the cursor and highlight the line
+                viewer.moveCursor(QtGui.QTextCursor.End)
+                cursor = QtGui.QTextCursor(
+                    viewer.document().findBlockByLineNumber(ln - 1))
+                viewer.setTextCursor(cursor)
+                cursor.select(QtGui.QTextCursor.LineUnderCursor)
+                cursor.setCharFormat(self.fmt)
+
+                self.__text_viewers.append(viewer)
+
+
+def __main():
+    if len(sys.argv) != 2:
+        print("Usage:", sys.argv[0], "module.sv", file=sys.stderr)
+        exit(1)
+
+    filename = sys.argv[1]
+    if not os.path.isfile(filename):
+        print(filename, "not found", file=sys.stderr)
+        exit(1)
+    debug_filename = filename + ".debug"
+    if not os.path.isfile(filename):
+        print("Debug file:", debug_filename, "not found", file=sys.stderr)
+        exit(1)
+
+    app = QtWidgets.QApplication(sys.argv)
+    QtWidgets.QApplication.setStyle(QtWidgets.QStyleFactory.create('Fusion'))
+    gui = CustomMainWindow(filename, debug_filename)
+
+    sys.exit(app.exec_())
+
+
+if __name__ == '__main__':
+    __main()

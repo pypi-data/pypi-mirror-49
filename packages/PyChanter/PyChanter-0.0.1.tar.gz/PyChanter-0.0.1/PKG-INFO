@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: PyChanter
+Version: 0.0.1
+Summary: A small Scintilla based python editor
+Home-page: https://github.com/hariharan849/PyChanter
+Author: Hariharan
+Author-email: hari.haran849@example.com
+License: UNKNOWN
+Description: =========================
+        Python Editor Application
+        =========================
+        
+        A simple QScintilla based Python Editor
+        
+        Prerequiste:
+        
+        - Python
+        - PyQt5
+        - QtConsole
+        
+        Launch
+            Run **python launchApplication.py**
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,7 @@
+README.md
+setup.py
+PyChanter.egg-info/PKG-INFO
+PyChanter.egg-info/SOURCES.txt
+PyChanter.egg-info/dependency_links.txt
+PyChanter.egg-info/requires.txt
+PyChanter.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cliutil
+Version: 0.1.1
+Summary: A package that contains a lot of presets for cli interfaces
+Home-page: UNKNOWN
+Author: Aayla Pozho
+Author-email: aayla.pozho@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# cliutil
+A pack of premade functions to make command-line user interfaces easier to build and take up less of your script
+

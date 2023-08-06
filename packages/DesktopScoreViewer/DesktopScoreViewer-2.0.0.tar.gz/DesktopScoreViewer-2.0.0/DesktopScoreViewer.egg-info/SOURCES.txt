@@ -1,0 +1,12 @@
+README.rst
+setup.py
+DesktopScoreViewer/GameWindow.py
+DesktopScoreViewer/MenuWindow.py
+DesktopScoreViewer/ScoreWindow.py
+DesktopScoreViewer/__init__.py
+DesktopScoreViewer/__main__.py
+DesktopScoreViewer.egg-info/PKG-INFO
+DesktopScoreViewer.egg-info/SOURCES.txt
+DesktopScoreViewer.egg-info/dependency_links.txt
+DesktopScoreViewer.egg-info/requires.txt
+DesktopScoreViewer.egg-info/top_level.txt

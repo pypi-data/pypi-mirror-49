@@ -1,0 +1,137 @@
+{% extends 'adminpanel/inc/layout.html'%}
+{% load static%}
+{% block title%} Edit Menu{% endblock %}
+{% block bodyclass%}hold-transition skin-light-blue sidebar-mini{% endblock %}
+{% block body%}
+
+	<div class="content-wrapper">
+		<section class="content-header">
+			<h1>
+			Menus
+			<small>List</small>
+			</h1>
+			<ol class="breadcrumb">
+				<li><a href="{% url 'adminpanel_dashboard' %}"><i class="fa fa-dashboard"></i> Home</a></li>
+				<li><a href="{% url 'admin_menus' %}">Menus</a></li>
+				<li class="active">Add New Menu</li>
+			</ol>
+		</section>
+		<section class="content" id="menu--edit">
+			<form action="{% url 'adminpanel_update_menu'%}" method="POST" class="menu--submit--form">
+				{% csrf_token %}
+				<input type="hidden" name="id"  value="{{data.id}}"/>
+				<div class="row">
+					<div class="col-md-12 col-lg-12">
+					<div class="add_new_bg">
+						<div class="form-group">
+								<label>Menu Title</label>
+								<input type="text" class="form-control" name="menu_title" value="{{data.menu_title}}">
+						</div>
+						<div class="form-group">
+								<label>Menu Slug</label>
+								<input type="text" class="form-control" name="menu_slug"  value="{{data.menu_slug}}">
+						</div>
+						<div class="card">
+							<div class="card-header">
+								<div class="float-right">
+								<button id="btnOutput" type="button" class="btn btn-success"> Update Menus</button>
+								<button id="btnReload" type="button" class="btn btn-success" style="display:none"> Reload Menu</button>
+								</div>
+							</div>
+							<div class="card-body" style="display:none">
+								<div class="form-group"><textarea name="menu_content" id="out" class="form-control" cols="50" rows="10">{{data.menu_content}}</textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</form>
+		</section>		
+		<section class="content menus_page">
+			<div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-header"><h5>Menu</h5>
+                           
+                        </div>
+                        <div class="card-body">
+                            <ul id="myEditor" class="sortableLists list-group">
+                            </ul>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-primary mb-3">
+                        <div class="card-header">
+							<h5>Edit item</h5>
+						</div>
+                        <div class="card-body">
+                            <form id="frmEdit" class="form-menu">
+                                <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <label for="text">Text</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control item-menu" name="text" id="text" placeholder="Text">
+                                        <div class="input-group-append">
+                                            <button type="button" id="myEditor_icon" class="btn btn-outline-secondary"></button>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="icon" class="item-menu">
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <label for="href">URL</label>
+                                    <input type="text" class="form-control item-menu" id="href" name="href" placeholder="URL">
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <label for="target">Target</label>
+                                    <select name="target" id="target" class="form-control item-menu">
+                                        <option value="_self">Self</option>
+                                        <option value="_blank">Blank</option>
+                                        <option value="_top">Top</option>
+                                    </select>
+                                </div>
+								<div class="col-sm-6 form-group">
+                                    <label for="title">Menu Class</label>
+                                    <input type="text" name="menu_class" class="form-control item-menu" id="menu_class" placeholder="Menu Class">
+                                </div>
+								<div class="col-sm-6 form-group">
+                                    <label for="title">Menu ID</label>
+                                    <input type="text" name="menu_id" class="form-control item-menu" id="menu_id" placeholder="Menu ID">
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <label for="title">Tooltip</label>
+                                    <input type="text" name="title" class="form-control item-menu" id="title" placeholder="Tooltip">
+                                </div>
+								<div class="col-sm-12 form-group">
+                                    <label for="menu_attr">Menu Data Attribute</label>
+                                    <textarea type="text" name="menu_attr" class="form-control item-menu" id="menu_attr" ></textarea>
+                                </div>
+								<div class="col-sm-12 form-group">
+                                  
+                                    <label for="access_level">Menu Visible</label>
+                                    <select name="access_level" id="access_level" class="form-control item-menu">
+                                        <option value="">-Select-</option>
+                                        <option value="afterlogin">After Login</option>
+                                        <option value="beforelogin">Before Login</option>
+                                    </select>
+									
+                                </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" id="btnUpdate" class="btn btn-primary" disabled><i class="fa fa-refresh"></i> Update</button>
+                            <button type="button" id="btnAdd" class="btn btn-success"><i class="fa fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+		</section>
+	</div>
+
+{% endblock %}

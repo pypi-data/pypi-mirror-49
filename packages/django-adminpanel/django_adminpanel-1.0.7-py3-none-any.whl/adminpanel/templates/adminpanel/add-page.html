@@ -1,0 +1,133 @@
+{% extends 'adminpanel/inc/layout.html'%}
+{% load static%}
+{% load query_params%}
+{% load admin_params %}
+{% block title%} Add Page {% endblock %}
+{% block bodyclass%}hold-transition skin-light-blue sidebar-mini{% endblock %}
+{% block body%}
+     
+	<div class="content-wrapper">
+		<section class="content-header">
+		  <h1>
+			Add New 
+			<small>Page</small>
+		  </h1>
+		  <ol class="breadcrumb">
+			<li><a href="{% url 'adminpanel_dashboard' %}"><i class="fa fa-dashboard"></i> Home</a></li>
+			<li><a href="{% url 'pages' %}">Pages</a></li>
+			<li class="active">Add New Page</li>
+		  </ol>
+		</section>
+		<section class="content">
+			<form action="{% url 'adminpanel_submit_page'%}" method="POST">
+				{% csrf_token %}
+				<div class="row">
+					<div class="col-md-8 col-lg-8">
+						<div class="add_new_bg">
+							<div class="form-group">
+								<label>Name</label>
+								<input type="text" class="form-control get_page_title" name="page_title">
+							</div>
+							<div class="form-group">
+								<label>Page URL</label>
+								<input type="text" class="form-control set_page_title" name="page_slug">
+							</div>
+							<div class="form-group">
+								<label>Page sub Heading</label>
+								<input type="text" class="form-control" name="page_subheading">
+							</div>
+							
+							<div class="form-group">
+								<label>Page Excerpt</label>
+								<textarea class="form-control" name="page_excerpt"></textarea>
+							</div>
+							
+							<div class="form-group">
+								<label>Page Description</label>
+								<textarea class="form-control post_editor" name="page_description"></textarea>
+							</div>
+							
+							{% if 'pages'|template_exists == True %}
+								{% include 'adminpanel/pages/pages.html' %}
+							{% endif %}
+							</div>
+						<br/>
+						<div class="add_new_bg">						
+						<div class="form-group">
+							<fieldset class="meta">
+								<legend> Meta Tag</legend>
+								<div class="form-group">
+									<label>Meta Title</label>
+									<input type="text" class="form-control" name="meta_title" value="">
+								</div>
+								<div class="form-group">
+									<label>Meta Keyword</label>
+									<input type="text" class="form-control" name="meta_keyword" value="">
+								</div>
+								<div class="form-group">
+									<label>Meta Description</label>
+									<textarea type="text" class="form-control" name="meta_description"> </textarea>
+								</div>
+							</fieldset>
+							</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4">
+							<div class="box box-info border">
+								<div class="box-header">
+									<h3 class="box-title transform">Page Order</h3>
+							   </div>
+								<div class="sidebar-section">
+									<div class="form-group">
+									<label>Page Order</label>
+									<input type="number" class="form-control" name="page_order" value="0">
+								</div>
+								</div>
+							</div>
+							<div class="box box-info border">
+								<div class="box-header">
+									<h3 class="box-title transform">Page Visibility</h3>
+							   </div>
+								<div class="sidebar-section">
+										<div class="form-group">
+											<label>Visibility </label>
+											   <select class="form-control select2 page_visible" name="page_visible">
+													  <option value="">--Select--</option>
+													  <option value="beforelogin">Before Login</option>
+													  <option value="afterlogin">After Login</option>
+												</select>
+										 </div>
+										 <div class="form-group page_accesslevel" style="display:none">
+											<label>Page Access Level</label>
+											   <select class="form-control select2" name="page_access_level" multiple="true" size="4">
+													{% user_roles %}
+												</select>
+										 </div>
+										 <div class="form-group">
+												<label>Status</label>
+												<select class="form-control select2 c_required" name="page_status">
+												<option value="select">--Select--</option>
+												<option value="publish">Publish</option>
+												<option value="unpublish">Unpublish</option>
+												</select>
+											</div>	
+											{% media_image %}
+											{% if 'sidebar-pages'|template_exists == True %}
+											{% include 'adminpanel/pages/sidebar-pages.html' %}
+											{% endif %}
+											 <div class="text-right"><div class="submit_btn"><button class="btn btn-info" type="submit"> Save Page </button></div></div>
+										
+								</div>
+							</div>
+						
+						</div>
+			
+				</div>
+			</form>
+		
+		
+		</section>
+	
+	</div>
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% for menu in dataList %}
+    {% if menu.access_level == "afterlogin"%}
+		{% if request.user.is_authenticated == True  %}
+		<li id="{{menu.menu_id}}" class="{% if menu.children|length %}dropdown{%endif%}{% if menu.menu_class|length %} {{menu.menu_class}}{%endif%}{% if menudata.menu_class_li|length %} {{menudata.menu_class_li}}{%endif%}{% if request.path == menu.href %} active {% endif%}" >
+        <a href='{{menu.href}}' target='{{menu.target}}' title='{{menu.title}}' {{menu.menu_attr}}>
+				{% if menu.icon != "empty" %}	
+					<i class='{{menu.icon}}'></i>	
+				{% endif %}
+				{{menu.text}}
+		</a>
+        {% if menu.children|length %}
+			<i class='fa fa-chevron-down'></i>
+            <ul class="{{menudata.child_menu_class}}" id="{{menudata.child_menu_id}}" {{menudata.child_menu_attr}}>
+                {% include "adminpanel/menus/menu.html" with dataList=menu.children %}
+            </ul>
+        {% endif %}
+		</li>
+		{% endif %}	
+	{% elif menu.access_level == "beforelogin"%}
+		{% if request.user.is_authenticated == False  %}
+		<li id="{{menu.menu_id}}" class="{% if menu.children|length %}dropdown{%endif%}{% if menu.menu_class|length %} {{menu.menu_class}}{%endif%}{% if menudata.menu_class_li|length %} {{menudata.menu_class_li}}{%endif%}{% if request.path == menu.href %} active {% endif%}" >
+        <a href='{{menu.href}}' target='{{menu.target}}' title='{{menu.title}}' {{menu.menu_attr}}>
+				{% if menu.icon != "empty" %}	
+					<i class='{{menu.icon}}'></i>	
+				{% endif %}
+				{{menu.text}}
+		</a>
+        {% if menu.children|length %}
+			<i class='fa fa-chevron-down'></i>
+            <ul class="{{menudata.child_menu_class}}" id="{{menudata.child_menu_id}}" {{menudata.child_menu_attr}}>
+                {% include "adminpanel/menus/menu.html" with dataList=menu.children %}
+            </ul>
+        {% endif %}
+		</li>
+		{% endif %}	
+	{% else %}
+		<li id="{{menu.menu_id}}" class="{% if menu.children|length %}dropdown{%endif%}{% if menu.menu_class|length %} {{menu.menu_class}}{%endif%}{% if menudata.menu_class_li|length %} {{menudata.menu_class_li}}{%endif%}{% if request.path == menu.href %} active {% endif%}">
+        <a href='{{menu.href}}' target='{{menu.target}}' title='{{menu.title}}' {{menu.menu_attr}}>
+				{% if menu.icon != "empty" %}	
+					<i class='{{menu.icon}}'></i>	
+				{% endif %}
+				{{menu.text}}
+		</a>
+        {% if menu.children|length %}
+			<i class='fa fa-chevron-down'></i>
+            <ul class="{{menudata.child_menu_class}}" id="{{menudata.child_menu_id}}" {{menudata.child_menu_attr}}>
+                {% include "adminpanel/menus/menu.html" with dataList=menu.children %}
+            </ul>
+        {% endif %}
+    </li>
+	{% endif %}
+{% endfor %}

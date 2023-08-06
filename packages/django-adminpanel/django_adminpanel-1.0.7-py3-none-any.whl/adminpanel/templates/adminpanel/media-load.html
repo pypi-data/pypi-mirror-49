@@ -1,0 +1,9 @@
+<ul class="media_lib_list" data-load="#"> 
+{% if dataList %}
+	{% for data in dataList %}
+	<li class="attach_thumb" data-id="/{{data.image_url}}"><img src="/{{data.image_url}}" class="im-responsive"><i class="fa fa-trash delete_media_file" data-id="{{data.id}}"></i><span class="attach_filename">/{{data.image_url}}</span></li>
+	{% endfor %}
+{% endif %}
+</ul>
+<div class="popbox_paging" data-id="{{dataList.paginator.num_pages}}">
+</div>

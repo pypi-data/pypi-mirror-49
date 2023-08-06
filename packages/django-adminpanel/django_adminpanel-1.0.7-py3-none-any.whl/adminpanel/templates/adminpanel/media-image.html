@@ -1,0 +1,6 @@
+{% load static%}
+<div class="form-group"><div class="upload_image" data-field="upload_image_input {{imagename}}">
+{% if imageurl != None and imageurl != "" %}
+<img src="{{ imageurl }}" class="upload_img" title="click and remove it"/>
+{% endif %}
+<input type="hidden" name="{{imagename}}" class="upload_image_input" ><button class="upload_image" type="button">{{label}}</button></div></div>

@@ -1,0 +1,91 @@
+{% load static %}
+{% load query_params %}
+{% load admin_params %}
+<!DOCTYPE html>
+<html>
+
+<!-- Added by HTTrack -->
+<!-- /Added by HTTrack -->
+<head>
+   <title>{% block title %}{% endblock %}</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="{% static 'adminpanel/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'adminpanel/css/jquery-jvectormap.css' %}">
+  <link rel="stylesheet" href="{% static 'adminpanel/css/AdminLTE.min.css' %}">
+  <link rel="stylesheet" href="{% static 'adminpanel/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'adminpanel/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'adminpanel/css/_all-skins.min.css' %}">
+  <link rel="stylesheet" href="{% static 'adminpanel/css/jquery-te-1.4.0.css' %}">
+  <link rel="stylesheet" href="{% static 'adminpanel/css/menu/bootstrap-iconpicker.css' %}">
+</head>
+<body class="{% block bodyclass%}{% endblock %}">
+	{% if user.is_authenticated == True and  user.is_superuser == True %}
+	 <div class="wrapper">
+	   {% include 'adminpanel/inc/header.html'%}  
+	    <aside class="main-sidebar">
+		   {% admin_menu request %}
+		</aside>       
+		<div class="search_data_map_bg" style="display:none"></div>
+		<div class="search_data_map" style="display:none">
+			<div id="myCanvas"></div><div class="reponse_text"></div>
+		</div>
+    	{% endif %}	
+		{% block body %} {% endblock %}
+	 {% if user.is_authenticated == True and  user.is_superuser == True %} 
+		{% include 'adminpanel/inc/footer.html'%}            
+		</div>
+	{% endif %}	
+<div class="form_ajax_bg"></div>
+<div class="form_ajax_popup_box">
+	<div class="title"><span>Choose or Upload Media File</span></div>
+	<div class="media_box">
+		
+		<div>
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" ><a href="#media_uploadhome" aria-controls="media_uploadhome" role="tab" data-toggle="tab">Upload File</a></li>
+			<li role="presentation" class="active"><a href="#media_all_image" aria-controls="media_all_image" role="tab" data-toggle="tab">Media Library</a></li>
+		  </ul>
+		  <div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="media_uploadhome">
+				<form method="post" action="{% url 'media_upload' %}" id="AjaxformSubmit" enctype="multipart/form-data">
+					{% csrf_token %}
+					<input type="file" name="ajax_file" id="AjaxFileinput"/>
+					<label>Click here and Choose Your file</label>
+					<input type="button" value="Select A File" class="choose_upload_file_btn btn btn-lg btn-success"/>
+					<div class="img_preview">
+						<img class="loader_img" src="{% static 'adminpanel/img/ajax-loader.gif' %}">
+					</div>
+				
+			  </form>
+			</div>
+			<div role="tabpanel" class="tab-pane active" id="media_all_image">
+				
+					{% media_load %}
+				
+			</div>
+					
+			</div>
+			
+			</div>
+	</div>
+	
+	<div class="boxfooter_panel"><div class="row"><div class="col-md-9"><p class="selected_image_name"></p></div><div class="col-md-3 text-right"><button type="button" class="btn btn-info btn-fill insert_uploaded_image">Insert Images</button></div></div></div>
+</div>
+<script src="{% static 'adminpanel/js/jquery.min.js' %}"></script>
+<script src="{% static 'adminpanel/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'adminpanel/js/adminlte.min.js' %}"></script>
+<script src="{% static 'adminpanel/js/jquery-te-1.4.0.min.js' %}" ></script>
+<script src="{% static 'adminpanel/js/file-upload.js' %}" ></script>
+<script src="{% static 'adminpanel/js/custom.js' %}" ></script>
+<script src="{% static 'adminpanel/js/menu/jquery-menu-editor.min.js' %}" ></script>
+<script src="{% static 'adminpanel/js/menu/iconset/fontawesome5-3-1.min.js' %}" ></script>
+<script src="{% static 'adminpanel/js/menu/bootstrap-iconpicker.min.js' %}" ></script>
+<script src="{% static 'adminpanel/js/menu/custom.js' %}" ></script>
+<script src="{% static 'adminpanel/js/Chart.js' %}" ></script>
+<script src="{% static 'adminpanel/js/dashboard.js' %}" ></script>
+
+</body>
+</html>

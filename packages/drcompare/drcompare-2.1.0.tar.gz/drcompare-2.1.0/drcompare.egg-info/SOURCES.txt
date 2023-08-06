@@ -1,0 +1,10 @@
+README.md
+setup.py
+drcompare/__init__.py
+drcompare/main.py
+drcompare.egg-info/PKG-INFO
+drcompare.egg-info/SOURCES.txt
+drcompare.egg-info/dependency_links.txt
+drcompare.egg-info/requires.txt
+drcompare.egg-info/top_level.txt
+test/test_main.py

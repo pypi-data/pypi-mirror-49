@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: hobbit-core
+Version: 1.4.3
+Summary: Hobbit - A flask project generator.
+Home-page: https://github.com/TTWShell/hobbit-core
+Author: Legolas Bloom
+Author-email: zhanhsw@gmail.com
+License: UNKNOWN
+Description: # Hobbit-core
+        
+        [![CircleCI](https://circleci.com/gh/TTWShell/hobbit-core.svg?style=svg)](https://circleci.com/gh/TTWShell/hobbit-core)
+        [![Documentation Status](https://readthedocs.org/projects/hobbit-core/badge/?version=latest)](https://hobbit-core.readthedocs.io/zh/latest/?badge=latest)
+        [![PyPi-Version](https://img.shields.io/pypi/v/hobbit-core.svg)](https://img.shields.io/pypi/v/hobbit-core.svg)
+        [![Python-version](https://img.shields.io/pypi/pyversions/hobbit-core.svg)](https://img.shields.io/pypi/pyversions/hobbit-core.svg)
+        [![codecov](https://codecov.io/gh/TTWShell/hobbit-core/branch/master/graph/badge.svg)](https://codecov.io/gh/TTWShell/hobbit-core)
+        [![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://hobbit-core.mit-license.org)
+        
+        A flask project generator. Based on Flask + SQLAlchemy + marshmallow + webargs.
+        
+        [https://hobbit-core.readthedocs.io/zh/latest/](https://hobbit-core.readthedocs.io/zh/latest/)
+        
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6, <4
+Provides-Extra: hobbit_core
+Provides-Extra: hobbit

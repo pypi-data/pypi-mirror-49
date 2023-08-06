@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: django_ru_validators
+Version: 1.2
+Summary: Django RU validators
+Home-page: https://github.com/zhelyabuzhsky/django-ru-validators
+Author: Ilya Zhelyabuzhsky
+Author-email: zhelyabuzhsky@icloud.com
+License: UNKNOWN
+Description: # Django russian financial validators [![Build Status](https://travis-ci.org/zhelyabuzhsky/django-ru-validators.svg?branch=master)](https://travis-ci.org/zhelyabuzhsky/django-ru-validators)
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.1
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

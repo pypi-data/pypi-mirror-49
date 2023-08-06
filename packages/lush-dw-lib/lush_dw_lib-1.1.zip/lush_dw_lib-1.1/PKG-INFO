@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: lush_dw_lib
+Version: 1.1
+Summary: Python Libraries for pullers
+Home-page: https://gitlab.com/LUSHDigital/data-warehouse/bqload_scripts
+Author: Denis Sineiko
+Author-email: denis.sineiko@lush.co.uk
+License: MIT
+Download-URL: http://zonec.net/lush_dw_lib.tar
+Description: UNKNOWN
+Keywords: PYTHON,LUSH,PULLERS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

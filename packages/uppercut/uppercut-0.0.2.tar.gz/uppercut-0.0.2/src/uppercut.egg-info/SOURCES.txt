@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/test.py
+src/uppercut.egg-info/PKG-INFO
+src/uppercut.egg-info/SOURCES.txt
+src/uppercut.egg-info/dependency_links.txt
+src/uppercut.egg-info/top_level.txt

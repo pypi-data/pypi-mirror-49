@@ -1,0 +1,4 @@
+include *.md
+recursive-include orqal/static *
+recursive-include orqal/templates *
+recursive-include orqal *

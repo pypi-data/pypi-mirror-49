@@ -1,0 +1,4 @@
+[console_scripts]
+orqal-web = orqal.web:main
+orqal-worker = orqal.worker:main
+

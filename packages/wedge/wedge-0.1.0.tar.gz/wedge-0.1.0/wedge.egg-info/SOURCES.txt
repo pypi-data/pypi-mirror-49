@@ -1,0 +1,16 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+test/test_wedge.py
+wedge/__init__.py
+wedge/wedge.py
+wedge.egg-info/PKG-INFO
+wedge.egg-info/SOURCES.txt
+wedge.egg-info/dependency_links.txt
+wedge.egg-info/not-zip-safe
+wedge.egg-info/top_level.txt

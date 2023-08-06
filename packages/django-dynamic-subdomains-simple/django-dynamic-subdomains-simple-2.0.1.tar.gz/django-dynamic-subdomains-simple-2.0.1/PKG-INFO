@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: django-dynamic-subdomains-simple
+Version: 2.0.1
+Summary: Dynamic and static subdomain support for Django.
+Home-page: UNKNOWN
+Author: Chris Adkins
+Author-email: c23gooey@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

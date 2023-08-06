@@ -1,0 +1,14 @@
+README.md
+setup.py
+django_dynamic_subdomains_simple.egg-info/PKG-INFO
+django_dynamic_subdomains_simple.egg-info/SOURCES.txt
+django_dynamic_subdomains_simple.egg-info/dependency_links.txt
+django_dynamic_subdomains_simple.egg-info/requires.txt
+django_dynamic_subdomains_simple.egg-info/top_level.txt
+dynamic_subdomains/__init__.py
+dynamic_subdomains/app_settings.py
+dynamic_subdomains/apps.py
+dynamic_subdomains/middleware.py
+dynamic_subdomains/reverse.py
+dynamic_subdomains/subdomains.py
+dynamic_subdomains/utils.py

@@ -1,0 +1,7 @@
+veeam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+veeam/client.py,sha256=gSxi5khObDAceRV4o3b0PwkLdvqLjVXAYf3ogmBAqXI,7915
+veeam/errors.py,sha256=fqP321fePFOlI0hmXAbmOEKg6wXxbXjGIJv6LRHBvR4,306
+veeam-0.1.1.dist-info/METADATA,sha256=8R_7uV1GWKCBaV_j_t0469EMlkkPitbdfSRCsafhq-M,1771
+veeam-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+veeam-0.1.1.dist-info/top_level.txt,sha256=DY6TIwTOXYMMO4tmKLVpJIftzgD5oExnlFA_voM569s,6
+veeam-0.1.1.dist-info/RECORD,,

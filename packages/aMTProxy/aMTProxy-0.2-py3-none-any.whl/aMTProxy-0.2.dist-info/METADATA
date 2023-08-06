@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: aMTProxy
+Version: 0.2
+Summary: Async python MTProxy server
+Home-page: https://github.com/Yurzs/pyMTProxy
+Author: Yury (Yurzs)
+Author-email: dev@best-service.online
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyaes
+
+# aMTProxy
+Asynchronous Python MTProto proxy server [beta]
+
+# Installation
+To get the latest build use `pip install amtproxy`
+
+# Usage
+
+`from amtproxy.server import start_server`\
+`start_server(port=1234, secret='32-digit hex value')`
+
+# TBD
+- [ ] `dd` secret prefix
+

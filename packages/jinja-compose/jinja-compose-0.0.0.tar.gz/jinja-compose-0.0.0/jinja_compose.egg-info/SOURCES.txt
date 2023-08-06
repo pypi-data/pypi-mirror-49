@@ -1,0 +1,8 @@
+README.md
+setup.py
+bin/jinja-compose
+jinja_compose.egg-info/PKG-INFO
+jinja_compose.egg-info/SOURCES.txt
+jinja_compose.egg-info/dependency_links.txt
+jinja_compose.egg-info/requires.txt
+jinja_compose.egg-info/top_level.txt

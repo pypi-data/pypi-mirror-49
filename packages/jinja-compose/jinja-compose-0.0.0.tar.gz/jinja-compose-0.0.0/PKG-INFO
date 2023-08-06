@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: jinja-compose
+Version: 0.0.0
+Summary: docker-compose wrapper with Jinja support
+Home-page: https://github.com/sinzlab/jinja-compose
+Author: Edgar Y. Walker
+Author-email: edgar.y.walker@mnf.uni-tuebingen.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

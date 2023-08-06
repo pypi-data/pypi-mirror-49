@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: text-pack
+Version: 0.1
+Summary: Testing the first python package
+Home-page: https://github.com/NishaPuthiyedth/test_pack
+Author: Nisha
+Author-email: nisha@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+this is a test for creating a python package.
+
+

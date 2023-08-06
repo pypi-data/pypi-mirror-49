@@ -1,0 +1,11 @@
+README.md
+setup.py
+annotatepy/__init__.py
+annotatepy/annotate.py
+annotatepy/console.py
+annotatepy.egg-info/PKG-INFO
+annotatepy.egg-info/SOURCES.txt
+annotatepy.egg-info/dependency_links.txt
+annotatepy.egg-info/entry_points.txt
+annotatepy.egg-info/requires.txt
+annotatepy.egg-info/top_level.txt

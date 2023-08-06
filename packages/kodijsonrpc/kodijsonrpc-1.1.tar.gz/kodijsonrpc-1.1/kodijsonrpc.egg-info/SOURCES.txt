@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+kodijsonrpc/__init__.py
+kodijsonrpc/kodijsonrpc.py
+kodijsonrpc.egg-info/PKG-INFO
+kodijsonrpc.egg-info/SOURCES.txt
+kodijsonrpc.egg-info/dependency_links.txt
+kodijsonrpc.egg-info/requires.txt
+kodijsonrpc.egg-info/top_level.txt

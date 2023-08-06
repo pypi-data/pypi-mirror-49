@@ -1,0 +1,13 @@
+snapbot/__init__.py,sha256=0ri0Ui_eBYaOCWfuFIQS7zXMEFvu-BCkhAlbWGJcw4E,846
+snapbot/handlers.py,sha256=DrU-106oKVbC7U_74vQ97oDc-6HbX_SJ6b5py0FPDuI,4571
+snapbot/static/handlers.js,sha256=xj5chEdZRdaKijYGdzt8PyBMDiJc5lcE-IGkLYPbTdo,6145
+snapbot/static/index.js,sha256=CbrYlgqhAsxIQg_4-5_jEa8RXGCI_-TqnKGQvkRsW_0,3060
+snapbot-0.0.1a1.dev2.data/data/etc/jupyter/jupyter_notebook_config.d/snapbot.json,sha256=PSghqfmu2-KvYt4j7vXpogKGarbFkl1Xp-JfB1UbPGk,95
+snapbot-0.0.1a1.dev2.data/data/etc/jupyter/nbconfig/notebook.d/snapbot.json,sha256=3jPaJdB3Va1-1Y8MF2MaRBbkK0hZILymuesWNYBmrFs,56
+snapbot-0.0.1a1.dev2.data/data/share/jupyter/nbextensions/snapbot/handlers.js,sha256=xj5chEdZRdaKijYGdzt8PyBMDiJc5lcE-IGkLYPbTdo,6145
+snapbot-0.0.1a1.dev2.data/data/share/jupyter/nbextensions/snapbot/index.js,sha256=CbrYlgqhAsxIQg_4-5_jEa8RXGCI_-TqnKGQvkRsW_0,3060
+snapbot-0.0.1a1.dev2.dist-info/LICENSE,sha256=ZfS9uzUT2Gd5Yvhrw2UnroU6-0ALHsaGmMKUhoQX4IM,1344
+snapbot-0.0.1a1.dev2.dist-info/METADATA,sha256=eI-T5cotKxcsnKPYpOVa9ENAOExdwOYgpub12kDFdw4,856
+snapbot-0.0.1a1.dev2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+snapbot-0.0.1a1.dev2.dist-info/top_level.txt,sha256=xxAHNuUxB-NFmZRzQz7quuWYm5WDPtiDv1b0QQ_zaxg,8
+snapbot-0.0.1a1.dev2.dist-info/RECORD,,

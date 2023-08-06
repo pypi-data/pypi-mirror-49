@@ -1,0 +1,13 @@
+bilispider/BiliSpider.py,sha256=HD36W4meUT9xkFuu_IgRpdAvrY4yWDVuX0P7mH25LOk,7713
+bilispider/__init__.py,sha256=I0OKYv-I4QYE2KYqaZjY82kOpEY-5S8OtfN6Jjn3DGU,181
+bilispider/gui.py,sha256=PDaqvV8YIu5TA-BB0aGGjacEsxejGdmv-F0gNgvL_48,1552
+bilispider/headers.py,sha256=IH0yrVpdaaQK6igJG6Xp2I4OlzgNewwPejEurHfnoRs,923
+bilispider/start.py,sha256=8KZDj9T1WxBefscQ2IorDl5OZdFY88hD5lXyQIwaDHk,5536
+bilispider/tools.py,sha256=jYbBxI1QKmlIQ2wxc1zTjxPHUVPIjHPUtfnqGiswsBE,1705
+bilispider/version.py,sha256=GWZm1qfrRYP7nLHhWZcQELLim1t1Kqc_RW4OIGG2Ql8,5
+bilispider-0.2.1.dist-info/LICENSE,sha256=wVMhVh-PDrCtVG8dnLnYRcD1Awf1Yu8xpVaZp1ko1x4,1086
+bilispider-0.2.1.dist-info/METADATA,sha256=3TSZressXCr2Fb-KNxBlPs15bEQcABoY_VuRz92s14A,500
+bilispider-0.2.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+bilispider-0.2.1.dist-info/entry_points.txt,sha256=H57Q3M64jFwF3le9E1i0K8yIIvqLrXW3p6MOQBUyGsU,57
+bilispider-0.2.1.dist-info/top_level.txt,sha256=d3IFYsbjbhemZB943HadVhl67_z8xLTD3xyghFxBgLI,11
+bilispider-0.2.1.dist-info/RECORD,,

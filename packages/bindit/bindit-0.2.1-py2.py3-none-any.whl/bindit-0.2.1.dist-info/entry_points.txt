@@ -1,0 +1,4 @@
+[console_scripts]
+bindit = bindit.cli:main
+bindit_partial = bindit.partial:main
+

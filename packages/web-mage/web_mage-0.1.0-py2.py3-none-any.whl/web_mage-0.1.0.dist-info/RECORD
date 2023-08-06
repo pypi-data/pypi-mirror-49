@@ -1,0 +1,9 @@
+web_mage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_mage/__main__.py,sha256=etQefSCcmQTJo3PeKOP9cEetSdM_muZOIq4AMgqIN0k,37
+web_mage/formats.py,sha256=H6ZpcDc8h4pVkjT26kcL3UIRd0HuBnwDFi7nc3IR6QM,2132
+web_mage/web_mage.py,sha256=bqsvFfGszyHD1nirZIItNLNkIkvI1KV0-FKAM1htnqw,2895
+web_mage-0.1.0.dist-info/LICENSE,sha256=yfz_P2dIO5PB6qpjZ5wZp7xKbSx4OdqmYj5BuwJ2_1M,1070
+web_mage-0.1.0.dist-info/METADATA,sha256=imd1ibS2M3v3_m4lUHnums5rRFfToWpGGNGuntOlDsE,1095
+web_mage-0.1.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+web_mage-0.1.0.dist-info/top_level.txt,sha256=qpY99FeIAB6i5JMfUwKKAT91yGP8amOBcn6TzmcINlI,9
+web_mage-0.1.0.dist-info/RECORD,,

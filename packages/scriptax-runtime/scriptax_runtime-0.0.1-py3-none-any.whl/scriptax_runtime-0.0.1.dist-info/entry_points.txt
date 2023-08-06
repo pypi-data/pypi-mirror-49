@@ -1,0 +1,3 @@
+[console_scripts]
+scriptax = scriptax_runtime.scriptax.cli:scriptax
+

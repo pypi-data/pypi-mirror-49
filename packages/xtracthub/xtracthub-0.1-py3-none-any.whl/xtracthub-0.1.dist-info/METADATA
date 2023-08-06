@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xtracthub
+Version: 0.1
+Summary: A FaaS file metadata extraction library
+Home-page: https://github.com/xtracthub/xtracthub
+Author: Tyler J. Skluzacek
+Author-email: skluzacek@uchicago.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+hello.
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+prom-url-checker=prom_url_checker.app:cli_run
+

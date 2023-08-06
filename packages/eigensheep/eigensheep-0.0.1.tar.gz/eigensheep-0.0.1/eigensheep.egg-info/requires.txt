@@ -1,0 +1,4 @@
+tqdm
+boto3
+ipython
+ipywidgets

@@ -1,0 +1,4 @@
+natto-py
+kytea
+sentencepiece
+SudachiPy

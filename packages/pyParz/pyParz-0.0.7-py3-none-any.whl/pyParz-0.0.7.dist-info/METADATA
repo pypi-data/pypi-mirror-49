@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyParz
+Version: 0.0.7
+Summary: Helpful package to parallelize some code.
+Home-page: http://github.com/jpierel14
+Author: Justin Pierel
+Author-email: jr23@email.sc.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+UNKNOWN
+
+

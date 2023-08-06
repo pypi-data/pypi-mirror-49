@@ -1,0 +1,13 @@
+opensitua_core/__init__.py,sha256=JBRB2q1xbjCvyxK4oIevvcDbkXOKhkSt334r8U3pDG0,1274
+opensitua_core/compression.py,sha256=cJVHP1QU6RmuGh45kQR-GtevdjiDUel7AF2KUXY0SUw,3981
+opensitua_core/execution.py,sha256=ZZ7VNIizZIeHEcSUsJ-XvHU5eMJCk0It3XCS1lXJtvo,5340
+opensitua_core/filesystem.py,sha256=ThFjhsz0RTt0CWvlKD44hg2f75zGXnEHaQLgzDx7NRI,10064
+opensitua_core/http.py,sha256=FIA1SkOWze1XTtTr2hq6oh9eFJ47SKx42okRFPnksgM,9429
+opensitua_core/platform.py,sha256=Laaf5tp2XWVjk-qKH-e3H4J1u3eQP04wtLXJX4emdVc,2399
+opensitua_core/stime.py,sha256=WcqPNRa2FXE-VtiRO4ZMqAAwlqyJ3OQsC3tuvCgeQiI,1372
+opensitua_core/strings.py,sha256=tSlhc8dO6EVJBjxfwjts_B-ErWwo0aMgtKy5R1BbZJQ,7490
+opensitua_core-0.0.9.dist-info/LICENSE,sha256=V7ZIazxc9kzICdDn5t1GWPcxHIOwtC_JdI1yP-WaVuE,1096
+opensitua_core-0.0.9.dist-info/METADATA,sha256=eMM4SJyWg5c2HimrLCEdAlwt0INSfhksegWrauKLPOg,659
+opensitua_core-0.0.9.dist-info/WHEEL,sha256=66yg5r67RIT-GjSaJ3M-GBTsHX0QfofnyZ-5OqlTUU0,97
+opensitua_core-0.0.9.dist-info/top_level.txt,sha256=y6tUC6lysfMeVD_cpnZ-HDaCSX530xXrNcD6GWYuJu4,15
+opensitua_core-0.0.9.dist-info/RECORD,,

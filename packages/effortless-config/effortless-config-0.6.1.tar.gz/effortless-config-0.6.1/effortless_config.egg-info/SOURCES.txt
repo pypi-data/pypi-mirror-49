@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+effortless_config/VERSION
+effortless_config/__init__.py
+effortless_config/__init__.pyi
+effortless_config/base62.py
+effortless_config/config.py
+effortless_config/py.typed
+effortless_config.egg-info/PKG-INFO
+effortless_config.egg-info/SOURCES.txt
+effortless_config.egg-info/dependency_links.txt
+effortless_config.egg-info/top_level.txt

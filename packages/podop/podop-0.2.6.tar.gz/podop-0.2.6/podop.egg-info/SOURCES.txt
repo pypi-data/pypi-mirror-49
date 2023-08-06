@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+podop/__init__.py
+podop/dovecot.py
+podop/postfix.py
+podop/table.py
+podop.egg-info/PKG-INFO
+podop.egg-info/SOURCES.txt
+podop.egg-info/dependency_links.txt
+podop.egg-info/requires.txt
+podop.egg-info/top_level.txt
+scripts/podop

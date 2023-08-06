@@ -1,0 +1,8 @@
+README.md
+setup.py
+CubeStories.egg-info/PKG-INFO
+CubeStories.egg-info/SOURCES.txt
+CubeStories.egg-info/dependency_links.txt
+CubeStories.egg-info/not-zip-safe
+CubeStories.egg-info/requires.txt
+CubeStories.egg-info/top_level.txt

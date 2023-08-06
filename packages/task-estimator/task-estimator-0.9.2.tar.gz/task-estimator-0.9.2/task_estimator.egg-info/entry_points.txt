@@ -1,0 +1,3 @@
+[console_scripts]
+estimator = estimator.estimator:main
+

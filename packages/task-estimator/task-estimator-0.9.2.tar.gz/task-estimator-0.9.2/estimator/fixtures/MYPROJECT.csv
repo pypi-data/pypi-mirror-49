@@ -1,0 +1,9 @@
+issue,title,text,estimated_hours,hours
+K-1,Install Staging Apache,"Install Apache 2 on staging. Ensure mod_wsgi and rewrite modules are enabled, as well as SSL support.",1,1.5
+K-2,Error on log page,"Accessing log page /admin/log/1 throws error Module biblib not found.",1,.5
+K-3,Error on log page,"Accessing log page /admin/log/2 throws error Slice > cannot operate on integer.",2,8
+K-4,Error on log page,"Accessing contact page /admin/contact/53 throws error Slice > cannot operate on integer.",1,9
+K-5,Error on log page,"Accessing billing page /admin/billing/9813 throws error Slice > cannot operate on integer.",3,7
+K-6,Error on log page,"Accessing contact page /admin/contact/1624 throws error Module https not found.",1,.25
+K-7,Error on log page,"Accessing billing page /admin/billing/1231 throws error Module fuzzy not found.",2,.75
+K-8,Install Production Apache,"Install Apache 2 on production. Ensure mod_wsgi and rewrite modules are enabled, as well as SSL support.",2,1.5

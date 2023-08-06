@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements-test.txt
+requirements.txt
+setup.py
+estimator/__init__.py
+estimator/estimator.py
+estimator/tests.py
+estimator/fixtures/MYPROJECT.csv
+task_estimator.egg-info/PKG-INFO
+task_estimator.egg-info/SOURCES.txt
+task_estimator.egg-info/dependency_links.txt
+task_estimator.egg-info/entry_points.txt
+task_estimator.egg-info/not-zip-safe
+task_estimator.egg-info/requires.txt
+task_estimator.egg-info/top_level.txt

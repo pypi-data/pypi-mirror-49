@@ -1,0 +1,10 @@
+PyDreamScreen-0.0.10.dist-info/DESCRIPTION.rst,sha256=wYsZsHZbq1Gblw-gaYhANYUuTEWEVCYSpui3tPhaNGU,444
+PyDreamScreen-0.0.10.dist-info/METADATA,sha256=-_2XTyBT1z08H9bOmqQuTKWcPUQoYfBF4qQk0-iov7Y,1110
+PyDreamScreen-0.0.10.dist-info/RECORD,,
+PyDreamScreen-0.0.10.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+PyDreamScreen-0.0.10.dist-info/metadata.json,sha256=KrnBPNrkhufVD0sF7-0d9j8obVnggxD5k8hl2Is4QSg,862
+PyDreamScreen-0.0.10.dist-info/top_level.txt,sha256=9VzR9gRB4csu2p7g_AjLbCiG1NT1mfS2hffzXLE_KcY,14
+pydreamscreen/__init__.py,sha256=jrKMvwZ4IgBZ_lkpZUPu1iMKMe0eFjyTAjYrhoryTp4,506
+pydreamscreen/devices.py,sha256=kGUomtHz0bKGwWW9gHxLgoj4xTV97pyTWMIJimZU6r4,22110
+pydreamscreen/network/__init__.py,sha256=yM_ev1zq3xaG4Hk7v80q4wv8C7URTaShiqqY6CYtx8I,269
+pydreamscreen/network/discover.py,sha256=Vx0_lBcd37p8dQgBb15xRa9MQ-YR5Acof3tYU9MIf_w,753

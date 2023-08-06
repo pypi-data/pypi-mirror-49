@@ -1,0 +1,6 @@
+README.md
+setup.py
+alissonlogger.egg-info/PKG-INFO
+alissonlogger.egg-info/SOURCES.txt
+alissonlogger.egg-info/dependency_links.txt
+alissonlogger.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+vps_deploy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vps_deploy/django_fabric.py,sha256=PtDuA6XGjXb3U4ATLKvpKA35Wv2w9UuV0Zd3N1CWvO8,8296
+vps_deploy-0.3.0.dist-info/COPYING,sha256=4H8p-GD8M8uIAimckO6WYSbbrUA6OI_EzoKRzuD0Ogo,35061
+vps_deploy-0.3.0.dist-info/METADATA,sha256=XKBItIZAJuk_KKuCvIsPmTlS7x-btRd2czCqwGXreIA,592
+vps_deploy-0.3.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+vps_deploy-0.3.0.dist-info/top_level.txt,sha256=_1yq7lwZSDGL5UyXA2i9Cr3g8tUCYwbbDSaILo4IQZs,11
+vps_deploy-0.3.0.dist-info/RECORD,,

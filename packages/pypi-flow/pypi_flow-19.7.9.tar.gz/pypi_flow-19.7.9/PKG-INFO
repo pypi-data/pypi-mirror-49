@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pypi_flow
+Version: 19.7.9
+Summary: Project Management tools for quickly creating and maintaining PYPI packages.
+Home-page: https://github.com/ZenosParadox/pypi-sidekick
+Author: Gabriel Rosales
+Author-email: gabriel.alejandro.rosales@gmail.com
+License: UNKNOWN
+Description: # pypi_sidekick
+        Project Management tools for quickly creating and maintaining PYPI packages
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

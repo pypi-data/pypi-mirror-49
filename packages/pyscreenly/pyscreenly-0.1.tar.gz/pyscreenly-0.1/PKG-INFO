@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pyscreenly
+Version: 0.1
+Summary: Python library to use the Screenly OSE API
+Home-page: https://github.com/mflage/pyscreenly
+Author: Marius Flage
+Author-email: marius@flage.org
+License: MIT
+Download-URL: https://github.com/mflage/pyscreenly/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: screenly
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3

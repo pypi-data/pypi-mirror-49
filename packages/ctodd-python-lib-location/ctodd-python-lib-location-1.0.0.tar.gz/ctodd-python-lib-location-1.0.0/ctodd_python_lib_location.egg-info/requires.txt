@@ -1,0 +1,4 @@
+street-address==0.4.0
+requests==2.22.0
+geocoder==1.38.1
+usaddress==0.5.10

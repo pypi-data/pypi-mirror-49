@@ -1,0 +1,38 @@
+#!python
+
+import sys
+from devtrans \
+    import dev2slp, iast2slp, slp2dev, slp2iast, slp2tex, slp2wx, wx2slp
+
+opt = sys.argv[1]
+rdy = [
+    'di', 'ds', 'dw', 'dt',
+    'id', 'is', 'it', 'iw',
+    'sd', 'si', 'st', 'sw',
+    'wd', 'wi', 'ws', 'wt'
+]
+
+if opt not in rdy:
+    print('''Transliteration pair is not ready yet.
+    Check another pair...''', file=sys.stderr)
+    sys.exit()
+
+txt = sys.stdin.read()
+
+if opt.startswith('d'):
+    txt = dev2slp.convert(txt)
+elif opt.startswith('i'):
+    txt = iast2slp.convert(txt)
+elif opt.startswith('w'):
+    txt = wx2slp.convert(txt)
+
+if opt.endswith('d'):
+    txt = slp2dev.convert(txt)
+elif opt.endswith('i'):
+    txt = slp2iast.convert(txt)
+elif opt.endswith('t'):
+    txt = slp2tex.convert(txt)
+elif opt.endswith('w'):
+    txt = slp2wx.convert(txt)
+
+print(txt, end='')

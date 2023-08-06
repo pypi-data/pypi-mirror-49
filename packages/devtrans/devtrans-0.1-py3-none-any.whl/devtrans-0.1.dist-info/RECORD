@@ -1,0 +1,15 @@
+devtrans/__init__.py,sha256=LvfLdnqDDgKd7KBvtk1IUF8PDTizKRbgtEmbA2VaTgw,42
+devtrans/dev2slp.py,sha256=muJzL2d9KHyi2eOlfV3cSFL3qcLtAQpASb-gpDGpUiw,1999
+devtrans/dev2wx.py,sha256=T1ektSWnw4puwmAc-qAKcVLN06aM3JFimgeOMPX68_o,1965
+devtrans/iast2slp.py,sha256=RcA1mRyYROC7rRYJUB66ATjQXRcMcRlgcWg6Ez8bRd8,1106
+devtrans/slp2dev.py,sha256=kg5uBTbNfHJBJw-5SkD1vDwi4Mi3XkzBbKeeZm4RwwY,2193
+devtrans/slp2iast.py,sha256=9QztHWpKJfP2fTls46Hpljet4npHgYsfHyC6U81ovGU,764
+devtrans/slp2tex.py,sha256=1xC8QZnVQFSojZaxNoB0tDQeSE9i3nCWBexRUsAJlRw,807
+devtrans/slp2wx.py,sha256=k7-Tt3vFcSiqpbsYrB0DUQmzfzXUkeMQVYofWSzjHZE,229
+devtrans/wx2slp.py,sha256=_wCvqWawOv9xRlHj8MzF9oleWSh5c60aiRNJPZd7R3U,229
+devtrans-0.1.data/scripts/transliterate,sha256=P38jZL4X7PnsRlRepabI6V2cdfXP8fZlXE4TWZMsG80,817
+devtrans-0.1.dist-info/LICENSE,sha256=A4tBHzmysqCvEv84gb6ob0Gsm7J17KpJtu0mWR5jlpg,1069
+devtrans-0.1.dist-info/METADATA,sha256=GMJF3aacTMNzFpLrKP0Ss-4Om-jKgDouOme_-W85Lrg,1050
+devtrans-0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+devtrans-0.1.dist-info/top_level.txt,sha256=iGnTh1ppLyxyFW-Sk0mImBlJYwF7LTgRk972kLKhyZg,9
+devtrans-0.1.dist-info/RECORD,,

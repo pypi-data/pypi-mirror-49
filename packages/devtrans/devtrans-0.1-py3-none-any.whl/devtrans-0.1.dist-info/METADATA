@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: devtrans
+Version: 0.1
+Summary: Convert among Devanagari transliteration schemes
+Home-page: https://gitlab.com/gaudha/devanagari-transliterators
+Author: Sanal Vikram
+Author-email: zombiechum@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Devanagari Transliterators
+
+Convert among common Devanagari transliteration schemes
+
+Presently it can convert text
+
+decoding from
+- Devanagari Unicode
+- WX-notation
+- Sanskrit Library Phonetic Basic (SLP1)
+- International Alphabet for Sanskrit Transliteration (IAST)
+
+encoding to
+- Four of the above metioned notations
+- (La)Tex notation of IAST diacritics
+
+It has primarily been developed for personal use as a tea-time activity.
+
+If found bugs, please fix them or raise an issue [here](https://gitlab.com/gaudha/devanagari-transliterators/issues) or report to the [developer](mailto:zombiechum@gmail.com)
+
+

@@ -1,0 +1,3 @@
+
+def mul():
+    print("mul")

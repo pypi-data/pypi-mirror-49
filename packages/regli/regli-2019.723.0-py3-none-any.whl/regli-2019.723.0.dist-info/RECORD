@@ -1,0 +1,10 @@
+regli/__init__.py,sha256=wLg7fdIHSlBtShkE-_kqSnolCvW_d8jvWQ0BXL0Y3go,53
+regli/ezmcmc.py,sha256=H7lEIbD09u2Bru2S7lRfRcU5xMDEmi8GqCI12GTdi9Q,5237
+regli/mcmc.py,sha256=OUAv0zK0wyVoJh7HiiZBNg7pEAXLmg7Ibadb4ubWazU,1019
+regli/regli.py,sha256=lGrEBGoj68xfFvww3cMSLD8WVO2xeNJa8q_ZW9xjkk8,17019
+regli/regress.py,sha256=ekn3BsT0D9iaWzynaFJsF6Wr-lazdvp2tH4DIW27MP8,887
+regli-2019.723.0.dist-info/LICENSE,sha256=i_qmf9oaOA28afIg9z5YYaJnaC16R65OT7qzu_fx2Oc,1065
+regli-2019.723.0.dist-info/METADATA,sha256=_QnIUr6u6K6DxWkKC-dCAGtqmE4aIJBl1Yn2Lhuvfkc,2151
+regli-2019.723.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+regli-2019.723.0.dist-info/top_level.txt,sha256=6OXEU9V3OFtQHP84M1upCt2nwGVCP81bqUz_-8lpgt8,6
+regli-2019.723.0.dist-info/RECORD,,

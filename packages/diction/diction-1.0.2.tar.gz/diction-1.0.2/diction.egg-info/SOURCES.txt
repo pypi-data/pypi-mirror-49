@@ -1,0 +1,7 @@
+README.md
+setup.py
+bin/diction.py
+diction.egg-info/PKG-INFO
+diction.egg-info/SOURCES.txt
+diction.egg-info/dependency_links.txt
+diction.egg-info/top_level.txt

@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: live-coder
+Version: 0.0.1
+Summary: The Server for Live Coder, works with the Live Coder VSCode extension.
+Home-page: https://gitlab.com/Fraser-Greenlee/live-coding/tree/server
+Author: Fraser Greenlee
+Author-email: frassyg@gmail.com
+License: UNKNOWN
+Description: # Live Coder
+        
+        Live Coder lets you see how your program will execute as you type.
+        
+        ![Demo GIF](https://media.giphy.com/media/gLWZ9M8YkqQJWXVzBh/giphy.gif)
+        
+        It comes in 2 parts, a server (here) and a [VSCode Extension](myextension.com)
+        
+        ## Requirements
+        
+        Runs on python3.
+        
+        ## Setup
+        
+        ### 1. Install the Server
+        
+        `pip install live-coder`
+        
+        ### 2. Install the VSCode Extension
+        
+        Search `live coder` in the VScode Extension marketplace in your VSCode editor.
+        
+        ### 3. [Watch the intro video!](https://youtube.com/not_added_yet)
+        
+        ## Having Issues?
+        
+        Please [add an issue](http://issues.com).
+        
+        If the server isn't starting, you can start it within Python:
+        
+        ```python
+        from live_coder.server import app
+        app.run(host='0.0.0.0', port=5000, debug=False)
+        ```
+        
+        **Note:** The host and port arguments cannot be changed since the editor extension expects the given ones.
+        
+        ## Thanks
+        
+        Thanks to the [Pioneer](https://pioneer.app) community for the encouragement, it's a great community worth checking out!
+        
+        If your interested in other new coding tools you should check out the [Future of Coding community](https://futureofcoding.org)!
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

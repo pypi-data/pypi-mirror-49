@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: hazma
+Version: 1.0.0
+Summary: Package for computing FSR and decay spectra for light       particles
+Home-page: http://hazma.readthedocs.io/en/latest/
+Author: Logan Morrison and Adam Coogan
+Author-email: loanmorr@ucsc.edu
+Maintainer: Logan Morrison
+Maintainer-email: loanmorr@ucsc.edu
+License: gpl-3.0
+Download-URL: https://github.com/LoganAMorrison/Hazma
+Keywords: dark-matter mev-dark-matter gamma-ray-spectra
+Platform: MacOS and Linux
+Classifier: Programming Language :: Python
+Requires-Dist: pip (>=9.0.1)
+Requires-Dist: matplotlib (>=2.2.3)
+Requires-Dist: scipy (>=1.0.0)
+Requires-Dist: numpy (>=1.13.3)
+Requires-Dist: cython (>=0.27.3)
+Requires-Dist: numpydoc (>=0.7.0)
+Requires-Dist: scikit-image (>=0.14.0)
+Requires-Dist: setuptools (>=27.3)
+Requires-Dist: flake8 (>=3.5.0)
+
+![Logo](docs/source/_static/img/hazma_logo_large.png)
+
+
+[![CircleCI](https://circleci.com/gh/LoganAMorrison/Hazma.svg?style=svg)](https://circleci.com/gh/LoganAMorrison/Hazma)
+
+[![Build Status](https://travis-ci.org/LoganAMorrison/Hazma.svg?branch=master)](https://travis-ci.org/LoganAMorrison/Hazma)
+
+# Hazma
+
+`hazma` is a tool for analyzing theories of sub-GeV dark matter. It can compute gamma-ray spectra from dark matter annihilations, set limits using current gamma-ray data and make projects for future gamma-ray detectors. It can generate positron spectra as well, and derive accurate CMB constraints. `hazma` includes several pre-implemented sub-GeV dark matter models, and provides the infrastructure to add custom ones.
+
+## Installation
+
+`hazma` is currently still in development. If you would like to try it anyways, you can install it using the command:
+
+    pip install --index-url https://test.pypi.org/simple/ hazma
+
+Alternatively, you can download `hazma` directly from this page, navigate to the package directory using the command line and run
+
+    pip install .
+
+or
+
+    python setup.py install
+
+Since `hazma` utilizes C to rapidly compute gamma ray, electron and positron spectra, you will need to have the `cython` package installed.
+
+Another way to run `hazma` is by using `docker`. If you have docker installed on your machine, clone the `hazma` repository and in the `hazma` directory, run:
+
+    docker build --rm -t jupyter/hazma .
+
+This will build the docker image called `jupyter/hazma`. Then to start a jupyter notebook, run:
+
+    docker run -it -p 8888:8888 -v /path/to/hazma/tutorials:/home/jovyan/work --rm --name jupyter jupyter/hazma
+
+This will start a jupyter kernel.
+
+## Other information
+
+Logo design: David Reiman and Adam Coogan; icon from Freepik from [flaticon.com](flaticon.com).
+
+

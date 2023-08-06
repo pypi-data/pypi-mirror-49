@@ -1,0 +1,10 @@
+pypi_flow/__init__.py,sha256=xGFCccVRYaPaKTf3MiL4LZe9qWeJ2qOdmL5rBLc9ts4,113
+pypi_flow/packageTemplate/PypiUpload.py,sha256=p2NxtqOwIe9YsNTfX0n1nv9tg0FUnpD6_sH3AlS4sZ0,599
+pypi_flow/packageTemplate/__init__.py,sha256=xGFCccVRYaPaKTf3MiL4LZe9qWeJ2qOdmL5rBLc9ts4,113
+pypi_flow/packageTemplate/setup.py,sha256=lVqcpXJxNz2iSuL5PtP5eCwPUdk3dGY6BcHgzU6kDIg,607
+pypi_flow/packageTemplate/package_name/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypi_flow-19.7.19.dist-info/LICENSE,sha256=NBI4sH7onpFbTiq2Aef8uj649K8N5Q0_624RUfq2jqg,1093
+pypi_flow-19.7.19.dist-info/METADATA,sha256=2Shh-kcSbNvynbHV6sQvkCCWlvc1FLp9nF0fyF_Dcmo,609
+pypi_flow-19.7.19.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pypi_flow-19.7.19.dist-info/top_level.txt,sha256=Sh1UJIxb0M4-0PxtS2OPRepO856rxIgVkIviIPSg_c8,10
+pypi_flow-19.7.19.dist-info/RECORD,,

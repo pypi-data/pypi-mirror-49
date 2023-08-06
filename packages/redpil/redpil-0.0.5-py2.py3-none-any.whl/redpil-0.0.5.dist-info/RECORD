@@ -1,0 +1,10 @@
+redpil/__init__.py,sha256=yKkwfjL-dROhYjiMlefm3Q0il0Gg7W_lp2RBdHIT98E,269
+redpil/_version.py,sha256=N4IPQtEoPQl1hWhrm4SFkIC1pIZZBxv9coeyvrTNv2w,497
+redpil/bmp.py,sha256=p-hsoS7ndlXAHbuaDwwP1Bm13rwlerAHyzE22xXhFP4,27916
+redpil/redpil.py,sha256=12XYzjJfFuWB3VqUAe_9fImXRNNI3deESsR96SQMJ3c,80
+redpil-0.0.5.dist-info/AUTHORS.md,sha256=Y3aJqDPQpf0VPUoCwYIQV_MW8h66gGpgPm7ZjJq4kkA,126
+redpil-0.0.5.dist-info/LICENSE,sha256=TcLWEO6QBHAGUX4-SgtHDErRuMHbbafSmmaH1PhvUx8,1073
+redpil-0.0.5.dist-info/METADATA,sha256=viU4dF5Zd0ThmYvsOHyV6FBlRylDwc6qLWzsviF2pj0,6437
+redpil-0.0.5.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+redpil-0.0.5.dist-info/top_level.txt,sha256=qEUantcRKceQ-ue6yxzepKgiuzaJJwtQZ616u-986Q4,7
+redpil-0.0.5.dist-info/RECORD,,

@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: vfxtest
+Version: 0.2.0
+Summary: Manages a test suite across multiple python contexts commonly found in a VFX production environment
+Home-page: https://github.com/martin-chatterjee/vfxtest
+Author: Martin Chatterjee
+Author-email: martin@chatterjee.de
+License: MIT
+Project-URL: Documentation, https://vfxtest.readthedocs.org
+Project-URL: Source, https://github.com/martin-chatterjee/vfxtest
+Project-URL: Issues, https://github.com/martin-chatterjee/vfxtest/issues
+Description: # vfxtest
+        
+        <br>
+        
+        ## What's this about?
+        
+        This project is about **managing a test suite** for a **Python codebase**
+        that is used in **multiple contexts**.
+        
+        **Common contexts found in a VFX production environment are:**
+        
+        * standalone **Python 2.7**
+        * standalone **Python 3.x**
+        * **embedded Python interpreters** inside **DCC's**:
+            * ``Maya/mayapy``
+            * ``Houdini/hython``
+            * ``Nuke``
+            * ...
+        <br><br>
+        
+        ## Where's the benefit?
+        
+        Doing **Test Driven Development** in Python is fairly straight forward
+        utilizing packages such as ``unittest`` and ``mock``.
+        
+        It's also really comfortable to get feedback about code coverage using the
+        ``coverage`` package.
+        
+        ### However...
+        
+        When a **Python codebase** is used inside multiple contexts that do not know
+        each other it is quite difficult to gather **accurate metrics** about the
+        **overall test coverage**.
+        
+        #### And this is where ``vfxtest`` tries to fill the gap.
+        
+        **``vfxtest``** is just a thin wrapper around ``unittest``, ``mock`` and
+        ``coverage`` that let's you run a **test suite for each context** and then
+        presents the **combined code coverage** of all those tests.
+        <br><br>
+        
+        ## I basically scratched my own itch...
+        
+        While starting to embrace **TDD** in a **VFX production environment** I had
+        this need and did not find an obvious existing solution to it.
+        <br><br>
+        
+        ## Documentation
+        
+        Soon to be found on **vfxtest.readthedocs.com**. 
+        
+        Stay tuned... :)
+        <br><br>
+        
+        ## 'Impostor Syndrome' Disclaimer
+        I'm really still in my first inning of the whole TDD game.
+        
+        Therefore I'm fully aware that I probably know barely enough to be dangerous
+        right now. :)
+        
+        If there already happens to be an existing go-to solution for this problem out
+        there on the interwebs, I'd love to know about it!
+        
+        Also if any part of this could be improved (or makes your eyes bleed) please
+        give me a heads up! :)
+        <br><br>
+        
+        ### That said, I hope that somebody will get some benefit out of this!
+        
+        Everything that encourages and helps **maintaining a test suite** in **VFX** is
+        valuable, as far as I'm concerned... :)
+        
+Keywords: unittest coverage tdd test driven development dcc vfx 3d animation pipeline nuke houdini hython maya mayapy nuke
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, !=3.6.*, <4
+Description-Content-Type: text/markdown

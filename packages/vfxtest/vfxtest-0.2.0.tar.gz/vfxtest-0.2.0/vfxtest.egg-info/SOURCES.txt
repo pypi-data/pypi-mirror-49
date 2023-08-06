@@ -1,0 +1,10 @@
+README.md
+setup.py
+vfxtest.py
+bin/vfxtest
+bin/vfxtest.cmd
+vfxtest.egg-info/PKG-INFO
+vfxtest.egg-info/SOURCES.txt
+vfxtest.egg-info/dependency_links.txt
+vfxtest.egg-info/requires.txt
+vfxtest.egg-info/top_level.txt

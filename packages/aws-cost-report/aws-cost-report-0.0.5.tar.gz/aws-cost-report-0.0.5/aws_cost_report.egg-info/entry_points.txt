@@ -1,0 +1,3 @@
+[console_scripts]
+cost-report = costreport.main:main
+

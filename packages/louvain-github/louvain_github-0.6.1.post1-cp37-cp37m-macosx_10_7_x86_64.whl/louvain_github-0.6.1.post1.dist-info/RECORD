@@ -1,0 +1,11 @@
+louvain/Optimiser.py,sha256=zS93fzKDY-8YkmkPr-VuyrG9qpdZx5KGXe9X_Jxgaj0,16551
+louvain/VertexPartition.py,sha256=hR-byy2hl1dRjRd4Dnf_TZGC3eelAi-Xvhtw6FvB35A,36626
+louvain/__init__.py,sha256=dqd2ORfnh1p1Frz2syd1T1DYvWM824oAS9MV0TBLRsM,2973
+louvain/_c_louvain.cpython-37m-darwin.so,sha256=Ie-dq1gPKOQaxnKrXv5x2HviuEAx9CkDPJvRF7Iz73U,1340804
+louvain/_version.py,sha256=Gb3-9VdWh6sHNesFWGRKfjHQpHQG1D-KLLGvLFvbPLI,503
+louvain/functions.py,sha256=dHi3f7kdbDCJ5vBGVHwiNKlvSZLVMTYKGNy4yt2OuU4,17730
+louvain_github-0.6.1.post1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+louvain_github-0.6.1.post1.dist-info/METADATA,sha256=yl6g1Hf34DeVrQffyVDEk8qbdgUqcfkhUigsRROSMGw,1569
+louvain_github-0.6.1.post1.dist-info/WHEEL,sha256=nYKY7aarFvRN_7R8NYnCesPqC9h4PzpMTx5EiRYRerg,110
+louvain_github-0.6.1.post1.dist-info/top_level.txt,sha256=_uGptjKo4FbjodRFDADZjZkGMPLP1s-WRXsYPHSGzJI,8
+louvain_github-0.6.1.post1.dist-info/RECORD,,

@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ukrdict
+Version: 0.1.3
+Summary: CLI tool for looking up Ukrainian words meaning.
+Home-page: https://github.com/serhii73/ukrdict
+License: MIT
+Keywords: Ukraine,Ukrainian,dictionary,application
+Author: serhii73
+Author-email: aserhii@protonmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Ukrainian
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: beautifulsoup4 (==4.7.1)
+Requires-Dist: click (==7.0)
+Requires-Dist: lxml (==4.3.4)
+Requires-Dist: requests (==2.22.0)
+Project-URL: Repository, https://github.com/serhii73/ukrdict
+Description-Content-Type: text/x-rst
+
+# ukrdict
+Python wrapper for [sum.in.ua/api](http://sum.in.ua/api)
+
+##### Search for the word meaning
+```bash
+ukrdict тин
+```
+```
+ТИН, у, чол. Огорожа, сплетена з лози, тонкого гілля
+пліт. Та вже ж наші слобожани Тини городили; Із-під
+лугу, із-під гаю Лозу волочили (Яків Щоголів, Поезії, 1958, 130);
+```
+

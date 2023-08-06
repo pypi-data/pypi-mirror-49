@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: oam-sso
+Version: 0.0.1
+Summary: Easily access pages protected with Oracle Access Management SSO
+Home-page: https://github.com/mtucker502/oam-sso
+Author: mtucker502
+Author-email: github@netzolt.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4 (==4.7.1)
+Requires-Dist: certifi (==2019.6.16)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: soupsieve (==1.9.2)
+Requires-Dist: urllib3 (==1.25.3)
+
+# OAM_SSO
+
+Easily access pages protected with Oracle Access Management SSO
+
+## Example
+
+
+
+

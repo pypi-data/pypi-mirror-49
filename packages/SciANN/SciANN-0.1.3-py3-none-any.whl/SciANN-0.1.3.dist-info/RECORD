@@ -1,0 +1,25 @@
+docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs/autogen.py,sha256=UOdbBG1gNS-SqUXl69ZZf2_ZZrAWP_1e_1KYr6972oI,16722
+docs/structure.py,sha256=hdUAQSkLw4HbpjqBgcjpdGo4c9L6tKB7mr7uGiD3YIA,10023
+sciann/__init__.py,sha256=ULJW1kuWeZpEuYqyCKq7AtJ13KgiETjfmu4DmHpSJSg,1156
+sciann/constraints/__init__.py,sha256=Hz2_jIBBt1usVQEBvavqhWgpAZ6BUPqNGgqwK_TC_o8,217
+sciann/constraints/data.py,sha256=YlpG7UVu9KbfuV1XKT8SBMEc8Gi2UVOaiVV5JMmPhfI,2250
+sciann/constraints/dirichlet.py,sha256=CRjDgU_FhhOlT0jixtJbsIXy21QCYW6XvKBtxVQrOmw,2255
+sciann/constraints/neumann.py,sha256=Vpp712-E9TVljuiKQXwPBVghyv2z4OuRD3HsIitk2JQ,2647
+sciann/constraints/pde.py,sha256=sykwO6Dw1oBT0LvARgqzq7KkHIRFn0WowIsaLlL4q38,2173
+sciann/constraints/tie.py,sha256=fYnLaFdCAKczURGFOzNVbuCQQbDXK5XHksQ6QUHrUMg,2933
+sciann/engine/__init__.py,sha256=_B5Wia7LSfkAUSE0a8-R29-X2myzXEILSOMmQwNPbJA,182
+sciann/engine/constraint (Ehsan Haghighat's conflicted copy 2019-07-24).py,sha256=dRxt5yLHxin4lPRjF4Zzpo0-Uc7uuPOxZdGufXSDlEU,2191
+sciann/engine/constraint.py,sha256=rACpZ7OPtfIrTt_uZEGqjoRTRJjnIIvOeZJZqUeS0tA,2203
+sciann/engine/functional.py,sha256=qPolVdYny5Z73wp4VxB9UerrfPDYg0qATtrLBS7zoBg,17141
+sciann/engine/models (Ehsan Haghighat's conflicted copy 2019-07-24).py,sha256=zQkp4mZeOW7wzxzGRNdsFWkOJ0LPLZGOZT4j70g_MlE,9345
+sciann/engine/models.py,sha256=w1H4w5PjewB1Su-mlv9qI5A-YRAiJjysMwuYzH5v4OI,9595
+sciann/utils/__init__.py,sha256=MSr3pIHf0Vyu7ytLLxKTvLNdPbKZkxWo9KmX5VXoQoc,156
+sciann/utils/math.py,sha256=wtlrTtEue-ouX_zpaqfzzA12VxfeCoC5EQ1cWlmsXKM,14276
+sciann/utils/process_data_for_radial_basis.py,sha256=lw1EMKe00B96LOzg2mA33F8DkNcHkM5UfB1b63rkAHY,1112
+sciann/utils/utilities.py,sha256=jyMOWsWb1M3TmDs0rRI-g-tfikA3gXa8aC5MnRjhBzw,4307
+SciANN-0.1.3.dist-info/LICENSE,sha256=Y_Ka1ZwROG9yh_mSs51U22qk1NND8GUSnNAqSE6M0vk,1324
+SciANN-0.1.3.dist-info/METADATA,sha256=edJ6zxm6UWN1N6L0GiLyR21wPnfjz8Q_udVFjlFNwPE,1967
+SciANN-0.1.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+SciANN-0.1.3.dist-info/top_level.txt,sha256=hwgKfxKgM9jUFYN_qtqm_xiDqZ629Mn-xog7sb72DJI,12
+SciANN-0.1.3.dist-info/RECORD,,

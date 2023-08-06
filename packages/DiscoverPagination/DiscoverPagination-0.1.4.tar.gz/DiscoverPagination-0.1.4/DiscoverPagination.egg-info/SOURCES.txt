@@ -1,0 +1,14 @@
+README.md
+setup.py
+DiscoverPagination.egg-info/PKG-INFO
+DiscoverPagination.egg-info/SOURCES.txt
+DiscoverPagination.egg-info/dependency_links.txt
+DiscoverPagination.egg-info/requires.txt
+DiscoverPagination.egg-info/top_level.txt
+discoverpagination/__init__.py
+discoverpagination/fuzzyfind.py
+discoverpagination/helpers.py
+discoverpagination/paginateddocument.py
+test/__init__.py
+test/test_helpers.py
+test/test_paginateddocument.py

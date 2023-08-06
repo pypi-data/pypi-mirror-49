@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: matplotsoccer
+Version: 0.0.6
+Summary: Library for visualizing soccer event stream data
+Home-page: http://github.com/tomdecroos/matplotsoccer
+Author: Tom Decroos
+Author-email: tom.decroos.be@gmail.com
+License: MIT
+Description: # README #
+        
+        Soccer, yay!
+        
+        work-in-progress package to visualize soccer data
+        
+        The most important functions are:
+        
+        ```
+        matplotsoccer.field # create a soccerfield with matplotlib
+        matplotsoccer.heatmap # create a heatmap over a soccerfield
+        matplotsoccer.actions # Visualise event stream data
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

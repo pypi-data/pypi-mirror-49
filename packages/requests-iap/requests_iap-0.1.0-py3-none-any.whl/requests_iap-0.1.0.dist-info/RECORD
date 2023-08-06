@@ -1,0 +1,8 @@
+requests_iap/__init__.py,sha256=TFKy_GPixHMjz7A-_vR-VQBUIXEZhAnNp1xiAbGcDXo,41
+requests_iap/iapauth.py,sha256=YgbWIlTPR-6zcPx5TPDEi4ut9gJmb8FyWkYpegis8WQ,4483
+requests_iap-0.1.0.dist-info/METADATA,sha256=zMk83PqqPaemngD6BWtqm19bgGfgf1S4Gs_MkXYK0u8,519
+requests_iap-0.1.0.dist-info/RECORD,,
+requests_iap-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+requests_iap-0.1.0.dist-info/top_level.txt,sha256=HhnKKzGIQr5dSQLh1NjTLUitcAtOhfGopnq3Gl1dRL4,18
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_nothing.py,sha256=V8k5Py9Fv_F2WjX4zWxOYVvoXw2ZRhuG0QN_-aiQ1DA,124

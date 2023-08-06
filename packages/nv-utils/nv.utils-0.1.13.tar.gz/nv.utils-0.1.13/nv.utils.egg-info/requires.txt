@@ -1,0 +1,17 @@
+pytz
+future-fstrings
+
+[tables]
+openpyxl
+xlwt
+xlrd
+
+[vault]
+hvac
+
+[xls]
+xlrd
+xlwt
+
+[xlsx]
+openpyxl

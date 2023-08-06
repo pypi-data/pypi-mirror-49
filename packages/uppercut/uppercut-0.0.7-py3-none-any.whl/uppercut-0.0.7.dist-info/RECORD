@@ -1,0 +1,10 @@
+test.py,sha256=NM7QU-4mnPxsBqexROoBgmkUXd40CXkUzI1B_kBkGRk,52
+src/__init__.py,sha256=uMpg1jtRg8lhQbZDbLgSOa99YQdEFlAzXZKjpNgWlIQ,24
+src/hwtest.py,sha256=NM7QU-4mnPxsBqexROoBgmkUXd40CXkUzI1B_kBkGRk,52
+tools/__init__.py,sha256=C8xunbidDg7EMJHgeP7nzBpERj4-fPMunqyl4vN-u8I,25
+tools/hwtest.py,sha256=NM7QU-4mnPxsBqexROoBgmkUXd40CXkUzI1B_kBkGRk,52
+uppercut-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+uppercut-0.0.7.dist-info/METADATA,sha256=pdh7TEvfkuUL8wpZVHhCsi8h0c8Fqsxj3jRISKPdYmg,345
+uppercut-0.0.7.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+uppercut-0.0.7.dist-info/top_level.txt,sha256=e4LA8VtYd2b4Fb41q8WsS0n06iHC4Fo0uYr-l2SaaDU,11
+uppercut-0.0.7.dist-info/RECORD,,

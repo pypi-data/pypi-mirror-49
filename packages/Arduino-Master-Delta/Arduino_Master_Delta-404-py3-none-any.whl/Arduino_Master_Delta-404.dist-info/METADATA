@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Arduino-Master-Delta
+Version: 404
+Summary: Data Science enabled Data extraction and control library for Arduino with accurate Data Visualizations !.
+Home-page: https://github.com/SayadPervez/Arduino_Master_Delta
+Author: Sayad Pervez
+Author-email: pervez2504@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Arduino_Master_Delta Version (End of the Era)
+___
+![intropic](https://github.com/SayadPervez/AMD--TUTORIAL/blob/master/IntroPic.png?raw=true)
+___
+### Arduino_Master_Delta, ain't it too long to type ? AMD is latest version of this module and all future updates would be done only to AMD and not to Arduino_Master_Delta. Switch to AMD.
+### Link to the module -> [AMD](https://pypi.org/project/AMD/).
+
+### Sorry for the inconvenience ;)
+
+

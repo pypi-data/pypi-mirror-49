@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: AladdinDask_demo
+Version: 0.1.0
+Summary: Aladdin Dask Cluster
+Home-page: UNKNOWN
+Author: Muxin Diao
+Author-email: muxin.diao@blackrock.com
+License: UNKNOWN
+Description: 
+                Spins up a Dask cluster on Kubernetes with default/specified configurations
+              
+Platform: UNKNOWN

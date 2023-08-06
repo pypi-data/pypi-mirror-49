@@ -1,0 +1,10 @@
+README.md
+setup.py
+boats.py.egg-info/PKG-INFO
+boats.py.egg-info/SOURCES.txt
+boats.py.egg-info/dependency_links.txt
+boats.py.egg-info/top_level.txt
+discordboats/Client.py
+discordboats/__init__.py
+discordboats/errors.py
+discordboats/models.py

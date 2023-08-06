@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: mesonpep517
+Version: 0.1.2
+Summary: Create pep517 compliant builds from the meson build system
+Home-page: https://gitlab.com/thiblahute/mesonpep517
+Author: Thibault Saunier
+Author-email: tsaunier@gnome.org

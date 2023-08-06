@@ -1,0 +1,3 @@
+pycopy-os
+pycopy-re-pcre
+pycopy-fnmatch

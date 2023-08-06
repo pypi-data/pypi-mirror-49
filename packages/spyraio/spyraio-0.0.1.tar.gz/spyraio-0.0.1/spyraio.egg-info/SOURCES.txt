@@ -1,0 +1,11 @@
+README.md
+setup.py
+spyraio/__about__.py
+spyraio/__init__.py
+spyraio/spyraio.py
+spyraio/utils.py
+spyraio.egg-info/PKG-INFO
+spyraio.egg-info/SOURCES.txt
+spyraio.egg-info/dependency_links.txt
+spyraio.egg-info/requires.txt
+spyraio.egg-info/top_level.txt

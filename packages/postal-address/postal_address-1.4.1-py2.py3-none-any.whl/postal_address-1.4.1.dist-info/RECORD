@@ -1,0 +1,12 @@
+postal_address/__init__.py,sha256=PuqGPVcjLdYVoW9zoWXpMvnfaY9rFRXcps3aA-0AjH4,530
+postal_address/address.py,sha256=6yzkZlv_ai8KQIzXvsvAG1Kos1muCCexskOexCPCfVI,26263
+postal_address/territory.py,sha256=e9LbGaHZcSn30vA9HMJoKioVZDcavGPnG9QBIq24hwI,15913
+postal_address/tests/__init__.py,sha256=4GukmjzuAScf7ZU_FeiKlApXfLzpmcqYDE6Q9l5IKsM,380
+postal_address/tests/test_address.py,sha256=GzmIOk0GHIW8hFtS0rOw2ixZnASNYood9HPLtNxcMdY,36158
+postal_address/tests/test_territory.py,sha256=5ZnXR_rYGpjGp6OaCX68AEzx_ld_S7bK27zMcy8A3Z0,12367
+postal_address-1.4.1.dist-info/LICENSE,sha256=iTjudLqjEj3C4T54f25YXcH4s9F4P3bNZOUc40PSdVY,1390
+postal_address-1.4.1.dist-info/METADATA,sha256=jjPV3e93XmIXYRWnzgyyijTEvCNAxqBdcydTU9UX41g,4881
+postal_address-1.4.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+postal_address-1.4.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+postal_address-1.4.1.dist-info/top_level.txt,sha256=sUHNmBEY6FwPJsRkKmAaECszKX_LxjNTEgriWZI04uQ,15
+postal_address-1.4.1.dist-info/RECORD,,

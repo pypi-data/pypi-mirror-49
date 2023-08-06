@@ -1,0 +1,18 @@
+{% extends "wafer/base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% crispy form %}
+{% endblock %}
+{% block extra_foot %}
+  <script type="text/javascript">
+    'use strict';
+    $(function() {
+      $('#button-id-select_all').on('click', function(ev) {
+        $('input.checkboxinput').each(function() {
+          this.checked = true;
+        });
+      });
+    });
+  </script>
+{% endblock %}

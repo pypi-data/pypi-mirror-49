@@ -1,0 +1,2 @@
+drf_firebase_auth_cavoke
+drf_firebase_auth_cavoke\migrations

@@ -1,0 +1,41 @@
+groups:
+- neurodata_type_def: Spectrum
+  neurodata_type_inc: NWBDataInterface
+  doc: type for storing power or phase of spectrum
+  datasets:
+  - name: power
+    dtype: float
+    doc: spectrum values
+    shape:
+    - - null
+    - - null
+      - null
+    dims:
+    - - frequency
+    - - frequency
+      - channel
+    quantity: '?'
+  - name: phase
+    dtype: float
+    doc: spectrum values
+    shape:
+    - - null
+    - - null
+      - null
+    dims:
+    - - frequency
+    - - frequency
+      - channel
+    quantity: '?'
+  - name: frequencies
+    dtype: float
+    doc: frequencies of spectrum
+    shape:
+    - null
+    dims:
+    - frequency
+  links:
+  - name: source_timeseries
+    doc: timeseries that this spectrum describes
+    target_type: TimeSeries
+    quantity: '?'

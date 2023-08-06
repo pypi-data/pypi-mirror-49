@@ -1,0 +1,9 @@
+redisai/__init__.py,sha256=w621Vz2RVgMb80JdyDdhLfLm0A6znmLGK2sqvz3B180,122
+redisai/_util.py,sha256=6cp2VnYAuNUXUjf0fk1vSKVL0WA3MN1yk0__ThTZgf0,209
+redisai/client.py,sha256=aEKyYgmRczFsTpLxZenQMU7wjP3gan-lafi4rLcNglU,8208
+redisai/version.py,sha256=k5rhb5mek4o5IcgSjvnBneMGTfzu3DbepgXBS8PTURs,212
+redisai-0.3.0.dist-info/LICENSE,sha256=9DkInBqHOsl34z2Pdw7d23Eb_BTQNJ6UERoC1XdhbdU,1507
+redisai-0.3.0.dist-info/METADATA,sha256=N7Xu72JGK9_r-LvGVFt9YQJRT7uSyG2bx9GDiEQ7kpA,717
+redisai-0.3.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+redisai-0.3.0.dist-info/top_level.txt,sha256=YilZrGg0oaXvClbCzeqL62Sq2ZoF-_ZzUuJNZl3cbVE,8
+redisai-0.3.0.dist-info/RECORD,,

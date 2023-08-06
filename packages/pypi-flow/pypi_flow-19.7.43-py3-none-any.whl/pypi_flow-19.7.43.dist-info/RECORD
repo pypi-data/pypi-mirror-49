@@ -1,0 +1,15 @@
+pypi_flow/__init__.py,sha256=xGFCccVRYaPaKTf3MiL4LZe9qWeJ2qOdmL5rBLc9ts4,113
+pypi_flow/packageTemplate/.gitignore,sha256=AOFRsmUcQBhzvCqpeCh4NOCKsyVjf5h8t0XpcBedMWc,1307
+pypi_flow/packageTemplate/MANIFEST.in,sha256=5ZW854xZbnMF56hiklSJk7w8bjTPsL1rPgqfzvVW95s,169
+pypi_flow/packageTemplate/PipLocalUpgrade.py,sha256=dk7E-Qr6n6kr52nEAHyVdAaDHwz0AzhjgP1tPdu8Fuo,220
+pypi_flow/packageTemplate/PypiUpload.py,sha256=p2NxtqOwIe9YsNTfX0n1nv9tg0FUnpD6_sH3AlS4sZ0,599
+pypi_flow/packageTemplate/README.md,sha256=ZczJmq8pNddJAiFntACTekusSM5ZHmWDdzt31X7z1n0,33
+pypi_flow/packageTemplate/setup.py,sha256=ryHEmu9ndDEalomSAH-qqUHD0SCrGCduXXR7f4iVSlA,609
+pypi_flow/packageTemplate/LicenseTemplates/MIT.txt,sha256=WdAgCTMGIz1q3BM-THh43dIL-hQRgbcG0vgG74LaD_8,1088
+pypi_flow/packageTemplate/package_name/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypi_flow-19.7.43.data/scripts/waterfall.py,sha256=ExTDCWHN60npylypXl0B9PJ3NkVlJaUFkY9CHJoK4SE,3369
+pypi_flow-19.7.43.dist-info/LICENSE,sha256=NBI4sH7onpFbTiq2Aef8uj649K8N5Q0_624RUfq2jqg,1093
+pypi_flow-19.7.43.dist-info/METADATA,sha256=ZPwfrbV_Rj6dpsQayZGmD0u_7xRKwn6Z5rqMOBNUYj0,609
+pypi_flow-19.7.43.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pypi_flow-19.7.43.dist-info/top_level.txt,sha256=Sh1UJIxb0M4-0PxtS2OPRepO856rxIgVkIviIPSg_c8,10
+pypi_flow-19.7.43.dist-info/RECORD,,

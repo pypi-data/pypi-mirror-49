@@ -1,0 +1,10 @@
+README.md
+setup.py
+greet_girl.egg-info/PKG-INFO
+greet_girl.egg-info/SOURCES.txt
+greet_girl.egg-info/dependency_links.txt
+greet_girl.egg-info/entry_points.txt
+greet_girl.egg-info/requires.txt
+greet_girl.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py

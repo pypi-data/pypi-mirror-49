@@ -1,0 +1,10 @@
+faiss/setup.py,sha256=PT2z2RHb-jZhQ_e8tAwu7iPEkOKh5Trzjb8FmOatqIk,1574
+faiss/__init__.py,sha256=BhyCBzy7syccynbNRbb0Rd3NzQddPRFCtDIrYhQ08Ys,20520
+faiss/_swigfaiss.cpython-36m-x86_64-linux-gnu.so,sha256=520Qw_VVyY9qDBhUXecy8b5XRZc8UURf4C6mcc36q-0,73683704
+faiss/swigfaiss.py,sha256=r3N7hknbPsXFg6pFz_VR59pt4gxhDbHjFaQ8cj_Plb8,339694
+faiss/.libs/libgomp-f7e03b3e.so.1.0.0,sha256=76BVnL8zq1gHU5iuCWYO6_i6Icpp-63rCGU0xGxZdII,93080
+faiss/.libs/libgfortran-139be63a.so.3.0.0,sha256=gqiLNN_ddehEXXYQ3n0bPVxM4Oy3_2w_4zWIEH-rdWA,1023952
+faiss_gpu-1.5.3.dist-info/WHEEL,sha256=6qsdB1jNczZt0uWpsegNTq1KITMHdnt6wZgsGus-kwY,112
+faiss_gpu-1.5.3.dist-info/top_level.txt,sha256=nr2S-1YAhqAuAlFJukntDvRGXfI1KmwnUNs_iFlNiig,6
+faiss_gpu-1.5.3.dist-info/METADATA,sha256=OyKO8ZGQm7i7hkIGZs9G5nIvo_5teltaT76WLCOj6NA,715
+faiss_gpu-1.5.3.dist-info/RECORD,,

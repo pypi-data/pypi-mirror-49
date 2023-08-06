@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: pygetdp
+Version: 0.0.1
+Summary: Python frontend for GetDP.
+Home-page: https://github.com/benvial/pygetdp
+Author: Benjamin Vial
+Author-email: benjamin.vial84@gmail.com
+License: License :: OSI Approved :: MIT License
+Project-URL: Documentation, https://github.com/benvial/pygetdp
+Description: pygetdp
+        ==============================
+        
+        .. inclusion-marker-do-not-remove
+        
+        `Python <http://www.python.org/>`_ frontend for `GetDP <http://www.getdp.info/>`_.
+        
+        
+        .. image:: https://raw.github.com/benvial/pygetdp/master/tests/rendered/getdp.png
+        
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Mathematics

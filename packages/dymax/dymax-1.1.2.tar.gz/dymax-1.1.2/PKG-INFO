@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: dymax
+Version: 1.1.2
+Summary: Dymaxion Fuller Projection Utilities
+Home-page: https://github.com/Teque5/pydymax
+Author: Teque5
+Maintainer: Teque5
+License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+Description: 
+        Geodetic Conversion from Lat/Lon to Dymaxion Fuller Projection
+        
+        Where to go from here?
+        * `python3 setup.py develop`
+        * `python3 setup.py install`
+        * `python3 -m dymax.examples`
+        * `python3 setup.py test`
+        * `pytest --doctest-modules`
+        * `pylint dymax`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Visualization

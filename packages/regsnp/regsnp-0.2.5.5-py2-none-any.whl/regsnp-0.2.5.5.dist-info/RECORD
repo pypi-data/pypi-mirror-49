@@ -1,0 +1,10 @@
+regsnp-0.2.5.5.data/scripts/regsnp_intron.py,sha256=yAZ-mGbUL8cU9nB01RZeePeXcCC7gMG3dZghKuAMvj4,2154
+regsnp_intron/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regsnp_intron/feature_calculator.py,sha256=7xNY3J0HMY9icTLlyiZ506nRf1wJeoo3D344cHyVIkY,12171
+regsnp_intron/regsnp_intron.py,sha256=Njw-lCphX0jsLxSOnQ9Un5PuRDjCGr3uthhZdEWaOto,2167
+regsnp_intron/utils/snp.py,sha256=67SeVTBHhc2Pm4Gaw4RsBzipO-4OagRY95EtZ5w0tbk,2247
+regsnp_intron/utils/vcf.py,sha256=2_7NXp1oNaqj2cTM_uxl6IMzb7e9eHxERQdrm-l14Pw,1641
+regsnp-0.2.5.5.dist-info/METADATA,sha256=Ag_JsIqSxyj0V_T15s2GBFKsLrwJZqXXu_r2czgp_9Y,3584
+regsnp-0.2.5.5.dist-info/WHEEL,sha256=2n5gfr2CmDNU5qrqPgO0uSe7oSWu-GEpPLFa0_ueMrk,97
+regsnp-0.2.5.5.dist-info/top_level.txt,sha256=7PrdRIuqSk5nqrHVZb_kLkyaJWnMeyTk4bPjj__OGgU,14
+regsnp-0.2.5.5.dist-info/RECORD,,

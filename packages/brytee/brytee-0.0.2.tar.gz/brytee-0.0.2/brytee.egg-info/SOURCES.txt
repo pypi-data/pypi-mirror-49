@@ -1,0 +1,5 @@
+setup.py
+brytee.egg-info/PKG-INFO
+brytee.egg-info/SOURCES.txt
+brytee.egg-info/dependency_links.txt
+brytee.egg-info/top_level.txt

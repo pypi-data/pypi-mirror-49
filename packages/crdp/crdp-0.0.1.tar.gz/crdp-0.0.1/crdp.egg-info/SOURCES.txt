@@ -1,0 +1,8 @@
+README.md
+crdp.c
+setup.py
+crdp.egg-info/PKG-INFO
+crdp.egg-info/SOURCES.txt
+crdp.egg-info/dependency_links.txt
+crdp.egg-info/requires.txt
+crdp.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+
+[dev]
+cython>=0.29
+pytest

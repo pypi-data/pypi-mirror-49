@@ -1,0 +1,39 @@
+#!python
+# -*- coding: utf-8 -*-
+
+from argparse import ArgumentParser
+
+from lib.app import App
+from lib.handlers import *
+from lib.version import Version
+
+def run_application(options):
+    App.register_handlers(
+        ExchangeDeclareHandler,
+        ExchangeDeleteHandler,
+        QueueDeclareHandler,
+        QueueDeleteHandler,
+        QueueBindHandler,
+        QueueUnbindHandler,
+        QueuePurgeHandler,
+        BasicGetHandler,
+        BasicPublishHandler,
+        BasicAckHandler,
+    )
+    app = App(host=options.host, userid=options.userid, password=options.password, virtual_host=options.virtual_host)
+    app.welcome()
+    app.event_loop()
+
+def parse_options():
+    parser = ArgumentParser(description="An AMQP protocol client")
+    parser.add_argument("-H", "--host", dest="host", help="the broker url, default to localhost:5672")
+    parser.add_argument("-u", "--userid", dest="userid", help="default to guest")
+    parser.add_argument("-p", "--password", dest="password", help="default to guest")
+    parser.add_argument("-V", "--virtual_host", dest="virtual_host", help="virtual host")
+    parser.add_argument("-v", "--version", dest="version", action="version", version='%(prog)s v{}'.format(Version))
+    return parser.parse_args()
+
+
+if __name__ == "__main__":
+    options = parse_options()
+    run_application(options)

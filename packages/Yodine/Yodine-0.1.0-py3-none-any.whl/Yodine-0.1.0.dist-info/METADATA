@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Yodine
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Gustavo6046
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: yodine-data (>=0.1.0)
+
+UNKNOWN
+
+

@@ -1,0 +1,11 @@
+README.md
+setup.py
+loto/__init__.py
+loto/loto.py
+loto.egg-info/PKG-INFO
+loto.egg-info/SOURCES.txt
+loto.egg-info/dependency_links.txt
+loto.egg-info/requires.txt
+loto.egg-info/top_level.txt
+tests/__init__.py
+tests/test_loto.py

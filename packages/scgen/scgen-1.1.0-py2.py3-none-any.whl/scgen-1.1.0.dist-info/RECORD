@@ -1,0 +1,13 @@
+scgen/__init__.py,sha256=dl20mmxFOOp9_1bEGfRR_U2xuoqRdh8DUW-ErBLrK6Y,420
+scgen/data_generator.py,sha256=uSFNpspgOr1kYv421f3WNpAop01BjpSX72mYa21d-To,2785
+scgen/hyperoptim.py,sha256=zlTOjbXA-UWkKQ25NgxV1rImPsNLEe9oWYL764LupvM,1907
+scgen/plotting.py,sha256=RfiTOLpDZkuOksGHh7kAwSTaQ0Vba40WXKk5Nq_Oc1w,13670
+scgen/read_load.py,sha256=q7t3cQjyEM3wdh1DlgQlZf6ZBxof6PHU9VKFkQCuk-A,1857
+scgen/models/__init__.py,sha256=52A5VxNAqrxuHM_SYSVXzYf-gScmjHkxRxTSd_mgKlk,171
+scgen/models/_vae.py,sha256=2WosfPTLcm4zSPygOK9NJJpjpTmvDRGw_CLGMUCTgSs,23713
+scgen/models/_vae_keras.py,sha256=QvK9nIZ8ysOwWbbYUaDeaB6KPlzIxb8Ze2Tsl_xEMo4,22796
+scgen/models/util.py,sha256=IW12FGliYMWtlyi0Vp59Cc7x2An8oqgaQGVkqLH_urg,27469
+scgen-1.1.0.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+scgen-1.1.0.dist-info/WHEEL,sha256=RFGpeSWy2MhnOH7MbIZmX9ZR0evWl2eJvsMO-yF-tDc,97
+scgen-1.1.0.dist-info/METADATA,sha256=m2N2OqM8g7XNLylJkCiG6qc7v8AzR0f_Ti648OmlFfE,4022
+scgen-1.1.0.dist-info/RECORD,,

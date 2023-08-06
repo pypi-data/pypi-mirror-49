@@ -1,0 +1,8 @@
+dataflows_normalize/VERSION,sha256=pd00ZUajhDYpNrl6TC9dotPSUwQ-qWeap7l9iVUN_b0,6
+dataflows_normalize/__init__.py,sha256=RcDAOZTk6oZ5WLAwVheA3X-MSHVOBIjoA4kA_WPRqao,61
+dataflows_normalize/normalize.py,sha256=7cQDuaqxmGdJHl7Rd_IWE4cKol-vquzy8EA8bWpdXuk,5991
+dataflows_normalize-0.0.2.dist-info/LICENSE,sha256=2PDp1cNW4PVf_oIPxvtwbVMN4gYey181vlzGL7Lx1VI,1067
+dataflows_normalize-0.0.2.dist-info/METADATA,sha256=d67KUX-XTDi3nkqXxqq04bBhnBmheAwWWR9rV17Z2gA,5856
+dataflows_normalize-0.0.2.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+dataflows_normalize-0.0.2.dist-info/top_level.txt,sha256=9xv88iPyZNeuwRv4atWQcm6XKjpTuWXhHNHIGtxMQss,20
+dataflows_normalize-0.0.2.dist-info/RECORD,,

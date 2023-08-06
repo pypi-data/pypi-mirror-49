@@ -1,0 +1,7 @@
+README.md
+setup.py
+testspeed/__init__.py
+testspeed.egg-info/PKG-INFO
+testspeed.egg-info/SOURCES.txt
+testspeed.egg-info/dependency_links.txt
+testspeed.egg-info/top_level.txt

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyls
+Version: 0.1.7
+Summary: UNKNOWN
+Home-page: https://github.com/tartley/pyls
+Author: Jonathan Hartley
+Author-email: tartley@tartley.com
+License: New BSD License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Python: <3.0.0
+
+UNKNOWN
+
+

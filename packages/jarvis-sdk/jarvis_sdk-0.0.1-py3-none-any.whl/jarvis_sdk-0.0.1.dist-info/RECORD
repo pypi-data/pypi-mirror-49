@@ -1,0 +1,9 @@
+jarvis_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jarvis_sdk/jarvis_config.py,sha256=kkTSE_ktC3hchBZ4OKTGvo0ZOGLP9P_sXT4RbOF-9S8,8292
+jarvis_sdk/jarvis_configuration_manager.py,sha256=Tj8sa-Jc0RH80s_dEn3ihxqJU0sZTMzQAVT7-p1iCnY,3541
+jarvis_sdk/jarvissdk.py,sha256=wyDL20hlukZQ1zyjuFpq2WNxLFLHXo_BkcrXqag9wYM,4483
+jarvis_sdk-0.0.1.dist-info/METADATA,sha256=Bzx9I2-Lxk3i3CdpBywghuZuka1_vUCeaS5xqWYU7Gk,484
+jarvis_sdk-0.0.1.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+jarvis_sdk-0.0.1.dist-info/entry_points.txt,sha256=RD5QEBTtWyD2YEb6wVg8mr6FoNI7nmqohx6a3KldHe8,57
+jarvis_sdk-0.0.1.dist-info/top_level.txt,sha256=VO4YmYWNfduBjjbj4LJ8n2GolS9S7r0MGU2K7el5bUk,11
+jarvis_sdk-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,5 @@
+yodine_data>=0.1.0
+setuptools==41.0.1
+pyglet==1.4.1
+simplejson==3.16.0
+typing==3.7.4

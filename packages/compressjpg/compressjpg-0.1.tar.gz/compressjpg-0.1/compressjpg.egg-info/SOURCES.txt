@@ -1,0 +1,10 @@
+setup.py
+bin/compress-jpg
+compressjpg/__init__.py
+compressjpg/compresssvd.py
+compressjpg.egg-info/PKG-INFO
+compressjpg.egg-info/SOURCES.txt
+compressjpg.egg-info/dependency_links.txt
+compressjpg.egg-info/not-zip-safe
+compressjpg.egg-info/requires.txt
+compressjpg.egg-info/top_level.txt

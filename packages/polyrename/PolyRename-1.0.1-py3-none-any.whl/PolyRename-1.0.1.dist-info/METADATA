@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: PolyRename
+Version: 1.0.1
+Summary: A cross-platform, bulk-file rename tool
+Home-page: https://github.com/agsimmons/PolyRename
+Author: Andrew Simmons, Ethan Smith
+Author-email: agsimmons0@gmail.com
+License: GPLv3
+Project-URL: Documentation, https://polyrename.readthedocs.io/
+Project-URL: Bug Tracker, https://github.com/agsimmons/PolyRename/issues/
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: PySide2 (>=5.11.0)
+Requires-Dist: mediafile (>=0.2.0)
+
+[![PyPI](https://img.shields.io/pypi/v/PolyRename)](https://pypi.org/project/PolyRename/)
+[![Build Status](https://travis-ci.org/agsimmons/PolyRename.svg?branch=develop)](https://travis-ci.org/agsimmons/PolyRename)
+[![Documentation Status](https://readthedocs.org/projects/polyrename/badge/?version=latest)](https://polyrename.readthedocs.io/en/latest/?badge=latest)
+
+# PolyRename
+A cross-platform, bulk-file rename tool
+
+## Documentation
+PolyRename's documentation is hosted on [ReadTheDocs](http://polyrename.readthedocs.io/)
+
+

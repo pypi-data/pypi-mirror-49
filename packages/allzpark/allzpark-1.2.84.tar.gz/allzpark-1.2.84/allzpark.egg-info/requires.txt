@@ -1,0 +1,2 @@
+bleeding-rez>=2.38.2
+allzparkdemo>=1

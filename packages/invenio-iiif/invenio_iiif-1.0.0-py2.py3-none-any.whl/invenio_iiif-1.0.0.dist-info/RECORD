@@ -1,0 +1,17 @@
+invenio_iiif/__init__.py,sha256=vNHLJBFChI22xz1FoAMg2feqx2Hu24uPs6vJ2NZ3g6g,5781
+invenio_iiif/config.py,sha256=ZhrppFpMHVkJlDlms3Dhbvko2QnQJlKZLsYWwl8qsrs,606
+invenio_iiif/ext.py,sha256=VtgON6IfKlbgewle6k2dUzcV-dVu5_bdKIdsk8lIAjg,1448
+invenio_iiif/handlers.py,sha256=53Vphzmk2D8qCGsMLSw8GY4MMi_Dp8fB_bf7inHFxms,1879
+invenio_iiif/previewer.py,sha256=tur-_K_vxwXcKeHNI_cCFqNL-g_esaqiSqVy4zqgvAk,1578
+invenio_iiif/tasks.py,sha256=rJNXyt9O9BkstxtOUwTaJ-jQNUUOX11bSF45MKSeJoc,966
+invenio_iiif/utils.py,sha256=tK8nLuXqTe-Y7PRWPCGmpObl2BbQUofFKh9AALaiL9I,1712
+invenio_iiif/version.py,sha256=XEDC58Ya5bt2go5yhxawRXbcuLaiaQ-V4fyM5CPHthI,441
+invenio_iiif/templates/invenio_iiif/base.html,sha256=VyAf5x8dY9EDgsXHq3iyBijBCphzvaTnilcaSUs5GzM,263
+invenio_iiif/templates/invenio_iiif/preview.html,sha256=LAHfXTQlHOQFOdMA39TsoZ0X2Y3Y43-hfW5AZtYnLdY,368
+invenio_iiif-1.0.0.dist-info/AUTHORS.rst,sha256=bqmQ0aPWNt_RqTN4XGDtyd8G4gPZaKTEvdwLbjaF104,355
+invenio_iiif-1.0.0.dist-info/LICENSE,sha256=mgxedrDIOwnvFH8HMI1BeKJSwe-km-Z1ozg5KZV6QJ4,1067
+invenio_iiif-1.0.0.dist-info/METADATA,sha256=gFUGHVpYcGY02cPm1U-oGnsmLT2aOtshns9BNXb6jvI,3767
+invenio_iiif-1.0.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+invenio_iiif-1.0.0.dist-info/entry_points.txt,sha256=QjWbFEdZmZoyChwYJsEz9FU1Cio3pwwKWredn2QTrhw,330
+invenio_iiif-1.0.0.dist-info/top_level.txt,sha256=9p2DDsOySVAYN-su-xxFdsKaALKQsvqPtUjp2iqGzso,13
+invenio_iiif-1.0.0.dist-info/RECORD,,

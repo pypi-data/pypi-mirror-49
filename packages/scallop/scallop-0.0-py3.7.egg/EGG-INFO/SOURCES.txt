@@ -1,0 +1,14 @@
+README.md
+setup.py
+scallop/__init__.py
+scallop/datasets.py
+scallop/pl.py
+scallop/pp.py
+scallop/tl.py
+scallop.egg-info/PKG-INFO
+scallop.egg-info/SOURCES.txt
+scallop.egg-info/dependency_links.txt
+scallop.egg-info/entry_points.txt
+scallop.egg-info/not-zip-safe
+scallop.egg-info/requires.txt
+scallop.egg-info/top_level.txt

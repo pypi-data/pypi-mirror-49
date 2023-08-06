@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: fortimail
+Version: 0.1.0
+Summary: Fortimail Rest API Client
+Home-page: https://github.com/surfer190/fortimail.git
+Author: surfer190
+Author-email: stephenh@startmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Fortimail Rest API Client
+
+This package is used to communicate with the fortimail rest api
+
+## Install
+
+    pip install fortimail
+
+## Usage
+
+    from fortimail.client import FortiMailClient
+
+    client = FortiMailClient(
+        baseurl='myfortimail.com',
+        username='hello',
+        password='world'
+    )
+
+    domains = client.get_domains()
+
+## Developing
+
+As per the [pytest best practices](https://docs.pytest.org/en/latest/goodpractices.html#test-discovery)
+
+Create your environment
+
+    python3.7 -m venv env
+    pip install -r requirements/dev.txt
+    # Install the package in editable mode
+    pip install -e .
+
+this is similar to running: `python setup.py develop`
+
+## Run Tests
+
+We use pytest, To run tests do: `pytest -s`
+
+Soon to bring in tox - test automation - for different python versions
+
+

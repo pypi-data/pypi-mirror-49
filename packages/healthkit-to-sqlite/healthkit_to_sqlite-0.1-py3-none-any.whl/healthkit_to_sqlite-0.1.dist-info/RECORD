@@ -1,0 +1,9 @@
+healthkit_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+healthkit_to_sqlite/cli.py,sha256=Fj7Mj8gogrbbOzczvwcK9vqc6PoFLBGrHSfWSJ11rcE,874
+healthkit_to_sqlite/utils.py,sha256=CefwgzhFwImVwef5aSulFPWDESa5hacCFwYXSQlzStE,1848
+healthkit_to_sqlite-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+healthkit_to_sqlite-0.1.dist-info/METADATA,sha256=ZnAnYAqaF2MV772ynG4wZVoWBxAgTL7zidBs2GlBg-E,1476
+healthkit_to_sqlite-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+healthkit_to_sqlite-0.1.dist-info/entry_points.txt,sha256=Tv-93Kq5LOuKgo1e5SuLwKUGpPUrDThdLvY5uqeiFQw,87
+healthkit_to_sqlite-0.1.dist-info/top_level.txt,sha256=rihc1iqRvwIN0Lk8oXLf9jHQPdOzTu7Jyiem1rpTcws,20
+healthkit_to_sqlite-0.1.dist-info/RECORD,,

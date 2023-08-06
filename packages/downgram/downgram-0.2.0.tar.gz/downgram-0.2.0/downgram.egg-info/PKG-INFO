@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: downgram
+Version: 0.2.0
+Summary: DownGram can download media from Telegram, using Telethon.
+Home-page: https://github.com/josopu/DownGram
+Author: josopu
+Author-email: piperinoxi@gmail.com
+License: UNKNOWN
+Description: # DownGram
+        Download media from Telegram. Based on Telethon
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

@@ -1,0 +1,3 @@
+pycopy-binascii
+pycopy-re-pcre
+pycopy-struct

@@ -1,0 +1,10 @@
+README.md
+setup.py
+icinga2_api/__init__.py
+icinga2_api/api.py
+icinga2py.egg-info/PKG-INFO
+icinga2py.egg-info/SOURCES.txt
+icinga2py.egg-info/dependency_links.txt
+icinga2py.egg-info/not-zip-safe
+icinga2py.egg-info/requires.txt
+icinga2py.egg-info/top_level.txt

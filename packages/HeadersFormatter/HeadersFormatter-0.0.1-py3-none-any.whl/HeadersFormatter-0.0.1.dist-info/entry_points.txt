@@ -1,0 +1,4 @@
+[console_scripts]
+HeadF = HeadersFormatter.__init__:main
+HeadersFormat = HeadersFormatter.__init__:main
+

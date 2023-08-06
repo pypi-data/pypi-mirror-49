@@ -1,0 +1,3 @@
+[console_scripts]
+make_qtclock = ecgclock.qtclock:main
+

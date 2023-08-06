@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wulfmann-constructs
+Version: 0.0.1
+Summary: Example CDK Construct Library
+Home-page: https://github.com/wulfmann/constructs
+Author: Joe Snell
+Author-email: joepsnell@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+

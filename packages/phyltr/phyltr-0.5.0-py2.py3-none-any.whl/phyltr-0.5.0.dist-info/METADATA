@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: phyltr
+Version: 0.5.0
+Summary: Unix filters for manipulating and analysing (samples of) phylogenetic trees represented in the Newick format
+Home-page: https://github.com/lmaurits/phyltr
+Author: Luke Maurits
+Author-email: luke@maurits.id.au
+License: GPL3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: ete3
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: pytest (>=3.6) ; extra == 'test'
+Requires-Dist: pytest-mock ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: coverage (>=4.2) ; extra == 'test'
+
+UNKNOWN
+
+

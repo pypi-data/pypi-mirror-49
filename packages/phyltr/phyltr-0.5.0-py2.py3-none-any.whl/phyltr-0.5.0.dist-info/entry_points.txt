@@ -1,0 +1,3 @@
+[console_scripts]
+phyltr = phyltr.__main__:run_command
+

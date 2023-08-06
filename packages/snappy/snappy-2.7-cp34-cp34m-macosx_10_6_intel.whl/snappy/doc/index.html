@@ -1,0 +1,184 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SnapPy &#8212; SnapPy 2.7 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installing SnapPy" href="installing.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="installing.html" title="Installing SnapPy"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">SnapPy 2.7 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="snappy">
+<h1>SnapPy<a class="headerlink" href="#snappy" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-snappy">
+<h2>What is SnapPy?<a class="headerlink" href="#what-is-snappy" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/SnapPy-196.png" class="align-right" src="_images/SnapPy-196.png" />
+<p>SnapPy is a program for studying the topology and geometry of
+3-manifolds, with a focus on hyperbolic structures.
+It runs on Mac OS X, Linux, and Windows, and combines a link editor and 3D-graphics
+for Dirichlet domains and cusp neighborhoods with a powerful
+command-line interface based on the <a class="reference external" href="http://python.org">Python</a>
+programming language. You can see it <a class="reference external" href="screenshots.html">in action</a>,
+learn how to <a class="reference external" href="installing.html">install</a> it, and watch the <a class="reference external" href="tutorial.html">tutorial</a>.</p>
+</div>
+<div class="section" id="news">
+<h2>News<a class="headerlink" href="#news" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Version 2.7 (July 2019): New features include:<ul>
+<li>Python 3 is now recommended over Python 2 on all platforms; the
+default Mac and Windows apps use Python 3 rather than
+Python 2. The only difference most users will notice is that one
+must type <code class="docutils literal notranslate"><span class="pre">print(blah)</span></code> instead of <code class="docutils literal notranslate"><span class="pre">print</span> <span class="pre">blah</span></code>.</li>
+<li><a class="reference external" href="verify.html">Verified computations</a>: performance improvements
+by switching to the Krawczyk test.</li>
+<li>Support for SageMath 8.8.</li>
+<li>Installation instructions extensively updated.</li>
+<li>GUI improvements, especially on macOS. These include improved
+support for dark mode and tabs on macOS Mojave and preliminary
+support for macOS Catalina.</li>
+</ul>
+</li>
+<li>Version 2.6.1 (August 2018): New features include:<ul>
+<li>Support for SageMath 8.3, Python 3.7, and macOS Mojave.</li>
+<li>Computing <a class="reference external" href="additional_classes.html#snappy.HolonomyGroup.character_variety_vars_and_polys">ideals defining SL(2, C) character varieties.</a>
+Contributed by Jean-Philippe Burelle, based on <a class="reference external" href="https://arxiv.org/abs/1703.08241">this paper</a>.</li>
+<li>Many bug fixes.</li>
+</ul>
+</li>
+<li><a class="reference external" href="news.html">Complete version history</a>.</li>
+</ul>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing SnapPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="screenshots.html">Screenshots: SnapPy in action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snappy.html">The snappy module and its classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plink.html">Using SnapPy’s link editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spherogram.html">Links: planar diagrams and invariants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snap.html">Number theory of hyperbolic 3-manifolds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="verify.html">Verified computations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">Other components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugs.html">Reporting bugs and other problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="todo.html">To Do List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development Basics</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
+<p>Written by <a class="reference external" href="http://www.math.uic.edu/~culler">Marc Culler</a>, <a class="reference external" href="http://dunfield.info">Nathan
+Dunfield</a>, and <a class="reference external" href="http://www.unhyperbolic.org/">Matthias Goerner</a> using the SnapPea kernel written by
+<a class="reference external" href="http://www.geometrygames.org">Jeff Weeks</a>, with contributions from
+<a class="reference external" href="credits.html">many others</a>.  If you use SnapPy in your work, please
+<a class="reference external" href="credits.html#citing-snappy">cite it as described here</a>.  If you
+encounter problems with SnapPy, <a class="reference external" href="bugs.html">please report them</a>.</p>
+<p>Released under the terms of the <a class="reference external" href="http://www.gnu.org/licenses/gpl-2.0.txt">GNU General Public License</a>, version 2 or later.</p>
+<p>The development of SnapPy was partially supported by grants from the
+National Science Foundation, including, DMS-0707136, DMS-0906155,
+DMS-1105476, and DMS-1510204.  Any opinions, findings, and conclusions
+or recommendations expressed on this site are those of the author(s)
+and do not necessarily reflect the views of the National Science
+Foundation.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">SnapPy</a><ul>
+<li><a class="reference internal" href="#what-is-snappy">What is SnapPy?</a></li>
+<li><a class="reference internal" href="#news">News</a></li>
+<li><a class="reference internal" href="#documentation">Documentation</a></li>
+<li><a class="reference internal" href="#credits">Credits</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="installing.html"
+                        title="next chapter">Installing SnapPy</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="installing.html" title="Installing SnapPy"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">SnapPy 2.7 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2019, by Marc Culler, Nathan Dunfield, Jeffrey Weeks and others.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+    </div>
+  </body>
+</html>

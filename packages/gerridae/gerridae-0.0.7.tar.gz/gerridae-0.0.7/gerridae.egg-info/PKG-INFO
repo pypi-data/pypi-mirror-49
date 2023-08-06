@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: gerridae
+Version: 0.0.7
+Summary: a crawl framework just for fun
+Home-page: UNKNOWN
+Author: buglan
+Author-email: dev.buglan@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6

@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: tabloo
+Version: 0.0.2
+Summary: Minimalistic dashboard app for visualizing tabular data
+Home-page: https://github.com/bluenote10/tabloo
+Author: Fabian Keller
+Author-email: pypi.20.fkeller@spamgourmet.com
+License: MIT
+Keywords: table,dataframe,visualization,plots,dashboard
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: pandas
+
+# Tabloo
+
+Minimalistic dashboard app for visualizing tabular data -- WIP.
+
+

@@ -1,0 +1,10 @@
+anytree
+matplotlib
+numpy
+pandas
+scipy
+torch
+visdom
+
+[test]
+coverage

@@ -1,0 +1,9 @@
+aiokrpc/__init__.py,sha256=JTFHh5IW6My9OfDruPXbY6Qm02IfWGoBMQTV5BCWKQU,5637
+aiokrpc/exceptions.py,sha256=6OtdCAtfxmmgmUq5b3h3SgFPhPeOXPgFtIE0S5OqSRc,683
+aiokrpc/protocol_schemas.py,sha256=hMyvsE6JU4v5tAu_fsGFLYQfjQtfxaP5W5jHL2oqSTw,446
+aio_krpc_server-0.0.1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+aio_krpc_server-0.0.1.dist-info/METADATA,sha256=Xgb5Oipv6CPw8dMlBFQ6dsKCRS-kyUOA_ziz9M3zEkg,949
+aio_krpc_server-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+aio_krpc_server-0.0.1.dist-info/top_level.txt,sha256=qV3sIo9d6Fl1B4KwNpB9UjUe8B8Z8oKukiPQUhnqYGQ,8
+aio_krpc_server-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aio_krpc_server-0.0.1.dist-info/RECORD,,

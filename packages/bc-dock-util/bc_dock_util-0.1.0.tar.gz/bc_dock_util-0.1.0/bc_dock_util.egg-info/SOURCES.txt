@@ -1,0 +1,9 @@
+README.md
+setup.py
+bc_dock_util/__init__.py
+bc_dock_util/bc_dock_util.py
+bc_dock_util.egg-info/PKG-INFO
+bc_dock_util.egg-info/SOURCES.txt
+bc_dock_util.egg-info/dependency_links.txt
+bc_dock_util.egg-info/requires.txt
+bc_dock_util.egg-info/top_level.txt

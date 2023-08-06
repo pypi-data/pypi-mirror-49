@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bc-dock-util
+Version: 0.1.0
+Summary: B client docking tianxiaxinyong service sdk util.
+Home-page: https://github.com/pytxxy/bc_dock_util
+Author: caifh
+Author-email: caifh@tianxiaxinyong.com
+License: UNKNOWN
+Description: # B client docking tianxiaxinyong sdk util
+        
+        B端对接天下信用sdk工具模块，提供了RSA密钥生成方法、RSA加解密、AES加解密，以及JAVA使用的PKCS8私钥转换成PKCS1私钥等功能。
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aiobservable
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: https://github.com/gieseladev/aiobservable
+Author: Giesela Inc.
+Author-email: team@giesela.dev
+License: MIT
+Description: # AIObservable
+        
+        A simple implementation of observables.
+Platform: UNKNOWN
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown

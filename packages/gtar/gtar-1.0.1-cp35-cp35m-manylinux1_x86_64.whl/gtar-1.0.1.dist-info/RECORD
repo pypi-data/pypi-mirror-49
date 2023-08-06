@@ -1,0 +1,11 @@
+gtar/_gtar.cpython-35m-x86_64-linux-gnu.so,sha256=Wq4FsWEPyjm4f0lZW_aPUJJ70v4rv2kumVKIMVjWOfs,10007004
+gtar/cat.py,sha256=fOMQiuXNZR5jj9rj14DDXUTiyBTd85CvpaJM34nJuTg,2387
+gtar/read.py,sha256=e0CzgLzFZDqRPFX8kLSXyJC6-e84bixVTMZqvck95PU,1490
+gtar/copy.py,sha256=KtBmKJVakY6E7x3h4SZZoqbYveOAHac0gbl6OtPQN9M,933
+gtar/fix.py,sha256=_y4EkSMICVzmBMuN0HCgmfGgvKxKT9QcS-KW4eTjpYE,3704
+gtar/__init__.py,sha256=_zBQEAG5uFi8O7S3Ex2BSS4rHzKC1WJxzivmqTnOvIs,195
+gtar/version.py,sha256=3KXfAcA5rzzQXMtfwpHphgbJNZdA0XWaW96kdWVSZJw,22
+gtar-1.0.1.dist-info/WHEEL,sha256=c8uKbdQypV832y6wpTaH7LmB9UQOPgqCSt-bcR7krHw,109
+gtar-1.0.1.dist-info/METADATA,sha256=cP4RTgCybKplkAyWatk1fLR34k0yRe5rkoNxRZNlL1s,1017
+gtar-1.0.1.dist-info/RECORD,,
+gtar-1.0.1.dist-info/top_level.txt,sha256=rGfEVcdKLdoooPbFkC7c3uVNoJgCOFTEzecaXW4fRgo,5

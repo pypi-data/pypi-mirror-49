@@ -1,0 +1,45 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: master
+    hooks:
+    - id: check-merge-conflict
+      name: Check for leftover merge conflicts
+      description: Check for files that contain merge conflict strings.
+      language: python
+      stages: [commit]
+    - id: trailing-whitespace
+      name: Trim Trailing Whitespace
+      language: python
+-   repo: https://github.com/pre-commit/mirrors-pylint
+    rev: master
+    hooks:
+    - id: pylint
+      name: Pylint
+      description: Lint files with Pylint to find errors/warnings
+      stages: [commit]
+      # Disable warnings that are sometimes unavoidable (such as shadowing core)
+      #   * This adds onto the disabled warnings from .pylintrc
+      args: ['--disable=bad-continuation,bare-except,broad-except,cell-var-from-loop,consider-iterating-dictionary,fixme,import-error,logging-format-interpolation,missing-docstring,no-self-use,self-cls-assignment,too-many-arguments,too-many-branches,too-many-instance-attributes,too-many-locals,too-many-nested-blocks,too-many-public-methods,too-many-statements,unnecessary-pass,unused-argument,unused-import,unused-variable,wrong-import-order']
+-   repo: https://github.com/chewse/pre-commit-mirrors-pydocstyle
+    rev: master
+    hooks:
+    - id: pydocstyle
+      name: Pydocstyle
+      description: Find any missing docstrings
+      stages: [commit]
+      # Allow missing docstrings in module or class, but nowhere else
+      # http://www.pydocstyle.org/en/3.0.0/error_codes.html
+-   repo: https://github.com/myint/docformatter
+    rev: master
+    hooks:
+    - id: docformatter
+      name: Format Python Docstrings
+      description: Auto-format docstrings to match style guide.
+      stages: [commit]
+      args: [-i, --wrap-summaries=80, --wrap-descriptions=80, --pre-summary-newline, --make-summary-multi-line]
+-   repo: https://github.com/gobluestingray/pre-commit-hooks
+    rev: master
+    hooks:
+    -   id: forbid-git-conflicts
+    -   id: forbid-set-trace
+        types: [python]

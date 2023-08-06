@@ -1,0 +1,254 @@
+################################################################################
+#
+# PLEASE if you make any edits to this file, make sure that they are
+# reflected in the collections scaffolding so that they apply across all
+# projects.
+#
+################################################################################
+
+pipeline:
+  # Setup Submodules
+  # ========
+  #
+  # Make sure that we have all of the submodules / other git repo dependencies
+  # so that we can run tests through invoke.
+  setup:
+    image: docker:git
+    group: setups_and_checks
+    commands:
+      - git clone https://bitbucket.org/bluestingray/om.git .om --depth=1
+      - git clone https://bitbucket.org/bluestingray/collections_scaffold.git .om/collections --depth=1
+
+
+  # Project Structure Checks
+  # ========
+  #
+  # Check and make sure that the general project structure if configured
+  # for the project.
+  check_structure:
+    image: python:3.7-slim
+    group: setups_and_checks
+    commands:
+      - cat __manifest__.py > /dev/null
+      - cat .env.sample > /dev/null
+      - cat make.sh > /dev/null
+      - cat `find . -maxdepth 1 -iname readme.md` > /dev/null
+      - cat requirements.txt > /dev/null
+      - ls .container > /dev/null
+      - ls _lib_static > /dev/null
+      - ls .pipeline > /dev/null
+      - cat .pipeline/pipeline.conf > /dev/null
+
+
+  # Build Environment
+  # ========
+  #
+  # Check and make sure that we can set up the project via the local toolset
+  # defined for bluestingray odoo projects.
+  #
+  # TODO:
+  #   - Be able to run `./make.sh`
+  check_setup:
+    image: bluestingray/ubuntu:18.04
+    group: build_and_test
+    environment:
+      - INVOKE_ASCII=1
+    pull: true
+    privileged: true
+    commands:
+      - cp .env.sample .env && echo 'LINT=0' >> .env
+      - pip3 install -r requirements.txt
+      - ln -sf ./.om/tasks .
+      - invoke setup --no-git
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root/.ssh/id_rsa:/root/.ssh/id_rsa
+      - /root/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub
+      - /var/lib/docker:/drone_root_data
+
+
+  # Check Styles
+  # ========
+  # TODO: Check coding styles.
+  # check_code_style:
+  #   image: bluestingray/ubuntu:18.04
+
+
+  # Run Automated Tests On Pull Request
+  # ========
+  #
+  # Spin up a test instance via invoke and install all of the custom modules
+  # that are part of this project. Once installed, we will then trigger
+  # the automated tests written for all of those modules.
+  #
+  # TODO:
+  #   - Run and check coverage
+  run_pr_tests:
+    image: bluestingray/ubuntu:18.04
+    group: build_and_test
+    when:
+      event:
+        - pull_request
+    environment:
+      - INVOKE_ASCII=1
+    pull: true
+    privileged: true
+    commands:
+      - export VOLUME_PATH=/var/lib/docker/volumes/$(docker inspect -f '{{.HostConfig.Binds}}' $(cat /proc/self/cgroup | grep 'docker' | sed 's:^.*\/::' | tail -n1) | sed -n 's/\[\([^:]*\)\:.*/\1/p')/_data/src/bitbucket.org/bluestingray/$(basename $PWD); sed -i "s:- ./:- $VOLUME_PATH/:g" docker-compose.yml
+      - export VOLUME_PATH=/var/lib/docker/volumes/$(docker inspect -f '{{.HostConfig.Binds}}' $(cat /proc/self/cgroup | grep 'docker' | sed 's:^.*\/::' | tail -n1) | sed -n 's/\[\([^:]*\)\:.*/\1/p')/_data/src/bitbucket.org/bluestingray/$(basename $PWD); mkdir -p "$VOLUME_PATH/.container/testresults"
+      - export VOLUME_PATH=/var/lib/docker/volumes/$(docker inspect -f '{{.HostConfig.Binds}}' $(cat /proc/self/cgroup | grep 'docker' | sed 's:^.*\/::' | tail -n1) | sed -n 's/\[\([^:]*\)\:.*/\1/p')/_data/src/bitbucket.org/bluestingray/$(basename $PWD); chmod -R 777 "$VOLUME_PATH/.container/testresults"
+      - mkdir -p _lib
+      - mkdir -p .container/log
+      - mkdir -p ~/.ssh
+      - touch .container/log/odoo.log
+      - touch ~/.ssh/known_hosts
+      - ssh-keyscan github.com >> ~/.ssh/known_hosts
+      - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+      - ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
+      - cp .env.sample .env && echo 'LINT=0' >> .env
+      - pip3 install -r requirements.txt > /dev/null
+      - ln -sf ./.om/tasks .
+      - invoke setup --no-git > /dev/null
+      - invoke setup.depends --no-setup --yes
+      - invoke build --pull --no-setup -v
+      - invoke test --modules=custom --yes --ci -v
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root/.ssh/id_rsa:/root/.ssh/id_rsa
+      - /root/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub
+      - /var/lib/docker:/drone_root_data
+
+
+  # Run Tests For The Major Branches
+  # ========
+  #
+  # Identical process of the run_pr_tests pipeline step except only for the
+  # "major" branches.
+  run_tests_major_branches:
+    image: bluestingray/ubuntu:18.04
+    group: build_and_test
+    when:
+      branch:
+        - master*
+        - development*
+        - dev*
+        - 12.0*
+        - 11.0*
+        - 10.0*
+        - 9.0*
+    environment:
+      - INVOKE_ASCII=1
+    pull: true
+    privileged: true
+    commands:
+      - export VOLUME_PATH=/var/lib/docker/volumes/$(docker inspect -f '{{.HostConfig.Binds}}' $(cat /proc/self/cgroup | grep 'docker' | sed 's:^.*\/::' | tail -n1) | sed -n 's/\[\([^:]*\)\:.*/\1/p')/_data/src/bitbucket.org/bluestingray/$(basename $PWD); sed -i "s:- ./:- $VOLUME_PATH/:g" docker-compose.yml
+      - export VOLUME_PATH=/var/lib/docker/volumes/$(docker inspect -f '{{.HostConfig.Binds}}' $(cat /proc/self/cgroup | grep 'docker' | sed 's:^.*\/::' | tail -n1) | sed -n 's/\[\([^:]*\)\:.*/\1/p')/_data/src/bitbucket.org/bluestingray/$(basename $PWD); mkdir -p "$VOLUME_PATH/.container/testresults"
+      - export VOLUME_PATH=/var/lib/docker/volumes/$(docker inspect -f '{{.HostConfig.Binds}}' $(cat /proc/self/cgroup | grep 'docker' | sed 's:^.*\/::' | tail -n1) | sed -n 's/\[\([^:]*\)\:.*/\1/p')/_data/src/bitbucket.org/bluestingray/$(basename $PWD); chmod -R 777 "$VOLUME_PATH/.container/testresults"
+      - mkdir -p _lib
+      - mkdir -p .container/log
+      - mkdir -p ~/.ssh
+      - touch .container/log/odoo.log
+      - touch ~/.ssh/known_hosts
+      - ssh-keyscan github.com >> ~/.ssh/known_hosts
+      - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+      - ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
+      - cp .env.sample .env && echo 'LINT=0' >> .env
+      - pip3 install -r requirements.txt > /dev/null
+      - ln -sf ./.om/tasks .
+      - invoke setup --no-git > /dev/null
+      - invoke setup.depends --no-setup --yes
+      - invoke build --pull --no-setup -v
+      - invoke test --modules=custom --yes --ci -v
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root/.ssh/id_rsa:/root/.ssh/id_rsa
+      - /root/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub
+      - /var/lib/docker:/drone_root_data
+
+
+  # Run All Tests
+  # ========
+  # TODO: For production or development branches, we will run a full test to ensure
+  # that every module in the system passes tests.
+  #
+  # This will end up being very time intensive so we need to make sure that we only
+  # run this when we have to.
+  # run_all_tests:
+  #   image: bluestingray/ubuntu:18.04
+
+
+  # Run Security Analysis
+  # ========
+  #
+  # Run something like Bandit if possible for static analysis of python code for
+  # security flaws.
+  # security_analysis:
+  #   image: bluestingray/ubuntu:18.04
+  #   environment:
+  #     - INVOKE_ASCII=1
+  #   pull: true
+  #   privileged: true
+
+
+  # Publish Builds For Important Branches
+  # ========
+  #
+  # Publish our builds to slack related to "important" branches. These
+  # are going to be the development, staging, and production branches.
+  publish_to_slack:
+    image: plugins/slack
+    channel: {{ pipeline.drone_channel }}
+    username: Drone
+    icon_url: http://ci.bluestingray.com/images/drone.png
+    webhook: {{ pipeline.drone_hook }}
+    when:
+      branch:
+        - master*
+        - development*
+        - dev*
+        - 12.0*
+        - 11.0*
+        - 10.0*
+        - 9.0*
+      status: [ failure, success ]
+    template: "Project: *<https://bitbucket.org/{{ repo.owner }}/{{ repo.name }}|{{ repo.name }}>*\nAuthor: *<https://bitbucket.org/{{ build.author }}|{{ build.author }}>*\nStatus: *<{{ build.link }}|{{ build.status }}>*\n\nReference: {{ build.ref }}\nCommit: *<https://bitbucket.org/{{ repo.owner }}/{{ repo.name }}/commits/{{ build.commit }}|{{ build.commit }}>*\nMessage: {{ build.message }}"
+
+{{ if deploy }}
+  # Deploy
+  # ========
+  # Deploy the application to relevant servers.
+  #
+  # TODO:
+  #   - Retain databases and volumes on deployment instead of running a
+  #     docker-compose down every deploy.
+  deploy:
+    image: google/cloud-sdk:latest
+    environment:
+      PROJECT_ID: {{ pipeline.deploy.project }}
+      COMPUTE_ZONE: {{ pipeline.deploy.zone }}
+      COMPUTE_INSTANCE: {{ pipeline.deploy.instance }}
+    secrets: [{{ pipeline.deploy.secret }}]
+    commands:
+      - python3 .om/server/deploy/deploy.py drone gcloud \
+          {{ pipeline.deploy.path }} \
+          {{ pipeline.deploy.secret }} \
+          $COMPUTE_ZONE \
+          $COMPUTE_INSTANCE \
+          $PROJECT_ID
+    when:
+      branch:
+        {{ pipeline.deploy.branches }}
+{{ endif deploy }}
+
+  # Monitor
+  # ========
+  # Link the application to monitoring services. If not already
+  # being monitored.
+
+  # Summarize
+  # =========
+  # Summarize everything that happened during this pipeline
+  # execution for quick reference. Not sure on the implementation
+  # details, but we could generate report files, send emails,
+  # sync to blue erp, etc. depending on our needs.
+

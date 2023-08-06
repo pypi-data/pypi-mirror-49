@@ -1,0 +1,23 @@
+{
+  "name": "bluestingray/om",
+  "require": {
+    "symfony/console": "^3.0",
+    "symfony/process": "^3.0",
+    "psr/log": "^1.0",
+    "ircmaxell/random-lib": "^1.1"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packagist.org"
+    },
+    {
+      "packagist": false
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Om\\": "src/"
+    }
+  }
+}

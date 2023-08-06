@@ -1,0 +1,13 @@
+# Odoo Port 80
+
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server ipv6only=on;
+    server_name $SERVER_NAME;
+    access_log /var/log/nginx/odoo80.access.log combined;
+    error_log /var/log/nginx/odoo80.error.log;
+
+    location / {
+        rewrite ^/(.*) http://$IP_ADDRESS_OR_DOMAIN:443/$1 permanent;
+    }
+}

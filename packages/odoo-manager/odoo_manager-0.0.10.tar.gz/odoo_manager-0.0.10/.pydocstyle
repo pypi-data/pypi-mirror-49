@@ -1,0 +1,3 @@
+[pydocstyle]
+match = ^((?!test_).)*$
+select = D102,D103,D105,D106,D107

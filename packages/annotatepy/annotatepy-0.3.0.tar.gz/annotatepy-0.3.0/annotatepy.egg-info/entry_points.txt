@@ -1,0 +1,3 @@
+[console_scripts]
+annotatepy = annotatepy.console:main
+

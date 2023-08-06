@@ -1,0 +1,15 @@
+cashew/__init__.py,sha256=fBttIjDseyhHnX0bFX3uiy4wPp6RxX-4yo0OVptZi50,70
+cashew/exceptions.py,sha256=QgbXjmHnx-ZmyIscx08_9u6Qs1c1itK1faWTgpnH1No,574
+cashew/plugin.py,sha256=8KVNgHobWLItSWWn9I3dNV40-ANGnO4Kur9boh3vDZE,13234
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/classes.py,sha256=25s9M93RWnfcyuDTuxKz4ZIzFy13-h4eyiYyFgRb7FI,346
+example/classes1.py,sha256=wPKiRGSAdnoSCENeMRPE4TlkIwUpLLtbs9H762b1ulc,748
+example/classes2.py,sha256=AZUZ6Fk7m1KNfi_lb3EhKVWTTdfyVe811AcD4h9HelM,1594
+example/usage1.py,sha256=zcevUvrA4Ev6s0cp-QCgNkqtXL03RjaS6-hjtzF4TDM,471
+example/usage2.py,sha256=LNkJ30TS2UTpxhoRuq5XUQdBsyvPLFwfGpfAkIbK4Qc,581
+example/utils.py,sha256=0B3mRcGAswQSb2R2NmoJdNahfKsZ5mSFdgG2g4oACfY,640
+cashew-0.4.0.dist-info/LICENSE,sha256=hxWeJ_o_kB6pa1ygKMFpXFMb2639TNiu43Zhyp0ov7g,1072
+cashew-0.4.0.dist-info/METADATA,sha256=0eVPHzc8_F5HLYTnOgr0YokkMclJjabqZ1Rlp1NQzGY,320
+cashew-0.4.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+cashew-0.4.0.dist-info/top_level.txt,sha256=AV6XcGLiamo5oU4Gi35ktR7gv86g5Rg_fBy-4B3KSss,15
+cashew-0.4.0.dist-info/RECORD,,

@@ -1,0 +1,10 @@
+bbndb/__init__.py,sha256=XJjwkJtaJXc8pLzzctYaalq8eaj7KDLiePvQeBzjg9k,5319
+bbndb/auspex.py,sha256=Ga33S-D8QOvdlBikU1L_Fj-rlfV0h8ChPuWOVjySCXo,17846
+bbndb/calibration.py,sha256=Q6M5K-clsTp5w1nWJrlolZM1ZQVJ_KhZJcQhn-PdlT8,931
+bbndb/qgl.py,sha256=J2JR2MT1nUgBUk2I-mU-Q7aXlk5r3hT9ZKDeR8JRiC4,22889
+bbndb/session.py,sha256=S1beOoGrKLYtenUfiO5nbhXMWLhKwcvoBhLJ-GegxsQ,1417
+bbndb-2019.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bbndb-2019.1.dist-info/METADATA,sha256=SfZkR95IUS8qSm-_dbaUUZyXTSwlRWJEbuAQeUwmmSI,1158
+bbndb-2019.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+bbndb-2019.1.dist-info/top_level.txt,sha256=D6bZ_BmQN9U_bhr3uWNBwpffrKsge9Mn0MuK3cv7Jow,6
+bbndb-2019.1.dist-info/RECORD,,

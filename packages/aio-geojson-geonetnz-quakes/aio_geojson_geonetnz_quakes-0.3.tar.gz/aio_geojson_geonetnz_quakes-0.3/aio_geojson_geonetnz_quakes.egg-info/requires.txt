@@ -1,0 +1,2 @@
+aio_geojson_client>=0.3
+aiohttp

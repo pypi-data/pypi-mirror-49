@@ -1,0 +1,10 @@
+boas-1.6.data/scripts/boas,sha256=F60jVbE4uIU4PyAkt07OZqeDQrNXEtcr3bigPXRDtr4,4119
+src/boas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/boas/locators.py,sha256=meWou59wUx9Zf47FsO17qcZq8zJ4at_bDItS3CC9NYo,2140
+src/boas/page.py,sha256=A2M2KCpLNrYV6ph3CVwOfz4w6aWzrWUaN7z6wqHzHOY,7528
+src/boas/parser.py,sha256=le9UVt5Z4qSAPUtkfH5dz3MfKXI1qez_uxP_nDJnn1Q,3544
+src/boas/runner.py,sha256=1R1PQllmurQfgqWWjtM7ds7U4LT8QmWJA8v1Tsl2fs8,2811
+boas-1.6.dist-info/METADATA,sha256=HguPtxEIj4u9syT1q6ASQblLOTr2Pja6o6mvNXku7wI,3554
+boas-1.6.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+boas-1.6.dist-info/top_level.txt,sha256=ssTNwfrh50CYutTFsQGvPGdqbfjeUF6cfJALIjN5fJs,9
+boas-1.6.dist-info/RECORD,,

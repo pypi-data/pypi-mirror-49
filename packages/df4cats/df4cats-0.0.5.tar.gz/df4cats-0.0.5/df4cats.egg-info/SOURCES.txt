@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+df4cats/__init__.py
+df4cats/frames.py
+df4cats.egg-info/PKG-INFO
+df4cats.egg-info/SOURCES.txt
+df4cats.egg-info/dependency_links.txt
+df4cats.egg-info/requires.txt
+df4cats.egg-info/top_level.txt
+df4cats/utils/__init__.py
+df4cats/utils/maps.py
+df4cats/utils/utils.py

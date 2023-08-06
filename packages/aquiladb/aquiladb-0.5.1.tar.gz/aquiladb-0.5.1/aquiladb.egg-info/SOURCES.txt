@@ -1,0 +1,11 @@
+README.md
+setup.py
+aquiladb/AquilaDB.py
+aquiladb/__init__.py
+aquiladb/vecdb_pb2.py
+aquiladb/vecdb_pb2_grpc.py
+aquiladb.egg-info/PKG-INFO
+aquiladb.egg-info/SOURCES.txt
+aquiladb.egg-info/dependency_links.txt
+aquiladb.egg-info/requires.txt
+aquiladb.egg-info/top_level.txt

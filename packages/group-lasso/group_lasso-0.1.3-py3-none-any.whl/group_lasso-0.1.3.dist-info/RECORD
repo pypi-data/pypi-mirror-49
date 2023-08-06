@@ -1,0 +1,10 @@
+group_lasso/__init__.py,sha256=m5w_XqwIgCiKTJkHOZ2ItKPy9SZ-tOsnHhmpu9SIdfQ,218
+group_lasso/_fista.py,sha256=5xK9bUP6A4SAdfCfamQkm9I98YXfkM1BRTJD7B3m9pE,1676
+group_lasso/_group_lasso.py,sha256=JIQqP6m1ZzxGJR_OJm7sDZCpSV8uNe79IbjFZLznXAg,15857
+group_lasso/_singular_values.py,sha256=0iSTJPvy5yhR2s8-C4P6Ez8rlZBEe3Co6gWUnIcx_Ac,1654
+group_lasso/_subsampling.py,sha256=ZYini7twB71NL_4sHXIRiXUCrxrobg-mB7dyKN5mEM4,2140
+group_lasso-0.1.3.dist-info/LICENSE,sha256=9NNxA4gvoai17DyhjoKAypSKnJohlTelWLRW4443m1Y,1104
+group_lasso-0.1.3.dist-info/METADATA,sha256=mTGIQfp-vNypcJXLLl8n_pQEg51z0bOD5kKgBQyQBw4,11115
+group_lasso-0.1.3.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+group_lasso-0.1.3.dist-info/top_level.txt,sha256=vltGG-UuVyZYtRjSbfeRUYb1DPgQCZ1W47qS0UnFB8A,12
+group_lasso-0.1.3.dist-info/RECORD,,

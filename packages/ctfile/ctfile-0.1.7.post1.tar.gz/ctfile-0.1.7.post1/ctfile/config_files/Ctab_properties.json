@@ -1,0 +1,35 @@
+{
+    "V2000": {
+        "ISO": {
+            "description": "isotope",
+            "fmt": "M  ISO",
+            "max_entries_per_line": "8",
+            "default_entries_per_line": "1",
+            "values": ["atom_number", "absolute_mass"]
+        },
+
+        "CHG": {
+            "description": "charge",
+            "fmt": "M  CHG",
+            "max_entries_per_line": "8",
+            "default_entries_per_line": "1",
+            "values": ["atom_number", "charge"]
+        },
+
+        "RAD": {
+            "description": "radical",
+            "fmt": "M  RAD",
+            "max_entries_per_line": "8",
+            "default_entries_per_line": "1",
+            "values": ["atom_number", "radical"]
+        },
+
+        "END": {
+            "description": "last line in properties block",
+            "fmt": "M  END",
+            "max_entries_per_line": null,
+            "default_entries_per_line": null,
+            "values": null
+        }
+    }
+}

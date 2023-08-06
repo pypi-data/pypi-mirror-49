@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: krakensegment
+Version: 0.2
+Summary: line segmentation code from kraken
+Home-page: https://github.com/andbue/kraken
+Author: Andreas Büttner
+Author-email: andreas.buettner@uni-wuerzburg.de
+License: Apache
+Keywords: ocr
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+
+UNKNOWN
+
+

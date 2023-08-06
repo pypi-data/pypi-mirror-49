@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: emotapal
+Version: 0.8
+Summary: Match colors and words
+Home-page: https://github.com/josh-ashkinaze/emotapal
+Author: Josh Ashkinaze
+Author-email: josh.ashkinaze@gmail.com
+License: gpl-3.0
+Download-URL: https://github.com/josh-ashkinaze/emotapal/archive/v_08.tar.gz
+Description: UNKNOWN
+Keywords: colors,emotions,psychology,image processing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

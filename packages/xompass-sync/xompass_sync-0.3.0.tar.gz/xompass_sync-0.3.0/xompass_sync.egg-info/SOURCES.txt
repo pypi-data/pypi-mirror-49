@@ -1,0 +1,8 @@
+README.md
+setup.py
+xompass_sync/__init__.py
+xompass_sync/sync.py
+xompass_sync.egg-info/PKG-INFO
+xompass_sync.egg-info/SOURCES.txt
+xompass_sync.egg-info/dependency_links.txt
+xompass_sync.egg-info/top_level.txt

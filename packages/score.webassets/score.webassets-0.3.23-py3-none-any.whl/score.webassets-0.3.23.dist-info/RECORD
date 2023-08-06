@@ -1,0 +1,11 @@
+score.webassets-0.3.23-py3.5-nspkg.pth,sha256=Sc8n-AjC4efQEM9N970YYvqthmC_oBMk9MryXA8wB9c,534
+score/webassets/__init__.py,sha256=Gyxmw28C1xRWh5KqXG-MerJndmnTbLAhwcpxVxLs-fY,2130
+score/webassets/_init.py,sha256=yMNIXdfLQSUeYIVkLtKNF05HAzMQT_ahdiTxRyPobc8,21027
+score/webassets/cli.py,sha256=bbCvESIeTsEFW05sekwhNdappAWn7o5PwxTwelb0QTM,5087
+score/webassets/proxy.py,sha256=9zfIeSk6DAnvDgrFsA8KiFB4T6qCVnTXji7jfImhR4g,6593
+score.webassets-0.3.23.dist-info/METADATA,sha256=qhbMpQswLczUWxIlfa0y9TUm1n0Xz4eEIPJPYHn2aPs,3187
+score.webassets-0.3.23.dist-info/RECORD,,
+score.webassets-0.3.23.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+score.webassets-0.3.23.dist-info/entry_points.txt,sha256=I9Ls63ogF48AovvncgDPP0XgV1487BkPGYo1ibufAgo,50
+score.webassets-0.3.23.dist-info/namespace_packages.txt,sha256=ombXQcxxoHXkOBjIMIwHIdXOU_bRR6fxpkmCd_LLxCQ,6
+score.webassets-0.3.23.dist-info/top_level.txt,sha256=ombXQcxxoHXkOBjIMIwHIdXOU_bRR6fxpkmCd_LLxCQ,6

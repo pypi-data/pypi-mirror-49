@@ -1,0 +1,76 @@
+{% extends 'djangoadmin/base/body/index.html' %}
+
+
+{% block body %}
+{% include "djangoadmin/widgets/alert.html" %}
+
+<form method="POST" action="#" enctype="multipart/form-data">
+{% csrf_token %}
+
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+<li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title" for="{{ userchangeform.username.id_for_label }}">
+        {{ userform.image.label }}
+    </a>
+
+    <div class="accordion-content" data-tab-content style="padding: 5px;">
+        {{ userform.image }}
+    </div>
+</li>
+</ul>
+<br />
+
+<div class="grid-x">
+    <div class="small-6 cell" style="padding-right: 2px;">
+        <label for="{{ userchangeform.username.id_for_label }}">{{ userchangeform.username.label }}
+        {{ userchangeform.username }}
+        </label>
+    </div>
+    
+    <div class="small-6 cell" style="padding-left: 2px;">
+        <label for="{{ userchangeform.email.id_for_label }}">{{ userchangeform.email.label }}
+        {{ userchangeform.email }}
+        </label>
+    </div>
+</div>
+
+<div class="grid-x">
+    <div class="small-6 cell" style="padding-right: 2px;">
+        <label for="{{ userchangeform.username.id_for_label }}">{{ userchangeform.first_name.label }}
+        {{ userchangeform.first_name }}
+        </label>
+    </div>
+    
+    <div class="small-6 cell" style="padding-left: 2px;">
+        <label for="{{ userchangeform.username.id_for_label }}">{{ userchangeform.last_name.label }}
+        {{ userchangeform.last_name }}
+        </label>
+    </div>
+</div>
+
+<div class="grid-x">
+    <div class="small-12 cell">
+        <label for="{{ userform.address.id_for_label }}">{{ userform.address.label }}
+        {{ userform.address }}
+        </label>
+    </div>
+</div>
+    
+<div class="grid-x">
+    <div class="small-6 cell" style="padding-right: 2px;">
+        <label for="{{ userform.phone.id_for_label }}">{{ userform.phone.label }}
+        {{ userform.phone }}
+        </label>
+    </div>
+    
+    <div class="small-6 cell" style="padding-left: 2px;">
+        <label for="{{ userform.website.id_for_label }}">{{ userform.website.label }}
+        {{ userform.website }}
+        </label>
+    </div>
+</div>
+
+<button class="button expanded" type="submit">Submit</button>
+</form>
+
+{% endblock body %}

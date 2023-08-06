@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pypi-sidekick
+Version: 19.7.0
+Summary: Common functions for quick python development
+Home-page: https://github.com/ZenosParadox/pypi-sidekick
+Author: Gabriel Rosales
+Author-email: gabriel.alejandro.rosales@gmail.com
+License: UNKNOWN
+Description: # pypi-sidekick
+        Project Management tools for quickly creating and maintaining PYPI packages.
+        Under development.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

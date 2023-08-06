@@ -1,0 +1,7 @@
+aiohttp>=3.5.4
+netifaces>=0.10.7
+python-dateutil>=2.7.5
+pytz>=2019.1
+
+[uvloop]
+uvloop>=0.12.2

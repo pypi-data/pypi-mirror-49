@@ -1,0 +1,7 @@
+README.md
+setup.py
+package_name/__init__.py
+pypi_sidekick.egg-info/PKG-INFO
+pypi_sidekick.egg-info/SOURCES.txt
+pypi_sidekick.egg-info/dependency_links.txt
+pypi_sidekick.egg-info/top_level.txt

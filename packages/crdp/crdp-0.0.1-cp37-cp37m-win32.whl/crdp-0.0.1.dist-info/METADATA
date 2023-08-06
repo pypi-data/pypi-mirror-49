@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: crdp
+Version: 0.0.1
+Summary: A fast Ramer-Douglas-Peucker algorithm implementation.
+Home-page: https://github.com/biran0079/crdp
+Author: Ran Bi
+Author-email: biran0079@gmail.com
+License: MIT
+Keywords: rdp ramer douglas peucker line simplification cython
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: cython (>=0.29) ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# crdp
+Cython implementation of Ramer-Douglas-Peucker algorithm.
+
+

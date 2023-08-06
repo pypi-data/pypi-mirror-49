@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+python_demo.egg-info/PKG-INFO
+python_demo.egg-info/SOURCES.txt
+python_demo.egg-info/dependency_links.txt
+python_demo.egg-info/not-zip-safe
+python_demo.egg-info/requires.txt
+python_demo.egg-info/top_level.txt
+utils/__init__.py
+utils/debug_demo.py
+utils/dict_combine.py
+utils/monitor_server.py
+utils/python_doc.py
+utils/regex.py
+utils/strconvert.py

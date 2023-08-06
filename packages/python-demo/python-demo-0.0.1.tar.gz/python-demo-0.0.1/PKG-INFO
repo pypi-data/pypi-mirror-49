@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: python-demo
+Version: 0.0.1
+Summary: python scripts demos
+Home-page: https://github.com/dennycn/script-lang/
+Author: wuqifu
+Author-email: wuqifu@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

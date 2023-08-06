@@ -1,0 +1,12 @@
+flask
+cheroot
+cryptography
+requests
+python-dotenv
+PyYAML
+pika
+xlrd
+prettytable
+cachetools
+wsgi-request-logger
+coloredlogs

@@ -1,0 +1,17 @@
+.pytest_cache
+.python-version
+build
+dist
+python_elemental.egg-info
+elemental/main.py
+elemental/Keys.py
+elemental/.DS_Store
+elemental/templates/.DS_Store
+python_elemental.egg-info
+venv
+.coverage
+.DS_Store
+
+__pycache__
+.idea
+.coverage

@@ -1,0 +1,1 @@
+DELETE FROM `{project}.{dataset}.{table}` WHERE TRUE

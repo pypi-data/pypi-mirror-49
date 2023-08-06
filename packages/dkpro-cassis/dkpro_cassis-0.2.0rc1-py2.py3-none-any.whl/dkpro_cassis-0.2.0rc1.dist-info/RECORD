@@ -1,0 +1,16 @@
+cassis/__init__.py,sha256=SqW9tbqgQwGccwIeMOy5WxAXVsRR2asYA90c2R5Nl1Q,287
+cassis/__version__.py,sha256=4B6W4wFobVYBGfy-G_6ZpAcAFt9qJZfdNmpeTpnSLDM,26
+cassis/cas.py,sha256=mHy0nCqjiwOhF6NHKyORC5F0NrxsuLBoPbOMUymu4Ig,11311
+cassis/typesystem.py,sha256=_78cZXCPBeEr-Bgst7AwPbVmy1p3sHY2VY2bj5hny6c,27705
+cassis/xmi.py,sha256=3rAlJnRxM1wCIJg1KErXqz8pkxifyFe31_uv0Kgd_Rk,13878
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/fixtures.py,sha256=R3Ww_uX8qICsPslgwXHBERv9iFkEpGXXDbto0WrQXHs,4669
+tests/test_cas.py,sha256=Ur2-u6EZODRfW_39DUz8cufiFaMIbTnurFP1Oej2aDo,5766
+tests/test_typesystem.py,sha256=FEmNDHyjNAtoH5P_din6Duq2_lKKZYidII4hpgGGbLM,10516
+tests/test_xmi.py,sha256=oSElYGZdf2OhCAF7lnYbgnN9qCoDai3VK3TWRgLMKS0,8795
+tests/util.py,sha256=P-erOjOvpSDlHOCtSP97Pg_MPbzXnAoUiRhl_jS-xlw,1437
+dkpro_cassis-0.2.0rc1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dkpro_cassis-0.2.0rc1.dist-info/METADATA,sha256=1MlGYyX2LHm-utuPqHgZZQcsdmFcHUtkGoPSjD7AyeI,9665
+dkpro_cassis-0.2.0rc1.dist-info/WHEEL,sha256=CihQvCnsGZQBGAHLEUMf0IdA4fRduS_NBUTMgCTtvPM,110
+dkpro_cassis-0.2.0rc1.dist-info/top_level.txt,sha256=778VDB6dMtpwhrzccVALsyDsA-Lt-ZcoAUJj_krMN_s,13
+dkpro_cassis-0.2.0rc1.dist-info/RECORD,,

@@ -1,0 +1,10 @@
+Click==7.0
+
+[:python_version != "3.4"]
+arrow==0.14.2
+
+[:python_version == "3.4"]
+arrow==0.13.2
+
+[:sys_platform != "win32"]
+sh==1.12.14

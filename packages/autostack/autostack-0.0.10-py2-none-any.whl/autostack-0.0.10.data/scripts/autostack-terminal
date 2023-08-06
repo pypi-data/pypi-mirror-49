@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+bash -c "script -q -F /tmp/monitorPipe"

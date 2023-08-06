@@ -1,0 +1,11 @@
+autostack/__init__.py,sha256=ppod6vipv_wyGirSDRGnT3WkfA39NOvmYJu62oYpfSI,286
+autostack/__main__.py,sha256=d2mDnVUPRHGMVMS4rrsHMQcaGwxXXDK13ZHvXYEs3zE,2986
+autostack/web_scraper/__init__.py,sha256=nldsYmw6b_B1WhtRGR_58rWA8wL6x5BJORE_1RKK_2E,205
+autostack/web_scraper/stack_overflow_scraper.py,sha256=GH1qLGTsau_ORJG4g9uI_bpwHkz2bT42z-tR6MBkwa8,7410
+autostack-0.0.10.data/scripts/autostack-terminal,sha256=RzeONou0fJGdMCE8QVddskHEddZXzFITGekyAAQjp88,59
+autostack-0.0.10.dist-info/LICENSE,sha256=ROlOkrIBqZp2_IUPMWB3iZtCGlSPok1-hs6-2jp9lTc,1138
+autostack-0.0.10.dist-info/METADATA,sha256=5qPFz38klz_MsUxogUvAEiAs9tHVAoo5nu9CNJiHUbU,1949
+autostack-0.0.10.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+autostack-0.0.10.dist-info/entry_points.txt,sha256=wUyzUjuOjSOsDwjBIWCOXbilGRPk2MM6GpFSFmUhfxM,55
+autostack-0.0.10.dist-info/top_level.txt,sha256=3QEI0eV9O5k3w46esETpMBx0WSAywOG0qtFDT2R8_ww,10
+autostack-0.0.10.dist-info/RECORD,,

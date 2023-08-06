@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/fuzzylogic.egg-info/PKG-INFO
+src/fuzzylogic.egg-info/SOURCES.txt
+src/fuzzylogic.egg-info/dependency_links.txt
+src/fuzzylogic.egg-info/not-zip-safe
+src/fuzzylogic.egg-info/top_level.txt
+test/test_functionality.py
+test/test_units.py

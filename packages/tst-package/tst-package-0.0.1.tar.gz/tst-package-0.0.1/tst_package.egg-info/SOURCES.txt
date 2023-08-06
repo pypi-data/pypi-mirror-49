@@ -1,0 +1,8 @@
+README.md
+setup.py
+bin/robbert
+test_package/__init__.py
+tst_package.egg-info/PKG-INFO
+tst_package.egg-info/SOURCES.txt
+tst_package.egg-info/dependency_links.txt
+tst_package.egg-info/top_level.txt

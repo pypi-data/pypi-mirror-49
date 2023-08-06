@@ -1,0 +1,16 @@
+alttext/__init__.py,sha256=kwEyWwKLIIqYSnkf5eXgPtRgw9Bz51riSupwtvDpJMA,23
+alttext/admin.py,sha256=tfEMXDwARlA0UEoozjZ8qpf_7VLoshnxugqkBipSdI0,1954
+alttext/apps.py,sha256=z2rtVAzKBUwYRvDEZjxM5YxjlNILKRsMe40HM5AYk40,155
+alttext/models.py,sha256=HACagpG9xi5vQKArRhSThXpfLdEB9qb_bx23QSj5AaI,548
+alttext/mezzanine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alttext/mezzanine/templates/admin/base_site.html,sha256=XKBTvoUR9jHNK5ozdYVLjJPTmbybV3ZYUWiz_NGWqDI,1476
+alttext/migrations/0001_initial.py,sha256=b3GFin1sRE6-32kStkFmN5ZQHB9-DZeF4i5LZ25oHU8,751
+alttext/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alttext/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alttext/templatetags/alttext_tags.py,sha256=KvWITs4eU5QSt8OpTN9ixKn-vm49PVSHeOQL-kseCcY,425
+django_alttext-1.0.4.dist-info/DESCRIPTION.rst,sha256=djphMmYKdo1SPa4pe-c4ek_Z8vhPe4qWscXg_kPWYX0,1264
+django_alttext-1.0.4.dist-info/METADATA,sha256=zXOZtYHaOVFaqDeuBR5LjdOAovGGuk-TOz2jhe9g89E,2022
+django_alttext-1.0.4.dist-info/RECORD,,
+django_alttext-1.0.4.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+django_alttext-1.0.4.dist-info/metadata.json,sha256=Xwe0zaUDJXOQBt6EgTrTfNFE--VpGmZZsLiDahR7Vpc,872
+django_alttext-1.0.4.dist-info/top_level.txt,sha256=C7p20IDz0yXXUX6IVLe9mep-CB-6x94ipypET2WsJWM,8

@@ -1,0 +1,13 @@
+README.md
+setup.py
+PyFaceDet/__init__.py
+PyFaceDet/facedetectcnn.py
+PyFaceDet/libfacedetection_32bit.dll
+PyFaceDet/libfacedetection_32bit.so
+PyFaceDet/libfacedetection_64bit.dll
+PyFaceDet/libfacedetection_64bit.so
+PyFaceDet.egg-info/PKG-INFO
+PyFaceDet.egg-info/SOURCES.txt
+PyFaceDet.egg-info/dependency_links.txt
+PyFaceDet.egg-info/requires.txt
+PyFaceDet.egg-info/top_level.txt

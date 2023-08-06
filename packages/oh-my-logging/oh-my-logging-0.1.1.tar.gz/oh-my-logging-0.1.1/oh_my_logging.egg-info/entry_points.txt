@@ -1,0 +1,3 @@
+[console_scripts]
+logging = oh_my_logging:main
+

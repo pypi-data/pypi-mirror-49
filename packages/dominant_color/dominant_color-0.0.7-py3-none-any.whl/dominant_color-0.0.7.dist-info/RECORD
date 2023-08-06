@@ -1,0 +1,8 @@
+dominant_color/__init__.py,sha256=gs6NpM_6xZmLEWz_UGQ-MuLgKLJaQs02lFip0tyP9gY,91
+dominant_color/image_palette.py,sha256=KBYgRZyoK0SW_KWJ89RJt2ZvU_1AyPER-u9JWyHVJpw,3084
+dominant_color/kmeans_palette.py,sha256=L0FXw4Ff01IQ4_-De-k0YoBsXPOgwZSmBZdpkBjRJaU,945
+dominant_color/mediancut_palette.py,sha256=ST0aJ-j0E4e5Qw3u6vfhjfd24ZR7u7XzHjq2teANDRY,10715
+dominant_color-0.0.7.dist-info/entry_points.txt,sha256=sCCgcB6vcbOkzrFYH3yYvqUnO4Qx_FFDsdaOSaAPEMk,68
+dominant_color-0.0.7.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+dominant_color-0.0.7.dist-info/METADATA,sha256=eZdXq_6QT2ZxzFIs7bznvJ9tSkOarUYjgcSeG-8g69w,934
+dominant_color-0.0.7.dist-info/RECORD,,

@@ -1,0 +1,68 @@
+Metadata-Version: 1.1
+Name: hasasia
+Version: 0.1.1
+Summary: A Python package to calculate gravitational-wave senstivity curves for pulsar timing arrays.
+Home-page: https://github.com/Hazboun6/hasasia
+Author: Jeffrey S. Hazboun
+Author-email: jeffrey.hazboun@gmail.com
+License: MIT license
+Description: ===============
+        hasasia
+        ===============
+        
+        
+        .. image:: https://img.shields.io/pypi/v/hasasia.svg
+                :target: https://pypi.python.org/pypi/hasasia
+        
+        .. image:: https://img.shields.io/travis/Hazboun6/hasasia.svg
+                :target: https://travis-ci.org/Hazboun6/hasasia
+        
+        .. image:: https://readthedocs.org/projects/hasasia/badge/?version=latest
+                :target: https://hasasia.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        A Python package to calculate gravitational-wave sensitivity curves for pulsar timing arrays.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://hasasia.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.1 (2019-06-23)
+        0.1.0 (2019-03-28)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: hasasia
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

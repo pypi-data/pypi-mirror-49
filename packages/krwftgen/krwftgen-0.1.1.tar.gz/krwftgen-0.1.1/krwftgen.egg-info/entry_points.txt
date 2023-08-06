@@ -1,0 +1,3 @@
+[console_scripts]
+krwftgen = Lib.__init__:krwftgen
+

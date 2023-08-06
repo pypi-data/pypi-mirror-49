@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+authentika_client/__init__.py
+authentika_client/clients.py
+authentika_client/exceptions.py
+authentika_client/requests.py
+authentika_client/utils.py
+authentika_client.egg-info/PKG-INFO
+authentika_client.egg-info/SOURCES.txt
+authentika_client.egg-info/dependency_links.txt
+authentika_client.egg-info/not-zip-safe
+authentika_client.egg-info/requires.txt
+authentika_client.egg-info/top_level.txt

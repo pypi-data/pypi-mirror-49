@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: authentika_client
+Version: 0.0.2
+Summary: Flask-client for Authentika Server.
+Home-page: UNKNOWN
+Maintainer: PUC-Rio
+Maintainer-email: thompsonp17@hotmail.com
+License: UNKNOWN
+Description: TO BE DONE
+Platform: UNKNOWN
+Provides-Extra: test
+Provides-Extra: documentation

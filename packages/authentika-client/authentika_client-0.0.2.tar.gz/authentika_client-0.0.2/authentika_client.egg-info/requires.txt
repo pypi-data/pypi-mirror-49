@@ -1,0 +1,15 @@
+flask
+requests
+tldextract
+
+[documentation]
+Sphinx
+recommonmark
+apispec
+
+[test]
+pytest
+pytest-ordering
+docker
+coverage
+requests

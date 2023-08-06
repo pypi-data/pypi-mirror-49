@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+codep.egg-info/PKG-INFO
+codep.egg-info/SOURCES.txt
+codep.egg-info/dependency_links.txt
+codep.egg-info/requires.txt
+codep.egg-info/top_level.txt

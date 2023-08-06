@@ -1,0 +1,11 @@
+excel2dict/__init__.py,sha256=rU0V6DleY87fnYr8mCpLYgC4YNZdqnvqLsnZlRorgLA,551
+excel2dict/converter.py,sha256=lxmhoGGkwZWdsL8_rtbF-Rs-Y38pjJed27RLAqwqxqA,4780
+excel2dict/helper.py,sha256=Dxe47N10-CXgao70ZMNh7RRw0F2DX8uLNutK01wetk8,1634
+excel2dict/serial_value_handler.py,sha256=5E-XtUQcCvSDWJRdk746Ftsj6GVbo2oTgmABfLcdMqQ,967
+excel2dict/sheets_definition.py,sha256=WD1lWFBbwunGX8tUii1-xXiy2SNELnxU_Y1_U3cG9dM,2124
+excel2dict-0.0.1.dist-info/LICENSE,sha256=8vH1j1_A5e8qHFoEGuuAEwCYidh_9TPClLSnyn3VHq4,1071
+excel2dict-0.0.1.dist-info/METADATA,sha256=U_MOLvat70ZdlLuuNSI0SGIANdyNgsfOx36nH7rBw4c,3931
+excel2dict-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+excel2dict-0.0.1.dist-info/entry_points.txt,sha256=q_aEvhrmYESPsJWbtRGhFN84iaC2WO4A1iZQrX2dYFA,58
+excel2dict-0.0.1.dist-info/top_level.txt,sha256=05Xl6VzgJ_9hzHCkMpn0DVvaQ6PWyYXPnvJM5QpENCs,11
+excel2dict-0.0.1.dist-info/RECORD,,

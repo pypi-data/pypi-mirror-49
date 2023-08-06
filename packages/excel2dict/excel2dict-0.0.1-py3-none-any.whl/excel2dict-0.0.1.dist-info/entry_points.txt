@@ -1,0 +1,3 @@
+[console_scripts]
+excel2dict = excel2dict.converter:main
+

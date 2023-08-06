@@ -1,0 +1,13 @@
+clidog/__init__.py,sha256=rHIzJMolw7FKY2b199FNEhHBcOxPR944CMa0XFMQ7vI,248
+clidog/cli.py,sha256=DKgp-p0kscRAbkLqY79KxlL9T_FwW83-UxzBjmoedjI,418
+clidog/cli_example.py,sha256=gvgPrjYxrKbAOwVMpPuwLZX8kiYG6UKM30a5xDy2Tv8,663
+clidog/clis/__init__.py,sha256=OsiP1iHKL6aJp4RtIrOttBmzUbUMi0F4wbg3CrlW8HM,248
+clidog/clis/demo.py,sha256=-SMUYN2gHm0Fv7_m_QjSVQcfoknZ88rjG6l1kxvTzv8,433
+clidog/clis/send_mail.py,sha256=fywnMPPj1XU0Vmjl7IJ1BT5RRwD5kyg_HQISiE8Htyw,1039
+clidog/clis/spark_submit.py,sha256=0W9tubTzhFedZWGm6MWCyYHmGeNaz3RAFg8ag2B-2FQ,3640
+clidog/clis/spark_submit.yml,sha256=LZFQBuiyaRm8NU9Q87W7xS4YuTSlgsjGxe6pnYljy2U,312
+clidog-0.0.1563289742.dist-info/METADATA,sha256=3tvmxQJBrn6yfFEEI4NPxow9qRaxc1dn4X9JIMj7sQc,681
+clidog-0.0.1563289742.dist-info/RECORD,,
+clidog-0.0.1563289742.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+clidog-0.0.1563289742.dist-info/entry_points.txt,sha256=Il5VYQNi6NeMUQ2MGufL2wg7OP7asqmLrDMBtY8UhyY,41
+clidog-0.0.1563289742.dist-info/top_level.txt,sha256=apncrzPHblW8DoE5IVl38Zg6AGjFynBLnIhjp_UVTcQ,7

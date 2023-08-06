@@ -1,0 +1,4 @@
+coloredlogs~=10.0
+requests~=2.22.0
+selenium~=3.141.0
+webdriver-manager~=1.8.2

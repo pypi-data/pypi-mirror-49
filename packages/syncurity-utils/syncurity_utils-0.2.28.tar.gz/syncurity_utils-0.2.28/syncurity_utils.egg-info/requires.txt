@@ -1,0 +1,2 @@
+validators>=0.12.5
+irflow-client<1.6,>=1.5.10

@@ -1,0 +1,6 @@
+avro-python3>=1.9
+fastavro
+requests>=2.22.0
+
+[faust]
+faust>=1.7.0

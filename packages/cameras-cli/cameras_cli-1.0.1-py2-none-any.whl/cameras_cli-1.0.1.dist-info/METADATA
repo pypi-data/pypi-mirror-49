@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cameras-cli
+Version: 1.0.1
+Summary: Cameras CLI
+Home-page: UNKNOWN
+Author: Omar Diaz
+Author-email: zcool2005@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: netifaces
+Requires-Dist: Click
+
+UNKNOWN
+
+

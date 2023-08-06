@@ -1,0 +1,3 @@
+recursive-include estimator/fixtures *
+include requirements.txt
+include requirements-test.txt

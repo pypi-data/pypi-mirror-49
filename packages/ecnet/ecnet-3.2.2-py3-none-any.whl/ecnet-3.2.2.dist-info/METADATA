@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ecnet
+Version: 3.2.2
+Summary: UMass Lowell Energy and Combustion Research Laboratory Neural Network Software
+Home-page: http://github.com/tjkessler/ecnet
+Author: Travis Kessler, Hernan Gelaf-Romer, Sanskriti Sharma
+Author-email: travis.j.kessler@gmail.com, Hernan_Gelafromer@student.uml.edu, Sanskriti_Sharma@student.uml.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: alvadescpy (==0.1.0)
+Requires-Dist: colorlogging (==0.3.5)
+Requires-Dist: ecabc (==2.2.3)
+Requires-Dist: keras (==2.2.4)
+Requires-Dist: matplotlib (==3.1.0)
+Requires-Dist: numpy (==1.16.4)
+Requires-Dist: padelpy (==0.1.6)
+Requires-Dist: pyyaml (==5.1.1)
+Requires-Dist: scikit-learn (==0.21.2)
+Requires-Dist: tensorflow (==1.13.1)
+
+UNKNOWN
+
+

@@ -1,0 +1,55 @@
+#!python
+import os
+import argparse
+
+commands = {
+    '_status' : 'status of the cluster',
+    '_cluster/health' : 'Health of the cluster',
+    '_nodes' : 'Nodes info',
+    '_cat/indices' : 'Indices',
+    '_cat/shards' : 'Shards',
+    '_stats' : 'stats of EsCluster',
+    '/_cat/health?v' : '',
+    '/_cat/nodes?v' : '',
+    '/_cat/allocation?v' : '',
+    '/_cat/count?v' : '',
+    '/_cat/fielddata?v' : '',
+    '/_cat/pending_tasks?v' : '',
+    '/_cat/thread_pool?v' : '',
+    '/_cat/plugins?v&s=component&h=name,component,version,description' : '',
+    '/_snapshot/_all' : '',
+    '/_cat/_snapshot/s3_repository?v' : '',
+    '/_cat/indices?v' : '',
+    '/_cat/shards?v' : '',
+    '/_cat/segments?v' : '',
+    '/_cat/templates?v' : '',
+    '/_nodes/stats?pretty' : '',
+    '/_cat/recovery?v' : ''
+}
+
+def get_info(dockerid, username, password):
+    cout = os.popen("hostname -i")
+    host = cout.read().strip()
+    print(host)
+    for key,value in commands.items():
+
+        cmd = 'curl -u \'{}:{}\' http://{}:9200/{}'.format(username,password,host,key)
+        print(cmd)
+        output = os.popen(cmd)
+
+        print(value)
+        print("------------------------------------------------")
+        print(output.read())
+
+
+if __name__=='__main__':
+    parser = argparse.ArgumentParser(description='Retrieve Docker Run Command from existing container')
+    #parser.add_argument('name', action="store", help='docker container name')
+    parser.add_argument('username', action="store", help='elasticsearch username')
+    parser.add_argument('password', action="store", help='elasticsearch password')
+    results = parser.parse_args()
+
+    outs = os.popen("sudo docker ps | grep elasticsearch | awk '{print $1}'")
+    containerId = outs.read()
+
+    get_info(containerId, results.username, results.password)

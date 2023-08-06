@@ -1,0 +1,16 @@
+unumpy/__init__.py,sha256=nmPiHmFsNdDxMFnPgR_vRaIUiuHUTsgul2LXugvM0OA,4736
+unumpy/_multimethods.py,sha256=PAepezXW0z3dh-giwrA-nriJopDwpIT0_iKfh-B6utA,13142
+unumpy/_version.py,sha256=NPhSB1g8A87-Ss26-7ad2dQphGpTS6s5j8DIlGsAAxs,497
+unumpy/cupy_backend.py,sha256=LekOnd-CFVE88cm7G88HbYRKCRbUpbrpHZjJqWWUCf0,1382
+unumpy/dask_backend.py,sha256=7AzlkjVvewj3QWZ_zeuI7HN-fYuoAG35BTQcaXVQI-o,2739
+unumpy/numpy_backend.py,sha256=Qul4ABf4zjdnVGj-Vyuw9ih7hPap5-oKkI2zaML9PBo,1183
+unumpy/sparse_backend.py,sha256=zs2teO6aA8u-3c1l0tC6kMJ2ldFJ5hJ1cxtrtbFHCM4,1316
+unumpy/torch_backend.py,sha256=BESXTCwdc_9jfWVEDR96RwCwW52t0KEo0Um5mMdqka4,1797
+unumpy/xnd_backend.py,sha256=cTvseejFllZ3swnvOX6fnKKp7L9x5JEOEoNAnT4ZeVs,2068
+unumpy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unumpy/tests/test_numpy.py,sha256=yX-OBaoQGpbgNOYH0HuonQEV7nw7shTSS4NWgjVE7O4,5694
+unumpy-0.5.2.dist-info/LICENSE,sha256=yAw5tfzga6SJfhTgsKiLVEWDNNlR6xNhQC_60s-4Y7Q,1514
+unumpy-0.5.2.dist-info/METADATA,sha256=LZN7pXRbhtC04VU75eOPoxmIDXikW2fOPjuwyguqIYk,2303
+unumpy-0.5.2.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+unumpy-0.5.2.dist-info/top_level.txt,sha256=cAYOU6mb5IGepXWkfg7Ks2gRRmaQCSA62OCvbOubIRs,7
+unumpy-0.5.2.dist-info/RECORD,,

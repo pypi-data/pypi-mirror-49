@@ -1,0 +1,11 @@
+apies/VERSION,sha256=cPZ8vtzWinVd7EOHmw_3zZqy5pfWSDm-eY6LV2Q5TPI,7
+apies/__init__.py,sha256=tVq_e-FS_Fr8w72-o-8LGYLND9ije84se-rf7XwiOB8,57
+apies/blueprint.py,sha256=JZNBXEDHQj2MQIBtjeAQYunPEvhuJKw18UogHMvl3sI,9073
+apies/controllers.py,sha256=4TfdUdhITgEQxaoDZHmj-tCQTedF5dbtZJEE20_a_jk,7433
+apies/query.py,sha256=jwN9W0zRIBSPEKVyieB5nCEnDTIXp0Gv_Oiw3_TjINY,5550
+apies/sources.py,sha256=dFRTGXabDA_AHSHow6T6nWSwxxgj-7XHM6FuXaEmeiM,1425
+apies-0.0.20.dist-info/LICENSE,sha256=3j--DxtgygAC6mhW74Vs_-C4mHqIbHA7JNxqF_8t0Pg,1067
+apies-0.0.20.dist-info/METADATA,sha256=44pG7cWed1CwF8tMyzJzZzLBtJlCoQasZE95h3V0kDs,4805
+apies-0.0.20.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+apies-0.0.20.dist-info/top_level.txt,sha256=Aatj5Sjg4B5CgWSn8yn8c_enJw7s-bDF43tvAbPuPLE,6
+apies-0.0.20.dist-info/RECORD,,

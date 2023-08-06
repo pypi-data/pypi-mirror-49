@@ -1,0 +1,9 @@
+README.md
+setup.py
+sotabench/__init__.py
+sotabench.egg-info/PKG-INFO
+sotabench.egg-info/SOURCES.txt
+sotabench.egg-info/dependency_links.txt
+sotabench.egg-info/top_level.txt
+sotabench/core/__init__.py
+sotabench/core/results.py

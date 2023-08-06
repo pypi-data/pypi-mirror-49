@@ -1,0 +1,8 @@
+README.md
+setup.py
+filehandle_jason/__init__.py
+filehandle_jason/filehandle.py
+filehandle_jason.egg-info/PKG-INFO
+filehandle_jason.egg-info/SOURCES.txt
+filehandle_jason.egg-info/dependency_links.txt
+filehandle_jason.egg-info/top_level.txt

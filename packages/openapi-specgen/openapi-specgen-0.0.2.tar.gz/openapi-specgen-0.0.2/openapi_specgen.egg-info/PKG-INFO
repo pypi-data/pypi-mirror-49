@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: openapi-specgen
+Version: 0.0.2
+Summary: Generate OpenApi json specification
+Home-page: https://github.com/GabrielCappelli/openapi-specgen
+Author: Gabriel Cappelli
+Author-email: 6148081+GabrielCappelli@users.noreply.github.com
+License: MIT
+Description: # openapi-specgen
+        Python library to generate OpenApi Specification from Python code
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

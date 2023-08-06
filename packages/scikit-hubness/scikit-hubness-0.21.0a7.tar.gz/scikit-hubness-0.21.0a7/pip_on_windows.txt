@@ -1,0 +1,2 @@
+Pybind11: requires Visual C++ 2015 redist at https://www.microsoft.com/en-us/download/details.aspx?id=48145
+nmslib: requires VisualStudio C++ 14.0 (or so...)

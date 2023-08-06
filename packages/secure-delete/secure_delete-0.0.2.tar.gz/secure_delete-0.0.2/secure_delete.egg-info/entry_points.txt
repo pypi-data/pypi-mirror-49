@@ -1,0 +1,3 @@
+[console_scripts]
+secdel = secure_delete.secure_delete_cmd:main
+

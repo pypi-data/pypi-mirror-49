@@ -1,0 +1,10 @@
+README.md
+setup.py
+secure_delete/__init__.py
+secure_delete/secure_delete.py
+secure_delete/secure_delete_cmd.py
+secure_delete.egg-info/PKG-INFO
+secure_delete.egg-info/SOURCES.txt
+secure_delete.egg-info/dependency_links.txt
+secure_delete.egg-info/entry_points.txt
+secure_delete.egg-info/top_level.txt

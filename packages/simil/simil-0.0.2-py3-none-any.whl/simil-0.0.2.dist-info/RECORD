@@ -1,0 +1,12 @@
+simil/__init__.py,sha256=av9iPkR3K-16DeLYI3XzGtME02WsEDEqkqNZbQgDAPo,45
+simil/__main__.py,sha256=JUldK53r79rkV5CvatCVlW-2Cy-QRqug7Xc29LBVPL0,62
+simil/cli_args.py,sha256=HYGrtRMNNWOvfOhLFcH3K83L3KgtUt4yeGezqTzOo90,820
+simil/client.py,sha256=AcgXxCHWBhqlvZ1aQvt7TgWvTl_QDdP7KvDg51LPzpo,2165
+simil/server.py,sha256=Xs_FegKaNxVPLtvlx7TLvRU7JzPIg1WRdNAZtdLJhl4,2747
+simil/version.py,sha256=HfGotW-8tivdaTCA_sDMpwfqN6IqN5Pwe2ey6DX8viY,361
+simil-0.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+simil-0.0.2.dist-info/METADATA,sha256=7h-V7FUosZiktYSAGKzJ23pcSa9qC5UZ88j8xHHVBvM,2409
+simil-0.0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+simil-0.0.2.dist-info/entry_points.txt,sha256=pGApKp_6v3T1LZCkAgxmishOkB6e7QaaW6H8Px26MKo,38
+simil-0.0.2.dist-info/top_level.txt,sha256=pIR8loafrmaAWHbf080a78dVbJDXB01B8Cn1eWkGpCA,6
+simil-0.0.2.dist-info/RECORD,,

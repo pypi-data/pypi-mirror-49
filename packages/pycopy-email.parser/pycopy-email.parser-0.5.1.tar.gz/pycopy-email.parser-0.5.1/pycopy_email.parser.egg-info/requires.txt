@@ -1,0 +1,4 @@
+pycopy-warnings
+pycopy-email.feedparser
+pycopy-email.message
+pycopy-email.internal

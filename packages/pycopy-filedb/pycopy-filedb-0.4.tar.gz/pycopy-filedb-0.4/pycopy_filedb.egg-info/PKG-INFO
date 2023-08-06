@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pycopy-filedb
+Version: 0.4
+Summary: Very simple, filesystem-based ORM (Object-Relational Mapper) for Pycopy (https://github.com/pfalcon/pycopy).
+
+Home-page: https://github.com/pfalcon/pycopy-filedb
+Author: Paul Sokolovsky
+Author-email: pfalcon@users.sourceforge.net
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

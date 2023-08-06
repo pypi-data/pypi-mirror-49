@@ -1,0 +1,16 @@
+precis_i18n/__init__.py,sha256=GOjHza4hUGWfj1gpC-t6ZNQXBV4ml6Sc6Y1h_sO9oGo,130
+precis_i18n/baseclass.py,sha256=ucvidoAweCLuixCJGmdwHF7EjF-U9o0v4nmS-VmzHoQ,3028
+precis_i18n/bidi.py,sha256=breN5P0JNbgt7WVFkTfhEwGsCgVvyecnMnA0m3__6f4,3652
+precis_i18n/codec.py,sha256=m2coJINtp7Z9z1SEurnxL2Lk4YQSiYN3Va99T6ZWJa4,872
+precis_i18n/codepointset.py,sha256=RPoqTShVMVzJGApOPW7HAN190bl_qiXZsxbewCj_BKs,4960
+precis_i18n/context.py,sha256=WgKyWvZ27O7wrUweYmDQPfoHDbWbNUiyw2cL3uPQUFc,7241
+precis_i18n/derived.py,sha256=D41FdHgmF1XlQkPhTmc6w_--AI4vwicIGVUbukcmK-U,9601
+precis_i18n/factory.py,sha256=RdhYcX05-tUyt0eyuEudTVnBbFPPvEOPpgrR8nriL30,2435
+precis_i18n/profile.py,sha256=WRHMPSFHkqBMikeR1v6GVQNCckqMnCHh-yeT-pLOeS4,8789
+precis_i18n/unicode.py,sha256=V43vzIlidhr62q5eZCMLbC0yZ1gJvQLDN5wziMYZ83s,11033
+precis_i18n-1.0.1.dist-info/LICENSE.txt,sha256=SUa-3lw-_B11LLEBRGbbbIv8ZZm1v9PXA5cIulqurkM,1066
+precis_i18n-1.0.1.dist-info/METADATA,sha256=3A8kYp-5F9GT--L0K3cKSd052Mwsvrt985Fdh_YEyhM,10721
+precis_i18n-1.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+precis_i18n-1.0.1.dist-info/top_level.txt,sha256=4LHeT8tf1a_loqvrcKEzXgrjwY_fONZuyMvmt4FSWCE,12
+precis_i18n-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+precis_i18n-1.0.1.dist-info/RECORD,,

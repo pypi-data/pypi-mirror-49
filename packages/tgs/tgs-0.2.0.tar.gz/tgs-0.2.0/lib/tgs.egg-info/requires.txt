@@ -1,0 +1,9 @@
+
+[Load image]
+pillow
+
+[Vectorization]
+pillow
+pypotrace>=0.2
+numpy
+scipy

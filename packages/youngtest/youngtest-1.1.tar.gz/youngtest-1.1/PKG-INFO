@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: youngtest
+Version: 1.1
+Summary: this is for test
+Home-page: https://github.com/humstarman/young_test_package
+Author: Lue Young
+Author-email: lueyoung7@gmail.com
+License: UNKNOWN
+Description: long_description
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

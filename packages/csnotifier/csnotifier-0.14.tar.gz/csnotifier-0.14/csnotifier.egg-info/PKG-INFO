@@ -1,0 +1,19 @@
+Metadata-Version: 1.0
+Name: csnotifier
+Version: 0.14
+Summary: A product to send notifications to Pushwosh or Firebase
+Home-page: https://codesyntax.com
+Author: CodeSyntax
+Author-email: info@codesyntax.com
+License: GPL2
+Description: csnotifier
+        ==========
+        
+        Notification handling app for django
+        
+        It provides a Device and Notification models for Django to handle
+        sending notification to Pushwosh and Firebase for Android and iOS apps.
+        
+        0.14 (2019-07-23)
+        -----------------
+Platform: UNKNOWN

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: zabbix-controller
+Version: 0.1.7
+Summary: 
+Author: hamadakafu
+Author-email: kafu.h1998@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: bullet (>=2.1,<3.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: pyzabbix (>=0.7.5,<0.8.0)
+Description-Content-Type: text/markdown
+
+# Zabbix CLI
+
+## Excecutable Command 
+### `zabbix_controller --help`
+### `zabbix_controller hosts --help`
+### `zabbix_controller --apiserver-address http://loalhost:8081 hosts list`
+### `zabbix_controller -u username -p password hosts list`
+### `zabbix_controller -bu basicauth_username -bp basicauth_password hosts list`
+
+## Bad Command
+### `zabbix_controller hosts -u username -p password`
